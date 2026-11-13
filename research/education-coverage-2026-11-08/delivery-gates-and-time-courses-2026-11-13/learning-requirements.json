@@ -1,0 +1,296 @@
+{
+  "frozenInventory": {
+    "file": "source-first-requirements.json",
+    "sha256": "3da4dfa64c1bbe942e464b3ce80cc21d801776d29a041353664731b477e45170",
+    "rows": 12
+  },
+  "requirements": [
+    {
+      "phase": "original",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "originalPointId": "engineered-cell-therapy-DEL-022",
+      "requirement": "For Frank's CD3-targeted lentiviral-to-CD19-CAR card, retain immunodeficient mice with a human stem-cell-derived immune system and the actual vector, target and sampled compartments.",
+      "status": "source-blocked",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "The new paragraph covers the vector, payload, sampled blood compartments and general humanised-mouse setting. The actual raw abstract and Figure 7 do not establish the stipulated stem-cell-derived model; no substitute model is credited.",
+        "sourceDepth": "Complete raw abstract and actual Figure 7; raw Methods inaccessible through attempted routes.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The precise human stem-cell-derived immune-system model remains unverified in a raw Methods capture. General humanised-mouse wording does not close this model-specific requirement."
+      ],
+      "originalPointStatus": "source-blocked",
+      "remainingSourceClause": "source-open; no point credit"
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "originalPointId": "engineered-cell-therapy-DEL-023",
+      "requirement": "Preserve Frank's human CD3-positive/CD45-positive T-cell gate, human CD3-negative/CD45-positive non-T gate and CD45-negative mouse compartment; sampled T-cell restriction is not whole-body exclusivity.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "Actual downloaded primary Figure 7D names the CD3-positive/CD45-positive, CD3-negative/CD45-positive and CD45-negative compartments. The paragraph describes measured blood gates and rejects whole-body exclusivity. Raw figure pixels are the load-bearing evidence; the PMC line-addressed legend was inspected as corroboration, not a raw HTML capture.",
+        "sourceDepth": "Complete raw abstract plus full native Figure 7 view; line-addressed Results/legend corroboration. No complete raw body or whole-paper read.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "source-blocked"
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "originalPointId": "engineered-cell-therapy-DEL-024",
+      "requirement": "Preserve Frank's blood peak at three to four weeks and return toward baseline after five, controls and conditions, per-animal CD19 B-cell baseline and variable duration.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "Primary Figure 7A/C/F shows IL-7 control, vector alone and vector-plus-IL-7 conditions, individual blood CAR curves peaking around days 20 to 26 and approaching baseline after day 35, and relative day-zero CD19 levels with differing persistence. The paragraph keeps time courses, denominator and functional interpretation distinct.",
+        "sourceDepth": "Complete raw abstract and actual full native Figure 7, including panels A, C, D and F; line-addressed legend corroboration. No complete body read.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "source-blocked"
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "originalPointId": "engineered-cell-therapy-DEL-026",
+      "requirement": "Preserve Pfeiffer's day-seven compartment denominators: 30–50% of CD8 cells in abdominal fluid, 10–35% in spleen, 5–30% in blood and less than 0.5% of CD8-negative T cells.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:8"
+      ],
+      "sourceIds": [
+        "30224381"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "The complete raw Results paragraph supplies day-seven tissue ranges and the CD8-negative fraction. Raw Appendix S1 legend and viewed S1A establish the living-cell/human-CD45/CD3/CD8/CAR hierarchy. Figure 1 and its legend are also read. The qualified CD8-negative denominator is T cells, not all non-target tissues.",
+        "sourceDepth": "Complete raw abstract, two complete raw article paragraphs, three complete appendix legends, actual main Figure 1 and Appendix S1 pixels. No whole-paper or whole-appendix prose claim.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "partial"
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "sourceSha256": "37013d7017f4d60866afa3b6799b278125f8ce9cbd7f5e0552f998436908cf9d",
+      "originalPointId": "residual-monitoring-S-002",
+      "requirement": "Verify 61 of 84 detected before treatment (73%) and 9% just before surgery, with the actual draw denominators and timing.",
+      "status": "partial",
+      "anchorIds": [
+        "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:summary",
+        "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:notes:0"
+      ],
+      "sourceIds": [
+        "33232761"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "Fresh core abstract and NIH BioC/efetch identities, Methods/Results paragraphs and Fig 3 caption confirm the baseline 61/84 and sampling schedule. The caption says each time point uses available samples. Figure 3 pixels and its final-draw sample count remain unavailable, so 84, 60 or 58 are not substituted.",
+        "sourceDepth": "Complete raw abstract and four complete targeted NIH BioC paragraphs/caption; matching efetch article identity. No fresh figure pixels or full-PDF read.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The evaluable final presurgical T3 denominator and corresponding positive count behind the 9 percent remain unread. Overall cohort 84, joint outcome subset 60 and complete serial subset 58 are distinct denominators and are not used as replacements."
+      ],
+      "originalPointStatus": "partial",
+      "remainingSourceClause": "source-open; no point credit"
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/modeling-tumor-response/verification-and-feedback-loops.md",
+      "sourceSha256": "e8ac13956c22c046511615af86324fb93b5c23e9c7182060af7b6bbfc9708ec9",
+      "originalPointId": "predicting-response-guides-PRG-57b2a02bc40174",
+      "requirement": "| Step | Count | What it teaches |\n| Assay and MRI agreed | 15 of 20 (75%; 95% confidence interval 53–89%) | Agreement, not accuracy against truth |",
+      "status": "partial",
+      "anchorIds": [
+        "ex-vivo-tumour-fragments:notes:4",
+        "ex-vivo-tumour-fragments:notes:5"
+      ],
+      "sourceIds": [
+        "37777518"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "The actual typeset page 3 and matching raw Results report 15/20 and CI 53 to 89 percent. The read statistical-methods paragraphs and all three viewed reporting-summary pages do not name the interval level or construction method. The record retains the reported bounds without calling them author-reported 95 percent or inferring a method from numerical agreement.",
+        "sourceDepth": "Complete raw abstract, seven complete target paragraphs, full typeset page 3 and all three reporting-summary PDF pages. No whole-paper claim.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The confidence level and construction method for the reported 53 to 89 percent interval remain unverified. The read Results/Methods and reporting-summary pages do not supply them. A numerically matching independently calculated interval is not evidence of the authors' method."
+      ],
+      "originalPointStatus": "partial",
+      "remainingSourceClause": "source-open; no point credit"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "originalPointId": "engineered-cell-therapy-DEL-022",
+      "requirement": "For Frank's CD3-targeted lentiviral-to-CD19-CAR card, retain immunodeficient mice with a human stem-cell-derived immune system and the actual vector, target and sampled compartments.",
+      "status": "source-blocked",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "The new paragraph covers the vector, payload, sampled blood compartments and general humanised-mouse setting. The actual raw abstract and Figure 7 do not establish the stipulated stem-cell-derived model; no substitute model is credited.",
+        "sourceDepth": "Complete raw abstract and actual Figure 7; raw Methods inaccessible through attempted routes.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The precise human stem-cell-derived immune-system model remains unverified in a raw Methods capture. General humanised-mouse wording does not close this model-specific requirement."
+      ],
+      "originalPointStatus": "source-blocked",
+      "remainingSourceClause": "source-open; no point credit"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "originalPointId": "engineered-cell-therapy-DEL-023",
+      "requirement": "Preserve Frank's human CD3-positive/CD45-positive T-cell gate, human CD3-negative/CD45-positive non-T gate and CD45-negative mouse compartment; sampled T-cell restriction is not whole-body exclusivity.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "Actual downloaded primary Figure 7D names the CD3-positive/CD45-positive, CD3-negative/CD45-positive and CD45-negative compartments. The paragraph describes measured blood gates and rejects whole-body exclusivity. Raw figure pixels are the load-bearing evidence; the PMC line-addressed legend was inspected as corroboration, not a raw HTML capture.",
+        "sourceDepth": "Complete raw abstract plus full native Figure 7 view; line-addressed Results/legend corroboration. No complete raw body or whole-paper read.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "source-blocked"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "originalPointId": "engineered-cell-therapy-DEL-024",
+      "requirement": "Preserve Frank's blood peak at three to four weeks and return toward baseline after five, controls and conditions, per-animal CD19 B-cell baseline and variable duration.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:19"
+      ],
+      "sourceIds": [
+        "33216892"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "Primary Figure 7A/C/F shows IL-7 control, vector alone and vector-plus-IL-7 conditions, individual blood CAR curves peaking around days 20 to 26 and approaching baseline after day 35, and relative day-zero CD19 levels with differing persistence. The paragraph keeps time courses, denominator and functional interpretation distinct.",
+        "sourceDepth": "Complete raw abstract and actual full native Figure 7, including panels A, C, D and F; line-addressed legend corroboration. No complete body read.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "source-blocked"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "originalPointId": "engineered-cell-therapy-DEL-026",
+      "requirement": "Preserve Pfeiffer's day-seven compartment denominators: 30–50% of CD8 cells in abdominal fluid, 10–35% in spleen, 5–30% in blood and less than 0.5% of CD8-negative T cells.",
+      "status": "covered-draft",
+      "anchorIds": [
+        "in-vivo-car-t:notes:8"
+      ],
+      "sourceIds": [
+        "30224381"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": true,
+        "explanation": "The complete raw Results paragraph supplies day-seven tissue ranges and the CD8-negative fraction. Raw Appendix S1 legend and viewed S1A establish the living-cell/human-CD45/CD3/CD8/CAR hierarchy. Figure 1 and its legend are also read. The qualified CD8-negative denominator is T cells, not all non-target tissues.",
+        "sourceDepth": "Complete raw abstract, two complete raw article paragraphs, three complete appendix legends, actual main Figure 1 and Appendix S1 pixels. No whole-paper or whole-appendix prose claim.",
+        "independentAcceptance": false
+      },
+      "remaining": [],
+      "originalPointStatus": "partial"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "sourceSha256": "64e175c1727d246a269842fe4ba940147377e5791a4d1286a4e3af5775a21743",
+      "originalPointId": "residual-monitoring-S-002",
+      "requirement": "Verify 61 of 84 detected before treatment (73%) and 9% just before surgery, with the actual draw denominators and timing.",
+      "status": "partial",
+      "anchorIds": [
+        "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:summary",
+        "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:notes:0"
+      ],
+      "sourceIds": [
+        "33232761"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "Fresh core abstract and NIH BioC/efetch identities, Methods/Results paragraphs and Fig 3 caption confirm the baseline 61/84 and sampling schedule. The caption says each time point uses available samples. Figure 3 pixels and its final-draw sample count remain unavailable, so 84, 60 or 58 are not substituted.",
+        "sourceDepth": "Complete raw abstract and four complete targeted NIH BioC paragraphs/caption; matching efetch article identity. No fresh figure pixels or full-PDF read.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The evaluable final presurgical T3 denominator and corresponding positive count behind the 9 percent remain unread. Overall cohort 84, joint outcome subset 60 and complete serial subset 58 are distinct denominators and are not used as replacements."
+      ],
+      "originalPointStatus": "partial",
+      "remainingSourceClause": "source-open; no point credit"
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/predicting-response-before-treating/03-verification-and-feedback-loops.md",
+      "sourceSha256": "cfba1be0c4699fabda5ba744a8768f96dbeb715423760028d93e0f708d521c1c",
+      "originalPointId": "predicting-response-guides-PRG-890b2c7788dc04",
+      "requirement": "| Step | Count | What it teaches |\n| Assay and MRI agreed | 15 of 20 (75%; 95% confidence interval 53–89%) | Agreement with an imperfect comparator, not proof of accuracy |",
+      "status": "partial",
+      "anchorIds": [
+        "ex-vivo-tumour-fragments:notes:4",
+        "ex-vivo-tumour-fragments:notes:5"
+      ],
+      "sourceIds": [
+        "37777518"
+      ],
+      "semanticAssessment": {
+        "completeAtStatedSupportedScope": false,
+        "explanation": "The actual typeset page 3 and matching raw Results report 15/20 and CI 53 to 89 percent. The read statistical-methods paragraphs and all three viewed reporting-summary pages do not name the interval level or construction method. The record retains the reported bounds without calling them author-reported 95 percent or inferring a method from numerical agreement.",
+        "sourceDepth": "Complete raw abstract, seven complete target paragraphs, full typeset page 3 and all three reporting-summary PDF pages. No whole-paper claim.",
+        "independentAcceptance": false
+      },
+      "remaining": [
+        "The confidence level and construction method for the reported 53 to 89 percent interval remain unverified. The read Results/Methods and reporting-summary pages do not supply them. A numerically matching independently calculated interval is not evidence of the authors' method."
+      ],
+      "originalPointStatus": "partial",
+      "remainingSourceClause": "source-open; no point credit"
+    }
+  ],
+  "denominatorBoundary": "Three existing requirements close at each pin; no new ordinary-source requirement or page denominator. Original 6827 and later 7302 remain separate. Three other selected requirements remain open at each pin."
+}

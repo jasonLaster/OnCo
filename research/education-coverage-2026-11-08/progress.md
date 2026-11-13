@@ -4,6 +4,23 @@ The goal remains active. Overlapping source inventories and draft owners are nev
 
 ## Current checkpoint
 
+The [delivery source-residual checkpoint](delivery-gates-and-time-courses-2026-11-13/README.md) closes three existing scientific requirements at each pin. Pfeiffer’s actual appendix establishes the T-cell parent gate; Frank’s actual Figure 7 supports the sampled compartments, blood time courses and per-animal baseline. One existing delivery owner receives one qualified paragraph, one appended paragraph, one link and one checked date. The specified stem-cell-derived model, final ctDNA-draw denominator and confidence-interval level/method remain open. Six source versions and 73 signatures are verified, with targeted reading rather than a fresh whole-lesson or whole-paper assessment.
+
+Four complete abstracts, sixteen complete target paragraphs or legends, three source figures and four PDF pages retain their exact reading depth. Three actual readers, six exact field anchors, three JSON exports and 33 Markdown passages pass. Typecheck, lint, validate and the full suite pass: 293 files, 3,101 tests, two skips. All 23,091 committed graph fingerprints match the gate inputs; only the intended owner differs from the preceding checkpoint. The broader goal remains active, with no merge, main/live, expert, learner or language acceptance.
+
+Original obligations now have 6,816 of 6,827 evidenced and eleven open; later obligations have 7,285 of 7,302 evidenced and seventeen open. Complete draft source representations remain 519 original and 528 later because the delivery page still has an open model clause. Asset classifications remain 682 teaching/102 supporting/1,104 unclassified original, and 681/102/1,105 later, with 1,888 per pin.
+
+There are 131 registered proposal receipts selecting the same 698 canonical ids: 180 absent from the baseline and 518 already present. Selection is not authorship. There are 5,769 canonical/language slots, comprising 1,682 available texts and 4,087 English fallbacks; the 5,999 reader-observation ids include two atlas-copy observations and are not additional graph entities. Forty-nine adjacent groups and six schema findings remain open.
+
+| Inventory | Assessed/classified | Complete draft representations | Evidenced obligations | Open obligations |
+|---|---|---|---|---|
+| Original: 537 sources | 537: 530 teaching, 7 routing | 519 | 6,816 / 6,827 | 11 |
+| Later: 550 sources | 550: 545 teaching, 5 routing | 528 | 7,285 / 7,302 | 17 |
+
+Data commit: `10493931d7aeb1c9ad6e4d32f0904e2b8c798195`. All 133 prior pending snapshots and all earlier cohort packets are preserved. The 202 current-root notes bindings are explicitly rebound; eight quotations are qualified to the source-supported T-cell denominator and their old text/hashes remain in the new receipt. The other 194 quotations remain exact. No other prior scientific grade is raised.
+
+### Earlier seventh-body checkpoint
+
 The [seventh scientific/custody checkpoint](scientific-authoring-bodies-07-2026-11-13/README.md) completely reads twenty more bodies (43,026 bytes, forty pinned entries): ten teaching and ten supporting. Two retained PI3K v1 native themes were separately frozen and viewed in full, adding four entries. Twenty-eight scientific requirements have thirty-eight exact anchors across nine existing owners. Domain/linker, membrane, pathway and inference boundaries remain explicit; no canonical data edit or date stamp is needed. Twenty-eight complete raw abstracts and selected annotations from two reviewed human UniProt entries retain actual depth, with no fresh whole-paper or Methods claim. Nine actual readers, static exports and schematic checks pass. Code/data and all 23,091 graph records remain equal to the prior full-gate runtime, explicitly reused. New audit files receive separate proof, parse, preservation and deterministic replay checks. Ordinary lesson grades and open source clauses remain unchanged; the broader goal is active.
 
 Original assets now total 682 teaching, 102 supporting and 1,104 unclassified; later assets total 681 teaching, 102 supporting and 1,105 unclassified. Both pins retain 1,888 assets. The retained v1 figures are separate from the earlier wider v2 layout and hosted/reader acceptance.

@@ -1,0 +1,295 @@
+{
+  "baseCommit": "a758b3d1526b99b03d5f82516069a4537717a21d",
+  "scope": "Existing source-first requirements frozen before current canonical field read. No replacement of the original requirement by easier claims. Primary reading and any closure are separate dispositions. All other open inputs retained unchanged.",
+  "rows": [
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "gitBlob": "9abde3cbf35e728a0b407250ae4de060f81e085d",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-022",
+        "requirement": "For Frank's CD3-targeted lentiviral-to-CD19-CAR card, retain immunodeficient mice with a human stem-cell-derived immune system and the actual vector, target and sampled compartments.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "Frank's abstract does not verify the specified stem-cell-derived model, complete vector and sampled compartments; no detailed new claim is adopted."
+        ]
+      }
+    },
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "gitBlob": "9abde3cbf35e728a0b407250ae4de060f81e085d",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-023",
+        "requirement": "Preserve Frank's human CD3-positive/CD45-positive T-cell gate, human CD3-negative/CD45-positive non-T gate and CD45-negative mouse compartment; sampled T-cell restriction is not whole-body exclusivity.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "The exact Frank T/non-T/mouse parent gates remain source-open because the accessible abstract does not carry them."
+        ]
+      }
+    },
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "gitBlob": "9abde3cbf35e728a0b407250ae4de060f81e085d",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-024",
+        "requirement": "Preserve Frank's blood peak at three to four weeks and return toward baseline after five, controls and conditions, per-animal CD19 B-cell baseline and variable duration.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "Frank's detailed peak/decline, controls and per-animal baseline are not verified by the accessible abstract and receive no coverage credit."
+        ]
+      }
+    },
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "sourceSha256": "9c96a6a7d61ae23369a68def1d03936210c0f8b41aa003e9e8ac43e98b249e89",
+      "gitBlob": "9abde3cbf35e728a0b407250ae4de060f81e085d",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-026",
+        "requirement": "Preserve Pfeiffer's day-seven compartment denominators: 30–50% of CD8 cells in abdominal fluid, 10–35% in spleen, 5–30% in blood and less than 0.5% of CD8-negative T cells.",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "in-vivo-car-t",
+            "version": "proposal-engineered-cell-therapy-root",
+            "field": "notes",
+            "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+            "supportingExcerpt": "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8 cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative cells entered the CAR-positive gate. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+            "passageSha256": "0f16038be4819a11e891367bd0ac5ab826d4b322aeb396a1a78e2bdc819fa601",
+            "explanation": "Day-seven compartment percentages are verified, but the CD8-negative parent population cannot yet be narrowed to T cells without the supplementary gate. 30224381: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+          }
+        ],
+        "remaining": [
+          "The source Results says CD8-negative cells; the more specific T-cell parent gate requires Appendix Fig S1A. Supplement retrieval timed out or returned HTML instead of a valid DOCX. Only the verified broader wording is carried."
+        ]
+      }
+    },
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "sourceSha256": "37013d7017f4d60866afa3b6799b278125f8ce9cbd7f5e0552f998436908cf9d",
+      "gitBlob": "72b6c384163908961551c3f15041f52f1085954f",
+      "point": {
+        "id": "residual-monitoring-S-002",
+        "requirement": "Verify 61 of 84 detected before treatment (73%) and 9% just before surgery, with the actual draw denominators and timing.",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+            "version": "proposal-residual-monitoring-guides-root",
+            "field": "summary",
+            "fieldSha256": "b7fd68ba549afcca1f2ebfc93746661dc090a967574586f91a96f3d0fa571ec2",
+            "supportingExcerpt": "This retrospective analysis used samples collected prospectively in I-SPY2 from 84 high-risk early breast-cancer patients receiving standard neoadjuvant chemotherapy with or without the AKT inhibitor MK-2206. The cohort included hormone receptor-positive/HER2-negative, HER2-positive and triple-negative disease. Personalised panels tracked up to 16 mutations from pretreatment tumour sequencing. Blood collection was planned before treatment, three weeks after starting paclitaxel, between chemotherapy blocks and after chemotherapy before surgery. The analysis used 291 of 336 potential plasma samples; availability differed by draw.\n\nThe authors reported ctDNA detection in 61 of 84 at baseline (73%), followed by 35%, 14% and 9% at successive draws. These are not four proportions with a common denominator of 84. In the joint post-treatment pathology and outcome analysis of 60 patients, all 17 with the specified pathological complete response were ctDNA-negative. Among 43 without that response, the six ctDNA-positive patients had greater distant-recurrence risk than the 37 negative patients: hazard ratio 10.4, 95% confidence interval 2.3 to 46.6. Comparing ctDNA-negative non-pCR patients with pCR patients gave hazard ratio 1.4, interval 0.15 to 13.5; that wide interval does not establish equivalence. Median survival follow-up was 4.8 years. This assay analysis did not randomise a blood-guided treatment strategy.",
+            "passageSha256": "962fbc6b486cb8d48ecb8c5e61f246fceb6fcc42634a611caf96e545753cdc7f",
+            "explanation": "61/84 baseline and the reported final 9% are supported; available samples vary and the exact final-draw denominator remains unverified, so this requirement stays partial. Source scope: Complete abstract plus targeted methods, availability and 60-person joint-analysis paragraphs. The exact final-draw denominator for the reported 9% remains unverified."
+          },
+          {
+            "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+            "version": "proposal-residual-monitoring-guides-root",
+            "field": "notes",
+            "fieldSha256": "e6e0d0398275b2b4f173fccb327fdc6286b72a0cb028d23fd07069cccf8849da",
+            "supportingExcerpt": "The assay required at least two detected somatic variants for a positive call and selected 12 to 16 targets per person, with a median of 16. A fixed personalised panel is therefore neither a complete tumour genome nor a one-molecule guarantee. The four blood collection moments and the available specimens belong beside each reported percentage; the joint 60-person analysis is a separate denominator from the whole cohort of 84. The MRI companion report asks how blood and functional tumour volume relate, rather than supplying another independent treatment-strategy trial.",
+            "passageSha256": "5730917376b5c35620792b1e68b17839086c03c4d6a67d527f99179709489197",
+            "explanation": "61/84 baseline and the reported final 9% are supported; available samples vary and the exact final-draw denominator remains unverified, so this requirement stays partial. Source scope: Targeted assay methods and joint-analysis passages plus complete abstracts. The 60-person joint analysis differs from the 84-person parent cohort; the MRI report is a companion analysis."
+          }
+        ],
+        "remaining": [
+          "Exact evaluable final-draw denominator for the reported 9% is not verified from raw Figure 3. The parent 84 and joint-analysis 60 must not replace it."
+        ]
+      }
+    },
+    {
+      "phase": "original",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "path": "wiki/education/modeling-tumor-response/verification-and-feedback-loops.md",
+      "sourceSha256": "e8ac13956c22c046511615af86324fb93b5c23e9c7182060af7b6bbfc9708ec9",
+      "gitBlob": "982e9ff651b094aacec64b1656e2d8e6559cec43",
+      "point": {
+        "id": "predicting-response-guides-PRG-57b2a02bc40174",
+        "requirement": "| Step | Count | What it teaches |\n| Assay and MRI agreed | 15 of 20 (75%; 95% confidence interval 53–89%) | Agreement, not accuracy against truth |",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "ex-vivo-tumour-fragments",
+            "version": "proposal-predicting-response-guides-root",
+            "field": "notes",
+            "fieldSha256": "a22a82dabf18b3999ce98a2b7dad9c938e922298ecd83582ceb00b9761874bbd",
+            "supportingExcerpt": "Ladan's real study began with 41 consenting people: three did not undergo biopsy and eight biopsies lacked tumour cells, leaving 30 adequate tumour biopsies. Six assays failed the prespecified baseline-apoptosis criterion and one was lost to infection. Of 23 usable results, three people did not receive the chemotherapy, leaving 20 clinical comparisons. The main-text counts are used here; Table 2's footnote instead mentions two people not receiving chemotherapy. The reported interval for 15/20 agreement was 53 to 89 percent, and the pilot's prespecified target was at least 55 percent. Reaching that target supports further investigation, not a demonstration that using the assay to choose care improves outcomes.",
+            "passageSha256": "bd91c3124de7e4e802369f9e5606b3df00746c973c9d09cbbd63ffd053a3e964",
+            "explanation": "Fifteen of twenty is seventy-five-percent agreement with MRI, and the reported interval bounds are fifty-three to eighty-nine percent. The article passage and typeset page do not specify its confidence level or construction; the guide claim of a ninety-five-percent level is withheld. Exact current passage read and manually compared. Older primary-source depth is inherited unless fresh named sources are explicitly listed. No whole-record or whole-source certification. Complete raw abstract read; 14 selected body paragraphs or explicitly narrowed excerpt read. No whole paper read end to end. 8 complete selected paragraphs read, not the full document. Agreement versus accuracy guidance is qualified to an imperfect reference. An inference or arithmetic result from stated premises and study-design distinctions, not a new empirical frequency, universal assay protocol or treatment recommendation."
+          },
+          {
+            "recordId": "ex-vivo-tumour-fragments",
+            "version": "proposal-predicting-response-guides-root",
+            "field": "notes",
+            "fieldSha256": "a22a82dabf18b3999ce98a2b7dad9c938e922298ecd83582ceb00b9761874bbd",
+            "supportingExcerpt": "The reported breast-study totals imply two sensitive dish calls with sensitive MRI, three sensitive dish calls with intermediate MRI, two intermediate dish calls with sensitive MRI and thirteen intermediate calls matching MRI. Thus 15/20 agree, including thirteen matches in the common intermediate category. Two of four MRI-sensitive tumours were called sensitive in the dish (50 percent), and two of five sensitive dish calls matched MRI sensitivity (40 percent). These are stated comparisons with an imperfect MRI outcome, not validated sensitivity or positive predictive value against known truth. FDA's March 2007 diagnostic-test guidance distinguishes agreement from accuracy when the comparator is not a reference standard. The study's sensitive category required more than 50 percent size reduction after four chemotherapy courses; it is not simply the standard RECIST partial-response category. Usable coverage is 23/30, about 77 percent; a matching clinical comparison was available for 15/30, or 50 percent, including failures and the untreated people in that denominator. Neither ratio measures postoperative benefit.",
+            "passageSha256": "0c9e0c1cb73d3255ba0d7f2c4a25d740becbe711b72f9ed6d56a0100405af08a",
+            "explanation": "Fifteen of twenty is seventy-five-percent agreement with MRI, and the reported interval bounds are fifty-three to eighty-nine percent. The article passage and typeset page do not specify its confidence level or construction; the guide claim of a ninety-five-percent level is withheld. Exact current passage read and manually compared. Older primary-source depth is inherited unless fresh named sources are explicitly listed. No whole-record or whole-source certification. Complete raw abstract read; 14 selected body paragraphs or explicitly narrowed excerpt read. No whole paper read end to end. 8 complete selected paragraphs read, not the full document. Agreement versus accuracy guidance is qualified to an imperfect reference. An inference or arithmetic result from stated premises and study-design distinctions, not a new empirical frequency, universal assay protocol or treatment recommendation."
+          }
+        ],
+        "remaining": [
+          "The claimed 95-percent confidence level and interval construction method were not verified in the matching JATS passages or typeset PDF page. Bounds are retained without a level."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "gitBlob": "817332f778defdb4c384b7bf9e3a223b1cbd30a6",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-022",
+        "requirement": "For Frank's CD3-targeted lentiviral-to-CD19-CAR card, retain immunodeficient mice with a human stem-cell-derived immune system and the actual vector, target and sampled compartments.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "Frank's abstract does not verify the specified stem-cell-derived model, complete vector and sampled compartments; no detailed new claim is adopted."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "gitBlob": "817332f778defdb4c384b7bf9e3a223b1cbd30a6",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-023",
+        "requirement": "Preserve Frank's human CD3-positive/CD45-positive T-cell gate, human CD3-negative/CD45-positive non-T gate and CD45-negative mouse compartment; sampled T-cell restriction is not whole-body exclusivity.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "The exact Frank T/non-T/mouse parent gates remain source-open because the accessible abstract does not carry them."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "gitBlob": "817332f778defdb4c384b7bf9e3a223b1cbd30a6",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-024",
+        "requirement": "Preserve Frank's blood peak at three to four weeks and return toward baseline after five, controls and conditions, per-animal CD19 B-cell baseline and variable duration.",
+        "status": "source-blocked",
+        "evidence": [],
+        "remaining": [
+          "Frank's detailed peak/decline, controls and per-animal baseline are not verified by the accessible abstract and receive no coverage credit."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "sourceSha256": "577fef895f04a3cf9f884fc9b4d3ea512f1e13f480a00e20e92ce15b3ed855a3",
+      "gitBlob": "817332f778defdb4c384b7bf9e3a223b1cbd30a6",
+      "point": {
+        "id": "engineered-cell-therapy-DEL-026",
+        "requirement": "Preserve Pfeiffer's day-seven compartment denominators: 30–50% of CD8 cells in abdominal fluid, 10–35% in spleen, 5–30% in blood and less than 0.5% of CD8-negative T cells.",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "in-vivo-car-t",
+            "version": "proposal-engineered-cell-therapy-root",
+            "field": "notes",
+            "fieldSha256": "7f727178ca5b0a2e65eba7d30a518cc71dac07756fa9a11dfc59132cda547f2e",
+            "supportingExcerpt": "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8 cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative cells entered the CAR-positive gate. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+            "passageSha256": "0f16038be4819a11e891367bd0ac5ab826d4b322aeb396a1a78e2bdc819fa601",
+            "explanation": "Day-seven compartment percentages are verified, but the CD8-negative parent population cannot yet be narrowed to T cells without the supplementary gate. 30224381: primary research report, complete abstract and targeted whole passages only; not end-to-end full text"
+          }
+        ],
+        "remaining": [
+          "The source Results says CD8-negative cells; the more specific T-cell parent gate requires Appendix Fig S1A. Supplement retrieval timed out or returned HTML instead of a valid DOCX. Only the verified broader wording is carried."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "sourceSha256": "64e175c1727d246a269842fe4ba940147377e5791a4d1286a4e3af5775a21743",
+      "gitBlob": "23c07d7d1c9429208a97523a08c36f98beab9b7c",
+      "point": {
+        "id": "residual-monitoring-S-002",
+        "requirement": "Verify 61 of 84 detected before treatment (73%) and 9% just before surgery, with the actual draw denominators and timing.",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+            "version": "proposal-residual-monitoring-guides-root",
+            "field": "summary",
+            "fieldSha256": "b7fd68ba549afcca1f2ebfc93746661dc090a967574586f91a96f3d0fa571ec2",
+            "supportingExcerpt": "This retrospective analysis used samples collected prospectively in I-SPY2 from 84 high-risk early breast-cancer patients receiving standard neoadjuvant chemotherapy with or without the AKT inhibitor MK-2206. The cohort included hormone receptor-positive/HER2-negative, HER2-positive and triple-negative disease. Personalised panels tracked up to 16 mutations from pretreatment tumour sequencing. Blood collection was planned before treatment, three weeks after starting paclitaxel, between chemotherapy blocks and after chemotherapy before surgery. The analysis used 291 of 336 potential plasma samples; availability differed by draw.\n\nThe authors reported ctDNA detection in 61 of 84 at baseline (73%), followed by 35%, 14% and 9% at successive draws. These are not four proportions with a common denominator of 84. In the joint post-treatment pathology and outcome analysis of 60 patients, all 17 with the specified pathological complete response were ctDNA-negative. Among 43 without that response, the six ctDNA-positive patients had greater distant-recurrence risk than the 37 negative patients: hazard ratio 10.4, 95% confidence interval 2.3 to 46.6. Comparing ctDNA-negative non-pCR patients with pCR patients gave hazard ratio 1.4, interval 0.15 to 13.5; that wide interval does not establish equivalence. Median survival follow-up was 4.8 years. This assay analysis did not randomise a blood-guided treatment strategy.",
+            "passageSha256": "962fbc6b486cb8d48ecb8c5e61f246fceb6fcc42634a611caf96e545753cdc7f",
+            "explanation": "61/84 baseline and the reported final 9% are supported; available samples vary and the exact final-draw denominator remains unverified, so this requirement stays partial. Source scope: Complete abstract plus targeted methods, availability and 60-person joint-analysis paragraphs. The exact final-draw denominator for the reported 9% remains unverified."
+          },
+          {
+            "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+            "version": "proposal-residual-monitoring-guides-root",
+            "field": "notes",
+            "fieldSha256": "e6e0d0398275b2b4f173fccb327fdc6286b72a0cb028d23fd07069cccf8849da",
+            "supportingExcerpt": "The assay required at least two detected somatic variants for a positive call and selected 12 to 16 targets per person, with a median of 16. A fixed personalised panel is therefore neither a complete tumour genome nor a one-molecule guarantee. The four blood collection moments and the available specimens belong beside each reported percentage; the joint 60-person analysis is a separate denominator from the whole cohort of 84. The MRI companion report asks how blood and functional tumour volume relate, rather than supplying another independent treatment-strategy trial.",
+            "passageSha256": "5730917376b5c35620792b1e68b17839086c03c4d6a67d527f99179709489197",
+            "explanation": "61/84 baseline and the reported final 9% are supported; available samples vary and the exact final-draw denominator remains unverified, so this requirement stays partial. Source scope: Targeted assay methods and joint-analysis passages plus complete abstracts. The 60-person joint analysis differs from the 84-person parent cohort; the MRI report is a companion analysis."
+          }
+        ],
+        "remaining": [
+          "Exact evaluable final-draw denominator for the reported 9% is not verified from raw Figure 3. The parent 84 and joint-analysis 60 must not replace it."
+        ]
+      }
+    },
+    {
+      "phase": "later",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "path": "wiki/education/guides/predicting-response-before-treating/03-verification-and-feedback-loops.md",
+      "sourceSha256": "cfba1be0c4699fabda5ba744a8768f96dbeb715423760028d93e0f708d521c1c",
+      "gitBlob": "829769d9fffe7a0691c022ead88cfbcc39f6d353",
+      "point": {
+        "id": "predicting-response-guides-PRG-890b2c7788dc04",
+        "requirement": "| Step | Count | What it teaches |\n| Assay and MRI agreed | 15 of 20 (75%; 95% confidence interval 53–89%) | Agreement with an imperfect comparator, not proof of accuracy |",
+        "status": "partial",
+        "evidence": [
+          {
+            "recordId": "ex-vivo-tumour-fragments",
+            "version": "proposal-predicting-response-guides-root",
+            "field": "notes",
+            "fieldSha256": "a22a82dabf18b3999ce98a2b7dad9c938e922298ecd83582ceb00b9761874bbd",
+            "supportingExcerpt": "Ladan's real study began with 41 consenting people: three did not undergo biopsy and eight biopsies lacked tumour cells, leaving 30 adequate tumour biopsies. Six assays failed the prespecified baseline-apoptosis criterion and one was lost to infection. Of 23 usable results, three people did not receive the chemotherapy, leaving 20 clinical comparisons. The main-text counts are used here; Table 2's footnote instead mentions two people not receiving chemotherapy. The reported interval for 15/20 agreement was 53 to 89 percent, and the pilot's prespecified target was at least 55 percent. Reaching that target supports further investigation, not a demonstration that using the assay to choose care improves outcomes.",
+            "passageSha256": "bd91c3124de7e4e802369f9e5606b3df00746c973c9d09cbbd63ffd053a3e964",
+            "explanation": "Fifteen of twenty is seventy-five-percent agreement with MRI, and the reported interval bounds are fifty-three to eighty-nine percent. The article passage and typeset page do not specify its confidence level or construction; the guide claim of a ninety-five-percent level is withheld. Exact current passage read and manually compared. Older primary-source depth is inherited unless fresh named sources are explicitly listed. No whole-record or whole-source certification. Complete raw abstract read; 14 selected body paragraphs or explicitly narrowed excerpt read. No whole paper read end to end. 8 complete selected paragraphs read, not the full document. Agreement versus accuracy guidance is qualified to an imperfect reference. An inference or arithmetic result from stated premises and study-design distinctions, not a new empirical frequency, universal assay protocol or treatment recommendation."
+          },
+          {
+            "recordId": "ex-vivo-tumour-fragments",
+            "version": "proposal-predicting-response-guides-root",
+            "field": "notes",
+            "fieldSha256": "a22a82dabf18b3999ce98a2b7dad9c938e922298ecd83582ceb00b9761874bbd",
+            "supportingExcerpt": "The reported breast-study totals imply two sensitive dish calls with sensitive MRI, three sensitive dish calls with intermediate MRI, two intermediate dish calls with sensitive MRI and thirteen intermediate calls matching MRI. Thus 15/20 agree, including thirteen matches in the common intermediate category. Two of four MRI-sensitive tumours were called sensitive in the dish (50 percent), and two of five sensitive dish calls matched MRI sensitivity (40 percent). These are stated comparisons with an imperfect MRI outcome, not validated sensitivity or positive predictive value against known truth. FDA's March 2007 diagnostic-test guidance distinguishes agreement from accuracy when the comparator is not a reference standard. The study's sensitive category required more than 50 percent size reduction after four chemotherapy courses; it is not simply the standard RECIST partial-response category. Usable coverage is 23/30, about 77 percent; a matching clinical comparison was available for 15/30, or 50 percent, including failures and the untreated people in that denominator. Neither ratio measures postoperative benefit.",
+            "passageSha256": "0c9e0c1cb73d3255ba0d7f2c4a25d740becbe711b72f9ed6d56a0100405af08a",
+            "explanation": "Fifteen of twenty is seventy-five-percent agreement with MRI, and the reported interval bounds are fifty-three to eighty-nine percent. The article passage and typeset page do not specify its confidence level or construction; the guide claim of a ninety-five-percent level is withheld. Exact current passage read and manually compared. Older primary-source depth is inherited unless fresh named sources are explicitly listed. No whole-record or whole-source certification. Complete raw abstract read; 14 selected body paragraphs or explicitly narrowed excerpt read. No whole paper read end to end. 8 complete selected paragraphs read, not the full document. Agreement versus accuracy guidance is qualified to an imperfect reference. An inference or arithmetic result from stated premises and study-design distinctions, not a new empirical frequency, universal assay protocol or treatment recommendation."
+          }
+        ],
+        "remaining": [
+          "The claimed 95-percent confidence level and interval construction method were not verified in the matching JATS passages or typeset PDF page. Bounds are retained without a level."
+        ]
+      }
+    }
+  ],
+  "frozenAt": "2026-11-13T21:57:25.685176+00:00"
+}

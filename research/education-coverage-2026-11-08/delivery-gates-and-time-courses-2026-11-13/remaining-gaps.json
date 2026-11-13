@@ -1,0 +1,76 @@
+{
+  "selectedOpenInstances": [
+    {
+      "phase": "original",
+      "path": "wiki/education/cellular-therapies/06-in-vivo-delivery.md",
+      "pointId": "engineered-cell-therapy-DEL-022",
+      "remaining": [
+        "The precise human stem-cell-derived immune-system model remains unverified in a raw Methods capture. General humanised-mouse wording does not close this model-specific requirement."
+      ],
+      "sourceDepth": "Complete raw abstract and actual Figure 7; raw Methods inaccessible through attempted routes."
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "pointId": "residual-monitoring-S-002",
+      "remaining": [
+        "The evaluable final presurgical T3 denominator and corresponding positive count behind the 9 percent remain unread. Overall cohort 84, joint outcome subset 60 and complete serial subset 58 are distinct denominators and are not used as replacements."
+      ],
+      "sourceDepth": "Complete raw abstract and four complete targeted NIH BioC paragraphs/caption; matching efetch article identity. No fresh figure pixels or full-PDF read."
+    },
+    {
+      "phase": "original",
+      "path": "wiki/education/modeling-tumor-response/verification-and-feedback-loops.md",
+      "pointId": "predicting-response-guides-PRG-57b2a02bc40174",
+      "remaining": [
+        "The confidence level and construction method for the reported 53 to 89 percent interval remain unverified. The read Results/Methods and reporting-summary pages do not supply them. A numerically matching independently calculated interval is not evidence of the authors' method."
+      ],
+      "sourceDepth": "Complete raw abstract, seven complete target paragraphs, full typeset page 3 and all three reporting-summary PDF pages. No whole-paper claim."
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/engineered-cell-therapy/04-in-vivo-delivery.md",
+      "pointId": "engineered-cell-therapy-DEL-022",
+      "remaining": [
+        "The precise human stem-cell-derived immune-system model remains unverified in a raw Methods capture. General humanised-mouse wording does not close this model-specific requirement."
+      ],
+      "sourceDepth": "Complete raw abstract and actual Figure 7; raw Methods inaccessible through attempted routes."
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/monitoring-residual-disease/index.md",
+      "pointId": "residual-monitoring-S-002",
+      "remaining": [
+        "The evaluable final presurgical T3 denominator and corresponding positive count behind the 9 percent remain unread. Overall cohort 84, joint outcome subset 60 and complete serial subset 58 are distinct denominators and are not used as replacements."
+      ],
+      "sourceDepth": "Complete raw abstract and four complete targeted NIH BioC paragraphs/caption; matching efetch article identity. No fresh figure pixels or full-PDF read."
+    },
+    {
+      "phase": "later",
+      "path": "wiki/education/guides/predicting-response-before-treating/03-verification-and-feedback-loops.md",
+      "pointId": "predicting-response-guides-PRG-890b2c7788dc04",
+      "remaining": [
+        "The confidence level and construction method for the reported 53 to 89 percent interval remain unverified. The read Results/Methods and reporting-summary pages do not supply them. A numerically matching independently calculated interval is not evidence of the authors' method."
+      ],
+      "sourceDepth": "Complete raw abstract, seven complete target paragraphs, full typeset page 3 and all three reporting-summary PDF pages. No whole-paper claim."
+    }
+  ],
+  "allOtherOpenPoints": {
+    "inputInstances": 34,
+    "selected": 12,
+    "closed": 6,
+    "retainedSelectedOpen": 6,
+    "unselectedOpenInstancesPreserved": 22,
+    "expectedRemainingOriginal": 11,
+    "expectedRemainingLater": 17
+  },
+  "specificAccessFailures": [
+    "Frank EPMC fullTextXML error, BioC no-result/help stub, NIH efetch metadata/abstract-only, publisher/mirror challenges or error pages. Actual Figure 7 was obtained separately from NIH CDN.",
+    "Magbanua EPMC fullTextXML error; NIH BioC and efetch returned real article text. Figure routes returned access challenges, and the university PDF request returned empty HTTP 202. No figure denominator adopted.",
+    "Pfeiffer direct appendix routes failed. Official Europe PMC supplementaryFiles API returned a valid ZIP containing the actual DOCX and source figures, resolving the gate-specific access gap.",
+    "Ladan old static-content host failed DNS; the current publisher media host returned a valid reporting-summary PDF. Its pages are images and were actually rendered/read."
+  ],
+  "confidenceIntervalBoundary": "Matching a 95 percent Wilson calculation numerically does not prove that level or method was used by the authors. No such inference is adopted.",
+  "fullDocumentLimits": "All journal bodies remain targeted-depth, not whole-paper reads. Prior source and review depths remain unchanged.",
+  "remainingCorpusWork": "Other scientific clauses, unclassified teaching/support assets, adjacent concepts and schema findings remain active. No full-corpus, expert, language, learner, main or live acceptance."
+}

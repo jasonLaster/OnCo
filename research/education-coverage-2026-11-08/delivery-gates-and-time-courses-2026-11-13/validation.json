@@ -1,0 +1,531 @@
+{
+  "dataCommit": "10493931d7aeb1c9ad6e4d32f0904e2b8c798195",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.39
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 28.77
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.98
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 308.48
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "head": "10493931d7aeb1c9ad6e4d32f0904e2b8c798195",
+    "graphCount": 23091,
+    "changedIds": [
+      "in-vivo-car-t"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allDataFilesMatchGatedBytes": true,
+    "allSelectedRecordsMatchActualReaders": true,
+    "postGateContentEdits": false
+  },
+  "fieldVerification": {
+    "graphCount": 23091,
+    "changedIds": [
+      "in-vivo-car-t"
+    ],
+    "unchangedRecords": 23090,
+    "changedFields": 3,
+    "modifiedNotes": 1,
+    "appendedNotes": 1,
+    "appendedSourceLinks": 1,
+    "dateChanges": 1,
+    "newIds": 0,
+    "newRegistrations": 0,
+    "newRelations": 0,
+    "unchangedOlderNotes": 18,
+    "priorNoteOrderPreserved": true,
+    "onePfeifferParagraphQualifiedByActualAppendix": true,
+    "oldLinksPreserved": true,
+    "nestedGraphNodesUnchanged": true,
+    "allRenderedRecordsEqualCurrentGraph": true,
+    "dataFiles": [
+      {
+        "file": "src/data/technologies.ts",
+        "class": "data",
+        "sha256": "258e4b3feb049c67f7771c5e6df411d4eb06b8b5a6974b50b7ebb97cb5ae05fb"
+      }
+    ]
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "in-vivo-car-t",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/in-vivo-car-t/",
+        "sha256": "527e7a44ee96923f21c4e773dc7a84cd530aff269cbdb84dc6a5e2ad49ec0bba",
+        "bytes": 79826,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "state": "registered-local-draft-graph",
+        "route": "/key-papers/paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021/",
+        "sha256": "b029f88157aba33271119e38a8480dd068181d96a69e99e4e6b6a16b4001f1b1",
+        "bytes": 40416,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/ex-vivo-tumour-fragments/",
+        "sha256": "ec9936f3a19b84c1d2b2bc5744abf4b33ac87eec1485f7a8a3bf2f6f497753f0",
+        "bytes": 28791,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ]
+  },
+  "exactReaderAnchors": {
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "in-vivo-car-t:notes:19",
+        "recordId": "in-vivo-car-t",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "in-vivo-car-t:notes:8",
+        "recordId": "in-vivo-car-t",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:summary",
+        "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021:notes:0",
+        "recordId": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "ex-vivo-tumour-fragments:notes:4",
+        "recordId": "ex-vivo-tumour-fragments",
+        "actualEntityDetailContainsExactPassage": true
+      },
+      {
+        "anchorId": "ex-vivo-tumour-fragments:notes:5",
+        "recordId": "ex-vivo-tumour-fragments",
+        "actualEntityDetailContainsExactPassage": true
+      }
+    ],
+    "exactParagraphs": 6,
+    "scope": "Actual EntityDetail SSR text; no browser, hydration, hosted, accessibility or expert acceptance claim."
+  },
+  "staticExports": {
+    "records": 3,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "in-vivo-car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 14,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 15,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 16,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 17,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 18,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 19,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "in-vivo-car-t.json",
+        "bytes": 21817,
+        "sha256": "d57160e4824de0d99144fbd4d070eedc326d32d3e1b61e686f6f69cc477f2005"
+      },
+      {
+        "file": "in-vivo-car-t.md",
+        "bytes": 18691,
+        "sha256": "6a05aad56762f9af173d3721a0742ec3d941e6b0f2ed4e7fea13a7a17f6f2c30"
+      },
+      {
+        "file": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021.json",
+        "bytes": 6343,
+        "sha256": "01f3f6836f74c54e0fe6b1fee5989dfd56284b09f34c79b6f8ff98b2510db89a"
+      },
+      {
+        "file": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021.md",
+        "bytes": 5513,
+        "sha256": "99978359e284fbdd8f2ffab8344e84f7d488c23b24f01b39267874c03eceeb1c"
+      },
+      {
+        "file": "ex-vivo-tumour-fragments.json",
+        "bytes": 6582,
+        "sha256": "b4a217165188f25c129bd96d62f4783e0aa2872e5816b635473cc883b29b0b8f"
+      },
+      {
+        "file": "ex-vivo-tumour-fragments.md",
+        "bytes": 6310,
+        "sha256": "54b8ea655b2c5f9f956ae4c4f29285ef654c6c04a7d483c8355060e09b4e72c5"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 27,
+    "texts": 9,
+    "fallbacks": 18,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "in-vivo-car-t",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vivo-car-t",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "paper-magbanua-ispy2-ctdna-neoadjuvant-ann-oncol-2021",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ex-vivo-tumour-fragments",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "zeroSecretFindings": true,
+  "scope": "Actual registered graph, EntityDetail SSR, summary selectors and static JSON/Markdown/OpenAPI/context. Four full gates match committed data bytes. No Next production build, browser, hydration, hosted, expert, independent or language acceptance."
+}

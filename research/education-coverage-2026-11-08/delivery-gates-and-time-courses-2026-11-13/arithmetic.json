@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "expression": "15/20",
+      "value": 0.75,
+      "meaning": "Reported Ladan agreement, not validated truth accuracy."
+    },
+    {
+      "expression": "61/84",
+      "value": 0.7261904761904762,
+      "meaning": "Baseline Magbanua fraction only; not the final-draw denominator."
+    },
+    {
+      "expression": "84*4",
+      "value": 336,
+      "meaning": "Potential samples; raw Results reports 291 successful analyses. Not a count of final draws."
+    }
+  ],
+  "allPass": true,
+  "noConfidenceMethodImputed": true,
+  "noUnobservedDenominatorInvented": true
+}

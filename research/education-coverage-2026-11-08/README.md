@@ -8,6 +8,14 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
+The [delivery source-residual checkpoint](delivery-gates-and-time-courses-2026-11-13/README.md) closes three existing scientific requirements at each pin. Pfeiffer’s actual appendix establishes the T-cell parent gate; Frank’s actual Figure 7 supports the sampled compartments, blood time courses and per-animal baseline. One existing delivery owner receives one qualified paragraph, one appended paragraph, one link and one checked date. The specified stem-cell-derived model, final ctDNA-draw denominator and confidence-interval level/method remain open. Six source versions and 73 signatures are verified, with targeted reading rather than a fresh whole-lesson or whole-paper assessment.
+
+Four complete abstracts, sixteen complete target paragraphs or legends, three source figures and four PDF pages retain their exact reading depth. Three actual readers, six exact field anchors, three JSON exports and 33 Markdown passages pass. Typecheck, lint, validate and the full suite pass: 293 files, 3,101 tests, two skips. All 23,091 committed graph fingerprints match the gate inputs; only the intended owner differs from the preceding checkpoint. The broader goal remains active, with no merge, main/live, expert, learner or language acceptance.
+
+Original obligations now have 6,816 of 6,827 evidenced and eleven open; later obligations have 7,285 of 7,302 evidenced and seventeen open. Complete draft source representations remain 519 original and 528 later because the delivery page still has an open model clause. Asset classifications remain 682 teaching/102 supporting/1,104 unclassified original, and 681/102/1,105 later, with 1,888 per pin.
+
+### Earlier seventh-body checkpoint
+
 The [seventh scientific/custody checkpoint](scientific-authoring-bodies-07-2026-11-13/README.md) completely reads twenty more bodies (43,026 bytes, forty pinned entries): ten teaching and ten supporting. Two retained PI3K v1 native themes were separately frozen and viewed in full, adding four entries. Twenty-eight scientific requirements have thirty-eight exact anchors across nine existing owners. Domain/linker, membrane, pathway and inference boundaries remain explicit; no canonical data edit or date stamp is needed. Twenty-eight complete raw abstracts and selected annotations from two reviewed human UniProt entries retain actual depth, with no fresh whole-paper or Methods claim. Nine actual readers, static exports and schematic checks pass. Code/data and all 23,091 graph records remain equal to the prior full-gate runtime, explicitly reused. New audit files receive separate proof, parse, preservation and deterministic replay checks. Ordinary lesson grades and open source clauses remain unchanged; the broader goal is active.
 
 Original assets now total 682 teaching, 102 supporting and 1,104 unclassified; later assets total 681 teaching, 102 supporting and 1,105 unclassified. Both pins retain 1,888 assets. The retained v1 figures are separate from the earlier wider v2 layout and hosted/reader acceptance.
@@ -267,7 +275,19 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-multiomics-course-frozen-peer.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-multiomics-course-summary-consumers.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-original-mrd-and-pathways-root.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-original-mrd-and-pathways-summary-consumers.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-original-mrd-and-pathways-summary-consumers.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-autophagy-atlas-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-autophagy-atlas-copy.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-01-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-02-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-03-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-original-overviews-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-normal-tissue-vascular-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-04-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-05-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-06-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-07-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-delivery-source-residuals-03-root.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

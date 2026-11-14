@@ -7351,7 +7351,7 @@ export const tldr_zh: Record<string, string> = {
   celmods: "lenalidomide的新一代同类药，使细胞的清除机器更彻底地摧毁骨髓瘤蛋白Ikaros和Aiolos，在老药失效后仍然有效。",
   "ctc-capture": "从血样中“钓出”完整癌细胞进行计数或研究；其数量在乳腺癌、前列腺癌和结直肠癌中具有预后意义。",
   "dendritic-cell-vaccines": "用患者自身负载肿瘤蛋白的抗原呈递细胞制成的疫苗；用于前列腺癌的sipuleucel-T是首个获批产品，新版本正在脑癌等癌症中测试。",
-  "gamma-delta-t-cell-therapy": "由一种罕见T细胞构建的细胞疗法，这类细胞无需组织配型即可识别受压的癌细胞，是现货型产品的候选。",
+  "gamma-delta-t-cell-therapy": "这类疗法使用特定的 γδ T 细胞。不同细胞及其受体的识别方式可能不同，因此需要根据具体产品评估配型要求、安全性和疗效。",
   "gamma-secretase-inhibitors": "阻断激活Notch信号的酶的药物；nirogacestat于2023年成为首个获批药物，用于硬纤维瘤——一种罕见但破坏性强的结缔组织增生。",
   "gene-expression-prognostic-assays": "测量切除肿瘤中一组基因以估计复发可能性的检测，低评分患者可以安全地免除化疗。",
   "genetically-engineered-mouse-models": "携带与人类癌症相同突变的小鼠，使肿瘤在免疫系统完整的情况下于正确组织中发生；KPC胰腺癌模型最为著名。",

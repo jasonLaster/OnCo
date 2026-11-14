@@ -427,7 +427,7 @@ export const simpleO: Record<string, string> = {
   "drug-resistance-dynamics": "A mathematical model explores how resistant cells can change. Its predictions depend on growth, mutation, shared resistance and drug exposure assumptions.",
   "evolutionary-game-theory-cancer": "Evolutionary game theory treats cancer cells as players whose success depends on their neighbours, helping predict how a tumour's mix of cells shifts under treatment.",
   "gamma-probes-dose-calibrators": "Gamma probes are pen-sized radiation detectors that click when a surgeon nears a radioactive lymph node, and dose calibrators check every dose before injection.",
-  "gamma-delta-t-cell-therapy": "Gamma-delta T cell therapy uses a rare T-cell type that recognises stressed cancer cells without tissue matching, making it a candidate for off-the-shelf products.",
+  "gamma-delta-t-cell-therapy": "This therapy uses a type of T cell called gamma-delta. Different cells and added receptors can recognise different targets. Each product needs its own checks for matching, safety and benefit.",
   "gamma-secretase-inhibitors": "Gamma-secretase inhibitors block the enzyme that activates Notch signalling, and nirogacestat became the first approved, in 2023, for desmoid tumours.",
   "sterile-injectable-generics-manufacturing": "Cisplatin, carboplatin and most old chemotherapy drugs are cheap sterile vials made by very few factories, and in 2023 one plant stopping left US centres short for months.",
   "genetically-engineered-mouse-models": "Genetically engineered mouse models carry the same mutations as human cancers, so tumours arise in the right tissue in a mouse with a working immune system.",

@@ -1072,27 +1072,33 @@ export const termsJargon: TermInput[] = [
   t({ id: "bridging-therapy", name: "Bridging therapy", category: "Treatment jargon", aka: ["bridging", "bridging chemotherapy", "bridging radiotherapy", "bridge to CAR-T", "bridge to transplant", "bridged", "holding therapy"], tldr: "Treatment given to keep a fast-growing cancer in check during the weeks between deciding on CAR-T (or transplant) and actually receiving it, while the cells are being manufactured or a donor found.", summary: "Aggressive lymphomas and leukaemias can progress or cause organ damage in the 3-6 weeks it takes to manufacture autologous CAR-T cells, so patients often receive bridging chemotherapy, steroids, radiotherapy to bulky sites, or bispecific antibodies; response to bridging and low disease burden at infusion predict better CAR-T outcomes and less CRS. Bridging must avoid drugs that harm T cells before apheresis and be timed so its toxicity has cleared before lymphodepletion. Its necessity is a strong argument for faster manufacturing and off-the-shelf allogeneic products; in the ZUMA-7 trial design, permitting bridging chemotherapy was a point of methodological debate.", wikipedia: W("Chimeric_antigen_receptor_T_cell"), technologies: ["car-t", "allogeneic-cell-therapy"], trials: ["zuma-7"], related: ["vein-to-vein-time", "lymphodepletion", "apheresis", "salvage-therapy"], sections: ["cell-therapy"] }),
   t({ id: "vein-to-vein-time", name: "Vein-to-vein time and manufacturing slots", category: "Treatment jargon", aka: ["vein-to-vein", "vein to vein", "manufacturing time", "manufacturing slot", "manufacturing slots", "turnaround time", "manufacturing failure", "out-of-specification", "OOS product", "slot allocation", "chain of identity", "chain of custody", "cryopreserved product", "fresh product", "manufacturing failures"], tldr: "The time from collecting a person’s cells to infusing their prepared cell product. It includes transport, testing and clinical readiness as well as manufacture.", summary: "Vein-to-vein time is the interval from collection of a person’s cells to infusion of the prepared cell product. Collection, transport, manufacture, testing, release and clinical readiness contribute to that interval; culture time alone does not describe it. The definition, starting event and analysis population should be stated when comparing programmes.\n\nFDA’s 2024 CAR T-cell guidance recommends planning for manufacturing delays or failures, reassessing eligibility before administration and analysing failure to reach treatment as a possible feasibility endpoint. A product that does not meet its release criteria and a person who becomes unable to receive treatment are different events. Neither a generic turnaround estimate nor a cross-trial waiting-time difference by itself establishes why clinical outcomes differ.", wikipedia: W("Chimeric_antigen_receptor_T_cell"), technologies: ["car-t", "closed-automated-cell-manufacturing", "point-of-care-cell-manufacturing", "cell-therapy-orchestration-software"], related: ["apheresis", "bridging-therapy", "lymphodepletion"], sections: ["cell-therapy"] ,
     notes: [
-  "Count the pathway as well as the interval. A collection, a completed lot, a lot meeting its requirements and an infusion are different events. In the historical gavo-cel phase-I report, 48 participants underwent apheresis intending treatment, 32 were infused and 30 were response-evaluable. Those denominators describe different stages; the differences cannot all be called manufacturing failure. Delivery formats can change the process, but transport, quality decisions, clinical readiness and access still require evidence for the actual programme."
-],
+      "Count the pathway as well as the interval. A collection, a completed lot, a lot meeting its requirements and an infusion are different events. In the historical gavo-cel phase-I report, 48 participants underwent apheresis intending treatment, 32 were infused and 30 were response-evaluable. Those denominators describe different stages; the differences cannot all be called manufacturing failure. Delivery formats can change the process, but transport, quality decisions, clinical readiness and access still require evidence for the actual programme.",
+      "A timing comparison needs its start and end events: collection-to-infusion, order-to-infusion, enrolment-to-infusion, receipt-to-release and culture duration are different clocks. Use elapsed calendar days and state how repeat collections and the spread are handled. In a fictional workflow only, collection and culture begin on day 0, culture ends on day 7, release occurs on day 12 and infusion on day 18. The seven-day culture interval is inside an eighteen-day collection-to-infusion interval; it does not describe the whole pathway.",
+      "A separate invented cohort starts with ten people at collection: eight reach infusion and two never do. A timing summary among infused people cannot assign an infusion time to those two. Report their follow-up window, reasons and outcomes separately rather than treating every failure to reach treatment as manufacturing failure. Neither these invented dates nor a cohort median promises the next person's schedule."
+    ],
     links: [
-  {
-    "label": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
-  },
-  {
-    "label": "Mesothelin-targeting T cell receptor fusion construct cell therapy in refractory solid tumors: phase 1/2 trial interim results. (2023)",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/37501016/"
-  },
-  {
-    "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
-    "url": "https://www.fda.gov/media/156896/download"
-  },
-  {
-    "label": "NCI: CAR T Cells, Engineering Patients’ Immune Cells",
-    "url": "https://www.cancer.gov/about-cancer/treatment/research/car-t-cells"
-  }
-],
-    asOf: "2026-11-12",
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+      },
+      {
+        "label": "Mesothelin-targeting T cell receptor fusion construct cell therapy in refractory solid tumors: phase 1/2 trial interim results. (2023)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37501016/"
+      },
+      {
+        "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+        "url": "https://www.fda.gov/media/156896/download"
+      },
+      {
+        "label": "NCI: CAR T Cells, Engineering Patients’ Immune Cells",
+        "url": "https://www.cancer.gov/about-cancer/treatment/research/car-t-cells"
+      },
+      {
+        "label": "NCI: T-cell transfer therapy, collection, laboratory expansion and clinical preparation",
+        "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+      }
+    ],
+    asOf: "2026-11-14",
   }),
   t({ id: "antigen-escape", name: "Antigen escape (antigen loss, lineage switch)", category: "Treatment jargon", aka: ["antigen escape", "antigen loss", "antigen-negative relapse", "CD19-negative relapse", "CD19-negative", "BCMA-negative", "BCMA loss", "target loss", "target downregulation", "antigen downregulation", "antigen-low", "lineage switch", "lineage plasticity", "trogocytosis", "antigen heterogeneity", "antigen-negative"], tldr: "When a cancer treated with a therapy aimed at one surface marker (CD19, BCMA, HER2) survives by shedding that marker, so the drug has nothing to grab. About a third of relapses after CD19 CAR-T are antigen-negative.", summary: "Mechanisms include mutations or splice variants that remove the epitope, deletion of the gene (TNFRSF17/BCMA biallelic loss in myeloma), lineage switch (B-ALL relapsing as myeloid leukaemia under CD19 pressure), trogocytosis (CAR-T cells stripping antigen off tumour cells), and pre-existing antigen-low subclones. Responses are dual-targeting CARs (CD19/CD22, BCMA/GPRC5D), sequencing to a different antigen (GPRC5D or FcRH5 after BCMA), logic-gated CARs and antigen-independent strategies. It is distinct from T-cell-intrinsic failure (exhaustion, poor persistence), which is the other main cause of relapse, and flow cytometry at relapse distinguishes the two.", wikipedia: W("Chimeric_antigen_receptor_T_cell"), technologies: ["car-t", "t-cell-engager", "logic-gated-therapeutics"], targets: ["cd19", "bcma"], related: ["t-cell-exhaustion-term", "resistance", "flow-cytometry"], sections: ["cell-therapy"] }),
   t({

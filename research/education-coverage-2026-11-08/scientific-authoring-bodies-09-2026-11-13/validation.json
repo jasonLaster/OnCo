@@ -1,0 +1,2691 @@
+{
+  "dataCommit": "0596ecf31f6973c871643c74f4ad25586c8d3798",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.11
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.24
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.96
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 311.82
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "initialGateFailure": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.38
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.35
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.28
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 1,
+        "seconds": 312.31
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "calendarRepairSource": {
+    "reason": "An unchanged baseline PDUFA event entered the past-events ratchet at UTC2026-11-14; the failure, old data bytes and original run are preserved.",
+    "actualUTCCheck": "2026-11-14",
+    "localCohortDate": "2026-11-13",
+    "recordId": "ivonescimab",
+    "source": {
+      "id": "CALENDAR-PDF",
+      "url": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf",
+      "httpStatus": "200",
+      "rawFile": "primary-raw/CALENDAR-PDF.raw",
+      "sha256": "08826142524e5c5ae5525cd0315dfd681e961944404ae2e350f2c9410ba599f8",
+      "bytes": 225132,
+      "pdf": true
+    },
+    "sourceReadingDepth": "Original sponsor PDF page3 freshly viewed in full; date/filing paragraph and its primary-versus-later OS context read. Not an FDA decision, whole-PDF read or re-verification of all retained trial/China-label statements.",
+    "targetDateIsNotApproval": true,
+    "unavailableAlternates": [
+      {
+        "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/",
+        "httpStatus": "403",
+        "sha256": "8180cbbc1548ca687763e9309767c9f38b781627ee803394e0e3a6382b3220c2",
+        "rawFile": "primary-raw/CALENDAR.raw",
+        "textFile": "primary-raw/CALENDAR.txt",
+        "readDepth": "HTTP403 Cloudflare block; no source body or passage read and no support",
+        "passages": [],
+        "reason": "Unchanged baseline PDUFA event entered the past-events set at UTC midnight, 2026-11-14."
+      },
+      {
+        "id": "CALENDAR-SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+        "httpStatus": "403",
+        "rawFile": "primary-raw/CALENDAR-SEC.raw",
+        "sha256": "c59a3008516f168a042285d0cf33ce99564d08048a66eb7249c12b41e77b8934",
+        "bytes": 4819,
+        "pdf": false
+      }
+    ],
+    "fields": [
+      {
+        "field": "notes",
+        "file": "src/data/drugs.ts",
+        "before": [],
+        "after": [
+          "Summit's 4 November 2026 update reports that FDA accepted its application for filing in January 2026 for ivonescimab with chemotherapy after EGFR-directed treatment in EGFR-mutated advanced non-squamous lung cancer. The sponsor gives 14 November 2026 as the PDUFA goal action date. Acceptance for review and a target action date are separate from an approval decision; the deadline itself does not establish an approved US indication."
+        ],
+        "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterSha256": "ed0c76213b85a9bd73fcd9a2110b360a8fe4b98f0af0bdaa8c666cdbbd9f23f4"
+      },
+      {
+        "field": "links",
+        "file": "src/data/drugs.ts",
+        "before": [
+          {
+            "label": "ClinicalTrials.gov: trials of Ivonescimab",
+            "url": "https://clinicaltrials.gov/search?intr=AK112"
+          }
+        ],
+        "after": [
+          {
+            "label": "ClinicalTrials.gov: trials of Ivonescimab",
+            "url": "https://clinicaltrials.gov/search?intr=AK112"
+          },
+          {
+            "label": "Summit: November 2026 filing and PDUFA update (sponsor report)",
+            "url": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+          }
+        ],
+        "beforeSha256": "f5106351de69a2661df87d338b3eaa84eb959c8bed03e0df1622d13361f656b1",
+        "afterSha256": "ed09ce8653f20a415b2cdb82a4b615b2149e76b2beeedc3131f9762f699cb7ba"
+      },
+      {
+        "field": "asOf",
+        "file": "src/data/drugs.ts",
+        "before": "2026-09-04",
+        "after": "2026-11-14",
+        "beforeSha256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      },
+      {
+        "field": "regulatoryEvents",
+        "file": "src/data/drug-depth.ts",
+        "before": [
+          {
+            "date": "2024-05-24",
+            "type": "approval",
+            "region": "China",
+            "note": "EGFR-mutant NSCLC after TKI, with chemotherapy (HARMONi-A)",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          },
+          {
+            "date": "2025-04",
+            "type": "approval",
+            "region": "China",
+            "note": "First-line PD-L1+ NSCLC (HARMONi-2)",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          },
+          {
+            "date": "2026-01",
+            "type": "filing",
+            "region": "US",
+            "note": "BLA submitted by Summit for EGFR-mutant NSCLC after TKI (HARMONi)",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          },
+          {
+            "date": "2026-11-14",
+            "type": "pdufa",
+            "region": "US",
+            "note": "PDUFA target date",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          }
+        ],
+        "after": [
+          {
+            "date": "2024-05-24",
+            "type": "approval",
+            "region": "China",
+            "note": "EGFR-mutant NSCLC after TKI, with chemotherapy (HARMONi-A)",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          },
+          {
+            "date": "2025-04",
+            "type": "approval",
+            "region": "China",
+            "note": "First-line PD-L1+ NSCLC (HARMONi-2)",
+            "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+          },
+          {
+            "date": "2026-01",
+            "type": "filing",
+            "region": "US",
+            "note": "FDA accepted for filing Summit's BLA for EGFR-mutated non-squamous NSCLC after EGFR TKI therapy (sponsor report)",
+            "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+          },
+          {
+            "date": "2026-11-14",
+            "type": "pdufa",
+            "region": "US",
+            "note": "Sponsor-reported FDA goal action date for the BLA; a review deadline, not an approval decision",
+            "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+          }
+        ],
+        "beforeSha256": "5ae1ba1e549d0114a9af2060c0081b3d98ea0adee13952b96e104b6005ce2698",
+        "afterSha256": "cc775d7dcf14c851009f86de6531cacc1693d4601f75a5b69ee7ea9a8c996b90"
+      }
+    ],
+    "olderFieldScope": "All untouched historical clinical assertions retain their earlier scope. The generic FDA index on the two older China event rows was not checked as a China-label source; queued separately. No efficacy number or approval status changed.",
+    "assetRequirementCredit": 0
+  },
+  "wholeGraph": {
+    "baseCommit": "579dfefcd172dca79d4c84b1aa0d18cc4058f33b",
+    "lastDataCommit": "0596ecf31f6973c871643c74f4ad25586c8d3798",
+    "graphRecords": 23091,
+    "authoredOwnersChanged": 6,
+    "derivedRecordChanges": 1,
+    "changedIds": [
+      "2026",
+      "cell-membrane",
+      "cellular-compartments",
+      "ivonescimab",
+      "mutation",
+      "nonsense-mediated-decay",
+      "rna-splicing"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allSelectedRecordsEqualActualReaders": true,
+    "currentEntitySchemaParses": 16,
+    "currentDataEdits": 6,
+    "newIds": 0,
+    "newFullGateRun": true,
+    "priorFloorScannerAndTestChanges": 0,
+    "committedDataFileClasses": [
+      {
+        "file": "src/data/drug-depth.ts",
+        "class": "data"
+      },
+      {
+        "file": "src/data/drugs.ts",
+        "class": "data"
+      },
+      {
+        "file": "src/data/education-biology-evidence.ts",
+        "class": "data"
+      },
+      {
+        "file": "src/data/mechanisms.ts",
+        "class": "data"
+      },
+      {
+        "file": "src/data/terms-basics.ts",
+        "class": "data"
+      }
+    ],
+    "gates": {
+      "results": [
+        {
+          "name": "typecheck",
+          "exitCode": 0,
+          "seconds": 3.11
+        },
+        {
+          "name": "lint",
+          "exitCode": 0,
+          "seconds": 29.24
+        },
+        {
+          "name": "validate",
+          "exitCode": 0,
+          "seconds": 1.96
+        },
+        {
+          "name": "full-suite",
+          "exitCode": 0,
+          "seconds": 311.82
+        }
+      ],
+      "unchangedDuringGates": true,
+      "workerHeapMiB": 8192,
+      "fullSuiteMaxWorkers": 2
+    },
+    "scope": "Fresh four-gate run on byte-identical committed data. Six authored records and one automatically derived year view change; all other graph fingerprints preserved. Initial calendar-triggered failure and raw sponsor source are recorded separately. No merge, deployment, hosted, browser, independent or language acceptance."
+  },
+  "fieldVerification": {
+    "graphRecords": 23091,
+    "changedIds": [
+      "2026",
+      "cell-membrane",
+      "cellular-compartments",
+      "ivonescimab",
+      "mutation",
+      "nonsense-mediated-decay",
+      "rna-splicing"
+    ],
+    "derivedYearChanges": [
+      {
+        "id": "2026",
+        "derivedFrom": "ivonescimab.regulatoryEvents",
+        "changedEvents": [
+          {
+            "index": 562,
+            "before": "BLA submitted by Summit for EGFR-mutant NSCLC after TKI (HARMONi)",
+            "after": "FDA accepted for filing Summit's BLA for EGFR-mutated non-squamous NSCLC after EGFR TKI therapy (sponsor report)"
+          },
+          {
+            "index": 713,
+            "before": "PDUFA target date",
+            "after": "Sponsor-reported FDA goal action date for the BLA; a review deadline, not an approval decision"
+          }
+        ]
+      }
+    ],
+    "changedFields": [
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "beforeSha256": "0791f60a46b3436d873430ac14eba0fcedb02eb76620dd58b3c45b64e7bffaeb",
+        "afterSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e"
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "links",
+        "beforeSha256": "f2229168c08c46ba61ea87dbe3e9e5f4f73f48ace629997ee756a20fa5565461",
+        "afterSha256": "f4f604f0de128bb32b31cf3d04c60289199ef0bc583591e4950e61d89c7ea91a"
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "beforeSha256": "515241bda30d6aeb5c094abe744af96aa4caa7edf6ff7b9a2b7f0da3c1c0971e",
+        "afterSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4"
+      },
+      {
+        "id": "mutation",
+        "field": "notes",
+        "beforeSha256": "4dc29ace795854ee7f8e70dd48f11c3075d7b881c73ac86b59a7a473de9ba637",
+        "afterSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8"
+      },
+      {
+        "id": "mutation",
+        "field": "asOf",
+        "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "beforeSha256": "1214f2270df90c50cab1af50aa67ac80944c972fd28e4629702ef6e8bd37b5e6",
+        "afterSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f"
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "asOf",
+        "beforeSha256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+        "afterSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d"
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "beforeSha256": "7b3ae8d87b48b34158f80fba5dd96e4b87008e52e107553e9d749726753df2b7",
+        "afterSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f"
+      },
+      {
+        "id": "ivonescimab",
+        "field": "notes",
+        "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterSha256": "ed0c76213b85a9bd73fcd9a2110b360a8fe4b98f0af0bdaa8c666cdbbd9f23f4"
+      },
+      {
+        "id": "ivonescimab",
+        "field": "links",
+        "beforeSha256": "f5106351de69a2661df87d338b3eaa84eb959c8bed03e0df1622d13361f656b1",
+        "afterSha256": "ed09ce8653f20a415b2cdb82a4b615b2149e76b2beeedc3131f9762f699cb7ba"
+      },
+      {
+        "id": "ivonescimab",
+        "field": "asOf",
+        "beforeSha256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      },
+      {
+        "id": "ivonescimab",
+        "field": "regulatoryEvents",
+        "beforeSha256": "5ae1ba1e549d0114a9af2060c0081b3d98ea0adee13952b96e104b6005ce2698",
+        "afterSha256": "cc775d7dcf14c851009f86de6531cacc1693d4601f75a5b69ee7ea9a8c996b90"
+      }
+    ],
+    "priorNotesLinksAndOtherFieldsPreserved": true,
+    "allOtherGraphRecordsUnchanged": true,
+    "schemaParses": 16,
+    "allReaderSnapshotsEqual": true,
+    "newIds": 0,
+    "newRegistrations": 0
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with no pending-reader overlay. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "emt",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/emt/",
+        "sha256": "87fb3fc9d53f016dd6dcd8af8d803ea51ee89738e44b2656a8f42898e0cfa511",
+        "bytes": 60148,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-cycle",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-cycle/",
+        "sha256": "dcf682961724bddfd880110617df26f254965efa0613a63b8cbaa5126f302ce6",
+        "bytes": 40074,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/epithelium-and-stroma/",
+        "sha256": "352128faef0ea1f0531ed6347877fd49ce550e471797f0941223ea6043eddac6",
+        "bytes": 24483,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-division",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-division/",
+        "sha256": "c304b82113643b14a5fe789375966411d9aae87becf96ec3b8a0ace55a8d776a",
+        "bytes": 27253,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-lineage-and-state/",
+        "sha256": "ce6c3cafee43e24e9ffda36825b76e4f71d67f06ce5fa093820d9114b852a979",
+        "bytes": 30829,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cellular-compartments",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cellular-compartments/",
+        "sha256": "2fa700e994c4a752f8348946dbd44dac8d3147f42630df5576f2c5fbeaa848e7",
+        "bytes": 24147,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-membrane",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-membrane/",
+        "sha256": "40da31b34b58e5a15b7998eb6e85ec2f1a09a0c896aec518039aff281eaa8114",
+        "bytes": 23836,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "epigenetic-marks",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/epigenetic-marks/",
+        "sha256": "3f8cfdb215fdd5e029f1ea5ab956ed47274982a1fd12a1abe90214382bbc68c4",
+        "bytes": 26236,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "germline-vs-somatic",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/germline-vs-somatic/",
+        "sha256": "562e84eb0e532eecd57ed99f655478eb474d24ecef6f972a7ad8024991fa1079",
+        "bytes": 71613,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "mutation",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/mutation/",
+        "sha256": "b852937f28f9f6081cadee1f29e8b77d8a0a1b773321e58b3edd28b86eb71200",
+        "bytes": 32206,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/nonsense-mediated-decay/",
+        "sha256": "ad3ed46cda0ee6204067c25e3e4c5c33e3b3558b44fa55dc083b45a83f3ba2f2",
+        "bytes": 23831,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "vdj-recombination",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/vdj-recombination/",
+        "sha256": "168784f27593f8453d7f4ddc6fc40e5c9c8af974a8c7f96d2a3cc210aee33a9b",
+        "bytes": 30384,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "rna-splicing",
+        "state": "registered-local-draft-graph",
+        "route": "/pathways/rna-splicing/",
+        "sha256": "7d4d725f9552d799c7f692c5aa0629fb194e994cd1a3174cb09f551ed4bbba5b",
+        "bytes": 58473,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "gene",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/gene/",
+        "sha256": "be7f3f3aaf41ae9e16919d006a981c39cf7f4b781f18242b4999e99556e8bd19",
+        "bytes": 23798,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ivonescimab",
+        "state": "registered-local-draft-graph",
+        "route": "/drugs/ivonescimab/",
+        "sha256": "bebdcf1acf3c35a2fa73131d28d35fe206d4c99dddc7fae0aa3fe47286ac581e",
+        "bytes": 73710,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "2026",
+        "state": "registered-local-draft-graph",
+        "route": "/years/2026/",
+        "sha256": "c61eb9e12cd2e9746942be8a60b12842780f0009e4f7f9485d3254bc7f563a36",
+        "bytes": 324315,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ],
+    "sectionChecks": []
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 16,
+    "exactAnchors": 43,
+    "exactParagraphChecks": 44,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "EMT-S",
+        "recordId": "emt",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "emt.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EMT-N",
+        "recordId": "emt",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "emt.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "CC-S",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-cycle.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "CC-DNA",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-cycle.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "CC-RATE",
+        "recordId": "cell-cycle",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-cycle.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EP-S",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epithelium-and-stroma.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EP-RNA",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epithelium-and-stroma.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EP-BOUND",
+        "recordId": "epithelium-and-stroma",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epithelium-and-stroma.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "DIV-TOY",
+        "recordId": "cell-division",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-division.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "DIV-NEURON",
+        "recordId": "cell-division",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-division.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "LIN-S",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-lineage-and-state.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "LIN-TRACE",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-lineage-and-state.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "LIN-TOY",
+        "recordId": "cell-lineage-and-state",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-lineage-and-state.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ORG-S",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cellular-compartments.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ORG-ROUTE",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cellular-compartments.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ORG-ANATOMY",
+        "recordId": "cellular-compartments",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cellular-compartments.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MEM-S",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MEM-UPTAKE",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MEM-CHANNEL",
+        "recordId": "cell-membrane",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-membrane.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EPI-S",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epigenetic-marks.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EPI-METHOD",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epigenetic-marks.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EPI-MIX",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epigenetic-marks.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "EPI-TOY",
+        "recordId": "epigenetic-marks",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "epigenetic-marks.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "GER-S",
+        "recordId": "germline-vs-somatic",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "germline-vs-somatic.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "GER-MIX",
+        "recordId": "germline-vs-somatic",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "germline-vs-somatic.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "GER-TOY",
+        "recordId": "germline-vs-somatic",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "germline-vs-somatic.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MUT-S",
+        "recordId": "mutation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mutation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MUT-BOUND",
+        "recordId": "mutation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mutation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MUT-FRAME",
+        "recordId": "mutation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mutation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MUT-SEQUENCE",
+        "recordId": "mutation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mutation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "MUT-EXCHANGE",
+        "recordId": "mutation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mutation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "NMD-S",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "nonsense-mediated-decay.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "NMD-MEASURE",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "nonsense-mediated-decay.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "NMD-IMMUNE",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "nonsense-mediated-decay.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "NMD-CONTEXT",
+        "recordId": "nonsense-mediated-decay",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "nonsense-mediated-decay.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "VDJ-S",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "vdj-recombination.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "VDJ-DEV",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "vdj-recombination.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "VDJ-ANTIGEN",
+        "recordId": "vdj-recombination",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "vdj-recombination.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "SPL-S",
+        "recordId": "rna-splicing",
+        "exactParagraphs": 2,
+        "surfaces": [
+          "rna-splicing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "SPL-READ",
+        "recordId": "rna-splicing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "rna-splicing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "SPL-TOY",
+        "recordId": "rna-splicing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "rna-splicing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "GENE-S",
+        "recordId": "gene",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "gene.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "CALENDAR-NOTE",
+        "recordId": "ivonescimab",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ivonescimab.html"
+        ],
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment across hub and explicitly captured Data section where applicable. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "derivedYearReader": {
+    "derivedYearId": "2026",
+    "changedEvents": [
+      {
+        "index": 562,
+        "eventNote": "FDA accepted for filing Summit's BLA for EGFR-mutated non-squamous NSCLC after EGFR TKI therapy (sponsor report)",
+        "initialActualEntityDetailSSRContainsExactNote": true
+      },
+      {
+        "index": 713,
+        "eventNote": "Sponsor-reported FDA goal action date for the BLA; a review deadline, not an approval decision",
+        "initialActualEntityDetailSSRContainsExactNote": true
+      }
+    ],
+    "actualReaderSha256": "c61eb9e12cd2e9746942be8a60b12842780f0009e4f7f9485d3254bc7f563a36",
+    "beforeRecordMatchesFrozenFullRecordHash": true,
+    "generatorChanged": false,
+    "scope": "Two automatic event-note projections verified separately from authored owners. Initial SSR visibility is reported exactly; no browser, hydration or whole-year scientific acceptance."
+  },
+  "staticExports": {
+    "records": 16,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "emt",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "emt",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "emt",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-cycle",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-division",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-compartments",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-membrane",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epigenetic-marks",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "germline-vs-somatic",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mutation",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vdj-recombination",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "rna-splicing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gene",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ivonescimab",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ivonescimab",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ivonescimab",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "2026",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "2026",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "2026",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "emt.json",
+        "bytes": 13458,
+        "sha256": "70745f0818ffe9f3e8e9f7a51a5ba5396a5baa1b7ba5f82527842e4178d2c807"
+      },
+      {
+        "file": "emt.md",
+        "bytes": 9044,
+        "sha256": "ddc4be6b452d60f35e5ba932b2c5adb8bbf0c8c8c1c08d8ef22de96ca1cfb706"
+      },
+      {
+        "file": "cell-cycle.json",
+        "bytes": 5412,
+        "sha256": "c197166f7050e9005404bcd48c25d3ccc77316181f456a6e4edd79d5436b79e2"
+      },
+      {
+        "file": "cell-cycle.md",
+        "bytes": 4184,
+        "sha256": "e066661e4ef492b890afa18158e7ae34aa591d80f8ed43b7cf73ab065f4d49a4"
+      },
+      {
+        "file": "epithelium-and-stroma.json",
+        "bytes": 4436,
+        "sha256": "815d8204bae518c52e52266019740279f8db8e2178fbce2e83ad305bf2451c1b"
+      },
+      {
+        "file": "epithelium-and-stroma.md",
+        "bytes": 3999,
+        "sha256": "b8d34dc06347f3af8695f37e642944ff9cc263dfbedac1a05d410690e0ced4f2"
+      },
+      {
+        "file": "cell-division.json",
+        "bytes": 4642,
+        "sha256": "95a1e4b175c9ec209d4c5e6a33fa7f15207939431a8558f56c7f3dd3bdc2a602"
+      },
+      {
+        "file": "cell-division.md",
+        "bytes": 4018,
+        "sha256": "e50d4d3abee8b6c0b527477ef9e895f07bb6a5d96b6890a7e51cadebed8cf276"
+      },
+      {
+        "file": "cell-lineage-and-state.json",
+        "bytes": 5680,
+        "sha256": "9eb057a1f3529db193541a87c7a800c33d035cca6cc4945645c74c3aa2117947"
+      },
+      {
+        "file": "cell-lineage-and-state.md",
+        "bytes": 5180,
+        "sha256": "5bd31d5494e99cbaf9be200e434e6a18b1c119a5674cd9453626b6786d27a1a5"
+      },
+      {
+        "file": "cellular-compartments.json",
+        "bytes": 4213,
+        "sha256": "d70b6392132d9191d4bb1e0eabc6b27395692a1260f2b2dc36f869182a607379"
+      },
+      {
+        "file": "cellular-compartments.md",
+        "bytes": 3847,
+        "sha256": "20af1ee2faa7aba86a07c45e403eaac27da24d05c0bc9c14aff5739b8a4e65eb"
+      },
+      {
+        "file": "cell-membrane.json",
+        "bytes": 4189,
+        "sha256": "95713de01018e2139724f9768c1ba64d5a108274f850d88014b7a416b010462c"
+      },
+      {
+        "file": "cell-membrane.md",
+        "bytes": 3595,
+        "sha256": "387515a1c9a558dfa1d29d5ac348792b0b0fab990039d51eeb82d20393766d39"
+      },
+      {
+        "file": "epigenetic-marks.json",
+        "bytes": 3879,
+        "sha256": "b49594d31c36de0ac960731c3cb735b2e7ce91282949751eee191b97aff3b7c6"
+      },
+      {
+        "file": "epigenetic-marks.md",
+        "bytes": 3361,
+        "sha256": "84242163ceae374ffae9b31e260e16a1967a7abb729d517ac6cd129dac5b9966"
+      },
+      {
+        "file": "germline-vs-somatic.json",
+        "bytes": 20240,
+        "sha256": "018608073b5d03d6a7f3dccd783a7f73a2961c6c09b756c2624512be95dfa571"
+      },
+      {
+        "file": "germline-vs-somatic.md",
+        "bytes": 14732,
+        "sha256": "7cd0a3465e011de25ed43bc75986c31c3edf86efe88f11c061c791779f7e9653"
+      },
+      {
+        "file": "mutation.json",
+        "bytes": 6161,
+        "sha256": "34238dab47a8cedf3e20f4ee70995842932496143f8ce10e674dec5e79e40c5b"
+      },
+      {
+        "file": "mutation.md",
+        "bytes": 5170,
+        "sha256": "31dfbe8bca93d93ef4516a9beb7a86469ae424c152d4ea601dee76b164fbbdc3"
+      },
+      {
+        "file": "nonsense-mediated-decay.json",
+        "bytes": 4820,
+        "sha256": "4ed71c6c6a7b564c3b50dcc80cd12767588c70f38b3fc1b5381686cab6c5fc7a"
+      },
+      {
+        "file": "nonsense-mediated-decay.md",
+        "bytes": 4311,
+        "sha256": "3b7ad67cb8c4ae616a797f1f3d3fd8b69e9545de4c821a954dcdce8c2c6e9730"
+      },
+      {
+        "file": "vdj-recombination.json",
+        "bytes": 5486,
+        "sha256": "300367b7b72219a3c83209b592b2b3f9b47b883657edb02a50e8d2a9353d0d67"
+      },
+      {
+        "file": "vdj-recombination.md",
+        "bytes": 4985,
+        "sha256": "6195f2388e3e36d47204a0d5fcbc14932bfbde11dab2bf67f391ef25d66025fc"
+      },
+      {
+        "file": "rna-splicing.json",
+        "bytes": 11205,
+        "sha256": "20c558e5448253359472152ca265d8bdf8d0877848668e5d66e207b68f10bfdd"
+      },
+      {
+        "file": "rna-splicing.md",
+        "bytes": 8657,
+        "sha256": "4a788e655e9a2e6b38862d60c625e84fe4e7da25044b58b852e73b698df56ff5"
+      },
+      {
+        "file": "gene.json",
+        "bytes": 4151,
+        "sha256": "0a28d8b21e717200c5416006e49428bb066cdc8eeeadb1f9a265f08097caf492"
+      },
+      {
+        "file": "gene.md",
+        "bytes": 3347,
+        "sha256": "0a6eb20e760d7084dd2da18cae2301856956e95395c7566d9f5e317007e4dea5"
+      },
+      {
+        "file": "ivonescimab.json",
+        "bytes": 18799,
+        "sha256": "004f89375e17b7acf3839e500b4ae8ec592b8632a5d771812a850e0315f3994d"
+      },
+      {
+        "file": "ivonescimab.md",
+        "bytes": 12670,
+        "sha256": "5cde4e39372ac3421d6ba64615efedd7d0c0ac35aabe3a9fc94218f3e74726cb"
+      },
+      {
+        "file": "2026.json",
+        "bytes": 212878,
+        "sha256": "6ee814d226e96bec04ac5785cfad897529a31da369c104a492b011223ac1201a"
+      },
+      {
+        "file": "2026.md",
+        "bytes": 1534,
+        "sha256": "29aada9630a77ad01b1a63d0914ef4581fafb3e79b1c9b7546fdebda8abc4d60"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 144,
+    "texts": 81,
+    "fallbacks": 63,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "emt",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "emt",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-cycle",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epithelium-and-stroma",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-division",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-lineage-and-state",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cellular-compartments",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-membrane",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "epigenetic-marks",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "germline-vs-somatic",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mutation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "nonsense-mediated-decay",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "vdj-recombination",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "rna-splicing",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "gene",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ivonescimab",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "2026",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "method": "Independent operations on source data, without executing embedded rendering or validation code.",
+    "embeddedMutationDataSha256": "e9ddc917e7180e275096fab30ed82adc8f3883e4102d0a5cd62239a7cb6e29cb",
+    "checks": [
+      {
+        "id": "MUT-reference",
+        "expectedSequence": "ATGGAATCCGCTAACGGT",
+        "bases": 18,
+        "groups": [
+          {
+            "text": "ATG",
+            "sourcePositions": [
+              1,
+              2,
+              3
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GAA",
+            "sourcePositions": [
+              4,
+              5,
+              6
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "TCC",
+            "sourcePositions": [
+              7,
+              8,
+              9
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GCT",
+            "sourcePositions": [
+              10,
+              11,
+              12
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "AAC",
+            "sourcePositions": [
+              13,
+              14,
+              15
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GGT",
+            "sourcePositions": [
+              16,
+              17,
+              18
+            ],
+            "completeTriplet": true
+          }
+        ],
+        "pass_": true
+      },
+      {
+        "id": "MUT-substitution",
+        "expectedSequence": "ATGGCATCCGCTAACGGT",
+        "bases": 18,
+        "groups": [
+          {
+            "text": "ATG",
+            "sourcePositions": [
+              1,
+              2,
+              3
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GCA",
+            "sourcePositions": [
+              4,
+              5,
+              6
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "TCC",
+            "sourcePositions": [
+              7,
+              8,
+              9
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GCT",
+            "sourcePositions": [
+              10,
+              11,
+              12
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "AAC",
+            "sourcePositions": [
+              13,
+              14,
+              15
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GGT",
+            "sourcePositions": [
+              16,
+              17,
+              18
+            ],
+            "completeTriplet": true
+          }
+        ],
+        "pass_": true
+      },
+      {
+        "id": "MUT-in-frame-deletion",
+        "expectedSequence": "ATGTCCGCTAACGGT",
+        "bases": 15,
+        "groups": [
+          {
+            "text": "ATG",
+            "sourcePositions": [
+              1,
+              2,
+              3
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "TCC",
+            "sourcePositions": [
+              7,
+              8,
+              9
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GCT",
+            "sourcePositions": [
+              10,
+              11,
+              12
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "AAC",
+            "sourcePositions": [
+              13,
+              14,
+              15
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GGT",
+            "sourcePositions": [
+              16,
+              17,
+              18
+            ],
+            "completeTriplet": true
+          }
+        ],
+        "pass_": true
+      },
+      {
+        "id": "MUT-frameshift-deletion",
+        "expectedSequence": "ATGAATCCGCTAACGGT",
+        "bases": 17,
+        "groups": [
+          {
+            "text": "ATG",
+            "sourcePositions": [
+              1,
+              2,
+              3
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "AAT",
+            "sourcePositions": [
+              5,
+              6,
+              7
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "CCG",
+            "sourcePositions": [
+              8,
+              9,
+              10
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "CTA",
+            "sourcePositions": [
+              11,
+              12,
+              13
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "ACG",
+            "sourcePositions": [
+              14,
+              15,
+              16
+            ],
+            "completeTriplet": true
+          },
+          {
+            "text": "GT",
+            "sourcePositions": [
+              17,
+              18
+            ],
+            "completeTriplet": false
+          }
+        ],
+        "pass_": true
+      },
+      {
+        "id": "MUT-reciprocal-toy",
+        "before": [
+          "U-V-W",
+          "X-Y-Z"
+        ],
+        "after": [
+          "U-V-Z",
+          "X-Y-W"
+        ],
+        "oneCopyEach": true,
+        "scope": "Only these stipulated segments; no general copy-neutrality claim."
+      },
+      {
+        "id": "DIV-equal-starts",
+        "start": 1000,
+        "control": 2000,
+        "treated": 1200,
+        "netControl": 1000,
+        "netTreated": 200,
+        "endpointGap": 800,
+        "scope": "800 is a count difference, not a measurement of deaths."
+      },
+      {
+        "id": "EPI-toy",
+        "markedUnderlying": "AACGT",
+        "substituted": "AATGT",
+        "scope": "A mark does not replace C with T; no assay conversion misclassified as a variant."
+      },
+      {
+        "id": "SPL-two-products",
+        "first": [
+          "A",
+          "B",
+          "C"
+        ],
+        "second": [
+          "A",
+          "C"
+        ],
+        "preservesOrder": true,
+        "separatePrecursors": true
+      }
+    ],
+    "totalChecks": 8,
+    "allPass": true,
+    "clinicalInference": false
+  },
+  "zeroSecretFindings": true,
+  "scope": "Fresh complete four-gate run on committed data, actual EntityDetail SSR, static JSON/Markdown/OpenAPI/context and source/field/arithmetic checks. Initial calendar-triggered failure preserved and fixed through actual sponsor source; no floor/scanner/test changes. No Next production build, hydration, hosted/browser, expert, independent or language acceptance."
+}

@@ -1,0 +1,148 @@
+{
+  "reason": "An unchanged baseline PDUFA event entered the past-events ratchet at UTC2026-11-14; the failure, old data bytes and original run are preserved.",
+  "actualUTCCheck": "2026-11-14",
+  "localCohortDate": "2026-11-13",
+  "recordId": "ivonescimab",
+  "source": {
+    "id": "CALENDAR-PDF",
+    "url": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf",
+    "httpStatus": "200",
+    "rawFile": "primary-raw/CALENDAR-PDF.raw",
+    "sha256": "08826142524e5c5ae5525cd0315dfd681e961944404ae2e350f2c9410ba599f8",
+    "bytes": 225132,
+    "pdf": true
+  },
+  "sourceReadingDepth": "Original sponsor PDF page3 freshly viewed in full; date/filing paragraph and its primary-versus-later OS context read. Not an FDA decision, whole-PDF read or re-verification of all retained trial/China-label statements.",
+  "targetDateIsNotApproval": true,
+  "unavailableAlternates": [
+    {
+      "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/",
+      "httpStatus": "403",
+      "sha256": "8180cbbc1548ca687763e9309767c9f38b781627ee803394e0e3a6382b3220c2",
+      "rawFile": "primary-raw/CALENDAR.raw",
+      "textFile": "primary-raw/CALENDAR.txt",
+      "readDepth": "HTTP403 Cloudflare block; no source body or passage read and no support",
+      "passages": [],
+      "reason": "Unchanged baseline PDUFA event entered the past-events set at UTC midnight, 2026-11-14."
+    },
+    {
+      "id": "CALENDAR-SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+      "httpStatus": "403",
+      "rawFile": "primary-raw/CALENDAR-SEC.raw",
+      "sha256": "c59a3008516f168a042285d0cf33ce99564d08048a66eb7249c12b41e77b8934",
+      "bytes": 4819,
+      "pdf": false
+    }
+  ],
+  "fields": [
+    {
+      "field": "notes",
+      "file": "src/data/drugs.ts",
+      "before": [],
+      "after": [
+        "Summit's 4 November 2026 update reports that FDA accepted its application for filing in January 2026 for ivonescimab with chemotherapy after EGFR-directed treatment in EGFR-mutated advanced non-squamous lung cancer. The sponsor gives 14 November 2026 as the PDUFA goal action date. Acceptance for review and a target action date are separate from an approval decision; the deadline itself does not establish an approved US indication."
+      ],
+      "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "afterSha256": "ed0c76213b85a9bd73fcd9a2110b360a8fe4b98f0af0bdaa8c666cdbbd9f23f4"
+    },
+    {
+      "field": "links",
+      "file": "src/data/drugs.ts",
+      "before": [
+        {
+          "label": "ClinicalTrials.gov: trials of Ivonescimab",
+          "url": "https://clinicaltrials.gov/search?intr=AK112"
+        }
+      ],
+      "after": [
+        {
+          "label": "ClinicalTrials.gov: trials of Ivonescimab",
+          "url": "https://clinicaltrials.gov/search?intr=AK112"
+        },
+        {
+          "label": "Summit: November 2026 filing and PDUFA update (sponsor report)",
+          "url": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        }
+      ],
+      "beforeSha256": "f5106351de69a2661df87d338b3eaa84eb959c8bed03e0df1622d13361f656b1",
+      "afterSha256": "ed09ce8653f20a415b2cdb82a4b615b2149e76b2beeedc3131f9762f699cb7ba"
+    },
+    {
+      "field": "asOf",
+      "file": "src/data/drugs.ts",
+      "before": "2026-09-04",
+      "after": "2026-11-14",
+      "beforeSha256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+      "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+    },
+    {
+      "field": "regulatoryEvents",
+      "file": "src/data/drug-depth.ts",
+      "before": [
+        {
+          "date": "2024-05-24",
+          "type": "approval",
+          "region": "China",
+          "note": "EGFR-mutant NSCLC after TKI, with chemotherapy (HARMONi-A)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2025-04",
+          "type": "approval",
+          "region": "China",
+          "note": "First-line PD-L1+ NSCLC (HARMONi-2)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2026-01",
+          "type": "filing",
+          "region": "US",
+          "note": "BLA submitted by Summit for EGFR-mutant NSCLC after TKI (HARMONi)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2026-11-14",
+          "type": "pdufa",
+          "region": "US",
+          "note": "PDUFA target date",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        }
+      ],
+      "after": [
+        {
+          "date": "2024-05-24",
+          "type": "approval",
+          "region": "China",
+          "note": "EGFR-mutant NSCLC after TKI, with chemotherapy (HARMONi-A)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2025-04",
+          "type": "approval",
+          "region": "China",
+          "note": "First-line PD-L1+ NSCLC (HARMONi-2)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2026-01",
+          "type": "filing",
+          "region": "US",
+          "note": "FDA accepted for filing Summit's BLA for EGFR-mutated non-squamous NSCLC after EGFR TKI therapy (sponsor report)",
+          "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        },
+        {
+          "date": "2026-11-14",
+          "type": "pdufa",
+          "region": "US",
+          "note": "Sponsor-reported FDA goal action date for the BLA; a review deadline, not an approval decision",
+          "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        }
+      ],
+      "beforeSha256": "5ae1ba1e549d0114a9af2060c0081b3d98ea0adee13952b96e104b6005ce2698",
+      "afterSha256": "cc775d7dcf14c851009f86de6531cacc1693d4601f75a5b69ee7ea9a8c996b90"
+    }
+  ],
+  "olderFieldScope": "All untouched historical clinical assertions retain their earlier scope. The generic FDA index on the two older China event rows was not checked as a China-label source; queued separately. No efficacy number or approval status changed.",
+  "assetRequirementCredit": 0
+}

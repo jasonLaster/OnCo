@@ -1,0 +1,1433 @@
+{
+  "version": "proposal-support-bodies-09-root",
+  "state": "Committed registered draft-root fields. Fourteen scientific owners plus one source-qualified regulatory-deadline repair. Five teaching owners have six appended paragraphs; the separate calendar record adds one paragraph and corrects two event sources/attributions. Selection is not authorship or blanket verification. No new id/module/relation/alias. The derived2026view is checked separately and not registered as an authored selection.",
+  "draft": 375,
+  "committedDataHead": "0596ecf31f6973c871643c74f4ad25586c8d3798",
+  "records": [
+    {
+      "id": "emt",
+      "kind": "pathway",
+      "name": "Epithelial-mesenchymal transition & drug efflux",
+      "aka": [],
+      "tldr": "Epithelial cells can change a coordinated set of properties, sometimes entering intermediate states. The consequences depend on the cells and the experimental or clinical context.",
+      "summary": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Epithelial–mesenchymal_transition"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32300252/"
+        },
+        {
+          "label": "Identification of the tumour transition states occurring during EMT.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29670281/"
+        },
+        {
+          "label": "Epithelial-to-mesenchymal transition is not required for lung metastasis but contributes to chemoresistance.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26560033/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "theories-of-cancer",
+        "cancer-stem-cell-theory",
+        "cell-lineage-and-state",
+        "epithelium-and-stroma",
+        "cell-composition-confound"
+      ],
+      "cancers": [
+        "tnbc",
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "radioligand-therapy",
+        "single-cell-spatial"
+      ],
+      "targets": [
+        "trop2"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "efflux-pump",
+        "resistance"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-lamouille-emt-molecular-mechanisms-nrmcb-2014"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment."
+      ],
+      "analogy": "A brick in a wall (epithelial cell) turning into a nomad: it lets go of its neighbours, packs pumps to spit out poison, and puts on camouflage. The wall-brick was easy to hit; the nomad is not.",
+      "nodes": [
+        {
+          "id": "tgf",
+          "label": "TGF-β, Wnt, Notch, hypoxia",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "tf",
+          "label": "ZEB1/2, SNAIL, TWIST",
+          "x": 50,
+          "y": 25
+        },
+        {
+          "id": "ecad",
+          "label": "E-cadherin, claudins",
+          "x": 20,
+          "y": 48
+        },
+        {
+          "id": "vim",
+          "label": "Vimentin, N-cadherin, MMPs",
+          "x": 80,
+          "y": 48
+        },
+        {
+          "id": "abc",
+          "label": "ABCB1 / ABCG2 efflux",
+          "x": 20,
+          "y": 72
+        },
+        {
+          "id": "stem",
+          "label": "Stemness, apoptosis resistance",
+          "x": 50,
+          "y": 72
+        },
+        {
+          "id": "imm",
+          "label": "Immune exclusion",
+          "x": 80,
+          "y": 72
+        },
+        {
+          "id": "out",
+          "label": "Invasion, metastasis, drug resistance",
+          "x": 50,
+          "y": 95
+        }
+      ],
+      "edges": [
+        {
+          "from": "tgf",
+          "to": "tf",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "ecad",
+          "type": "inhibits"
+        },
+        {
+          "from": "tf",
+          "to": "vim",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "abc",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "stem",
+          "type": "activates"
+        },
+        {
+          "from": "tf",
+          "to": "imm",
+          "type": "activates"
+        },
+        {
+          "from": "vim",
+          "to": "out",
+          "type": "activates"
+        },
+        {
+          "from": "abc",
+          "to": "out",
+          "type": "activates"
+        },
+        {
+          "from": "stem",
+          "to": "out",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "No approved direct EMT inhibitor",
+        "Payloads with low efflux susceptibility (sac-TMT's belotecan derivative claims this) and radiation (efflux-independent)",
+        "TGF-β pathway blockade (mostly failed so far)",
+        "Ferroptosis inducers for mesenchymal-state cells (preclinical)",
+        "Immune approaches to overcome exclusion (STING, radiation)"
+      ]
+    },
+    {
+      "id": "cell-cycle",
+      "kind": "term",
+      "name": "Cell cycle",
+      "aka": [
+        "cell-cycle",
+        "cell cycle arrest",
+        "cell-cycle arrest",
+        "G1 phase",
+        "S phase",
+        "G2 phase",
+        "M phase",
+        "mitosis",
+        "mitotic"
+      ],
+      "tldr": "Cells preparing to divide pass through regulated stages for growth, DNA copying and chromosome separation. Some cells remain functional while outside that cycle.",
+      "summary": "G1 prepares the cell, S copies DNA, and G2 precedes the mitotic phase. Mitosis separates nuclear chromosomes; cytokinesis separates cytoplasm into daughter cells. G0 describes a noncycling state, which need not mean death or loss of function. Cyclins, CDKs and checkpoints regulate transitions, and their alteration can contribute to cancer without making every checkpoint absent or guaranteeing error-free division. Cell-cycle checkpoints and immune checkpoints describe different biological processes.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_cycle",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_cycle"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-2-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-3-control-of-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-3-control-of-the-cell-cycle"
+        },
+        {
+          "label": "Assaying Cell Cycle Status Using Flow Cytometry.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26131851/"
+        },
+        {
+          "label": "Doublet discrimination in DNA cell-cycle analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11746105/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-division",
+        "proliferation",
+        "tumour-suppressor-gene",
+        "kinase",
+        "chemotherapy-term",
+        "cell-lineage-and-state"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cdk46-inhibitor"
+      ],
+      "targets": [
+        "cdk4-6",
+        "tp53",
+        "wee1"
+      ],
+      "drugs": [
+        "palbociclib",
+        "ribociclib",
+        "abemaciclib",
+        "paclitaxel"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "p53-cell-cycle"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "DNA-content measurements commonly group G0/G1 and G2/M because each pair shares a DNA-content range. Appropriate additional markers and doublet discrimination are needed: two cells can resemble one cell with more DNA.",
+        "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle.",
+        "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "epithelium-and-stroma",
+      "kind": "term",
+      "name": "Epithelium, stroma and tissue compartments",
+      "aka": [
+        "epithelial tissue",
+        "tissue compartments",
+        "stromal compartment",
+        "basement membrane"
+      ],
+      "tldr": "Tissue contains different cell groups and supporting material. Knowing which compartment produced a signal helps explain what the result can mean.",
+      "summary": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "NCI SEER: epithelial organization and basement membrane",
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/tissues/epithelial.html"
+        },
+        {
+          "label": "A spatially resolved single-cell genomic atlas of the adult human breast.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37380767/"
+        },
+        {
+          "label": "A single-cell and spatially resolved atlas of human breast cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34493872/"
+        },
+        {
+          "label": "NCI SEER: Summary Stage 2018 manual v3.4, October 2026, in-situ and localized boundaries",
+          "url": "https://seer.cancer.gov/tools/ssm/Summary-Stage_v3.4.pdf"
+        },
+        {
+          "label": "A spatially resolved single-cell genomic atlas of the adult human breast (Nature 2023)",
+          "url": "https://doi.org/10.1038/s41586-023-06252-9"
+        },
+        {
+          "label": "NCI Dictionary: stroma",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/stroma"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-membrane",
+        "carcinoma",
+        "cell-composition-confound",
+        "tumor-microenvironment"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+        "An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer.",
+        "In a fictional comparison, gene R is high in cancer cells, low in fibroblasts and similarly high in normal luminal epithelial cells. The first contrast supports higher expression than fibroblasts, even if it passes a statistical threshold; it does not establish cancer selectivity. The normal epithelial comparison addresses that claim more closely, while leaving other organs, cell states and target accessibility untested. If that reference group is tiny, contaminated or prepared differently, preserve the unresolved comparison rather than declaring selectivity or exact equality. Normal epithelial cells can also contribute familiar lineage markers to a tumour specimen. An image-based tumour mask is an assignment that needs validation for its actual method and specimens, rather than automatic proof that every included cell is malignant."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cell-division",
+      "kind": "term",
+      "name": "Cell division",
+      "aka": [
+        "cell divisions",
+        "divide",
+        "dividing",
+        "divides",
+        "dividing cells",
+        "rapidly dividing",
+        "fast-dividing",
+        "replicating",
+        "cell replication"
+      ],
+      "tldr": "Cell division produces daughter cells for growth and renewal. Chemotherapy can disrupt this process and can also affect cells through mechanisms beyond division.",
+      "summary": "DNA copying, chromosome segregation and cytokinesis are distinct steps; errors or unequal allocation can make daughters differ. Many cytotoxic drugs affect DNA or microtubules, with drug-specific dependence on cell-cycle state. Normal renewing tissues can also be affected. Division history cannot be read directly from a mutation count: damage, repair, selection and other processes contribute. Ki-67 staining and a mitotic count describe particular sampled properties, not a universal rate of cell production.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_division",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_division"
+        },
+        {
+          "label": "OpenStax Biology 2e: 10-2-the-cell-cycle",
+          "url": "https://openstax.org/books/biology-2e/pages/10-2-the-cell-cycle"
+        },
+        {
+          "label": "NCI: chemotherapy mechanisms and healthy-cell effects",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/chemotherapy"
+        },
+        {
+          "label": "Neurotoxic mechanisms of paclitaxel are local to the distal axon and independent of transport defects.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27894788/"
+        },
+        {
+          "label": "Assaying Cell Cycle Status Using Flow Cytometry.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26131851/"
+        },
+        {
+          "label": "Franken and colleagues: clonogenic reproductive survival in vitro",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17406473/"
+        },
+        {
+          "label": "Brix and colleagues: model and format limits of clonogenic assays",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34697469/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-cycle",
+        "proliferation",
+        "mutation",
+        "tumour-grade",
+        "chemotherapy-term",
+        "cell-lineage-and-state"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cytotoxic-chemotherapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+        "Side effects are not a test of whether chemotherapy is controlling a tumor. NCI explicitly separates those observations; clinical assessment needs the appropriate examination, imaging or other response evaluation. A proliferation-marker fraction also does not by itself measure treatment benefit.",
+        "A lower cell count at one time can reflect slower division, cell loss or both; surviving cells may later resume growth. Colony-formation assays assess whether individual cells can produce descendants under the chosen culture conditions over a longer observation period. The result depends on the model and assay format. Neither a short growth assay nor colony formation alone establishes durable tumor control in a person.",
+        "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "cell-lineage-and-state",
+      "kind": "term",
+      "name": "Cell lineage, identity and state",
+      "aka": [
+        "cell lineage",
+        "cell state",
+        "lineage tracing",
+        "cell ancestry"
+      ],
+      "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
+      "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Lineage tracing on transcriptional landscapes links state to fate during differentiation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31974159/"
+        },
+        {
+          "label": "NIGMS: stem cells and differentiation",
+          "url": "https://www.nigms.nih.gov/biobeat/2024/11/what-are-stem-cells"
+        },
+        {
+          "label": "Aberrant luminal progenitors as the candidate target population for basal tumor development in BRCA1 mutation carriers (Nature medicine 2009)",
+          "url": "https://doi.org/10.1038/nm.2000"
+        },
+        {
+          "label": "Molecular characterization of basal-like and non-basal-like triple-negative breast cancer (The oncologist 2013)",
+          "url": "https://doi.org/10.1634/theoncologist.2012-0397"
+        },
+        {
+          "label": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma (Science (New York, N.Y.) 2014)",
+          "url": "https://doi.org/10.1126/science.1254257"
+        },
+        {
+          "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+          "url": "https://doi.org/10.1093/gigascience/giaa151"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition (Nature reviews. Molecular cell biology 2020)",
+          "url": "https://doi.org/10.1038/s41580-020-0237-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "differentiation",
+        "clonal-evolution",
+        "cell-cycle"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+        "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cellular-compartments",
+      "kind": "term",
+      "name": "Organelles and cellular compartments",
+      "aka": [
+        "organelle",
+        "organelles",
+        "cellular compartment",
+        "intracellular compartments"
+      ],
+      "tldr": "A cell has compartments with different jobs. A molecule inside one compartment may still be separated from the place where it needs to act.",
+      "summary": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "OpenStax Biology 2e: 4-3-eukaryotic-cells",
+          "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+        },
+        {
+          "label": "OpenStax Biology 2e: 4-4-the-endomembrane-system-and-proteins",
+          "url": "https://openstax.org/books/biology-2e/pages/4-4-the-endomembrane-system-and-proteins"
+        },
+        {
+          "label": "NHGRI: DNA in nuclei and mitochondria",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+        },
+        {
+          "label": "Induction of apoptotic program in cell-free extracts: requirement for dATP and cytochrome c.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8689682/"
+        },
+        {
+          "label": "Deolal and colleagues: nuclear envelope continuity with the endoplasmic reticulum (review, 2024)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38238284/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-membrane",
+        "nucleus",
+        "protein",
+        "apoptosis-bcl2"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Endoplasmic reticulum and estrogen receptor are different meanings of ER; use the full name when context is unclear.",
+        "Localization, colocalization, amount, interaction and function need different evidence. More or brighter organelle staining does not by itself measure the rate of material passing through a pathway.",
+        "Mitochondria have roles beyond ATP production. Liu and colleagues used cell-free extracts and cytochrome-c depletion/add-back experiments to examine an apoptotic mechanism; this is a defined experimental result, not a universal measurement of cell death.",
+        "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect.",
+        "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cell-membrane",
+      "kind": "term",
+      "name": "Cell membrane",
+      "aka": [
+        "cell membranes",
+        "plasma membrane",
+        "cell surface",
+        "cell-surface",
+        "surface of the cell",
+        "membrane-bound"
+      ],
+      "tldr": "The cell membrane forms a selective boundary. Binding at the surface, entering a vesicle and reaching the cell’s internal working fluid are different steps.",
+      "summary": "A lipid bilayer and its proteins separate the cell from its surroundings. Permeability depends on size, charge and chemical properties, rather than a universal small-molecule versus antibody rule. Passive movement follows the relevant gradient; active transport uses energy directly or through a coupled gradient. Endocytosis encloses material in a membrane-bound compartment. Delivery to cytosol or another target compartment requires further steps. Cytosol is fluid outside organelle interiors; cytoplasm includes that fluid and structures outside the nucleus.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cell_membrane",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cell_membrane"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-1-components-and-structure",
+          "url": "https://openstax.org/books/biology-2e/pages/5-1-components-and-structure"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-2-passive-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-2-passive-transport"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-3-active-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-3-active-transport"
+        },
+        {
+          "label": "OpenStax Biology 2e: 5-4-bulk-transport",
+          "url": "https://openstax.org/books/biology-2e/pages/5-4-bulk-transport"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "receptor",
+        "antibody",
+        "cell-term",
+        "efflux-pump",
+        "cellular-compartments",
+        "ligand"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc",
+        "monoclonal-antibody"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Surface-associated fluorescence does not establish internalization or cytosolic delivery. A membrane-exclusion dye tests the integrity property resolved by that assay; it does not certify every cell function.",
+        "In an inward-budding uptake example, an open pocket remains continuous with extracellular fluid until it pinches off. Once sealed, the vesicle is inside the cell but its contents are still in a membrane-enclosed lumen rather than free in cytosol. A process arrow does not make the cargo cross the bilayer. A receptor can span the membrane and bind a ligand outside; binding alone does not establish internalisation, cytosolic delivery or signalling.",
+        "In a phospholipid bilayer, heads face the watery surroundings on either side and tails face a shared inner core. An open ion channel provides a selective pore through that boundary. Net movement of a permitted ion follows its electrochemical gradient, which combines concentration and electrical effects; a drawing of inward flow does not set the direction for every ion or cell. This example is passive transport, rather than an ATP-driven pump or a route for a large cargo molecule. Uptake into a vesicle and escape across its membrane are separate events."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "epigenetic-marks",
+      "kind": "term",
+      "name": "Epigenetic marks and DNA methylation",
+      "aka": [
+        "epigenetics",
+        "DNA methylation",
+        "5-methylcytosine",
+        "5-hydroxymethylcytosine",
+        "5mC",
+        "5hmC",
+        "histone modification"
+      ],
+      "tldr": "Chemical features of DNA and its packaging can influence how genes are used. Their location and cellular context matter; a mark does not have one universal effect.",
+      "summary": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "NHGRI: epigenomics",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Epigenomics-Fact-Sheet"
+        },
+        {
+          "label": "Human DNA methylomes at base resolution show widespread epigenomic differences.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19829295/"
+        },
+        {
+          "label": "A genomic sequencing protocol that yields a positive display of 5-methylcytosine residues in individual DNA strands.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1542678/"
+        },
+        {
+          "label": "Oxidative bisulfite sequencing of 5-methylcytosine and 5-hydroxymethylcytosine.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24008380/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "epigenetic-reprogramming",
+        "methylation-profiling",
+        "methylation-arrays",
+        "gene-expression",
+        "histone-lactylation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Standard bisulfite analysis changes unmodified cytosine but reads both 5-methylcytosine and 5-hydroxymethylcytosine as C. Oxidative bisulfite methods separate those features through additional chemistry. Ordinary amplified DNA sequence does not preserve this direct chemical measurement.",
+        "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity.",
+        "In an invented sequence example, AACGT can carry a methyl group on its C while the underlying base order remains AACGT. Replacing that C with T instead gives AATGT, a different underlying DNA sequence. Changing a chemical mark on a histone protein is different again. Keep that biological comparison separate from an assay that chemically converts bases: standard bisulfite treatment can change the readout without establishing that the original DNA carried a C-to-T variant. Read the conversion chemistry, locus and cell context before interpreting a methylation call."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "germline-vs-somatic",
+      "kind": "term",
+      "name": "Germline vs somatic mutations",
+      "aka": [
+        "germline",
+        "somatic",
+        "inherited mutations",
+        "tumour-normal"
+      ],
+      "tldr": "A DNA change can be inherited, newly constitutional or acquired in a cell lineage. A change found in a tumor is not automatically tumor-specific.",
+      "summary": "Inherited germline variants came through an egg or sperm and are generally present across many tissues. A de novo constitutional variant need not have been inherited from a parent. Changes arising after fertilization can create mosaic distributions. Somatic variants occur in body-cell lineages, including normal tissues as well as cancers. Origin, distribution, harmfulness and transmissibility are separate questions; neither a variant class nor a large read fraction settles them.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Germline_mutation",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Germline_mutation"
+        },
+        {
+          "label": "MedlinePlus Genetics: inherited, de novo and mosaic variants",
+          "url": "https://medlineplus.gov/genetics/understanding/mutationsanddisorders/genemutation/"
+        },
+        {
+          "label": "NHGRI: Mosaicism",
+          "url": "https://www.genome.gov/genetics-glossary/Mosaicism"
+        },
+        {
+          "label": "Personalized genomic analyses for cancer mutation discovery and interpretation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25877891/"
+        },
+        {
+          "label": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31768066/"
+        },
+        {
+          "label": "NCI: inherited-cancer testing, tumor testing and bounded negative results",
+          "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/genetic-testing-fact-sheet"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "alleles-and-zygosity",
+        "vaf",
+        "clonal-haematopoiesis"
+      ],
+      "cancers": [
+        "prostate",
+        "prostate-mcrpc"
+      ],
+      "sections": [],
+      "technologies": [
+        "germline-testing"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pritchard-inherited-dna-repair-metastatic-prostate-nejm-2016",
+        "paper-nicolosi-germline-variants-prostate-testing-guidelines-jama-oncol-2019",
+        "paper-tukachinsky-ctdna-3334-advanced-prostate-ccr-2021"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Suitable tumor/normal comparison can help attribute origin, but blood can carry acquired hematopoietic clones. Plasma variants can arise from those clones as well as a tumor. Mosaicism, contamination, specimen suitability and assay limits require assessment rather than automatic subtraction of every blood-matching variant.",
+        "Tumor sequencing is distinct from a clinical hereditary test. A negative result is bounded by its specimen, covered genes, detectable change classes and method; research matched-normal analysis does not automatically supply a hereditary-risk report.",
+        "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin."
+      ],
+      "category": "Genomics & genetics"
+    },
+    {
+      "id": "mutation",
+      "kind": "term",
+      "name": "Mutation",
+      "aka": [
+        "mutations",
+        "mutated",
+        "mutant",
+        "mutants",
+        "genetic mutation",
+        "point mutation",
+        "point mutations",
+        "variant",
+        "variants",
+        "genetic alteration",
+        "genetic alterations",
+        "alteration",
+        "alterations"
+      ],
+      "tldr": "A DNA variant describes a sequence change relative to a reference. Its origin, effect and clinical importance require separate evidence.",
+      "summary": "A single-nucleotide substitution changes one base. Insertions and deletions change sequence length; copy-number and structural alterations affect larger regions and can overlap in category. In a specified coding transcript, missense changes alter an amino acid, synonymous changes preserve it, and nonsense changes introduce a stop. A net coding indel not divisible by three can shift the reading frame; an indel outside coding sequence is not automatically a frameshift. Transcript and reference versions determine the description.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mutation",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mutation"
+        },
+        {
+          "label": "NHGRI: Mutation",
+          "url": "https://www.genome.gov/genetics-glossary/Mutation"
+        },
+        {
+          "label": "NHGRI: Copy-Number-Variation-CNV",
+          "url": "https://www.genome.gov/genetics-glossary/Copy-Number-Variation-CNV"
+        },
+        {
+          "label": "NHGRI: Structural-Variation",
+          "url": "https://www.genome.gov/genetics-glossary/Structural-Variation"
+        },
+        {
+          "label": "HGVS: measured and predicted sequence consequences",
+          "url": "https://hgvs-nomenclature.org/stable/recommendations/general/"
+        },
+        {
+          "label": "HGVS: frameshift descriptions",
+          "url": "https://hgvs-nomenclature.org/stable/recommendations/protein/frameshift/"
+        },
+        {
+          "label": "NHGRI: three-base reading frames and frameshift variants",
+          "url": "https://www.genome.gov/genetics-glossary/Frameshift-Mutation"
+        },
+        {
+          "label": "HGVS: protein deletions and predicted consequences",
+          "url": "https://hgvs-nomenclature.org/stable/recommendations/protein/deletion/"
+        },
+        {
+          "label": "HGVS: deletion-insertion consequences, including inserted stop codons",
+          "url": "https://hgvs-nomenclature.org/stable/recommendations/protein/delins/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "gene",
+        "driver-mutation",
+        "germline-vs-somatic",
+        "tmb",
+        "mutational-signature",
+        "vus",
+        "rna-splicing",
+        "alleles-and-zygosity",
+        "gene-fusion",
+        "genetic-code"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A DNA rearrangement, a joined RNA and a protein fusion are different observations. A predicted splice or protein consequence remains a prediction until supported at the relevant molecular level. Synonymous does not mean incapable of affecting RNA processing. Preserve genome build, accession/version, tested regions, detectable change classes and limits; pathogenicity or drug sensitivity does not follow from variant class alone.",
+        "In a specified coding transcript, an insertion or deletion of a complete number of three-base groups can preserve the downstream reading frame. It can still add or remove amino acids, change a codon at the join or introduce a stop; preserving the frame does not establish preserved protein function. The actual sequence and transcript consequences need checking. A protein-level change inferred from DNA remains a prediction until supported at the relevant molecular level.",
+        "Consider an invented internal coding-DNA window, read from the 5-prime to the 3-prime end with the same left-hand frame: ATG GAA TCC GCT AAC GGT, 18 bases. Changing A to C at reference position 5 gives ATG GCA TCC GCT AAC GGT and preserves the grouping. Deleting positions 4 to 6, GAA, gives ATG TCC GCT AAC GGT, 15 bases. Deleting only G at position 4 instead gives ATG AAT CCG CTA ACG GT, 17 bases, with changed downstream grouping. The final GT is an incomplete part of a continuing window, not a stop codon. These predictions assume the specified coding transcript and unchanged splicing; neither RNA processing nor translation was measured.",
+        "In another invented example, two DNA arrangements U-V-W and X-Y-Z become U-V-Z and X-Y-W. Each segment occurs once across the pair before and after this exchange. That stipulated copy-preserving example does not make every rearrangement copy-neutral. The new DNA adjacency alone does not demonstrate a joined RNA, a protein fusion, altered function, dependence on that function or treatment benefit."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "nonsense-mediated-decay",
+      "kind": "term",
+      "name": "Nonsense-mediated RNA decay",
+      "aka": [
+        "nonsense-mediated decay",
+        "NMD"
+      ],
+      "tldr": "A cell can reduce some RNA messages when translation stops in an unexpected context. A predicted early stop does not guarantee that every message or protein disappears.",
+      "summary": "Nonsense-mediated decay is RNA surveillance coupled to translation termination. Splicing can leave exon junction protein complexes near later joins in the message. Translation can remove junction-associated proteins; early termination while an appropriate complex remains downstream can help recruit decay machinery in one human route. Stop position, exon architecture, proximity to the start and other transcript features affect susceptibility. A common junction-distance shortcut is a hypothesis, not a universal clinical cutoff.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "The exon-exon junction complex provides a binding platform for factors involved in mRNA export and nonsense-mediated mRNA decay.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11532962/"
+        },
+        {
+          "label": "Translation is required to remove Y14 from mRNAs in the cytoplasm.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12121612/"
+        },
+        {
+          "label": "Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9671053/"
+        },
+        {
+          "label": "The rules and impact of nonsense-mediated mRNA decay in human cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27618451/"
+        },
+        {
+          "label": "Litchfield et al.: frameshift expression, decay escape and immune evidence (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32733040/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "rna",
+        "rna-splicing",
+        "mutation",
+        "gene-expression",
+        "protein"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Human-cancer analyses found that a model containing several rules described RNA effects better than the junction rule alone; compensation could mask loss at gene level. Test the relevant transcript or allele with controls for RNA quality and cell mixture. Protein identity, persistence and function need separate measurements: RNA decay is distinct from protein degradation.",
+        "Candidate selection should reconstruct the affected transcript and translated sequence. A stop-gain terminates translation rather than adding a new amino acid; an unchanged upstream sequence alone does not specify a new mutant peptide. A frameshift can instead create an altered tail before stopping. Litchfield and colleagues found expressed frameshift changes enriched in positions predicted to escape decay and reported associations with checkpoint outcomes in melanoma cohorts, with additional immune-reactivity evidence from vaccine studies. These are context-specific findings, not a rule that every frameshift is expressed, displayed or useful. Mutant RNA and downstream presentation and recognition remain separate questions.",
+        "Consider a hypothetical message after splicing: its retained exons are joined in one continuous RNA, without an intron at each join. A translating ribosome has passed an earlier join but stops before a later one. An exon junction complex retained upstream of that later join is downstream of the stop and can support the junction-dependent surveillance route. Removing junction-associated proteins during translation is different from removing introns during splicing. In a second hypothetical message the stop lies in the final exon, with no downstream complex specified. That description alone does not measure RNA stability, exclude other decay mechanisms or demonstrate a normal protein. The positions are context for a hypothesis, not a universal distance threshold."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "vdj-recombination",
+      "kind": "term",
+      "name": "V(D)J recombination and receptor assembly",
+      "aka": [
+        "V(D)J recombination",
+        "VDJ recombination",
+        "VJ recombination",
+        "RAG-mediated recombination"
+      ],
+      "tldr": "Developing lymphocytes assemble receptor genes from selected DNA segments. Making a receptor is separate from showing what it recognizes or whether it produces a useful response.",
+      "summary": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Cleavage at a V(D)J recombination signal requires only RAG1 and RAG2 proteins and occurs in two steps.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8521468/"
+        },
+        {
+          "label": "RAG-1-deficient mice have no mature B and T lymphocytes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1547488/"
+        },
+        {
+          "label": "Immunoglobulin and T Cell Receptor Genes: IMGT(®) and the Birth and Rise of Immunoinformatics.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24600447/"
+        },
+        {
+          "label": "EuroClonality/BIOMED-2 guidelines for interpretation and reporting of Ig/TCR clonality testing in suspected lymphoproliferations.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22918122/"
+        },
+        {
+          "label": "Arnal and colleagues: RAG post-cleavage complexes and repair-pathway access",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20139091/"
+        },
+        {
+          "label": "Papaemmanuil and colleagues: RAG-associated rearrangement in ETV6-RUNX1 ALL",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24413735/"
+        },
+        {
+          "label": "Venturi and colleagues: convergent recombination in influenza-specific mouse TCR-beta responses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17130450/"
+        },
+        {
+          "label": "Venturi and colleagues: human naive/memory CD8 TCR sharing, four individuals",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21383244/"
+        },
+        {
+          "label": "Klein and colleagues: selection of developing T cells by self peptide and MHC complexes (review, 2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24830344/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "clonality-testing",
+        "ig-tcr-clonality",
+        "receptor",
+        "gene",
+        "germinal-centre-reaction"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.",
+        "Receptor sequence or clonality does not establish antigen specificity, tumor recognition or malignant diagnosis. RAG RNA/protein presence alone does not establish active recombination.",
+        "Off-target RAG rearrangement must be interpreted in its cellular and sequence context. In the 2014 ETV6-RUNX1 acute lymphoblastic leukemia study, the authors found breakpoint recombination-signal motifs, junctional additions and enrichment at active B-development promoters and enhancers; single-cell analysis supported continuing rearrangement in the examined leukemias. This is evidence from that disease context, not a demonstration that RAG expression in any sampled cell proves active cutting or the same mechanism.",
+        "Different rearrangement paths can produce the same receptor amino-acid sequence. Influenza-specific mouse TCR-beta analysis and a separate human naive/memory CD8 T-cell study support convergent recombination and receptor sharing. The human study sampled four individuals; neither study establishes an individual cancer response. A shared receptor sequence or an expanded sequence count alone does not establish unique recent ancestry, antigen specificity or tumor killing.",
+        "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "rna-splicing",
+      "kind": "pathway",
+      "name": "RNA splicing",
+      "aka": [],
+      "tldr": "RNA processing removes introns and joins retained exons. Different processing choices can produce different messages without changing the underlying gene sequence.",
+      "summary": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.\n\nCancer-associated splicing changes can arise through altered RNA-processing factors or their expression. SF3B1, SRSF2, U2AF1 and ZRSR2 illustrate studied factors; AR-V7 and BCL2L1 illustrate named transcript contexts. The linked review describes disease-specific mechanisms and therapeutic research. An altered transcript alone does not establish an intact abnormal protein, immune presentation, a therapeutic dependency or patient benefit. Free-drug development and a conjugated payload also require their own construct-specific evidence.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/RNA_splicing",
+      "links": [
+        {
+          "label": "Bradley & Anczuków, RNA splicing dysregulation and the hallmarks of cancer (Nature Reviews Cancer 2023)",
+          "url": "https://doi.org/10.1038/s41568-022-00541-7"
+        },
+        {
+          "label": "NHGRI: Exon",
+          "url": "https://www.genome.gov/genetics-glossary/Exon"
+        },
+        {
+          "label": "NHGRI: Intron",
+          "url": "https://www.genome.gov/genetics-glossary/Intron"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"
+        },
+        {
+          "label": "Intron function in the nonsense-mediated decay of beta-globin mRNA: indications that pre-mRNA splicing in the nucleus can influence mRNA translation in the cytoplasm.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9671053/"
+        },
+        {
+          "label": "HGVS: reference sequences",
+          "url": "https://hgvs-nomenclature.org/stable/background/refseq/"
+        },
+        {
+          "label": "HGVS: RNA splicing nomenclature",
+          "url": "https://archive.hgvs-nomenclature.org/recommendations/RNA/variant/splicing/"
+        },
+        {
+          "label": "A survey of best practices for RNA-seq data analysis (Genome biology 2016)",
+          "url": "https://doi.org/10.1186/s13059-016-0881-8"
+        },
+        {
+          "label": "NHGRI: RNA fact sheet",
+          "url": "https://www.genome.gov/about-genomics/educational-resources/fact-sheets/ribonucleic-acid-fact-sheet"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "rna",
+        "gene",
+        "mutation",
+        "nonsense-mediated-decay"
+      ],
+      "cancers": [
+        "aml",
+        "cll",
+        "melanoma",
+        "prostate"
+      ],
+      "sections": [],
+      "technologies": [
+        "antisense-sirna",
+        "rna-seq"
+      ],
+      "targets": [
+        "androgen-receptor"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "mskcc",
+        "dana-farber",
+        "fred-hutch"
+      ],
+      "pathways": [
+        "myc",
+        "replication-stress",
+        "ar-signaling",
+        "antigen-presentation-immunoediting"
+      ],
+      "terms": [
+        "ar-v7",
+        "neoantigen"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-bradley-nat-rev-cancer"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Abdel-Wahab (MSK) on spliceosome mutations; Bradley (Fred Hutch) on splicing and neoantigens; Ebert (Dana-Farber) on SF3B1 in MDS.",
+        "A junction read supports a local RNA join, not necessarily a complete isoform. Gene-level counts can hide transcript differences. RNA quality, read coverage, reference version and cell mixture affect interpretation; protein quantity and function need separate evidence.",
+        "The pathway drawing groups possible consequences studied in particular cancer systems. Its arrows do not mean that every splice change causes every listed outcome; protein formation, presentation and functional dependence require their own evidence.",
+        "Identify the reference sequence, including its version when the reference database uses versions. For an intronic change, HGVS uses a genomic reference together with the specified transcript used for coding coordinates; a mature transcript reference alone does not contain the intron. In an invented transcript whose exon ends at coding position 200, c.200+1G>A places a change one base into the following intron. The c. prefix gives coding-DNA coordinates and p. describes a protein consequence. The DNA name alone does not specify an exon skip, frameshift or remaining function; one DNA change can produce several RNA products.",
+        "In a fictional repair-gene example, a high gene-level RNA count can include abnormal splice products and messages from normal neighbours. A reproducible abnormal junction supports a local RNA join, rather than a complete transcript, its protein or its originating DNA allele. An intronic DNA base may be removed during processing, so a mature-junction read need not contain that base. Assigning the product to a particular allele needs suitable linking sequence or another justified allele-specific measurement, with cell-source and reference checks. RNA directly examines the processing product; the gene-level count cannot settle the protein-function question.",
+        "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay."
+      ],
+      "analogy": "Splicing is like editing a recording into different versions. A changed edit can alter the final product, but the RNA join alone does not show which complete protein is made or what it does.",
+      "nodes": [
+        {
+          "id": "pre",
+          "label": "Pre-mRNA",
+          "x": 12,
+          "y": 40
+        },
+        {
+          "id": "sf3b1",
+          "label": "SF3B1 / SRSF2 / U2AF1 (mutant)",
+          "x": 38,
+          "y": 20
+        },
+        {
+          "id": "spl",
+          "label": "Spliceosome",
+          "x": 38,
+          "y": 60
+        },
+        {
+          "id": "iso",
+          "label": "Aberrant isoforms (AR-V7)",
+          "x": 66,
+          "y": 25,
+          "targetId": "androgen-receptor"
+        },
+        {
+          "id": "neo",
+          "label": "Splice neoantigens",
+          "x": 66,
+          "y": 60
+        },
+        {
+          "id": "rloop",
+          "label": "R-loops, replication stress",
+          "x": 66,
+          "y": 90
+        },
+        {
+          "id": "prmt5",
+          "label": "PRMT5 dependence",
+          "x": 90,
+          "y": 60
+        }
+      ],
+      "edges": [
+        {
+          "from": "pre",
+          "to": "spl",
+          "type": "activates"
+        },
+        {
+          "from": "sf3b1",
+          "to": "spl",
+          "type": "activates"
+        },
+        {
+          "from": "spl",
+          "to": "iso",
+          "type": "activates"
+        },
+        {
+          "from": "spl",
+          "to": "neo",
+          "type": "activates"
+        },
+        {
+          "from": "sf3b1",
+          "to": "rloop",
+          "type": "activates"
+        },
+        {
+          "from": "spl",
+          "to": "prmt5",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Spliceosome modulators (H3B-8800 negative; next generation in development)",
+        "PRMT5 inhibitors in MTAP-deleted and splicing-mutant cancers",
+        "Antisense oligonucleotides to redirect splicing (AR-V7, BCL2L1)",
+        "Splice-derived neoantigen vaccines (research)"
+      ]
+    },
+    {
+      "id": "gene",
+      "kind": "term",
+      "name": "Gene",
+      "aka": [
+        "genes",
+        "genetic"
+      ],
+      "tldr": "A gene is a DNA region that produces a functional RNA message. Some messages encode proteins; others work as RNA.",
+      "summary": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Gene",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gene"
+        },
+        {
+          "label": "NHGRI: Gene",
+          "url": "https://www.genome.gov/genetics-glossary/Gene"
+        },
+        {
+          "label": "NHGRI: Exon",
+          "url": "https://www.genome.gov/genetics-glossary/Exon"
+        },
+        {
+          "label": "NHGRI: Intron",
+          "url": "https://www.genome.gov/genetics-glossary/Intron"
+        },
+        {
+          "label": "HGVS: reference-sequence context",
+          "url": "https://hgvs-nomenclature.org/stable/background/refseq/"
+        },
+        {
+          "label": "OpenStax Biology 2e: 16-5-eukaryotic-post-transcriptional-gene-regulation",
+          "url": "https://openstax.org/books/biology-2e/pages/16-5-eukaryotic-post-transcriptional-gene-regulation"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-term",
+        "protein",
+        "mutation",
+        "oncogene",
+        "tumour-suppressor-gene",
+        "gene-expression",
+        "rna",
+        "rna-splicing"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Preserve the reference sequence, accession and version when describing a variant consequence. DNA sequencing, gene-level RNA counts and protein assays measure different objects; a pooled count does not establish every isoform or an intact active protein. Gene and protein names are often shared, so identify which molecule an assay or drug claim concerns.",
+        "In an invented genomic alignment, position V is retained in two transcripts. In A it falls in the coding sequence; in B a later translation start leaves V in an untranslated region. Both can retain the exon containing V. Alignment gaps preserve genomic positions in the drawing, while each processed RNA is continuous. These are two specified transcript models, not measured abundance, an observed variant effect or proof that both messages yield active proteins. Keep their reference accessions and versions with any consequence claim."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "ivonescimab",
+      "kind": "drug",
+      "name": "Ivonescimab",
+      "aka": [],
+      "tldr": "A Chinese bispecific that beat Keytruda head-to-head on progression-free survival in lung cancer, the first drug ever to do so.",
+      "summary": "HARMONi-2 (China): PFS 11.1 vs 5.8 months versus pembrolizumab in PD-L1+ first-line NSCLC. Approved in China (2024) for EGFR-mutant NSCLC after TKI (HARMONi-A) and first-line PD-L1+ NSCLC. Summit Therapeutics holds Western rights; HARMONi (global, EGFR-mutant post-TKI) met PFS but OS was not statistically significant in 2025; HARMONi-3 (squamous and non-squamous first-line) ongoing. Spawned a wave of PD-(L)1×VEGF bispecifics (Pfizer/3SBio, BMS/BioNTech, Merck/LaNova).",
+      "status": "approved",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov: trials of Ivonescimab",
+          "url": "https://clinicaltrials.gov/search?intr=AK112"
+        },
+        {
+          "label": "Summit: November 2026 filing and PDUFA update (sponsor report)",
+          "url": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "nsclc",
+        "colorectal",
+        "tnbc",
+        "pdl1-high-nsclc"
+      ],
+      "sections": [],
+      "technologies": [
+        "bispecific-antibody",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [
+        "pd1",
+        "vegf"
+      ],
+      "drugs": [],
+      "companies": [
+        "akeso",
+        "summit-therapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct07010263",
+        "nct06767527",
+        "nct06928389",
+        "nct06396065",
+        "nct06767514",
+        "nct05840016",
+        "nct06686030",
+        "nct05846867",
+        "nct06646055",
+        "nct07397338",
+        "nct07208773",
+        "nct05904379",
+        "nct07052253",
+        "nct07245446",
+        "nct06560112",
+        "nct07623356",
+        "nct05382442",
+        "nct05247684",
+        "nct07669779",
+        "nct06530251",
+        "nct07815665",
+        "nct06953999",
+        "nct06877650"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Summit's 4 November 2026 update reports that FDA accepted its application for filing in January 2026 for ivonescimab with chemotherapy after EGFR-directed treatment in EGFR-mutated advanced non-squamous lung cancer. The sponsor gives 14 November 2026 as the PDUFA goal action date. Acceptance for review and a target action date are separate from an approval decision; the deadline itself does not establish an approved US indication."
+      ],
+      "code": "AK112, SMT112",
+      "modality": "Bispecific antibody (PD-1×VEGF)",
+      "mechanism": "Tetravalent PD-1×VEGF-A bispecific with cooperative binding: VEGF binding increases PD-1 affinity, concentrating activity in tumour.",
+      "approvals": [
+        {
+          "region": "China",
+          "year": 2024,
+          "indication": "EGFR-mutant NSCLC after TKI (with chemotherapy); first-line PD-L1+ NSCLC"
+        }
+      ],
+      "mechanismSteps": [
+        "Tetravalent antibody binds VEGF-A in the tumour microenvironment",
+        "VEGF binding increases the antibody's affinity for PD-1 (cooperative binding), concentrating it in tumour",
+        "PD-1 blockade releases T cells; VEGF neutralisation normalises vessels and reduces immunosuppressive myeloid cells",
+        "Improved T-cell infiltration and killing"
+      ],
+      "dosing": {
+        "route": "IV infusion",
+        "schedule": "20 mg/kg every 3 weeks (China label; HARMONi-2)",
+        "modifications": "Standard immune-mediated event algorithm plus VEGF-class precautions (bleeding, hypertension, proteinuria)",
+        "monitoring": "Blood pressure, urine protein, thyroid, LFTs",
+        "source": "https://www.akesobio.com"
+      },
+      "toxicity": [
+        {
+          "event": "Proteinuria"
+        },
+        {
+          "event": "Hypertension"
+        },
+        {
+          "event": "Anaemia"
+        },
+        {
+          "event": "AST increased"
+        },
+        {
+          "event": "Hypothyroidism"
+        },
+        {
+          "event": "Haemorrhage (low grade)"
+        }
+      ],
+      "access": [
+        {
+          "country": "CN",
+          "reimbursement": "NMPA approved 2024; NRDL inclusion 2025",
+          "asOf": "2026-09-06"
+        },
+        {
+          "country": "US",
+          "reimbursement": "Investigational; BLA under review (PDUFA 14 November 2026)",
+          "asOf": "2026-09-06"
+        }
+      ],
+      "regulatoryEvents": [
+        {
+          "date": "2024-05-24",
+          "type": "approval",
+          "region": "China",
+          "note": "EGFR-mutant NSCLC after TKI, with chemotherapy (HARMONi-A)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2025-04",
+          "type": "approval",
+          "region": "China",
+          "note": "First-line PD-L1+ NSCLC (HARMONi-2)",
+          "source": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancer-hematologic-malignancies-approval-notifications"
+        },
+        {
+          "date": "2026-01",
+          "type": "filing",
+          "region": "US",
+          "note": "FDA accepted for filing Summit's BLA for EGFR-mutated non-squamous NSCLC after EGFR TKI therapy (sponsor report)",
+          "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        },
+        {
+          "date": "2026-11-14",
+          "type": "pdufa",
+          "region": "US",
+          "note": "Sponsor-reported FDA goal action date for the BLA; a review deadline, not an approval decision",
+          "source": "https://s206.q4cdn.com/652410165/files/doc_news/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026-2026.pdf"
+        }
+      ]
+    }
+  ]
+}

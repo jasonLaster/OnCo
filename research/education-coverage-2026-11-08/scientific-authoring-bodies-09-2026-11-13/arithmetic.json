@@ -1,0 +1,290 @@
+{
+  "method": "Independent operations on source data, without executing embedded rendering or validation code.",
+  "embeddedMutationDataSha256": "e9ddc917e7180e275096fab30ed82adc8f3883e4102d0a5cd62239a7cb6e29cb",
+  "checks": [
+    {
+      "id": "MUT-reference",
+      "expectedSequence": "ATGGAATCCGCTAACGGT",
+      "bases": 18,
+      "groups": [
+        {
+          "text": "ATG",
+          "sourcePositions": [
+            1,
+            2,
+            3
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GAA",
+          "sourcePositions": [
+            4,
+            5,
+            6
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "TCC",
+          "sourcePositions": [
+            7,
+            8,
+            9
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GCT",
+          "sourcePositions": [
+            10,
+            11,
+            12
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "AAC",
+          "sourcePositions": [
+            13,
+            14,
+            15
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GGT",
+          "sourcePositions": [
+            16,
+            17,
+            18
+          ],
+          "completeTriplet": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "id": "MUT-substitution",
+      "expectedSequence": "ATGGCATCCGCTAACGGT",
+      "bases": 18,
+      "groups": [
+        {
+          "text": "ATG",
+          "sourcePositions": [
+            1,
+            2,
+            3
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GCA",
+          "sourcePositions": [
+            4,
+            5,
+            6
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "TCC",
+          "sourcePositions": [
+            7,
+            8,
+            9
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GCT",
+          "sourcePositions": [
+            10,
+            11,
+            12
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "AAC",
+          "sourcePositions": [
+            13,
+            14,
+            15
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GGT",
+          "sourcePositions": [
+            16,
+            17,
+            18
+          ],
+          "completeTriplet": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "id": "MUT-in-frame-deletion",
+      "expectedSequence": "ATGTCCGCTAACGGT",
+      "bases": 15,
+      "groups": [
+        {
+          "text": "ATG",
+          "sourcePositions": [
+            1,
+            2,
+            3
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "TCC",
+          "sourcePositions": [
+            7,
+            8,
+            9
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GCT",
+          "sourcePositions": [
+            10,
+            11,
+            12
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "AAC",
+          "sourcePositions": [
+            13,
+            14,
+            15
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GGT",
+          "sourcePositions": [
+            16,
+            17,
+            18
+          ],
+          "completeTriplet": true
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "id": "MUT-frameshift-deletion",
+      "expectedSequence": "ATGAATCCGCTAACGGT",
+      "bases": 17,
+      "groups": [
+        {
+          "text": "ATG",
+          "sourcePositions": [
+            1,
+            2,
+            3
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "AAT",
+          "sourcePositions": [
+            5,
+            6,
+            7
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "CCG",
+          "sourcePositions": [
+            8,
+            9,
+            10
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "CTA",
+          "sourcePositions": [
+            11,
+            12,
+            13
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "ACG",
+          "sourcePositions": [
+            14,
+            15,
+            16
+          ],
+          "completeTriplet": true
+        },
+        {
+          "text": "GT",
+          "sourcePositions": [
+            17,
+            18
+          ],
+          "completeTriplet": false
+        }
+      ],
+      "pass_": true
+    },
+    {
+      "id": "MUT-reciprocal-toy",
+      "before": [
+        "U-V-W",
+        "X-Y-Z"
+      ],
+      "after": [
+        "U-V-Z",
+        "X-Y-W"
+      ],
+      "oneCopyEach": true,
+      "scope": "Only these stipulated segments; no general copy-neutrality claim."
+    },
+    {
+      "id": "DIV-equal-starts",
+      "start": 1000,
+      "control": 2000,
+      "treated": 1200,
+      "netControl": 1000,
+      "netTreated": 200,
+      "endpointGap": 800,
+      "scope": "800 is a count difference, not a measurement of deaths."
+    },
+    {
+      "id": "EPI-toy",
+      "markedUnderlying": "AACGT",
+      "substituted": "AATGT",
+      "scope": "A mark does not replace C with T; no assay conversion misclassified as a variant."
+    },
+    {
+      "id": "SPL-two-products",
+      "first": [
+        "A",
+        "B",
+        "C"
+      ],
+      "second": [
+        "A",
+        "C"
+      ],
+      "preservesOrder": true,
+      "separatePrecursors": true
+    }
+  ],
+  "totalChecks": 8,
+  "allPass": true,
+  "clinicalInference": false
+}

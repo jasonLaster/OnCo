@@ -1,0 +1,2360 @@
+{
+  "version": "proposal-support-bodies-09-root",
+  "uniqueRequirements": 39,
+  "artifactConventionRows": 1,
+  "bodyRequirementInstances": 48,
+  "nativePathRequirementInstances": 78,
+  "bodyVersionEntries": 54,
+  "additionalNativeVersionEntries": 52,
+  "teachingBodyPaths": 13,
+  "nativeTeachingPaths": 26,
+  "supportOnlyPaths": 14,
+  "sourceInventorySha256": "a5549c61e85bd2aa7ed6d17ce47e7e2e1132e52832e8959311d004e4833d5714",
+  "scope": "Hash containment and semantic/source acceptance are separate checks. Current registered local-draft representation is not main/live or independent acceptance. GER05 is an artifact convention with zero scientific credit.",
+  "proofs": [
+    {
+      "id": "EMT01",
+      "bodies": [
+        0
+      ],
+      "requirement": "Contact, polarity and shape combinations can include hybrid epithelial/mesenchymal features. A property sketch is not an observed transition, universal marker test, malignancy/metastasis route or resistant-state ranking; normal development/repair remain contexts.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EMT-S",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "5e97366e20595954505e432ce25f3fd61c0d0b87aecc1c9ef67b20c56b1182c1",
+          "supportingExcerpt": "Epithelial-mesenchymal transition describes coordinated changes in cellular organization and programs, occurring in development, repair and disease. It is not a binary switch defined by one marker. Primary skin and mammary tumor studies identified intermediate epithelial/mesenchymal states with differing properties. Associations with migration, stem-like features, immune effects or drug resistance require context-specific evidence; they should not all be assigned automatically to every mesenchymal signal.",
+          "passageSha256": "7f7567f9f4aa61c6bea1be732da795e99d77303d480fee085874b599b2eed1aa"
+        },
+        {
+          "id": "EMT-N",
+          "recordId": "emt",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "510fe86224b5955a2f738cff2d17b19dad82deb38b0293636fd18f2e07bd884f",
+          "supportingExcerpt": "Use multiple cellular properties, suitable spatial attribution and, when testing a transition, time or lineage evidence. Bulk mesenchymal RNA can reflect nonmalignant stromal cells. Mouse lineage-tracing experiments that examined metastasis and chemotherapy resistance support conclusions within their reporter/model settings; an EMT label alone does not establish sensitivity or select treatment.",
+          "passageSha256": "48a9a56b14a6e15b1647a9c5eb0a72d2cbe0bce0f7afb7c83d6be5c7e43d19f3"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The fields describe coordinated normal/developmental and disease programmes, intermediate states, multifeature measurement, stromal mixtures and the need for temporal/lineage evidence. An unmeasured property comparison cannot establish a trajectory or a universal resistance ranking.",
+        "freshSources": [
+          "DOI04",
+          "PMID29670281",
+          "PMID26560033"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CC01",
+      "bodies": [
+        1
+      ],
+      "requirement": "Ordered G1-S-G2-M and optional G0/return are distinct from a universal timetable or equal-duration sectors.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "CC-S",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "3510ad65ec0abba2ee9b49aaeeb1e041313f02ca2931fe2fc57f88fb61fd3ff5",
+          "supportingExcerpt": "G1 prepares the cell, S copies DNA, and G2 precedes the mitotic phase. Mitosis separates nuclear chromosomes; cytokinesis separates cytoplasm into daughter cells. G0 describes a noncycling state, which need not mean death or loss of function. Cyclins, CDKs and checkpoints regulate transitions, and their alteration can contribute to cancer without making every checkpoint absent or guaranteeing error-free division. Cell-cycle checkpoints and immune checkpoints describe different biological processes.",
+          "passageSha256": "23a4e91a3907aa6171efed4803d525fa03fc8683a9d242c1e4d6414f6c03d012"
+        },
+        {
+          "id": "CC-DNA",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The order, optional G0 and conditional return are explicit. Equal sectors are a layout convention rather than a duration measurement; the field denies that inference.",
+        "freshSources": [
+          "OFF06"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "CC02",
+      "bodies": [
+        1
+      ],
+      "requirement": "Relative DNA amount alone cannot distinguish G0/G1 or G2/M; phase fractions do not establish cell-division rate.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "CC-DNA",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "On a simplified relative-DNA scale, G1 is the reference amount, S lies between that amount and twice it, and G2 and M before cell separation are about twice it. A late-mitotic drawing can show two nuclei within one cell. This scale is neither a universal tumour ploidy nor a way to distinguish G0 from G1 or G2 from M. A G0 branch is optional; return to G1 depends on the cell and conditions. Neither a snapshot nor equally sized sectors establishes phase durations.",
+          "passageSha256": "eddcb3695a56b4a45f5bab85dcffa390b11711b8f0f30e2669b8fd558eb849da"
+        },
+        {
+          "id": "CC-RATE",
+          "recordId": "cell-cycle",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "4f1dbb730e7f1718ab644ec234e474322e34eafa8d8191de199d70359873ff77",
+          "supportingExcerpt": "A Ki-67-positive fraction or snapshot phase distribution is not a division rate or a population doubling time. Time-resolved proliferation and cell-loss measurements answer further questions. CDK4/6 inhibitors and spindle-directed drugs affect different parts of the cycle.",
+          "passageSha256": "5a62d2d5170721dc2ee9ed8cc10a0f3aa0d3d646b5b970b123847bcab4c4bad8"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The shared relative-DNA groups and the snapshot-versus-rate distinction are explicit. Fresh methods abstracts support the need for additional markers and careful doublet handling; no universal ploidy or duration is inferred.",
+        "freshSources": [
+          "PMID26131851",
+          "PMID11746105"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EP01",
+      "bodies": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "A generic normal epithelial lining borders a lumen; an extracellular basement membrane lies outside basal surfaces and differs from the plasma membrane around each cell. It is not a universal breast blueprint or invasion test.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EP-S",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        },
+        {
+          "id": "EP-BOUND",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "An epithelial marker helps identify a cell compartment; a positive lineage stain alone does not establish malignancy or invasion. Tissue architecture matters. For an epithelial carcinoma, assessing in-situ versus invasive disease includes microscopic review of the basement membrane and surrounding tissue. The SEER summary-stage manual retains site-specific exceptions; this boundary is not a universal staging rule for every cancer.",
+          "passageSha256": "bf944ad075267c7e9004c1973d543c7b89f408d3eef40e8fb5adf01c35945a5b"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The generic lining and extracellular basement boundary are distinct from each lipid cell membrane. The fields keep tissue architecture and site-specific exceptions, preventing a universal breast or invasion rule from this schematic.",
+        "freshSources": [
+          "OFF16",
+          "OFF15"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EP02",
+      "bodies": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "Stroma includes multiple cellular components, matrix and vessels, not only fibroblasts or collagen.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EP-S",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59"
+        },
+        {
+          "id": "EP-RNA",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+          "passageSha256": "c227cab43ab3bf0828e94643e999b139f8d983aa3ede9efd1db267a3eec48e34"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The field names cells, matrix and vascular structures, supported by tissue atlas abstracts. It does not reduce stroma to one cell type or count symbols as cell frequencies.",
+        "freshSources": [
+          "PMID34493872",
+          "PMID37380767"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EP03",
+      "bodies": [
+        2,
+        3,
+        4
+      ],
+      "requirement": "A fibroblast RNA mark is an intracellular stromal contributor to a possible tissue measurement, not an expression quantity, epithelial source, malignant-cell target or treatment effect.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EP-RNA",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+          "passageSha256": "c227cab43ab3bf0828e94643e999b139f8d983aa3ede9efd1db267a3eec48e34"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The mixed-measurement paragraph separates cell attribution and per-cell expression from bulk amount. An intracellular RNA symbol is a possible stromal contribution, not a measured amount, malignant-cell assignment, drug target or outcome.",
+        "freshSources": [
+          "PMID34493872",
+          "PMID37380767"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "DIV01",
+      "bodies": [
+        5
+      ],
+      "requirement": "From equal1000 starts to1200 treated and2000 control endpoints, net changes are200 and1000 and the endpoint gap is800. The gap is not800 measured deaths; division and loss remain unmeasured. Nondividing-cell vulnerability is not excluded.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "DIV-TOY",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "In a fictional comparison, two populations start at 1,000 cells and are counted at the same later time. The untreated population reaches 2,000 and the treated one 1,200: their net increases are 1,000 and 200. The 800-cell endpoint difference does not mean that treatment killed 800 cells. Production and loss were not measured separately, so slower division, greater loss or both remain possible explanations. These are arithmetic premises, not a measured drug result or patient-benefit estimate.",
+          "passageSha256": "bdf38a10f9763aab08f800bfed72f9bd9396348a5c79d745c806d10dd7c73802"
+        },
+        {
+          "id": "DIV-NEURON",
+          "recordId": "cell-division",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "85a815ac0615900d8b624e6019702352350c828dbeaa74aef1cf9ad389032b8a",
+          "supportingExcerpt": "Growth arrest and cell death need separate measurements. A population count reflects both production and loss. In adult mouse sensory-neuron cultures, paclitaxel disrupted distal axon growth without requiring cell division; this defined experimental model does not predict every clinical toxicity or treatment effect.",
+          "passageSha256": "695a122b53c38faae0f71b0ffa0b6ce0223a292e962c30403f8abe71325c3b5c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact equal-start counts and endpoint gap are carried. Independent arithmetic confirms the difference is not a measured death count. Gornstein concerns adult mouse sensory-neuron cultures; it supports vulnerability without division within that model, not universal clinical toxicity.",
+        "freshSources": [
+          "DOI02",
+          "PMID27894788"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "LIN01",
+      "bodies": [
+        6
+      ],
+      "requirement": "Developmental ancestry, broad cell identity, genetic clone and activity state without inferring permanence are distinct axes. Fictional C1/C2 can occur in both RNA-state groups; an RNA cluster alone does not establish ancestry or a genetic clone.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "LIN-S",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+          "supportingExcerpt": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+          "passageSha256": "3dc9cb6f8bebf3f6492adf24e0fd5490d77c3495bd12b0244e324fbb79379602"
+        },
+        {
+          "id": "LIN-TRACE",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+          "passageSha256": "be1b2314cff4f2d8507f2a631056fc3126fd475bb7152a223385af900ef5e777"
+        },
+        {
+          "id": "LIN-TOY",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it.",
+          "passageSha256": "54ca7766f0aebb14fce395ead21406abd03f77dec41d99daf2b157c6d833ecd3"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Ancestry, cell identity, genetic clone and state are explicitly separate. The fictional one-clone/two-states and shared-cluster/different-clone examples preserve the C1/C2 teaching without treating labels or RNA similarity as ancestry evidence.",
+        "freshSources": [
+          "PMID31974159"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG01",
+      "bodies": [
+        7
+      ],
+      "requirement": "A generalized human-cell cutaway distinguishes cytosol from nucleus, ER/Golgi/vesicle/lysosome lumens and mitochondrial compartments; organelles are not one required transport sequence.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-S",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+          "supportingExcerpt": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+          "passageSha256": "baad22a47b09c925f419bcda9f5ebc855d64a96bc4f19943bf0e382e5f5892e0"
+        },
+        {
+          "id": "ORG-ANATOMY",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere.",
+          "passageSha256": "3a5a7abb3b922298c5a934eb7007284d332826004208262e2ec47b39ae4e74bf"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Cytosol, membrane-enclosed interiors and organelle structure are distinguished. The selected secretion route is expressly not an obligatory sequence through every organelle or an inventory of every human-cell subtype.",
+        "freshSources": [
+          "OFF08",
+          "OFF09",
+          "OFF15"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG03",
+      "bodies": [
+        7
+      ],
+      "requirement": "One selected secreted-protein example starts after entry into ER lumen, retains lumen-enclosed cargo through Golgi and outgoing vesicle, then opens vesicle lumen outward at plasma-membrane fusion. It does not spill cargo into cytosol or make lysosome/mitochondrion universal route steps.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ROUTE",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect.",
+          "passageSha256": "bcdc71b33ab9a438e85957da6758c668bf1ba5c2f145f2ffa96805d81ea61561"
+        },
+        {
+          "id": "MEM-UPTAKE",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4",
+          "supportingExcerpt": "In an inward-budding uptake example, an open pocket remains continuous with extracellular fluid until it pinches off. Once sealed, the vesicle is inside the cell but its contents are still in a membrane-enclosed lumen rather than free in cytosol. A process arrow does not make the cargo cross the bilayer. A receptor can span the membrane and bind a ligand outside; binding alone does not establish internalisation, cytosolic delivery or signalling.",
+          "passageSha256": "3397e67ffbf1bf388f6346d606e72d90df22b10c203486257dec71a85f4a6995"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The self-contained selected ER-lumen/Golgi/vesicle route remains membrane-enclosed until outward fusion; vesicle uptake alone is not crossing into cytosol. Other proteins and pathways are expressly outside that route.",
+        "freshSources": [
+          "OFF09",
+          "OFF12"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MEM01",
+      "bodies": [
+        8
+      ],
+      "requirement": "One plasma-membrane bilayer has water-facing heads and a shared tail core. A spanning receptor can bind a ligand that remains extracellular; binding alone does not establish delivery or activity.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MEM-CHANNEL",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4",
+          "supportingExcerpt": "In a phospholipid bilayer, heads face the watery surroundings on either side and tails face a shared inner core. An open ion channel provides a selective pore through that boundary. Net movement of a permitted ion follows its electrochemical gradient, which combines concentration and electrical effects; a drawing of inward flow does not set the direction for every ion or cell. This example is passive transport, rather than an ATP-driven pump or a route for a large cargo molecule. Uptake into a vesicle and escape across its membrane are separate events.",
+          "passageSha256": "5d70ceb77c7f80e3a6e1667d615e648d2d12394179238d9e05012b565e4967d7"
+        },
+        {
+          "id": "MEM-UPTAKE",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4",
+          "supportingExcerpt": "In an inward-budding uptake example, an open pocket remains continuous with extracellular fluid until it pinches off. Once sealed, the vesicle is inside the cell but its contents are still in a membrane-enclosed lumen rather than free in cytosol. A process arrow does not make the cargo cross the bilayer. A receptor can span the membrane and bind a ligand outside; binding alone does not establish internalisation, cytosolic delivery or signalling.",
+          "passageSha256": "3397e67ffbf1bf388f6346d606e72d90df22b10c203486257dec71a85f4a6995"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The new bilayer description names water-facing heads and inner tails. The existing spanning-receptor example separates extracellular binding from internalisation and signalling; transport or efficacy is not assumed.",
+        "freshSources": [
+          "OFF38",
+          "OFF12"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MEM02",
+      "bodies": [
+        8
+      ],
+      "requirement": "An illustrative open channel provides a pore for a selected small ion following a favorable electrochemical gradient. It is not a macromolecule route, pump or universal ATP requirement/direction.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MEM-CHANNEL",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4",
+          "supportingExcerpt": "In a phospholipid bilayer, heads face the watery surroundings on either side and tails face a shared inner core. An open ion channel provides a selective pore through that boundary. Net movement of a permitted ion follows its electrochemical gradient, which combines concentration and electrical effects; a drawing of inward flow does not set the direction for every ion or cell. This example is passive transport, rather than an ATP-driven pump or a route for a large cargo molecule. Uptake into a vesicle and escape across its membrane are separate events.",
+          "passageSha256": "5d70ceb77c7f80e3a6e1667d615e648d2d12394179238d9e05012b565e4967d7"
+        },
+        {
+          "id": "MEM-S",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "74bd87a22f3a3ccd143870a307c3683103f9fecccfebfce4066ba0ffd054fc87",
+          "supportingExcerpt": "A lipid bilayer and its proteins separate the cell from its surroundings. Permeability depends on size, charge and chemical properties, rather than a universal small-molecule versus antibody rule. Passive movement follows the relevant gradient; active transport uses energy directly or through a coupled gradient. Endocytosis encloses material in a membrane-bound compartment. Delivery to cytosol or another target compartment requires further steps. Cytosol is fluid outside organelle interiors; cytoplasm includes that fluid and structures outside the nucleus.",
+          "passageSha256": "1aa8759b5792cf9ddf2b0f65e01c80804d46f878517666910f4c178de74c3b67"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The selective open pore and electrochemical-gradient direction are explicit. This passive example is distinct from ATP-powered pumps, large-cargo delivery and any universal inward direction.",
+        "freshSources": [
+          "OFF10",
+          "OFF11"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MEM03",
+      "bodies": [
+        8
+      ],
+      "requirement": "An inward uptake pocket remains open to outside before closure; the resulting intracellular vesicle encloses cargo in a lumen distinct from cytosol. Escape is a separate unresolved crossing, not automatic release, activity, nuclear delivery or clinical benefit.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MEM-UPTAKE",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "398afee51f9a4fc6853f337afca9ce813a60a35d1ee0a2a31ef446027e1d6ed4",
+          "supportingExcerpt": "In an inward-budding uptake example, an open pocket remains continuous with extracellular fluid until it pinches off. Once sealed, the vesicle is inside the cell but its contents are still in a membrane-enclosed lumen rather than free in cytosol. A process arrow does not make the cargo cross the bilayer. A receptor can span the membrane and bind a ligand outside; binding alone does not establish internalisation, cytosolic delivery or signalling.",
+          "passageSha256": "3397e67ffbf1bf388f6346d606e72d90df22b10c203486257dec71a85f4a6995"
+        },
+        {
+          "id": "MEM-S",
+          "recordId": "cell-membrane",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "74bd87a22f3a3ccd143870a307c3683103f9fecccfebfce4066ba0ffd054fc87",
+          "supportingExcerpt": "A lipid bilayer and its proteins separate the cell from its surroundings. Permeability depends on size, charge and chemical properties, rather than a universal small-molecule versus antibody rule. Passive movement follows the relevant gradient; active transport uses energy directly or through a coupled gradient. Endocytosis encloses material in a membrane-bound compartment. Delivery to cytosol or another target compartment requires further steps. Cytosol is fluid outside organelle interiors; cytoplasm includes that fluid and structures outside the nucleus.",
+          "passageSha256": "1aa8759b5792cf9ddf2b0f65e01c80804d46f878517666910f4c178de74c3b67"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The open pocket, sealed vesicle and separate cytosol crossing are explicit. Gilleron is a defined LNP/siRNA experimental result, not a universal escape frequency; no numerical escape rate or clinical benefit is adopted.",
+        "freshSources": [
+          "OFF12",
+          "PMID23792630"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EPI01",
+      "bodies": [
+        10
+      ],
+      "requirement": "A chemical mark on otherwise identical DNA sequence differs from a base substitution; DNA methylation and histone modifications affect different substrates.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EPI-S",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "73a68198dbdbb45bc8bc34ae3a9d673d3ca45d80d5471baddb0d626c0b483b96",
+          "supportingExcerpt": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
+          "passageSha256": "c0e727df9da7f968a25c32390060e86298017064cabd01b204e34eb6b6a5752f"
+        },
+        {
+          "id": "EPI-TOY",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7ed3f4ed90a08de81d59e2aaa069b916f67f4e8638741c8ab2a6704781b9dd53",
+          "supportingExcerpt": "In an invented sequence example, AACGT can carry a methyl group on its C while the underlying base order remains AACGT. Replacing that C with T instead gives AATGT, a different underlying DNA sequence. Changing a chemical mark on a histone protein is different again. Keep that biological comparison separate from an assay that chemically converts bases: standard bisulfite treatment can change the readout without establishing that the original DNA carried a C-to-T variant. Read the conversion chemistry, locus and cell context before interpreting a methylation call.",
+          "passageSha256": "a02e8a849bb0afd9be9c6d65274aa4a6d3122fe63e8309eb2d3cd629b81aee29"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "DNA marks and histone modifications affect different substrates; the fictional AACGT/AATGT comparison separates a chemical mark from a sequence substitution.",
+        "freshSources": [
+          "OFF23",
+          "PMID1542678"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EPI02",
+      "bodies": [
+        10
+      ],
+      "requirement": "Position and cell context matter; methylation is not a universal causal off-switch or proof of response.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EPI-S",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "73a68198dbdbb45bc8bc34ae3a9d673d3ca45d80d5471baddb0d626c0b483b96",
+          "supportingExcerpt": "DNA methylation changes a base’s chemical state without substituting the underlying sequence letter. Much human methylation analysis concerns 5-methylcytosine at CpG sites. Histone modifications affect DNA-associated proteins and are distinct from marks on DNA itself. Some regulatory states persist through division; epigenetic does not mean every mark is permanent or transmitted between generations. Promoter methylation can participate in reduced transcription, while patterns elsewhere need their own interpretation.",
+          "passageSha256": "c0e727df9da7f968a25c32390060e86298017064cabd01b204e34eb6b6a5752f"
+        },
+        {
+          "id": "EPI-MIX",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7ed3f4ed90a08de81d59e2aaa069b916f67f4e8638741c8ab2a6704781b9dd53",
+          "supportingExcerpt": "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity.",
+          "passageSha256": "b6cabbedec63a768913fba71c0186df767f92df2787f896d1425fae349510e39"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Genomic position and cellular context matter. The retained fields qualify promoter effects and deny that a mark alone proves causal silencing or treatment sensitivity; the named MeCP2 and methylome studies retain their own scope.",
+        "freshSources": [
+          "DOI01",
+          "PMID19829295"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EPI03",
+      "bodies": [
+        10
+      ],
+      "requirement": "Standard bisulfite readout does not distinguish5mC from5hmC; source-specific comparison methods and assay limits need raw verification.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EPI-METHOD",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7ed3f4ed90a08de81d59e2aaa069b916f67f4e8638741c8ab2a6704781b9dd53",
+          "supportingExcerpt": "Standard bisulfite analysis changes unmodified cytosine but reads both 5-methylcytosine and 5-hydroxymethylcytosine as C. Oxidative bisulfite methods separate those features through additional chemistry. Ordinary amplified DNA sequence does not preserve this direct chemical measurement.",
+          "passageSha256": "da3ef4f7e319d672cf674a14480564ab9a8ed6cab9d4879e149481e1b6da0d72"
+        },
+        {
+          "id": "EPI-TOY",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7ed3f4ed90a08de81d59e2aaa069b916f67f4e8638741c8ab2a6704781b9dd53",
+          "supportingExcerpt": "In an invented sequence example, AACGT can carry a methyl group on its C while the underlying base order remains AACGT. Replacing that C with T instead gives AATGT, a different underlying DNA sequence. Changing a chemical mark on a histone protein is different again. Keep that biological comparison separate from an assay that chemically converts bases: standard bisulfite treatment can change the readout without establishing that the original DNA carried a C-to-T variant. Read the conversion chemistry, locus and cell context before interpreting a methylation call.",
+          "passageSha256": "a02e8a849bb0afd9be9c6d65274aa4a6d3122fe63e8309eb2d3cd629b81aee29"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Booth's complete abstract explicitly distinguishes ordinary bisulfite from oxidative bisulfite and the inferred hydroxymethylation comparison. No full protocol read or new quantitative assay validation is claimed.",
+        "freshSources": [
+          "DOI03",
+          "PMID1542678"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "GER01",
+      "bodies": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "requirement": "An early constitutional variant can be inherited or de novo and broadly distributed; a constitutional example is not automatically a gamete/transmission verdict.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "GER-S",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "8921d3b8120d2692dbf6ccbfe474697f2431cdd24799df731804d9d0dc3f1189",
+          "supportingExcerpt": "Inherited germline variants came through an egg or sperm and are generally present across many tissues. A de novo constitutional variant need not have been inherited from a parent. Changes arising after fertilization can create mosaic distributions. Somatic variants occur in body-cell lineages, including normal tissues as well as cancers. Origin, distribution, harmfulness and transmissibility are separate questions; neither a variant class nor a large read fraction settles them.",
+          "passageSha256": "cfea07f9d9ccc265aa6cd76355bab653533d72ca05d146adfaf8b703201e9380"
+        },
+        {
+          "id": "GER-TOY",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin.",
+          "passageSha256": "d9312c622c8a4ef18b8f8d2fd94418dfd0cd677c37364552b4077602e9265766"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The inherited versus de novo constitutional distinction is explicit. Origin and broad distribution are kept separate from reproductive-cell involvement and transmission; the illustration is not a hereditary test.",
+        "freshSources": [
+          "OFF05"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "GER02",
+      "bodies": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "requirement": "A later acquired body-lineage variant can produce a normal-blood clone with somatic and mosaic descriptions overlapping; somatic is not synonymous with tumor-only or blood-only.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "GER-S",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "8921d3b8120d2692dbf6ccbfe474697f2431cdd24799df731804d9d0dc3f1189",
+          "supportingExcerpt": "Inherited germline variants came through an egg or sperm and are generally present across many tissues. A de novo constitutional variant need not have been inherited from a parent. Changes arising after fertilization can create mosaic distributions. Somatic variants occur in body-cell lineages, including normal tissues as well as cancers. Origin, distribution, harmfulness and transmissibility are separate questions; neither a variant class nor a large read fraction settles them.",
+          "passageSha256": "cfea07f9d9ccc265aa6cd76355bab653533d72ca05d146adfaf8b703201e9380"
+        },
+        {
+          "id": "GER-MIX",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "Suitable tumor/normal comparison can help attribute origin, but blood can carry acquired hematopoietic clones. Plasma variants can arise from those clones as well as a tumor. Mosaicism, contamination, specimen suitability and assay limits require assessment rather than automatic subtraction of every blood-matching variant.",
+          "passageSha256": "36ffe6a2de8b6a59d11b50a733c3acc916054526d269f8ea39a75873ea8cf603"
+        },
+        {
+          "id": "GER-TOY",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin.",
+          "passageSha256": "d9312c622c8a4ef18b8f8d2fd94418dfd0cd677c37364552b4077602e9265766"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Somatic changes can occur in normal body-cell lineages and overlap with mosaic distributions. The plasma study supports acquired blood-clone contributions in its tested population, not a claim that somatic means blood-only or cancer-only.",
+        "freshSources": [
+          "OFF05",
+          "OFF28",
+          "PMID31768066"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "GER03",
+      "bodies": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "requirement": "Plasma is a DNA-fragment mixture with possible blood/tumor/other-tissue contributions, not a cell lineage or guaranteed source assignment. No intact cells/nuclei are depicted in the plasma example.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "GER-MIX",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "Suitable tumor/normal comparison can help attribute origin, but blood can carry acquired hematopoietic clones. Plasma variants can arise from those clones as well as a tumor. Mosaicism, contamination, specimen suitability and assay limits require assessment rather than automatic subtraction of every blood-matching variant.",
+          "passageSha256": "36ffe6a2de8b6a59d11b50a733c3acc916054526d269f8ea39a75873ea8cf603"
+        },
+        {
+          "id": "GER-TOY",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin.",
+          "passageSha256": "d9312c622c8a4ef18b8f8d2fd94418dfd0cd677c37364552b4077602e9265766"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Plasma fragments and possible blood/tumour contributions are explicit. The cartoon's other-tissue category is non-exhaustive; a possible-source arrow supplies neither cellular ancestry nor an individual-fragment origin.",
+        "freshSources": [
+          "PMID31768066"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "GER04",
+      "bodies": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "requirement": "Blood, tumor and plasma sample windows do not reconstruct all unsampled body/reproductive cells, origin, pathogenicity, effect or transmissibility. Question marks are unmeasured rather than absent.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "GER-S",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "8921d3b8120d2692dbf6ccbfe474697f2431cdd24799df731804d9d0dc3f1189",
+          "supportingExcerpt": "Inherited germline variants came through an egg or sperm and are generally present across many tissues. A de novo constitutional variant need not have been inherited from a parent. Changes arising after fertilization can create mosaic distributions. Somatic variants occur in body-cell lineages, including normal tissues as well as cancers. Origin, distribution, harmfulness and transmissibility are separate questions; neither a variant class nor a large read fraction settles them.",
+          "passageSha256": "cfea07f9d9ccc265aa6cd76355bab653533d72ca05d146adfaf8b703201e9380"
+        },
+        {
+          "id": "GER-TOY",
+          "recordId": "germline-vs-somatic",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7d26fc843c80cfe85b7211f9f2be1d0d8011f71a3530ba665d9331591f4b5bce",
+          "supportingExcerpt": "In two invented histories, an early constitutional variant may be inherited or de novo, whereas a later variant can mark a mosaic body-cell lineage, including a normal blood clone. A partial set of sampled cells leaves reproductive-cell involvement and unsampled tumour-cell genotypes unknown. Suppose a cartoon contains two marked blood cells among four and four marked DNA fragments among eight. Those are counts of chosen symbols, not measured allele fractions, a tumour fraction or evidence of inheritance. Plasma fragments are not intact circulating cells, and arrows from blood cells or tumour cells describe possible DNA contributions, not an exhaustive source map or proof of a particular fragment's origin.",
+          "passageSha256": "d9312c622c8a4ef18b8f8d2fd94418dfd0cd677c37364552b4077602e9265766"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Partial sampling leaves unmeasured cell genotypes unknown, not absent. Distribution, origin, harmfulness and transmissibility remain separate; tumor-only sequencing limitations do not turn a fictional cartoon into a clinical hereditary test.",
+        "freshSources": [
+          "OFF05",
+          "OFF28",
+          "PMID25877891"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG-NUC",
+      "bodies": [
+        7
+      ],
+      "requirement": "The illustrated nucleus has a double envelope with pores and chromatin; the generalized cell cartoon is not every human-cell subtype.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ANATOMY",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere.",
+          "passageSha256": "3a5a7abb3b922298c5a934eb7007284d332826004208262e2ec47b39ae4e74bf"
+        },
+        {
+          "id": "ORG-S",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+          "supportingExcerpt": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+          "passageSha256": "baad22a47b09c925f419bcda9f5ebc855d64a96bc4f19943bf0e382e5f5892e0"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Double envelope, pores and chromatin are carried in the new anatomy paragraph, alongside the generalized-cell caveat. No universal inventory is assigned to every human-cell subtype.",
+        "freshSources": [
+          "OFF08",
+          "OFF15",
+          "ENVELOPE"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG-ER",
+      "bodies": [
+        7
+      ],
+      "requirement": "The rough ER is a membrane network with an enclosed lumen, adjacent to the nucleus; any depicted connection concerns the outer nuclear envelope, not a pathway through every organelle.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ANATOMY",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere.",
+          "passageSha256": "3a5a7abb3b922298c5a934eb7007284d332826004208262e2ec47b39ae4e74bf"
+        },
+        {
+          "id": "ORG-ROUTE",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect.",
+          "passageSha256": "bcdc71b33ab9a438e85957da6758c668bf1ba5c2f145f2ffa96805d81ea61561"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The rough-ER network and enclosed lumen are explicit. The outer-nuclear-membrane continuity is independently supported by the fresh review abstract and introduction; it is distinct from an all-organelle transport path.",
+        "freshSources": [
+          "OFF09",
+          "ENVELOPE"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG-GOLGI-LYS",
+      "bodies": [
+        7
+      ],
+      "requirement": "Golgi flattened membrane sacs and a closed lysosome with breakdown material are distinct structures; the lysosome is not a mitochondrion or required step in this selected secretion route.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ANATOMY",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere.",
+          "passageSha256": "3a5a7abb3b922298c5a934eb7007284d332826004208262e2ec47b39ae4e74bf"
+        },
+        {
+          "id": "ORG-S",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+          "supportingExcerpt": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+          "passageSha256": "baad22a47b09c925f419bcda9f5ebc855d64a96bc4f19943bf0e382e5f5892e0"
+        },
+        {
+          "id": "ORG-ROUTE",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect.",
+          "passageSha256": "bcdc71b33ab9a438e85957da6758c668bf1ba5c2f145f2ffa96805d81ea61561"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Flattened Golgi sacs and a lysosomal breakdown compartment are distinguished. Neither a lysosome nor mitochondrion is inserted into every secretory-protein route.",
+        "freshSources": [
+          "OFF08",
+          "OFF09"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG-DNA",
+      "bodies": [
+        7
+      ],
+      "requirement": "Mitochondrion has two membranes, inner cristae and a matrix DNA loop distinguished from nuclear chromatin. The selected diagram omits cytosolic/vesicle DNA rather than proving DNA can never occur there.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ANATOMY",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "A nucleus has an inner and an outer membrane, pores and DNA associated with proteins as chromatin. Rough endoplasmic reticulum forms a membrane network with a lumen; its membrane connects with the outer nuclear membrane. The Golgi consists of flattened membrane sacs, while a lysosome encloses material for breakdown. A mitochondrion has outer and inner membranes; folds of the inner membrane are cristae, and the matrix lies inside it. Its genome is distinct from nuclear chromatin. This general description is not an inventory of every human cell subtype, nor proof that DNA can never occur elsewhere.",
+          "passageSha256": "3a5a7abb3b922298c5a934eb7007284d332826004208262e2ec47b39ae4e74bf"
+        },
+        {
+          "id": "ORG-S",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "434331e2f6ebf905e210f2db088a14f82945cd9b9b16f741f5a51c0dd04ce95f",
+          "supportingExcerpt": "The nucleus houses most cellular DNA; mitochondria have their own genome and participate in energy metabolism and other processes. Ribosomes make polypeptide chains. The endoplasmic reticulum and Golgi process and sort selected membrane or secreted cargo, while lysosomes degrade delivered material in an acidic compartment. That itinerary is not the route of every protein. Cytosol is the fluid outside membrane-bound organelle interiors; cytoplasm includes cytosol and structures outside the nucleus. A vesicle lumen is not cytosol.",
+          "passageSha256": "baad22a47b09c925f419bcda9f5ebc855d64a96bc4f19943bf0e382e5f5892e0"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Two mitochondrial membranes, inner cristae, matrix and a distinct organellar genome are carried. A simplified genomic-location example is not a universal exclusion of DNA elsewhere; no DNA abundance or copy count is measured.",
+        "freshSources": [
+          "OFF08"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "ORG-RIB",
+      "bodies": [
+        7
+      ],
+      "requirement": "Ribosomes are not membrane-enclosed; selected particles are free in cytosol or on the cytosolic face of ER, not its lumen.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "ORG-ROUTE",
+          "recordId": "cellular-compartments",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "565871831ff7f8198438231a09612693d4d8fbf80c5153632bfa88569bea9e9e",
+          "supportingExcerpt": "Among cytosolic ribosomes, some are free and others sit on the cytosolic face of rough ER, outside its lumen. Consider one secreted protein: it enters the ER lumen during synthesis, travels through the lumens of transport vesicles and Golgi compartments, and can leave when a secretory vesicle fuses with the cell membrane. Movement within these membrane-enclosed spaces is not cytosolic escape. This selected route does not describe every protein; a compartment diagram alone does not measure transport, activity or treatment effect.",
+          "passageSha256": "bcdc71b33ab9a438e85957da6758c668bf1ba5c2f145f2ffa96805d81ea61561"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Free cytosolic ribosomes and particles on the cytosolic ER face are distinguished from the lumen. The native ribosome symbols are not membrane-enclosed transport vesicles; the textbook describes their RNA/protein complex and cytosolic location.",
+        "freshSources": [
+          "OFF08",
+          "OFF09"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "EPI04",
+      "bodies": [
+        10
+      ],
+      "requirement": "A bulk methylation average is not a direct fraction of cells with a silenced gene; sequence/mark observation, cell attribution and expression effect are distinct.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "EPI-MIX",
+          "recordId": "epigenetic-marks",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "7ed3f4ed90a08de81d59e2aaa069b916f67f4e8638741c8ab2a6704781b9dd53",
+          "supportingExcerpt": "A methylation signal in mixed tissue is not a percentage of cancer cells with a silenced gene. Cell mixture, genomic location, conversion controls and method resolution matter. Association with low RNA does not establish causation or treatment sensitivity.",
+          "passageSha256": "b6cabbedec63a768913fba71c0186df767f92df2787f896d1425fae349510e39"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The field separates mixed-cell measurement from a cell fraction or a silenced-gene percentage. This is a measurement-scope reading rule, not a new empirical estimate or causal conclusion.",
+        "freshSources": [
+          "PMID19829295",
+          "OFF23"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MUT01",
+      "bodies": [
+        16,
+        17,
+        18
+      ],
+      "requirement": "In the same specified internal protein-coding transcript window,5prime-to3prime coding DNA is partitioned from the same left edge. Substitution at reference position5 changes A to C while retaining triplet grouping; RNA/splicing/translation are assumed or unmeasured, not observed.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MUT-SEQUENCE",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "Consider an invented internal coding-DNA window, read from the 5-prime to the 3-prime end with the same left-hand frame: ATG GAA TCC GCT AAC GGT, 18 bases. Changing A to C at reference position 5 gives ATG GCA TCC GCT AAC GGT and preserves the grouping. Deleting positions 4 to 6, GAA, gives ATG TCC GCT AAC GGT, 15 bases. Deleting only G at position 4 instead gives ATG AAT CCG CTA ACG GT, 17 bases, with changed downstream grouping. The final GT is an incomplete part of a continuing window, not a stop codon. These predictions assume the specified coding transcript and unchanged splicing; neither RNA processing nor translation was measured.",
+          "passageSha256": "df4ebd824793118de22cfb44f0894287d83c58d970fd9058381bfacd240acbab"
+        },
+        {
+          "id": "MUT-FRAME",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "In a specified coding transcript, an insertion or deletion of a complete number of three-base groups can preserve the downstream reading frame. It can still add or remove amino acids, change a codon at the join or introduce a stop; preserving the frame does not establish preserved protein function. The actual sequence and transcript consequences need checking. A protein-level change inferred from DNA remains a prediction until supported at the relevant molecular level.",
+          "passageSha256": "989b701b9828b5fdcc01c65480b36782e6256a4b93e94a3ac5e3523e534ce66c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact internal coding window, orientation, reference position and preserved grouping are stated. The fictional edit is independently derived from the input data, not from the embedded renderer; transcript/splicing/translation assumptions are explicit.",
+        "freshSources": [
+          "OFF04",
+          "OFF03"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MUT02",
+      "bodies": [
+        16,
+        17,
+        18
+      ],
+      "requirement": "Deleting positions4-6 GAA from the18base toy leaves15bases and the downstream grouping; deleting G at position4 leaves17bases and regrouped downstream triplets. Final GT is an incomplete continuing window fragment, not a stop codon. Independently recompute all sequences and source-position mappings.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MUT-SEQUENCE",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "Consider an invented internal coding-DNA window, read from the 5-prime to the 3-prime end with the same left-hand frame: ATG GAA TCC GCT AAC GGT, 18 bases. Changing A to C at reference position 5 gives ATG GCA TCC GCT AAC GGT and preserves the grouping. Deleting positions 4 to 6, GAA, gives ATG TCC GCT AAC GGT, 15 bases. Deleting only G at position 4 instead gives ATG AAT CCG CTA ACG GT, 17 bases, with changed downstream grouping. The final GT is an incomplete part of a continuing window, not a stop codon. These predictions assume the specified coding transcript and unchanged splicing; neither RNA processing nor translation was measured.",
+          "passageSha256": "df4ebd824793118de22cfb44f0894287d83c58d970fd9058381bfacd240acbab"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "All four source sequences, base counts and 68 source-position mappings recompute. The incomplete GT fragment is a continuing window, not a stop; no amino-acid or functional outcome is invented.",
+        "freshSources": [
+          "OFF04"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MUT03",
+      "bodies": [
+        16,
+        17,
+        18
+      ],
+      "requirement": "The separate UVW/XYZ to UVZ/XYW toy exchange retains one of each segment, without claiming all rearrangements preserve copy counts. DNA adjacency alone does not demonstrate joined RNA/protein, function, dependency or benefit.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MUT-EXCHANGE",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "In another invented example, two DNA arrangements U-V-W and X-Y-Z become U-V-Z and X-Y-W. Each segment occurs once across the pair before and after this exchange. That stipulated copy-preserving example does not make every rearrangement copy-neutral. The new DNA adjacency alone does not demonstrate a joined RNA, a protein fusion, altered function, dependence on that function or treatment benefit.",
+          "passageSha256": "d4d08d6265a96d6257f4fd7c6fbfd65adf28f2bb5c5110598486f30d7425a22b"
+        },
+        {
+          "id": "MUT-BOUND",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "A DNA rearrangement, a joined RNA and a protein fusion are different observations. A predicted splice or protein consequence remains a prediction until supported at the relevant molecular level. Synonymous does not mean incapable of affecting RNA processing. Preserve genome build, accession/version, tested regions, detectable change classes and limits; pathogenicity or drug sensitivity does not follow from variant class alone.",
+          "passageSha256": "675f5a169ff40c96c4cdeee7090413abc7140def2fc0c4d75a92949b8c90fef5"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The six-segment exchange preserves one occurrence of each only by the stipulated toy premises. Molecular adjacency, RNA, protein, dependence and benefit remain separate observations.",
+        "freshSources": [
+          "OFF30"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "MUT04",
+      "bodies": [
+        16,
+        17,
+        18
+      ],
+      "requirement": "Structural and copy-change classes can overlap; edit classification and a coding-frame prediction require the stated transcript/reference/frame context before an RNA/protein consequence is assigned.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "MUT-S",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "2f46ccaa4c008bcffa9e04112318d3e1c2e82f660f025622e6957dbbcfd2ddc2",
+          "supportingExcerpt": "A single-nucleotide substitution changes one base. Insertions and deletions change sequence length; copy-number and structural alterations affect larger regions and can overlap in category. In a specified coding transcript, missense changes alter an amino acid, synonymous changes preserve it, and nonsense changes introduce a stop. A net coding indel not divisible by three can shift the reading frame; an indel outside coding sequence is not automatically a frameshift. Transcript and reference versions determine the description.",
+          "passageSha256": "f9663d0631424f132b7b01eeb00ce595a602bd9b325c9c31988df3ef0a0cbeb4"
+        },
+        {
+          "id": "MUT-BOUND",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "A DNA rearrangement, a joined RNA and a protein fusion are different observations. A predicted splice or protein consequence remains a prediction until supported at the relevant molecular level. Synonymous does not mean incapable of affecting RNA processing. Preserve genome build, accession/version, tested regions, detectable change classes and limits; pathogenicity or drug sensitivity does not follow from variant class alone.",
+          "passageSha256": "675f5a169ff40c96c4cdeee7090413abc7140def2fc0c4d75a92949b8c90fef5"
+        },
+        {
+          "id": "MUT-FRAME",
+          "recordId": "mutation",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "9b62e7297a9bfb60079933a522efbc7937b0d4b878db8b2abc0671f7759ecfd8",
+          "supportingExcerpt": "In a specified coding transcript, an insertion or deletion of a complete number of three-base groups can preserve the downstream reading frame. It can still add or remove amino acids, change a codon at the join or introduce a stop; preserving the frame does not establish preserved protein function. The actual sequence and transcript consequences need checking. A protein-level change inferred from DNA remains a prediction until supported at the relevant molecular level.",
+          "passageSha256": "989b701b9828b5fdcc01c65480b36782e6256a4b93e94a3ac5e3523e534ce66c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The existing fields preserve reference/transcript context and overlapping variant classes. A coding-frame prediction does not establish actual RNA processing, protein function or pathogenicity.",
+        "freshSources": [
+          "OFF03",
+          "OFF04",
+          "OFF24",
+          "OFF30"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "NMD01",
+      "bodies": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "requirement": "These are already-spliced mRNAs with covalent exon joins, not retained introns or DNA. A5prime-to3prime translating ribosome stops at the depicted site; the chosen downstream EJC lies upstream of a later join, with no retained EJC at the previously traversed join.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "NMD-S",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "82e29f10e7fec526e1b4ba88c0927c5afa7863d6ab108126e2e643d1de66ba60",
+          "supportingExcerpt": "Nonsense-mediated decay is RNA surveillance coupled to translation termination. Splicing can leave exon junction protein complexes near later joins in the message. Translation can remove junction-associated proteins; early termination while an appropriate complex remains downstream can help recruit decay machinery in one human route. Stop position, exon architecture, proximity to the start and other transcript features affect susceptibility. A common junction-distance shortcut is a hypothesis, not a universal clinical cutoff.",
+          "passageSha256": "9e093a70efc8a66a4999369c2c1a3e547bbf44237ff308edd45c056c8ba7c921"
+        },
+        {
+          "id": "NMD-CONTEXT",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f",
+          "supportingExcerpt": "Consider a hypothetical message after splicing: its retained exons are joined in one continuous RNA, without an intron at each join. A translating ribosome has passed an earlier join but stops before a later one. An exon junction complex retained upstream of that later join is downstream of the stop and can support the junction-dependent surveillance route. Removing junction-associated proteins during translation is different from removing introns during splicing. In a second hypothetical message the stop lies in the final exon, with no downstream complex specified. That description alone does not measure RNA stability, exclude other decay mechanisms or demonstrate a normal protein. The positions are context for a hypothesis, not a universal distance threshold.",
+          "passageSha256": "9eefc42745abf9ace902cd4e8c90db38470cc12f03b84472dbb2b7f59d0184c6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The new already-spliced message separates covalent exon joins from introns and junction-associated protein removal. The hypothetical retained complex is upstream of the later join and downstream of the stop, not at a previously traversed site.",
+        "freshSources": [
+          "PMID11118221",
+          "PMID11532962",
+          "PMID12121612",
+          "DOSTIE-PDF"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "NMD02",
+      "bodies": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "requirement": "A retained downstream EJC can support one human NMD route. A final-exon stop without downstream EJC in the chosen snapshot is not proof of stability, no NMD, normal protein or a universal threshold; geometric distances are schematic.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "NMD-S",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "82e29f10e7fec526e1b4ba88c0927c5afa7863d6ab108126e2e643d1de66ba60",
+          "supportingExcerpt": "Nonsense-mediated decay is RNA surveillance coupled to translation termination. Splicing can leave exon junction protein complexes near later joins in the message. Translation can remove junction-associated proteins; early termination while an appropriate complex remains downstream can help recruit decay machinery in one human route. Stop position, exon architecture, proximity to the start and other transcript features affect susceptibility. A common junction-distance shortcut is a hypothesis, not a universal clinical cutoff.",
+          "passageSha256": "9e093a70efc8a66a4999369c2c1a3e547bbf44237ff308edd45c056c8ba7c921"
+        },
+        {
+          "id": "NMD-CONTEXT",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f",
+          "supportingExcerpt": "Consider a hypothetical message after splicing: its retained exons are joined in one continuous RNA, without an intron at each join. A translating ribosome has passed an earlier join but stops before a later one. An exon junction complex retained upstream of that later join is downstream of the stop and can support the junction-dependent surveillance route. Removing junction-associated proteins during translation is different from removing introns during splicing. In a second hypothetical message the stop lies in the final exon, with no downstream complex specified. That description alone does not measure RNA stability, exclude other decay mechanisms or demonstrate a normal protein. The positions are context for a hypothesis, not a universal distance threshold.",
+          "passageSha256": "9eefc42745abf9ace902cd4e8c90db38470cc12f03b84472dbb2b7f59d0184c6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The downstream-complex route is conditional, with no universal threshold. A final-exon stop/no specified downstream complex is not a measured stability result or exclusion of other decay mechanisms.",
+        "freshSources": [
+          "PMID11532962",
+          "PMID27618451",
+          "NMD-FULL"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "NMD03",
+      "bodies": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "requirement": "Transcript/stop/junction context supplies a surveillance hypothesis; RNA and protein abundance need separate measurements. No inevitable disappearance, zero protein, antigen absence or clinical exclusion is inferred.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "NMD-MEASURE",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f",
+          "supportingExcerpt": "Human-cancer analyses found that a model containing several rules described RNA effects better than the junction rule alone; compensation could mask loss at gene level. Test the relevant transcript or allele with controls for RNA quality and cell mixture. Protein identity, persistence and function need separate measurements: RNA decay is distinct from protein degradation.",
+          "passageSha256": "9b949080f811c80c3288e2e2bca128cf9c5d030736a3f04c8e671d9a1d05ceff"
+        },
+        {
+          "id": "NMD-IMMUNE",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f",
+          "supportingExcerpt": "Candidate selection should reconstruct the affected transcript and translated sequence. A stop-gain terminates translation rather than adding a new amino acid; an unchanged upstream sequence alone does not specify a new mutant peptide. A frameshift can instead create an altered tail before stopping. Litchfield and colleagues found expressed frameshift changes enriched in positions predicted to escape decay and reported associations with checkpoint outcomes in melanoma cohorts, with additional immune-reactivity evidence from vaccine studies. These are context-specific findings, not a rule that every frameshift is expressed, displayed or useful. Mutant RNA and downstream presentation and recognition remain separate questions.",
+          "passageSha256": "af3da14ad9b3067ab1edb9877119a3a9126d010a018b0ed405202614fdd70fa1"
+        },
+        {
+          "id": "NMD-CONTEXT",
+          "recordId": "nonsense-mediated-decay",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "f96e9929a6e33d71dae27631a7f5b96fcee95dc255e936db8f088a101583e26f",
+          "supportingExcerpt": "Consider a hypothetical message after splicing: its retained exons are joined in one continuous RNA, without an intron at each join. A translating ribosome has passed an earlier join but stops before a later one. An exon junction complex retained upstream of that later join is downstream of the stop and can support the junction-dependent surveillance route. Removing junction-associated proteins during translation is different from removing introns during splicing. In a second hypothetical message the stop lies in the final exon, with no downstream complex specified. That description alone does not measure RNA stability, exclude other decay mechanisms or demonstrate a normal protein. The positions are context for a hypothesis, not a universal distance threshold.",
+          "passageSha256": "9eefc42745abf9ace902cd4e8c90db38470cc12f03b84472dbb2b7f59d0184c6"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "RNA, protein and presentation/recognition are separate observations. The diagram provides transcript context for a surveillance hypothesis, not inevitable RNA disappearance, absent antigen or a clinical exclusion rule. Unchanged Litchfield-specific outcomes retain earlier source depth.",
+        "freshSources": [
+          "PMID27618451",
+          "NMD-FULL"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "VDJ01",
+      "bodies": [
+        24,
+        25
+      ],
+      "requirement": "Stored alternative V/(D)/J segments are physically selected and joined during developing-lymphocyte receptor-gene assembly before expression/selection and later antigen encounter; generation is not deliberate antigen-directed design.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "VDJ-S",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "2df08f0ff436ebb86cb24bd0d1d32cf1eda4989741e335ad2520087390c62d9a",
+          "supportingExcerpt": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
+          "passageSha256": "01aeff739c340d55fed157f4bcc706db8059d9bbe998f19497485752fbe66d98"
+        },
+        {
+          "id": "VDJ-DEV",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "b4361b178183395985e15dbc574804a7c436b2e74e17e1b3b0624f78a3af1acf",
+          "supportingExcerpt": "Rearrangement occurs in developing lymphocyte lineages, rather than changing receptor genes in every body cell. Some joins are unproductive; expression and developmental selection are further steps. Later antibody mutation and class switching are different processes.",
+          "passageSha256": "9a7a9d889a1d715232c04fc05bcffd30c3bd1f48d77ae915eb95b33fc5dbd540"
+        },
+        {
+          "id": "VDJ-ANTIGEN",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "b4361b178183395985e15dbc574804a7c436b2e74e17e1b3b0624f78a3af1acf",
+          "supportingExcerpt": "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells.",
+          "passageSha256": "990f122628993d74700d0437816b37e032e4890b2553d2ca06f98978bbaafd5c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Actual-source McBlane cleavage and RAG1-deficient-mouse abstracts support their named mechanisms. Joining, expression, developmental selection and mature responses are separate. Current text explicitly prevents the figure's later-encounter wording from implying self-antigen-free T-cell development.",
+        "freshSources": [
+          "MCBLANE",
+          "PMID1547488",
+          "OFF14"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "VDJ02",
+      "bodies": [
+        24,
+        25
+      ],
+      "requirement": "VJ versus VDJ requires chain/locus context. The illustrated V2/D1/J3 selections and absentD example are schematic, not a complete repertoire count or a universal oneD rule.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "VDJ-S",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "2df08f0ff436ebb86cb24bd0d1d32cf1eda4989741e335ad2520087390c62d9a",
+          "supportingExcerpt": "Variable, diversity and joining segments provide the V, D and J names. Antibody heavy and conventional T-cell-receptor beta chains use VDJ arrangements; antibody light and T-cell-receptor alpha chains use VJ. RAG1/RAG2 recognize recombination signals and initiate DNA cutting; classical non-homologous end-joining repair machinery processes and joins coding ends, adding sequence diversity. Purified-protein cutting experiments and RAG1-deficient mouse experiments established distinct mechanistic requirements. RAG proteins are not the general repair machinery for every DNA break.",
+          "passageSha256": "01aeff739c340d55fed157f4bcc706db8059d9bbe998f19497485752fbe66d98"
+        },
+        {
+          "id": "VDJ-ANTIGEN",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "b4361b178183395985e15dbc574804a7c436b2e74e17e1b3b0624f78a3af1acf",
+          "supportingExcerpt": "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells.",
+          "passageSha256": "990f122628993d74700d0437816b37e032e4890b2553d2ca06f98978bbaafd5c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "Chain/locus-specific VJ and VDJ are explicit. Selected V2/D1/J3 labels are fictional choices, not a full repertoire census or a universal D-count rule.",
+        "freshSources": [
+          "OFF14",
+          "PMID24600447"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "VDJ03",
+      "bodies": [
+        24,
+        25
+      ],
+      "requirement": "A RAG variant in a mixed specimen does not establish recombination in epithelial tumor cells. Keep developmental/cell-context evidence separate from variant presence.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "VDJ-ANTIGEN",
+          "recordId": "vdj-recombination",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "b4361b178183395985e15dbc574804a7c436b2e74e17e1b3b0624f78a3af1acf",
+          "supportingExcerpt": "Receptor-gene joining, expression, developmental selection and response by mature lymphocytes are separate questions. In T-cell development, selection involves recognition of self peptides bound to MHC in the thymus; describing gene assembly as preceding a later antigen-driven response must not imply that development is free of antigen interactions. Choosing V2, D1 and J3 in an invented example states a selected rearrangement, not an observed segment count or a receptor deliberately built for an encountered antigen. A RAG variant in mixed tissue does not establish active receptor rearrangement in epithelial cells.",
+          "passageSha256": "990f122628993d74700d0437816b37e032e4890b2553d2ca06f98978bbaafd5c"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "A mixed-specimen RAG variant does not demonstrate active receptor-gene recombination in epithelial tumour cells. Developmental and leukemia-specific evidence is not transferred to every RAG-positive specimen.",
+        "freshSources": [
+          "PMID24413735",
+          "PMID1547488"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "SPL01",
+      "bodies": [
+        26
+      ],
+      "requirement": "The same fictional gene can yield separate mature A-B-C and A-C processing outcomes across precursor molecules. Retained exons join in order; skipped B does not become an intron, and one RNA is not physically split into both products. Other processing outcomes remain possible.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "SPL-TOY",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690"
+        },
+        {
+          "id": "SPL-S",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+          "supportingExcerpt": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.\n\nCancer-associated splicing changes can arise through altered RNA-processing factors or their expression. SF3B1, SRSF2, U2AF1 and ZRSR2 illustrate studied factors; AR-V7 and BCL2L1 illustrate named transcript contexts. The linked review describes disease-specific mechanisms and therapeutic research. An altered transcript alone does not establish an intact abnormal protein, immune presentation, a therapeutic dependency or patient benefit. Free-drug development and a conjugated payload also require their own construct-specific evidence.",
+          "passageSha256": "bc33d79a00fe6c5dc51dc8ee61a8236c8821c5951c907830601c3d09f2681852"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The new self-contained ABC/AC example specifies separate precursors, retained order and exon-skipping rather than relabeling B as an intron. Other RNA processing outcomes are left open.",
+        "freshSources": [
+          "OFF39",
+          "OFF27"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "SPL02",
+      "bodies": [
+        26
+      ],
+      "requirement": "Retained exons can contain untranslated sequence; exon is not synonymous with coding sequence. The schematic supplies no automatic reading-frame, protein or decay consequence.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "GENE-S",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+          "supportingExcerpt": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+          "passageSha256": "fdf3e3458868c08d735a9ba6ed1c71649930f23039e246256eb2bbfebca9b4ba"
+        },
+        {
+          "id": "SPL-TOY",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690"
+        },
+        {
+          "id": "SPL-S",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "summary",
+          "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+          "supportingExcerpt": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.\n\nCancer-associated splicing changes can arise through altered RNA-processing factors or their expression. SF3B1, SRSF2, U2AF1 and ZRSR2 illustrate studied factors; AR-V7 and BCL2L1 illustrate named transcript contexts. The linked review describes disease-specific mechanisms and therapeutic research. An altered transcript alone does not establish an intact abnormal protein, immune presentation, a therapeutic dependency or patient benefit. Free-drug development and a conjugated payload also require their own construct-specific evidence.",
+          "passageSha256": "bc33d79a00fe6c5dc51dc8ee61a8236c8821c5951c907830601c3d09f2681852"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The explicit exon definition retains untranslated sequence; the illustration supplies no obligatory frame, protein or decay outcome. The concise NHGRI definition is used rather than its coding-only audio simplification.",
+        "freshSources": [
+          "OFF25",
+          "OFF39"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    },
+    {
+      "id": "SPL03",
+      "bodies": [
+        26
+      ],
+      "requirement": "One contiguous junction-spanning read supports the local A-C join, not a complete full-length isoform, protein consequence, tumor/cell attribution, function or treatment benefit.",
+      "kind": "teaching",
+      "coverageCredit": 0,
+      "sourceScope": "Not yet compared with actual primary text and current canonical fields",
+      "status": "represented-at-stated-scientific-scope-in-local-draft",
+      "evidence": [
+        {
+          "id": "SPL-READ",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "A junction read supports a local RNA join, not necessarily a complete isoform. Gene-level counts can hide transcript differences. RNA quality, read coverage, reference version and cell mixture affect interpretation; protein quantity and function need separate evidence.",
+          "passageSha256": "25883d9590e1bd23db0fba88891e62d4b3a87561cbab5ecf258fbd123b565a17"
+        },
+        {
+          "id": "SPL-TOY",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-09-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690"
+        }
+      ],
+      "semanticAssessment": {
+        "explanation": "The exact field separates a local junction read from a complete transcript and protein consequences. Tumour/cell attribution and benefit are unresolved reading boundaries; no new assay performance or empirical benefit is inferred.",
+        "freshSources": [
+          "OFF39"
+        ],
+        "sourceScope": "Complete actual abstracts or individually logged targeted official/review passages and two Dostie PDF pages; no whole primary-paper/protocol or wholesale baseline-claim verification.",
+        "constructionPremises": "Toy examples are hypothetical; colors, geometry, counts and arrows are schematic conventions, not biological frequencies or approval/clinical evidence."
+      },
+      "remaining": []
+    }
+  ],
+  "nativeAssignments": [
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/contacts-polarity-and-hybrid-feature-combinations-v1-dark.svg",
+      "requirements": [
+        "EMT01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6991,
+          "sha256": "bd2dc1b8a3104b84ad127f302ec72ca7e043751a9af9381aa21085cfe23eb288",
+          "gitBlob": "0902ebe77db619113d6f785ed030bb60a75943c4",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6991,
+          "sha256": "bd2dc1b8a3104b84ad127f302ec72ca7e043751a9af9381aa21085cfe23eb288",
+          "gitBlob": "0902ebe77db619113d6f785ed030bb60a75943c4",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/contacts-polarity-and-hybrid-feature-combinations-v1-light.svg",
+      "requirements": [
+        "EMT01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6991,
+          "sha256": "b6b0a27be54e4e731b7d90f4728e6e9aef2077dc6d5be5f5d51e88a173c594f0",
+          "gitBlob": "63f849006b4a2611f9d1c2727a15089638633b56",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6991,
+          "sha256": "b6b0a27be54e4e731b7d90f4728e6e9aef2077dc6d5be5f5d51e88a173c594f0",
+          "gitBlob": "63f849006b4a2611f9d1c2727a15089638633b56",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/cycle-optional-g0-and-relative-dna-v1-dark.svg",
+      "requirements": [
+        "CC01",
+        "CC02"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 9171,
+          "sha256": "07be403bcaa5e6e447c78dc5f47a63cf36bfe85d304096dc2de6b2e516a89126",
+          "gitBlob": "69b4b14f8b5583c1a643da30c58f1ad5833aa6bb",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 9171,
+          "sha256": "07be403bcaa5e6e447c78dc5f47a63cf36bfe85d304096dc2de6b2e516a89126",
+          "gitBlob": "69b4b14f8b5583c1a643da30c58f1ad5833aa6bb",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/cycle-optional-g0-and-relative-dna-v1-light.svg",
+      "requirements": [
+        "CC01",
+        "CC02"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 9171,
+          "sha256": "bcff53632e056b91cf6256914ad46191ac8fa618129c426f74a633257037b43f",
+          "gitBlob": "da5377cfc6679ee6f64d6f21238e307b302f6f3f",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 9171,
+          "sha256": "bcff53632e056b91cf6256914ad46191ac8fa618129c426f74a633257037b43f",
+          "gitBlob": "da5377cfc6679ee6f64d6f21238e307b302f6f3f",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/epithelium-tissue-boundaries-v2-dark.png",
+      "requirements": [
+        "EP01",
+        "EP02",
+        "EP03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 2982188,
+          "sha256": "94a1bfd1d0245afb9e266cd1c3018124dbd8cce6e55435153d602654fcdbea63",
+          "gitBlob": "e612c93190065061eac9e858ebfc34125f182a90",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 2982188,
+          "sha256": "94a1bfd1d0245afb9e266cd1c3018124dbd8cce6e55435153d602654fcdbea63",
+          "gitBlob": "e612c93190065061eac9e858ebfc34125f182a90",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/epithelium-tissue-boundaries-v2-light.png",
+      "requirements": [
+        "EP01",
+        "EP02",
+        "EP03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 2312426,
+          "sha256": "e673d68bff3c9eae902478efcc9107667c304b88f8c7bfb4296a1e595eaad07b",
+          "gitBlob": "26cb5a32130e00d36c0a6cb153413c313fd4dd3b",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 2312426,
+          "sha256": "e673d68bff3c9eae902478efcc9107667c304b88f8c7bfb4296a1e595eaad07b",
+          "gitBlob": "26cb5a32130e00d36c0a6cb153413c313fd4dd3b",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/equal-starts-net-growth-and-unknown-loss-v1-dark.svg",
+      "requirements": [
+        "DIV01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6113,
+          "sha256": "9960f1e4efa16ca8e41f89304f405a2c82b1fa2d0a12c1f29a2f1868867f1786",
+          "gitBlob": "29256f95e132908bcfc07ca54fbb0d279959facc",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6113,
+          "sha256": "9960f1e4efa16ca8e41f89304f405a2c82b1fa2d0a12c1f29a2f1868867f1786",
+          "gitBlob": "29256f95e132908bcfc07ca54fbb0d279959facc",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/equal-starts-net-growth-and-unknown-loss-v1-light.svg",
+      "requirements": [
+        "DIV01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6113,
+          "sha256": "960a6c0a7da1d275720fee6fc9cee7f1d5d44c877e6c5ef26770b5f5687acafd",
+          "gitBlob": "02c1f524f2c8f06c600c5c0d7f6f5aca8a126bf0",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6113,
+          "sha256": "960a6c0a7da1d275720fee6fc9cee7f1d5d44c877e6c5ef26770b5f5687acafd",
+          "gitBlob": "02c1f524f2c8f06c600c5c0d7f6f5aca8a126bf0",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/lineage-family-clone-and-state-labels-v1-dark.svg",
+      "requirements": [
+        "LIN01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6484,
+          "sha256": "8ead5fccba36e1841c4f96ba3fd4427e20df30006789639f6f321fcc1da190f1",
+          "gitBlob": "75d22dc2669dab9bc14971903b8e875afd3f7457",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6484,
+          "sha256": "8ead5fccba36e1841c4f96ba3fd4427e20df30006789639f6f321fcc1da190f1",
+          "gitBlob": "75d22dc2669dab9bc14971903b8e875afd3f7457",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/lineage-family-clone-and-state-labels-v1-light.svg",
+      "requirements": [
+        "LIN01"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6484,
+          "sha256": "5d5ad085a85139e37479de93ac43d62acbfe7d8e7d6f3ae4ed0eeab32ea21fe2",
+          "gitBlob": "168151cdb3c8d4898848933c8de55b74851e6699",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6484,
+          "sha256": "5d5ad085a85139e37479de93ac43d62acbfe7d8e7d6f3ae4ed0eeab32ea21fe2",
+          "gitBlob": "168151cdb3c8d4898848933c8de55b74851e6699",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/organelle-compartments-and-one-cargo-route-v1-dark.png",
+      "requirements": [
+        "ORG01",
+        "ORG03",
+        "ORG-NUC",
+        "ORG-ER",
+        "ORG-GOLGI-LYS",
+        "ORG-DNA",
+        "ORG-RIB"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 2106141,
+          "sha256": "bdb20b4bc5dbbe2a4b6b8e9d68244b2a9c4d3274ce7b2012ca7f2c13e4860706",
+          "gitBlob": "6613a886f89f276006ec57cca5672e82b54f07f3",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 2106141,
+          "sha256": "bdb20b4bc5dbbe2a4b6b8e9d68244b2a9c4d3274ce7b2012ca7f2c13e4860706",
+          "gitBlob": "6613a886f89f276006ec57cca5672e82b54f07f3",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/organelle-compartments-and-one-cargo-route-v1-light.png",
+      "requirements": [
+        "ORG01",
+        "ORG03",
+        "ORG-NUC",
+        "ORG-ER",
+        "ORG-GOLGI-LYS",
+        "ORG-DNA",
+        "ORG-RIB"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 2141986,
+          "sha256": "14b01ed07a1fe71a70760cb2787e063267134438576e4ac66b9291924ab3736e",
+          "gitBlob": "d6ebcf6a5b5615e8440ef9c006efe1430df89f98",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 2141986,
+          "sha256": "14b01ed07a1fe71a70760cb2787e063267134438576e4ac66b9291924ab3736e",
+          "gitBlob": "d6ebcf6a5b5615e8440ef9c006efe1430df89f98",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/where-is-the-cargo-v1-dark.png",
+      "requirements": [
+        "MEM01",
+        "MEM02",
+        "MEM03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 1685136,
+          "sha256": "92884b44aa8ad71b6244308b73daaa53d1d029f2a91a7cecac372cd913b54bbc",
+          "gitBlob": "ba1487bb5e227b28de2d9577da0cc57eca874d12",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 1685136,
+          "sha256": "92884b44aa8ad71b6244308b73daaa53d1d029f2a91a7cecac372cd913b54bbc",
+          "gitBlob": "ba1487bb5e227b28de2d9577da0cc57eca874d12",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/cells/images/where-is-the-cargo-v1-light.png",
+      "requirements": [
+        "MEM01",
+        "MEM02",
+        "MEM03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 1912223,
+          "sha256": "bf68ebbfaf0f7f72568bd54fd5b4036d33fa2c0009eeab2fea1efbfad553de2a",
+          "gitBlob": "6300d3ddd2eacc699e1cda8ee5c305ac2d0ba45e",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 1912223,
+          "sha256": "bf68ebbfaf0f7f72568bd54fd5b4036d33fa2c0009eeab2fea1efbfad553de2a",
+          "gitBlob": "6300d3ddd2eacc699e1cda8ee5c305ac2d0ba45e",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/epigenetics-sequence-and-marks-v1-dark.svg",
+      "requirements": [
+        "EPI01",
+        "EPI02",
+        "EPI03",
+        "EPI04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 10969,
+          "sha256": "3c9334938b1413c9be00db44cd575d5763c76242747b89bc22476cb128fd03cf",
+          "gitBlob": "d75b9d713ebf7c3628ab3cad76c9e88dd0a8185e",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 10969,
+          "sha256": "3c9334938b1413c9be00db44cd575d5763c76242747b89bc22476cb128fd03cf",
+          "gitBlob": "d75b9d713ebf7c3628ab3cad76c9e88dd0a8185e",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/epigenetics-sequence-and-marks-v1-light.svg",
+      "requirements": [
+        "EPI01",
+        "EPI02",
+        "EPI03",
+        "EPI04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 10969,
+          "sha256": "c312ebd5f8fc8929a50aa532140423aef99f5e53b9073b048467132c6759f76f",
+          "gitBlob": "648d28cac2d380aae801c1026588159829601afb",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 10969,
+          "sha256": "c312ebd5f8fc8929a50aa532140423aef99f5e53b9073b048467132c6759f76f",
+          "gitBlob": "648d28cac2d380aae801c1026588159829601afb",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/germline-lineage-windows-v4-dark.png",
+      "requirements": [
+        "GER01",
+        "GER02",
+        "GER03",
+        "GER04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 2242130,
+          "sha256": "82462c36ea483533f797959e38dfeac99b18bad07ae6682ecc42c8203fc59fb3",
+          "gitBlob": "fcacf4e360996ebd1247ea5e14dc410f4d4c538d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 2242130,
+          "sha256": "82462c36ea483533f797959e38dfeac99b18bad07ae6682ecc42c8203fc59fb3",
+          "gitBlob": "fcacf4e360996ebd1247ea5e14dc410f4d4c538d",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/germline-lineage-windows-v4-light.png",
+      "requirements": [
+        "GER01",
+        "GER02",
+        "GER03",
+        "GER04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 1881304,
+          "sha256": "5028827e39a894be902bf85dca4b46f94fc3cc6e1d9fd68e743f79f24a353f30",
+          "gitBlob": "1ed2a180ecad5625f22ef7b256c25b0fd7297fb0",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 1881304,
+          "sha256": "5028827e39a894be902bf85dca4b46f94fc3cc6e1d9fd68e743f79f24a353f30",
+          "gitBlob": "1ed2a180ecad5625f22ef7b256c25b0fd7297fb0",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/mutation-edit-and-reading-frame-v1-dark.svg",
+      "requirements": [
+        "MUT01",
+        "MUT02",
+        "MUT03",
+        "MUT04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 26551,
+          "sha256": "8cfd99e979c09f0e5fd5bf29e2e59a96ccb6a7755b897b246461d5344a530776",
+          "gitBlob": "a13e86e16bdaeb41724d4f4d948516c5d8ddd730",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 26551,
+          "sha256": "8cfd99e979c09f0e5fd5bf29e2e59a96ccb6a7755b897b246461d5344a530776",
+          "gitBlob": "a13e86e16bdaeb41724d4f4d948516c5d8ddd730",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/mutation-edit-and-reading-frame-v1-light.svg",
+      "requirements": [
+        "MUT01",
+        "MUT02",
+        "MUT03",
+        "MUT04"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 26551,
+          "sha256": "e5707924e3c5d8c474767e85d60871b42770638b3879740310bb1855fd363062",
+          "gitBlob": "93c59fb3db2906e831e0773c178e645a31add5b6",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 26551,
+          "sha256": "e5707924e3c5d8c474767e85d60871b42770638b3879740310bb1855fd363062",
+          "gitBlob": "93c59fb3db2906e831e0773c178e645a31add5b6",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/nmd-stop-and-junction-context-v1-dark.png",
+      "requirements": [
+        "NMD01",
+        "NMD02",
+        "NMD03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 1940174,
+          "sha256": "b9b75922449c19eb9b14640abb9d5dcfef10175a1d9ae6095eac71d74955d38c",
+          "gitBlob": "ad4c50c53dcb06d0f0300670799838ed97aa5521",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 1940174,
+          "sha256": "b9b75922449c19eb9b14640abb9d5dcfef10175a1d9ae6095eac71d74955d38c",
+          "gitBlob": "ad4c50c53dcb06d0f0300670799838ed97aa5521",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/nmd-stop-and-junction-context-v1-light.png",
+      "requirements": [
+        "NMD01",
+        "NMD02",
+        "NMD03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 1869149,
+          "sha256": "59b69582f78802d251611096c4f1e160dc2cf8b43c316e8a75a6013d7cd73f3f",
+          "gitBlob": "e4503a65e10963d739f6b594b683063a7ddc53e3",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 1869149,
+          "sha256": "59b69582f78802d251611096c4f1e160dc2cf8b43c316e8a75a6013d7cd73f3f",
+          "gitBlob": "e4503a65e10963d739f6b594b683063a7ddc53e3",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/stored-segments-selected-joins-and-receptor-generation-v1-dark.svg",
+      "requirements": [
+        "VDJ01",
+        "VDJ02",
+        "VDJ03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6278,
+          "sha256": "fc6a4983e75dab5ba1151b39faecc6168c515f7ebb3f8c94082529c5a267f1e7",
+          "gitBlob": "2ebbe738f6cacc0a0c88b7aabf3256eca5810ad5",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6278,
+          "sha256": "fc6a4983e75dab5ba1151b39faecc6168c515f7ebb3f8c94082529c5a267f1e7",
+          "gitBlob": "2ebbe738f6cacc0a0c88b7aabf3256eca5810ad5",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/stored-segments-selected-joins-and-receptor-generation-v1-light.svg",
+      "requirements": [
+        "VDJ01",
+        "VDJ02",
+        "VDJ03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 6278,
+          "sha256": "9c4a5340844825425e185205f823f447462ca0d4e550f6ecf1289a80171a4ec0",
+          "gitBlob": "ebabb6fd13fb326b98894db084be521d1b98463f",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 6278,
+          "sha256": "9c4a5340844825425e185205f823f447462ca0d4e550f6ecf1289a80171a4ec0",
+          "gitBlob": "ebabb6fd13fb326b98894db084be521d1b98463f",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/which-rna-pieces-are-joined-v1-dark.svg",
+      "requirements": [
+        "SPL01",
+        "SPL02",
+        "SPL03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 9841,
+          "sha256": "ab091ea82f10e39550fa8742459ccca5ca45f0b5739b219d7d455298cbb2e37a",
+          "gitBlob": "d2103f6d13a6fd7538abd0051589ded0a628f0a5",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 9841,
+          "sha256": "ab091ea82f10e39550fa8742459ccca5ca45f0b5739b219d7d455298cbb2e37a",
+          "gitBlob": "d2103f6d13a6fd7538abd0051589ded0a628f0a5",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    },
+    {
+      "path": "wiki/education/concepts/biology-basics/genetics/images/which-rna-pieces-are-joined-v1-light.svg",
+      "requirements": [
+        "SPL01",
+        "SPL02",
+        "SPL03"
+      ],
+      "versions": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "bytes": 9841,
+          "sha256": "11fd966b3f08d1d19fdbcc01fbd604f5e955b2c1d6e9217cf59aa922841952a0",
+          "gitBlob": "0c9f8829fe15af9c7fb3ac349e4dbf7a436f48a1",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "bytes": 9841,
+          "sha256": "11fd966b3f08d1d19fdbcc01fbd604f5e955b2c1d6e9217cf59aa922841952a0",
+          "gitBlob": "0c9f8829fe15af9c7fb3ac349e4dbf7a436f48a1",
+          "priorLedgerScope": "unclassified",
+          "priorLedgerReviewStatus": "unreviewed"
+        }
+      ]
+    }
+  ]
+}

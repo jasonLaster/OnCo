@@ -8,6 +8,16 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
+The [breast supporting-asset checkpoint](scientific-authoring-bodies-12-2026-11-13/README.md) classifies all 23 remaining breast-cancer paths at both pins: eight teaching assets and fifteen supporting records. All 21 text bodies were read in full: 196,653 bytes and 41 bounded chunks. Both assigned original PNGs were freshly viewed whole at their native 1536 by 1024 dimensions. All 23 path pairs are byte-identical across the pins. The current Guide owner embeds a later v2 TNBC image; fresh views of the retained original pair do not certify v2 or palette-only geometry equality.
+
+The 52 source-first scientific requirements have scoped field proofs through 81 exact anchors and 111 references. Six custody checks stay separate. Twenty distinct caption bodies and all selected teaching fields of 28 composed canonical records were read. Existing records already carry these clauses, so this checkpoint changes no canonical field, date, id, alias, relation or registration. Nine complete raw abstracts and two raw NCI glossary definitions were freshly read; two earlier source packets supply individually named official/primary readings at their recorded depth.
+
+All 28 actual EntityDetail SSR readers contain the anchors, with 85 ordered paragraph checks. Exact entity JSON and 230 Markdown passage checks pass. The graph and implementation/data bytes equal data commit 5844bf9731934b61cacaa79343547207be8bc0cf, so the passing P11 TypeScript, lint, validate, generation/dedupe and 293-file/3,101-test results are explicitly reused; no new full suite or generation command is claimed. The 252 summary observations contain 32 inherited texts and 220 English fallbacks. Existing Spanish and Chinese pCR long-cache entries remain selector-accepted, which supplies no new language review; no named review is accepted.
+
+Original asset scopes are now 800 teaching/202 supporting/886 unclassified; later scopes are 799/202/887. All breast-cancer asset paths are classified. The 136 registered selection receipts and 139 pending files still select 702 canonical ids, 180 absent from the original baseline and 522 present. Selection is not authorship. All 138 earlier pending files and 1,478 earlier cohort files remain byte-identical, and no active field binding needs rebasing. Ordinary-source grades remain 6,816/6,827 with eleven open and 519 complete original draft representations, and 7,286/7,302 with sixteen open and 529 complete later draft representations. The 49 open adjacent groups, six schema findings, historical hash stages, superseded-art distinction and pCR-alt clarity proposal remain explicit. Main/live, independent, expert, owner, learner and language acceptance remain zero. The broader goal is active; no merge or deployment occurred.
+
+### Earlier cancer-biology authoring-body checkpoint
+
 The [cancer-biology authoring-body checkpoint](scientific-authoring-bodies-11-2026-11-13/README.md) classifies all 72 remaining cancer-biology paths at both pins: 26 teaching bodies/bundles and 46 supporting records. All 67 loose bodies and the 104 actual members of five ZIPs were assessed: 154 distinct text bodies, 298 fully read chunks, nine exact-byte duplicate reuses and eight freshly viewed complete native SVGs. Both versions of every assigned path are retained; all 72 pairs are byte-identical.
 
 The source-first inventory holds 121 scientific requirements and 12 separate custody checks, followed by three separately frozen native requirements. All 124 scientific rows have scoped current-field proofs through 117 exact anchors and 214 references. Four existing owners gain one paragraph each: repair completion, replication-fork layout, SREBP transport and mitochondrial membranes. Data commit 5844bf9731934b61cacaa79343547207be8bc0cf adds four notes, five source links and four actual UTC checked dates; no id, module, alias or relation is added. The 227 earlier active array bindings are rebound without altering earlier quotes, order, scientific grades or source depths.
@@ -339,7 +349,8 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-08-root.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-09-root.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-10-root.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-11-root.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-11-root.json \
++  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-12-root.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

@@ -1,0 +1,826 @@
+{
+  "frozenAtUTC": "2026-11-14T02:50:01.010830+00:00",
+  "baseCommit": "f22abaa2d3906a864354a53afdd7b4404e3058a4",
+  "scope": "Complete P12 body/native source-first inventory before new P12 canonical field capture/comparison. Earlier work on overlapping subjects remains prior context rather than an independence claim.",
+  "freshP12CanonicalFieldsInspectedBeforeFreeze": false,
+  "fullBodyReadProgressSHA256": "cb19c0f774597f0dbb852b4f18565430578dcc3cbd9e59b76aad9eb788b7a8a2",
+  "nativeReviewSHA256": "a161743b8dee9e2e9a2cd4013981d3cbbf8129e31a2a7f1f1c8eb5d57962cb41",
+  "scientificRequirements": [
+    {
+      "id": "SB12-001",
+      "subject": "regional-nodes",
+      "requirement": "Internal mammary nodes lie beside the sternum, intramammary nodes within breast tissue and axillary nodes laterally; similarly named groups are not interchangeable.",
+      "sourceAssetOrdinals": [
+        0,
+        4
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-002",
+      "subject": "regional-nodes",
+      "requirement": "Axillary levels I/II/III are positions relative to pectoralis minor rather than sequential cancer stages.",
+      "sourceAssetOrdinals": [
+        0,
+        4
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-003",
+      "subject": "regional-nodes",
+      "requirement": "Drainage patterns and tracer mapping are variable and do not replay cancer spread or establish pathological involvement.",
+      "sourceAssetOrdinals": [
+        0,
+        4
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-004",
+      "subject": "regional-nodes",
+      "requirement": "An axillary sample does not survey every regional node group or establish the internal mammary chain is clear.",
+      "sourceAssetOrdinals": [
+        0,
+        4
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-005",
+      "subject": "dcis-and-invasion",
+      "requirement": "DCIS within a tissue boundary and a coexisting invasive component in stroma can be present in one specimen without an inevitable temporal sequence.",
+      "sourceAssetOrdinals": [
+        1,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-006",
+      "subject": "dcis-and-invasion",
+      "requirement": "Coexisting DCIS does not cancel invasion, and local invasion does not alone identify distant spread, receptors, grade or stage.",
+      "sourceAssetOrdinals": [
+        1,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-007",
+      "subject": "dcis-and-invasion",
+      "requirement": "The ductal/NST histologic name does not by itself identify an ancestral larger-duct cell.",
+      "sourceAssetOrdinals": [
+        1,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-008",
+      "subject": "dcis-and-invasion",
+      "requirement": "A cartoon boundary interruption or one supporting stain is not a sufficient invasion diagnosis.",
+      "sourceAssetOrdinals": [
+        1,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-009",
+      "subject": "normal-duct-layers",
+      "requirement": "From lumen outward, the selected normal duct has luminal cells, living myoepithelial cells, extracellular basement material and surrounding stroma.",
+      "sourceAssetOrdinals": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-010",
+      "subject": "normal-duct-layers",
+      "requirement": "Individual closed plasma membranes and nucleated living cells differ from an extracellular basement-membrane layer without nuclei.",
+      "sourceAssetOrdinals": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-011",
+      "subject": "normal-duct-layers",
+      "requirement": "The magnified inset distinguishes the same living cell boundary from external matrix; schematic gaps, radii and cell counts are not tissue measurements.",
+      "sourceAssetOrdinals": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-012",
+      "subject": "normal-duct-layers",
+      "requirement": "Normal layered anatomy alone does not establish malignancy, marker sufficiency, basal-like ancestry or population proportions.",
+      "sourceAssetOrdinals": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-013",
+      "subject": "ki67-estimators",
+      "requirement": "The Ki67 fraction uses positive eligible evaluated tumour nuclei over all eligible evaluated tumour nuclei, not every cell or stain intensity.",
+      "sourceAssetOrdinals": [
+        6
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-014",
+      "subject": "ki67-estimators",
+      "requirement": "Fictional90/900 and50/100 fields give10% and50%; pooled140/1000 gives14%, the unweighted field mean30% and selected hotspot50%.",
+      "sourceAssetOrdinals": [
+        6
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-015",
+      "subject": "ki67-estimators",
+      "requirement": "The9:1 nuclear-count weighting differs from equal-field weighting, area weighting and the specified IKWG weighted-global algorithm.",
+      "sourceAssetOrdinals": [
+        6
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-016",
+      "subject": "ki67-estimators",
+      "requirement": "An observed percentage alone does not supply a doubling time, killed-cell fraction or universal TNBC clinical cutoff.",
+      "sourceAssetOrdinals": [
+        6
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-017",
+      "subject": "tnbc-rna-mixture",
+      "requirement": "ER, PR and HER2 receptor-category measurements define TNBC separately from an RNA research classifier result; negative does not mean literally zero receptor molecules.",
+      "sourceAssetOrdinals": [
+        7,
+        8,
+        9
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-018",
+      "subject": "tnbc-rna-mixture",
+      "requirement": "The refined Lehmann TNBCtype-4 classifier names BL1, BL2, M and LAR rather than four sequential stages or treatment rankings.",
+      "sourceAssetOrdinals": [
+        7,
+        8,
+        9
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-019",
+      "subject": "tnbc-rna-mixture",
+      "requirement": "The former IM and MSL signals have immune/stromal contributions and should not simply be added as two extra tumour-cell groups to TNBCtype-4.",
+      "sourceAssetOrdinals": [
+        7,
+        8,
+        9
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-020",
+      "subject": "tnbc-rna-mixture",
+      "requirement": "Cancer, immune and stromal cells can all contribute RNA to a tissue mixture, without cartoon icon counts becoming measured proportions.",
+      "sourceAssetOrdinals": [
+        7,
+        8,
+        9
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-021",
+      "subject": "tnbc-rna-mixture",
+      "requirement": "A profile, one SOX10 stain or subtype label alone does not select a treatment or establish ER positivity.",
+      "sourceAssetOrdinals": [
+        7,
+        8,
+        9
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-022",
+      "subject": "mapped-and-marked-nodes",
+      "requirement": "Tracer-mapped sentinel identity and previously marked-node identity may overlap or differ, while broader axillary sampling is another acquisition strategy.",
+      "sourceAssetOrdinals": [
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-023",
+      "subject": "mapped-and-marked-nodes",
+      "requirement": "A clip denotes marked identity rather than proof of ongoing cancer or proof that the node was retrieved.",
+      "sourceAssetOrdinals": [
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-024",
+      "subject": "mapped-and-marked-nodes",
+      "requirement": "Negative sampled A/B nodes or0/3 examined nodes do not determine an unretrieved marked C or every unsampled node.",
+      "sourceAssetOrdinals": [
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-025",
+      "subject": "mapped-and-marked-nodes",
+      "requirement": "TAD source evidence remains within the specified previously biopsy-positive post-neoadjuvant setting, without a universal yield, false-negative rate or surgical instruction.",
+      "sourceAssetOrdinals": [
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-026",
+      "subject": "surgical-margins",
+      "requirement": "The original main-specimen edge and the final outer edge of separately submitted confirmed additional tissue require specimen relationship and orientation.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-027",
+      "subject": "surgical-margins",
+      "requirement": "Fictional DCIS0.7mm from ink is distinct from DCIS reaching the cut ink of a transected duct; the drawing is not a scale measurement.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-028",
+      "subject": "surgical-margins",
+      "requirement": "Distance alone supplies no universal adequate-margin or automatic-operation rule, and ink artifact or unresolved orientation is not erased by a tidy sketch.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-029",
+      "subject": "surgical-margins",
+      "requirement": "A local negative edge is not whole-body clearance or a pCR conclusion.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-030",
+      "subject": "pcr-components",
+      "requirement": "The selected endpoint assessment concerns the complete resected breast and sampled regional nodes, not a negative scan, blood assay or small biopsy.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-031",
+      "subject": "pcr-components",
+      "requirement": "With no residual invasive breast cancer and residual DCIS, the common ypT0/Tis ypN0 definition can be met if the nodes are negative, while the stricter ypT0 ypN0 definition is not.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-032",
+      "subject": "pcr-components",
+      "requirement": "A fictional4mm residual invasive nodal deposit means the combined endpoint is not met even with no invasive breast disease.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-033",
+      "subject": "pcr-components",
+      "requirement": "Identical DCIS at final ink is a separate margin finding and permitted DCIS remains a finding rather than proof of cure.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-034",
+      "subject": "pcr-components",
+      "requirement": "The patient-level response endpoint does not by itself establish a trial-level survival effect.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-035",
+      "subject": "treatment-effect-extents",
+      "requirement": "Residual invasive foci and response-related fibrous surroundings can coexist in one sampled field.",
+      "sourceAssetOrdinals": [
+        15
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-036",
+      "subject": "treatment-effect-extents",
+      "requirement": "A gross fibrous bed, largest contiguous residual invasive focus, protocol-specific residual span and an area-cellularity denominator are different measurements.",
+      "sourceAssetOrdinals": [
+        15
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-037",
+      "subject": "treatment-effect-extents",
+      "requirement": "Fibrosis alone does not prove a drug-specific effect, absence of cancer, a stage or an RCB value.",
+      "sourceAssetOrdinals": [
+        15
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-038",
+      "subject": "treatment-effect-extents",
+      "requirement": "Pathological viable appearance is not a live culture assay or complete proof about unsampled tissue.",
+      "sourceAssetOrdinals": [
+        15
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-039",
+      "subject": "rcb-inputs",
+      "requirement": "RCB keeps breast-bed dimensions, whole-bed cancer cellularity and cancer-only in-situ share distinct from positive-node count and metastasis size.",
+      "sourceAssetOrdinals": [
+        16,
+        17
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-040",
+      "subject": "rcb-inputs",
+      "requirement": "An illustrative25% in-situ reuse example and the earlier50% specimen are different stated examples rather than one changed denominator.",
+      "sourceAssetOrdinals": [
+        16,
+        17
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-041",
+      "subject": "rcb-inputs",
+      "requirement": "RCB dimensions and area fractions are not sequencing purity, and a grouping diagram does not calculate an individual recurrence probability.",
+      "sourceAssetOrdinals": [
+        16,
+        17
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-042",
+      "subject": "rcb-inputs",
+      "requirement": "The cited CAP4.11 setting excludes RCB scoring after neoadjuvant endocrine therapy; that boundary is protocol-specific.",
+      "sourceAssetOrdinals": [
+        16,
+        17
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-043",
+      "subject": "line-of-therapy",
+      "requirement": "Planned preoperative medicines, surgery and postoperative medicines can form an early-disease strategy, while the stated later advanced-disease strategy uses its own line-count convention.",
+      "sourceAssetOrdinals": [
+        18,
+        19
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-044",
+      "subject": "line-of-therapy",
+      "requirement": "Earlier systemic exposure remains in treatment history even when the chosen convention does not count it as a prior metastatic line.",
+      "sourceAssetOrdinals": [
+        18,
+        19
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-045",
+      "subject": "line-of-therapy",
+      "requirement": "The cartoon supplies no universal maintenance, pause or switch-counting algorithm and later line does not forecast survival.",
+      "sourceAssetOrdinals": [
+        18,
+        19
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-046",
+      "subject": "response-adapted-rule",
+      "requirement": "A predefined combined rule needs all required inputs interpretable: a met MRI criterion cannot replace an inadequate biopsy when an adequate negative biopsy is required.",
+      "sourceAssetOrdinals": [
+        20
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-047",
+      "subject": "response-adapted-rule",
+      "requirement": "Rule not met because an input is inadequate is not equivalent to a biomarker-negative result.",
+      "sourceAssetOrdinals": [
+        20
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-048",
+      "subject": "response-adapted-rule",
+      "requirement": "Branch logic and predicted response are distinct from surgically measured pCR, long-term benefit or equivalence and do not instruct treatment omission.",
+      "sourceAssetOrdinals": [
+        20
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-049",
+      "subject": "keynote522-strategy",
+      "requirement": "The historical previously untreated stageII–III TNBC comparison spans preoperative chemotherapy/pembrolizumab versus placebo, surgery and the assigned postoperative phase.",
+      "sourceAssetOrdinals": [
+        21,
+        22
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-050",
+      "subject": "keynote522-strategy",
+      "requirement": "Two preoperative blocks and a surgery boundary do not make postoperative pembrolizumab separately randomized or isolate its contribution to benefit.",
+      "sourceAssetOrdinals": [
+        21,
+        22
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-051",
+      "subject": "keynote522-strategy",
+      "requirement": "Planned assigned components do not prove completed delivery, and a trial structure diagram is not a personal dose, interval or appointment calendar.",
+      "sourceAssetOrdinals": [
+        21,
+        22
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    },
+    {
+      "id": "SB12-052",
+      "subject": "keynote522-strategy",
+      "requirement": "The initial602-person pCR analysis differs from1174 randomized and784/390 survival arms;75.1-month median follow-up differs from a60-month survival horizon.",
+      "sourceAssetOrdinals": [
+        21,
+        22
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Source-first body/native requirement; not yet compared with current P12 canonical fields",
+      "verificationLane": "Scientific claim, explicit source boundary or premise-backed toy interpretation; source verification pending"
+    }
+  ],
+  "supportChecks": [
+    {
+      "id": "SB12-C01",
+      "check": "Candidate/preimage/current-pin hashes retain their stage; referenced support hashes can differ from actual pinned bodies."
+    },
+    {
+      "id": "SB12-C02",
+      "check": "Historical REVISE and narrow closure, retained art and new art, source/pixel review and human/release approval remain separate."
+    },
+    {
+      "id": "SB12-C03",
+      "check": "Private generators, invocation paths and screenshot/guard references are not delivered or followed; the portable renderer is read as data."
+    },
+    {
+      "id": "SB12-C04",
+      "check": "The actual two TNBC PNGs share scientific questions but differ in drawn geometry, so no palette-only identity claim."
+    },
+    {
+      "id": "SB12-C05",
+      "check": "Web-retrieved NCI definitions after a JavaScript shell do not replace a raw official definition check."
+    },
+    {
+      "id": "SB12-C06",
+      "check": "Exact duplicated reader alt/caption and fictional data in provenance remain teaching-bearing; source-list/review status alone receives no teaching credit."
+    }
+  ],
+  "counts": {
+    "scientificRequirements": 52,
+    "subjects": 13,
+    "supportChecks": 6,
+    "textBodies": 21,
+    "fullReadChunks": 41,
+    "nativePNGs": 2
+  }
+}

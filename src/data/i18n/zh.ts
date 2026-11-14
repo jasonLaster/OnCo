@@ -2346,7 +2346,6 @@ export const tldr_zh: Record<string, string> = {
   "scott-antonia": "领导了PACIFIC试验,使放化疗后一年的durvalumab治疗成为III期肺癌的标准方案。",
   "select-lenvatinib": "使lenvatinib成为不再摄取放射性碘的甲状腺癌的主要药物,将疾病进展前的时间延长了四倍。",
   sengine: "运营PARIS检测:将患者的肿瘤培养成类器官,并对240多种药物进行筛选,以发现基因测序无法发现的治疗选择。",
-  "sensitivity-specificity": "敏感性是检测能发现的患者比例;特异性是检测能正确排除的健康人比例。没有任何检测能在两者上都达到100%,而在筛查中,两者之间的权衡决定了会出现多少误报。",
   "seoul-st-marys-hospital": "韩国最大的血液肿瘤中心,该国造血干细胞移植和白血病领域的大部分专业积累都在此建立。",
   serplulimab: "Serplulimab是一种中国研发的PD-1抗体,在所有一线小细胞肺癌免疫治疗试验中取得了最大的生存获益,已在中国、欧洲和英国获批,但尚未在美国获批。",
   "serum-institute-of-india": "按剂量计算全球最大的疫苗生产商,研发了印度首款国产HPV疫苗CERVAVAC,使宫颈癌预防不再依赖进口疫苗。",

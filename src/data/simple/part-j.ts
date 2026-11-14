@@ -525,7 +525,7 @@ export const simpleJ: Record<string, string> = {
   // ---- diagnostics and screening ----
   "fda-ldt-rule": "The FDA laboratory-developed test rule was a 2024 attempt to regulate the lab-made tests most US cancer patients rely on, struck down in court in 2025.",
   "ivdr": "IVDR is Europe's regulation for diagnostic tests, requiring most cancer tests since 2022 to be certified by an independent body before they can be sold.",
-  "sensitivity-specificity": "Sensitivity is the share of people with the disease a test catches, and specificity is the share of healthy people it correctly clears, a trade-off in screening.",
+  "sensitivity-specificity": "At a stated cut-off, sensitivity is the share of reference cases called positive; specificity is the share of reference non-cases called negative. Both are uncertain study estimates.",
   "overdiagnosis": "Overdiagnosis is finding a cancer that would never have caused symptoms or death in a person's lifetime, so treatment brings harm without benefit.",
   "race-for-children-act": "The RACE for Children Act is a US law making drug companies test new targeted cancer drugs in children whenever the drug's target matters in a childhood cancer.",
 };

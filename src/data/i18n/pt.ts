@@ -2346,7 +2346,6 @@ export const tldr_pt: Record<string, string> = {
   "scott-antonia": "Liderou o PACIFIC, que tornou um ano de durvalumab após quimiorradioterapia o padrão para o cancro do pulmão em estádio III.",
   "select-lenvatinib": "Tornou o lenvatinib o principal fármaco para os cancros da tiroide que já não captam iodo radioativo, quadruplicando o tempo até a doença crescer.",
   sengine: "Realiza o teste PARIS: o tumor de um paciente é cultivado como organoides e rastreado contra mais de 240 fármacos para encontrar opções que a sequenciação não consegue ver.",
-  "sensitivity-specificity": "A sensibilidade é a proporção de pessoas com a doença que um teste deteta; a especificidade é a proporção de pessoas saudáveis que ele exclui corretamente. Nenhum teste atinge 100% em ambas, e no rastreio esse equilíbrio decide quantos falsos alarmes se obtêm.",
   "seoul-st-marys-hospital": "O maior centro de cancros do sangue da Coreia, onde grande parte da experiência do país em transplante hematopoiético e leucemia foi construída.",
   serplulimab: "Serplulimab é um anticorpo anti-PD-1 chinês com o maior ganho de sobrevivência de qualquer ensaio de imunoterapia de primeira linha no cancro do pulmão de pequenas células, aprovado na China, na Europa e no Reino Unido, mas ainda não nos EUA.",
   "serum-institute-of-india": "O maior fabricante de vacinas do mundo em número de doses, que desenvolveu a CERVAVAC, a primeira vacina contra o HPV produzida na Índia, para que a prevenção do cancro do colo do útero deixe de depender de vacinas importadas.",

@@ -840,10 +840,15 @@ const terms: TermInput[] = [
     technologies: ["companion-diagnostic"], terms: ["fda-ldt-rule", "regulatory-agencies"],
     links: [{ label: "Regulation (EU) 2024/1860 (EUR-Lex)", url: "https://eur-lex.europa.eu/eli/reg/2024/1860/oj/eng" }, { label: "European Commission: in vitro diagnostic medical devices", url: "https://health.ec.europa.eu/medical-devices-sector/new-regulations_en" }] }),
   term({ id: "sensitivity-specificity", name: "Sensitivity and specificity", category: "Diagnostics", wikipedia: W("Sensitivity_and_specificity"),
-    tldr: "Sensitivity is the share of people with the disease a test catches; specificity is the share of healthy people it correctly clears. No test scores 100% on both, and for screening the trade-off decides how many false alarms you get.",
+    tldr: "At a stated threshold, sensitivity is the fraction of reference-condition cases called positive, and specificity is the fraction of reference non-cases called negative. Study estimates carry uncertainty and can change across populations.",
     summary: "Sensitivity (true-positive rate) and specificity (true-negative rate) are properties of the test at a chosen cut-off and are usually estimated against a reference standard such as colonoscopy or biopsy in a study like ECLIPSE or BLUE-C. What a person experiences, the chance that a positive result is real, is the positive predictive value, which depends on how common the disease is: at a 1% cancer prevalence, a test with 99% specificity still generates about as many false positives as true positives. Screening tests trade sensitivity against specificity by moving the cut-off; a multi-cancer blood test set to high specificity (99.5% for Galleri) accepts low sensitivity for early-stage cancer. Sensitivity for precancerous lesions, not cancer, is what distinguishes tests that prevent colorectal cancer from tests that detect it.",
     terms: ["ppv", "screening", "overdiagnosis"], trials: ["blue-c", "eclipse-shield"],
-    links: [{ label: "Wikipedia", url: W("Sensitivity_and_specificity") }] }),
+    links: [{ label: "Wikipedia", url: W("Sensitivity_and_specificity") },
+  {
+    "label": "FDA, 2007: Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests",
+    "url": "https://www.fda.gov/media/71147/download"
+  }
+] }),
   term({ id: "overdiagnosis", name: "Overdiagnosis", category: "Screening", wikipedia: W("Overdiagnosis"),
     tldr: "Finding a cancer that would never have caused symptoms or death in a person's lifetime, so that the diagnosis and treatment bring harm without benefit. It is the main downside of screening.",
     summary: "Overdiagnosis is invisible to the individual: a screen-detected cancer is treated and the person is cured of a disease that would not have hurt them. It is measured at population level as the excess incidence in a screened group that is never matched by a deficit later. Estimates are around 10-20% of screen-detected breast cancers in most reviews (the UK Independent Breast Screening Review put it at about 19%), a large share of PSA-detected low-grade prostate cancers before MRI-first pathways, and much of the rise in thyroid cancer and thin melanoma incidence. Remedies include raising thresholds (MRI-first prostate screening, Lung-RADS), renaming indolent lesions, and active surveillance rather than treatment. Multi-cancer blood tests raise the same question for cancers with no screening today.",

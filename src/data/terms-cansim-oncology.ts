@@ -182,6 +182,10 @@ export const cansimOncologyTerms: TermInput[] = [
   {
     "label": "Sautes-Fridman et al. 2019 review: Tertiary lymphoid structures in the era of cancer immunotherapy.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/31092904/"
+  },
+  {
+    "label": "Krautler et al., 2012: Follicular dendritic cells emerge from ubiquitous perivascular precursors",
+    "url": "https://doi.org/10.1016/j.cell.2012.05.032"
   }
 ], cansim: "/terms/tertiary-lymphoid-structures",
     tldr: "Organised immune-cell clusters can form within or beside tumours. Their architecture and association with treatment outcomes depend on the study and assay.",
@@ -192,7 +196,12 @@ export const cansimOncologyTerms: TermInput[] = [
   "cancer-ai-vocabulary",
   "b-cells-and-plasma-cells"
 ]
-}),
+,
+    notes: [
+      "Architecture labels describe observations rather than a compulsory sequence: a loose aggregate, separated T- and B-cell regions, a B-cell follicle and a demonstrated germinal centre are different findings. Germinal centres support proliferation and selection among B-cell variants. Follicular dendritic cells retain immune complexes for B cells and support follicular organisation; they are stromal cells, distinct from conventional dendritic cells that process antigens for T cells. Krautler and colleagues traced follicular dendritic cells to perivascular precursors and demonstrated immune-complex trapping and B-cell recruitment in mouse models. That lineage experiment does not itself validate a human tumour maturity test.",
+      "For a tissue-based result, retain the sampled site, assessed tumour or invasive-margin region, stains, counted area and study criteria. Sectioning and staining use finite fixed material. Vanhersecke's methods used serial sections and excluded pre-existing lymphoid follicles when assessing involved lymphoid organs, so an ordinary lymph-node follicle must not be counted as an ectopic tumour TLS. Small or disrupted samples can miss relevant architecture. RNA alone cannot display the physical T/B arrangement, and architecture alone identifies neither the antigens recognised nor effective tumour killing or individual treatment benefit."
+    ]
+  }),
   t({ id: "pharmacogenomics-term", name: "Pharmacogenomics", category: GEN, aka: ["pharmacogenomics", "pharmacogenomic", "pharmacogenetics", "PGx"],
     wikipedia: W("Pharmacogenomics"), cansim: "/terms/pharmacogenomics",
     tldr: "Pharmacogenomics studies how a person's genes, and a tumour's genes, change the way drugs work or cause harm.",

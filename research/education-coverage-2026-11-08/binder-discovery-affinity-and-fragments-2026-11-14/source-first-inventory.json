@@ -1,0 +1,169 @@
+{
+  "baseCommit": "cd6c053ae9983413402a57319c41bf9cc7febd1e",
+  "frozenAtUTC": "2026-11-14T10:45:53.490642+00:00",
+  "beforeFreshCurrentCanonicalCapture": true,
+  "earlierAuditContextKnown": true,
+  "independentInventoryClaimed": false,
+  "canonicalTeachingUnits": 19,
+  "constructionCustodyAndContextChecks": 6,
+  "totalRetainedUnits": 25,
+  "requirements": [
+    {
+      "id": "SB21-001",
+      "group": "affinity",
+      "requirement": "An individual binding affinity is measured under stated assay conditions; for the fictional one-to-one comparison lower KD means tighter binding.",
+      "kind": "mechanism"
+    },
+    {
+      "id": "SB21-002",
+      "group": "affinity",
+      "requirement": "Linked multiple contacts create avidity, with spacing and reconnection relevant to the observed interaction.",
+      "kind": "mechanism"
+    },
+    {
+      "id": "SB21-003",
+      "group": "affinity",
+      "requirement": "Multivalent apparent cell binding is not automatically single-site affinity; target density, spacing and assay preparation matter.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-004",
+      "group": "affinity",
+      "requirement": "Native epitope accessibility is a separate question: folding or neighbouring material can block access despite target abundance or a recognized sequence.",
+      "kind": "mechanism-boundary"
+    },
+    {
+      "id": "SB21-005",
+      "group": "affinity",
+      "requirement": "Stability, aggregation and unwanted recognition/developability need separate tests from affinity.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-006",
+      "group": "affinity",
+      "requirement": "A stronger measured interaction does not establish better delivery or a safer or more effective treatment; no universal optimum is depicted.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-007",
+      "group": "affinity",
+      "requirement": "In the fictional A/B example 1 nM is tighter than 10 nM in the same assay, while different aggregation and native-cell evidence do not select a treatment.",
+      "kind": "fictional-inference"
+    },
+    {
+      "id": "SB21-008",
+      "group": "fragments",
+      "requirement": "An scFv links VH and VL variable domains by a peptide linker in one protein chain; one chain is not one variable domain.",
+      "kind": "definition"
+    },
+    {
+      "id": "SB21-009",
+      "group": "fragments",
+      "requirement": "The illustrated VHH is one variable domain without a VL partner; an isolated VHH differs from a complete heavy-chain antibody.",
+      "kind": "definition"
+    },
+    {
+      "id": "SB21-010",
+      "group": "fragments",
+      "requirement": "A recognition module, a whole antibody, a whole CAR and a living cell are different objects.",
+      "kind": "object-distinction"
+    },
+    {
+      "id": "SB21-011",
+      "group": "fragments",
+      "requirement": "Linked domains must fold and recover actual binding in the tested construct; architecture alone does not show every linker or sequence works.",
+      "kind": "model-scoped-mechanism"
+    },
+    {
+      "id": "SB21-012",
+      "group": "fragments",
+      "requirement": "The size or appearance of a soluble recognition module does not determine transport of a cell carrying it.",
+      "kind": "scope-inference"
+    },
+    {
+      "id": "SB21-013",
+      "group": "fragments",
+      "requirement": "Neither fragment architecture nor the schematic size establishes whole-product safety, useful function or comparative clinical performance.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-014",
+      "group": "discovery",
+      "requirement": "The displayed fictional candidate B and its recoverable genetic instructions remain linked to the same carrier identity.",
+      "kind": "mechanism"
+    },
+    {
+      "id": "SB21-015",
+      "group": "discovery",
+      "requirement": "Unretained phage is a selection status, not proof of no binding or an established hit.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-016",
+      "group": "discovery",
+      "requirement": "Recovery and sequencing identify the candidate; making a separate protein and measuring it add distinct steps.",
+      "kind": "workflow"
+    },
+    {
+      "id": "SB21-017",
+      "group": "discovery",
+      "requirement": "Target, tag and negative controls test the identified protein outside its selection system; a tag-associated interaction is not established intended-target specificity.",
+      "kind": "premise-backed-reading-rule"
+    },
+    {
+      "id": "SB21-018",
+      "group": "discovery",
+      "requirement": "Computational ranking is prediction followed by make-and-measure, not measured binding or clinical validation or a universal recovery rate.",
+      "kind": "evidence-boundary"
+    },
+    {
+      "id": "SB21-019",
+      "group": "discovery",
+      "requirement": "The fictional 60 ranked, eight purified and two tag-binding candidates establish zero intended-target binders yet, without proving that none exists.",
+      "kind": "fictional-inference"
+    }
+  ],
+  "nonCanonicalChecks": [
+    {
+      "id": "SB21-C01",
+      "group": "all",
+      "requirement": "Drawing colours, shapes, dimensions and ordinal panels are schematic identifiers, not atomic coordinates, biological scale or study quantities.",
+      "canonicalCoverageCredit": 0
+    },
+    {
+      "id": "SB21-C02",
+      "group": "fragments",
+      "requirement": "Both fragment alt/caption strings in provenance duplicate the pinned parent text verbatim; duplication is not extra scientific credit.",
+      "canonicalCoverageCredit": 0
+    },
+    {
+      "id": "SB21-C03",
+      "group": "discovery",
+      "requirement": "The immutable discovery brief retains its original outgoing-carrier wording; inverse substitution in current SVGs reproduces declared prior hashes without proving a historical author or execution time.",
+      "canonicalCoverageCredit": 0
+    },
+    {
+      "id": "SB21-C04",
+      "group": "all",
+      "requirement": "PASS, source/pixel reading claims, author identities, code/model-call claims, contrast metrics and keyboard observations remain at their actual documentary scope, without new approval.",
+      "canonicalCoverageCredit": 0
+    },
+    {
+      "id": "SB21-C05",
+      "group": "fragments",
+      "requirement": "The fragment parent has a substantive original/later mass-paragraph delta and a later body-versus-bibliography range discrepancy; masses and general clearance/penetration assertions are not inferred from the unscaled figure.",
+      "canonicalCoverageCredit": 0
+    },
+    {
+      "id": "SB21-C06",
+      "group": "all",
+      "requirement": "Current SVG text, object placement, panel sequence and labelled comparison are assessed in full in both themes; this is not a site/mobile/browser or accessibility acceptance.",
+      "canonicalCoverageCredit": 0
+    }
+  ],
+  "sourceScope": "Nine complete bodies, six freshly viewed associated SVG renders, three later parent bodies and exact original/later diffs. Parent-only numeric mass assertions are bounded context, not new ordinary-course coverage.",
+  "earlierNamedPartialReadForContext": "SB18-062 concerns a general therapeutic nonprotein-target counterexample; the anti-digoxin binder citation is not assumed to resolve that therapeutic requirement.",
+  "newOrdinaryCourseRequirements": 0,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

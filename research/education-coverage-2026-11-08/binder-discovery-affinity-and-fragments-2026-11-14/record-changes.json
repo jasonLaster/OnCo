@@ -1,0 +1,89 @@
+{
+  "baseCommit": "cd6c053ae9983413402a57319c41bf9cc7febd1e",
+  "canonicalOwnersChanged": 1,
+  "rootOwners": [
+    {
+      "id": "binder-discovery",
+      "fields": [
+        {
+          "recordId": "binder-discovery",
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "recordId": "binder-discovery",
+          "field": "notes",
+          "before": [
+            "Sources and depth. The three older papers were read at abstract level only; Watson et al. (2023) was read in open-access full text for the screening method, the 19 per cent success definition and the subset titrations. A computational design counts as a binder only after it is made and measured: in Watson et al. 95 designs per target were screened at 10 micromolar and only designs at or above half the control's maximal response counted, so most tested designs did not meet that criterion, and ranking scores are predictions.",
+            "Enriched is not fully specific. Phage selection recovers rare phage (one in a million in McCafferty et al., 1990) under the conditions used, which favours binding under those conditions and not specificity across all targets. Boder and Wittrup (1997) used quantitative flow cytometry to compare kinetics on yeast; display level and binding strength are separate quantities, and a brighter cell is not automatically a better isolated binder. The display-level point is a general reading rule; the abstract does not describe a separate display measurement.",
+            "Selection against a purified or tagged target can miss the native epitope on cells or select a binder to the tag or an altered preparation, so a hit is retested outside its selection system with target-negative, unrelated-protein and tag controls. This is general experimental practice stated in the source lesson; none of the four primary papers here tests it, and binding to a cancer-associated protein does not show absence of binding to healthy tissue.",
+            "Assay card for a discovery hit. Input and consumption: clones or expressed proteins, defined target preparations and cell controls, with finite aliquots. Output and units: selected sequences, binding curves and assay-specific fluorescence, with a computational rank a different output. Threshold: define a hit relative to assay controls, with no universal therapeutic-binder threshold. Failure modes: display level, enrichment bias, tag binding, aggregation and target preparation. Validation tier: discovery and preclinical interaction evidence, not a clinical prediction."
+          ],
+          "beforeSha256": "5b3fe8d083d25e19c0dc5f72f2d29bf00d4b1a860fcb30c5231a64878300d96d",
+          "after": [
+            "Sources and depth. The three older papers were read at abstract level only; Watson et al. (2023) was read in open-access full text for the screening method, the 19 per cent success definition and the subset titrations. A computational design counts as a binder only after it is made and measured: in Watson et al. 95 designs per target were screened at 10 micromolar and only designs at or above half the control's maximal response counted, so most tested designs did not meet that criterion, and ranking scores are predictions.",
+            "Enriched is not fully specific. Phage selection recovers rare phage (one in a million in McCafferty et al., 1990) under the conditions used, which favours binding under those conditions and not specificity across all targets. Boder and Wittrup (1997) used quantitative flow cytometry to compare kinetics on yeast; display level and binding strength are separate quantities, and a brighter cell is not automatically a better isolated binder. The display-level point is a general reading rule; the abstract does not describe a separate display measurement.",
+            "Selection against a purified or tagged target can miss the native epitope on cells or select a binder to the tag or an altered preparation, so a hit is retested outside its selection system with target-negative, unrelated-protein and tag controls. This is general experimental practice stated in the source lesson; none of the four primary papers here tests it, and binding to a cancer-associated protein does not show absence of binding to healthy tissue.",
+            "Assay card for a discovery hit. Input and consumption: clones or expressed proteins, defined target preparations and cell controls, with finite aliquots. Output and units: selected sequences, binding curves and assay-specific fluorescence, with a computational rank a different output. Threshold: define a hit relative to assay controls, with no universal therapeutic-binder threshold. Failure modes: display level, enrichment bias, tag binding, aggregation and target preparation. Validation tier: discovery and preclinical interaction evidence, not a clinical prediction.",
+            "Phage display connects the displayed candidate to its coding gene in the same carrier (McCafferty et al., 1990). Recovery and sequencing identify the candidate to make and retest as a separate protein. Unretained means not recovered in that selection, not proven unable to bind. In a fictional example, 60 computer-ranked candidates yield eight purified proteins. Two bind a tagged target but also bind the tag alone. No intended-target binder has been established yet: the two results do not separate target recognition from tag recognition. A different target preparation and suitable controls are needed. This does not prove that none of the 60 could bind; the rankings themselves are predictions."
+          ],
+          "afterSha256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4"
+        },
+        {
+          "recordId": "binder-discovery",
+          "field": "provenance",
+          "before": {
+            "editedBy": "OnCo education audit",
+            "editedOn": "2026-11-10"
+          },
+          "beforeSha256": "fab7eb3c568e77ad1b1a783bd3cac9c48a3cc9a95d5177f33e63f8cc5b51ed8f",
+          "after": {
+            "editedBy": "OnCo education audit",
+            "editedOn": "2026-11-14"
+          },
+          "afterSha256": "a135f1cc9b67b33bb4edea6fc0bda7c325d4e844ba7c39f6e3577485f9416147"
+        }
+      ]
+    }
+  ],
+  "newRecords": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "earlierNotesAndLinksPreserved": true,
+  "unappliedProposals": [
+    {
+      "id": "SB21-P01",
+      "recordId": "binder-affinity-epitope-developability",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "field": "notes",
+      "before": [
+        "Affinity describes one binding interaction under stated conditions. For a simple one-to-one equilibrium a lower dissociation constant (KD, a concentration often given in nanomolar units) means tighter binding, whereas papers that report association constants (per molar) read the other way, with a higher value meaning tighter binding, so compare like with like. Avidity is the combined strength of several contacts and depends on target density, spacing and the number of binding sites. In one set of experiments the Fab fragment of an anti-HLA-A2 antibody had an affinity of 1.9 x 10^7 per molar while the bivalent F(ab)2 or IgG showed an avidity of 1.3 x 10^9 per molar on cells (Ways and Parham, 1983). A cell-binding result for a multivalent product is therefore not its single-site affinity; ask which assay was used and how many sites took part.",
+        "Whether a binder can reach its epitope depends on folding, orientation and neighbouring molecules, so a sequence, a signal on purified protein or a measure of protein abundance does not show access in a living setting. In BiTE antibodies against the melanoma antigen MCSP, constructs with similar binding affinity differed greatly in redirected T-cell lysis of CHO cells carrying MCSP variants, and those binding the membrane-proximal domain were more potent than those binding more distal domains (Bluemel et al., 2010). That is a defined engineered-cell system, not a general rule for every target.",
+        "Developability asks whether a molecule can be produced, purified, formulated and stored, stays soluble and stable, does not aggregate and does not bind unrelated molecules. Jain et al. (2017) expressed 137 clinical-stage antibody sequences as IgG1 and measured a dozen biophysical properties to describe the range seen in clinical-stage antibodies. Kinna et al. (2026) selected ten CD123 domain- and affinity-matched pairs from llama VHH and rat scFv libraries. The VHH preparations had a higher reported thermal-unfolding midpoint and lower predicted aggregation and positive-surface-patch scores. Those computational scores are distinct from direct particle measurements: dynamic light scattering found an even monomeric distribution except for one clone in each pool. The results concern the studied preparations and readouts. Neither study tests whether a candidate works or is safe in patients, so developable does not mean effective or safe.",
+        "Measurement rows and their limits. Binding strength comes from optical methods such as biolayer interferometry (used for screening and full titrations in Watson et al., 2023), where target preparation, immobilisation and multivalent binding affect the reading. Native accessibility needs binding to relevant living cells with target-negative or blocking controls, and cell binding alone does not show tissue access or clinical selectivity. Stability is read from thermal unfolding and aggregation, which depend on formulation, concentration and stress. A potency assay shows activity in that assay only. FDA Q6B ties specifications to the individual product, so no universal developability cutoff exists, and tests consume candidate material and may need target protein or cells.",
+        "Inference lesson. Suppose candidate A has tighter single-site affinity but only purified-protein data and more aggregation after stress, while candidate B binds living target-positive cells and aggregates less. No treatment choice follows: the team needs the intended format, comparable functional tests and exposure evidence first. A binder profile is a development framework, not a validated score, and it is retested once the binder becomes an antibody, a payload carrier or a receptor."
+      ],
+      "beforeSha256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+      "after": [
+        "Affinity describes one binding interaction under stated conditions. For a simple one-to-one equilibrium a lower dissociation constant (KD, a concentration often given in nanomolar units) means tighter binding, whereas papers that report association constants (per molar) read the other way, with a higher value meaning tighter binding, so compare like with like. Avidity is the combined strength of several contacts and depends on target density, spacing and the number of binding sites. In one set of experiments the Fab fragment of an anti-HLA-A2 antibody had an affinity of 1.9 x 10^7 per molar while the bivalent F(ab)2 or IgG showed an avidity of 1.3 x 10^9 per molar on cells (Ways and Parham, 1983). A cell-binding result for a multivalent product is therefore not its single-site affinity; ask which assay was used and how many sites took part.",
+        "Whether a binder can reach its epitope depends on folding, orientation and neighbouring molecules, so a sequence, a signal on purified protein or a measure of protein abundance does not show access in a living setting. In BiTE antibodies against the melanoma antigen MCSP, constructs with similar binding affinity differed greatly in redirected T-cell lysis of CHO cells carrying MCSP variants, and those binding the membrane-proximal domain were more potent than those binding more distal domains (Bluemel et al., 2010). That is a defined engineered-cell system, not a general rule for every target.",
+        "Developability asks whether a molecule can be produced, purified, formulated and stored, stays soluble and stable, does not aggregate and does not bind unrelated molecules. Jain et al. (2017) expressed 137 clinical-stage antibody sequences as IgG1 and measured a dozen biophysical properties to describe the range seen in clinical-stage antibodies. Kinna et al. (2026) selected ten CD123 domain- and affinity-matched pairs from llama VHH and rat scFv libraries. The VHH preparations had a higher reported thermal-unfolding midpoint and lower predicted aggregation and positive-surface-patch scores. Those computational scores are distinct from direct particle measurements: dynamic light scattering found an even monomeric distribution except for one clone in each pool. The results concern the studied preparations and readouts. Neither study tests whether a candidate works or is safe in patients, so developable does not mean effective or safe.",
+        "Measurement rows and their limits. Binding strength comes from optical methods such as biolayer interferometry (used for screening and full titrations in Watson et al., 2023), where target preparation, immobilisation and multivalent binding affect the reading. Native accessibility needs binding to relevant living cells with target-negative or blocking controls, and cell binding alone does not show tissue access or clinical selectivity. Stability is read from thermal unfolding and aggregation, which depend on formulation, concentration and stress. A potency assay shows activity in that assay only. FDA Q6B ties specifications to the individual product, so no universal developability cutoff exists, and tests consume candidate material and may need target protein or cells.",
+        "Inference lesson. Suppose candidate A has tighter single-site affinity but only purified-protein data and more aggregation after stress, while candidate B binds living target-positive cells and aggregates less. No treatment choice follows: the team needs the intended format, comparable functional tests and exposure evidence first. A binder profile is a development framework, not a validated score, and it is retested once the binder becomes an antibody, a payload carrier or a receptor. In this fictional comparison, if A has a KD of 1 nM and B has a KD of 10 nM under the same one-to-one assay conditions, A binds more tightly. Those numbers do not resolve the different aggregation and native-cell evidence or select a treatment."
+      ],
+      "afterSha256": "9dbc19b6216b4a12b4f316d4fcb345d04962a5bd1f41915ad561d84eebd28083",
+      "requirements": [
+        "SB21-007"
+      ],
+      "scope": "Append to the existing fictional inference, preserving all prior notes and all unrelated fields. Numeric premises are authored examples, not study results.",
+      "applied": false
+    }
+  ],
+  "dataCommit": "bded6763111aaee1117bb93e8e22dc832f40bdda"
+}

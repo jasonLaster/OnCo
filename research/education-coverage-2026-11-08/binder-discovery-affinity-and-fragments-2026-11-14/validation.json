@@ -1,0 +1,820 @@
+{
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.32
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.74
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.98
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 314.37
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "fullSuite": {
+    "filesPassed": 293,
+    "testsPassed": 3101,
+    "testsSkipped": 2
+  },
+  "currentReaders": {
+    "checks": [
+      {
+        "id": "binder-discovery",
+        "file": "binder-discovery-before.html",
+        "state": "captured-before-record-in-current-unchanged-component",
+        "sha256": "d8645f45ebdabd830aeb6be1ecbe8b7af74053413ff383a375387f05f85bf757",
+        "bytes": 28316,
+        "recordSHA256": "9db23a5d612db5054726756168217b3c351761ad3425c54c56c4869b5a486955",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "t-cell-engager",
+        "file": "t-cell-engager.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "44efb9978c3fc83be1daead93494417ea2182fd674aa27110b3e0b58d3fd4074",
+        "bytes": 167228,
+        "recordSHA256": "bf90e74dea2f6aee081121bc649b51fc797d066d511520bb3b82112394025df4",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "car-t",
+        "file": "car-t.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "3f9dbb5efccac21bfb4f79b57d30a60ca57fad9e3be94f4ea84f8946bbb8e756",
+        "bytes": 215871,
+        "recordSHA256": "f2e266185e8e10f63d3bef07ed62a1cb83eac4b695f442997754ef95c58a9828",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "binder-discovery",
+        "file": "binder-discovery.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "a60c2302fa5a5d538c02bfc90157e7e9791e4ee9b771d84918b972af16aa64d3",
+        "bytes": 29601,
+        "recordSHA256": "e3a9ef793730b56a816a3cba1ba82829e5ee621c052afab4d456269602b25466",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "antibody",
+        "file": "antibody.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "ccf246ee882421b50e7e5e9e0c037162dd6058055098622058347bbfb2e8e940",
+        "bytes": 29361,
+        "recordSHA256": "c98979c462b37b9c0ab0f0dffdd8fcca5029a489de6749ffbee9e394bf69b476",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "antigen",
+        "file": "antigen.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "8744934753e9717bb3f0f54f913f66dbd037855c5348a676cc32b31fca866fb2",
+        "bytes": 27897,
+        "recordSHA256": "bff3bdc927a79a939302f40602c4b5c20ce47cb374587adc261097290ed5858d",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "epitope",
+        "file": "epitope.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "ae4021670a5c070d51920c6a608fcd94640a226a85c67f8a4094e100592349c9",
+        "bytes": 27145,
+        "recordSHA256": "cd4286a7957abe95b813b68f98f54d5b519e8153489d9634bd876b95f871253f",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "binder-targeting-module",
+        "file": "binder-targeting-module.html",
+        "state": "actual-unmerged-PR373-in-memory-only",
+        "sha256": "99f1a70b39bdbab7172c5e960545a4944d362cefb92c93a83b3dd421b356fdd6",
+        "bytes": 21811,
+        "recordSHA256": "2224e2b8608505d9f8fc870fbe7ae6cfdfa8d3a37328d0300273117a940e1497",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "binder-affinity-epitope-developability",
+        "file": "binder-affinity-epitope-developability.html",
+        "state": "actual-unmerged-PR373-in-memory-only",
+        "sha256": "3e57fe67935ec4bd453fda68eb166896599f746247a1a26c2b2dead6dd4cdea1",
+        "bytes": 27426,
+        "recordSHA256": "6ffdac20d6281581bed282ed2a652e6f932d4caa98bc104f9c54136e2556abdc",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "binder-format-constraints",
+        "file": "binder-format-constraints.html",
+        "state": "actual-unmerged-PR373-in-memory-only",
+        "sha256": "e7b69db583c921e12f1877bc46db95184be58d46f9faf0b72171e583012f9888",
+        "bytes": 24568,
+        "recordSHA256": "ad8c87f0db8988ad19e1b0b3a2bc297d6efee8f7a90bbfaefea0ffc9f6be7789",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "scfv-vhh-formats",
+        "file": "scfv-vhh-formats.html",
+        "state": "actual-unmerged-PR373-in-memory-only",
+        "sha256": "e3f25861a80dd661005d57fa8dfd26d778cb68e91c9d6a23f81f089f8c018d8d",
+        "bytes": 24777,
+        "recordSHA256": "61c255127a964999922840189750e08c618844874728a2d97ff7fc563f9657a9",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "rootReaders": 6,
+    "actualUnmergedPeerReaders": 4,
+    "beforeCaptures": 1,
+    "totalFreshCaptures": 11,
+    "selectedSchemaParses": 11,
+    "rootReadersPrecedePeerOverlay": true,
+    "overlayRestored": true,
+    "graphRecords": 23091,
+    "changedCanonicalOwners": 1,
+    "hostedBrowserHydrationAccessibilityAcceptance": false,
+    "independentExpertOwnerLearnerLanguageAcceptance": false
+  },
+  "exactReaderAnchors": {
+    "checks": [
+      {
+        "requirement": "SB21-001",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "ce5d220489c476933918f77b77557c9532a5ef84723ea67f6cc44b4d1f9d623e",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-002",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "6b0467c69d97fb778fb87d6b9ecf0e7214a076d94fd44c9f28ee06da2a52dd14",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-003",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "954f24f2e99a95622f911046eed2c2d9c103258d95dc08b0dc535d945e3431c4",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-004",
+        "recordId": "epitope",
+        "field": "summary",
+        "fieldSHA256": "b53115041d88326fad4539f4f50565696641f7212488c392ec43d56f8f8b7ad9",
+        "passageSHA256": "757cf5d406f071103b417bfe3500c3f88fdde95c6124ba441768f7d47dedfc91",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-005",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "09e12e07f309773e6c31587419ce53557f48220458054a0bb18ea54d84e3d9b2",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-005",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "accea64425388abb6a0891db2bd38cd71b7dd00eb74f1f0d8b9840729550e4ce",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-006",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "summary",
+        "fieldSHA256": "fc4d2ccf9ce0927d3a71956d2ae26260bb7a489bad8fb6243cc6b9f440ec202e",
+        "passageSHA256": "4c23c9b58e67101e71f317f2b23b52a8449d01d5f6bcf6c57996ee8f29a7a54a",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-006",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "c245da00f9f42fc7910b872d8b1f5e8bbd60a984e2a98bf2bd873f58d48d8428",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-007",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "ce5d220489c476933918f77b77557c9532a5ef84723ea67f6cc44b4d1f9d623e",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-007",
+        "recordId": "binder-affinity-epitope-developability",
+        "field": "notes",
+        "fieldSHA256": "3941d0f24624228a050c56724edfebe20140442f34e5e56d430fbcf6bca8f0c6",
+        "passageSHA256": "1e67dc446e812ff2ae95b666ed1f529fe4b47ea09cb0e04a0337c66b70f20f12",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-008",
+        "recordId": "scfv-vhh-formats",
+        "field": "notes",
+        "fieldSHA256": "88037bbcc80fe6c344913f50cce5e51e7ee932ca25e95c7170d2ded62e7918d0",
+        "passageSHA256": "6bed8dffd60950b2c87f94bb490eeea5cd54bd3c641cf6044b7ce77097045b68",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-009",
+        "recordId": "scfv-vhh-formats",
+        "field": "notes",
+        "fieldSHA256": "88037bbcc80fe6c344913f50cce5e51e7ee932ca25e95c7170d2ded62e7918d0",
+        "passageSHA256": "dcec0a74f3b3c9895263e72af195a29288951d27759b369545cabdc0a88288c8",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-009",
+        "recordId": "scfv-vhh-formats",
+        "field": "summary",
+        "fieldSHA256": "af32ac0459e3c46e19a0c16ac1f0a5dad059b53b677e54e6c7a8aba5952c1d0e",
+        "passageSHA256": "0078fbf4260582145be1974dff5dd3258f17970ae2951c16f945b206c322d746",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-010",
+        "recordId": "car-t",
+        "field": "notes",
+        "fieldSHA256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+        "passageSHA256": "82647db8ea5b69017da1a261b99e8776f070b7543bfc169e8788bb090c2b3e4e",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-010",
+        "recordId": "car-t",
+        "field": "principle",
+        "fieldSHA256": "3975f65196e1fe400c3ea6a6b26ef05db2652bda5e58de6d77f6bfd3f369a64d",
+        "passageSHA256": "9c30945161746153a94c7e174473a80cb30389fb093a62c17bc4e4b1b475c058",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-010",
+        "recordId": "antibody",
+        "field": "summary",
+        "fieldSHA256": "c6d8b9356798a90ec35d4a3a7fa3a4edbb4217233183b00e4f97de3844b0d146",
+        "passageSHA256": "f484e4c117e77016134583a34e6bf100dfd99702edb9401e1e61c05c0a89bc8a",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-011",
+        "recordId": "scfv-vhh-formats",
+        "field": "summary",
+        "fieldSHA256": "af32ac0459e3c46e19a0c16ac1f0a5dad059b53b677e54e6c7a8aba5952c1d0e",
+        "passageSHA256": "575c9b32e92bb1378994389a3a3d68ac115dd38d341b4e4b01f1c2669df4972d",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-011",
+        "recordId": "scfv-vhh-formats",
+        "field": "summary",
+        "fieldSHA256": "af32ac0459e3c46e19a0c16ac1f0a5dad059b53b677e54e6c7a8aba5952c1d0e",
+        "passageSHA256": "5e7d2bffedac9b8cf767be10dc1702431e70be7071a6ad375ad82f24b75bced2",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-012",
+        "recordId": "scfv-vhh-formats",
+        "field": "notes",
+        "fieldSHA256": "88037bbcc80fe6c344913f50cce5e51e7ee932ca25e95c7170d2ded62e7918d0",
+        "passageSHA256": "ddddb957982ef86f76643a60ab7ef27c7392e0df9e7d8f149838e40bbda8fb4f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-013",
+        "recordId": "scfv-vhh-formats",
+        "field": "notes",
+        "fieldSHA256": "88037bbcc80fe6c344913f50cce5e51e7ee932ca25e95c7170d2ded62e7918d0",
+        "passageSHA256": "54bfdf81a4a658d9308ead3a31c61c54be37b2c85329c541e57cddfebcffa4a1",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-014",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "2e02de06d76fadfe89b535f1e8a04f2b26a15086d8e654b997f46e0cb348fb74",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-015",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "08b7d9dd4f2ef1a7743fcd26336d302e376405172ba094161b361bd42b9640b9",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-016",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "1824c8f8a13c49d6592e61580827b96da9e4d8b8a50caa2a8962f7e32b35804c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-017",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "6c27d4c4a8ae6f7ea0cfb1a99f556694d72a2608200bd8501457748fe852c059",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-017",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "df34b1842102a8a46eef645e35ab2438ce1fe61fdb54b30571f5afe5d875661c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-018",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "a794e02465bdaee28137a55b4874de6a3a8a95b47792b655d623548a9dab3c27",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-018",
+        "recordId": "binder-discovery",
+        "field": "summary",
+        "fieldSHA256": "373a2b4a6dca510f865766741967187141e4fefddcba66c8a7d147f56efede74",
+        "passageSHA256": "25a1176094fe4ac515100bc7da87b0b0942e14049ebf7a8581d98a237b0c600f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB21-019",
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "fieldSHA256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4",
+        "passageSHA256": "127e7be73e79a3ecd0b4384bb96d610f52f9309016cfd55a815649b6e03ef763",
+        "exactPassageInActualDecodedReader": true
+      }
+    ],
+    "exactReferences": 28,
+    "allPass": true,
+    "beforeAfterAdditionVisible": true,
+    "oldNotesInBothReaders": true,
+    "newActualStaticCaptures": 11,
+    "proposalAfterTextCredited": false
+  },
+  "staticExports": {
+    "records": 6,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "t-cell-engager",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "binder-discovery",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "antibody",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "antibody",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "antigen",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "antigen",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epitope",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epitope",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "epitope",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "t-cell-engager.json",
+        "bytes": 46996,
+        "sha256": "959b8c432f2dfa217f532daf710cfa1b6c4a284dc4410c1a9238e23aa80e909c"
+      },
+      {
+        "file": "t-cell-engager.md",
+        "bytes": 35533,
+        "sha256": "84c5504a32eb9783cb67361d348e793b76aff00b57a6386b4ce0a8adf8e210e2"
+      },
+      {
+        "file": "car-t.json",
+        "bytes": 85943,
+        "sha256": "b4c6268ec49866838bb4fb33512eec4c90f3d9cbb971d33d98cb7954a6e75a9f"
+      },
+      {
+        "file": "car-t.md",
+        "bytes": 60779,
+        "sha256": "ca925f7b7b3f332e4b7ab97247e2f0a43e54657f0aa83921542fd3918c76e4c1"
+      },
+      {
+        "file": "binder-discovery.json",
+        "bytes": 6317,
+        "sha256": "54ceea2511fb19e5932aa21bbb135d252a97fe9452bafb51a86bc46e8ce799ca"
+      },
+      {
+        "file": "binder-discovery.md",
+        "bytes": 5909,
+        "sha256": "2dffb18f9a92757d50281d32685e2f35110392e36a51949d6eb18b650f62890b"
+      },
+      {
+        "file": "antibody.json",
+        "bytes": 5074,
+        "sha256": "9df01db20e6774e2a38bd03f4a35c85c88ac83edb5726ffbeff9b9cd79636e60"
+      },
+      {
+        "file": "antibody.md",
+        "bytes": 3717,
+        "sha256": "c2368e274559c3502a3427367789975b3cc60f55bb602a7637901de96ed83274"
+      },
+      {
+        "file": "antigen.json",
+        "bytes": 4324,
+        "sha256": "8446ac6eda013728a0a015cd51609874b3ebedd02fb62629c4603b000a3f16f0"
+      },
+      {
+        "file": "antigen.md",
+        "bytes": 3273,
+        "sha256": "5a35f6ec5ad9afccf99f17bce2adc0e1069469f36f0d9f59a3a42cf59f06364f"
+      },
+      {
+        "file": "epitope.json",
+        "bytes": 3792,
+        "sha256": "03831e0045fbe88eab61e55e87032a1e02b2650d7c84a473a1aedb9e82db38d0"
+      },
+      {
+        "file": "epitope.md",
+        "bytes": 3142,
+        "sha256": "fb13ef3d142ef06f04bc0c7c998e1d4092b5abbbfea1fa69f33393f41957741d"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "proposal": {
+    "termSchemaPass": true,
+    "fieldHashPreconditionsMatch": true,
+    "allOldNotesPreservedInOrder": true,
+    "onlyNotesFieldProposed": true,
+    "applied": false,
+    "coverageCredit": 0
+  },
+  "fieldVerification": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "binder-discovery"
+    ],
+    "changedFields": [
+      "asOf",
+      "notes",
+      "provenance"
+    ],
+    "oldNotesPreservedInOrder": true,
+    "allOtherRecordFieldsUnchanged": true,
+    "allOtherGraphRecordsUnchanged": true,
+    "newRecords": 0,
+    "newAliases": 0,
+    "newRelations": 0,
+    "changes": [
+      {
+        "recordId": "binder-discovery",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "after": "2026-11-14",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      },
+      {
+        "recordId": "binder-discovery",
+        "field": "notes",
+        "before": [
+          "Sources and depth. The three older papers were read at abstract level only; Watson et al. (2023) was read in open-access full text for the screening method, the 19 per cent success definition and the subset titrations. A computational design counts as a binder only after it is made and measured: in Watson et al. 95 designs per target were screened at 10 micromolar and only designs at or above half the control's maximal response counted, so most tested designs did not meet that criterion, and ranking scores are predictions.",
+          "Enriched is not fully specific. Phage selection recovers rare phage (one in a million in McCafferty et al., 1990) under the conditions used, which favours binding under those conditions and not specificity across all targets. Boder and Wittrup (1997) used quantitative flow cytometry to compare kinetics on yeast; display level and binding strength are separate quantities, and a brighter cell is not automatically a better isolated binder. The display-level point is a general reading rule; the abstract does not describe a separate display measurement.",
+          "Selection against a purified or tagged target can miss the native epitope on cells or select a binder to the tag or an altered preparation, so a hit is retested outside its selection system with target-negative, unrelated-protein and tag controls. This is general experimental practice stated in the source lesson; none of the four primary papers here tests it, and binding to a cancer-associated protein does not show absence of binding to healthy tissue.",
+          "Assay card for a discovery hit. Input and consumption: clones or expressed proteins, defined target preparations and cell controls, with finite aliquots. Output and units: selected sequences, binding curves and assay-specific fluorescence, with a computational rank a different output. Threshold: define a hit relative to assay controls, with no universal therapeutic-binder threshold. Failure modes: display level, enrichment bias, tag binding, aggregation and target preparation. Validation tier: discovery and preclinical interaction evidence, not a clinical prediction."
+        ],
+        "beforeSha256": "5b3fe8d083d25e19c0dc5f72f2d29bf00d4b1a860fcb30c5231a64878300d96d",
+        "after": [
+          "Sources and depth. The three older papers were read at abstract level only; Watson et al. (2023) was read in open-access full text for the screening method, the 19 per cent success definition and the subset titrations. A computational design counts as a binder only after it is made and measured: in Watson et al. 95 designs per target were screened at 10 micromolar and only designs at or above half the control's maximal response counted, so most tested designs did not meet that criterion, and ranking scores are predictions.",
+          "Enriched is not fully specific. Phage selection recovers rare phage (one in a million in McCafferty et al., 1990) under the conditions used, which favours binding under those conditions and not specificity across all targets. Boder and Wittrup (1997) used quantitative flow cytometry to compare kinetics on yeast; display level and binding strength are separate quantities, and a brighter cell is not automatically a better isolated binder. The display-level point is a general reading rule; the abstract does not describe a separate display measurement.",
+          "Selection against a purified or tagged target can miss the native epitope on cells or select a binder to the tag or an altered preparation, so a hit is retested outside its selection system with target-negative, unrelated-protein and tag controls. This is general experimental practice stated in the source lesson; none of the four primary papers here tests it, and binding to a cancer-associated protein does not show absence of binding to healthy tissue.",
+          "Assay card for a discovery hit. Input and consumption: clones or expressed proteins, defined target preparations and cell controls, with finite aliquots. Output and units: selected sequences, binding curves and assay-specific fluorescence, with a computational rank a different output. Threshold: define a hit relative to assay controls, with no universal therapeutic-binder threshold. Failure modes: display level, enrichment bias, tag binding, aggregation and target preparation. Validation tier: discovery and preclinical interaction evidence, not a clinical prediction.",
+          "Phage display connects the displayed candidate to its coding gene in the same carrier (McCafferty et al., 1990). Recovery and sequencing identify the candidate to make and retest as a separate protein. Unretained means not recovered in that selection, not proven unable to bind. In a fictional example, 60 computer-ranked candidates yield eight purified proteins. Two bind a tagged target but also bind the tag alone. No intended-target binder has been established yet: the two results do not separate target recognition from tag recognition. A different target preparation and suitable controls are needed. This does not prove that none of the 60 could bind; the rankings themselves are predictions."
+        ],
+        "afterSha256": "e8fb12e51b4c55470390528f18dbbe5f6450136cdc4473cf450666a35ff5cce4"
+      },
+      {
+        "recordId": "binder-discovery",
+        "field": "provenance",
+        "before": {
+          "editedBy": "OnCo education audit",
+          "editedOn": "2026-11-10"
+        },
+        "beforeSha256": "fab7eb3c568e77ad1b1a783bd3cac9c48a3cc9a95d5177f33e63f8cc5b51ed8f",
+        "after": {
+          "editedBy": "OnCo education audit",
+          "editedOn": "2026-11-14"
+        },
+        "afterSha256": "a135f1cc9b67b33bb4edea6fc0bda7c325d4e844ba7c39f6e3577485f9416147"
+      }
+    ]
+  },
+  "arithmetic": {
+    "checks": [
+      {
+        "requirement": "SB21-007",
+        "premises": "Fictional same one-to-one assay: A KD 1 nM, B KD 10 nM.",
+        "lowerKDIsA": true,
+        "notATreatmentRanking": true,
+        "currentNumericPremisesAbsent": true
+      },
+      {
+        "requirement": "SB21-019",
+        "ranked": 60,
+        "purified": 8,
+        "tagAssociatedCandidates": 2,
+        "countsConsistent": true,
+        "intendedTargetBindersEstablishedYet": 0,
+        "zeroPossibleBindersClaimed": false,
+        "studySuccessRateClaimed": false
+      }
+    ],
+    "allPremiseChecksPass": true
+  },
+  "newFullGateRun": true,
+  "newStaticAPIOpenAPIAndContextGeneration": true,
+  "newNextProductionBuild": false,
+  "newBrowserHydrationOrAccessibilityAcceptance": false,
+  "scannerRulesOrFloorsChanged": false,
+  "dataCommit": "bded6763111aaee1117bb93e8e22dc832f40bdda",
+  "dataScanReceipt": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "1e6c326be9721ff9c3fc1eee8b644e1a597000ef6c75f445200b4ca32f577f8e",
+    "rulesAndAllowlistsChanged": false
+  }
+}

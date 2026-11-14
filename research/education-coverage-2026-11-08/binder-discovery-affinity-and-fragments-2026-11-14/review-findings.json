@@ -1,0 +1,42 @@
+{
+  "findings": [
+    {
+      "id": "SB21-F01",
+      "severity": "context-source-discrepancy",
+      "subject": "Fragment parent mass ranges",
+      "finding": "The later body changes to 25 to 27 kDa and 12 to 15 kDa while its linked indexed MICAD and Bathula summaries give 25 to 30 kDa and as low as 15 kDa. The original/later difference is retained. No range is inferred from the schematic and ordinary grades are unchanged."
+    },
+    {
+      "id": "SB21-F02",
+      "severity": "custody-limit",
+      "subject": "Fragment parent hash",
+      "finding": "Two bodies cite the same owner hash and byte count matching neither pinned parent. The six current native figure identities still match the pinned files; the historical parent version is not certified."
+    },
+    {
+      "id": "SB21-F03",
+      "severity": "canonical-partial",
+      "subject": "Fictional affinity worked comparison",
+      "finding": "The actual contributor field carries the qualitative example but not its 1 nM/10 nM premises. Exact append SB21-P01 is unapplied."
+    },
+    {
+      "id": "SB21-F04",
+      "severity": "metadata-caveat",
+      "subject": "MICAD date",
+      "finding": "The registry year is series metadata. The specific chapter date was not independently verified; the old peer link label is not re-certified."
+    },
+    {
+      "id": "SB21-F05",
+      "severity": "historical-review-scope",
+      "subject": "Fragment review projection",
+      "finding": "A schema projection of a prior review with zero new native or source checks is not a fresh independent scientific or pixel review."
+    },
+    {
+      "id": "SB21-F06",
+      "severity": "resolved-current-byte-relation",
+      "subject": "Discovery outgoing-carrier label",
+      "finding": "The current label is Unretained phage. An exact inverse one-label substitution reproduces both declared older hashes and bytes at both pins. It does not establish historical execution, authorship or approval."
+    }
+  ],
+  "newNativeScientificDefectsFound": 0,
+  "expertAcceptance": false
+}

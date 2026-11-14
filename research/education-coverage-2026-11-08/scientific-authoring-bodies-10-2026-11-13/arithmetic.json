@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "id": "dna-complement",
+      "actual": "TAGC",
+      "expected": "TAGC",
+      "pass_": true,
+      "scope": "The bottom is3prime to5prime left-to-right, not a second5prime direction."
+    },
+    {
+      "id": "binding-half",
+      "actual": 0.5,
+      "expected": 0.5,
+      "pass_": true,
+      "scope": "One-site free-ligand model"
+    },
+    {
+      "id": "binding-icons",
+      "actual": 0.5,
+      "expected": 0.5,
+      "pass_": true,
+      "scope": "Stipulated icons, not measured outcomes"
+    },
+    {
+      "id": "germline-blood-icons",
+      "actual": 0.5,
+      "expected": 0.5,
+      "pass_": true,
+      "scope": "Chosen cells, not VAF"
+    },
+    {
+      "id": "germline-fragment-icons",
+      "actual": 0.5,
+      "expected": 0.5,
+      "pass_": true,
+      "scope": "Chosen fragments, not measured tumour fraction"
+    },
+    {
+      "id": "full-agonist-low-dose",
+      "actual": 40.0,
+      "expected": 40,
+      "pass_": true,
+      "scope": "Toy response at c0.5, not a partial maximum"
+    },
+    {
+      "id": "neutral-with-reference-zero",
+      "actual": 80.0,
+      "expected": 80,
+      "pass_": true,
+      "scope": "Separate chosen antagonist curve"
+    },
+    {
+      "id": "phospho-ratio-A",
+      "actual": 1.0,
+      "expected": 1,
+      "pass_": true,
+      "scope": "Comparable toy signals"
+    },
+    {
+      "id": "phospho-ratio-B",
+      "actual": 1.0,
+      "expected": 1,
+      "pass_": true,
+      "scope": "Doubling both signals leaves the ratio1"
+    },
+    {
+      "id": "bar-common-scale",
+      "actual": 2.0,
+      "expected": 2,
+      "pass_": true,
+      "scope": "Phospho and parent bar widths use the same scale"
+    },
+    {
+      "id": "log-zero-outside",
+      "actual": true,
+      "expected": true,
+      "pass_": true,
+      "scope": "Zero is outside the selected0.01to1000log axis"
+    }
+  ],
+  "allPass": true,
+  "scope": "Independent calculations from stated fictional premises, not execution of embedded source renderers, measurements or empirical source verification."
+}

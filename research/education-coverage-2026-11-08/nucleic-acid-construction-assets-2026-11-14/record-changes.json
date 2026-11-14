@@ -1,0 +1,662 @@
+{
+  "baseCommit": "9da1054ab5d58e1aec46483b8f9cb5bb0400237b",
+  "rootOwners": [],
+  "canonicalOwnersChanged": 0,
+  "actualPeerOwnersChanged": 0,
+  "newOwners": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "actualPeerHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "actualPeerSnapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+  "unappliedProposals": [
+    {
+      "id": "SB26-P01",
+      "recordId": "mrna-construct-anatomy",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "beforeRecord": {
+        "id": "mrna-construct-anatomy",
+        "kind": "term",
+        "name": "Messenger RNA construct anatomy",
+        "aka": [
+          "mRNA construct anatomy",
+          "mRNA untranslated regions and poly(A) tail"
+        ],
+        "tldr": "An engineered messenger RNA includes a protein-coding message and surrounding features that affect how it is used. Those features are part of the construct being tested.",
+        "summary": "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.\n\nStart-codon context was tested by single-base substitutions around the AUG initiator in a cloned preproinsulin gene, where the best sequence identified changed proinsulin yield over a 20-fold range (Kozak). The interaction of the cap and the poly(A) tail was tested with luciferase mRNAs delivered by electroporation into tobacco protoplasts, Chinese hamster ovary cells and yeast, where the tail's effect depended on the cap (Gallie). A textbook describes the 5' cap, 5' and 3' untranslated regions that regulate translation initiation and mRNA stability, a poly-A tail of about 200 A residues added by poly-A polymerase to cellular mRNA, and a ribosome that moves from the cap to the AUG, with Kozak's rules describing the sequence around it (OpenStax Biology 2e). The cellular tail length is not a rule for engineered constructs: one dendritic-cell study found that a 120-nucleotide tail, an unmasked tail end and two 3' untranslated regions each improved stability and translation, and it measured transcript amount by RT-PCR, protein by eGFP, peptide-MHC density and T-cell stimulation separately (Holtkamp and colleagues), so a doubled reporter signal after a 3' change is one measurement, not a different antigen or a clinical benefit. These are tested constructs and cell systems, not one best sequence for a clinical product.",
+        "asOf": "2026-11-09",
+        "links": [
+          {
+            "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+            "url": "https://doi.org/10.1182/blood-2006-04-015024"
+          },
+          {
+            "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+            "url": "https://doi.org/10.1073/pnas.1908052116"
+          },
+          {
+            "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+            "url": "https://doi.org/10.1093/nar/gkr695"
+          },
+          {
+            "label": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+            "url": "https://doi.org/10.1016/0092-8674(86)90762-2"
+          },
+          {
+            "label": "The cap and poly(A) tail function synergistically to regulate mRNA translational efficiency.",
+            "url": "https://doi.org/10.1101/gad.5.11.2108"
+          },
+          {
+            "label": "Biology 2e, 15.4 RNA Processing in Eukaryotes (OpenStax)",
+            "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+          },
+          {
+            "label": "Biology 2e, 15.5 Ribosomes and Protein Synthesis (OpenStax)",
+            "url": "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "codon-optimization",
+          "modified-rna-nucleosides",
+          "in-vitro-transcription",
+          "mrna-lnp-manufacturing",
+          "multi-epitope-constructs"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated."
+        ],
+        "category": "Genomics & genetics"
+      },
+      "beforeRecordSha256": "a657bf999f699a2f7f09c54b30cef286f6edf9a094a990ef6150042ce9676e40",
+      "afterRecord": {
+        "id": "mrna-construct-anatomy",
+        "kind": "term",
+        "name": "Messenger RNA construct anatomy",
+        "aka": [
+          "mRNA construct anatomy",
+          "mRNA untranslated regions and poly(A) tail"
+        ],
+        "tldr": "An engineered messenger RNA includes a protein-coding message and surrounding features that affect how it is used. Those features are part of the construct being tested.",
+        "summary": "The cap, untranslated regions, coding sequence and poly(A) tail are distinct parts of a messenger RNA construct. A primary dendritic-cell study changed untranslated-region and poly(A)-tail features and measured RNA stability, protein production, peptide display and T-cell stimulation separately. Another experimental study separated effects of codon usage and RNA structure on protein expression. Construct design therefore includes more than the intended amino-acid sequence. A design that improves one measured step in one system does not establish optimal immune effects or clinical efficacy in another.\n\nStart-codon context was tested by single-base substitutions around the AUG initiator in a cloned preproinsulin gene, where the best sequence identified changed proinsulin yield over a 20-fold range (Kozak). The interaction of the cap and the poly(A) tail was tested with luciferase mRNAs delivered by electroporation into tobacco protoplasts, Chinese hamster ovary cells and yeast, where the tail's effect depended on the cap (Gallie). A textbook describes the 5' cap, 5' and 3' untranslated regions that regulate translation initiation and mRNA stability, a poly-A tail of about 200 A residues added by poly-A polymerase to cellular mRNA, and a ribosome that moves from the cap to the AUG, with Kozak's rules describing the sequence around it (OpenStax Biology 2e). The cellular tail length is not a rule for engineered constructs: one dendritic-cell study found that a 120-nucleotide tail, an unmasked tail end and two 3' untranslated regions each improved stability and translation, and it measured transcript amount by RT-PCR, protein by eGFP, peptide-MHC density and T-cell stimulation separately (Holtkamp and colleagues), so a doubled reporter signal after a 3' change is one measurement, not a different antigen or a clinical benefit. These are tested constructs and cell systems, not one best sequence for a clinical product.",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+            "url": "https://doi.org/10.1182/blood-2006-04-015024"
+          },
+          {
+            "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+            "url": "https://doi.org/10.1073/pnas.1908052116"
+          },
+          {
+            "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+            "url": "https://doi.org/10.1093/nar/gkr695"
+          },
+          {
+            "label": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+            "url": "https://doi.org/10.1016/0092-8674(86)90762-2"
+          },
+          {
+            "label": "The cap and poly(A) tail function synergistically to regulate mRNA translational efficiency.",
+            "url": "https://doi.org/10.1101/gad.5.11.2108"
+          },
+          {
+            "label": "Biology 2e, 15.4 RNA Processing in Eukaryotes (OpenStax)",
+            "url": "https://openstax.org/books/biology-2e/pages/15-4-rna-processing-in-eukaryotes"
+          },
+          {
+            "label": "Biology 2e, 15.5 Ribosomes and Protein Synthesis (OpenStax)",
+            "url": "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "codon-optimization",
+          "modified-rna-nucleosides",
+          "in-vitro-transcription",
+          "mrna-lnp-manufacturing",
+          "multi-epitope-constructs"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated.",
+          "In a conventional messenger RNA, the 5-prime cap and untranslated region precede the protein-coding region, which runs from its initiation codon to a stop codon; the 3-prime untranslated region and adenosine tail follow it. Start-codon context describes bases around the start, including bases on both sides of the untranslated/coding boundary. It is not a separate segment inserted between those regions or a DNA transcription promoter. The cap belongs to the RNA rather than its delivery carrier, and the tail is RNA rather than part of the encoded protein."
+        ],
+        "category": "Genomics & genetics"
+      },
+      "afterRecordSha256": "8890937400104074163c4c4b908e47eb716d031edd51db86686f161963a44d5e",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated."
+          ],
+          "beforeSha256": "ef9de1f9403334cc6510d4210eee3f0490d52b8a646300700ccdcd1fb5e5d959",
+          "after": [
+            "Read a construct from its 5-prime end to its 3-prime end: cap, untranslated region, initiation context, protein-coding region, untranslated region and poly(A) tail have different jobs. A target list does not specify the finished RNA. Changing a UTR changes a regulatory sequence; changing an amino-acid spacer changes the combined protein. Sequence identity, size and integrity, end characterisation and expression need their own assays, with RNA chemistry and formulation stated.",
+            "In a conventional messenger RNA, the 5-prime cap and untranslated region precede the protein-coding region, which runs from its initiation codon to a stop codon; the 3-prime untranslated region and adenosine tail follow it. Start-codon context describes bases around the start, including bases on both sides of the untranslated/coding boundary. It is not a separate segment inserted between those regions or a DNA transcription promoter. The cap belongs to the RNA rather than its delivery carrier, and the tail is RNA rather than part of the encoded protein."
+          ],
+          "afterSha256": "01d0d70fc06574134540811b2a2e3f02370f6fbe7f2de764f6f3884b34fa03ec"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-09",
+          "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "oldNotesAndLinksPreservedInOrder": true,
+      "sourceScope": "Existing resolved source set; molecular explanations and explicitly invented reading examples, no new experimental rate. Conventional duplex direction is a structural interpretation of complementary strands, not a new measured result."
+    },
+    {
+      "id": "SB26-P02",
+      "recordId": "codon-optimization",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "beforeRecord": {
+        "id": "codon-optimization",
+        "kind": "term",
+        "name": "Codon optimization",
+        "aka": [],
+        "tldr": "Synonymous codon changes can preserve the intended protein sequence while changing the RNA message. Their effects need to be measured in the intended expression system.",
+        "summary": "Primary experiments showed that synonymous codon choices can affect RNA stability and translation. Work on engineered messenger RNAs also separated codon usage from RNA secondary structure, showing that expression depends on more than a simple codon preference. Optimization is a design objective with a particular assay and system, not a guarantee of improved therapy. Changing codons is distinct from choosing which antigen or epitope the construct encodes.\n\nIn four human cell lines, three independent methods showed that mRNA stability tracked codon identity rather than nucleotide content, stabilising codons tended to coincide with higher tRNA levels, and the effect depended on translation (Wu and colleagues, 2019). Another study separated codon usage from coding-region structure in eGFP constructs and defined functional half-life as the time an mRNA is actively translated, which differs from RNA that is merely present or protein that persists, so a doubled reporter signal at one time point does not show twice the RNA lifetime, a better neoantigen or any clinical effect (Mauger and colleagues).",
+        "asOf": "2026-11-09",
+        "links": [
+          {
+            "label": "Codon optimality is a major determinant of mRNA stability.",
+            "url": "https://doi.org/10.1016/j.cell.2015.02.029"
+          },
+          {
+            "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+            "url": "https://doi.org/10.1073/pnas.1908052116"
+          },
+          {
+            "label": "Translation affects mRNA stability in a codon-dependent manner in human cells.",
+            "url": "https://doi.org/10.7554/elife.45396"
+          },
+          {
+            "label": "NCBI: standard genetic code, table 1; DNA alphabet uses T for U",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "mrna-construct-anatomy",
+          "multi-epitope-constructs",
+          "in-vitro-transcription"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "A codon is a three-base unit. In the standard genetic code, GCU and GCC both encode alanine; synonymous redesign can preserve the intended amino-acid sequence while altering the RNA. RNA structure, available decoding machinery and experimental conditions still matter. Compare matched RNA amount, chemistry, cap, UTRs, purity and delivery, using RNA and protein time courses and protein identity or activity. A codon score or single reporter measurement cannot establish translation fidelity, peptide display, recognition or benefit, and a changed amino-acid spacer is a different design change.",
+          "In Mauger's engineered eGFP constructs, highly expressed messages could have highly structured coding regions, and coding-region structure affected the duration of active translation. This concerns the tested coding regions and does not show that removing every fold or maximising one codon score improves every message."
+        ],
+        "category": "Genomics & genetics"
+      },
+      "beforeRecordSha256": "55bb65c212936c34003f944c4d00eaf56a58d3709db077b7d1b76a5e0dc4550a",
+      "afterRecord": {
+        "id": "codon-optimization",
+        "kind": "term",
+        "name": "Codon optimization",
+        "aka": [],
+        "tldr": "Synonymous codon changes can preserve the intended protein sequence while changing the RNA message. Their effects need to be measured in the intended expression system.",
+        "summary": "Primary experiments showed that synonymous codon choices can affect RNA stability and translation. Work on engineered messenger RNAs also separated codon usage from RNA secondary structure, showing that expression depends on more than a simple codon preference. Optimization is a design objective with a particular assay and system, not a guarantee of improved therapy. Changing codons is distinct from choosing which antigen or epitope the construct encodes.\n\nIn four human cell lines, three independent methods showed that mRNA stability tracked codon identity rather than nucleotide content, stabilising codons tended to coincide with higher tRNA levels, and the effect depended on translation (Wu and colleagues, 2019). Another study separated codon usage from coding-region structure in eGFP constructs and defined functional half-life as the time an mRNA is actively translated, which differs from RNA that is merely present or protein that persists, so a doubled reporter signal at one time point does not show twice the RNA lifetime, a better neoantigen or any clinical effect (Mauger and colleagues).",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Codon optimality is a major determinant of mRNA stability.",
+            "url": "https://doi.org/10.1016/j.cell.2015.02.029"
+          },
+          {
+            "label": "mRNA structure regulates protein expression through changes in functional half-life.",
+            "url": "https://doi.org/10.1073/pnas.1908052116"
+          },
+          {
+            "label": "Translation affects mRNA stability in a codon-dependent manner in human cells.",
+            "url": "https://doi.org/10.7554/elife.45396"
+          },
+          {
+            "label": "NCBI: standard genetic code, table 1; DNA alphabet uses T for U",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "mrna-construct-anatomy",
+          "multi-epitope-constructs",
+          "in-vitro-transcription"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "A codon is a three-base unit. In the standard genetic code, GCU and GCC both encode alanine; synonymous redesign can preserve the intended amino-acid sequence while altering the RNA. RNA structure, available decoding machinery and experimental conditions still matter. Compare matched RNA amount, chemistry, cap, UTRs, purity and delivery, using RNA and protein time courses and protein identity or activity. A codon score or single reporter measurement cannot establish translation fidelity, peptide display, recognition or benefit, and a changed amino-acid spacer is a different design change.",
+          "In Mauger's engineered eGFP constructs, highly expressed messages could have highly structured coding regions, and coding-region structure affected the duration of active translation. This concerns the tested coding regions and does not show that removing every fold or maximising one codon score improves every message.",
+          "In a fictional matched comparison, two synonymous versions encode the same intended antigen, but B gives 200 reporter units and A gives 100 at the stated time. This is twice the reporter signal at that time. It does not isolate translation rate, active RNA lifetime or persistence of the protein, or establish the identity of every translation product. Antigen display and receptor recognition need their own observations."
+        ],
+        "category": "Genomics & genetics"
+      },
+      "afterRecordSha256": "81ec553c70c6b26d04586595135cafd5e69f18115bbf48dde39d7f29c1e1b095",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "A codon is a three-base unit. In the standard genetic code, GCU and GCC both encode alanine; synonymous redesign can preserve the intended amino-acid sequence while altering the RNA. RNA structure, available decoding machinery and experimental conditions still matter. Compare matched RNA amount, chemistry, cap, UTRs, purity and delivery, using RNA and protein time courses and protein identity or activity. A codon score or single reporter measurement cannot establish translation fidelity, peptide display, recognition or benefit, and a changed amino-acid spacer is a different design change.",
+            "In Mauger's engineered eGFP constructs, highly expressed messages could have highly structured coding regions, and coding-region structure affected the duration of active translation. This concerns the tested coding regions and does not show that removing every fold or maximising one codon score improves every message."
+          ],
+          "beforeSha256": "a284a569606b2e42bcc263a6fa016badbe8a30fbd59a6bfd70433e22d3ac0579",
+          "after": [
+            "A codon is a three-base unit. In the standard genetic code, GCU and GCC both encode alanine; synonymous redesign can preserve the intended amino-acid sequence while altering the RNA. RNA structure, available decoding machinery and experimental conditions still matter. Compare matched RNA amount, chemistry, cap, UTRs, purity and delivery, using RNA and protein time courses and protein identity or activity. A codon score or single reporter measurement cannot establish translation fidelity, peptide display, recognition or benefit, and a changed amino-acid spacer is a different design change.",
+            "In Mauger's engineered eGFP constructs, highly expressed messages could have highly structured coding regions, and coding-region structure affected the duration of active translation. This concerns the tested coding regions and does not show that removing every fold or maximising one codon score improves every message.",
+            "In a fictional matched comparison, two synonymous versions encode the same intended antigen, but B gives 200 reporter units and A gives 100 at the stated time. This is twice the reporter signal at that time. It does not isolate translation rate, active RNA lifetime or persistence of the protein, or establish the identity of every translation product. Antigen display and receptor recognition need their own observations."
+          ],
+          "afterSha256": "0cb1bd7834108060c2a52d163f41077b7c6a147b6a773aa362864215483d7732"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-09",
+          "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "oldNotesAndLinksPreservedInOrder": true,
+      "sourceScope": "Existing resolved source set; molecular explanations and explicitly invented reading examples, no new experimental rate. Conventional duplex direction is a structural interpretation of complementary strands, not a new measured result."
+    },
+    {
+      "id": "SB26-P03",
+      "recordId": "dsrna-impurities",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "beforeRecord": {
+        "id": "dsrna-impurities",
+        "kind": "term",
+        "name": "Double-stranded RNA impurities",
+        "aka": [
+          "dsRNA impurities",
+          "double-stranded RNA contaminants"
+        ],
+        "tldr": "RNA manufacture can also produce unwanted paired RNA material. Measuring and removing it is a product-quality question separate from the intended message.",
+        "summary": "Primary experiments identified double-stranded RNA among contaminants that affected innate immune activation and translation of in vitro-transcribed messenger RNA. Subsequent work developed and tested a cellulose-based removal method. Those studies support characterizing contaminants and their functional consequences in the tested workflows. They do not establish one universal acceptable impurity level or release method for all RNA products.\n\nOne documented origin is T7 polymerase initiating transcription from a promoter-less DNA end, producing an antisense strand and long double-stranded RNA that activated the sensor MDA5 (Mu and colleagues). In purification studies, unmodified mRNAs were translated better after HPLC purification but still induced high levels of cytokine secretion (Karikó and colleagues). A cellulose method removed at least 90 per cent of double-stranded RNA with over 65 per cent recovery regardless of mRNA length, coding sequence or nucleoside composition and increased translation in mice, and agarose gels showed that the purified mRNA stayed intact, but it removed duplexes of 30 base pairs or longer efficiently while most of a 21 base-pair duplex remained (Baiersdörfer and colleagues). Detection has its own scope: that paper notes an earlier report that about 40 base pairs of duplex are needed for detection by the J2 antibody, and a review of mRNA analytics lists immunoblot or ELISA for double-stranded RNA alongside separate integrity assays (Losada and colleagues). A lower dsRNA signal with worse fragmentation or recovery therefore does not show a better product. Method performance in those systems is not a clinical impurity limit.",
+        "asOf": "2026-11-09",
+        "links": [
+          {
+            "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+            "url": "https://doi.org/10.1093/nar/gkr695"
+          },
+          {
+            "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+            "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+          },
+          {
+            "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+            "url": "https://doi.org/10.1093/nar/gky177"
+          },
+          {
+            "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+            "url": "https://doi.org/10.1007/s00216-026-06615-x"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "in-vitro-transcription",
+          "modified-rna-nucleosides",
+          "chemistry-manufacturing-controls"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Distinguish a shorter transcript, a fold within the intended message and an unwanted complementary RNA duplex; transcript length alone cannot identify these categories. State the antibody or other detection chemistry, calibrator, sample matrix, units, detection and quantitation limits, and recovery behind a dsRNA result. Test recognised structures and relevant RNA chemistries rather than assuming every duplex is equally visible. Assess RNA size, integrity and expression separately: lower antibody signal alone cannot establish a better product or antigen-specific immunity."
+        ],
+        "category": "Methods and models"
+      },
+      "beforeRecordSha256": "98bac7bdadcf7eeef35fa2ec7134fe85accf44f7235ca4858fffe33e9a6b6768",
+      "afterRecord": {
+        "id": "dsrna-impurities",
+        "kind": "term",
+        "name": "Double-stranded RNA impurities",
+        "aka": [
+          "dsRNA impurities",
+          "double-stranded RNA contaminants"
+        ],
+        "tldr": "RNA manufacture can also produce unwanted paired RNA material. Measuring and removing it is a product-quality question separate from the intended message.",
+        "summary": "Primary experiments identified double-stranded RNA among contaminants that affected innate immune activation and translation of in vitro-transcribed messenger RNA. Subsequent work developed and tested a cellulose-based removal method. Those studies support characterizing contaminants and their functional consequences in the tested workflows. They do not establish one universal acceptable impurity level or release method for all RNA products.\n\nOne documented origin is T7 polymerase initiating transcription from a promoter-less DNA end, producing an antisense strand and long double-stranded RNA that activated the sensor MDA5 (Mu and colleagues). In purification studies, unmodified mRNAs were translated better after HPLC purification but still induced high levels of cytokine secretion (Karikó and colleagues). A cellulose method removed at least 90 per cent of double-stranded RNA with over 65 per cent recovery regardless of mRNA length, coding sequence or nucleoside composition and increased translation in mice, and agarose gels showed that the purified mRNA stayed intact, but it removed duplexes of 30 base pairs or longer efficiently while most of a 21 base-pair duplex remained (Baiersdörfer and colleagues). Detection has its own scope: that paper notes an earlier report that about 40 base pairs of duplex are needed for detection by the J2 antibody, and a review of mRNA analytics lists immunoblot or ELISA for double-stranded RNA alongside separate integrity assays (Losada and colleagues). A lower dsRNA signal with worse fragmentation or recovery therefore does not show a better product. Method performance in those systems is not a clinical impurity limit.",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+            "url": "https://doi.org/10.1093/nar/gkr695"
+          },
+          {
+            "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+            "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+          },
+          {
+            "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+            "url": "https://doi.org/10.1093/nar/gky177"
+          },
+          {
+            "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+            "url": "https://doi.org/10.1007/s00216-026-06615-x"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "in-vitro-transcription",
+          "modified-rna-nucleosides",
+          "chemistry-manufacturing-controls"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Distinguish a shorter transcript, a fold within the intended message and an unwanted complementary RNA duplex; transcript length alone cannot identify these categories. State the antibody or other detection chemistry, calibrator, sample matrix, units, detection and quantitation limits, and recovery behind a dsRNA result. Test recognised structures and relevant RNA chemistries rather than assuming every duplex is equally visible. Assess RNA size, integrity and expression separately: lower antibody signal alone cannot establish a better product or antigen-specific immunity.",
+          "Two complementary RNA strands in a conventional duplex run in opposite 5-prime-to-3-prime directions. This differs from one continuous message folding back to form a local paired region, and from a truncated single strand. Pairing, length, integrity and intended-RNA recovery need distinct measurements. A pairing-antibody result cannot establish sterility, absence of residual DNA or protein, or clinical safety."
+        ],
+        "category": "Methods and models"
+      },
+      "afterRecordSha256": "96a9013ad5f5be9a3910f34a5fc28df0f3b8a649992fd080c50e92488be7ff9c",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Distinguish a shorter transcript, a fold within the intended message and an unwanted complementary RNA duplex; transcript length alone cannot identify these categories. State the antibody or other detection chemistry, calibrator, sample matrix, units, detection and quantitation limits, and recovery behind a dsRNA result. Test recognised structures and relevant RNA chemistries rather than assuming every duplex is equally visible. Assess RNA size, integrity and expression separately: lower antibody signal alone cannot establish a better product or antigen-specific immunity."
+          ],
+          "beforeSha256": "67eddad26cda5d0d8d9fd19cf287aa7fe338ec8e82b67a370e25c5a56842b84b",
+          "after": [
+            "Distinguish a shorter transcript, a fold within the intended message and an unwanted complementary RNA duplex; transcript length alone cannot identify these categories. State the antibody or other detection chemistry, calibrator, sample matrix, units, detection and quantitation limits, and recovery behind a dsRNA result. Test recognised structures and relevant RNA chemistries rather than assuming every duplex is equally visible. Assess RNA size, integrity and expression separately: lower antibody signal alone cannot establish a better product or antigen-specific immunity.",
+            "Two complementary RNA strands in a conventional duplex run in opposite 5-prime-to-3-prime directions. This differs from one continuous message folding back to form a local paired region, and from a truncated single strand. Pairing, length, integrity and intended-RNA recovery need distinct measurements. A pairing-antibody result cannot establish sterility, absence of residual DNA or protein, or clinical safety."
+          ],
+          "afterSha256": "12072cc71988799fae487d5bbca7c3808a2fc3bd68a576fd48d48e2fcb86b0e4"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-09",
+          "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "oldNotesAndLinksPreservedInOrder": true,
+      "sourceScope": "Existing resolved source set; molecular explanations and explicitly invented reading examples, no new experimental rate. Conventional duplex direction is a structural interpretation of complementary strands, not a new measured result."
+    },
+    {
+      "id": "SB26-P04",
+      "recordId": "multi-epitope-constructs",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "beforeRecord": {
+        "id": "multi-epitope-constructs",
+        "kind": "term",
+        "name": "Multi-epitope constructs and antigen processing",
+        "aka": [
+          "polyepitope constructs",
+          "multi-epitope vaccine design"
+        ],
+        "tldr": "A construct can encode several intended immune targets. Each target still needs to be processed, displayed and recognized in the tested biological setting.",
+        "summary": "A primary multiepitope DNA-vaccine study found that flanking sequence changes altered processing efficiency and measured immunogenicity of encoded epitopes. That was evidence from the tested constructs, not a validated rule for every RNA cancer vaccine. The number of encoded epitopes is distinct from the number naturally displayed or recognized. Processing evidence, immune-response breadth and clinical outcome remain separate parts of a construct claim.\n\nA computational study of spacer design for class-I-restricted string-of-beads polypeptides reported a fivefold increase in predicted epitope recovery and a 44 per cent reduction in predicted neo-epitope immunogenicity compared with designs without spacers (Schubert and Kohlbacher); these are predictions, not measured protection. Combining an N-terminal leader peptide with an MHC class I trafficking signal at the C terminus improved presentation of class I and class II epitopes in human and mouse dendritic cells and expanded antigen-specific CD8 and CD4 T cells in vitro and in mice (Kreiter and colleagues). In a first-in-human RNA poly-neo-epitope melanoma study all patients developed T-cell responses against multiple vaccine neo-epitopes (Sahin and colleagues; abstract only), and each patient's vaccine in the Rojas pancreatic cancer trial used two uridine mRNA strands, each encoding up to 10 neoepitopes. Mass spectrometry can identify recovered HLA-bound peptides. Caron and colleagues' 2015 review describes class I peptides predominantly 9 to 12 amino acids long and reports that about 10 per cent of acquired spectra could be confidently assigned at a 1 per cent false discovery rate in the workflows discussed. It also describes evidence that mass spectrometry underestimates the self-HLA peptide repertoire, so non-detection does not prove absence. Prediction is not presentation: of more than 1,300 amino acid changes in two mouse tumour models about 13 per cent were predicted to bind MHC class I and a small fraction of those were confirmed by mass spectrometry (Yadav and colleagues). Because a single amino acid after an epitope changed its immunogenicity in a multiepitope DNA vaccine (Livingston and colleagues, already linked), a changed spacer is a changed construct that needs renewed processing and display evidence, while earlier evidence is retained for the parts that did not change.",
+        "asOf": "2026-11-09",
+        "links": [
+          {
+            "label": "Optimization of epitope processing enhances immunogenicity of multiepitope DNA vaccines.",
+            "url": "https://doi.org/10.1016/s0264-410x(01)00233-x"
+          },
+          {
+            "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+            "url": "https://doi.org/10.1084/jem.192.8.1105"
+          },
+          {
+            "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+            "url": "https://doi.org/10.1182/blood-2006-04-015024"
+          },
+          {
+            "label": "Designing string-of-beads vaccines with optimal spacers.",
+            "url": "https://doi.org/10.1186/s13073-016-0263-6"
+          },
+          {
+            "label": "Increased antigen presentation efficiency by coupling antigens to MHC class I trafficking signals.",
+            "url": "https://doi.org/10.4049/jimmunol.180.1.309"
+          },
+          {
+            "label": "Personalized RNA mutanome vaccines mobilize poly-specific therapeutic immunity against cancer.",
+            "url": "https://doi.org/10.1038/nature23003"
+          },
+          {
+            "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+            "url": "https://doi.org/10.1038/s41586-023-06063-y"
+          },
+          {
+            "label": "Analysis of Major Histocompatibility Complex (MHC) Immunopeptidomes Using Mass Spectrometry.",
+            "url": "https://doi.org/10.1074/mcp.o115.052431"
+          },
+          {
+            "label": "Predicting immunogenic tumour mutations by combining mass spectrometry and exome sequencing.",
+            "url": "https://doi.org/10.1038/nature14001"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "immunodominance",
+          "binding-presentation-recognition",
+          "codon-optimization",
+          "mrna-construct-anatomy"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "An encoded antigen window is not necessarily the peptide eventually displayed. Joined windows and spacers can create new junction sequences. A protein-routing signal concerns the encoded protein rather than the particle delivery address. Identify any intended helper segment and test its HLA class II presentation and CD4 response in the relevant setting. Verify sequence and expression, recovered HLA-bound peptides and functional recognition separately; prediction scores do not supply a presentation threshold. Changing a spacer changes the construct even if two selected windows are unchanged. More encoded targets create opportunities only where relevant antigen expression, processing, compatible HLA presentation and functional recognition can occur. Target count alone is not measured response breadth."
+        ],
+        "category": "Immunology"
+      },
+      "beforeRecordSha256": "6007e31c5f28ac10971dca346d6a62b4525d0b960f40d775d1575d2e3d929cba",
+      "afterRecord": {
+        "id": "multi-epitope-constructs",
+        "kind": "term",
+        "name": "Multi-epitope constructs and antigen processing",
+        "aka": [
+          "polyepitope constructs",
+          "multi-epitope vaccine design"
+        ],
+        "tldr": "A construct can encode several intended immune targets. Each target still needs to be processed, displayed and recognized in the tested biological setting.",
+        "summary": "A primary multiepitope DNA-vaccine study found that flanking sequence changes altered processing efficiency and measured immunogenicity of encoded epitopes. That was evidence from the tested constructs, not a validated rule for every RNA cancer vaccine. The number of encoded epitopes is distinct from the number naturally displayed or recognized. Processing evidence, immune-response breadth and clinical outcome remain separate parts of a construct claim.\n\nA computational study of spacer design for class-I-restricted string-of-beads polypeptides reported a fivefold increase in predicted epitope recovery and a 44 per cent reduction in predicted neo-epitope immunogenicity compared with designs without spacers (Schubert and Kohlbacher); these are predictions, not measured protection. Combining an N-terminal leader peptide with an MHC class I trafficking signal at the C terminus improved presentation of class I and class II epitopes in human and mouse dendritic cells and expanded antigen-specific CD8 and CD4 T cells in vitro and in mice (Kreiter and colleagues). In a first-in-human RNA poly-neo-epitope melanoma study all patients developed T-cell responses against multiple vaccine neo-epitopes (Sahin and colleagues; abstract only), and each patient's vaccine in the Rojas pancreatic cancer trial used two uridine mRNA strands, each encoding up to 10 neoepitopes. Mass spectrometry can identify recovered HLA-bound peptides. Caron and colleagues' 2015 review describes class I peptides predominantly 9 to 12 amino acids long and reports that about 10 per cent of acquired spectra could be confidently assigned at a 1 per cent false discovery rate in the workflows discussed. It also describes evidence that mass spectrometry underestimates the self-HLA peptide repertoire, so non-detection does not prove absence. Prediction is not presentation: of more than 1,300 amino acid changes in two mouse tumour models about 13 per cent were predicted to bind MHC class I and a small fraction of those were confirmed by mass spectrometry (Yadav and colleagues). Because a single amino acid after an epitope changed its immunogenicity in a multiepitope DNA vaccine (Livingston and colleagues, already linked), a changed spacer is a changed construct that needs renewed processing and display evidence, while earlier evidence is retained for the parts that did not change.",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Optimization of epitope processing enhances immunogenicity of multiepitope DNA vaccines.",
+            "url": "https://doi.org/10.1016/s0264-410x(01)00233-x"
+          },
+          {
+            "label": "T cells compete for access to antigen-bearing antigen-presenting cells.",
+            "url": "https://doi.org/10.1084/jem.192.8.1105"
+          },
+          {
+            "label": "Modification of antigen-encoding RNA increases stability, translational efficacy, and T-cell stimulatory capacity of dendritic cells.",
+            "url": "https://doi.org/10.1182/blood-2006-04-015024"
+          },
+          {
+            "label": "Designing string-of-beads vaccines with optimal spacers.",
+            "url": "https://doi.org/10.1186/s13073-016-0263-6"
+          },
+          {
+            "label": "Increased antigen presentation efficiency by coupling antigens to MHC class I trafficking signals.",
+            "url": "https://doi.org/10.4049/jimmunol.180.1.309"
+          },
+          {
+            "label": "Personalized RNA mutanome vaccines mobilize poly-specific therapeutic immunity against cancer.",
+            "url": "https://doi.org/10.1038/nature23003"
+          },
+          {
+            "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+            "url": "https://doi.org/10.1038/s41586-023-06063-y"
+          },
+          {
+            "label": "Analysis of Major Histocompatibility Complex (MHC) Immunopeptidomes Using Mass Spectrometry.",
+            "url": "https://doi.org/10.1074/mcp.o115.052431"
+          },
+          {
+            "label": "Predicting immunogenic tumour mutations by combining mass spectrometry and exome sequencing.",
+            "url": "https://doi.org/10.1038/nature14001"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "immunodominance",
+          "binding-presentation-recognition",
+          "codon-optimization",
+          "mrna-construct-anatomy"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "An encoded antigen window is not necessarily the peptide eventually displayed. Joined windows and spacers can create new junction sequences. A protein-routing signal concerns the encoded protein rather than the particle delivery address. Identify any intended helper segment and test its HLA class II presentation and CD4 response in the relevant setting. Verify sequence and expression, recovered HLA-bound peptides and functional recognition separately; prediction scores do not supply a presentation threshold. Changing a spacer changes the construct even if two selected windows are unchanged. More encoded targets create opportunities only where relevant antigen expression, processing, compatible HLA presentation and functional recognition can occur. Target count alone is not measured response breadth.",
+          "A spacer is an encoded amino-acid sequence between antigen windows, rather than an untranslated gap. A possible boundary peptide can contain part of a window and part of its spacer; encoding it does not establish that processing produces it, that HLA displays it or that a receptor recognises it. In an invented A-spacer-B comparison, replacing the spacer changes the combined protein. Earlier evidence of A display belongs to the earlier revision; it establishes neither B display nor the revised construct's display or tumour recognition."
+        ],
+        "category": "Immunology"
+      },
+      "afterRecordSha256": "cf1d9021fc695cdc5afc87fb05e8503e4f83d49f34c52a84943b5ba2c1b2ceb8",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "An encoded antigen window is not necessarily the peptide eventually displayed. Joined windows and spacers can create new junction sequences. A protein-routing signal concerns the encoded protein rather than the particle delivery address. Identify any intended helper segment and test its HLA class II presentation and CD4 response in the relevant setting. Verify sequence and expression, recovered HLA-bound peptides and functional recognition separately; prediction scores do not supply a presentation threshold. Changing a spacer changes the construct even if two selected windows are unchanged. More encoded targets create opportunities only where relevant antigen expression, processing, compatible HLA presentation and functional recognition can occur. Target count alone is not measured response breadth."
+          ],
+          "beforeSha256": "61c08f2e212b4c26cccb618f0db0d69aa409a9f0ac8a66efa436b53f61b731ff",
+          "after": [
+            "An encoded antigen window is not necessarily the peptide eventually displayed. Joined windows and spacers can create new junction sequences. A protein-routing signal concerns the encoded protein rather than the particle delivery address. Identify any intended helper segment and test its HLA class II presentation and CD4 response in the relevant setting. Verify sequence and expression, recovered HLA-bound peptides and functional recognition separately; prediction scores do not supply a presentation threshold. Changing a spacer changes the construct even if two selected windows are unchanged. More encoded targets create opportunities only where relevant antigen expression, processing, compatible HLA presentation and functional recognition can occur. Target count alone is not measured response breadth.",
+            "A spacer is an encoded amino-acid sequence between antigen windows, rather than an untranslated gap. A possible boundary peptide can contain part of a window and part of its spacer; encoding it does not establish that processing produces it, that HLA displays it or that a receptor recognises it. In an invented A-spacer-B comparison, replacing the spacer changes the combined protein. Earlier evidence of A display belongs to the earlier revision; it establishes neither B display nor the revised construct's display or tumour recognition."
+          ],
+          "afterSha256": "0a07b2479279b010c058eb96e9d1e1b128740bffa213e238a45d076c75eeb6c6"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-09",
+          "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "oldNotesAndLinksPreservedInOrder": true,
+      "sourceScope": "Existing resolved source set; molecular explanations and explicitly invented reading examples, no new experimental rate. Conventional duplex direction is a structural interpretation of complementary strands, not a new measured result."
+    }
+  ],
+  "oldNotesAndLinksPreservedInEachProposal": true
+}

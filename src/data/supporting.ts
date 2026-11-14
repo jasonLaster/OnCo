@@ -1097,12 +1097,13 @@ const terms: TermInput[] = [
     "url": "https://www.fda.gov/media/71553/download"
   }
 ] ,
-"asOf": "2026-11-12",
+"asOf": "2026-11-14",
 "notes": [
   "Scope must be read from the contract. A partner may develop a process, synthesise a molecule, formulate it, fill vials or run analytical testing, and a service label does not show which of these a contract covers. FDA's November 2016 quality-agreement guidance treats owner and contract facility as both responsible for CGMP and says contract analytical laboratories are covered.",
   "The agreement assigns activities but cannot contract away responsibilities. FDA states that quality agreements cannot be used to delegate statutory or regulatory CGMP responsibilities. The guidance is written for commercial manufacture and does not explicitly cover investigational material, though FDA believes quality agreements can be valuable in research and development arrangements. ICH Q10 section 2.7 extends the quality system to outsourced activities, with the pharmaceutical company ultimately responsible.",
   "Handoff inference. A controlled handoff connects the approved design version to materials, records and the resulting lot. If a contractor proposes an edit and supplies a passing identity result on the revised lot, the missing items are the authorised version and approval of the edit, assessment of affected product properties and the full quality package. Identity alone does not show activity, authorisation or benefit, and sharing a contractor does not establish comparability.",
-  "A contractor's experience or a facility's track record does not establish release of a particular lot, and manufacturing acceptance, clinical-program authorisation and efficacy are separate questions."
+  "A contractor's experience or a facility's track record does not establish release of a particular lot, and manufacturing acceptance, clinical-program authorisation and efficacy are separate questions.",
+      "Before treating a supplier proposal as a production plan, identify the contracted site and operations, authorised construct version, material handoffs, rights to use the required process and formulation, named assays and acceptance criteria, quality documentation, timing, and storage and transport conditions. These are planning questions, not proof that a named supplier has capacity, permission or a releasable lot. FDA's 2016 guidance separates quality agreements from general commercial terms; it has the commercial-manufacturing scope described above."
 ]
 }),
   m({ id: "biosecure-act", wikipedia: "https://en.wikipedia.org/wiki/Biosecure_Act", name: "BIOSECURE Act", category: "Regulatory",

@@ -496,7 +496,8 @@ export const educationBiologyEvidence: TermInput[] = [
     "summary": "Replication makes DNA from DNA. Transcription uses a DNA template to make RNA. Translation reads the coding sequence of a message in three-base codons to build a polypeptide; the transcript and reading frame matter. Functional noncoding RNAs do not need to become protein. Reverse transcription copies RNA into DNA in relevant viral and retrotransposon contexts. This information-flow map is not a guarantee that every DNA change produces a measured RNA or protein change.",
     "notes": [
       "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
-      "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface."
+      "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+      "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them."
     ],
     "links": [
       {
@@ -525,7 +526,7 @@ export const educationBiologyEvidence: TermInput[] = [
       "nonsense-mediated-decay"
     ],
     "kind": "term",
-    "asOf": "2026-11-13",
+    "asOf": "2026-11-14",
     "category": "Biology & measurement"
   }
 ,

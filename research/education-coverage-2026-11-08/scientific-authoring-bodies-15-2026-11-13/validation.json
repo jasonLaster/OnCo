@@ -1,0 +1,3101 @@
+{
+  "dataCommit": "0986320639bd2607e0fac446ffe06e5732a25770",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.42
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.23
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.39
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 317.16
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "baseCommit": "10a7cf6095b3df4a74cdde1c63c6a9e63cab197f",
+    "lastDataCommit": "0986320639bd2607e0fac446ffe06e5732a25770",
+    "graphRecords": 23091,
+    "authoredOwnersChanged": 1,
+    "derivedRecordChanges": 0,
+    "changedIds": [
+      "ctdna-imaging-discordance"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allSelectedRecordsEqualActualReaders": true,
+    "currentEntitySchemaParses": 24,
+    "currentDataEdits": 1,
+    "newIds": 0,
+    "newFullGateRun": true,
+    "priorFloorScannerAndTestChanges": 0,
+    "committedDataFileClasses": [
+      {
+        "file": "src/data/education-blood-immune-measurement-2026-11.ts",
+        "class": "data"
+      }
+    ],
+    "gates": {
+      "results": [
+        {
+          "name": "typecheck",
+          "exitCode": 0,
+          "seconds": 3.42
+        },
+        {
+          "name": "lint",
+          "exitCode": 0,
+          "seconds": 30.23
+        },
+        {
+          "name": "validate",
+          "exitCode": 0,
+          "seconds": 2.39
+        },
+        {
+          "name": "full-suite",
+          "exitCode": 0,
+          "seconds": 317.16
+        }
+      ],
+      "unchangedDuringGates": true,
+      "workerHeapMiB": 8192,
+      "fullSuiteMaxWorkers": 2
+    },
+    "scope": "Fresh four-gate run on byte-identical committed data. One existing comparison owner receives two connected paragraphs, two source links and one date. All earlier note/link order and other graph fingerprints are preserved. Nineteen root records and five actual PR373 records have separate SSR/schema checks; peer lookup overlay is not root integration. No merge, deployment, hosted, browser, independent or language acceptance."
+  },
+  "fieldVerification": {
+    "graphRecords": 23091,
+    "changedIds": [
+      "ctdna-imaging-discordance"
+    ],
+    "changedFields": [
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "beforeSha256": "298e19c8adb721481c03786f97f1ea596052d883777966b8ddb95137d9d4e2ee",
+        "afterSha256": "abb4643e121b201fdbfe1bb32176090ad8bcd5c22a1851019ff67779a1bdc237"
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "links",
+        "beforeSha256": "836083ff48f3a140031047d85ab770b04c191d1b21c7ea25e07ba963771a3b78",
+        "afterSha256": "ec0dc1dd351d0d52de6ad1f629a93e579923205b282aa17a258710146f73bb5b"
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      }
+    ],
+    "priorNotesLinksAndOtherFieldsPreserved": true,
+    "allOtherGraphRecordsUnchanged": true,
+    "schemaParses": 19,
+    "newIds": 0,
+    "newRegistrations": 0
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with separate actual PR373 draft fields rendered using an in-memory lookup overlay only after all root readers. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "abscopal-effect",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/abscopal-effect/",
+        "sha256": "b1cf1116aa66b36c272a0a280ca3648556a7e01b49f4769daf36248ab613b062",
+        "bytes": 37537,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/immunogenic-cell-death/",
+        "sha256": "a8e9dc685a074a469ecd7dedfb0a599de13ea40ce051591edf8166a1d6d11469",
+        "bytes": 33765,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "in-situ-vaccination",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/in-situ-vaccination/",
+        "sha256": "da323b27883f06fff5e7e2be2cc60a5e786c64be3f24ce1c96ee96f978569c0f",
+        "bytes": 49167,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/dendritic-cell-cross-presentation/",
+        "sha256": "d0a809dafc8021c6a92b148379372e494fd8cec671e6832d2e02172cb251ed83",
+        "bytes": 37888,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/t-cell-priming-three-signals/",
+        "sha256": "f050058f63a8aa22f127112e838c745068eca23bb44e400d664d57d8ea4f395a",
+        "bytes": 20122,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "t-cell-receptor",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/t-cell-receptor/",
+        "sha256": "2ebd0aea85bcc5f4bc780479e1b01cb2434ec8b13af89b1c0ef2827f6c86f973",
+        "bytes": 20373,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ctdna",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/ctdna/",
+        "sha256": "42cc8cdafe100cc57a4056b7d54242962a99916bfb0702c1a02c1431278c27c1",
+        "bytes": 126936,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/ctdna-imaging-discordance/",
+        "sha256": "0f21c086337a5c29a228149b0b2ed1bb13cec9bb6f3427bf3253275792051e1c",
+        "bytes": 54258,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ctdna-units",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/ctdna-units/",
+        "sha256": "f16034db0ba3745b8220d5e8487c2f6902f47f751479ebcddfc3f52e6861fa71",
+        "bytes": 42414,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tils",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/tils/",
+        "sha256": "8ca10ad178f67da14d30bc7fe84c762d951153b96562bb82f0b2a74c3eee10e4",
+        "bytes": 69055,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "ihc",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/ihc/",
+        "sha256": "590b9540e489b134c77e6ef607167438518b7e70706789c451e861405d468b9b",
+        "bytes": 124167,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/multiplex-immunofluorescence/",
+        "sha256": "a8837b22c15cf8ab42630ffe894126e66d03a35f4ee43ababd66ba2c1cf0507a",
+        "bytes": 43692,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/single-cell-rna-seq/",
+        "sha256": "dae032061170aba8a1213c91a1d1c09d2e4d0b299a9974f926ec2f9124134d3d",
+        "bytes": 42996,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/spatial-transcriptomics/",
+        "sha256": "56c7b075befd142d21956b7d6b318459b82e5f2fb093018f3923c16ca2f773e7",
+        "bytes": 60311,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cell-composition-confound",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cell-composition-confound/",
+        "sha256": "ccf99166b28f0e8cc3422a1ace7de6e9c2565f4a856e1652ac5dd72a2ec41e64",
+        "bytes": 31396,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "t-cell-states",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/t-cell-states/",
+        "sha256": "0470fd3bdebd18d622fdb6ef779f953af33c1d0b080e00391ee5da0442e7f844",
+        "bytes": 26831,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "flow-cytometry",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/flow-cytometry/",
+        "sha256": "256e75cc2714d8f33f839bfed58c8e956913f29d68d77676554703894db57412",
+        "bytes": 40827,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cytokine",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cytokine/",
+        "sha256": "4ea4f53b5642c4ce6ded4abeb509897bb62ebad6f235ad5eb7c088e93c4e4284",
+        "bytes": 35528,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/blood-as-a-renewable-sample/",
+        "sha256": "c07c0ce6ff90bc753cd424d5f81b59a86d48900c83500d110f7ecd1eec15ad3d",
+        "bytes": 25964,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "finite-tissue-budget",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/finite-tissue-budget/",
+        "sha256": "09982f616aa1c59433aea366221a1218291def6209170f208fc9bb51b7d47c25",
+        "bytes": 19357,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/tissue-preparation-assay-fit/",
+        "sha256": "8ef910f3b19bbd6352b211d9c4b21f6f788091a82244659484924ce904712441",
+        "bytes": 20833,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/tcr-repertoire-sequencing/",
+        "sha256": "62d77ef4f9bfc7e7d23fd1ce5eb2bbb9a24b6b4e8e804ed07b4059694497f755",
+        "bytes": 25637,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/tcr-repertoire-clonality/",
+        "sha256": "dd2f536341ebe9f6f67903bd56b1d1c181ac7ca7d1b67973a14d3316d7a9f7a1",
+        "bytes": 27472,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/intracellular-cytokine-staining/",
+        "sha256": "6974cca4a6c15f29c4677ca9cec68558c36b2eb6bf59910df65047ba845bd6fc",
+        "bytes": 22426,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ],
+    "sectionChecks": []
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 24,
+    "exactAnchors": 43,
+    "exactParagraphChecks": 43,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "finite-tissue-budget:notes:0",
+        "recordId": "finite-tissue-budget",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "finite-tissue-budget.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "finite-tissue-budget:notes:3",
+        "recordId": "finite-tissue-budget",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "finite-tissue-budget.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "finite-tissue-budget:notes:2",
+        "recordId": "finite-tissue-budget",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "finite-tissue-budget.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "finite-tissue-budget:summary",
+        "recordId": "finite-tissue-budget",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "finite-tissue-budget.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "finite-tissue-budget:notes:1",
+        "recordId": "finite-tissue-budget",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "finite-tissue-budget.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tissue-preparation-assay-fit:notes:0",
+        "recordId": "tissue-preparation-assay-fit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tissue-preparation-assay-fit.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tissue-preparation-assay-fit:notes:3",
+        "recordId": "tissue-preparation-assay-fit",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tissue-preparation-assay-fit.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "immunogenic-cell-death:summary:p0",
+        "recordId": "immunogenic-cell-death",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "immunogenic-cell-death.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "immunogenic-cell-death:notes:4",
+        "recordId": "immunogenic-cell-death",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "immunogenic-cell-death.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "dendritic-cell-cross-presentation:summary:p0",
+        "recordId": "dendritic-cell-cross-presentation",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "dendritic-cell-cross-presentation.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "in-situ-vaccination:notes:6",
+        "recordId": "in-situ-vaccination",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "in-situ-vaccination.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-priming-three-signals:notes:0",
+        "recordId": "t-cell-priming-three-signals",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-priming-three-signals.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-priming-three-signals:notes:2",
+        "recordId": "t-cell-priming-three-signals",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-priming-three-signals.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "in-situ-vaccination:notes:0",
+        "recordId": "in-situ-vaccination",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "in-situ-vaccination.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-receptor:notes:0",
+        "recordId": "t-cell-receptor",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-receptor.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "abscopal-effect:notes:0",
+        "recordId": "abscopal-effect",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "abscopal-effect.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "immunogenic-cell-death:notes:0",
+        "recordId": "immunogenic-cell-death",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "immunogenic-cell-death.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "blood-as-a-renewable-sample:summary",
+        "recordId": "blood-as-a-renewable-sample",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "blood-as-a-renewable-sample.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cell-composition-confound:notes:1",
+        "recordId": "cell-composition-confound",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-composition-confound.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tils:notes:0",
+        "recordId": "tils",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tils.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tils:notes:5",
+        "recordId": "tils",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tils.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ihc:notes:2",
+        "recordId": "ihc",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ihc.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "multiplex-immunofluorescence:notes:0",
+        "recordId": "multiplex-immunofluorescence",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "multiplex-immunofluorescence.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-states:notes:2",
+        "recordId": "t-cell-states",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-states.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tcr-repertoire-sequencing:notes:1",
+        "recordId": "tcr-repertoire-sequencing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tcr-repertoire-sequencing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tcr-repertoire-sequencing:notes:4",
+        "recordId": "tcr-repertoire-sequencing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tcr-repertoire-sequencing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "single-cell-rna-seq:summary",
+        "recordId": "single-cell-rna-seq",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "single-cell-rna-seq.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-states:summary:p0",
+        "recordId": "t-cell-states",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-states.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "spatial-transcriptomics:notes:0",
+        "recordId": "spatial-transcriptomics",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "spatial-transcriptomics.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-units:notes:8",
+        "recordId": "ctdna-units",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-units.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-units:notes:11",
+        "recordId": "ctdna-units",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-units.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-imaging-discordance:notes:6",
+        "recordId": "ctdna-imaging-discordance",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-imaging-discordance.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tcr-repertoire-clonality:notes:2",
+        "recordId": "tcr-repertoire-clonality",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tcr-repertoire-clonality.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "flow-cytometry:notes:1",
+        "recordId": "flow-cytometry",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "flow-cytometry.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cytokine:summary:clip99354bb8",
+        "recordId": "cytokine",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cytokine.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "blood-as-a-renewable-sample:notes:1",
+        "recordId": "blood-as-a-renewable-sample",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "blood-as-a-renewable-sample.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-imaging-discordance:notes:8",
+        "recordId": "ctdna-imaging-discordance",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-imaging-discordance.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cell-composition-confound:notes:2",
+        "recordId": "cell-composition-confound",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cell-composition-confound.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-imaging-discordance:notes:14",
+        "recordId": "ctdna-imaging-discordance",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-imaging-discordance.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-imaging-discordance:notes:15",
+        "recordId": "ctdna-imaging-discordance",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-imaging-discordance.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "t-cell-receptor:notes:2",
+        "recordId": "t-cell-receptor",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "t-cell-receptor.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "ctdna-imaging-discordance:summary:p0",
+        "recordId": "ctdna-imaging-discordance",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "ctdna-imaging-discordance.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "flow-cytometry:notes:5",
+        "recordId": "flow-cytometry",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "flow-cytometry.html"
+        ],
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment across hub and explicitly captured Data section where applicable. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticRootExports": {
+    "records": 19,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "abscopal-effect",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 14,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "field": "notes",
+        "index": 15,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ctdna-units",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ihc",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-composition-confound",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-states",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "flow-cytometry",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cytokine",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "abscopal-effect.json",
+        "bytes": 8221,
+        "sha256": "c655707a4197570a6c0771bc00672d4adbde0107e4a610f74a0bedad54a76a25"
+      },
+      {
+        "file": "abscopal-effect.md",
+        "bytes": 7059,
+        "sha256": "7aba1ca770b91fddfa8d14da7d2712fa20cbb2c2c3a997b96b27b5112dd9c8b7"
+      },
+      {
+        "file": "immunogenic-cell-death.json",
+        "bytes": 7092,
+        "sha256": "97959c68043ac7cf4d6040dcea9cbbc4f44338acd0b33d8f776f0662d29a73a1"
+      },
+      {
+        "file": "immunogenic-cell-death.md",
+        "bytes": 5911,
+        "sha256": "ec469ba82224e8ade8e3464c80392a6a3b685d6398cbfda62a85665cce297a52"
+      },
+      {
+        "file": "in-situ-vaccination.json",
+        "bytes": 11654,
+        "sha256": "b5ca24b01a2c78c03ffed386352850c939ae9ad068e18bd10e43e4c0b872fa64"
+      },
+      {
+        "file": "in-situ-vaccination.md",
+        "bytes": 10120,
+        "sha256": "b746c55c37906a511a41b80c938102cfe691d784738576201a1754b82a6a8337"
+      },
+      {
+        "file": "dendritic-cell-cross-presentation.json",
+        "bytes": 7201,
+        "sha256": "b9038bbcc93495488c7c8bbd1f0f2e9436ac2a27eb28fd121c248e4b0c367116"
+      },
+      {
+        "file": "dendritic-cell-cross-presentation.md",
+        "bytes": 6086,
+        "sha256": "68fd3721227300d1520b8dc9c87dd7253cbaa453fe7e7050bac9e478c54744da"
+      },
+      {
+        "file": "t-cell-priming-three-signals.json",
+        "bytes": 3959,
+        "sha256": "e23fea83fd5cf2481a2ed776dd1ce7c0c17331718718ecc0a16c1321a4aefae5"
+      },
+      {
+        "file": "t-cell-priming-three-signals.md",
+        "bytes": 3824,
+        "sha256": "1507600268a004756d7c817f6792e1216fd5b48e7683f5587a3811ccf2dcac56"
+      },
+      {
+        "file": "t-cell-receptor.json",
+        "bytes": 5059,
+        "sha256": "c4c3894371e54615b4e75f8fabb557e87caa6b851ba82ddf37b1bda09e60c754"
+      },
+      {
+        "file": "t-cell-receptor.md",
+        "bytes": 4843,
+        "sha256": "d8e19c88b58532d784a3ea4e36e5196224266142cfbd5bd36d0d63f4f0e7e3ae"
+      },
+      {
+        "file": "ctdna.json",
+        "bytes": 56168,
+        "sha256": "49c03a81a2306c14e72a7aea42746aaa87460daeda2c34117d8897c39b9247d2"
+      },
+      {
+        "file": "ctdna.md",
+        "bytes": 39845,
+        "sha256": "c4d0bf1cd8dec163d79120ffccfe309cd0e081329172ab5021c48dbd5478d257"
+      },
+      {
+        "file": "ctdna-imaging-discordance.json",
+        "bytes": 14315,
+        "sha256": "bba0e2122b04248eb0403e03dea0d0aaec8389647b9fd311f99d7ee095613f56"
+      },
+      {
+        "file": "ctdna-imaging-discordance.md",
+        "bytes": 13303,
+        "sha256": "1679893176cfc2ae04ad4d30ad859976528dc050714f8d8c1c800b283bed7663"
+      },
+      {
+        "file": "ctdna-units.json",
+        "bytes": 9551,
+        "sha256": "1b9d0bf7e97218bc8b4ca4e5f064d04962109afc05861ea250ccb31fad2422c7"
+      },
+      {
+        "file": "ctdna-units.md",
+        "bytes": 8923,
+        "sha256": "55cb25ecdaf3ed66f52844c7dbdc1678cb2d89a7753b07930f4963f3fab08137"
+      },
+      {
+        "file": "tils.json",
+        "bytes": 19483,
+        "sha256": "2c439e5c7dcc7bcb5ff0e8d1d012af0ecbec570a2a1f7c914b904e8544378268"
+      },
+      {
+        "file": "tils.md",
+        "bytes": 15744,
+        "sha256": "99acf35f9e17b68efbd8698995da3f1cf65eb98e524cd36dce4c7f7ecb7c5d1c"
+      },
+      {
+        "file": "ihc.json",
+        "bytes": 33655,
+        "sha256": "6980ba72c257fbd25323cae45d6aa02b319759c6761a2f32eb44107ebecec0c9"
+      },
+      {
+        "file": "ihc.md",
+        "bytes": 25078,
+        "sha256": "2fbf58438c27f0e2a4a0ca284599cd7ddf5a47a2ac70297f9665422bac35d029"
+      },
+      {
+        "file": "multiplex-immunofluorescence.json",
+        "bytes": 6299,
+        "sha256": "a6a3e6dd4053d4b159db87884dde66ccec393f0d661d69fbaeb27e5799821b2c"
+      },
+      {
+        "file": "multiplex-immunofluorescence.md",
+        "bytes": 5222,
+        "sha256": "e412db456b3f8c25fde8ba094d853555f1b5c2c7f797b62ee939f24a35cf4ce3"
+      },
+      {
+        "file": "single-cell-rna-seq.json",
+        "bytes": 10437,
+        "sha256": "d36ca747b1e5938a44150c99f231cd870094100b2dd7fb6a921de41364a68ff7"
+      },
+      {
+        "file": "single-cell-rna-seq.md",
+        "bytes": 9136,
+        "sha256": "63989c903b8705d9ef5c443cf031666943e063720a9452177e5f6d03746b2300"
+      },
+      {
+        "file": "spatial-transcriptomics.json",
+        "bytes": 10348,
+        "sha256": "c2eb13c58e7a4645224d3e166f520170396ef3b1efcebf203ffa433a49f8c11e"
+      },
+      {
+        "file": "spatial-transcriptomics.md",
+        "bytes": 8597,
+        "sha256": "a48dc0c6f3b0c33e32f7c44cd782c89e79bb5e469c8cdc8213eed2a974461f5a"
+      },
+      {
+        "file": "cell-composition-confound.json",
+        "bytes": 6053,
+        "sha256": "e4d4a0f954cd003a867186914c4f06900ebc7747302e0cd8f8016d0c75bc450a"
+      },
+      {
+        "file": "cell-composition-confound.md",
+        "bytes": 5099,
+        "sha256": "6bf1135dec8c49bc53fb3b8362cce5c116783cb1553cca16bd22f06676cbb9ec"
+      },
+      {
+        "file": "t-cell-states.json",
+        "bytes": 6337,
+        "sha256": "8482973abc1ce677f37ea8362d02c347ecf30c3fda85689c4da93c3f4706612b"
+      },
+      {
+        "file": "t-cell-states.md",
+        "bytes": 6051,
+        "sha256": "c2770cb2dc15d4e57c0bde47eeba714d1880be5118024fe5b8db0481e0569db0"
+      },
+      {
+        "file": "flow-cytometry.json",
+        "bytes": 8837,
+        "sha256": "0af6a25e40e01ab76463ae20776f81b42e1072b646bca97163d6a019b2bd184a"
+      },
+      {
+        "file": "flow-cytometry.md",
+        "bytes": 7815,
+        "sha256": "41b93d9fd95652dd8225ba657be696920df166c30042473f0f24b6934bf852f8"
+      },
+      {
+        "file": "cytokine.json",
+        "bytes": 7934,
+        "sha256": "f7c61657d6616ddcb9f61f6d4f0c8df2214ce77b6b3761a86c420ac347c453fc"
+      },
+      {
+        "file": "cytokine.md",
+        "bytes": 6996,
+        "sha256": "a66748a9685fe54575ac17deb0c6ee8a922f6640191ed0a577455eba5f8bef36"
+      },
+      {
+        "file": "blood-as-a-renewable-sample.json",
+        "bytes": 4290,
+        "sha256": "65f5e3a07d8cb88afb28a9d82605d204951ed6381d3f393ffc1a7f946adb5d11"
+      },
+      {
+        "file": "blood-as-a-renewable-sample.md",
+        "bytes": 3962,
+        "sha256": "888ac26efa5a612bda5e9e3228f50fbcbf1d3d4c16381d6492c669fb192c4318"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 216,
+    "texts": 67,
+    "fallbacks": 149,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "abscopal-effect",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunogenic-cell-death",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "dendritic-cell-cross-presentation",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-imaging-discordance",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ctdna-units",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tils",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "ihc",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multiplex-immunofluorescence",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "single-cell-rna-seq",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "spatial-transcriptomics",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cell-composition-confound",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "t-cell-states",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "flow-cytometry",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cytokine",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "blood-as-a-renewable-sample",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "finite-tissue-budget",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tissue-preparation-assay-fit",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-sequencing",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tcr-repertoire-clonality",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "intracellular-cytokine-staining",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "newNumericalExercise": false,
+    "check": "The four fictional joint patterns are the2-by2 combinations of two qualitative observations. No count, effect size, clinical cutoff, probability, frequency-to-absolute-count conversion or response-rate estimate is derived from art.",
+    "scope": "Earlier numerical examples in selected records retain their old source and arithmetic checks; they are not new biological measurements."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Fresh full gates on the exact one-file data bundle. Nineteen root EntityDetail readers rendered before a separate in-memory lookup overlay for5 actual PR373 records. Root-only static API exports; no contributor-root registration, full Next build, hydration, hosted/browser, independent or language acceptance."
+}

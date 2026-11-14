@@ -1,0 +1,378 @@
+{
+  "changes": [
+    {
+      "id": "ctdna-imaging-discordance",
+      "catalog": "root",
+      "file": "src/data/education-blood-immune-measurement-2026-11.ts",
+      "recordBeforeSHA256": "baaa1e9af5873e5db32f0212b7e2ef1cd0394ac4f84feef8968f6fa9161b64c5",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Method card, what is compared: a sampled molecular signal in plasma and a regional physical signal from a named imaging protocol. Their units, dates and thresholds stay separate, and the comparison is only as good as the date alignment of the two acquisitions.",
+            "Table, blood side: input is a blood draw and the plasma and recovered DNA analysed, and testing consumes an aliquot. Output is a qualifying call plus a defined concentration or fraction, read with the assay's detection and quantitation rules. Failure modes are low shedding, finite input, poor recovery and background or blood-cell variants.",
+            "Table, imaging side: input is the imaged region and a protocol, and contrast or tracer use depends on the modality. Output is size, volume, uptake or a qualitative finding read against protocol-specific response criteria. Failure modes are artefacts, non-tumour contributions to the signal and technique that differs between visits.",
+            "Table, what each cannot tell: blood alone cannot locate a lesion or give a cell count. Imaging alone cannot count viable tumour cells, and enhancement can have more than one tissue cause. Neither agreement nor disagreement shows that a treatment change would help, which is a clinical-utility question.",
+            "Evidence read: Magbanua's pilot (84 patients, MTM/mL against MRI functional tumour volume) found correlation at T0 to T3 with rho 0.49, 0.42, 0.42 and 0.43, and its authors call the findings preliminary in a limited cohort needing larger validation. It supports partial agreement and does not set a rule for redirecting treatment.",
+            "Interpretation rule, from finite sampling: a plasma aliquot can hold no tumour molecule when the true share is small, so no qualifying ctDNA signal alongside an abnormal MRI region does not show the region is only scar. The converse holds too: a clear image does not exclude tumour DNA in blood. Each result answers only its own question.",
+            "Source attribution comes first: a positive plasma variant may come from a blood-cell clone rather than a tumour. In Razavi's paired sequencing, 53.2% of cell-free DNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, so a discordant positive needs origin checks before it is read as occult disease.",
+            "Half-life, scoped: Diehl and colleagues estimated a ctDNA half-life after surgery of 114 minutes by evaluating one subject whose plasma was sampled at several early times after complete resection in a study of 162 plasma samples from 18 subjects with colorectal cancer (Diehl 2008). That is a single-subject estimate of post-resection clearance in colorectal cancer, not a universal cfDNA half-life, a breast-cancer figure or a blood-draw schedule. DNA release and clearance can change sooner than visible tissue structure, which is a reason to align the dates of the blood and imaging acquisitions.",
+            "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome.",
+            "In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists.",
+            "The two-window comparison is about scope. A finite plasma aliquot contains extracellular DNA, of which tumour-derived fragments may be one part; breast MRI observes regional, sequence-dependent features rather than individual cancer cells. Contrast enhancement reflects vascular and contrast-delivery behaviour as well as the acquisition protocol; it is not a one-to-one viable-cell count. In the 84-person I-SPY2 MRI pilot, functional tumour volume summed voxels meeting 70% enhancement about two and a half minutes after contrast, inside a manually drawn box around the lesion. A camera-and-stream analogy illustrates those two sampled views without promising that every tumour sheds DNA. Keep the imaging method visible: mammography uses X-rays, ultrasound uses sound, and PET/CT combines tracer-distribution images with anatomical CT images. A formal response category needs its framework, comparison timepoint and findings outside a selected lesion measurement. None of these measurements is an interchangeable all-body tumour-cell number.",
+            "Four patterns illustrate the reading boundary. A smaller lesion and lower detected blood signal mean that both recorded measures fell in their own units, not that pCR or eradication of distant disease is proved. A residual scan finding with undetected blood leaves viability, treatment effects and other causes unresolved. Detected blood with no suspicious finding in the scanned region does not establish the signal's location, full extent or best intervention. If neither shows qualifying evidence, neither has proved zero microscopic disease or justified omitting indicated treatment. These are interpretation examples, not an action algorithm; disagreement alone does not establish pseudoprogression.",
+            "In a fictional course, a breast lesion becomes less enhancing, blood changes from detected to not detected, and surgery later finds residual invasive cancer. There is no contradiction: imaging features, a finite molecular sample and removed tissue answer different questions. Only the specified tissue assessment establishes the residual disease in this example. A smaller scan finding and undetected blood can therefore be favourable observations without confirming pCR. Conversely, a later positive blood result with clear regional breast imaging calls for review of sample qualification, origin, dates and clinical context; it is not itself a diagnosis of distant metastasis.",
+            "Magbanua and colleagues' 2025 analysis evaluated 723 high-risk I-SPY2 patients across hormone receptor-positive/HER2-negative, triple-negative and HER2-positive subtypes. Combining ctDNA with residual cancer burden refined prognostic groups, but analyses within those groups used smaller subsets, some too small for multivariable adjustment. The authors also found retained patient-specific assay variants in sampled resistant tumours from patients whose post-treatment plasma was negative. These results support studying risk information and shedding; they do not turn negative presurgical blood into tissue pCR or demonstrate that a blood-guided omission strategy improves outcomes."
+          ],
+          "after": [
+            "Method card, what is compared: a sampled molecular signal in plasma and a regional physical signal from a named imaging protocol. Their units, dates and thresholds stay separate, and the comparison is only as good as the date alignment of the two acquisitions.",
+            "Table, blood side: input is a blood draw and the plasma and recovered DNA analysed, and testing consumes an aliquot. Output is a qualifying call plus a defined concentration or fraction, read with the assay's detection and quantitation rules. Failure modes are low shedding, finite input, poor recovery and background or blood-cell variants.",
+            "Table, imaging side: input is the imaged region and a protocol, and contrast or tracer use depends on the modality. Output is size, volume, uptake or a qualitative finding read against protocol-specific response criteria. Failure modes are artefacts, non-tumour contributions to the signal and technique that differs between visits.",
+            "Table, what each cannot tell: blood alone cannot locate a lesion or give a cell count. Imaging alone cannot count viable tumour cells, and enhancement can have more than one tissue cause. Neither agreement nor disagreement shows that a treatment change would help, which is a clinical-utility question.",
+            "Evidence read: Magbanua's pilot (84 patients, MTM/mL against MRI functional tumour volume) found correlation at T0 to T3 with rho 0.49, 0.42, 0.42 and 0.43, and its authors call the findings preliminary in a limited cohort needing larger validation. It supports partial agreement and does not set a rule for redirecting treatment.",
+            "Interpretation rule, from finite sampling: a plasma aliquot can hold no tumour molecule when the true share is small, so no qualifying ctDNA signal alongside an abnormal MRI region does not show the region is only scar. The converse holds too: a clear image does not exclude tumour DNA in blood. Each result answers only its own question.",
+            "Source attribution comes first: a positive plasma variant may come from a blood-cell clone rather than a tumour. In Razavi's paired sequencing, 53.2% of cell-free DNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, so a discordant positive needs origin checks before it is read as occult disease.",
+            "Half-life, scoped: Diehl and colleagues estimated a ctDNA half-life after surgery of 114 minutes by evaluating one subject whose plasma was sampled at several early times after complete resection in a study of 162 plasma samples from 18 subjects with colorectal cancer (Diehl 2008). That is a single-subject estimate of post-resection clearance in colorectal cancer, not a universal cfDNA half-life, a breast-cancer figure or a blood-draw schedule. DNA release and clearance can change sooner than visible tissue structure, which is a reason to align the dates of the blood and imaging acquisitions.",
+            "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome.",
+            "In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists.",
+            "The two-window comparison is about scope. A finite plasma aliquot contains extracellular DNA, of which tumour-derived fragments may be one part; breast MRI observes regional, sequence-dependent features rather than individual cancer cells. Contrast enhancement reflects vascular and contrast-delivery behaviour as well as the acquisition protocol; it is not a one-to-one viable-cell count. In the 84-person I-SPY2 MRI pilot, functional tumour volume summed voxels meeting 70% enhancement about two and a half minutes after contrast, inside a manually drawn box around the lesion. A camera-and-stream analogy illustrates those two sampled views without promising that every tumour sheds DNA. Keep the imaging method visible: mammography uses X-rays, ultrasound uses sound, and PET/CT combines tracer-distribution images with anatomical CT images. A formal response category needs its framework, comparison timepoint and findings outside a selected lesion measurement. None of these measurements is an interchangeable all-body tumour-cell number.",
+            "Four patterns illustrate the reading boundary. A smaller lesion and lower detected blood signal mean that both recorded measures fell in their own units, not that pCR or eradication of distant disease is proved. A residual scan finding with undetected blood leaves viability, treatment effects and other causes unresolved. Detected blood with no suspicious finding in the scanned region does not establish the signal's location, full extent or best intervention. If neither shows qualifying evidence, neither has proved zero microscopic disease or justified omitting indicated treatment. These are interpretation examples, not an action algorithm; disagreement alone does not establish pseudoprogression.",
+            "In a fictional course, a breast lesion becomes less enhancing, blood changes from detected to not detected, and surgery later finds residual invasive cancer. There is no contradiction: imaging features, a finite molecular sample and removed tissue answer different questions. Only the specified tissue assessment establishes the residual disease in this example. A smaller scan finding and undetected blood can therefore be favourable observations without confirming pCR. Conversely, a later positive blood result with clear regional breast imaging calls for review of sample qualification, origin, dates and clinical context; it is not itself a diagnosis of distant metastasis.",
+            "Magbanua and colleagues' 2025 analysis evaluated 723 high-risk I-SPY2 patients across hormone receptor-positive/HER2-negative, triple-negative and HER2-positive subtypes. Combining ctDNA with residual cancer burden refined prognostic groups, but analyses within those groups used smaller subsets, some too small for multivariable adjustment. The authors also found retained patient-specific assay variants in sampled resistant tumours from patients whose post-treatment plasma was negative. These results support studying risk information and shedding; they do not turn negative presurgical blood into tissue pCR or demonstrate that a blood-guided omission strategy improves outcomes.",
+            "Adding receptor measurements introduces another question to a blood and imaging comparison. A sequenced clonotype's sampled abundance does not directly measure its antigen, effector activity or total cell count. Even a controlled secretion or killing result belongs to its tested stimulus and targets. Collecting the measurements together does not link a particular receptor to the tumour DNA signal. Retain time, compartment, chain definition, abundance unit, controls and independent target-recognition evidence; combining the results does not make a validated treatment rule.",
+            "In a fictional comparison using compatible measurements, tumour DNA is stable or rising in two patterns and falls in two others, while a receptor measure changes little or increases. Stable or rising DNA with little repertoire change raises questions about the tumour, immunity and assay adequacy without diagnosing resistance or mandating a tissue or spatial test. With greater repertoire change it still does not prove a physical barrier or an antigen-specific response that failed. Falling DNA with little repertoire change does not assign the effect to chemotherapy or show that useful immunity is absent. Falling DNA with greater repertoire change does not prove that immune learning caused control. These are sampled observations, not validated best-response categories, proof of clinical benefit or instructions to change treatment."
+          ],
+          "beforeSha256": "298e19c8adb721481c03786f97f1ea596052d883777966b8ddb95137d9d4e2ee",
+          "afterSha256": "abb4643e121b201fdbfe1bb32176090ad8bcd5c22a1851019ff67779a1bdc237"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Magbanua et al., npj Breast Cancer 2021: ctDNA and MRI to predict neoadjuvant chemotherapy response and recurrence risk",
+              "url": "https://doi.org/10.1038/s41523-021-00239-3"
+            },
+            {
+              "label": "Razavi et al., Nat Med 2019: matched plasma, white-blood-cell and tumour sequencing shows how often plasma variants come from blood cells",
+              "url": "https://doi.org/10.1038/s41591-019-0652-7"
+            },
+            {
+              "label": "Diehl et al.: circulating mutant DNA to assess tumour dynamics (2008)",
+              "url": "https://doi.org/10.1038/nm.1789"
+            },
+            {
+              "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+            },
+            {
+              "label": "Magbanua et al., 2025: ctDNA and residual cancer burden in 723 high-risk I-SPY2 patients",
+              "url": "https://doi.org/10.1038/s41467-025-65432-5"
+            },
+            {
+              "label": "NCI: mammography definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/mammography"
+            },
+            {
+              "label": "NCI: ultrasound definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ultrasound"
+            },
+            {
+              "label": "NCI: PET-CT scan definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/pet-ct-scan"
+            },
+            {
+              "label": "Vascular contributors to breast MRI enhancement: primary angiogenesis study, 2021",
+              "url": "https://doi.org/10.1038/s41523-021-00247-3"
+            }
+          ],
+          "after": [
+            {
+              "label": "Magbanua et al., npj Breast Cancer 2021: ctDNA and MRI to predict neoadjuvant chemotherapy response and recurrence risk",
+              "url": "https://doi.org/10.1038/s41523-021-00239-3"
+            },
+            {
+              "label": "Razavi et al., Nat Med 2019: matched plasma, white-blood-cell and tumour sequencing shows how often plasma variants come from blood cells",
+              "url": "https://doi.org/10.1038/s41591-019-0652-7"
+            },
+            {
+              "label": "Diehl et al.: circulating mutant DNA to assess tumour dynamics (2008)",
+              "url": "https://doi.org/10.1038/nm.1789"
+            },
+            {
+              "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+            },
+            {
+              "label": "Magbanua et al., 2025: ctDNA and residual cancer burden in 723 high-risk I-SPY2 patients",
+              "url": "https://doi.org/10.1038/s41467-025-65432-5"
+            },
+            {
+              "label": "NCI: mammography definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/mammography"
+            },
+            {
+              "label": "NCI: ultrasound definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ultrasound"
+            },
+            {
+              "label": "NCI: PET-CT scan definition",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/pet-ct-scan"
+            },
+            {
+              "label": "Vascular contributors to breast MRI enhancement: primary angiogenesis study, 2021",
+              "url": "https://doi.org/10.1038/s41523-021-00247-3"
+            },
+            {
+              "label": "Formenti et al.: separate clinical, receptor and selected functional observations in lung cancer (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30397353/"
+            },
+            {
+              "label": "Han et al.: linking paired receptor identity and single-cell functional phenotype (2014)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+            }
+          ],
+          "beforeSha256": "836083ff48f3a140031047d85ab770b04c191d1b21c7ea25e07ba963771a3b78",
+          "afterSha256": "ec0dc1dd351d0d52de6ad1f629a93e579923205b282aa17a258710146f73bb5b"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-12",
+          "after": "2026-11-14",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "before": {
+        "id": "ctdna-imaging-discordance",
+        "kind": "term",
+        "name": "ctDNA and imaging discordance",
+        "aka": [
+          "blood and imaging discordance",
+          "ctDNA and MRI discordance"
+        ],
+        "tldr": "A blood DNA result and an imaging result can seem to disagree because they sample different material, regions, times and signals. A mismatch is a question to resolve, not a verdict on either test.",
+        "summary": "A circulating tumour DNA (ctDNA) assay looks for tumour-associated features in a finite sample of cell-free DNA. How much tumour DNA reaches the sampled blood varies between lesions, and recovery, background DNA, the features tracked and the assay's detection limit all shape the call. Imaging measures a defined region through a physical signal. Magnetic resonance imaging (MRI) of the breast can report contrast enhancement or the volume of enhancing tissue, which is not a direct count of viable cancer cells. The two tests can therefore differ without either being wrong, and neither automatically replaces the other.\n\nThey can also share information. In Magbanua and colleagues' pilot of 84 women having neoadjuvant chemotherapy for early breast cancer, ctDNA concentration was correlated with MRI functional tumour volume at all four time points, with Spearman correlations of 0.42 to 0.49, and patients with detectable ctDNA had a higher median volume. Agreement was partial, and adding ctDNA early in treatment to volume-based prediction of pathological complete response gave only a numerical gain that was not statistically significant. ctDNA positivity after treatment added significantly to volume for predicting distant recurrence and death. A mismatch calls for checking dates, assay limits, the imaged region and the exact finding. It does not by itself show a false test or hidden metastatic disease.",
+        "asOf": "2026-11-12",
+        "wikipedia": "https://en.wikipedia.org/wiki/Circulating_tumor_DNA",
+        "links": [
+          {
+            "label": "Magbanua et al., npj Breast Cancer 2021: ctDNA and MRI to predict neoadjuvant chemotherapy response and recurrence risk",
+            "url": "https://doi.org/10.1038/s41523-021-00239-3"
+          },
+          {
+            "label": "Razavi et al., Nat Med 2019: matched plasma, white-blood-cell and tumour sequencing shows how often plasma variants come from blood cells",
+            "url": "https://doi.org/10.1038/s41591-019-0652-7"
+          },
+          {
+            "label": "Diehl et al.: circulating mutant DNA to assess tumour dynamics (2008)",
+            "url": "https://doi.org/10.1038/nm.1789"
+          },
+          {
+            "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+          },
+          {
+            "label": "Magbanua et al., 2025: ctDNA and residual cancer burden in 723 high-risk I-SPY2 patients",
+            "url": "https://doi.org/10.1038/s41467-025-65432-5"
+          },
+          {
+            "label": "NCI: mammography definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/mammography"
+          },
+          {
+            "label": "NCI: ultrasound definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ultrasound"
+          },
+          {
+            "label": "NCI: PET-CT scan definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/pet-ct-scan"
+          },
+          {
+            "label": "Vascular contributors to breast MRI enhancement: primary angiogenesis study, 2021",
+            "url": "https://doi.org/10.1038/s41523-021-00247-3"
+          }
+        ],
+        "tags": [
+          "biomarker",
+          "measurement"
+        ],
+        "related": [
+          "ctdna",
+          "mrd",
+          "clonal-haematopoiesis",
+          "ctdna-tumour-fraction"
+        ],
+        "cancers": [
+          "breast-hr-positive",
+          "tnbc"
+        ],
+        "sections": [],
+        "technologies": [
+          "liquid-biopsy",
+          "mrd-testing",
+          "mri"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [
+          "ctdna",
+          "cfdna",
+          "mrd"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-razavi-cfdna-variant-sources-clonal-haematopoiesis-nat-med-2019"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Method card, what is compared: a sampled molecular signal in plasma and a regional physical signal from a named imaging protocol. Their units, dates and thresholds stay separate, and the comparison is only as good as the date alignment of the two acquisitions.",
+          "Table, blood side: input is a blood draw and the plasma and recovered DNA analysed, and testing consumes an aliquot. Output is a qualifying call plus a defined concentration or fraction, read with the assay's detection and quantitation rules. Failure modes are low shedding, finite input, poor recovery and background or blood-cell variants.",
+          "Table, imaging side: input is the imaged region and a protocol, and contrast or tracer use depends on the modality. Output is size, volume, uptake or a qualitative finding read against protocol-specific response criteria. Failure modes are artefacts, non-tumour contributions to the signal and technique that differs between visits.",
+          "Table, what each cannot tell: blood alone cannot locate a lesion or give a cell count. Imaging alone cannot count viable tumour cells, and enhancement can have more than one tissue cause. Neither agreement nor disagreement shows that a treatment change would help, which is a clinical-utility question.",
+          "Evidence read: Magbanua's pilot (84 patients, MTM/mL against MRI functional tumour volume) found correlation at T0 to T3 with rho 0.49, 0.42, 0.42 and 0.43, and its authors call the findings preliminary in a limited cohort needing larger validation. It supports partial agreement and does not set a rule for redirecting treatment.",
+          "Interpretation rule, from finite sampling: a plasma aliquot can hold no tumour molecule when the true share is small, so no qualifying ctDNA signal alongside an abnormal MRI region does not show the region is only scar. The converse holds too: a clear image does not exclude tumour DNA in blood. Each result answers only its own question.",
+          "Source attribution comes first: a positive plasma variant may come from a blood-cell clone rather than a tumour. In Razavi's paired sequencing, 53.2% of cell-free DNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, so a discordant positive needs origin checks before it is read as occult disease.",
+          "Half-life, scoped: Diehl and colleagues estimated a ctDNA half-life after surgery of 114 minutes by evaluating one subject whose plasma was sampled at several early times after complete resection in a study of 162 plasma samples from 18 subjects with colorectal cancer (Diehl 2008). That is a single-subject estimate of post-resection clearance in colorectal cancer, not a universal cfDNA half-life, a breast-cancer figure or a blood-draw schedule. DNA release and clearance can change sooner than visible tissue structure, which is a reason to align the dates of the blood and imaging acquisitions.",
+          "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome.",
+          "In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists.",
+          "The two-window comparison is about scope. A finite plasma aliquot contains extracellular DNA, of which tumour-derived fragments may be one part; breast MRI observes regional, sequence-dependent features rather than individual cancer cells. Contrast enhancement reflects vascular and contrast-delivery behaviour as well as the acquisition protocol; it is not a one-to-one viable-cell count. In the 84-person I-SPY2 MRI pilot, functional tumour volume summed voxels meeting 70% enhancement about two and a half minutes after contrast, inside a manually drawn box around the lesion. A camera-and-stream analogy illustrates those two sampled views without promising that every tumour sheds DNA. Keep the imaging method visible: mammography uses X-rays, ultrasound uses sound, and PET/CT combines tracer-distribution images with anatomical CT images. A formal response category needs its framework, comparison timepoint and findings outside a selected lesion measurement. None of these measurements is an interchangeable all-body tumour-cell number.",
+          "Four patterns illustrate the reading boundary. A smaller lesion and lower detected blood signal mean that both recorded measures fell in their own units, not that pCR or eradication of distant disease is proved. A residual scan finding with undetected blood leaves viability, treatment effects and other causes unresolved. Detected blood with no suspicious finding in the scanned region does not establish the signal's location, full extent or best intervention. If neither shows qualifying evidence, neither has proved zero microscopic disease or justified omitting indicated treatment. These are interpretation examples, not an action algorithm; disagreement alone does not establish pseudoprogression.",
+          "In a fictional course, a breast lesion becomes less enhancing, blood changes from detected to not detected, and surgery later finds residual invasive cancer. There is no contradiction: imaging features, a finite molecular sample and removed tissue answer different questions. Only the specified tissue assessment establishes the residual disease in this example. A smaller scan finding and undetected blood can therefore be favourable observations without confirming pCR. Conversely, a later positive blood result with clear regional breast imaging calls for review of sample qualification, origin, dates and clinical context; it is not itself a diagnosis of distant metastasis.",
+          "Magbanua and colleagues' 2025 analysis evaluated 723 high-risk I-SPY2 patients across hormone receptor-positive/HER2-negative, triple-negative and HER2-positive subtypes. Combining ctDNA with residual cancer burden refined prognostic groups, but analyses within those groups used smaller subsets, some too small for multivariable adjustment. The authors also found retained patient-specific assay variants in sampled resistant tumours from patients whose post-treatment plasma was negative. These results support studying risk information and shedding; they do not turn negative presurgical blood into tissue pCR or demonstrate that a blood-guided omission strategy improves outcomes."
+        ],
+        "category": "Biomarkers"
+      },
+      "after": {
+        "id": "ctdna-imaging-discordance",
+        "kind": "term",
+        "name": "ctDNA and imaging discordance",
+        "aka": [
+          "blood and imaging discordance",
+          "ctDNA and MRI discordance"
+        ],
+        "tldr": "A blood DNA result and an imaging result can seem to disagree because they sample different material, regions, times and signals. A mismatch is a question to resolve, not a verdict on either test.",
+        "summary": "A circulating tumour DNA (ctDNA) assay looks for tumour-associated features in a finite sample of cell-free DNA. How much tumour DNA reaches the sampled blood varies between lesions, and recovery, background DNA, the features tracked and the assay's detection limit all shape the call. Imaging measures a defined region through a physical signal. Magnetic resonance imaging (MRI) of the breast can report contrast enhancement or the volume of enhancing tissue, which is not a direct count of viable cancer cells. The two tests can therefore differ without either being wrong, and neither automatically replaces the other.\n\nThey can also share information. In Magbanua and colleagues' pilot of 84 women having neoadjuvant chemotherapy for early breast cancer, ctDNA concentration was correlated with MRI functional tumour volume at all four time points, with Spearman correlations of 0.42 to 0.49, and patients with detectable ctDNA had a higher median volume. Agreement was partial, and adding ctDNA early in treatment to volume-based prediction of pathological complete response gave only a numerical gain that was not statistically significant. ctDNA positivity after treatment added significantly to volume for predicting distant recurrence and death. A mismatch calls for checking dates, assay limits, the imaged region and the exact finding. It does not by itself show a false test or hidden metastatic disease.",
+        "asOf": "2026-11-14",
+        "wikipedia": "https://en.wikipedia.org/wiki/Circulating_tumor_DNA",
+        "links": [
+          {
+            "label": "Magbanua et al., npj Breast Cancer 2021: ctDNA and MRI to predict neoadjuvant chemotherapy response and recurrence risk",
+            "url": "https://doi.org/10.1038/s41523-021-00239-3"
+          },
+          {
+            "label": "Razavi et al., Nat Med 2019: matched plasma, white-blood-cell and tumour sequencing shows how often plasma variants come from blood cells",
+            "url": "https://doi.org/10.1038/s41591-019-0652-7"
+          },
+          {
+            "label": "Diehl et al.: circulating mutant DNA to assess tumour dynamics (2008)",
+            "url": "https://doi.org/10.1038/nm.1789"
+          },
+          {
+            "label": "Schmid et al., 2020: KEYNOTE-522 pathological response assessed at surgery",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+          },
+          {
+            "label": "Magbanua et al., 2025: ctDNA and residual cancer burden in 723 high-risk I-SPY2 patients",
+            "url": "https://doi.org/10.1038/s41467-025-65432-5"
+          },
+          {
+            "label": "NCI: mammography definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/mammography"
+          },
+          {
+            "label": "NCI: ultrasound definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/ultrasound"
+          },
+          {
+            "label": "NCI: PET-CT scan definition",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/pet-ct-scan"
+          },
+          {
+            "label": "Vascular contributors to breast MRI enhancement: primary angiogenesis study, 2021",
+            "url": "https://doi.org/10.1038/s41523-021-00247-3"
+          },
+          {
+            "label": "Formenti et al.: separate clinical, receptor and selected functional observations in lung cancer (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30397353/"
+          },
+          {
+            "label": "Han et al.: linking paired receptor identity and single-cell functional phenotype (2014)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+          }
+        ],
+        "tags": [
+          "biomarker",
+          "measurement"
+        ],
+        "related": [
+          "ctdna",
+          "mrd",
+          "clonal-haematopoiesis",
+          "ctdna-tumour-fraction"
+        ],
+        "cancers": [
+          "breast-hr-positive",
+          "tnbc"
+        ],
+        "sections": [],
+        "technologies": [
+          "liquid-biopsy",
+          "mrd-testing",
+          "mri"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [
+          "ctdna",
+          "cfdna",
+          "mrd"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-razavi-cfdna-variant-sources-clonal-haematopoiesis-nat-med-2019"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Method card, what is compared: a sampled molecular signal in plasma and a regional physical signal from a named imaging protocol. Their units, dates and thresholds stay separate, and the comparison is only as good as the date alignment of the two acquisitions.",
+          "Table, blood side: input is a blood draw and the plasma and recovered DNA analysed, and testing consumes an aliquot. Output is a qualifying call plus a defined concentration or fraction, read with the assay's detection and quantitation rules. Failure modes are low shedding, finite input, poor recovery and background or blood-cell variants.",
+          "Table, imaging side: input is the imaged region and a protocol, and contrast or tracer use depends on the modality. Output is size, volume, uptake or a qualitative finding read against protocol-specific response criteria. Failure modes are artefacts, non-tumour contributions to the signal and technique that differs between visits.",
+          "Table, what each cannot tell: blood alone cannot locate a lesion or give a cell count. Imaging alone cannot count viable tumour cells, and enhancement can have more than one tissue cause. Neither agreement nor disagreement shows that a treatment change would help, which is a clinical-utility question.",
+          "Evidence read: Magbanua's pilot (84 patients, MTM/mL against MRI functional tumour volume) found correlation at T0 to T3 with rho 0.49, 0.42, 0.42 and 0.43, and its authors call the findings preliminary in a limited cohort needing larger validation. It supports partial agreement and does not set a rule for redirecting treatment.",
+          "Interpretation rule, from finite sampling: a plasma aliquot can hold no tumour molecule when the true share is small, so no qualifying ctDNA signal alongside an abnormal MRI region does not show the region is only scar. The converse holds too: a clear image does not exclude tumour DNA in blood. Each result answers only its own question.",
+          "Source attribution comes first: a positive plasma variant may come from a blood-cell clone rather than a tumour. In Razavi's paired sequencing, 53.2% of cell-free DNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis, so a discordant positive needs origin checks before it is read as occult disease.",
+          "Half-life, scoped: Diehl and colleagues estimated a ctDNA half-life after surgery of 114 minutes by evaluating one subject whose plasma was sampled at several early times after complete resection in a study of 162 plasma samples from 18 subjects with colorectal cancer (Diehl 2008). That is a single-subject estimate of post-resection clearance in colorectal cancer, not a universal cfDNA half-life, a breast-cancer figure or a blood-draw schedule. DNA release and clearance can change sooner than visible tissue structure, which is a reason to align the dates of the blood and imaging acquisitions.",
+          "Use the blood collection date and imaging acquisition date to compare biology, then keep the reporting dates as a separate measure of when the information became available. Imaging does not remove a tissue aliquot for molecular analysis; contrast or tracer use belongs to the specific protocol. Agreement can reflect shared dependence on disease burden and is not two independent proofs of the same mechanism. Combining measurements into a decision rule needs validation of the combination and its intended outcome.",
+          "In a fictional early-breast-cancer example, a negative plasma result is not an examination of the breast tumour bed or regional nodes. It cannot by itself establish pathological complete response or validate skipping surgery. Using a result to remove a treatment needs evidence for that decision strategy and its clinical outcomes, beyond showing that an assay can detect a signal. This is an interpretation limit, not a claim that no omission study exists.",
+          "The two-window comparison is about scope. A finite plasma aliquot contains extracellular DNA, of which tumour-derived fragments may be one part; breast MRI observes regional, sequence-dependent features rather than individual cancer cells. Contrast enhancement reflects vascular and contrast-delivery behaviour as well as the acquisition protocol; it is not a one-to-one viable-cell count. In the 84-person I-SPY2 MRI pilot, functional tumour volume summed voxels meeting 70% enhancement about two and a half minutes after contrast, inside a manually drawn box around the lesion. A camera-and-stream analogy illustrates those two sampled views without promising that every tumour sheds DNA. Keep the imaging method visible: mammography uses X-rays, ultrasound uses sound, and PET/CT combines tracer-distribution images with anatomical CT images. A formal response category needs its framework, comparison timepoint and findings outside a selected lesion measurement. None of these measurements is an interchangeable all-body tumour-cell number.",
+          "Four patterns illustrate the reading boundary. A smaller lesion and lower detected blood signal mean that both recorded measures fell in their own units, not that pCR or eradication of distant disease is proved. A residual scan finding with undetected blood leaves viability, treatment effects and other causes unresolved. Detected blood with no suspicious finding in the scanned region does not establish the signal's location, full extent or best intervention. If neither shows qualifying evidence, neither has proved zero microscopic disease or justified omitting indicated treatment. These are interpretation examples, not an action algorithm; disagreement alone does not establish pseudoprogression.",
+          "In a fictional course, a breast lesion becomes less enhancing, blood changes from detected to not detected, and surgery later finds residual invasive cancer. There is no contradiction: imaging features, a finite molecular sample and removed tissue answer different questions. Only the specified tissue assessment establishes the residual disease in this example. A smaller scan finding and undetected blood can therefore be favourable observations without confirming pCR. Conversely, a later positive blood result with clear regional breast imaging calls for review of sample qualification, origin, dates and clinical context; it is not itself a diagnosis of distant metastasis.",
+          "Magbanua and colleagues' 2025 analysis evaluated 723 high-risk I-SPY2 patients across hormone receptor-positive/HER2-negative, triple-negative and HER2-positive subtypes. Combining ctDNA with residual cancer burden refined prognostic groups, but analyses within those groups used smaller subsets, some too small for multivariable adjustment. The authors also found retained patient-specific assay variants in sampled resistant tumours from patients whose post-treatment plasma was negative. These results support studying risk information and shedding; they do not turn negative presurgical blood into tissue pCR or demonstrate that a blood-guided omission strategy improves outcomes.",
+          "Adding receptor measurements introduces another question to a blood and imaging comparison. A sequenced clonotype's sampled abundance does not directly measure its antigen, effector activity or total cell count. Even a controlled secretion or killing result belongs to its tested stimulus and targets. Collecting the measurements together does not link a particular receptor to the tumour DNA signal. Retain time, compartment, chain definition, abundance unit, controls and independent target-recognition evidence; combining the results does not make a validated treatment rule.",
+          "In a fictional comparison using compatible measurements, tumour DNA is stable or rising in two patterns and falls in two others, while a receptor measure changes little or increases. Stable or rising DNA with little repertoire change raises questions about the tumour, immunity and assay adequacy without diagnosing resistance or mandating a tissue or spatial test. With greater repertoire change it still does not prove a physical barrier or an antigen-specific response that failed. Falling DNA with little repertoire change does not assign the effect to chemotherapy or show that useful immunity is absent. Falling DNA with greater repertoire change does not prove that immune learning caused control. These are sampled observations, not validated best-response categories, proof of clinical benefit or instructions to change treatment."
+        ],
+        "category": "Biomarkers"
+      }
+    }
+  ],
+  "derivedChanges": [],
+  "newIds": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "newDates": 1,
+  "notesAdded": 2,
+  "sourceLinksAdded": 2,
+  "reason": "The retained two-axis chart overstates causation and clinical meaning. Two connected paragraphs add explicit receptor/assay distinction and four fictional qualified patterns to the existing comparison owner; all old arrays and other fields are preserved."
+}

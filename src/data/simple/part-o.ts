@@ -353,7 +353,7 @@ export const simpleO: Record<string, string> = {
   "informed-consent": "Informed consent is the conversation and signed form in which a person learns what a trial involves and what might go wrong, then freely agrees to take part.",
   "innovative-medicines-fund": "The Innovative Medicines Fund, launched in England in 2022, pays for promising but uncertain non-cancer medicines for a limited time while evidence is gathered.",
   "japan-conditional-early-approval": "Japan can approve a medicine for a serious disease on early data when a confirmatory trial would be hard to run, as long as evidence is gathered after launch.",
-  "kaplan-meier-curve": "A Kaplan-Meier curve shows the share of patients still alive or free of progression at each point in time, stepping down each time an event happens.",
+  "kaplan-meier-curve": "A Kaplan-Meier curve estimates a group's chance of remaining event-free over time. Censoring ends observation without an event and changes later risk sets.",
   "master-protocol": "A master protocol coordinates several study questions in one trial structure. Sharing suitable controls may help, but not every design changes as results arrive.",
   "mechanical-theory-of-cancer": "The mechanical theory says cancer cells feel their surroundings, so stiff tissue and pressure inside tumours can push cells towards cancer and keep drugs out.",
   "medicare-ced": "Coverage with evidence development is Medicare's way of paying for a promising but uncertain test or treatment only for patients enrolled in a registry or study.",

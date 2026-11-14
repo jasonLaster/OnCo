@@ -4323,7 +4323,7 @@ export const tldr_pt: Record<string, string> = {
   "song-shaoli": "Lidera o grupo de medicina nuclear responsável pela primeira imagem PET de TROP2 em humanos, com o objetivo de selecionar pacientes para ADCs anti-TROP2 com um exame.",
   springworks: "A SpringWorks desenvolveu o nirogacestate, o primeiro tratamento aprovado para tumores desmoides, e o mirdametinibe para neurofibromas plexiformes da NF1; a Merck KGaA a adquiriu em 2025.",
   "sstr-pet-to-prrt": "A PET de SSTR seguida de PRRT é o par teranóstico original: o exame com o isótopo diagnóstico decide quem recebe a mesma molécula com o isótopo terapêutico.",
-  "stable-disease": "Os tumores não encolheram o suficiente para contar como resposta nem cresceram o suficiente para contar como progressão. Num câncer lento ou com um medicamento bem tolerado, meses de estabilidade podem ser um benefício real.",
+  "stable-disease": "Doença estável significa que a avaliação não atende aos critérios de resposta nem aos de progressão. Pode haver mudanças de tamanho. A estabilidade, por si só, não mostra que o tratamento a causou.",
   "staging-systems": "Além do sistema genérico TNM, muitos cânceres têm a sua própria forma de dividir os pacientes em grupos de risco, combinando estádio, exames de sangue, genética e condição física. O nome no relatório (FIGO, IPI, ELN, IMDC) diz qual conjunto de regras está sendo usado.",
   starglo: "Um biespecífico mais quimioterapia melhorou a sobrevida no linfoma recidivado, mas a FDA o rejeitou porque a maioria dos pacientes foi recrutada na Ásia e o subgrupo relevante para os EUA não mostrou benefício claro.",
   stellar: "O STELLAR é o pequeno estudo de braço único por trás da aprovação como dispositivo dos campos de tratamento tumoral no mesotelioma.",

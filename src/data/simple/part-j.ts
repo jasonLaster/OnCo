@@ -248,7 +248,7 @@ export const simpleJ: Record<string, string> = {
   "remission": "Remission is when the signs of cancer have shrunk or disappeared, which is not the same as cure because undetectable cells may remain.",
   "complete-response": "A complete response means every detectable sign of the tumour has vanished on scans and examination after treatment, though microscopic disease may remain.",
   "partial-response": "A partial response means the tumours have shrunk substantially, by at least 30 percent in total size, but have not disappeared.",
-  "stable-disease": "Stable disease means the tumours have neither shrunk enough to count as a response nor grown enough to count as progression, which can still be a real benefit.",
+  "stable-disease": "Stable disease means the assessment meets neither response nor progression criteria. Size can change within those rules. Stability alone does not show that treatment caused it.",
   "progression": "Progression means the cancer is growing or spreading despite treatment, usually a sign the current drug has stopped working and it is time to switch.",
   "relapse-recurrence": "Recurrence or relapse means the cancer has come back after a period in which it could not be detected, the two words meaning the same thing.",
   "refractory": "Refractory means a cancer that does not respond to a treatment at all, unlike relapse, where it responded first and came back later.",

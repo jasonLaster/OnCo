@@ -309,36 +309,40 @@ export const trialDesignTerms: TermInput[] = [
     aka: ["Kaplan-Meier curve", "Kaplan-Meier curves", "Kaplan–Meier curve", "KM curve", "KM curves", "KM plot", "Kaplan-Meier estimate", "Kaplan-Meier estimator", "Kaplan-Meier analysis", "Kaplan-Meier method", "censored", "censoring", "censor", "censored observations", "censored at last follow-up", "number at risk", "at-risk table", "log-rank test", "log-rank", "Cox model", "Cox regression", "proportional hazards assumption", "non-proportional hazards", "nonproportional hazards", "delayed separation", "delayed separation of the curves", "crossing curves", "the curves cross", "step function", "survival probability"],
     wikipedia: W("Kaplan-Meier_estimator"),
     links: [
-  {
-    "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
-    "url": "https://www.ich.org/page/efficacy-guidelines"
-  },
-  {
-    "label": "NIST: Kaplan-Meier calculation",
-    "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr215.htm"
-  },
-  {
-    "label": "Analysis of survival by tumor response.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/6668489/"
-  },
-  {
-    "label": "Introduction to the Analysis of Survival Data in the Presence of Competing Risks.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/26858290/"
-  },
-  {
-    "label": "Royston and Parmar, 2013: restricted mean survival time and nonproportional hazards",
-    "url": "https://doi.org/10.1186/1471-2288-13-152"
-  },
-  {
-    "label": "OncoGuide: kaplan-meier (pinned teaching source)",
-    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/kaplan-meier.md"
-  },
-  {
-    "label": "Therneau, Crowson and Atkinson: multi-state models and competing risks (September 2026)",
-    "url": "https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf"
-  }
-],
-    tldr: "A Kaplan-Meier curve shows the share of patients still alive (or still free of progression) at each point in time; it steps down at each event and uses everyone's follow-up even if they have not had the event yet.",
+      {
+        "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+        "url": "https://www.ich.org/page/efficacy-guidelines"
+      },
+      {
+        "label": "NIST: Kaplan-Meier calculation",
+        "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr215.htm"
+      },
+      {
+        "label": "Analysis of survival by tumor response.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6668489/"
+      },
+      {
+        "label": "Introduction to the Analysis of Survival Data in the Presence of Competing Risks.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26858290/"
+      },
+      {
+        "label": "Royston and Parmar, 2013: restricted mean survival time and nonproportional hazards",
+        "url": "https://doi.org/10.1186/1471-2288-13-152"
+      },
+      {
+        "label": "OncoGuide: kaplan-meier (pinned teaching source)",
+        "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/kaplan-meier.md"
+      },
+      {
+        "label": "Therneau, Crowson and Atkinson: multi-state models and competing risks (September 2026)",
+        "url": "https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf"
+      },
+      {
+        "label": "Yao et al., 2023: landmark-time prediction in a kidney cohort",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9824910/"
+      }
+    ],
+    tldr: "A Kaplan-Meier curve estimates a group's probability of remaining alive or free of a specified event from a stated time origin. Events make steps; censoring ends observation without an event and changes later risk sets. It is not an individual forecast.",
     summary: "Survival endpoints are awkward because at the moment of analysis most patients have not died or progressed and have been followed for different lengths of time. The Kaplan-Meier method handles this by working through time step by step: at each event it multiplies the survival probability so far by the fraction of patients still at risk who survived that moment. Patients who are alive at their last visit are censored, meaning they contribute follow-up up to that point and then drop out of the calculation without being counted as an event. The result is the stepped curve in every trial paper, with a number-at-risk table underneath showing how many patients remain at each time; when that number gets small, the tail of the curve is unreliable however dramatic it looks. The median survival is where the curve crosses 50 percent, and a fixed-time estimate such as five-year survival is read off at that time.\n\nThe log-rank test compares survival distributions. The usual constant-effect Cox model assumes proportional hazards, meaning a constant hazard ratio over time. The Kaplan-Meier calculation itself does not impose a constant between-group hazard ratio. Nonproportional hazards can reduce the power of a log-rank comparison and make a single hazard ratio an incomplete account of treatment effect. A prespecified restricted mean survival-time contrast describes the difference in areas under the curves up to a stated horizon; a fixed-time survival contrast answers another question. Neither a late plateau nor a group hazard ratio predicts one individual's future.\n\nCensoring hides a trap. The method assumes patients censored at a given time are no more or less likely to have the event than those still being followed. If patients leave a trial because they are doing badly, or are censored when they start another therapy, the curve is biased upwards. Informative censoring is one reason progression-free survival read from investigator scans can flatter an open-label trial, and one reason the estimand framework asks trialists to say in advance how they will treat patients who switch, stop or are lost.",
     related: [
   "os",
@@ -355,7 +359,7 @@ export const trialDesignTerms: TermInput[] = [
 ],
     trials: ["checkmate-067", "adaura", "pacific"],
 
-"asOf": "2026-11-10",
+"asOf": "2026-11-14",
 "notes": [
   "A Kaplan-Meier curve estimates the probability of remaining free of a defined event from a stated starting time while accounting for incomplete follow-up. At each event time, the previous estimate is multiplied by the fraction of people still at risk just before that time who avoid the event. Right censoring means observation ended without the event being seen, for example at cutoff or loss to follow-up. It leaves the current height unchanged but removes that person from later risk sets. A censor tick is neither an event nor proof of permanent event freedom. Interpretation requires censoring to be sufficiently independent of future event time within the analysis; losing contact because disease is worsening can bias the estimate.",
   "Five fictional participants start follow-up for first recurrence, with no deaths in this example. One recurrence at month 1 leaves 4/5, or 80%, recurrence-free. One person is censored at month 2, so the estimate remains 80% but only three are at risk before the next recurrence at month 3. The new estimate is (4/5) × (2/3) = 8/15, about 53.3%. Subtracting two observed recurrences from the original five would ignore the missing later observation. The censored person is known to have been recurrence-free only through month 2; the group estimate does not fill in that person's month-3 outcome. The example stops at month 3 and supplies no later outcome, confidence interval or individual prognosis.",
@@ -499,79 +503,84 @@ export const trialDesignTerms: TermInput[] = [
     aka: ["surrogate validation", "validated surrogate endpoint", "validation of surrogate endpoints", "surrogate threshold effect", "trial-level correlation", "trial-level association", "patient-level correlation", "individual-level surrogacy", "meta-analytic validation", "meta-analysis of surrogacy", "reasonably likely surrogate", "reasonably likely to predict", "accepted surrogate", "surrogate for overall survival", "surrogate for OS", "does not correlate with survival", "did not translate into survival", "PFS-OS correlation", "pCR-EFS correlation", "MRD as an endpoint", "MRD negativity as endpoint", "stage shift without mortality benefit", "FDA table of surrogate endpoints"],
     wikipedia: W("Surrogate_endpoint"),
     links: [
-  {
-    "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
-    "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
-  },
-  {
-    "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
-    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
-  },
-  {
-    "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
-  },
-  {
-    "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
-  },
-  {
-    "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
-  },
-  {
-    "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
-  },
-  {
-    "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
-  },
-  {
-    "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
-    "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
-  },
-  {
-    "label": "DUO-O, Harter et al. 2026",
-    "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
-  },
-  {
-    "label": "BEAT-meso, Felip et al. 2025",
-    "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
-  },
-  {
-    "label": "ANNOUNCE, Tap et al. 2020",
-    "url": "https://doi.org/10.1001/jama.2020.1707"
-  },
-  {
-    "label": "ATLANTIS, Aix et al. 2023",
-    "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
-  },
-  {
-    "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
-    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
-  },
-  {
-    "label": "FDA approval summary: lurbinectedin, 2021",
-    "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
-  },
-  {
-    "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
-    "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
-  }
-],
+      {
+        "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
+        "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
+      },
+      {
+        "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+      },
+      {
+        "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
+      },
+      {
+        "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+      },
+      {
+        "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
+      },
+      {
+        "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+      },
+      {
+        "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
+      },
+      {
+        "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
+        "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
+      },
+      {
+        "label": "DUO-O, Harter et al. 2026",
+        "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
+      },
+      {
+        "label": "BEAT-meso, Felip et al. 2025",
+        "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
+      },
+      {
+        "label": "ANNOUNCE, Tap et al. 2020",
+        "url": "https://doi.org/10.1001/jama.2020.1707"
+      },
+      {
+        "label": "ATLANTIS, Aix et al. 2023",
+        "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
+      },
+      {
+        "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
+      },
+      {
+        "label": "FDA approval summary: lurbinectedin, 2021",
+        "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
+      },
+      {
+        "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
+        "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
+      },
+      {
+        "label": "OncoGuide: fictional people and randomized treatment comparisons",
+        "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/images/prompts/people-and-randomized-treatment-effects-v1.txt"
+      }
+    ],
     tldr: "A surrogate endpoint only deserves trust if trials have shown that moving it moves the outcome that matters, in that disease and for that kind of drug; some stand-ins have passed that test, several have not, and the record differs endpoint by endpoint.",
     summary: "A marker can be associated with a later outcome without being validated as a substitute for it. For treatment-effect surrogacy, the question is whether changes caused by treatment in the proposed surrogate predict changes in the outcome of interest. Trial-level validation examines treatment effects across suitable randomised studies, with attention to disease, treatment class, endpoint and intended outcome. A patient-level association alone cannot establish that relationship.\n\nNamed examples require their own population, regimen and analysis. In the final TROPION-Breast01 analysis of previously treated hormone-receptor-positive, HER2-negative advanced breast cancer, overall survival was not statistically significantly improved (hazard ratio 1.01, 95% confidence interval 0.83 to 1.22); this does not establish exactly zero effect. Later antibody-drug-conjugate use was imbalanced between arms (12.3% with datopotamab deruxtecan and 24.0% with chemotherapy); the authors note that it may have affected the survival result. DUO-O met its progression-free-survival endpoints for a specified multi-drug strategy in newly diagnosed non-BRCA-mutated advanced ovarian cancer, while the reported overall-survival analysis was interim at 39% maturity. BEAT-meso tested adding atezolizumab to bevacizumab and chemotherapy in advanced pleural mesothelioma: progression-free survival improved, while its primary overall-survival comparison did not meet statistical significance. These are distinct comparisons, rather than interchangeable evidence that progression-free survival cannot matter.\n\nOlaratumab is not an example of approval resting on response rate alone. FDA's 2016 review described an uncertain survival estimate from a small randomised study as central to accelerated approval and did not regard its response-rate effect as clinically meaningful. ANNOUNCE subsequently did not confirm the survival benefit. Lurbinectedin's 2020 accelerated approval instead relied on response rate and duration of response. ATLANTIS tested lower-dose lurbinectedin combined with doxorubicin against chemotherapy in relapsed small-cell lung cancer; it did not demonstrate a statistically significant survival improvement. That result must retain its combination, dose and comparator rather than being described as a test of the approved monotherapy regimen.\n\nFor a trial that improves a surrogate, ask whether trial-level validation applies to this disease, treatment class and intended outcome. Read the clinical-outcome estimate and its uncertainty for benefit and harm compatible with the data, and check the status of any required confirmatory trial. A nonsignificant survival comparison alone establishes neither equivalence nor absence of harm.\n\nOther linked records include CodeBreaK 200, adjuvant trials, residual-disease trials and UKCTOCS screening. They remain related studies, rather than interchangeable validation of a surrogate. This account does not reassert their previously listed outcome or regulatory-validation claims, which require source-specific verification. The linked trial-design bottleneck and proposal for independent surrogate validation extend the methodological questions.",
     related: ["surrogate-endpoint", "pcr", "pfs", "os", "efs", "orr", "mrd", "recist", "accelerated-approval", "confirmatory-trial", "crossover", "trial-failure-modes"],
     trials: ["keynote-522", "tropion-breast01", "codebreak-200", "monarche", "natalee", "adaura", "perseus", "captivate", "announce", "atlantis", "ukctocs", "imvigor011"],
     bottlenecks: ["b-trial-design"],
 
-"asOf": "2026-11-10",
+"asOf": "2026-11-14",
 "notes": [
   "A surrogate is a measured outcome used in place of a direct clinical-benefit outcome, with evidence needed for that substitution in the intended setting. Two relationships must be separated: people with a favourable marker may have better outcomes, while treatments that improve that marker may or may not improve the outcome. The first is a prognostic association; the second concerns agreement between treatment effects across suitable randomised comparisons. A treatment can change another pathway, later disease or toxicity as well as the marker. Validation is specific to disease, treatment context and intended outcome. An early measure is not automatically validated, and regulatory acceptance in one programme does not transfer to another. “Validated” and “reasonably likely to predict benefit” carry different evidence claims. Even a pathology or imaging response does not capture every benefit and harm.",
   "Imagine twenty fictional people grouped by whether they achieved pathological complete response, with complete event follow-up to three years. A difference in events between those groups would describe an association after response was achieved, rather than preserve a randomised treatment comparison. Across six fictional randomised trials, a different analysis would compare each trial's treatment-related gain in response with its gain in three-year event-free survival, both in percentage points. Those are different units of evidence; neither constructed example is the CTNeoBC dataset. Similarly, a fictional trial increasing complete response from 40/100 to 55/100 establishes a 15-percentage-point response difference under its definition, with uncertainty still needed. Immature survival follow-up does not supply a proven survival gain.",
   "Pathological complete response is assessed in the surgical specimen after neoadjuvant treatment, rather than a presurgical scan or biopsy. Retain the exact definition, such as ypT0/Tis ypN0 meaning no invasive disease in breast or nodes, and how missing surgery or specimens affect denominators. CTNeoBC pooled 11,955 people from 12 trials: achieving that response was associated with event-free-survival HR 0.48 and overall-survival HR 0.36; corresponding triple-negative subgroup estimates were 0.24 and 0.16. Yet trial-level R-squared was 0.03 for event-free survival (95% interval 0.00 to 0.25) and 0.24 for overall survival (0.00 to 0.70). Conforti and colleagues' analysis of 54 trials and 32,611 participants found R-squared 0.14 (95% interval 0.00 to 0.29) for disease-free and 0.08 (0.00 to 0.22) for overall survival. R-squared here is the share of variation in the treatment effects on survival that is explained by the treatment effects on pathological complete response; 1 would be a perfect fit. Thus response can be strongly associated with outcomes among participants while remaining a weak substitute for treatment effects across trials. This fitted association is not an individually validated risk prediction. These fitted associations concern variation in treatment effects across trials, with substantial uncertainty; they are not personal prognosis models.",
-  "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims."
+  "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims.",
+  "A fictional two-level example separates people from trials. In the patient panel, all 20 people have complete follow-up to year 3: 10 achieved a pathological complete response and 10 did not. Two of the first 10 and six of the second 10 have an event by year 3. These are groups defined by an achieved response, not randomized groups, so the contrast alone does not show what causing a response would do. In a separate trial panel, six points represent randomized A-minus-B comparisons. Their pairs of differences in pathological complete response rate and 3-year event-free survival rate, both in percentage points, are (5, 6), (8, -3), (10, 2), (12, -6), (15, 4) and (18, 0). Each point is a treatment comparison rather than a person. The invented pairs supply no fitted coefficient, validated surrogate relationship or individual forecast and are not CTNeoBC observations."
 ]
 }),
   t({

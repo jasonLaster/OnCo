@@ -1687,17 +1687,57 @@ export const termsBasics: TermInput[] = [
     id: "partial-response", name: "Partial response", category: CLINIC,
     aka: ["partial responses","responders","responder","non-responders","non-responder","response rate","response rates","tumour shrinkage","tumor shrinkage","shrank","shrinkage","responds to"],
     tldr: "The tumours have shrunk substantially (by at least 30% in total diameter) but not disappeared. Together with complete responses it makes up a trial's response rate.",
-    summary: "RECIST 1.1 defines partial response as at least a 30% decrease in the sum of the longest diameters of the target lesions with no new lesions; the response must be confirmed on a later scan. Response rate (complete plus partial) is the quickest signal that a drug is active and the basis of many accelerated approvals, but shrinkage does not always translate into longer life, and some effective drugs, notably immunotherapies and some targeted agents, produce long stable disease rather than shrinkage. How long a response lasts (duration of response) is often more informative than how many patients achieve one.",
+    summary: "Partial response is an assessment category rather than a measure of tumour volume. Under RECIST 1.1, target-lesion partial response requires at least a 30% decrease in the sum of specified diameters from baseline. The overall assessment also considers non-target disease and new tumour lesions; target shrinkage alone does not establish the overall category.\n\nRECIST 1.1 requires confirmation in nonrandomized trials where response is the primary endpoint, rather than in every study. Keep the actual protocol, assessment timing and confirmed or unconfirmed status with the result. An objective response rate counts participants meeting complete or partial response criteria in a stated analysis population. Response magnitude and duration can inform regulatory decisions in a specified disease and treatment setting, but a response rate alone does not establish comparative survival or quality-of-life benefit. FDA's December 2018 endpoint guidance is nonbinding and discusses these context-specific distinctions.",
     wikipedia: W("Response_evaluation_criteria_in_solid_tumors"),
     related: ["complete-response", "stable-disease", "progression", "orr", "recist", "duration-of-response", "surrogate-endpoint"],
+
+    "asOf": "2026-11-14",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+      },
+      {
+        "label": "Eisenhauer et al., 2009: RECIST 1.1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+      },
+      {
+        "label": "RECIST 1.1: full guideline, 2009",
+        "url": "https://recist.eortc.org/recist/wp-content/uploads/sites/14/2025/12/RECISTGuidelines.pdf"
+      },
+      {
+        "label": "FDA, December 2018: clinical trial endpoints, nonbinding guidance",
+        "url": "https://www.fda.gov/media/71195/download"
+      }
+    ]
   }),
   t({
     id: "stable-disease", name: "Stable disease", category: CLINIC,
     aka: ["disease stabilisation", "disease stabilization", "stabilised", "stabilized", "disease control", "disease control rate", "clinical benefit rate", "DCR", "CBR"],
-    tldr: "The tumours have neither shrunk enough to count as a response nor grown enough to count as progression. For a slow cancer or a well-tolerated drug, months of stability can be a real benefit.",
-    summary: "Under RECIST, stable disease is anything between a 30% decrease and a 20% increase in the sum of target-lesion diameters, with no new lesions. It is ambiguous on its own, because an indolent tumour may be stable without any treatment, so trials report the disease control rate (responses plus stable disease) with caution and prefer to measure how long disease stays controlled. Drugs that mainly stabilise rather than shrink, such as anti-angiogenics and some hormonal agents, are judged on progression-free and overall survival rather than response.",
+    tldr: "Stable disease means the assessment meets neither the response nor the progression criteria. It can include size changes and does not, by itself, show that treatment caused the stability.",
+    summary: "Under RECIST 1.1, stable disease for target lesions means neither sufficient shrinkage for partial response nor sufficient increase for progression. Partial response requires at least a 30% fall in the sum of target-lesion diameters from baseline. Progression requires at least a 20% rise from the smallest sum recorded on study, including baseline if that was the smallest, together with an absolute increase of at least 5 mm. These rules use different reference measurements; stable disease is not simply a fixed band around baseline.\n\nAn overall assessment also checks non-target disease and new tumour lesions. Unequivocal non-target progression or an unequivocal new tumour lesion can mean progression despite stable target-lesion measurements. The study protocol sets assessment timing and any minimum interval for counting stability. Stable disease can include growth or shrinkage and does not show by itself that treatment caused the stability. FDA's December 2018 nonbinding endpoint guidance notes that stable disease in a single-arm trial may reflect the cancer's natural history. Its duration, symptoms, quality of life and comparative treatment effects are separate questions.",
     wikipedia: W("Response_evaluation_criteria_in_solid_tumors"),
     related: ["partial-response", "complete-response", "progression", "recist", "pfs"],
+
+    "asOf": "2026-11-14",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+      },
+      {
+        "label": "Eisenhauer et al., 2009: RECIST 1.1",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+      },
+      {
+        "label": "RECIST 1.1: full guideline, 2009",
+        "url": "https://recist.eortc.org/recist/wp-content/uploads/sites/14/2025/12/RECISTGuidelines.pdf"
+      },
+      {
+        "label": "FDA, December 2018: clinical trial endpoints, nonbinding guidance",
+        "url": "https://www.fda.gov/media/71195/download"
+      }
+    ]
   }),
   t({
     id: "progression", name: "Progression", category: CLINIC,

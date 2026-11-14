@@ -1,0 +1,170 @@
+{
+  "recordedAtUTC": "2026-11-14T16:02:51.942787+00:00",
+  "completeReturnedAbstracts": [
+    {
+      "sourceId": "lakens",
+      "captureSHA256": "c5d42be87d5dd8ccf5c7300b778cc7c4ec1868660b717ee112a77fdd652c65c3",
+      "returnedAbstractSHA256": "eb3f20d591b14f2634c15ab490e884b030d3e993beb958bcfe08e26877b1f450",
+      "completeReturnedAbstractRead": true,
+      "wholePaperRead": false
+    },
+    {
+      "sourceId": "brnich",
+      "captureSHA256": "daae463b2b053655d7b91edc9987d9e03b121daa5d55082725d5c7663379bb00",
+      "returnedAbstractSHA256": "82f1f9601d718c59f9491546fc4ee2a7541911d457730a4ee911de7f2532a3e4",
+      "completeReturnedAbstractRead": true,
+      "wholePaperRead": false
+    },
+    {
+      "sourceId": "interaction-2005",
+      "captureSHA256": "d43f7ea0fa816b1f58819ca31bb7188555f16c1cefb5515865d2bcf82f4b0359",
+      "returnedAbstractSHA256": "f73d9d1cbdfa893e1dc4db41e1ee48e4b92deffacfcb15b24b0f2ae40bc07f5c",
+      "completeReturnedAbstractRead": true,
+      "wholePaperRead": false
+    },
+    {
+      "sourceId": "ballman",
+      "captureSHA256": "32975da403c68d7bc25fd0134e4a054ec4bdedcb5a042c5164d5e055565c495a",
+      "returnedAbstractSHA256": "61276eef8f935e92006141df027a733a799bf9c03392afa75a4dda08ced4fc1e",
+      "completeReturnedAbstractRead": true,
+      "wholePaperRead": false
+    },
+    {
+      "sourceId": "armbruster",
+      "captureSHA256": "99a6030ecf5899a8dec9cfe592673d3b2c0d3e742562d44d8ef252c976aa6976",
+      "returnedAbstractSHA256": "d935ba2348606fe3f7356809e9b066a779e02dedb4c1b01b3897699ebfecd62a",
+      "completeReturnedAbstractRead": true,
+      "wholePaperRead": false
+    }
+  ],
+  "freshCompleteReturnedAbstractsRead": 5,
+  "freshTargetedCompleteParagraphs": {
+    "lakens": [
+      12,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      57
+    ],
+    "brnich": [
+      24,
+      26,
+      27,
+      28
+    ],
+    "altman-2003": [
+      7,
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "interaction-2005": [
+      12,
+      25,
+      36
+    ],
+    "armbruster": [
+      17,
+      18,
+      19,
+      20,
+      24,
+      25,
+      27,
+      28,
+      29
+    ]
+  },
+  "freshTargetedParagraphCount": 30,
+  "freshCompletePDFTextPages": {
+    "fda-ctdna-2024": [
+      1,
+      6,
+      7,
+      11,
+      12
+    ],
+    "clsi-ep17-sample": [
+      1,
+      7,
+      8
+    ]
+  },
+  "freshFDATextPages": 5,
+  "freshCLSITextPages": 3,
+  "freshCLSIHTDTextRangesZeroBasedInclusive": [
+    [
+      3998,
+      4039
+    ],
+    [
+      4064,
+      4135
+    ]
+  ],
+  "clsiWholeDatabaseRead": false,
+  "wholePaperReads": 0,
+  "wholeGuidanceReads": 0,
+  "wholeStandardRead": false,
+  "lakensAuthorPDF": "Captured and text extracted, not separately read; actual named Lakens HTML paragraphs were read instead.",
+  "nciRawAPI": {
+    "termId": 340928,
+    "dictionary": "Cancer.gov",
+    "audience": "Patient",
+    "language": "en",
+    "prettyUrlName": "false-negative-test-result",
+    "completeDefinitionRead": true,
+    "contractScope": "Only the matching GET route checked, not the whole Swagger contract."
+  },
+  "reusedP28Sources": {
+    "greenland-2016": "Previously read and captured complete abstract and named paragraphs; exact same private source capture retained; no fresh P29 full-paper claim.",
+    "fda-noninferiority-2016": "Previously read PDF pages 1, 5, 11, 19 supply the later NI distinction, rather than attributing NI to Lakens."
+  },
+  "accessLimits": [
+    {
+      "sourceId": "best-predictive",
+      "httpStatus": 200,
+      "content": "reCAPTCHA response, unread"
+    },
+    {
+      "sourceId": "best-roles",
+      "httpStatus": 200,
+      "content": "reCAPTCHA response, unread"
+    },
+    {
+      "sourceId": "nci-false-negative",
+      "httpStatus": 200,
+      "content": "Public page shell without the requested definition; separate official raw API supplies it."
+    }
+  ],
+  "limits": [
+    "CLSI HTD definitions aggregate project-specific notes; no generic 3.3-SD cutoff or universal assay operating requirement is adopted.",
+    "Armbruster is a methodological overview, not a new clinical experiment or the complete current EP17 standard.",
+    "FDA November 2024 guidance is dated nonbinding ctDNA drug-development guidance, read only on named pages.",
+    "Lakens equivalence/TOST passages support distinct bounds and appropriate analysis; the clinical NI question uses the separately checked FDA 2016 source.",
+    "Existing eLife null-replication, Carr, ICH and other unselected contributor assertions retain their earlier depth; they are not blanket re-verified."
+  ],
+  "reusedP28SourceIdentityReceipts": [
+    {
+      "sourceId": "greenland-2016",
+      "captureSHA256": "bbe9fe2ab77eb22fb65790ed3a9544f68b53a4b9abe17cfbd3eba1f75f8347d4",
+      "bytes": 154617,
+      "identityConfirmed": true,
+      "priorReadLog": "effect-measure-construction-assets-2026-11-14/source-read-log.json",
+      "newFreshReadCredit": 0
+    },
+    {
+      "sourceId": "fda-noninferiority-2016",
+      "captureSHA256": "9eb8993e8be5ce94d6accb24f35d179993bb48f2899d275b4d0f837944cbfc61",
+      "bytes": 686548,
+      "identityConfirmed": true,
+      "priorReadLog": "effect-measure-construction-assets-2026-11-14/source-read-log.json",
+      "newFreshReadCredit": 0
+    }
+  ]
+}

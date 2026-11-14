@@ -1,0 +1,194 @@
+{
+  "proposals": [
+    {
+      "id": "SB28-P01",
+      "recordId": "detection-versus-quantification",
+      "actualPeerPR": 371,
+      "actualPeerHead": "777023cf804d6a129cb8ddfac4c6f4aedf85e529",
+      "snapshotSHA256": "7f649fdcb6e0437d7e0cec58e0d2c9d6299701d4bc3cc91c3baaf0fdf5a6653f",
+      "beforeRecordSha256": "0888747b243f9728490dba08432be2ddbf4ac1edc37ab032435141cce6f4c156",
+      "afterRecordSha256": "620c34f6418acbaa1958359eec74eeb0fade842e37c2213a3fe5e602ec54d10c",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "A detection call and a reliable amount are different claims: the limit of detection describes detection probability under specified conditions and the limit of quantitation describes where a number is reliable, and the two have separate validation criteria. A value detected below the quantitative range does not support an exact fold change. In ctDNA reporting, a concentration such as mean tumour molecules per millilitre, a fraction such as variant allele fraction and a call are different quantities, so the fictional 0.01% variant allele fraction (100 parts per million of variant alleles) cannot be compared with a 0.2 molecules per millilitre report without both assays' methods and calibration.",
+            "Detection and quantitation need different validation criteria. The terminology appendix of a November 2018 FDA technical review defines a detection limit using a specified detection probability and a quantitation limit using stated accuracy, or bias and precision, requirements. That review concerns a malaria biomarker, not an oncology-assay validation. The distinction explains why detection below a validated quantitative range does not justify an exact fold change; a commonly used 95% detection criterion is a specified convention, not a property guaranteed for every input or sample.",
+            "Validation of an amount needs the stated bias and precision criteria in the relevant specimen matrix, input range and measuring interval, with appropriate reference material and controls. A nominal detection limit describes its own conditions; it does not predict whether a different assay would miss a particular printed result. Keep the assay version and collection time with a trend, and treat failed input quality separately from a negative detection call.",
+            "The limit of blank describes an upper background response at a specified probability. A limit of detection concerns an amount that can be detected under stated false-call and detection-probability conditions; LoD95 specifies 95 per cent detection in the tested workflow. It is not a line above which every repeat must be positive, nor 95 per cent certainty that a person has disease. A limit of quantitation requires stated quantitative accuracy, including bias and imprecision goals. The limits answer different questions and have no universal spacing; they may coincide under a particular method and its criteria.",
+            "Evaluate repeated blanks and low-level specimens across the conditions the claim covers. Each finite set of repeats needs representative clinical specimens or suitably equivalent reference inputs. Record the analyte, amount or concentration units, specimen matrix, input, workflow boundary, assay version and acceptable false-positive, false-negative and quantitative-error rates. Matrix means the material surrounding the analyte; reference material with a known added analyte amount needs justified equivalence to the clinical specimen. A limit measured on purified material is not automatically a collection-to-report limit. Contamination, nonspecific signal, calibration bias, poor recovery, unrepresentative targets, different lots or operators and inadequate input can change performance. Calibration-slope sensitivity, analytical detection capability and clinical sensitivity are different uses of the same word.",
+            "A clinical decision threshold answers a different question from analytical detection or quantitation. Clinical sensitivity counts positive results among people meeting a defined reference condition; it cannot be converted directly from a laboratory detection limit. Analytical limits alone do not establish tumour location, prognosis, improved recurrence detection or benefit from acting on a result. Comparing assays requires their own specimen, input, calibration and clinical-validation evidence.",
+            "Fictional assay example: the blank-response axis describes background readings, while a separate known-input axis has LoD95 at 2 units. At that input, the assumption leaves about 5 per cent of repeated tests undetected. A signal near 4 units is detected but remains below an assumed quantitation limit of 8 units. It therefore does not establish an exact 33 per cent rise from 3 to 4. These invented amounts, curves and limits belong to this example; neither the spacing nor the missed-repeat fraction is a personal disease probability."
+          ],
+          "beforeSha256": "be5d6f58f383740f697f0abc5dedf4e5f819ac389c927c0257fa64fcfc713a43",
+          "after": [
+            "A detection call and a reliable amount are different claims: the limit of detection describes detection probability under specified conditions and the limit of quantitation describes where a number is reliable, and the two have separate validation criteria. A value detected below the quantitative range does not support an exact fold change. In ctDNA reporting, a concentration such as mean tumour molecules per millilitre, a fraction such as variant allele fraction and a call are different quantities, so the fictional 0.01% variant allele fraction (100 parts per million of variant alleles) cannot be compared with a 0.2 molecules per millilitre report without both assays' methods and calibration.",
+            "Detection and quantitation need different validation criteria. The terminology appendix of a November 2018 FDA technical review defines a detection limit using a specified detection probability and a quantitation limit using stated accuracy, or bias and precision, requirements. That review concerns a malaria biomarker, not an oncology-assay validation. The distinction explains why detection below a validated quantitative range does not justify an exact fold change; a commonly used 95% detection criterion is a specified convention, not a property guaranteed for every input or sample.",
+            "Validation of an amount needs the stated bias and precision criteria in the relevant specimen matrix, input range and measuring interval, with appropriate reference material and controls. A nominal detection limit describes its own conditions; it does not predict whether a different assay would miss a particular printed result. Keep the assay version and collection time with a trend, and treat failed input quality separately from a negative detection call.",
+            "The limit of blank describes an upper background response at a specified probability. A limit of detection concerns an amount that can be detected under stated false-call and detection-probability conditions; LoD95 specifies 95 per cent detection in the tested workflow. It is not a line above which every repeat must be positive, nor 95 per cent certainty that a person has disease. A limit of quantitation requires stated quantitative accuracy, including bias and imprecision goals. The limits answer different questions and have no universal spacing; they may coincide under a particular method and its criteria.",
+            "Evaluate repeated blanks and low-level specimens across the conditions the claim covers. Each finite set of repeats needs representative clinical specimens or suitably equivalent reference inputs. Record the analyte, amount or concentration units, specimen matrix, input, workflow boundary, assay version and acceptable false-positive, false-negative and quantitative-error rates. Matrix means the material surrounding the analyte; reference material with a known added analyte amount needs justified equivalence to the clinical specimen. A limit measured on purified material is not automatically a collection-to-report limit. Contamination, nonspecific signal, calibration bias, poor recovery, unrepresentative targets, different lots or operators and inadequate input can change performance. Calibration-slope sensitivity, analytical detection capability and clinical sensitivity are different uses of the same word.",
+            "A clinical decision threshold answers a different question from analytical detection or quantitation. Clinical sensitivity counts positive results among people meeting a defined reference condition; it cannot be converted directly from a laboratory detection limit. Analytical limits alone do not establish tumour location, prognosis, improved recurrence detection or benefit from acting on a result. Comparing assays requires their own specimen, input, calibration and clinical-validation evidence.",
+            "Fictional assay example: the blank-response axis describes background readings, while a separate known-input axis has LoD95 at 2 units. At that input, the assumption leaves about 5 per cent of repeated tests undetected. A signal near 4 units is detected but remains below an assumed quantitation limit of 8 units. It therefore does not establish an exact 33 per cent rise from 3 to 4. These invented amounts, curves and limits belong to this example; neither the spacing nor the missed-repeat fraction is a personal disease probability.",
+            "In one invented construction, the response at input amount c has a normal distribution with mean 1.64485362695147 × c and standard deviation 1 in response units. Detection means exceeding 1.64485362695147 response units. Its probability is the standard-normal cumulative probability evaluated at 1.64485362695147 × (c - 1): 5 per cent for c = 0 and 95 per cent for c = 2. The amount and response scales have different units. The quantitation limit of 8 remains a separate accuracy assumption, not a limit calculated from this curve. This is a fictional model, not an assay validation or a clinical threshold."
+          ],
+          "afterSha256": "175bc45e161ea9c8542ba0affdc4e3c201ba901432fd20c6547c68ab221b9c93"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "FDA/ICH Q2(R2): analytical procedure validation, glossary",
+              "url": "https://www.fda.gov/media/161201/download"
+            },
+            {
+              "label": "Primary limit-of-detection estimation method (2004)",
+              "url": "https://doi.org/10.1373/clinchem.2003.029983"
+            },
+            {
+              "label": "FDA: biomarker technical review, terminology appendix (November 2018)",
+              "url": "https://www.fda.gov/media/119431/download"
+            },
+            {
+              "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+              "url": "https://www.fda.gov/media/183874/download"
+            },
+            {
+              "label": "CLSI: harmonized analytical terminology",
+              "url": "https://htd.clsi.org/listterms.asp?button=Submit"
+            },
+            {
+              "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+              "url": "https://www.fda.gov/media/71147/download"
+            }
+          ],
+          "beforeSha256": "6e4262d4c014fb437517522275da2ba86c9c66f18589796b258066c46add2ca2",
+          "after": [
+            {
+              "label": "FDA/ICH Q2(R2): analytical procedure validation, glossary",
+              "url": "https://www.fda.gov/media/161201/download"
+            },
+            {
+              "label": "Primary limit-of-detection estimation method (2004)",
+              "url": "https://doi.org/10.1373/clinchem.2003.029983"
+            },
+            {
+              "label": "FDA: biomarker technical review, terminology appendix (November 2018)",
+              "url": "https://www.fda.gov/media/119431/download"
+            },
+            {
+              "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+              "url": "https://www.fda.gov/media/183874/download"
+            },
+            {
+              "label": "CLSI: harmonized analytical terminology",
+              "url": "https://htd.clsi.org/listterms.asp?button=Submit"
+            },
+            {
+              "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+              "url": "https://www.fda.gov/media/71147/download"
+            },
+            {
+              "label": "OncoGuide: fictional normal-response model, pinned construction brief",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/biomarkers/images/prompts/blank-detection-quantitation-v1.txt"
+            }
+          ],
+          "afterSha256": "010ccc44c0b8318037248d7f70d29416990ff30e68c8c66eb81d696e6a4aecdf"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-11",
+          "beforeSha256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "proposedRecord": {
+        "id": "detection-versus-quantification",
+        "kind": "term",
+        "name": "Detection and quantification limits",
+        "aka": [
+          "limit of detection",
+          "limit of quantification",
+          "limit of quantitation",
+          "LoD versus LoQ"
+        ],
+        "tldr": "A test may detect that a signal is present before it can measure its amount reliably. Both limits need to be defined for the method and sample conditions.",
+        "summary": "A detection limit concerns the lowest amount that can be detected under stated conditions; a quantitation limit concerns an amount measurable with suitable accuracy and precision. These are analytical properties, distinct from the proportion of patients with a condition who test positive. Input, recovery, background, calling rules and acceptable error influence what a stated limit means. The FDA/ICH source supplies general analytical definitions for drug procedures, not certification of any particular clinical tumor-DNA assay. The ICH Q2(R2) glossary, as reproduced in FDA guidance, defines the detection limit as the lowest amount of an analyte that can be detected but not necessarily quantitated as an exact value, and the quantitation limit as the lowest amount that can be quantitatively determined with suitable precision and accuracy. It defines accuracy as closeness of agreement between an accepted reference value and the measured value, and precision as the closeness of agreement, or scatter, between a series of measurements of the same homogeneous sample, which is usually expressed as a variance, standard deviation or coefficient of variation. Mass spectrometry assay validation also considers the limit of the blank, the lower limit of quantification, linearity and parallelism (Carr and colleagues, 2014).",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "FDA/ICH Q2(R2): analytical procedure validation, glossary",
+            "url": "https://www.fda.gov/media/161201/download"
+          },
+          {
+            "label": "Primary limit-of-detection estimation method (2004)",
+            "url": "https://doi.org/10.1373/clinchem.2003.029983"
+          },
+          {
+            "label": "FDA: biomarker technical review, terminology appendix (November 2018)",
+            "url": "https://www.fda.gov/media/119431/download"
+          },
+          {
+            "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+            "url": "https://www.fda.gov/media/183874/download"
+          },
+          {
+            "label": "CLSI: harmonized analytical terminology",
+            "url": "https://htd.clsi.org/listterms.asp?button=Submit"
+          },
+          {
+            "label": "FDA: statistical guidance for reporting diagnostic-test studies",
+            "url": "https://www.fda.gov/media/71147/download"
+          },
+          {
+            "label": "OncoGuide: fictional normal-response model, pinned construction brief",
+            "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/biomarkers/images/prompts/blank-detection-quantitation-v1.txt"
+          }
+        ],
+        "tags": [],
+        "related": [
+          "sensitivity-specificity",
+          "analytical-vs-clinical-validation",
+          "finite-molecule-sampling"
+        ],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "A detection call and a reliable amount are different claims: the limit of detection describes detection probability under specified conditions and the limit of quantitation describes where a number is reliable, and the two have separate validation criteria. A value detected below the quantitative range does not support an exact fold change. In ctDNA reporting, a concentration such as mean tumour molecules per millilitre, a fraction such as variant allele fraction and a call are different quantities, so the fictional 0.01% variant allele fraction (100 parts per million of variant alleles) cannot be compared with a 0.2 molecules per millilitre report without both assays' methods and calibration.",
+          "Detection and quantitation need different validation criteria. The terminology appendix of a November 2018 FDA technical review defines a detection limit using a specified detection probability and a quantitation limit using stated accuracy, or bias and precision, requirements. That review concerns a malaria biomarker, not an oncology-assay validation. The distinction explains why detection below a validated quantitative range does not justify an exact fold change; a commonly used 95% detection criterion is a specified convention, not a property guaranteed for every input or sample.",
+          "Validation of an amount needs the stated bias and precision criteria in the relevant specimen matrix, input range and measuring interval, with appropriate reference material and controls. A nominal detection limit describes its own conditions; it does not predict whether a different assay would miss a particular printed result. Keep the assay version and collection time with a trend, and treat failed input quality separately from a negative detection call.",
+          "The limit of blank describes an upper background response at a specified probability. A limit of detection concerns an amount that can be detected under stated false-call and detection-probability conditions; LoD95 specifies 95 per cent detection in the tested workflow. It is not a line above which every repeat must be positive, nor 95 per cent certainty that a person has disease. A limit of quantitation requires stated quantitative accuracy, including bias and imprecision goals. The limits answer different questions and have no universal spacing; they may coincide under a particular method and its criteria.",
+          "Evaluate repeated blanks and low-level specimens across the conditions the claim covers. Each finite set of repeats needs representative clinical specimens or suitably equivalent reference inputs. Record the analyte, amount or concentration units, specimen matrix, input, workflow boundary, assay version and acceptable false-positive, false-negative and quantitative-error rates. Matrix means the material surrounding the analyte; reference material with a known added analyte amount needs justified equivalence to the clinical specimen. A limit measured on purified material is not automatically a collection-to-report limit. Contamination, nonspecific signal, calibration bias, poor recovery, unrepresentative targets, different lots or operators and inadequate input can change performance. Calibration-slope sensitivity, analytical detection capability and clinical sensitivity are different uses of the same word.",
+          "A clinical decision threshold answers a different question from analytical detection or quantitation. Clinical sensitivity counts positive results among people meeting a defined reference condition; it cannot be converted directly from a laboratory detection limit. Analytical limits alone do not establish tumour location, prognosis, improved recurrence detection or benefit from acting on a result. Comparing assays requires their own specimen, input, calibration and clinical-validation evidence.",
+          "Fictional assay example: the blank-response axis describes background readings, while a separate known-input axis has LoD95 at 2 units. At that input, the assumption leaves about 5 per cent of repeated tests undetected. A signal near 4 units is detected but remains below an assumed quantitation limit of 8 units. It therefore does not establish an exact 33 per cent rise from 3 to 4. These invented amounts, curves and limits belong to this example; neither the spacing nor the missed-repeat fraction is a personal disease probability.",
+          "In one invented construction, the response at input amount c has a normal distribution with mean 1.64485362695147 × c and standard deviation 1 in response units. Detection means exceeding 1.64485362695147 response units. Its probability is the standard-normal cumulative probability evaluated at 1.64485362695147 × (c - 1): 5 per cent for c = 0 and 95 per cent for c = 2. The amount and response scales have different units. The quantitation limit of 8 remains a separate accuracy assumption, not a limit calculated from this curve. This is a fictional model, not an assay validation or a clinical threshold."
+        ],
+        "category": "Diagnostics & imaging"
+      },
+      "closesIfApplied": [
+        "SB28-004"
+      ],
+      "scientificScope": "Explicit fictional normal-response construction and arithmetic only; primary definitions do not turn these numbers into validated assay performance.",
+      "applied": false,
+      "coverageCredit": 0,
+      "allExistingNotesAndLinksPreservedInOrder": true,
+      "allOtherRecordFieldsUnchanged": true
+    }
+  ],
+  "rootOwnersChanged": 0,
+  "actualPeerOwnersChanged": 0,
+  "unappliedProposalsReceiveNoCredit": true
+}

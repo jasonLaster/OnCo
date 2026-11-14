@@ -1,0 +1,39 @@
+{
+  "frozenAtUTC": "2026-11-14T02:05:45.809756+00:00",
+  "currentOnCoFieldsInspectedBeforeFreeze": false,
+  "priorInventorySHA256": "639571a81f70394371c99091006306dea1f6dddabf971ee8a3a567a310c89404",
+  "additionalScientificRequirements": [
+    {
+      "id": "SB11-N01",
+      "subject": "dna-damage",
+      "requirement": "The selected base-excision job removes an altered base, with the resulting gap rebuilt rather than the response signal proving completion.",
+      "sourceAssetOrdinals": [
+        8,
+        15
+      ]
+    },
+    {
+      "id": "SB11-N02",
+      "subject": "dna-damage",
+      "requirement": "The selected nucleotide-excision job removes a damaged stretch, followed by refilling and sealing.",
+      "sourceAssetOrdinals": [
+        8,
+        15
+      ]
+    },
+    {
+      "id": "SB11-N03",
+      "subject": "dna-damage",
+      "requirement": "The selected mismatch-repair job corrects the copied strand error rather than treating either mismatched letter as a new established mutation.",
+      "sourceAssetOrdinals": [
+        8,
+        15
+      ]
+    }
+  ],
+  "nativeViews": 8,
+  "artifactFindings": [
+    "SB11-V01"
+  ],
+  "scienceCredit": 0
+}

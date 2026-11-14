@@ -1,0 +1,1940 @@
+{
+  "baseCommit": "267d0c84930568adff2d514890d944b74785440c",
+  "checkedAtUTC": "2026-11-14",
+  "changes": [
+    {
+      "id": "ddr",
+      "kind": "pathway",
+      "file": "src/data/pathways.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [],
+          "after": [
+            "Removing a lesion starts a repair job; synthesis and sealing complete it. In a selected base-excision route, a damaged base is removed, the backbone is processed and the gap is rebuilt and sealed. Nucleotide-excision repair cuts out a lesion-containing stretch, then fills and seals the patch. Mismatch repair replaces the incorrectly copied strand segment using the other strand as a template. These are different repair jobs; detecting a checkpoint signal does not demonstrate that any was completed."
+          ],
+          "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSha256": "c34c9b54f01bb7483b76c41833e2f7651e8096c0b8398f9733f939fb82380d95"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/DNA_repair"
+            },
+            {
+              "label": "OpenStax Biology 2e, section 14.6: DNA repair",
+              "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+            },
+            {
+              "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+            },
+            {
+              "label": "An N-glycosidase from Escherichia coli that releases free uracil from DNA containing deaminated cytosine residues. (1974; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4610583/"
+            },
+            {
+              "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+            },
+            {
+              "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+            },
+            {
+              "label": "DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139. (1998; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+            },
+            {
+              "label": "DNA interstrand crosslink repair and cancer. (2011; review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21701511/"
+            },
+            {
+              "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/DNA_repair"
+            },
+            {
+              "label": "OpenStax Biology 2e, section 14.6: DNA repair",
+              "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+            },
+            {
+              "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+            },
+            {
+              "label": "An N-glycosidase from Escherichia coli that releases free uracil from DNA containing deaminated cytosine residues. (1974; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4610583/"
+            },
+            {
+              "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+            },
+            {
+              "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+            },
+            {
+              "label": "DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139. (1998; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+            },
+            {
+              "label": "DNA interstrand crosslink repair and cancer. (2011; review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21701511/"
+            },
+            {
+              "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+            },
+            {
+              "label": "Nobel chemistry committee 2015: selected base, nucleotide and mismatch repair mechanisms",
+              "url": "https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2015-1.pdf"
+            }
+          ],
+          "beforeSha256": "879e107aa68073264aaf5afc6a06bbf1701f5822db5edcc848c5762cecfd8599",
+          "afterSha256": "74e10ee997e3aee352b85c69adc2f3e138e50d3c186f2b242eea53ab4ae48263"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "after": "2026-11-14",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "purpose": "Append source-checked explanatory detail after full source-first comparison; earlier teaching and arrays retained in order.",
+      "before": {
+        "id": "ddr",
+        "kind": "pathway",
+        "name": "DNA damage response & homologous recombination",
+        "aka": [],
+        "tldr": "Cells detect DNA damage, coordinate repair and adjust their cell cycle. A damage signal is different from completed repair, and a repair-gene finding alone does not predict treatment benefit.",
+        "summary": "A DNA lesion is a physical or chemical problem; a mutation is a lasting sequence change. Repair can remove damage before a mutation is fixed. Recognition and checkpoint signaling are responses to the problem, whereas successful repair, tolerated damage, arrest and death are separate outcomes. The lesson map therefore ends by measuring the outcome instead of assuming that the alarm completed the repair.\n\nSelected repair jobs address different problems: base excision begins by removing a damaged base, nucleotide excision removes a lesion-containing stretch, and mismatch repair corrects copying mismatches. Lindahl purified an E. coli enzyme that released uracil without cutting the DNA backbone, a specific early base-excision step rather than proof of all human repair routes. Double-strand breaks can use matching-template homologous repair or end joining. These are selected jobs, not exclusive assignments of every lesion to one pathway.\n\nGamma-H2AX is histone H2AX phosphorylated at serine 139. Rogakou 1998 observed a rapid response after experimentally induced double-strand breaks in mammalian systems. A microscopy focus is a response around damage, not direct sequencing of a break or a universal repair-failure test. In a fictional culture with a bulky lesion and increased gamma-H2AX, measure lesion removal over time with suitable controls before claiming nucleotide-excision failure, homologous repair deficiency or drug sensitivity.\n\nPlatinum agents can form DNA crosslinks; interstrand links block strand separation and require coordinated repair machinery. The Fanconi pathway links DNA-processing activities, and homologous repair can contribute to resolving replication-associated damage. This does not mean every platinum lesion is an interstrand link or that every HR-deficient tumor responds. A repair mechanism, an observed drug effect and clinical benefit in a defined population need separate evidence.",
+        "asOf": "2026-11-10",
+        "wikipedia": "https://en.wikipedia.org/wiki/DNA_repair",
+        "links": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/DNA_repair"
+          },
+          {
+            "label": "OpenStax Biology 2e, section 14.6: DNA repair",
+            "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+          },
+          {
+            "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+          },
+          {
+            "label": "An N-glycosidase from Escherichia coli that releases free uracil from DNA containing deaminated cytosine residues. (1974; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/4610583/"
+          },
+          {
+            "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+          },
+          {
+            "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+          },
+          {
+            "label": "DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139. (1998; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+          },
+          {
+            "label": "DNA interstrand crosslink repair and cancer. (2011; review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21701511/"
+          },
+          {
+            "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [
+          "ovarian",
+          "tnbc",
+          "prostate",
+          "pancreatic"
+        ],
+        "sections": [],
+        "technologies": [
+          "parp-inhibitor",
+          "hrd-testing",
+          "synthetic-lethality-approaches",
+          "platinum",
+          "parp-pet"
+        ],
+        "targets": [
+          "parp",
+          "brca",
+          "atr",
+          "wee1",
+          "tp53"
+        ],
+        "drugs": [
+          "olaparib",
+          "niraparib",
+          "talazoparib",
+          "carboplatin"
+        ],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [],
+        "analogy": "Two repair crews for a road: PARP fixes potholes, BRCA rebuilds collapsed bridges. A town that has lost its bridge crew (BRCA mutation) survives as long as potholes are fixed before they become bridge collapses. Block the pothole crew (PARP inhibitor) and the bridges fall.",
+        "nodes": [
+          {
+            "id": "ssb",
+            "label": "Single-strand break",
+            "x": 20,
+            "y": 8
+          },
+          {
+            "id": "parp",
+            "label": "PARP1",
+            "x": 20,
+            "y": 28,
+            "targetId": "parp"
+          },
+          {
+            "id": "fork",
+            "label": "Replication fork collapse",
+            "x": 50,
+            "y": 45
+          },
+          {
+            "id": "atr",
+            "label": "ATR / CHK1",
+            "x": 80,
+            "y": 30,
+            "targetId": "atr"
+          },
+          {
+            "id": "dsb",
+            "label": "Double-strand break",
+            "x": 50,
+            "y": 62
+          },
+          {
+            "id": "brca",
+            "label": "BRCA1/2-RAD51 (HR)",
+            "x": 25,
+            "y": 82,
+            "targetId": "brca"
+          },
+          {
+            "id": "nhej",
+            "label": "NHEJ / POLQ (error-prone)",
+            "x": 75,
+            "y": 82
+          },
+          {
+            "id": "fix",
+            "label": "Accurate repair",
+            "x": 25,
+            "y": 97
+          },
+          {
+            "id": "death",
+            "label": "Genomic collapse / death",
+            "x": 75,
+            "y": 97
+          }
+        ],
+        "edges": [
+          {
+            "from": "ssb",
+            "to": "parp",
+            "type": "activates"
+          },
+          {
+            "from": "parp",
+            "to": "fork",
+            "type": "inhibits"
+          },
+          {
+            "from": "ssb",
+            "to": "fork",
+            "type": "activates"
+          },
+          {
+            "from": "fork",
+            "to": "dsb",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "fork",
+            "type": "inhibits"
+          },
+          {
+            "from": "dsb",
+            "to": "brca",
+            "type": "activates"
+          },
+          {
+            "from": "dsb",
+            "to": "nhej",
+            "type": "activates"
+          },
+          {
+            "from": "brca",
+            "to": "fix",
+            "type": "activates"
+          },
+          {
+            "from": "nhej",
+            "to": "death",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "PARP inhibitors in BRCA/HRD ovarian, breast, prostate, pancreatic cancer",
+          "Platinum chemotherapy (crosslinks) in HRD tumours",
+          "ATR inhibitors (ceralasertib) in ATM-deficient or PARP-resistant tumours",
+          "POLQ inhibitors (novobiocin analogues) in HRD",
+          "PARP1-selective saruparib to widen therapeutic window"
+        ]
+      },
+      "after": {
+        "id": "ddr",
+        "kind": "pathway",
+        "name": "DNA damage response & homologous recombination",
+        "aka": [],
+        "tldr": "Cells detect DNA damage, coordinate repair and adjust their cell cycle. A damage signal is different from completed repair, and a repair-gene finding alone does not predict treatment benefit.",
+        "summary": "A DNA lesion is a physical or chemical problem; a mutation is a lasting sequence change. Repair can remove damage before a mutation is fixed. Recognition and checkpoint signaling are responses to the problem, whereas successful repair, tolerated damage, arrest and death are separate outcomes. The lesson map therefore ends by measuring the outcome instead of assuming that the alarm completed the repair.\n\nSelected repair jobs address different problems: base excision begins by removing a damaged base, nucleotide excision removes a lesion-containing stretch, and mismatch repair corrects copying mismatches. Lindahl purified an E. coli enzyme that released uracil without cutting the DNA backbone, a specific early base-excision step rather than proof of all human repair routes. Double-strand breaks can use matching-template homologous repair or end joining. These are selected jobs, not exclusive assignments of every lesion to one pathway.\n\nGamma-H2AX is histone H2AX phosphorylated at serine 139. Rogakou 1998 observed a rapid response after experimentally induced double-strand breaks in mammalian systems. A microscopy focus is a response around damage, not direct sequencing of a break or a universal repair-failure test. In a fictional culture with a bulky lesion and increased gamma-H2AX, measure lesion removal over time with suitable controls before claiming nucleotide-excision failure, homologous repair deficiency or drug sensitivity.\n\nPlatinum agents can form DNA crosslinks; interstrand links block strand separation and require coordinated repair machinery. The Fanconi pathway links DNA-processing activities, and homologous repair can contribute to resolving replication-associated damage. This does not mean every platinum lesion is an interstrand link or that every HR-deficient tumor responds. A repair mechanism, an observed drug effect and clinical benefit in a defined population need separate evidence.",
+        "asOf": "2026-11-14",
+        "wikipedia": "https://en.wikipedia.org/wiki/DNA_repair",
+        "links": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/DNA_repair"
+          },
+          {
+            "label": "OpenStax Biology 2e, section 14.6: DNA repair",
+            "url": "https://openstax.org/books/biology-2e/pages/14-6-dna-repair"
+          },
+          {
+            "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+          },
+          {
+            "label": "An N-glycosidase from Escherichia coli that releases free uracil from DNA containing deaminated cytosine residues. (1974; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/4610583/"
+          },
+          {
+            "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+          },
+          {
+            "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+          },
+          {
+            "label": "DNA double-stranded breaks induce histone H2AX phosphorylation on serine 139. (1998; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9488723/"
+          },
+          {
+            "label": "DNA interstrand crosslink repair and cancer. (2011; review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21701511/"
+          },
+          {
+            "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+          },
+          {
+            "label": "Nobel chemistry committee 2015: selected base, nucleotide and mismatch repair mechanisms",
+            "url": "https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2015-1.pdf"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [
+          "ovarian",
+          "tnbc",
+          "prostate",
+          "pancreatic"
+        ],
+        "sections": [],
+        "technologies": [
+          "parp-inhibitor",
+          "hrd-testing",
+          "synthetic-lethality-approaches",
+          "platinum",
+          "parp-pet"
+        ],
+        "targets": [
+          "parp",
+          "brca",
+          "atr",
+          "wee1",
+          "tp53"
+        ],
+        "drugs": [
+          "olaparib",
+          "niraparib",
+          "talazoparib",
+          "carboplatin"
+        ],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Removing a lesion starts a repair job; synthesis and sealing complete it. In a selected base-excision route, a damaged base is removed, the backbone is processed and the gap is rebuilt and sealed. Nucleotide-excision repair cuts out a lesion-containing stretch, then fills and seals the patch. Mismatch repair replaces the incorrectly copied strand segment using the other strand as a template. These are different repair jobs; detecting a checkpoint signal does not demonstrate that any was completed."
+        ],
+        "analogy": "Two repair crews for a road: PARP fixes potholes, BRCA rebuilds collapsed bridges. A town that has lost its bridge crew (BRCA mutation) survives as long as potholes are fixed before they become bridge collapses. Block the pothole crew (PARP inhibitor) and the bridges fall.",
+        "nodes": [
+          {
+            "id": "ssb",
+            "label": "Single-strand break",
+            "x": 20,
+            "y": 8
+          },
+          {
+            "id": "parp",
+            "label": "PARP1",
+            "x": 20,
+            "y": 28,
+            "targetId": "parp"
+          },
+          {
+            "id": "fork",
+            "label": "Replication fork collapse",
+            "x": 50,
+            "y": 45
+          },
+          {
+            "id": "atr",
+            "label": "ATR / CHK1",
+            "x": 80,
+            "y": 30,
+            "targetId": "atr"
+          },
+          {
+            "id": "dsb",
+            "label": "Double-strand break",
+            "x": 50,
+            "y": 62
+          },
+          {
+            "id": "brca",
+            "label": "BRCA1/2-RAD51 (HR)",
+            "x": 25,
+            "y": 82,
+            "targetId": "brca"
+          },
+          {
+            "id": "nhej",
+            "label": "NHEJ / POLQ (error-prone)",
+            "x": 75,
+            "y": 82
+          },
+          {
+            "id": "fix",
+            "label": "Accurate repair",
+            "x": 25,
+            "y": 97
+          },
+          {
+            "id": "death",
+            "label": "Genomic collapse / death",
+            "x": 75,
+            "y": 97
+          }
+        ],
+        "edges": [
+          {
+            "from": "ssb",
+            "to": "parp",
+            "type": "activates"
+          },
+          {
+            "from": "parp",
+            "to": "fork",
+            "type": "inhibits"
+          },
+          {
+            "from": "ssb",
+            "to": "fork",
+            "type": "activates"
+          },
+          {
+            "from": "fork",
+            "to": "dsb",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "fork",
+            "type": "inhibits"
+          },
+          {
+            "from": "dsb",
+            "to": "brca",
+            "type": "activates"
+          },
+          {
+            "from": "dsb",
+            "to": "nhej",
+            "type": "activates"
+          },
+          {
+            "from": "brca",
+            "to": "fix",
+            "type": "activates"
+          },
+          {
+            "from": "nhej",
+            "to": "death",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "PARP inhibitors in BRCA/HRD ovarian, breast, prostate, pancreatic cancer",
+          "Platinum chemotherapy (crosslinks) in HRD tumours",
+          "ATR inhibitors (ceralasertib) in ATM-deficient or PARP-resistant tumours",
+          "POLQ inhibitors (novobiocin analogues) in HRD",
+          "PARP1-selective saruparib to widen therapeutic window"
+        ]
+      }
+    },
+    {
+      "id": "replication-stress",
+      "kind": "pathway",
+      "file": "src/data/mechanisms.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies."
+          ],
+          "after": [
+            "Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies.",
+            "At a moving replication fork, the unopened parental duplex lies ahead of the junction. New complementary DNA accumulates behind it on the parental templates. One new strand is made continuously toward the advancing fork; the lagging strand is made in short pieces that are later joined. Both are synthesised in the 5-prime to 3-prime direction. A shorter labelled track at the same pulse duration describes less DNA copied along the measured molecule, rather than a shorter labelling interval or proof of chromosome breakage."
+          ],
+          "beforeSha256": "5edc3e767dd60d120f75457e2bfef461641233e7f729358e891b3df580f16b47",
+          "afterSha256": "8b3c5084bddd8ce36b385015f5fe5c430421b2c51c847a4e7e2dc96863459af6"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
+              "url": "https://doi.org/10.1016/j.molcel.2022.05.004"
+            },
+            {
+              "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+            },
+            {
+              "label": "Oncogene-induced senescence is a DNA damage response triggered by DNA hyper-replication. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17136094/"
+            },
+            {
+              "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
+              "url": "https://doi.org/10.1016/j.molcel.2022.05.004"
+            },
+            {
+              "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+            },
+            {
+              "label": "Oncogene-induced senescence is a DNA damage response triggered by DNA hyper-replication. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17136094/"
+            },
+            {
+              "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+            },
+            {
+              "label": "OpenStax Biology 2e 14.4: replication-fork structure and strand synthesis",
+              "url": "https://openstax.org/books/biology-2e/pages/14-4-dna-replication-in-prokaryotes"
+            }
+          ],
+          "beforeSha256": "250db521f4b4fb8c1116a3e230b68ae42a55a9cddfdcb7977bc7279861d8a1f3",
+          "afterSha256": "727782d685ad5bc55b629f4f53079fc5457f206cfe49146505df6de731ada921"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "after": "2026-11-14",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "purpose": "Append source-checked explanatory detail after full source-first comparison; earlier teaching and arrays retained in order.",
+      "before": {
+        "id": "replication-stress",
+        "kind": "pathway",
+        "name": "DNA replication stress",
+        "aka": [],
+        "tldr": "Replication stress means difficulty copying DNA. Slowed forks, damage responses and dependence on a checkpoint are different observations.",
+        "summary": "Replication stress concerns difficulty copying DNA, including slow or stalled forks. A stalled fork can be protected and restart; it is not automatically a broken chromosome. Checkpoint activation, recovery, incomplete copying, damage and death are separate stages and measurements. High checkpoint-gene RNA or rapid proliferation alone does not establish fork stress, dependence or drug sensitivity.\n\nRPA coats exposed single-stranded DNA and helps recruit ATR through ATRIP, initiating checkpoint signaling in biochemical and cellular experiments. Activated H-Ras in normal human-cell models produced hyper-replication before damage signaling and senescence. Bester studied HPV E6/E7 or cyclin-E-driven models in which nucleotide limitation disturbed replication and nucleoside supplementation in culture improved dynamics. These experiments do not recommend supplements or predict the behavior of every oncogene-bearing tumor.\n\nIn a fictional DNA-combing exercise, live cells receive a 30-minute IdU pulse followed by a 30-minute CldU pulse. At the stated example stretching calibration of 2 kilobases per micrometre, a 7.5-micrometre second track represents 15 kilobases copied in 30 minutes, or 0.5 kilobases per minute; a 15-micrometre track gives 1 kilobase per minute. Bester used those pulse times and calibration, but these example lengths are not that study's results and the calibration is not universal.\n\nDNA-fiber measurements require viable cells that incorporate labels; extraction destroys sampled cells. Ordinary fixed pathology cannot retrospectively supply live-label tracks. Document pulse timing, labeling, stretching, track selection, cell-cycle distribution, model and comparison group. A lower population S-phase fraction is distinct from the speed of one selected molecule. Track length alone establishes neither the cause, breaks, restart nor death; checkpoint dependence needs a targeted perturbation and a separate functional outcome, without a universal patient-positive cutoff.",
+        "asOf": "2026-11-10",
+        "wikipedia": "https://en.wikipedia.org/wiki/Replication_stress",
+        "links": [
+          {
+            "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
+            "url": "https://doi.org/10.1016/j.molcel.2022.05.004"
+          },
+          {
+            "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+          },
+          {
+            "label": "Oncogene-induced senescence is a DNA damage response triggered by DNA hyper-replication. (2006; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17136094/"
+          },
+          {
+            "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+          }
+        ],
+        "tags": [
+          "mechanism"
+        ],
+        "related": [],
+        "cancers": [
+          "colorectal"
+        ],
+        "sections": [],
+        "technologies": [
+          "synthetic-lethality-approaches",
+          "parp-inhibitor"
+        ],
+        "targets": [
+          "atr",
+          "wee1",
+          "tp53",
+          "parp"
+        ],
+        "drugs": [],
+        "companies": [],
+        "institutions": [
+          "icr-london",
+          "dana-farber",
+          "nki",
+          "francis-crick"
+        ],
+        "pathways": [
+          "ddr",
+          "p53-cell-cycle",
+          "myc"
+        ],
+        "terms": [
+          "synthetic-lethality",
+          "genome-instability-mutation"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-saxena-mol-cell"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies."
+        ],
+        "analogy": "A copying machine can pause and recover, or remain stalled. Measuring the pause, the response and the final result answers different questions.",
+        "nodes": [
+          {
+            "id": "onc",
+            "label": "Oncogenes (MYC, cyclin E, RAS)",
+            "x": 15,
+            "y": 20,
+            "targetId": "kras"
+          },
+          {
+            "id": "origin",
+            "label": "Excess origin firing, short G1",
+            "x": 45,
+            "y": 20
+          },
+          {
+            "id": "fork",
+            "label": "Stalled forks, ssDNA gaps",
+            "x": 75,
+            "y": 20
+          },
+          {
+            "id": "atr",
+            "label": "ATR → CHK1",
+            "x": 75,
+            "y": 55,
+            "targetId": "atr"
+          },
+          {
+            "id": "wee1",
+            "label": "WEE1 / PKMYT1 restrain CDK1",
+            "x": 45,
+            "y": 55,
+            "targetId": "wee1"
+          },
+          {
+            "id": "g2m",
+            "label": "G2/M checkpoint",
+            "x": 15,
+            "y": 55
+          },
+          {
+            "id": "collapse",
+            "label": "Fork collapse → DSBs",
+            "x": 75,
+            "y": 88
+          },
+          {
+            "id": "mitosis",
+            "label": "Mitotic catastrophe",
+            "x": 30,
+            "y": 88
+          },
+          {
+            "id": "p53",
+            "label": "TP53 (lost)",
+            "x": 92,
+            "y": 55,
+            "targetId": "tp53"
+          }
+        ],
+        "edges": [
+          {
+            "from": "onc",
+            "to": "origin",
+            "type": "activates"
+          },
+          {
+            "from": "origin",
+            "to": "fork",
+            "type": "activates"
+          },
+          {
+            "from": "fork",
+            "to": "atr",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "wee1",
+            "type": "activates"
+          },
+          {
+            "from": "wee1",
+            "to": "g2m",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "origin",
+            "type": "inhibits"
+          },
+          {
+            "from": "fork",
+            "to": "collapse",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "collapse",
+            "type": "inhibits"
+          },
+          {
+            "from": "g2m",
+            "to": "mitosis",
+            "type": "inhibits"
+          },
+          {
+            "from": "p53",
+            "to": "g2m",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "ATR inhibitors (ceralasertib, camonsertib) alone and with PARP inhibitors or IO",
+          "WEE1 (azenosertib) and PKMYT1 (lunresertib) inhibitors in CCNE1-amplified and TP53-mutant tumours",
+          "PARP inhibitors trap forks in HRD tumours (see DDR)",
+          "Gemcitabine and other antimetabolites are classical replication-stress inducers"
+        ]
+      },
+      "after": {
+        "id": "replication-stress",
+        "kind": "pathway",
+        "name": "DNA replication stress",
+        "aka": [],
+        "tldr": "Replication stress means difficulty copying DNA. Slowed forks, damage responses and dependence on a checkpoint are different observations.",
+        "summary": "Replication stress concerns difficulty copying DNA, including slow or stalled forks. A stalled fork can be protected and restart; it is not automatically a broken chromosome. Checkpoint activation, recovery, incomplete copying, damage and death are separate stages and measurements. High checkpoint-gene RNA or rapid proliferation alone does not establish fork stress, dependence or drug sensitivity.\n\nRPA coats exposed single-stranded DNA and helps recruit ATR through ATRIP, initiating checkpoint signaling in biochemical and cellular experiments. Activated H-Ras in normal human-cell models produced hyper-replication before damage signaling and senescence. Bester studied HPV E6/E7 or cyclin-E-driven models in which nucleotide limitation disturbed replication and nucleoside supplementation in culture improved dynamics. These experiments do not recommend supplements or predict the behavior of every oncogene-bearing tumor.\n\nIn a fictional DNA-combing exercise, live cells receive a 30-minute IdU pulse followed by a 30-minute CldU pulse. At the stated example stretching calibration of 2 kilobases per micrometre, a 7.5-micrometre second track represents 15 kilobases copied in 30 minutes, or 0.5 kilobases per minute; a 15-micrometre track gives 1 kilobase per minute. Bester used those pulse times and calibration, but these example lengths are not that study's results and the calibration is not universal.\n\nDNA-fiber measurements require viable cells that incorporate labels; extraction destroys sampled cells. Ordinary fixed pathology cannot retrospectively supply live-label tracks. Document pulse timing, labeling, stretching, track selection, cell-cycle distribution, model and comparison group. A lower population S-phase fraction is distinct from the speed of one selected molecule. Track length alone establishes neither the cause, breaks, restart nor death; checkpoint dependence needs a targeted perturbation and a separate functional outcome, without a universal patient-positive cutoff.",
+        "asOf": "2026-11-14",
+        "wikipedia": "https://en.wikipedia.org/wiki/Replication_stress",
+        "links": [
+          {
+            "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
+            "url": "https://doi.org/10.1016/j.molcel.2022.05.004"
+          },
+          {
+            "label": "Sensing DNA damage through ATRIP recognition of RPA-ssDNA complexes. (2003; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12791985/"
+          },
+          {
+            "label": "Oncogene-induced senescence is a DNA damage response triggered by DNA hyper-replication. (2006; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/17136094/"
+          },
+          {
+            "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
+          },
+          {
+            "label": "OpenStax Biology 2e 14.4: replication-fork structure and strand synthesis",
+            "url": "https://openstax.org/books/biology-2e/pages/14-4-dna-replication-in-prokaryotes"
+          }
+        ],
+        "tags": [
+          "mechanism"
+        ],
+        "related": [],
+        "cancers": [
+          "colorectal"
+        ],
+        "sections": [],
+        "technologies": [
+          "synthetic-lethality-approaches",
+          "parp-inhibitor"
+        ],
+        "targets": [
+          "atr",
+          "wee1",
+          "tp53",
+          "parp"
+        ],
+        "drugs": [],
+        "companies": [],
+        "institutions": [
+          "icr-london",
+          "dana-farber",
+          "nki",
+          "francis-crick"
+        ],
+        "pathways": [
+          "ddr",
+          "p53-cell-cycle",
+          "myc"
+        ],
+        "terms": [
+          "synthetic-lethality",
+          "genome-instability-mutation"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-saxena-mol-cell"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies.",
+          "At a moving replication fork, the unopened parental duplex lies ahead of the junction. New complementary DNA accumulates behind it on the parental templates. One new strand is made continuously toward the advancing fork; the lagging strand is made in short pieces that are later joined. Both are synthesised in the 5-prime to 3-prime direction. A shorter labelled track at the same pulse duration describes less DNA copied along the measured molecule, rather than a shorter labelling interval or proof of chromosome breakage."
+        ],
+        "analogy": "A copying machine can pause and recover, or remain stalled. Measuring the pause, the response and the final result answers different questions.",
+        "nodes": [
+          {
+            "id": "onc",
+            "label": "Oncogenes (MYC, cyclin E, RAS)",
+            "x": 15,
+            "y": 20,
+            "targetId": "kras"
+          },
+          {
+            "id": "origin",
+            "label": "Excess origin firing, short G1",
+            "x": 45,
+            "y": 20
+          },
+          {
+            "id": "fork",
+            "label": "Stalled forks, ssDNA gaps",
+            "x": 75,
+            "y": 20
+          },
+          {
+            "id": "atr",
+            "label": "ATR → CHK1",
+            "x": 75,
+            "y": 55,
+            "targetId": "atr"
+          },
+          {
+            "id": "wee1",
+            "label": "WEE1 / PKMYT1 restrain CDK1",
+            "x": 45,
+            "y": 55,
+            "targetId": "wee1"
+          },
+          {
+            "id": "g2m",
+            "label": "G2/M checkpoint",
+            "x": 15,
+            "y": 55
+          },
+          {
+            "id": "collapse",
+            "label": "Fork collapse → DSBs",
+            "x": 75,
+            "y": 88
+          },
+          {
+            "id": "mitosis",
+            "label": "Mitotic catastrophe",
+            "x": 30,
+            "y": 88
+          },
+          {
+            "id": "p53",
+            "label": "TP53 (lost)",
+            "x": 92,
+            "y": 55,
+            "targetId": "tp53"
+          }
+        ],
+        "edges": [
+          {
+            "from": "onc",
+            "to": "origin",
+            "type": "activates"
+          },
+          {
+            "from": "origin",
+            "to": "fork",
+            "type": "activates"
+          },
+          {
+            "from": "fork",
+            "to": "atr",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "wee1",
+            "type": "activates"
+          },
+          {
+            "from": "wee1",
+            "to": "g2m",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "origin",
+            "type": "inhibits"
+          },
+          {
+            "from": "fork",
+            "to": "collapse",
+            "type": "activates"
+          },
+          {
+            "from": "atr",
+            "to": "collapse",
+            "type": "inhibits"
+          },
+          {
+            "from": "g2m",
+            "to": "mitosis",
+            "type": "inhibits"
+          },
+          {
+            "from": "p53",
+            "to": "g2m",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "ATR inhibitors (ceralasertib, camonsertib) alone and with PARP inhibitors or IO",
+          "WEE1 (azenosertib) and PKMYT1 (lunresertib) inhibitors in CCNE1-amplified and TP53-mutant tumours",
+          "PARP inhibitors trap forks in HRD tumours (see DDR)",
+          "Gemcitabine and other antimetabolites are classical replication-stress inducers"
+        ]
+      }
+    },
+    {
+      "id": "lipid-metabolism-cancer",
+      "kind": "pathway",
+      "file": "src/data/mechanics-pathways.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+            "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing. Lower synthesis does not itself show that a compound bound its target, and a medium effect does not identify uptake as its cause. An uncharacterised SCAP or MTOR variant needs evidence for its proposed functional effect; a gene name alone assigns neither activation nor loss of function.",
+            "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+            "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+            "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+            "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+            "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour."
+          ],
+          "after": [
+            "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+            "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing. Lower synthesis does not itself show that a compound bound its target, and a medium effect does not identify uptake as its cause. An uncharacterised SCAP or MTOR variant needs evidence for its proposed functional effect; a gene name alone assigns neither activation nor loss of function.",
+            "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+            "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+            "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+            "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+            "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour.",
+            "In the selected SREBP-2 route, the precursor spans a membrane and its gene-regulating end faces the cytosol. SCAP escorts the membrane-bound precursor from endoplasmic reticulum through transport vesicles to Golgi membranes. Cleavage releases the regulatory fragment into cytosol before nuclear entry; it does not carry the whole precursor, SCAP or the vesicle into the nucleus. Local sterol sensing and Insig-associated retention regulate this transport. A schematic of the route supplies neither a universal sterol threshold nor a measured transcription rate."
+          ],
+          "beforeSha256": "ccb4b81c5299dce4897d621f823e833eba269ebd1eb12241c5bbbd2bcf32e516",
+          "afterSha256": "1285adc6b3af378427524766ef3317ef11ba81eb66e6536dec3cf73d50a60ed6"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+              "url": "https://doi.org/10.1038/nrc.2016.89"
+            },
+            {
+              "label": "Source identity and scope, PMID 19041766",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+            },
+            {
+              "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+              "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+            },
+            {
+              "label": "MedlinePlus: cholesterol and hormone production",
+              "url": "https://medlineplus.gov/cholesterol.html"
+            },
+            {
+              "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+              "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+            },
+            {
+              "label": "Martinez Molina et al. 2013: measuring drug target engagement with CETSA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+              "url": "https://doi.org/10.1038/nrc.2016.89"
+            },
+            {
+              "label": "Source identity and scope, PMID 19041766",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+            },
+            {
+              "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+            },
+            {
+              "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+              "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+            },
+            {
+              "label": "MedlinePlus: cholesterol and hormone production",
+              "url": "https://medlineplus.gov/cholesterol.html"
+            },
+            {
+              "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+              "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+            },
+            {
+              "label": "Martinez Molina et al. 2013: measuring drug target engagement with CETSA",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
+            },
+            {
+              "label": "UniProt Q12772: human SREBP-2 precursor, processed fragment and membrane topology",
+              "url": "https://www.uniprot.org/uniprotkb/Q12772/entry"
+            },
+            {
+              "label": "Ye et al. 2000: SREBP membrane cleavage and release into cytosol",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10805775/"
+            }
+          ],
+          "beforeSha256": "43609204a2a4095b37c5c05f968215bc6dae88f141816c0c5c4cf55062532046",
+          "afterSha256": "c776ef5653304ca30bfb2f86b974fff6793370cefe1f1256e67e42e5a82ef1f3"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "purpose": "Append source-checked explanatory detail after full source-first comparison; earlier teaching and arrays retained in order.",
+      "before": {
+        "id": "lipid-metabolism-cancer",
+        "kind": "pathway",
+        "name": "Lipid synthesis, uptake & cholesterol",
+        "aka": [],
+        "tldr": "Cells can make, import, store and reuse lipids. The route they use and their dependence on it vary with the cell and conditions.",
+        "summary": "Lipid metabolism includes synthesis, uptake, storage, membrane remodelling and oxidation. Cholesterol regulation and fatty-acid regulation overlap but are not interchangeable. Identify the SREBP member, cellular compartment and measured output rather than treating a transcript, precursor, nuclear fragment, sterol amount and synthesis rate as the same observation. SCAP-SREBP transport responds to endoplasmic reticulum cholesterol in the cited cell experiments. The mevalonate pathway supplies sterols and nonsterol products, including substrates for protein prenylation. Rescue by mevalonate therefore cannot uniquely identify cholesterol as the limiting product. Transcript abundance, lipid abundance, labelled production and a controlled survival-dependence experiment answer different questions. Results from a particular cell model or mouse experiment do not establish a universal tumour vulnerability or a preferred diet or treatment.",
+        "asOf": "2026-11-13",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fatty_acid_synthesis",
+        "links": [
+          {
+            "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+            "url": "https://doi.org/10.1038/nrc.2016.89"
+          },
+          {
+            "label": "Source identity and scope, PMID 19041766",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+          },
+          {
+            "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+          },
+          {
+            "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+          },
+          {
+            "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+            "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+          },
+          {
+            "label": "MedlinePlus: cholesterol and hormone production",
+            "url": "https://medlineplus.gov/cholesterol.html"
+          },
+          {
+            "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+            "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+          },
+          {
+            "label": "Martinez Molina et al. 2013: measuring drug target engagement with CETSA",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
+          }
+        ],
+        "tags": [
+          "mechanism",
+          "mechanics-atlas"
+        ],
+        "related": [],
+        "cancers": [
+          "ovarian",
+          "prostate",
+          "breast-hr-positive",
+          "endometrial",
+          "hcc"
+        ],
+        "sections": [],
+        "technologies": [
+          "metabolic-therapy",
+          "glp1-agonists-cancer-risk",
+          "bariatric-surgery-cancer-incidence",
+          "mediterranean-plant-forward-diet",
+          "exercise-oncology",
+          "dietitian-led-weight-loss-breast"
+        ],
+        "targets": [
+          "akt",
+          "kras",
+          "estrogen-receptor"
+        ],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [
+          "cancer-metabolism",
+          "ferroptosis-cell-death",
+          "pi3k-akt-mtor",
+          "tumor-dormancy"
+        ],
+        "terms": [
+          "obesity-related-cancers",
+          "energy-balance",
+          "metabolic-syndrome",
+          "body-composition",
+          "deregulating-cellular-energetics"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-rohrig-nat-rev-cancer"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+          "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing. Lower synthesis does not itself show that a compound bound its target, and a medium effect does not identify uptake as its cause. An uncharacterised SCAP or MTOR variant needs evidence for its proposed functional effect; a gene name alone assigns neither activation nor loss of function.",
+          "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+          "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+          "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+          "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+          "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour."
+        ],
+        "analogy": "A factory that must build its own walls. Normal adult tissue buys wall panels from a supplier (dietary fat); cancer reopens its own panel plant (FASN) and, when it lands in a fat depot, simply strips panels off the buildings next door.",
+        "nodes": [
+          {
+            "id": "cit",
+            "label": "Citrate → ACLY → acetyl-CoA",
+            "x": 12,
+            "y": 20
+          },
+          {
+            "id": "acc",
+            "label": "ACC → malonyl-CoA",
+            "x": 40,
+            "y": 20
+          },
+          {
+            "id": "fasn",
+            "label": "FASN → palmitate",
+            "x": 68,
+            "y": 20
+          },
+          {
+            "id": "scd",
+            "label": "SCD1 → membranes",
+            "x": 90,
+            "y": 40
+          },
+          {
+            "id": "srebp",
+            "label": "SREBP (mTORC1, hypoxia)",
+            "x": 40,
+            "y": 50,
+            "targetId": "akt"
+          },
+          {
+            "id": "ampk",
+            "label": "AMPK / LKB1",
+            "x": 12,
+            "y": 50
+          },
+          {
+            "id": "mev",
+            "label": "Mevalonate → cholesterol",
+            "x": 68,
+            "y": 55,
+            "targetId": "kras"
+          },
+          {
+            "id": "cd36",
+            "label": "CD36 uptake from adipocytes",
+            "x": 12,
+            "y": 82
+          },
+          {
+            "id": "fao",
+            "label": "Fatty acid oxidation (CPT1)",
+            "x": 40,
+            "y": 82
+          },
+          {
+            "id": "ferro",
+            "label": "PUFA → ferroptosis",
+            "x": 90,
+            "y": 80
+          },
+          {
+            "id": "obes",
+            "label": "Obesity, insulin, IGF-1",
+            "x": 68,
+            "y": 88
+          }
+        ],
+        "edges": [
+          {
+            "from": "cit",
+            "to": "acc",
+            "type": "activates"
+          },
+          {
+            "from": "acc",
+            "to": "fasn",
+            "type": "activates"
+          },
+          {
+            "from": "fasn",
+            "to": "scd",
+            "type": "activates"
+          },
+          {
+            "from": "srebp",
+            "to": "fasn",
+            "type": "activates"
+          },
+          {
+            "from": "srebp",
+            "to": "mev",
+            "type": "activates"
+          },
+          {
+            "from": "ampk",
+            "to": "srebp",
+            "type": "inhibits"
+          },
+          {
+            "from": "cd36",
+            "to": "fao",
+            "type": "activates"
+          },
+          {
+            "from": "cd36",
+            "to": "scd",
+            "type": "activates"
+          },
+          {
+            "from": "scd",
+            "to": "ferro",
+            "type": "inhibits"
+          },
+          {
+            "from": "obes",
+            "to": "srebp",
+            "type": "activates"
+          },
+          {
+            "from": "obes",
+            "to": "cd36",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "FASN inhibitor denifanstat and SCD1 inhibitors in trials; statins repurposed with mostly negative randomised data",
+          "Weight management, GLP-1 agonists and bariatric surgery reduce obesity-related cancer incidence",
+          "Exercise and dietary pattern interventions during treatment",
+          "Ferroptosis inducers exploit the lipid composition of mesenchymal and persister cells"
+        ]
+      },
+      "after": {
+        "id": "lipid-metabolism-cancer",
+        "kind": "pathway",
+        "name": "Lipid synthesis, uptake & cholesterol",
+        "aka": [],
+        "tldr": "Cells can make, import, store and reuse lipids. The route they use and their dependence on it vary with the cell and conditions.",
+        "summary": "Lipid metabolism includes synthesis, uptake, storage, membrane remodelling and oxidation. Cholesterol regulation and fatty-acid regulation overlap but are not interchangeable. Identify the SREBP member, cellular compartment and measured output rather than treating a transcript, precursor, nuclear fragment, sterol amount and synthesis rate as the same observation. SCAP-SREBP transport responds to endoplasmic reticulum cholesterol in the cited cell experiments. The mevalonate pathway supplies sterols and nonsterol products, including substrates for protein prenylation. Rescue by mevalonate therefore cannot uniquely identify cholesterol as the limiting product. Transcript abundance, lipid abundance, labelled production and a controlled survival-dependence experiment answer different questions. Results from a particular cell model or mouse experiment do not establish a universal tumour vulnerability or a preferred diet or treatment.",
+        "asOf": "2026-11-14",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fatty_acid_synthesis",
+        "links": [
+          {
+            "label": "Röhrig & Schulze, The multifaceted roles of fatty acid synthesis in cancer (Nat Rev Cancer 2016)",
+            "url": "https://doi.org/10.1038/nrc.2016.89"
+          },
+          {
+            "label": "Source identity and scope, PMID 19041766",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/19041766/"
+          },
+          {
+            "label": "Primary SREBP or mevalonate experiment (PubMed 9616204)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9616204/"
+          },
+          {
+            "label": "Primary SREBP or mevalonate experiment (PubMed 22265415)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+          },
+          {
+            "label": "OpenStax Biology 2e 3.3: sterols, membranes and hormone precursors",
+            "url": "https://openstax.org/books/biology-2e/pages/3-3-lipids"
+          },
+          {
+            "label": "MedlinePlus: cholesterol and hormone production",
+            "url": "https://medlineplus.gov/cholesterol.html"
+          },
+          {
+            "label": "UniProt O95749: reviewed human GGPS1 catalytic reactions",
+            "url": "https://www.uniprot.org/uniprotkb/O95749/entry"
+          },
+          {
+            "label": "Martinez Molina et al. 2013: measuring drug target engagement with CETSA",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/23828940/"
+          },
+          {
+            "label": "UniProt Q12772: human SREBP-2 precursor, processed fragment and membrane topology",
+            "url": "https://www.uniprot.org/uniprotkb/Q12772/entry"
+          },
+          {
+            "label": "Ye et al. 2000: SREBP membrane cleavage and release into cytosol",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10805775/"
+          }
+        ],
+        "tags": [
+          "mechanism",
+          "mechanics-atlas"
+        ],
+        "related": [],
+        "cancers": [
+          "ovarian",
+          "prostate",
+          "breast-hr-positive",
+          "endometrial",
+          "hcc"
+        ],
+        "sections": [],
+        "technologies": [
+          "metabolic-therapy",
+          "glp1-agonists-cancer-risk",
+          "bariatric-surgery-cancer-incidence",
+          "mediterranean-plant-forward-diet",
+          "exercise-oncology",
+          "dietitian-led-weight-loss-breast"
+        ],
+        "targets": [
+          "akt",
+          "kras",
+          "estrogen-receptor"
+        ],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [
+          "cancer-metabolism",
+          "ferroptosis-cell-death",
+          "pi3k-akt-mtor",
+          "tumor-dormancy"
+        ],
+        "terms": [
+          "obesity-related-cancers",
+          "energy-balance",
+          "metabolic-syndrome",
+          "body-composition",
+          "deregulating-cellular-energetics"
+        ],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-rohrig-nat-rev-cancer"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "SCAP and local endoplasmic-reticulum sterol conditions regulate transport of membrane-bound SREBP to the Golgi. Processing releases a fragment that enters the nucleus and regulates lipid synthesis and uptake. Sufficient local sterol supply can retain the complex in the ER; total cellular cholesterol and SREBP RNA do not measure this processing.",
+          "In the fictional supply experiment, nuclear SREBP-2 and uptake messages respond to lipid-poor medium; external lipid supply can reduce the response and compensate for synthesis perturbation. Record medium composition, density, timing and viability before assigning dependence. A supply-sensitive state does not establish the response of a person's tumour. Assess precursor and nuclear regulator, responsive transcripts, cellular sterols and uptake separately from labelled synthesis rates. Use controlled supplementation to test the proposed bottleneck; total amount does not specify production or local sensing. Lower synthesis does not itself show that a compound bound its target, and a medium effect does not identify uptake as its cause. An uncharacterised SCAP or MTOR variant needs evidence for its proposed functional effect; a gene name alone assigns neither activation nor loss of function.",
+          "In transgenic mice expressing a truncated SREBP-2 construct, Horton and colleagues observed preferential activation of cholesterol synthesis over fatty-acid synthesis in liver and adipose tissue, contrasting it with earlier SREBP-1a results. They separately measured transcripts and synthesis using labelled water. These are relative effects in a named experimental system, not exclusive duties of each family member or proof that a transcript measurement equals flux. Precursor location and nuclear processing require their own measurements.",
+          "Statins inhibit HMG-CoA reductase upstream in the mevalonate pathway, which supplies cholesterol and nonsterol products. In Freed-Pastor and colleagues' breast-cancer 3D cultures, geranylgeranyl pyrophosphate partially rescued an invasive phenotype after mutant-p53 depletion or simvastatin treatment. This illustrates why mevalonate rescue alone cannot uniquely attribute an effect to cholesterol. It does not identify every relevant metabolite, establish a universal cancer dependency or show that a statin perturbation reproduces every change in SCAP-SREBP regulation.",
+          "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
+          "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
+          "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour.",
+          "In the selected SREBP-2 route, the precursor spans a membrane and its gene-regulating end faces the cytosol. SCAP escorts the membrane-bound precursor from endoplasmic reticulum through transport vesicles to Golgi membranes. Cleavage releases the regulatory fragment into cytosol before nuclear entry; it does not carry the whole precursor, SCAP or the vesicle into the nucleus. Local sterol sensing and Insig-associated retention regulate this transport. A schematic of the route supplies neither a universal sterol threshold nor a measured transcription rate."
+        ],
+        "analogy": "A factory that must build its own walls. Normal adult tissue buys wall panels from a supplier (dietary fat); cancer reopens its own panel plant (FASN) and, when it lands in a fat depot, simply strips panels off the buildings next door.",
+        "nodes": [
+          {
+            "id": "cit",
+            "label": "Citrate → ACLY → acetyl-CoA",
+            "x": 12,
+            "y": 20
+          },
+          {
+            "id": "acc",
+            "label": "ACC → malonyl-CoA",
+            "x": 40,
+            "y": 20
+          },
+          {
+            "id": "fasn",
+            "label": "FASN → palmitate",
+            "x": 68,
+            "y": 20
+          },
+          {
+            "id": "scd",
+            "label": "SCD1 → membranes",
+            "x": 90,
+            "y": 40
+          },
+          {
+            "id": "srebp",
+            "label": "SREBP (mTORC1, hypoxia)",
+            "x": 40,
+            "y": 50,
+            "targetId": "akt"
+          },
+          {
+            "id": "ampk",
+            "label": "AMPK / LKB1",
+            "x": 12,
+            "y": 50
+          },
+          {
+            "id": "mev",
+            "label": "Mevalonate → cholesterol",
+            "x": 68,
+            "y": 55,
+            "targetId": "kras"
+          },
+          {
+            "id": "cd36",
+            "label": "CD36 uptake from adipocytes",
+            "x": 12,
+            "y": 82
+          },
+          {
+            "id": "fao",
+            "label": "Fatty acid oxidation (CPT1)",
+            "x": 40,
+            "y": 82
+          },
+          {
+            "id": "ferro",
+            "label": "PUFA → ferroptosis",
+            "x": 90,
+            "y": 80
+          },
+          {
+            "id": "obes",
+            "label": "Obesity, insulin, IGF-1",
+            "x": 68,
+            "y": 88
+          }
+        ],
+        "edges": [
+          {
+            "from": "cit",
+            "to": "acc",
+            "type": "activates"
+          },
+          {
+            "from": "acc",
+            "to": "fasn",
+            "type": "activates"
+          },
+          {
+            "from": "fasn",
+            "to": "scd",
+            "type": "activates"
+          },
+          {
+            "from": "srebp",
+            "to": "fasn",
+            "type": "activates"
+          },
+          {
+            "from": "srebp",
+            "to": "mev",
+            "type": "activates"
+          },
+          {
+            "from": "ampk",
+            "to": "srebp",
+            "type": "inhibits"
+          },
+          {
+            "from": "cd36",
+            "to": "fao",
+            "type": "activates"
+          },
+          {
+            "from": "cd36",
+            "to": "scd",
+            "type": "activates"
+          },
+          {
+            "from": "scd",
+            "to": "ferro",
+            "type": "inhibits"
+          },
+          {
+            "from": "obes",
+            "to": "srebp",
+            "type": "activates"
+          },
+          {
+            "from": "obes",
+            "to": "cd36",
+            "type": "activates"
+          }
+        ],
+        "interventions": [
+          "FASN inhibitor denifanstat and SCD1 inhibitors in trials; statins repurposed with mostly negative randomised data",
+          "Weight management, GLP-1 agonists and bariatric surgery reduce obesity-related cancer incidence",
+          "Exercise and dietary pattern interventions during treatment",
+          "Ferroptosis inducers exploit the lipid composition of mesenchymal and persister cells"
+        ]
+      }
+    },
+    {
+      "id": "oxidative-phosphorylation",
+      "kind": "term",
+      "file": "src/data/education-parallel-death-metabolism-2026-11.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+            "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+            "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. These directions do not specify a fixed proton-to-ATP ratio. Protons return from the intermembrane space to the matrix through the membrane-embedded Fo part of ATP synthase. The matrix-facing F1 part uses the transferred energy to make ATP from ADP and inorganic phosphate. Protons provide the driving force; they are not converted into ATP. A parallel proton leak bypasses ATP synthase and dissipates the gradient. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
+            "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred.",
+            "In a fictional paired-well example, culture A uses 180 picomoles of oxygen per minute with 30,000 viable cells and B uses 120 with 20,000. Both equal 60 per minute per 10,000 viable cells. After ATP-synthase blockade their corresponding normalised rates are 30 and 40, giving inhibitor-sensitive differences of 30 and 20 picomoles of oxygen per minute per 10,000 cells. Those are oxygen-rate differences, not ATP-production rates or proof of survival dependence. Cell number, fuel, oxygen, timing and the inhibitor controls matter. A corrected, specified conversion method needs additional assumptions; the 2018 Mookerjee correction changed calculations by up to 17 per cent. General oxidation, compartment-specific reactive chemistry and iron-dependent lipid death remain separate questions.",
+            "Echeverria 2019 treated three patient-derived triple-negative breast cancer xenograft models with doxorubicin and cyclophosphamide. Barcode structure was broadly maintained at the residual nadir; regrowth could select dominant barcodes, so this does not exclude all clonal selection. In PIM001-P, the RNA analysis highlighted oxidative phosphorylation and isolated residual cells had higher oxygen consumption and lower extracellular acidification than untreated cells. Those rate measurements were not obtained in every model. IACS-010759 delayed regrowth after chemotherapy in the three tested models, rather than eradicating the tumours. Regrown models could again respond to chemotherapy. Two serial human biopsy cases supported stability during initial AC but did not establish invariant clones through all subsequent treatment. Rate, state, perturbation response and clinical benefit remain distinct evidence.",
+            "Yap 2023 reported phase 1 IACS-010759 studies in 17 people with acute myeloid leukaemia and 23 with advanced solid tumours. Elevated blood lactate and neurotoxicity limited exposure needed for sustained complex-I inhibition; target inhibition was modest, antitumour activity limited, no recommended phase 2 dose was established and both studies were discontinued. These named safety and exposure results separate a model vulnerability from a usable treatment. A respiratory RNA signature plus a lower ATP-based signal still establishes neither increased oxygen-consumption rate nor counted cell death. Measure identified viable cells, normalised oxygen use, engagement and independent growth or death outcomes. Acidification can include respiratory carbon dioxide as well as glycolysis, and lactate production with oxygen can coexist with respiration."
+          ],
+          "after": [
+            "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+            "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+            "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. These directions do not specify a fixed proton-to-ATP ratio. Protons return from the intermembrane space to the matrix through the membrane-embedded Fo part of ATP synthase. The matrix-facing F1 part uses the transferred energy to make ATP from ADP and inorganic phosphate. Protons provide the driving force; they are not converted into ATP. A parallel proton leak bypasses ATP synthase and dissipates the gradient. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
+            "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred.",
+            "In a fictional paired-well example, culture A uses 180 picomoles of oxygen per minute with 30,000 viable cells and B uses 120 with 20,000. Both equal 60 per minute per 10,000 viable cells. After ATP-synthase blockade their corresponding normalised rates are 30 and 40, giving inhibitor-sensitive differences of 30 and 20 picomoles of oxygen per minute per 10,000 cells. Those are oxygen-rate differences, not ATP-production rates or proof of survival dependence. Cell number, fuel, oxygen, timing and the inhibitor controls matter. A corrected, specified conversion method needs additional assumptions; the 2018 Mookerjee correction changed calculations by up to 17 per cent. General oxidation, compartment-specific reactive chemistry and iron-dependent lipid death remain separate questions.",
+            "Echeverria 2019 treated three patient-derived triple-negative breast cancer xenograft models with doxorubicin and cyclophosphamide. Barcode structure was broadly maintained at the residual nadir; regrowth could select dominant barcodes, so this does not exclude all clonal selection. In PIM001-P, the RNA analysis highlighted oxidative phosphorylation and isolated residual cells had higher oxygen consumption and lower extracellular acidification than untreated cells. Those rate measurements were not obtained in every model. IACS-010759 delayed regrowth after chemotherapy in the three tested models, rather than eradicating the tumours. Regrown models could again respond to chemotherapy. Two serial human biopsy cases supported stability during initial AC but did not establish invariant clones through all subsequent treatment. Rate, state, perturbation response and clinical benefit remain distinct evidence.",
+            "Yap 2023 reported phase 1 IACS-010759 studies in 17 people with acute myeloid leukaemia and 23 with advanced solid tumours. Elevated blood lactate and neurotoxicity limited exposure needed for sustained complex-I inhibition; target inhibition was modest, antitumour activity limited, no recommended phase 2 dose was established and both studies were discontinued. These named safety and exposure results separate a model vulnerability from a usable treatment. A respiratory RNA signature plus a lower ATP-based signal still establishes neither increased oxygen-consumption rate nor counted cell death. Measure identified viable cells, normalised oxygen use, engagement and independent growth or death outcomes. Acidification can include respiratory carbon dioxide as well as glycolysis, and lactate production with oxygen can coexist with respiration.",
+            "A mitochondrion has an outer membrane and a folded inner membrane. The space between them is the intermembrane space; the matrix is enclosed by the inner membrane. Each membrane is a phospholipid bilayer, with two leaflets rather than being a single leaflet of a shared membrane. Electron transfer ends with oxygen reduced to water, while some complexes pump protons across the inner membrane. These distinct processes do not give a universal conversion from oxygen use to ATP production."
+          ],
+          "beforeSha256": "e6f353fe1e132248430e0a5686ed836cd7de0db851c3f8033e5e4be0631e39ac",
+          "afterSha256": "e9c8d792173ce877133e57d3ee9d78cd96fe675713d643d7f7db61871310eff4"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Source identity and scope, PMID 26709455",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
+            },
+            {
+              "label": "Source identity and scope, PMID 28270511",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
+            },
+            {
+              "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
+            },
+            {
+              "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
+            },
+            {
+              "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
+              "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+            },
+            {
+              "label": "Assessing mitochondrial dysfunction in cells (2011 methods review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21726199/"
+            },
+            {
+              "label": "Mitochondrial ATP synthase: architecture, function and pathology (2012 ATP-synthase review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21874297/"
+            },
+            {
+              "label": "Quantifying intracellular rates of glycolytic and oxidative ATP production and consumption using extracellular flux measurements (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30097494/"
+            },
+            {
+              "label": "Ultrasensitive Genetically Encoded Indicator for Hydrogen Peroxide Identifies Roles for the Oxidant in Cell Migration and Mitochondrial Function (2020)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32130885/"
+            },
+            {
+              "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+            },
+            {
+              "label": "Resistance to neoadjuvant chemotherapy in triple-negative breast cancer mediated by a reversible drug-tolerant state (2019)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30996079/"
+            },
+            {
+              "label": "Complex I inhibitor of oxidative phosphorylation in advanced solid tumors and acute myeloid leukemia: phase I trials (2023)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36658425/"
+            },
+            {
+              "label": "The contributions of respiration and glycolysis to extracellular acid production (2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25449966/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Source identity and scope, PMID 26709455",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
+            },
+            {
+              "label": "Source identity and scope, PMID 28270511",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
+            },
+            {
+              "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
+            },
+            {
+              "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
+            },
+            {
+              "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
+              "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+            },
+            {
+              "label": "Assessing mitochondrial dysfunction in cells (2011 methods review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21726199/"
+            },
+            {
+              "label": "Mitochondrial ATP synthase: architecture, function and pathology (2012 ATP-synthase review)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21874297/"
+            },
+            {
+              "label": "Quantifying intracellular rates of glycolytic and oxidative ATP production and consumption using extracellular flux measurements (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30097494/"
+            },
+            {
+              "label": "Ultrasensitive Genetically Encoded Indicator for Hydrogen Peroxide Identifies Roles for the Oxidant in Cell Migration and Mitochondrial Function (2020)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32130885/"
+            },
+            {
+              "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+            },
+            {
+              "label": "Resistance to neoadjuvant chemotherapy in triple-negative breast cancer mediated by a reversible drug-tolerant state (2019)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30996079/"
+            },
+            {
+              "label": "Complex I inhibitor of oxidative phosphorylation in advanced solid tumors and acute myeloid leukemia: phase I trials (2023)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36658425/"
+            },
+            {
+              "label": "The contributions of respiration and glycolysis to extracellular acid production (2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25449966/"
+            },
+            {
+              "label": "OpenStax Biology 2e 4.3: two mitochondrial membranes and their compartments",
+              "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+            }
+          ],
+          "beforeSha256": "d17655fca2abcf88ed5ba515756fb438ca17374b0948c300243bb6bbd0b80cf9",
+          "afterSha256": "c8c4186f70227fb6f691fdecbf8a8e22fe124a28a70302dc1b5d5ba7ebecf4ed"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-12",
+          "after": "2026-11-14",
+          "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "purpose": "Append source-checked explanatory detail after full source-first comparison; earlier teaching and arrays retained in order.",
+      "before": {
+        "id": "oxidative-phosphorylation",
+        "kind": "term",
+        "name": "Oxidative phosphorylation",
+        "aka": [],
+        "tldr": "Oxygen use and cellular energy production are related measurements. Researchers need controlled experiments to work out how much energy a cell produces through mitochondrial respiration.",
+        "summary": "Extracellular flux methods estimate respiratory and glycolytic contributions to energy production under defined assumptions. A respiratory message, measured oxygen use, calculated energy output and dependence for survival are distinct claims. Normalisation, fuel, viable-cell input, collection time and the specified method version belong with a result. Electron transport, proton pumping, return through ATP synthase and uncoupling are distinct steps. The mitochondrial matrix and intermembrane space locate the two sides of the inner membrane; naming these compartments does not supply a universal conversion ratio.",
+        "asOf": "2026-11-12",
+        "links": [
+          {
+            "label": "Source identity and scope, PMID 26709455",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
+          },
+          {
+            "label": "Source identity and scope, PMID 28270511",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
+          },
+          {
+            "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
+          },
+          {
+            "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
+          },
+          {
+            "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
+            "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+          },
+          {
+            "label": "Assessing mitochondrial dysfunction in cells (2011 methods review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21726199/"
+          },
+          {
+            "label": "Mitochondrial ATP synthase: architecture, function and pathology (2012 ATP-synthase review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21874297/"
+          },
+          {
+            "label": "Quantifying intracellular rates of glycolytic and oxidative ATP production and consumption using extracellular flux measurements (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30097494/"
+          },
+          {
+            "label": "Ultrasensitive Genetically Encoded Indicator for Hydrogen Peroxide Identifies Roles for the Oxidant in Cell Migration and Mitochondrial Function (2020)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32130885/"
+          },
+          {
+            "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+          },
+          {
+            "label": "Resistance to neoadjuvant chemotherapy in triple-negative breast cancer mediated by a reversible drug-tolerant state (2019)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30996079/"
+          },
+          {
+            "label": "Complex I inhibitor of oxidative phosphorylation in advanced solid tumors and acute myeloid leukemia: phase I trials (2023)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36658425/"
+          },
+          {
+            "label": "The contributions of respiration and glycolysis to extracellular acid production (2015)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25449966/"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+          "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+          "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. These directions do not specify a fixed proton-to-ATP ratio. Protons return from the intermembrane space to the matrix through the membrane-embedded Fo part of ATP synthase. The matrix-facing F1 part uses the transferred energy to make ATP from ADP and inorganic phosphate. Protons provide the driving force; they are not converted into ATP. A parallel proton leak bypasses ATP synthase and dissipates the gradient. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
+          "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred.",
+          "In a fictional paired-well example, culture A uses 180 picomoles of oxygen per minute with 30,000 viable cells and B uses 120 with 20,000. Both equal 60 per minute per 10,000 viable cells. After ATP-synthase blockade their corresponding normalised rates are 30 and 40, giving inhibitor-sensitive differences of 30 and 20 picomoles of oxygen per minute per 10,000 cells. Those are oxygen-rate differences, not ATP-production rates or proof of survival dependence. Cell number, fuel, oxygen, timing and the inhibitor controls matter. A corrected, specified conversion method needs additional assumptions; the 2018 Mookerjee correction changed calculations by up to 17 per cent. General oxidation, compartment-specific reactive chemistry and iron-dependent lipid death remain separate questions.",
+          "Echeverria 2019 treated three patient-derived triple-negative breast cancer xenograft models with doxorubicin and cyclophosphamide. Barcode structure was broadly maintained at the residual nadir; regrowth could select dominant barcodes, so this does not exclude all clonal selection. In PIM001-P, the RNA analysis highlighted oxidative phosphorylation and isolated residual cells had higher oxygen consumption and lower extracellular acidification than untreated cells. Those rate measurements were not obtained in every model. IACS-010759 delayed regrowth after chemotherapy in the three tested models, rather than eradicating the tumours. Regrown models could again respond to chemotherapy. Two serial human biopsy cases supported stability during initial AC but did not establish invariant clones through all subsequent treatment. Rate, state, perturbation response and clinical benefit remain distinct evidence.",
+          "Yap 2023 reported phase 1 IACS-010759 studies in 17 people with acute myeloid leukaemia and 23 with advanced solid tumours. Elevated blood lactate and neurotoxicity limited exposure needed for sustained complex-I inhibition; target inhibition was modest, antitumour activity limited, no recommended phase 2 dose was established and both studies were discontinued. These named safety and exposure results separate a model vulnerability from a usable treatment. A respiratory RNA signature plus a lower ATP-based signal still establishes neither increased oxygen-consumption rate nor counted cell death. Measure identified viable cells, normalised oxygen use, engagement and independent growth or death outcomes. Acidification can include respiratory carbon dioxide as well as glycolysis, and lactate production with oxygen can coexist with respiration."
+        ],
+        "category": "Cancer biology"
+      },
+      "after": {
+        "id": "oxidative-phosphorylation",
+        "kind": "term",
+        "name": "Oxidative phosphorylation",
+        "aka": [],
+        "tldr": "Oxygen use and cellular energy production are related measurements. Researchers need controlled experiments to work out how much energy a cell produces through mitochondrial respiration.",
+        "summary": "Extracellular flux methods estimate respiratory and glycolytic contributions to energy production under defined assumptions. A respiratory message, measured oxygen use, calculated energy output and dependence for survival are distinct claims. Normalisation, fuel, viable-cell input, collection time and the specified method version belong with a result. Electron transport, proton pumping, return through ATP synthase and uncoupling are distinct steps. The mitochondrial matrix and intermembrane space locate the two sides of the inner membrane; naming these compartments does not supply a universal conversion ratio.",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Source identity and scope, PMID 26709455",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26709455/"
+          },
+          {
+            "label": "Source identity and scope, PMID 28270511",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28270511/"
+          },
+          {
+            "label": "Racker and Stoeckenius 1974: proton-pumping vesicle reconstitution",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/4272126/"
+          },
+          {
+            "label": "Mookerjee et al. 2018 correction to the ATP-rate method",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6093231/"
+          },
+          {
+            "label": "OpenStax Biology 2e 7.4: mitochondrial oxidative phosphorylation (educational source)",
+            "url": "https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation"
+          },
+          {
+            "label": "Assessing mitochondrial dysfunction in cells (2011 methods review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21726199/"
+          },
+          {
+            "label": "Mitochondrial ATP synthase: architecture, function and pathology (2012 ATP-synthase review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21874297/"
+          },
+          {
+            "label": "Quantifying intracellular rates of glycolytic and oxidative ATP production and consumption using extracellular flux measurements (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30097494/"
+          },
+          {
+            "label": "Ultrasensitive Genetically Encoded Indicator for Hydrogen Peroxide Identifies Roles for the Oxidant in Cell Migration and Mitochondrial Function (2020)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32130885/"
+          },
+          {
+            "label": "Ferroptosis: an iron-dependent form of nonapoptotic cell death (2012)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22632970/"
+          },
+          {
+            "label": "Resistance to neoadjuvant chemotherapy in triple-negative breast cancer mediated by a reversible drug-tolerant state (2019)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30996079/"
+          },
+          {
+            "label": "Complex I inhibitor of oxidative phosphorylation in advanced solid tumors and acute myeloid leukemia: phase I trials (2023)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36658425/"
+          },
+          {
+            "label": "The contributions of respiration and glycolysis to extracellular acid production (2015)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25449966/"
+          },
+          {
+            "label": "OpenStax Biology 2e 4.3: two mitochondrial membranes and their compartments",
+            "url": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [],
+        "sections": [],
+        "technologies": [],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Respiration and ATP generation are related but different measurements. Mitochondrial and nonmitochondrial oxygen consumption, proton leak and ATP-linked respiration require controlled separation. Respiratory transcripts, normalised oxygen-consumption rates and survival dependence cannot substitute for one another; bulk tissue composition and compensatory fuel use also matter. Oxygen-consumption assays require viable cells or functional preparations rather than routine fixed sections and use or perturb the tested material. Report oxygen per time with justified viable-cell or protein normalisation. Equal baseline respiration and different responses to ATP-synthase inhibition do not by themselves identify which culture will die.",
+          "The fictional oxygen-rate example gives 60 minus 30 = 30 picomoles of oxygen per minute per 10,000 viable cells after ATP-synthase inhibition. This is an inhibitor-sensitive oxygen-rate difference, not picomoles of ATP, a death percentage or a corrected ATP-production calculation. Fuel, normalisation and assay controls remain attached.",
+          "In mitochondria, respiratory electron transfer and proton movement are distinct processes. Some respiratory complexes move protons from the matrix into the intermembrane space; return through ATP synthase can support ATP formation, while other return pathways dissipate the gradient without that synthesis step. These directions do not specify a fixed proton-to-ATP ratio. Protons return from the intermembrane space to the matrix through the membrane-embedded Fo part of ATP synthase. The matrix-facing F1 part uses the transferred energy to make ATP from ADP and inorganic phosphate. Protons provide the driving force; they are not converted into ATP. A parallel proton leak bypasses ATP synthase and dissipates the gradient. In Racker and Stoeckenius' reconstituted vesicles, a light-driven membrane system from Halobacterium supported ATP formation when mitochondrial ATPase was included. Their artificial vesicles pumped in the opposite direction to the intact source cells, so the experiment supports coupling without specifying a universal cellular orientation or ratio.",
+          "Extracellular acidification can include respiration-derived carbon dioxide as well as glycolytic acid production. Keep correction assumptions, normalisation and method version with any calculated ATP rate. The 2018 correction to Mookerjee and colleagues' 2017 method changes the ATP-linked oxygen-rate equation and reports use of a different hyperpolarization factor in some calculations; several numerical rates changed while the authors retained their qualitative conclusions. An inhibitor-sensitive oxygen-rate difference is therefore not itself an ATP rate, and an unversioned fixed conversion should not be inferred.",
+          "In a fictional paired-well example, culture A uses 180 picomoles of oxygen per minute with 30,000 viable cells and B uses 120 with 20,000. Both equal 60 per minute per 10,000 viable cells. After ATP-synthase blockade their corresponding normalised rates are 30 and 40, giving inhibitor-sensitive differences of 30 and 20 picomoles of oxygen per minute per 10,000 cells. Those are oxygen-rate differences, not ATP-production rates or proof of survival dependence. Cell number, fuel, oxygen, timing and the inhibitor controls matter. A corrected, specified conversion method needs additional assumptions; the 2018 Mookerjee correction changed calculations by up to 17 per cent. General oxidation, compartment-specific reactive chemistry and iron-dependent lipid death remain separate questions.",
+          "Echeverria 2019 treated three patient-derived triple-negative breast cancer xenograft models with doxorubicin and cyclophosphamide. Barcode structure was broadly maintained at the residual nadir; regrowth could select dominant barcodes, so this does not exclude all clonal selection. In PIM001-P, the RNA analysis highlighted oxidative phosphorylation and isolated residual cells had higher oxygen consumption and lower extracellular acidification than untreated cells. Those rate measurements were not obtained in every model. IACS-010759 delayed regrowth after chemotherapy in the three tested models, rather than eradicating the tumours. Regrown models could again respond to chemotherapy. Two serial human biopsy cases supported stability during initial AC but did not establish invariant clones through all subsequent treatment. Rate, state, perturbation response and clinical benefit remain distinct evidence.",
+          "Yap 2023 reported phase 1 IACS-010759 studies in 17 people with acute myeloid leukaemia and 23 with advanced solid tumours. Elevated blood lactate and neurotoxicity limited exposure needed for sustained complex-I inhibition; target inhibition was modest, antitumour activity limited, no recommended phase 2 dose was established and both studies were discontinued. These named safety and exposure results separate a model vulnerability from a usable treatment. A respiratory RNA signature plus a lower ATP-based signal still establishes neither increased oxygen-consumption rate nor counted cell death. Measure identified viable cells, normalised oxygen use, engagement and independent growth or death outcomes. Acidification can include respiratory carbon dioxide as well as glycolysis, and lactate production with oxygen can coexist with respiration.",
+          "A mitochondrion has an outer membrane and a folded inner membrane. The space between them is the intermembrane space; the matrix is enclosed by the inner membrane. Each membrane is a phospholipid bilayer, with two leaflets rather than being a single leaflet of a shared membrane. Electron transfer ends with oxygen reduced to water, while some complexes pump protons across the inner membrane. These distinct processes do not give a universal conversion from oxygen use to ATP production."
+        ],
+        "category": "Cancer biology"
+      }
+    }
+  ],
+  "derivedChanges": [],
+  "newIds": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "notesAdded": 4,
+  "sourceLinksAdded": 5,
+  "earlierNotesAndLinksPreservedInOrder": true
+}

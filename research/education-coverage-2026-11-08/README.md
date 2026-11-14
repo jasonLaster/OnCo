@@ -8,6 +8,16 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
+The [cancer-biology authoring-body checkpoint](scientific-authoring-bodies-11-2026-11-13/README.md) classifies all 72 remaining cancer-biology paths at both pins: 26 teaching bodies/bundles and 46 supporting records. All 67 loose bodies and the 104 actual members of five ZIPs were assessed: 154 distinct text bodies, 298 fully read chunks, nine exact-byte duplicate reuses and eight freshly viewed complete native SVGs. Both versions of every assigned path are retained; all 72 pairs are byte-identical.
+
+The source-first inventory holds 121 scientific requirements and 12 separate custody checks, followed by three separately frozen native requirements. All 124 scientific rows have scoped current-field proofs through 117 exact anchors and 214 references. Four existing owners gain one paragraph each: repair completion, replication-fork layout, SREBP transport and mitochondrial membranes. Data commit 5844bf9731934b61cacaa79343547207be8bc0cf adds four notes, five source links and four actual UTC checked dates; no id, module, alias or relation is added. The 227 earlier active array bindings are rebound without altering earlier quotes, order, scientific grades or source depths.
+
+Fresh TypeScript, lint, validation and the full 293-file suite pass: 3,101 tests, two skipped. Forty-four actual EntityDetail SSR readers contain all 117 anchors; exact entity JSON and 272 Markdown passage checks pass, with OpenAPI/context generation and dedupe. The 396 current short-summary observations have 68 inherited texts and 328 English fallbacks; no long-cache or named review is accepted. Native views and static exports do not supply browser, hydration, accessibility or hosted acceptance.
+
+Original asset scopes are now 792 teaching/187 supporting/909 unclassified; later scopes are 791/187/910. The 135 registered selection receipts and 138 pending files select 702 existing canonical ids: 180 absent from the original baseline and 522 present there. Selection is not authorship, and this cohort creates no record. All 137 earlier pending files and 1,453 earlier cohort files remain byte-identical. Ordinary-source counts remain 6,816/6,827 with eleven open and 519 complete original draft representations, and 7,286/7,302 with sixteen open and 529 complete later draft representations. The 49 open adjacent groups and six schema findings remain explicit. Main/live, independent, expert, owner, learner and language acceptance remain zero. The broader goal is active; no merge or deployment occurred.
+
+### Earlier protein, DNA and signalling checkpoint
+
 The [protein, DNA and signalling asset checkpoint](scientific-authoring-bodies-10-2026-11-13/README.md) classifies all 48 remaining biology-basics paths per pin: 34 teaching paths and 14 supporting records. It completes 26 loose-body reads and 16 archive-member assessments, with 68 fresh chunks and eight earlier full member reads reused by exact byte identity. All 20 assigned native light/dark files were freshly viewed at full extent.
 
 Forty-one scientific requirements have 39 exact field anchors and 84 proof references. Five historical citation checks and one drawing-convention row receive no teaching credit. Two existing records gain connected paragraphs: receptor routes and phosphorylation measurements. Data commit caf6167a0336fa9c72569a822816735aa2da529a adds two notes, five checked source links and two UTC checked dates; it adds no id, module, alias or relation. All earlier notes and links retain their order. The 24 active field bindings are explicitly rebound without changing an earlier quote, scientific grade or source depth.
@@ -328,7 +338,8 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-delivery-source-residuals-03-root.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-08-root.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-09-root.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-10-root.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-10-root.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-11-root.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

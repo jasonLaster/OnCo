@@ -1,0 +1,1255 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.01
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.46
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.03
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.47
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "fullSuiteFilesPassed": 293,
+  "fullSuiteTestsPassed": 3101,
+  "fullSuiteTestsSkipped": 2,
+  "initialFailedVariant": {
+    "initialFullSuite": {
+      "filesPassed": 292,
+      "filesFailed": 1,
+      "testsPassed": 3100,
+      "testsFailed": 1,
+      "testsSkipped": 2,
+      "failure": "Simplified-English part-o entry must be under 200 characters",
+      "changedEntry": "absolute-benefit-simple",
+      "oldCharacters": 259
+    },
+    "correctedCharacters": 194,
+    "correctedTextSHA256": "3c03aae0b556880c140b6348933f69ad6aa17b3b076371ef34e454835959ca6f",
+    "floorsBudgetsTestsOrAllowlistsChanged": false,
+    "fullGatesMustBeRepeated": true
+  },
+  "exactReaderAnchors": {
+    "anchors": [
+      {
+        "unit": "SB27-001",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "8a60c207194dfd2609db765431dfd160933100a187cc1e8ba9b97a9aad3d62dc",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-002",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7eeedd0f9dd4e9d203210e95b0b86b494c2e72d42b6b17a5c13f123015b1d339",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-003",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7eeedd0f9dd4e9d203210e95b0b86b494c2e72d42b6b17a5c13f123015b1d339",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-004",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "8a60c207194dfd2609db765431dfd160933100a187cc1e8ba9b97a9aad3d62dc",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-004",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7eeedd0f9dd4e9d203210e95b0b86b494c2e72d42b6b17a5c13f123015b1d339",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-004",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "971487b3c24aa3d45778d2a298fa615cbdbaaa616bdcb3f1a45f7bae010fc8a6",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-005",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "544eb5336affa4c0474febabd86233c7d51e8e1abc1a3c54e1613fb3c51ea23e",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-006",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "544eb5336affa4c0474febabd86233c7d51e8e1abc1a3c54e1613fb3c51ea23e",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-006",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "88f643ebc984f8ce1543c06b2927be77a92f68faf41f99584a01ba7a6b1d02ff",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-007",
+        "recordId": "absolute-benefit",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "971487b3c24aa3d45778d2a298fa615cbdbaaa616bdcb3f1a45f7bae010fc8a6",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-007",
+        "recordId": "absolute-benefit",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "9b3edcd636e8876392a3b1de88b92d33c8cd5b59bc320f3ae3a0689844ae7ba8",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-008",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "7dad134c9cdc29d151381896172f293b273ad32073b5a70e20a2d23bfc228455",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-008",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "4e153f7623656ea9e41ff91c142ec73164965b70e5cc93a95aaf72f0fff3c3df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-009",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "4e153f7623656ea9e41ff91c142ec73164965b70e5cc93a95aaf72f0fff3c3df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-010",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "4e153f7623656ea9e41ff91c142ec73164965b70e5cc93a95aaf72f0fff3c3df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-011",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "7dad134c9cdc29d151381896172f293b273ad32073b5a70e20a2d23bfc228455",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-011",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "4e153f7623656ea9e41ff91c142ec73164965b70e5cc93a95aaf72f0fff3c3df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-012",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "00f2a8d97b32228b6affd367cc147a47525f8968d4280ca043e3e6276a611c88",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-013",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "00f2a8d97b32228b6affd367cc147a47525f8968d4280ca043e3e6276a611c88",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-014",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "7dad134c9cdc29d151381896172f293b273ad32073b5a70e20a2d23bfc228455",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-014",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "d15ca5a9d99994f91910cc1d1b7dc79de5686ab842a2c9659d1ad96644a0ef5d",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-015",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "7a9f266f2663fed2f14f2cd3e63a8695e44aa0e1c886db30127ed38666ebccdf",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-016",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "fffaf5bc4ca42318e5f67dcedbe920b415b6ff2ceb920bdb1aa590f28ebc6a51",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-017",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "fffaf5bc4ca42318e5f67dcedbe920b415b6ff2ceb920bdb1aa590f28ebc6a51",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-018",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "95c52655916edd5ffea051283eb48ec7799dd202cd5d8af7619b71e52c8e9b70",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-018",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "fffaf5bc4ca42318e5f67dcedbe920b415b6ff2ceb920bdb1aa590f28ebc6a51",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-019",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "7a9f266f2663fed2f14f2cd3e63a8695e44aa0e1c886db30127ed38666ebccdf",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-019",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "95c52655916edd5ffea051283eb48ec7799dd202cd5d8af7619b71e52c8e9b70",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-019",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "fb043abf14badf2ad47eb8b2adeb231e5941966ac21e1707f205965928a6b206",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-020",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "95c52655916edd5ffea051283eb48ec7799dd202cd5d8af7619b71e52c8e9b70",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-020",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "fffaf5bc4ca42318e5f67dcedbe920b415b6ff2ceb920bdb1aa590f28ebc6a51",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-020",
+        "recordId": "hazard-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "cc5b907c31bdfa5c95d4fb65d916646eeab6317c88fb0ddce2b9348eadf0760c",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-021",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "e5a35014cd6f7c80d8010b11d4e748481dcad15d1ed11bb6df539a10830e679d",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-022",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "e5a35014cd6f7c80d8010b11d4e748481dcad15d1ed11bb6df539a10830e679d",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-023",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "b9061708eaa656cd4ea581d224ada961c668d33627c7bb655fd1ec7ac3648905",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-024",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "4de7cbe5a9452505ce7350d38490c0105a18ce68c6953efa8c3e3ce9b8bb9f36",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-024",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "40c23642763fa18de30c9e90a69c3e4e5132f0ca8a84656e422174b4d743ef47",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-025",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "b9061708eaa656cd4ea581d224ada961c668d33627c7bb655fd1ec7ac3648905",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-026",
+        "recordId": "odds-ratio",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "8ac6b46da350ebec1b8e7b20d75dc28b6dd2be870d4ab490ab8522ec1bac1225",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-026",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "4de7cbe5a9452505ce7350d38490c0105a18ce68c6953efa8c3e3ce9b8bb9f36",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-026",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "40c23642763fa18de30c9e90a69c3e4e5132f0ca8a84656e422174b4d743ef47",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-026",
+        "recordId": "odds-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "b9061708eaa656cd4ea581d224ada961c668d33627c7bb655fd1ec7ac3648905",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-027",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "c4218db2f7a424ed54ed7f4c5df255470627daefad0d033a85bbe2cc621cb380",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-027",
+        "recordId": "statistical-significance",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "2ac4897ffaf82ad62c96d977f7ec32ea9d3a24f27382fe486acb5aa9b158ddbb",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-028",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "c4218db2f7a424ed54ed7f4c5df255470627daefad0d033a85bbe2cc621cb380",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-028",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "061adfbe23567a0924729d536b3272fb340b6ea2a2910e022ad00ce22d66d665",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-028",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7d883d76e335b812043868f4debb01bd222e5a0fd35c6dae712eb6a9029434be",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-029",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7d883d76e335b812043868f4debb01bd222e5a0fd35c6dae712eb6a9029434be",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-030",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "061adfbe23567a0924729d536b3272fb340b6ea2a2910e022ad00ce22d66d665",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-030",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7d883d76e335b812043868f4debb01bd222e5a0fd35c6dae712eb6a9029434be",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-030",
+        "recordId": "false-discovery-rate",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "b69fbbca73e4ddb87f05cefd7c5fcfe680d28e73f490d1641be5cd5d15d761e4",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-031",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "7d883d76e335b812043868f4debb01bd222e5a0fd35c6dae712eb6a9029434be",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-031",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "ed2ee048f4a1223331b36c871eab76520c84079067b0c462c32998b6e91471df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-032",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "ed2ee048f4a1223331b36c871eab76520c84079067b0c462c32998b6e91471df",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-032",
+        "recordId": "confidence-interval",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "00f2a8d97b32228b6affd367cc147a47525f8968d4280ca043e3e6276a611c88",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-032",
+        "recordId": "statistical-significance",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "318a3f202b965cb9e9d1d62e20de35ce0d933d01e3524b16e00604e4715431c9",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-033",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "c4218db2f7a424ed54ed7f4c5df255470627daefad0d033a85bbe2cc621cb380",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB27-033",
+        "recordId": "p-value",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "ed2ee048f4a1223331b36c871eab76520c84079067b0c462c32998b6e91471df",
+        "exactDecodedReaderContainment": true
+      }
+    ],
+    "count": 58,
+    "allPass": true,
+    "sourceURLsAllPresent": true,
+    "hostedBrowserOrHydrationCheck": false
+  },
+  "staticExports": {
+    "records": 9,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "absolute-benefit",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "absolute-benefit",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "confidence-interval",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio-basics",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hazard-ratio-basics",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "odds-ratio",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "p-value",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "false-discovery-rate",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "false-discovery-rate",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "false-discovery-rate",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "false-discovery-rate",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "false-discovery-rate",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "non-inferiority-margin",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "statistical-significance",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "statistical-significance",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "absolute-benefit.json",
+        "bytes": 9601,
+        "sha256": "709bfbe264eb5b5e984f480c5d999a14381d4beb6aea4e3afd62e4a4d49d8c75"
+      },
+      {
+        "file": "absolute-benefit.md",
+        "bytes": 8502,
+        "sha256": "7197944a90dfb8e9c61d985c5334973b79c65f9fd0c32b4ef61aa85269eb0df7"
+      },
+      {
+        "file": "confidence-interval.json",
+        "bytes": 7308,
+        "sha256": "adbd1669d2e5b1044d97c87eed7da339700c411362eaa0d0f70e0ad304b2aca3"
+      },
+      {
+        "file": "confidence-interval.md",
+        "bytes": 6165,
+        "sha256": "288e2b3af4609508bc39018ba87367ce0f546100eb89d902ae0a17b11741f1a8"
+      },
+      {
+        "file": "hazard-ratio.json",
+        "bytes": 21587,
+        "sha256": "4ea4734053560ea78e7aa3cc14f5eb25daa47cbe91f5308c630e7c365f07e0d4"
+      },
+      {
+        "file": "hazard-ratio.md",
+        "bytes": 16803,
+        "sha256": "ef1b401d1dab82083e970d3a26a29947f1383bbfe42cfe010d5516b7a2d8d3fb"
+      },
+      {
+        "file": "hazard-ratio-basics.json",
+        "bytes": 2723,
+        "sha256": "5f3ec538735719743656e4941ccaaea6b5310e2a24d5790b30c8ac1e2a59faea"
+      },
+      {
+        "file": "hazard-ratio-basics.md",
+        "bytes": 2171,
+        "sha256": "5d2647adfd90bb51c31f2b0a44e35a656cd83095ce325100e118d1c22e429e83"
+      },
+      {
+        "file": "odds-ratio.json",
+        "bytes": 4949,
+        "sha256": "4f7c5587a451102e448733600764819ac1d3f1cb77e365a9a7ee1aaf6bd2a79a"
+      },
+      {
+        "file": "odds-ratio.md",
+        "bytes": 4483,
+        "sha256": "012c0502695789b59116be599b182075ed95ca487561f4ebd0ad34f84b25c003"
+      },
+      {
+        "file": "p-value.json",
+        "bytes": 6934,
+        "sha256": "4b2633bd1260bb604a546fc699191bddb504b72a2939494d81236091f9a64e90"
+      },
+      {
+        "file": "p-value.md",
+        "bytes": 6187,
+        "sha256": "ab6dff0d1b9a2e01530e637372bb3502332c319dc32232f59dc3334674778cdb"
+      },
+      {
+        "file": "false-discovery-rate.json",
+        "bytes": 4218,
+        "sha256": "7866bb122a402a64c8e59a595f562db06432f3dea70a118be74676ca809b016a"
+      },
+      {
+        "file": "false-discovery-rate.md",
+        "bytes": 3849,
+        "sha256": "6c0381039e7f84366713ee5e292fe6175b28c33b6e7c83273ab4b0d897862120"
+      },
+      {
+        "file": "non-inferiority-margin.json",
+        "bytes": 10111,
+        "sha256": "6c36fbc3b2696afd7920e18233a7b5786e79afd1983d94fe45e88cf06e6bba98"
+      },
+      {
+        "file": "non-inferiority-margin.md",
+        "bytes": 8872,
+        "sha256": "55d3317af3f4b64624c814fed4c5bdc97d818407c4bb1c63b33c908cd5badd7d"
+      },
+      {
+        "file": "statistical-significance.json",
+        "bytes": 4821,
+        "sha256": "bc76da5696eef1d3b45718c414991ee314d747fd3550e67beb77e19d60134831"
+      },
+      {
+        "file": "statistical-significance.md",
+        "bytes": 3817,
+        "sha256": "ceeecc2513c9c02cc1df087096cf85f4566de95b5af3574be1a2be9c59b54b55"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "totalRootMarkdownPassages": 50,
+  "exportGeneration": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 29.94
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.79
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.48
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.18
+    }
+  ],
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "newStaticAPIOpenAPIAndContextGeneration": true,
+  "summaryConsumers": {
+    "changedShortEntries": 11,
+    "consumerFiles": 10,
+    "literalChecks": [
+      {
+        "file": "src/data/i18n/zh.ts",
+        "changedEntries": 2,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/simple/part-o.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/ar.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/de.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/es.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/fr.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/hi.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/ja.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/i18n/pt.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      },
+      {
+        "file": "src/data/simple/part-j.ts",
+        "changedEntries": 1,
+        "allOtherFileBytesUnchanged": true
+      }
+    ],
+    "checks": [
+      {
+        "id": "absolute-benefit-zh",
+        "canonicalRecordId": "absolute-benefit",
+        "language": "zh",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "427a26413b1f84c48ef8efc369f5fd137fbb98bc4daf282d83d53ca16063af42",
+        "fullReaderAfterSHA256": "a4d42640b707eb5baf425bdde3081edeee9bf521f42fe5c687bff5eafb986bc2",
+        "actualTldrFragmentSHA256": "33cc7490b5efc17a8be0fc1bf1fe867fd8713ed7605dcbf38b9a259e29849a49",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "absolute-benefit-simple",
+        "canonicalRecordId": "absolute-benefit",
+        "language": "simple",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "47caa40fce66e2e39c1c6e00bf46dac877bc11a50102b8f69a7a7ecccde0aa4d",
+        "fullReaderAfterSHA256": "633ae5c78cd145b1a0832519adef28f7dd29f7e800461ed2e8c5ab4f4ac11395",
+        "actualTldrFragmentSHA256": "3d7392ef44b3806fb39404ce689b3352eef6adc29a8a3124414ccb420ec0a234",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": null,
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-ar",
+        "canonicalRecordId": "statistical-significance",
+        "language": "ar",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "4d2020423b4efb60180e0c9546e175754709344bdb1c66ce67f9dd2d477e1c33",
+        "fullReaderAfterSHA256": "4b54d37b009f66abd1ed342c2a2286df6b0e43b3baab733c78fbdb339877cedc",
+        "actualTldrFragmentSHA256": "5bacf3cde7b855efdcc2b83061420a9e6714fbfacc7be32ff332cbe54e7d708c",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-de",
+        "canonicalRecordId": "statistical-significance",
+        "language": "de",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "2348675337b0c3d468b860e9c0c1c0db3437171e93de0775a60b69ede2dc3565",
+        "fullReaderAfterSHA256": "da84919cf56d389576ff1031063abc4f654748200475f2d5270ca252a8d3456a",
+        "actualTldrFragmentSHA256": "622273f937b5382f03c703c56413034a9be063c8b6935ea05204d82a791cbbb6",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-es",
+        "canonicalRecordId": "statistical-significance",
+        "language": "es",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "c10e0bd0b5dbfe9e3e66d5fffa600c9692ab88c0ac6c65345d5e3c2da9c30b88",
+        "fullReaderAfterSHA256": "a6cb423a8fbf13c94dbd05a7b75c540c240f54f30c1093b5d984480780cbfeff",
+        "actualTldrFragmentSHA256": "15304cd1c70d5a7feded179e7d942cf62a6cbfc05ddbd7e5142cc3d069c1f171",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-fr",
+        "canonicalRecordId": "statistical-significance",
+        "language": "fr",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "a78ecdc0b8706b1233ffc02143e87dd3c9418b3cc59bb511c180c2590294d2aa",
+        "fullReaderAfterSHA256": "dbd9f7d9e03bf92e4a87d512196c95a052021972f24f4fdd6930fd1a794f892a",
+        "actualTldrFragmentSHA256": "6eceb0057937bdfc0745a3ac4542310ab0e9bd43cbdddb73d90d6c7cbbd9e315",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-hi",
+        "canonicalRecordId": "statistical-significance",
+        "language": "hi",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "a3da62bc3e8e8ea4c7f7d2a1ffff5a1a52a9debabe3c7363d52fe7012f6cf486",
+        "fullReaderAfterSHA256": "1e207d0598fffbc9d0987b2e46ad9b338062bb3161d1f984b31645c0351c956a",
+        "actualTldrFragmentSHA256": "f6925fbd2c1a84fc023b2e9a021943ca7f577ee0b95188987b4f214d57186cf7",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-ja",
+        "canonicalRecordId": "statistical-significance",
+        "language": "ja",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "073988f9351225f413d458e66ac33dec1c6237ed64ed05d4dbef7212c9491a10",
+        "fullReaderAfterSHA256": "ae69ed1ad099de99e746996cd026dd233b09d5dc4d3ba623b08697b763494c31",
+        "actualTldrFragmentSHA256": "e38d22b9d9da7563f61e36917d9d91a068e8d828f60c29941192bea619f8fffc",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-pt",
+        "canonicalRecordId": "statistical-significance",
+        "language": "pt",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "9c3fc86a0527382387e9a482727339a877caea072292a7d0ed59d362e280f0b5",
+        "fullReaderAfterSHA256": "83d473604d13b943b4db87fd27cd2e99bc85eb6f9bb97ec8e67fa103203a4f16",
+        "actualTldrFragmentSHA256": "75bede5cada6a1adefb6e1e7c7066fe1cfa42043415d154bebaadf846affe70a",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-zh",
+        "canonicalRecordId": "statistical-significance",
+        "language": "zh",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "cf4e7cc04561ec8b0091e7ff6234e545900e3133c606fb42a3ebe4342be6e7ae",
+        "fullReaderAfterSHA256": "315c47d4eaa298fafb995805a59e78fb5adccd9f64697c1f5c6e7be2d7965486",
+        "actualTldrFragmentSHA256": "5a9194858c1b403dbe2a791289974ca1cd074fbebd9674d6f2483d6bca67f722",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0
+      },
+      {
+        "id": "statistical-significance-simple",
+        "canonicalRecordId": "statistical-significance",
+        "language": "simple",
+        "actualSelectedTableValueMatches": true,
+        "fullReaderBeforeSHA256": "2066e40c6c290609862d7a17a588d7c64d76dc2617c1c2161701138927ee1b7e",
+        "fullReaderAfterSHA256": "6e1e12365faa6560ccbb75bfd799497a0fb19939a70f296319d418efe92f8b46",
+        "actualTldrFragmentSHA256": "1cbdc76ac83487b5f53c9b5527e95a0347a3b78ad7280d44eb1d10442719afb3",
+        "onlySelectedTextChangesInControlledReader": true,
+        "reviewMarkTone": null,
+        "namedNativeReviews": 0
+      }
+    ],
+    "longSummaryLoaderChecks": [
+      {
+        "id": "absolute-benefit",
+        "language": "es",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "zh",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "pt",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "hi",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "fr",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "de",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "ja",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "absolute-benefit",
+        "language": "ar",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "es",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "zh",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "pt",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "hi",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "fr",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "de",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "ja",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      },
+      {
+        "id": "statistical-significance",
+        "language": "ar",
+        "acceptedBefore": false,
+        "acceptedAfter": false
+      }
+    ],
+    "acceptedLongCachesBefore": 0,
+    "acceptedLongCachesAfter": 0,
+    "ordinaryLayerRestored": true,
+    "allOtherDictionaryEntriesUnchanged": true,
+    "machineAssistedUnreviewed": true,
+    "languageReviewStampsChanged": 0,
+    "independentLanguageAcceptance": false,
+    "browserOrHydrationAcceptance": false
+  },
+  "actualCanonicalReaderCaptures": 11,
+  "controlledLayerFullReaderCaptures": 22,
+  "actualTldrFragments": 11,
+  "newNextProductionBuild": false,
+  "newBrowserHydrationAccessibilityAcceptance": false
+}

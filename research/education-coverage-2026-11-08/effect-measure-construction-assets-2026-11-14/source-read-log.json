@@ -1,0 +1,196 @@
+{
+  "completedAtUTC": "2026-11-14T15:06:07.211679+00:00",
+  "completeReturnedAbstracts": [
+    {
+      "sourceId": "neyman",
+      "captureId": "neyman",
+      "abstractSHA256": "9511b4d8bb6d3cddf663ead31b527701df06cb8c5c499cc4b6e0d338e325fd11",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Crossref"
+    },
+    {
+      "sourceId": "cox",
+      "captureId": "cox",
+      "abstractSHA256": "7ff559364ca3cfb3859f30e218064e60375bf2e605498073f01d253adecf9b5e",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Crossref"
+    },
+    {
+      "sourceId": "greenland-1999",
+      "captureId": "greenland-1999-registry",
+      "abstractSHA256": "bae4468767a002061c4d31590c961f70c7ebe0a1cd0561dfa2a0ae17a0bf31d3",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Crossref"
+    },
+    {
+      "sourceId": "bh-1995",
+      "captureId": "bh-1995",
+      "abstractSHA256": "199b062c7c4c43bdc3c18b5df020b8144106cf1b99077ed63311c35ae2130653",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Crossref"
+    },
+    {
+      "sourceId": "cook-sackett",
+      "captureId": "cook-epmc",
+      "abstractSHA256": "61f15ba5895945f6248288326e114df7119e9bd71e621e1ebc671f7c5044d0e6",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Europe PMC"
+    },
+    {
+      "sourceId": "boyd-2012",
+      "captureId": "boyd-2012",
+      "abstractSHA256": "14a94a6bb54d35b3d1b775b0b607790271a795d735300f6c23a8c2ed588a976e",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Europe PMC"
+    },
+    {
+      "sourceId": "greenland-2016",
+      "captureId": "greenland-2016-epmc",
+      "abstractSHA256": "25ab83b940a64e937b5b5bbfacf7d7680bc0ba5daf09a8fd94e2727dc3b4fd6a",
+      "completeReturnedAbstractRead": true,
+      "returnedRegistry": "Europe PMC"
+    }
+  ],
+  "completeReturnedAbstractsRead": 7,
+  "targetedParagraphs": {
+    "greenland-2016": {
+      "captureId": "greenland-2016",
+      "paragraphIndicesZeroBased": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        22,
+        23,
+        25,
+        26,
+        27,
+        28,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    "altman-1998": {
+      "captureId": "altman-1998-html",
+      "paragraphIndicesZeroBased": [
+        7,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "altman-andersen": {
+      "captureId": "altman-andersen-html",
+      "paragraphIndicesZeroBased": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        26,
+        27,
+        29,
+        30,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    "bland-odds": {
+      "captureId": "bland-odds-html",
+      "paragraphIndicesZeroBased": [
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "hernan-2010": {
+      "captureId": "hernan-html",
+      "paragraphIndicesZeroBased": [
+        5,
+        9,
+        11,
+        12,
+        15,
+        16
+      ]
+    }
+  },
+  "targetedUniqueParagraphs": 60,
+  "completePDFTextPages": {
+    "greenland-1999": [
+      1,
+      2,
+      12,
+      13
+    ],
+    "fda-multiple-2022": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      16,
+      17,
+      21
+    ],
+    "fda-noninferiority-2016": [
+      1,
+      5,
+      11,
+      19
+    ]
+  },
+  "completeFDAPDFTextPages": 13,
+  "completeGreenland1999PDFTextPages": 4,
+  "cdcVisibleTextRanges": [
+    {
+      "startZeroBased": 214,
+      "endZeroBased": 238
+    },
+    {
+      "startZeroBased": 589,
+      "endZeroBased": 625
+    },
+    {
+      "startZeroBased": 696,
+      "endZeroBased": 707
+    }
+  ],
+  "wholePaperReads": 0,
+  "wholeGuidanceReads": 0,
+  "pdfPixelViews": 0,
+  "notes": [
+    "All 60 named complete paragraphs actually read; paragraph extraction does not imply reading their enclosing whole paper.",
+    "Cook HTML capture exposes an abstract and scanned-paper links; only the returned abstract is credited.",
+    "NCBI efetch bodies for the four BMJ papers are metadata-only. They are not full-text success. Separate real PMC HTML contains the three named papers’ targeted passages.",
+    "Europe PMC Altman-Andersen HTTP 500 and NIST/ASA 403 failures remain recorded.",
+    "Neyman/Cox newly read only through complete returned Crossref abstracts; no original-paper reading or exact original-abstract completeness claim.",
+    "The 2022 and 2016 FDA documents are dated nonbinding guidance, read at named pages only.",
+    "No FDA 2024 source re-read; no source-depth upgrade for other inherited assertions."
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "fictionalOnly": true,
+  "directSVGGeometryAndArithmetic": {
+    "rows": [
+      {
+        "stem": "absolute-relative-risk-five-years-v1",
+        "theme": "light",
+        "controlGridSymbols": 100,
+        "newGridSymbols": 100,
+        "controlFillCounts": {
+          "#4f6c92": 20,
+          "#fffdf8": 80
+        },
+        "newFillCounts": {
+          "#49756a": 14,
+          "#fffdf8": 86
+        },
+        "ARR": 0.06,
+        "RR": 0.7000000000000001,
+        "RRR": 0.29999999999999993,
+        "NNT": 17,
+        "noPairedBeneficiaries": true
+      },
+      {
+        "stem": "confidence-coverage-precision-v1",
+        "theme": "light",
+        "intervals": [
+          {
+            "p": 0.47,
+            "lower": 0.37217655904641256,
+            "upper": 0.5678234409535874,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.51,
+            "lower": 0.4120196019603921,
+            "upper": 0.6079803980396079,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.43,
+            "lower": 0.33296515265122534,
+            "upper": 0.5270348473487747,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.56,
+            "lower": 0.46270815861543174,
+            "upper": 0.6572918413845683,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.5,
+            "lower": 0.402,
+            "upper": 0.598,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.48,
+            "lower": 0.3820784313851131,
+            "upper": 0.5779215686148869,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.52,
+            "lower": 0.42207843138511314,
+            "upper": 0.6179215686148869,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.46,
+            "lower": 0.3623141033720835,
+            "upper": 0.5576858966279166,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.65,
+            "lower": 0.5565139582611394,
+            "upper": 0.7434860417388607,
+            "coversFixedHalf": false
+          },
+          {
+            "p": 0.54,
+            "lower": 0.4423141033720835,
+            "upper": 0.6376858966279166,
+            "coversFixedHalf": true
+          }
+        ],
+        "selectedCoverageCount": 9,
+        "selectedIntervals": 10,
+        "selectionIsNotCoverageEstimate": true,
+        "lowerIntervals": [
+          {
+            "n": 100,
+            "lower": 0.402,
+            "upper": 0.598
+          },
+          {
+            "n": 10000,
+            "lower": 0.4902,
+            "upper": 0.5098
+          }
+        ],
+        "allDrawnBoundsMatchFormula": true
+      },
+      {
+        "stem": "hazard-versus-accumulated-risk-v1",
+        "theme": "light",
+        "curves": [
+          {
+            "hazardPerYear": 0.1,
+            "vertices": 101,
+            "fiveYearRisk": 0.3934693402873666,
+            "allVerticesMatchExponential": true
+          },
+          {
+            "hazardPerYear": 0.07,
+            "vertices": 101,
+            "fiveYearRisk": 0.29531191028128656,
+            "allVerticesMatchExponential": true
+          }
+        ],
+        "HR": 0.7000000000000001,
+        "fiveYearRiskRatio": 0.7505334724825277,
+        "reciprocalHR": 1.4285714285714284,
+        "oneEventNoCompetingEventAndConstantHazardAssumptions": true
+      },
+      {
+        "stem": "same-counts-risk-and-odds-v1",
+        "theme": "light",
+        "groupASymbols": 100,
+        "groupBSymbols": 100,
+        "groupAFillCounts": {
+          "#bd7480": 40,
+          "#4f7999": 60
+        },
+        "groupBFillCounts": {
+          "#bd7480": 20,
+          "#4f7999": 80
+        },
+        "RR": 2.0,
+        "OR": 2.6666666666666665,
+        "absoluteResponseDifference": 0.2,
+        "adverseExampleRR": 2.0,
+        "adverseExampleOR": 2.25
+      },
+      {
+        "stem": "tested-family-and-any-false-rejection-v1",
+        "theme": "light",
+        "drawers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "bars": [
+          {
+            "tests": 1,
+            "probability": 0.050000000000000044,
+            "drawnFraction": 0.05000000000000005
+          },
+          {
+            "tests": 5,
+            "probability": 0.22621906250000023,
+            "drawnFraction": 0.22621906250000023
+          },
+          {
+            "tests": 20,
+            "probability": 0.6415140775914581,
+            "drawnFraction": 0.6415140775914581
+          }
+        ],
+        "BonferroniTwenty": 0.0025,
+        "BonferroniFifty": 0.001,
+        "independentValidAllNullToyOnly": true,
+        "noEmpiricalResearchErrorRate": true
+      },
+      {
+        "stem": "absolute-relative-risk-five-years-v1",
+        "theme": "dark",
+        "controlGridSymbols": 100,
+        "newGridSymbols": 100,
+        "controlFillCounts": {
+          "#8eb7e4": 20,
+          "#202b35": 80
+        },
+        "newFillCounts": {
+          "#8ec6ae": 14,
+          "#202b35": 86
+        },
+        "ARR": 0.06,
+        "RR": 0.7000000000000001,
+        "RRR": 0.29999999999999993,
+        "NNT": 17,
+        "noPairedBeneficiaries": true
+      },
+      {
+        "stem": "confidence-coverage-precision-v1",
+        "theme": "dark",
+        "intervals": [
+          {
+            "p": 0.47,
+            "lower": 0.37217655904641256,
+            "upper": 0.5678234409535874,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.51,
+            "lower": 0.4120196019603921,
+            "upper": 0.6079803980396079,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.43,
+            "lower": 0.33296515265122534,
+            "upper": 0.5270348473487747,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.56,
+            "lower": 0.46270815861543174,
+            "upper": 0.6572918413845683,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.5,
+            "lower": 0.402,
+            "upper": 0.598,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.48,
+            "lower": 0.3820784313851131,
+            "upper": 0.5779215686148869,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.52,
+            "lower": 0.42207843138511314,
+            "upper": 0.6179215686148869,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.46,
+            "lower": 0.3623141033720835,
+            "upper": 0.5576858966279166,
+            "coversFixedHalf": true
+          },
+          {
+            "p": 0.65,
+            "lower": 0.5565139582611394,
+            "upper": 0.7434860417388607,
+            "coversFixedHalf": false
+          },
+          {
+            "p": 0.54,
+            "lower": 0.4423141033720835,
+            "upper": 0.6376858966279166,
+            "coversFixedHalf": true
+          }
+        ],
+        "selectedCoverageCount": 9,
+        "selectedIntervals": 10,
+        "selectionIsNotCoverageEstimate": true,
+        "lowerIntervals": [
+          {
+            "n": 100,
+            "lower": 0.402,
+            "upper": 0.598
+          },
+          {
+            "n": 10000,
+            "lower": 0.4902,
+            "upper": 0.5098
+          }
+        ],
+        "allDrawnBoundsMatchFormula": true
+      },
+      {
+        "stem": "hazard-versus-accumulated-risk-v1",
+        "theme": "dark",
+        "curves": [
+          {
+            "hazardPerYear": 0.1,
+            "vertices": 101,
+            "fiveYearRisk": 0.3934693402873666,
+            "allVerticesMatchExponential": true
+          },
+          {
+            "hazardPerYear": 0.07,
+            "vertices": 101,
+            "fiveYearRisk": 0.29531191028128656,
+            "allVerticesMatchExponential": true
+          }
+        ],
+        "HR": 0.7000000000000001,
+        "fiveYearRiskRatio": 0.7505334724825277,
+        "reciprocalHR": 1.4285714285714284,
+        "oneEventNoCompetingEventAndConstantHazardAssumptions": true
+      },
+      {
+        "stem": "same-counts-risk-and-odds-v1",
+        "theme": "dark",
+        "groupASymbols": 100,
+        "groupBSymbols": 100,
+        "groupAFillCounts": {
+          "#e5a0ab": 40,
+          "#8fbedc": 60
+        },
+        "groupBFillCounts": {
+          "#e5a0ab": 20,
+          "#8fbedc": 80
+        },
+        "RR": 2.0,
+        "OR": 2.6666666666666665,
+        "absoluteResponseDifference": 0.2,
+        "adverseExampleRR": 2.0,
+        "adverseExampleOR": 2.25
+      },
+      {
+        "stem": "tested-family-and-any-false-rejection-v1",
+        "theme": "dark",
+        "drawers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "bars": [
+          {
+            "tests": 1,
+            "probability": 0.050000000000000044,
+            "drawnFraction": 0.05000000000000005
+          },
+          {
+            "tests": 5,
+            "probability": 0.22621906250000023,
+            "drawnFraction": 0.22621906250000023
+          },
+          {
+            "tests": 20,
+            "probability": 0.6415140775914581,
+            "drawnFraction": 0.6415140775914581
+          }
+        ],
+        "BonferroniTwenty": 0.0025,
+        "BonferroniFifty": 0.001,
+        "independentValidAllNullToyOnly": true,
+        "noEmpiricalResearchErrorRate": true
+      }
+    ],
+    "allChecksPass": true,
+    "lightDarkNonColourVisibleGeometryAndTextMatch": true,
+    "roundingToleranceSVGCoordinatePx": 0.000501,
+    "allFictionalOnly": true,
+    "noBrowserAccessibilityOrCreatorApproval": true
+  },
+  "extraChecks": {
+    "absoluteReduction": 0.06,
+    "riskRatio": 0.7000000000000001,
+    "relativeReduction": 0.29999999999999993,
+    "nnt": 16.666666666666668,
+    "roundedNNT": 17,
+    "harmDifference": 0.020000000000000004,
+    "nnh": 49.99999999999999,
+    "positiveARRIntervalReciprocals": [
+      10.0,
+      50.0
+    ],
+    "oddsResponse": 2.6666666666666665,
+    "adverseOR": 2.25,
+    "bonferroni20": 0.0025,
+    "bonferroni50": 0.001
+  },
+  "bonferroniIndependenceNotRequired": "For valid p-values, probability of any false rejection is at most the sum of the per-true-null rejection bounds, no greater than m*(alpha/m). Independence is needed only for the exact 1-(1-alpha)^m illustration.",
+  "allChecksPass": true
+}

@@ -1,0 +1,224 @@
+{
+  "baseCommit": "a0de1f51243e89eca0ae0f7168752505389dda23",
+  "rootOwners": [
+    {
+      "id": "absolute-benefit",
+      "file": "src/data/trial-design-wave.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A relative benefit says the risk fell by a third; an absolute benefit says how many people out of 100 were actually spared, which depends on how common the bad event was to begin with, and is the number that matters for deciding whether a treatment is worth its side effects.",
+          "beforeSha256": "e0a4b2fec6ccbe1d0b6ed6cba1e111f7d68088a5015fdcd7742561c0f0f94e92",
+          "after": "For a harmful outcome, absolute benefit is the comparison group's risk minus the treatment group's risk at a stated time. Relative risk divides treatment risk by comparison risk. Neither measure identifies who benefits or settles the balance of benefit and harm.",
+          "afterSha256": "0c1d770cfff8185cf8cfc840869f9381642602e5ffa7ac9ffe4614ec34ec734d"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ]
+    },
+    {
+      "id": "statistical-significance",
+      "file": "src/data/terms-jargon.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A result is 'statistically significant' when it would be unlikely (usually under 5%) to arise by chance if the treatment did nothing. It is a threshold, not a measure of benefit size: a tiny gain can pass it in a huge trial and a large one can miss it in a small trial, so ESMO and ASCO grade benefit separately.",
+          "beforeSha256": "50f310ab79b610bbb2ffbc593800a363439ed3a46adb949214a8887e18a40560",
+          "after": "Statistical significance means a result meets the chosen testing threshold under its assumptions and error-control plan. It does not measure benefit size, clinical importance, or the probability that a hypothesis is true.",
+          "afterSha256": "a69eb5c2cbb3ad88785b1d9051d5994f6ef468423f6753764e9d151329d683ea"
+        },
+        {
+          "field": "summary",
+          "before": "Trials are sized ('powered') to detect a pre-specified effect with 80-90% probability at a 5% two-sided alpha; testing several endpoints or several interim looks would inflate false positives unless alpha is split (allocated) or spent sequentially, so hierarchical testing means a secondary endpoint cannot be claimed if a higher one failed. 'Numerically better', 'trend' and 'nominal P' are phrases for results that did not meet the pre-set bar. Clinical meaningfulness is separate: ASCO and ESMO scales (ESMO-MCBS) grade the size of benefit, and a significant 6-week PFS gain may not matter to patients. Confidence intervals convey both size and uncertainty and are preferred to bare P values.",
+          "beforeSha256": "3842553e9297d9ba60d182bd5bb57941936415097f9f4d350c14fe576b3a9a9c",
+          "after": "A significance threshold is set for a specified hypothesis and analysis; it is often 0.05, but the design may use another level or account for multiple tests. A p-value describes how unusual a test statistic at least as extreme as observed would be if the null model and other analysis assumptions held. It is not the probability that the result arose by chance or that the hypothesis is true. Power is the pre-study probability of rejecting a specified null under a stated alternative and design, not a guarantee for every effect. Multiple endpoints, subgroups or repeated looks can require a planned error-control method; in a fixed testing hierarchy, a failed earlier test can block a later formal claim. A nominal p-value has not necessarily met that adjusted rule, and a numerically better result describes the estimate's direction rather than proving benefit. Read the effect size, confidence interval, population and study limitations beside the test result; statistical significance and clinical importance are separate.",
+          "afterSha256": "f5b681748b8e74ca1c4653fe3a9a3a6ad51a62a5fdb142eaec75a283ee0c6589"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Statistical_significance"
+            }
+          ],
+          "beforeSha256": "7e1dcf93cfaec3f22fa97407025708023409610215983e0da06bc070fffbba14",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Statistical_significance"
+            },
+            {
+              "label": "Greenland et al., 2016: statistical tests, confidence intervals and power",
+              "url": "https://doi.org/10.1007/s10654-016-0149-3"
+            },
+            {
+              "label": "FDA, October 2022: multiple endpoints in clinical trials, nonbinding guidance",
+              "url": "https://www.fda.gov/media/162416/download"
+            }
+          ],
+          "afterSha256": "fd10d4b9955c93b37c3ba07047676e0294a9a38077b4c3d1e280bc484783ac99"
+        }
+      ]
+    }
+  ],
+  "consumerEntries": [
+    {
+      "id": "absolute-benefit-zh",
+      "canonicalRecordId": "absolute-benefit",
+      "language": "zh",
+      "file": "src/data/i18n/zh.ts",
+      "before": "相对获益说风险下降了三分之一；绝对获益说每 100 人中实际有多少人免于不良结局，这取决于该事件原本有多常见，也是判断治疗是否值得其副作用的关键数字。",
+      "beforeSha256": "7a9d0946d9a77524c22960a60bbaec4c0e952f4763793730b04e1fa48877761a",
+      "after": "对于不良结局，绝对获益是在同一时间点用对照组风险减去治疗组风险；相对风险是治疗组风险除以对照组风险。这些群体指标不能指出谁会获益，也不能单独决定获益与伤害的权衡。",
+      "afterSha256": "d15e105fa80cabb18df3d58c58013adcc88b456dbe0500c91dd13912eb6cfa8c",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "absolute-benefit-simple",
+      "canonicalRecordId": "absolute-benefit",
+      "language": "simple",
+      "file": "src/data/simple/part-o.ts",
+      "before": "A relative benefit says the risk fell by a third, while an absolute benefit says how many people out of 100 were actually spared, which is the number that matters when weighing side effects.",
+      "beforeSha256": "0163aca3b8d9c52c6c2aa3adb3be8b6ee596ab3c2f6a86680c7925256b721f02",
+      "after": "Absolute benefit is the difference in outcome chances between groups at a stated time; relative risk is their ratio. Neither measure says who benefits or settles the balance of benefit and harm.",
+      "afterSha256": "3c03aae0b556880c140b6348933f69ad6aa17b3b076371ef34e454835959ca6f",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-ar",
+      "canonicalRecordId": "statistical-significance",
+      "language": "ar",
+      "file": "src/data/i18n/ar.ts",
+      "before": "تكون النتيجة \"ذات دلالة إحصائية\" عندما يكون من غير المحتمل (عادةً أقل من 5%) أن تنشأ بمحض الصدفة لو لم يكن للعلاج أي أثر. إنها عتبة وليست مقياسًا للأهمية: فقد تكون فائدة ضئيلة ذات دلالة في تجربة ضخمة، وقد تكون فائدة كبيرة غير ذات دلالة في تجربة صغيرة.",
+      "beforeSha256": "8808725af893991fbdc079da419f866c99158d8b94d16df3638997755ee59eb3",
+      "after": "تعني الدلالة الإحصائية أن النتيجة تستوفي عتبة الاختبار المختارة، في ظل افتراضاته وخطة ضبط الأخطاء. وهي لا تقيس حجم الفائدة أو أهميتها السريرية، ولا احتمال أن تكون الفرضية صحيحة.",
+      "afterSha256": "c51e80145831934f5a536582b89861618f575f3559c3db44bef8d81c4b1ff8f1",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-de",
+      "canonicalRecordId": "statistical-significance",
+      "language": "de",
+      "file": "src/data/i18n/de.ts",
+      "before": "Ein Ergebnis ist „statistisch signifikant“, wenn es unwahrscheinlich wäre (meist unter 5 %), dass es zufällig zustande kommt, falls die Behandlung gar nichts bewirkt. Das ist eine Schwelle, kein Maß für Bedeutung: Ein winziger Nutzen kann in einer riesigen Studie signifikant sein und ein großer in einer kleinen Studie nicht.",
+      "beforeSha256": "2e46358900a57618b574a0f4ed3b6f1f62ae0bd60df7be1c2da2f8fbb352b44d",
+      "after": "Statistische Signifikanz bedeutet, dass ein Ergebnis unter den Annahmen des Tests und nach dem vorgesehenen Plan zur Fehlerkontrolle die gewählte Schwelle erreicht. Sie misst weder die Größe noch die klinische Bedeutung eines Nutzens und gibt nicht die Wahrscheinlichkeit an, dass eine Hypothese wahr ist.",
+      "afterSha256": "a61910dd852a8d193340de97391ae4f2cf7cfd532ddd462f9484a521e4de58a3",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-es",
+      "canonicalRecordId": "statistical-significance",
+      "language": "es",
+      "file": "src/data/i18n/es.ts",
+      "before": "Un resultado es 'estadísticamente significativo' cuando sería improbable (normalmente menos del 5%) que surgiera por azar si el tratamiento no hiciera nada. Es un umbral, no una medida de importancia: un beneficio minúsculo puede ser significativo en un ensayo enorme y uno grande no ser significativo en un ensayo pequeño.",
+      "beforeSha256": "3ef68010c67d03f743647d0567ce9fcabf46d53f9fe2426cce00ba258f8a64b8",
+      "after": "La significación estadística indica que un resultado cumple el umbral elegido para la prueba, bajo sus supuestos y su plan de control de errores. No mide el tamaño del beneficio, su importancia clínica ni la probabilidad de que una hipótesis sea verdadera.",
+      "afterSha256": "a58d03a70304e59f60470c051f765fa51bf84795886f38c6238b0684c58f9302",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-fr",
+      "canonicalRecordId": "statistical-significance",
+      "language": "fr",
+      "file": "src/data/i18n/fr.ts",
+      "before": "Un résultat est « statistiquement significatif » lorsqu'il serait peu probable (généralement moins de 5 %) qu'il survienne par hasard si le traitement n'avait aucun effet. C'est un seuil, pas une mesure d'importance : un bénéfice minuscule peut être significatif dans un essai immense, et un bénéfice important non significatif dans un petit essai.",
+      "beforeSha256": "c78a6158ab8bdedf80d5c7d8efc4dc83cf8011e8422469cba8705f05dac7973b",
+      "after": "La significativité statistique signifie qu’un résultat atteint le seuil choisi pour le test, selon ses hypothèses et son plan de contrôle des erreurs. Elle ne mesure ni l’ampleur du bénéfice, ni son importance clinique, ni la probabilité qu’une hypothèse soit vraie.",
+      "afterSha256": "e7b69a50bc710109a1b1f5b523ed5d9417f5bad9d88633541a42624d931059aa",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-hi",
+      "canonicalRecordId": "statistical-significance",
+      "language": "hi",
+      "file": "src/data/i18n/hi.ts",
+      "before": "कोई परिणाम 'सांख्यिकीय रूप से महत्वपूर्ण' तब होता है जब उपचार का कोई प्रभाव न होने की स्थिति में उसका संयोग से उत्पन्न होना असंभाव्य (आम तौर पर 5% से कम) हो। यह एक सीमा है, महत्व का माप नहीं: बहुत बड़े परीक्षण में एक छोटा सा लाभ महत्वपूर्ण हो सकता है और छोटे परीक्षण में एक बड़ा लाभ गैर-महत्वपूर्ण।",
+      "beforeSha256": "cc5131100faa6bd834b81f556223e7d29e7ce193e7cf40bd12da1df8c3aa1076",
+      "after": "सांख्यिकीय सार्थकता का अर्थ है कि परिणाम परीक्षण की मान्यताओं और त्रुटि नियंत्रण की योजना के तहत चुनी गई सीमा को पूरा करता है। यह लाभ के आकार, उसके नैदानिक महत्व या किसी परिकल्पना के सही होने की संभावना को नहीं मापती।",
+      "afterSha256": "9ea075f0972b8672477e642d2fb7c0f52d26f33886a63613f3698b2ebbbf978b",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-ja",
+      "canonicalRecordId": "statistical-significance",
+      "language": "ja",
+      "file": "src/data/i18n/ja.ts",
+      "before": "「統計的に有意」な結果とは、治療に効果がなかった場合に偶然生じる可能性が低い（通常5%未満）結果のことである。これは閾値であって重要性の尺度ではない。巨大な試験ではごくわずかな効果でも有意になり得るし、小規模な試験では大きな効果でも有意にならないことがある。",
+      "beforeSha256": "d76b992f96512cfdca64638ff62442a569171e092961abd39cbb65d018f304da",
+      "after": "統計的有意性とは、検定の前提と誤りを制御する計画のもとで、結果が選んだ判定基準を満たすことです。利益の大きさや臨床的な重要性、仮説が正しい確率を表すものではありません。",
+      "afterSha256": "53a71e9244f5854fe186750f4e5c0fa2655a2cb7ba587bf8e7ae5bf1c7342ec9",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-pt",
+      "canonicalRecordId": "statistical-significance",
+      "language": "pt",
+      "file": "src/data/i18n/pt.ts",
+      "before": "Um resultado é 'estatisticamente significativo' quando seria improvável (normalmente menos de 5%) que surgisse por acaso se o tratamento não fizesse nada. É um limiar, não uma medida de importância: um benefício minúsculo pode ser significativo num ensaio enorme e um grande benefício pode não ser significativo num ensaio pequeno.",
+      "beforeSha256": "f9839eace7abc29945de46a0fe65a0bca20da105b406a0b8a9800b9022f3c36b",
+      "after": "A significância estatística indica que um resultado atende ao limiar escolhido para o teste, sob seus pressupostos e seu plano de controle de erros. Não mede o tamanho do benefício, sua importância clínica nem a probabilidade de uma hipótese ser verdadeira.",
+      "afterSha256": "ac172467bb50a2edb4e4f698bcbf0749f4d2120ec017f63a1f1be4099802ec0a",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-zh",
+      "canonicalRecordId": "statistical-significance",
+      "language": "zh",
+      "file": "src/data/i18n/zh.ts",
+      "before": "当一个结果在治疗毫无作用的情况下不太可能（通常低于5%）由偶然产生时，它就是\"统计学显著\"的。这是一个阈值，而不是重要性的衡量：微小的获益在超大型试验中可能显著，而巨大的获益在小型试验中可能不显著。",
+      "beforeSha256": "798504f08dd1743d771dcb18d6b3b6c932bde717ddd40e46ff39850028045fb0",
+      "after": "统计学显著性表示结果在检验的假设和错误控制方案下达到了所选判定阈值。它不衡量获益的大小、临床重要性，也不表示某个假设为真的概率。",
+      "afterSha256": "4aa84b4543a3f93010cd6968cc3f3545e4861209871536baa950f61404fedf23",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "statistical-significance-simple",
+      "canonicalRecordId": "statistical-significance",
+      "language": "simple",
+      "file": "src/data/simple/part-j.ts",
+      "before": "Statistical significance means a result would be unlikely to arise by chance if the treatment did nothing, a threshold rather than a measure of how important it is.",
+      "beforeSha256": "e6fce6deeb7b8f7092b97e547e145b49b2e9bcfe7e45f3edf074b0f7e7bf23f7",
+      "after": "A statistically significant result meets the study's chosen testing rule under its assumptions. It does not tell you how big or useful the benefit is, or the chance that a hypothesis is true.",
+      "afterSha256": "3a46eac4268577ab88b633546e5fb3feeb081252b7dce10515462516672495dc",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    }
+  ],
+  "canonicalOwnersChanged": 2,
+  "shortSummaryEntriesChanged": 11,
+  "consumerFilesChanged": 10,
+  "dataFilesChanged": 12,
+  "newOwners": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "oldNotesAndLinksPreserved": true,
+  "actualContributorFieldsChanged": false,
+  "unappliedProposals": [],
+  "intentionalLegacySummaryReplacement": "The statistical-significance summary’s universal power/alpha wording, conflation of numeric/nominal/trend wording and unverified ASCO/ESMO example are intentionally replaced with source-scoped statistical definitions. The old complete field remains in before values. The absolute-benefit long summary is unchanged and not blanket recertified.",
+  "reason": "Two older canonical leads conflicted with the qualified teaching already in notes. Correct the existing English leads and eleven existing short-summary consumers; add two fresh sources to statistical-significance.",
+  "dataCommit": "6f0fef94c2266881134e924a4f7852093b2b4b9a"
+}

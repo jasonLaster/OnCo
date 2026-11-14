@@ -1,0 +1,732 @@
+{
+  "version": "proposal-support-bodies-27-root",
+  "draft": 375,
+  "committedDataHead": "6f0fef94c2266881134e924a4f7852093b2b4b9a",
+  "auditBaseCommit": "a0de1f51243e89eca0ae0f7168752505389dda23",
+  "state": "Nine current registered canonical objects. Two scalar leads and eleven existing short-summary entries corrected at named statistical source scope; no new owners or blanket certification of retained clinical assertions.",
+  "records": [
+    {
+      "id": "absolute-benefit",
+      "kind": "term",
+      "name": "Absolute versus relative benefit (number needed to treat)",
+      "aka": [
+        "absolute benefit",
+        "absolute risk reduction",
+        "absolute risk",
+        "absolute difference",
+        "absolute gain",
+        "percentage-point difference",
+        "percentage points",
+        "relative benefit",
+        "relative risk reduction",
+        "relative reduction",
+        "number needed to treat",
+        "NNT",
+        "number needed to harm",
+        "NNH",
+        "one in every",
+        "out of 100",
+        "per 100 patients",
+        "per 100 treated",
+        "how many patients benefit",
+        "baseline risk",
+        "risk difference",
+        "difference in medians",
+        "months gained",
+        "median gain"
+      ],
+      "tldr": "For a harmful outcome, absolute benefit is the comparison group's risk minus the treatment group's risk at a stated time. Relative risk divides treatment risk by comparison risk. Neither measure identifies who benefits or settles the balance of benefit and harm.",
+      "summary": "Trial results are often headlined as relative effects: a treatment-versus-control hazard ratio of 0.72 describes a 28 percent lower hazard for the stated event under that model, rather than a 28 percent reduction in fixed-time recurrence risk. Carrying a relative effect to another population requires relevant assumptions and population fit; the ratio alone does not say how many people were helped. That requires the baseline risk. Cutting a risk of recurrence from 30 percent to 21 percent is a nine-percentage-point absolute reduction, and about eleven people must be treated for one of them to be spared a recurrence. Cutting a risk from 3 percent to 2.1 percent is the same relative reduction, a 0.9-point absolute reduction, and more than a hundred people must be treated to spare one. The side effects, cost and inconvenience fall on everyone treated, so the absolute benefit is the number to weigh them against.\n\nCHALLENGE illustrates the arithmetic in the corpus. Five-year disease-free survival was 80.3 percent with the exercise programme against 73.9 percent with health education, a hazard ratio of 0.72 and an absolute gain of about six percentage points, so roughly one in sixteen participants avoided a recurrence or death in that window. KEYNOTE-564 reported a disease-free survival hazard ratio of 0.72 as well; how many patients that helps depends on the recurrence risk of the population enrolled, which is why adjuvant trials restrict entry to higher-risk stages where the absolute benefit is worth a year of treatment. The Trials in plain words page on this site converts every trial result with structured outcomes into people out of 100 for exactly this reason.\n\nDifferences in medians are a third way of describing the same result and the easiest to misread. A median gain of two months means the middle patient in each arm differed by two months; it does not mean every patient gained two months, and when a survival curve has a long tail, as with immunotherapy, the median can understate the benefit to the minority who do very well. A trustworthy report gives the relative effect, the absolute difference at a stated time point, and the medians, and says which population they apply to.",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/Number_needed_to_treat",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Number_needed_to_treat"
+        },
+        {
+          "label": "CONSORT statement: reporting randomised trials",
+          "url": "https://www.consort-statement.org/"
+        },
+        {
+          "label": "The number needed to treat: a clinically useful measure of treatment effect.",
+          "url": "https://doi.org/10.1136/bmj.310.6977.452"
+        },
+        {
+          "label": "Calculating the number needed to treat for trials where the outcome is time to an event.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1117211/"
+        },
+        {
+          "label": "Confidence intervals for the number needed to treat.",
+          "url": "https://doi.org/10.1136/bmj.317.7168.1309"
+        },
+        {
+          "label": "OncoGuide: absolute-relative-risk-and-nnt (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/absolute-relative-risk-and-nnt.md"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "hazard-ratio",
+        "hazard-ratio-basics",
+        "confidence-interval",
+        "median-survival",
+        "landmark-survival",
+        "kaplan-meier-curve",
+        "os",
+        "efs",
+        "cross-trial-comparison",
+        "denominators-and-conditional-probability"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "challenge",
+        "keynote-564",
+        "adaura"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Absolute risk is the chance of a defined event by a stated time. For an undesirable event, absolute risk reduction is control risk minus treatment risk, the risk ratio is treatment risk divided by control risk, and relative risk reduction is one minus that ratio. When the absolute reduction is positive, number needed to treat is its reciprocal, using a fraction rather than a percentage. Risks are percentages, absolute differences are percentage points, ratios have no units, and number needed to treat refers to people over the specified horizon. The population, comparator, event direction and time must match. With incomplete follow-up, suitable time-specific estimates are needed; dividing recorded events by enrolment may answer a different question.",
+        "The sign carries the meaning. If a fictional adverse effect occurs in 6% of controls and 8% with treatment over one year, the absolute risk increase is 2 percentage points and the number needed to harm is 1/0.02 = 50 over that year. Calling it a benefit number needed to treat would reverse the result. A zero absolute difference has no finite reciprocal; a risk ratio is undefined if control risk is zero. For a desirable outcome, define improvement in the opposite direction before calculating.",
+        "Suppose a fictional comparison estimates first recurrence or death by five years at 20% with control and 14% with the new strategy. The absolute reduction is 6 percentage points, the risk ratio is 0.14/0.20 = 0.70, and the relative reduction is 30%. The five-year number needed to treat is 1/0.06, about 16.7, rounded up to 17. Thinking of two groups of 100 gives 20 versus 14 expected events, not paired observations showing which six people were helped. This is an average contrast between strategies; it does not mean every seventeenth person benefits. Harms require their own outcomes and calculations.",
+        "Uncertainty belongs beside the absolute difference. In a fictional five-year example, an absolute risk reduction interval of 2 to 10 percentage points transforms to a number-needed-to-treat interval of 10 to 50. If the risk-difference interval crosses zero, its reciprocal passes through infinity into regions representing benefit and harm. Showing the risk-difference interval may communicate that uncertainty more clearly than one apparently bounded interval for number needed to treat.",
+        "A one-third relative risk reduction could mean 3 events becoming 2 per 100, or 30 becoming 20. Baseline risk changes the absolute difference. A hazard ratio compares conditional rates rather than fixed-time risks, so its reciprocal is not number needed to treat and the ratio alone supplies no absolute risk reduction. Three-year and five-year estimates answer different questions. Avoiding an event by a date does not establish permanent cure, and a favourable number needed to treat does not combine toxicity, quality of life and benefit into one decision. All numbers here are fictional arithmetic examples, rather than clinical thresholds or predictions."
+      ],
+      "category": "Endpoints"
+    },
+    {
+      "id": "confidence-interval",
+      "kind": "term",
+      "name": "Confidence interval",
+      "aka": [
+        "confidence intervals",
+        "95% CI",
+        "95% confidence interval",
+        "95%CI",
+        "interval estimate",
+        "margin of error"
+      ],
+      "tldr": "A confidence interval shows an estimate's precision under a stated method. A 95% method covers the fixed true value in about 95% of repeated valid applications; it does not assign a 95% probability to the value lying in this particular interval.",
+      "summary": "Because a trial studies a sample rather than every patient in the world, its estimate carries uncertainty, and the confidence interval expresses it: more information often narrows the interval, while the method, data structure and assumptions also matter. For a conventional matching two-sided 95% interval and test, a hazard-ratio interval that excludes 1.0 corresponds to a p-value below 0.05; for a difference in months or percentage points, the interval must exclude zero. Reading the interval rather than just the point estimate shows how large or small the true benefit could plausibly be, and limits close to no effect should be read with the whole interval, clinical question and assumptions. Their position alone does not quantify how the result would change under different data or analyses.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Confidence_interval",
+      "links": [
+        {
+          "label": "NIST: confidence limits and repeated coverage",
+          "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+        },
+        {
+          "label": "Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4877414/"
+        },
+        {
+          "label": "Greenland et al., 2016: statistical tests and confidence-interval interpretation",
+          "url": "https://doi.org/10.1007/s10654-016-0149-3"
+        },
+        {
+          "label": "OncoGuide: confidence-interval (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/confidence-interval.md"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "p-value",
+        "hazard-ratio",
+        "hazard-ratio-basics",
+        "randomised-trial",
+        "endpoint",
+        "statistical-significance",
+        "non-inferiority-margin",
+        "absolute-benefit",
+        "bayesian-trial-design",
+        "sample-size-re-estimation",
+        "odds-ratio",
+        "population-versus-individual-risk"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A frequentist confidence interval describes estimation precision using a procedure with a stated coverage rate under its assumptions. Across repeated valid applications, a 95% procedure would include the fixed true parameter in 95% of its intervals. This does not assign a 95% probability to that parameter being inside one interval after it has been calculated, or describe a range containing 95% of patients. The result depends on the data structure, estimator, confidence level, model and calculation method, including adjustment, missing-data handling and multiplicity. More observations often improve precision but do not remove biased measurement, confounding or a wrong model.",
+        "The no-difference value is zero for differences and one for ratios. Including it does not prove equality. A fictional hazard ratio of 0.70 with an interval of 0.35 to 1.40 leaves substantial benefit and harm compatible with the analysis; 0.70 with an interval of 0.65 to 0.76 is more precise. Neither establishes personal benefit or applicability to another population. Likewise, a risk-difference interval of -8 to +10 percentage points does not establish equivalence. That requires justified, preferably prespecified lower and upper bounds and a suitable equivalence analysis; non-inferiority asks a separate question about one permitted-loss margin. Compare groups by estimating their difference directly, rather than judging whether two separate intervals overlap. Many unadjusted intervals also raise a multiplicity problem.",
+        "For a fictional binary outcome in 50 of 100 independent people, the normal-approximation standard error is sqrt(0.50 × 0.50/100) = 0.05. The approximate 95% interval is 0.50 ± 1.96 × 0.05, or 40.2% to 59.8%. With 5,000 of 10,000 people, the proportion stays 50% but the standard error becomes 0.005 and the interval 49.02% to 50.98%. Small counts, proportions near zero or one, clustering and incomplete outcomes may require other methods. A hand-picked set of ten such intervals, nine containing a fixed 50% truth and one missing it, illustrates coverage but does not measure a procedure's coverage rate. A 95% method need not cover in exactly 95% of a small set. Narrower bounds indicate greater sampling precision, not less bias.",
+        "A prediction interval addresses a future observation and includes additional variability. A Bayesian credible interval gives a probability interpretation conditional on the chosen model and prior. These are different constructions, not alternative names for a frequentist confidence interval."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "hazard-ratio",
+      "kind": "term",
+      "name": "Hazard ratio (HR)",
+      "aka": [
+        "HR 0",
+        "HR 1",
+        "HR of",
+        "HR for death",
+        "HR for progression",
+        "HR for recurrence",
+        "HRs",
+        "Cox proportional hazards",
+        "proportional hazards"
+      ],
+      "tldr": "A hazard ratio is a number comparing the rate of bad events in two groups. A treatment-versus-control ratio of 0.5 means half the instantaneous event rate among those still at risk under that comparison; it does not mean half the cumulative event probability.",
+      "summary": "The hazard ratio (HR) is a single number comparing the rate of bad events, such as death or progression, between two groups in a trial; an HR of one half describes half the instantaneous event rate among those still at risk under that comparison. It comes from Cox proportional hazards models, an HR below 1 favours the numerator group for an undesirable event, when that group is the experimental arm, and a confidence interval excluding 1 indicates statistical significance. The HR says nothing about absolute benefit or how long it lasts, so it features in ideas on powering trials for a benefit patients would value, crossover-adjusted survival and Bayesian shrinkage for subgroup claims. The term is referenced by the Pancreatic ductal adenocarcinoma entry, Michael LeBlanc, the bottlenecks on trial design and trial diversity, and ideas on Bayesian borrowing and a rulebook for external control arms.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hazard_ratio",
+      "links": [
+        {
+          "label": "Regression Models and Life-Tables",
+          "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x"
+        },
+        {
+          "label": "NIST: exponential-model formulas",
+          "url": "https://www.itl.nist.gov/div898/handbook/apr/section1/apr161.htm"
+        },
+        {
+          "label": "The hazards of hazard ratios.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20010207/"
+        },
+        {
+          "label": "OncoGuide: hazard-ratio (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/hazard-ratio.md"
+        },
+        {
+          "label": "Boyd et al., 2012: average hazard-ratio interpretation and censoring",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22763957/"
+        },
+        {
+          "label": "Altman and Andersen: time-specific number needed to treat and hazard-ratio limits (1999)",
+          "url": "https://doi.org/10.1136/bmj.319.7223.1492"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "hazard-ratio-basics",
+        "confidence-interval",
+        "p-value",
+        "kaplan-meier-curve",
+        "absolute-benefit",
+        "os",
+        "pfs",
+        "crossover",
+        "sample-size-re-estimation"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "checkmate-067",
+        "adaura",
+        "challenge"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A hazard is an instantaneous event rate among people still at risk, rather than the fraction of everyone enrolled who has had an event by a date. A hazard ratio divides one group's hazard by its reference group's hazard for a defined endpoint. A true ratio of one at a time means equal hazards at that time; the numerator determines the direction. As arithmetic from that definition, treatment/control HR 0.70 describes a 30% lower hazard under the model. It does not mean 30 percentage points fewer events, 30% longer survival or a 30% reduction in each person's probability. Reversing the comparison gives 1/0.70, about 1.43. Neither direction supplies five-year absolute benefit without further outcome information and assumptions.",
+        "In a Cox proportional-hazards model, proportionality means the ratio stays constant over time; the two hazards themselves need not be constant. An adjusted estimate depends on the included covariates and their coding, and adjustment does not remove unmeasured confounding. Read event and censoring times, comparison direction, analysis population and confidence interval with the model assessment. A reported HR may average changing effects, and an estimated HR of one does not establish that the curves are identical. Crossing curves can raise concern about proportionality without diagnosing every model failure. Time-specific rates or other prespecified summaries may be more informative. Cause-specific and subdistribution hazard ratios answer different competing-risk questions and cannot be substituted for one another.",
+        "A fictional exponential model makes the distinction between rate and risk visible. Assume constant control and treatment hazards of 0.10 and 0.07 per year, one event type and no competing events. The hazard ratio is 0.70, but the risk by time t is 1 - exp(-hazard × t). At five years, risks are about 39.3% and 29.5%: a risk ratio of about 0.75 and a difference of about 9.8 percentage points. Constant hazard lines therefore coexist with rising accumulated risks. Real studies need their actual curves and model checks. Only under the constant-hazard exponential assumptions does treatment median survival divided by control median survival equal 1/HR; an HR is not generally a ratio of medians. These invented numbers are not personal prognosis estimates.",
+        "Randomisation balances baseline groups in expectation, without guaranteeing identical realised groups or later risk sets. As follow-up proceeds, an HR compares people who have remained event-free, and treatment can change who those people are. Hernán's 2010 critique explains why that selection complicates a causal interpretation and recommends appropriately adjusted survival curves or risks at fixed times. Read the endpoint, curves, absolute outcomes and uncertainty beside the ratio. An adjusted biomarker association does not demonstrate that using the marker to select treatment improves outcomes. Boyd, Kittelson and Gillen (2012) argue that a marginal hazard ratio can still be useful as an average description over the observed data when hazards are not proportional. They also explain that the usual unweighted estimate can depend on the censoring distribution and study an estimator intended to remove that dependence under their assumptions. A defined average summary therefore needs its estimand, observation period, estimation method and censoring assumptions stated; it does not automatically become a fixed-time risk contrast or an individual causal effect.",
+        "A separate fictional proportional-hazards example estimates a treatment-versus-control hazard ratio of 0.68 with a 95% confidence interval of 0.50 to 0.92 for first recurrence or death. Under that fitted model, the point estimate describes a 32% lower instantaneous event rate among those still at risk. It is different from the 30% five-year relative risk reduction in the fictional 20% versus 14% risk example. Neither 1/HR nor 1/(1 - HR) is number needed to treat; the actual time-specific absolute outcomes and relevant assumptions are needed."
+      ],
+      "category": "Endpoints"
+    },
+    {
+      "id": "hazard-ratio-basics",
+      "kind": "term",
+      "name": "Reading a hazard ratio",
+      "aka": [
+        "hazard ratios",
+        "relative risk",
+        "risk reduction",
+        "relative risk reduction",
+        "reduced the risk of",
+        "lower risk of death",
+        "risk of death or progression",
+        "risk of progression or death",
+        "relative risks"
+      ],
+      "tldr": "A hazard ratio of 0.70 means that at any given moment the event rate among people still at risk in the treatment group is 30% lower than in the comparison group under the model. It says nothing about how many months that is worth.",
+      "summary": "A hazard ratio compares instantaneous event rates among people who remain at risk. Its value alone does not specify absolute survival probabilities or a difference between median survival times. Read it with event counts, follow-up, survival curves and uncertainty. A proportional-hazards model treats the hazard ratio as constant over time; if it changes, one summary ratio can conceal that change. Comparing later at-risk groups also requires care because their membership can differ, even after initial randomisation.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hazard_ratio",
+      "links": [
+        {
+          "label": "Cox: proportional-hazards model",
+          "url": "https://doi.org/10.1111/j.2517-6161.1972.tb00899.x"
+        },
+        {
+          "label": "Hernan: interpretation of hazard ratios",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20010207/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "hazard-ratio",
+        "confidence-interval",
+        "p-value",
+        "median-survival",
+        "os",
+        "pfs",
+        "endpoint",
+        "absolute-benefit",
+        "kaplan-meier-curve"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "odds-ratio",
+      "kind": "term",
+      "name": "Odds ratio",
+      "aka": [
+        "odds ratio",
+        "OR"
+      ],
+      "tldr": "An odds ratio compares events with non-events in two groups. Odds use a different denominator from probability, so doubling the odds does not generally double the chance.",
+      "summary": "An odds ratio divides the odds of an event in one group by the odds in a reference group. Probability uses all assessed outcomes in the denominator; odds compare events with non-events. The two scales can differ substantially when an event is common. An odds ratio does not supply an absolute risk or a causal treatment effect by itself. Its interpretation depends on outcome coding, the comparison, follow-up and model adjustment; a case-control sample does not reveal population prevalence from its case fraction.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "CDC: risk ratios and odds ratios",
+          "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section5.html"
+        },
+        {
+          "label": "Statistics notes. The odds ratio.",
+          "url": "https://doi.org/10.1136/bmj.320.7247.1468"
+        },
+        {
+          "label": "Confounding and Collapsibility in Causal Inference",
+          "url": "https://doi.org/10.1214/ss/1009211805"
+        },
+        {
+          "label": "Hernan and Robins: Causal Inference: What If",
+          "url": "https://miguelhernan.org/whatifbook"
+        },
+        {
+          "label": "OncoGuide: odds-ratio (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/odds-ratio.md"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "confidence-interval",
+        "hazard-ratio",
+        "kaplan-meier-curve"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Probability counts events among everyone; odds count events relative to non-events. In a fictional bag with 20 red and 80 blue counters, the probability of red is 20/100 = 20%, but the odds are 20/80 = 0.25. For probability p, odds are p/(1 - p). An odds ratio divides one group's odds by the reference group's odds for a defined event. A value above one means higher odds in the numerator group; whether that is favourable depends on whether the event is response or harm. Specify the event, comparator and horizon. When events are rare in both groups the odds ratio can approximate the risk ratio; when they are common it can differ substantially and cannot be applied directly as a multiplier to a percentage.",
+        "Logistic regression commonly reports odds ratios. An estimate per one unit of a predictor differs from one per ten units, so its increment and outcome coding matter. Report the adjustment set and confidence interval alongside the estimate. An adjusted odds ratio can differ from the unadjusted value even without confounding, a property called noncollapsibility. A change after adjustment alone therefore does not prove confounding, and adjustment alone does not establish causation.",
+        "In a fictional comparison with complete response assessment, 40 of 100 people respond in group A and 20 of 100 in group B. A's response probability uses all 100 people, whereas its response odds use the 60 nonresponders. The response risk ratio is 0.40/0.20 = 2; the odds ratio is (40/60)/(20/80), about 2.67; and the absolute response difference is 20 percentage points. The same counts support three different measures. “2.67 times the odds” does not mean “2.67 times the chance”, and the study design determines whether a causal claim is justified.",
+        "Case-control studies deliberately sample cases and controls, so the case fraction in that sample is not population prevalence and cannot simply supply absolute risk. Zero counts can make a raw odds ratio zero, infinite or undefined; estimation method and uncertainty matter. Reversing the comparison takes the reciprocal. For another fictional example, 20 adverse events among 100 people versus 10 among 100 gives a risk ratio of 2 but an odds ratio of (20/80)/(10/90) = 2.25. A response odds ratio is also different from a survival hazard ratio. An assay-based association with response does not quantify the benefit of acting on a biomarker; its model, endpoint and treatment comparison need their own evidence. All counts here are invented."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Methods and models"
+    },
+    {
+      "id": "p-value",
+      "kind": "term",
+      "name": "P-value",
+      "aka": [
+        "p-values",
+        "p value",
+        "p values",
+        "p<0.05",
+        "p < 0.05",
+        "p<0.001",
+        "p < 0.001",
+        "significance level",
+        "two-sided",
+        "one-sided",
+        "nominal p",
+        "nominally significant",
+        "did not reach statistical significance",
+        "not statistically significant",
+        "non-significant",
+        "nonsignificant"
+      ],
+      "tldr": "The probability of a test statistic at least as extreme as observed, assuming the specified null model and all analysis assumptions. A value below 0.05 is conventionally called statistically significant. It does not give the probability that this finding is false or measure the size of a benefit.",
+      "summary": "A small p-value means the result would be unlikely under the specified null model and analysis assumptions, but it does not measure how big or how clinically meaningful the effect is; a trivial benefit in a huge trial can have a tiny p-value while a large benefit in a small trial can miss significance. Trials with several endpoints or several interim looks must control their overall error allowance using the planned method (such as hierarchical testing or alpha spending), which is why an endpoint can be 'nominally significant' yet not count formally. The confidence interval conveys the same information about significance while also showing the size of the effect, and is generally more useful.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/P-value",
+      "links": [
+        {
+          "label": "The ASA Statement on p -Values: Context, Process, and Purpose",
+          "url": "https://doi.org/10.1080/00031305.2016.1154108"
+        },
+        {
+          "label": "ASA: official statement principles (2016)",
+          "url": "https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf"
+        },
+        {
+          "label": "FDA: multiple endpoints in clinical trials (2022)",
+          "url": "https://www.fda.gov/media/162416/download"
+        },
+        {
+          "label": "OncoGuide: p-values-and-multiple-testing (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/effect-measures/p-values-and-multiple-testing.md"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "confidence-interval",
+        "hazard-ratio",
+        "endpoint",
+        "randomised-trial",
+        "statistical-significance",
+        "group-sequential-design",
+        "bayesian-trial-design",
+        "prespecified-vs-post-hoc"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A p-value is calculated for a specified null hypothesis and analysis. Assuming that null model and the other analysis assumptions are true, it is the probability of a test statistic at least as extreme as the one observed. A small value indicates poor fit to that model; it is not the probability that the hypothesis is true, that the result occurred “by chance”, or that the selected finding is false. In particular, p = 0.03 does not mean a 97% probability of benefit. Omics analyses may test thousands of genes or pathways, and reporting only the most striking result hides the search. A selected small value can generate a hypothesis without establishing a drug dependency or clinical benefit. Error control cannot repair biased measurement or an irrelevant comparison, and prespecification reduces analytical flexibility without guaranteeing a sound design.",
+        "With multiple hypotheses, the family-wise error rate is the probability of at least one false rejection in a defined family. The false discovery rate is the expected proportion of false rejections among the findings selected, conventionally zero when none are selected. They control different quantities. A confirmatory trial may allocate its error allowance across endpoints and interim analyses or use a prespecified testing sequence; exploratory analyses have a different role. Interpretation needs the complete family, hypotheses, test assumptions, one- or two-sided specification, order and chosen error-control method. Label raw and adjusted p-values and show effects and intervals beside them. Post hoc choices of outcomes, cutpoints or subgroups must remain visible.",
+        "Suppose twenty independent valid tests all have true null hypotheses and each has a 5% false-rejection probability. The chance of at least one false rejection is 1 - 0.95^20, about 64.2%. For one, five and twenty tests, this chance is about 5%, 22.6% and 64.2%, respectively. This fictional calculation concerns the whole search, not the truth probability of an individual finding. Bonferroni divides a family allowance of 0.05 by twenty, giving 0.0025 per test: p = 0.03 passes an unadjusted 0.05 threshold but fails this correction. Correlation changes the independent-tests calculation; Bonferroni control itself does not require independence when the individual tests are valid. Family definition and method choice still matter.",
+        "If fifty pathways were tested and one reported p = 0.04, a Bonferroni threshold for that family at 0.05 would be 0.05/50 = 0.001. The reported result fails that threshold; it does not prove the pathway has no biological role. The full results, planned method, effect estimate and uncertainty are needed. Missing a significance threshold can reflect low power and does not establish no effect. Conversely, a tiny p-value can accompany an effect too small to matter clinically. Equivalence and non-inferiority require their own justified margins and analyses. A diagnostic false-positive rate is a different quantity from a multiple-testing allowance. A Bayesian analysis can instead report posterior probabilities conditional on its specified model and prior. Those probabilities answer a different question from a p-value."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "false-discovery-rate",
+      "kind": "term",
+      "name": "False discovery rate",
+      "aka": [
+        "FDR",
+        "Benjamini-Hochberg procedure",
+        "BH procedure",
+        "q-value",
+        "FDR-adjusted p-value"
+      ],
+      "tldr": "The false discovery rate is the expected fraction of false findings among the findings a procedure selects, counted as zero when nothing is selected; it describes the shortlist as a set, not any one result.",
+      "summary": "False discovery rate is the expected proportion of false rejections among all rejections made by a multiple-testing procedure, taking the proportion as zero when none are made. It describes repeated use of that procedure under its assumptions. It is not the probability that each selected finding is false, a guaranteed false fraction in one list or evidence of biological importance or patient benefit.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "Benjamini and Hochberg: controlling the false discovery rate (Journal of the Royal Statistical Society B 1995)",
+          "url": "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"
+        },
+        {
+          "label": "Benjamini and Yekutieli: false discovery rate control under dependency (Annals of Statistics 2001)",
+          "url": "https://doi.org/10.1214/aos/1013699998"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "p-value",
+        "statistical-significance",
+        "ppv",
+        "preclinical",
+        "prespecified-vs-post-hoc"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Write V for false rejections and R for all rejections: the false discovery proportion is V/R, defined as zero when R is zero, and FDR is its expectation. Family-wise error is the probability of at least one false rejection; the two coincide when every null hypothesis is true but generally differ otherwise. Benjamini-Hochberg sorts all m valid p-values, compares rank i with (i/m)q, finds the largest passing rank and selects everything through it. The original control result assumes independence; positive-dependence extensions and procedures for broader dependence have their own conditions. Correlation is not permission to ignore the procedure's assumptions.",
+        "Fictional Benjamini-Hochberg examples use target q = 0.05. For five sorted p-values 0.001, 0.008, 0.026, 0.080 and 0.200, rank bounds are 0.01, 0.02, 0.03, 0.04 and 0.05; rank 3 is the largest passing rank, selecting the first three. For three values 0.018, 0.030 and 0.060, bounds are about 0.0167, 0.0333 and 0.05; rank 1 fails its individual comparison but rank 2 passes, so the first two are selected. Do not stop at the first failure. The two illustrative plots use different labelled vertical ranges and test counts. Selection assigns neither finding a five per cent false probability.",
+        "Keep the complete hypothesis family and valid p-values, target, procedure and dependence assumptions, then report the selected set or adjusted values under that method. Correcting separate families and combining their hits does not automatically control the combined list. Q-values and adjusted p-values can name different calculations, so identify the actual method. Gene-, peptide- and protein-level identification claims also have different units; control at one level does not automatically transfer to another. The fraction of diagnostic positive calls that are false, one minus PPV, is a different quantity from the expected false-rejection fraction of a multiple-testing procedure. Omics selection prioritizes further investigation; it does not identify which hit is false or establish clinical utility."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "non-inferiority-margin",
+      "kind": "term",
+      "name": "Non-inferiority margin and equivalence trials",
+      "aka": [
+        "non-inferiority margin",
+        "noninferiority margin",
+        "the margin",
+        "pre-specified margin",
+        "prespecified margin",
+        "equivalence margin",
+        "equivalence design",
+        "bioequivalence",
+        "biosimilar equivalence",
+        "upper bound of the confidence interval",
+        "acceptable loss of efficacy",
+        "absolute margin",
+        "relative margin",
+        "non-inferiority boundary",
+        "noninferiority boundary"
+      ],
+      "tldr": "The margin is the amount of benefit a trial is allowed to lose and still call the new treatment good enough; it is chosen before the trial starts, and where it is set decides what the result means.",
+      "summary": "The non-inferiority margin is the largest loss the trial intends to exclude, justified by the effective control and clinical context. In FDA’s 2016 framework, M1 represents the control effect assumed to persist in the new trial, estimated from historical evidence rather than measured against concurrent placebo. M2 is the largest clinically acceptable loss and is commonly smaller. Constancy and assay sensitivity connect that historical evidence to the present setting. Equivalence requires both sides of an acceptable interval, whereas non-inferiority tests the unacceptable worse side. The confidence level and effect orientation must accompany the margin.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Non-inferiority_trial",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Non-inferiority_trial"
+        },
+        {
+          "label": "FDA guidance: non-inferiority clinical trials to establish effectiveness",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/non-inferiority-clinical-trials"
+        },
+        {
+          "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+          "url": "https://www.ich.org/page/efficacy-guidelines"
+        },
+        {
+          "label": "FDA, 2016: non-inferiority trials, final nonbinding guidance",
+          "url": "https://www.fda.gov/media/78504/download"
+        },
+        {
+          "label": "ICH E9, 1998: analysis sets and statistical planning",
+          "url": "https://www.fda.gov/media/71336/download"
+        },
+        {
+          "label": "Giuliano et al., 2017: Z0011 ten-year report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28898379/"
+        },
+        {
+          "label": "Giuliano et al., 2011: Z0011 design and closure",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21304082/"
+        },
+        {
+          "label": "Earl et al., 2019: PERSEPHONE",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31178152/"
+        },
+        {
+          "label": "Mayer et al., 2021: EA1131",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34092112/"
+        },
+        {
+          "label": "Piaggio et al., 2012: reporting non-inferiority and equivalence",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23268518/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "non-inferiority",
+        "randomised-trial",
+        "intention-to-treat",
+        "confidence-interval",
+        "de-escalation",
+        "hypofractionation",
+        "trial-failure-modes",
+        "estimand"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "persephone",
+        "fast-forward",
+        "pace-b",
+        "tailorx",
+        "dynamic",
+        "convert",
+        "sano"
+      ],
+      "people": [],
+      "bottlenecks": [
+        "b-trial-design"
+      ],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "If the new-versus-standard hazard ratio is for an unwanted event, values above one are worse. With margin 1.3, an appropriate upper confidence bound below 1.3 can establish the specified non-inferiority claim, even if the estimate is above one. FDA’s 2016 guidance generally uses a two-sided 95% interval, corresponding to a one-sided 2.5% test. Some academic trials use a one-sided 5% test, equivalent in bound to a two-sided 90% interval. Bounds from different confidence levels are not interchangeable. The hypothetical event-hazard ratio 1.15 with 95% interval 1.02 to 1.28 is both worse than one statistically and below a 1.3 margin.",
+        "M1 needs credible historical evidence that the active control works and reason to expect a relevant effect in the new trial. Assay sensitivity is the capacity to distinguish effective from ineffective treatment; an active-control trial without placebo cannot directly remeasure the historical control effect. Population, co-treatment, endpoint measurement and conduct affect constancy. M2 expresses the clinically acceptable sacrifice, not an arbitrary universal fraction. Poor adherence, crossover or missing follow-up can obscure differences, but their direction depends on the circumstances. Per-protocol selection does not automatically fix the problem.",
+        "ACOSOG Z0011 studied selected women with T1 or T2 breast cancer, no palpable axillary adenopathy and one or two involved sentinel nodes, with planned lumpectomy, tangential whole-breast irradiation and systemic therapy. It compared sentinel-node surgery alone with completion axillary dissection. At ten years, overall survival was 86.3% versus 83.6%; the death hazard ratio was 0.85 and its one-sided 95% upper confidence bound 1.16, below the 1.3 margin. This does not establish safety for every nodal burden, mastectomy without radiation or neoadjuvant setting. The original plan was 1,900 participants and 500 deaths; 891 were randomised. The reports describe low accrual and fewer deaths than expected, with the 2011 account specifying closure on pooled low mortality before a formal arm comparison. The ten-year analysis was not prespecified. Reduced information is a limitation to interpret, rather than automatic proof that every non-inferiority result is invalid.",
+        "PERSEPHONE compared six with twelve months of trastuzumab in HER2-positive early breast cancer among people eligible for chemotherapy. Its margin allowed a three-percentage-point loss in four-year disease-free survival. The observed rates were 89.4% versus 89.8%, with hazard ratio 1.07 and 90% confidence interval 0.93 to 1.24, meeting its prespecified criterion. Cardiac-toxicity treatment stops were 61/1,939 (3%) versus 146/1,894 (8%); those exposure denominators differ from the 4,088-person efficacy population. The result supports the named duration comparison and criteria, not every form of shorter treatment.",
+        "EA1131 compared platinum chemotherapy with capecitabine after residual triple-negative breast cancer, with the primary comparison in basal-subtype disease. It planned non-inferiority followed by superiority. The trial stopped after 410 of the planned 775 participants were randomised. At analysis, 120 invasive-disease-free-survival events represented 61% information; three-year estimates in the basal group were 42% with platinum and 49% with capecitabine. The futility decision did not establish equivalence or non-inferiority. Stopping without adequate evidence for the planned benefit is different from proving treatments interchangeable.",
+        "Relative and absolute margins answer different questions. Translating a hazard-ratio margin into an absolute survival loss requires a baseline survival probability, time horizon and model. Under proportional hazards one uses the corresponding survival relationship; an absolute loss need not increase monotonically across every baseline risk. Repeatedly accepting a somewhat worse active comparator can, under some conditions, erode preserved benefit across generations, often called biocreep. That is a risk to examine, not an inevitable result of every sequence of trials.",
+        "In a fictional four-year disease-free-survival trial, the allowed loss is three percentage points. A one-point worse estimate with a 90% interval from 2.6 points worse to 0.6 better stays within that worse boundary. A second 90% interval from 3.6 points worse to 1.6 better crosses it. Under the stated one-sided 5% rule, the first establishes the specified non-inferiority and the second is inconclusive. The second interval does not prove harm, and the first does not prove identical benefit. Always state which direction is worse and which confidence level the design used."
+      ],
+      "category": "Trials"
+    },
+    {
+      "id": "statistical-significance",
+      "kind": "term",
+      "name": "Statistical significance (P values, alpha, multiplicity)",
+      "aka": [
+        "statistically significant",
+        "statistical significance",
+        "not statistically significant",
+        "did not reach statistical significance",
+        "P value",
+        "p-value",
+        "P<0.05",
+        "P = 0.05",
+        "one-sided",
+        "two-sided",
+        "alpha spending",
+        "alpha allocation",
+        "type I error",
+        "multiplicity",
+        "multiple comparisons",
+        "hierarchical testing",
+        "gatekeeping",
+        "Bonferroni",
+        "underpowered",
+        "sample size",
+        "statistical power",
+        "80% power",
+        "90% power",
+        "numerically",
+        "numerical improvement",
+        "trend toward",
+        "trend towards",
+        "clinically meaningful",
+        "clinical significance",
+        "sample sizes"
+      ],
+      "tldr": "Statistical significance means a result meets the chosen testing threshold under its assumptions and error-control plan. It does not measure benefit size, clinical importance, or the probability that a hypothesis is true.",
+      "summary": "A significance threshold is set for a specified hypothesis and analysis; it is often 0.05, but the design may use another level or account for multiple tests. A p-value describes how unusual a test statistic at least as extreme as observed would be if the null model and other analysis assumptions held. It is not the probability that the result arose by chance or that the hypothesis is true. Power is the pre-study probability of rejecting a specified null under a stated alternative and design, not a guarantee for every effect. Multiple endpoints, subgroups or repeated looks can require a planned error-control method; in a fixed testing hierarchy, a failed earlier test can block a later formal claim. A nominal p-value has not necessarily met that adjusted rule, and a numerically better result describes the estimate's direction rather than proving benefit. Read the effect size, confidence interval, population and study limitations beside the test result; statistical significance and clinical importance are separate.",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/Statistical_significance",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Statistical_significance"
+        },
+        {
+          "label": "Greenland et al., 2016: statistical tests, confidence intervals and power",
+          "url": "https://doi.org/10.1007/s10654-016-0149-3"
+        },
+        {
+          "label": "FDA, October 2022: multiple endpoints in clinical trials, nonbinding guidance",
+          "url": "https://www.fda.gov/media/162416/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "primary-endpoint",
+        "prespecified-vs-post-hoc",
+        "subgroup-analysis",
+        "non-inferiority",
+        "hazard-ratio",
+        "group-sequential-design",
+        "sample-size-re-estimation",
+        "bayesian-trial-design",
+        "trial-failure-modes",
+        "p-value",
+        "confidence-interval"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Trials"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "graphRecords": 23091,
+  "changedOwnerIds": [
+    "absolute-benefit",
+    "statistical-significance"
+  ],
+  "rootOwners": [
+    {
+      "id": "absolute-benefit",
+      "file": "src/data/trial-design-wave.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A relative benefit says the risk fell by a third; an absolute benefit says how many people out of 100 were actually spared, which depends on how common the bad event was to begin with, and is the number that matters for deciding whether a treatment is worth its side effects.",
+          "beforeSha256": "e0a4b2fec6ccbe1d0b6ed6cba1e111f7d68088a5015fdcd7742561c0f0f94e92",
+          "after": "For a harmful outcome, absolute benefit is the comparison group's risk minus the treatment group's risk at a stated time. Relative risk divides treatment risk by comparison risk. Neither measure identifies who benefits or settles the balance of benefit and harm.",
+          "afterSha256": "0c1d770cfff8185cf8cfc840869f9381642602e5ffa7ac9ffe4614ec34ec734d"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ]
+    },
+    {
+      "id": "statistical-significance",
+      "file": "src/data/terms-jargon.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A result is 'statistically significant' when it would be unlikely (usually under 5%) to arise by chance if the treatment did nothing. It is a threshold, not a measure of benefit size: a tiny gain can pass it in a huge trial and a large one can miss it in a small trial, so ESMO and ASCO grade benefit separately.",
+          "beforeSha256": "50f310ab79b610bbb2ffbc593800a363439ed3a46adb949214a8887e18a40560",
+          "after": "Statistical significance means a result meets the chosen testing threshold under its assumptions and error-control plan. It does not measure benefit size, clinical importance, or the probability that a hypothesis is true.",
+          "afterSha256": "a69eb5c2cbb3ad88785b1d9051d5994f6ef468423f6753764e9d151329d683ea"
+        },
+        {
+          "field": "summary",
+          "before": "Trials are sized ('powered') to detect a pre-specified effect with 80-90% probability at a 5% two-sided alpha; testing several endpoints or several interim looks would inflate false positives unless alpha is split (allocated) or spent sequentially, so hierarchical testing means a secondary endpoint cannot be claimed if a higher one failed. 'Numerically better', 'trend' and 'nominal P' are phrases for results that did not meet the pre-set bar. Clinical meaningfulness is separate: ASCO and ESMO scales (ESMO-MCBS) grade the size of benefit, and a significant 6-week PFS gain may not matter to patients. Confidence intervals convey both size and uncertainty and are preferred to bare P values.",
+          "beforeSha256": "3842553e9297d9ba60d182bd5bb57941936415097f9f4d350c14fe576b3a9a9c",
+          "after": "A significance threshold is set for a specified hypothesis and analysis; it is often 0.05, but the design may use another level or account for multiple tests. A p-value describes how unusual a test statistic at least as extreme as observed would be if the null model and other analysis assumptions held. It is not the probability that the result arose by chance or that the hypothesis is true. Power is the pre-study probability of rejecting a specified null under a stated alternative and design, not a guarantee for every effect. Multiple endpoints, subgroups or repeated looks can require a planned error-control method; in a fixed testing hierarchy, a failed earlier test can block a later formal claim. A nominal p-value has not necessarily met that adjusted rule, and a numerically better result describes the estimate's direction rather than proving benefit. Read the effect size, confidence interval, population and study limitations beside the test result; statistical significance and clinical importance are separate.",
+          "afterSha256": "f5b681748b8e74ca1c4653fe3a9a3a6ad51a62a5fdb142eaec75a283ee0c6589"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Statistical_significance"
+            }
+          ],
+          "beforeSha256": "7e1dcf93cfaec3f22fa97407025708023409610215983e0da06bc070fffbba14",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Statistical_significance"
+            },
+            {
+              "label": "Greenland et al., 2016: statistical tests, confidence intervals and power",
+              "url": "https://doi.org/10.1007/s10654-016-0149-3"
+            },
+            {
+              "label": "FDA, October 2022: multiple endpoints in clinical trials, nonbinding guidance",
+              "url": "https://www.fda.gov/media/162416/download"
+            }
+          ],
+          "afterSha256": "fd10d4b9955c93b37c3ba07047676e0294a9a38077b4c3d1e280bc484783ac99"
+        }
+      ]
+    }
+  ],
+  "changedShortSummaryEntries": 11,
+  "literalChecks": [
+    {
+      "file": "src/data/i18n/zh.ts",
+      "changedEntries": 2,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/simple/part-o.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/ar.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/de.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/es.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/fr.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/hi.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/ja.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/i18n/pt.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    },
+    {
+      "file": "src/data/simple/part-j.ts",
+      "changedEntries": 1,
+      "allOtherFileBytesUnchanged": true
+    }
+  ],
+  "oldNotesPreservedInOrder": true,
+  "oldLinksPreservedInOrder": true,
+  "allOtherOwnerFieldsUnchanged": true,
+  "allOtherGraphRecordsUnchanged": true,
+  "newRecords": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "allChangedFilesDataClass": true
+}

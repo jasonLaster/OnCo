@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "id": "SB16-COPY-1",
+      "expression": "1+1",
+      "expected": 2,
+      "actual": 2,
+      "passCheck": true
+    },
+    {
+      "id": "SB16-COPY-2",
+      "expression": "1+0",
+      "expected": 1,
+      "actual": 1,
+      "passCheck": true
+    },
+    {
+      "id": "SB16-COPY-3",
+      "expression": "2+0",
+      "expected": 2,
+      "actual": 2,
+      "passCheck": true
+    },
+    {
+      "id": "SB16-COPY-4",
+      "expression": "2+1",
+      "expected": 3,
+      "actual": 3,
+      "passCheck": true
+    },
+    {
+      "id": "SB16-LOH-TOTAL",
+      "premise": "1+1 and2+0 have total two; sequence-version retention differs.",
+      "passCheck": true
+    },
+    {
+      "id": "SB16-UMI-GROUP",
+      "premise": "Fictional three qualifying reads with one valid partition/gene/UMI group count as one captured molecular group, conditional on the stated method.",
+      "readCount": 3,
+      "molecularGroups": 1,
+      "passCheck": true
+    },
+    {
+      "id": "SB16-SPLICE-ORDER",
+      "premise": "Removing exon2 from ordered1,2,3 leaves1,3; this does not determine a coding frame or protein outcome.",
+      "result": [
+        1,
+        3
+      ],
+      "passCheck": true
+    }
+  ],
+  "allPass": true,
+  "scientificBoundary": "Internal illustrative arithmetic and labels only. No numerical empirical claim or patient threshold is inferred."
+}

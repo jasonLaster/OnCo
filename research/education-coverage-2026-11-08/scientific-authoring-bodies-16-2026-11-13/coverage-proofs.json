@@ -1,0 +1,1980 @@
+{
+  "uniqueRequirements": 36,
+  "registeredRootRequirements": 36,
+  "contributorDraftOnlyRequirements": 0,
+  "sourceFirstInventorySHA256": "447154d5a37b4afde5cac210ff5f0d188875a126d35d36177642acfb216caa82",
+  "proofs": [
+    {
+      "id": "SB16-001",
+      "subject": "cell-family-state-classification",
+      "requirement": "Cell family, current quiet or dividing activity, clinical receptor status and RNA classification answer different questions; compatible labels are not interchangeable.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "cell-lineage-and-state:summary",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+          "supportingExcerpt": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+          "passageSha256": "3dc9cb6f8bebf3f6492adf24e0fd5490d77c3495bd12b0244e324fbb79379602",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-expression-signatures:notes:1",
+          "recordId": "gene-expression-signatures",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "2cf9e948f526f9955c91c87c1eaa1eca3d3c30e4a962fb25fc54ebf7cf024bf1",
+          "supportingExcerpt": "Pattern or module score, subtype classifier and outcome predictor answer different questions; performance belongs to a population, endpoint and horizon.",
+          "passageSha256": "8d9cd06b28e50ce1f54a4e91e3a3a1ef5b6c8cbd1d6543228c6b706f7775a3ec",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Identity/ancestry, context-dependent state and a method-defined classifier are different labels, so agreement does not make them interchangeable.",
+        "sourceGroup": "cell-family-state-classification",
+        "sourceKeys": [
+          "med-19648928",
+          "inherited:multiomics:23404817"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-002",
+      "subject": "cell-family-state-classification",
+      "requirement": "An epithelial identity or marker is not itself evidence of malignancy, cell of origin or a particular cancer subtype; normal epithelial cells exist.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma:summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "cell-lineage-and-state:notes:2",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+          "passageSha256": "c8da337d9ef3601b70e0116e20217be8b423e36c3913f3dcbbc14023bb7e6bd4",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Normal epithelial identity and tissue/marker context do not themselves certify malignancy or an individual tumour origin.",
+        "sourceGroup": "cell-family-state-classification",
+        "sourceKeys": [
+          "med-19648928",
+          "inherited:multiomics:23404817"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-003",
+      "subject": "cell-family-state-classification",
+      "requirement": "A quiet or dividing state can change without redefining cell family and does not by itself establish drug sensitivity or a clinical outcome.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "cell-lineage-and-state:summary",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "982ae1217d179c453e142fc7858e0f53a003b63f148cb8f95df87a29609192b1",
+          "supportingExcerpt": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+          "passageSha256": "3dc9cb6f8bebf3f6492adf24e0fd5490d77c3495bd12b0244e324fbb79379602",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "cell-lineage-and-state:notes:3",
+          "recordId": "cell-lineage-and-state",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "94b158173e18d5a21d4bacee4459ed87e1efe6f4a2722d0315735245b2989d41",
+          "supportingExcerpt": "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it.",
+          "passageSha256": "54ca7766f0aebb14fce395ead21406abd03f77dec41d99daf2b157c6d833ecd3",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "controlled-perturbation:tldr",
+          "recordId": "controlled-perturbation",
+          "version": "proposal-support-bodies-16-root",
+          "field": "tldr",
+          "fieldSha256": "558fcc95102fe6c684ad22c517750eed1f2251122f0f4e4bebf4e939141cc22b",
+          "supportingExcerpt": "Controlled perturbations deliberately change specified factors and compare responses with suitable controls. A model response alone does not prove its mechanism or patient benefit.",
+          "passageSha256": "0c88c812645f057d58ca70b10060be9bce492f5c68b8bec81e7a18023463fb37",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Cycling versus noncycling can coexist under separately established ancestry. A state label supplies no tested drug-response or clinical outcome; that is an inference boundary, not an empirical negative drug finding.",
+        "sourceGroup": "cell-family-state-classification",
+        "sourceKeys": [
+          "med-19648928",
+          "inherited:multiomics:23404817"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-004",
+      "subject": "cell-family-state-classification",
+      "requirement": "Clinical receptor assays and RNA classifiers have their own measurement, population and validation context; the schematic symbols and heatmap do not supply actual results or universal cutoffs.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "gene-expression-signatures:notes:1",
+          "recordId": "gene-expression-signatures",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "2cf9e948f526f9955c91c87c1eaa1eca3d3c30e4a962fb25fc54ebf7cf024bf1",
+          "supportingExcerpt": "Pattern or module score, subtype classifier and outcome predictor answer different questions; performance belongs to a population, endpoint and horizon.",
+          "passageSha256": "8d9cd06b28e50ce1f54a4e91e3a3a1ef5b6c8cbd1d6543228c6b706f7775a3ec",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-expression-signatures:notes:5",
+          "recordId": "gene-expression-signatures",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "2cf9e948f526f9955c91c87c1eaa1eca3d3c30e4a962fb25fc54ebf7cf024bf1",
+          "supportingExcerpt": "Analytical repeatability, clinical validity and clinical utility are separate questions.",
+          "passageSha256": "f0912f788dce0bf1f8262e9e2981a25e9e2cc204421f4de010fb349cdae3168b",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "ihc:notes:0",
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "There is no universal IHC scoring scale or positivity threshold. Retain antibody clone, retrieval and detection method, controls, eligible cells, subcellular location, intensity, distribution and intended use. A research stain does not automatically replace a clinical selection assay.",
+          "passageSha256": "a819a6286364fd958041ea0d15b604159cdb4d29bd5fbbbe9709df648b46d17c",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Defined algorithms, purpose-specific validation and marker-specific assays prevent treating the icons/heatmap as one interchangeable clinical rule.",
+        "sourceGroup": "cell-family-state-classification",
+        "sourceKeys": [
+          "med-19648928",
+          "inherited:multiomics:23404817"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-005",
+      "subject": "copy-number-loh",
+      "requirement": "In the fictional informative locus example, A/B has one copy of each version, 1+1, total two; A and B name versions at a locus rather than two different genes.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "gene-amplification:notes:1",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Total copy number counts copies of a region; allele-specific copy number estimates the contributions of the distinguishable sequence versions A and B.",
+          "passageSha256": "d03ca0f3d2e01121cb498cdd2f739f356f75eaf523a13fe61575b1a75f830dc5",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-amplification:notes:2",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+          "passageSha256": "51a88b006b33fa2b385d0a2a1b871f360a610d66665b33fe6a735f013800335a",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "A/B are distinguishable versions at one fictional locus, with total copy counts stated separately.",
+        "sourceGroup": "copy-number-loh",
+        "sourceKeys": [
+          "med-34731645",
+          "med-22544022",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-006",
+      "subject": "copy-number-loh",
+      "requirement": "A/absent has 1+0, total one. Deletion with LOH requires comparison with an initially heterozygous informative locus, not a claim that every deletion establishes LOH.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "gene-amplification:notes:2",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+          "passageSha256": "51a88b006b33fa2b385d0a2a1b871f360a610d66665b33fe6a735f013800335a",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-amplification:notes:6",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Methods combine relative coverage with allele balance at informative heterozygous sites, segment the genome and fit states; a matched normal helps; a total-copy profile alone cannot separate 1+1 from 2+0; homozygous sites are uninformative.",
+          "passageSha256": "101242644809196039379ba50d18a51c21aa76ea4796b5765f03184d0d6b22fe",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "alleles-and-zygosity:summary",
+          "recordId": "alleles-and-zygosity",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "e15d15ce7479a262346074215dcafddb84ebf6acfa92203b9d4a51e5dff6ce5c",
+          "supportingExcerpt": "At a diploid location, heterozygous means that the two copies differ in the feature being considered; homozygous means they match. Hemizygous describes a single copy in the specified context. Tumor gains, losses and genome doubling can make a two-copy model inadequate. Loss of heterozygosity means loss of previously different allelic information; it can accompany a deletion or occur while total copy count remains unchanged. Total copy number alone cannot identify which allele was retained.",
+          "passageSha256": "8d9e30d8302c422ee4cf8514ca5dcc21fe04379184859f949d8eae250edbd1a6",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The deletion state is informative only relative to the specified heterozygous allelic context; total copy loss alone does not identify retained allele information.",
+        "sourceGroup": "copy-number-loh",
+        "sourceKeys": [
+          "med-34731645",
+          "med-22544022",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-007",
+      "subject": "copy-number-loh",
+      "requirement": "A/A has 2+0, total two: copy-neutral LOH removes the heterozygous state without reducing total local copy count.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "genome-wide-loss-of-heterozygosity:notes:3",
+          "recordId": "genome-wide-loss-of-heterozygosity",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "2936ba6d43201ce5b685a678490fc07cec54505ae22c5dd50e5968b0d4fce151",
+          "supportingExcerpt": "A local LOH state and a genome-wide LOH score have different scope. In an idealised informative A/B region, 1+1 and 2+0 both total two copies, but only 2+0 loses one sequence version. A total-copy profile alone cannot distinguish them. Allele-aware inputs and purity/ploidy assumptions constrain the call; a genome-wide score does not identify the retained sequence, phase a mutation or directly measure current gene function.",
+          "passageSha256": "62cf532bcfe548f163f4a754761a0f28994a043936e55ec57633c5b8d78e558b",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The explicit1+1 versus2+0 example preserves total two while changing allelic diversity, without confusing local state with a genome-wide score.",
+        "sourceGroup": "copy-number-loh",
+        "sourceKeys": [
+          "med-34731645",
+          "med-22544022",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-008",
+      "subject": "copy-number-loh",
+      "requirement": "A/A/B has 2+1, total three and retains both versions. Gain, LOH and total count are distinct observations; none alone measures intact gene function or a biallelic functional loss.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "gene-amplification:notes:2",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+          "passageSha256": "51a88b006b33fa2b385d0a2a1b871f360a610d66665b33fe6a735f013800335a",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-amplification:notes:7",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+          "passageSha256": "4cdd07a1187b795efb74e2ba88f72d85c19fc805c14a525e8db0439b7098e648",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The2+1 example retains both versions; copy, phase, inactivity, expression and response are explicitly separate.",
+        "sourceGroup": "copy-number-loh",
+        "sourceKeys": [
+          "med-34731645",
+          "med-22544022",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-009",
+      "subject": "copy-number-loh",
+      "requirement": "These locus cartoons supply no patient-specific VAF, cancer-cell fraction, purity, ploidy, phase, mutation effect or clinical threshold; relative copy counts and functional consequences need their own assumptions/evidence.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "gene-amplification:notes:4",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Major and minor counts are the larger and smaller allelic contributions; minor of zero supports LOH under the model; they do not identify parental origin or assign a mutation to a copy; phasing needs suitable evidence.",
+          "passageSha256": "158895008ddc010aaf47d0bb5ffe2a19975eaf1b396d7e973ba3ab375d2b43c3",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-amplification:notes:5",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Local copy count differs from ploidy; relative signal can fit different purity and ploidy pairs; fractional counts can reflect mixture or subclonal states.",
+          "passageSha256": "2c4ac5257cea0454306f3e662c1e3eeab35ae27d072dca72316024127296490b",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene-amplification:notes:7",
+          "recordId": "gene-amplification",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+          "supportingExcerpt": "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+          "passageSha256": "4cdd07a1187b795efb74e2ba88f72d85c19fc805c14a525e8db0439b7098e648",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Major/minor counts, phase, purity/ploidy fits and functional or response inference remain separate from the cartoon totals.",
+        "sourceGroup": "copy-number-loh",
+        "sourceKeys": [
+          "med-34731645",
+          "med-22544022",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-010",
+      "subject": "duct-tissue-mixture",
+      "requirement": "The simplified normal breast duct places luminal epithelium around a lumen, myoepithelium outside it, a surrounding basement membrane and neighbouring stroma, including fibroblast, endothelial and immune contributors.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "myoepithelial-cells-and-basement-membrane:notes:0",
+          "recordId": "myoepithelial-cells-and-basement-membrane",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "187f3223012f3429f603557e9400267f2e7b23dd2406772e8b025ad0d88ef120",
+          "supportingExcerpt": "Typical normal breast ducts and acini have luminal epithelial cells facing the lumen, an outer living myoepithelial layer, extracellular basement membrane and then stroma. Myoepithelial cells have contractile features that help move milk; they are not the chest muscle. Basement membrane contains matrix proteins such as laminins and type IV collagen, not living cells.",
+          "passageSha256": "ab88c865107eb4c7e377665b3595f3d50cd169bd9bad763f21871133107327cc",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "epithelium-and-stroma:summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The current reader explicitly orders lumen-facing epithelium, outer living myoepithelium, extracellular basement membrane and stroma; non-epithelial contributors are not reclassified as epithelium.",
+        "sourceGroup": "duct-tissue-mixture",
+        "sourceKeys": [
+          "med-37380767",
+          "med-11801722"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-011",
+      "subject": "duct-tissue-mixture",
+      "requirement": "Normal mammary luminal and myoepithelial cells can be epithelial; the footer must not mean every normal cell is epithelial or an epithelial signal is cancer-specific.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "epithelium-and-stroma:summary",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "343092a23f2fd784933974c9d5028faa658222f11a0b071620b825cac17dc782",
+          "supportingExcerpt": "Epithelium forms linings, coverings and glands; an epithelial cell is not necessarily malignant. A basement membrane is extracellular supporting material beneath an epithelium, distinct from each cell’s lipid membrane. Stroma includes supporting cells, extracellular matrix and vascular structures, rather than only collagen or fibroblasts. Immune cells and other nonmalignant cells can contribute to a tumor specimen. The relevant compartments depend on the tissue and disease.",
+          "passageSha256": "c751a9ec522316aeb753b6dd1cd04641b47d58eaca18f3b95ccb357dd207bb59",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "epithelium-and-stroma:notes:2",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "In a fictional comparison, gene R is high in cancer cells, low in fibroblasts and similarly high in normal luminal epithelial cells. The first contrast supports higher expression than fibroblasts, even if it passes a statistical threshold; it does not establish cancer selectivity. The normal epithelial comparison addresses that claim more closely, while leaving other organs, cell states and target accessibility untested. If that reference group is tiny, contaminated or prepared differently, preserve the unresolved comparison rather than declaring selectivity or exact equality. Normal epithelial cells can also contribute familiar lineage markers to a tumour specimen. An image-based tumour mask is an assignment that needs validation for its actual method and specimens, rather than automatic proof that every included cell is malignant.",
+          "passageSha256": "ee3df748fe6ed009e702cfce83b6e4175f50a3058917146eeae106ce56c6267b",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The source footer is interpreted as normal epithelial cells existing, rather than all normal cells being epithelial or any epithelial marker being cancer-selective.",
+        "sourceGroup": "duct-tissue-mixture",
+        "sourceKeys": [
+          "med-37380767",
+          "med-11801722"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-012",
+      "subject": "duct-tissue-mixture",
+      "requirement": "A biopsy can mix malignant and nonmalignant epithelial, immune, fibroblast and endothelial contributions. A bulk signal does not itself identify the contributing cell type.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "bulk-rna-seq:summary",
+          "recordId": "bulk-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "9d1e8557e8086cb4646a3152be061a3142d7b1efe4203a0a3331ea6832cc0743",
+          "supportingExcerpt": "RNA carries cellular messages; bulk sequencing samples those messages from combined tissue after protocol-specific capture and preparation. Analysis assigns usable observations to genes or transcripts and applies a defined comparison scale. A change can reflect cell composition, expression within cells or both. Gene totals can conceal transcript differences, and pooled RNA does not directly establish protein localisation, pathway flux or drug dependence.",
+          "passageSha256": "91106e2670aae500317f22cc1fca04e9931ec81b408b2cabfd5db762179847b6",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "bulk-rna-seq:notes:0",
+          "recordId": "bulk-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "3c42ca9811783e183d1189d0401e11fa7246862429abb9d71a8b399eee1ff74a",
+          "supportingExcerpt": "Bulk RNA sequencing measures captured messages pooled across a specimen. Cancer, immune and supporting cells can contribute different amounts of RNA; a higher signal can reflect a changed mixture, changed expression within cells, or both. Zero detected reads does not establish biological absence. Source: Conesa et al., 2016 methods review, https://doi.org/10.1186/s13059-016-0881-8.",
+          "passageSha256": "07538c040e2726ac3de7b9dd800c366d1c60c71fda82ebd38be8a844dd782ecb",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "A pooled molecular measurement combines the sampled malignant and nonmalignant contributors and does not itself attribute its source.",
+        "sourceGroup": "duct-tissue-mixture",
+        "sourceKeys": [
+          "med-37380767",
+          "med-11801722"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-013",
+      "subject": "duct-tissue-mixture",
+      "requirement": "Changing cell mixture can change bulk abundance without a within-cell change; drawn cell counts/proportions do not measure tumour purity or a patient tissue composition.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "cell-composition-confound:summary",
+          "recordId": "cell-composition-confound",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "ac99ee283e7319abdc4eddeb5f4fe0c9556f5f86cf66713fb83af12cdfaad2fe",
+          "supportingExcerpt": "A tumour specimen can contain malignant, immune, stromal and normal cells. A difference in an aggregate molecular signal can reflect a changed mixture, changed expression within cells or both. That is different from a directly counted cell fraction or a density per sampled area, each of which also needs its denominator and sampled region.\n\nPreparation can change what is recovered. Slyper and colleagues compared single-cell and single-nucleus profiling in matched tumour specimens and found similar cell types at sometimes different proportions. A recovered profile mixture is therefore not automatically the original tissue census. Deconvolution and purity models can help investigate contributions under assumptions; they do not certify the cell of origin of every signal or remove sampling differences.",
+          "passageSha256": "13f84289ed7634951a8b26715b4581aa23ba3b9b04a9ef7017c82f1fe3470b4d",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "epithelium-and-stroma:notes:0",
+          "recordId": "epithelium-and-stroma",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "9fecb0b02e2240cbb5de11bbb7ec69eb0214b6a5685e1efdb5bb722095476d68",
+          "supportingExcerpt": "Bulk RNA or protein measurements combine contributions from sampled cells. A stronger signal can reflect more cells of one type, changed expression within cells, or both. Spatial review and suitable cell markers help test attribution; a mixed-tissue result should not automatically be assigned to cancer cells. Normal and cancer breast atlases provide defined examples of this cellular diversity.",
+          "passageSha256": "c227cab43ab3bf0828e94643e999b139f8d983aa3ede9efd1db267a3eec48e34",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Mixture change and within-cell expression change are alternative contributors. The depicted shapes/counts are not a measured purity estimate.",
+        "sourceGroup": "duct-tissue-mixture",
+        "sourceKeys": [
+          "med-37380767",
+          "med-11801722"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-014",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "Immune cells near a tumour demonstrate sampled presence, not natural antigen display or tumour-specific recognition.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "tils:notes:8",
+          "recordId": "tils",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "TIL is a location label, CD8 is a phenotype and antigen specificity is another property. Simoni found bystander CD8 cells recognizing viral rather than cancer epitopes in human lung and colorectal tumours; the study’s CD39 associations are not a universal test of every cell’s target. A functional assay compares defined effectors and targets with recognition and target-survival controls. Neither presence, cytokine release nor one killing assay reproduces every access barrier or establishes clinical benefit.",
+          "passageSha256": "4878b4a6ccd2a753af2babf1e5e93f4db61a7bf6307b40cceaf4ecd422edfe8f",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Location is distinct from phenotype and antigen specificity. Nearby lymphocytes do not demonstrate recognition or clinical benefit.",
+        "sourceGroup": "immune-presence-presentation-recognition",
+        "sourceKeys": [
+          "med-24952902",
+          "inherited:antigen:8906788",
+          "inherited:antigen:31844290"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-015",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "Protein/RNA detection or predicted peptide binding does not establish natural cell-surface peptide-HLA-I presentation. The peptide and HLA context matter.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "hla:summary:clipee9deccd",
+          "recordId": "hla",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+          "supportingExcerpt": "Binding predictors estimate whether a peptide can fit a specified allele's groove, but processing, transport, loading and surface expression decide whether it is displayed.",
+          "passageSha256": "ee9deccd71ac6613998e2673973c5ef18a63864203b61fc73e9acd216f8e48bd",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "protein:notes:0",
+          "recordId": "protein",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "fd0814581b080a1dae99a644a67e4a14cae54dc10090be684135639e31c8388e",
+          "supportingExcerpt": "An antibody may recognize an epitope on more than one product form or a remaining fragment. Many mass-spectrometry workflows digest proteins into peptides: a shared detected peptide cannot distinguish every full-length form. A candidate peptide sequence also does not establish its display by HLA. Separate assays address amount, location, intact form, function and antigen presentation.",
+          "passageSha256": "5e5a74ab378de80bcaee515728bcef4f6f61c7d69b766df5dee7a1d1d9c89ed5",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Prediction, protein/RNA detection and recovered peptides differ from natural surface peptide-HLA display.",
+        "sourceGroup": "immune-presence-presentation-recognition",
+        "sourceKeys": [
+          "med-24952902",
+          "inherited:antigen:8906788",
+          "inherited:antigen:31844290"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-016",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "For the conventional peptide-HLA receptor example, TCR recognition and a functional response require suitable evidence; binding, recognition, activation, killing and clinical benefit are different outcomes.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "t-cell-receptor:summary:p1",
+          "recordId": "t-cell-receptor",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "b10da4b31bc8e50e0294015ea9f6e941b69b43dbaee44ff4eacf78629728d09f",
+          "supportingExcerpt": "Particular receptors can cross-react across peptide and HLA contexts; that does not establish a universal cross-reactivity rate. Paired receptor identity, binding, activation, target-cell death and clinical benefit require different evidence. A response by one reconstructed pair to peptide-loaded cells does not establish that another alpha-chain pairing recognises the same target, or that either kills naturally presenting tumour cells. Use irrelevant-target, HLA and target-only viability controls. Peptide loading can bypass natural processing, and contact diagrams are not healthy-tissue safety tests.",
+          "passageSha256": "0d42afb2b527d5b740f6c5ffaca7bc1f2aea5c156dddec8cb98de70a6d4e7ea8",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "t-cell-receptor:notes:2",
+          "recordId": "t-cell-receptor",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "99df8b8d925d595e6836daff6ca535bcf6327436e7098465d0e125cb97a8a1bf",
+          "supportingExcerpt": "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
+          "passageSha256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Recognition, response and target-cell survival need their own conditions and controls. Peptide-loaded targets may bypass natural processing, and clinical benefit is a further endpoint.",
+        "sourceGroup": "immune-presence-presentation-recognition",
+        "sourceKeys": [
+          "med-24952902",
+          "inherited:antigen:8906788",
+          "inherited:antigen:31844290"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-017",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "The HLA-I cartoon is one immune-recognition setting, not a universal definition of all T cells or all immunity, and does not prove each clinical biomarker requires every illustrated test.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "hla:summary:clip60f974c1",
+          "recordId": "hla",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "c7416991c7a0a398a489d13dfa48c698ab97c4537c5c30c5d667eb837e581b9e",
+          "supportingExcerpt": "These are common routes, not exclusive lists: cross-presentation puts externally acquired antigen on class I without making it class II, and a CD4 response is not proof of matching class I tumour display.",
+          "passageSha256": "60f974c16b7a85bcfd052a736b13ff9d5a5f6ca839bf830967ea2a76664fb2cf",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "t-cell-receptor:summary:p0",
+          "recordId": "t-cell-receptor",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "b10da4b31bc8e50e0294015ea9f6e941b69b43dbaee44ff4eacf78629728d09f",
+          "supportingExcerpt": "A conventional alpha-beta T-cell receptor uses paired chains to recognise a peptide-HLA surface. Its recognition chains assemble with CD3 signalling partners, as demonstrated in the human TCR-CD3 structural study. CDR3 is an informative variable region, but neither a beta-chain sequence nor CDR3 alone specifies the complete paired receptor or its function.",
+          "passageSha256": "2f323d37b2ce797978c9af5dab46aa369a3445e1efa16d429a29a7b2bb771010",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "multi-omic-integration:notes:4",
+          "recordId": "multi-omic-integration",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "dc29252f98985a7171d70436b164b9dc92041c2db20cc918d92829fefa7e2a2d",
+          "supportingExcerpt": "Consider an invented repair-gene R example, with measurements attributed to the same pretreatment tissue region except for a derived model. A supported splice-site DNA variant identifies a candidate sequence change. Loss of the other allelic contribution, with the variant assigned to the retained contribution, supports a possible two-hit explanation subject to copy and phase uncertainty. A reproducible abnormal RNA junction in malignant-cell-enriched material adds evidence for a changed transcript product, while reduced staining with suitable controls adds a protein-signal difference in the assigned cells. Neither establishes that every intact protein is gone. A high genomic scar adds evidence about genomic history, not a direct test of present repair. Impaired repair in a suitable model with informative cycling and damage controls addresses function under those conditions. A replicated drug response at specified exposures adds a model-sensitivity hypothesis; it still leaves achievable safe exposure and patient benefit to their appropriate evidence. These are distinct observations, not a requirement to perform every assay before using any established clinical biomarker.",
+          "passageSha256": "80f75c7c61a0c985a6d6886a459fc333f23b2e8a91f317242cb43a076916b5a5",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Conventional peptide-HLA-I is an explicitly scoped route, and the record rejects a requirement to run every molecular assay for an established clinical biomarker.",
+        "sourceGroup": "immune-presence-presentation-recognition",
+        "sourceKeys": [
+          "med-24952902",
+          "inherited:antigen:8906788",
+          "inherited:antigen:31844290"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-018",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Repeated sequencing reads may be grouped to one captured original molecule using the relevant feature, partition barcode and UMI context. Generic UMI labels are not actual deduplication evidence or a census of all transcripts.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "single-cell-rna-seq:notes:13",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "Zheng and colleagues' 2017 droplet study grouped PCR duplicates by a shared partition barcode, UMI and gene assignment after its quality filters. In a fictional example, three qualifying reads in one such group count as one captured molecule; the same tag in another gene or partition is not automatically the same molecule. A UMI is a random sequence tag, rather than a globally unique name. Smith and colleagues showed that tag errors distort molecule estimates and described limits as the available tag diversity is used up. Retain the chemistry, grouping and error handling: the count is not a census of RNA originally present, proof of one cell per barcode or a protein measurement.",
+          "passageSha256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The added paragraph explicitly scopes duplicate grouping to the2017 study and supplies the conditional fictional three-read/one-captured-molecule example.",
+        "sourceGroup": "rna-counting-background-doublets",
+        "sourceKeys": [
+          "med-28100584",
+          "med-28091601",
+          "med-33367645",
+          "umi-tools-full",
+          "zheng-full"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-019",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "A partition/cell barcode and a molecule UMI serve different roles. Barcode assignment does not prove exactly one intact cell/nucleus; capture efficiency, errors and collisions limit counts.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "single-cell-rna-seq:notes:3",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "A barcode labels a reaction compartment and a UMI separates captured molecules from amplified copies, giving a gene-by-barcode table; a barcode does not guarantee one intact cell.",
+          "passageSha256": "5bd5a47732b0b80b9cb9a04328abd95a6931ec1a1817b0891a4f5844a82cf062",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:notes:13",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "Zheng and colleagues' 2017 droplet study grouped PCR duplicates by a shared partition barcode, UMI and gene assignment after its quality filters. In a fictional example, three qualifying reads in one such group count as one captured molecule; the same tag in another gene or partition is not automatically the same molecule. A UMI is a random sequence tag, rather than a globally unique name. Smith and colleagues showed that tag errors distort molecule estimates and described limits as the available tag diversity is used up. Retain the chemistry, grouping and error handling: the count is not a census of RNA originally present, proof of one cell per barcode or a protein measurement.",
+          "passageSha256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:summary",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "d332eaeb62af9f99b66e103d32c2ccd733f200cfc1236719fc21cf3ea624ba82",
+          "supportingExcerpt": "RNA is distributed across cellular compartments. Whole-cell and nucleus preparations sample different material and can recover different populations. Barcodes label captured profiles rather than certifying one intact cell; quality, ambient RNA and doublet checks remain necessary. Sparse capture and selective recovery prevent a complete census, and many profiles from one biopsy do not create independent patient replicates.",
+          "passageSha256": "ea5f797bbe2fcadb3a31deac50c7b7fca8be90384f0e9cb6f44796cb48cee0fd",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Partition/cell assignment and molecular tagging differ. The new paragraph adds quality/grouping/tag-diversity limits and the existing reader retains sparse recovery and uncertain cell calling.",
+        "sourceGroup": "rna-counting-background-doublets",
+        "sourceKeys": [
+          "med-28100584",
+          "med-28091601",
+          "med-33367645",
+          "umi-tools-full",
+          "zheng-full"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-020",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Ambient RNA can be assigned to a partition containing another cell/nucleus and imitate intrinsic expression; a detected marker does not by itself establish a cell identity or malignancy.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "single-cell-rna-seq:notes:10",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "A detection fraction uses the analysed profiles and a stated detection rule: it is not automatically the fraction of all cells in the original tissue. A profile with one immune-gene count but otherwise epithelial features is not thereby identified as an immune cell. Sparse recovery, ambient RNA and more than one contributing cell can complicate its interpretation. Check coherent marker evidence and the method of assignment; a mixture of markers does not by itself establish a new cell type. Pooling the counts from a selected set of profiles is pseudobulk. Five hundred nuclei from one biopsy can summarize that selected population, while the biopsy remains one biological specimen rather than five hundred independent patients.",
+          "passageSha256": "6c352f46748f653a30ac80e8fc7714aed8c76520e7e168d55bca2e5c1b1c0c3a",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:notes:11",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "Background correction estimates which part of a profile comes from free RNA in the preparation. SoupX's authors discuss deliberately overcorrecting contamination at the cost of removing a small amount of genuine signal. The estimated contamination and settings therefore need review; a corrected weak count or zero is not an infallible label of the molecule's origin.",
+          "passageSha256": "1fc895dbc568f69821c0c3fd05c0014ea57349c6a67cdeb5db6d5c7f684fdcdc",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "An isolated marker count can arise from ambient RNA and does not certify identity; estimated correction is not a perfect source label.",
+        "sourceGroup": "rna-counting-background-doublets",
+        "sourceKeys": [
+          "med-28100584",
+          "med-28091601",
+          "med-33367645",
+          "umi-tools-full",
+          "zheng-full"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-021",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Two nuclei/cells sharing a partition can produce a mixed doublet profile. Mixed markers alone do not establish a new hybrid cell state; the cartoon gives no universal doublet rate or perfect correction.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "single-cell-rna-seq:notes:6",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "A zero can be a missed molecule (dropout) rather than absence; ambient RNA contaminates profiles; a doublet combines cells or nuclei; correction does not certify every barcode.",
+          "passageSha256": "cd6ed98e79b3640fcdaba2e91796e3f5ab61ae082782aed86a682418062bb395",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:notes:10",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "A detection fraction uses the analysed profiles and a stated detection rule: it is not automatically the fraction of all cells in the original tissue. A profile with one immune-gene count but otherwise epithelial features is not thereby identified as an immune cell. Sparse recovery, ambient RNA and more than one contributing cell can complicate its interpretation. Check coherent marker evidence and the method of assignment; a mixture of markers does not by itself establish a new cell type. Pooling the counts from a selected set of profiles is pseudobulk. Five hundred nuclei from one biopsy can summarize that selected population, while the biopsy remains one biological specimen rather than five hundred independent patients.",
+          "passageSha256": "6c352f46748f653a30ac80e8fc7714aed8c76520e7e168d55bca2e5c1b1c0c3a",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Multiple contributors can create a doublet profile; mixed markers do not themselves establish a new cell type or a universal correction rate.",
+        "sourceGroup": "rna-counting-background-doublets",
+        "sourceKeys": [
+          "med-28100584",
+          "med-28091601",
+          "med-33367645",
+          "umi-tools-full",
+          "zheng-full"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-022",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "RNA counts do not directly quantify intact protein, protein abundance, location or activity, and sparse/no RNA capture is not proof a protein or cell function is absent.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "rna:notes:0",
+          "recordId": "rna",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "207a218e566e58eec87b3f9886f01b21f4cab0202361ccb1b7868a6d1458fbee",
+          "supportingExcerpt": "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+          "passageSha256": "4031fabab62e257723dde27629e96e2bdaff59061ff18b4c33cf9253cca558b6",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "protein:summary",
+          "recordId": "protein",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "b9d38a3c0b26a18f1b0a10d2b962ac4319745c594bb995634115cc56b1b2a60c",
+          "supportingExcerpt": "Amino acids join through peptide bonds into polypeptide chains; linked amino acids are residues. Peptide and protein usage overlaps without a universal length boundary. A protein may contain one or several chains, folded domains and flexible regions. Processing, chemical modifications, localization, production and degradation affect its form and behavior. Genes specify coding templates, but a DNA or RNA finding does not measure the resulting protein’s intact structure or activity.",
+          "passageSha256": "f1bb223d8c1c0186a5801e45e79ade09cf521dab30bc42ce6a1caf7a0300b63c",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:notes:0",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "A barcode identifies a captured reaction profile, requiring checks for ambient RNA and multiple contributing cells. Whole-cell and isolated-nucleus preparations sample different compartments; recovered profiles are not a complete tissue census. A zero count does not establish biological absence. Sources: https://pubmed.ncbi.nlm.nih.gov/28091601/ and https://pubmed.ncbi.nlm.nih.gov/33367645/.",
+          "passageSha256": "d808d930bb73c5ac4e3921b285ac20ec07aefcf1909770093025cf9d37c51074",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Captured RNA and a missed count do not measure intact protein or demonstrate biological absence.",
+        "sourceGroup": "rna-counting-background-doublets",
+        "sourceKeys": [
+          "med-28100584",
+          "med-28091601",
+          "med-33367645",
+          "umi-tools-full",
+          "zheng-full"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-023",
+      "subject": "rna-protein-location-function",
+      "requirement": "RNA detection asks whether a message was measured, with transcript identity, capture and sampling limits; it does not establish protein production or amount.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "bulk-rna-seq:summary",
+          "recordId": "bulk-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "9d1e8557e8086cb4646a3152be061a3142d7b1efe4203a0a3331ea6832cc0743",
+          "supportingExcerpt": "RNA carries cellular messages; bulk sequencing samples those messages from combined tissue after protocol-specific capture and preparation. Analysis assigns usable observations to genes or transcripts and applies a defined comparison scale. A change can reflect cell composition, expression within cells or both. Gene totals can conceal transcript differences, and pooled RNA does not directly establish protein localisation, pathway flux or drug dependence.",
+          "passageSha256": "91106e2670aae500317f22cc1fca04e9931ec81b408b2cabfd5db762179847b6",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna:notes:0",
+          "recordId": "rna",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "207a218e566e58eec87b3f9886f01b21f4cab0202361ccb1b7868a6d1458fbee",
+          "supportingExcerpt": "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+          "passageSha256": "4031fabab62e257723dde27629e96e2bdaff59061ff18b4c33cf9253cca558b6",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Captured transcript identity, amount and integrity differ from a protein measurement.",
+        "sourceGroup": "rna-protein-location-function",
+        "sourceKeys": [
+          "nhgri-rna",
+          "inherited:multiomics:24443746",
+          "inherited:multiomics:27135972",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-024",
+      "subject": "rna-protein-location-function",
+      "requirement": "A protein assay can detect an epitope or fragment rather than an intact active protein. Production/form and function need suitable evidence of their own.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "ihc:notes:7",
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Staining recognises an antibody-defined molecular feature, or epitope, rather than automatically proving a complete functioning protein. In an invented repair-gene example, weaker staining in identified cancer cells than in normal neighbours supports a cell-specific signal difference if the controls are adequate. The antibody may recognise a fragment or more than one protein form, so this does not give the amount of intact useful repair protein. The relevant form and current repair need suitable measurements of their own. One validated method can sometimes answer several questions, but measuring one property does not establish every other one.",
+          "passageSha256": "ed38575cd41b5a0f8f682bf87e0d7caa99c8388e840a510c1ef13b899515abdf",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "protein:notes:0",
+          "recordId": "protein",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "fd0814581b080a1dae99a644a67e4a14cae54dc10090be684135639e31c8388e",
+          "supportingExcerpt": "An antibody may recognize an epitope on more than one product form or a remaining fragment. Many mass-spectrometry workflows digest proteins into peptides: a shared detected peptide cannot distinguish every full-length form. A candidate peptide sequence also does not establish its display by HLA. Separate assays address amount, location, intact form, function and antigen presentation.",
+          "passageSha256": "5e5a74ab378de80bcaee515728bcef4f6f61c7d69b766df5dee7a1d1d9c89ed5",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "An epitope or shared digested peptide need not identify the intact active product. The existing reader gives the explicit form/function boundary.",
+        "sourceGroup": "rna-protein-location-function",
+        "sourceKeys": [
+          "nhgri-rna",
+          "inherited:multiomics:24443746",
+          "inherited:multiomics:27135972",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-025",
+      "subject": "rna-protein-location-function",
+      "requirement": "For a surface-target candidate, detection somewhere in the cell does not prove the required form is accessible on the relevant cell surface; not every protein target is a surface target.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "drug-target-and-mechanism:notes:1",
+          "recordId": "drug-target-and-mechanism",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "48347de6a6438b8dd8a94463420c3b73de2c6a784165635063906c8a088fc997",
+          "supportingExcerpt": "In a fictional experiment, receptor R is high in malignant cells, low in fibroblasts and similarly high in normal epithelial cells. A stain places it on cancer-cell membranes, while blocking R has little effect on growth under the tested conditions. This supports neither cancer selectivity nor a demonstrated growth dependency. R could be investigated as an antibody-drug-conjugate delivery address, but that hypothesis still needs evidence for binding, access, uptake where required, payload effect and relevant normal-tissue exposure. A plausible delivery address is not a promised drug response; enrichment, selectivity, engagement, dependence and clinical benefit are different claims.",
+          "passageSha256": "b11d9acd4c333dabed8878325b134df624603854a983b73725e2b25773e3495f",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "ihc:notes:2",
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Bulk receptor abundance and staining mainly on blood vessels can both be correct: one measures a mixture and the other locates signal. Neither establishes target accessibility or treatment benefit. Staining also does not establish protein activity or cancer-cell dependence on that protein.",
+          "passageSha256": "d44b0ac21860b7e44d1e7f472501b481f81818f455feb61e8552fa447ffd94af",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Measured location, accessible surface form, malignant-cell selectivity, growth dependency and therapeutic benefit remain different questions.",
+        "sourceGroup": "rna-protein-location-function",
+        "sourceKeys": [
+          "nhgri-rna",
+          "inherited:multiomics:24443746",
+          "inherited:multiomics:27135972",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-026",
+      "subject": "rna-protein-location-function",
+      "requirement": "A controlled perturbation tests a specified functional question with suitable controls. Schematic dishes or changed colours do not establish target specificity, therapeutic efficacy or patient benefit.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "controlled-perturbation:summary",
+          "recordId": "controlled-perturbation",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "2a22713b48979b60bc1dfdde15deaf3c21248355909b93886302f53b3c709ef1",
+          "supportingExcerpt": "A controlled perturbation deliberately changes a defined factor and measures the response against appropriate comparison conditions. Vehicle, positive, negative and mechanism controls answer different questions. A reproducible response can support an experimental claim without establishing its proposed mechanism or patient benefit. Baseline growth, timing, dose and the actual unit assigned to treatment matter.",
+          "passageSha256": "9cffdcd03c258cc864f0e3de2b800ed82a9826ef1383464d50198853309ad471",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "controlled-perturbation:notes:0",
+          "recordId": "controlled-perturbation",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "d3d35b415a0e0b3d8028533eba8379a7f5387a843fbf9c43f72f7180dba7c3ea",
+          "supportingExcerpt": "A vehicle control contains the carrier without the active treatment; an untreated condition asks a different question if the carrier has effects. A positive control checks that the assay can detect a known relevant response, while a negative or non-targeting control estimates background under its design. Another independent way to disrupt the same function can support a mechanism, and a rescue restores a function to test whether that reverses the response here. Off-target effects, incomplete restoration and model context limit interpretation. These are questions for matched model, timing and readout; no one control proves specificity or patient benefit, and agreement between similar readouts is not automatically independent mechanistic confirmation.",
+          "passageSha256": "a988b8f6aed22139ef4b352a69527090a3a572d2419d31804e4d8042e574adef",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "A specified controlled perturbation can support an experimental response without proving the proposed mechanism or patient benefit. Dish colours and counts are not a source dataset.",
+        "sourceGroup": "rna-protein-location-function",
+        "sourceKeys": [
+          "nhgri-rna",
+          "inherited:multiomics:24443746",
+          "inherited:multiomics:27135972",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-027",
+      "subject": "rna-protein-location-function",
+      "requirement": "Distinct questions need appropriate evidence, but one validated method can address several properties; the panels do not mandate four separate assays or new multiomics for every established biomarker.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "ihc:notes:7",
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Staining recognises an antibody-defined molecular feature, or epitope, rather than automatically proving a complete functioning protein. In an invented repair-gene example, weaker staining in identified cancer cells than in normal neighbours supports a cell-specific signal difference if the controls are adequate. The antibody may recognise a fragment or more than one protein form, so this does not give the amount of intact useful repair protein. The relevant form and current repair need suitable measurements of their own. One validated method can sometimes answer several questions, but measuring one property does not establish every other one.",
+          "passageSha256": "ed38575cd41b5a0f8f682bf87e0d7caa99c8388e840a510c1ef13b899515abdf",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "multi-omic-integration:notes:4",
+          "recordId": "multi-omic-integration",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "dc29252f98985a7171d70436b164b9dc92041c2db20cc918d92829fefa7e2a2d",
+          "supportingExcerpt": "Consider an invented repair-gene R example, with measurements attributed to the same pretreatment tissue region except for a derived model. A supported splice-site DNA variant identifies a candidate sequence change. Loss of the other allelic contribution, with the variant assigned to the retained contribution, supports a possible two-hit explanation subject to copy and phase uncertainty. A reproducible abnormal RNA junction in malignant-cell-enriched material adds evidence for a changed transcript product, while reduced staining with suitable controls adds a protein-signal difference in the assigned cells. Neither establishes that every intact protein is gone. A high genomic scar adds evidence about genomic history, not a direct test of present repair. Impaired repair in a suitable model with informative cycling and damage controls addresses function under those conditions. A replicated drug response at specified exposures adds a model-sensitivity hypothesis; it still leaves achievable safe exposure and patient benefit to their appropriate evidence. These are distinct observations, not a requirement to perform every assay before using any established clinical biomarker.",
+          "passageSha256": "80f75c7c61a0c985a6d6886a459fc333f23b2e8a91f317242cb43a076916b5a5",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The reader allows one validated method to answer several questions and explicitly does not require every assay before using any established biomarker.",
+        "sourceGroup": "rna-protein-location-function",
+        "sourceKeys": [
+          "nhgri-rna",
+          "inherited:multiomics:24443746",
+          "inherited:multiomics:27135972",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-028",
+      "subject": "rna-splicing",
+      "requirement": "In the RNA example, removal of introns joins retained exons1,2,3. This is processing of a transcript, not deletion or rewriting of the genomic DNA.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "rna-splicing:summary:p0",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+          "supportingExcerpt": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.",
+          "passageSha256": "5a91d3b9ae61f6512777378bd09805d68252452338a2f83773ff49eb710cbf96",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna-splicing:notes:5",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "RNA processing retains specified exons and removes introns; the separate precursor-molecule example does not delete genomic DNA or split one RNA into both complete products.",
+        "sourceGroup": "rna-splicing",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-exon",
+          "nhgri-intron",
+          "inherited:multiomics:26813401",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-029",
+      "subject": "rna-splicing",
+      "requirement": "Skipping exon2 yields an RNA joining1 and3; alternative splicing can be physiological or abnormal, so the normal/skipped comparison does not label all exon skipping pathological.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "rna-splicing:summary:p0",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+          "supportingExcerpt": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.",
+          "passageSha256": "5a91d3b9ae61f6512777378bd09805d68252452338a2f83773ff49eb710cbf96",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna-splicing:notes:5",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The alternative joins are selected processing outcomes across molecules, not proof that every skipped exon is pathological or translated.",
+        "sourceGroup": "rna-splicing",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-exon",
+          "nhgri-intron",
+          "inherited:multiomics:26813401",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-030",
+      "subject": "rna-splicing",
+      "requirement": "A detected RNA fragment or altered isoform does not prove a complete intact coding transcript or protein product. Read coverage and transcript form matter.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "rna-splicing:notes:1",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "A junction read supports a local RNA join, not necessarily a complete isoform. Gene-level counts can hide transcript differences. RNA quality, read coverage, reference version and cell mixture affect interpretation; protein quantity and function need separate evidence.",
+          "passageSha256": "25883d9590e1bd23db0fba88891e62d4b3a87561cbab5ecf258fbd123b565a17",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna:notes:0",
+          "recordId": "rna",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "207a218e566e58eec87b3f9886f01b21f4cab0202361ccb1b7868a6d1458fbee",
+          "supportingExcerpt": "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+          "passageSha256": "4031fabab62e257723dde27629e96e2bdaff59061ff18b4c33cf9253cca558b6",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "A local join or short captured RNA does not establish a full isoform or intact protein.",
+        "sourceGroup": "rna-splicing",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-exon",
+          "nhgri-intron",
+          "inherited:multiomics:26813401",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-031",
+      "subject": "rna-splicing",
+      "requirement": "The protein consequence of skipping depends on sequence, exon phase, reading frame and transcript stability; the unscaled numbered blocks alone do not establish a frameshift or functional loss.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "rna-splicing:summary:p0",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "9fe9a7f329836ba9f44033dc3f6cec781b96a33c6a729b85cb6a880bee030850",
+          "supportingExcerpt": "Splicing processes an initial RNA transcript. Exons are retained in a specified product and may contain untranslated sequence; introns are removed. For many nuclear pre-mRNAs, a spliceosome made of RNA and proteins recognizes boundary and regulatory sequences. The donor site starts an intron and the acceptor site ends it. Alternative choices yield transcript isoforms; a variant can alter exon inclusion, intron retention or use of a cryptic site. Exon skipping is not automatically a frameshift: the coding sequence and resulting joins matter. An altered message may undergo nonsense-mediated decay or produce a changed protein, but neither outcome follows from a prediction alone.",
+          "passageSha256": "5a91d3b9ae61f6512777378bd09805d68252452338a2f83773ff49eb710cbf96",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna-splicing:notes:5",
+          "recordId": "rna-splicing",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "d7103d1d9d77840be76315ba0acb536e719133073dd48025f1295b439a987b4f",
+          "supportingExcerpt": "Imagine separate precursor RNAs from the same fictional gene, with exons A, B and C in that order. One processing outcome retains A-B-C; another joins A directly to C. B is a skipped exon in the second outcome, rather than a region reclassified as an intron. One RNA molecule is not split into both complete products. These are selected outcomes across separate molecules, with other processing possibilities left open. Retained exon sequence can include untranslated regions. The letter pattern alone supplies neither a reading frame nor a guarantee about protein production or RNA decay.",
+          "passageSha256": "513c87c47f1aab709ffb1b5159f16f033a138ce19d45e71c75cbacc80c7b3690",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Coding sequence and joins determine frame effects; numbered blocks and a prediction do not establish decay or functional loss.",
+        "sourceGroup": "rna-splicing",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-exon",
+          "nhgri-intron",
+          "inherited:multiomics:26813401",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-032",
+      "subject": "information-flow-prompt",
+      "requirement": "Transcription uses a DNA template without consuming it, while translation reads a coding RNA template to assemble a polypeptide; RNA is not physically converted into protein.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow:notes:2",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "29d91071574efec23cbf5cd49c3281340281ad6938a10fb73c2585469e0eac9a",
+          "supportingExcerpt": "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them.",
+          "passageSha256": "8a82ce52f01cbfb257c5956b34140aa0ad3deb90e6eb94f49d93d2e4543694de",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The added paragraph explicitly separates a retained DNA template, an assembled RNA copy and a newly assembled amino-acid product.",
+        "sourceGroup": "information-flow-prompt",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-transcription",
+          "explicit-template-information-synthesis"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-033",
+      "subject": "information-flow-prompt",
+      "requirement": "The recipe-message-product route is a simplified protein-coding example. Not all DNA regions encode protein and functional noncoding RNAs need not become protein.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow:summary",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "a758407a62f025879aa7dbf4f2b2c0218995cfc7cc0c4c1789caa859576c5b6d",
+          "supportingExcerpt": "Replication makes DNA from DNA. Transcription uses a DNA template to make RNA. Translation reads the coding sequence of a message in three-base codons to build a polypeptide; the transcript and reading frame matter. Functional noncoding RNAs do not need to become protein. Reverse transcription copies RNA into DNA in relevant viral and retrotransposon contexts. This information-flow map is not a guarantee that every DNA change produces a measured RNA or protein change.",
+          "passageSha256": "80e07847d64567fa0053da9ec657f7a84f14199b9357fe89c1114a46400ca1a1",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "gene:summary",
+          "recordId": "gene",
+          "version": "proposal-support-bodies-16-root",
+          "field": "summary",
+          "fieldSha256": "b773bd1fbece68d6ef7d948381ace79842cc9d07cdbdc56851e57e8b4d5dbd2e",
+          "supportingExcerpt": "A protein-coding gene supplies RNA that can be translated into a polypeptide, while a noncoding RNA gene produces a functional RNA. Promoters and other regulatory regions influence transcription in a cell-dependent context. One gene can have several transcript versions. Exons are retained regions of a specified processed transcript and can include untranslated sequence; introns are removed by splicing. Coding sequence is the translated part of a coding message. A gene name alone does not specify a transcript, coding interval or protein product.",
+          "passageSha256": "fdf3e3458868c08d735a9ba6ed1c71649930f23039e246256eb2bbfebca9b4ba",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The route is protein-coding and does not force noncoding RNA into translation.",
+        "sourceGroup": "information-flow-prompt",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-transcription",
+          "explicit-template-information-synthesis"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-034",
+      "subject": "information-flow-prompt",
+      "requirement": "Transcription/translation arrows do not guarantee a measured RNA/protein consequence of a DNA variant. RNA abundance does not determine protein abundance, location or activity.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow:notes:2",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "29d91071574efec23cbf5cd49c3281340281ad6938a10fb73c2585469e0eac9a",
+          "supportingExcerpt": "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them.",
+          "passageSha256": "8a82ce52f01cbfb257c5956b34140aa0ad3deb90e6eb94f49d93d2e4543694de",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "rna:notes:0",
+          "recordId": "rna",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "207a218e566e58eec87b3f9886f01b21f4cab0202361ccb1b7868a6d1458fbee",
+          "supportingExcerpt": "RNA abundance reflects production, processing and degradation. Short sequencing reads do not prove that a full-length intact message was captured. A noncoding RNA can function without becoming a protein, and reverse transcription copies RNA into DNA in relevant biological contexts. RNA amount does not determine a fixed protein amount or activity.",
+          "passageSha256": "4031fabab62e257723dde27629e96e2bdaff59061ff18b4c33cf9253cca558b6",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Arrows identify processes rather than observed products; production, processing, turnover and measured protein properties remain different.",
+        "sourceGroup": "information-flow-prompt",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-transcription",
+          "explicit-template-information-synthesis"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-035",
+      "subject": "information-flow-prompt",
+      "requirement": "Made, in the right place and working remain open evidence questions. The molecular tool is an analogy, not a literal drug, validated therapy or clinical-benefit claim.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "central-dogma-information-flow:notes:2",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "29d91071574efec23cbf5cd49c3281340281ad6938a10fb73c2585469e0eac9a",
+          "supportingExcerpt": "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them.",
+          "passageSha256": "8a82ce52f01cbfb257c5956b34140aa0ad3deb90e6eb94f49d93d2e4543694de",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "drug-target-and-mechanism:tldr",
+          "recordId": "drug-target-and-mechanism",
+          "version": "proposal-support-bodies-16-root",
+          "field": "tldr",
+          "fieldSha256": "792e73c01669e17eec6e3416f7782261b8fadb3ddcd77067de7465c2d11244f4",
+          "supportingExcerpt": "A drug target is the molecule or structure a treatment acts on and its mechanism of action is how that action produces an effect, and each step from target to patient benefit needs its own evidence.",
+          "passageSha256": "769b59049cddfa440383fcf537d7df912e8e2deb00e0c08b46e17091c9b4ee2a",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "The analogy leaves made/location/working questions open and supplies neither an actual therapy nor clinical benefit.",
+        "sourceGroup": "information-flow-prompt",
+        "sourceKeys": [
+          "nhgri-rna",
+          "nhgri-transcription",
+          "explicit-template-information-synthesis"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "SB16-036",
+      "subject": "schematic-boundaries",
+      "requirement": "Colours, shapes, cell counts, block sizes, illustrative labels, recipe/tool symbols and layout are drawing conventions rather than measured biology, molecular anatomy or a universal clinical rule.",
+      "sourceAssetOrdinals": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance.",
+      "status": "covered-draft",
+      "evidence": [
+        {
+          "id": "myoepithelial-cells-and-basement-membrane:notes:6",
+          "recordId": "myoepithelial-cells-and-basement-membrane",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "187f3223012f3429f603557e9400267f2e7b23dd2406772e8b025ad0d88ef120",
+          "supportingExcerpt": "CAP's morphology-based histological classification and supporting-marker assessment answer a tissue question. A schematic rim is neither an immunostain result nor a diagnosis; illustrated gaps or colours cannot establish invasion. Interpret the actual tissue architecture and appropriately controlled stains together.",
+          "passageSha256": "91c118c2a6bb3c794e35693362be9fbff81ddafadab8513d16f5042348883cac",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "central-dogma-information-flow:notes:2",
+          "recordId": "central-dogma-information-flow",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "29d91071574efec23cbf5cd49c3281340281ad6938a10fb73c2585469e0eac9a",
+          "supportingExcerpt": "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them.",
+          "passageSha256": "8a82ce52f01cbfb257c5956b34140aa0ad3deb90e6eb94f49d93d2e4543694de",
+          "readerState": "registered-local-draft-root"
+        },
+        {
+          "id": "single-cell-rna-seq:notes:13",
+          "recordId": "single-cell-rna-seq",
+          "version": "proposal-support-bodies-16-root",
+          "field": "notes",
+          "fieldSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582",
+          "supportingExcerpt": "Zheng and colleagues' 2017 droplet study grouped PCR duplicates by a shared partition barcode, UMI and gene assignment after its quality filters. In a fictional example, three qualifying reads in one such group count as one captured molecule; the same tag in another gene or partition is not automatically the same molecule. A UMI is a random sequence tag, rather than a globally unique name. Smith and colleagues showed that tag errors distort molecule estimates and described limits as the available tag diversity is used up. Retain the chemistry, grouping and error handling: the count is not a census of RNA originally present, proof of one cell per barcode or a protein measurement.",
+          "passageSha256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+          "readerState": "registered-local-draft-root"
+        }
+      ],
+      "canonicalLane": "registered-root",
+      "semanticAssessment": {
+        "explanation": "Schematic tissue geometry, molecular analogy and fictional molecule grouping remain illustrative. Scientific interpretation is preserved in reader prose without importing or validating the artwork as measured biology.",
+        "sourceGroup": "schematic-boundaries",
+        "sourceKeys": [
+          "explicit-drawing-convention",
+          "explicit-illustrative-inference"
+        ],
+        "sourceScope": "Fresh complete abstracts and selected complete method/official paragraphs plus explicitly identified inherited cards at their recorded depth. No new whole-paper or whole-owner scientific certification.",
+        "constructionBoundary": "Assigned retained native images are unlinked in the pinned education Markdown. Their scientific interpretation is assessed directly, without inferring current-page adoption, clinical thresholds, biological census or product/owner approval."
+      },
+      "remaining": [],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "independentAcceptance": false
+    }
+  ],
+  "scope": "Exact field containment and scoped coordinator semantic judgments; no main/live, independent, expert, owner or learner acceptance."
+}

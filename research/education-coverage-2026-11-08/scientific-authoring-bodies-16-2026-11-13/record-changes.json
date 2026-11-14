@@ -1,0 +1,259 @@
+{
+  "dataCommit": "4c6d579b6a237ea610c53c6a38697d1858a8920b",
+  "rootOwners": [
+    {
+      "id": "single-cell-rna-seq",
+      "catalog": "root",
+      "file": "src/data/terms-cansim-oncology.ts",
+      "beforeRecordSHA256": "b7375276ae51f595a753e56a3d2a6ebf0f01913e4229c80d851fb34db497392a",
+      "afterRecordSHA256": "f3e2e0e30d6e50a7a6992a8fee0ee1a50b7db7230e43bcb8aee2066c8a113f43",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "A barcode identifies a captured reaction profile, requiring checks for ambient RNA and multiple contributing cells. Whole-cell and isolated-nucleus preparations sample different compartments; recovered profiles are not a complete tissue census. A zero count does not establish biological absence. Sources: https://pubmed.ncbi.nlm.nih.gov/28091601/ and https://pubmed.ncbi.nlm.nih.gov/33367645/.",
+            "Thousands of profiles from one biopsy remain nested within one biological specimen. Two technical libraries do not create two patients. Differential-expression comparisons must account for variation between biological replicates. Source: Squair et al., 2021, https://pubmed.ncbi.nlm.nih.gov/34584091/.",
+            "Check library chemistry before seeking sequence variants or splice junctions. In the documented fixed RNA profiling workflow, synthetic ligated probes are sequenced rather than captured-transcript complementary DNA. Gene counts from that workflow do not provide unrestricted original transcript sequence. Source: https://www.10xgenomics.com/support/software/cell-ranger/7.2/getting-started/cr-flex-what-is-frp.",
+            "A barcode labels a reaction compartment and a UMI separates captured molecules from amplified copies, giving a gene-by-barcode table; a barcode does not guarantee one intact cell.",
+            "Single-nucleus sequencing samples nuclear RNA including unfinished transcripts with introns, whole cells also capture cytoplasmic messages; a mouse cortex study showed different recovery; not proof nuclei are better for tumours.",
+            "Dissociation can lose fragile cells; nuclei can come from frozen tissue; fixed-material probe methods count ligated probes and cannot reveal every variant or splice product.",
+            "A zero can be a missed molecule (dropout) rather than absence; ambient RNA contaminates profiles; a doublet combines cells or nuclei; correction does not certify every barcode.",
+            "A cluster groups similar profiles and does not prove malignancy, lineage or a clone; cancer-cell identification needs supporting evidence.",
+            "Thousands of cells from one biopsy are nested in one biological sample; splitting into two libraries does not create two patients; replicate-level aggregation is one approach.",
+            "Record compatible viable/frozen/fixed preparation, material used, chemistry, cell/nucleus recovery and quality/identity checks. Report a gene-by-barcode table with its UMI/read/probe counting unit. Cell calling, low-quality and doublet criteria are chemistry/version-specific. Selective recovery, sparse capture, ambient RNA, degradation and batch require validation; a platform name provides neither a complete census nor clinical validity.",
+            "A detection fraction uses the analysed profiles and a stated detection rule: it is not automatically the fraction of all cells in the original tissue. A profile with one immune-gene count but otherwise epithelial features is not thereby identified as an immune cell. Sparse recovery, ambient RNA and more than one contributing cell can complicate its interpretation. Check coherent marker evidence and the method of assignment; a mixture of markers does not by itself establish a new cell type. Pooling the counts from a selected set of profiles is pseudobulk. Five hundred nuclei from one biopsy can summarize that selected population, while the biopsy remains one biological specimen rather than five hundred independent patients.",
+            "Background correction estimates which part of a profile comes from free RNA in the preparation. SoupX's authors discuss deliberately overcorrecting contamination at the cost of removing a small amount of genuine signal. The estimated contamination and settings therefore need review; a corrected weak count or zero is not an infallible label of the molecule's origin.",
+            "Residual tumour here means cancer remaining in the sampled tissue after treatment. For residual-tumour research, first support malignant-cell identity, then ask which recovered states, target messages and immune profiles are present. A stress programme does not establish a genetic clone or explain survival. In Kim and colleagues' twenty-person triple-negative breast-cancer study, longitudinal exome data and single-cell DNA/RNA data in eight participants supported selection of pre-existing genotypes alongside expression reprogramming under the studied treatment. This is not a universal resistance mechanism. Compare the sampled region, time, preparation, recovery and analysis before attributing a difference to treatment; a missing cluster need not have been eliminated. In a separate fictional calculation, an input suspension truly containing 4 percent malignant nuclei gives an expectation of 240 among 6,000 retained profiles only if malignant and other nuclei have equal inclusion through recovery, capture and quality filtering. Tissue-area cellularity is a different denominator. The calculation is neither a yield forecast nor an adequacy cutoff.",
+            "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/single-cell-rna-seq."
+          ],
+          "after": [
+            "A barcode identifies a captured reaction profile, requiring checks for ambient RNA and multiple contributing cells. Whole-cell and isolated-nucleus preparations sample different compartments; recovered profiles are not a complete tissue census. A zero count does not establish biological absence. Sources: https://pubmed.ncbi.nlm.nih.gov/28091601/ and https://pubmed.ncbi.nlm.nih.gov/33367645/.",
+            "Thousands of profiles from one biopsy remain nested within one biological specimen. Two technical libraries do not create two patients. Differential-expression comparisons must account for variation between biological replicates. Source: Squair et al., 2021, https://pubmed.ncbi.nlm.nih.gov/34584091/.",
+            "Check library chemistry before seeking sequence variants or splice junctions. In the documented fixed RNA profiling workflow, synthetic ligated probes are sequenced rather than captured-transcript complementary DNA. Gene counts from that workflow do not provide unrestricted original transcript sequence. Source: https://www.10xgenomics.com/support/software/cell-ranger/7.2/getting-started/cr-flex-what-is-frp.",
+            "A barcode labels a reaction compartment and a UMI separates captured molecules from amplified copies, giving a gene-by-barcode table; a barcode does not guarantee one intact cell.",
+            "Single-nucleus sequencing samples nuclear RNA including unfinished transcripts with introns, whole cells also capture cytoplasmic messages; a mouse cortex study showed different recovery; not proof nuclei are better for tumours.",
+            "Dissociation can lose fragile cells; nuclei can come from frozen tissue; fixed-material probe methods count ligated probes and cannot reveal every variant or splice product.",
+            "A zero can be a missed molecule (dropout) rather than absence; ambient RNA contaminates profiles; a doublet combines cells or nuclei; correction does not certify every barcode.",
+            "A cluster groups similar profiles and does not prove malignancy, lineage or a clone; cancer-cell identification needs supporting evidence.",
+            "Thousands of cells from one biopsy are nested in one biological sample; splitting into two libraries does not create two patients; replicate-level aggregation is one approach.",
+            "Record compatible viable/frozen/fixed preparation, material used, chemistry, cell/nucleus recovery and quality/identity checks. Report a gene-by-barcode table with its UMI/read/probe counting unit. Cell calling, low-quality and doublet criteria are chemistry/version-specific. Selective recovery, sparse capture, ambient RNA, degradation and batch require validation; a platform name provides neither a complete census nor clinical validity.",
+            "A detection fraction uses the analysed profiles and a stated detection rule: it is not automatically the fraction of all cells in the original tissue. A profile with one immune-gene count but otherwise epithelial features is not thereby identified as an immune cell. Sparse recovery, ambient RNA and more than one contributing cell can complicate its interpretation. Check coherent marker evidence and the method of assignment; a mixture of markers does not by itself establish a new cell type. Pooling the counts from a selected set of profiles is pseudobulk. Five hundred nuclei from one biopsy can summarize that selected population, while the biopsy remains one biological specimen rather than five hundred independent patients.",
+            "Background correction estimates which part of a profile comes from free RNA in the preparation. SoupX's authors discuss deliberately overcorrecting contamination at the cost of removing a small amount of genuine signal. The estimated contamination and settings therefore need review; a corrected weak count or zero is not an infallible label of the molecule's origin.",
+            "Residual tumour here means cancer remaining in the sampled tissue after treatment. For residual-tumour research, first support malignant-cell identity, then ask which recovered states, target messages and immune profiles are present. A stress programme does not establish a genetic clone or explain survival. In Kim and colleagues' twenty-person triple-negative breast-cancer study, longitudinal exome data and single-cell DNA/RNA data in eight participants supported selection of pre-existing genotypes alongside expression reprogramming under the studied treatment. This is not a universal resistance mechanism. Compare the sampled region, time, preparation, recovery and analysis before attributing a difference to treatment; a missing cluster need not have been eliminated. In a separate fictional calculation, an input suspension truly containing 4 percent malignant nuclei gives an expectation of 240 among 6,000 retained profiles only if malignant and other nuclei have equal inclusion through recovery, capture and quality filtering. Tissue-area cellularity is a different denominator. The calculation is neither a yield forecast nor an adequacy cutoff.",
+            "Zheng and colleagues' 2017 droplet study grouped PCR duplicates by a shared partition barcode, UMI and gene assignment after its quality filters. In a fictional example, three qualifying reads in one such group count as one captured molecule; the same tag in another gene or partition is not automatically the same molecule. A UMI is a random sequence tag, rather than a globally unique name. Smith and colleagues showed that tag errors distort molecule estimates and described limits as the available tag diversity is used up. Retain the chemistry, grouping and error handling: the count is not a census of RNA originally present, proof of one cell per barcode or a protein measurement.",
+            "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/single-cell-rna-seq."
+          ],
+          "beforeSha256": "35898df5de67a70602bf612bb96c8f0e9ed1f8c640438d8734ccd1596a4369a5",
+          "afterSha256": "045804bd2d1fd67cc8702f810558e641bc3c7098048f8adec23474f3092f3582"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Single-cell_transcriptomics"
+            },
+            {
+              "label": "Massively parallel digital transcriptional profiling of single cells.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28091601/"
+            },
+            {
+              "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33367645/"
+            },
+            {
+              "label": "Confronting false discoveries in single-cell differential expression.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34584091/"
+            },
+            {
+              "label": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30586455/"
+            },
+            {
+              "label": "Massively parallel digital transcriptional profiling of single cells (Nature communications 2017)",
+              "url": "https://doi.org/10.1038/ncomms14049"
+            },
+            {
+              "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+              "url": "https://doi.org/10.1093/gigascience/giaa151"
+            },
+            {
+              "label": "A single-cell and single-nucleus RNA-Seq toolbox for fresh and frozen human tumors (Nature medicine 2020)",
+              "url": "https://doi.org/10.1038/s41591-020-0844-1"
+            },
+            {
+              "label": "Confronting false discoveries in single-cell differential expression (Nature communications 2021)",
+              "url": "https://doi.org/10.1038/s41467-021-25960-2"
+            },
+            {
+              "label": "Bioconductor OSCA 3.15: multi-sample comparisons",
+              "url": "https://www.bioconductor.org/books/3.15/OSCA.multisample/multi-sample-comparisons.html"
+            },
+            {
+              "label": "Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing (Cell 2018)",
+              "url": "https://doi.org/10.1016/j.cell.2018.03.041"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Single-cell_transcriptomics"
+            },
+            {
+              "label": "Massively parallel digital transcriptional profiling of single cells.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28091601/"
+            },
+            {
+              "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33367645/"
+            },
+            {
+              "label": "Confronting false discoveries in single-cell differential expression.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34584091/"
+            },
+            {
+              "label": "Single-nucleus and single-cell transcriptomes compared in matched cortical cell types.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30586455/"
+            },
+            {
+              "label": "Massively parallel digital transcriptional profiling of single cells (Nature communications 2017)",
+              "url": "https://doi.org/10.1038/ncomms14049"
+            },
+            {
+              "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+              "url": "https://doi.org/10.1093/gigascience/giaa151"
+            },
+            {
+              "label": "A single-cell and single-nucleus RNA-Seq toolbox for fresh and frozen human tumors (Nature medicine 2020)",
+              "url": "https://doi.org/10.1038/s41591-020-0844-1"
+            },
+            {
+              "label": "Confronting false discoveries in single-cell differential expression (Nature communications 2021)",
+              "url": "https://doi.org/10.1038/s41467-021-25960-2"
+            },
+            {
+              "label": "Bioconductor OSCA 3.15: multi-sample comparisons",
+              "url": "https://www.bioconductor.org/books/3.15/OSCA.multisample/multi-sample-comparisons.html"
+            },
+            {
+              "label": "Chemoresistance Evolution in Triple-Negative Breast Cancer Delineated by Single-Cell Sequencing (Cell 2018)",
+              "url": "https://doi.org/10.1016/j.cell.2018.03.041"
+            },
+            {
+              "label": "Smith, Heger and Sudbery: UMI errors and molecule-counting limits (2017)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/28100584/"
+            }
+          ],
+          "beforeSha256": "e8eee256384c7db516f43c3f600dc2943392bd1fd7d4277c9fb7f7bbe67c5dbe",
+          "afterSha256": "72f34b413782356b5f05830b48e4aaee0d38ebafb3e2150cb271026b3b44760a"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "newConnectedParagraph": "Zheng and colleagues' 2017 droplet study grouped PCR duplicates by a shared partition barcode, UMI and gene assignment after its quality filters. In a fictional example, three qualifying reads in one such group count as one captured molecule; the same tag in another gene or partition is not automatically the same molecule. A UMI is a random sequence tag, rather than a globally unique name. Smith and colleagues showed that tag errors distort molecule estimates and described limits as the available tag diversity is used up. Retain the chemistry, grouping and error handling: the count is not a census of RNA originally present, proof of one cell per barcode or a protein measurement.",
+      "newLinks": [
+        {
+          "label": "Smith, Heger and Sudbery: UMI errors and molecule-counting limits (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28100584/"
+        }
+      ],
+      "sourceKeys": [
+        "med-28100584",
+        "umi-tools-full:0",
+        "umi-tools-full:2",
+        "umi-tools-full:20",
+        "umi-tools-full:34",
+        "umi-tools-full:35",
+        "med-28091601",
+        "zheng-full:4",
+        "zheng-full:46",
+        "zheng-full:47",
+        "zheng-full:48",
+        "zheng-full:49",
+        "zheng-full:50"
+      ],
+      "runtimeNoteOrderBoundary": "The new note is appended to the literal owner array. The CanSim factory then appends its unchanged attribution note, so all14 earlier notes retain exact strings and relative order, with the attribution following the new note.",
+      "allOldNoteStringsAndRelativeOrderPreserved": true,
+      "allOldLinksAndOrderPreserved": true,
+      "allOtherFieldsPreserved": true
+    },
+    {
+      "id": "central-dogma-information-flow",
+      "catalog": "root",
+      "file": "src/data/education-biology-evidence.ts",
+      "beforeRecordSHA256": "4abdcdc94df7ac07bb46c30611e81ddbe54e19c8256a482074b94623ac676b31",
+      "afterRecordSHA256": "f63b26088c59ad75c3db4c9c1dfa85a677b38b224705e577d5e73a763dffbf06",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
+            "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface."
+          ],
+          "after": [
+            "RNA processing, translation, folding, modification, localization and turnover can alter the path from a coding sequence to a functional product. DNA presence, RNA abundance, intact protein, location and activity require their own evidence. Neither a gene-level RNA count nor a sequence prediction establishes a fixed protein amount or clinical effect.",
+            "For a nuclear protein-coding gene in a eukaryotic cell, transcription occurs in the nucleus and the message reaches cytoplasmic ribosomes for translation. A delivered messenger RNA can begin at cytoplasmic translation without requiring genomic integration. This does not imply an empty nucleus or removal of existing nuclear DNA. Neither DNA nor an untranslated message is itself the finished receptor protein. Translation alone does not establish correct folding, processing, transport or function at the cell surface.",
+            "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them."
+          ],
+          "beforeSha256": "671b24d337a38f44bfc4550f82cd27cf4426c26b653311b0378be555bfe55c88",
+          "afterSha256": "29d91071574efec23cbf5cd49c3281340281ad6938a10fb73c2585469e0eac9a"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "newConnectedParagraph": "In the recipe analogy, the DNA template is retained while an RNA copy is assembled. Translation uses a message as instructions for joining amino acids; the RNA molecule is not the material converted into the protein. The arrows name these processes rather than showing that a reported DNA change produced a measured message or working product. Noncoding RNA lies outside this simplified protein-coding route. Questions about production, location and activity remain open until suitable evidence addresses them.",
+      "newLinks": [],
+      "sourceKeys": [
+        "nhgri-rna:30",
+        "nhgri-rna:38",
+        "nhgri-rna:39",
+        "nhgri-rna:50",
+        "nhgri-rna:51",
+        "nhgri-transcription:18"
+      ],
+      "runtimeNoteOrderBoundary": "New note follows all earlier notes.",
+      "allOldNoteStringsAndRelativeOrderPreserved": true,
+      "allOldLinksAndOrderPreserved": true,
+      "allOtherFieldsPreserved": true
+    }
+  ],
+  "newRecords": [],
+  "newModules": [],
+  "newAliases": [],
+  "newRelationships": [],
+  "registrations": [],
+  "summaryChanges": [],
+  "wholeGraph": {
+    "graphRecords": 23091,
+    "changedIds": [
+      "central-dogma-information-flow",
+      "single-cell-rna-seq"
+    ],
+    "otherRecordsUnchanged": 23089,
+    "allBeforeNotesAndLinksPreserved": true,
+    "allOtherFieldsPreserved": true,
+    "schemaParseCount": 2,
+    "files": [
+      "src/data/education-biology-evidence.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "sourceFirstFreezePreserved": true,
+    "newIds": 0,
+    "newModules": 0,
+    "newAliases": 0,
+    "newRelationships": 0,
+    "registrations": 0,
+    "summaryTableChanges": 0
+  },
+  "notCertified": "Untouched legacy empirical/clinical assertions in selected records retain their earlier verification scope. A source read for one paragraph does not certify every claim on its page."
+}

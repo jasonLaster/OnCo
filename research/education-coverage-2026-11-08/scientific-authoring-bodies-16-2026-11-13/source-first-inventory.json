@@ -1,0 +1,555 @@
+{
+  "frozenAtUTC": "2026-11-14T05:49:39.779840+00:00",
+  "baseCommit": "09fd9bde0492fbe1d478829368eba1619c71cabd",
+  "freshCurrentCanonicalFieldsReadBeforeFreeze": false,
+  "inheritedAuditContextKnown": true,
+  "bodyProgressSHA256": "3cff2c13f7df09292a59cee903c994dcdb56448b98ac87bc2252b5c950a834d5",
+  "nativeReviewSHA256": "d7e38fd4e2f5b9a56c750db22c5c38bcc5d04f70fadfea8887c0e08a051f6d5c",
+  "scientificRequirements": [
+    {
+      "id": "SB16-001",
+      "subject": "cell-family-state-classification",
+      "requirement": "Cell family, current quiet or dividing activity, clinical receptor status and RNA classification answer different questions; compatible labels are not interchangeable.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-002",
+      "subject": "cell-family-state-classification",
+      "requirement": "An epithelial identity or marker is not itself evidence of malignancy, cell of origin or a particular cancer subtype; normal epithelial cells exist.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-003",
+      "subject": "cell-family-state-classification",
+      "requirement": "A quiet or dividing state can change without redefining cell family and does not by itself establish drug sensitivity or a clinical outcome.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-004",
+      "subject": "cell-family-state-classification",
+      "requirement": "Clinical receptor assays and RNA classifiers have their own measurement, population and validation context; the schematic symbols and heatmap do not supply actual results or universal cutoffs.",
+      "sourceAssetOrdinals": [
+        0,
+        1
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-005",
+      "subject": "copy-number-loh",
+      "requirement": "In the fictional informative locus example, A/B has one copy of each version, 1+1, total two; A and B name versions at a locus rather than two different genes.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-006",
+      "subject": "copy-number-loh",
+      "requirement": "A/absent has 1+0, total one. Deletion with LOH requires comparison with an initially heterozygous informative locus, not a claim that every deletion establishes LOH.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-007",
+      "subject": "copy-number-loh",
+      "requirement": "A/A has 2+0, total two: copy-neutral LOH removes the heterozygous state without reducing total local copy count.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-008",
+      "subject": "copy-number-loh",
+      "requirement": "A/A/B has 2+1, total three and retains both versions. Gain, LOH and total count are distinct observations; none alone measures intact gene function or a biallelic functional loss.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-009",
+      "subject": "copy-number-loh",
+      "requirement": "These locus cartoons supply no patient-specific VAF, cancer-cell fraction, purity, ploidy, phase, mutation effect or clinical threshold; relative copy counts and functional consequences need their own assumptions/evidence.",
+      "sourceAssetOrdinals": [
+        2,
+        3
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-010",
+      "subject": "duct-tissue-mixture",
+      "requirement": "The simplified normal breast duct places luminal epithelium around a lumen, myoepithelium outside it, a surrounding basement membrane and neighbouring stroma, including fibroblast, endothelial and immune contributors.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-011",
+      "subject": "duct-tissue-mixture",
+      "requirement": "Normal mammary luminal and myoepithelial cells can be epithelial; the footer must not mean every normal cell is epithelial or an epithelial signal is cancer-specific.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-012",
+      "subject": "duct-tissue-mixture",
+      "requirement": "A biopsy can mix malignant and nonmalignant epithelial, immune, fibroblast and endothelial contributions. A bulk signal does not itself identify the contributing cell type.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-013",
+      "subject": "duct-tissue-mixture",
+      "requirement": "Changing cell mixture can change bulk abundance without a within-cell change; drawn cell counts/proportions do not measure tumour purity or a patient tissue composition.",
+      "sourceAssetOrdinals": [
+        4,
+        5
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-014",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "Immune cells near a tumour demonstrate sampled presence, not natural antigen display or tumour-specific recognition.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-015",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "Protein/RNA detection or predicted peptide binding does not establish natural cell-surface peptide-HLA-I presentation. The peptide and HLA context matter.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-016",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "For the conventional peptide-HLA receptor example, TCR recognition and a functional response require suitable evidence; binding, recognition, activation, killing and clinical benefit are different outcomes.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-017",
+      "subject": "immune-presence-presentation-recognition",
+      "requirement": "The HLA-I cartoon is one immune-recognition setting, not a universal definition of all T cells or all immunity, and does not prove each clinical biomarker requires every illustrated test.",
+      "sourceAssetOrdinals": [
+        6,
+        7
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-018",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Repeated sequencing reads may be grouped to one captured original molecule using the relevant feature, partition barcode and UMI context. Generic UMI labels are not actual deduplication evidence or a census of all transcripts.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-019",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "A partition/cell barcode and a molecule UMI serve different roles. Barcode assignment does not prove exactly one intact cell/nucleus; capture efficiency, errors and collisions limit counts.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-020",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Ambient RNA can be assigned to a partition containing another cell/nucleus and imitate intrinsic expression; a detected marker does not by itself establish a cell identity or malignancy.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-021",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "Two nuclei/cells sharing a partition can produce a mixed doublet profile. Mixed markers alone do not establish a new hybrid cell state; the cartoon gives no universal doublet rate or perfect correction.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-022",
+      "subject": "rna-counting-background-doublets",
+      "requirement": "RNA counts do not directly quantify intact protein, protein abundance, location or activity, and sparse/no RNA capture is not proof a protein or cell function is absent.",
+      "sourceAssetOrdinals": [
+        9,
+        10
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-023",
+      "subject": "rna-protein-location-function",
+      "requirement": "RNA detection asks whether a message was measured, with transcript identity, capture and sampling limits; it does not establish protein production or amount.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-024",
+      "subject": "rna-protein-location-function",
+      "requirement": "A protein assay can detect an epitope or fragment rather than an intact active protein. Production/form and function need suitable evidence of their own.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-025",
+      "subject": "rna-protein-location-function",
+      "requirement": "For a surface-target candidate, detection somewhere in the cell does not prove the required form is accessible on the relevant cell surface; not every protein target is a surface target.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-026",
+      "subject": "rna-protein-location-function",
+      "requirement": "A controlled perturbation tests a specified functional question with suitable controls. Schematic dishes or changed colours do not establish target specificity, therapeutic efficacy or patient benefit.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-027",
+      "subject": "rna-protein-location-function",
+      "requirement": "Distinct questions need appropriate evidence, but one validated method can address several properties; the panels do not mandate four separate assays or new multiomics for every established biomarker.",
+      "sourceAssetOrdinals": [
+        11,
+        12
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-028",
+      "subject": "rna-splicing",
+      "requirement": "In the RNA example, removal of introns joins retained exons1,2,3. This is processing of a transcript, not deletion or rewriting of the genomic DNA.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-029",
+      "subject": "rna-splicing",
+      "requirement": "Skipping exon2 yields an RNA joining1 and3; alternative splicing can be physiological or abnormal, so the normal/skipped comparison does not label all exon skipping pathological.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-030",
+      "subject": "rna-splicing",
+      "requirement": "A detected RNA fragment or altered isoform does not prove a complete intact coding transcript or protein product. Read coverage and transcript form matter.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-031",
+      "subject": "rna-splicing",
+      "requirement": "The protein consequence of skipping depends on sequence, exon phase, reading frame and transcript stability; the unscaled numbered blocks alone do not establish a frameshift or functional loss.",
+      "sourceAssetOrdinals": [
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-032",
+      "subject": "information-flow-prompt",
+      "requirement": "Transcription uses a DNA template without consuming it, while translation reads a coding RNA template to assemble a polypeptide; RNA is not physically converted into protein.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-033",
+      "subject": "information-flow-prompt",
+      "requirement": "The recipe-message-product route is a simplified protein-coding example. Not all DNA regions encode protein and functional noncoding RNAs need not become protein.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-034",
+      "subject": "information-flow-prompt",
+      "requirement": "Transcription/translation arrows do not guarantee a measured RNA/protein consequence of a DNA variant. RNA abundance does not determine protein abundance, location or activity.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-035",
+      "subject": "information-flow-prompt",
+      "requirement": "Made, in the right place and working remain open evidence questions. The molecular tool is an analogy, not a literal drug, validated therapy or clinical-benefit claim.",
+      "sourceAssetOrdinals": [
+        8
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    },
+    {
+      "id": "SB16-036",
+      "subject": "schematic-boundaries",
+      "requirement": "Colours, shapes, cell counts, block sizes, illustrative labels, recipe/tool symbols and layout are drawing conventions rather than measured biology, molecular anatomy or a universal clinical rule.",
+      "sourceAssetOrdinals": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "guideRefs": [
+        "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "c96896452386202405c435aa161bc5047919337a"
+      ],
+      "statusAtFreeze": "Complete assigned prompt/native review before fresh selected current canonical-field capture; inherited audit context was known and this is not blind independent acceptance."
+    }
+  ],
+  "supportChecks": [
+    {
+      "id": "SB16-C01",
+      "check": "All15 assigned paths/30entries retain exact pinned bytes, Git blobs and SHA256; associated pair retains earlier roles and ordinary grades."
+    },
+    {
+      "id": "SB16-C02",
+      "check": "The14 assigned PNGs have no matched PNG embedding/reference in pinned public-education Markdown; scientific assessment is separate from current-page adoption."
+    },
+    {
+      "id": "SB16-C03",
+      "check": "Associated three-layer media/alt/captions have two actual parent versions with a routing-path change; this does not establish current live publication."
+    },
+    {
+      "id": "SB16-C04",
+      "check": "Prompt construction/edit instructions, copied-style statements and model/author identity are provenance claims, not independently established approvals."
+    },
+    {
+      "id": "SB16-C05",
+      "check": "Neither full native views nor identity reuse establish accessibility, measured contrast, expert, owner, learner or language acceptance."
+    }
+  ],
+  "counts": {
+    "scientificRequirements": 36,
+    "subjects": 9,
+    "supportChecks": 5,
+    "textBodies": 1,
+    "textBytes": 1762,
+    "fullReadChunks": 1,
+    "assignedNativeFiles": 14,
+    "associatedNativeFiles": 2
+  }
+}

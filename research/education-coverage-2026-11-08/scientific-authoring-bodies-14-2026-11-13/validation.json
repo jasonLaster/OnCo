@@ -1,0 +1,1955 @@
+{
+  "dataCommit": "4ff2846400ceb7cc007482c257be4f93846243fb",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 11.4
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.35
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.27
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.57
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "wholeGraph": {
+    "baseCommit": "1f8d258c992f266f560bd8bb01f8761f0aa26d88",
+    "lastDataCommit": "4ff2846400ceb7cc007482c257be4f93846243fb",
+    "graphRecords": 23091,
+    "authoredOwnersChanged": 2,
+    "derivedRecordChanges": 0,
+    "changedIds": [
+      "batch-release",
+      "cdmo"
+    ],
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "allSelectedRecordsEqualActualReaders": true,
+    "currentEntitySchemaParses": 19,
+    "currentDataEdits": 2,
+    "newIds": 0,
+    "newFullGateRun": true,
+    "priorFloorScannerAndTestChanges": 0,
+    "committedDataFileClasses": [
+      {
+        "file": "src/data/binders-cmc-education-2026-11.ts",
+        "class": "data"
+      },
+      {
+        "file": "src/data/supporting.ts",
+        "class": "data"
+      }
+    ],
+    "gates": {
+      "results": [
+        {
+          "name": "typecheck",
+          "exitCode": 0,
+          "seconds": 11.4
+        },
+        {
+          "name": "lint",
+          "exitCode": 0,
+          "seconds": 30.35
+        },
+        {
+          "name": "validate",
+          "exitCode": 0,
+          "seconds": 2.27
+        },
+        {
+          "name": "full-suite",
+          "exitCode": 0,
+          "seconds": 315.57
+        }
+      ],
+      "unchangedDuringGates": true,
+      "workerHeapMiB": 8192,
+      "fullSuiteMaxWorkers": 2
+    },
+    "scope": "Fresh four-gate run on byte-identical committed data. Two existing owners receive appended teaching paragraphs, one link and two dates. All earlier note/link order and other graph fingerprints are preserved. Six root records and thirteen actual PR373 records have separate SSR/schema checks; peer lookup overlay is not root integration. No merge, deployment, hosted, browser, independent or language acceptance."
+  },
+  "fieldVerification": {
+    "graphRecords": 23091,
+    "changedIds": [
+      "batch-release",
+      "cdmo"
+    ],
+    "changedFields": [
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "beforeSha256": "4bc7a721a0f85a7f994b50335875c0d0930e76b8e1dbb0283dba1b1054c5c129",
+        "afterSha256": "225dd90f95dae28e543c41bcc34a81b7b62628849594d6f7c842e36b383cb8ed"
+      },
+      {
+        "id": "cdmo",
+        "field": "asOf",
+        "beforeSha256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "beforeSha256": "63b4383b50f48a3bb0dff10e1badfa91496c8951a4bb0260ed685ec99041e090",
+        "afterSha256": "14990c62af83cb418edd157884080c7ad37820d5b5a45cc0b08855b6ed52d934"
+      },
+      {
+        "id": "batch-release",
+        "field": "asOf",
+        "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+      },
+      {
+        "id": "batch-release",
+        "field": "links",
+        "beforeSha256": "c31516ccdb4dcc8d4c05b30bb136d4c3297c251b4ba583eca439a1ea1d01bc3a",
+        "afterSha256": "147c338efa1c4dc45ca338c1e2b7f056760c35d36b6b7ee44b4f89c4271bfe60"
+      }
+    ],
+    "priorNotesLinksAndOtherFieldsPreserved": true,
+    "allOtherGraphRecordsUnchanged": true,
+    "schemaParses": 6,
+    "newIds": 0,
+    "newRegistrations": 0
+  },
+  "actualReaders": {
+    "scope": "Actual EntityDetail SSR of registered draft-root records before overlay, with separate actual PR373 draft fields rendered using an in-memory lookup overlay only after all root readers. No Next build, hydration, deployment or independent acceptance claim.",
+    "checks": [
+      {
+        "id": "neoantigen-candidate-selection",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/neoantigen-candidate-selection/",
+        "sha256": "5d43dd9176d61d549b3bddefdee3a7c53fa75ef624967c0eced596f80ec140a9",
+        "bytes": 39318,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "tmb",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/tmb/",
+        "sha256": "8fa503aa2df655118e6cf42e054dbd45ed9d309852ecc94939f58fbbf9dad6b9",
+        "bytes": 88782,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "state": "registered-local-draft-graph",
+        "route": "/technologies/mrna-lnp-manufacturing/",
+        "sha256": "3a2eef15d551af86d77f17940979824f6cea12803931ff519d36a5f353fe1dfe",
+        "bytes": 64721,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "cdmo",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/cdmo/",
+        "sha256": "2292e3b01592e212cbd8a5ec71d1d248cdddd33a7fafd3eec47733fb7f60133d",
+        "bytes": 27375,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "batch-release",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/batch-release/",
+        "sha256": "18050e30eb6551ac01be8dc9fe8bff077196ea693b4fc48ace2961ede041bde2",
+        "bytes": 31589,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "state": "registered-local-draft-graph",
+        "route": "/terms/good-manufacturing-practice/",
+        "sha256": "a93ba971bfcb0086e92adcf2e9c0a4f8c3e27795c48b0f4c370eaa088a8422f4",
+        "bytes": 24541,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "codon-optimization",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/codon-optimization/",
+        "sha256": "175f30862da8be0a0c823e82be951ffabfd61c3fe264dd8293c063d1c61644be",
+        "bytes": 18198,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/multi-epitope-constructs/",
+        "sha256": "66320eb8288a2cbf272e4f20421cb74e0b35c9ab71400405cbf6a98e8c210774",
+        "bytes": 21185,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "in-vitro-transcription",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/in-vitro-transcription/",
+        "sha256": "1f346cfd6f9070d22c7ad247ca1da1af675e3bd4f36a8d79368534d10777468a",
+        "bytes": 20912,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/chemistry-manufacturing-controls/",
+        "sha256": "2bc565b77eeaf7ac617a09c17932f558ebbfb6a5fcbbef4e09d5eece532a0925",
+        "bytes": 22796,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "certificate-of-analysis",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/certificate-of-analysis/",
+        "sha256": "6fedba841505070bf6fb681fcfb2534ff3d3eb642c283f475e8f5aa8eed536f6",
+        "bytes": 19045,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/binding-presentation-recognition/",
+        "sha256": "4868d307033c728337df9666acf9cb3ada1d8fecfc35c4b3941941aae838bc55",
+        "bytes": 16674,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immunopeptidomics",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/immunopeptidomics/",
+        "sha256": "f51e5c78256a975f7e8e8c90d035280446fa02dec86f4b4a7cdf1a4f94d1f0a3",
+        "bytes": 21883,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immunopeptidome",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/immunopeptidome/",
+        "sha256": "dce97b61634b4b1a6a5872e5110991c26fb38fc1fbc732621284f59ebf0823d0",
+        "bytes": 17816,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/peptide-hla-multimer-staining/",
+        "sha256": "f2c34865749248e62e26a1e48d565216a22d5d57adb1e8f5772bc0f4b1d1cda1",
+        "bytes": 20508,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "elispot",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/elispot/",
+        "sha256": "47a10c8a83c718a4b315ad84ea1af5c66fed65aa9d31df71ba952f0bc36d39b4",
+        "bytes": 20477,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/immune-cytotoxicity-assays/",
+        "sha256": "6000e2a0a2cb002806215f5125287dfb34ba94cf51a2251cb54e8f60597b6fc0",
+        "bytes": 20066,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "immune-product-evidence",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/immune-product-evidence/",
+        "sha256": "5e8f8ade78041086075f3ddcb92eaae16f247eecd8ca794caa7a432ffe77b548",
+        "bytes": 17633,
+        "missingSources": [],
+        "nestedAnchors": 0
+      },
+      {
+        "id": "pbmc-specimens",
+        "state": "actual-frozen-contributor-PR373-unmerged-fields-in-memory-overlay",
+        "route": "/terms/pbmc-specimens/",
+        "sha256": "e7285560610d1f4972b5d099d49048dc32b1a02d1be4b40b7967f751006dbecc",
+        "bytes": 23147,
+        "missingSources": [],
+        "nestedAnchors": 0
+      }
+    ],
+    "sectionChecks": []
+  },
+  "exactReaderAnchors": {
+    "actualEntityDetailReaders": 19,
+    "exactAnchors": 26,
+    "exactParagraphChecks": 27,
+    "allPass": true,
+    "checks": [
+      {
+        "anchorId": "cdmo:summary",
+        "recordId": "cdmo",
+        "exactParagraphs": 2,
+        "surfaces": [
+          "cdmo.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:notes:0",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "batch-release:notes:1",
+        "recordId": "batch-release",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "batch-release.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:notes:1",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cdmo:notes:1",
+        "recordId": "cdmo",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cdmo.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cdmo:notes:2",
+        "recordId": "cdmo",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cdmo.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "cdmo:notes:4",
+        "recordId": "cdmo",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "cdmo.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:notes:5",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:notes:2",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "good-manufacturing-practice:summary",
+        "recordId": "good-manufacturing-practice",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "good-manufacturing-practice.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:notes:9",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:summary:p0",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "mrna-lnp-manufacturing:summary:p2",
+        "recordId": "mrna-lnp-manufacturing",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "mrna-lnp-manufacturing.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "batch-release:notes:6",
+        "recordId": "batch-release",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "batch-release.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "good-manufacturing-practice:notes:2",
+        "recordId": "good-manufacturing-practice",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "good-manufacturing-practice.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:6",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:10",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:0",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:9",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:summary:p1",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:4",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "immunopeptidomics:notes:0",
+        "recordId": "immunopeptidomics",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "immunopeptidomics.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "immunopeptidomics:notes:3",
+        "recordId": "immunopeptidomics",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "immunopeptidomics.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "tmb:notes:9",
+        "recordId": "tmb",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "tmb.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:5",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      },
+      {
+        "anchorId": "neoantigen-candidate-selection:notes:8",
+        "recordId": "neoantigen-candidate-selection",
+        "exactParagraphs": 1,
+        "surfaces": [
+          "neoantigen-candidate-selection.html"
+        ],
+        "pass": true
+      }
+    ],
+    "scope": "Actual component SSR with complete, ordered, exact paragraph containment across hub and explicitly captured Data section where applicable. The renderer may place headings between summary paragraphs. No hydration, deployed page, accessibility or independent acceptance claimed.",
+    "normalisation": "Inline text nodes concatenate without invented spaces; block boundaries retain whitespace. Only whitespace is collapsed."
+  },
+  "staticRootExports": {
+    "records": 6,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tmb",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cdmo",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "neoantigen-candidate-selection.json",
+        "bytes": 11478,
+        "sha256": "e778de3acb51f75f600e701bde9f392da9e89a3f6c90ed566c25da77b08570d6"
+      },
+      {
+        "file": "neoantigen-candidate-selection.md",
+        "bytes": 10693,
+        "sha256": "34ac86c4732598830312e9e6cfdc3764189d9dd6a58147e5ab6e934bd2562f46"
+      },
+      {
+        "file": "tmb.json",
+        "bytes": 25693,
+        "sha256": "ac8b78c38e32e7b297e1dd850775a344b930cffb84e514cbd186cf9d0dd853ec"
+      },
+      {
+        "file": "tmb.md",
+        "bytes": 19092,
+        "sha256": "f3f3782281ab8c3ba8f01f8220175df53aab8a3242e8de000906566fc16214f6"
+      },
+      {
+        "file": "mrna-lnp-manufacturing.json",
+        "bytes": 20366,
+        "sha256": "936b38f6574113bff5b95a07e794699b574548bb25c270c1804f708bcb3f9ab5"
+      },
+      {
+        "file": "mrna-lnp-manufacturing.md",
+        "bytes": 18353,
+        "sha256": "af806c8c584a75a5f7cf8da2083a3bdbe6416cdb11cc931fbb15f019887165a2"
+      },
+      {
+        "file": "cdmo.json",
+        "bytes": 5931,
+        "sha256": "f4aa439c4726e4abb23af2d9423301f7625b4668dd769409e5f2e172f6ac9bac"
+      },
+      {
+        "file": "cdmo.md",
+        "bytes": 5068,
+        "sha256": "3779edff4ef6c73d1755902bd272feb6aa73d5dd44f0c37939f1bd1ec5d4e5e3"
+      },
+      {
+        "file": "batch-release.json",
+        "bytes": 8887,
+        "sha256": "da1bcb95cecceea3a55d3d3bdffd69b4f09e2c8cc1c2cc7c92184f1462941dfa"
+      },
+      {
+        "file": "batch-release.md",
+        "bytes": 8034,
+        "sha256": "528ab60f4ab22579c997839b9501fd9efa3ffe37c3e2ef612ab0a6f1678a2366"
+      },
+      {
+        "file": "good-manufacturing-practice.json",
+        "bytes": 5956,
+        "sha256": "20432278f148594fe121b934442d57694103f0f3073029b23c4e75a31ae1a862"
+      },
+      {
+        "file": "good-manufacturing-practice.md",
+        "bytes": 5334,
+        "sha256": "b7a01433489e514241e93e923dc140a01da94d06b7a57335439d37aebf40a3f4"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "scope": "Actual static JSON, Markdown and OpenAPI generation. No deployment or full Next production-build claim."
+  },
+  "summaryConsumers": {
+    "entries": 171,
+    "texts": 11,
+    "fallbacks": 160,
+    "longAccepted": 0,
+    "long": [
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "neoantigen-candidate-selection",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "tmb",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "mrna-lnp-manufacturing",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "cdmo",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "batch-release",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "good-manufacturing-practice",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "codon-optimization",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "multi-epitope-constructs",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "in-vitro-transcription",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "chemistry-manufacturing-controls",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "certificate-of-analysis",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "binding-presentation-recognition",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidomics",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immunopeptidome",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "peptide-hla-multimer-staining",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "elispot",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "immune-product-evidence",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "es",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "zh",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "pt",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "hi",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "fr",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "de",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "ja",
+        "stored": false,
+        "accepted": false
+      },
+      {
+        "id": "pbmc-specimens",
+        "language": "ar",
+        "stored": false,
+        "accepted": false
+      }
+    ],
+    "namedReviews": []
+  },
+  "arithmetic": {
+    "geneticCodeComparison": {
+      "officialTable": 1,
+      "tableSourceSHA256": "2aecbdd09ecc5e0d233c105090a593737298ef93d88f6bc0c1bef26df6051a04",
+      "comparisons": [
+        {
+          "figureOrdinals": [
+            0,
+            1
+          ],
+          "theme": "dark",
+          "prefixA": "AUGCUA",
+          "prefixB": "AUGGCU",
+          "aminoAcidsA": "ML",
+          "aminoAcidsB": "MA",
+          "sameUnderDisplayedFrame": false
+        },
+        {
+          "figureOrdinals": [
+            0,
+            1
+          ],
+          "theme": "light",
+          "prefixA": "AUGGCUAAU",
+          "prefixB": "AUGGCUGCA",
+          "aminoAcidsA": "MAN",
+          "aminoAcidsB": "MAA",
+          "sameUnderDisplayedFrame": false
+        }
+      ],
+      "verifiedSynonymousControl": {
+        "codonA": "GCU",
+        "codonB": "GCC",
+        "aminoAcid": "alanine"
+      },
+      "scope": "Only clearly legible native-image prefixes compared under the displayed5prime-to3prime AUG-start frame. No complete functional construct is inferred from typographic art. The labels do not supply a validated same-protein example; an owner can substitute a checked synonymous pair."
+    },
+    "scope": "Short clearly legible prefixes checked against official Table1 in the displayed AUG-start frame, plus a positive synonymous GCU/GCC control. No full functional constructs or clinical probabilities are inferred."
+  },
+  "zeroSecretFindings": true,
+  "scope": "Fresh full gates on the exact two-file data bundle. Six root EntityDetail readers rendered before a separate in-memory lookup overlay for13 actual PR373 records. Root-only static API exports; no contributor-root registration, full Next build, hydration, hosted/browser, independent or language acceptance."
+}

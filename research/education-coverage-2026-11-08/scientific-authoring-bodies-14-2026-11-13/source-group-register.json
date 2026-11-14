@@ -1,0 +1,410 @@
+{
+  "subjects": 4,
+  "groups": [
+    {
+      "subject": "design-construct-and-manufacturing",
+      "sourceRefs": [
+        {
+          "sourceId": "fda-quality2016",
+          "readingDepth": "Complete specified text pages only; no whole-document or fresh PDF figure review",
+          "rawSHA256": "0af8c1222054c0449c524daaf349c6f57a0a3497e978ee4c0cba8ecaf7c16118",
+          "pdfTextPagesRead": [
+            4,
+            7,
+            8,
+            9
+          ],
+          "fresh": true
+        },
+        {
+          "sourceId": "NCBI-standard-genetic-code",
+          "rawSHA256": "2aecbdd09ecc5e0d233c105090a593737298ef93d88f6bc0c1bef26df6051a04",
+          "readingDepth": "Complete Standard/Table1 block only; 64 codon assignments checked. Other code tables not read."
+        },
+        {
+          "packet": "research/education-coverage-2026-11-08/vaccine-production-guides-2026-11-12/primary-sources.json",
+          "packetSHA256": "5d8cefe42432500d07768a92bc11dee04adc7a4a041d58ac15cdd486fd5533d7",
+          "selectedCards": [
+            {
+              "id": "schubert",
+              "type": "journal-publication",
+              "pmid": "26813686",
+              "doi": "10.1186/s13073-016-0263-6",
+              "pmcid": "PMC4728757",
+              "title": "Designing string-of-beads vaccines with optimal spacers.",
+              "firstAuthor": "Schubert",
+              "year": 2016,
+              "registries": {
+                "europePmcCapture": "epmc-schubert.json",
+                "crossrefCapture": "crossref-schubert.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "3ea1ab09960e9e9bd60d90100dbb4991a1b81381cc11dabfd71672c841b1fb23",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            },
+            {
+              "id": "wu",
+              "type": "journal-publication",
+              "pmid": "31012849",
+              "doi": "10.7554/elife.45396",
+              "pmcid": "PMC6529216",
+              "title": "Translation affects mRNA stability in a codon-dependent manner in human cells.",
+              "firstAuthor": "Wu",
+              "year": 2019,
+              "registries": {
+                "europePmcCapture": "epmc-wu-resolved.json",
+                "crossrefCapture": "crossref-wu.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "c396c44dc17f1f6c911d980b19d15db8bb71577e572260e81d373c6050580f3f",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            },
+            {
+              "id": "kozak",
+              "type": "journal-publication",
+              "pmid": "3943125",
+              "doi": "10.1016/0092-8674(86)90762-2",
+              "pmcid": null,
+              "title": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+              "firstAuthor": "Kozak",
+              "year": 1986,
+              "registries": {
+                "europePmcCapture": "epmc-kozak.json",
+                "crossrefCapture": "crossref-kozak.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "b8dee62f0f926edc5dc66bc4b3b6fd11db3bc8058661871d2b28103973334001",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            }
+          ],
+          "reopenedThisCohort": false
+        }
+      ],
+      "clauseScope": "Separate design, construct and contract roles. Commercial/process rights are planning questions, not FDA quality-agreement mandates or actual supplier attestations. Official Table1 rejects the unchecked image-prefix examples; inherited codon/spacer/initiation readings retain their tested context."
+    },
+    {
+      "subject": "rna-process-and-disposition",
+      "sourceRefs": [
+        {
+          "sourceId": "fda-cmc1999",
+          "readingDepth": "Complete specified text pages only; no whole-document or fresh PDF figure review",
+          "rawSHA256": "10021352c8cc9b00767a140b93a7e2eae025f60c84e48af977de11c827c8a3c7",
+          "pdfTextPagesRead": [
+            5,
+            21,
+            22,
+            23,
+            26,
+            27
+          ],
+          "fresh": true
+        },
+        {
+          "sourceId": "fda-quality2016",
+          "readingDepth": "Complete specified text pages only; no whole-document or fresh PDF figure review",
+          "rawSHA256": "0af8c1222054c0449c524daaf349c6f57a0a3497e978ee4c0cba8ecaf7c16118",
+          "pdfTextPagesRead": [
+            4,
+            7,
+            8,
+            9
+          ],
+          "fresh": true
+        },
+        {
+          "packet": "research/education-coverage-2026-11-08/rna-delivery-2026-11-10/primary-sources.json",
+          "packetSHA256": "80704d43da659bffb39b8a234430f7504cf765cb7e0c861bbfb9a0e340ded59e",
+          "selectedCards": [
+            {
+              "sourceId": "mu2018",
+              "pmid": "29534222",
+              "doi": "10.1093/nar/gky177",
+              "title": "An origin of the immunogenicity of in vitro transcribed RNA.",
+              "authors": "Mu X, Greenwald E, Ahmad S, Hur S.",
+              "year": "2018",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29534222/",
+              "indexedTypes": [
+                "Research Support, Non-U.S. Gov't",
+                "research-article",
+                "Journal Article",
+                "Research Support, N.I.H., Extramural"
+              ],
+              "evidenceType": "Journal publication; model and protocol scope retained per claim",
+              "readingDepth": {
+                "identifierResolution": "Crossref and Europe PMC MED, titles/first author/dates compared",
+                "abstractRead": true,
+                "abstractCharacters": 1240,
+                "fullTextAccess": "full text retrieved (Europe PMC OA XML)",
+                "fullTextDepth": "targeted-passage reading",
+                "claimVerification": "see coverage-proofs.json (passages located by exact string search in the raw text)"
+              },
+              "settingForClaims": "in vitro T7 transcription; MDA5 activation in cells",
+              "usedByPages": [
+                "dsrna-impurities-and-purification",
+                "in-vitro-transcription"
+              ],
+              "identityAndCaptureChecks": {
+                "sourceId": "mu2018",
+                "pmid": "29534222",
+                "doi": "10.1093/nar/gky177",
+                "titleMatch": true,
+                "doiMatch": true,
+                "firstAuthorsMatch": true,
+                "indexedTypes": [
+                  "Research Support, Non-U.S. Gov't",
+                  "research-article",
+                  "Journal Article",
+                  "Research Support, N.I.H., Extramural"
+                ],
+                "medCaptureSha256": "19cfbed093b25a1eeb817bda033ce50c33754170c7fffccefdc1cfccc28efb03",
+                "crossrefCaptureSha256": "f58b4827e6057ec8b7949ed27d1935551fe5d39ea531c74a6e8af92f97bd80c1"
+              }
+            },
+            {
+              "sourceId": "kariko2011",
+              "pmid": "21890902",
+              "doi": "10.1093/nar/gkr695",
+              "title": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+              "authors": "Karikó K, Muramatsu H, Ludwig J, Weissman D.",
+              "year": "2011",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21890902/",
+              "indexedTypes": [
+                "research-article",
+                "Journal Article",
+                "Research Support, N.I.H., Extramural"
+              ],
+              "evidenceType": "Journal publication; model and protocol scope retained per claim",
+              "readingDepth": {
+                "identifierResolution": "Crossref and Europe PMC MED, titles/first author/dates compared",
+                "abstractRead": true,
+                "abstractCharacters": 1148,
+                "fullTextAccess": "full text retrieved (Europe PMC OA XML)",
+                "fullTextDepth": "targeted-passage reading",
+                "claimVerification": "see coverage-proofs.json (passages located by exact string search in the raw text)"
+              },
+              "settingForClaims": "primary cells; in vitro and mice per full text",
+              "usedByPages": [
+                "dsrna-impurities-and-purification",
+                "in-vitro-transcription",
+                "modified-nucleosides"
+              ],
+              "identityAndCaptureChecks": {
+                "sourceId": "kariko2011",
+                "pmid": "21890902",
+                "doi": "10.1093/nar/gkr695",
+                "titleMatch": true,
+                "doiMatch": true,
+                "firstAuthorsMatch": true,
+                "indexedTypes": [
+                  "research-article",
+                  "Journal Article",
+                  "Research Support, N.I.H., Extramural"
+                ],
+                "medCaptureSha256": "8d66dc1c1637a510955d558c46ec50a451464acb962f6ec6d6260b8b8daf69df",
+                "crossrefCaptureSha256": "63e2e091df1b753eae8986f4526d63edb842e4a21c5a724ff47c26691d444206"
+              }
+            },
+            {
+              "sourceId": "baiersdorfer2019",
+              "pmid": "30933724",
+              "doi": "10.1016/j.omtn.2019.02.018",
+              "title": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+              "authors": "Baiersdörfer M, Boros G, Muramatsu H, Mahiny A, Vlatkovic I, Sahin U, Karikó K.",
+              "year": "2019",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/30933724/",
+              "indexedTypes": [
+                "research-article",
+                "Journal Article"
+              ],
+              "evidenceType": "Journal publication; model and protocol scope retained per claim",
+              "readingDepth": {
+                "identifierResolution": "Crossref and Europe PMC MED, titles/first author/dates compared",
+                "abstractRead": true,
+                "abstractCharacters": 1309,
+                "fullTextAccess": "full text retrieved (Europe PMC OA XML)",
+                "fullTextDepth": "targeted-passage reading",
+                "claimVerification": "see coverage-proofs.json (passages located by exact string search in the raw text)"
+              },
+              "settingForClaims": "in vitro cellulose chromatography; mice for translation",
+              "usedByPages": [
+                "dsrna-impurities-and-purification"
+              ],
+              "identityAndCaptureChecks": {
+                "sourceId": "baiersdorfer2019",
+                "pmid": "30933724",
+                "doi": "10.1016/j.omtn.2019.02.018",
+                "titleMatch": true,
+                "doiMatch": true,
+                "firstAuthorsMatch": true,
+                "indexedTypes": [
+                  "research-article",
+                  "Journal Article"
+                ],
+                "medCaptureSha256": "853d8b62962e15625394c1daae35fbf8f3b2acfd4f1e24191cbcba83f509a002",
+                "crossrefCaptureSha256": "2768fb79103fcbdbe4fa07119ba39eb0824e57b227f47f6b791461dd8a9bfffd"
+              }
+            }
+          ],
+          "reopenedThisCohort": false
+        },
+        {
+          "packet": "research/education-coverage-2026-11-08/vaccine-production-guides-2026-11-12/primary-sources.json",
+          "packetSHA256": "5d8cefe42432500d07768a92bc11dee04adc7a4a041d58ac15cdd486fd5533d7",
+          "selectedCards": [
+            {
+              "id": "schubert",
+              "type": "journal-publication",
+              "pmid": "26813686",
+              "doi": "10.1186/s13073-016-0263-6",
+              "pmcid": "PMC4728757",
+              "title": "Designing string-of-beads vaccines with optimal spacers.",
+              "firstAuthor": "Schubert",
+              "year": 2016,
+              "registries": {
+                "europePmcCapture": "epmc-schubert.json",
+                "crossrefCapture": "crossref-schubert.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "3ea1ab09960e9e9bd60d90100dbb4991a1b81381cc11dabfd71672c841b1fb23",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            },
+            {
+              "id": "wu",
+              "type": "journal-publication",
+              "pmid": "31012849",
+              "doi": "10.7554/elife.45396",
+              "pmcid": "PMC6529216",
+              "title": "Translation affects mRNA stability in a codon-dependent manner in human cells.",
+              "firstAuthor": "Wu",
+              "year": 2019,
+              "registries": {
+                "europePmcCapture": "epmc-wu-resolved.json",
+                "crossrefCapture": "crossref-wu.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "c396c44dc17f1f6c911d980b19d15db8bb71577e572260e81d373c6050580f3f",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            },
+            {
+              "id": "kozak",
+              "type": "journal-publication",
+              "pmid": "3943125",
+              "doi": "10.1016/0092-8674(86)90762-2",
+              "pmcid": null,
+              "title": "Point mutations define a sequence flanking the AUG initiator codon that modulates translation by eukaryotic ribosomes.",
+              "firstAuthor": "Kozak",
+              "year": 1986,
+              "registries": {
+                "europePmcCapture": "epmc-kozak.json",
+                "crossrefCapture": "crossref-kozak.json",
+                "doiTitleFirstAuthorYearAgree": true
+              },
+              "readDepth": "complete abstract only",
+              "abstractTextSha256": "b8dee62f0f926edc5dc66bc4b3b6fd11db3bc8058661871d2b28103973334001",
+              "bodyReadParagraphIndices": [],
+              "wholeOriginalPaperRead": false
+            }
+          ],
+          "reopenedThisCohort": false
+        },
+        {
+          "packet": "research/education-coverage-2026-11-08/binders-cmc-2026-11-10/primary-sources.json",
+          "packetSHA256": "9b334face78c0eb4b6c76274383b836d22dd1ff0111561fb1bf98bf555ddebc4",
+          "selectedCards": [
+            {
+              "sourceId": "fda-potency-final-2026",
+              "rawCaptureSha256": "332476a39563b63a7be407525c59dc70bddf3f850e64c58cb02e54f7d9b02884",
+              "bytes": 489319,
+              "readingDepth": "Targeted introduction, supersession, scope and assay-control passages; document dated November 2026, no issuance day inferred."
+            }
+          ],
+          "reopenedThisCohort": false
+        }
+      ],
+      "clauseScope": "The January1999 guidance concerns vaccine licence applications; the2016 guidance concerns commercial contract manufacture. Their material/stage, quality and stability distinctions do not supply universal RNA release, fill order or storage values. Earlier RNA studies remain specific experimental methods."
+    },
+    {
+      "subject": "assay-questions-and-inference",
+      "sourceRefs": [
+        {
+          "sourceId": "purcell",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "5cdc73d84251145c42b97a2cf873531d518dd08a765c60ac61c3234f9322c3b5",
+          "fresh": true
+        },
+        {
+          "sourceId": "altman",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "076e5a9fd2c30f88645e31ff05e2d3bb319ec9a92f960f8699485fc832dc56ce",
+          "fresh": true
+        },
+        {
+          "sourceId": "wykes",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "3b86f1a1d7f8cf4f18c25c72e8e0510ce16a6d18f7ee421a3ba8d00490d0e05c",
+          "fresh": true
+        },
+        {
+          "sourceId": "wells",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "11a2288a1a69555db709b8fdb63dd917d7d01317144607597ad41778c75e8e3b",
+          "fresh": true
+        },
+        {
+          "sourceId": "maecker",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "140d79cadcd84969ef250e3be604f8611a2081ea860c068e0396104b7733110e",
+          "fresh": true
+        },
+        {
+          "sourceId": "rabinovich",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "d5f3d407df8127a800366f61af7d13dd0e4debf5bfbf6ad8ef2e14804650dcc2",
+          "fresh": true
+        },
+        {
+          "sourceId": "wykes-pdf",
+          "readingDepth": "Complete equipment/procedure/control text on specified PDF pages, including incubation, cell removal, washes and spot development. No whole-paper read.",
+          "rawSHA256": "93c6e0b32c61d68214db664f7827a7b0deec39436d38bcc383a8ebf2e6621226",
+          "pdfTextPagesRead": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "fresh": true
+        }
+      ],
+      "clauseScope": "HLA capture/released peptide identification, specified multimer binding, stimulated secretion and controlled target-cell death are separate outputs. Fresh protocol pages4–7 support incubation/removal/wash/development. HIV/CMV or laboratory systems are not automatically cancer benefit evidence."
+    },
+    {
+      "subject": "method-and-population-boundaries",
+      "sourceRefs": [
+        {
+          "sourceId": "purcell",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "5cdc73d84251145c42b97a2cf873531d518dd08a765c60ac61c3234f9322c3b5",
+          "fresh": true
+        },
+        {
+          "sourceId": "barroso",
+          "readingDepth": "Complete raw Europe PMC MED abstract; no full paper",
+          "rawSHA256": "382aadf5d7e6a2239270b4ac41c9b31b0da6e74a115cab4537b36c9da2133b3e",
+          "fresh": true
+        }
+      ],
+      "clauseScope": "Method-specific specimen compatibility rather than a generic FFPE promise; the positive adaptation remains withheld. Barroso3969-sample group context cannot assign an individual displayed peptide, yield, reactive receptor population, product choice or clinical benefit."
+    }
+  ],
+  "scope": "Individually named source/depth references; citation presence and historical PASS verdicts are not entailment proof."
+}

@@ -1,0 +1,582 @@
+{
+  "version": "proposal-support-bodies-14-root",
+  "state": "Committed registered local-draft fields of6 existing owners;2 receive appended planning/stage qualifications. Actual PR373 fields are preserved in their existing independently matched draft snapshot and are not registered here. Selection is not authorship or blanket source verification.",
+  "draft": 375,
+  "committedDataHead": "4ff2846400ceb7cc007482c257be4f93846243fb",
+  "records": [
+    {
+      "id": "neoantigen-candidate-selection",
+      "kind": "term",
+      "name": "Neoantigen candidate selection",
+      "aka": [
+        "neoantigen design board",
+        "neoantigen target selection"
+      ],
+      "tldr": "Choosing vaccine targets means tracking what supports each candidate and which failures they share. More candidates or a better computer score do not by themselves show broader, safer tumour recognition.",
+      "summary": "A neoantigen design board links source alterations, encoded sequence windows, peptide and human leukocyte antigen (HLA) pairs, experimental evidence and unresolved dependencies. It compares a set of candidates for a stated purpose rather than turning one score into proof of a therapeutic target. A source event can generate several peptide windows, so candidate count and independent tumour coverage differ.\n\nThe evidence ladder has separate steps. Tumour-normal sequence comparison can support an alteration, and mutant RNA can support a sampled transcript without proving protein production or processing. A processing or binding prediction is a model result. Recovered HLA-associated peptide supports the sampled preparation without settling cell origin, receptor recognition or safety. A controlled T-cell response supports the tested stimulus; controlled recognition or killing of naturally presenting tumour cells tests a more direct function. Tissue distribution, persistence, safety and clinical benefit still need their own evidence. A suitable clinical comparison estimates benefit for that population, product and setting, without automatic transfer elsewhere.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "Wells et al.: task-specific neoantigen prediction and patient-matched immune assays (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33038342/"
+        },
+        {
+          "label": "Sarkizova et al.: mono-allelic presentation data and allele-specific prediction (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31844290/"
+        },
+        {
+          "label": "NetMHCpan-4.1: output tasks and percentile-rank definitions",
+          "url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/"
+        },
+        {
+          "label": "Ghorani et al.: retrospective differential-agretopicity evidence (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29361136/"
+        },
+        {
+          "label": "Lindeboom et al.: transcript-context rules for nonsense-mediated decay (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27618451/"
+        },
+        {
+          "label": "Litchfield et al.: frameshift decay escape and bounded immune findings (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32733040/"
+        },
+        {
+          "label": "Cer et al.: assumptions for IC50 and binding-constant conversion (2009)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19395593/"
+        },
+        {
+          "label": "Purcell et al.: HLA-complex capture, peptide release and mass spectrometry (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31092913/"
+        },
+        {
+          "label": "Altman et al.: specified peptide-MHC tetramers identify binding cells (1996)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8810254/"
+        },
+        {
+          "label": "Wykes and Renia: peptide-specific secretion and ELISpot protocol (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34541071/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "neoantigen",
+        "neoantigen-mrna-vaccine",
+        "hla",
+        "hla-typing-and-nomenclature",
+        "hla-loh",
+        "antigen-processing-machinery",
+        "agretopicity",
+        "nonsense-mediated-decay",
+        "vaf",
+        "genetic-code"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the source event, encoded window and processed epitope separate. The conventional T-cell receptor recognises a peptide together with its HLA molecule. One mutation can supply several windows or pairs, and several class-I alleles can share beta-2 microglobulin (B2M) and processing requirements. A fictional row M simply ends an otherwise unchanged protein early, whereas row N shifts the reading frame and creates an altered tail. N supplies a possible altered sequence; M's stop label alone does not. Neither establishes display or recognition. Reconstruct the actual transcript and sequence, and assess transcript-context-dependent decay rather than treating every truncating event alike.",
+        "A fictional board has ten rows, A to J, from nine events. A and B share Event 1 and allele X: A has supported alteration and mutant RNA, while B is another predicted window. C comes from Event 2, also through X, with an HLA-associated peptide identified but cell origin and recognition unresolved. J comes from Event 9 through X and has controlled tumour-cell recognition, leaving healthy-tissue specificity and durability open. These four rows share X despite their different evidence. Extra windows do not independently protect that shared display route.",
+        "The other fictional rows expose different gaps. D comes from Event 3 through allele Y and has a peptide-stimulated response without natural tumour-recognition evidence. E, Event 4 through Y, has a broad estimated cancer-cell fraction but weak RNA support. F, Event 5 through Z, has RNA and display-prediction agreement but may cover a small subclone. G, Event 6, uses class II and has a peptide-responsive helper population; which cells present it and in what context remain questions. H, Event 7 through Y, has a credible tumour-specific sequence but a similar healthy sequence needing specificity tests. I, Event 8 through Z, has a strong rank with limited model support for that allele. No universal clinical A-to-J order follows.",
+        "Re-read that board under two separate fictional reports, assuming X, Y and Z are classical class-I alleles. Loss of X directly challenges A, B, C and J, without establishing failure of Y or Z. A shared B2M-supported class-I display defect instead challenges A to F and H to J. G's class-II route requires separate presenting-cell and helper-response evidence; it is not an established rescue. Each row's original uncertainty remains. Ten windows from one alteration restricted to a lost allele increase the count without restoring that route.",
+        "If only one experiment can run, state which uncertainty it addresses and what either result would mean. Testing D against naturally presenting tumour cells, with appropriate controls, is one defensible choice. A positive connects the response to those tested cells under those conditions. A negative prompts checks of processing, display, cell state and assay adequacy. Neither result estimates patient benefit, and another experiment may be preferable for another stated goal.",
+        "Keep prediction tasks and units visible. Fictional K has a 0.4% eluted-ligand rank and L a predicted competitive-binding half-maximal inhibitory concentration (IC50) of 40 nanomolar (nM). The numerical values cannot rank K against L: one is a reference-relative score and the other an assay-concentration estimate. IC50 is not automatically an equilibrium binding constant. Compare matched outputs for the exact allele and model/version; a percentile is not a probability of benefit. Differential agretopicity compares mutant and normal predictions and inherits their uncertainty, rather than measuring escape from tolerance or natural recognition.",
+        "An estimated cancer-cell fraction is not a photograph of every cell or evidence that a mutation is truncal across all lesions. Purity, local copy number and altered-copy count affect interpretation of the raw variant read fraction. Similarly, a peptide list is a recovered subset with cell, HLA class, time, capture, database and confidence rules attached. Non-detection requires sensitivity context, and artificial peptide loading can bypass a tumour's own processing. State what was actually tested rather than moving a candidate to a later rung by inference.",
+        "A set can double-count correlated windows and correlated model assumptions. Model agreement is not independent validation; a weighted ensemble needs appropriate held-out evaluation for its task, alleles and population. Class-I and class-II choices can support different response components without guaranteeing recognition or overcoming a shared defect. Immunodominance can concentrate a measured response on a few offered targets. Epitope spreading means additional detected recognition beyond the encoded targets; it is not a substitute for a clinical comparison.",
+        "Maintain selection and exclusion reasons, the two sequences in a mutant-normal comparison, exact HLA protein names, specimen and assay context, model versions, manual overrides and the authorised construct version. Record the strongest observed support and the unresolved question beside each candidate. These are evidence-reading and traceability rules, not a validated scoring formula, a compulsory assay sequence or a personal treatment recommendation.",
+        "In a fictional evidence notebook, peptide A is identified in a mixed-tissue HLA preparation, an A-HLA multimer labels blood cells, post-dose cells produce more spots after A stimulation, and a receptor sequence becomes relatively more frequent. Record identification confidence and cell origin for the first result, allele and staining denominator for the second, and background, viability and culture-expansion history for the third. The sequence result neither identifies which cells made the spots nor proves an absolute increase in that receptor-bearing population. Natural recognition of tumour cells has not been tested and remains a visible gap. A controlled positive tumour-cell assay would strengthen that target under the tested conditions while leaving healthy-tissue safety and patient benefit separate.",
+        "Three physical workflows illustrate that separation. Immunopeptidomics can capture HLA-peptide complexes on an antibody-coated support, release connected peptide molecules and identify their sequences by mass spectrometry. A tetramer puts four specified peptide-HLA units on a shared laboratory scaffold to bind sampled T cells; this is not a native four-HLA receptor. In ELISpot, cells incubate over an antibody-coated capture membrane, then cells are removed and the membrane is washed before developed spots are read. Recovered peptides, reagent binding and secretion-associated spots do not by themselves measure tumour killing. Molecular shapes and illustrative spot counts are schematic rather than quantitative biological observations."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "tmb",
+      "kind": "term",
+      "name": "Tumour mutational burden (TMB)",
+      "aka": [],
+      "tldr": "Tumour mutational burden is an assay-defined density of eligible DNA mutations, usually reported per million bases.",
+      "summary": "Tumour mutational burden divides eligible somatic mutation counts by an eligible DNA territory, commonly in mutations per megabase. Counting, origin filtering, calibration, specimen and quality rules affect the estimate. It does not directly measure immune recognition, copy-number instability or treatment response. A clinical threshold applies only within its validated assay and disease setting.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor_mutational_burden",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tumor_mutational_burden"
+        },
+        {
+          "label": "FDA pembrolizumab label revised July 2026",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+        },
+        {
+          "label": "Merino et al. (2020), in-silico TMB harmonization",
+          "url": "https://friendsofcancerresearch.org/wp-content/uploads/JITC_Establishing_guidelines_to_harmonize-TMB_2.pdf"
+        },
+        {
+          "label": "FDA, 16 October 2026: traditional approval and updated TMB-H indication",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph"
+        },
+        {
+          "label": "KEYTRUDA current prescribing information, sections 1.18 and 2.1",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        },
+        {
+          "label": "Barroso-Sousa et al.: mutation-burden distributions in breast-cancer samples (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32067680/"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [
+        "cgp"
+      ],
+      "targets": [],
+      "drugs": [
+        "pembrolizumab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-rizvi-mutational-landscape-pd1-science-2015",
+        "paper-rizvi-targeted-ngs-immunotherapy-determinants-jco-2018",
+        "paper-ricciuti-tmb-pd-l1-levels-jama-oncol-2022",
+        "paper-keynote-042-tmb-mutations-ann-oncol-2023",
+        "paper-keynote-189-407-tmb-jtocrr-2023"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "TMB is the density of eligible somatic mutations over the assay reporting region, in mut/Mb (Mb = one million bases); the numerator rules, filters and any calibration are method-specific.",
+        "Panel, exome and genome examine different regions; a cancer-gene-enriched region need not behave as a random genomic sample.",
+        "When laboratories analysed the same exome data with their own regions and pipelines panel TMB estimates varied; this was a computational comparison, not proof of interchangeability for treatment selection.",
+        "More mutations offer more candidate neoantigens, but processing, HLA display and immune function still matter; high TMB neither guarantees checkpoint benefit nor establishes benefit in every cancer.",
+        "On 16 October 2026, FDA converted the U.S. tumour-agnostic pembrolizumab indication to traditional approval and changed its TMB-H criterion from 10 to at least 13 mutations per megabase. Section 1.18 covers adults and children with unresectable or metastatic solid tumours, measured by an FDA-authorised test, that have progressed after prior treatment and have no satisfactory alternative treatment options. This criterion does not replace thresholds in other indications or historical studies.",
+        "Fictional teaching exercise: 24 eligible mutations over 2 Mb is 12 mut/Mb and over 1 Mb is 24 mut/Mb; not comparable clinically without counting and calibration rules; a research result does not establish authorised-test eligibility.",
+        "TMB differs from copy-number instability and from MSI, and a TMB category does not settle an individual outcome.",
+        "Retain specimen type, DNA consumption, eligible mutation classes and reporting territory, germline/artefact filtering, calibration, mut/Mb, quality and uncertainty. Blood and tissue estimates need separate validation. Low tumour signal and uneven coverage can bias the count; both analytical performance and clinical applicability must match the assay, cancer and setting.",
+        "The July 2026 pembrolizumab label describes the TMB supporting KEYNOTE-158 analysis as a prospectively planned retrospective analysis of ten nonrandomized cohorts. That design does not establish TMB-based selection for early triple-negative breast cancer; retain the population, endpoint and clinical setting with the evidence.",
+        "Barroso-Sousa and colleagues analysed 3,969 primary or metastatic breast-cancer samples from six public studies using exome or panel sequencing. Median mutation burden differed across their receptor-defined groups, with the triple-negative group above HER2-positive and hormone-receptor-positive/HER2-negative groups. This is a group comparison with mixed specimen and assay contexts. It does not assign an individual's TMB-high category, predict how many HLA-associated peptides an assay will recover, establish presentation, determine treatment eligibility or show benefit. The study's research threshold belongs to its analysis and does not replace a later label or another assay's rule.",
+        "Lung cancer is where tumour mutational burden was discovered as a predictor of checkpoint benefit (Rizvi 2015) and where it failed as a selector. The biology holds: burden tracks outcome within every PD-L1 stratum in 1,552 patients and is independent of PD-L1 (Rizvi 2018, Ricciuti 2022). The measurement does not: three units are in use (per megabase on a panel, per exome on sequencing, a plasma score), the best data-derived threshold was more than 19 per megabase rather than the licensed 10, and the association vanishes entirely once chemotherapy is added to the checkpoint inhibitor (Garassino 2023). It selects for single-agent immunotherapy only (Mok 2023)."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "mrna-lnp-manufacturing",
+      "kind": "technology",
+      "name": "mRNA and lipid nanoparticle manufacturing",
+      "aka": [],
+      "tldr": "Making an RNA cancer vaccine means copying a specified DNA template into a message, purifying it and preparing the chosen delivery formulation. Each lot needs its own quality checks before use.",
+      "summary": "An RNA vaccine starts with an approved sequence and product specification. Enzymes transcribe a DNA template outside living cells, and the RNA is purified, tested and prepared in the chosen delivery formulation. The cap, untranslated regions, coding sequence, poly(A) strategy and chemical building blocks are specified for that product. Nucleoside modification is not a universal requirement: the TNBC-MERIT and Rojas pancreatic studies used uridine RNA-lipoplex products. Cell-free transcription does not describe every upstream DNA-template manufacturing step, and neither all RNA products nor their downstream handling share one process.\n\nPersonalisation connects the source tumour information, intended RNA and protein, recipient and manufactured lot. The manufacturing clock needs its start and end as well as the product and setting. In TNBC-MERIT, manufacturing runs were conducted during 2019 and the reported sample-receipt-to-vaccine-release interval averaged 69 days, ranging from 34 to 125; optimising turnaround was not the study aim. Those observations do not set a duration for every personalised vaccine. Formulation, testing, review, queues and failed-lot handling belong to the actual production plan. Consistent manufacture, permission to administer and evidence that treatment benefits patients remain separate questions.\n\nTwo details matter when reading a product description. First, double-stranded RNA can arise from the transcription step itself: in one study T7 polymerase started transcription from a promoter-less DNA end and made an antisense strand that paired with the intended RNA and stimulated the innate sensor MDA5, and the effect fell with modified nucleotides or a lower magnesium concentration (Mu and colleagues). Purification was tested separately: HPLC removed contaminants including double-stranded RNA from nucleoside-modified transcripts and raised translation 10 to 1,000-fold in primary cells (Karikó and colleagues), and a cellulose method removed at least 90 per cent of double-stranded RNA with over 65 per cent recovery, taking out duplexes of 30 base pairs or longer while most of a 21 base-pair duplex remained (Baiersdörfer and colleagues). Second, a lipid nanoparticle is not the only formulation in use: in the pancreatic cancer phase I trial of autogene cevumeran each patient's vaccine held two uridine mRNA strands, each encoding up to 10 neoepitopes, formulated as lipoplex nanoparticles of about 400 nm made from the cationic lipid DOTMA and the phospholipid DOPE and given intravenously (Rojas and colleagues). Release testing is layered: a review of mRNA analytics lists identity and modification analysis, poly(A) tail, RNA content and integrity, double-stranded RNA and residual DNA as separate attributes, and a review of mRNA manufacturing cites a regulator-recommended residual DNA limit of 10 ng per dose (Losada and colleagues; Nowak and colleagues). Particle size and composition measurements do not by themselves show that usable RNA reaches the cytosol of the intended cell.",
+      "status": "phase-3",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "FDA guidance: CMC information for human gene therapy INDs",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/chemistry-manufacturing-and-control-cmc-information-human-gene-therapy-investigational-new-drug"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/MRNA_vaccine"
+        },
+        {
+          "label": "An origin of the immunogenicity of in vitro transcribed RNA.",
+          "url": "https://doi.org/10.1093/nar/gky177"
+        },
+        {
+          "label": "Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA.",
+          "url": "https://doi.org/10.1093/nar/gkr695"
+        },
+        {
+          "label": "A Facile Method for the Removal of dsRNA Contaminant from In Vitro-Transcribed mRNA.",
+          "url": "https://doi.org/10.1016/j.omtn.2019.02.018"
+        },
+        {
+          "label": "Personalized RNA neoantigen vaccines stimulate T cells in pancreatic cancer.",
+          "url": "https://doi.org/10.1038/s41586-023-06063-y"
+        },
+        {
+          "label": "From nucleotides to intact transcripts through oligonucleotides: Integrated chromatographic strategies for therapeutic mRNA characterization.",
+          "url": "https://doi.org/10.1007/s00216-026-06615-x"
+        },
+        {
+          "label": "Process and analytical strategies for the safe production of mRNA vaccines and therapeutics.",
+          "url": "https://doi.org/10.1007/s11033-026-11455-0"
+        },
+        {
+          "label": "Sahin et al.: TNBC-MERIT product, manufacture and immune monitoring (2026)",
+          "url": "https://doi.org/10.1038/s41586-025-10004-2"
+        },
+        {
+          "label": "Weber et al.: KEYNOTE-942 melanoma randomised phase 2b protocol (2024)",
+          "url": "https://doi.org/10.1016/S0140-6736(23)02268-7"
+        },
+        {
+          "label": "Cascone et al.: CT251 primary INTerpath-009 protocol abstract, V940 formulation (2025)",
+          "url": "https://doi.org/10.1158/1538-7445.AM2025-CT251"
+        },
+        {
+          "label": "Kozak: start-context substitutions in preproinsulin (1986)",
+          "url": "https://doi.org/10.1016/0092-8674(86)90762-2"
+        },
+        {
+          "label": "Schubert and Kohlbacher: computational spacer design (2016)",
+          "url": "https://doi.org/10.1186/s13073-016-0263-6"
+        },
+        {
+          "label": "Wu et al.: codon-dependent RNA stability in human cells (2019)",
+          "url": "https://doi.org/10.7554/eLife.45396"
+        },
+        {
+          "label": "Kariko et al.: nucleoside modification and innate sensing (2005)",
+          "url": "https://doi.org/10.1016/j.immuni.2005.06.008"
+        },
+        {
+          "label": "Truex et al.: peptide synthesis, resin cleavage and purification (2020)",
+          "url": "https://doi.org/10.1038/s41598-019-56943-5"
+        },
+        {
+          "label": "FDA/ICH Q5E: comparability and its cell-culture protein scope (June 2005)",
+          "url": "https://www.fda.gov/media/71489/download"
+        },
+        {
+          "label": "FDA: vaccine CMC for licence applications (January 1999)",
+          "url": "https://www.fda.gov/media/73614/download"
+        },
+        {
+          "label": "FDA: contract manufacturing quality agreements, commercial scope (November 2016)",
+          "url": "https://www.fda.gov/media/86193/download"
+        },
+        {
+          "label": "FDA: clinical considerations for therapeutic cancer vaccines (October 2011)",
+          "url": "https://www.fda.gov/media/82312/download"
+        },
+        {
+          "label": "Kreiter et al.: antigen routing in tested dendritic-cell systems (2008)",
+          "url": "https://doi.org/10.4049/jimmunol.180.1.309"
+        }
+      ],
+      "tags": [
+        "manufacturing-wave"
+      ],
+      "related": [
+        "lipid-nanoparticle",
+        "rna-lipoplex",
+        "targeted-lnps",
+        "batch-release",
+        "good-manufacturing-practice",
+        "platform-vs-personalized-components",
+        "neoantigen-mrna-vaccine"
+      ],
+      "cancers": [
+        "melanoma",
+        "pancreatic",
+        "nsclc"
+      ],
+      "sections": [
+        "immunotherapy"
+      ],
+      "technologies": [
+        "plasmid-dna-manufacturing",
+        "neoantigen-mrna-vaccine",
+        "single-use-bioprocessing",
+        "sterile-fill-finish",
+        "cell-therapy-cold-chain",
+        "shared-antigen-vaccine"
+      ],
+      "targets": [],
+      "drugs": [
+        "intismeran-autogene",
+        "autogene-cevumeran"
+      ],
+      "companies": [
+        "moderna",
+        "biontech",
+        "merck",
+        "aldevron",
+        "touchlight",
+        "thermo-fisher",
+        "lonza"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A target list does not specify a finished message. Ribosomes translate RNA into protein, from which processing can generate fragments for HLA display. Keep the message, encoded protein and displayed fragments distinct. The manufacturing handoff retains the complete RNA sequence, each window and its source alteration, intended protein, cap, untranslated regions, initiation context, poly(A) strategy, chemical building blocks and delivery specification. It also retains the approved version, change rationale, prediction method and version, and the specimen, assay and conditions behind measured results. The intended altered residue must survive the handoff. A wrong sequence version, lost alteration or concealed biological edit cannot be repaired by a correct measurement on the wrong material. Follow the link from approved design through template, RNA, formulation, aseptic fill, released lot, transport and protocol administration; each handoff needs its own specification.",
+        "Consider a fictional message containing altered target windows A and B. A synonymous-codon revision is intended to preserve the full protein sequence, which must be checked before comparing RNA and protein behaviour. Shortening their spacer changes the combined protein and its junction, calling for renewed processing and display assessment. Substituting a modified uridine building block can retain the intended protein while changing sensing or translation, so purity and delivery need an appropriately matched comparison. An initiation-context revision is another distinct question: Kozak context spans the untranslated and coding boundary around the start codon. Kozak tested preproinsulin constructs, not a universal vaccine design. A trafficking signal directs the encoded protein towards a cellular compartment, and a helper segment can support CD4 responses in a particular design; neither is universally required. More reporter protein does not establish display of both targets, natural tumour recognition or prevention of recurrence. An expression model may lack the intended presentation pathway. A prediction names an uncertainty for a relevant assay rather than proving success or failure. Comparing a revision requires the exact old and new RNA and protein specifications and the reason for each edit.",
+        "The format changes what is made and what still needs to be tested. Solid-phase peptide synthesis assembles an amino-acid chain on a support, then releases and purifies it; antigen-presenting-cell loading or processing and priming remain biological questions. RNA supplies instructions, whether delivered in a specified nanoparticle or lipoplex. DNA and engineered vectors raise their own questions about expressing cells, duration and vector-specific risks. LNP and lipoplex labels can overlap in papers, so inspect composition and architecture. Record composition, RNA amount and integrity, particle properties and relevant biological activity for the chosen formulation. A new formulation or route can change behaviour even with the same message. Identity, purity, integrity, relevant activity, stability and handling are separate attributes: residual DNA, proteins, incomplete RNA and double-stranded RNA are not one measurement, and a low double-stranded-RNA signal does not establish sterility.",
+        "For a historical product comparison, TNBC-MERIT studied early-stage triple-negative breast cancer after standard therapy in a noncomparative phase I arm. Its intravenous, non-nucleoside-modified uridine RNA-lipoplex course had eight personalised administrations, six weekly followed by two every other week, ending at day 64. Two RNA strands each encoded up to ten selected windows. The first three evaluable participants also received a shared-antigen bridging vaccine while the personalised product was made. Rojas and colleagues studied a different intravenous uridine RNA-lipoplex product after pancreatic-cancer resection, within a sequence of atezolizumab, vaccine priming, chemotherapy and a later booster. These product and population records support their own feasibility and immune observations; neither single-arm sequence isolates a vaccine effect on recurrence.",
+        "KEYNOTE-942 instead randomised people with completely resected high-risk melanoma to V940 plus pembrolizumab or pembrolizumab alone. Its vaccine was given intramuscularly, up to nine administrations in three-week cycles. A separate 2025 primary protocol abstract, CT251 for the lung-cancer INTerpath-009 study, describes V940 as LNP-encapsulated; that abstract is formulation evidence, not the melanoma trial outcome report. The melanoma comparison tests adding that product to that backbone, not LPX against LNP. Neither acronym reveals the entire lipid recipe, RNA chemistry, cap, impurity limits or stability specification, and cross-trial percentages cannot rank formulations. These are historical study protocols rather than administration recommendations.",
+        "Quality review separates the antigen and construct, approved version and change control, manufactured lot, and clinical protocol and monitoring. GMP is a quality system, CMC an evidence package, a certificate of analysis a test-results document and batch release a disposition. A CDMO performs agreed activities without erasing applicable responsibilities. FDA's 2016 quality-agreement guidance addresses commercial manufacture and excludes investigational materials from its explicit scope, while describing the usefulness of such agreements before commercial use. The 1999 vaccine CMC document concerns licence applications; the 2011 therapeutic cancer-vaccine guidance concerns investigational clinical studies. These dated documents do not supply universal RNA release limits. Potency addresses relevant biological activity; expression can be one part of a mechanism, without proving presentation, tumour recognition or clinical benefit.",
+        "In a fictional spacer-revision comparison, A, B and C are three independently prepared matched material pairs, not people or doses. Each reported signal is a mean of two technical wells. Before and after, each preparation contains 1 mg RNA. Reporter signals are 100 to 104 for A, 98 to 101 for B and 102 to 100 for C; target-B display signals are 9 to 3, 8 to 3 and 10 to 4. All numbers are invented. The stipulated conditions keep formulation, cell model, method and observation time the same, with fixed viable-cell normalisation and a common reference within each assay. No-RNA and no-target-B controls are described as background and a reference gives its expected signal, but those are qualitative premises rather than supplied raw control data. The reporter is an expression surrogate, whereas the display assay reports relative cell-surface target-B peptide-HLA signal in one laboratory model.",
+        "Calculate each fictional change within its own assay. Reporter changes for A, B and C are +4, +3 and -2 units, or approximately +4.0%, +3.1% and -2.0%. Display decreases are 6, 5 and 6 units, or 66.7%, 62.5% and 60.0%, using the decrease divided by that pair's starting display signal. The two arbitrary-unit scales are not commensurate: reporter 100 cannot be compared with display 9, and nearby reporter values do not establish equivalent target display. Three preparations remain three independent units despite six technical wells. Equal RNA mass after a length change need not mean equal molecule counts, so length, integrity and appropriate input normalisation still matter.",
+        "The fictional table lacks raw wells and controls, assay precision and range, detection and quantification limits, comparison bounds and release limits. The qualitative control notes do not establish that either assay is fully validated. Investigate altered processing or display alongside assay and input effects before assigning a cause. A spacer revision changes the construct even when motivated by manufacture, so reusing earlier design or function evidence needs an explicit justification alongside any process review. Set and justify comparison criteria for the intended use; a process-only bridge cannot cover a changed message. Q5E's 2005 scope is cell-culture protein and polypeptide products: applying its comparison principles to this RNA example is an analogy, not an RNA regulatory determination. This panel cannot decide lot disposition, establish that the spacer caused the drop, prescribe further studies or convert an earlier laboratory result into natural tumour recognition or patient benefit.",
+        "Handling and release need the product's own evidence. A correct sequence can coexist with inadequate RNA integrity or functional activity. Shelf life and allowable storage excursions come from product-specific stability evidence. A report with acceptable identity and purity does not resolve an unassessed transport excursion. The quality function reviews relevant testing, stability and handling records before release, hold or rejection; a passing assay on a wrongly assigned vial cannot establish recipient identity or custody. A fictional LNP lot cannot borrow intravenous lipoplex handling instructions or infer sterility from nondetectable double-stranded RNA. After a facility change, unchanged final RNA mass alone does not bridge impurities, formulation, activity or stability. The one-formulation spacer example also cannot rank LPX against LNP or supply shelf life, handling instructions or clinical outcomes."
+      ],
+      "provenance": {
+        "editedBy": "OnCo manufacturing expansion",
+        "editedOn": "2026-09-17"
+      },
+      "principle": "Connect the approved sequence to its DNA template, RNA synthesis, purification, chosen formulation and lot-level testing. Product quality, protocol administration and clinical benefit require distinct evidence.",
+      "strengths": [
+        "Enzymatic RNA synthesis supports defined message production",
+        "Sequence can vary within a controlled personalised platform",
+        "Shared process knowledge can support recipient-specific products"
+      ],
+      "limitations": [
+        "RNA chemistry, formulation and release criteria depend on the product",
+        "Stability and handling conditions need product-specific evidence",
+        "Testing, quality review, queues and failed lots contribute to turnaround"
+      ],
+      "since": 2020
+    },
+    {
+      "id": "cdmo",
+      "kind": "term",
+      "name": "CDMO (contract development and manufacturing organisation)",
+      "aka": [],
+      "tldr": "A contract organisation carries out agreed work developing or making medicines for a client. Its service label does not show which tasks, quality evidence or responsibilities an agreement covers.",
+      "summary": "A contract development and manufacturing organisation performs agreed development or manufacturing work for a client. Its scope may include process development, synthesis, formulation, filling or analytical testing; a service label alone does not say which activities an agreement covers.\n\nThe US FDA's November 2016 quality-agreement guidance addresses commercial drug manufacture and recommends documenting each party's activities. The owner's quality unit approves or rejects contracted products or services, and the contract facility retains its own applicable current good manufacturing practice responsibilities. An agreement cannot delegate statutory responsibilities. Investigational material is outside the guidance's explicit scope, although FDA describes quality agreements as useful in research and development. Contractor experience, a contract or a passing identity result does not by itself establish release, authorisation or clinical benefit for a product.",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/Contract_development_and_manufacturing_organization",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Contract_development_and_manufacturing_organization"
+        },
+        {
+          "label": "FDA: contract manufacturing arrangements for drugs, quality agreements (November 2016)",
+          "url": "https://www.fda.gov/media/86193/download"
+        },
+        {
+          "label": "ICH Q10: pharmaceutical quality system (April 2009), section 2.7",
+          "url": "https://www.fda.gov/media/71553/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "biosecure-act",
+        "binder-discovery",
+        "peptide-synthesis-spps",
+        "batch-release",
+        "platform-vs-personalized-components",
+        "good-manufacturing-practice"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "adc-cdmo-manufacturing",
+        "viral-vector-manufacturing",
+        "sterile-fill-finish"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Scope must be read from the contract. A partner may develop a process, synthesise a molecule, formulate it, fill vials or run analytical testing, and a service label does not show which of these a contract covers. FDA's November 2016 quality-agreement guidance treats owner and contract facility as both responsible for CGMP and says contract analytical laboratories are covered.",
+        "The agreement assigns activities but cannot contract away responsibilities. FDA states that quality agreements cannot be used to delegate statutory or regulatory CGMP responsibilities. The guidance is written for commercial manufacture and does not explicitly cover investigational material, though FDA believes quality agreements can be valuable in research and development arrangements. ICH Q10 section 2.7 extends the quality system to outsourced activities, with the pharmaceutical company ultimately responsible.",
+        "Handoff inference. A controlled handoff connects the approved design version to materials, records and the resulting lot. If a contractor proposes an edit and supplies a passing identity result on the revised lot, the missing items are the authorised version and approval of the edit, assessment of affected product properties and the full quality package. Identity alone does not show activity, authorisation or benefit, and sharing a contractor does not establish comparability.",
+        "A contractor's experience or a facility's track record does not establish release of a particular lot, and manufacturing acceptance, clinical-program authorisation and efficacy are separate questions.",
+        "Before treating a supplier proposal as a production plan, identify the contracted site and operations, authorised construct version, material handoffs, rights to use the required process and formulation, named assays and acceptance criteria, quality documentation, timing, and storage and transport conditions. These are planning questions, not proof that a named supplier has capacity, permission or a releasable lot. FDA's 2016 guidance separates quality agreements from general commercial terms; it has the commercial-manufacturing scope described above."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "batch-release",
+      "kind": "term",
+      "name": "Batch release (lot disposition)",
+      "aka": [
+        "batch release",
+        "lot release",
+        "batch disposition"
+      ],
+      "tldr": "Batch release is the documented quality decision about one lot of a product. A set of passing test results supports that decision but is not the same thing, and a released lot has not been shown to help any patient.",
+      "summary": "In the US, drug production and control records are reviewed and approved by the quality control unit before a batch is released or distributed, and any unexplained discrepancy or failure of a batch to meet a specification must be thoroughly investigated whether or not the batch has been distributed (21 CFR 211.192). The decision therefore draws on test results with their methods and acceptance criteria, manufacturing and deviation records, and the identity of the lot and product version; a certificate of analysis can summarise results but does not replace that review. FDA's 2022 guidance on out-of-specification results says the practice of repeating a test until a passing result is obtained and then disregarding the failing results without scientific justification is 'testing into compliance', which it calls unscientific and objectionable under CGMP. That guidance covers chemistry-based laboratory testing; it says it is not intended to address biological assays, so a copied retest procedure cannot be assumed to fit a cell or potency assay. A lot can be released, held pending review or rejected; a result that has not arrived is neither a pass nor a failure. Release of a lot is a quality decision, separate from regulatory authorisation of the product, from a patient's eligibility, and from evidence of clinical benefit.",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "21 CFR 211.192: production record review",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.192"
+        },
+        {
+          "label": "FDA: investigating out-of-specification test results for pharmaceutical production (May 2022)",
+          "url": "https://www.fda.gov/media/158416/download"
+        },
+        {
+          "label": "FDA: quality systems approach to pharmaceutical CGMP regulations (September 2006)",
+          "url": "https://www.fda.gov/media/71023/download"
+        },
+        {
+          "label": "21 CFR 211.22",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.22"
+        },
+        {
+          "label": "21 CFR 211.80",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.80"
+        },
+        {
+          "label": "21 CFR 211.84",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.84"
+        },
+        {
+          "label": "21 CFR 211.142",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.142"
+        },
+        {
+          "label": "21 CFR 610.1",
+          "url": "https://www.ecfr.gov/current/title-21/section-610.1"
+        },
+        {
+          "label": "21 CFR 610.2",
+          "url": "https://www.ecfr.gov/current/title-21/section-610.2"
+        },
+        {
+          "label": "FDA: final Potency Assurance for Cellular and Gene Therapy Products (November 2026 PDF)",
+          "url": "https://www.fda.gov/media/196183/download"
+        },
+        {
+          "label": "FDA: final potency-assurance guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "Federal Register: final potency-assurance guidance, 3 November 2026",
+          "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+        },
+        {
+          "label": "FDA: vaccine CMC for licence applications (January 1999)",
+          "url": "https://www.fda.gov/media/73614/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "good-manufacturing-practice",
+        "cell-therapy-release-testing",
+        "radiopharmaceutical-gmp-release",
+        "car-t-manufacturing-process"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A lot-release decision concerns one identified batch. Good manufacturing practice concerns the quality system; cell and gene products add product-specific biological, identity and handling questions, while radiopharmaceuticals add the constraints of radioactive decay.",
+        "A lot is identified material made under a defined manufacturing record, and a specification connects named tests and methods to acceptance criteria; ICH Q6B defines a specification as a list of tests, references to analytical procedures and acceptance criteria. Release concerns that lot, not the general reputation of its manufacturer.",
+        "What a release review brings together: test results with their methods and criteria, manufacturing and deviation records, lot and version identity, and stability and handling information. In US finished-drug rules the quality control unit reviews and approves production and control records before a batch is released or distributed (21 CFR 211.192). A certificate of analysis may summarise results but does not replace that review.",
+        "Dispositions. FDA's quality-systems guidance describes the quality unit approving or rejecting materials and drug products; US regulations give the quality unit authority to approve or reject materials and drug products (21 CFR 211.22(a)); other provisions describe quarantine or withholding from use while materials or products await release (211.80(d), 211.84(a), 211.142(a)). Hold pending review is a plain-language description of that unresolved disposition. A result that has not arrived is neither a pass nor a failure. Inference lesson: a spreadsheet that reports all tests passed because it lists only completed tests has lost the missingness information; with a required activity result pending, completed release is not established.",
+        "Out-of-specification handling. FDA's May 2022 guidance calls repeated testing until a pass followed by disregarding the failures without scientific justification testing into compliance, which it describes as unscientific and objectionable under CGMP. It asks that the number of retests be set in advance in a procedure and not adjusted according to results, and it contrasts averages: initial 89 then 90 and 91 per cent averages 90 and tends to confirm the failure, while 80 then 85 and 105 also averages 90 but presents a very different picture. Releasing despite an initial failure that has not been invalidated should follow a full investigation. The guidance applies to chemistry-based laboratory testing of drugs regulated by CDER and says it is not intended to address biological assays, so it cannot simply be copied for a cell or potency assay.",
+        "Release is a quality decision. It is separate from regulatory authorisation of the product, a patient's eligibility and evidence of benefit, and a released stamp on a report does not answer those. For US licensed biological products, manufacturer release follows completion of applicable tests under 21 CFR 610.1. Separately, under 610.2 FDA may require samples and protocols and, on notification, bar distribution until the relevant CBER or CDER Director releases the lot. These are distinct manufacturer and official-release steps; this example does not establish other jurisdictions' rules.",
+        "A test on bulk or intermediate material concerns the material sampled at that process stage. FDA's January 1999 vaccine CMC guidance for licence applications separates drug substance from formulated bulk and finished product, with manufacturing, filling and finished-product sampling information. A pre-fill quality-control box in a diagram therefore does not by itself establish the identity, purity, potency or sterility of filled vials or final release. Apply the product's specified tests and quality review; the drawing supplies neither a universal test order nor release criteria."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "good-manufacturing-practice",
+      "kind": "term",
+      "name": "Good manufacturing practice (GMP)",
+      "aka": [
+        "GMP",
+        "current good manufacturing practice"
+      ],
+      "tldr": "Good manufacturing practice is the set of controls over people, materials, equipment, procedures and records that is meant to make each batch of a medicine consistently as it should be. It is a property of how a product is made, not a finding about whether the treatment works.",
+      "summary": "The US Food and Drug Administration describes current good manufacturing practice (CGMP) as systems that assure proper design, monitoring and control of manufacturing processes and facilities, including quality management systems, suitable raw materials, written operating procedures, detection and investigation of deviations, and reliable testing laboratories; the 'C' stands for current, meaning technologies and systems must be up to date. FDA's quality-systems guidance gives a quality unit the job of reviewing procedures, evidence and departures from the intended process. Requirements depend on stage: most phase 1 investigational drugs are exempt from 21 CFR part 211 under 21 CFR 210.2(c), but FDA's 2008 phase 1 guidance applies CGMP under section 501(a)(2)(B) of the Food, Drug, and Cosmetic Act to them, so 'investigational' does not mean quality controls are optional. A passing final test does not close the process question: an unexplained substitution or missing record needs its own documented assessment. GMP concerns how a product is made; the product dossier (chemistry, manufacturing and controls), the decision on one lot (batch release) and clinical evidence answer different questions.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "FDA: facts about the current good manufacturing practice (CGMP)",
+          "url": "https://www.fda.gov/drugs/pharmaceutical-quality-resources/facts-about-current-good-manufacturing-practice-cgmp"
+        },
+        {
+          "label": "FDA: quality systems approach to pharmaceutical CGMP regulations (September 2006)",
+          "url": "https://www.fda.gov/media/71023/download"
+        },
+        {
+          "label": "FDA: current good manufacturing practice for phase 1 investigational drugs (July 2008)",
+          "url": "https://www.fda.gov/media/70975/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pharmaceutical-gmp-inspections",
+        "radiopharmaceutical-gmp-release",
+        "cdmo",
+        "batch-release"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Good manufacturing practice concerns the quality system of people, procedures, materials, equipment and records. Batch release concerns the decision about one lot, while cell and gene products require product-specific release and potency evidence. These related questions are not interchangeable.",
+        "GMP combines people, procedures, materials, equipment and records into a working quality system. FDA's CGMP page says it covers quality management systems, quality raw materials, written operating procedures, detection and investigation of deviations and reliable testing laboratories, and that the C stands for current, requiring technologies and systems that are up to date. A clean room is one part of the system and not proof of compliance by itself.",
+        "In-process controls and the final sample. FDA's quality-systems guidance describes quality control as assessing incoming components, in-process materials and finished product and evaluating how the manufacturing process performs. A final sample answers a narrower question about tested material and cannot reconstruct an unrecorded process, so a passing final test does not close the question raised by, for example, an unexplained material substitution.",
+        "The quality unit approves or rejects incoming materials, in-process materials and drug products, reviews production records and investigates unexplained discrepancies. Investigating a deviation asks what happened, which material may be affected and how to prevent recurrence; a missing record and a failed test are different findings that both need an explanation.",
+        "Changes need control, because replacing a supplier or a processing step may alter the product. Q5E-style comparability asks whether relevant quality remains comparable; it does not assume that a familiar product name means unchanged biology.",
+        "Stage. Most phase 1 investigational drugs are exempt from 21 CFR part 211 under 21 CFR 210.2(c), and FDA's 2008 guidance applies CGMP under section 501(a)(2)(B) of the Federal Food, Drug, and Cosmetic Act to them, so investigational does not mean quality controls are optional. GMP supports reliable clinical investigation; it does not show efficacy."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Regulation & policy"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "baseline": 100,
+      "control": 1000,
+      "treated": 300,
+      "finalControlDifferencePercent": 70.0,
+      "foldFromBaseline": 3.0,
+      "pass_": true
+    },
+    {
+      "baseline": 100,
+      "control": 1000,
+      "treated": 30,
+      "finalControlDifferencePercent": 97.0,
+      "foldFromBaseline": 0.3,
+      "pass_": true
+    },
+    {
+      "baseline": 100,
+      "control": 1000,
+      "treated": 0,
+      "finalControlDifferencePercent": 100.0,
+      "foldFromBaseline": 0.0,
+      "pass_": true
+    },
+    {
+      "baseline": 100,
+      "control": 1000,
+      "treated": 1200,
+      "finalControlDifferencePercent": -20.0,
+      "foldFromBaseline": 12.0,
+      "pass_": true
+    },
+    {
+      "baseline": 100,
+      "control": 1000,
+      "treated": 100,
+      "finalControlDifferencePercent": 90.0,
+      "foldFromBaseline": 1.0,
+      "pass_": true
+    }
+  ],
+  "formula": "100*(control-treated)/control; treated/baseline",
+  "inputGuardRead": "Finite bounded values; positive baseline/control, nonnegative treated volume; original maximum100000 is a calculator limit.",
+  "scope": "Independent arithmetic from the fully read source formulas; no original script executed, no study outcomes or clinical response category inferred."
+}

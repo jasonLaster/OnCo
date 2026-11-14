@@ -1,0 +1,865 @@
+{
+  "baseCommit": "b7423cbc82fd740e603012f8eb74e9fbe67d87e6",
+  "sourceFirstInventorySHA256": "6acd3280b93e5a5b32b3416a5829ab4ca1461fb59f63e5ab6ce57f6905b5efd9",
+  "changes": [
+    {
+      "id": "gamma-delta-t-cell-therapy",
+      "file": "src/data/technologies.ts",
+      "kind": "technology",
+      "recordBeforeSHA256": "b8f9cccd4b1e2398972866c94143e80ee6fbbdb4ae8655bcd788e26f795eb69b",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "Cell therapies built from a rare T-cell type that recognises stressed cancer cells without needing tissue matching, making them candidates for off-the-shelf products.",
+          "beforeSha256": "a5dc0d682dd49e771ec346a7d587d6ea95d9fde8973f134297bcbfe4884abe63",
+          "after": "Cell therapy using selected gamma-delta T cells. Recognition pathways and added receptors vary, so matching, safety and benefit need evidence for the actual product.",
+          "afterSha256": "461564264abdadcabff73c80ace325b8a95b1ce7b526ad34eef823acda132f66"
+        },
+        {
+          "field": "summary",
+          "before": "Gamma-delta T cells recognise stress ligands and phosphoantigens on tumour cells independently of HLA, so donor cells can be given without matching and without causing graft-versus-host disease. Companies expand the Vδ1 or Vδ2 subsets from healthy donors, sometimes adding a CAR, and early trials in leukaemia, lymphoma and solid tumours are under way. Persistence after infusion and manufacturing scale are the main hurdles.",
+          "beforeSha256": "b5292dee2efdc5703a2a26ba6565644b7cffa1ede2a0bc5e2509876998cacf5b",
+          "after": "These therapies use defined gamma-delta T-cell populations, sometimes with an added chimeric antigen receptor. The starting subset, cell source, preparation and clinical setting belong to the specified product.\n\nRecognition varies by subset and receptor. Some routes do not use classical peptide-HLA presentation, while an HLA-restricted gamma-delta receptor has also been described. The family name therefore does not establish universal freedom from HLA requirements, tissue matching or graft-versus-host disease. Native recognition, added-receptor function, tumour entry, persistence and clinical outcomes need separate evidence.",
+          "afterSha256": "0b8288e436685b47530e20bc285f7c26854d320725c755e835a263c75768017a"
+        },
+        {
+          "field": "principle",
+          "before": "Donor gamma-delta T cells are expanded ex vivo with phosphoantigens or cytokines, optionally engineered with a chimeric antigen receptor, and infused as an allogeneic product.",
+          "beforeSha256": "a5df67f7b7798a375f2ee97d478faff20a6042804fc2d4499d44d824f5b3579c",
+          "after": "Prepare a defined gamma-delta T-cell population, with an added receptor if used, and assess the finished product's recognition, cell behaviour and clinical use in its own setting.",
+          "afterSha256": "4dc1d90b22d29a4b7573a7ae6fe17abfbbce2476f4c46766e99a85c7dc5884ba"
+        },
+        {
+          "field": "strengths",
+          "before": [
+            "HLA-independent recognition, no graft-versus-host disease",
+            "Off-the-shelf potential",
+            "Innate-like killing of stressed cells"
+          ],
+          "beforeSha256": "a55b82f70a38481b7627323551ce0ba3edc4298dcc59477ea9bbb60c9ffff944",
+          "after": [
+            "Selected subsets provide alternative recognition routes",
+            "A CAR can add defined antigen recognition",
+            "Specified preparations retain additional immune functions in experimental systems"
+          ],
+          "afterSha256": "53cc166ec82a168a2ff8625b762ddf10fbb39ba7c51aebc30fe37e4d91012241"
+        },
+        {
+          "field": "limitations",
+          "before": [
+            "Short persistence",
+            "Early clinical stage",
+            "Expansion yields vary between donors"
+          ],
+          "beforeSha256": "d72487b876bcfe57534857c09bd6964fc3b57c98c111c9e2554fdb3093e9ad5b",
+          "after": [
+            "Recognition requirements vary by subset and receptor",
+            "Persistence and tumour entry need product-specific measurements",
+            "Manufacturing and clinical safety need evidence for the finished preparation"
+          ],
+          "afterSha256": "33b900c560691c92a25a52d9f059515c7ee3c23c9e36996db9985a58e4b3b2b9"
+        },
+        {
+          "field": "notes",
+          "before": [],
+          "beforeSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "after": [
+            "Rigau identified BTN2A1 as a ligand for the Vgamma9 T-cell-receptor chain, acting with BTN3A1 in the Vgamma9Vdelta2 phosphoantigen response. Kierkels instead characterised a Vgamma5Vdelta1 receptor requiring HLA-A*24:02 and CD8-alpha in cell and mouse experiments. These are different recognition mechanisms, not a universal matching or safety rule. Capsomidis added a GD2 CAR to expanded human Vdelta1 and Vdelta2 preparations and observed enhanced GD2-specific cancer-cell-line killing; migration and cross-presentation were separately tested. Those preclinical results do not establish clinical benefit or absence of graft-versus-host disease for every gamma-delta product."
+          ],
+          "afterSha256": "dbd94d5f66b11ee6640ed6d452705540ec652c9477fcb95ede037a60a60fd10a"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell"
+            }
+          ],
+          "beforeSha256": "44b29e69d7738e2d9f7b991e1c83d5d365fc05a3aa16c21c6572eadfe6c0b891",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell"
+            },
+            {
+              "label": "Rigau 2020: BTN2A1-dependent phosphoantigen recognition",
+              "url": "https://doi.org/10.1126/science.aay5516"
+            },
+            {
+              "label": "Kierkels 2019: one allo-HLA-restricted gamma-delta receptor",
+              "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+            },
+            {
+              "label": "Capsomidis 2018: defined GD2 CAR gamma-delta experiments",
+              "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+            }
+          ],
+          "afterSha256": "cb723204145dccf9de4fce9753fb1a31b3e6601c79a02105b57bd2abb20396b8"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-04",
+          "beforeSha256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "before": {
+        "id": "gamma-delta-t-cell-therapy",
+        "kind": "technology",
+        "name": "Gamma-delta T cell therapy",
+        "aka": [],
+        "tldr": "Cell therapies built from a rare T-cell type that recognises stressed cancer cells without needing tissue matching, making them candidates for off-the-shelf products.",
+        "summary": "Gamma-delta T cells recognise stress ligands and phosphoantigens on tumour cells independently of HLA, so donor cells can be given without matching and without causing graft-versus-host disease. Companies expand the Vδ1 or Vδ2 subsets from healthy donors, sometimes adding a CAR, and early trials in leukaemia, lymphoma and solid tumours are under way. Persistence after infusion and manufacturing scale are the main hurdles.",
+        "status": "phase-1",
+        "asOf": "2026-09-04",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell",
+        "links": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [
+          "aml"
+        ],
+        "sections": [
+          "cell-therapy"
+        ],
+        "technologies": [
+          "allogeneic-cell-therapy",
+          "car-t"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [
+          "cartx-therapeutics"
+        ],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [
+          "nct06150885"
+        ],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [],
+        "principle": "Donor gamma-delta T cells are expanded ex vivo with phosphoantigens or cytokines, optionally engineered with a chimeric antigen receptor, and infused as an allogeneic product.",
+        "strengths": [
+          "HLA-independent recognition, no graft-versus-host disease",
+          "Off-the-shelf potential",
+          "Innate-like killing of stressed cells"
+        ],
+        "limitations": [
+          "Short persistence",
+          "Early clinical stage",
+          "Expansion yields vary between donors"
+        ]
+      },
+      "after": {
+        "id": "gamma-delta-t-cell-therapy",
+        "kind": "technology",
+        "name": "Gamma-delta T cell therapy",
+        "aka": [],
+        "tldr": "Cell therapy using selected gamma-delta T cells. Recognition pathways and added receptors vary, so matching, safety and benefit need evidence for the actual product.",
+        "summary": "These therapies use defined gamma-delta T-cell populations, sometimes with an added chimeric antigen receptor. The starting subset, cell source, preparation and clinical setting belong to the specified product.\n\nRecognition varies by subset and receptor. Some routes do not use classical peptide-HLA presentation, while an HLA-restricted gamma-delta receptor has also been described. The family name therefore does not establish universal freedom from HLA requirements, tissue matching or graft-versus-host disease. Native recognition, added-receptor function, tumour entry, persistence and clinical outcomes need separate evidence.",
+        "status": "phase-1",
+        "asOf": "2026-11-14",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell",
+        "links": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gamma_delta_T_cell"
+          },
+          {
+            "label": "Rigau 2020: BTN2A1-dependent phosphoantigen recognition",
+            "url": "https://doi.org/10.1126/science.aay5516"
+          },
+          {
+            "label": "Kierkels 2019: one allo-HLA-restricted gamma-delta receptor",
+            "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+          },
+          {
+            "label": "Capsomidis 2018: defined GD2 CAR gamma-delta experiments",
+            "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [
+          "aml"
+        ],
+        "sections": [
+          "cell-therapy"
+        ],
+        "technologies": [
+          "allogeneic-cell-therapy",
+          "car-t"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [
+          "cartx-therapeutics"
+        ],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [
+          "nct06150885"
+        ],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Rigau identified BTN2A1 as a ligand for the Vgamma9 T-cell-receptor chain, acting with BTN3A1 in the Vgamma9Vdelta2 phosphoantigen response. Kierkels instead characterised a Vgamma5Vdelta1 receptor requiring HLA-A*24:02 and CD8-alpha in cell and mouse experiments. These are different recognition mechanisms, not a universal matching or safety rule. Capsomidis added a GD2 CAR to expanded human Vdelta1 and Vdelta2 preparations and observed enhanced GD2-specific cancer-cell-line killing; migration and cross-presentation were separately tested. Those preclinical results do not establish clinical benefit or absence of graft-versus-host disease for every gamma-delta product."
+        ],
+        "principle": "Prepare a defined gamma-delta T-cell population, with an added receptor if used, and assess the finished product's recognition, cell behaviour and clinical use in its own setting.",
+        "strengths": [
+          "Selected subsets provide alternative recognition routes",
+          "A CAR can add defined antigen recognition",
+          "Specified preparations retain additional immune functions in experimental systems"
+        ],
+        "limitations": [
+          "Recognition requirements vary by subset and receptor",
+          "Persistence and tumour entry need product-specific measurements",
+          "Manufacturing and clinical safety need evidence for the finished preparation"
+        ]
+      }
+    },
+    {
+      "id": "gamma-delta-t-cells",
+      "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+      "kind": "term",
+      "recordBeforeSHA256": "a830fdd0651073c7a17c8510ca3e48d552539fa63932e55d1682f87524d28ff0",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
+            "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
+            "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
+            "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention."
+          ],
+          "beforeSha256": "94d687fa6679e4f3da6480e082cf578a03fd27e0d8acfbd16cd34f0259824050",
+          "after": [
+            "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
+            "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
+            "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
+            "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention.",
+            "The gamma-delta T-cell receptor, NKG2D and DNAM-1 are different receptors. BTN2A1 binds the Vgamma9 receptor chain and works with BTN3A1 in the specified phosphoantigen response; the BTN names do not name the T-cell receptor itself. Reviewed human UniProt entries distinguish NKG2D ligands, including MICA, MICB and ULBP proteins, from the DNAM-1/CD226 ligands CD155/PVR and CD112/NECTIN2. These receptor-ligand associations do not establish that every gamma-delta subset expresses or uses each route. Check the actual cell preparation and keep ligand identity, receptor expression and controlled target-cell killing separate."
+          ],
+          "afterSha256": "0917309dca2410260a459fc1afdb8d8e2d170b92e79aba8b955ea8af15130d31"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
+              "url": "https://doi.org/10.1126/science.aay5516"
+            },
+            {
+              "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
+              "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+            },
+            {
+              "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
+              "url": "https://doi.org/10.1126/scitranslmed.aax9364"
+            },
+            {
+              "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
+              "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+            },
+            {
+              "label": "ClinicalTrials.gov NCT06150885",
+              "url": "https://clinicaltrials.gov/study/NCT06150885"
+            },
+            {
+              "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
+              "url": "https://doi.org/10.1038/nri3384"
+            },
+            {
+              "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+              "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+            }
+          ],
+          "beforeSha256": "48308690013b535b150d70bde716b64c6949c5df6a8ccbce319471a2b0a02b01",
+          "after": [
+            {
+              "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
+              "url": "https://doi.org/10.1126/science.aay5516"
+            },
+            {
+              "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
+              "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+            },
+            {
+              "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
+              "url": "https://doi.org/10.1126/scitranslmed.aax9364"
+            },
+            {
+              "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
+              "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+            },
+            {
+              "label": "ClinicalTrials.gov NCT06150885",
+              "url": "https://clinicaltrials.gov/study/NCT06150885"
+            },
+            {
+              "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
+              "url": "https://doi.org/10.1038/nri3384"
+            },
+            {
+              "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+              "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+            },
+            {
+              "label": "UniProt Q15762: reviewed human CD226/DNAM-1 function",
+              "url": "https://www.uniprot.org/uniprotkb/Q15762/entry"
+            },
+            {
+              "label": "UniProt P26718: reviewed human KLRK1/NKG2D function",
+              "url": "https://www.uniprot.org/uniprotkb/P26718/entry"
+            }
+          ],
+          "afterSha256": "d00c6690c9a3c6621b9993f2d3a8c205a005b2d0f567fbd7a25e6386f6fc374c"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "before": {
+        "id": "gamma-delta-t-cells",
+        "kind": "term",
+        "name": "Gamma-delta T cells",
+        "aka": [
+          "γδ T cells",
+          "gamma delta T cells"
+        ],
+        "tldr": "Gamma-delta T cells are a family of T cells whose receptor is built from different protein chains than most T cells, and different subsets recognise different signals, often without the usual peptide display. The family name does not say which signal a particular cell, or an engineered product, uses to find a tumour.",
+        "summary": "The T-cell receptor of most T cells has alpha and beta chains; gamma-delta T cells have gamma and delta chains and also carry other activating and inhibitory receptors. They remain T cells and are distinct from natural killer cells. A review distinguishes gamma-delta from alpha-beta T cells partly by the antigens their receptors recognise, and notes that NKG2D is expressed by many gamma-delta subsets as well as by natural killer cells and CD8 T cells (Vantourout and Hayday, 2013). Names such as Vδ1 and Vγ9Vδ2 describe receptor variable regions and mark subsets that sit in different places. Healthy human breast tissue harboured a distinct gamma-delta compartment made mainly of Vδ1 cells, whereas Vδ2 cells predominate in blood; the breast Vδ1 cells could be activated innately through the NKG2D receptor, and in paired samples from 11 people with triple-negative breast cancer, progression-free and overall survival correlated with Vδ1 representation but not with total gamma-delta or Vδ2 cells (Wu et al., 2019). That is a small observational association in tissue biology and did not test an infused product.",
+        "asOf": "2026-11-10",
+        "links": [
+          {
+            "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
+            "url": "https://doi.org/10.1126/science.aay5516"
+          },
+          {
+            "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
+            "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+          },
+          {
+            "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
+            "url": "https://doi.org/10.1126/scitranslmed.aax9364"
+          },
+          {
+            "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
+            "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+          },
+          {
+            "label": "ClinicalTrials.gov NCT06150885",
+            "url": "https://clinicaltrials.gov/study/NCT06150885"
+          },
+          {
+            "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
+            "url": "https://doi.org/10.1038/nri3384"
+          },
+          {
+            "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+            "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [],
+        "sections": [],
+        "technologies": [
+          "gamma-delta-t-cell-therapy"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [
+          "t-cell",
+          "nk-cell"
+        ],
+        "trials": [
+          "nct06150885"
+        ],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
+          "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
+          "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
+          "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention."
+        ],
+        "provenance": {
+          "editedBy": "OnCo education audit",
+          "editedOn": "2026-11-10"
+        },
+        "category": "Immunology"
+      },
+      "after": {
+        "id": "gamma-delta-t-cells",
+        "kind": "term",
+        "name": "Gamma-delta T cells",
+        "aka": [
+          "γδ T cells",
+          "gamma delta T cells"
+        ],
+        "tldr": "Gamma-delta T cells are a family of T cells whose receptor is built from different protein chains than most T cells, and different subsets recognise different signals, often without the usual peptide display. The family name does not say which signal a particular cell, or an engineered product, uses to find a tumour.",
+        "summary": "The T-cell receptor of most T cells has alpha and beta chains; gamma-delta T cells have gamma and delta chains and also carry other activating and inhibitory receptors. They remain T cells and are distinct from natural killer cells. A review distinguishes gamma-delta from alpha-beta T cells partly by the antigens their receptors recognise, and notes that NKG2D is expressed by many gamma-delta subsets as well as by natural killer cells and CD8 T cells (Vantourout and Hayday, 2013). Names such as Vδ1 and Vγ9Vδ2 describe receptor variable regions and mark subsets that sit in different places. Healthy human breast tissue harboured a distinct gamma-delta compartment made mainly of Vδ1 cells, whereas Vδ2 cells predominate in blood; the breast Vδ1 cells could be activated innately through the NKG2D receptor, and in paired samples from 11 people with triple-negative breast cancer, progression-free and overall survival correlated with Vδ1 representation but not with total gamma-delta or Vδ2 cells (Wu et al., 2019). That is a small observational association in tissue biology and did not test an infused product.",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
+            "url": "https://doi.org/10.1126/science.aay5516"
+          },
+          {
+            "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
+            "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+          },
+          {
+            "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
+            "url": "https://doi.org/10.1126/scitranslmed.aax9364"
+          },
+          {
+            "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
+            "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+          },
+          {
+            "label": "ClinicalTrials.gov NCT06150885",
+            "url": "https://clinicaltrials.gov/study/NCT06150885"
+          },
+          {
+            "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
+            "url": "https://doi.org/10.1038/nri3384"
+          },
+          {
+            "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+            "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+          },
+          {
+            "label": "UniProt Q15762: reviewed human CD226/DNAM-1 function",
+            "url": "https://www.uniprot.org/uniprotkb/Q15762/entry"
+          },
+          {
+            "label": "UniProt P26718: reviewed human KLRK1/NKG2D function",
+            "url": "https://www.uniprot.org/uniprotkb/P26718/entry"
+          }
+        ],
+        "tags": [],
+        "related": [],
+        "cancers": [],
+        "sections": [],
+        "technologies": [
+          "gamma-delta-t-cell-therapy"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [],
+        "institutions": [],
+        "pathways": [],
+        "terms": [
+          "t-cell",
+          "nk-cell"
+        ],
+        "trials": [
+          "nct06150885"
+        ],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
+          "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
+          "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
+          "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention.",
+          "The gamma-delta T-cell receptor, NKG2D and DNAM-1 are different receptors. BTN2A1 binds the Vgamma9 receptor chain and works with BTN3A1 in the specified phosphoantigen response; the BTN names do not name the T-cell receptor itself. Reviewed human UniProt entries distinguish NKG2D ligands, including MICA, MICB and ULBP proteins, from the DNAM-1/CD226 ligands CD155/PVR and CD112/NECTIN2. These receptor-ligand associations do not establish that every gamma-delta subset expresses or uses each route. Check the actual cell preparation and keep ligand identity, receptor expression and controlled target-cell killing separate."
+        ],
+        "provenance": {
+          "editedBy": "OnCo education audit",
+          "editedOn": "2026-11-10"
+        },
+        "category": "Immunology"
+      }
+    },
+    {
+      "id": "in-vivo-car-t",
+      "file": "src/data/technologies.ts",
+      "kind": "technology",
+      "recordBeforeSHA256": "38b07677ec89b794d4322cec9f644848d815ae8c4917f8d02d0610b8376606bb",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+            "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+            "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+            "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+            "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+            "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+            "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+            "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+            "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8-positive T cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative T cells entered the CAR-positive gate. The appendix gates living cells through human CD45, then CD3 and CD8 before measuring CAR. Thus the CD8-negative comparison is within T cells, not every other cell in the body. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+            "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+            "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+            "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+            "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+            "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+            "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+            "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+            "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+            "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+            "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue.",
+            "Frank’s 2020 humanised-mouse experiment used the CD3-targeted TR66.opt lentiviral vector carrying a CD19 CAR. Figure 7 compares vector alone, vector after IL-7 pretreatment and an IL-7 control, with five or six mice per group. Its blood readout separates the human CD3-positive, CD45-positive T-cell gate from CD3-negative, CD45-positive non-T cells and CD45-negative mouse cells. Enrichment in sampled T cells is not a whole-body exclusivity test. Blood CAR expression peaked around three to four weeks and declined toward baseline after five weeks. Each animal’s CD19-positive blood-cell level was expressed relative to its own day-zero value. B-cell loss lasted longer in the IL-7-pretreated group; B cells reappeared at six weeks with vector alone. Delivery, subsequent cell expansion, receptor detection and B-cell depletion are different measurements, so their time courses need not match."
+          ],
+          "beforeSha256": "ccc5d62d9300e1f07139cbe660863f0009a5a9e87c44e9b0d99793f57634ba71",
+          "after": [
+            "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+            "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+            "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+            "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+            "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+            "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+            "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+            "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+            "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8-positive T cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative T cells entered the CAR-positive gate. The appendix gates living cells through human CD45, then CD3 and CD8 before measuring CAR. Thus the CD8-negative comparison is within T cells, not every other cell in the body. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+            "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+            "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+            "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+            "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+            "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+            "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+            "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+            "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+            "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+            "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue.",
+            "Frank’s 2020 humanised-mouse experiment used the CD3-targeted TR66.opt lentiviral vector carrying a CD19 CAR. Figure 7 compares vector alone, vector after IL-7 pretreatment and an IL-7 control, with five or six mice per group. Its blood readout separates the human CD3-positive, CD45-positive T-cell gate from CD3-negative, CD45-positive non-T cells and CD45-negative mouse cells. Enrichment in sampled T cells is not a whole-body exclusivity test. Blood CAR expression peaked around three to four weeks and declined toward baseline after five weeks. Each animal’s CD19-positive blood-cell level was expressed relative to its own day-zero value. B-cell loss lasted longer in the IL-7-pretreated group; B cells reappeared at six weeks with vector alone. Delivery, subsequent cell expansion, receptor detection and B-cell depletion are different measurements, so their time courses need not match.",
+            "For the fictional growth example, the percentage smaller than the final control is 100 times (control endpoint minus treated endpoint) divided by the control endpoint. The fold from baseline is the treated endpoint divided by baseline. Keep these two comparisons separate: a favourable control comparison can accompany growth from baseline. These ratios require finite, non-negative volumes and positive baseline and control denominators. They are not a baseline-adjusted growth-inhibition formula or a clinical response classification. An upper input limit in a teaching calculator is a property of that exercise, not a biological threshold."
+          ],
+          "afterSha256": "4293aaf93d307a246508e0a8d85385aeff2048ec846b18a60129a40adc58822e"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "before": {
+        "id": "in-vivo-car-t",
+        "kind": "technology",
+        "name": "In vivo CAR-T",
+        "aka": [],
+        "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
+        "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+        "status": "phase-1",
+        "asOf": "2026-11-13",
+        "links": [
+          {
+            "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
+            "url": "https://doi.org/10.15252/emmm.201809158"
+          },
+          {
+            "label": "Rurik et al.: targeted mRNA nanoparticles in a mouse cardiac-injury model (2022)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34990237/"
+          },
+          {
+            "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
+            "url": "https://clinicaltrials.gov/study/NCT06539338"
+          },
+          {
+            "label": "FDA: CAR T-cell development guidance, January 2024",
+            "url": "https://www.fda.gov/media/156896/download"
+          },
+          {
+            "label": "Hunter et al., 2025: human-cell, humanised-mouse and monkey experiments",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40536974/"
+          },
+          {
+            "label": "In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome. (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30224381/"
+          },
+          {
+            "label": "A targeting lentiviral vector for generation of CAR-T cells in vivo. (2026)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41844687/"
+          },
+          {
+            "label": "Frank et al., 2020: CD3-targeted lentiviral delivery and humanised-mouse blood measurements",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33216892/"
+          }
+        ],
+        "tags": [
+          "frontier"
+        ],
+        "related": [
+          "cellular-kinetics-and-persistence",
+          "ex-vivo-cell-expansion",
+          "chain-of-identity-and-custody",
+          "targeted-lnps",
+          "lipid-nanoparticle",
+          "lentiviral-vector",
+          "aav-vector",
+          "transposon"
+        ],
+        "cancers": [],
+        "sections": [
+          "cell-therapy"
+        ],
+        "technologies": [
+          "car-t"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [
+          "abbvie",
+          "adicet-bio",
+          "capstan-therapeutics",
+          "kelonia-therapeutics",
+          "kernal-biologics",
+          "strand-therapeutics",
+          "azalea-therapeutics",
+          "stylus-medicine",
+          "vivacta-bio",
+          "utc-therapeutics",
+          "starna-therapeutics",
+          "gigamune"
+        ],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-pfeiffer-embo-mol-med"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+          "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+          "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+          "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+          "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+          "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+          "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+          "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8-positive T cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative T cells entered the CAR-positive gate. The appendix gates living cells through human CD45, then CD3 and CD8 before measuring CAR. Thus the CD8-negative comparison is within T cells, not every other cell in the body. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+          "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+          "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+          "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+          "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+          "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+          "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+          "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+          "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+          "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue.",
+          "Frank’s 2020 humanised-mouse experiment used the CD3-targeted TR66.opt lentiviral vector carrying a CD19 CAR. Figure 7 compares vector alone, vector after IL-7 pretreatment and an IL-7 control, with five or six mice per group. Its blood readout separates the human CD3-positive, CD45-positive T-cell gate from CD3-negative, CD45-positive non-T cells and CD45-negative mouse cells. Enrichment in sampled T cells is not a whole-body exclusivity test. Blood CAR expression peaked around three to four weeks and declined toward baseline after five weeks. Each animal’s CD19-positive blood-cell level was expressed relative to its own day-zero value. B-cell loss lasted longer in the IL-7-pretreated group; B cells reappeared at six weeks with vector alone. Delivery, subsequent cell expansion, receptor detection and B-cell depletion are different measurements, so their time courses need not match."
+        ],
+        "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
+        "strengths": [
+          "Investigates an alternative to administering cells engineered outside the body",
+          "May reduce some separate ex vivo manufacturing steps in a specified process"
+        ],
+        "limitations": [
+          "Cell targeting, off-target engineering and immune responses require measurement",
+          "Instruction dose does not specify final cell number or functional exposure",
+          "Conditioning, repeat dosing and cost are product- and protocol-specific"
+        ],
+        "since": 2024
+      },
+      "after": {
+        "id": "in-vivo-car-t",
+        "kind": "technology",
+        "name": "In vivo CAR-T",
+        "aka": [],
+        "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
+        "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+        "status": "phase-1",
+        "asOf": "2026-11-14",
+        "links": [
+          {
+            "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
+            "url": "https://doi.org/10.15252/emmm.201809158"
+          },
+          {
+            "label": "Rurik et al.: targeted mRNA nanoparticles in a mouse cardiac-injury model (2022)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34990237/"
+          },
+          {
+            "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
+            "url": "https://clinicaltrials.gov/study/NCT06539338"
+          },
+          {
+            "label": "FDA: CAR T-cell development guidance, January 2024",
+            "url": "https://www.fda.gov/media/156896/download"
+          },
+          {
+            "label": "Hunter et al., 2025: human-cell, humanised-mouse and monkey experiments",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40536974/"
+          },
+          {
+            "label": "In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome. (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30224381/"
+          },
+          {
+            "label": "A targeting lentiviral vector for generation of CAR-T cells in vivo. (2026)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41844687/"
+          },
+          {
+            "label": "Frank et al., 2020: CD3-targeted lentiviral delivery and humanised-mouse blood measurements",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33216892/"
+          }
+        ],
+        "tags": [
+          "frontier"
+        ],
+        "related": [
+          "cellular-kinetics-and-persistence",
+          "ex-vivo-cell-expansion",
+          "chain-of-identity-and-custody",
+          "targeted-lnps",
+          "lipid-nanoparticle",
+          "lentiviral-vector",
+          "aav-vector",
+          "transposon"
+        ],
+        "cancers": [],
+        "sections": [
+          "cell-therapy"
+        ],
+        "technologies": [
+          "car-t"
+        ],
+        "targets": [],
+        "drugs": [],
+        "companies": [
+          "abbvie",
+          "adicet-bio",
+          "capstan-therapeutics",
+          "kelonia-therapeutics",
+          "kernal-biologics",
+          "strand-therapeutics",
+          "azalea-therapeutics",
+          "stylus-medicine",
+          "vivacta-bio",
+          "utc-therapeutics",
+          "starna-therapeutics",
+          "gigamune"
+        ],
+        "institutions": [],
+        "pathways": [],
+        "terms": [],
+        "trials": [],
+        "people": [],
+        "bottlenecks": [],
+        "keyPapers": [
+          "paper-pfeiffer-embo-mol-med"
+        ],
+        "journals": [],
+        "dependsOn": [],
+        "notes": [
+          "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+          "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+          "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+          "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+          "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+          "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+          "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+          "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+          "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8-positive T cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative T cells entered the CAR-positive gate. The appendix gates living cells through human CD45, then CD3 and CD8 before measuring CAR. Thus the CD8-negative comparison is within T cells, not every other cell in the body. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+          "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+          "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+          "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+          "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+          "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+          "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+          "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+          "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+          "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+          "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue.",
+          "Frank’s 2020 humanised-mouse experiment used the CD3-targeted TR66.opt lentiviral vector carrying a CD19 CAR. Figure 7 compares vector alone, vector after IL-7 pretreatment and an IL-7 control, with five or six mice per group. Its blood readout separates the human CD3-positive, CD45-positive T-cell gate from CD3-negative, CD45-positive non-T cells and CD45-negative mouse cells. Enrichment in sampled T cells is not a whole-body exclusivity test. Blood CAR expression peaked around three to four weeks and declined toward baseline after five weeks. Each animal’s CD19-positive blood-cell level was expressed relative to its own day-zero value. B-cell loss lasted longer in the IL-7-pretreated group; B cells reappeared at six weeks with vector alone. Delivery, subsequent cell expansion, receptor detection and B-cell depletion are different measurements, so their time courses need not match.",
+          "For the fictional growth example, the percentage smaller than the final control is 100 times (control endpoint minus treated endpoint) divided by the control endpoint. The fold from baseline is the treated endpoint divided by baseline. Keep these two comparisons separate: a favourable control comparison can accompany growth from baseline. These ratios require finite, non-negative volumes and positive baseline and control denominators. They are not a baseline-adjusted growth-inhibition formula or a clinical response classification. An upper input limit in a teaching calculator is a property of that exercise, not a biological threshold."
+        ],
+        "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
+        "strengths": [
+          "Investigates an alternative to administering cells engineered outside the body",
+          "May reduce some separate ex vivo manufacturing steps in a specified process"
+        ],
+        "limitations": [
+          "Cell targeting, off-target engineering and immune responses require measurement",
+          "Instruction dose does not specify final cell number or functional exposure",
+          "Conditioning, repeat dosing and cost are product- and protocol-specific"
+        ],
+        "since": 2024
+      }
+    }
+  ],
+  "derivedChanges": [],
+  "scope": "Correct the existing therapy card against freshly read abstracts; add a curated receptor distinction and an explicitly fictional ratio explanation. All earlier notes/links retained in order; no new ids/modules/aliases/relations. Other programme metadata and old clinical claims are not recertified.",
+  "summaryEntryChanges": {
+    "changes": [
+      {
+        "canonicalRecordId": "gamma-delta-t-cell-therapy",
+        "language": "simple",
+        "file": "src/data/simple/part-o.ts",
+        "before": "Gamma-delta T cell therapy uses a rare T-cell type that recognises stressed cancer cells without tissue matching, making it a candidate for off-the-shelf products.",
+        "after": "This therapy uses a type of T cell called gamma-delta. Different cells and added receptors can recognise different targets. Each product needs its own checks for matching, safety and benefit.",
+        "beforeSHA256": "458627c03038ab0990b6f4ffaa9227e06d6334b4e8704d5a1c747da3949eafd5",
+        "afterSHA256": "c27d5280b1067575248602bfe7b93d74517546e515206f2ec289322487b63310",
+        "reason": "Remove the stale universal no-matching claim so the existing summary follows the source-qualified English card.",
+        "nativeLanguageAcceptance": false,
+        "namedReviewerAdded": false
+      },
+      {
+        "canonicalRecordId": "gamma-delta-t-cell-therapy",
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "before": "由一种罕见T细胞构建的细胞疗法，这类细胞无需组织配型即可识别受压的癌细胞，是现货型产品的候选。",
+        "after": "这类疗法使用特定的 γδ T 细胞。不同细胞及其受体的识别方式可能不同，因此需要根据具体产品评估配型要求、安全性和疗效。",
+        "beforeSHA256": "e7025f7f7f033a3855f873a550fa2472375bc92cda6a1df882213c6955331fff",
+        "afterSHA256": "444d9953ac37e07458535d629c75bea800ef8fe74a4693344119f6d2c7a335d2",
+        "reason": "Remove the stale universal no-matching claim so the existing summary follows the source-qualified English card.",
+        "nativeLanguageAcceptance": false,
+        "namedReviewerAdded": false
+      }
+    ],
+    "entriesChanged": 2,
+    "newEntries": 0,
+    "noSelectorOrRendererChange": true,
+    "languageAcceptanceUnchanged": true
+  },
+  "notesAdded": 3,
+  "sourceLinksAdded": 5,
+  "dateChanges": 3,
+  "newIds": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "earlierNotesAndLinksPreservedInOrder": true,
+  "previousScalarTextPreservedInBeforeReceipt": true,
+  "remainingMetadataScope": "Unchanged clinical-trial/company/status/cancer fields and other old clinical assertions are not newly source-verified."
+}

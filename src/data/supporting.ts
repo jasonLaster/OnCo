@@ -416,43 +416,51 @@ const technologies: TechnologyInput[] = [
   }),
   t({
     id: "cell-therapy-release-testing", links: [
-  {
-    "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
-    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
-  },
-  {
-    "label": "FDA: considerations for development of CAR T-cell products",
-    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
-  },
-  {
-    "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
-    "url": "https://www.fda.gov/media/156896/download"
-  },
-  {
-    "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
-    "url": "https://www.fda.gov/media/113760/download"
-  },
-  {
-    "label": "FDA: final potency-assurance guidance, November 2026, original document",
-    "url": "https://www.fda.gov/media/196183/download"
-  },
-  {
-    "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
-    "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
-  },
-  {
-    "label": "FDA: Potency Assurance (December 2023 draft, historical)",
-    "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
-  }
-], name: "Cell-therapy release and potency testing", sections: ["cell-therapy"], status: "established",
+                                          {
+                                            "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+                                            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+                                          },
+                                          {
+                                            "label": "FDA: considerations for development of CAR T-cell products",
+                                            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+                                          },
+                                          {
+                                            "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+                                            "url": "https://www.fda.gov/media/156896/download"
+                                          },
+                                          {
+                                            "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+                                            "url": "https://www.fda.gov/media/113760/download"
+                                          },
+                                          {
+                                            "label": "FDA: final potency-assurance guidance, November 2026, original document",
+                                            "url": "https://www.fda.gov/media/196183/download"
+                                          },
+                                          {
+                                            "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+                                            "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+                                          },
+                                          {
+                                            "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+                                            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+                                          },
+                                          {
+                                            "label": "FDA: potency tests (January 2011, superseded; historical activity and clinical-effectiveness discussion)",
+                                            "url": "https://www.fda.gov/media/79856/download"
+                                          }
+                                        ], name: "Cell-therapy release and potency testing", sections: ["cell-therapy"], status: "established",
     tldr: "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
     summary: "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
-    principle: "Compendial and validated assays performed on samples of the final product, with defined acceptance criteria in the marketing authorisation.",
+    principle: "Product-relevant biological activity is measured with suitable methods, controls and acceptance criteria for the product and its development stage.",
     strengths: ["Patient safety", "Regulatory clarity"],
-    limitations: ["Adds days to delivery", "Potency assays poorly predictive of clinical activity", "Sample volume consumes product"],
+    limitations: [
+      "Representative sampling can be difficult for some products",
+      "Laboratory activity does not establish patient benefit",
+      "Destructive assays consume sample material"
+    ],
     technologies: ["car-t", "closed-automated-cell-manufacturing", "flow-cytometry-mrd"], companies: ["charles-river", "becton-dickinson"],
 
-"asOf": "2026-11-10",
+"asOf": "2026-11-14",
 "related": [
   "good-manufacturing-practice",
   "batch-release"

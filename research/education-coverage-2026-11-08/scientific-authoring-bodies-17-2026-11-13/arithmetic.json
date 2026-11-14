@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "id": "SB17-EVENTS",
+      "premise": "Recurrence while alive: recurrence-or-death1, death-only0. Death with no prior recurrence:1,1.",
+      "recurrenceAlive": [
+        1,
+        0
+      ],
+      "deathWithoutPriorRecurrence": [
+        1,
+        1
+      ],
+      "passCheck": true
+    },
+    {
+      "id": "SB17-SAME-ORIGIN",
+      "premise": "Both fictional clocks start at the same assigned time0. Surgery does not reset either clock.",
+      "origins": [
+        0,
+        0
+      ],
+      "passCheck": true
+    },
+    {
+      "id": "SB17-PAIR",
+      "premise": "A and B retain distinct exposure identities in the combination.",
+      "identities": [
+        "A",
+        "B"
+      ],
+      "passCheck": true
+    },
+    {
+      "id": "SB17-SURVIVORS",
+      "premise": "Washout/regrowth follows a living-survivor branch; dead fragments are not its input.",
+      "passCheck": true
+    },
+    {
+      "id": "SB17-BLANK-REPORT",
+      "premise": "Blank ER/PR/HER2 and Collected/Reported fields supply no measured value or dates.",
+      "patientValuesSupplied": 0,
+      "passCheck": true
+    }
+  ],
+  "allPass": true,
+  "scope": "Internal fictional event/set/order checks and interpretation, not observed study results, clinical thresholds or schedules."
+}

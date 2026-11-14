@@ -1,0 +1,31 @@
+{
+  "reason": "Generic-api-key heuristic matched a public UniProt source label under the key field. Public capture metadata now uses sourceId and retains hashes of the privately read names/FUNCTION blocks rather than raw source text. No secret was present, no scanner/test rule or allowance changed, and no source meaning, owner, grade or canonical data changed.",
+  "repairs": [
+    {
+      "artifact": "primary-sources.json",
+      "sourceId": "uniprot-pikfyve",
+      "beforeObjectSHA256": "519383e5c1532dab5b48cd60048a32f3e36afc8070cddcc66eb639d772b8089d",
+      "afterObjectSHA256": "0771c4fd40bbc8e519b0549c5c015db44284f7cdf1bd1c4dd0debe9e072883c3"
+    },
+    {
+      "artifact": "primary-sources.json",
+      "sourceId": "uniprot-pik3ca",
+      "beforeObjectSHA256": "9b979750706df407e9461941107108a67bb6aa805547fbff78aded470231df2d",
+      "afterObjectSHA256": "26ac78053c5ebd712423d236062b6393120d275da72de981c321a43341729cc5"
+    },
+    {
+      "artifact": "capture-hashes.json",
+      "sourceId": "uniprot-pikfyve",
+      "beforeObjectSHA256": "519383e5c1532dab5b48cd60048a32f3e36afc8070cddcc66eb639d772b8089d",
+      "afterObjectSHA256": "0771c4fd40bbc8e519b0549c5c015db44284f7cdf1bd1c4dd0debe9e072883c3"
+    },
+    {
+      "artifact": "capture-hashes.json",
+      "sourceId": "uniprot-pik3ca",
+      "beforeObjectSHA256": "9b979750706df407e9461941107108a67bb6aa805547fbff78aded470231df2d",
+      "afterObjectSHA256": "26ac78053c5ebd712423d236062b6393120d275da72de981c321a43341729cc5"
+    }
+  ],
+  "scannerOrAllowlistChanges": false,
+  "canonicalDataChanged": false
+}

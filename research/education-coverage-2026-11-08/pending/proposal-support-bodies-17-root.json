@@ -1,0 +1,2397 @@
+{
+  "version": "proposal-support-bodies-17-root",
+  "state": "Committed registered local-draft fields of20selected existing root owners. One owner receives a target-identity clarification. Seven actual PR373 contributor objects are separately held at their existing version, not registered or edited. Selection is not authorship or blanket scientific verification.",
+  "draft": 375,
+  "committedDataHead": "47aa699da4b5b9c7ce42d9d7900946911dd64ff4",
+  "records": [
+    {
+      "id": "controlled-perturbation",
+      "kind": "term",
+      "name": "Controlled perturbation experiment",
+      "aka": [
+        "perturbation experiment",
+        "vehicle control",
+        "positive control",
+        "negative control",
+        "rescue experiment",
+        "mechanism control"
+      ],
+      "tldr": "Controlled perturbations deliberately change specified factors and compare responses with suitable controls. A model response alone does not prove its mechanism or patient benefit.",
+      "summary": "A controlled perturbation deliberately changes a defined factor and measures the response against appropriate comparison conditions. Vehicle, positive, negative and mechanism controls answer different questions. A reproducible response can support an experimental claim without establishing its proposed mechanism or patient benefit. Baseline growth, timing, dose and the actual unit assigned to treatment matter.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Hafner et al.: growth rate inhibition metrics correct for confounders in measuring drug sensitivity (Nature Methods 2016)",
+          "url": "https://doi.org/10.1038/nmeth.3853"
+        },
+        {
+          "label": "Measuring cancer drug sensitivity and resistance in cultured cells (Current Protocols in Chemical Biology 2017)",
+          "url": "https://doi.org/10.1002/cpch.21"
+        },
+        {
+          "label": "The promise and peril of chemical probes",
+          "url": "https://doi.org/10.1038/nchembio.1867"
+        },
+        {
+          "label": "What exactly is 'N' in cell culture and animal experiments?",
+          "url": "https://doi.org/10.1371/journal.pbio.2005282"
+        },
+        {
+          "label": "Searching for Drug Synergy in Complex Dose-Response Landscapes Using an Interaction Potency Model (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26949479/"
+        },
+        {
+          "label": "SynergyFinder: a web application for analyzing drug combination dose-response matrix data (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28379339/"
+        },
+        {
+          "label": "Mutant p53 disrupts mammary tissue architecture via the mevalonate pathway (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22265415/"
+        },
+        {
+          "label": "Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)&lt;sup&gt;1&lt;/sup&gt; (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+        },
+        {
+          "label": "Proof-of-concept study linking ex vivo sensitivity testing to neoadjuvant anthracycline-based chemotherapy response in breast cancer patients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37777518/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "preclinical",
+        "in-vitro-in-vivo",
+        "cell-line",
+        "organoid",
+        "placebo"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A vehicle control contains the carrier without the active treatment; an untreated condition asks a different question if the carrier has effects. A positive control checks that the assay can detect a known relevant response, while a negative or non-targeting control estimates background under its design. Another independent way to disrupt the same function can support a mechanism, and a rescue restores a function to test whether that reverses the response here. Off-target effects, incomplete restoration and model context limit interpretation. These are questions for matched model, timing and readout; no one control proves specificity or patient benefit, and agreement between similar readouts is not automatically independent mechanistic confirmation.",
+        "Keep what changed, the comparator, concentration or dose range, timing, assignment, readout and units, sample identities, replicate structure and variability. Repeated wells address variation under their preparation and allocation; independently obtained biological samples address another source of variation. Many wells from one tumour do not become independent patients, and repetition or a small p-value does not repair a missing comparison. A two-drug experiment needs vehicle, both single drugs and the combination. A larger combination effect than either single drug is not automatically synergy; that claim needs a stated reference model.",
+        "Fictional direct counts: vehicle-treated cells increase from 100 to 200 while drug-treated cells remain at 100. The endpoint drug count is half the vehicle count without measured net decline from the starting count, so calling it 50 per cent killing overstates the observation. Slower growth, death and a molecular change require their own readouts; direct death or recovery measurements could address further questions. Hafner and colleagues showed that conventional IC50 and maximal-effect measures depend on cell divisions during an assay and developed growth-rate metrics to address that dependence. A real experimental response does not by itself establish the responsible target or clinical benefit.",
+        "A fictional two-drug table normalises remaining viability to vehicle at 100 per cent: A leaves 70, B leaves 80, and combination examples leave 56 or 30. Highest single agent uses the better single-drug effect, a 70 per cent remaining-viability reference here. Bliss independence predicts 0.70 times 0.80 = 0.56, or 56 per cent. Both combinations exceed the HSA effect; 56 matches Bliss while 30 exceeds it at that dose pair. A further combination leaving 65 exceeds HSA but not Bliss. Loewe additivity instead needs equivalent-dose information from suitable individual dose-response curves; this one-point table cannot establish it. Report the model, dose-pair pattern, uncertainty and schedule. Interaction relative to a reference does not identify a biological mechanism, tolerable human exposure or a treatment choice.",
+        "A rescue restores a proposed missing function or supply and tests whether a defined effect reverses. Adding a cake mix back after its removal implicates the mixture without identifying flour, sugar or another ingredient; likewise, broad mevalonate add-back does not isolate cholesterol. More specific branch perturbations and appropriate add-backs can narrow the explanation. Partial rescue can reflect incomplete delivery or restoration as well as additional contributors, so it does not prove a second cause. Place the add-back relative to the blocked step: supplying GGPP after an upstream synthesis block is different from inhibiting the transferase that uses GGPP, which the added substrate cannot simply be assumed to bypass. Include restoration-only and matched controls, verify the restored process and distinguish growth, morphology and death. A genetic perturbation also has its own specificity limits.",
+        "Attribute each readout to the relevant cells. An ATP-based signal can change through cell number or per-cell metabolism, and slower single-cell mass accumulation does not by itself show death. Direct death measurements and regrowth after washout ask further questions; regrowth concerns surviving cells, not revival of cells already dead. A mixed culture can change composition, and a nonmalignant-cell label alone does not establish a validated healthy-tissue control. Ladan's breast-slice chemotherapy assay was compared with response during preoperative treatment in a defined setting. That assay-specific validation does not validate every postoperative combination, human exposure or clinical decision. An inadequate viable preparation should remain uninterpretable rather than be called resistant."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "functional-drug-testing",
+      "kind": "technology",
+      "name": "Functional (ex vivo) drug testing",
+      "aka": [],
+      "tldr": "Functional drug testing measures a defined response to medicines in collected living material under laboratory conditions.",
+      "summary": "Functional drug testing exposes a defined living preparation to medicines and measures a specified response. Preparations may use dissociated cells, expanded organoids or short-term tissue cultures. Feasibility, outcome agreement and benefit from using a result to choose care are separate questions and must be tied to the actual assay version, cancer, treatment and setting.",
+      "status": "emerging",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Precision_medicine",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Precision_medicine"
+        },
+        {
+          "label": "Functional model interpretation: primary evidence",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887336/"
+        },
+        {
+          "label": "Breast-slice assay version and handling",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/"
+        },
+        {
+          "label": "Promega CellTiter-Glo: ATP readout and cellular-content limitations",
+          "url": "https://www.promega.com/-/media/files/resources/protocols/technical-bulletins/0/celltiter-glo-luminescent-cell-viability-assay-protocol.pdf"
+        },
+        {
+          "label": "Restivo et al. 2022: protocol-specific recovery from slow-frozen tumour tissue",
+          "url": "https://doi.org/10.1038/s42003-022-04025-0"
+        },
+        {
+          "label": "Ooft et al.: SENSOR organoid-guided treatment study (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33887686/"
+        },
+        {
+          "label": "Guillen et al.: breast xenograft and organoid platform with one clinical case (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35221336/"
+        },
+        {
+          "label": "Ranjan et al.: randomised ChemoID trial in recurrent glioblastoma (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37137304/"
+        },
+        {
+          "label": "Growth rate inhibition metrics correct for confounders in measuring sensitivity to cancer drugs (Nature methods 2016)",
+          "url": "https://doi.org/10.1038/nmeth.3853"
+        },
+        {
+          "label": "Using buoyant mass to measure the growth of single cells (Nature methods 2010)",
+          "url": "https://doi.org/10.1038/nmeth.1452"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "functional-precision-medicine-haematology",
+        "bh3-profiling",
+        "parsortix-ctc-harvest",
+        "ex-vivo-tumour-fragments",
+        "single-cell-mass-assays",
+        "functional-model-selection"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics",
+        "drug-discovery"
+      ],
+      "technologies": [
+        "organoids"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "certis-oncology-solutions",
+        "known-medicine",
+        "notable-labs",
+        "origin-bio",
+        "zpredicta",
+        "kernis-health",
+        "palitra-bio",
+        "valius",
+        "specicare",
+        "storemytumor",
+        "travera",
+        "first-ascent-biomedical",
+        "kiyatec",
+        "sagemedic",
+        "kyan-technologies",
+        "cancertain",
+        "2curex",
+        "oncosyne"
+      ],
+      "institutions": [
+        "cure-first"
+      ],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Specimen and assay card. Record donor/site/time, living preparation, transport and processing, initial composition, culture history, assay version, concentrations, exposure duration, replicates and control range. Fixed tissue cannot supply living cells; whether previously frozen material can supply the required viable preparation must be demonstrated for that protocol. Input suitability and recovery must be demonstrated for the method. Testing and endpoint processing use finite material. Output needs units, denominator, normalisation and uncertainty; acceptance criteria must be defined for the actual method. Name whether the preparation is dissociated cells, a fresh fragment or an expanded organoid. Mixed samples include normal neighbours, and expansion can change the represented populations.",
+        "Handling evidence is method-specific. Ladan and colleagues collected breast tissue in their specified medium, cut 300 micrometre slices and assessed morphology, proliferation and apoptosis after three-day exposure. This is not a general transport or storage protocol for all screens. Growth-rate methods show why baseline counts and control division affect interpretation. Retain failures and exclusions; failed preparation is not clinical resistance. Sources: https://pmc.ncbi.nlm.nih.gov/articles/PMC10542784/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4887336/ Medium, drug access and exposure duration can change the result. Mechanism-relevant controls test whether the claimed interaction can occur; absent required cells or unrealistic exposures can make an experiment uninformative even when a numerical response is available. A laboratory concentration is not a safe human dose.",
+        "Fictional example. A well has half the metabolic signal but the same identified viable tumour-cell endpoint count as control. This establishes a changed proxy, not half the cells killed; endpoint equality also does not reconstruct every division and death. Separate death, target engagement, safe human dosing and clinical benefit remain questions. This is an arithmetic and interpretation exercise, not observed patient data. Possible readouts include cell number, metabolism, mass, growth and death. Adenosine triphosphate (ATP) is a cellular energy molecule measured by some luminescence assays. Promega's primary assay guidance states that cellular ATP content varies with cell type and physiology and can alter the relation between cell number and light output. A lower ATP signal can therefore reflect fewer cells or a per-cell change, rather than a counted death fraction. Source: https://www.promega.com/-/media/files/resources/protocols/technical-bulletins/0/celltiter-glo-luminescent-cell-viability-assay-protocol.pdf",
+        "Restivo and colleagues generated organoids from matched fresh and slow-frozen colorectal tumour tissue from two patients with stage IV disease. Their specified slow-freezing protocol used a cryoprotectant to preserve living material, and the frozen-derived cultures took longer to form than the fresh-derived cultures. This is evidence of recovery under that protocol, not equivalence of all fresh, snap-frozen and viable-cryopreserved samples or a guaranteed turnaround. The handling history, recovery, malignant identity and assay quality need checking for the intended experiment. Preserved molecular material alone does not establish a recoverable living model. Source: https://doi.org/10.1038/s42003-022-04025-0",
+        "Read a model study as a sequence of explicitly defined groups: people or specimens offered or submitted, preparations yielding a usable model, results compared with a clinical outcome, and results agreeing under the stated rule. Eligibility exclusions, absent tumour, laboratory failures, missing outcomes and people not receiving the treatment belong to different steps. State whether the unit is a person, specimen or treatment comparison; one person can contribute more than one. A percentage among compared cases cannot describe everyone originally offered testing, and an analysis exclusion is not automatically a failed culture. Keep the drug, cancer, treatment history, outcome, clock and assay version attached rather than ranking different studies as competing accuracy scores.",
+        "The prospective single-arm SENSOR study enrolled 61 people with metastatic colorectal cancer: 54 were eligible, 31 organoids were generated, 25 cultures were screened against eight drugs and nineteen showed a substantial laboratory response. Six people received an organoid-selected treatment, three vistusertib and three capivasertib, with no objective clinical responses. That observation concerns this panel and selected population; it neither establishes benefit from using the assay nor proves that every organoid method is ineffective. Guillen and colleagues' breast-model report describes a complete response in one person with metastatic triple-negative disease after a model-nominated treatment. That case demonstrates feasibility, without a comparison estimating how often the strategy helps.",
+        "Randomised outcome evidence must be assessed for the named assay and use rather than declared absent for all functional testing in solid tumours. Ranjan and colleagues reported a 2023 trial of ChemoID selection versus physician choice from the same chemotherapy list in 78 people with recurrent glioblastoma under the 2016 WHO definition. Enrolment stopped after a prespecified efficacy analysis; the intention-to-treat report gave median overall survival of twelve versus 7.5 months. Participants could provide viable tumour through surgery or biopsy, so the findings do not include every patient with recurrent glioblastoma. Cordgenics supported the assay resources, and two authors declared licensed intellectual-property interests. This is evidence for the studied strategy and population, without validating another assay, organoid system, postoperative breast decision or universal treatment rule.",
+        "Consider an entirely invented tumour-only organoid experiment from one donor and one characterised preparation, with three wells per condition. Drug A is tested at 0.1, 0.3 and 1 micromoles per litre for 48 hours with matched carrier and handling. The planned primary readout is calibrated viable tumour-cell count at the start and endpoint, with cell identity checked. Vehicle, a positive control with an expected response and a target perturbation or rescue ask different questions. Their actual results must be documented; the illustrative counts do not show that every control passed. Three wells are not three donors. This preparation supplies neither immune cells, full human metabolism nor a healthy-organ toxicity measurement, and these example exposures are not human doses.",
+        "In that fictional experiment, both groups start at 1,000 viable tumour cells per well. At 48 hours and the middle exposure of 0.3 micromoles per litre, the median across three wells is 2,000 for vehicle and 1,000 for treatment. Treatment is at 50 percent of the later vehicle count and 100 percent of its own starting count. That establishes no net increase, not 50 percent killing or absence of division. Reduced division or division balanced by death can give that endpoint; time-course and suitable division/death measurements distinguish explanations. Keep each well and its variation rather than treating the median as three independent patients.",
+        "Two matched parallel aliquots add different fictional readouts to the same comparison; they do not track the original cells individually. Mean buoyant mass is 20 picograms per measured cell at the start, 21 with vehicle and 16 with treatment, so the treated mean is 80 percent of its starting value. Metabolic signal is 100 arbitrary units at the start, 190 with vehicle and 70 with treatment: 70 divided by 190 is about 36.8 percent, a 63.2 percent reduction relative to vehicle. Neither is a killed-cell fraction. A changing population mean is not an individual-cell trajectory, and buoyant mass depends on cell volume and the difference between cell and fluid density. It is not dry mass, a count of living cells or a measurement of a particular death mechanism."
+      ],
+      "principle": "Compare defined exposures with matched controls in a characterised viable preparation; attribute the endpoint to the relevant population.",
+      "strengths": [
+        "Tests a drug-response hypothesis directly in a defined preparation",
+        "Can compare several exposures when material permits"
+      ],
+      "limitations": [
+        "Preparation, viability, sampling and turnaround affect feasibility",
+        "Missing components can leave a drug mechanism untested",
+        "Outcome association alone does not establish clinical utility"
+      ]
+    },
+    {
+      "id": "autophagy",
+      "kind": "pathway",
+      "name": "Autophagy",
+      "aka": [],
+      "tldr": "Autophagy delivers cellular material for breakdown and reuse. The amount present, the rate of recycling and whether cells need it to survive are different questions.",
+      "summary": "Macroautophagy encloses cargo in autophagosomes for lysosomal delivery and breakdown. LC3 abundance alone cannot distinguish increased formation from reduced removal. Tandem fluorescent LC3 reporters exploit different responses to acidic and degradative conditions to examine maturation in cell experiments; interpretation requires appropriate controls. Flux and survival dependence need separate tests. In a randomised phase 2 trial of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel did not improve the primary endpoint of survival at 12 months. A drug trial does not by itself establish selective autophagy dependence in a tumour.",
+      "asOf": "2026-11-13",
+      "wikipedia": "https://en.wikipedia.org/wiki/Autophagy",
+      "links": [
+        {
+          "label": "Primary source, PMID 17534139",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17534139/"
+        },
+        {
+          "label": "Primary source, PMID 31120501",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31120501/"
+        },
+        {
+          "label": "Yamamoto et al., Autophagy promotes immune evasion of pancreatic cancer by degrading MHC-I (Nature 2020)",
+          "url": "https://doi.org/10.1038/s41586-020-2229-5"
+        },
+        {
+          "label": "Source identity and scope, PMID 33634751",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+        },
+        {
+          "label": "Source identity and scope, PMID 29362479",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29362479/"
+        },
+        {
+          "label": "Source identity and scope, PMID 33584716",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33584716/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19250911",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19250911/"
+        },
+        {
+          "label": "Source identity and scope, PMID 19258318",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+        },
+        {
+          "label": "Lysosome biology in autophagy (2020 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32047650/"
+        },
+        {
+          "label": "The hairpin-type tail-anchored SNARE syntaxin 17 targets to autophagosomes for fusion with endosomes/lysosomes (2012 cell experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23217709/"
+        },
+        {
+          "label": "The ATG conjugation systems are important for degradation of the inner autophagosomal membrane (2016 cell experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27885029/"
+        },
+        {
+          "label": "Autophagosome maturation: An epic journey from the ER to lysosomes (2019 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30578282/"
+        },
+        {
+          "label": "mTORC1 Activator SLC38A9 Is Required to Efflux Essential Amino Acids from Lysosomes and Use Protein as a Nutrient (2017 cell and transport experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29053970/"
+        },
+        {
+          "label": "Lysosomal metabolomics reveals V-ATPase- and mTOR-dependent regulation of amino acid efflux from lysosomes (2017 lysosomal metabolomics)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29074583/"
+        },
+        {
+          "label": "Atg22 recycles amino acids to link the degradative and recycling functions of autophagy (2006 yeast experiments)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17021250/"
+        },
+        {
+          "label": "Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33473172/"
+        },
+        {
+          "label": "The PARP inhibitor AZD2281 (Olaparib) induces autophagy/mitophagy in BRCA1 and BRCA2 mutant breast cancer cells (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25975349/"
+        },
+        {
+          "label": "Breast Cancer Cell Line Classification and Its Relevance with Breast Tumor Subtyping (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29158785/"
+        },
+        {
+          "label": "Correction: Targeting autophagy reverses de novo resistance in homologous recombination repair proficient breast cancers to PARP inhibition (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40527957/"
+        },
+        {
+          "label": "UniProt Q8TDY2: RB1CC1 protein names, including FIP200",
+          "url": "https://www.uniprot.org/uniprotkb/Q8TDY2/entry"
+        }
+      ],
+      "tags": [
+        "mechanism"
+      ],
+      "related": [
+        "nutrient-sensing-ampk"
+      ],
+      "cancers": [
+        "pancreatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "kras-inhibitors"
+      ],
+      "targets": [
+        "kras"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [
+        "penn-abramson",
+        "cold-spring-harbor"
+      ],
+      "pathways": [
+        "ras-mapk",
+        "pi3k-akt-mtor",
+        "cancer-metabolism",
+        "antigen-presentation-immunoediting"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-yamamoto-nature"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Leading programmes: Amaravadi (Penn) on autophagy inhibition trials; Kimmelman (NYU) on PDAC autophagy and MHC-I; Der (UNC) on KRAS/autophagy.",
+        "Macroautophagy encloses cargo in a double-membrane autophagosome, delivers it through lysosomal fusion and degrades it for reuse. Formation, delivery and breakdown are separate steps; not all lysosomal processes use autophagosomes. Active recycling often supports stress adaptation, whereas autophagy-dependent death requires causal evidence implicating the machinery.",
+        "A completed macroautophagosome has separate inner and outer membranes, with space between them. When it fuses with a lysosome, the outer membrane joins the lysosomal boundary, while the inner membrane is degraded before enzymes gain access to the enclosed cargo. Itakura and colleagues located syntaxin 17 on completed autophagosomes, and Tsuboyama and colleagues found that loss of ATG conjugation systems markedly delayed inner-membrane degradation even when fusion occurred. A direct-fusion sketch omits intermediate endosomal interactions described in multicellular organisms; it is not the complete route taken by every compartment.",
+        "Product return has evidence in defined systems. In leucine-starved cultured human HEK-293T cells, Wyant and colleagues found that SLC38A9 was needed for leucine made by lysosomal protein breakdown to reach the cytosol; the response also depended on the autophagy protein ATG7. Abu-Remaileh and colleagues measured regulated lysosomal amino-acid exchange in mammalian cells. Yeast experiments identified Atg22, Avt3 and Avt4 as partially redundant vacuolar amino-acid exporters. These results support amino-acid recycling in those systems, without establishing transport of every breakdown product, secretion from the cell or guaranteed growth.",
+        "More lipidated LC3-II can reflect greater formation or slower removal. A controlled short lysosomal block and complementary tandem fluorescent LC3 reporter can help examine turnover and delivery to acidic compartments. Equal starting amounts can have different later fates. Little additional accumulation can reflect a late block, low formation or an unsuitable window; it does not establish dependence.",
+        "Flux, selected-cargo clearance and survival dependence are different claims. NBR1 experiments identify selective ubiquitinated-cargo handling, not a universal LC3 cargo census. Use time courses, viable-cell normalisation, verified lysosomal inhibition and independent perturbations; autophagy proteins can have other functions. Lower mTOR signalling can change initiation without guaranteeing completed degradation. Typical research outputs include normalised LC3-II band intensity, reporter compartments per cell and selected-cargo disappearance over time. Tested cultures are consumed or perturbed, and prolonged lysosomal inhibition can itself disturb the system. No universal LC3 or flux cutoff selects treatment.",
+        "In Karasic and colleagues' randomised phase 2 study of 112 people with advanced pancreatic cancer, adding hydroxychloroquine to gemcitabine and nab-paclitaxel increased response rate but did not improve the primary endpoint of survival at 12 months. Response was 38.2% versus 21.1%; 12-month survival was 41% versus 49%. These group results do not show selective autophagy dependence or recommend this combination.",
+        "Klionsky's 2021 assay guidelines distinguish LC3 carrier flux from actual cargo or substrate flux. LC3-II is the lipid-attached form of microtubule-associated protein 1 light chain 3; accumulation can reflect formation or slower removal. Compare treatment alone, a verified lysosomal block such as bafilomycin A1 alone, both together and the relevant baseline, with suitable time and dose windows. An additional LC3-II increase can support turnover under those conditions, but partial inhibition, saturation, low formation or cell death can complicate the comparison. Little change is not a unique diagnosis of an existing late block. A tandem two-colour reporter adds information about acidic delivery, not proof that every cargo completed degradation. Pair markers with an appropriate cargo measurement. Sequestosome 1, SQSTM1/p62, is an adaptor whose abundance also depends on expression and other processes, so one p62 snapshot cannot establish blockage.",
+        "A fictional one-hour recycling-station comparison starts with 20 waiting bags in each station. A receives 30 and processes 30, leaving 20; B receives five and processes none, leaving 25. Equal initial piles, including a six-bag schematic snapshot, cannot identify the rate or the later outcome. Bags are not LC3 molecules or assay thresholds: real markers are produced and removed, cargos differ, and a perturbation can affect several steps. Measure completion over time with appropriate controls. Even verified flow does not establish survival dependence; after a specific perturbation, more death can support a protective role, less drug-induced death can support a contribution to that death response, and changed flow with similar survival leaves timing or compensation as possible limits.",
+        "Breast-cancer studies illustrate the conditional direction. Bellare 2021 reported that genetic disruption or chloroquine increased talazoparib sensitivity in the tested HR-proficient cells and xenografts. Arun 2015 found that ATG5 reduction partly reduced olaparib-induced apoptosis in BRCA2-mutant HCC-1428 cells, an oestrogen-receptor-positive line rather than a triple-negative model. These different drugs, models and perturbations do not define one protective or death-promoting label for all tumours. Bellare's 2025 correction replaced representative MCF7 images in Figure 5c as well as a liver-histology image in Figure 6f. The authors stated that replicate-based quantification and interpretation were unchanged; that statement is theirs, not an independent validation of the replacement images.",
+        "Bulk RNA abundance measures messages across the sampled cell mixture; it does not time cargo flow or establish dependence. ATG13 and the RB1CC1-encoded protein FIP200 participate with ULK1 in initiation machinery, as Ganley 2009 studied, but an alteration in a component does not establish the direction of completed recycling. A mechanistic dependence test should measure the proposed change before extensive death alters the markers, combine complementary readouts, and where feasible perturb more than one autophagy gene at different steps. Klionsky's guidelines also caution that these proteins have other functions. Restoration and independent perturbations strengthen a specific causal explanation without making every genetic manipulation perfectly selective. A lower ATP or metabolic signal alone is neither counted death nor proof of autophagy dependence.",
+        "Yamamoto and colleagues found that the cargo receptor NBR1 helped direct MHC-I proteins to lysosomes through an autophagy-dependent route in pancreatic ductal adenocarcinoma models. This lowered the amount of MHC-I at the cell surface, where it displays antigens to CD8 T cells. In mouse experiments, reducing MHC-I or depleting CD8 T cells reversed tumour control after genetic autophagy inhibition. Chloroquine increased surface MHC-I but, alone, did not significantly reduce tumour weight in the reported experiment; its effects on lysosomes are broad. These model results do not establish that every KRAS-driven cancer depends on autophagy or that blocking it benefits patients."
+      ],
+      "analogy": "A recycling station can hold a large pile because more material arrives or because processing has slowed. The pile is an amount; material processed over time is a rate. Neither alone tells you whether the city depends on that station.",
+      "nodes": [
+        {
+          "id": "stress",
+          "label": "Defined nutrient or drug stress",
+          "x": 15,
+          "y": 30,
+          "targetId": "kras"
+        },
+        {
+          "id": "ulk",
+          "label": "ULK1 / AMPK",
+          "x": 40,
+          "y": 30
+        },
+        {
+          "id": "mtor",
+          "label": "mTORC1 (inhibits)",
+          "x": 40,
+          "y": 70
+        },
+        {
+          "id": "phag",
+          "label": "Autophagosome",
+          "x": 65,
+          "y": 30
+        },
+        {
+          "id": "lys",
+          "label": "Lysosomal delivery and breakdown",
+          "x": 85,
+          "y": 30
+        },
+        {
+          "id": "fuel",
+          "label": "Reused building blocks; test survival",
+          "x": 85,
+          "y": 70
+        },
+        {
+          "id": "mhc",
+          "label": "MHC-I degradation (PDAC)",
+          "x": 65,
+          "y": 90
+        }
+      ],
+      "edges": [
+        {
+          "from": "stress",
+          "to": "ulk",
+          "type": "activates"
+        },
+        {
+          "from": "mtor",
+          "to": "ulk",
+          "type": "inhibits"
+        },
+        {
+          "from": "ulk",
+          "to": "phag",
+          "type": "activates"
+        },
+        {
+          "from": "phag",
+          "to": "lys",
+          "type": "activates"
+        },
+        {
+          "from": "lys",
+          "to": "fuel",
+          "type": "activates"
+        },
+        {
+          "from": "lys",
+          "to": "mhc",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Clinical drug studies and mechanistic dependence tests answer different questions.",
+        "Assess flux, selected cargo and survival separately with complementary controls."
+      ]
+    },
+    {
+      "id": "parp-inhibitor",
+      "kind": "technology",
+      "name": "PARP inhibitors",
+      "aka": [],
+      "tldr": "These medicines disrupt DNA repair processes. Some also retain repair proteins on DNA; a repair-gene finding alone does not establish that they will help.",
+      "summary": "PARP inhibitors reduce PARP enzyme activity and can stabilise PARP complexes on damaged DNA. Catalytic output, DNA-associated occupancy, repair capacity and cell survival are different measurements. Experimental sensitivity depends on the current cellular repair state, and repair-restoring changes can contribute to resistance. Clinical eligibility depends on the particular medicine, cancer setting, previous treatment and required companion test; a shared mechanism is not a shared indication.",
+      "status": "approved",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/PARP_inhibitor",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PARP_inhibitor"
+        },
+        {
+          "label": "Farmer et al.: PARP inhibition in BRCA-deficient experimental systems (2005)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15829967/"
+        },
+        {
+          "label": "Murai et al.: differential PARP trapping by inhibitors (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23118055/"
+        },
+        {
+          "label": "Murai et al.: BMN673/talazoparib trapping comparisons (2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24356813/"
+        },
+        {
+          "label": "Cong et al.: replication gaps in PARP-inhibitor model sensitivity (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34216544/"
+        },
+        {
+          "label": "Waks et al.: repair restoration in selected resistant breast cancers (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+        },
+        {
+          "label": "NCI: validated PAR pharmacodynamic assay",
+          "url": "https://dctd.cancer.gov/drug-discovery-development/assays/pharmacodynamic-biomarker-assays/additional"
+        },
+        {
+          "label": "Lynparza U.S. prescribing information: July 2025 effective version",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=741ff3e3-dc1a-45a6-84e5-2481b27131aa"
+        },
+        {
+          "label": "Nucleophagy removes cytotoxic trapped PARP1 (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42230924/"
+        },
+        {
+          "label": "Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)&lt;sup&gt;1&lt;/sup&gt; (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33634751/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "dna-damage-response-inhibitors"
+      ],
+      "cancers": [
+        "ovarian",
+        "tnbc",
+        "breast-hr-positive",
+        "prostate",
+        "pancreatic"
+      ],
+      "sections": [
+        "targeted-therapy"
+      ],
+      "technologies": [],
+      "targets": [
+        "parp",
+        "brca"
+      ],
+      "drugs": [
+        "olaparib",
+        "niraparib",
+        "talazoparib"
+      ],
+      "companies": [
+        "synnovation-therapeutics",
+        "scibrunch-therapeutics",
+        "acerand-therapeutics",
+        "moma-therapeutics",
+        "duke-street-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "synthetic-lethality"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "PARP means poly(ADP-ribose) polymerase, a protein family involved in cellular signalling and repair. PARP1 is one representative. At damaged DNA it can build signals on proteins from chains of the chemical unit ADP-ribose, called poly(ADP-ribose), or PAR. Catalytic inhibition reduces this output. Some inhibitors can also stabilise DNA-associated PARP complexes, often called trapping. A repair-worker analogy separates a reduced call for help from a worker remaining in a doorway; proteins and medicines have no purpose, and the cell has more than one response route.",
+        "Murai 2012 compared niraparib, olaparib and veliparib in defined cellular and biochemical systems: niraparib and olaparib trapped PARP-DNA complexes more strongly than veliparib, despite catalytic inhibition being a different comparison. Murai 2014 compared BMN673, now talazoparib, with olaparib and rucaparib. In damaged-DNA cell assays, 0.1 micromolar BMN673 produced a trapping signal comparable to 10 micromolar olaparib, about a 100-fold concentration difference; the purified DNA-binding assay gave a different, roughly 40-fold comparison. Similar catalytic effects did not imply similar trapping. Strongest among compounds tested in 2014 is not a ranking of clinical benefit, tolerated exposure or personal treatment choices.",
+        "A DNA-associated protein obstacle can challenge copying without every encounter becoming a measured collision, double-strand break or cell death. Farmer 2005 demonstrated increased sensitivity to PARP inhibition in experimental BRCA-deficient systems. Cong 2021 studied single-stranded replication gaps in cellular models: gap suppression tracked resistance or resensitisation, while restoring fork protection did not always restore resistance in the tested models. Obstacle and gap explanations can coexist, but their relative contribution in a patient's tumour is not established by these experiments. A repair-gene variant alone does not reproduce the functional losses tested in a synthetic-lethal experiment.",
+        "Two schematic pictures ask different questions. Matched snapshots of DNA-bound PARP1 with a longer or shorter PAR chain illustrate catalytic output; a generic inhibitor in the catalytic pocket does not measure binding duration. A second picture places approaching copying machinery behind a retained PARP1 complex, with visible separation; it does not show an observed collision, literal backbone conformation or a measured effect size. Reduced catalytic activity and DNA retention can occur together. The arrows therefore lead to further context-dependent measurements, rather than two independent proofs of a clinical mechanism or a drug ranking.",
+        "Enzyme assays and PAR immunoassays report catalytic activity or its product. NCI's PAR assay measures PAR levels in specified biospecimens; chromatin-associated PARP measurements instead investigate DNA retention under specified conditions. Repair readouts and survival/regrowth experiments add other information. Murai's experiments used defined cell lines, DNA damage and drug concentrations, so neither a reduced metabolic or ATP signal alone nor a picture establishes irreversible death or its cause. Matched genetic perturbations and appropriate controls are needed to distinguish reduced growth, reduced metabolism and loss of long-term survival.",
+        "Waks's selected resistant breast cancer cohort illustrates why historical repair markers and current repair can diverge: four definite or putative BRCA reversion cases acquired RAD51 foci, and other proposed routes included 53BP1 loss and MRE11A amplification. The 53BP1-loss case lacked enough tissue for direct functional confirmation. A historical scar or sequence hypothesis cannot establish a present PARP vulnerability, and this small cohort does not supply an all-patient resistance rule. Biological plausibility, a qualifying label indication and a trial place are separate requirements.",
+        "For example, the U.S. olaparib label effective July 2025 specifies adjuvant treatment of adults with deleterious or suspected-deleterious germline BRCA-mutated, HER2-negative high-risk early breast cancer after neoadjuvant or adjuvant chemotherapy, selected with an approved companion diagnostic. A tumour-only BRCA result or high scar score cannot replace the germline and disease-setting requirements. That indication does not establish that a different PARP inhibitor, a different setting or a plausible mechanism has the same approval or access conditions.",
+        "In a fictional comparison, compounds A and B inhibit PARP catalytic activity similarly, but A retains more PARP on DNA in a culture assay. The conclusion is an assay-specific trapping difference. Useful exposure, survival, safety, resistance and clinical outcomes still need evidence. More trapping in that system does not establish a better treatment, and neither an old scar nor a repair-gene name identifies which effect matters in the current tumour.",
+        "Hoslett and colleagues' 2026 preclinical study investigated selective disposal of trapped PARP1 involving TEX264, the protein-remodelling enzyme p97 and LC3-associated lysosomal handling. Autophagic handling of nuclear material is called nucleophagy. Perturbing the machinery increased chromatin-associated PARP1 and PARP-inhibitor sensitivity in the studied systems; complementation and cargo-recognition experiments supported the proposed route. Some trapping experiments also supplied the DNA-damaging agent MMS, so their conditions are not every drug-alone exposure. The authors left the exact export or packaging of nuclear cargo, and macroautophagy versus direct microautophagy, unresolved. A clearance cartoon is therefore a mechanistic model, not established compartment geometry. Expression-survival associations do not validate TEX264 expression as a treatment-response test.",
+        "In a fictional culture, more death with a PARP inhibitor plus a lysosomal drug fits several explanations: reduced clearance of trapped PARP, toxicity from the second drug itself, or another altered stress response. Measure chromatin-bound PARP1 over the relevant interval, include both single-drug conditions, and test the proposed clearance machinery with suitable independent perturbation and restoration. Unchanged trapped cargo despite more death argues against that particular clearance explanation. TEX264 or p97 perturbation is complementary evidence, not automatically perfectly selective, because proteins can have other functions. Chloroquine and hydroxychloroquine alter lysosomal processes broadly. Survival alone, high recycling RNA or a broad lysosomal effect does not identify selective trapped-PARP disposal or establish patient benefit."
+      ],
+      "principle": "Catalytic inhibition reduces PAR signalling; some inhibitors also stabilise DNA-associated PARP complexes. Protein obstacles and replication gaps are studied mechanisms, with effects dependent on repair state, exposure and the experimental or clinical setting.",
+      "strengths": [
+        "Oral medicines with defined, setting-specific approved uses",
+        "Catalytic and DNA-retention effects can be studied separately"
+      ],
+      "limitations": [
+        "Blood-cell toxicity and other harms depend on product and exposure",
+        "Repair-restoring changes can contribute to resistance",
+        "Laboratory trapping potency does not rank clinical benefit"
+      ],
+      "since": 2014
+    },
+    {
+      "id": "homologous-recombination-repair",
+      "kind": "pathway",
+      "name": "Double-strand break repair: HR versus end joining",
+      "aka": [],
+      "tldr": "Cells can repair breaks through both DNA strands using a matching template or several end-joining routes. The available template, cell state and broken ends affect which route can operate.",
+      "summary": "Double-strand breaks can be repaired through matching-template homologous recombination or several end-joining routes. Homologous repair often uses the sister chromatid after DNA copying. The substrate, available template and cell-cycle state affect which route can operate.\n\nPreparing a double-strand break for homologous repair includes DNA end resection in the 5′ to 3′ direction, leaving protruding 3′ single-stranded ends. RAD51 helps a prepared strand find and pair with a complementary strand in matching duplex DNA, displacing the other template strand into a D-loop. DNA synthesis can then extend the invading end using the template. Synthesis-dependent strand annealing can finish as a noncrossover repair: the extended strand leaves the template and pairs with the other broken end. Other homologous-repair routes can have crossover outcomes, so using an intact template does not mean every repair leaves donor and recipient arrangements unchanged. Purified bacterial RecA structures reveal strand-pairing intermediates; they are not direct measurements of human RAD51 repair in a tumour.\n\nClassical nonhomologous end joining reconnects ends without requiring a long matching template and can preserve compatible ends. Microhomology-associated joining uses short matching sequences after end processing. Theta-mediated end joining names a POLQ-mediated mechanism; finding short matches alone does not identify that enzyme. These routes overlap in outcomes without becoming interchangeable definitions.\n\nKu binds broken ends, and ligase IV with supporting factors can help align and seal them; difficult ends can require processing. Resection exposes single-stranded regions for alternative joining, where short matches can align and intervening sequence can be lost. Purified-factor experiments, defined chromosome-break reporters and controlled cellular studies test particular substrates and factor dependencies, not a universal menu for every break.\n\nA fictional top-strand sequence CA-GAC-TT|AA-GAC-GT has 14 base pairs before joining. A selected short-match product CA-GAC-GT retains seven, losing the four-base TTAA interval and one three-base GAC repeat. For a selected alignment of GAC with its complementary CTG sequence, trimming the unmatched TT flaps leaves seven paired positions and two backbone nicks to seal, without a gap to fill. Other substrates can require synthesis; this arithmetic and schematic geometry are not measured repair frequencies.\n\nSequence a repaired junction and measure a defined repair reporter, then perturb the proposed factor with specificity controls and, where feasible, rescue. Repair fraction, junction distribution and cell survival are distinct outputs. A deletion with microhomology is compatible with a joining route, but does not demonstrate POLQ dependence, selective killing or benefit from a POLQ inhibitor in a patient. Viable-cell and purified-component studies have model-specific input and material costs.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Homologous_recombination",
+      "links": [
+        {
+          "label": "Chang, Pannunzio, Adachi & Lieber, Non-homologous DNA end joining and alternative pathways to double-strand break repair (Nat Rev Mol Cell Biol 2017)",
+          "url": "https://doi.org/10.1038/nrm.2017.48"
+        },
+        {
+          "label": "Lord & Ashworth, PARP inhibitors: synthetic lethality in the clinic (Science 2017)",
+          "url": "https://doi.org/10.1126/science.aam7344"
+        },
+        {
+          "label": "Structural role for DNA Ligase IV in promoting the fidelity of non-homologous end joining. (2024; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38341432/"
+        },
+        {
+          "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+        },
+        {
+          "label": "Alternative-NHEJ is a mechanistically distinct pathway of mammalian chromosome break repair. (2008; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18584027/"
+        },
+        {
+          "label": "DNA Ligase IV Guides End-Processing Choice during Nonhomologous End Joining. (2017; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28930678/"
+        },
+        {
+          "label": "Essential Roles for Polymerase θ-Mediated End Joining in the Repair of Chromosome Breaks. (2016; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27453047/"
+        },
+        {
+          "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (2000; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+        },
+        {
+          "label": "Brca1 controls homology-directed DNA repair. (1999; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10549283/"
+        },
+        {
+          "label": "Purified human BRCA2 stimulates RAD51-mediated recombination. (2010; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20729832/"
+        },
+        {
+          "label": "Biochemical Mechanisms of Genetic Recombination and DNA Repair (2025 biochemical review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40153609/"
+        },
+        {
+          "label": "Homologous recombination and its regulation (2012 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22467216/"
+        },
+        {
+          "label": "Mechanism of strand exchange from RecA-DNA synaptic and D-loop structures (2020 purified bacterial RecA cryo-EM)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33057191/"
+        }
+      ],
+      "tags": [
+        "mechanism",
+        "mechanics-atlas"
+      ],
+      "related": [],
+      "cancers": [
+        "ovarian",
+        "tnbc",
+        "prostate",
+        "pancreatic",
+        "gallbladder"
+      ],
+      "sections": [],
+      "technologies": [
+        "parp-inhibitor",
+        "hrd-testing",
+        "platinum",
+        "imrt-igrt",
+        "sbrt",
+        "germline-testing",
+        "synthetic-lethality-approaches"
+      ],
+      "targets": [
+        "brca",
+        "parp",
+        "atr",
+        "wee1"
+      ],
+      "drugs": [
+        "olaparib",
+        "niraparib",
+        "rucaparib",
+        "talazoparib",
+        "carboplatin",
+        "cisplatin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "ddr",
+        "replication-stress",
+        "base-excision-repair-parp",
+        "synthetic-lethality-map",
+        "cgas-sting"
+      ],
+      "terms": [
+        "hrd",
+        "synthetic-lethality",
+        "mutational-signature",
+        "germline-vs-somatic",
+        "hereditary-cancer-syndromes"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-lord-science",
+        "paper-chang-nat-rev-mol-cell-biol"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "analogy": "A matching copy can guide repair of a torn page; end joining reconnects the damaged edges. This comparison omits the proteins and end processing, and end joining can preserve compatible sequence.",
+      "nodes": [
+        {
+          "id": "dsb",
+          "label": "Double-strand break",
+          "x": 45,
+          "y": 8
+        },
+        {
+          "id": "mrn",
+          "label": "MRN → ATM → CHK2",
+          "x": 45,
+          "y": 28,
+          "targetId": "atr"
+        },
+        {
+          "id": "53bp1",
+          "label": "53BP1-Shieldin (protect)",
+          "x": 78,
+          "y": 28
+        },
+        {
+          "id": "nhej",
+          "label": "NHEJ: Ku, DNA-PKcs, LIG4",
+          "x": 78,
+          "y": 55
+        },
+        {
+          "id": "res",
+          "label": "Resection: BRCA1-CtIP",
+          "x": 15,
+          "y": 40,
+          "targetId": "brca"
+        },
+        {
+          "id": "rad51",
+          "label": "PALB2-BRCA2 → RAD51",
+          "x": 15,
+          "y": 65,
+          "targetId": "brca"
+        },
+        {
+          "id": "hr",
+          "label": "Accurate HR (sister copy)",
+          "x": 15,
+          "y": 90
+        },
+        {
+          "id": "polq",
+          "label": "POLQ end joining (backup)",
+          "x": 45,
+          "y": 90
+        },
+        {
+          "id": "join",
+          "label": "Error-prone joining",
+          "x": 78,
+          "y": 82
+        },
+        {
+          "id": "parp",
+          "label": "PARP trapping → breaks",
+          "x": 12,
+          "y": 8,
+          "targetId": "parp"
+        }
+      ],
+      "edges": [
+        {
+          "from": "parp",
+          "to": "dsb",
+          "type": "activates"
+        },
+        {
+          "from": "dsb",
+          "to": "mrn",
+          "type": "activates"
+        },
+        {
+          "from": "mrn",
+          "to": "res",
+          "type": "activates"
+        },
+        {
+          "from": "53bp1",
+          "to": "res",
+          "type": "inhibits"
+        },
+        {
+          "from": "dsb",
+          "to": "nhej",
+          "type": "activates"
+        },
+        {
+          "from": "53bp1",
+          "to": "nhej",
+          "type": "activates"
+        },
+        {
+          "from": "res",
+          "to": "rad51",
+          "type": "activates"
+        },
+        {
+          "from": "rad51",
+          "to": "hr",
+          "type": "activates"
+        },
+        {
+          "from": "res",
+          "to": "polq",
+          "type": "activates"
+        },
+        {
+          "from": "nhej",
+          "to": "join",
+          "type": "activates"
+        },
+        {
+          "from": "polq",
+          "to": "join",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "PARP inhibitors (olaparib, niraparib, rucaparib, talazoparib) in BRCA/HRD ovarian, breast, prostate, pancreatic cancer",
+        "Platinum chemotherapy and radiation add breaks HR-deficient cells cannot fix",
+        "POLQ inhibitors (novobiocin analogues), ATR inhibitors after ATM loss, DNA-PK inhibitors with radiotherapy (trials)",
+        "HRD testing (genomic scars, BRCA sequencing) and RAD51 foci assays select patients; reversion mutations detected in ctDNA flag resistance"
+      ]
+    },
+    {
+      "id": "pi3k-akt-mtor",
+      "kind": "pathway",
+      "name": "PI3K / AKT / mTOR",
+      "aka": [],
+      "tldr": "This network links growth signals and nutrients to protein production, metabolism and recycling. Different branches can respond differently to an intervention.",
+      "summary": "Class I PI3K phosphorylates a membrane lipid, producing PIP3; PTEN removes its position-3 phosphate. AKT and mTOR are protein kinases. A PIP3 lipid result and an AKT1 Ser473 phosphosite result are therefore different molecular measurements. Document specimen preservation, cell mixture, protein site, timing, exposure, comparator and total-protein normalization before interpreting a change as activity or dependence.\n\nMembrane recruitment helps organize AKT activation. PDK1 phosphorylates AKT1 Thr308, whereas the rictor-mTOR complex supplies Ser473 phosphorylation in the defined experimental route. AKT can inhibit TSC2, relieving the TSC1/2 brake on RHEB, which promotes mTORC1 signaling. The diagram's indirect AKT-to-mTORC1 connection stands for these regulatory steps; it is not direct phosphorylation of mTORC1 by AKT.\n\nRaptor-containing mTORC1 and rictor-containing mTORC2 are distinct complexes. mTORC1 regulates protein production and autophagy-initiation machinery; releasing initiation restraint is not proof of completed recycling flux. Harrington linked S6K activity to reduced IRS-1 function, and O'Reilly observed increased IRS-1 and AKT signaling after RAD001 in cell models and treated tumors. Feedback release can change an output without proving that a combination improves outcomes in every setting.\n\nIn a fictional mTORC1 perturbation, lower production-regulator phosphorylation followed by higher AKT1 Ser473 and unchanged growth supports biochemical changes, not essentiality or failed engagement; timing alone does not prove the feedback connection. Test the proposed wiring and functional outcome independently. The FDA's 2023 capivasertib-with-fulvestrant approval specified adults with hormone-receptor-positive, HER2-negative advanced breast cancer, qualifying PIK3CA/AKT1/PTEN alterations on an approved test and specified prior endocrine treatment or early recurrence. It is not a TNBC indication inferred from a pathway label.",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/PI3K/AKT/mTOR_pathway",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PI3K/AKT/mTOR_pathway"
+        },
+        {
+          "label": "The tumor suppressor, PTEN/MMAC1, dephosphorylates the lipid second messenger, phosphatidylinositol 3,4,5-trisphosphate. (primary abstract; 1998)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9593664/"
+        },
+        {
+          "label": "mTOR inhibition induces upstream receptor tyrosine kinase signaling and activates Akt. (primary abstract; 2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16452206/"
+        },
+        {
+          "label": "3-Phosphoinositide-dependent protein kinase-1 (PDK1): structural and functional homology with the Drosophila DSTPK61 kinase. (1997; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9368760/"
+        },
+        {
+          "label": "Phosphorylation and regulation of Akt/PKB by the rictor-mTOR complex. (2005; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15718470/"
+        },
+        {
+          "label": "TSC2 is phosphorylated and inhibited by Akt and suppresses mTOR signalling. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12172553/"
+        },
+        {
+          "label": "Rheb GTPase is a direct target of TSC2 GAP activity and regulates mTOR signaling. (2003; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12869586/"
+        },
+        {
+          "label": "Raptor, a binding partner of target of rapamycin (TOR), mediates TOR action. (2002; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12150926/"
+        },
+        {
+          "label": "ULK1.ATG13.FIP200 complex mediates mTOR signaling and is essential for autophagy. (2009; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19258318/"
+        },
+        {
+          "label": "The TSC1-2 tumor suppressor controls insulin-PI3K signaling via regulation of IRS proteins. (2004; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15249583/"
+        },
+        {
+          "label": "FDA 2023 capivasertib with fulvestrant approval population",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-capivasertib-fulvestrant-breast-cancer"
+        },
+        {
+          "label": "PI3K inhibition impairs BRCA1/2 expression and sensitizes BRCA-proficient triple-negative breast cancer to PARP inhibition (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22915752/"
+        },
+        {
+          "label": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1 (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/"
+        },
+        {
+          "label": "mTOR kinase inhibition causes feedback-dependent biphasic regulation of AKT signaling (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22140653/"
+        },
+        {
+          "label": "AMPK phosphorylation of raptor mediates a metabolic checkpoint (2008)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18439900/"
+        },
+        {
+          "label": "UniProt P42336: human PI3K-alpha catalytic subunit, encoded by PIK3CA",
+          "url": "https://www.uniprot.org/uniprotkb/P42336/entry"
+        },
+        {
+          "label": "UniProt Q9Y2I7: human PIKFYVE, a distinct phosphoinositide kinase",
+          "url": "https://www.uniprot.org/uniprotkb/Q9Y2I7/entry"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "breast-hr-positive",
+        "endometrial",
+        "prostate",
+        "tnbc",
+        "gallbladder"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "pik3ca",
+        "akt",
+        "her2",
+        "egfr"
+      ],
+      "drugs": [
+        "capivasertib",
+        "inavolisib",
+        "gedatolisib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "PI3K means phosphoinositide 3-kinase; AKT is also called protein kinase B. Mechanistic target of rapamycin complex 1, mTORC1, integrates growth and nutrient inputs. PTEN, phosphatase and tensin homolog, removes a phosphate from a PI3K-generated lipid signal. These protein and lipid reactions need their own readouts. Ibrahim 2012 found that PI3K inhibition reduced BRCA1/2 expression and increased PARP-inhibitor sensitivity in the BRCA-proficient triple-negative breast cancer models studied. A second branch concerns mTORC1 restraint of ULK1-associated autophagy initiation, studied by Kim 2011. Releasing an initiation brake does not establish completed cargo degradation or protective recycling. The two branches can change together without revealing the net survival effect. A model already lacking the relevant repair function cannot be assumed to gain the same vulnerability as one in which that function is newly reduced; measure protein and repair function, flux and survival under the actual compound, dose and schedule.",
+        "Rapalogs, PI3K or AKT inhibitors and ATP-site mTOR kinase inhibitors are different interventions. In Rodrik-Outmezguine's 2011 models, inhibiting both mTOR complexes initially reduced AKT Ser473 and Thr308 phosphorylation, but relief of receptor feedback later restored Thr308 phosphorylation and AKT signalling while Ser473 remained suppressed. A Ser473 result therefore did not measure all AKT activity. O'Reilly's rapalog study and Harrington's IRS feedback work likewise explain why lower mTORC1 output can coexist with increased upstream signalling. These are measured responses in specified systems, not inevitable behaviour or a universal combination prescription.",
+        "In a fictional experiment, repair RNA falls, an mTORC1-associated phosphosite falls, AKT phosphorylation rises and more autophagosomes appear. The RNA concerns messages; confirm the proposed protein and repair consequence. A validated site change concerns that output at that time, while the AKT change may fit feedback without proving every downstream effect. Autophagosome amount does not establish completed flux, and no survival conclusion has yet been supplied. Growth and energy inputs also differ: Gwinn 2008 linked AMPK phosphorylation of raptor to mTORC1 restraint during energy stress. Slower costly building work and better survival can coexist. Named S6, 4E-BP1, AKT and AMPK-target sites need their own controls, total-protein context and timing; bulk RNA is not a kinase-activity meter.",
+        "PIK3CA encodes the PI3K-alpha catalytic subunit. PIKFYVE is a different lipid kinase involved in endolysosomal regulation. Similar names do not make them the same target, and evidence about one does not automatically describe the other."
+      ],
+      "analogy": "Think of a factory: the receptor is the order desk, PI3K and AKT are the managers relaying the order, PTEN is the accountant cancelling orders, and mTOR is the assembly line. Cancer forges orders (PIK3CA mutation) or fires the accountant (PTEN loss).",
+      "nodes": [
+        {
+          "id": "rtk",
+          "label": "RTK (HER2, EGFR)",
+          "x": 50,
+          "y": 5,
+          "targetId": "her2"
+        },
+        {
+          "id": "pi3k",
+          "label": "PI3K (PIK3CA)",
+          "x": 50,
+          "y": 25,
+          "targetId": "pik3ca"
+        },
+        {
+          "id": "pten",
+          "label": "PTEN",
+          "x": 15,
+          "y": 40
+        },
+        {
+          "id": "pip3",
+          "label": "PIP3",
+          "x": 50,
+          "y": 42
+        },
+        {
+          "id": "akt",
+          "label": "AKT",
+          "x": 50,
+          "y": 58,
+          "targetId": "akt"
+        },
+        {
+          "id": "tsc",
+          "label": "TSC1/2",
+          "x": 25,
+          "y": 74
+        },
+        {
+          "id": "mtor",
+          "label": "mTORC1",
+          "x": 50,
+          "y": 82
+        },
+        {
+          "id": "foxo",
+          "label": "FOXO / BAD (apoptosis)",
+          "x": 85,
+          "y": 74
+        },
+        {
+          "id": "growth",
+          "label": "Protein synthesis, growth",
+          "x": 50,
+          "y": 97
+        }
+      ],
+      "edges": [
+        {
+          "from": "rtk",
+          "to": "pi3k",
+          "type": "activates"
+        },
+        {
+          "from": "pi3k",
+          "to": "pip3",
+          "type": "activates"
+        },
+        {
+          "from": "pten",
+          "to": "pip3",
+          "type": "inhibits"
+        },
+        {
+          "from": "pip3",
+          "to": "akt",
+          "type": "activates"
+        },
+        {
+          "from": "akt",
+          "to": "tsc",
+          "type": "inhibits"
+        },
+        {
+          "from": "tsc",
+          "to": "mtor",
+          "type": "inhibits"
+        },
+        {
+          "from": "akt",
+          "to": "foxo",
+          "type": "inhibits"
+        },
+        {
+          "from": "mtor",
+          "to": "growth",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "PI3Kα inhibitors (alpelisib, inavolisib) for PIK3CA-mutant HR+ breast cancer",
+        "AKT inhibitor capivasertib for PIK3CA/AKT1/PTEN-altered breast and PTEN-deficient prostate cancer",
+        "mTOR inhibitor everolimus",
+        "Dual PI3K/mTOR gedatolisib (2026)",
+        "Upstream: anti-HER2, anti-EGFR"
+      ]
+    },
+    {
+      "id": "t-cell-receptor",
+      "kind": "term",
+      "name": "T-cell receptor",
+      "aka": [
+        "TCR",
+        "alpha-beta T-cell receptor"
+      ],
+      "tldr": "A conventional T-cell receptor recognises a peptide together with its HLA display. Recognition alone does not show killing.",
+      "summary": "A conventional alpha-beta T-cell receptor uses paired chains to recognise a peptide-HLA surface. Its recognition chains assemble with CD3 signalling partners, as demonstrated in the human TCR-CD3 structural study. CDR3 is an informative variable region, but neither a beta-chain sequence nor CDR3 alone specifies the complete paired receptor or its function.\n\nParticular receptors can cross-react across peptide and HLA contexts; that does not establish a universal cross-reactivity rate. Paired receptor identity, binding, activation, target-cell death and clinical benefit require different evidence. A response by one reconstructed pair to peptide-loaded cells does not establish that another alpha-chain pairing recognises the same target, or that either kills naturally presenting tumour cells. Use irrelevant-target, HLA and target-only viability controls. Peptide loading can bypass natural processing, and contact diagrams are not healthy-tissue safety tests.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Structural basis of assembly of the human T cell receptor-CD3 complex.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
+        },
+        {
+          "label": "Extraordinary cross-reactivity of an autoimmune T-cell receptor recognizing specific peptides both on autologous and on allogeneic HLA class II molecules.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17559580/"
+        },
+        {
+          "label": "Linking T-cell receptor sequence to functional phenotype at the single-cell level.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+        },
+        {
+          "label": "High-resolution analysis of the human T-cell receptor repertoire.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
+        },
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+        },
+        {
+          "label": "Stone et al.: TCR binding, kinetics, coreceptors and specificity (2009 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19125887/"
+        },
+        {
+          "label": "Schuldt and Binstadt: dual TCR expression (2019 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30670579/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A conventional alpha-beta TCR uses paired variable and constant domains to contact peptide plus HLA. The peptide sits in the HLA groove, not a separate TCR peptide pocket. CD3 signalling partners are distinct from recognition chains. Contact loops including junction-spanning CDR3 contribute, but other loops, the partner chain and HLA matter; beta-only or CDR3-only sequence is incomplete.",
+        "Cross-reactivity is recognition of multiple targets by a receptor. Defined receptor experiments demonstrated peptide/HLA cross-reactivity, not recognition of every allele by an arbitrary receptor or a universal rate. Greater affinity or a contact drawing does not establish healthy-tissue safety.",
+        "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
+        "Vaccination generally recruits or expands existing mature receptor specificities rather than rewriting each mature receptor. Engineered TCR therapy introduces selected receptor sequences. In either case, tested recognition must still connect to naturally presenting tumour targets, useful function and healthy-tissue safety. If one beta sequence pairs with different alpha chains, a positive reconstruction of one pair does not establish the other pair's function or tumour killing.",
+        "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+        "Many measured conventional receptor-peptide-HLA interactions have micromolar dissociation constants; affinity, multiple contacts, CD4/CD8 coreceptors and the cellular signalling context contribute differently to activity. Stone and colleagues review those distinctions, rather than a universal affinity ranking against every antibody. One receptor type per cell is also a simplification: extra productive alpha chains and dual surface receptors have been documented. A chain sequence alone does not establish which assembled receptor provides the measured specificity."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "hla",
+      "kind": "term",
+      "name": "HLA (human leukocyte antigen) and MHC",
+      "aka": [
+        "human leukocyte antigen",
+        "MHC",
+        "major histocompatibility complex",
+        "HLA class I",
+        "HLA class II"
+      ],
+      "tldr": "HLA molecules sit on cells and hold up small pieces of the cell's proteins for T cells to inspect. A T cell reads the fragment together with the particular HLA version holding it.",
+      "summary": "Human leukocyte antigen (HLA) is the human major histocompatibility complex (MHC) system, with two main classes of peptide-display molecule. Classical class I (HLA-A, HLA-B, HLA-C) has a heavy chain, beta-2 microglobulin (B2M) and a bound peptide, is found on most nucleated cells, usually displays peptides from proteins made inside the cell and is read by CD8 T cells. Class II (HLA-DR, HLA-DP, HLA-DQ) has alpha and beta chains with a bound peptide, is mainly on professional antigen-presenting cells (expression can be induced elsewhere), usually displays proteins processed in vesicles, often acquired from outside, and is read by CD4 T cells. These are common routes, not exclusive lists: cross-presentation puts externally acquired antigen on class I without making it class II, and a CD4 response is not proof of matching class I tumour display. CD4 and CD8 are coreceptors and usual recognition partners, not guarantees of cell function. Structural work shows the T-cell receptor lying across the peptide and HLA together (Garboczi et al., 1996), CD8 contacting the class I alpha2 and alpha3 domains and B2M (Gao et al., 1997) and CD4 engaging a separate class II region (Yin et al., 2012); these constructs do not define universal angles or functions.\n\nHLA alleles are shared across people, and a person inherits a combination that is not necessarily unique. Each person inherits two copies each of HLA-A, HLA-B and HLA-C, so a cell can display up to six classical class I variants at once. The IPD-IMGT/HLA statistics page read on 9 November 2026 listed 46,146 HLA alleles, 31,311 class I and 14,835 class II (9,457 HLA-A, 11,328 HLA-B and 9,580 HLA-C alleles). Binding predictors estimate whether a peptide can fit a specified allele's groove, but processing, transport, loading and surface expression decide whether it is displayed. Sarkizova et al. (2020) profiled more than 185,000 peptides eluted from 95 mono-allelic cell lines to learn allele-specific motifs and build prediction models; that is allele-level data, not proof of any cell's display. Kaur et al. (2017) showed that HLA-C surface expression varies across individuals in an allele-specific manner, influenced by the structure of the peptide-binding cleft and peptide diversity; Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. The small HLA-C peptide share observed by Schellens and colleagues in four B lymphoblastoid cell lines was also affected by their assignment method, which gave HLA-A/B precedence; it is not a universal biological fraction.\n\nIn cancer, class I HLA shows peptides to CD8 T cells and is also the main ligand for inhibitory receptors on natural killer cells, so losing it can hide a tumour from T cells while removing a brake on NK cells. HLA-E and HLA-G are nonclassical and vary little between people; HLA-E presents leader peptides from other class I molecules and binds the NK receptor CD94/NKG2A (Braud et al., 1998, with HLA-E tetramers). Tumours can lose a presenting allele (HLA loss of heterozygosity), alter processing or reduce expression, and allele-specific loss differs from complete loss of conventional class I display; targets on retained alleles may remain possible. Tran et al. (2016) documented a colorectal cancer lesion that progressed after T-cell therapy against mutant KRAS G12D, which had lost the chromosome 6 haplotype encoding the restricting HLA-C*08:02; this shows escape in one patient, not a rate. Typing, protein expression, recovered peptide, recognition and killing are different observations, and a conventional surface-target engager avoids peptide-HLA dependence while a peptide-HLA-directed engager keeps it.\n\nB2M is the light chain of classical class I and does not span the membrane; class II contains no B2M, so CD4 T-cell recognition can remain when B2M is lost. B2M also partners other class I-like molecules: UniProt records heterotrimers with HLA-E, HLA-G, HLA-F and MR1 and lists CD1 interactions, and a B2M mutation caused deficiency of the neonatal Fc receptor FcRn in two siblings (Wani et al., 2006), so complete B2M loss can remove more than classical class I. Loss of one HLA allele can leave other presenting alleles usable, whereas loss of functional B2M impairs many class I targets at once, so several peptides on different alleles are not independent protection. A B2M variant, low RNA, absent surface class I and a blood B2M concentration are different observations: one variant does not show complete functional loss, and blood B2M does not count tumour peptide-HLA complexes. Zaretsky et al. (2016) linked a truncating B2M mutation to lost surface class I in one melanoma relapse after PD-1 blockade, which is a mechanism in that setting, not a frequency. Reduced class I display does not guarantee NK-cell killing, because activating signals are still needed.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "IPD-IMGT/HLA statistics page (read 9 November 2026)",
+          "url": "https://www.ebi.ac.uk/ipd/imgt/hla/about/statistics/"
+        },
+        {
+          "label": "Garboczi et al., 1996, Nature (PMID 8906788)",
+          "url": "https://doi.org/10.1038/384134a0"
+        },
+        {
+          "label": "Gao et al., 1997, Nature (PMID 9177355)",
+          "url": "https://doi.org/10.1038/42523"
+        },
+        {
+          "label": "Yin et al., 2012, PNAS (PMID 22431638)",
+          "url": "https://doi.org/10.1073/pnas.1118801109"
+        },
+        {
+          "label": "Sarkizova et al., 2020, Nature Biotechnology (PMID 31844290)",
+          "url": "https://doi.org/10.1038/s41587-019-0322-9"
+        },
+        {
+          "label": "Kaur et al., 2017, Nature Communications (PMID 28649982)",
+          "url": "https://doi.org/10.1038/ncomms15924"
+        },
+        {
+          "label": "Braud et al., 1998, Nature (PMID 9486650)",
+          "url": "https://doi.org/10.1038/35869"
+        },
+        {
+          "label": "Tran et al., 2016, New England Journal of Medicine (PMID 27959684)",
+          "url": "https://doi.org/10.1056/nejmoa1609279"
+        },
+        {
+          "label": "Wani et al., 2006, PNAS (PMID 16549777)",
+          "url": "https://doi.org/10.1073/pnas.0600548103"
+        },
+        {
+          "label": "UniProt P61769 (B2M)",
+          "url": "https://www.uniprot.org/uniprotkb/P61769/entry"
+        },
+        {
+          "label": "Zaretsky et al., 2016, New England Journal of Medicine (PMID 27433843)",
+          "url": "https://doi.org/10.1056/nejmoa1604958"
+        },
+        {
+          "label": "Schellens et al. 2015: naturally processed peptide repertoires in four B lymphoblastoid cell lines",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26375851/"
+        },
+        {
+          "label": "Relative expression levels of the HLA class-I proteins in normal and HIV-infected cells.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25754738/"
+        },
+        {
+          "label": "Wieczorek et al.: MHC groove geometry and peptide-length exceptions (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28367149/"
+        },
+        {
+          "label": "Cachot et al.: direct cytolytic function of tumour-specific human CD4 cells (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33637530/"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "hla-a",
+        "hla-b",
+        "hla-c",
+        "hla-e",
+        "hla-dr",
+        "hla-dra",
+        "hla-dqa1",
+        "b2m",
+        "hla-typing-and-nomenclature"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "hla-a",
+        "hla-b",
+        "hla-c",
+        "hla-e",
+        "hla-dr",
+        "hla-dra",
+        "hla-dqa1",
+        "b2m"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hla-typing-and-nomenclature",
+        "antigen-processing-machinery",
+        "dendritic-cell-cross-presentation",
+        "nk-cell"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The original abstracts do not establish a universal HLA-C/A/B expression hierarchy. The checkpoint additionally reads Apps and colleagues' primary abstract for a specific haplotype comparison. Lower locus-level expression is background in Kaur and Schellens; Kaur directly tests allele-specific variation, and Schellens reports a method-dependent recovered peptide share.",
+        "Textbook class I and class II structure (Janeway, NBK26926) was not opened: scripted access refused.",
+        "Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. Kaur and colleagues compared HLA-C*05:01 and HLA-C*07:02 in transfected cells and found differences in expression and recovered peptide breadth. In four B lymphoblastoid cell lines, Schellens and colleagues recovered a small HLA-C-assigned peptide fraction; their assignment procedure gave HLA-A/B precedence because HLA-C prediction was less reliable, and they explicitly expected to underestimate HLA-C. A smaller observed share is therefore not a universal biological fraction or evidence of more permissive binding.",
+        "Groove geometry helps explain common peptide lengths without imposing a hard upper limit. Wieczorek and colleagues' 2017 review describes the class-I groove as closed at both ends, usually holding 8 to 10 residues, and the open class-II groove as usually holding 13 to 25. It also describes longer class-I ligands, including solved HLA-A2 complexes with 15-residue peptides. A reported range around 11 is therefore not a ceiling for every class-I ligand. CD4 help does not demonstrate the same target's class-I display. Some CD4 cells can themselves be cytotoxic: Cachot and colleagues directly tested tumour-specific human CD4 cells against tumour cells in defined assays. That result does not make every CD4 response cytotoxic or establish a treatment benefit."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "randomised-trial",
+      "kind": "term",
+      "name": "Randomised trial",
+      "aka": [
+        "randomised",
+        "randomized",
+        "randomisation",
+        "randomization",
+        "randomly assigned",
+        "randomised controlled trial",
+        "randomized controlled trial",
+        "RCT",
+        "RCTs",
+        "randomised trials",
+        "randomized trials",
+        "randomised phase 3",
+        "randomized phase 3",
+        "controlled trial",
+        "head-to-head",
+        "controlled trials",
+        "randomized trial"
+      ],
+      "tldr": "A study that assigns eligible participants to interventions by chance. This reduces treatment-selection bias but does not guarantee identical groups, flawless follow-up or benefit.",
+      "summary": "A randomized trial assigns eligible consenting participants to interventions by chance. Concealing the next assignment protects enrolment against foreknowledge; blinding concerns awareness after assignment. These are different design features. Randomization reduces treatment-selection confounding but leaves possible chance imbalance, missing outcomes and limits on applicability. The comparator, endpoint, analysis and conduct determine what the comparison establishes.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Randomized_controlled_trial",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Randomized_controlled_trial"
+        },
+        {
+          "label": "CONSORT statement: reporting randomised trials",
+          "url": "https://www.consort-statement.org/"
+        },
+        {
+          "label": "CONSORT 2025 statement: Updated guideline for reporting randomised trials.",
+          "url": "https://doi.org/10.1371/journal.pmed.1004587"
+        },
+        {
+          "label": "ICH E9: statistical principles for clinical trials, 1998",
+          "url": "https://www.fda.gov/media/71336/download"
+        },
+        {
+          "label": "ICH E10: choice of control group",
+          "url": "https://database.ich.org/sites/default/files/E10_Guideline.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "clinical-trial",
+        "placebo",
+        "blinding",
+        "trial-phases",
+        "hazard-ratio",
+        "p-value",
+        "confidence-interval",
+        "standard-of-care",
+        "real-world-evidence",
+        "stratified-randomisation",
+        "clinical-equipoise",
+        "cluster-randomised-trial",
+        "pragmatic-trial",
+        "intention-to-treat",
+        "kaplan-meier-curve",
+        "non-inferiority",
+        "trial-failure-modes",
+        "estimand",
+        "publication-and-peer-review-status",
+        "meta-analysis"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "checkmate-067",
+        "adaura",
+        "interlace",
+        "challenge",
+        "protect"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Concealed chance assignment is different from predictable alternation between A and B. Allocation concealment hides the next assignment during enrolment; blinding concerns who knows the assigned treatment afterwards and may not be feasible for every intervention. Report sequence generation, allocation, who was blinded, assigned-group analyses, exclusions, dropout, missing assessments, treatment changes and unequal follow-up. Chance can balance measured and unmeasured factors on average without guaranteeing identical groups in one trial. Random assignment is not random sampling from a population: consenting eligible volunteers remain selected.",
+        "Controls can be standard care, standard care plus placebo or another protocol-defined option, not automatically no treatment. A fictional single-group Drug A study showing shrinkage supports an activity question for further study; it does not isolate added survival benefit from selection, natural history and other care. A randomized A-plus-usual-care versus usual-care comparison can test the added effect under sound conduct and analysis, while a volunteer cannot choose their randomized assignment or be promised benefit. A chance-assigned two-group phase 2 trial is randomized even though it is not phase 3."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "endpoint",
+      "kind": "term",
+      "name": "Endpoint",
+      "aka": [
+        "endpoints",
+        "end point",
+        "end points",
+        "primary endpoint",
+        "primary endpoints",
+        "secondary endpoint",
+        "secondary endpoints",
+        "co-primary",
+        "dual primary",
+        "met its primary endpoint",
+        "primary outcome",
+        "outcome measure",
+        "outcome measures",
+        "exploratory endpoint",
+        "exploratory endpoints",
+        "statistically significant",
+        "statistical significance"
+      ],
+      "tldr": "An endpoint specifies an outcome and how and when it is assessed. A study's statistical plan determines what counts as meeting its primary endpoint.",
+      "summary": "A trial defines primary, secondary and exploratory outcomes and how they are measured and analysed. The primary question informs design, sample size and testing; having a secondary endpoint does not by itself establish whether it was adequately powered or met a prespecified testing rule. Overall survival concerns death from any cause, while response, progression, symptoms and quality of life answer different questions. A composite endpoint combines specified events, so its definition and starting time matter. FDA's December 2018 nonbinding oncology-endpoint guidance distinguishes direct clinical benefit and context-dependent surrogate evidence; use in an approval does not make an endpoint interchangeable with survival in every setting.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Clinical_endpoint",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Clinical_endpoint"
+        },
+        {
+          "label": "ICH E9(R1): estimands, intercurrent events and sensitivity analysis (May 2021)",
+          "url": "https://www.fda.gov/media/148473/download"
+        },
+        {
+          "label": "FDA: oncology clinical endpoints, nonbinding guidance (December 2018)",
+          "url": "https://www.fda.gov/media/71195/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "surrogate-endpoint",
+        "os",
+        "pfs",
+        "orr",
+        "efs",
+        "pcr",
+        "hazard-ratio",
+        "p-value",
+        "randomised-trial",
+        "surrogate-validation",
+        "primary-endpoint",
+        "quality-adjusted-survival",
+        "qol-pro"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A study question card keeps the population and setting, prior treatment and exclusions, complete intervention and comparator, endpoint definition and assessment, starting clock and horizon together. The intervention may be a sequence of medicines, procedures and surgery. Read the protocol and analysis plan for treatment stopping, switching and missing outcomes. A percentage without these details may answer a different question from the proposed action.",
+        "Consider a fictional trial in operable cancer with one random assignment to study drug plus common chemotherapy, surgery and study drug afterwards, or placebo on the same sequence. Comparing the whole assigned strategies does not isolate starting the drug only after surgery, because there is no second postoperative assignment. From the common randomisation origin, a recurrence in someone still alive and a death without earlier recurrence both count in a recurrence-or-death composite; only the death counts in overall survival. An improvement in a composite need not mean that every component improved. This is a reasoning example, with no dosing schedule or effect size.",
+        "For another fictional comparison, 95% alive three years after surgery and 90% free of recurrence or death three years after randomisation cannot be ranked as if they measured one outcome. The events and starting clocks differ; someone alive with recurrence contributes differently. An event-free percentage is not a permanent cure rate. State the eligible population, both complete strategies, event definition and origin before interpreting a benefit."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "surrogate-validation",
+      "kind": "term",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust",
+      "aka": [
+        "surrogate validation",
+        "validated surrogate endpoint",
+        "validation of surrogate endpoints",
+        "surrogate threshold effect",
+        "trial-level correlation",
+        "trial-level association",
+        "patient-level correlation",
+        "individual-level surrogacy",
+        "meta-analytic validation",
+        "meta-analysis of surrogacy",
+        "reasonably likely surrogate",
+        "reasonably likely to predict",
+        "accepted surrogate",
+        "surrogate for overall survival",
+        "surrogate for OS",
+        "does not correlate with survival",
+        "did not translate into survival",
+        "PFS-OS correlation",
+        "pCR-EFS correlation",
+        "MRD as an endpoint",
+        "MRD negativity as endpoint",
+        "stage shift without mortality benefit",
+        "FDA table of surrogate endpoints"
+      ],
+      "tldr": "A surrogate endpoint only deserves trust if trials have shown that moving it moves the outcome that matters, in that disease and for that kind of drug; some stand-ins have passed that test, several have not, and the record differs endpoint by endpoint.",
+      "summary": "A marker can be associated with a later outcome without being validated as a substitute for it. For treatment-effect surrogacy, the question is whether changes caused by treatment in the proposed surrogate predict changes in the outcome of interest. Trial-level validation examines treatment effects across suitable randomised studies, with attention to disease, treatment class, endpoint and intended outcome. A patient-level association alone cannot establish that relationship.\n\nNamed examples require their own population, regimen and analysis. In the final TROPION-Breast01 analysis of previously treated hormone-receptor-positive, HER2-negative advanced breast cancer, overall survival was not statistically significantly improved (hazard ratio 1.01, 95% confidence interval 0.83 to 1.22); this does not establish exactly zero effect. Later antibody-drug-conjugate use was imbalanced between arms (12.3% with datopotamab deruxtecan and 24.0% with chemotherapy); the authors note that it may have affected the survival result. DUO-O met its progression-free-survival endpoints for a specified multi-drug strategy in newly diagnosed non-BRCA-mutated advanced ovarian cancer, while the reported overall-survival analysis was interim at 39% maturity. BEAT-meso tested adding atezolizumab to bevacizumab and chemotherapy in advanced pleural mesothelioma: progression-free survival improved, while its primary overall-survival comparison did not meet statistical significance. These are distinct comparisons, rather than interchangeable evidence that progression-free survival cannot matter.\n\nOlaratumab is not an example of approval resting on response rate alone. FDA's 2016 review described an uncertain survival estimate from a small randomised study as central to accelerated approval and did not regard its response-rate effect as clinically meaningful. ANNOUNCE subsequently did not confirm the survival benefit. Lurbinectedin's 2020 accelerated approval instead relied on response rate and duration of response. ATLANTIS tested lower-dose lurbinectedin combined with doxorubicin against chemotherapy in relapsed small-cell lung cancer; it did not demonstrate a statistically significant survival improvement. That result must retain its combination, dose and comparator rather than being described as a test of the approved monotherapy regimen.\n\nFor a trial that improves a surrogate, ask whether trial-level validation applies to this disease, treatment class and intended outcome. Read the clinical-outcome estimate and its uncertainty for benefit and harm compatible with the data, and check the status of any required confirmatory trial. A nonsignificant survival comparison alone establishes neither equivalence nor absence of harm.\n\nOther linked records include CodeBreaK 200, adjuvant trials, residual-disease trials and UKCTOCS screening. They remain related studies, rather than interchangeable validation of a surrogate. This account does not reassert their previously listed outcome or regulatory-validation claims, which require source-specific verification. The linked trial-design bottleneck and proposal for independent surrogate validation extend the methodological questions.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Surrogate_endpoint",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Surrogate_endpoint"
+        },
+        {
+          "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
+          "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
+        },
+        {
+          "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+        },
+        {
+          "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
+        },
+        {
+          "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+        },
+        {
+          "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
+        },
+        {
+          "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+        },
+        {
+          "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
+        },
+        {
+          "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
+          "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
+        },
+        {
+          "label": "DUO-O, Harter et al. 2026",
+          "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
+        },
+        {
+          "label": "BEAT-meso, Felip et al. 2025",
+          "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
+        },
+        {
+          "label": "ANNOUNCE, Tap et al. 2020",
+          "url": "https://doi.org/10.1001/jama.2020.1707"
+        },
+        {
+          "label": "ATLANTIS, Aix et al. 2023",
+          "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
+        },
+        {
+          "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
+        },
+        {
+          "label": "FDA approval summary: lurbinectedin, 2021",
+          "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
+        },
+        {
+          "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
+          "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "surrogate-endpoint",
+        "pcr",
+        "pfs",
+        "os",
+        "efs",
+        "orr",
+        "mrd",
+        "recist",
+        "accelerated-approval",
+        "confirmatory-trial",
+        "crossover",
+        "trial-failure-modes"
+      ],
+      "cancers": [],
+      "sections": [
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "keynote-522",
+        "tropion-breast01",
+        "codebreak-200",
+        "monarche",
+        "natalee",
+        "adaura",
+        "perseus",
+        "captivate",
+        "announce",
+        "atlantis",
+        "ukctocs",
+        "imvigor011"
+      ],
+      "people": [],
+      "bottlenecks": [
+        "b-trial-design"
+      ],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A surrogate is a measured outcome used in place of a direct clinical-benefit outcome, with evidence needed for that substitution in the intended setting. Two relationships must be separated: people with a favourable marker may have better outcomes, while treatments that improve that marker may or may not improve the outcome. The first is a prognostic association; the second concerns agreement between treatment effects across suitable randomised comparisons. A treatment can change another pathway, later disease or toxicity as well as the marker. Validation is specific to disease, treatment context and intended outcome. An early measure is not automatically validated, and regulatory acceptance in one programme does not transfer to another. “Validated” and “reasonably likely to predict benefit” carry different evidence claims. Even a pathology or imaging response does not capture every benefit and harm.",
+        "Imagine twenty fictional people grouped by whether they achieved pathological complete response, with complete event follow-up to three years. A difference in events between those groups would describe an association after response was achieved, rather than preserve a randomised treatment comparison. Across six fictional randomised trials, a different analysis would compare each trial's treatment-related gain in response with its gain in three-year event-free survival, both in percentage points. Those are different units of evidence; neither constructed example is the CTNeoBC dataset. Similarly, a fictional trial increasing complete response from 40/100 to 55/100 establishes a 15-percentage-point response difference under its definition, with uncertainty still needed. Immature survival follow-up does not supply a proven survival gain.",
+        "Pathological complete response is assessed in the surgical specimen after neoadjuvant treatment, rather than a presurgical scan or biopsy. Retain the exact definition, such as ypT0/Tis ypN0 meaning no invasive disease in breast or nodes, and how missing surgery or specimens affect denominators. CTNeoBC pooled 11,955 people from 12 trials: achieving that response was associated with event-free-survival HR 0.48 and overall-survival HR 0.36; corresponding triple-negative subgroup estimates were 0.24 and 0.16. Yet trial-level R-squared was 0.03 for event-free survival (95% interval 0.00 to 0.25) and 0.24 for overall survival (0.00 to 0.70). Conforti and colleagues' analysis of 54 trials and 32,611 participants found R-squared 0.14 (95% interval 0.00 to 0.29) for disease-free and 0.08 (0.00 to 0.22) for overall survival. R-squared here is the share of variation in the treatment effects on survival that is explained by the treatment effects on pathological complete response; 1 would be a perfect fit. Thus response can be strongly associated with outcomes among participants while remaining a weak substitute for treatment effects across trials. This fitted association is not an individually validated risk prediction. These fitted associations concern variation in treatment effects across trials, with substantial uncertainty; they are not personal prognosis models.",
+        "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims."
+      ],
+      "category": "Endpoints"
+    },
+    {
+      "id": "tumour-grade",
+      "kind": "term",
+      "name": "Grade",
+      "aka": [
+        "tumour grade",
+        "tumor grade",
+        "grading",
+        "high-grade",
+        "low-grade",
+        "high grade",
+        "low grade",
+        "intermediate-grade",
+        "Gleason",
+        "Gleason score"
+      ],
+      "tldr": "Grade describes how abnormal a tumour looks under the microscope, using a system specific to that cancer. It differs from stage and does not measure an exact growth rate.",
+      "summary": "Pathologists assess microscopic features under a cancer-specific grading system. In breast cancer, Nottingham grading combines tubule formation, nuclear pleomorphism and mitotic count. The resulting grade can inform prognosis and treatment alongside other findings; it is not a direct clock for growth or a measurement of anatomical spread. Other cancers use different schemes, and adverse-event grade is a separate severity scale.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Grading_(tumors)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Grading_(tumors)"
+        },
+        {
+          "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+          "url": "https://www.cancer.gov/types/breast/stages"
+        },
+        {
+          "label": "Elston and Ellis, Histopathology 1991;19:403 to 410: pathological prognostic factors in breast cancer, the value of histological grade, with long-term follow-up of 1,831 graded patients",
+          "url": "https://doi.org/10.1111/j.1365-2559.1991.tb00229.x"
+        },
+        {
+          "label": "Royal College of Pathologists G148: dataset for histopathological reporting of breast disease in surgical excision specimens of breast cancer, version 3, November 2024 (full review due November 2026)",
+          "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cancer-stage",
+        "differentiation",
+        "proliferation",
+        "histology",
+        "toxicity-grade",
+        "prognosis",
+        "nottingham-grade"
+      ],
+      "cancers": [
+        "prostate",
+        "breast-hr-positive",
+        "glioblastoma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "nottingham-grade",
+        "grade-stage-receptor-breast"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional breast report, grade 3 does not mean stage III and does not show distant metastasis. Grade describes microscopic features; breast stage III is a regional or locally advanced classification rather than an M1 assignment. The same numeral does not join the two systems.",
+        "The breast scheme in full. The Nottingham grade, the Elston and Ellis revision of Bloom and Richardson, adds three scores of 1 to 3, for tubule formation, nuclear pleomorphism and mitotic count, into a total of 3 to 9: grade 1 is 3 to 5, grade 2 is 6 or 7, grade 3 is 8 or 9. UK practice permits no alternative scheme and requires the three component scores to be recorded. The grades are not expected in equal thirds: the dataset gives the ratio of grades 1, 2 and 3 as about 2:3:5 in symptomatic and 3:5:2 in screen-detected breast cancer (see `nottingham-grade`)."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cancer-stage",
+      "kind": "term",
+      "name": "Stage",
+      "aka": [
+        "stages",
+        "staging",
+        "stage I",
+        "stage II",
+        "stage III",
+        "stage 1",
+        "stage 2",
+        "stage 3",
+        "early-stage",
+        "early stage",
+        "late-stage",
+        "late stage",
+        "locally advanced",
+        "localised",
+        "localized",
+        "regional spread",
+        "staged",
+        "restaging",
+        "upstaged",
+        "downstaged",
+        "stage IA",
+        "stage IB",
+        "stage IIB",
+        "stage I-III",
+        "stage II-III"
+      ],
+      "tldr": "Stage describes a cancer’s extent under the applicable staging system. Some breast stage groups also incorporate grade and biomarkers; stage alone does not determine an individual outcome.",
+      "summary": "Staging describes the primary tumour, regional nodes and distant disease under cancer-specific rules. In breast cancer, clinical prognostic assessment uses history, examination, imaging and biopsy findings; surgery-first pathological prognostic assessment adds the surgical findings. Breast prognostic groups incorporate grade and biomarkers alongside TNM, so an anatomical category and a prognostic group are different descriptions. Keep the system, edition, evidence and treatment moment attached rather than applying one universal stage-to-treatment rule.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cancer_staging",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cancer_staging"
+        },
+        {
+          "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+          "url": "https://www.cancer.gov/types/breast/stages"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tnm-staging",
+        "metastasis",
+        "lymph-node",
+        "tumour-grade",
+        "in-situ",
+        "stage-shift",
+        "prognosis",
+        "screening"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Breast stage III concerns regional or locally advanced disease, whereas stage IV denotes distant spread. A high-grade invasive core does not establish either whole-body extent or a certain prognosis. Record the original diagnostic assessment and later residual or recurrent findings separately; a later report does not erase what the earlier specimen showed."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "tnm-staging",
+      "kind": "term",
+      "name": "TNM staging",
+      "aka": [
+        "TNM",
+        "T stage",
+        "N stage",
+        "T1a",
+        "T1b",
+        "T1c",
+        "pT2",
+        "T1-2",
+        "T3-4",
+        "N2-3",
+        "M0 disease",
+        "clinical stage"
+      ],
+      "tldr": "TNM describes primary tumour extent, regional nodes and distant metastasis under rules specific to the cancer and staging edition.",
+      "summary": "Interpret TNM with the organ, system, edition, evidence and treatment moment attached. Clinical, surgery-first pathological and post-neoadjuvant categories describe different assessments. Anatomical groups and prognostic groups are distinct, and a stage does not independently predict an individual outcome or choose a treatment.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/TNM_staging_system",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/TNM_staging_system"
+        },
+        {
+          "label": "CAP invasive breast resection protocol 4.11.0.0, June 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/06/Breast.Invasive.Res_4.11.0.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "NCI professional PDQ: AJCC eighth-edition breast staging tables",
+          "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq"
+        },
+        {
+          "label": "AJCC current staging-system table, 2026",
+          "url": "https://www.facs.org/media/c5ik5tkr/ajcc-current-staging-system-2026.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "TNM uses cancer-specific rules for primary tumour extent, regional nodal findings and distant metastasis. State system and disease-specific edition; AJCC breast remains eighth edition in the 2026 current-system table. In breast rules, T3 is larger than 5 cm, whereas T4 requires qualifying skin or chest-wall extension. Size alone cannot establish T4 or an overall stage group.",
+        "c denotes clinical assessment using examination, imaging and available biopsy evidence; p incorporates surgical pathological evidence. yc and yp identify clinical and pathological assessments after neoadjuvant treatment. Preserve the full treatment/specimen context: a later addendum on an old pretreatment biopsy still concerns that old sample.",
+        "Keep pretreatment and residual T/N records rather than splicing a pretreatment T to a post-treatment N. CAP applies the y prefix to a formal months-long preoperative endocrine course, but not a brief exposure of days or weeks. Negative breast and regional-node specimens cannot supply pM0; M0 is clinical and pM1 requires the applicable pathological evidence.",
+        "TNM categories do not alone specify a prognostic stage incorporating grade and receptors. Post-treatment extent and response are related but distinct. Regional nodal disease or extranodal extension does not by itself establish M1. In a fictional 6-cm pretreatment breast tumour without qualifying T4 features, cT3 can coexist with later ypT2 ypN1a without erasing the original extent.",
+        "In breast clinical classification, cN3b denotes combined ipsilateral internal mammary and axillary involvement, not a count of ten surgical nodes. With M0, anatomical IIIB comprises T4 with N0, N1 or N2; a T3 size alone does not make IIIB. These anatomical groups differ from grade/receptor-specific clinical prognostic groups.",
+        "Residual cancer burden combines breast-bed dimensions and cellularity with nodal count and metastasis diameter under its own protocol. It complements residual ypTNM rather than replacing it: a largest contiguous invasive focus for ypT is not interchangeable with a two-dimensional RCB bed."
+      ],
+      "category": "Clinical"
+    },
+    {
+      "id": "er-status",
+      "kind": "biomarker",
+      "name": "ER status (oestrogen receptor by IHC)",
+      "aka": [
+        "ER status",
+        "ER-positive",
+        "ER positive",
+        "ER+",
+        "ER-negative",
+        "estrogen receptor status",
+        "oestrogen receptor status",
+        "ER low positive",
+        "ER >= 1%",
+        "ER 1-10%"
+      ],
+      "tldr": "ER status reports oestrogen-receptor staining in tumour-cell nuclei. In invasive breast cancer, at least 1% is positive; 1% to 10% is ER-low positive, with limited evidence about endocrine-treatment benefit.",
+      "summary": "The oestrogen receptor is an intracellular protein involved in responses to oestrogen and regulation of gene expression. A clinical ER result measures receptor staining in identified tumour-cell nuclei, not the amount of oestrogen in blood or every downstream signal.\n\nThe ASCO/CAP invasive-breast guideline uses validated immunohistochemistry: at least 1% stained tumour-cell nuclei is positive, below 1% is negative, and 1% to 10% is reported as ER-low positive. These cancers are heterogeneous and can have features resembling ER-negative disease, but they remain ER-positive. Limited evidence suggests possible endocrine benefit, so the category supports consideration of endocrine treatment rather than a guaranteed response or a treatment mandate.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.19.02309"
+        },
+        {
+          "label": "UniProt: P03372",
+          "url": "https://www.uniprot.org/uniprotkb/P03372/entry"
+        },
+        {
+          "label": "nci hormone therapy",
+          "url": "https://www.cancer.gov/types/breast/treatment/hormone-therapy"
+        },
+        {
+          "label": "cap er pr summary",
+          "url": "https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"
+        },
+        {
+          "label": "cap er pr guideline",
+          "url": "https://www.cap.org/cap-guidelines/estrogen-and-progesterone-receptor-testing-in-breast-cancer-guideline-update/"
+        },
+        {
+          "label": "RCPath G148 breast dataset, version 3 (2024)",
+          "url": "https://www.rcpath.org/asset/D255F34C-176A-490D-9B5A7D58AC85F3A6/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "hormone-receptor"
+      ],
+      "related": [
+        "pr-status",
+        "ki-67-index",
+        "esr1-mutation-ctdna"
+      ],
+      "cancers": [
+        "breast-hr-positive",
+        "breast-cancer",
+        "hr-positive-early-high-risk",
+        "hr-positive-metastatic-post-cdk46",
+        "endometrial"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "tamoxifen",
+        "letrozole",
+        "fulvestrant",
+        "palbociclib",
+        "ribociclib",
+        "abemaciclib",
+        "elacestrant",
+        "alpelisib",
+        "capivasertib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hormone-receptor-status",
+        "ihc",
+        "serd"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Receptor presence is like having machinery able to receive a message; it does not show equal signalling in every cell or equal drug sensitivity. Oestrogen binding can influence gene programmes, while endocrine treatments interfere with hormone production or action. This differs from menopausal hormone replacement. ER is not the same observation as the cell-surface HER2 receptor, and clinical nuclear staining is not a statement that the protein can exist only in that location.",
+        "The measurement route is tissue, identification of invasive tumour cells, a validated nuclear stain, review of controls, percentage and intensity, then interpretation. Keep the specimen/block and collection context; IHC uses tissue sections. Percentage counts positive nuclei among the intended tumour cells, while intensity describes stain strength. Poor preservation, artefact or failed controls can prevent interpretation: uninterpretable does not mean negative. A bulk RNA result does not replace validated clinical IHC. ASCO/CAP recommends ER testing in DCIS to assess potential endocrine risk reduction, with PR optional there; invasive and in-situ contexts should be stated.",
+        "For a fictional invasive tumour with adequate controls, ER staining in 4% of tumour-cell nuclei is ER-low positive. It is not 4% predicted treatment benefit and is not rounded down to ER-negative because an RNA classifier says basal-like. Preserve the stain denominator, intensity and category alongside that separate expression result. If controls fail, resolve the testing problem before assigning a negative category. ER and PR results remain separate observations."
+      ],
+      "target": "estrogen-receptor",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "ER-positive: at least 1 percent of tumour cell nuclei stain positive by IHC. ER low positive: 1 to 10 percent. ER-negative: less than 1 percent or no staining, with internal and external controls behaving as expected.",
+        "quote": "ER-positive... if ≥ 1% of tumor cell nuclei are immunoreactive",
+        "source": "https://doi.org/10.1200/JCO.19.02309",
+        "sourceLabel": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)"
+      },
+      "thresholds": [
+        {
+          "value": "ER-positive (guideline >= 1% nuclei)",
+          "drugId": "elacestrant",
+          "cancerId": "breast-hr-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aa66ae5c-2bd2-4444-8178-b55651e054ef",
+          "quote": "ORSERDU is indicated for the treatment of postmenopausal women or adult men with estrogen receptor (ER)-positive, human epidermal growth factor receptor 2 (HER2)‑negative, ESR1 -mutated advanced or metastatic breast cancer",
+          "status": "current"
+        },
+        {
+          "value": "Hormone receptor-positive (guideline >= 1% nuclei)",
+          "drugId": "alpelisib",
+          "cancerId": "breast-hr-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b",
+          "quote": "PIQRAY is indicated in combination with fulvestrant for the treatment of adults with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, PIK3CA-mutated, advanced or metastatic breast cancer",
+          "status": "current"
+        },
+        {
+          "value": "Hormone receptor-positive (guideline >= 1% nuclei)",
+          "drugId": "capivasertib",
+          "cancerId": "breast-hr-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf",
+          "quote": "in combination with fulvestrant for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative, locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN -alterations",
+          "status": "current"
+        }
+      ],
+      "definedBy": {
+        "label": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)",
+        "url": "https://doi.org/10.1200/JCO.19.02309"
+      },
+      "tests": [
+        "oncotype-dx-breast"
+      ],
+      "assays": [
+        "er-pr-ventana-confirm",
+        "er-pr-dako",
+        "er-pr-leica"
+      ],
+      "companionDiagnostics": [],
+      "forPatient": "ER-positive means at least 1% of the tumour-cell nuclei stained for the oestrogen receptor under a suitable test. A 1% to 10% result is ER-low positive. Endocrine treatment may help, but evidence is limited for this low group and the result alone does not choose a treatment. The percentage is the share of stained cells, not the chance that treatment will work."
+    },
+    {
+      "id": "pr-status",
+      "kind": "biomarker",
+      "name": "PR status (progesterone receptor by IHC)",
+      "aka": [
+        "PR status",
+        "PR-positive",
+        "PR positive",
+        "PR+",
+        "PgR",
+        "progesterone receptor status",
+        "PR-negative",
+        "PR >= 1%"
+      ],
+      "tldr": "PR status measures progesterone-receptor staining in tumour-cell nuclei. It is reported separately from ER and is primarily prognostic in ER-positive invasive breast cancer.",
+      "summary": "The progesterone receptor is an intracellular hormone-response protein. Its tissue stain does not measure circulating progesterone or every interaction with ER signalling. In invasive breast cancer, the ASCO/CAP guideline uses at least 1% positive tumour-cell nuclei for PR positivity and below 1% for negativity; ER-low positive is an ER-specific reporting category.\n\nHR-positive is commonly used for ER-positive, PR-positive or both. Preserve the individual results: ER-positive/PR-negative is not hormone-receptor-negative or triple-negative. PR is primarily prognostic within ER-positive invasive disease. An unusual ER-negative/PR-positive combination should prompt review of the ER stain and controls, not an automatic inference about eligibility for endocrine treatment or a CDK4/6 inhibitor.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)",
+          "url": "https://doi.org/10.1200/JCO.19.02309"
+        },
+        {
+          "label": "UniProt: P06401",
+          "url": "https://www.uniprot.org/uniprotkb/P06401/entry"
+        },
+        {
+          "label": "cap er pr summary",
+          "url": "https://www.cap.org/wp-content/uploads/documents/erpgr_summaryrecommendations.pdf"
+        },
+        {
+          "label": "cap er pr guideline",
+          "url": "https://www.cap.org/cap-guidelines/estrogen-and-progesterone-receptor-testing-in-breast-cancer-guideline-update/"
+        },
+        {
+          "label": "nci hormone therapy",
+          "url": "https://www.cancer.gov/types/breast/treatment/hormone-therapy"
+        },
+        {
+          "label": "RCPath G148 breast dataset, version 3 (2024)",
+          "url": "https://www.rcpath.org/asset/D255F34C-176A-490D-9B5A7D58AC85F3A6/"
+        }
+      ],
+      "tags": [
+        "biomarker",
+        "hormone-receptor"
+      ],
+      "related": [
+        "er-status",
+        "ki-67-index"
+      ],
+      "cancers": [
+        "breast-hr-positive",
+        "breast-cancer",
+        "endometrial"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "tamoxifen",
+        "letrozole",
+        "fulvestrant",
+        "palbociclib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hormone-receptor-status",
+        "ihc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "PR can bind progesterone and regulate gene programmes, but finding protein in a stained nucleus is not a direct readout of all receptor activity. The ASCO/CAP guideline uses ER to predict potential endocrine benefit and describes PR chiefly as prognostic in ER-positive invasive cancer. A prognostic association and evidence of added benefit from a particular medicine are different questions.",
+        "Start with the identified tissue/lesion and invasive tumour-cell nuclei, then the validated stain, percentage, intensity, controls and final PR interpretation read beside ER. Sections are consumed by the assay. Record the specimen/block and context; preservation problems, scant assessable tumour or failed controls can limit interpretation. Percentage, intensity and composite IHC scores have different units. In-situ testing is a separate context, and no tissue-staining percentage is an individual recurrence or benefit probability.",
+        "In a fictional adequately controlled report, ER is 80% and PR is below 1%. The invasive cancer is ER-positive and PR-negative; PR does not cancel ER and the pair is not TNBC. These measurements do not alone choose a drug, quantify benefit or prescribe progesterone. Read each observation before asking the separate treatment question."
+      ],
+      "target": "pgr",
+      "measurement": "ihc-score",
+      "scoringRule": {
+        "text": "PR-positive: at least 1 percent of tumour cell nuclei stain positive by IHC; PR-negative below 1 percent.",
+        "quote": "PgR-positive... if ≥ 1% of tumor cell nuclei are immunoreactive",
+        "source": "https://doi.org/10.1200/JCO.19.02309",
+        "sourceLabel": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)"
+      },
+      "thresholds": [
+        {
+          "value": "Hormone receptor-positive (ER or PR >= 1%)",
+          "drugId": "palbociclib",
+          "cancerId": "breast-hr-positive",
+          "regulator": "FDA",
+          "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=89a142d5-7e61-48bf-9e77-e2cd124c4792",
+          "quote": "hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer",
+          "status": "current",
+          "note": "Palbociclib label wording; the 1 percent rule is the ASCO/CAP guideline's, not the label's."
+        }
+      ],
+      "definedBy": {
+        "label": "ASCO/CAP estrogen and progesterone receptor testing guideline, 2020 update (Allison et al., J Clin Oncol)",
+        "url": "https://doi.org/10.1200/JCO.19.02309"
+      },
+      "tests": [],
+      "assays": [
+        "er-pr-ventana-confirm",
+        "er-pr-dako",
+        "er-pr-leica"
+      ],
+      "companionDiagnostics": [],
+      "forPatient": "PR is read alongside ER. A negative PR result does not cancel a positive ER result. The report should retain both measurements, and an unusual combination may need pathology review. PR staining is not a prescription for progesterone and does not by itself predict your recurrence risk or treatment benefit."
+    },
+    {
+      "id": "her2-positive",
+      "kind": "term",
+      "name": "HER2-positive (IHC 3+ or ISH-amplified)",
+      "aka": [
+        "HER2-positive",
+        "HER2 positive",
+        "HER2+",
+        "HER2-negative",
+        "HER2 negative",
+        "HER2−",
+        "IHC 3+",
+        "IHC 2+",
+        "HER2 IHC",
+        "HER2-amplified",
+        "HER2 amplification",
+        "ISH-amplified",
+        "HER2 overexpression",
+        "HER2-overexpressing",
+        "HER2-mutant",
+        "HER2 status",
+        "ASCO/CAP"
+      ],
+      "tldr": "HER2-positive breast cancer has an integrated result showing HER2 protein overexpression or gene amplification under the applicable testing rules. The result is separate from eligibility for a specific medicine.",
+      "summary": "Human epidermal growth factor receptor 2 (HER2) is a cell-surface receptor protein encoded by ERBB2. Gene amplification, protein abundance measured by immunohistochemistry and RNA expression are different observations. In invasive breast cancer, HER2 status integrates the IHC pattern and indicated in-situ hybridisation workup under the applicable guideline. IHC 2+ is equivocal, not half-positive or a completed negative result.\n\nA HER2-positive result and a HER2-enriched RNA subtype are not interchangeable. HER2-low or ultralow staining remains negative for overexpression/amplification in the relevant breast context, while some specified treatment settings use low expression to select an antibody-drug conjugate. A signalling receptor can also serve as a delivery address; neither the label nor one staining category proves pathway dependence, eligibility or individual drug benefit.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/HER2",
+      "links": [
+        {
+          "label": "cap her2 template 2026",
+          "url": "https://www.cap.org/wp-content/uploads/2026/09/Breast.Bmk_1.6.2.0.REL_CAPCP.pdf?download=true"
+        },
+        {
+          "label": "cap her2 recommendations 2023",
+          "url": "https://www.cap.org/wp-content/uploads/documents/her2_breast_update_sor_2023.pdf?download=true"
+        },
+        {
+          "label": "Abbott PathVysion: probe identity and principles of procedure",
+          "url": "https://www.molecular.abbott/content/dam/add/molecular/products/oncology/pathvysion-her-2-dna-probe-kit/30-608377.pdf"
+        },
+        {
+          "label": "RCPath G148 breast dataset, version 3 (2024)",
+          "url": "https://www.rcpath.org/asset/D255F34C-176A-490D-9B5A7D58AC85F3A6/"
+        },
+        {
+          "label": "nci breast biomarkers",
+          "url": "https://www.cancer.gov/types/breast/diagnosis/breast-cancer-biomarker-tests"
+        },
+        {
+          "label": "Bastien RR et al. (2012): PAM50 breast cancer subtyping by RT-qPCR and concordance with standard clinical molecular markers",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23035882/"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/HER2"
+        },
+        {
+          "label": "Royal College of Pathologists G148: dataset for histopathological reporting of breast disease in surgical excision specimens of breast cancer, version 3, November 2024 (full review due November 2026)",
+          "url": "https://www.rcpath.org/resourceLibrary/g148-dataset-for-histopathological-reporting-of-breast-disease-in-surgical-excision-specimens-of-breast-cancer.html"
+        },
+        {
+          "label": "Rakha et al., Journal of Clinical Pathology 2023;76:217 to 227: UK recommendations for HER2 assessment in breast cancer, an update",
+          "url": "https://doi.org/10.1136/jcp-2022-208632"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "her2-low",
+        "fish",
+        "hormone-receptor-status",
+        "ihc",
+        "her2-testing-uk-breast"
+      ],
+      "cancers": [
+        "breast-her2-positive",
+        "gastric",
+        "nsclc"
+      ],
+      "sections": [
+        "targeted-therapy",
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [
+        "her2"
+      ],
+      "drugs": [
+        "trastuzumab",
+        "trastuzumab-deruxtecan",
+        "pertuzumab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "her2-testing-uk-breast",
+        "receptor-conversion-breast"
+      ],
+      "trials": [
+        "katherine",
+        "aphinity"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The September 2026 CAP template distinguishes negative IHC 0 with no detected membrane staining from negative 0+ with faint, incomplete staining in at most 10% of tumour cells. IHC 1+ has faint incomplete staining in more than 10%. A common 2+ pattern is weak to moderate complete staining in more than 10%, but intense complete staining in at most 10% and some incomplete patterns also need workup. IHC 3+ requires intense complete membrane staining in more than 10% of a homogeneous contiguous invasive tumour-cell population. This abbreviated map does not replace the full rules for unusual patterns, artefacts and heterogeneity.",
+        "Tissue IHC and ISH use sections from an identified specimen/block. IHC reports a membrane pattern category; ISH uses nucleic-acid probes in tissue to assess gene copies. A dual-probe ISH report retains counted cells, mean HER2 signals per cell, mean CEP17 signals per cell and the HER2/CEP17 ratio. In the Abbott PathVysion assay, CEP17 probes an alpha-satellite sequence in chromosome 17's centromeric region. The ratio is dimensionless and differs from the mean HER2 count; neither alone substitutes for the integrated algorithm, concurrent IHC and indicated recounting. Keep preservation, controls and distinct tumour populations visible in the interpretation.",
+        "A drawing of a few cells can illustrate complete versus incomplete membrane staining and intensity, but it is not a counted field or a scoring standard. In a fictional comparison, the same faint incomplete pattern in at most 10% versus more than 10% changes 0+ to 1+ under the specified template; it does not establish drug eligibility. For another fictional completed report, IHC 2+, ratio 1.8, mean HER2 3.5 signals per cell and an integrated ISH-negative finding fit the HER2-negative, low-expression range. The ratio is not 1.8 copies and the example is not a complete algorithm or a medicine decision.",
+        "Read the measurement sequence as IHC pattern, ISH when indicated, integrated status, then a separate evidence and eligibility question. IHC 0 does not mean literally zero protein molecules. An ERBB2 mutation, amplification, RNA abundance, a HER2-enriched expression label and surface protein staining cannot stand in for one another. HER2-low staining can occur within receptor-defined TNBC. Method, setting and treatment-specific evidence remain necessary.",
+        "The RCPath UK breast dataset retains a different classification from ASCO/CAP for some dual-probe ISH group 2 cases: HER2/CEP17 ratio at least 2.0 with mean HER2 below 4 signals per cell. The UK dataset classifies these as positive. Under ASCO/CAP, concurrent IHC matters: IHC 3+ is positive, while IHC 2+ requires the specified recount and is negative if the same group persists; IHC 0 or 1+ is negative. Thus the US result is not uniformly negative from the ratio and copy number alone. The UK dataset asks for ratio and mean HER2 and CEP17 signals, with the guideline and specimen context retained."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "biopsy",
+      "kind": "term",
+      "name": "Biopsy",
+      "aka": [
+        "biopsies",
+        "biopsied",
+        "tissue sample",
+        "tissue samples",
+        "core biopsy",
+        "needle biopsy",
+        "core needle biopsy",
+        "tissue biopsy",
+        "rebiopsy",
+        "re-biopsy",
+        "surgical biopsy",
+        "excisional biopsy",
+        "fine needle aspiration",
+        "FNA"
+      ],
+      "tldr": "A biopsy removes cells or tissue for examination. The sampled site, method and collection date set the limits of what its findings can show.",
+      "summary": "Biopsies range from a fine needle drawing up cells, to a core needle removing a sliver of tissue, to surgical removal of the whole lesion; the sample is fixed, sliced, stained and read by a pathologist, and today also tested for protein markers and sequenced for mutations. Tissue is precious and finite, and a single biopsy samples one spot of a tumour that may vary from place to place and change over time, which is why repeat biopsies at progression and blood-based liquid biopsies have become important. Biopsies carry small risks (bleeding, infection, rarely tumour seeding) and some sites, such as the pancreas or brain, are hard to reach.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Biopsy",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Biopsy"
+        },
+        {
+          "label": "NCI: pathology reports, specimen details and final interpretation",
+          "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+        },
+        {
+          "label": "NCI: what cancer is, altered cells and the tumour microenvironment",
+          "url": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"
+        },
+        {
+          "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+          "url": "https://www.cancer.gov/types/breast/stages"
+        },
+        {
+          "label": "ACR and RSNA: ultrasound-guided breast biopsy methods",
+          "url": "https://www.radiologyinfo.org/en/info/breastbius"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "histology",
+        "ihc",
+        "genomic-profiling",
+        "ctdna",
+        "lesion",
+        "biomarker",
+        "antithrombotic-interruption-around-surgery",
+        "bone-marrow-aspirate-and-trephine-biopsy",
+        "image-guided-core-biopsy-preparation-and-aftercare",
+        "prostate-biopsy-route-and-antibiotic-prophylaxis"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "histopathology-ihc",
+        "liquid-biopsy",
+        "cgp"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Read a pathology report as an interpretation of a particular specimen. Keep the sampled site, collection date, preparation and method with the finding, and distinguish collection from the date the report became available. An addendum testing old material still describes that old specimen. The final diagnosis integrates the findings; an isolated descriptive word should not replace that interpretation. Pending, qualified or uninterpretable results retain those limits rather than becoming negative findings.",
+        "In a fictional pretreatment breast core, high-grade invasive carcinoma and completed triple-negative receptor tests answer different questions. Neither establishes a particular RNA-expression subtype or distant spread. A suspicious regional node that was not sampled is not a signed positive-node pathology finding. If later surgery finds sparse residual invasive carcinoma after treatment, preserve both the original biopsy and the later specimen, with their separate dates and settings; do not turn the first into a post-treatment measurement.",
+        "A useful report card keeps microscopic appearance and grade, individual receptor tests, anatomical extent and specimen timing in separate fields. Blank boxes in a teaching illustration contain no patient findings and calculate no stage or forecast. Ask which specimen, date, method and question each label belongs to before combining it with another observation. A small region cannot survey every part of a heterogeneous tumour, and cancer cells, immune cells, supporting tissue and treatment-related changes can coexist in the sample.",
+        "A breast report can describe a pretreatment core, a post-treatment needle sample, or tissue removed at surgery. A core collects tissue cylinders, fine-needle aspiration collects cells or fluid, and vacuum-assisted biopsy collects tissue using a vacuum-powered device. Keep the named specimen and each separately submitted part. The gross description records visible features, microscopy records examined sections, and the final diagnosis integrates those findings. A pending test, an unassessable result, a request for more sections and a final negative finding are different states.",
+        "Collection, treatment and reporting have separate clocks. In a fictional example, biopsy A is collected on day 0 and surgery specimen B on day 100. An addendum issued on day 120 tests stored material from A: it remains a result from the pretreatment specimen, with no new sampling on day 120. Treatment was planned on days 10, 30, 50 and 80, but administrations were documented on days 10, 50 and 80; day 30 was held. Four planned events therefore mean three documented administrations and one hold. These invented days supply no clinical schedule, hold explanation or response estimate.",
+        "Before combining reports, record the site and specimen, collection date, treatment actually delivered before collection, method, final interpretation and pending qualifications. The latest issue date is not necessarily the latest sampled biology. A negative result in one sampled region does not cancel a positive finding elsewhere. A suspicious imaged node and a pathologically positive sampled node are different evidence; neither a core nor a negative sampled node examines every node or organ.",
+        "Turn a signed finding into a specific question. A final involved edge raises a local-completion question about the operation, disease at the edge, separately submitted margins and radiation context. Residual invasive disease raises risk and systemic-benefit questions requiring prior treatment, subtype and a matched comparison. For cellularity, name the region and denominator; for differing receptor results, retain both specimens, methods and controls. A treatment interruption needs its cause, severity, recovery and clinical assessment. These questions inform a conversation with the relevant teams rather than forming a mandatory treatment tree.",
+        "For a proposed extra assay, name what each possible result would establish and which decision has evidence behind it. A receptor or immune-marker conclusion retains its scoring rule and validated setting; a number alone is not a treatment recommendation. In a fictional residual-TNBC report after chemotherapy and pembrolizumab, residual disease is prognostic information, not a test choosing the next drug. Local completion, future risk, added systemic benefit and whether treatment can be delivered safely remain connected but separate questions.",
+        "Read a numerical risk estimate with its cohort, treatment era, endpoint, follow-up and uncertainty. An association is not a personal countdown or an estimate of added-treatment benefit. In a fictional subgroup, a hazard ratio of 0.70 with a confidence interval from 0.35 to 1.40 includes 1, the no-difference value, and remains compatible with substantial benefit or harm. An overall trial result or subgroup point estimate alone does not establish precise benefit for every person. RCB class is not a universal personal percentage, and pCR does not promise cure."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "cell-lineage-and-state",
+      "kind": "term",
+      "name": "Cell lineage, identity and state",
+      "aka": [
+        "cell lineage",
+        "cell state",
+        "lineage tracing",
+        "cell ancestry"
+      ],
+      "tldr": "A cell’s ancestry, its type and its current activity answer different questions. Similar activity does not prove that two cells share a recent ancestor.",
+      "summary": "Lineage describes descent from earlier cells. A cell type or identity describes a differentiated family, while a state describes context-dependent features such as activation, stress or cycling. A genetic clone has shared ancestry and can be tracked through specified genomic features; an RNA cluster alone does not establish that ancestry. Stem cells can renew and generate descendants; progenitor potential is restricted by the biological context. Differentiation develops specialized properties without requiring every change of state to become a new lineage.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Lineage tracing on transcriptional landscapes links state to fate during differentiation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31974159/"
+        },
+        {
+          "label": "NIGMS: stem cells and differentiation",
+          "url": "https://www.nigms.nih.gov/biobeat/2024/11/what-are-stem-cells"
+        },
+        {
+          "label": "Aberrant luminal progenitors as the candidate target population for basal tumor development in BRCA1 mutation carriers (Nature medicine 2009)",
+          "url": "https://doi.org/10.1038/nm.2000"
+        },
+        {
+          "label": "Molecular characterization of basal-like and non-basal-like triple-negative breast cancer (The oncologist 2013)",
+          "url": "https://doi.org/10.1634/theoncologist.2012-0397"
+        },
+        {
+          "label": "Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma (Science (New York, N.Y.) 2014)",
+          "url": "https://doi.org/10.1126/science.1254257"
+        },
+        {
+          "label": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data (GigaScience 2020)",
+          "url": "https://doi.org/10.1093/gigascience/giaa151"
+        },
+        {
+          "label": "Guidelines and definitions for research on epithelial-mesenchymal transition (Nature reviews. Molecular cell biology 2020)",
+          "url": "https://doi.org/10.1038/s41580-020-0237-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "differentiation",
+        "clonal-evolution",
+        "cell-cycle"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reference atlases classify measured features. Barcodes or other validated tracing information add ancestry evidence, with their own labeling and sampling limits. Weinreb and colleagues combined expressed barcodes and transcriptomes over time in hematopoiesis; sister-cell analyses exposed fate biases that a single RNA snapshot missed. This does not identify an individual tumor’s origin from its expression profile.",
+        "Lim and colleagues studied normal and preneoplastic breast tissue from BRCA1 mutation carriers and found an expanded luminal-progenitor population. The expression profiles of BRCA1-associated tissue and basal breast tumours resembled normal luminal progenitors more than the other tested subsets. This supported a candidate population for transformation; it was not direct lineage tracing of an individual tumour. A luminal-progenitor-like RNA program does not by itself make a cancer hormone-receptor-positive.",
+        "Support a malignant-cell assignment with tissue context, a coherent marker panel, suitable normal references and quality checks, rather than one marker or cluster name. In five primary glioblastomas, Patel and colleagues profiled 430 cells and inferred broad chromosome alterations by averaging RNA expression along chromosomes against normal reference profiles. This was RNA-based inference, not a direct DNA copy count or a breast diagnostic rule. A flat inferred profile can miss a malignant cell lacking a detectable broad change; focal alterations and point mutations can also be missed. Matched DNA, pathology and spatial evidence can corroborate an assignment, but bulk DNA does not identify every RNA barcode. Mixed markers may reflect ambient RNA or doublets. In another fictional mixed sample, vimentin RNA could come from fibroblasts or a changed cancer-cell programme. Even cell-attributed expression of that marker alone does not establish invasion, resistance or ancestry. Keep uncertain assignments uncertain.",
+        "In a fictional set with separately established shared genetic ancestry, one cell is cycling and another is noncycling. Different activity labels do not require different ancestry. Conversely, two cells in the same RNA cluster need not belong to the same genetic clone. The origin of the ancestry label matters: expression resemblance alone does not establish it."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "gene-expression-signatures",
+      "kind": "term",
+      "name": "Gene-expression signatures",
+      "aka": [],
+      "tldr": "An expression signature combines measured gene messages using a defined scoring method.",
+      "summary": "A signature combines selected RNA measurements by a defined algorithm; preprocessing, weights, reference data and software version are part of the definition; a gene list alone is not a test.",
+      "asOf": "2026-11-13",
+      "links": [
+        {
+          "label": "Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16199517/"
+        },
+        {
+          "label": "Supervised risk predictor of breast cancer based on intrinsic subtypes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19204204/"
+        },
+        {
+          "label": "Most random gene expression signatures are significantly associated with breast cancer outcome.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22028643/"
+        },
+        {
+          "label": "Criteria for the use of omics-based predictors in clinical trials: explanation and elaboration.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24228635/"
+        },
+        {
+          "label": "Seurat AddModuleScore definition",
+          "url": "https://satijalab.org/seurat/reference/addmodulescore"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "bulk-rna-seq"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A signature combines selected RNA measurements by a defined algorithm; preprocessing, weights, reference data and software version are part of the definition; a gene list alone is not a test.",
+        "Pattern or module score, subtype classifier and outcome predictor answer different questions; performance belongs to a population, endpoint and horizon.",
+        "The original PAM50 work used a defined 50-gene method for intrinsic subtypes and risk models and does not validate every later similar score.",
+        "Seurat's AddModuleScore subtracts matched control-gene expression from the selected-gene mean; GSEA tests accumulation toward one end of a ranked list; outputs cannot share a cutoff.",
+        "A clinical predictor needs a locked procedure; in the Venet et al. (2011) breast-cancer analysis, more than 90% of random signatures over 100 genes were significant outcome predictors, so association alone does not show the named biology matters.",
+        "Analytical repeatability, clinical validity and clinical utility are separate questions.",
+        "A bulk inflammatory signature can rise from more immune cells, changed state or both; a stress score does not establish protein activation, metabolic rate or dependence.",
+        "Fictional teaching exercise: Replacing normalisation while retaining the old high cutoff is not validated; the old cutoff cannot supply missing validation.",
+        "An expression score requires compatible RNA input, locked preprocessing, genes, weights, reference, endpoint/horizon and software version. Existing data can be rescored without new tissue; acquiring RNA consumes material. Report categories, ranks, probabilities or unitless scores on their exact scale. Missing genes, batch, mixture and population shift undermine cutoffs; analytical, clinical and utility evidence remain separate.",
+        "An expression-program score has meaning within its algorithm and background. For a score formed by subtracting matched control-gene expression, zero need not mean that no program genes were detected. The 90th percentile places a result relative to a specified reference; it does not mean that 90 percent of cells express the program or that a pathway is 90 percent active. Changing the genes, preprocessing, controls or reference can change the scale, so retain them with the method and version."
+      ],
+      "category": "Genomics & genetics"
+    }
+  ]
+}

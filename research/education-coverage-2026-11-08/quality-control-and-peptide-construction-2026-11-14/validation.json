@@ -1,0 +1,1194 @@
+{
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.04
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.39
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.0
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.92
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "fullSuite": {
+    "filesPassed": 293,
+    "testsPassed": 3101,
+    "testsSkipped": 2
+  },
+  "currentReaders": {
+    "checks": [
+      {
+        "id": "cell-therapy-release-testing",
+        "file": "cell-therapy-release-testing-before.html",
+        "state": "captured-before-record-in-current-unchanged-component",
+        "sha256": "2c25e9818721c5506ba371e36d5d643d7fe2ece202b3959b075d1697f1b64d24",
+        "bytes": 50203,
+        "recordSHA256": "833af94c7b3c9a697210ff7f3a8a23fe0ac98c54f38c083544256645acaee04f",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "file": "peptide-synthesis-spps-before.html",
+        "state": "captured-before-record-in-current-unchanged-component",
+        "sha256": "a8e6269a8339dd42d23c3869818f7550d0dfd36516393c987a4efe6a708b1073",
+        "bytes": 21130,
+        "recordSHA256": "4f4610bdf750f8984501a459ad3e6515cffebe47cd6135072113b65700b3cb4f",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "file": "peptide-synthesis-spps.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "c1f0fda4caec71a0fcc306c4fd614934678b0623fcbd0539c2f8e804c28e31b6",
+        "bytes": 21271,
+        "recordSHA256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "batch-release",
+        "file": "batch-release.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "18050e30eb6551ac01be8dc9fe8bff077196ea693b4fc48ace2961ede041bde2",
+        "bytes": 31589,
+        "recordSHA256": "cbfcecb25c275239cd1f1a32bfa80eb942cee3a95d94c2a3a9363b766d2cdd2c",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "file": "cell-therapy-release-testing.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "0b8ed65246ef77596b289ba9fb015192426eaf15f30f163f98460a2d3dee4570",
+        "bytes": 50474,
+        "recordSHA256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "file": "analytical-vs-clinical-validation.html",
+        "state": "registered-local-root-after-before-peer-overlay",
+        "sha256": "3552daed7866655375baf2628613f6ece07741a98937613f76772d1704752d54",
+        "bytes": 40314,
+        "recordSHA256": "9a29dca86528a9fa2217cddd1475c11674c8f5ed65965f0f54950bbab942422e",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "manufacturing-process-comparability",
+        "file": "manufacturing-process-comparability.html",
+        "state": "actual-unmerged-PR373-fields-in-memory-only",
+        "sha256": "6c17c7b77d2d7d41a76dc0aa8172e626dd02e6ecb4223c7156f91b0cd7e0223f",
+        "bytes": 22921,
+        "recordSHA256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "immune-cytotoxicity-assays",
+        "file": "immune-cytotoxicity-assays.html",
+        "state": "actual-unmerged-PR373-fields-in-memory-only",
+        "sha256": "6000e2a0a2cb002806215f5125287dfb34ba94cf51a2251cb54e8f60597b6fc0",
+        "bytes": 20066,
+        "recordSHA256": "d3964404abfa98ebab76e724525774f84b84c9b3f1a77d48fd1fd36601980087",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "rootReaders": 4,
+    "actualUnmergedPeerReaders": 2,
+    "beforeCaptures": 2,
+    "totalFreshCaptures": 8,
+    "selectedSchemaParses": 8,
+    "rootReadersPrecedePeerOverlay": true,
+    "overlayRestored": true,
+    "graphRecords": 23091,
+    "changedCanonicalOwners": 2,
+    "hostedBrowserHydrationAccessibilityAcceptance": false,
+    "independentExpertOwnerLearnerLanguageAcceptance": false
+  },
+  "exactReaderAnchors": {
+    "checks": [
+      {
+        "requirement": "SB22-001",
+        "recordId": "cell-therapy-release-testing",
+        "field": "tldr",
+        "fieldSHA256": "7edafb87698b9af219dec64da1c46b9b2bbc8ac5e92707453f5cd4a8cd701576",
+        "passageSHA256": "bdde40067609414673d7785de0e34b23cf5ebe74b14d0f6824c8b20101d1c53f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-001",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "51789e353768cac78cfbc7069aefc2fbcf9e8623348c8a0412167fced624d859",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-002",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "ab99f6cb1818f10a1fd55832ca13e6903131fcc982cdf618d73bd9ae4bea13e6",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-002",
+        "recordId": "immune-cytotoxicity-assays",
+        "field": "notes",
+        "fieldSHA256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+        "passageSHA256": "c3cdee1ff60ba8ba08e2a558c30c98455e9a4e1e3e74ea3e1d52a20704cb1491",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-003",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "05f5b7d8415262b0d629ff88375645ff8041710aa092d91c0a59693a9c6acd25",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-004",
+        "recordId": "cell-therapy-release-testing",
+        "field": "summary",
+        "fieldSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "passageSHA256": "0019f52ab6e0c60aa453cffa94e5c6e3ef5378ee694a7e0828f1b7ad4db4c379",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-004",
+        "recordId": "immune-cytotoxicity-assays",
+        "field": "notes",
+        "fieldSHA256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+        "passageSHA256": "dc7464f32fa51667cec081d22923bed706dc343e26bdc984ff236f9236919e63",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-004",
+        "recordId": "analytical-vs-clinical-validation",
+        "field": "summary",
+        "fieldSHA256": "14031dcd9ca3c74074e5caf65da96f8ac12adbb62871dffe4b7ed8f30e6008bc",
+        "passageSHA256": "194b9e543f6d329636d7b75590e5f8f708fa83fa37b6025fdacae05f3029d1b0",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-005",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "9a6477674818149dc9898a244313f2d830b7c4ceef4099978bfdd26821198837",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-005",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "3e521bcdddfae1bc494934ab18af58808b82765110171e0a3e92862d826ed4f3",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-006",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "fieldSHA256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+        "passageSHA256": "d3b02cb5cac05ae41e30f9abf0096a4153826b37a30dcbec776c469e23215c45",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-007",
+        "recordId": "immune-cytotoxicity-assays",
+        "field": "notes",
+        "fieldSHA256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+        "passageSHA256": "6c0afaa429cac3a3a16d62f5f317653ce15f8f51292fe221902df0d85778900c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-007",
+        "recordId": "immune-cytotoxicity-assays",
+        "field": "notes",
+        "fieldSHA256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+        "passageSHA256": "6514365efc805c1de1fd7c12b7f578de7356bee1a624ca28c58071cc027cc40e",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-008",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "e73135ae51e3a5a13826c54097df3539a1c9fc4f201995f9793bb840afa6fec9",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-009",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "1fd4845c7977b7580b3c59eebcaf7d4ce925eef62ad2e599c2019531d4f41ece",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-010",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "e73135ae51e3a5a13826c54097df3539a1c9fc4f201995f9793bb840afa6fec9",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-011",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "813716c3864a5fcdacdb053fdb3addbf9b60a7227e4c0c44d0b529c29061b3d5",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-012",
+        "recordId": "manufacturing-process-comparability",
+        "field": "summary",
+        "fieldSHA256": "f8c8e231e2a01af1317d54bd7ede24185fcaa9ea82371203f40af1377cc238ee",
+        "passageSHA256": "b240442c093c4a819010b4c442c1003acd1f0783c816931ea44dc23eefcbffcb",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-012",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "995539e606129d3b2e57cc2101535301da550c3c0d0744faea4825ec35b82ce5",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-013",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "6ec2f2d7676f45715aeb88e45115fdd0910dbcaf6a5d40c0ddb53232c4a8b338",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-013",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "6ea9e396cb99c484e480765b56999961e2d06341827b26ecbda77387a2053630",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-013",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "b46fb0b5c452c7119267683a62c3d3f7332a7e8f2a6390b961a0e0ca8274a984",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-013",
+        "recordId": "batch-release",
+        "field": "summary",
+        "fieldSHA256": "2eb370070953c8734b4f0092885a5ae7dc8268d9dae21531a3cfe645215386dc",
+        "passageSHA256": "2916e2c1de2a4678fe8e106782fa983d48265c9cb8a035764a2515bb01f0747c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-014",
+        "recordId": "manufacturing-process-comparability",
+        "field": "notes",
+        "fieldSHA256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+        "passageSHA256": "11e2473eab618d18f4fd302dc4c1573c323012d5f775233d579f29b169938a67",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-015",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "5bd7d41f65051b50b21d4cc470ab143ab4857c2d99e9644123fe0734f2229454",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-016",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "7714801f654a2c3c96cb7a5d97fe65bc449d71e378c59461f3b28a8d41002db4",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-017",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "3a9b2fd4624113fe4a6c016ea2012a4412fdf958b603c0bd859600a765d69374",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-017",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "afc673d3c31333b22a1a81e833158bfe3f9ef7c10ee9d8264e0eab4aed091b6c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-018",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "66d8b75ed02f3a3197820ca823a85ce0fcc9fd562527880181880f2ea710350f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-018",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "d424a42c12a561ae61b73ea438cc65b5185c9fac31483abec1982a5876f93326",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-018",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "8420de74e2e1792178bbdc213e55161f959d8d9b5d7c1cb95217f9f52915aa3f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-019",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "b292572100023807384f2f3568f4fa97763afd89d059c7ced1eb84f36117e993",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-019",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "e46d4f249f3c24896ee42498ae2fc26a76f706af54f2b1bd75201fffa22f615c",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-020",
+        "recordId": "peptide-synthesis-spps",
+        "field": "summary",
+        "fieldSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "passageSHA256": "8337a8e68198a46ebc47f3bdbb59a26f6eb322e8bcd3a05554a48cbe9935266d",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-020",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "66d8b75ed02f3a3197820ca823a85ce0fcc9fd562527880181880f2ea710350f",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-021",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "76035df3e4809229842f8e392b4ab7d93ce50d92ab0229045479c3c992f26ae9",
+        "exactPassageInActualDecodedReader": true
+      },
+      {
+        "requirement": "SB22-021",
+        "recordId": "peptide-synthesis-spps",
+        "field": "notes",
+        "fieldSHA256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+        "passageSHA256": "ea1ac581c39daa37bcaa3388a5b27f5e7145d5cd76d2618d6c5a21d7699222b1",
+        "exactPassageInActualDecodedReader": true
+      }
+    ],
+    "exactReferences": 37,
+    "allPass": true,
+    "newActualStaticCaptures": 8,
+    "medianAndScopeCorrectionVisible": true,
+    "unqualifiedTimingAndPredictionLabelsRemoved": true,
+    "priorNotesAndLinksPreserved": true,
+    "proposalAfterTextCredited": false
+  },
+  "staticExports": {
+    "records": 4,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "batch-release",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "analytical-vs-clinical-validation",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "peptide-synthesis-spps.json",
+        "bytes": 5755,
+        "sha256": "42200c6011ed5c138923d6e85eaf015c8c762315c64e77bbc973cbd76f4c3c6e"
+      },
+      {
+        "file": "peptide-synthesis-spps.md",
+        "bytes": 5401,
+        "sha256": "dc05f4317b558a4a08630dbf41730948524278bd18d0793f4ef789ee606bb920"
+      },
+      {
+        "file": "batch-release.json",
+        "bytes": 8887,
+        "sha256": "da1bcb95cecceea3a55d3d3bdffd69b4f09e2c8cc1c2cc7c92184f1462941dfa"
+      },
+      {
+        "file": "batch-release.md",
+        "bytes": 8034,
+        "sha256": "528ab60f4ab22579c997839b9501fd9efa3ffe37c3e2ef612ab0a6f1678a2366"
+      },
+      {
+        "file": "cell-therapy-release-testing.json",
+        "bytes": 12092,
+        "sha256": "f4a97c6256b7b9fe26c3c52ea71f125783cf5907213ec715f760cfd47edd3a6b"
+      },
+      {
+        "file": "cell-therapy-release-testing.md",
+        "bytes": 10910,
+        "sha256": "8c6b4b983b5b41160f3099bb25b2bc4b9e83ce0d42a94ff4998eb344c59c7d48"
+      },
+      {
+        "file": "analytical-vs-clinical-validation.json",
+        "bytes": 10071,
+        "sha256": "288e4847c409482592b8619c883c6d8975fd07c25a21ece58a306a403e80e6b6"
+      },
+      {
+        "file": "analytical-vs-clinical-validation.md",
+        "bytes": 9143,
+        "sha256": "39d98122cc2b6fb8dcf8e4de87006a160fe6dc70d8c1a4d8658cb13e72eda48f"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "additionalTechnologyExportFields": {
+    "checks": [
+      {
+        "recordId": "cell-therapy-release-testing",
+        "field": "principle",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "recordId": "cell-therapy-release-testing",
+        "field": "limitations",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "recordId": "cell-therapy-release-testing",
+        "field": "limitations",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "recordId": "cell-therapy-release-testing",
+        "field": "limitations",
+        "index": 2,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "extraMarkdownPassages": 4,
+    "allPass": true,
+    "contextCaptureSHA256": "8c6b4b983b5b41160f3099bb25b2bc4b9e83ce0d42a94ff4998eb344c59c7d48"
+  },
+  "totalRootMarkdownPassages": 46,
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "proposal": {
+    "termSchemaPass": true,
+    "fieldHashPreconditionsMatch": true,
+    "allOldNotesPreservedInOrder": true,
+    "onlyNotesFieldProposed": true,
+    "applied": false,
+    "coverageCredit": 0
+  },
+  "fieldVerification": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cell-therapy-release-testing",
+      "peptide-synthesis-spps"
+    ],
+    "rootOwners": [
+      {
+        "id": "peptide-synthesis-spps",
+        "file": "src/data/binders-cmc-education-2026-11.ts",
+        "sourceBeforeSHA256": "05c05cef652ee95d7d20687ece9f6cef68995193d92220f10fd12e4ff7874cee",
+        "sourceAfterSHA256": "5806babe8de51b12914b097264d38e82d3f1009236918c36b180b7e0b291f2c6",
+        "fields": [
+          {
+            "field": "notes",
+            "before": [
+              "The cycle, as run in the neoantigen paper. Truex et al. (2020) used Fmoc-based solid-phase synthesis: the C-terminal amino acid was loaded onto a resin, the terminal protecting group was removed (Fmoc removal was followed by UV detection), the next activated protected amino acid was coupled in excess and soluble reagents were washed away, and the cycle repeated. Flow conditions achieved amide-bond coupling in seconds where standard batch methods need minutes to hours. The finished chain was cleaved and lyophilised as a trifluoroacetic acid salt.",
+              "Sequence difficulty. Chain association (aggregation) of growing peptides blocks coupling, and double coupling does not help because the cause is intermolecular association; introducing removable backbone protection improved handling, quality and yield of several challenging sequences (Abdel-Aal et al., 2014). Washing removes soluble material but does not repair a faulty chain. This study did not make every peptide equally easy.",
+              "After cleavage the crude peptide is a mixture needing purification and characterisation, and the synthesiser's last step is not a release decision. In Truex et al. electrospray mass spectrometry of the unpurified products showed the desired mass as the main product for all 29 test peptides, while purity was measured separately by analytical reverse-phase HPLC at 214 nm, with greater than 95 per cent HPLC purity used as the purity criterion. In that deliberately difficult 29-peptide commercial-vendor comparison, 17 peptides were synthesised, 10 passed after purification, and 7 stayed at 89 to 94 per cent even after two or three rounds. The 95 per cent figure is that paper's criterion, not a clinical-release threshold.",
+              "Assay peptides versus the clinical product. The same paper made 15 to 16-mer peptides for immune-assessment assays and longer immunising peptides of up to 30 residues for vaccination, and its authors describe clinical-grade manufacture as something they envision. Making an assay peptide does not show manufacture of a formulated, released vaccine product, and chemical assembly does not select a useful cancer antigen or show benefit. A shorter instrument run does not establish the turnaround of the whole program."
+            ],
+            "beforeSha256": "fcee52b1c5db7af089adb4d31c5077cc88a5fc695bca533d9c60a52eaf176e2c",
+            "after": [
+              "The cycle, as run in the neoantigen paper. Truex et al. (2020) used Fmoc-based solid-phase synthesis: the C-terminal amino acid was loaded onto a resin, the terminal protecting group was removed (Fmoc removal was followed by UV detection), the next activated protected amino acid was coupled in excess and soluble reagents were washed away, and the cycle repeated. Flow conditions achieved amide-bond coupling in seconds where standard batch methods need minutes to hours. The finished chain was cleaved and lyophilised as a trifluoroacetic acid salt.",
+              "Sequence difficulty. Chain association (aggregation) of growing peptides blocks coupling, and double coupling does not help because the cause is intermolecular association; introducing removable backbone protection improved handling, quality and yield of several challenging sequences (Abdel-Aal et al., 2014). Washing removes soluble material but does not repair a faulty chain. This study did not make every peptide equally easy.",
+              "After cleavage the crude peptide is a mixture needing purification and characterisation, and the synthesiser's last step is not a release decision. In Truex et al. electrospray mass spectrometry of the unpurified products showed the desired mass as the main product for all 29 test peptides, while purity was measured separately by analytical reverse-phase HPLC at 214 nm, with greater than 95 per cent HPLC purity used as the purity criterion. In that deliberately difficult 29-peptide commercial-vendor comparison, 17 peptides were synthesised, 10 passed after purification, and 7 stayed at 89 to 94 per cent even after two or three rounds. The 95 per cent figure is that paper's criterion, not a clinical-release threshold.",
+              "Assay peptides versus the clinical product. The same paper made 15 to 16-mer peptides for immune-assessment assays and longer immunising peptides of up to 30 residues for vaccination, and its authors describe clinical-grade manufacture as something they envision. Making an assay peptide does not show manufacture of a formulated, released vaccine product, and chemical assembly does not select a useful cancer antigen or show benefit. A shorter instrument run does not establish the turnaround of the whole program.",
+              "The C-terminal, or carboxyl, end stays attached to the resin while additions extend the chain at its amino end. The tether stays in place through the repeated removal, coupling and washing cycle. Cleavage and removal of remaining protecting groups come before purification and final product release."
+            ],
+            "afterSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98"
+          },
+          {
+            "field": "asOf",
+            "before": "2026-11-10",
+            "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+            "after": "2026-11-14",
+            "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+          },
+          {
+            "field": "provenance",
+            "before": {
+              "editedBy": "OnCo education audit",
+              "editedOn": "2026-11-10"
+            },
+            "beforeSha256": "fab7eb3c568e77ad1b1a783bd3cac9c48a3cc9a95d5177f33e63f8cc5b51ed8f",
+            "after": {
+              "editedBy": "OnCo education audit",
+              "editedOn": "2026-11-14"
+            },
+            "afterSha256": "a135f1cc9b67b33bb4edea6fc0bda7c325d4e844ba7c39f6e3577485f9416147"
+          },
+          {
+            "field": "summary",
+            "before": "In solid-phase peptide synthesis the growing chain is held on a resin while protected amino acids are added one at a time and soluble reagents are washed away; the finished chain is then cleaved from the resin. Sequence changes how hard this is: peptides rich in aggregation-prone sequences are difficult, and a 2014 report described automated backbone protection that improved handling, quality and yield of several challenging sequences. For personalised cancer vaccines, an automated flow synthesiser made 30-mer peptides in under 35 minutes and 15 to 16-mers in under 20 minutes, with purity comparable to or higher than other methods (Truex et al., 2020). The same paper reports what the earlier route cost: of 598 immunising peptides designed and ordered in earlier studies, 400 (67 per cent) could be synthesised and purified to at least 95 per cent purity, with an average lead time of 18 to 20 weeks for 20 peptides, and a commercial vendor returned 10 of 29 test peptides at more than 95 per cent HPLC purity; these 29 peptides had been deliberately selected because they were particularly difficult and time-consuming to make, rather than as a typical vendor workload. In that paper mass spectrometry of the unpurified peptides showed the desired mass as the main product for all 29, and purity was measured separately by analytical reverse-phase HPLC. Synthesis, purification, identity testing and lot release are separate steps, and a peptide that is made and pure has not been shown to prime T cells or to benefit a patient.",
+            "beforeSha256": "8c645b3b9963cd6cb78f38caa58b8435ce897b4e1c1fa674f714b9b2ce0c826d",
+            "after": "In solid-phase peptide synthesis the growing chain is held on a resin while protected amino acids are added one at a time and soluble reagents are washed away; the finished chain is then cleaved from the resin. Sequence changes how hard this is: peptides rich in aggregation-prone sequences are difficult, and a 2014 report described automated backbone protection that improved handling, quality and yield of several challenging sequences. For personalised cancer vaccines, an automated flow synthesiser made 30-mer peptides in under 35 minutes and 15 to 16-mers in under 20 minutes, with purity comparable to or higher than other methods (Truex et al., 2020). The same paper reports what the earlier route cost: of 598 immunising peptides designed and ordered in earlier studies, 400 (67 per cent) could be synthesised and purified to at least 95 per cent purity, with a median turnaround from design to synthesis of 18 to 20 weeks in those studies, and a commercial vendor returned 10 of 29 test peptides at more than 95 per cent HPLC purity; these 29 peptides had been deliberately selected because they were particularly difficult and time-consuming to make, rather than as a typical vendor workload. In that paper mass spectrometry of the unpurified peptides showed the desired mass as the main product for all 29, and purity was measured separately by analytical reverse-phase HPLC. Synthesis, purification, identity testing and lot release are separate steps, and a peptide that is made and pure has not been shown to prime T cells or to benefit a patient.",
+            "afterSha256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca"
+          }
+        ]
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "file": "src/data/supporting.ts",
+        "sourceBeforeSHA256": "ce229d0899439baaf1d41e26ea4adba83ce87c3383dfc312bf45d53e413ef797",
+        "sourceAfterSHA256": "9fe06d325156ab8cd30fd7140d67e3d798eb572fa16035af8a5709d0df1b3d0e",
+        "fields": [
+          {
+            "field": "principle",
+            "before": "Compendial and validated assays performed on samples of the final product, with defined acceptance criteria in the marketing authorisation.",
+            "beforeSha256": "745a27c54274a7406674a232cd73e974229491a968a89b14a5c643fae0f2d503",
+            "after": "Product-relevant biological activity is measured with suitable methods, controls and acceptance criteria for the product and its development stage.",
+            "afterSha256": "422359bcde22761d01798d786fd2913cb1493ac13550c336c3ea399bcc94a42a"
+          },
+          {
+            "field": "limitations",
+            "before": [
+              "Adds days to delivery",
+              "Potency assays poorly predictive of clinical activity",
+              "Sample volume consumes product"
+            ],
+            "beforeSha256": "056451ab217a3025767ede0822549db8f2c81ee7fd052178186b305c5e319672",
+            "after": [
+              "Representative sampling can be difficult for some products",
+              "Laboratory activity does not establish patient benefit",
+              "Destructive assays consume sample material"
+            ],
+            "afterSha256": "c751cf3908602ef42bfe611a7bc44f88e705251b90dbd9e163d744ed67dc1957"
+          },
+          {
+            "field": "links",
+            "before": [
+              {
+                "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+              },
+              {
+                "label": "FDA: considerations for development of CAR T-cell products",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+              },
+              {
+                "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+                "url": "https://www.fda.gov/media/156896/download"
+              },
+              {
+                "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+                "url": "https://www.fda.gov/media/113760/download"
+              },
+              {
+                "label": "FDA: final potency-assurance guidance, November 2026, original document",
+                "url": "https://www.fda.gov/media/196183/download"
+              },
+              {
+                "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+                "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+              },
+              {
+                "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+              }
+            ],
+            "beforeSha256": "e5f0c18ef5e4a0c55e01ff443ffbf793f0f8833fc779efb4a66165e9c388381f",
+            "after": [
+              {
+                "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+              },
+              {
+                "label": "FDA: considerations for development of CAR T-cell products",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+              },
+              {
+                "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+                "url": "https://www.fda.gov/media/156896/download"
+              },
+              {
+                "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+                "url": "https://www.fda.gov/media/113760/download"
+              },
+              {
+                "label": "FDA: final potency-assurance guidance, November 2026, original document",
+                "url": "https://www.fda.gov/media/196183/download"
+              },
+              {
+                "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+                "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+              },
+              {
+                "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+                "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+              },
+              {
+                "label": "FDA: potency tests (January 2011, superseded; historical activity and clinical-effectiveness discussion)",
+                "url": "https://www.fda.gov/media/79856/download"
+              }
+            ],
+            "afterSha256": "ec6de15aaf7bf455d7afa76cca9aaff9f0807e20ee5077cb9da8e42f949f7839"
+          },
+          {
+            "field": "asOf",
+            "before": "2026-11-10",
+            "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+            "after": "2026-11-14",
+            "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+          }
+        ]
+      }
+    ],
+    "oldNotesPreservedInOrder": true,
+    "oldLinksPreservedInOrder": true,
+    "allOtherRecordFieldsUnchanged": true,
+    "allOtherGraphRecordsUnchanged": true,
+    "allNamesAliasesAndTldrsUnchanged": true,
+    "summaryChangedOnlyForSppsTurnaroundScope": true,
+    "newRecords": 0,
+    "newAliases": 0,
+    "newRelations": 0
+  },
+  "summaryConsumers": {
+    "records": 2,
+    "nonEnglishLoaderChecks": 16,
+    "englishSourceChecks": 2,
+    "rows": [
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "es",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "zh",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "pt",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "hi",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "fr",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "de",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "ja",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "peptide-synthesis-spps",
+        "language": "ar",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "cb26523115823c2d7df541b036ba327c92c184ef4df644d54fcf86abc76eb8b5",
+        "afterSourceHash": "67a7ab8a705b41c55ade0bdb21f5efa512ba65576b3ed4d23c26f41821da024a",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "es",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "zh",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "pt",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "hi",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "fr",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "de",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "ja",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "language": "ar",
+        "cachedFilePresent": false,
+        "cachedSourceHash": null,
+        "beforeSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "afterSourceHash": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "acceptedBefore": false,
+        "acceptedAfter": false,
+        "selectedLongTextSHA256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+        "EnglishFallbackAfter": true
+      }
+    ],
+    "allShortTldrsUnchanged": true,
+    "namesAliasesAndShortDictionariesChanged": false,
+    "staleLongTextNeverAccepted": true,
+    "hydratedNativeLanguageRenderOrAcceptance": false,
+    "actualEnglishEntityDetailCaptures": "reader-verification.json",
+    "newRegisteredReaderObservationIds": 0
+  },
+  "arithmetic": {
+    "checks": [
+      {
+        "requirement": "SB22-007",
+        "fictional": true,
+        "targetOnlyDead": 30,
+        "targetOnlyDenominator": 100,
+        "withEffectorsDead": 40,
+        "withEffectorsDenominator": 100,
+        "timeHours": 2,
+        "effectorOutsideTargetDenominator": true,
+        "associatedExcessPercentagePoints": 10,
+        "normalisedSpecificLysisClaimed": false,
+        "individualDeathCausalityClaimed": false,
+        "patientResponsePredictionClaimed": false
+      }
+    ],
+    "correct": true,
+    "newStudyData": false
+  },
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "earlierCheckInputsAndLogsRetainedPrivately": true,
+  "newStaticAPIOpenAPIAndContextGeneration": true,
+  "newNextProductionBuild": false,
+  "newBrowserHydrationOrAccessibilityAcceptance": false,
+  "scannerRulesOrFloorsChanged": false,
+  "dataCommit": "050e7b7fe6f966731314fd35ce2fdb335d547c4b",
+  "dataScanReceipt": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "ab44110e2c262d8ecfe5136b9883ed5305f9a30bd10dde29dbcbd43df8afcad6",
+    "rulesAndAllowlistsChanged": false
+  }
+}

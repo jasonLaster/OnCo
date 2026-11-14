@@ -1,0 +1,354 @@
+{
+  "version": "proposal-support-bodies-22-root",
+  "draft": 375,
+  "committedDataHead": "050e7b7fe6f966731314fd35ce2fdb335d547c4b",
+  "auditBaseCommit": "72c63889abdd397342e9ce2eae3925e74133497b",
+  "state": "Four selected registered root objects. Two owners change: peptide assembly/median turnaround and product/stage testing qualifications. Earlier notes/links survive. Two actual unmerged contributor owners and one unapplied proposal remain separate. Selection is not blanket verification or new authorship.",
+  "records": [
+    {
+      "id": "peptide-synthesis-spps",
+      "kind": "term",
+      "name": "Solid-phase peptide synthesis",
+      "aka": [
+        "SPPS",
+        "peptide synthesis",
+        "Fmoc solid-phase peptide synthesis"
+      ],
+      "tldr": "Peptides are built by holding the growing chain on a solid support and adding one amino acid at a time. Making the chain is a separate step from purifying it, confirming it is the right molecule and releasing it as a medicine.",
+      "summary": "In solid-phase peptide synthesis the growing chain is held on a resin while protected amino acids are added one at a time and soluble reagents are washed away; the finished chain is then cleaved from the resin. Sequence changes how hard this is: peptides rich in aggregation-prone sequences are difficult, and a 2014 report described automated backbone protection that improved handling, quality and yield of several challenging sequences. For personalised cancer vaccines, an automated flow synthesiser made 30-mer peptides in under 35 minutes and 15 to 16-mers in under 20 minutes, with purity comparable to or higher than other methods (Truex et al., 2020). The same paper reports what the earlier route cost: of 598 immunising peptides designed and ordered in earlier studies, 400 (67 per cent) could be synthesised and purified to at least 95 per cent purity, with a median turnaround from design to synthesis of 18 to 20 weeks in those studies, and a commercial vendor returned 10 of 29 test peptides at more than 95 per cent HPLC purity; these 29 peptides had been deliberately selected because they were particularly difficult and time-consuming to make, rather than as a typical vendor workload. In that paper mass spectrometry of the unpurified peptides showed the desired mass as the main product for all 29, and purity was measured separately by analytical reverse-phase HPLC. Synthesis, purification, identity testing and lot release are separate steps, and a peptide that is made and pure has not been shown to prime T cells or to benefit a patient.",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "Truex et al., 2020: automated flow synthesis of tumor neoantigen peptides for personalized immunotherapy",
+          "url": "https://doi.org/10.1038/s41598-019-56943-5"
+        },
+        {
+          "label": "Abdel-Aal et al., 2014: automated synthesis of backbone protected peptides",
+          "url": "https://doi.org/10.1039/c4cc03065f"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "neoantigen-mrna-vaccine",
+        "cdmo",
+        "peptide-drug-conjugate"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The cycle, as run in the neoantigen paper. Truex et al. (2020) used Fmoc-based solid-phase synthesis: the C-terminal amino acid was loaded onto a resin, the terminal protecting group was removed (Fmoc removal was followed by UV detection), the next activated protected amino acid was coupled in excess and soluble reagents were washed away, and the cycle repeated. Flow conditions achieved amide-bond coupling in seconds where standard batch methods need minutes to hours. The finished chain was cleaved and lyophilised as a trifluoroacetic acid salt.",
+        "Sequence difficulty. Chain association (aggregation) of growing peptides blocks coupling, and double coupling does not help because the cause is intermolecular association; introducing removable backbone protection improved handling, quality and yield of several challenging sequences (Abdel-Aal et al., 2014). Washing removes soluble material but does not repair a faulty chain. This study did not make every peptide equally easy.",
+        "After cleavage the crude peptide is a mixture needing purification and characterisation, and the synthesiser's last step is not a release decision. In Truex et al. electrospray mass spectrometry of the unpurified products showed the desired mass as the main product for all 29 test peptides, while purity was measured separately by analytical reverse-phase HPLC at 214 nm, with greater than 95 per cent HPLC purity used as the purity criterion. In that deliberately difficult 29-peptide commercial-vendor comparison, 17 peptides were synthesised, 10 passed after purification, and 7 stayed at 89 to 94 per cent even after two or three rounds. The 95 per cent figure is that paper's criterion, not a clinical-release threshold.",
+        "Assay peptides versus the clinical product. The same paper made 15 to 16-mer peptides for immune-assessment assays and longer immunising peptides of up to 30 residues for vaccination, and its authors describe clinical-grade manufacture as something they envision. Making an assay peptide does not show manufacture of a formulated, released vaccine product, and chemical assembly does not select a useful cancer antigen or show benefit. A shorter instrument run does not establish the turnaround of the whole program.",
+        "The C-terminal, or carboxyl, end stays attached to the resin while additions extend the chain at its amino end. The tether stays in place through the repeated removal, coupling and washing cycle. Cleavage and removal of remaining protecting groups come before purification and final product release."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-14"
+      },
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "batch-release",
+      "kind": "term",
+      "name": "Batch release (lot disposition)",
+      "aka": [
+        "batch release",
+        "lot release",
+        "batch disposition"
+      ],
+      "tldr": "Batch release is the documented quality decision about one lot of a product. A set of passing test results supports that decision but is not the same thing, and a released lot has not been shown to help any patient.",
+      "summary": "In the US, drug production and control records are reviewed and approved by the quality control unit before a batch is released or distributed, and any unexplained discrepancy or failure of a batch to meet a specification must be thoroughly investigated whether or not the batch has been distributed (21 CFR 211.192). The decision therefore draws on test results with their methods and acceptance criteria, manufacturing and deviation records, and the identity of the lot and product version; a certificate of analysis can summarise results but does not replace that review. FDA's 2022 guidance on out-of-specification results says the practice of repeating a test until a passing result is obtained and then disregarding the failing results without scientific justification is 'testing into compliance', which it calls unscientific and objectionable under CGMP. That guidance covers chemistry-based laboratory testing; it says it is not intended to address biological assays, so a copied retest procedure cannot be assumed to fit a cell or potency assay. A lot can be released, held pending review or rejected; a result that has not arrived is neither a pass nor a failure. Release of a lot is a quality decision, separate from regulatory authorisation of the product, from a patient's eligibility, and from evidence of clinical benefit.",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "21 CFR 211.192: production record review",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.192"
+        },
+        {
+          "label": "FDA: investigating out-of-specification test results for pharmaceutical production (May 2022)",
+          "url": "https://www.fda.gov/media/158416/download"
+        },
+        {
+          "label": "FDA: quality systems approach to pharmaceutical CGMP regulations (September 2006)",
+          "url": "https://www.fda.gov/media/71023/download"
+        },
+        {
+          "label": "21 CFR 211.22",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.22"
+        },
+        {
+          "label": "21 CFR 211.80",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.80"
+        },
+        {
+          "label": "21 CFR 211.84",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.84"
+        },
+        {
+          "label": "21 CFR 211.142",
+          "url": "https://www.ecfr.gov/current/title-21/section-211.142"
+        },
+        {
+          "label": "21 CFR 610.1",
+          "url": "https://www.ecfr.gov/current/title-21/section-610.1"
+        },
+        {
+          "label": "21 CFR 610.2",
+          "url": "https://www.ecfr.gov/current/title-21/section-610.2"
+        },
+        {
+          "label": "FDA: final Potency Assurance for Cellular and Gene Therapy Products (November 2026 PDF)",
+          "url": "https://www.fda.gov/media/196183/download"
+        },
+        {
+          "label": "FDA: final potency-assurance guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "Federal Register: final potency-assurance guidance, 3 November 2026",
+          "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+        },
+        {
+          "label": "FDA: vaccine CMC for licence applications (January 1999)",
+          "url": "https://www.fda.gov/media/73614/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "good-manufacturing-practice",
+        "cell-therapy-release-testing",
+        "radiopharmaceutical-gmp-release",
+        "car-t-manufacturing-process"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A lot-release decision concerns one identified batch. Good manufacturing practice concerns the quality system; cell and gene products add product-specific biological, identity and handling questions, while radiopharmaceuticals add the constraints of radioactive decay.",
+        "A lot is identified material made under a defined manufacturing record, and a specification connects named tests and methods to acceptance criteria; ICH Q6B defines a specification as a list of tests, references to analytical procedures and acceptance criteria. Release concerns that lot, not the general reputation of its manufacturer.",
+        "What a release review brings together: test results with their methods and criteria, manufacturing and deviation records, lot and version identity, and stability and handling information. In US finished-drug rules the quality control unit reviews and approves production and control records before a batch is released or distributed (21 CFR 211.192). A certificate of analysis may summarise results but does not replace that review.",
+        "Dispositions. FDA's quality-systems guidance describes the quality unit approving or rejecting materials and drug products; US regulations give the quality unit authority to approve or reject materials and drug products (21 CFR 211.22(a)); other provisions describe quarantine or withholding from use while materials or products await release (211.80(d), 211.84(a), 211.142(a)). Hold pending review is a plain-language description of that unresolved disposition. A result that has not arrived is neither a pass nor a failure. Inference lesson: a spreadsheet that reports all tests passed because it lists only completed tests has lost the missingness information; with a required activity result pending, completed release is not established.",
+        "Out-of-specification handling. FDA's May 2022 guidance calls repeated testing until a pass followed by disregarding the failures without scientific justification testing into compliance, which it describes as unscientific and objectionable under CGMP. It asks that the number of retests be set in advance in a procedure and not adjusted according to results, and it contrasts averages: initial 89 then 90 and 91 per cent averages 90 and tends to confirm the failure, while 80 then 85 and 105 also averages 90 but presents a very different picture. Releasing despite an initial failure that has not been invalidated should follow a full investigation. The guidance applies to chemistry-based laboratory testing of drugs regulated by CDER and says it is not intended to address biological assays, so it cannot simply be copied for a cell or potency assay.",
+        "Release is a quality decision. It is separate from regulatory authorisation of the product, a patient's eligibility and evidence of benefit, and a released stamp on a report does not answer those. For US licensed biological products, manufacturer release follows completion of applicable tests under 21 CFR 610.1. Separately, under 610.2 FDA may require samples and protocols and, on notification, bar distribution until the relevant CBER or CDER Director releases the lot. These are distinct manufacturer and official-release steps; this example does not establish other jurisdictions' rules.",
+        "A test on bulk or intermediate material concerns the material sampled at that process stage. FDA's January 1999 vaccine CMC guidance for licence applications separates drug substance from formulated bulk and finished product, with manufacturing, filling and finished-product sampling information. A pre-fill quality-control box in a diagram therefore does not by itself establish the identity, purity, potency or sterility of filled vials or final release. Apply the product's specified tests and quality review; the drawing supplies neither a universal test order nor release criteria."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Regulation & policy"
+    },
+    {
+      "id": "cell-therapy-release-testing",
+      "kind": "technology",
+      "name": "Cell-therapy release and potency testing",
+      "aka": [],
+      "tldr": "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
+      "summary": "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
+      "status": "established",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: considerations for development of CAR T-cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+          "url": "https://www.fda.gov/media/113760/download"
+        },
+        {
+          "label": "FDA: final potency-assurance guidance, November 2026, original document",
+          "url": "https://www.fda.gov/media/196183/download"
+        },
+        {
+          "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+          "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+        },
+        {
+          "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: potency tests (January 2011, superseded; historical activity and clinical-effectiveness discussion)",
+          "url": "https://www.fda.gov/media/79856/download"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "good-manufacturing-practice",
+        "batch-release"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "closed-automated-cell-manufacturing",
+        "flow-cytometry-mrd"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "charles-river",
+        "becton-dickinson"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "FDA's November 2026 final potency-assurance guidance supersedes its January 2011 potency-tests guidance. Its scope is cellular and gene therapy biological products regulated under section 351 of the U.S. Public Health Service Act. Potency assurance includes process and material controls, in-process evidence, release assays, stability and in-use handling; a release assay alone does not establish the clinical benefit of a particular lot. Federal Register notice 2026-22427, published 3 November 2026, announces the final guidance and finalises the December 2023 draft.",
+        "For CAR T cells, FDA's 2024 guidance recommends identity evidence for the transgene and intended cellular composition. HLA typing alone does not detect the genetic modification or replace chain-of-identity records. Biological identity and the association with the intended recipient are separate checks.",
+        "For an integrating-vector CAR T-cell product, the 2024 guidance describes average vector copy number per CAR-positive cell on the lot certificate of analysis. Including CAR-negative cells in the denominator can understate the value in the modified population. The average does not show insertion locations or clonal distribution. Short processes can retain non-integrated vector copies, so a release measurement may need a later assessment in cultured cells to determine stable integration; the interval is product-specific.",
+        "Replication-competent virus testing, microbial sterility, mycoplasma, endotoxin and engineered-cell identity address different hazards or attributes. The applicable tests, methods and acceptance criteria depend on the product, process and development stage. Detecting a sequence or a receptor does not demonstrate every intended biological activity.",
+        "For ex vivo genetically modified cells administered immediately after manufacture, FDA's 2020 gene-therapy CMC guidance describes an in-process sterility sample taken 48 to 72 hours before final harvest plus a rapid test such as a Gram stain on final product. Under that approach, negative Gram stain and no growth in the in-process test can support release while the final-product culture continues for its full duration, for example 14 days for USP <71>. The guidance calls for a plan addressing a later positive result, clinical management, investigation and reporting to the investigator and FDA. These are scoped recommendations, not universal early-release criteria for every cell product.",
+        "FDA's CAR T-cell examples distinguish activity against each target in a multi-antigen product, production of an added cytokine and a drug-resistance function. Each relevant transgene activity may need suitable evidence. A single expression or cell-count result is not the complete functional package.",
+        "In a fictional 100-cell teaching sample, 80 cells are live and 60 of those live cells express the receptor. Viability is 80/100, receptor positivity among live cells is 60/80, and live receptor-positive cells among all counted cells are 60/100. Receptor status of the nonlive cells is unspecified. These different denominators establish neither potency nor a clinical release cutoff.",
+        "Scope boundary with general release records. This record owns release and potency testing of cell and gene products. General lot disposition, out-of-specification handling and good manufacturing practice are taught in the batch release and good manufacturing practice records; decaying radiopharmaceuticals are in radiopharmaceutical quality and release.",
+        "Potency is relevant biological activity under defined conditions. FDA's November 2026 guidance aims for every released lot to have the ability to achieve the intended therapeutic effect and expects the relationship between a measured attribute and the product's mechanism of action to be supported by characterisation, nonclinical or clinical studies; where the mechanism is not fully understood, a statistical relationship such as a correlation with outcomes may help. Identity, receptor expression and viability do not establish activity.",
+        "Direct and surrogate measures. A direct biological assay measures activity such as target-cell killing; a surrogate measures a related attribute and needs a supported link to function. FDA's January 2011 potency guidance (now superseded) used the term assay matrix for complementary tests. The 2026 guidance recommends developing multiple assays that measure potency-related CQAs early, with redundant assays discontinued later. Many unrelated measurements do not add up to potency.",
+        "Controls, reference material and handling state. Potency protocols should set predefined sample and system suitability criteria, and a run should be invalidated if system suitability fails. Reference material lots should be qualified and monitored for stability. Release assays must use a sample taken after all manufacturing steps that may affect potency, with cryopreservation named as an example, so a test on fresh material does not stand for the final product.",
+        "Reading a killing result. A figure such as 60 per cent killing is not comparable between laboratories unless target identity, effector-to-target ratio and observation time are stated, and relative potency needs a named reference and model. FDA's CAR T guidance describes orthogonal methods such as a cell-killing assay, transduction efficiency and cytokine measurement. No universal passing cutoff applies across products.",
+        "Validation is about the assay, not the drug. The 2026 guidance asks that release assays measure potency with sufficient specificity, accuracy or precision over their reportable range, that performance be established under actual conditions of use, and that phase-appropriate acceptance criteria be set with failing lots rejected. Qualification and validation do not show that a drug improves a clinical endpoint.",
+        "Different questions. Sterility and potency are separate attributes with separate tests, and a passing potency result is a quality finding, not a clinical response rate. Inference lesson: a lot with high viability and receptor expression whose target-specific killing falls below its predefined criterion is not rescued by the two passing tests, and the failure is investigated under the controlled process."
+      ],
+      "principle": "Product-relevant biological activity is measured with suitable methods, controls and acceptance criteria for the product and its development stage.",
+      "strengths": [
+        "Patient safety",
+        "Regulatory clarity"
+      ],
+      "limitations": [
+        "Representative sampling can be difficult for some products",
+        "Laboratory activity does not establish patient benefit",
+        "Destructive assays consume sample material"
+      ]
+    },
+    {
+      "id": "analytical-vs-clinical-validation",
+      "kind": "term",
+      "name": "Analytical versus clinical validation",
+      "aka": [
+        "analytical validation",
+        "clinical validation",
+        "analytical validity",
+        "clinical validity",
+        "clinical utility",
+        "validation of a biomarker test"
+      ],
+      "tldr": "Analytical validity concerns whether a test measures reliably. Clinical validity concerns what its result means for a condition or outcome. Clinical utility concerns using that information for a decision.",
+      "summary": "Analytical validity, clinical validity and clinical utility address different questions for a specified assay, specimen, population and intended use. MedlinePlus Genetics distinguishes detection of a genetic variant, its relationship to disease presence or risk, and whether the information helps diagnosis, treatment, management or prevention. Reliable measurement does not by itself establish clinical meaning, and an outcome association does not establish benefit from changing care. For a prediction model, reproducibility of fixed-input output, discrimination, calibrated probabilities and the consequences of model-guided decisions also require distinct evidence. These are related questions rather than a universal sequence that guarantees a useful test.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Biomarker_(medicine)",
+      "links": [
+        {
+          "label": "FDA: Software as a Medical Device (SaMD)",
+          "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Biomarker_(medicine)"
+        },
+        {
+          "label": "MedlinePlus Genetics: analytical validity, clinical validity and utility",
+          "url": "https://medlineplus.gov/genetics/understanding/testing/validtest/"
+        },
+        {
+          "label": "Jennings et al.: AMP/CAP somatic sequencing-panel validation recommendations (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+        },
+        {
+          "label": "FDA: companion diagnostics and specified treatment uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "FDA: understanding unapproved use of approved drugs",
+          "url": "https://www.fda.gov/understanding-unapproved-use-approved-drugs-label"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "external-validation",
+        "calibration",
+        "samd",
+        "biomarker"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Start a claim worksheet with the population and treatment setting, specimen and method version, measured or predicted outcome, time horizon and proposed decision. A molecule measurement, drug ranking in a dish and outcome prediction from earlier patients are different claims. For risk, retain whether the estimate assumes usual care or no treatment; for a drug experiment, retain the drug, dose and combination. Leave unavailable details unknown. Then separate the tested material and quality, biological interpretation and alternatives, prediction, proposed action and evidence of benefit. Mark each measured, inferred, proposed or unknown. A sound measurement does not automatically support the later steps.",
+        "Consider a fictional report that calls a protein-rich stored tumour a Drug A responder. Its study related protein abundance to shrinkage among people all receiving Drug A for advanced Cancer X. The measurement and response association can be useful, but there is no untreated or alternative-treatment comparison establishing greater benefit from A. Applying it after surgery also changes the setting. Ask what comparison shows improved outcomes from choosing A with this result in the proposed setting. Confirmation of protein abundance answers whether that signal is real, while postoperative benefit remains a separate question. A favourable prognostic result does not itself justify omitting standard treatment.",
+        "An evidence card records population, stage, treatment context and selection; specimen, handling, assay version and quality criteria; the reference condition or care comparator and its limitations; outcome and measurement time; the analysis plan, all tuning and independent evaluation; failed samples, dropout and missing outcomes; and sample size, intervals and remaining uncertainty. A response endpoint is not recurrence or survival. A preclinical card names the actual model and tested claim; an observational clinical association retains possible confounding. Neither alone establishes that the proposed clinical action helps. A headline metric also needs the consequences of false positive and false negative calls attached to the action. Distinguish prespecified analyses from exploratory searches, keep their tuning history, and seek confirmation that does not reuse the search. State whether a treatment-study denominator includes everyone assigned, only those treated or only those evaluable.",
+        "For analytical performance, request the detection limit with its target level, input amount, specimen and detection probability; precision within runs and across days, operators, instruments and reagent lots; agreement with an appropriate independent reference; attempted-sample failure rate and reasons; and specimen handling, preservation and interference testing. The 2017 AMP/CAP recommendations concern next-generation sequencing panels for somatic variants. They ask for performance by variant class and relevant reference materials, depth and sample numbers. They describe a lower detection limit at which 95 per cent of samples are reliably detected, but also explain why observing 19 or 20 successes in 20 trials does not by itself establish that reliability with confidence. This is an assay-specific example, not a universal validation protocol. Fresh and delayed specimens can differ, and measurement variation must be understood before interpreting a trend. Self-agreement alone does not establish accuracy.",
+        "Put the decision before ordering. Write what positive, negative, uncertain and failed results would change, including proposed treatment omission, confirmation or another sample. Compare existing pathology and other tests, and record the decision deadline, finite tissue, time, travel, uncertainty and financial burden. Name who interprets the result, who owns the clinical recommendation and when further testing is unlikely to help that decision. A result arriving after the decision closes may not serve its intended use. The worksheet exposes assumptions rather than calculating a treatment choice; urgency does not establish validity.",
+        "In the fictional postoperative protein-test case, possible next steps are checking the actual companion-diagnostic requirement and whether this assay meets it, inspecting the Drug A evidence, considering a trial of the relevant strategy, or declining a tissue-consuming test that would not change the decision. The exact laboratory, service, version and intended use matter. A research-use label, laboratory certification, development designation or report drug list cannot replace the claim-specific evidence. A companion test is tied to specified treatment use. Clinician-led off-label use, access, payment and suitability are additional questions, not promises made by a molecular report. Fast-track and breakthrough-therapy designations are not marketing approval; accelerated approval is a distinct approval pathway, not just a development designation.",
+        "Research can have a defined value without selecting treatment: checking a mechanism, explaining discordant assays or generating a future hypothesis. Name the reviewer and what would count as a useful answer rather than extending an endless chain of tests. Attribute unpublished company data and state which methods and results were available to inspect; unavailable evidence does not prove the claim false. In a fictional high/low recurrence-risk test for which neither answer changes recommended care and no relevant study is open, the immediate value for that treatment decision is limited. A separate research or personal-information goal should be weighed against burden, uncertainty and alternatives. A changed treatment decision is not itself demonstrated benefit and can add unnecessary treatment.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/clinical-vs-analytical-validation."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    }
+  ]
+}

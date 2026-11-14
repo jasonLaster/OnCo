@@ -1,0 +1,34 @@
+{
+  "proposals": [
+    {
+      "id": "SB22-P01",
+      "recordId": "manufacturing-process-comparability",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "field": "notes",
+      "before": [
+        "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy. First describe what changed and which properties it might alter, then use methods able to detect those effects. FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences.",
+        "Where suitable, the same starting material can be split between the old and new process, for example one leukapheresis divided between pre-change and post-change manufacture (FDA CAR T guidance). This reduces one source of variation but does not erase all uncertainty or replace an adequate study design; healthy-donor material may be used in some studies, with patient-versus-donor differences considered.",
+        "Measurement caution. An assay change can itself create an apparent product difference, which is why FDA's potency guidance has sections on reference materials and on assay changes and transfers. The CAR T guidance asks for predefined acceptance criteria and appropriate statistical methods. A nonsignificant test alone does not establish similarity, because an insensitive comparison can miss an important difference; this is an inference from the need for predefined criteria and sensitive methods.",
+        "Q5E says the evaluation should indicate whether confirmatory nonclinical or clinical studies are appropriate. Inference lesson: if cell counts match after a medium change but a relevant T-cell subset shifts substantially, count is one attribute, so the subset, function and other plausibly affected properties must be assessed before earlier evidence is called relevant. A process bridge is not head-to-head equivalence between different therapies. FDA's July 2023 comparability guidance for cellular and gene therapy products was still labelled draft, not for implementation, on FDA's page read on 9 November 2026.",
+        "Personalisation does not give a new sequence or an edited process an automatic bridge to every earlier result. A platform may deliberately vary antigen sequence under defined controls, and each change still has to be assessed for its effect on the product."
+      ],
+      "beforeSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+      "after": [
+        "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy. First describe what changed and which properties it might alter, then use methods able to detect those effects. FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences. Attributes compared can include identity, cellular composition, biological activity, impurities and stability when the process change could affect them. The methods and acceptance criteria need to suit those attributes and the product.",
+        "Where suitable, the same starting material can be split between the old and new process, for example one leukapheresis divided between pre-change and post-change manufacture (FDA CAR T guidance). This reduces one source of variation but does not erase all uncertainty or replace an adequate study design; healthy-donor material may be used in some studies, with patient-versus-donor differences considered.",
+        "Measurement caution. An assay change can itself create an apparent product difference, which is why FDA's potency guidance has sections on reference materials and on assay changes and transfers. The CAR T guidance asks for predefined acceptance criteria and appropriate statistical methods. A nonsignificant test alone does not establish similarity, because an insensitive comparison can miss an important difference; this is an inference from the need for predefined criteria and sensitive methods.",
+        "Q5E says the evaluation should indicate whether confirmatory nonclinical or clinical studies are appropriate. Inference lesson: if cell counts match after a medium change but a relevant T-cell subset shifts substantially, count is one attribute, so the subset, function and other plausibly affected properties must be assessed before earlier evidence is called relevant. A process bridge is not head-to-head equivalence between different therapies. FDA's July 2023 comparability guidance for cellular and gene therapy products was still labelled draft, not for implementation, on FDA's page read on 9 November 2026.",
+        "Personalisation does not give a new sequence or an edited process an automatic bridge to every earlier result. A platform may deliberately vary antigen sequence under defined controls, and each change still has to be assessed for its effect on the product."
+      ],
+      "afterSha256": "9e00c5de5c8004669391004a731f6e0548eb584652aeaa8de467d5b7adacf4a2",
+      "requirements": [
+        "SB22-010"
+      ],
+      "scope": "Preserving append of the explicit schematic attribute list, conditional on relevance to the product and change. All old notes remain. No universal test battery or new clinical evidence is claimed.",
+      "applied": false
+    }
+  ],
+  "newOwners": 0
+}

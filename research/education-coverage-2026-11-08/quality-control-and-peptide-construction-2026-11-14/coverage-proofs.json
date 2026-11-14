@@ -1,0 +1,784 @@
+{
+  "sourceFirstUnits": 27,
+  "canonicalTeachingRequirements": 21,
+  "registeredRootRepresentations": 11,
+  "fullRepresentationsRequiringActualContributor": 9,
+  "actualContributorPartialRequirements": 1,
+  "proofs": [
+    {
+      "id": "SB22-001",
+      "group": "potency",
+      "requirement": "Identity or receptor expression describes a useful product attribute but does not by itself establish tested biological function.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "tldr",
+          "index": null,
+          "fieldSha256": "7edafb87698b9af219dec64da1c46b9b2bbc8ac5e92707453f5cd4a8cd701576",
+          "supportingExcerpt": "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
+          "passageSha256": "bdde40067609414673d7785de0e34b23cf5ebe74b14d0f6824c8b20101d1c53f",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        },
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 8,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Potency is relevant biological activity under defined conditions. FDA's November 2026 guidance aims for every released lot to have the ability to achieve the intended therapeutic effect and expects the relationship between a measured attribute and the product's mechanism of action to be supported by characterisation, nonclinical or clinical studies; where the mechanism is not fully understood, a statistical relationship such as a correlation with outcomes may help. Identity, receptor expression and viability do not establish activity.",
+          "passageSha256": "51789e353768cac78cfbc7069aefc2fbcf9e8623348c8a0412167fced624d859",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "The current root separates identity/viability from product-relevant activity. Current FDA 2026 scope and the historical 2011 activity discussion are not a claim of clinical effectiveness.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-002",
+      "group": "potency",
+      "requirement": "A product-relevant activity comparison needs defined product-plus-target and target-only conditions, background and response controls.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 10,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Controls, reference material and handling state. Potency protocols should set predefined sample and system suitability criteria, and a run should be invalidated if system suitability fails. Reference material lots should be qualified and monitored for stability. Release assays must use a sample taken after all manufacturing steps that may affect potency, with cryopreservation named as an example, so a test on fresh material does not stand for the final product.",
+          "passageSha256": "ab99f6cb1818f10a1fd55832ca13e6903131fcc982cdf618d73bd9ae4bea13e6",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        },
+        {
+          "recordId": "immune-cytotoxicity-assays",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+          "supportingExcerpt": "Method card, what it measures: whether specified effector cells cause death of specified target cells under controlled laboratory conditions, at a stated effector-to-target ratio and time. Readouts: flow cytometry that separates labelled targets from effectors and uses death-associated staining, release assays, or imaging over time. A fall in a metabolic or growth signal can reflect slowed growth and not death, so it needs validation as evidence of killing. Controls: target-only survival wells, effector identification and viability, a positive-control response, irrelevant or antigen-negative targets and suitable antigen or presentation perturbations, plus maximum release where relevant. Failure modes: high spontaneous death, mistaken target identity, aggregates, dye transfer, artificial loading, mismatched ratios or a readout that mainly measures growth.",
+          "passageSha256": "c3cdee1ff60ba8ba08e2a558c30c98455e9a4e1e3e74ea3e1d52a20704cb1491",
+          "recordSha256": "d3964404abfa98ebab76e724525774f84b84c9b3f1a77d48fd1fd36601980087"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "The root names suitability controls; complete target-only/background/response control detail depends on the actual unmerged cytotoxicity owner. The diagram supplies symbolic comparisons, not measured activity.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-003",
+      "group": "potency",
+      "requirement": "A surrogate measurement needs evidence linking it to the relevant biological activity; quantity or expression alone does not supply that link.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 9,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Direct and surrogate measures. A direct biological assay measures activity such as target-cell killing; a surrogate measures a related attribute and needs a supported link to function. FDA's January 2011 potency guidance (now superseded) used the term assay matrix for complementary tests. The 2026 guidance recommends developing multiple assays that measure potency-related CQAs early, with redundant assays discontinued later. Many unrelated measurements do not add up to potency.",
+          "passageSha256": "05f5b7d8415262b0d629ff88375645ff8041710aa092d91c0a59693a9c6acd25",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "The historical 2011 guidance supports a surrogate linked to relevant activity and complementary assays. The current root explicitly marks that guidance superseded and distinguishes the 2026 approach.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-004",
+      "group": "potency",
+      "requirement": "Controlled activity does not establish tissue access, safety, persistence or patient benefit; those need relevant evidence.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "summary",
+          "index": null,
+          "fieldSha256": "f793812332054c6733483f732c39f785050a186bfb8dd50317d9ad30f0ca1ca5",
+          "supportingExcerpt": "Passing a release specification is distinct from estimating clinical benefit in a patient.",
+          "passageSha256": "0019f52ab6e0c60aa453cffa94e5c6e3ef5378ee694a7e0828f1b7ad4db4c379",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        },
+        {
+          "recordId": "immune-cytotoxicity-assays",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 2,
+          "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+          "supportingExcerpt": "Model-specific killing does not show trafficking, persistence, healthy-tissue safety or patient benefit.",
+          "passageSha256": "dc7464f32fa51667cec081d22923bed706dc343e26bdc984ff236f9236919e63",
+          "recordSha256": "d3964404abfa98ebab76e724525774f84b84c9b3f1a77d48fd1fd36601980087"
+        },
+        {
+          "recordId": "analytical-vs-clinical-validation",
+          "version": "proposal-support-bodies-22-root",
+          "field": "summary",
+          "index": null,
+          "fieldSha256": "14031dcd9ca3c74074e5caf65da96f8ac12adbb62871dffe4b7ed8f30e6008bc",
+          "supportingExcerpt": "Reliable measurement does not by itself establish clinical meaning, and an outcome association does not establish benefit from changing care.",
+          "passageSha256": "194b9e543f6d329636d7b75590e5f8f708fa83fa37b6025fdacae05f3029d1b0",
+          "recordSha256": "9a29dca86528a9fa2217cddd1475c11674c8f5ed65965f0f54950bbab942422e"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "The root distinguishes release from benefit. The complete trafficking, persistence and healthy-tissue boundary also uses an actual unmerged assay-owner field; no patient prediction is credited.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-005",
+      "group": "potency",
+      "requirement": "Potency interpretation and release criteria are product-specific, under stated conditions and references, with no universal passing cutoff implied.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 11,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Reading a killing result. A figure such as 60 per cent killing is not comparable between laboratories unless target identity, effector-to-target ratio and observation time are stated, and relative potency needs a named reference and model. FDA's CAR T guidance describes orthogonal methods such as a cell-killing assay, transduction efficiency and cytokine measurement. No universal passing cutoff applies across products.",
+          "passageSha256": "9a6477674818149dc9898a244313f2d830b7c4ceef4099978bfdd26821198837",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        },
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 12,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Validation is about the assay, not the drug. The 2026 guidance asks that release assays measure potency with sufficient specificity, accuracy or precision over their reportable range, that performance be established under actual conditions of use, and that phase-appropriate acceptance criteria be set with failing lots rejected. Qualification and validation do not show that a drug improves a clinical endpoint.",
+          "passageSha256": "3e521bcdddfae1bc494934ab18af58808b82765110171e0a3e92862d826ed4f3",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "FDA 2026 distinguishes licensed from investigational contexts and phase-appropriate controls/criteria. The fixed 60-percent example in the root is an interpretation warning, not a cutoff.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-006",
+      "group": "potency",
+      "requirement": "In the fictional high-viability/receptor-positive lot, passing identity and viability cannot cancel a failed product-relevant activity criterion or authorize administration.",
+      "kind": "fictional-inference",
+      "evidence": [
+        {
+          "recordId": "cell-therapy-release-testing",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 13,
+          "fieldSha256": "ab301c3724daf4db3a3319c5f62c9a68376091b5a53be045a0266801e68ae425",
+          "supportingExcerpt": "Different questions. Sterility and potency are separate attributes with separate tests, and a passing potency result is a quality finding, not a clinical response rate. Inference lesson: a lot with high viability and receptor expression whose target-specific killing falls below its predefined criterion is not rescued by the two passing tests, and the failure is investigated under the controlled process.",
+          "passageSha256": "d3b02cb5cac05ae41e30f9abf0096a4153826b37a30dcbec776c469e23215c45",
+          "recordSha256": "e1a59c9300a79c592cf4573a9a0f1ac90da4ee9b6411315c5cae56438e2cdc72"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "This is an explicitly fictional controlled-quality inference, not a recommendation to administer or withhold a specific clinical lot.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-007",
+      "group": "potency",
+      "requirement": "The linked fictional two-hour example keeps 100 target events per condition and effectors outside the denominator: 40% minus 30% is 10 percentage points associated excess, not normalized lysis, individual-death causality or a patient-response prediction.",
+      "kind": "fictional-inference",
+      "evidence": [
+        {
+          "recordId": "immune-cytotoxicity-assays",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 1,
+          "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+          "supportingExcerpt": "Background arithmetic, fictional: matched wells of 100 identifiable targets show 30% death without effectors and 40% with them at the same 2-hour endpoint. Raw death is 40%, but 30% occurs without effectors, so the excess is 40 minus 30 = 10 percentage points. That excess is associated with the tested condition and does not identify which deaths the effectors caused, and calling the result 40% immune killing is not justified. A control-normalised specific-lysis formula gives a different quantity from an excess-death calculation, so the method has to be named, and a high baseline death can make the experiment unsuitable.",
+          "passageSha256": "6c0afaa429cac3a3a16d62f5f317653ce15f8f51292fe221902df0d85778900c",
+          "recordSha256": "d3964404abfa98ebab76e724525774f84b84c9b3f1a77d48fd1fd36601980087"
+        },
+        {
+          "recordId": "immune-cytotoxicity-assays",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "0a3b08bab572742f1ea6b7c9a96817633182931e1c2556936f0d07c4324d4eeb",
+          "supportingExcerpt": "Controls: target-only survival wells, effector identification and viability, a positive-control response, irrelevant or antigen-negative targets and suitable antigen or presentation perturbations, plus maximum release where relevant.",
+          "passageSha256": "6514365efc805c1de1fd7c12b7f578de7356bee1a624ca28c58071cc027cc40e",
+          "recordSha256": "d3964404abfa98ebab76e724525774f84b84c9b3f1a77d48fd1fd36601980087"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "The 100-event, two-hour, 30/40 example is fictional. Target/effector identities and denominators remain separate. The difference is 10 percentage points, not normalized lysis, individual causality or a patient response rate.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-008",
+      "group": "comparability",
+      "requirement": "Name the old and new process and properties affected by the change; a shared product or process name is not the comparison.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy. First describe what changed and which properties it might alter, then use methods able to detect those effects. FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences.",
+          "passageSha256": "e73135ae51e3a5a13826c54097df3539a1c9fc4f201995f9793bb840afa6fec9",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "Q5E describes pre/post-change assessment of relevant quality attributes and effects on safety/efficacy. Its general biological-product principles are paired with CAR-specific guidance, not generalized clinical equivalence.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-009",
+      "group": "comparability",
+      "requirement": "Where suitable, divide the same cellular starting material across old and new processes to reduce input variation without claiming all uncertainty is removed.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 1,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Where suitable, the same starting material can be split between the old and new process, for example one leukapheresis divided between pre-change and post-change manufacture (FDA CAR T guidance). This reduces one source of variation but does not erase all uncertainty or replace an adequate study design; healthy-donor material may be used in some studies, with patient-versus-donor differences considered.",
+          "passageSha256": "1fd4845c7977b7580b3c59eebcaf7d4ce925eef62ad2e599c2019531d4f41ece",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "FDA CAR 2024 PDF page22 recommends the same input where possible and explicitly discusses donor/patient variability. Splitting reduces one source of variation, not all uncertainty.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-010",
+      "group": "comparability",
+      "requirement": "Compare identity, composition, biological activity, impurities and stability with methods and criteria appropriate to the attributes at risk.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy. First describe what changed and which properties it might alter, then use methods able to detect those effects. FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences.",
+          "passageSha256": "e73135ae51e3a5a13826c54097df3539a1c9fc4f201995f9793bb840afa6fec9",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "partial",
+      "remaining": [
+        "The current comparability note lacks the explicit identity/composition/activity/impurities/stability list drawn in the figure. SB22-P01 is an exact preserving append, unapplied."
+      ],
+      "sourceScope": "The current owner describes affected properties and suitable methods but does not explicitly list all five drawn categories. Exact append SB22-P01 remains unapplied; the named list is not credited as current text.",
+      "semanticAssessment": "General assessment is present; the explicit five-category illustration list is not credited until applied.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-011",
+      "group": "comparability",
+      "requirement": "Passing routine release specifications alone does not establish full manufacturing comparability; broader sensitive characterization may be needed.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "FDA's CAR T guidance says meeting current lot-release criteria is typically insufficient to establish comparability, and Q5E notes that stability studies can reveal subtle differences.",
+          "passageSha256": "813716c3864a5fcdacdb053fdb3addbf9b60a7227e4c0c44d0b529c29061b3d5",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "Q5E PDF page11 and CAR 2024 page21 directly state the limits of routine release criteria for comparability. No universal additional test battery is invented.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-012",
+      "group": "comparability",
+      "requirement": "The bridge to earlier quality, safety and efficacy evidence is conditional; unresolved differences can require additional nonclinical or clinical evidence.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "summary",
+          "index": null,
+          "fieldSha256": "f8c8e231e2a01af1317d54bd7ede24185fcaa9ea82371203f40af1377cc238ee",
+          "supportingExcerpt": "ICH Q5E provides a framework for comparing a biological product before and after manufacturing changes. It emphasizes quality attributes and assessing whether additional nonclinical or clinical evidence is needed.",
+          "passageSha256": "b240442c093c4a819010b4c442c1003acd1f0783c816931ea44dc23eefcbffcb",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        },
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 3,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Q5E says the evaluation should indicate whether confirmatory nonclinical or clinical studies are appropriate. Inference lesson: if cell counts match after a medium change but a relevant T-cell subset shifts substantially, count is one attribute, so the subset, function and other plausibly affected properties must be assessed before earlier evidence is called relevant.",
+          "passageSha256": "995539e606129d3b2e57cc2101535301da550c3c0d0744faea4825ec35b82ce5",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "Q5E pages6 to7 give conditional outcomes and additional-evidence possibilities. CAR page21 discusses attributes affected by cytokine/process changes. This does not prescribe a universal clinical study.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-013",
+      "group": "comparability",
+      "requirement": "Comparability does not demand numeric identity and is not head-to-head clinical equivalence, statistical nonsignificance alone or automatic authorization.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Comparable does not mean identical. Q5E says comparability shows that pre-change and post-change product are highly similar and that existing knowledge predicts that any differences have no adverse impact on safety or efficacy.",
+          "passageSha256": "6ec2f2d7676f45715aeb88e45115fdd0910dbcaf6a5d40c0ddb53232c4a8b338",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        },
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 2,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Measurement caution. An assay change can itself create an apparent product difference, which is why FDA's potency guidance has sections on reference materials and on assay changes and transfers. The CAR T guidance asks for predefined acceptance criteria and appropriate statistical methods. A nonsignificant test alone does not establish similarity, because an insensitive comparison can miss an important difference; this is an inference from the need for predefined criteria and sensitive methods.",
+          "passageSha256": "6ea9e396cb99c484e480765b56999961e2d06341827b26ecbda77387a2053630",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        },
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 3,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "A process bridge is not head-to-head equivalence between different therapies.",
+          "passageSha256": "b46fb0b5c452c7119267683a62c3d3f7332a7e8f2a6390b961a0e0ca8274a984",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        },
+        {
+          "recordId": "batch-release",
+          "version": "proposal-support-bodies-22-root",
+          "field": "summary",
+          "index": null,
+          "fieldSha256": "2eb370070953c8734b4f0092885a5ae7dc8268d9dae21531a3cfe645215386dc",
+          "supportingExcerpt": "Release of a lot is a quality decision, separate from regulatory authorisation of the product, from a patient's eligibility, and from evidence of clinical benefit.",
+          "passageSha256": "2916e2c1de2a4678fe8e106782fa983d48265c9cb8a035764a2515bb01f0747c",
+          "recordSha256": "cbfcecb25c275239cd1f1a32bfa80eb942cee3a95d94c2a3a9363b766d2cdd2c"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "Comparability need not mean identity and is not head-to-head treatment equivalence. Nonsignificance is a labelled sensitivity/criteria inference. The auxiliary root release definition supplies the separate authorization boundary.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-014",
+      "group": "comparability",
+      "requirement": "In the fictional medium-change example, similar final cell counts do not settle a changed relevant T-cell subset or the relevance of earlier evidence.",
+      "kind": "fictional-inference",
+      "evidence": [
+        {
+          "recordId": "manufacturing-process-comparability",
+          "version": "draft-373",
+          "field": "notes",
+          "index": 3,
+          "fieldSha256": "ea78331d5e27e3e010bc0b293904fb7b21ecad01cbe4abdff1883660231b2aca",
+          "supportingExcerpt": "Inference lesson: if cell counts match after a medium change but a relevant T-cell subset shifts substantially, count is one attribute, so the subset, function and other plausibly affected properties must be assessed before earlier evidence is called relevant.",
+          "passageSha256": "11e2473eab618d18f4fd302dc4c1573c323012d5f775233d579f29b169938a67",
+          "recordSha256": "91fd3e24066444a4d53975969d5393691b2ca9c2593b41438778c2378790ed81"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": true,
+      "actualContributorOnly": true,
+      "status": "represented-requiring-actual-unmerged-contributor",
+      "remaining": [],
+      "sourceScope": "The medium/subset scenario is fictional and follows the affected-attribute question; similar counts alone do not settle function or the evidence bridge.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-015",
+      "group": "spps",
+      "requirement": "In the illustrated conventional approach the peptide carboxyl end stays resin-tethered while extension proceeds toward the amino end.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 4,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "The C-terminal, or carboxyl, end stays attached to the resin while additions extend the chain at its amino end.",
+          "passageSha256": "5bd7d41f65051b50b21d4cc470ab143ab4857c2d99e9644123fe0734f2229454",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "Truex reports C-terminal resin loading. The new root sentence explains the conventional carboxyl-end anchoring and amino-end growth depicted in the schematic; it supplies no atom coordinates or recipe.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-016",
+      "group": "spps",
+      "requirement": "Remove temporary terminal protection before coupling the next protected amino-acid unit; linked units are added in a controlled chemical cycle.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 0,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "Truex et al. (2020) used Fmoc-based solid-phase synthesis: the C-terminal amino acid was loaded onto a resin, the terminal protecting group was removed (Fmoc removal was followed by UV detection), the next activated protected amino acid was coupled in excess and soluble reagents were washed away, and the cycle repeated.",
+          "passageSha256": "7714801f654a2c3c96cb7a5d97fe65bc449d71e378c59461f3b28a8d41002db4",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "Ten selected Truex body paragraphs, including the conventional loading/cycling/cleavage methods, are read. Parameters are not copied into the new teaching text and do not become universal conditions.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-017",
+      "group": "spps",
+      "requirement": "Washing removes soluble material while the resin tether remains; it does not repair an incorrect or incompletely reacted chain.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 1,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "Washing removes soluble material but does not repair a faulty chain.",
+          "passageSha256": "3a9b2fd4624113fe4a6c016ea2012a4412fdf958b603c0bd859600a765d69374",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 4,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "The tether stays in place through the repeated removal, coupling and washing cycle.",
+          "passageSha256": "afc673d3c31333b22a1a81e833158bfe3f9ef7c10ee9d8264e0eab4aed091b6c",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "The tether/removal explanation is a method and drawing reading rule. It does not promise that washing repairs erroneous chemistry.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-018",
+      "group": "spps",
+      "requirement": "Repeat removal, coupling and washing without inferring complete coupling, yield, universal timing or an executable synthesis recipe from the schematic.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 1,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "This study did not make every peptide equally easy.",
+          "passageSha256": "66d8b75ed02f3a3197820ca823a85ce0fcc9fd562527880181880f2ea710350f",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 2,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "The 95 per cent figure is that paper's criterion, not a clinical-release threshold.",
+          "passageSha256": "d424a42c12a561ae61b73ea438cc65b5185c9fac31483abec1982a5876f93326",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 3,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "A shorter instrument run does not establish the turnaround of the whole program.",
+          "passageSha256": "8420de74e2e1792178bbdc213e55161f959d8d9b5d7c1cb95217f9f52915aa3f",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "Abdel-Aal describes improvement for several challenging sequences; Truex distinguishes crude mass, purity and purification. Neither establishes universal yield, timing, complete coupling or a clinical release threshold.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-019",
+      "group": "spps",
+      "requirement": "Cleavage from resin and remaining protecting-group removal are separate from purification, identity/quality testing and final product release.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 4,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "Cleavage and removal of remaining protecting groups come before purification and final product release.",
+          "passageSha256": "b292572100023807384f2f3568f4fa97763afd89d059c7ced1eb84f36117e993",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 2,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "After cleavage the crude peptide is a mixture needing purification and characterisation, and the synthesiser's last step is not a release decision.",
+          "passageSha256": "e46d4f249f3c24896ee42498ae2fc26a76f706af54f2b1bd75201fffa22f615c",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "Truex paragraph45 explicitly separates resin cleavage/remaining protecting-group removal from later purification. The root now carries that distinction, without an executable procedure.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-020",
+      "group": "spps",
+      "requirement": "Sequence-dependent chain association can obstruct reactions; a tested backbone-protection approach does not make all sequences equally easy.",
+      "kind": "mechanism-or-evidence-boundary",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "summary",
+          "index": null,
+          "fieldSha256": "457bb8455bcfe51cfc78c273b0e4b1cd38ab37175036a2fb7b6b7c179f356aca",
+          "supportingExcerpt": "Sequence changes how hard this is: peptides rich in aggregation-prone sequences are difficult, and a 2014 report described automated backbone protection that improved handling, quality and yield of several challenging sequences.",
+          "passageSha256": "8337a8e68198a46ebc47f3bdbb59a26f6eb322e8bcd3a05554a48cbe9935266d",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 1,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "This study did not make every peptide equally easy.",
+          "passageSha256": "66d8b75ed02f3a3197820ca823a85ce0fcc9fd562527880181880f2ea710350f",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "The complete Abdel-Aal abstract supports sequence/aggregation-related difficulty and a tested improvement. Unquoted details such as double coupling retain their earlier scope rather than fresh full-text certification.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "SB22-021",
+      "group": "spps",
+      "requirement": "A rapid fictional synthesis with multiple chromatographic components and a correct-mass fraction does not establish a ready-to-administer vaccine, useful immune recognition or clinical benefit; assay peptide, crude material and finished product are separate.",
+      "kind": "fictional-inference",
+      "evidence": [
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 2,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "After cleavage the crude peptide is a mixture needing purification and characterisation, and the synthesiser's last step is not a release decision. In Truex et al. electrospray mass spectrometry of the unpurified products showed the desired mass as the main product for all 29 test peptides, while purity was measured separately by analytical reverse-phase HPLC at 214 nm, with greater than 95 per cent HPLC purity used as the purity criterion. In that deliberately difficult 29-peptide commercial-vendor comparison, 17 peptides were synthesised, 10 passed after purification, and 7 stayed at 89 to 94 per cent even after two or three rounds. The 95 per cent figure is that paper's criterion, not a clinical-release threshold.",
+          "passageSha256": "76035df3e4809229842f8e392b4ab7d93ce50d92ab0229045479c3c992f26ae9",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        },
+        {
+          "recordId": "peptide-synthesis-spps",
+          "version": "proposal-support-bodies-22-root",
+          "field": "notes",
+          "index": 3,
+          "fieldSha256": "19ed9e04df2b17c1f3fe3111e6c1cf74af3414a059b8cc80dd0a8fd413ae0e98",
+          "supportingExcerpt": "Assay peptides versus the clinical product. The same paper made 15 to 16-mer peptides for immune-assessment assays and longer immunising peptides of up to 30 residues for vaccination, and its authors describe clinical-grade manufacture as something they envision. Making an assay peptide does not show manufacture of a formulated, released vaccine product, and chemical assembly does not select a useful cancer antigen or show benefit. A shorter instrument run does not establish the turnaround of the whole program.",
+          "passageSha256": "ea1ac581c39daa37bcaa3388a5b27f5e7145d5cd76d2618d6c5a21d7699222b1",
+          "recordSha256": "41b1a5df12235f6aac9f56ccefc8ebae72018cb6f9c9721a3d8030f1aa18528b"
+        }
+      ],
+      "requiresActualUnmergedContributorFields": false,
+      "actualContributorOnly": false,
+      "status": "represented-in-registered-local-root",
+      "remaining": [],
+      "sourceScope": "The current real-paper crude-mixture/mass/purity example carries the same reasoning as the fictional parent scenario. An assay peptide, purified fraction and formulated released product remain different, and no immune or clinical outcome follows.",
+      "semanticAssessment": "Current exact fields carry the specified distinction at the stated model, regulatory or inference scope.",
+      "independentAcceptance": false,
+      "mainCredit": 0,
+      "liveCredit": 0
+    }
+  ],
+  "constructionChecks": [
+    {
+      "id": "SB22-C01",
+      "requirement": "Schematic colours, vial/bead shapes, ordinal panels and fictional glyph/bar quantities do not identify atomic structures, actual lots, biological scale or clinical outcomes.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "Eight complete native views preserve symbols, panel sequence and fictional aggregate glyph/bar arithmetic; none reports actual material or patient outcomes."
+    },
+    {
+      "id": "SB22-C02",
+      "requirement": "Historical PASS, authorship, source/pixel-reading, model-call, contrast, keyboard/focus and private capture claims remain documentary assertions, not fresh independent or expert acceptance.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "Private author/reviewer code, captures, model-call and screen/focus/contrast claims are not followed or accepted as approval."
+    },
+    {
+      "id": "SB22-C03",
+      "requirement": "The 2011 potency and 2023 draft references are assessed at their stated historical source-check date; current final-guidance status needs raw verification rather than a stale landing-page label.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "The actual November2026 final PDF says it supersedes January2011. The sources block records an October9 source check but front matter says source_checked2026-11-07. It still labels the2023 document draft. Both dates/status wording are retained as a pinned-page inconsistency; the raw November2026 final PDF supplies current status."
+    },
+    {
+      "id": "SB22-C04",
+      "requirement": "Pinned source/owner/brief/output hash relationships are checked separately from historical preimages, unretained code and unavailable commit claims.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "All42 frozen entries match. Seven reviewed-owner receipt instances match neither pin; the current native artifacts and briefs match. Historical preimages/body-only hashes have distinct scopes."
+    },
+    {
+      "id": "SB22-C05",
+      "requirement": "Fresh full native comparisons record the comparability vial/subtitle contact and the symbolic SPPS wash-arrow ambiguity, without site/browser, physical-device or accessibility approval.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "A comparability vial cap contacts the subtitle in both native themes. The SPPS wash arrow is schematic and can read as flow direction rather than an identified soluble molecule. These are limited native observations, not browser/accessibility verdicts."
+    },
+    {
+      "id": "SB22-C06",
+      "requirement": "The existing linked cytotoxicity example retains its own owner and asset role; the potency addition is a product-quality distinction rather than a replacement assay or extra study result.",
+      "canonicalCoverageCredit": 0,
+      "status": "checked-with-stated-limits",
+      "assessment": "The linked shared example remains in its own owner/asset roles. Three selected original sections are read and the later version differs only in generated navigation."
+    }
+  ],
+  "mainCredit": 0,
+  "liveCredit": 0
+}

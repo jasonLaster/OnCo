@@ -1,0 +1,637 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.15
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.84
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.97
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 317.21
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "fullSuiteFilesPassed": 293,
+  "fullSuiteTestsPassed": 3101,
+  "fullSuiteTestsSkipped": 2,
+  "exactReaderAnchors": {
+    "anchors": [
+      {
+        "unit": "SB23-001",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "b946bd0f079b0661928490333f71fdfacfda1d7002df1038535eaf7c99905f39",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-002",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "9c38b5deb819d641ed44cdd5de5309e68f5d67dd7be38dcab489b0bc73347a9b",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-003",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "99f91ee136fcff33b0920aa13e1ef3131baa7b9e1258950fd39626e5a2446eb9",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-003",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "9c38b5deb819d641ed44cdd5de5309e68f5d67dd7be38dcab489b0bc73347a9b",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-004",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "c60d972f55b90b65cd698f8ea5e56ec423806ed54683494d76e08793add6fd98",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-004",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "a046e59e114d706845da71510b155560e5f50cd0bb3902440c726f9fce807006",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-005",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "9c38b5deb819d641ed44cdd5de5309e68f5d67dd7be38dcab489b0bc73347a9b",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-005",
+        "recordId": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "c60d972f55b90b65cd698f8ea5e56ec423806ed54683494d76e08793add6fd98",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-006",
+        "recordId": "vein-to-vein-time",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "e38fa73cd9d870a2467d834df89975f84207131e8f3439607cf50ac23c03ec69",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-007",
+        "recordId": "vein-to-vein-time",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "e38fa73cd9d870a2467d834df89975f84207131e8f3439607cf50ac23c03ec69",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-007",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "13cebc52652a0dbdf1836a69edcf8a3fde56498e98706977feca26869281a826",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-008",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "13cebc52652a0dbdf1836a69edcf8a3fde56498e98706977feca26869281a826",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-009",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "5665dc45016e7055946ae5c4fb48fb3118983c1fadd447b4e17fb32cbc866968",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-010",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "5665dc45016e7055946ae5c4fb48fb3118983c1fadd447b4e17fb32cbc866968",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-011",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "13cebc52652a0dbdf1836a69edcf8a3fde56498e98706977feca26869281a826",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-011",
+        "recordId": "vein-to-vein-time",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "5665dc45016e7055946ae5c4fb48fb3118983c1fadd447b4e17fb32cbc866968",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-012",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "5faa810227568112f943fbe0b20a26cbdbec440dd950c8fb7a1e86c3d9d76624",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-013",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "5faa810227568112f943fbe0b20a26cbdbec440dd950c8fb7a1e86c3d9d76624",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-013",
+        "recordId": "gvhd",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "908c27f896d84a92f70c7498bae3e5c6c1c6077866f4800af3ab87ccbd979da8",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-014",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "5faa810227568112f943fbe0b20a26cbdbec440dd950c8fb7a1e86c3d9d76624",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-015",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "5faa810227568112f943fbe0b20a26cbdbec440dd950c8fb7a1e86c3d9d76624",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-016",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "5faa810227568112f943fbe0b20a26cbdbec440dd950c8fb7a1e86c3d9d76624",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-016",
+        "recordId": "in-vivo-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-017",
+        "recordId": "in-vivo-car-t",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "1446ee625f8ae1531ade6851df8a4537f7d1154463c72a5feed9c6830a41da38",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-017",
+        "recordId": "in-vivo-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageSha256": "fc678c9e68d8479241fab30f1072dcb994e9fa096e0aa7d46f840c545a717589",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-018",
+        "recordId": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "c615c9b37516c9a5862603896f39892c147d3ff02488516d29b78b8d65b7658a",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB23-018",
+        "recordId": "in-vivo-car-t",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "1d7dceafeff3b91fcc535604e0592c418b3477a51cea5f090157819f8267b43d",
+        "exactDecodedReaderContainment": true
+      }
+    ],
+    "count": 27,
+    "allPass": true,
+    "sourceURLsAllPresent": true,
+    "hostedBrowserOrHydrationCheck": false
+  },
+  "staticExports": {
+    "records": 5,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "chain-of-identity-and-custody",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vein-to-vein-time",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vein-to-vein-time",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vein-to-vein-time",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vein-to-vein-time",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "vein-to-vein-time",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "allogeneic-cell-therapy",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 14,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 15,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 16,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 17,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 18,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 19,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-vivo-car-t",
+        "field": "notes",
+        "index": 20,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gvhd",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "gvhd",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "chain-of-identity-and-custody.json",
+        "bytes": 4748,
+        "sha256": "1d4271773bfbf9c83ba512fd470a5c045e69cac3316090e13c970292913f59fd"
+      },
+      {
+        "file": "chain-of-identity-and-custody.md",
+        "bytes": 4102,
+        "sha256": "dee95f264c93b4b7a29da7d363ad647f5345b1f954d577259c420130efab1b00"
+      },
+      {
+        "file": "vein-to-vein-time.json",
+        "bytes": 5726,
+        "sha256": "5e399d77d227c2b8ee7eaab0e92b5cb1f4aea425c41c4b85298771182a5aaafb"
+      },
+      {
+        "file": "vein-to-vein-time.md",
+        "bytes": 4895,
+        "sha256": "395a9ecc6fb997ea6e0c097c88e384a662690a4c7d024a974511e8168e64e9d5"
+      },
+      {
+        "file": "allogeneic-cell-therapy.json",
+        "bytes": 19066,
+        "sha256": "49319ba99c1fca860762dd35d8d9e24629ad4637118cc7d32b13d57519076be7"
+      },
+      {
+        "file": "allogeneic-cell-therapy.md",
+        "bytes": 13855,
+        "sha256": "c4fedc200c8795c04a4d5db29d85f9fb4063bfbf890ab3a77b9597cf7db7746e"
+      },
+      {
+        "file": "in-vivo-car-t.json",
+        "bytes": 22462,
+        "sha256": "2281a7dec2e3f8e9da0972c0bd8f2d6bf92627e94ec1be1a863435b6ff044fff"
+      },
+      {
+        "file": "in-vivo-car-t.md",
+        "bytes": 19336,
+        "sha256": "878721bb581b358484f1485688758f71a9af325da24974f59d32a0d25d2deca6"
+      },
+      {
+        "file": "gvhd.json",
+        "bytes": 7413,
+        "sha256": "a98eff7b28d7d882e99e5dc47e87d43992dfb58418b95681a0e09bd0756d0994"
+      },
+      {
+        "file": "gvhd.md",
+        "bytes": 5352,
+        "sha256": "e94b31c537a2aefda3e436a96d1e3d0ddcb2410ee576b654f64ecf6f2e0ba6c4"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "totalRootMarkdownPassages": 45,
+  "exportGeneration": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 29.3
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.79
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.46
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.2
+    }
+  ],
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "newStaticAPIOpenAPIAndContextGeneration": true,
+  "summaryConsumers": {
+    "checkedCanonicalRecords": 5,
+    "fieldsChecked": [
+      "tldr",
+      "summary",
+      "name",
+      "aka",
+      "related"
+    ],
+    "allSelectedEnglishScalarSummariesTldrsNamesAliasesAndRelationsUnchanged": true,
+    "translationOrSimpleDictionaryFilesChanged": false,
+    "newCacheLoaderChecks": 0,
+    "readingScope": "The changed fields are notes, links and asOf only. Existing summary/cache source strings are byte-identical; no new translation or native-language acceptance is claimed.",
+    "independentLanguageAcceptance": false
+  },
+  "newNextProductionBuild": false,
+  "newBrowserHydrationAccessibilityAcceptance": false
+}

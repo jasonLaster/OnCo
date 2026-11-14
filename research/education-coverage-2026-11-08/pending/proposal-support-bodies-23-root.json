@@ -1,0 +1,464 @@
+{
+  "version": "proposal-support-bodies-23-root",
+  "draft": 375,
+  "committedDataHead": "d418c13c8eff980f50dc3f4437a1ba3713682abf",
+  "auditBaseCommit": "89ba5bf28b16cd97e53f48a7c45d6de124ad0546",
+  "state": "Five selected registered root objects. One existing timing owner gains two fictional teaching notes and one source link; earlier notes, links and reader scalar summaries survive. The actual contributor object remains unmodified and no final teaching requirement depends on it. Selection is not blanket source verification or new authorship.",
+  "records": [
+    {
+      "id": "chain-of-identity-and-custody",
+      "kind": "term",
+      "name": "Cell-product chain of identity and custody",
+      "aka": [
+        "cell-therapy traceability",
+        "COI and COC",
+        "chain of identity",
+        "chain of custody"
+      ],
+      "tldr": "Identity records connect cells and products to their source and intended recipient. Custody records show who held them and what happened during handoffs.",
+      "summary": "Traceability preserves relationships across source material, engineering construct, processing lots, containers, samples and intended recipients. Chain of identity and chain of custody answer different questions: what material and recipient are associated, and who had responsibility at each stage under which recorded conditions. A coded identifier makes a relationship recordable; it does not independently prove that the label, material and recipient agree.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "ICCBBA: Chain of Identity standard ST-028, version 1.1.0 (June 2025)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_0aa7a5f7202c4b43be4cc11bcd2048ef.pdf"
+        },
+        {
+          "label": "ICCBBA: single-patient collection examples IG-050, version 1.0.0 (December 2023)",
+          "url": "https://iccbba.org/wp-content/uploads/2025/08/1a7593_badfaf3c48d443f78006340096a671e0.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "apheresis",
+        "cell-therapy-orchestration-software",
+        "cell-therapy-cold-chain",
+        "car-t-manufacturing-process",
+        "allogeneic-cell-therapy"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A collection can branch into processing lots, doses or test samples. Retain parent links and construct versions so a sample result can be attributed to the material it represents. One bag need not mean one manufacturing run or one dose; an allogeneic workflow can relate donor material to later recipients according to its actual design.",
+        "ICCBBA ST-028 version 1.1.0, June 2025, describes chain-of-identity relationships and responsibilities. IG-050 version 1.0.0, December 2023, gives bounded examples in which material is returned to the same patient; it explicitly does not cover one collection manufactured into therapies for multiple patients. That example scope must not be generalised into a complete donor-bank scheme.",
+        "In a fictional single-recipient example, collection A produces lot A, which branches into doses A1 and A2 and test sample S. Each child retains the parent link. A separate custody trail records handlers, handoff times and conditions. Keeping those links does not establish acceptable quality or clinical suitability.",
+        "Barcodes, biological identity assays, HLA typing, potency results and temperature traces are different evidence. None alone replaces the complete material/intended-recipient verification. A discrepancy or excursion requires investigation and the authorised quality disposition; an audit trail is evidence to assess, not a guarantee of safety.",
+        "FDA's CAR T-cell guidance addresses documented tracking from collection to administration and independent recipient/label checks. The required process is not equivalent to purchasing a particular orchestration system. Research samples, fresh products, cryopreserved products and in vivo carriers retain their own applicable identities and handling context."
+      ],
+      "category": "Methods and models"
+    },
+    {
+      "id": "vein-to-vein-time",
+      "kind": "term",
+      "name": "Vein-to-vein time and manufacturing slots",
+      "aka": [
+        "vein-to-vein",
+        "vein to vein",
+        "manufacturing time",
+        "manufacturing slot",
+        "manufacturing slots",
+        "turnaround time",
+        "manufacturing failure",
+        "out-of-specification",
+        "OOS product",
+        "slot allocation",
+        "chain of identity",
+        "chain of custody",
+        "cryopreserved product",
+        "fresh product",
+        "manufacturing failures"
+      ],
+      "tldr": "The time from collecting a person’s cells to infusing their prepared cell product. It includes transport, testing and clinical readiness as well as manufacture.",
+      "summary": "Vein-to-vein time is the interval from collection of a person’s cells to infusion of the prepared cell product. Collection, transport, manufacture, testing, release and clinical readiness contribute to that interval; culture time alone does not describe it. The definition, starting event and analysis population should be stated when comparing programmes.\n\nFDA’s 2024 CAR T-cell guidance recommends planning for manufacturing delays or failures, reassessing eligibility before administration and analysing failure to reach treatment as a possible feasibility endpoint. A product that does not meet its release criteria and a person who becomes unable to receive treatment are different events. Neither a generic turnaround estimate nor a cross-trial waiting-time difference by itself establishes why clinical outcomes differ.",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "Mesothelin-targeting T cell receptor fusion construct cell therapy in refractory solid tumors: phase 1/2 trial interim results. (2023)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37501016/"
+        },
+        {
+          "label": "FDA: Considerations for the Development of CAR T Cell Products (January 2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: CAR T Cells, Engineering Patients’ Immune Cells",
+          "url": "https://www.cancer.gov/about-cancer/treatment/research/car-t-cells"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy, collection, laboratory expansion and clinical preparation",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "apheresis",
+        "bridging-therapy",
+        "lymphodepletion"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "closed-automated-cell-manufacturing",
+        "point-of-care-cell-manufacturing",
+        "cell-therapy-orchestration-software"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Count the pathway as well as the interval. A collection, a completed lot, a lot meeting its requirements and an infusion are different events. In the historical gavo-cel phase-I report, 48 participants underwent apheresis intending treatment, 32 were infused and 30 were response-evaluable. Those denominators describe different stages; the differences cannot all be called manufacturing failure. Delivery formats can change the process, but transport, quality decisions, clinical readiness and access still require evidence for the actual programme.",
+        "A timing comparison needs its start and end events: collection-to-infusion, order-to-infusion, enrolment-to-infusion, receipt-to-release and culture duration are different clocks. Use elapsed calendar days and state how repeat collections and the spread are handled. In a fictional workflow only, collection and culture begin on day 0, culture ends on day 7, release occurs on day 12 and infusion on day 18. The seven-day culture interval is inside an eighteen-day collection-to-infusion interval; it does not describe the whole pathway.",
+        "A separate invented cohort starts with ten people at collection: eight reach infusion and two never do. A timing summary among infused people cannot assign an infusion time to those two. Report their follow-up window, reasons and outcomes separately rather than treating every failure to reach treatment as manufacturing failure. Neither these invented dates nor a cohort median promises the next person's schedule."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "allogeneic-cell-therapy",
+      "kind": "technology",
+      "name": "Allogeneic (off-the-shelf) cell therapy",
+      "aka": [],
+      "tldr": "Allogeneic cell therapy uses cells from someone other than the recipient. A banked product may avoid collecting the recipient's cells, but treatment still requires a suitable product and clinical preparation.",
+      "summary": "Autologous cells come from the intended recipient; allogeneic cells come from another person. This source distinction is separate from whether engineering occurs outside or inside the body and from whether a cell product or a carrier is administered. Donor-cell manufacture can provide inventory for later recipients, but usable supply, quality disposition, matching requirements, preparation and clinical eligibility still govern access. Donor immune cells can attack recipient tissues, while the recipient's immune system can reject donor cells. The relevant mechanisms depend on cell type, construct, edits, conditioning and setting.",
+      "status": "emerging",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Depil et al., 'Off-the-shelf' allogeneic CAR T cells: development and challenges (Nature Reviews Drug Discovery 2020)",
+          "url": "https://doi.org/10.1038/s41573-019-0051-2"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Qasim et al., 2017: two-infant donor CAR T-cell report",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28123068/"
+        },
+        {
+          "label": "Benjamin et al., 2020: early UCART19 child and adult cohorts",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33308471/"
+        },
+        {
+          "label": "Dupouy et al., 2022: adult CALM cellular kinetics and manufacturing context",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36970059/"
+        },
+        {
+          "label": "Chen et al., 2024: distinct edits, laboratory models and nine recipients",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38231412/"
+        },
+        {
+          "label": "ClinicalTrials.gov: NCT03229876, dated registry state differs from publication wording",
+          "url": "https://clinicaltrials.gov/study/NCT03229876"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "chain-of-identity-and-custody",
+        "cell-manufacturing-outcomes",
+        "in-vivo-car-t"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [
+        "cd70",
+        "cd19"
+      ],
+      "drugs": [],
+      "companies": [
+        "adicet-bio",
+        "allotera-therapeutics",
+        "century-therapeutics",
+        "guardian-bio",
+        "imugene",
+        "indapta-therapeutics",
+        "mendus",
+        "onk-therapeutics",
+        "orca-bio",
+        "poseida-therapeutics",
+        "captain-t-cell",
+        "tikva-allocell",
+        "senti-biosciences",
+        "zelluna",
+        "arovella-therapeutics",
+        "avencell-therapeutics",
+        "brightpath-biotherapeutics",
+        "t-maximum-pharmaceutical",
+        "edigene"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-depil-nat-rev-drug-discov"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "allogeneic-cell-banking",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "Disrupting TRAC can reduce endogenous alpha-beta T-cell receptor activity in a specified T-cell product. HLA changes address different recognition pathways. Broad loss of class I HLA can also expose cells to natural-killer-cell rejection. CD52 disruption has a distinct role in allowing an engineered product to resist an anti-CD52 conditioning antibody. These modifications are not interchangeable and are not required in every allogeneic cell type.",
+        "Qasim's 2017 report described two infants given donor CAR T cells edited at TRAC and CD52, with lymphodepletion including an anti-CD52 antibody and subsequent allogeneic transplantation. Benjamin's 2020 report combined early cohorts of seven children and fourteen adults; graft-versus-host disease, cytokine release syndrome, infections and treatment-related deaths were reported. A source or edit label does not eliminate clinical risks. These are small, uncontrolled reports, and their participant counts must not be added to later overlapping CALM analyses.",
+        "Dupouy's 2022 analysis concerns twenty-five adults in CALM, not a separate additional cohort to sum with earlier CALM recipients. Nine batches from six donors were infused. Blood transgene kinetics, flow cytometry, donor/product characteristics and conditioning exposure were examined separately. Associations between alemtuzumab exposure and expansion do not establish a randomised conditioning comparison or a universal need for deeper lymphodepletion.",
+        "Chen's 2024 report includes cell and mouse experiments plus nine treated people. Six recipients received B2M/TRAC-disrupted cells without observed in-body expansion or antitumour response; three received HLA-A/HLA-B/TRAC-disrupted cells and had early MRD-negative responses. These groups were small and differently prepared, not a randomised test of editing alone. No observed graft-versus-host disease in nine recipients is not proof of zero risk or durable benefit.",
+        "Chen's paper calls the study phase 1, whereas the captured NCT03229876 registry record has phase NA and overall status suspended, with a last posted update of 24 July 2023. This source/version discrepancy is retained; the paper is not evidence that treatment is currently available.",
+        "Persistence is a measured outcome, not a fixed property of donor origin. Blood detection differs from distribution across tissues and useful cell function; conditioning before a later transplant can end observation of a product. Availability also requires the intended source, construct version, lot, dose and recipient relationships to remain traceable."
+      ],
+      "principle": "Keep cell source, engineering location, administered material and each direction of immune recognition distinct; evaluate the actual construct and clinical cohort.",
+      "strengths": [
+        "Can manufacture and bank donor-derived cells ahead of an individual recipient's treatment",
+        "Investigates supply from a source other than the recipient's own collection"
+      ],
+      "limitations": [
+        "Gene editing does not guarantee absence of graft-versus-host disease or rejection",
+        "Conditioning, infections, toxicity and persistence require product-specific evidence",
+        "Banked inventory does not establish immediate availability, eligibility or clinical benefit"
+      ]
+    },
+    {
+      "id": "in-vivo-car-t",
+      "kind": "technology",
+      "name": "In vivo CAR-T",
+      "aka": [],
+      "tldr": "An in vivo delivery product carries receptor-encoding instructions into cells inside the body. Its dose is different from the later number and activity of engineered cells.",
+      "summary": "Targeted delivery can supply CAR-encoding instructions to cells inside the body, using formats such as a viral vector or an mRNA lipid nanoparticle. This changes where engineering happens; it does not mean the active cells are donor-derived. Delivery targeting, cancer-antigen recognition, generated-cell abundance, receptor duration and useful function are separate questions. Conditioning, repeat dosing, safety and total cost belong to a specified product and protocol rather than to the in vivo label.",
+      "status": "phase-1",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "Pfeiffer et al., In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome (EMBO Molecular Medicine 2018)",
+          "url": "https://doi.org/10.15252/emmm.201809158"
+        },
+        {
+          "label": "Rurik et al.: targeted mRNA nanoparticles in a mouse cardiac-injury model (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34990237/"
+        },
+        {
+          "label": "ClinicalTrials.gov: INT2104 phase 1 oncology design, not an outcome report",
+          "url": "https://clinicaltrials.gov/study/NCT06539338"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Hunter et al., 2025: human-cell, humanised-mouse and monkey experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40536974/"
+        },
+        {
+          "label": "In vivo generation of human CD19-CAR T cells results in B-cell depletion and signs of cytokine release syndrome. (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30224381/"
+        },
+        {
+          "label": "A targeting lentiviral vector for generation of CAR-T cells in vivo. (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41844687/"
+        },
+        {
+          "label": "Frank et al., 2020: CD3-targeted lentiviral delivery and humanised-mouse blood measurements",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33216892/"
+        }
+      ],
+      "tags": [
+        "frontier"
+      ],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "ex-vivo-cell-expansion",
+        "chain-of-identity-and-custody",
+        "targeted-lnps",
+        "lipid-nanoparticle",
+        "lentiviral-vector",
+        "aav-vector",
+        "transposon"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "abbvie",
+        "adicet-bio",
+        "capstan-therapeutics",
+        "kelonia-therapeutics",
+        "kernal-biologics",
+        "strand-therapeutics",
+        "azalea-therapeutics",
+        "stylus-medicine",
+        "vivacta-bio",
+        "utc-therapeutics",
+        "starna-therapeutics",
+        "gigamune"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pfeiffer-embo-mol-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Pfeiffer generated human CD19 CAR T cells with a CD8-targeted lentiviral vector in humanized mouse experiments. B-cell depletion and signs consistent with cytokine release syndrome were observed. This was a preclinical study, not a human clinical response report or evidence for freedom from inflammatory toxicity.",
+        "Rurik used targeted mRNA lipid nanoparticles to generate transient CAR T cells in a mouse cardiac-injury model. It demonstrates a delivery/expression approach in that setting; it does not establish cancer efficacy, human safety or an interchangeable regimen for other delivery formats.",
+        "The INT2104 registry NCT06539338 identifies a phase 1 B-cell-cancer study in the dated source check. A trial design or registry listing does not supply efficacy results, prove local slot availability or validate a platform-wide claim about conditioning.",
+        "A prepared carrier can engineer the recipient's own cells. Vector or nanoparticle dose, ongoing delivery, newly generated cells, cell proliferation and receptor persistence should be measured separately. Stopping carrier administration need not immediately end the activity of cells already engineered.",
+        "The cited preclinical results do not by themselves establish a fixed cost reduction, universal absence of lymphodepletion or automatic repeat-dose feasibility. Evaluate the actual process, monitoring and protocol rather than treating these as inherent benefits of all in vivo products.",
+        "Ex vivo describes engineering outside the body followed by administration of a cell product. In vivo engineering administers an instruction-carrying product and generates modified cells inside the body; it is not the same as testing an ex vivo product in an animal. Location, recipient versus donor origin and transient versus stable genetic fate are separate attributes.",
+        "In a fictional sampled population of 200 cells, 60 show the stated receptor measurement: 60/200 is 30% of that sampled population at that time. It does not specify a whole-body engineered-cell count, the administered carrier dose, tissue distribution, durable expression or killing. Sequence detection, expression, abundance and biological function need their own measurements.",
+        "Hunter's 2025 study used targeted mRNA nanoparticles in healthy-donor and autoimmune patient cell samples, humanised mice and cynomolgus monkeys. Tumour control in mice and B-cell depletion in monkeys are not human treatment outcomes. Quality testing of the administered carrier also cannot sample every subsequently engineered cell or tissue; relevant biodistribution, expression, kinetics and safety evidence is still needed.",
+        "Pfeiffer’s CD8-targeted lentiviral experiment used immunodeficient NSG mice engrafted with activated human blood mononuclear cells, with separate Raji-lymphoma conditions. Seven days after vector administration, CAR-positive cells represented 30 to 50 per cent of CD8-positive T cells in peritoneal fluid, 10 to 35 per cent in spleen and 5 to 30 per cent in blood; fewer than 0.5 per cent of CD8-negative T cells entered the CAR-positive gate. The appendix gates living cells through human CD45, then CD3 and CD8 before measuring CAR. Thus the CD8-negative comparison is within T cells, not every other cell in the body. Vehicle and reporter-vector controls, CD19-cell depletion and the starting target-cell population mattered. These later fractions combine delivery with survival and antigen-driven expansion; they are not pure entry efficiencies, whole-body exclusivity or human efficacy results.",
+        "A fictional 48-hour sample contains receptor expression in 60 of 200 viable T cells and five of 100 non-T cells. That is 30 per cent of T cells and five per cent of non-T cells; about 92 per cent of all expressing cells are T cells (60 of 65). None of these denominators establishes exclusive delivery. Compare matched carrier/receptor controls, antigen-positive and antigen-negative targets and relevant healthy cells. Sampling time, cell recovery and viable gates stay attached; a culture sample does not enumerate every tissue.",
+        "A carrier delivers a genetic payload. Transduction is vector-mediated gene transfer; integration places DNA in a chromosome; expression produces an encoded RNA or protein. These are different events. Follow the causal chain in separate steps: administered carrier, distribution and cell contact, entry and usable cargo release, expression in identified cells, survival or expansion and movement, then recognition and effects in tumour and healthy tissue. Fluorescent uptake need not mean useful expression, and detecting two components somewhere in a sample does not show that the same cells express both. A carrier-lot aliquot, a timed blood sample and a tissue biopsy answer different questions. Sequence copies, viable receptor-positive fractions and controlled killing cannot substitute for one another or supply a universal release threshold. A carrier name does not determine its administration route. FDA’s CAR T-cell guidance focuses on ex vivo products; its principles do not by themselves validate a release specification for an in vivo carrier.",
+        "Consider a complete fictional evidence packet, not a real therapy. Carrier P is a T-cell-directed lipid nanoparticle containing mRNA for CAR-X, which recognises extracellular epitope E on antigen X, and a separate supportive receptor R activated by trigger D. R does not add a cancer target, and P has no cell-elimination mechanism. One human T-cell donor supplies the culture work and selected human components of the mouse model. All functional experiments use lot A; lots B and C have identity data only. The matched cellular comparator uses the same carrier, CAR-X and total RNA without R, with D-present, D-absent and D-alone controls only where specified.",
+        "In the fictional packet’s mixed-cell culture at 24 hours, 1,000 sampled viable cells include 100 T cells. RNA is detected in 60 T cells and 240 other cells; surface CAR in 50 T cells and 150 others; 40 T cells express both CAR and R. Unexposed controls are negative. CAR-positive T cells are 50/100, or 50 per cent of T cells, but T cells are 50/200, or 25 per cent of all CAR-positive cells. CAR-positive cells are 200/1,000, or 20 per cent of the whole sample; dual-positive T cells are 40/100, or 40 per cent of T cells. RNA, surface protein and coexpression are different readouts, and none measures killing or body-wide distribution.",
+        "In a second fictional card, wells start with 100 target cells. At 48 hours, mean killing is 80 per cent for P with D, 55 per cent for P without D and 50 per cent for the matched CAR-X cells lacking R with or without D. Antigen-X-knockout targets and unengineered T cells with D give five per cent. The matched comparisons support an R/D-associated contribution in this donor’s assay, while the knockout and D controls test alternatives. Three wells are technical replicates from one donor, not three donors; no uncertainty interval is supplied. Tumour entry, general benefit and human safety remain different questions.",
+        "The fictional healthy-epithelial-organoid card measures survival at 48 hours with D in both arms: 90 per cent with P-generated T cells and 95 per cent with matched CAR-X cells lacking R. There are two organoid donors and one T-cell donor. The five-percentage-point difference needs uncertainty and an interpretation of harm; no acceptable threshold is supplied. It neither tests every healthy tissue nor defines a clinical safety window. Expression, binding, cell injury in culture and organ injury in people are different observations.",
+        "The fictional mouse card compares administered carrier P with empty carrier, with D in both arms and six mice per arm. One selected day-seven blood sample has 120 dual-positive cells among 200 T cells, or 60 per cent; this is not the six-mouse denominator, and two treated biopsies contain few engineered cells. Mean tumour volume is stated as 100 cubic millimetres at baseline, then 300 for P and 1,000 for control at day 28. P is 70 per cent smaller than control but three times the stated baseline: reduced growth, not regression below baseline or cure. Later follow-up, spread and causes of poor entry are missing. Without a matched CAR-X-without-R mouse arm, the comparison cannot isolate R’s contribution or establish every animal’s outcome.",
+        "Matching the fictional payload identities of lots A, B and C does not transfer lot A’s functional results to B and C. These are three lots, not three independent cell donors; potency and post-storage performance need relevant measurements. Likewise, at 24 hours after D withdrawal the fictional support signal falls from 100 to 20 relative units versus 100 with continued D, an 80 per cent signal reduction, while 90 of 100 tracked cells remain. Those are three technical wells from the same donor. The result does not demonstrate cell elimination, absent CAR recognition or reversal of injury.",
+        "The fictional packet contains no human study, so it has no clinical response or adverse-event denominator. An absent dataset is not a zero-per-cent rate, and target cells killed in culture are not people with a study-defined objective response. For each card, state the claim earned, the claim not earned and the next measurement, carrying product, specimen, comparator, donor or participant denominator, time and uncertainty. Do not fill one product’s missing evidence with another’s success. On a logarithmic axis, 100, 1,000 and 10,000 are tenfold steps rather than equal additive changes. Early human activity, comparative benefit and transfer to another product remain distinct evidence levels.",
+        "Tuerxunyiming’s 2026 work provides another model-specific example. An engineered Sindbis-envelope lentiviral system delivered a CD19 CAR in NPG mice carrying human blood mononuclear cells and Raji lymphoma. The experiment compared repeated vector administration with infusion of cells engineered in culture, using selected mice with measured human T-cell engraftment. Tumour control and CAR-positive blood fractions were different readouts; the in vivo-generated group had a lower CAR-positive fraction than the infused-cell group. These are human-cell/mouse experiments, not treatment of people or proof of exclusive delivery in every tissue.",
+        "Frank’s 2020 humanised-mouse experiment used the CD3-targeted TR66.opt lentiviral vector carrying a CD19 CAR. Figure 7 compares vector alone, vector after IL-7 pretreatment and an IL-7 control, with five or six mice per group. Its blood readout separates the human CD3-positive, CD45-positive T-cell gate from CD3-negative, CD45-positive non-T cells and CD45-negative mouse cells. Enrichment in sampled T cells is not a whole-body exclusivity test. Blood CAR expression peaked around three to four weeks and declined toward baseline after five weeks. Each animal’s CD19-positive blood-cell level was expressed relative to its own day-zero value. B-cell loss lasted longer in the IL-7-pretreated group; B cells reappeared at six weeks with vector alone. Delivery, subsequent cell expansion, receptor detection and B-cell depletion are different measurements, so their time courses need not match.",
+        "For the fictional growth example, the percentage smaller than the final control is 100 times (control endpoint minus treated endpoint) divided by the control endpoint. The fold from baseline is the treated endpoint divided by baseline. Keep these two comparisons separate: a favourable control comparison can accompany growth from baseline. These ratios require finite, non-negative volumes and positive baseline and control denominators. They are not a baseline-adjusted growth-inhibition formula or a clinical response classification. An upper input limit in a teaching calculator is a property of that exercise, not a biological threshold."
+      ],
+      "principle": "Deliver encoding instructions into a defined cell population in the body, then measure which cells are engineered, where they go, how long expression lasts and what those cells do.",
+      "strengths": [
+        "Investigates an alternative to administering cells engineered outside the body",
+        "May reduce some separate ex vivo manufacturing steps in a specified process"
+      ],
+      "limitations": [
+        "Cell targeting, off-target engineering and immune responses require measurement",
+        "Instruction dose does not specify final cell number or functional exposure",
+        "Conditioning, repeat dosing and cost are product- and protocol-specific"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "gvhd",
+      "kind": "term",
+      "name": "Graft-versus-host disease (GVHD) and graft-versus-leukaemia",
+      "aka": [
+        "GVHD",
+        "GvHD",
+        "graft-versus-host",
+        "graft-versus-host disease",
+        "acute GVHD",
+        "chronic GVHD",
+        "cGVHD",
+        "aGVHD",
+        "steroid-refractory GVHD",
+        "graft-versus-leukaemia",
+        "graft-versus-leukemia",
+        "GVL",
+        "graft-versus-tumour",
+        "GVHD prophylaxis"
+      ],
+      "tldr": "After a donor transplant, the donor's immune cells may attack the patient's skin, gut and liver (graft-versus-host disease) while also hunting down leftover leukaemia (graft-versus-leukaemia). The two effects are linked, so doctors try to keep enough of the second without too much of the first.",
+      "summary": "Acute GVHD (first 100 days: rash, diarrhoea, jaundice) affects 30-50% of recipients; chronic GVHD (skin, mouth, eyes, lungs, joints) can last years and is the main cause of late morbidity. Prophylaxis uses calcineurin inhibitors, methotrexate, post-transplant cyclophosphamide or abatacept; treatment is steroids, then ruxolitinib (REACH2/3), belumosudil, axatilimab or ibrutinib for refractory disease. Donor lymphocyte infusions deliberately provoke graft-versus-leukaemia at relapse. Allogeneic CAR-T and NK products use gene editing or donor selection to avoid GVHD, and CRS is a different, cytokine-driven phenomenon.",
+      "asOf": "2026-09-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Graft-versus-host_disease",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Graft-versus-host_disease"
+        },
+        {
+          "label": "NCCN Guidelines for Patients: Graft-Versus-Host Disease",
+          "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=63"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "allogeneic-transplant",
+        "conditioning-regimen",
+        "irae",
+        "crs",
+        "gvhd-chronic-overview",
+        "gvhd-nih-consensus-criteria",
+        "gvhd-organ-by-organ",
+        "gvhd-lung-bronchiolitis-obliterans",
+        "gvhd-prophylaxis",
+        "gvhd-ruxolitinib-steroid-refractory",
+        "gvhd-belumosudil-axatilimab-ibrutinib",
+        "gvhd-photopheresis",
+        "allo-hct-gvhd-prophylaxis"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy",
+        "rejuvenation"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "ruxolitinib",
+        "belumosudil",
+        "ibrutinib"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Treatment jargon"
+    }
+  ]
+}

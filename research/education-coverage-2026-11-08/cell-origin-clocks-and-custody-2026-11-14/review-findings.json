@@ -1,0 +1,49 @@
+{
+  "findings": [
+    {
+      "id": "SB23-F01",
+      "severity": "source-access",
+      "finding": "ICCBBA ST-028 and IG-050 both returned HTTP 403 in this pass.",
+      "disposition": "Not bypassed. FDA supports current traceability distinctions; old document-specific versions and examples are inherited without a fresh read claim."
+    },
+    {
+      "id": "SB23-F02",
+      "severity": "source-lesson-scope",
+      "finding": "The autologous/allogeneic parent describes Chen 2024 as preclinical, although the abstract includes six plus three treated people.",
+      "disposition": "Current allogeneic owner already states the laboratory/mouse and nine-person scope and limits; no new correction or study result is imported."
+    },
+    {
+      "id": "SB23-F03",
+      "severity": "source-lesson-scope",
+      "finding": "The parent generalises heavier lymphodepletion to allogeneic products.",
+      "disposition": "Current owner scopes conditioning to actual products and cohorts and expressly rejects a universal deeper-lymphodepletion inference."
+    },
+    {
+      "id": "SB23-F04",
+      "severity": "custody",
+      "finding": "Six explicit reviewed-owner hash instances match neither pinned parent body.",
+      "disposition": "Historical owner claims remain distinct from current output/brief identities; not evidence of an authorship or scientific defect."
+    },
+    {
+      "id": "SB23-F05",
+      "severity": "metadata",
+      "finding": "The vein-to-vein parent has a November 7 front-matter source-check date but an October 9 body source-check statement.",
+      "disposition": "Pinned source metadata retained; no source-date or ordinary scientific grade silently rewritten."
+    },
+    {
+      "id": "SB23-F06",
+      "severity": "legacy-not-certified",
+      "finding": "The existing GVHD record has additional incidence, timing, treatment and efficacy assertions outside the selected directional definition.",
+      "disposition": "Preserved without new certification. NCI transplant timing or rates are not used to validate those legacy assertions."
+    },
+    {
+      "id": "SB23-F07",
+      "severity": "implemented-teaching-gap",
+      "finding": "Root timing fields lacked the illustrated clocks and separate never-infused fictional cohort.",
+      "disposition": "Two connected notes add the start/end definitions, day 0/7/12/18 example, separate 10/8/2 cohort, follow-up/reasons and no individual scheduling promise. Existing notes, links and scalar summaries remain intact."
+    }
+  ],
+  "independentAcceptance": false,
+  "expertApproval": false,
+  "creatorOrModelClaimsNotCertified": true
+}

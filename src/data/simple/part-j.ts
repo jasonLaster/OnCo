@@ -473,7 +473,7 @@ export const simpleJ: Record<string, string> = {
   "intention-to-treat": "Count people in the group they were assigned to, even if treatment changed. Missing results still need careful handling.",
   "prespecified-vs-post-hoc": "Find out what was planned before the relevant results were seen, and what was explored afterwards. Useful discoveries still need an appropriate later test.",
   "subgroup-analysis": "A treatment can be studied in groups defined by age, a marker or another feature. Different-looking results do not by themselves prove different treatment effects.",
-  "statistical-significance": "Statistical significance means a result would be unlikely to arise by chance if the treatment did nothing, a threshold rather than a measure of how important it is.",
+  "statistical-significance": "A statistically significant result meets the study's chosen testing rule under its assumptions. It does not tell you how big or useful the benefit is, or the chance that a hypothesis is true.",
   "double-blind": "Blinding is whether patients and doctors know which treatment is given, with double-blind meaning neither knows and open-label meaning both do, a source of bias.",
   "single-arm": "A single-arm trial gives everyone the new drug with no comparison group, judging success by tumour shrinkage, fast but unable to show that patients live longer.",
   "external-control-arm": "An external control arm compares a single-arm trial against patients treated in the past or in registries instead of randomising, useful in rare diseases but prone to bias.",

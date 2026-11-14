@@ -294,7 +294,7 @@ export const simpleO: Record<string, string> = {
   // remaining terms
   "21st-century-cures-act": "A 2016 US law that funded the Cancer Moonshot, created a fast lane for cell and gene therapies, and made companies publish how patients can request unapproved drugs.",
   "abigail-alliance": "A 2007 US appeals court ruling that terminally ill patients have no constitutional right to buy unapproved drugs, which pushed the access movement towards new laws such as Right to Try.",
-  "absolute-benefit": "A relative benefit says the risk fell by a third, while an absolute benefit says how many people out of 100 were actually spared, which is the number that matters when weighing side effects.",
+  "absolute-benefit": "Absolute benefit is the difference in outcome chances between groups at a stated time; relative risk is their ratio. Neither measure says who benefits or settles the balance of benefit and harm.",
   "ageing-tissue-field-theory": "By middle age healthy tissues are patchworks of mutant cells, yet cancer stays rare until old age, so this view says it is the ageing tissue, not just the mutations, that lets cancer win.",
   amnog: "Germany's 2011 law lets a new medicine be sold at the company's price from day one, but within six months it must show how much better it is than the existing standard, which then sets the price.",
   "aneuploidy-theory-of-cancer": "The oldest theory of cancer says tumours arise from cells with the wrong number or arrangement of chromosomes, now seen as an accelerator of cancer evolution rather than its sole cause.",

@@ -1,0 +1,599 @@
+{
+  "newFullGateRun": false,
+  "inheritedGatesFrom": "cell-origin-clocks-and-custody-2026-11-14",
+  "inheritedGatedDataCommit": "d418c13c8eff980f50dc3f4437a1ba3713682abf",
+  "wholeGraphFingerprintsMatchGatedRuntime": true,
+  "priorGates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.15
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.84
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.97
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 317.21
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "inheritedFullSuiteFilesPassed": 293,
+  "inheritedFullSuiteTestsPassed": 3101,
+  "inheritedFullSuiteTestsSkipped": 2,
+  "freshEntitySchemaParses": 4,
+  "freshReaderCaptures": 4,
+  "exactReaderAnchors": {
+    "anchors": [
+      {
+        "unit": "SB24-001",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "9c48e79e96f571343fa92b9a25c2aff2058880f47ecf10602d3ac70de11e3aa5",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-001",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "fe7b2b92ac005a12d43ebf9fdb597b7d5ac9d617124cc00df36b80dd3fba7f90",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-002",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "20b9caa524284428b9e7b9ba81c375f5f92d25b7bcc5ea167ec0528a8cf272ac",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-003",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "20b9caa524284428b9e7b9ba81c375f5f92d25b7bcc5ea167ec0528a8cf272ac",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-004",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "20b9caa524284428b9e7b9ba81c375f5f92d25b7bcc5ea167ec0528a8cf272ac",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-004",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "9c48e79e96f571343fa92b9a25c2aff2058880f47ecf10602d3ac70de11e3aa5",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-005",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "9c48e79e96f571343fa92b9a25c2aff2058880f47ecf10602d3ac70de11e3aa5",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-005",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "20b9caa524284428b9e7b9ba81c375f5f92d25b7bcc5ea167ec0528a8cf272ac",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-006",
+        "recordId": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 1,
+        "passageSha256": "ad1aa1034e74d314c89f4b03cade6a2906c7776eac51e23850c6cd07b2f774e7",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-006",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-007",
+        "recordId": "apheresis",
+        "field": "tldr",
+        "index": null,
+        "passageSha256": "47b357e37c5518434db0e8c31dc7aab96ca1b41db7822cedb20fe06d83d2339c",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-008",
+        "recordId": "apheresis",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "99371a58abac7210dc3a53a622c6025dce5f48bae6fa2d24ddbadab5b365dca8",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-009",
+        "recordId": "apheresis",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "99371a58abac7210dc3a53a622c6025dce5f48bae6fa2d24ddbadab5b365dca8",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-009",
+        "recordId": "apheresis",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "68ea584f33ec8af0c8337a0a7578e8e662662eb4cb8c55b395f00d37fe84c655",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-010",
+        "recordId": "apheresis",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "68ea584f33ec8af0c8337a0a7578e8e662662eb4cb8c55b395f00d37fe84c655",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-011",
+        "recordId": "apheresis",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "5caa7f64da90c3bf55f888f4cdd0ffa9aa8af6eaa0038ae48aef9be9c55f2b17",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-011",
+        "recordId": "apheresis",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "bebfb697430908bed1e2bcc0f9c14d6ff84fed4ed6286682fafcba99cbbd29a9",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-012",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-013",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-014",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-015",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-016",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-017",
+        "recordId": "cell-therapy-release-testing",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "bc92ec458da30e1644e8cdbb926735e1ceebe3eff63798d83dc0cc54dc0ab463",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-017",
+        "recordId": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageSha256": "f908181307a258ee221a0af2ff208c510175c3ca9bc0e6f127294fea1900203f",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-018",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "0f7695b521a758b78c973cf2b25342393f7014afd5132f7ab158951e99639ca4",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-019",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "0f7695b521a758b78c973cf2b25342393f7014afd5132f7ab158951e99639ca4",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-020",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "0f7695b521a758b78c973cf2b25342393f7014afd5132f7ab158951e99639ca4",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-020",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 4,
+        "passageSha256": "261fca33f980ecfb5eb19d9f07835aa9f63b22fffdb7d68a72344ca77128659d",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-021",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 2,
+        "passageSha256": "0f7695b521a758b78c973cf2b25342393f7014afd5132f7ab158951e99639ca4",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-022",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "summary",
+        "index": null,
+        "passageSha256": "3fdb79f1d34cd5a5f16bab6f0b749c44bcbbc28217dc1d6faa88195581b4a8e5",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-022",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 3,
+        "passageSha256": "64f619c682317de7cf6618abd6a915ce0af06613b3b6fc608395c58ae018b765",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-023",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "principle",
+        "index": null,
+        "passageSha256": "3a024b1f64b07803b23869dc31e3b249c3b948e8a8d0c9565e6bb99e19b7d089",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-023",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 0,
+        "passageSha256": "e60d1687ac5eb819de1242066bda1401b7a6b6ff4092c433010607ac991ec927",
+        "exactDecodedReaderContainment": true
+      },
+      {
+        "unit": "SB24-023",
+        "recordId": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 5,
+        "passageSha256": "95ea55c88974e333ddbd29f3dc019d6e63a90e982a809d35dfb8a6634c13f533",
+        "exactDecodedReaderContainment": true
+      }
+    ],
+    "count": 34,
+    "allPass": true,
+    "sourceURLsAllPresent": true,
+    "hostedBrowserOrHydrationCheck": false
+  },
+  "actualExportReuse": {
+    "records": 4,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "ex-vivo-cell-expansion",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-cold-chain",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cell-therapy-release-testing",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "apheresis",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "ex-vivo-cell-expansion.json",
+        "bytes": 4347,
+        "sha256": "0e259ad6be2e72b5f5635cf29430a4e1ea4ce3f1d23af3ff7aca671c16ca6e05"
+      },
+      {
+        "file": "ex-vivo-cell-expansion.md",
+        "bytes": 3770,
+        "sha256": "a694280105b04f25d5553b6cb17fa3951cda93edc37264edf45313eae1ac8f97"
+      },
+      {
+        "file": "cell-therapy-cold-chain.json",
+        "bytes": 8052,
+        "sha256": "7a507ac56b64c9b61bfc7bf344f8981e289c890882d700125b620c724b5438b8"
+      },
+      {
+        "file": "cell-therapy-cold-chain.md",
+        "bytes": 6831,
+        "sha256": "543c3af3e4f1aee735e9acd786934739a445a0a58a1c2b39e78a62e763832be9"
+      },
+      {
+        "file": "cell-therapy-release-testing.json",
+        "bytes": 12092,
+        "sha256": "f4a97c6256b7b9fe26c3c52ea71f125783cf5907213ec715f760cfd47edd3a6b"
+      },
+      {
+        "file": "cell-therapy-release-testing.md",
+        "bytes": 10910,
+        "sha256": "8c6b4b983b5b41160f3099bb25b2bc4b9e83ce0d42a94ff4998eb344c59c7d48"
+      },
+      {
+        "file": "apheresis.json",
+        "bytes": 6024,
+        "sha256": "e2787794c921dbdb9be0d7d7078217f4f2098ec1f662e3a0711e3caf36c6215c"
+      },
+      {
+        "file": "apheresis.md",
+        "bytes": 5033,
+        "sha256": "03c658312f17aad919147c18cd6896728f57c47c1cdf537d7529a568986c57ea"
+      }
+    ],
+    "sourceGeneration": "P24 actual full API/OpenAPI/context generation reused by exact unchanged canonical/code identity",
+    "newGeneration": false,
+    "newNextProductionBuild": false
+  },
+  "canonicalOrConsumerCodeChanges": false,
+  "newNextProductionBuild": false
+}

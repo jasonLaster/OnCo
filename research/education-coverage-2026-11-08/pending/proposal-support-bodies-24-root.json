@@ -1,0 +1,328 @@
+{
+  "version": "proposal-support-bodies-24-root",
+  "draft": 375,
+  "committedDataHead": "d418c13c8eff980f50dc3f4437a1ba3713682abf",
+  "auditBaseCommit": "e5d61678ffab2df59441517734c61f63383e1124",
+  "state": "Four selected unchanged registered root objects already represent the scoped teaching. No canonical data, aliases, relationships, registrations or contributor fields change. Earlier unmapped source assertions retain their scope; selection is not new authorship or blanket certification.",
+  "records": [
+    {
+      "id": "ex-vivo-cell-expansion",
+      "kind": "term",
+      "name": "Ex vivo cell expansion",
+      "aka": [
+        "cell culture expansion",
+        "fold expansion",
+        "cell enrichment versus expansion"
+      ],
+      "tldr": "Cell expansion increases the number of a defined group of living cells outside the body. Selecting cells or activating them answers a different question.",
+      "summary": "Expansion compares absolute counts of a specified living population at stated points in a culture process. Enrichment or selection changes mixture composition, while activation changes cellular state. Measurements need a consistent cell definition, viability basis, sampling method and interval. Cell concentration can change with dilution or volume, and a higher fraction can result from losing other cells rather than producing more intended cells.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Ghassemi et al., 2018: defined culture-duration comparisons and mouse experiments",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30030295/"
+        },
+        {
+          "label": "Dupouy et al., 2022: factory expansion and adult CALM cellular kinetics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36970059/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "car-t-manufacturing-process",
+        "cell-therapy-cold-chain",
+        "cellular-kinetics-and-persistence",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional mixture, 20 million intended cells and 80 million other cells become 20 million intended and five million other cells after enrichment. The intended fraction rises from 20/100 to 20/25 without increasing the intended-cell count. In a separate culture example, 20 million viable intended cells becoming 100 million is five-fold expansion. These are invented arithmetic examples, not process-performance targets.",
+        "Culture conditions, activation, gene transfer, duration, selection and preservation can change subsets, differentiation, viability and function. A greater count does not establish equal starting-cell quality, a favourable state or greater tumour killing. Activation markers and intended biological activity require suitable separate measurements.",
+        "Ghassemi's 2018 study compared shorter and longer preparation in human CAR T-cell experiments, a mouse acute-lymphoblastic-leukaemia model and manufacturing-feasibility work. The reported culture comparison does not prove that every shorter process improves human outcomes or specify one optimal duration for all products.",
+        "Dupouy's adult CALM analysis distinguishes factory fold expansion from later blood transgene and flow-cytometry kinetics. In-body detection depends on sampling, proliferation, distribution, loss and expression. A blood copy count is not an absolute whole-body count or a direct functional assay.",
+        "Expansion can be one input to a product-specific control strategy. It does not replace identity, purity, viability, potency, contamination testing, lot disposition or clinical readiness. Manufacturing yield, culture time, collection-to-infusion time and patient benefit remain separate outcomes."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "cell-therapy-cold-chain",
+      "kind": "technology",
+      "name": "Cryopreservation and cell-therapy cold chain",
+      "aka": [],
+      "tldr": "Freezing, storage, shipping and thawing can preserve cells for later use. The validated conditions and checks belong to the particular cell product.",
+      "summary": "Cryopreservation manages cooling, water movement, ice formation, concentrated solutes and warming injury; it does not literally stop all molecular motion. Cryoprotectant formulation, exposure, freezing, storage, transport, thawing and permitted holding times form a defined process. Some materials are handled fresh. A temperature log documents conditions, while stability evidence and the quality system determine the consequences of a deviation. Neither a shipper nor a barcode guarantees viable, functional material or the correct recipient.",
+      "status": "established",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "FDA guidance: considerations for the development of CAR T cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "DailyMed: YESCARTA label captured 9 November 2026, sections 11 and 16",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9b70606e-b99c-4272-a0f1-b5523cce0c59"
+        },
+        {
+          "label": "DailyMed: KYMRIAH label captured 9 November 2026, sections 11 and 16",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aad3ba54-dfd3-4cb3-9e2b-c5ef89559189"
+        },
+        {
+          "label": "Mazur, 1963: water movement and intracellular freezing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14085017/"
+        },
+        {
+          "label": "Panch et al., 2019: scoped fresh/frozen CAR T-cell comparisons",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31178392/"
+        },
+        {
+          "label": "Wang et al., 2019: post-thaw assay conditions for one CAR T-cell preparation",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30910382/"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "apheresis-starting-material",
+        "cell-therapy-orchestration-software"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "cryoport",
+        "biolife-solutions"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The labels captured on 9 November 2026 illustrate why a single temperature or formulation is misleading. YESCARTA describes 5% DMSO with 2.5% human albumin, whereas KYMRIAH describes 7.5% (v/v) DMSO. These are particular labelled formulations, not a general recipe for other cells, research specimens, RNA or carrier products.",
+        "The captured YESCARTA section 16 distinguishes shipment at minus 150 degrees Celsius or colder from storage at minus 120 degrees or colder, and describes bounded transfers and a one-time minus 80 degrees plus or minus 10 degrees storage option for up to 90 days without exceeding expiry. Its transfer restrictions matter. KYMRIAH section 16 specifies monitored storage at minus 120 degrees or colder and its own transport provisions. Consult the complete current label and product procedures; these examples do not authorise an unlisted excursion or an improvised thaw/rest schedule.",
+        "In a fictional input of 100 million viable cells, 80 million cells are recovered after processing and 72 million of those are live. Recovered-cell viability is 72/80, or 90%, while viable recovery relative to input is 72/100, or 72%. The missing 20 million are not silently included among tested recovered cells. Neither fraction measures the intended biological activity or establishes a release threshold.",
+        "Panch's 2019 retrospective single-centre analysis covered 158 autologous CAR T-cell products from six trials and additional donor experiments. It did not detect differences in selected manufacturing or clinical measures under its tested conditions, while molecular and cellular changes were observed. This does not demonstrate universal equivalence of fresh and frozen material or interchangeability of starting-material and final-product freezing.",
+        "Wang's 2019 work concerns an in vitro post-thaw potency assay for a particular third-generation CD19 CAR T-cell preparation. Assay recovery or rest conditions are not instructions to change clinical preparation or infusion. Preserve sampling time, denominator, cell composition and intended test when comparing results.",
+        "Research banking and clinical cell-product storage have different intended uses and acceptance requirements. An excursion requires documented investigation, relevant stability evidence and a disposition by the authorised programme. Identity records, custody records, temperature logs, test samples and final-product decisions remain distinct."
+      ],
+      "principle": "Validate preservation and transport for the specified material and intended use; distinguish documented handling, recovered-cell viability, input-relative recovery and biological activity.",
+      "strengths": [
+        "Can separate collection, manufacture and administration in a validated workflow",
+        "Supports banking and transport when the particular material remains suitable under demonstrated conditions"
+      ],
+      "limitations": [
+        "Freezing, warming and cryoprotectant exposure can change cell recovery, state or function",
+        "Conditions and permitted excursions cannot be transferred between products without evidence",
+        "Traceability and temperature records do not replace quality assessment or authorised disposition"
+      ]
+    },
+    {
+      "id": "cell-therapy-release-testing",
+      "kind": "technology",
+      "name": "Cell-therapy release and potency testing",
+      "aka": [],
+      "tldr": "A cell-product lot is checked against specified quality requirements before its disposition. Identity, live-cell measures and biological activity answer different questions about that lot.",
+      "summary": "FDA's final potency-assurance guidance describes a product-specific strategy spanning manufacturing design, controls, materials, in-process testing and lot-release assays. CAR T-cell guidance separately discusses safety, identity, quality, purity and potency measurements. A viability result or marker-expression result is not automatically equivalent to a functional bioassay. Assay choice and acceptance criteria depend on the product and development context. Passing a release specification is distinct from estimating clinical benefit in a patient.",
+      "status": "established",
+      "asOf": "2026-11-14",
+      "links": [
+        {
+          "label": "FDA: Potency Assurance for Cellular and Gene Therapy Products, final guidance (November 2026)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: considerations for development of CAR T-cell products",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/considerations-development-chimeric-antigen-receptor-car-t-cell-products"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024, identity/VCN/potency sections",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "FDA: human gene-therapy IND CMC guidance, January 2020, limited-shelf-life sterility context",
+          "url": "https://www.fda.gov/media/113760/download"
+        },
+        {
+          "label": "FDA: final potency-assurance guidance, November 2026, original document",
+          "url": "https://www.fda.gov/media/196183/download"
+        },
+        {
+          "label": "Federal Register notice 2026-22427, published 3 November 2026: Potency Assurance for Cellular and Gene Therapy Products, guidance availability",
+          "url": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability"
+        },
+        {
+          "label": "FDA: Potency Assurance (December 2023 draft, historical)",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/potency-assurance-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: potency tests (January 2011, superseded; historical activity and clinical-effectiveness discussion)",
+          "url": "https://www.fda.gov/media/79856/download"
+        }
+      ],
+      "tags": [
+        "supporting"
+      ],
+      "related": [
+        "good-manufacturing-practice",
+        "batch-release"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "closed-automated-cell-manufacturing",
+        "flow-cytometry-mrd"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "charles-river",
+        "becton-dickinson"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "FDA's November 2026 final potency-assurance guidance supersedes its January 2011 potency-tests guidance. Its scope is cellular and gene therapy biological products regulated under section 351 of the U.S. Public Health Service Act. Potency assurance includes process and material controls, in-process evidence, release assays, stability and in-use handling; a release assay alone does not establish the clinical benefit of a particular lot. Federal Register notice 2026-22427, published 3 November 2026, announces the final guidance and finalises the December 2023 draft.",
+        "For CAR T cells, FDA's 2024 guidance recommends identity evidence for the transgene and intended cellular composition. HLA typing alone does not detect the genetic modification or replace chain-of-identity records. Biological identity and the association with the intended recipient are separate checks.",
+        "For an integrating-vector CAR T-cell product, the 2024 guidance describes average vector copy number per CAR-positive cell on the lot certificate of analysis. Including CAR-negative cells in the denominator can understate the value in the modified population. The average does not show insertion locations or clonal distribution. Short processes can retain non-integrated vector copies, so a release measurement may need a later assessment in cultured cells to determine stable integration; the interval is product-specific.",
+        "Replication-competent virus testing, microbial sterility, mycoplasma, endotoxin and engineered-cell identity address different hazards or attributes. The applicable tests, methods and acceptance criteria depend on the product, process and development stage. Detecting a sequence or a receptor does not demonstrate every intended biological activity.",
+        "For ex vivo genetically modified cells administered immediately after manufacture, FDA's 2020 gene-therapy CMC guidance describes an in-process sterility sample taken 48 to 72 hours before final harvest plus a rapid test such as a Gram stain on final product. Under that approach, negative Gram stain and no growth in the in-process test can support release while the final-product culture continues for its full duration, for example 14 days for USP <71>. The guidance calls for a plan addressing a later positive result, clinical management, investigation and reporting to the investigator and FDA. These are scoped recommendations, not universal early-release criteria for every cell product.",
+        "FDA's CAR T-cell examples distinguish activity against each target in a multi-antigen product, production of an added cytokine and a drug-resistance function. Each relevant transgene activity may need suitable evidence. A single expression or cell-count result is not the complete functional package.",
+        "In a fictional 100-cell teaching sample, 80 cells are live and 60 of those live cells express the receptor. Viability is 80/100, receptor positivity among live cells is 60/80, and live receptor-positive cells among all counted cells are 60/100. Receptor status of the nonlive cells is unspecified. These different denominators establish neither potency nor a clinical release cutoff.",
+        "Scope boundary with general release records. This record owns release and potency testing of cell and gene products. General lot disposition, out-of-specification handling and good manufacturing practice are taught in the batch release and good manufacturing practice records; decaying radiopharmaceuticals are in radiopharmaceutical quality and release.",
+        "Potency is relevant biological activity under defined conditions. FDA's November 2026 guidance aims for every released lot to have the ability to achieve the intended therapeutic effect and expects the relationship between a measured attribute and the product's mechanism of action to be supported by characterisation, nonclinical or clinical studies; where the mechanism is not fully understood, a statistical relationship such as a correlation with outcomes may help. Identity, receptor expression and viability do not establish activity.",
+        "Direct and surrogate measures. A direct biological assay measures activity such as target-cell killing; a surrogate measures a related attribute and needs a supported link to function. FDA's January 2011 potency guidance (now superseded) used the term assay matrix for complementary tests. The 2026 guidance recommends developing multiple assays that measure potency-related CQAs early, with redundant assays discontinued later. Many unrelated measurements do not add up to potency.",
+        "Controls, reference material and handling state. Potency protocols should set predefined sample and system suitability criteria, and a run should be invalidated if system suitability fails. Reference material lots should be qualified and monitored for stability. Release assays must use a sample taken after all manufacturing steps that may affect potency, with cryopreservation named as an example, so a test on fresh material does not stand for the final product.",
+        "Reading a killing result. A figure such as 60 per cent killing is not comparable between laboratories unless target identity, effector-to-target ratio and observation time are stated, and relative potency needs a named reference and model. FDA's CAR T guidance describes orthogonal methods such as a cell-killing assay, transduction efficiency and cytokine measurement. No universal passing cutoff applies across products.",
+        "Validation is about the assay, not the drug. The 2026 guidance asks that release assays measure potency with sufficient specificity, accuracy or precision over their reportable range, that performance be established under actual conditions of use, and that phase-appropriate acceptance criteria be set with failing lots rejected. Qualification and validation do not show that a drug improves a clinical endpoint.",
+        "Different questions. Sterility and potency are separate attributes with separate tests, and a passing potency result is a quality finding, not a clinical response rate. Inference lesson: a lot with high viability and receptor expression whose target-specific killing falls below its predefined criterion is not rescued by the two passing tests, and the failure is investigated under the controlled process."
+      ],
+      "principle": "Product-relevant biological activity is measured with suitable methods, controls and acceptance criteria for the product and its development stage.",
+      "strengths": [
+        "Patient safety",
+        "Regulatory clarity"
+      ],
+      "limitations": [
+        "Representative sampling can be difficult for some products",
+        "Laboratory activity does not establish patient benefit",
+        "Destructive assays consume sample material"
+      ]
+    },
+    {
+      "id": "apheresis",
+      "kind": "term",
+      "name": "Apheresis (leukapheresis)",
+      "aka": [
+        "leukapheresis",
+        "apheresis collection",
+        "stem cell mobilisation",
+        "stem cell collection",
+        "plerixafor mobilisation"
+      ],
+      "tldr": "Apheresis separates components from blood and returns other components to the circulation. Leukapheresis collects a white-cell-rich mixture that can be starting material for a cell therapy or research.",
+      "summary": "Leukapheresis uses an extracorporeal separation circuit to collect white-cell-rich material. A leukopak can contain lymphocytes and monocytes in variable proportions; it is not automatically a purified T-cell population or a released treatment. The collection method, intended cells and receiving programme determine the required material, measurements and handling. Collection for a cell therapy, research or a stem-cell procedure retains its own protocol rather than sharing one duration or universal preparation rule.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apheresis",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apheresis"
+        },
+        {
+          "label": "FDA: CAR T-cell development guidance, January 2024",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NIH consent library version 18: supervised leukapheresis, February 2026",
+          "url": "https://irbo.nih.gov/documents/306/2026_02_05_Consent_Library_v18.pdf"
+        },
+        {
+          "label": "NCI: different starting material for TIL and engineered T-cell therapy",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "autologous-transplant",
+        "vein-to-vein-time",
+        "lymphodepletion",
+        "chain-of-identity-and-custody",
+        "ex-vivo-cell-expansion",
+        "cell-manufacturing-outcomes",
+        "car-t-apheresis",
+        "hyperleukocytosis-leukostasis"
+      ],
+      "cancers": [],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "car-t",
+        "apheresis-starting-material"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Processed blood volume, collected bag volume, total white-cell number, viable-cell recovery and numbers or fractions of intended subsets are different measurements. A large bag or high overall white-cell count does not establish an adequate viable T-cell input. FDA's CAR T-cell guidance recommends product-development-specific starting-material acceptance criteria and discusses CD3, CD4, CD8, NK-cell, monocyte and B-cell characterisation.",
+        "Collection is supervised clinical care. Access may use peripheral veins or a central catheter. Citrate anticoagulant can lower available calcium and cause symptoms requiring monitoring or treatment; access, blood-pressure, bleeding and infection risks depend on the procedure and person. The NIH consent example is not a universal duration, risk estimate or permission to change medicines.",
+        "Prior treatment, current cell composition, collection and shipping conditions can affect the starting material. Retain source identity, time, handling, receiving acceptance and relevant samples through subsequent manufacture. A successful collection does not guarantee culture growth, a conforming final lot or eventual infusion.",
+        "Research collection and therapeutic collection can have different acceptance, consent, banking and testing requirements. Tumour-infiltrating-lymphocyte manufacture uses tumour-derived material, not simply this blood collection. Vaccines and other cell-based protocols have their own collection requirements; leukapheresis is not a universal prerequisite for vaccination.",
+        "Collection order must come from the actual research or manufacturing protocol. A need for a pretreatment baseline or a specified cell input can make timing important, but the name vaccine supplies no universal requirement to collect blood first. Engineered T-cell manufacture can use peripheral cells, whereas native tumour-infiltrating-lymphocyte treatment begins with tumour-derived lymphocytes. Those different starting materials do not establish a common collection order or validate giving resulting treatments together."
+      ],
+      "category": "Procedures"
+    }
+  ]
+}

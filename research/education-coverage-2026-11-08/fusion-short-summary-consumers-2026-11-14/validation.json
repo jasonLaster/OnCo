@@ -1,0 +1,392 @@
+{
+  "dataCommit": "4ce6d03a362e3775dc687da257017b8be33d6b7e",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.43
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.71
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.01
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.16
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2
+  },
+  "committedRuntime": {
+    "lastDataCommit": "4ce6d03a362e3775dc687da257017b8be33d6b7e",
+    "auditBaseCommit": "6b1b90833b455fbe7cffc23d99a63fb8dffd984e",
+    "graphRecords": 23091,
+    "canonicalGraphChanges": 0,
+    "allGraphFingerprintsMatchGatedRuntime": true,
+    "graphFingerprintSHA256": "0aff01ed0812b1b158563751a0750acbe604461cbe825aa7ad772328a77d1f70",
+    "allCommittedDataFilesByteIdenticalToFullGateInputs": true,
+    "changedFiles": [
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-b.ts"
+    ],
+    "loadedConsumerEntries": [
+      {
+        "language": "ar",
+        "file": "src/data/i18n/ar.ts",
+        "selectedTextSHA256": "f4387661dcb26c666175c9839f2651c1e127cce9de357878fee026994a9f886d",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "de",
+        "file": "src/data/i18n/de.ts",
+        "selectedTextSHA256": "2c4c92eb95320e128d33a564a53f0f9a9e5c7cd5f8fb0d48fc7fa158975c5566",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "es",
+        "file": "src/data/i18n/es.ts",
+        "selectedTextSHA256": "2dc960249db3953173671f33ae7c585731fc8dab75005da9d63861cc371cf94e",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "fr",
+        "file": "src/data/i18n/fr.ts",
+        "selectedTextSHA256": "8e8b7944d51d816e5363716e960423d888bcef4635024176a03c6c2febf276f0",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "hi",
+        "file": "src/data/i18n/hi.ts",
+        "selectedTextSHA256": "71cd6b0eb45cb832fe8ae1cfa870073fde813019cf82167c43b9cd0a4223ff3b",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "ja",
+        "file": "src/data/i18n/ja.ts",
+        "selectedTextSHA256": "ad19908cb9bf93b416fea1f33af7216f3abcbbb571a6c36205e5f61c627b24e2",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "pt",
+        "file": "src/data/i18n/pt.ts",
+        "selectedTextSHA256": "1a407158f3e43324c1a93c4dd2ed3fcadd471489aa8498bd285f962827d98ee1",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "selectedTextSHA256": "3f70c484e0e0562e921413a9cff708a2d1d4cf9f84b4d3dfa260786ae1d556b1",
+        "allOtherEntriesPreserved": true
+      },
+      {
+        "language": "simple",
+        "file": "src/data/simple/part-b.ts",
+        "selectedTextSHA256": "2a89b2969aeb0d070cb5fae4ebc82935271c2bcfef876c03ffc4c676a23fcb22",
+        "allOtherEntriesPreserved": true
+      }
+    ],
+    "reviewStampFileUnchanged": true,
+    "namedNativeReviews": 0,
+    "newFullGateRun": true,
+    "actualControlledSSRRetainedByExactDataAndComponentIdentity": true,
+    "staticAPIExportGenerationRerun": false,
+    "productionBuildRun": false,
+    "independentNativeLanguageAcceptance": false
+  },
+  "actualComponentChecks": {
+    "baseCommit": "6b1b90833b455fbe7cffc23d99a63fb8dffd984e",
+    "canonicalGraphRecords": 23091,
+    "canonicalGraphChanges": 0,
+    "canonicalGraphFingerprintSHA256": "0aff01ed0812b1b158563751a0750acbe604461cbe825aa7ad772328a77d1f70",
+    "changedFiles": [
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-b.ts"
+    ],
+    "changedShortEntries": 9,
+    "allOtherFileBytesAndDictionaryEntriesUnchanged": true,
+    "ordinaryEnglishColdSSRByteIdenticalToP18": true,
+    "ordinaryEnglishWarmBeforeAfterByteIdentical": true,
+    "unrelatedLazyMoleculeWarmingRecorded": true,
+    "actualControlledLayerFullReaderRenders": 18,
+    "ordinaryEnglishControlRenders": 3,
+    "actualTldrFragments": 9,
+    "actualTableSelectionAndLanguageTagsChecked": true,
+    "namedNativeReviews": 0,
+    "reviewStampsEdited": 0,
+    "languageSelectionCodeEdited": false,
+    "checks": [
+      {
+        "language": "ar",
+        "file": "src/data/i18n/ar.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "ef65044c96d990543f1a1b24c5cdc9b7e991955553c0e0f845ed48692187541a",
+        "selectedAfterValueSHA256": "f4387661dcb26c666175c9839f2651c1e127cce9de357878fee026994a9f886d",
+        "beforeHTMLSHA256": "eec033c27253dca03a065dca7012acdfe46d310d8eefa43438fc2834e02fdc9c",
+        "afterHTMLSHA256": "6d19da1bcecb0ddfd3650649d2e27c8032ca7636794a0f2ce62b71a99aeed522",
+        "actualTldrFragmentSHA256": "2d6dc0cebe6c840482c7f04cbb6452bf738e91716aa7110c7c9cf7d192c1d5ad",
+        "expectedTextOccurrences": 1,
+        "textLang": "ar",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "de",
+        "file": "src/data/i18n/de.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "ada0f160bbb2dc8e9dd88e443c2179f6fe1edb2e9e31be0303f46755f5c39f95",
+        "selectedAfterValueSHA256": "2c4c92eb95320e128d33a564a53f0f9a9e5c7cd5f8fb0d48fc7fa158975c5566",
+        "beforeHTMLSHA256": "9b6abee713ac69d9beb46631c8c255a898f6036721d6d406a550af8a1372fa62",
+        "afterHTMLSHA256": "acc1b35fe9c12fbb29f3e1abd0ef174278dd92f325f88a6310d5a9a16799bfd2",
+        "actualTldrFragmentSHA256": "0a5e9490848eabc2f7bc6312183f4dafee869b31eb96e99ebadefbc1c59f1e4a",
+        "expectedTextOccurrences": 1,
+        "textLang": "de",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "es",
+        "file": "src/data/i18n/es.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "1ef7be0afec2659a4182a108b8730d38aab9447afe12f349e0728c1d12d67189",
+        "selectedAfterValueSHA256": "2dc960249db3953173671f33ae7c585731fc8dab75005da9d63861cc371cf94e",
+        "beforeHTMLSHA256": "d05517098c195fd6666f161093544ff6011d01610afd1667a6ef98c7352a96d4",
+        "afterHTMLSHA256": "788ee5ed5353c5f52bc0d2dc1dd2b5c1bafefd81f668329c941d9f7d30d77072",
+        "actualTldrFragmentSHA256": "75b0a04eb504ddce3369ad67848fc8defa94bc6868d10507987427fa2aa42d2b",
+        "expectedTextOccurrences": 1,
+        "textLang": "es",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "fr",
+        "file": "src/data/i18n/fr.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "dc8fa54d90711db2c7e9e296119557c1d21538efbc1669677dbacb5063106a5c",
+        "selectedAfterValueSHA256": "8e8b7944d51d816e5363716e960423d888bcef4635024176a03c6c2febf276f0",
+        "beforeHTMLSHA256": "3d9240ac6243443b7adf3f6e0a3c26b9c87993d30a047e851260e0e62442b7e2",
+        "afterHTMLSHA256": "189ff0c9d2b20ae50464127dea688a36d5982b31965f7a7817270fba54795f83",
+        "actualTldrFragmentSHA256": "071d10c52ddef06a19d049f6aa39ec15210fc31c092ad951869eb03b34ddbce8",
+        "expectedTextOccurrences": 1,
+        "textLang": "fr",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "hi",
+        "file": "src/data/i18n/hi.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "bba47db4ea8990d3a7930777fa4d8bf996144d20fb47062f929b06f0adaa2987",
+        "selectedAfterValueSHA256": "71cd6b0eb45cb832fe8ae1cfa870073fde813019cf82167c43b9cd0a4223ff3b",
+        "beforeHTMLSHA256": "378c3b93faf94f2cf56620838bfbb0e0059521d9f3b3939cde4197834e6e332f",
+        "afterHTMLSHA256": "b907d09b4a13cd02633e79f4c7bc45f02920dd9ab0ff6570022b78e8407b1861",
+        "actualTldrFragmentSHA256": "feee9116a975d58aa05b2ef9cc2c3dfe458bd516e8004f7849c2da65c37b9f96",
+        "expectedTextOccurrences": 1,
+        "textLang": "hi",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "ja",
+        "file": "src/data/i18n/ja.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "0a0389db38d49639ee5b7ad1d3c5f76763c00dc06ed7be41d2d31dd097c45b27",
+        "selectedAfterValueSHA256": "ad19908cb9bf93b416fea1f33af7216f3abcbbb571a6c36205e5f61c627b24e2",
+        "beforeHTMLSHA256": "40966d198add1f14b1ce9e38cbf9526eb5f5fcc85fb15dffb2ddc2d45b23fbf0",
+        "afterHTMLSHA256": "4ec088d3f17cb0700bb0666a0eea71120a67b3b9f2e4fd5465e00cc97138e0d0",
+        "actualTldrFragmentSHA256": "8c542579847b8869943a92e93e71dc4a3600c09ee6b67111377cdda301bb2868",
+        "expectedTextOccurrences": 1,
+        "textLang": "ja",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "pt",
+        "file": "src/data/i18n/pt.ts",
+        "tableEntries": 7082,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "23f420e6861bb21ab01ea2d6edebfdd70d89f91f9a9a9fd05326e89525f8da69",
+        "selectedAfterValueSHA256": "1a407158f3e43324c1a93c4dd2ed3fcadd471489aa8498bd285f962827d98ee1",
+        "beforeHTMLSHA256": "165b6176fcbfb429b7c38199bf3c70712b5b38a180a0f66af5e1a1364a8b9610",
+        "afterHTMLSHA256": "68f35869a29479798dcfc68919d00e2d739e6b13481bf95fc59bfdf95c70fab3",
+        "actualTldrFragmentSHA256": "b7ba08660b89f53cbe138a40e5c75bf38112b1a884b4fddfcaa6a7807c4e46e6",
+        "expectedTextOccurrences": 1,
+        "textLang": "pt",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "tableEntries": 11615,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "8f576f8d34a936c41f1639da68801d4885795d93bd7f021a70460782bd0f8299",
+        "selectedAfterValueSHA256": "3f70c484e0e0562e921413a9cff708a2d1d4cf9f84b4d3dfa260786ae1d556b1",
+        "beforeHTMLSHA256": "68fc394bb87e672b04ecf6ebf9059922a8a1fa8e2479f40780fda0a79e871641",
+        "afterHTMLSHA256": "99c8adf257f9f05f56c9b9be5a090774fca803c1d4d1b5ee45951a0443a373c3",
+        "actualTldrFragmentSHA256": "bd2cc22d769d47311370dcdddfdf47ac24362c84e49103c99c9579e30a7beddc",
+        "expectedTextOccurrences": 1,
+        "textLang": "zh",
+        "reviewMarkTone": "muted",
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      },
+      {
+        "language": "simple",
+        "file": "src/data/simple/part-b.ts",
+        "tableEntries": 11452,
+        "onlyFusionEntryChanged": true,
+        "allOtherFileBytesUnchanged": true,
+        "allOtherDictionaryEntriesUnchanged": true,
+        "sourceBeforeValueSHA256": "88328911be2f0acb8f2e45a3a220928c84a2f325985b1a460799ee286dfcd94c",
+        "selectedAfterValueSHA256": "2a89b2969aeb0d070cb5fae4ebc82935271c2bcfef876c03ffc4c676a23fcb22",
+        "beforeHTMLSHA256": "e6e7b89456c3cf8c0c67f234448de7fbf114ed4bb5bc6970ab1be75cfc7b07b8",
+        "afterHTMLSHA256": "666ce278ef4ff213632e1c6a4824d69b273fad6b428722556f9e8c0b6878953b",
+        "actualTldrFragmentSHA256": "7208830c0514377f7fb1f77ede085f545c047245b70190e69178fc8cc1d2f49c",
+        "expectedTextOccurrences": 1,
+        "textLang": "en",
+        "reviewMarkTone": null,
+        "namedNativeReviews": 0,
+        "scope": "Actual EntityDetail and TldrText component SSR under an explicit in-memory saved-layer fixture after real table loading. The same isolated process restores the ordinary server default. This is not browser, hydration, deployed or native-language acceptance."
+      }
+    ]
+  },
+  "rendererBaseline": {
+    "originalColdMatchesP18": true,
+    "unrelatedWarmDifferences": 4,
+    "identifiedDifference": "Next dynamic MoleculeDrawing loads between asynchronous table reads: four related-drug placeholders become canvas elements.",
+    "sourceFile": "src/components/MoleculeThumb.tsx",
+    "sourceFileSHA256": "ff91e415f6b2c8174aea711f9ba280fbcd59e9f246036791345eab8329a79b16",
+    "allOtherColdAndWarmHTMLBytesEqual": true,
+    "comparisonCorrection": "Keep exact cold-versus-P18 check. Separately compare default English before/after dictionary values in the same warmed runtime. Do not claim a cold/warm whole-page hash invariant.",
+    "projectComponentOrTestChanged": false,
+    "actualWebGLOrBrowserRenderingVerified": false
+  },
+  "literalEdits": [
+    {
+      "file": "src/data/i18n/ar.ts",
+      "beforeSHA256": "846f9afdbbd0359f9497e1ba816b00e65ae957448b84038bf59c773c03735602",
+      "afterSHA256": "3ae4dff8f6fd7989ad31c25bb4653b27b8dd3c327ae810d9de33e52eef29410a",
+      "prefixSHA256": "42479734a3d7e0195cd17457a2b302be9ece556d824251f7f1583034ab4d5463",
+      "suffixSHA256": "984b1674d9741e5c6f1031ef011c260ffbcc21ec4a6ca32438e2b66b9cd95bd7"
+    },
+    {
+      "file": "src/data/i18n/de.ts",
+      "beforeSHA256": "99acc207a62a961c418de69cade219176c965d009a34b596da4d7503955984a5",
+      "afterSHA256": "2ba49cb74fae8f960f5c467a4e869faef92eb8297d99d1913b53fc08c76e1096",
+      "prefixSHA256": "7f74a92a5a77e4da155f132c570be4d7f2f631866683c47dfae1a7f29657d34b",
+      "suffixSHA256": "929e6bde448384165a09ed1f7b9023911c39d6e5593899e2f58ae2bfea0ac43c"
+    },
+    {
+      "file": "src/data/i18n/es.ts",
+      "beforeSHA256": "ff3280586b43d9e844e2de0fa9bb18cbd845131940e24600ed5eadc765c40511",
+      "afterSHA256": "575eee0b32bd9b882fb94aadf6b303859635a038cf424e0616fc475228c92370",
+      "prefixSHA256": "8e7a66a4c4aba2f5f92f8d4c8277cf7739dc31bf57ab3f509dba9101ec4145b8",
+      "suffixSHA256": "e207218875991d685e72a5230556ee8c341012dbb846358da9ae3e52a85a0b50"
+    },
+    {
+      "file": "src/data/i18n/fr.ts",
+      "beforeSHA256": "99d9675e668838fa775f165a3877509585e2b1f3f45243465d355725fb02b7b7",
+      "afterSHA256": "d57e99005cd2a713543b08fcbee7cde517e482d6f389d0005606357ef108b0ad",
+      "prefixSHA256": "0a17d52c3ca9e0e2eef469507ff19222c61bdb29f6502f6fe9e2fc3c93c9a48c",
+      "suffixSHA256": "465783f7ea1c070d8cb43bdef3f7608509768d0afed10445854b0315e7eac88c"
+    },
+    {
+      "file": "src/data/i18n/hi.ts",
+      "beforeSHA256": "1a63dd2c91ca46060627db1f9bf97e9ee833a574b4c2e6060d9a509c32bfec4a",
+      "afterSHA256": "b6941f9104fc8710cbd96c24d959c625cfd9d550cab4e755e6ddb4bc773f17be",
+      "prefixSHA256": "4664a0d109adae08242f3655fb1f45307c304daec3957e7a2248a0516004ad27",
+      "suffixSHA256": "0eb8603f9dd7ac51c95c1baedf8fc9e5c788087a501b24ef9bfda19f9b3a4692"
+    },
+    {
+      "file": "src/data/i18n/ja.ts",
+      "beforeSHA256": "a378f90746c4b3abc2a6488dc56f5956ad72112561b339806af7a7db62489cb4",
+      "afterSHA256": "1857adf48e1d3a99255962ea4e306579e4b22a64f173d13f2f3398256a212482",
+      "prefixSHA256": "3d5d2024e6d284d2f2500ac6df2ff2c0340a3f8fe11b27d7bf195b13d69f8c9f",
+      "suffixSHA256": "d2630bf3387526b66ceaa593d0a073df67576189f65e2ddaeb66051bd1f5db10"
+    },
+    {
+      "file": "src/data/i18n/pt.ts",
+      "beforeSHA256": "9e5a54b3c8a37907e870719b9298756a93d940feafd55c21a526e2f60c3ac46f",
+      "afterSHA256": "e2d2752a9dc536ef4cca35538b4178f2f3155cca4391974a74c0f08dba9c576d",
+      "prefixSHA256": "9a7e9548fb4e986d4255ea857feaf23003a04c1a48c67c00dbb3a427ad114e0f",
+      "suffixSHA256": "e21161e85abcea7d0779c93f26581b6e5db0d03164d1a9e586be1b83f301e29b"
+    },
+    {
+      "file": "src/data/i18n/zh.ts",
+      "beforeSHA256": "c561862790c1075a5673971bafed638956e802cff6e6bf8b7c5b026130b3cdc9",
+      "afterSHA256": "854fabcd014f4d72edf2f33f55ed684cc68d3c058cdf7bd3a8367a7f72fe0a02",
+      "prefixSHA256": "9cdb2f5332ad24b08d5279ae4cb2add41b146099baa284c054a803cc93c7f6f2",
+      "suffixSHA256": "caba2ea4b6626dff76c1135fadffcec17bf130e637db1e6d94672ef9ca9fb1b1"
+    },
+    {
+      "file": "src/data/simple/part-b.ts",
+      "beforeSHA256": "9e27b47ef6e482f623b475a3e026a258af8535f51186ea8a68f0feb93c074d38",
+      "afterSHA256": "b50bc9152936c4b274ad59d9782c2961e3e96ffbd61ed642dfeea5eab3b28469",
+      "prefixSHA256": "591f9d6a69b50e87e2c1374e765e5b1e1acc3213d768ea83a8dc36c47c330ab0",
+      "suffixSHA256": "ecf91f5b1a3e4f6ae98e068941be38774387bb4cf0c828e47d7efca82bf43823"
+    }
+  ],
+  "secretScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "a69e8a57f655e59e5e4351014f8fdc8db81a41f60dabd0a0540d97e6b6b43b24",
+    "rulesAndAllowlistsChanged": false
+  },
+  "fullSuiteFilesPassed": 293,
+  "fullSuiteTestsPassed": 3101,
+  "fullSuiteTestsSkipped": 2,
+  "scope": "Fresh complete gates on exactly nine committed data files. Actual consumer loader and controlled component checks preserve all unrelated dictionary entries, file bytes, language tags and review status. Canonical graph is byte-identical by record fingerprint. No new API/export generation, production build, browser, hydration, WebGL pixel, accessibility or native-language acceptance."
+}

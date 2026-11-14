@@ -1,0 +1,117 @@
+{
+  "inheritedSourcePacket": "scientific-authoring-bodies-18-2026-11-13/primary-sources.json",
+  "packetSHA256": "19102a267aed6a897c1c5b770afb28ef8f40cb67788c7759d8f028ee7693d133",
+  "selectedPublication": {
+    "sourceId": "med-stransky",
+    "query": "DOI:10.1038/ncomms5846",
+    "pmid": "25204415",
+    "doi": "10.1038/ncomms5846",
+    "pmcid": "PMC4175590",
+    "title": "The landscape of kinase fusions in cancer.",
+    "authors": "Stransky N, Cerami E, Schalm S, Kim JL, Lengauer C.",
+    "year": "2014",
+    "journal": null,
+    "isRetracted": null,
+    "publicationTypes": {
+      "pubType": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "abstractSHA256": "94ac5ffebccf5550a6f1d267021901baaea85dcac7e47c5ff99510af4c73c12b",
+    "identityCapture": {
+      "sourceId": "med-stransky",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038/ncomms5846&format=json&resultType=core&pageSize=10",
+      "http": "200",
+      "curlExit": 0,
+      "error": "",
+      "bytes": 5190,
+      "sha256": "52989c0a6f8d0ee4808d7dd60467b725fe8217fc5711335758cb2a5a898be4d9",
+      "privateFile": "raw-registry/med-stransky.body",
+      "retrievedAtUTC": "2026-11-14T07:58:08.572732+00:00",
+      "reuse": "Preserved initial MED response; the first parse asserted HTTP 200 for every source before the final expected-title mismatch. No new retrieval or overwrite."
+    },
+    "identityDisposition": "Exactly one MED record; resolved identifier and expected title agree, separate from claim support.",
+    "abstractReadInFull": true,
+    "wholePaperRead": false,
+    "crossrefCapture": {
+      "sourceId": "crossref-med-stransky",
+      "url": "https://api.crossref.org/works/10.1038%2Fncomms5846",
+      "http": "200",
+      "curlExit": 0,
+      "error": "",
+      "bytes": 25207,
+      "sha256": "19b9abc6708323b1f2c06c64134234715d5f5dff24bb4ee7fbddaf70008ede34",
+      "privateFile": "raw-registry/crossref-med-stransky.body",
+      "retrievedAtUTC": "2026-11-14T07:58:57.646642+00:00"
+    },
+    "crossrefTitle": [
+      "The landscape of kinase fusions in cancer"
+    ],
+    "crossrefPublished": {
+      "date-parts": [
+        [
+          2014,
+          9,
+          10
+        ]
+      ]
+    },
+    "crossrefUpdates": [],
+    "contextOnly": false,
+    "readingDepth": "Complete raw abstract; any selected body/correction paragraphs are separately enumerated."
+  },
+  "selectedBodyParagraphReceipts": [
+    {
+      "sourceId": "full-stransky-p1",
+      "sourceCaptureId": "full-stransky",
+      "paragraphIndex": 1,
+      "characters": 468,
+      "passageSHA256": "37f74d6f6d487e6104151c9b9ba865b6aad98a4f6209b289454a5d024709851e",
+      "completeSelectedParagraphRead": true,
+      "kind": "complete-selected-body-paragraph"
+    },
+    {
+      "sourceId": "full-stransky-p2",
+      "sourceCaptureId": "full-stransky",
+      "paragraphIndex": 2,
+      "characters": 449,
+      "passageSHA256": "725fff45d3c51d7ebb9dc4bcc52601e4de6177084920870fbdcf9c989169174a",
+      "completeSelectedParagraphRead": true,
+      "kind": "complete-selected-body-paragraph"
+    },
+    {
+      "sourceId": "full-stransky-p29",
+      "sourceCaptureId": "full-stransky",
+      "paragraphIndex": 29,
+      "characters": 1220,
+      "passageSHA256": "c004c431ed58391bbf02380d1284f3359c2223a09b204ebc2df1bd9607caf4b3",
+      "completeSelectedParagraphRead": true,
+      "kind": "complete-selected-body-paragraph"
+    },
+    {
+      "sourceId": "full-stransky-p38",
+      "sourceCaptureId": "full-stransky",
+      "paragraphIndex": 38,
+      "characters": 348,
+      "passageSHA256": "02a91c4b8afcad1312a42a586d17d64c99b6327c34af82633638cfc5bf786721",
+      "completeSelectedParagraphRead": true,
+      "kind": "complete-selected-body-paragraph"
+    }
+  ],
+  "sourceDepth": "P18 complete raw abstract and four selected complete Stransky body paragraphs, reused at that depth. No fresh external lookup or paper read here.",
+  "canonicalSource": {
+    "id": "gene-fusion",
+    "version": "proposal-support-bodies-18-root",
+    "dataCommit": "69470ea94ac05725f688dba666b053f2f93b5ec1",
+    "tldr": "A gene fusion joins sequences from different genes. Its RNA product, protein consequence and treatment relevance each need evidence.",
+    "tldrSHA256": "2eda8c3322a4decf0cdcc124403286ba1d9fad0ce44989f282f88f1d55ddd32c",
+    "summarySHA256": "8a27cc19be8107dafc7c91b92fff6238b4977cc4369d7ae496833d5bfe8a237c",
+    "linksSHA256": "68dac1bacdfd942b07d1ffbcd1da298f5ac043892dcd1041a7fc522264471d0a"
+  },
+  "freshPublications": 0,
+  "wholePaperReads": 0,
+  "newBiomedicalOrClinicalClaims": false,
+  "independentAcceptance": false
+}

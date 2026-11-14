@@ -1,0 +1,665 @@
+{
+  "baseCommit": "826170dfa612ce8c086ee2ceef5e7de9e006fe04",
+  "rootOwners": [
+    {
+      "id": "kaplan-meier-curve",
+      "file": "src/data/trial-design-wave.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A Kaplan-Meier curve shows the share of patients still alive (or still free of progression) at each point in time; it steps down at each event and uses everyone's follow-up even if they have not had the event yet.",
+          "beforeMissing": false,
+          "beforeSha256": "7ba5bbd5f4e5fec8a6ddeb0a0cdbd060c92aef245d57e3bfc64a3a4142f9c2f0",
+          "after": "A Kaplan-Meier curve estimates a group's probability of remaining alive or free of a specified event from a stated time origin. Events make steps; censoring ends observation without an event and changes later risk sets. It is not an individual forecast.",
+          "afterSha256": "1b1d31600d7ce52f3d028d8f4bed27cec176f56a1bbe8d7ff1ef99dda6ccb84a"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeMissing": false,
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kaplan-Meier_estimator"
+            },
+            {
+              "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+              "url": "https://www.ich.org/page/efficacy-guidelines"
+            },
+            {
+              "label": "NIST: Kaplan-Meier calculation",
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr215.htm"
+            },
+            {
+              "label": "Analysis of survival by tumor response.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6668489/"
+            },
+            {
+              "label": "Introduction to the Analysis of Survival Data in the Presence of Competing Risks.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26858290/"
+            },
+            {
+              "label": "Royston and Parmar, 2013: restricted mean survival time and nonproportional hazards",
+              "url": "https://doi.org/10.1186/1471-2288-13-152"
+            },
+            {
+              "label": "OncoGuide: kaplan-meier (pinned teaching source)",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/kaplan-meier.md"
+            },
+            {
+              "label": "Therneau, Crowson and Atkinson: multi-state models and competing risks (September 2026)",
+              "url": "https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf"
+            }
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "1da6d94b6373b5aa47b28ddcb206e2a678b8e94349cff30d584c63aaac0a2c14",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Kaplan-Meier_estimator"
+            },
+            {
+              "label": "ICH E9 and E9(R1): statistical principles for clinical trials and the estimand framework",
+              "url": "https://www.ich.org/page/efficacy-guidelines"
+            },
+            {
+              "label": "NIST: Kaplan-Meier calculation",
+              "url": "https://www.itl.nist.gov/div898/handbook/apr/section2/apr215.htm"
+            },
+            {
+              "label": "Analysis of survival by tumor response.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6668489/"
+            },
+            {
+              "label": "Introduction to the Analysis of Survival Data in the Presence of Competing Risks.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/26858290/"
+            },
+            {
+              "label": "Royston and Parmar, 2013: restricted mean survival time and nonproportional hazards",
+              "url": "https://doi.org/10.1186/1471-2288-13-152"
+            },
+            {
+              "label": "OncoGuide: kaplan-meier (pinned teaching source)",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/kaplan-meier.md"
+            },
+            {
+              "label": "Therneau, Crowson and Atkinson: multi-state models and competing risks (September 2026)",
+              "url": "https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf"
+            },
+            {
+              "label": "Yao et al., 2023: landmark-time prediction in a kidney cohort",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9824910/"
+            }
+          ],
+          "afterSha256": "af28f3e7c86d595a8703c8abd938780b8ae83d78be1cdee9c5af125291caacc5"
+        }
+      ]
+    },
+    {
+      "id": "stable-disease",
+      "file": "src/data/terms-basics.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "The tumours have neither shrunk enough to count as a response nor grown enough to count as progression. For a slow cancer or a well-tolerated drug, months of stability can be a real benefit.",
+          "beforeMissing": false,
+          "beforeSha256": "03cf9d17cab9475bf27ae62447bb2189f00b75a7a80ca06cfe73a18c328abeeb",
+          "after": "Stable disease means the assessment meets neither the response nor the progression criteria. It can include size changes and does not, by itself, show that treatment caused the stability.",
+          "afterSha256": "517ad1859756b853c88388017f68e2b3c3481e4236fe4c2138ebfe6a65b38d35"
+        },
+        {
+          "field": "summary",
+          "before": "Under RECIST, stable disease is anything between a 30% decrease and a 20% increase in the sum of target-lesion diameters, with no new lesions. It is ambiguous on its own, because an indolent tumour may be stable without any treatment, so trials report the disease control rate (responses plus stable disease) with caution and prefer to measure how long disease stays controlled. Drugs that mainly stabilise rather than shrink, such as anti-angiogenics and some hormonal agents, are judged on progression-free and overall survival rather than response.",
+          "beforeMissing": false,
+          "beforeSha256": "55d706587d678f74d35ecd9c403cd373f782f1c2fc9c8419990638a2d7f3eda9",
+          "after": "Under RECIST 1.1, stable disease for target lesions means neither sufficient shrinkage for partial response nor sufficient increase for progression. Partial response requires at least a 30% fall in the sum of target-lesion diameters from baseline. Progression requires at least a 20% rise from the smallest sum recorded on study, including baseline if that was the smallest, together with an absolute increase of at least 5 mm. These rules use different reference measurements; stable disease is not simply a fixed band around baseline.\n\nAn overall assessment also checks non-target disease and new tumour lesions. Unequivocal non-target progression or an unequivocal new tumour lesion can mean progression despite stable target-lesion measurements. The study protocol sets assessment timing and any minimum interval for counting stability. Stable disease can include growth or shrinkage and does not show by itself that treatment caused the stability. FDA's December 2018 nonbinding endpoint guidance notes that stable disease in a single-arm trial may reflect the cancer's natural history. Its duration, symptoms, quality of life and comparative treatment effects are separate questions.",
+          "afterSha256": "cfd826faf771c93873a7a5f9cbffea1c68076b532520bd0dfb47ffc127b5ae0c"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeMissing": false,
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+            }
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "17a4264d2a2b858f159dbba56aa8d787c8ec8128a39aca963cf817e4e5f95256",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+            },
+            {
+              "label": "Eisenhauer et al., 2009: RECIST 1.1",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+            },
+            {
+              "label": "RECIST 1.1: full guideline, 2009",
+              "url": "https://recist.eortc.org/recist/wp-content/uploads/sites/14/2025/12/RECISTGuidelines.pdf"
+            },
+            {
+              "label": "FDA, December 2018: clinical trial endpoints, nonbinding guidance",
+              "url": "https://www.fda.gov/media/71195/download"
+            }
+          ],
+          "afterSha256": "7ad49a433640af5e8f0167dc1eacf582f6a7e1cfe256a9429c77dfc2569028a2"
+        }
+      ]
+    },
+    {
+      "id": "surrogate-validation",
+      "file": "src/data/trial-design-wave.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "A surrogate is a measured outcome used in place of a direct clinical-benefit outcome, with evidence needed for that substitution in the intended setting. Two relationships must be separated: people with a favourable marker may have better outcomes, while treatments that improve that marker may or may not improve the outcome. The first is a prognostic association; the second concerns agreement between treatment effects across suitable randomised comparisons. A treatment can change another pathway, later disease or toxicity as well as the marker. Validation is specific to disease, treatment context and intended outcome. An early measure is not automatically validated, and regulatory acceptance in one programme does not transfer to another. “Validated” and “reasonably likely to predict benefit” carry different evidence claims. Even a pathology or imaging response does not capture every benefit and harm.",
+            "Imagine twenty fictional people grouped by whether they achieved pathological complete response, with complete event follow-up to three years. A difference in events between those groups would describe an association after response was achieved, rather than preserve a randomised treatment comparison. Across six fictional randomised trials, a different analysis would compare each trial's treatment-related gain in response with its gain in three-year event-free survival, both in percentage points. Those are different units of evidence; neither constructed example is the CTNeoBC dataset. Similarly, a fictional trial increasing complete response from 40/100 to 55/100 establishes a 15-percentage-point response difference under its definition, with uncertainty still needed. Immature survival follow-up does not supply a proven survival gain.",
+            "Pathological complete response is assessed in the surgical specimen after neoadjuvant treatment, rather than a presurgical scan or biopsy. Retain the exact definition, such as ypT0/Tis ypN0 meaning no invasive disease in breast or nodes, and how missing surgery or specimens affect denominators. CTNeoBC pooled 11,955 people from 12 trials: achieving that response was associated with event-free-survival HR 0.48 and overall-survival HR 0.36; corresponding triple-negative subgroup estimates were 0.24 and 0.16. Yet trial-level R-squared was 0.03 for event-free survival (95% interval 0.00 to 0.25) and 0.24 for overall survival (0.00 to 0.70). Conforti and colleagues' analysis of 54 trials and 32,611 participants found R-squared 0.14 (95% interval 0.00 to 0.29) for disease-free and 0.08 (0.00 to 0.22) for overall survival. R-squared here is the share of variation in the treatment effects on survival that is explained by the treatment effects on pathological complete response; 1 would be a perfect fit. Thus response can be strongly associated with outcomes among participants while remaining a weak substitute for treatment effects across trials. This fitted association is not an individually validated risk prediction. These fitted associations concern variation in treatment effects across trials, with substantial uncertainty; they are not personal prognosis models.",
+            "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims."
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "21d8d2277d4e31785974981b4f33f6f2fda9b74b97e1a13004be3bec9c987950",
+          "after": [
+            "A surrogate is a measured outcome used in place of a direct clinical-benefit outcome, with evidence needed for that substitution in the intended setting. Two relationships must be separated: people with a favourable marker may have better outcomes, while treatments that improve that marker may or may not improve the outcome. The first is a prognostic association; the second concerns agreement between treatment effects across suitable randomised comparisons. A treatment can change another pathway, later disease or toxicity as well as the marker. Validation is specific to disease, treatment context and intended outcome. An early measure is not automatically validated, and regulatory acceptance in one programme does not transfer to another. “Validated” and “reasonably likely to predict benefit” carry different evidence claims. Even a pathology or imaging response does not capture every benefit and harm.",
+            "Imagine twenty fictional people grouped by whether they achieved pathological complete response, with complete event follow-up to three years. A difference in events between those groups would describe an association after response was achieved, rather than preserve a randomised treatment comparison. Across six fictional randomised trials, a different analysis would compare each trial's treatment-related gain in response with its gain in three-year event-free survival, both in percentage points. Those are different units of evidence; neither constructed example is the CTNeoBC dataset. Similarly, a fictional trial increasing complete response from 40/100 to 55/100 establishes a 15-percentage-point response difference under its definition, with uncertainty still needed. Immature survival follow-up does not supply a proven survival gain.",
+            "Pathological complete response is assessed in the surgical specimen after neoadjuvant treatment, rather than a presurgical scan or biopsy. Retain the exact definition, such as ypT0/Tis ypN0 meaning no invasive disease in breast or nodes, and how missing surgery or specimens affect denominators. CTNeoBC pooled 11,955 people from 12 trials: achieving that response was associated with event-free-survival HR 0.48 and overall-survival HR 0.36; corresponding triple-negative subgroup estimates were 0.24 and 0.16. Yet trial-level R-squared was 0.03 for event-free survival (95% interval 0.00 to 0.25) and 0.24 for overall survival (0.00 to 0.70). Conforti and colleagues' analysis of 54 trials and 32,611 participants found R-squared 0.14 (95% interval 0.00 to 0.29) for disease-free and 0.08 (0.00 to 0.22) for overall survival. R-squared here is the share of variation in the treatment effects on survival that is explained by the treatment effects on pathological complete response; 1 would be a perfect fit. Thus response can be strongly associated with outcomes among participants while remaining a weak substitute for treatment effects across trials. This fitted association is not an individually validated risk prediction. These fitted associations concern variation in treatment effects across trials, with substantial uncertainty; they are not personal prognosis models.",
+            "A weak trial-level association does not mean no regimen can improve both endpoints. KEYNOTE-522 reported a 13.6-percentage-point pathological-response gain and subsequently event-free and overall-survival gains, each in its own analysis. One regimen's success does not validate the surrogate across regimens. For every comparison, retain population, intervention, comparator, assessment time and response uncertainty, then separately the survival event definition, starting clock and follow-up. A response association and a demonstrated treatment benefit remain different claims.",
+            "A fictional two-level example separates people from trials. In the patient panel, all 20 people have complete follow-up to year 3: 10 achieved a pathological complete response and 10 did not. Two of the first 10 and six of the second 10 have an event by year 3. These are groups defined by an achieved response, not randomized groups, so the contrast alone does not show what causing a response would do. In a separate trial panel, six points represent randomized A-minus-B comparisons. Their pairs of differences in pathological complete response rate and 3-year event-free survival rate, both in percentage points, are (5, 6), (8, -3), (10, 2), (12, -6), (15, 4) and (18, 0). Each point is a treatment comparison rather than a person. The invented pairs supply no fitted coefficient, validated surrogate relationship or individual forecast and are not CTNeoBC observations."
+          ],
+          "afterSha256": "e300e955058305703cdc7b9d44cd73f70e793d5c5db78335b5770525258a5d3f"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeMissing": false,
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Surrogate_endpoint"
+            },
+            {
+              "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
+              "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
+            },
+            {
+              "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
+              "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+            },
+            {
+              "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
+            },
+            {
+              "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+            },
+            {
+              "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
+            },
+            {
+              "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+            },
+            {
+              "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
+            },
+            {
+              "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
+              "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
+            },
+            {
+              "label": "DUO-O, Harter et al. 2026",
+              "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
+            },
+            {
+              "label": "BEAT-meso, Felip et al. 2025",
+              "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
+            },
+            {
+              "label": "ANNOUNCE, Tap et al. 2020",
+              "url": "https://doi.org/10.1001/jama.2020.1707"
+            },
+            {
+              "label": "ATLANTIS, Aix et al. 2023",
+              "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
+            },
+            {
+              "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
+            },
+            {
+              "label": "FDA approval summary: lurbinectedin, 2021",
+              "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
+            },
+            {
+              "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
+            }
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "d88477a5a1aa6b75093e3bb6e92ef9d45b204ace13c3037c35662926dcb02a83",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Surrogate_endpoint"
+            },
+            {
+              "label": "FDA table of surrogate endpoints that were the basis of drug approval or licensure",
+              "url": "https://www.fda.gov/drugs/development-resources/table-surrogate-endpoints-were-basis-drug-approval-or-licensure"
+            },
+            {
+              "label": "FDA guidance: clinical trial endpoints for the approval of cancer drugs and biologics",
+              "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-trial-endpoints-approval-cancer-drugs-and-biologics"
+            },
+            {
+              "label": "The validation of surrogate endpoints in meta-analyses of randomized experiments.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/12933525/"
+            },
+            {
+              "label": "Pathological complete response and long-term clinical benefit in breast cancer: the CTNeoBC pooled analysis.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/24529560/"
+            },
+            {
+              "label": "Evaluation of pathological complete response as surrogate endpoint in neoadjuvant randomised clinical trials of early stage breast cancer: systematic review and meta-analysis.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34933868/"
+            },
+            {
+              "label": "Pembrolizumab for Early Triple-Negative Breast Cancer.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/32101663/"
+            },
+            {
+              "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/39282906/"
+            },
+            {
+              "label": "TROPION-Breast01 final OS, Pistilli et al. 2026",
+              "url": "https://doi.org/10.1016/j.annonc.2025.12.017"
+            },
+            {
+              "label": "DUO-O, Harter et al. 2026",
+              "url": "https://doi.org/10.1016/j.annonc.2025.11.020"
+            },
+            {
+              "label": "BEAT-meso, Felip et al. 2025",
+              "url": "https://doi.org/10.1016/j.annonc.2024.12.014"
+            },
+            {
+              "label": "ANNOUNCE, Tap et al. 2020",
+              "url": "https://doi.org/10.1001/jama.2020.1707"
+            },
+            {
+              "label": "ATLANTIS, Aix et al. 2023",
+              "url": "https://doi.org/10.1016/s2213-2600(22)00309-5"
+            },
+            {
+              "label": "FDA 2016 olaratumab multidisciplinary review: clinical director, printed page 188",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2016/761038Orig1s000MultiDisciplineR.pdf"
+            },
+            {
+              "label": "FDA approval summary: lurbinectedin, 2021",
+              "url": "https://doi.org/10.1158/1078-0432.CCR-20-3901"
+            },
+            {
+              "label": "OncoGuide: surrogate-endpoints (pinned teaching source)",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/surrogate-endpoints.md"
+            },
+            {
+              "label": "OncoGuide: fictional people and randomized treatment comparisons",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/images/prompts/people-and-randomized-treatment-effects-v1.txt"
+            }
+          ],
+          "afterSha256": "0a69ce2810d2392f99aecc4cd5bbc702c5e0ba893075abd46d45a20686901f4f"
+        }
+      ]
+    },
+    {
+      "id": "duration-of-response-term",
+      "file": "src/data/terms-jargon.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "The 2013 bicalutamide study used a six-month CBR endpoint in its study-defined ER/PgR-negative, AR-positive advanced-breast population. The 2018 enzalutamide study used CBR at 16 weeks as primary and 24 weeks as secondary in advanced AR-expressing TNBC. These historical study definitions are examples, not current drug indications or universal eligibility rules.",
+            "The enzalutamide report analysed 118 enrolled participants and a 78-person evaluable subgroup. The latter required at least one post-baseline assessment and at least 10 percent nuclear AR staining, whereas entry used greater than zero AR staining. These are different populations; a subgroup rate must not silently replace the all-enrolled result."
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "6ed48f3c7853f404fc7390726fb5462886a2375140776edbc16ba1a9f07bf258",
+          "after": [
+            "The 2013 bicalutamide study used a six-month CBR endpoint in its study-defined ER/PgR-negative, AR-positive advanced-breast population. The 2018 enzalutamide study used CBR at 16 weeks as primary and 24 weeks as secondary in advanced AR-expressing TNBC. These historical study definitions are examples, not current drug indications or universal eligibility rules.",
+            "The enzalutamide report analysed 118 enrolled participants and a 78-person evaluable subgroup. The latter required at least one post-baseline assessment and at least 10 percent nuclear AR staining, whereas entry used greater than zero AR staining. These are different populations; a subgroup rate must not silently replace the all-enrolled result.",
+            "In a separate fictional example, all 20 participants are assessed. Two have confirmed complete responses, four confirmed partial responses and eight stable disease at week 8. Three of those eight meet the example's prespecified 24-week stable-disease criterion. With 20 as the denominator, objective response is (2 + 4)/20 = 30%, disease control is (2 + 4 + 8)/20 = 70%, and the example's clinical benefit rate is (2 + 4 + 3)/20 = 45%. The 24-week requirement applies only to the stable-disease branch in this example. The other six participants' outcomes and the later outcomes of the five other participants with week-8 stable disease are not supplied. No additional response window, confidence interval, trajectory or survival result can be inferred from these aggregate counts. This is a different invented cohort from the response-rate example in the objective response rate record. These aggregate categories do not identify individual participants or supply their trajectories. Different protocols and analysis populations need not put objective response, disease control and clinical benefit rates into one universal ordering."
+          ],
+          "afterSha256": "ff3198d9bcc8dcf074a1f58db2991fef38aa86cf0b1c8976078a645917550c8c"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-09",
+          "beforeMissing": false,
+          "beforeSha256": "dd627efcb5b4f7a56b1dc2259533f08f93d260f95f32f227670084204b3069ef",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_Evaluation_Criteria_in_Solid_Tumors"
+            },
+            {
+              "label": "FDA 2018: response, duration and clinical endpoint context",
+              "url": "https://www.fda.gov/media/71195/download?attachment="
+            },
+            {
+              "label": "RECIST 1.1 primary guideline: definitions and confirmation, 2009",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+            },
+            {
+              "label": "RECIST 1.1 full guideline: overall categories and duration sections",
+              "url": "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+            },
+            {
+              "label": "2013 bicalutamide phase 2 study: study-defined six-month CBR",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23965901/"
+            },
+            {
+              "label": "2018 enzalutamide phase 2 study: 16/24-week CBR and different analysis populations",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29373071/"
+            }
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "f8239b5da497c865fa2a767efdfdddef6819fa42dbd9ac28d4ab9d3a6713cb1f",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_Evaluation_Criteria_in_Solid_Tumors"
+            },
+            {
+              "label": "FDA 2018: response, duration and clinical endpoint context",
+              "url": "https://www.fda.gov/media/71195/download?attachment="
+            },
+            {
+              "label": "RECIST 1.1 primary guideline: definitions and confirmation, 2009",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+            },
+            {
+              "label": "RECIST 1.1 full guideline: overall categories and duration sections",
+              "url": "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+            },
+            {
+              "label": "2013 bicalutamide phase 2 study: study-defined six-month CBR",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23965901/"
+            },
+            {
+              "label": "2018 enzalutamide phase 2 study: 16/24-week CBR and different analysis populations",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29373071/"
+            },
+            {
+              "label": "OncoGuide: fictional response-rate counts and study-specific clocks",
+              "url": "https://github.com/jasonlaster/oncoguide/blob/c96896452386202405c435aa161bc5047919337a/wiki/education/concepts/evidence-and-statistics/endpoints/response-rates.md"
+            }
+          ],
+          "afterSha256": "9c04e5f263e31d45e5add5364dd3a1adaf5b06f12c8b9b60cd197384c0339ed8"
+        }
+      ]
+    },
+    {
+      "id": "efs",
+      "file": "src/data/terms.ts",
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Disease-free survival is the primary endpoint of the adjuvant pancreatic cancer trials: in PRODIGE 24 median disease-free survival was 21.6 months with modified FOLFIRINOX against 12.8 months with gemcitabine (hazard ratio 0.58 for a cancer-related event, second cancer or death), and overall survival followed (Conroy 2018). The definition, time from randomisation to any event irrespective of cause, follows the adjuvant-trial consensus (Punt 2007).",
+            "A survival endpoint defines when the clock starts and which outcomes stop it, usually at the first qualifying event. Overall survival counts death from any cause. Event-free survival uses its protocol's prespecified event set; a neoadjuvant trial may include progression preventing definitive surgery, recurrence, a second primary cancer and death. Disease-free survival is also study-defined and cannot automatically be exchanged for event-free or invasive disease-free survival. Progression-free survival usually counts objective progression or death, with scan criteria, assessment times and missing-assessment rules attached. Participant dates, event types, follow-up status, censoring and cutoff determine the resulting curve, time-specific estimate or rate comparison and its uncertainty. An acronym or a second operation alone does not establish which events count. FDA's December 2018 nonbinding guidance discusses evidence by indication and pathway. It describes progression-free survival as able, depending on disease, context and effect size, to support accelerated approval, support traditional approval or represent direct clinical benefit. This does not universally validate it as a substitute for overall survival. A favourable distant-event endpoint does not settle local control or overall survival. An endpoint association also differs from proof that acting on a biomarker improves outcomes.",
+            "In the event table reproduced by STEEP 2.0 in 2021, invasive disease-free survival counts invasive local, regional, distant and contralateral breast events, a second nonbreast invasive primary, and death from any cause; in situ disease is excluded. STEEP 2.0 defines invasive breast cancer-free survival as a distinct endpoint excluding second nonbreast primaries, rather than silently removing them from invasive disease-free survival. Distant recurrence-free interval counts distant recurrence or breast-cancer death under STEEP, whereas its distant relapse-free survival row counts death from any cause. The paper's actual rules remain essential. A person alive after a local invasive recurrence with no distant recurrence can therefore have an invasive disease-free-survival event without an overall-survival or distant-recurrence-free-interval event. These rules are read from the 2021 table; the trial's own starting clock, first-event and competing-event rules still need checking.",
+            "The starting date may be randomisation, consent, surgery or biomarker assessment. KEYNOTE-522 used pathological complete response and event-free survival as co-primary endpoints; renaming its event-free-survival result invasive disease-free survival changes the claim. For a fictional participant with progression at month 12 and death at month 30, both measured from randomisation, progression-free survival stops at month 12 while overall survival continues to month 30. Those dates describe a known individual history, not censoring or a survival-probability estimate. A postoperative cohort or another endpoint requires its own origin and event rules.",
+            "Among 1,000 fictional participants, suppose 50 first recurrences are recorded and 20 are assigned to site X, with some follow-up incomplete. The calculation 20/50 = 40% describes the share of recorded first recurrences assigned to X. The calculation 20/1,000 = 2% describes a crude fraction of enrolled participants with that recorded event. Neither supplies five-year risk. Death before recurrence prevents recurrence, and another first site prevents X from being the first site; later recurrence at X is a different endpoint. A cumulative-incidence analysis can account for follow-up and competing events under its assumptions. The nonparametric Aalen-Johansen estimator supplies that estimate, while Fine-Gray regression models covariate effects on the subdistribution hazard. The method-name attribution comes from Therneau, Crowson and Atkinson's technical vignette, separately from Austin's competing-risk discussion. Turning the 40% site share into everyone's five-year risk changes both denominator and horizon without a supporting analysis."
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "ff4abcca44e046d7d4b2cc68e23d40abc7eaff4f7fec84b4811bacbdf56b28bb",
+          "after": [
+            "Disease-free survival is the primary endpoint of the adjuvant pancreatic cancer trials: in PRODIGE 24 median disease-free survival was 21.6 months with modified FOLFIRINOX against 12.8 months with gemcitabine (hazard ratio 0.58 for a cancer-related event, second cancer or death), and overall survival followed (Conroy 2018). The definition, time from randomisation to any event irrespective of cause, follows the adjuvant-trial consensus (Punt 2007).",
+            "A survival endpoint defines when the clock starts and which outcomes stop it, usually at the first qualifying event. Overall survival counts death from any cause. Event-free survival uses its protocol's prespecified event set; a neoadjuvant trial may include progression preventing definitive surgery, recurrence, a second primary cancer and death. Disease-free survival is also study-defined and cannot automatically be exchanged for event-free or invasive disease-free survival. Progression-free survival usually counts objective progression or death, with scan criteria, assessment times and missing-assessment rules attached. Participant dates, event types, follow-up status, censoring and cutoff determine the resulting curve, time-specific estimate or rate comparison and its uncertainty. An acronym or a second operation alone does not establish which events count. FDA's December 2018 nonbinding guidance discusses evidence by indication and pathway. It describes progression-free survival as able, depending on disease, context and effect size, to support accelerated approval, support traditional approval or represent direct clinical benefit. This does not universally validate it as a substitute for overall survival. A favourable distant-event endpoint does not settle local control or overall survival. An endpoint association also differs from proof that acting on a biomarker improves outcomes.",
+            "In the event table reproduced by STEEP 2.0 in 2021, invasive disease-free survival counts invasive local, regional, distant and contralateral breast events, a second nonbreast invasive primary, and death from any cause; in situ disease is excluded. STEEP 2.0 defines invasive breast cancer-free survival as a distinct endpoint excluding second nonbreast primaries, rather than silently removing them from invasive disease-free survival. Distant recurrence-free interval counts distant recurrence or breast-cancer death under STEEP, whereas its distant relapse-free survival row counts death from any cause. The paper's actual rules remain essential. A person alive after a local invasive recurrence with no distant recurrence can therefore have an invasive disease-free-survival event without an overall-survival or distant-recurrence-free-interval event. These rules are read from the 2021 table; the trial's own starting clock, first-event and competing-event rules still need checking.",
+            "The starting date may be randomisation, consent, surgery or biomarker assessment. KEYNOTE-522 used pathological complete response and event-free survival as co-primary endpoints; renaming its event-free-survival result invasive disease-free survival changes the claim. For a fictional participant with progression at month 12 and death at month 30, both measured from randomisation, progression-free survival stops at month 12 while overall survival continues to month 30. Those dates describe a known individual history, not censoring or a survival-probability estimate. A postoperative cohort or another endpoint requires its own origin and event rules.",
+            "Among 1,000 fictional participants, suppose 50 first recurrences are recorded and 20 are assigned to site X, with some follow-up incomplete. The calculation 20/50 = 40% describes the share of recorded first recurrences assigned to X. The calculation 20/1,000 = 2% describes a crude fraction of enrolled participants with that recorded event. Neither supplies five-year risk. Death before recurrence prevents recurrence, and another first site prevents X from being the first site; later recurrence at X is a different endpoint. A cumulative-incidence analysis can account for follow-up and competing events under its assumptions. The nonparametric Aalen-Johansen estimator supplies that estimate, while Fine-Gray regression models covariate effects on the subdistribution hazard. The method-name attribution comes from Therneau, Crowson and Atkinson's technical vignette, separately from Austin's competing-risk discussion. Turning the 40% site share into everyone's five-year risk changes both denominator and horizon without a supporting analysis.",
+            "STEEP 2.0's 2021 Table 1 specifies exclusions as well as event categories for adjuvant breast-cancer studies. Its second primary nonbreast cancer category excludes basal-cell and squamous-cell skin carcinomas and in situ carcinomas. Lobular carcinoma in situ is not counted as an event. These are the table's conventions; a study's actual endpoint definition and protocol remain part of its result."
+          ],
+          "afterSha256": "a121ce526fd8a06026f4b7cbe9e09d0349447e100fdc6332b9efd139a7fff34c"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-10",
+          "beforeMissing": false,
+          "beforeSha256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ]
+    },
+    {
+      "id": "partial-response",
+      "file": "src/data/terms-basics.ts",
+      "fields": [
+        {
+          "field": "summary",
+          "before": "RECIST 1.1 defines partial response as at least a 30% decrease in the sum of the longest diameters of the target lesions with no new lesions; the response must be confirmed on a later scan. Response rate (complete plus partial) is the quickest signal that a drug is active and the basis of many accelerated approvals, but shrinkage does not always translate into longer life, and some effective drugs, notably immunotherapies and some targeted agents, produce long stable disease rather than shrinkage. How long a response lasts (duration of response) is often more informative than how many patients achieve one.",
+          "beforeMissing": false,
+          "beforeSha256": "f13bc26905197c935c169575e07572e6fa62a4545075aaa4b3d2d86424618077",
+          "after": "Partial response is an assessment category rather than a measure of tumour volume. Under RECIST 1.1, target-lesion partial response requires at least a 30% decrease in the sum of specified diameters from baseline. The overall assessment also considers non-target disease and new tumour lesions; target shrinkage alone does not establish the overall category.\n\nRECIST 1.1 requires confirmation in nonrandomized trials where response is the primary endpoint, rather than in every study. Keep the actual protocol, assessment timing and confirmed or unconfirmed status with the result. An objective response rate counts participants meeting complete or partial response criteria in a stated analysis population. Response magnitude and duration can inform regulatory decisions in a specified disease and treatment setting, but a response rate alone does not establish comparative survival or quality-of-life benefit. FDA's December 2018 endpoint guidance is nonbinding and discusses these context-specific distinctions.",
+          "afterSha256": "e75e3b84ea66479a5965a9ce57a100daa15b599240599e4d4fd134b7d631b7f7"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeMissing": false,
+          "beforeSha256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-14",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+            }
+          ],
+          "beforeMissing": false,
+          "beforeSha256": "17a4264d2a2b858f159dbba56aa8d787c8ec8128a39aca963cf817e4e5f95256",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+            },
+            {
+              "label": "Eisenhauer et al., 2009: RECIST 1.1",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+            },
+            {
+              "label": "RECIST 1.1: full guideline, 2009",
+              "url": "https://recist.eortc.org/recist/wp-content/uploads/sites/14/2025/12/RECISTGuidelines.pdf"
+            },
+            {
+              "label": "FDA, December 2018: clinical trial endpoints, nonbinding guidance",
+              "url": "https://www.fda.gov/media/71195/download"
+            }
+          ],
+          "afterSha256": "7ad49a433640af5e8f0167dc1eacf582f6a7e1cfe256a9429c77dfc2569028a2"
+        }
+      ]
+    }
+  ],
+  "consumerEntries": [
+    {
+      "id": "stable-disease-es",
+      "canonicalRecordId": "stable-disease",
+      "language": "es",
+      "file": "src/data/i18n/es.ts",
+      "before": "Los tumores no se han reducido lo suficiente para contar como respuesta ni han crecido lo suficiente para contar como progresión. En un cáncer lento o con un fármaco bien tolerado, meses de estabilidad pueden ser un beneficio real.",
+      "beforeSha256": "3dcbfa797a02db899aa81274f479156383f99722ee96af373b087fe88823d5c2",
+      "after": "La enfermedad estable significa que la evaluación no cumple los criterios de respuesta ni de progresión. Puede haber cambios de tamaño, y la estabilidad por sí sola no demuestra que el tratamiento la haya causado.",
+      "afterSha256": "39d3fab0c2e50d29110ce6b3965921f51282a62054c0ebbfd7163cc4710ac86b",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "kaplan-meier-curve-zh",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "zh",
+      "file": "src/data/i18n/zh.ts",
+      "before": "Kaplan-Meier 曲线显示在每个时间点仍然存活（或仍未进展）的患者比例；每发生一次事件曲线就下降一个台阶，并利用所有人的随访时间，即使他们尚未发生事件。",
+      "beforeSha256": "1ebf3175a7ce36d2d5d7e4c6259425e5c480b24f1dccc6fe3a9b2860915d7d52",
+      "after": "Kaplan-Meier 曲线估计一个群体从规定起点开始存活或未发生指定事件的概率。事件使曲线下降；删失表示观察结束时未发生事件，并会改变后续风险集。它不是个人预后预测。",
+      "afterSha256": "5d01d91332f0d83ae8a1ccee30fbe99fce71f2f6b98b0f844da673842ec811a4",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-zh",
+      "canonicalRecordId": "stable-disease",
+      "language": "zh",
+      "file": "src/data/i18n/zh.ts",
+      "before": "肿瘤既没有缩小到足以算作缓解，也没有增大到足以算作进展。对于生长缓慢的癌症或耐受良好的药物，数月的稳定可能就是实实在在的获益。",
+      "beforeSha256": "4b88896ca1c3522365ac4e13e22f6292f67b98cf846f5ce7b38ffa59698ec201",
+      "after": "疾病稳定是指评估既不符合缓解标准，也不符合进展标准。肿瘤大小仍可能变化；仅凭稳定本身，不能说明是治疗造成了这种稳定。",
+      "afterSha256": "f589a9f98a536c1f069b57b6d9799d3ebc86306595c04e711cdd29c030f8dfae",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-pt",
+      "canonicalRecordId": "stable-disease",
+      "language": "pt",
+      "file": "src/data/i18n/pt.ts",
+      "before": "Os tumores não encolheram o suficiente para contar como resposta nem cresceram o suficiente para contar como progressão. Num câncer lento ou com um medicamento bem tolerado, meses de estabilidade podem ser um benefício real.",
+      "beforeSha256": "2ad59fdbd7a791cd8004f289449b89cb9e8d71ddfc5d8439cf2d4ce988749947",
+      "after": "Doença estável significa que a avaliação não atende aos critérios de resposta nem aos de progressão. Pode haver mudanças de tamanho. A estabilidade, por si só, não mostra que o tratamento a causou.",
+      "afterSha256": "3dd5c1a89c9af4b831bd5af8be1f8aaa4b4ad370e8ddf29a9a0df4bdb03c5fd6",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-hi",
+      "canonicalRecordId": "stable-disease",
+      "language": "hi",
+      "file": "src/data/i18n/hi.ts",
+      "before": "ट्यूमर न तो इतने सिकुड़े हैं कि प्रतिक्रिया माने जाएं और न ही इतने बढ़े हैं कि प्रगति माने जाएं। धीमे कैंसर या अच्छी तरह सहन की जाने वाली दवा के लिए, महीनों की स्थिरता एक वास्तविक लाभ हो सकती है।",
+      "beforeSha256": "84b454f50f31e89538aea6e633e39376f9b0948e13240c645b5a3368f5e97e0b",
+      "after": "स्थिर रोग का अर्थ है कि आकलन न तो प्रतिक्रिया के मानदंड पूरे करता है, न रोग बढ़ने के। आकार में बदलाव हो सकता है। केवल स्थिरता से यह साबित नहीं होता कि उसका कारण उपचार है।",
+      "afterSha256": "49f0eb7cc72b8e9f7401f5d3ee82459a36f40f68bfb1725623952c562c382488",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-fr",
+      "canonicalRecordId": "stable-disease",
+      "language": "fr",
+      "file": "src/data/i18n/fr.ts",
+      "before": "Les tumeurs n'ont ni assez régressé pour compter comme une réponse ni assez grossi pour compter comme une progression. Pour un cancer lent ou un médicament bien toléré, des mois de stabilité peuvent être un vrai bénéfice.",
+      "beforeSha256": "740a32ed1d0e2110f61325d0db356cc461cc6da62df840f9bbbcdd0276f104af",
+      "after": "Une maladie stable signifie que l’évaluation ne remplit ni les critères de réponse ni ceux de progression. Des changements de taille sont possibles. La stabilité seule ne montre pas que le traitement en est la cause.",
+      "afterSha256": "47f7e2f5b9a5a3d33df7245bcc3d7999c43e04e66bade5cd25a77f9393407ad0",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-de",
+      "canonicalRecordId": "stable-disease",
+      "language": "de",
+      "file": "src/data/i18n/de.ts",
+      "before": "Die Tumoren sind weder so weit geschrumpft, dass es als Ansprechen zählt, noch so weit gewachsen, dass es als Fortschreiten gilt. Bei einem langsamen Krebs oder einem gut verträglichen Medikament können Monate der Stabilität ein echter Gewinn sein.",
+      "beforeSha256": "6273cd8fcc523ee895444986d8608a4ca95e98e2ae3369ab2fed54cf289da214",
+      "after": "Stabile Erkrankung bedeutet, dass die Beurteilung weder die Kriterien für ein Ansprechen noch für ein Fortschreiten erfüllt. Größenänderungen sind möglich. Die Stabilität allein zeigt nicht, dass die Behandlung sie verursacht hat.",
+      "afterSha256": "3f8448527ad7db0c77e98ed86af6eefb2b5927918a33e82136d5ebad8f757f07",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-ja",
+      "canonicalRecordId": "stable-disease",
+      "language": "ja",
+      "file": "src/data/i18n/ja.ts",
+      "before": "腫瘍が奏効と見なせるほど縮小もせず、進行と見なせるほど増大もしていない状態である。進行の遅いがんや耐容性の良い薬では、数か月の安定が本当の利益となることがある。",
+      "beforeSha256": "fcd40e3da9f69764a79f3ce71a22ef1f80aea3f950bafda26cf03fdba68fa7c0",
+      "after": "病勢安定とは、評価が奏効の基準にも進行の基準にも当てはまらないことです。大きさが変わる場合もあり、安定していることだけでは治療がその原因だとは示せません。",
+      "afterSha256": "15453ae799d01ea0714a6e6382668235cbdeb2aed51a51e35952d826a4a9cd12",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-ar",
+      "canonicalRecordId": "stable-disease",
+      "language": "ar",
+      "file": "src/data/i18n/ar.ts",
+      "before": "لم تتقلص الأورام بما يكفي لاعتبارها استجابة ولم تنم بما يكفي لاعتبارها تقدما للمرض. في سرطان بطيء أو مع دواء جيد التحمل، قد تكون أشهر من الاستقرار فائدة حقيقية.",
+      "beforeSha256": "1ab3c4dc3203f25347821225756264960944cdd8bad21b3283800963737691bd",
+      "after": "استقرار المرض يعني أن التقييم لا يستوفي معايير الاستجابة ولا معايير تقدم المرض. وقد يشمل تغيرات في الحجم، ولا يثبت بمفرده أن العلاج هو سبب الاستقرار.",
+      "afterSha256": "8ec10163f02b4e693a7bb74d9090d917b903c5cae07ca8f20febb57051458527",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "kaplan-meier-curve-simple",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "simple",
+      "file": "src/data/simple/part-o.ts",
+      "before": "A Kaplan-Meier curve shows the share of patients still alive or free of progression at each point in time, stepping down each time an event happens.",
+      "beforeSha256": "a703c9ad418ae0c0f4cbdd193494cf9354cf47c54bc16fb8e5c59cbd372aff2e",
+      "after": "A Kaplan-Meier curve estimates a group's chance of remaining event-free over time. Censoring ends observation without an event and changes later risk sets.",
+      "afterSha256": "cecea1b779dd58aa6ac8a2c8336a12ce7adbaa7ebe971ee52c6eb73e681c2f07",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    },
+    {
+      "id": "stable-disease-simple",
+      "canonicalRecordId": "stable-disease",
+      "language": "simple",
+      "file": "src/data/simple/part-j.ts",
+      "before": "Stable disease means the tumours have neither shrunk enough to count as a response nor grown enough to count as progression, which can still be a real benefit.",
+      "beforeSha256": "b8d00875c219fc9c18bdc5c390179afa803cf6bfbc0f1c13dc8884b1ae401468",
+      "after": "Stable disease means the assessment meets neither response nor progression criteria. Size can change within those rules. Stability alone does not show that treatment caused it.",
+      "afterSha256": "dcb6b3661287b7773d1f1f01646ad72c2fbfceb9c30295f66fbe0b1bad5dbc70",
+      "machineAssistedUnreviewed": true,
+      "independentLanguageAcceptance": false
+    }
+  ],
+  "canonicalOwnersChanged": 6,
+  "shortSummaryEntriesChanged": 11,
+  "consumerFilesChanged": 10,
+  "dataFilesChanged": 14,
+  "newOwners": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "oldNotesAndLinksPreserved": true,
+  "actualContributorFieldsChanged": false,
+  "unappliedProposals": [],
+  "intentionalLegacySummaryReplacement": "Stable disease’s fixed baseline band and unsourced drug-class generalizations are intentionally replaced with RECIST 1.1 baseline-versus-smallest-sum, 5 mm, overall-disease and causal interpretation rules. The old full scalar is retained in before values. Other retained long clinical summaries are unchanged and not blanket recertified.",
+  "reason": "Correct two older leads and stable-disease summary, carry missing fictional counts and all six trial-effect pairs in their existing owners, and add STEEP table exclusions. Preserve earlier examples and all ordered notes and sources.",
+  "dataCommit": "87a1a31cdccd4e6c95d16e8e87b08701208fdba7"
+}

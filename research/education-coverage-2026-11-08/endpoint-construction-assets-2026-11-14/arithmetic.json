@@ -1,0 +1,504 @@
+{
+  "fictionalOnly": true,
+  "directSVGGeometryAndArithmetic": {
+    "rows": [
+      {
+        "stem": "kaplan-meier-event-censor-risk-set",
+        "theme": "light",
+        "sourceSHA256": "4bffd8f152ac475de74b9893f274819bd930c9a73c78407ef15bbabb19f5f612",
+        "checks": {
+          "stepVertices": [
+            [
+              170.0,
+              310.0
+            ],
+            [
+              405.0,
+              310.0
+            ],
+            [
+              405.0,
+              404.0
+            ],
+            [
+              875.0,
+              404.0
+            ],
+            [
+              875.0,
+              529.333333
+            ]
+          ],
+          "censorMidpoint": [
+            640,
+            404.0
+          ],
+          "firstStep": 0.8,
+          "secondStep": 0.5333333333333333,
+          "rawObservedEventFraction": 0.4,
+          "noPathAfterMonth3": true
+        },
+        "allPass": true
+      },
+      {
+        "stem": "kaplan-meier-event-censor-risk-set",
+        "theme": "dark",
+        "sourceSHA256": "455bebd16d6550ab6d6da8e2b3570872d1a6faa6300b26a5993a82c7ed089ba4",
+        "checks": {
+          "stepVertices": [
+            [
+              170.0,
+              310.0
+            ],
+            [
+              405.0,
+              310.0
+            ],
+            [
+              405.0,
+              404.0
+            ],
+            [
+              875.0,
+              404.0
+            ],
+            [
+              875.0,
+              529.333333
+            ]
+          ],
+          "censorMidpoint": [
+            640,
+            404.0
+          ],
+          "firstStep": 0.8,
+          "secondStep": 0.5333333333333333,
+          "rawObservedEventFraction": 0.4,
+          "noPathAfterMonth3": true
+        },
+        "allPass": true
+      },
+      {
+        "stem": "one-participant-two-endpoint-clocks-v1",
+        "theme": "light",
+        "sourceSHA256": "93c2b9a06ff67d0f90a77670aa1b4349d17cc63b93bb648c7ab285c422d82806",
+        "checks": {
+          "axisMonthCoordinates": {
+            "0": 80,
+            "12": 260,
+            "30": 530
+          },
+          "osSegment": "M80 436 L530 436",
+          "pfsSegment": "M80 677 L260 677",
+          "knownHistoryTail": "M272 677 L530 677",
+          "tailIsNotCensoring": true
+        },
+        "allPass": true
+      },
+      {
+        "stem": "one-participant-two-endpoint-clocks-v1",
+        "theme": "dark",
+        "sourceSHA256": "07bb515399f5b9a43fc31bb51613f0b6f0e16729921e1843b1ea9506c529a34b",
+        "checks": {
+          "axisMonthCoordinates": {
+            "0": 80,
+            "12": 260,
+            "30": 530
+          },
+          "osSegment": "M80 436 L530 436",
+          "pfsSegment": "M80 677 L260 677",
+          "knownHistoryTail": "M272 677 L530 677",
+          "tailIsNotCensoring": true
+        },
+        "allPass": true
+      },
+      {
+        "stem": "people-and-randomized-treatment-effects-v1",
+        "theme": "light",
+        "sourceSHA256": "2799a97b4e644ddae434a9f549235ade78cd5cf684c07cdbbc7c7e54fb919eec",
+        "checks": {
+          "people": 20,
+          "achievedResponseGroups": [
+            10,
+            10
+          ],
+          "eventsByThreeYears": [
+            2,
+            6
+          ],
+          "fictionalTrialDifferencePairs": [
+            [
+              5,
+              6
+            ],
+            [
+              8,
+              -3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              12,
+              -6
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              18,
+              0
+            ]
+          ],
+          "trialPointCoordinates": [
+            [
+              250.0,
+              688.0
+            ],
+            [
+              304.0,
+              787.0
+            ],
+            [
+              340.0,
+              732.0
+            ],
+            [
+              376.0,
+              820.0
+            ],
+            [
+              430.0,
+              710.0
+            ],
+            [
+              484.0,
+              754.0
+            ]
+          ],
+          "noRegressionOrValidationInferred": true
+        },
+        "allPass": true
+      },
+      {
+        "stem": "people-and-randomized-treatment-effects-v1",
+        "theme": "dark",
+        "sourceSHA256": "9a3445b333ad8b111c37c788bdb3f352b28f9273798eb9df691b6e578dc5aae3",
+        "checks": {
+          "people": 20,
+          "achievedResponseGroups": [
+            10,
+            10
+          ],
+          "eventsByThreeYears": [
+            2,
+            6
+          ],
+          "fictionalTrialDifferencePairs": [
+            [
+              5,
+              6
+            ],
+            [
+              8,
+              -3
+            ],
+            [
+              10,
+              2
+            ],
+            [
+              12,
+              -6
+            ],
+            [
+              15,
+              4
+            ],
+            [
+              18,
+              0
+            ]
+          ],
+          "trialPointCoordinates": [
+            [
+              250.0,
+              688.0
+            ],
+            [
+              304.0,
+              787.0
+            ],
+            [
+              340.0,
+              732.0
+            ],
+            [
+              376.0,
+              820.0
+            ],
+            [
+              430.0,
+              710.0
+            ],
+            [
+              484.0,
+              754.0
+            ]
+          ],
+          "noRegressionOrValidationInferred": true
+        },
+        "allPass": true
+      }
+    ],
+    "checkedNativeVariants": 6,
+    "pairedGeometryAndTextIdentical": true,
+    "responseRecipeReproduction": {
+      "reviewedPublicRecipeOnly": true,
+      "sourceBriefSHA256": "d1d8373ad795174f3acec7ce94fcd279c6d1abb44d026e69492c821fed9585a8",
+      "extractedCodeSHA256": "d8f371c9dffa6076126d9ba893e8a0cd667db8147bded971065eac296d283ad5",
+      "extractedDataSHA256": "68d12b026d97ae91af1fa5d3cd98ef95bee07114db912374bc19710f6b0474e0",
+      "extractedSpecSHA256": "2defdf8e38521280858322a547d5b8003858fc15190604bc7c3901f5af232228",
+      "runtime": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+      "dependenciesInstalled": false,
+      "networkUsedByProgram": false,
+      "canonicalSourceOrAssetEdited": false,
+      "originalCreatorIdentityOrHistoricalExecutionCertified": false,
+      "outputs": [
+        {
+          "path": "wiki/education/concepts/evidence-and-statistics/endpoints/images/response-rates-participants-and-clocks-v1-light.svg",
+          "sourceSHA256": "f6a305ad8a1540b2440514d72e16870c694ec897c56c5925be164c53596e521e",
+          "reproducedSHA256": "f6a305ad8a1540b2440514d72e16870c694ec897c56c5925be164c53596e521e",
+          "byteExactMatch": true,
+          "panels": [
+            {
+              "endpoint": "ORR",
+              "denominator": 20,
+              "numerator": 6,
+              "percentage": 30.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            },
+            {
+              "endpoint": "week8DCR",
+              "denominator": 20,
+              "numerator": 14,
+              "percentage": 70.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            },
+            {
+              "endpoint": "durableSDCBR",
+              "denominator": 20,
+              "numerator": 9,
+              "percentage": 45.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "path": "wiki/education/concepts/evidence-and-statistics/endpoints/images/response-rates-participants-and-clocks-v1-dark.svg",
+          "sourceSHA256": "032df9f2e4c6dd90b358fc90638370c948afbe6028097702f82e6866d1269f37",
+          "reproducedSHA256": "032df9f2e4c6dd90b358fc90638370c948afbe6028097702f82e6866d1269f37",
+          "byteExactMatch": true,
+          "panels": [
+            {
+              "endpoint": "ORR",
+              "denominator": 20,
+              "numerator": 6,
+              "percentage": 30.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            },
+            {
+              "endpoint": "week8DCR",
+              "denominator": 20,
+              "numerator": 14,
+              "percentage": 70.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            },
+            {
+              "endpoint": "durableSDCBR",
+              "denominator": 20,
+              "numerator": 9,
+              "percentage": 45.0,
+              "allMarkersRetained": true,
+              "groupCounts": [
+                2,
+                4,
+                3,
+                5,
+                6
+              ]
+            }
+          ]
+        }
+      ],
+      "allChecksPass": true
+    },
+    "allFictional": true,
+    "allChecksPass": true,
+    "sourceEdits": false,
+    "independentAcceptance": false
+  },
+  "responseReproduction": {
+    "reviewedPublicRecipeOnly": true,
+    "sourceBriefSHA256": "d1d8373ad795174f3acec7ce94fcd279c6d1abb44d026e69492c821fed9585a8",
+    "extractedCodeSHA256": "d8f371c9dffa6076126d9ba893e8a0cd667db8147bded971065eac296d283ad5",
+    "extractedDataSHA256": "68d12b026d97ae91af1fa5d3cd98ef95bee07114db912374bc19710f6b0474e0",
+    "extractedSpecSHA256": "2defdf8e38521280858322a547d5b8003858fc15190604bc7c3901f5af232228",
+    "runtime": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "dependenciesInstalled": false,
+    "networkUsedByProgram": false,
+    "canonicalSourceOrAssetEdited": false,
+    "originalCreatorIdentityOrHistoricalExecutionCertified": false,
+    "outputs": [
+      {
+        "path": "wiki/education/concepts/evidence-and-statistics/endpoints/images/response-rates-participants-and-clocks-v1-light.svg",
+        "sourceSHA256": "f6a305ad8a1540b2440514d72e16870c694ec897c56c5925be164c53596e521e",
+        "reproducedSHA256": "f6a305ad8a1540b2440514d72e16870c694ec897c56c5925be164c53596e521e",
+        "byteExactMatch": true,
+        "panels": [
+          {
+            "endpoint": "ORR",
+            "denominator": 20,
+            "numerator": 6,
+            "percentage": 30.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "endpoint": "week8DCR",
+            "denominator": 20,
+            "numerator": 14,
+            "percentage": 70.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "endpoint": "durableSDCBR",
+            "denominator": 20,
+            "numerator": 9,
+            "percentage": 45.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "path": "wiki/education/concepts/evidence-and-statistics/endpoints/images/response-rates-participants-and-clocks-v1-dark.svg",
+        "sourceSHA256": "032df9f2e4c6dd90b358fc90638370c948afbe6028097702f82e6866d1269f37",
+        "reproducedSHA256": "032df9f2e4c6dd90b358fc90638370c948afbe6028097702f82e6866d1269f37",
+        "byteExactMatch": true,
+        "panels": [
+          {
+            "endpoint": "ORR",
+            "denominator": 20,
+            "numerator": 6,
+            "percentage": 30.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "endpoint": "week8DCR",
+            "denominator": 20,
+            "numerator": 14,
+            "percentage": 70.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "endpoint": "durableSDCBR",
+            "denominator": 20,
+            "numerator": 9,
+            "percentage": 45.0,
+            "allMarkersRetained": true,
+            "groupCounts": [
+              2,
+              4,
+              3,
+              5,
+              6
+            ]
+          }
+        ]
+      }
+    ],
+    "allChecksPass": true
+  },
+  "extraChecks": {
+    "firstKM": 0.8,
+    "secondKM": 0.5333333333333333,
+    "siteShare": 0.4,
+    "crudeEnrolledFraction": 0.02,
+    "pcrDifferencePoints": 15.000000000000002,
+    "ORR": 0.3,
+    "DCR": 0.7,
+    "CBR": 0.45
+  },
+  "allChecksPass": true
+}

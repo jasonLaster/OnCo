@@ -1,0 +1,694 @@
+{
+  "version": "proposal-endpoint-summary-consumers-2026-11-14",
+  "state": "Actual 72 selected short-summary observations in draft #375: 50 texts and 22 English fallbacks. Eleven available values corrected, with no native-language review claim.",
+  "scope": "Actual loaded short tables; absent text explicitly remains English fallback. No language acceptance is inferred.",
+  "records": [
+    {
+      "id": "kaplan-meier-curve-es",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (es)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "es",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-es",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (es)",
+      "canonicalRecordId": "efs",
+      "language": "es",
+      "available": true,
+      "text": "En cáncer temprano: cuánto tiempo permanecen los pacientes libres de recaída, progresión o muerte."
+    },
+    {
+      "id": "surrogate-validation-es",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (es)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "es",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-es",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (es)",
+      "canonicalRecordId": "orr",
+      "language": "es",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-es",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (es)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "es",
+      "available": true,
+      "text": "La duración de la respuesta mide cuánto tiempo un tumor que se redujo permanece reducido antes de volver a crecer; la tasa de control de la enfermedad suma a los que respondieron los pacientes cuyo cáncer se mantuvo estable. Junto con la tasa de respuesta, describen la actividad de un fármaco en ensayos sin grupo de comparación."
+    },
+    {
+      "id": "complete-response-term-es",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (es)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "es",
+      "available": true,
+      "text": "Una respuesta completa significa que todo rastro medible del cáncer ha desaparecido en las pruebas de imagen o en la médula; una respuesta parcial significa que se ha reducido al menos un 30% (RECIST) pero sigue presente. Ninguna equivale a curación: puede quedar enfermedad microscópica."
+    },
+    {
+      "id": "stable-disease-es",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (es)",
+      "canonicalRecordId": "stable-disease",
+      "language": "es",
+      "available": true,
+      "text": "La enfermedad estable significa que la evaluación no cumple los criterios de respuesta ni de progresión. Puede haber cambios de tamaño, y la estabilidad por sí sola no demuestra que el tratamiento la haya causado."
+    },
+    {
+      "id": "partial-response-es",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (es)",
+      "canonicalRecordId": "partial-response",
+      "language": "es",
+      "available": true,
+      "text": "Los tumores se han reducido sustancialmente (al menos un 30% en el diámetro total) pero no han desaparecido. Junto con las respuestas completas, constituye la tasa de respuesta de un ensayo."
+    },
+    {
+      "id": "kaplan-meier-curve-zh",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (zh)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "zh",
+      "available": true,
+      "text": "Kaplan-Meier 曲线估计一个群体从规定起点开始存活或未发生指定事件的概率。事件使曲线下降；删失表示观察结束时未发生事件，并会改变后续风险集。它不是个人预后预测。"
+    },
+    {
+      "id": "efs-zh",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (zh)",
+      "canonicalRecordId": "efs",
+      "language": "zh",
+      "available": true,
+      "text": "在早期癌症中：患者保持无复发、无进展、无死亡的时间。"
+    },
+    {
+      "id": "surrogate-validation-zh",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (zh)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "zh",
+      "available": true,
+      "text": "替代终点只有在试验证明“它的变化会带来真正重要结局的变化”时才值得信任，且需针对该疾病和该类药物；有些替代终点通过了检验，有些没有，各终点的记录各不相同。"
+    },
+    {
+      "id": "orr-zh",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (zh)",
+      "canonicalRecordId": "orr",
+      "language": "zh",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-zh",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (zh)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "zh",
+      "available": true,
+      "text": "缓解持续时间衡量缩小的肿瘤在再次生长前能保持缩小多久；疾病控制率则在有缓解的患者之外，再加上病情保持稳定的患者。它们与缓解率一起，描述药物在没有对照组的试验中的活性。"
+    },
+    {
+      "id": "complete-response-term-zh",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (zh)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "zh",
+      "available": true,
+      "text": "完全缓解是指癌症的所有可测量痕迹在影像检查或骨髓中均已消失；部分缓解是指肿瘤缩小了至少30%（RECIST）但仍然存在。两者都不等于治愈：微小病灶可能残留。"
+    },
+    {
+      "id": "stable-disease-zh",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (zh)",
+      "canonicalRecordId": "stable-disease",
+      "language": "zh",
+      "available": true,
+      "text": "疾病稳定是指评估既不符合缓解标准，也不符合进展标准。肿瘤大小仍可能变化；仅凭稳定本身，不能说明是治疗造成了这种稳定。"
+    },
+    {
+      "id": "partial-response-zh",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (zh)",
+      "canonicalRecordId": "partial-response",
+      "language": "zh",
+      "available": true,
+      "text": "肿瘤已显著缩小（总直径至少缩小30%）但尚未消失。它与完全缓解一起构成试验的缓解率。"
+    },
+    {
+      "id": "kaplan-meier-curve-pt",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (pt)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "pt",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-pt",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (pt)",
+      "canonicalRecordId": "efs",
+      "language": "pt",
+      "available": true,
+      "text": "No câncer inicial: quanto tempo os pacientes permanecem livres de recorrência, progressão ou morte."
+    },
+    {
+      "id": "surrogate-validation-pt",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (pt)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "pt",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-pt",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (pt)",
+      "canonicalRecordId": "orr",
+      "language": "pt",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-pt",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (pt)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "pt",
+      "available": true,
+      "text": "A duração da resposta mede por quanto tempo um tumor que encolheu permanece reduzido antes de voltar a crescer; a taxa de controle da doença soma aos que responderam os pacientes cujo câncer ficou estável. Junto com a taxa de resposta, descrevem a atividade de um medicamento em ensaios sem grupo de comparação."
+    },
+    {
+      "id": "complete-response-term-pt",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (pt)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "pt",
+      "available": true,
+      "text": "Uma resposta completa significa que todo traço mensurável do câncer desapareceu nos exames de imagem ou na medula; uma resposta parcial significa que ele encolheu pelo menos 30% (RECIST), mas ainda está lá. Nenhuma das duas é o mesmo que cura: doença microscópica pode permanecer."
+    },
+    {
+      "id": "stable-disease-pt",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (pt)",
+      "canonicalRecordId": "stable-disease",
+      "language": "pt",
+      "available": true,
+      "text": "Doença estável significa que a avaliação não atende aos critérios de resposta nem aos de progressão. Pode haver mudanças de tamanho. A estabilidade, por si só, não mostra que o tratamento a causou."
+    },
+    {
+      "id": "partial-response-pt",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (pt)",
+      "canonicalRecordId": "partial-response",
+      "language": "pt",
+      "available": true,
+      "text": "Os tumores encolheram substancialmente (pelo menos 30% no diâmetro total), mas não desapareceram. Junto com as respostas completas, compõe a taxa de resposta de um ensaio."
+    },
+    {
+      "id": "kaplan-meier-curve-hi",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (hi)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "hi",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-hi",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (hi)",
+      "canonicalRecordId": "efs",
+      "language": "hi",
+      "available": true,
+      "text": "प्रारंभिक कैंसर में: मरीज़ कितनी देर पुनरावृत्ति, प्रगति या मृत्यु से मुक्त रहते हैं।"
+    },
+    {
+      "id": "surrogate-validation-hi",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (hi)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "hi",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-hi",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (hi)",
+      "canonicalRecordId": "orr",
+      "language": "hi",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-hi",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (hi)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "hi",
+      "available": true,
+      "text": "प्रतिक्रिया की अवधि मापती है कि सिकुड़ा हुआ ट्यूमर फिर बढ़ने से पहले कितने समय तक सिकुड़ा रहता है; रोग नियंत्रण दर प्रतिक्रिया देने वालों में उन रोगियों को भी जोड़ती है जिनका कैंसर स्थिर रहा। प्रतिक्रिया दर के साथ मिलकर ये बिना तुलना समूह वाले परीक्षणों में दवा की सक्रियता बताती हैं।"
+    },
+    {
+      "id": "complete-response-term-hi",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (hi)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "hi",
+      "available": true,
+      "text": "पूर्ण प्रतिक्रिया का अर्थ है कि स्कैन में या अस्थि मज्जा में कैंसर का हर मापने योग्य निशान गायब हो गया है; आंशिक प्रतिक्रिया का अर्थ है कि यह कम से कम 30% (RECIST) सिकुड़ गया है लेकिन अभी भी मौजूद है। दोनों में से कोई भी इलाज के समान नहीं है: सूक्ष्म रोग बचा रह सकता है।"
+    },
+    {
+      "id": "stable-disease-hi",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (hi)",
+      "canonicalRecordId": "stable-disease",
+      "language": "hi",
+      "available": true,
+      "text": "स्थिर रोग का अर्थ है कि आकलन न तो प्रतिक्रिया के मानदंड पूरे करता है, न रोग बढ़ने के। आकार में बदलाव हो सकता है। केवल स्थिरता से यह साबित नहीं होता कि उसका कारण उपचार है।"
+    },
+    {
+      "id": "partial-response-hi",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (hi)",
+      "canonicalRecordId": "partial-response",
+      "language": "hi",
+      "available": true,
+      "text": "ट्यूमर काफी हद तक सिकुड़ गए हैं (कुल व्यास में कम से कम 30%) लेकिन गायब नहीं हुए हैं। पूर्ण प्रतिक्रियाओं के साथ मिलकर यह किसी परीक्षण की प्रतिक्रिया दर बनाता है।"
+    },
+    {
+      "id": "kaplan-meier-curve-fr",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (fr)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "fr",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-fr",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (fr)",
+      "canonicalRecordId": "efs",
+      "language": "fr",
+      "available": true,
+      "text": "Dans le cancer à un stade précoce : combien de temps les patients restent sans récidive, sans progression ni décès."
+    },
+    {
+      "id": "surrogate-validation-fr",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (fr)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "fr",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-fr",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (fr)",
+      "canonicalRecordId": "orr",
+      "language": "fr",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-fr",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (fr)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "fr",
+      "available": true,
+      "text": "La durée de réponse mesure combien de temps une tumeur qui a diminué reste réduite avant de recommencer à grossir ; le taux de contrôle de la maladie ajoute aux répondeurs les patients dont le cancer est resté stable. Avec le taux de réponse, ils décrivent l'activité d'un médicament dans les essais sans groupe de comparaison."
+    },
+    {
+      "id": "complete-response-term-fr",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (fr)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "fr",
+      "available": true,
+      "text": "Une réponse complète signifie que toute trace mesurable du cancer a disparu à l'imagerie ou dans la moelle ; une réponse partielle signifie qu'il a diminué d'au moins 30 % (RECIST) mais qu'il est toujours présent. Ni l'une ni l'autre n'équivaut à une guérison : une maladie microscopique peut persister."
+    },
+    {
+      "id": "stable-disease-fr",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (fr)",
+      "canonicalRecordId": "stable-disease",
+      "language": "fr",
+      "available": true,
+      "text": "Une maladie stable signifie que l’évaluation ne remplit ni les critères de réponse ni ceux de progression. Des changements de taille sont possibles. La stabilité seule ne montre pas que le traitement en est la cause."
+    },
+    {
+      "id": "partial-response-fr",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (fr)",
+      "canonicalRecordId": "partial-response",
+      "language": "fr",
+      "available": true,
+      "text": "Les tumeurs ont nettement diminué (d'au moins 30% du diamètre total) sans disparaître. Avec les réponses complètes, elle constitue le taux de réponse d'un essai."
+    },
+    {
+      "id": "kaplan-meier-curve-de",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (de)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "de",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-de",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (de)",
+      "canonicalRecordId": "efs",
+      "language": "de",
+      "available": true,
+      "text": "Bei Krebs im Frühstadium: wie lange Patienten ohne Rückfall, Fortschreiten der Erkrankung oder Tod bleiben."
+    },
+    {
+      "id": "surrogate-validation-de",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (de)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "de",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-de",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (de)",
+      "canonicalRecordId": "orr",
+      "language": "de",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-de",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (de)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "de",
+      "available": true,
+      "text": "Die Ansprechdauer misst, wie lange ein geschrumpfter Tumor verkleinert bleibt, bevor er wieder wächst; die Krankheitskontrollrate zählt zu den Ansprechenden auch die Patienten hinzu, deren Krebs stabil blieb. Zusammen mit der Ansprechrate beschreiben sie die Wirksamkeit eines Medikaments in Studien ohne Vergleichsgruppe."
+    },
+    {
+      "id": "complete-response-term-de",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (de)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "de",
+      "available": true,
+      "text": "Eine komplette Remission bedeutet, dass jede messbare Spur des Krebses in der Bildgebung oder im Knochenmark verschwunden ist; eine partielle Remission bedeutet, dass er um mindestens 30 % (RECIST) geschrumpft, aber noch vorhanden ist. Keines von beiden ist gleichbedeutend mit Heilung: Mikroskopische Resterkrankung kann bleiben."
+    },
+    {
+      "id": "stable-disease-de",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (de)",
+      "canonicalRecordId": "stable-disease",
+      "language": "de",
+      "available": true,
+      "text": "Stabile Erkrankung bedeutet, dass die Beurteilung weder die Kriterien für ein Ansprechen noch für ein Fortschreiten erfüllt. Größenänderungen sind möglich. Die Stabilität allein zeigt nicht, dass die Behandlung sie verursacht hat."
+    },
+    {
+      "id": "partial-response-de",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (de)",
+      "canonicalRecordId": "partial-response",
+      "language": "de",
+      "available": true,
+      "text": "Die Tumoren sind deutlich geschrumpft (um mindestens 30% des Gesamtdurchmessers), aber nicht verschwunden. Zusammen mit den kompletten Remissionen ergibt sie die Ansprechrate einer Studie."
+    },
+    {
+      "id": "kaplan-meier-curve-ja",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (ja)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "ja",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-ja",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (ja)",
+      "canonicalRecordId": "efs",
+      "language": "ja",
+      "available": true,
+      "text": "早期がんにおいて、患者が再発や進行、死亡なしに過ごせる期間のこと。"
+    },
+    {
+      "id": "surrogate-validation-ja",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (ja)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "ja",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-ja",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (ja)",
+      "canonicalRecordId": "orr",
+      "language": "ja",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-ja",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (ja)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "ja",
+      "available": true,
+      "text": "奏効期間は、縮小した腫瘍が再び大きくなるまでどれだけ縮小を維持したかを測る。病勢コントロール率は、奏効した患者にがんが安定していた患者を加えたものである。奏効率と合わせて、対照群のない試験における薬の活性を表す。"
+    },
+    {
+      "id": "complete-response-term-ja",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (ja)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "ja",
+      "available": true,
+      "text": "完全奏効とは、画像検査や骨髄でがんの測定可能な痕跡がすべて消失したことを意味する。部分奏効とは、少なくとも30%（RECIST）縮小したがまだ残っていることを意味する。どちらも治癒と同じではなく、顕微鏡レベルの病変が残っている可能性がある。"
+    },
+    {
+      "id": "stable-disease-ja",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (ja)",
+      "canonicalRecordId": "stable-disease",
+      "language": "ja",
+      "available": true,
+      "text": "病勢安定とは、評価が奏効の基準にも進行の基準にも当てはまらないことです。大きさが変わる場合もあり、安定していることだけでは治療がその原因だとは示せません。"
+    },
+    {
+      "id": "partial-response-ja",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (ja)",
+      "canonicalRecordId": "partial-response",
+      "language": "ja",
+      "available": true,
+      "text": "腫瘍が大幅に縮小した（総径で30%以上）が、消失はしていない状態。完全奏効と合わせて試験の奏効率を構成する。"
+    },
+    {
+      "id": "kaplan-meier-curve-ar",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (ar)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "ar",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "efs-ar",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (ar)",
+      "canonicalRecordId": "efs",
+      "language": "ar",
+      "available": true,
+      "text": "في السرطان في مراحله المبكرة: المدة التي يبقى فيها المرضى دون انتكاس أو تقدم للمرض أو وفاة."
+    },
+    {
+      "id": "surrogate-validation-ar",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (ar)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "ar",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "orr-ar",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (ar)",
+      "canonicalRecordId": "orr",
+      "language": "ar",
+      "available": false,
+      "text": null
+    },
+    {
+      "id": "duration-of-response-term-ar",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (ar)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "ar",
+      "available": true,
+      "text": "تقيس مدة الاستجابة المدة التي يبقى فيها الورم المنكمش صغيرا قبل أن يعود إلى النمو؛ ويضيف معدل السيطرة على المرض إلى المستجيبين المرضى الذين بقي سرطانهم مستقرا. وإلى جانب معدل الاستجابة، يصف هذان المقياسان فعالية الدواء في التجارب التي لا تتضمن مجموعة مقارنة."
+    },
+    {
+      "id": "complete-response-term-ar",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (ar)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "ar",
+      "available": true,
+      "text": "الاستجابة الكاملة تعني اختفاء كل أثر قابل للقياس للسرطان في الفحوص التصويرية أو في النخاع؛ والاستجابة الجزئية تعني أنه انكمش بنسبة 30% على الأقل (RECIST) لكنه لا يزال موجودًا. ولا تعني أيٌّ منهما الشفاء: فقد يبقى مرض مجهري."
+    },
+    {
+      "id": "stable-disease-ar",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (ar)",
+      "canonicalRecordId": "stable-disease",
+      "language": "ar",
+      "available": true,
+      "text": "استقرار المرض يعني أن التقييم لا يستوفي معايير الاستجابة ولا معايير تقدم المرض. وقد يشمل تغيرات في الحجم، ولا يثبت بمفرده أن العلاج هو سبب الاستقرار."
+    },
+    {
+      "id": "partial-response-ar",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (ar)",
+      "canonicalRecordId": "partial-response",
+      "language": "ar",
+      "available": true,
+      "text": "تقلصت الأورام بدرجة كبيرة (بنسبة 30% على الأقل من القطر الإجمالي) لكنها لم تختف. وهي تشكل مع الاستجابات الكاملة معدل الاستجابة في التجربة."
+    },
+    {
+      "id": "kaplan-meier-curve-simple",
+      "kind": "reader-summary-entry",
+      "name": "Kaplan-Meier curve, censoring and proportional hazards (simple)",
+      "canonicalRecordId": "kaplan-meier-curve",
+      "language": "simple",
+      "available": true,
+      "text": "A Kaplan-Meier curve estimates a group's chance of remaining event-free over time. Censoring ends observation without an event and changes later risk sets."
+    },
+    {
+      "id": "efs-simple",
+      "kind": "reader-summary-entry",
+      "name": "Event-free / disease-free survival (EFS, DFS, iDFS, RFS) (simple)",
+      "canonicalRecordId": "efs",
+      "language": "simple",
+      "available": true,
+      "text": "In early cancer, how long patients stay free of the cancer coming back."
+    },
+    {
+      "id": "surrogate-validation-simple",
+      "kind": "reader-summary-entry",
+      "name": "Surrogate endpoint validation: which stand-ins have earned trust (simple)",
+      "canonicalRecordId": "surrogate-validation",
+      "language": "simple",
+      "available": true,
+      "text": "A surrogate endpoint only deserves trust if trials have shown that moving it also moves the outcome that matters, and the record differs from one endpoint to the next."
+    },
+    {
+      "id": "orr-simple",
+      "kind": "reader-summary-entry",
+      "name": "Objective response rate (ORR) (simple)",
+      "canonicalRecordId": "orr",
+      "language": "simple",
+      "available": true,
+      "text": "The share of people who meet the study rules for complete or partial tumour response."
+    },
+    {
+      "id": "duration-of-response-term-simple",
+      "kind": "reader-summary-entry",
+      "name": "Duration of response (DoR) and disease control rate (DCR) (simple)",
+      "canonicalRecordId": "duration-of-response-term",
+      "language": "simple",
+      "available": true,
+      "text": "Duration of response measures how long a shrunken tumour stays shrunk, and disease control rate adds patients whose cancer stayed stable to those who responded."
+    },
+    {
+      "id": "complete-response-term-simple",
+      "kind": "reader-summary-entry",
+      "name": "Complete response (CR) and partial response (PR) (simple)",
+      "canonicalRecordId": "complete-response-term",
+      "language": "simple",
+      "available": true,
+      "text": "A complete response means every measurable trace of cancer has disappeared, and a partial response means it has shrunk by at least 30 percent but is still there."
+    },
+    {
+      "id": "stable-disease-simple",
+      "kind": "reader-summary-entry",
+      "name": "Stable disease (simple)",
+      "canonicalRecordId": "stable-disease",
+      "language": "simple",
+      "available": true,
+      "text": "Stable disease means the assessment meets neither response nor progression criteria. Size can change within those rules. Stability alone does not show that treatment caused it."
+    },
+    {
+      "id": "partial-response-simple",
+      "kind": "reader-summary-entry",
+      "name": "Partial response (simple)",
+      "canonicalRecordId": "partial-response",
+      "language": "simple",
+      "available": true,
+      "text": "A partial response means the tumours have shrunk substantially, by at least 30 percent in total size, but have not disappeared."
+    }
+  ],
+  "sources": [
+    {
+      "language": "es",
+      "selectedEntriesSha256": "dd63cb8109f434db87a42224786a7313b852aa2e265e5010b4b012a9fbbcb03e"
+    },
+    {
+      "language": "zh",
+      "selectedEntriesSha256": "de0f316a4f340f795d64d7c37304fb9b5f4f19e30c86ca50925c441d969e053d"
+    },
+    {
+      "language": "pt",
+      "selectedEntriesSha256": "fc183f9beddb185e2f96e6b0ca088ab58beea9fb3fc0873327f2f127d4f536a8"
+    },
+    {
+      "language": "hi",
+      "selectedEntriesSha256": "ff3ddadd4617a78478996730a8572438e575064ac1eb44d0c3b7a0896564746f"
+    },
+    {
+      "language": "fr",
+      "selectedEntriesSha256": "aa96940fbb7f484ed11d5a1e64394e3a19c467412e2a8424f128e620d24af5a0"
+    },
+    {
+      "language": "de",
+      "selectedEntriesSha256": "5bdf988c16cdbe3301841a927e98dd684d6b9e167d222ab53d8f657e0ce1c180"
+    },
+    {
+      "language": "ja",
+      "selectedEntriesSha256": "53eb70a6c382e470582a39c86497d550c62ef785b7af276aeab70c3248c26b35"
+    },
+    {
+      "language": "ar",
+      "selectedEntriesSha256": "7bf5cefda40bf5a134a180091b61402777243533468767cdc9e720b7a13189e6"
+    },
+    {
+      "language": "simple",
+      "selectedEntriesSha256": "b25069b17657d2b64a18238347a10ee235df897eca4f50081780349b428d5fa6"
+    }
+  ],
+  "committedDataHead": "87a1a31cdccd4e6c95d16e8e87b08701208fdba7"
+}

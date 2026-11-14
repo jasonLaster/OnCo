@@ -209,10 +209,12 @@ export const pathways: PathwayInput[] = [
   {
     "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
-  }
+  },
+      {"label":"Nobel chemistry committee 2015: selected base, nucleotide and mismatch repair mechanisms","url":"https://www.nobelprize.org/uploads/2018/06/advanced-chemistryprize2015-1.pdf"}
 ],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-14",
+ notes: ["Removing a lesion starts a repair job; synthesis and sealing complete it. In a selected base-excision route, a damaged base is removed, the backbone is processed and the gap is rebuilt and sealed. Nucleotide-excision repair cuts out a lesion-containing stretch, then fills and seals the patch. Mismatch repair replaces the incorrectly copied strand segment using the other strand as a template. These are different repair jobs; detecting a checkpoint signal does not demonstrate that any was completed."]
 }),
   p({
     id: "pd1-checkpoint", name: "PD-1 / PD-L1 immune checkpoint & T-cell activation", wikipedia: W("Immune_checkpoint"),

@@ -151,7 +151,8 @@ const pathways: PathwayInput[] = [
     interventions: ["ATR inhibitors (ceralasertib, camonsertib) alone and with PARP inhibitors or IO", "WEE1 (azenosertib) and PKMYT1 (lunresertib) inhibitors in CCNE1-amplified and TP53-mutant tumours", "PARP inhibitors trap forks in HRD tumours (see DDR)", "Gemcitabine and other antimetabolites are classical replication-stress inducers"],
     pathways: ["ddr", "p53-cell-cycle", "myc"], targets: ["atr", "wee1", "tp53", "parp"], technologies: ["synthetic-lethality-approaches", "parp-inhibitor"], terms: ["synthetic-lethality", "genome-instability-mutation"],
     institutions: ["icr-london", "dana-farber", "nki", "francis-crick"],
-    notes: ["Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies."],
+    notes: ["Leading programmes: Zou (MGH/Duke) and Cimprich (Stanford) on replication-stress signalling; ICR and Dana-Farber early-phase ATR/WEE1 programmes; NKI on CCNE1 dependencies.",
+      "At a moving replication fork, the unopened parental duplex lies ahead of the junction. New complementary DNA accumulates behind it on the parental templates. One new strand is made continuously toward the advancing fork; the lagging strand is made in short pieces that are later joined. Both are synthesised in the 5-prime to 3-prime direction. A shorter labelled track at the same pulse duration describes less DNA copied along the measured molecule, rather than a shorter labelling interval or proof of chromosome breakage."],
     links: [
   {
     "label": "Saxena & Zou, Hallmarks of DNA replication stress (Molecular Cell 2022)",
@@ -168,11 +169,12 @@ const pathways: PathwayInput[] = [
   {
     "label": "Nucleotide deficiency promotes genomic instability in early stages of cancer development. (2011; primary evidence)",
     "url": "https://pubmed.ncbi.nlm.nih.gov/21529715/"
-  }
+  },
+      {"label":"OpenStax Biology 2e 14.4: replication-fork structure and strand synthesis","url":"https://openstax.org/books/biology-2e/pages/14-4-dna-replication-in-prokaryotes"}
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-10"
+"asOf": "2026-11-14"
 }),
   p({
     id: "chromosomal-instability", name: "Chromosomal instability & aneuploidy", wikipedia: W("Chromosome_instability"),

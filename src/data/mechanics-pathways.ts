@@ -682,7 +682,9 @@ export const mechanicsPathways: PathwayInput[] = [
 
   {"label":"UniProt O95749: reviewed human GGPS1 catalytic reactions","url":"https://www.uniprot.org/uniprotkb/O95749/entry"},
 
-      {"label":"Martinez Molina et al. 2013: measuring drug target engagement with CETSA","url":"https://pubmed.ncbi.nlm.nih.gov/23828940/"}
+      {"label":"Martinez Molina et al. 2013: measuring drug target engagement with CETSA","url":"https://pubmed.ncbi.nlm.nih.gov/23828940/"},
+      {"label":"UniProt Q12772: human SREBP-2 precursor, processed fragment and membrane topology","url":"https://www.uniprot.org/uniprotkb/Q12772/entry"},
+      {"label":"Ye et al. 2000: SREBP membrane cleavage and release into cytosol","url":"https://pubmed.ncbi.nlm.nih.gov/10805775/"}
     ],
 
 "notes": [
@@ -694,8 +696,9 @@ export const mechanicsPathways: PathwayInput[] = [
   "HMG-CoA reductase makes mevalonate and is inhibited by statins. The downstream pathway branches: farnesyl pyrophosphate, FPP, feeds sterol synthesis through squalene and GGPP production as well as supplying protein prenylation; geranylgeranyl pyrophosphate, GGPP, supplies another prenylation route. Farnesyl and geranylgeranyl lipid modifications help position specified RAS- and RHO-family proteins, respectively. Cholesterol is a membrane component and a precursor of steroid hormones. Cholesterol amount, sterol synthesis and the whole mevalonate pathway are therefore different measurements. SCAP-SREBP sterol sensing regulates synthesis and uptake, but its activity, pathway transcripts, metabolite supply and dependence must each be established in the tested cells and medium.",
   "Freed-Pastor 2012 studied mutant-p53 breast cancer cells in three-dimensional culture, with different outcomes in two triple-negative lines. Depleting mutant p53 reduced invasive behaviour in MDA-MB-231 but did not make it form ordered hollow acini; MDA-MB-468 could acquire a more ordered, hollow architecture. Statins reduced invasion in the former and caused growth inhibition with extensive death in the latter, rather than exactly reproducing every p53-depletion phenotype. Mutant-p53 depletion reduced mevalonate-pathway expression, and mevalonate add-back opposed several statin effects. This supports a pathway contribution in the studied systems without isolating cholesterol. The whole paper also examined growth, death and xenograft growth; it was not solely an architecture experiment, and none of these results established patient treatment benefit.",
   "The branch experiments further narrowed an invasive-morphology question in MDA-MB-231. Blocking the geranylgeranylation branch had a larger effect than the tested sterol-branch block, and GGPP partly restored invasive growth after mutant-p53 depletion or statin treatment. That is not evidence that GGPP rescues inhibition of the transferase itself, nor that every effect in both cell lines was entirely explained by one metabolite. The authors allowed contributions from other products. In a fictional supply comparison, synthesis falls under an inhibitor in both lipid-poor and lipid-rich medium, but growth slows mainly in the former while import is stipulated to compensate in the latter. Equal engagement with different growth outcomes is compatible with environmental supply; it is not a measurement of supply or dependence in a person's tumour.",
+      "In the selected SREBP-2 route, the precursor spans a membrane and its gene-regulating end faces the cytosol. SCAP escorts the membrane-bound precursor from endoplasmic reticulum through transport vesicles to Golgi membranes. Cleavage releases the regulatory fragment into cytosol before nuclear entry; it does not carry the whole precursor, SCAP or the vesicle into the nucleus. Local sterol sensing and Insig-associated retention regulate this transport. A schematic of the route supplies neither a universal sterol threshold nor a measured transcription rate.",
 ],
-"asOf": "2026-11-13"
+"asOf": "2026-11-14"
 }),
   p({
     id: "angiogenic-switch", name: "The angiogenic switch & tumour vessels", wikipedia: W("Angiogenesis"),

@@ -1,0 +1,214 @@
+{
+  "currentReadersAndSchema": {
+    "checks": [
+      {
+        "id": "adc",
+        "state": "registered-local-root-before-any-peer-overlay",
+        "sha256": "0fbcc5fc99a302ab3adbdd830afeb1aba7179744fa1561f72968c075c0c7c0ee",
+        "bytes": 244979,
+        "recordSHA256": "84c2bb33a6d0b5f8ad8c9d1de33a49acedd8c66da40242f4f27dd14297504e54",
+        "missingSources": []
+      },
+      {
+        "id": "bispecific-antibody",
+        "state": "registered-local-root-before-any-peer-overlay",
+        "sha256": "4788a10b43f34c1cdab7cde57af249b17f408cf226ac66af584a67eb96ea469a",
+        "bytes": 119551,
+        "recordSHA256": "00808b67c00221ec1ae87aabf3806f006d09fe1ce9044e3ca1b942e35afc72f0",
+        "missingSources": []
+      },
+      {
+        "id": "t-cell-engager",
+        "state": "registered-local-root-before-any-peer-overlay",
+        "sha256": "44efb9978c3fc83be1daead93494417ea2182fd674aa27110b3e0b58d3fd4074",
+        "bytes": 167228,
+        "recordSHA256": "bf90e74dea2f6aee081121bc649b51fc797d066d511520bb3b82112394025df4",
+        "missingSources": []
+      },
+      {
+        "id": "car-t",
+        "state": "registered-local-root-before-any-peer-overlay",
+        "sha256": "3f9dbb5efccac21bfb4f79b57d30a60ca57fad9e3be94f4ea84f8946bbb8e756",
+        "bytes": 215871,
+        "recordSHA256": "f2e266185e8e10f63d3bef07ed62a1cb83eac4b695f442997754ef95c58a9828",
+        "missingSources": []
+      },
+      {
+        "id": "binder-targeting-module",
+        "state": "actual-unmerged-PR373-fields-in-memory-only",
+        "sha256": "99f1a70b39bdbab7172c5e960545a4944d362cefb92c93a83b3dd421b356fdd6",
+        "bytes": 21811,
+        "recordSHA256": "2224e2b8608505d9f8fc870fbe7ae6cfdfa8d3a37328d0300273117a940e1497",
+        "missingSources": []
+      },
+      {
+        "id": "binder-format-constraints",
+        "state": "actual-unmerged-PR373-fields-in-memory-only",
+        "sha256": "e7b69db583c921e12f1877bc46db95184be58d46f9faf0b72171e583012f9888",
+        "bytes": 24568,
+        "recordSHA256": "ad8c87f0db8988ad19e1b0b3a2bc297d6efee8f7a90bbfaefea0ffc9f6be7789",
+        "missingSources": []
+      }
+    ],
+    "actualCurrentRecordAndWholeGraphIdentityVerified": true,
+    "rootReadersReused": 4,
+    "actualUnmergedPeerReadersReused": 2,
+    "freshReaderRenders": 0,
+    "priorReaderPacket": "binding-display-source-assets-2026-11-14/reader-verification.json",
+    "priorReaderPacketSHA256": "609cfcbdc4a98bfb722deca55512b5b3ff700c694035cb9c8b1c1f793196bf72",
+    "reuseScope": "Exact six current record hashes, all graph fingerprints, actual contributor snapshot, HTML capture receipts and application code/data match the P20 actual EntityDetail fixture. This is not six new renders or a whole-reader browser check.",
+    "canonicalReadingScope": {
+      "reusedCompleteRecordVersions": 5,
+      "reusedADCScientificFieldRead": true,
+      "newFullRecordReads": 0
+    },
+    "selectedSchemaParses": 6,
+    "canonicalGraphChanges": 0,
+    "graphRecords": 23091,
+    "codeAndDataUnchangedSinceGateCommit": "4ce6d03a362e3775dc687da257017b8be33d6b7e",
+    "newFullGateRun": false,
+    "independentExpertOwnerLearnerAcceptance": false
+  },
+  "exactAnchorChecks": {
+    "checks": [
+      {
+        "requirement": "SB20-001",
+        "recordId": "binder-format-constraints",
+        "field": "tldr",
+        "fieldSHA256": "71b33e740d8da25d203d5a3d1a9ab349f3f767281034cb0bc24272a716a02f6d",
+        "passageSHA256": "6c6bc6db362988ed899eff87b6931c184d10f7a55cc1401aff0a8ac7e72424db",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-002",
+        "recordId": "t-cell-engager",
+        "field": "summary",
+        "fieldSHA256": "871ec9ccc71a98ac47dbdbca5c653ee7806b0640b5a395fd0996b6402a442e5b",
+        "passageSHA256": "07ce513cfe4316db191d329b1f6228854a786d956cc0f34c14b9b4cb38d6c2ae",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-003",
+        "recordId": "car-t",
+        "field": "principle",
+        "fieldSHA256": "3975f65196e1fe400c3ea6a6b26ef05db2652bda5e58de6d77f6bfd3f369a64d",
+        "passageSHA256": "9c30945161746153a94c7e174473a80cb30389fb093a62c17bc4e4b1b475c058",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-004",
+        "recordId": "car-t",
+        "field": "notes",
+        "fieldSHA256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+        "passageSHA256": "de397df0f0bebae7809af4a33004e4c31ab55a24e0442182747fb571ffedff8c",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-004",
+        "recordId": "car-t",
+        "field": "summary",
+        "fieldSHA256": "9a3116a90ddd5d99710320327e611e43a9c81ac190bbe49b4a0e2ea793927788",
+        "passageSHA256": "3e0003476afbe950db4168866cdaa3dab7f4f64000d60cb80d3b89a9d9b9a97c",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-005",
+        "recordId": "binder-format-constraints",
+        "field": "notes",
+        "fieldSHA256": "1d03f711bfed3e45547811e1c9cd89a028d41eda864a83283dcce1483603bfeb",
+        "passageSHA256": "5fb7660f0b15c16c2bd9ba019622cff1406ad08389b3bb2526505cd437e208a4",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-006",
+        "recordId": "binder-format-constraints",
+        "field": "notes",
+        "fieldSHA256": "1d03f711bfed3e45547811e1c9cd89a028d41eda864a83283dcce1483603bfeb",
+        "passageSHA256": "77edc3ffb17a2f2bbe6f909fa25ca75e575294892ac2606e34eaa66caf8ee652",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-007",
+        "recordId": "binder-format-constraints",
+        "field": "summary",
+        "fieldSHA256": "aea299f29ae772cc2cbf067e802f77608334470042a4a29bc1d61d13b3b04a64",
+        "passageSHA256": "96b381e7f9cff192caeb76941ed60e4976e6242ff37bcbc953d29aeaba922683",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-008",
+        "recordId": "bispecific-antibody",
+        "field": "notes",
+        "fieldSHA256": "0d5a9de0b3df56e63ed5b274ddfe1447128bd103f25b2abb0de3a2447f4e4e4c",
+        "passageSHA256": "8ff11fbae1de9fa3360c89841f39f90edb648c76a2d1959dfc9481c36ee0cf56",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-008",
+        "recordId": "car-t",
+        "field": "notes",
+        "fieldSHA256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+        "passageSHA256": "4d5878f87577d23b1799b3b44305eba4880abb437895c2359621e8397f1b9dd0",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-009",
+        "recordId": "adc",
+        "field": "notes",
+        "fieldSHA256": "5aa9d78401b7011dd68082c7af276f1de7d018b5b38b14ba567f4639ef7b5668",
+        "passageSHA256": "3c6f8584397e937ff65bb647d6ee972690989a2a7ba21ede5e79de262ce45c15",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      },
+      {
+        "requirement": "SB20-009",
+        "recordId": "car-t",
+        "field": "notes",
+        "fieldSHA256": "69d499b95609b093ee386e5ad508303cb61d64dc1aa3bb0283e7af2cd0dcedb1",
+        "passageSHA256": "ec7e19797bc358aed138b7006035bbeafe2fc84eca50d3c03fe12700b095cb28",
+        "exactCurrentPassageInIdentityCheckedPriorActualReader": true
+      }
+    ],
+    "allPass": true,
+    "exactReferences": 12,
+    "freshReaderRenders": 0,
+    "reusedActualReaders": 6,
+    "proposalAfterTextCredited": false
+  },
+  "sourceEvidence": [
+    {
+      "sourceId": "junutula",
+      "excerpt": "do not perturb immunoglobulin folding and assembly, or alter antigen binding.",
+      "excerptSHA256": "85fbffb3a9f3dfc34917be9dec658061eaf54ee0a339645352aa78b83633150e",
+      "captureSHA256": "a0364e0c0d805133dbd33a693047ff146a441073668b01328924be7977c6ee48",
+      "scope": "Complete raw abstract freshly read; whole paper not read."
+    },
+    {
+      "sourceId": "hudecek",
+      "excerpt": "length and composition of IgG-derived extracellular spacer domains",
+      "excerptSHA256": "cdba466aa1ce653e756b1a022e429a0ed22b6559e86ea818ad39109b68e258d4",
+      "captureSHA256": "3aa758c587192ece3802e375c6ea18cf7f3ccbfbd24d07590c1ba326b1a3e441",
+      "scope": "Complete raw abstract freshly read; whole paper not read."
+    },
+    {
+      "sourceId": "long",
+      "excerpt": "antigen-independent clustering of CAR single-chain variable fragments",
+      "excerptSHA256": "8e8a15c92673d7f1b05e19db03fadf5ba4638220cc5b4992ad01c7c69c9daec7",
+      "captureSHA256": "9c86958f0776d2e94b3df304a318f533d2ed7bfaeb170ba6ab71deff53781f49",
+      "scope": "Complete raw abstract freshly read; whole paper not read."
+    },
+    {
+      "sourceId": "fda-car-2024",
+      "excerpt": "CAR T cells and monoclonal antibodies that utilize the same single-chain variable fragment (scFv) may differ in their safety profile",
+      "excerptSHA256": "04073741c13371c4b9ee7b6e3804a16421bc9d4254df16b2ddcae29b7270ffbc",
+      "captureSHA256": "cd01188d8314469022466a3ce3424e6796fc205d1c8a325c092bdfa997d6ffb7",
+      "scope": "Two complete PDF pages 24 to 25, printed 21 to 22, freshly read from the exact official PDF captured in P20. Prior introduction/construct reading remains at its own depth. No whole-guidance read."
+    }
+  ],
+  "canonicalGraphChanges": 0,
+  "newDataOrProductCode": false,
+  "newFullGateRun": false,
+  "priorGatePacket": "fusion-short-summary-consumers-2026-11-14/validation.json",
+  "inheritedGateCommit": "4ce6d03a362e3775dc687da257017b8be33d6b7e",
+  "exactCurrentCodeDataAndGraphIdentityChecked": true,
+  "newAPIExportGenerationOrBuild": false
+}

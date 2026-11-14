@@ -1,0 +1,761 @@
+{
+  "version": "proposal-support-bodies-20-root",
+  "draft": 375,
+  "committedObservationHead": "294e73053a7b140d7f5542f6b2d0fb17bfac5681",
+  "lastDataCommit": "4ce6d03a362e3775dc687da257017b8be33d6b7e",
+  "state": "Four unchanged registered root objects selected for source interpretation. Selection is not authorship, blanket source re-verification, new rendering or contributor integration. Unmerged current fields and one exact proposed notes extension are separate.",
+  "records": [
+    {
+      "id": "adc",
+      "kind": "technology",
+      "name": "Antibody-drug conjugate (ADC)",
+      "aka": [],
+      "tldr": "An antibody-drug conjugate links a target-binding antibody to an active drug. Binding, delivery, release and drug action each matter, and normal tissues can also be exposed.",
+      "summary": "The antibody recognizes an accessible antigen; the attachment chemistry and linker affect stability and release; the payload acts through its own molecular mechanism. Cytotoxic examples include TOP1 inhibitors, tubulin inhibitors and DNA-damaging agents. Uptake and lysosomal processing are important for many constructs, while some linkers also release drug outside cells. A surface antigen can be a delivery address without being a driver the tumor depends on. The dose, mean loading, loading distribution, released species and exposure must be interpreted for the finished product. There is no universal fold improvement in the therapeutic window.",
+      "status": "approved",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Antibody-drug_conjugate",
+      "links": [
+        {
+          "label": "FDA: clinical pharmacology considerations for cytotoxic antibody-drug conjugates (2024)",
+          "url": "https://www.fda.gov/media/155997/download"
+        },
+        {
+          "label": "Goldenberg et al.: sacituzumab govitecan and gradual SN-38 release (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26101915/"
+        },
+        {
+          "label": "Tomabechi et al.: lysosomal transport of a T-DM1 catabolite (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36741448/"
+        },
+        {
+          "label": "Ogitani et al.: released-species permeability and local bystander killing in models (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27166974/"
+        },
+        {
+          "label": "Rampa et al.: acquired ADC resistance and payload switching in breast cancer models (2026)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41591991/"
+        },
+        {
+          "label": "FDA: companion diagnostics and corresponding therapeutic uses",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        },
+        {
+          "label": "Damelin et al.: target selection across the ADCs studied in 2015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25585957/"
+        },
+        {
+          "label": "KIMMTRAK U.S. label: gp100 peptide-HLA-A*02:01/CD3 recognition and indication",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+        },
+        {
+          "label": "HERCEPTIN U.S. label: proliferation inhibition and antibody-dependent cellular cytotoxicity",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=492dbdb2-077e-4064-bff3-372d6af0a7a2"
+        },
+        {
+          "label": "KADCYLA U.S. label: HER2-positive indications, DM1 and intracellular catabolites",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23f3c1f4-0fc8-4804-a9e3-04cf25dd302e"
+        },
+        {
+          "label": "TRODELVY U.S. prescribing information",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d"
+        },
+        {
+          "label": "ENHERTU U.S. prescribing information",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7e67e73e-ddf4-4e4d-8b50-09d7514910b6"
+        },
+        {
+          "label": "DATROWAY U.S. prescribing information",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2950227c-6230-4ca4-a135-46e44d9424a0"
+        },
+        {
+          "label": "Lim et al.: rituximab-CD20 internalization in B-cell malignancies (2011)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21768293/"
+        },
+        {
+          "label": "Kinneer et al.: lysosomal-transporter-dependent conjugate resistance (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30131388/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "idea-efflux-agnostic",
+        "idea-neoadjuvant-adc-io",
+        "db-1305",
+        "ibi130",
+        "9mw2921",
+        "bat8008",
+        "avzo-103",
+        "ibi3014",
+        "bhv-1510",
+        "vbc103",
+        "antibody-tumor-penetration",
+        "eye-care-with-ocular-toxic-antibody-drug-conjugates"
+      ],
+      "cancers": [
+        "dlbcl",
+        "hodgkin-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "adcs"
+      ],
+      "technologies": [
+        "topoisomerase-inhibitors",
+        "bispecific-adc",
+        "dual-payload-adc",
+        "degrader-antibody-conjugate",
+        "immune-stimulating-adc",
+        "masked-adc",
+        "site-specific-conjugation",
+        "radioimmunotherapy"
+      ],
+      "targets": [
+        "trop2",
+        "her2",
+        "her3",
+        "nectin4",
+        "b7h3",
+        "cldn18-2",
+        "folr1",
+        "tissue-factor",
+        "cdh6",
+        "met",
+        "cd19",
+        "bcma",
+        "cd33",
+        "cd123",
+        "ror1",
+        "cd79b",
+        "cd30",
+        "cd22"
+      ],
+      "drugs": [],
+      "companies": [
+        "celldex",
+        "tubulis",
+        "adcendo",
+        "alentis-therapeutics",
+        "bighat-biosciences",
+        "callio-therapeutics",
+        "cytomx-therapeutics",
+        "dantari",
+        "emergence-therapeutics",
+        "enlaza-therapeutics",
+        "firefly-bio",
+        "ideaya-biosciences",
+        "iksuda-therapeutics",
+        "mablink-bioscience",
+        "myricx-bio",
+        "mythic-therapeutics",
+        "nbe-therapeutics",
+        "orum-therapeutics",
+        "pheon-therapeutics",
+        "profoundbio",
+        "tallac-therapeutics",
+        "valink-therapeutics",
+        "neok-bio",
+        "sidewinder-therapeutics",
+        "adcytherix",
+        "stipple-bio",
+        "indupro-therapeutics",
+        "crescent-biopharma",
+        "kivu-bioscience",
+        "disco-pharmaceuticals",
+        "angiex",
+        "novelty-nobility",
+        "intocell",
+        "tagworks-pharmaceuticals",
+        "axcynsis-therapeutics",
+        "oncusp-therapeutics",
+        "primelink-biotherapeutics",
+        "dem-biopharma",
+        "var2-pharmaceuticals",
+        "biolojic-design",
+        "phrontline-biopharma",
+        "nanolattix",
+        "solve-therapeutics",
+        "advesya",
+        "dauntless-biotherapeutics"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "payload",
+        "linker",
+        "dar",
+        "bystander-effect",
+        "ild",
+        "adc-analytes-and-exposure",
+        "chk1-inhibitor-payloads",
+        "parp-inhibitor-payloads"
+      ],
+      "trials": [
+        "aaml0531",
+        "luminosity",
+        "nct07299747",
+        "nct06797999",
+        "nct06842498",
+        "nct07354711",
+        "nct07258407",
+        "nct06464055"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "monoclonal-antibody",
+        "adc-cdmo-manufacturing",
+        "high-potency-payload-synthesis",
+        "site-specific-conjugation",
+        "sterile-fill-finish"
+      ],
+      "notes": [
+        "The treatment and diagnostic labels retain product-specific indications and testing requirements. A companion diagnostic validated for one drug or intended use is not automatically interchangeable with another. Keep the study population, comparator and prior exposure with any clinical result; a binding result or shared antigen name does not transfer benefit.",
+        "Follow the complete construct through separate measurements. Controlled binding to viable cells tests an accessible recognition feature; fixed-tissue staining alone does not. A trafficking assay must distinguish surface-bound from internal material. Measuring the relevant released payload or catabolite at its site of action tests a later step, and a payload-appropriate functional readout and survival over time answer further questions. A fluorescent antibody-associated tag can remain detectable without demonstrating that active drug reached that compartment. Keep assay sensitivity, time, concentration, cellular denominator and controls with each result; no one of these measurements establishes delivery throughout a tumour or clinical benefit.",
+        "In a fictional model, a tissue stain names protein M and controlled live-cell tests show antibody binding. Four proposed products still need different experiments: a blocking antibody needs a relevant signal and survival readout; a conjugate needs active-material delivery and a response to that material; an engager needs useful T cells, target-negative and no-T-cell controls, and completed target-cell killing; a radiolabelled product needs distribution over time and tumour and normal-organ dosimetry. The observed binding does not supply those unmeasured results. A model can also omit normal tissues, immune cells, spatial variation or clinically achievable exposure.",
+        "Choosing a surface address involves its measured amount, accessible normal-tissue distribution, behaviour with the actual format and variation within and between lesions. One positive core at one date cannot survey the whole tumour. A static receptor count and a manufactured loading ratio do not alone determine cumulative delivery across receptor turnover, repeated encounters and release over time. ADC uptake and processing are construct-specific; antibody retention can matter to radiation delivery, and engager contact geometry and useful effectors matter to immune recruitment. No universal antigen-density cutoff or low-density format ranking follows from a platform name. Damelin's 2015 survey found a broad range of normal- and tumour-tissue expression among the ADC targets studied and could not formalise optimal target parameters within that set. It does not show that useful target selection is impossible.",
+        "A change of format is a new product hypothesis. If an ADC binds M but yields little active material after uptake, an M-directed engager might avoid that particular processing requirement. It still needs its own binding and contact-geometry measurements, useful effector access and function, normal-tissue testing and clinical evidence. Earlier antibody or ADC tolerability does not establish the safety of a different action. Bystander delivery and two-address designs are possible responses to heterogeneous expression, not guaranteed coverage or an exhaustive list of solutions.",
+        "Compare requirements rather than rank formats. Trastuzumab can inhibit proliferation and recruit antibody-dependent cellular cytotoxicity; the related HER2 antibody in trastuzumab deruxtecan carries a TOP1-inhibitor payload. An ADC and a surface T-cell engager differ in processing versus productive contact with useful effectors. An engager recruits responders, whereas a CAR-T product supplies engineered living cells with their own survival, expansion and trafficking. A radioligand's carrier distribution and radiation deposition differ from chemical-payload delivery. Sharing an address does not equalise any of these actions, exposure histories or normal-tissue risks. With a clinical claim, record disease, biomarker definition, prior care, comparator, endpoint, follow-up and harms alongside the actual product; access or eligibility cannot supply an unmeasured efficacy comparison.",
+        "Four U.S. breast-cancer label examples separate address from payload: sacituzumab govitecan pairs TROP2 with SN-38, datopotamab deruxtecan pairs TROP2 with DXd, trastuzumab deruxtecan pairs HER2 with DXd, and trastuzumab emtansine pairs HER2 with DM1. SN-38 and DXd inhibit TOP1; DM1 acts on microtubules. Their indication and testing requirements differ, including the HER2-positive uses of T-DM1 and specified lower-expression uses of T-DXd. Changing the address or payload changes a design feature, not a measured probability of response. These examples are not an exhaustive U.S. or worldwide approval inventory.",
+        "Lymphoma: binding and antigen abundance do not by themselves establish usable payload delivery. Internalization, intracellular processing and payload transport need construct-specific evidence. CD20 is not universally non-internalizing: rituximab-CD20 uptake varied with target-cell Fc-gamma receptor IIb in the cited experiments. Lysosomal-transporter experiments with other conjugates also show that a block after uptake can cause resistance. These observations do not establish one limiting toxicity for all lymphoma ADCs."
+      ],
+      "principle": "Binding can support delivery, but uptake, processing, access to the payload’s target and cellular response require separate evidence.",
+      "generation": "Attachment chemistry, payload and delivery format vary across products",
+      "strengths": [
+        "Can deliver an active drug through a selected molecular address",
+        "Some constructs kill neighboring target-negative cells in defined models"
+      ],
+      "limitations": [
+        "Normal-tissue exposure and product-specific lung, blood-cell, nerve or eye toxicity remain possible",
+        "Antigen, trafficking, release, efflux and cell-response changes can cause resistance",
+        "Binding or an expression score alone does not establish benefit"
+      ],
+      "since": 2000
+    },
+    {
+      "id": "bispecific-antibody",
+      "kind": "technology",
+      "name": "Bispecific antibodies",
+      "aka": [],
+      "tldr": "A bispecific antibody has two binding specificities. They can recognize different antigens or different parts of one antigen; the finished molecule can have more than two binding sites.",
+      "summary": "Bispecific describes recognition, rather than one required shape or biological action. Some molecules bridge a target cell to an immune effector. Others engage two targets or two epitopes without bridging two cells. Antibody fragments, IgG-based structures and added binding domains can arrange these specificities differently. A T-cell engager is one functional use; a conjugated payload is another product feature.\n\nTwo specificities do not establish that both targets are reached together, that binding produces killing, or that a molecule improves on a comparison treatment. Function, exposure, manufacturing quality and harms need evidence for the actual product and indication. A class containing approved drugs does not make every bispecific design an approved therapy.",
+      "status": "approved",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bispecific_monoclonal_antibody",
+      "links": [
+        {
+          "label": "FDA: Bispecific Antibody Development Programs guidance (2021), definitions, format, function and quality considerations",
+          "url": "https://www.fda.gov/media/123313/download"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "trispecific-antibodies",
+        "bispecific-step-up-dosing"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "targeted-therapy",
+        "immunotherapy"
+      ],
+      "technologies": [
+        "t-cell-engager",
+        "bispecific-adc"
+      ],
+      "targets": [
+        "cd3",
+        "cd20"
+      ],
+      "drugs": [
+        "amivantamab",
+        "zanidatamab",
+        "zenocutuzumab",
+        "ivonescimab"
+      ],
+      "companies": [
+        "xencor",
+        "amunix-pharmaceuticals",
+        "bicara-therapeutics",
+        "compass-therapeutics",
+        "cullinan-therapeutics",
+        "igm-biosciences",
+        "janux-therapeutics",
+        "marengo-therapeutics",
+        "xilio-therapeutics",
+        "ranata-therapeutics",
+        "harbour-biomed",
+        "third-arc-bio",
+        "indupro-therapeutics",
+        "ottimo-pharma",
+        "crescent-biopharma",
+        "clasp-therapeutics",
+        "epibiologics",
+        "mestag-therapeutics",
+        "juri-biosciences",
+        "ltz-therapeutics",
+        "cartography-biosciences",
+        "cdr-life",
+        "instil-bio",
+        "duboce-biopharmaceuticals",
+        "hemogenyx-pharmaceuticals",
+        "rondo-therapeutics",
+        "immunoah",
+        "normunity"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "monoclonal-antibody-manufacturing"
+      ],
+      "notes": [
+        "Specificity counts what is recognized; valency counts binding sites. Two different epitopes on the same antigen can provide two specificities. Added sites do not necessarily add a new specificity, and one molecule is different from separately dosed antibodies.",
+        "FDA guidance distinguishes products that bridge two cells from products whose functions do not require that bridge. Some mechanisms require both target interactions at the same time; others do not. Do not assume that every bispecific recruits T cells or that every target pair acts as an AND gate.",
+        "The manufacturing evaluation includes molecular identity, correct pairing, aggregation, fragments, stability and biological potency. Affinity, binding kinetics, avidity, target distribution and exposure belong to the actual format. Two successful binding assays do not by themselves demonstrate the intended combined function.",
+        "CD20/CD3 lymphoma engagers illustrate one bispecific format: CD20 recognition connects to T-cell recruitment through CD3. The target-binding step does not require tumor peptide-HLA recognition, but that does not guarantee useful cell function or response. Cytokine release syndrome and neurologic toxicity do not demonstrate effective tumor killing; step-up dosing is product-specific risk management, not freedom from serious harm."
+      ],
+      "principle": "Describe each recognition site, its epitope and copy number, then test whether simultaneous binding is needed for the intended effect in the relevant biological setting.",
+      "strengths": [
+        "Can place two recognition functions within a defined molecule",
+        "Different formats can be tested for a particular intended mechanism"
+      ],
+      "limitations": [
+        "Binding-site geometry and exposure can change function",
+        "Healthy tissues can carry either recognized target",
+        "Additional specificities do not establish greater benefit or freedom from harm"
+      ]
+    },
+    {
+      "id": "t-cell-engager",
+      "kind": "technology",
+      "name": "T-cell engagers (bispecific)",
+      "aka": [
+        "T-cell engager",
+        "T cell engager",
+        "TCE",
+        "TCEs",
+        "bispecific T-cell engager",
+        "BiTE",
+        "soluble TCR engager",
+        "TCR-mimic engager"
+      ],
+      "tldr": "T-cell engagers are proteins that bind a specified target and recruit T cells, often through CD3. A binding bridge does not by itself establish completed killing.",
+      "summary": "A dosed T-cell engager supplies a protein connecting target recognition to an available T cell. It does not itself install receptor instructions or supply engineered living responders. Product design can use antibody-derived binding fragments or a soluble TCR recognition domain; some target arms require a particular peptide-HLA complex. Compact BiTE designs, Fc-containing architectures and half-life extension describe features that can overlap rather than mutually exclusive treatment categories.\n\nClinical examples include blinatumomab in B-cell precursor acute lymphoblastic leukemia, teclistamab in multiple myeloma and tarlatamab in extensive-stage small-cell lung cancer. Their actual labels define different settings, combinations, prior treatments and harms. Tebentafusp is a peptide-HLA-directed soluble TCR/CD3 protein with its own allele- and disease-specific use. Neither a common platform name nor binding in a laboratory establishes eligibility or comparative benefit.",
+      "status": "approved",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Bi-specific_T-cell_engager",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bi-specific_T-cell_engager"
+        },
+        {
+          "label": "Liddy et al.: soluble TCR/CD3 ImmTAC constructs (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22561687/"
+        },
+        {
+          "label": "Dao et al.: antibody-derived WT1 peptide-HLA/CD3 engager (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26389576/"
+        },
+        {
+          "label": "Giffin et al.: defined AMG 757 preclinical and exposure models (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33203642/"
+        },
+        {
+          "label": "KIMMTRAK label: peptide-HLA/CD3 protein, intended use and pharmacology",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=24a49f57-d2fc-4ffe-9eb1-fe0460c6b067"
+        },
+        {
+          "label": "FDA tarlatamab application correspondence: BiTE binding domains with an IgG Fc region",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2024/761344Orig1s000AdminCorres.pdf"
+        },
+        {
+          "label": "FDA: tarlatamab traditional approval, DeLLphi-304 and warnings (2025)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-traditional-approval-tarlatamab-dlle-extensive-stage-small-cell-lung-cancer"
+        },
+        {
+          "label": "FDA: the specified blinatumomab consolidation use in B-cell precursor ALL (2024)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-blinatumomab-consolidation-cd19-positive-philadelphia-chromosome-negative-b-cell"
+        },
+        {
+          "label": "FDA: teclistamab combination and monotherapy use scopes (2026)",
+          "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-teclistamab-combination-daratumumab-hyaluronidase-fihj-relapsed-or-refractory-multiple"
+        },
+        {
+          "label": "Mack et al.: two single-chain Fv fragments in a compact experimental T-cell engager (1995)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7624362/"
+        },
+        {
+          "label": "Bluemel et al.: epitope distance and antigen size in BiTE-directed cell lysis (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20309546/"
+        },
+        {
+          "label": "Kebenko et al.: solitomab phase 1 study in refractory solid tumors (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30221040/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "nk-cell-engagers",
+        "car-t",
+        "tcr-t",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "immunotherapy"
+      ],
+      "technologies": [
+        "bispecific-antibody"
+      ],
+      "targets": [
+        "cd3",
+        "cd19",
+        "cd20",
+        "bcma",
+        "gprc5d",
+        "dll3",
+        "gp100",
+        "psma"
+      ],
+      "drugs": [
+        "tarlatamab",
+        "teclistamab",
+        "glofitamab",
+        "tebentafusp",
+        "blinatumomab"
+      ],
+      "companies": [
+        "xencor",
+        "amunix-pharmaceuticals",
+        "cullinan-therapeutics",
+        "cytomx-therapeutics",
+        "enlaza-therapeutics",
+        "harpoon-therapeutics",
+        "igm-biosciences",
+        "janux-therapeutics",
+        "marengo-therapeutics",
+        "cytospire-therapeutics",
+        "third-arc-bio",
+        "clasp-therapeutics",
+        "disco-pharmaceuticals",
+        "excalipoint-therapeutics",
+        "juri-biosciences",
+        "chiome-bioscience",
+        "cartography-biosciences",
+        "cdr-life",
+        "vitruviae",
+        "crossbow-therapeutics",
+        "duboce-biopharmaceuticals",
+        "shine-on-biomedical",
+        "normunity"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "crs"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "bispecific-antibody"
+      ],
+      "notes": [
+        "An antibody-derived TCR mimic recognizes a peptide-HLA complex using an antibody scaffold. A soluble TCR/CD3 engager instead uses a TCR-derived recognition scaffold attached to a recruiting arm. TCR-T administers cells carrying receptor chains. Target recognition, molecular scaffold and administered object are separate axes; a mimic can be part of an engager without becoming a TCR protein.",
+        "Liddy studied soluble TCR/CD3 ImmTAC proteins in experimental systems. Dao studied an antibody-derived WT1/HLA-A*02:01/CD3 engager in cells and mice. Their results do not establish clinical benefit for every scaffold, HLA allele or cancer. Recruiting another T cell does not require that cell’s native receptor to recognize the target, but does not remove the target arm’s HLA restriction.",
+        "The KIMMTRAK label identifies tebentafusp as a soluble gp100 peptide-HLA/CD3 protein for HLA-A*02:01-positive adults with unresectable or metastatic uveal melanoma. This is a named clinical protein example, not an engineered-cell product or evidence that other peptide-HLA binders share its indication or outcomes.",
+        "Binding to supplied peptide-HLA reagent can bypass natural processing and display. Source-protein expression or a compatible genotype alone is not a functional target assay. For a research claim, compare naturally presenting targets, irrelevant peptides, the wrong HLA allele, antigen-negative targets, suitable effector cells, no-effector conditions and healthy tissues. Labeled clinical selection tests remain a separate clinical-use rule. Record the peptide sequence, HLA allele, display method and its detection or recovery limits; no universal target-density cutoff follows from the format name.",
+        "The Mack construct joined two single-chain Fv fragments with a peptide linker in one compact protein; this is different from an IgG architecture with an Fc region. The FDA tarlatamab application describes DLL3/CD3 binding domains combined with an IgG Fc region in a half-life-extended BiTE. Thus BiTE, Fc-containing and half-life-extended are not three exclusive buckets. Fc design, binding geometry, affinity, target density, distribution and measured exposure still belong to the specific molecule. The Giffin cell, mouse and nonhuman-primate study does not define a universal human schedule.",
+        "Compare recognition, T-cell activation, proliferation, target death, cytokine release and protein exposure at named times. Record effector source/state, target density, effector-to-target ratio, dose or concentration and denominator; include target-negative and no-effector controls. A granule or cytokine signal does not substitute for completed target-cell death or clinical benefit. Cytokines in a culture are a measured laboratory endpoint, not a diagnosis of clinical cytokine-release syndrome.",
+        "Bluemel compared epitope positions and antigen sizes in engineered cell systems. Constructs with similar target-binding affinity differed in target-cell lysis, supporting functional testing of the actual geometry rather than ranking every molecule by affinity alone. In the solitomab phase 1 solid-tumor study, dose-limiting diarrhea and liver abnormalities constrained dose escalation; an accessible target and a binding bridge did not by themselves establish a useful therapeutic window.",
+        "Compared with administered CAR-T or TCR-T cells, a protein engager recruits effectors rather than supplying engineered responders. Protein mass/concentration and viable-cell dose have different units; clearance differs from cell survival, expansion and trafficking. A shared target name does not establish matched epitope, affinity, contact geometry, exposure, controllability or safety.",
+        "The 2025 FDA tarlatamab decision followed the randomized DeLLphi-304 comparison after platinum-based treatment in SCLC. Its survival finding belongs to that drug and setting. The cited blinatumomab consolidation and teclistamab combination/monotherapy decisions likewise retain their own settings; none is a class-wide treatment-sequencing rule.",
+        "Stopping a protein infusion and reversing an injury are different outcomes. In Kebenko's 2018 phase 1 solitomab study of 65 patients with refractory solid tumours, the reported half-life was 4.5 hours. Diarrhoea limited dosing; one grade 3 event progressed to grade 5 after solitomab discontinuation. That observation shows why short measured protein exposure does not guarantee immediate reversal of toxicity. It is one product and study, not a rate or a safety rule for all engagers. Living engineered cells have their own expansion, persistence and trafficking, rather than sharing this protein's clearance clock.",
+        "For a lymphoma engager, target presence, access to suitable T cells and useful effector function need separate evidence. Antigen expression alone does not establish these other steps. These biological questions do not by themselves select an earlier treatment line; treatment timing needs evidence for the actual drug and setting."
+      ],
+      "principle": "A specified target-binding region and T-cell-recruiting region promote encounters. CD3 recruitment can bypass the recruited cell’s own antigen specificity; a peptide-HLA-binding target arm still retains its peptide and HLA requirements.",
+      "strengths": [
+        "Established clinical uses for particular products in defined settings",
+        "Protein exposure can be adjusted through a specified dosing regimen"
+      ],
+      "limitations": [
+        "Productive encounters need accessible targets and functional effectors",
+        "Healthy-tissue recognition, cytokine release and neurologic harms need product-specific evidence",
+        "Stopping administration does not instantly clear protein or reverse an effect already triggered"
+      ]
+    },
+    {
+      "id": "car-t",
+      "kind": "technology",
+      "name": "CAR-T cell therapy",
+      "aka": [
+        "CAR-T",
+        "CAR T cells",
+        "CAR T-cell therapy",
+        "Chimeric antigen receptor T cells"
+      ],
+      "tldr": "CAR-T therapy uses T cells carrying an engineered receptor. Approved products treat selected blood cancers, with product-specific eligibility and safety requirements.",
+      "summary": "CAR-T cell therapy uses T cells carrying a chimeric antigen receptor to recognize a target. FDA-approved products include CD19- and BCMA-directed CAR-T cells for selected blood cancers, including B-cell leukemias, lymphomas and multiple myeloma. The individual product label defines the treatment setting and eligibility. A common autologous approach collects a person’s T cells, engineers and expands them outside the body, then infuses them back; conditioning and follow-up depend on the protocol.\n\nA common antibody-derived CAR joins an external binding region, a hinge or spacer, a membrane anchor and intracellular signaling domains. The receptor is a protein; its encoding instructions and the living cell carrying it are different objects. Approved products and experimental constructs differ in cell source, receptor, manufacturing and clinical setting. Product labels and trial records define their actual uses; a platform name does not establish eligibility or benefit.\n\nIn early work, Gross, Waks and Eshhar joined antibody-variable regions to T-cell receptor components in 1989. Eshhar and colleagues subsequently tested single-chain antibody-binding regions joined to gamma or zeta signaling chains in 1993. These experimental designs helped separate recognition from the signaling machinery attached to it.\n\nFDA-approved examples include tisagenlecleucel, axicabtagene ciloleucel, lisocabtagene maraleucel, brexucabtagene autoleucel, obecabtagene autoleucel, idecabtagene vicleucel and ciltacabtagene autoleucel. Their labeled diseases, treatment settings and eligibility differ; the individual product records retain those distinctions.",
+      "status": "approved",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+        },
+        {
+          "label": "Gross, Waks and Eshhar, the first chimeric antigen receptor (PNAS 1989)",
+          "url": "https://doi.org/10.1073/pnas.86.24.10024"
+        },
+        {
+          "label": "Sotillo et al., Cancer Discov 2015: acquired mutations and alternative splicing of CD19 enable resistance to CART-19",
+          "url": "https://doi.org/10.1158/2159-8290.CD-15-1020"
+        },
+        {
+          "label": "Deng et al., Nat Med 2020: single-cell features of the axicabtagene ciloleucel infusion product that track efficacy and toxicity in 24 patients",
+          "url": "https://doi.org/10.1038/s41591-020-1061-7"
+        },
+        {
+          "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "NCI: T-cell transfer therapy and harms",
+          "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+        },
+        {
+          "label": "Eshhar et al.: single-chain binding and signaling receptors (1993)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8421711/"
+        },
+        {
+          "label": "Hudecek et al.: spacer composition, Fc interactions and mouse-model activity (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25212991/"
+        },
+        {
+          "label": "Kawalekar et al.: costimulatory domains and human T-cell metabolism (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26885860/"
+        },
+        {
+          "label": "Ramos et al.: co-infused second- and third-generation constructs (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30309819/"
+        },
+        {
+          "label": "Rafiq et al.: WT1 peptide-HLA-targeting CAR proof of concept (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27924074/"
+        },
+        {
+          "label": "CAR signaling-domain library, pooled screening and single-cell analysis (2024 preprint)",
+          "url": "https://doi.org/10.1101/2024.02.26.582129"
+        },
+        {
+          "label": "FDA: approved cellular and gene therapy products",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products"
+        },
+        {
+          "label": "FDA: elimination of REMS for named autologous CAR T-cell products (2025)",
+          "url": "https://www.fda.gov/news-events/press-announcements/fda-eliminates-risk-evaluation-and-mitigation-strategies-rems-autologous-chimeric-antigen-receptor"
+        },
+        {
+          "label": "FDA: boxed-warning changes for T-cell malignancy risk (2024)",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/fda-requires-boxed-warning-t-cell-malignancies-following-treatment-bcma-directed-or-cd19-directed"
+        },
+        {
+          "label": "NCI: CAR T Cells, Engineering Patients’ Immune Cells",
+          "url": "https://www.cancer.gov/about-cancer/treatment/research/car-t-cells"
+        },
+        {
+          "label": "FDA Kymriah prescribing information, section 11",
+          "url": "https://www.fda.gov/media/107296/download"
+        },
+        {
+          "label": "Precision Tumor Recognition by T Cells With Combinatorial Antigen-Sensing Circuits. (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26830879/"
+        },
+        {
+          "label": "Combinatorial antigen recognition with balanced signaling promotes selective tumor eradication by engineered T cells. (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23242161/"
+        },
+        {
+          "label": "Preclinical evaluation of antitumor activity and toxicity of TROP2-specific CAR-T cells for treatment of triple-negative breast cancer. (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40903191/"
+        },
+        {
+          "label": "Phase I Study of ROR1-Specific CAR-T Cells in Advanced Hematopoietic and Epithelial Malignancies. (2025)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39466024/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cellular-kinetics-and-persistence",
+        "logic-gated-therapeutics",
+        "muc1",
+        "antifungal-prophylaxis-in-haematology",
+        "car-t-apheresis",
+        "car-t-bridging",
+        "car-t-infection-prevention",
+        "car-t-lymphodepletion",
+        "car-t-referral-and-eligibility",
+        "crs-grading-and-management",
+        "icaht-prolonged-cytopenia",
+        "icans-grading-and-management",
+        "iec-hs-management",
+        "tumour-lysis-syndrome-prevention-and-treatment",
+        "vaccination-around-cancer-treatment"
+      ],
+      "cancers": [
+        "dlbcl",
+        "follicular-lymphoma",
+        "mantle-cell-lymphoma",
+        "non-hodgkin-lymphoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [
+        "in-vivo-car-t",
+        "allogeneic-cell-therapy",
+        "armored-car"
+      ],
+      "targets": [
+        "cd19",
+        "bcma",
+        "cldn18-2",
+        "gpc3",
+        "gprc5d",
+        "cd70",
+        "mesothelin"
+      ],
+      "drugs": [
+        "ciltacabtagene-autoleucel",
+        "axicabtagene-ciloleucel",
+        "satricabtagene-autoleucel",
+        "tisagenlecleucel",
+        "lisocabtagene-maraleucel",
+        "brexucabtagene-autoleucel",
+        "obecabtagene-autoleucel",
+        "idecabtagene-vicleucel"
+      ],
+      "companies": [
+        "cellogen",
+        "adicet-bio",
+        "allotera-therapeutics",
+        "arcellx",
+        "cargo-therapeutics",
+        "century-therapeutics",
+        "imugene",
+        "leah-labs",
+        "lyell-immunopharma",
+        "modulari-t",
+        "poseida-therapeutics",
+        "tmunity-therapeutics",
+        "cartesian-therapeutics",
+        "vor-biopharma",
+        "cartx-therapeutics",
+        "juventas-cell-therapy",
+        "dispatch-bio",
+        "link-cell-therapies",
+        "tikva-allocell",
+        "brainchild-bio",
+        "leucid-bio",
+        "arovella-therapeutics",
+        "avencell-therapeutics",
+        "outpace-bio",
+        "utc-therapeutics",
+        "march-biosciences",
+        "gyala-therapeutics",
+        "triarm-therapeutics",
+        "genomefrontier-therapeutics",
+        "ticaros",
+        "cero-therapeutics",
+        "hemogenyx-pharmaceuticals",
+        "vittoria-biotherapeutics",
+        "arce-therapeutics",
+        "moonlight-bio",
+        "advesya",
+        "famicordtx",
+        "t-maximum-pharmaceutical",
+        "mabswitch"
+      ],
+      "institutions": [
+        "fact-cellular-therapy"
+      ],
+      "pathways": [],
+      "terms": [
+        "crs",
+        "icans",
+        "lymphoma-bio-antigen-escape",
+        "lymphoma-bio-lineage-antigen-cost",
+        "iec-hs"
+      ],
+      "trials": [
+        "nct07036250",
+        "nct05759728",
+        "nct07103668",
+        "nct07523555",
+        "nct06055439",
+        "nct05652920"
+      ],
+      "people": [
+        "zelig-eshhar"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-gross-eshhar-chimeric-receptor-pnas-1989"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing",
+        "cell-therapy-orchestration-software"
+      ],
+      "notes": [
+        "Generation labels describe common signaling architectures. First-generation constructs use an activation domain, often CD3 zeta; second-generation designs add one costimulatory region; third-generation designs combine two. Fourth-generation and later labels vary across authors. More domains do not establish better patient outcomes. The full binder, spacer, anchor, signaling arrangement and cell preparation still matter.",
+        "CD28 and 4-1BB are borrowed intracellular signaling regions, not separately administered receptors. Kawalekar compared metabolic and memory features in defined human-cell experiments. Ramos co-infused two specified second- and third-generation products in lymphoma; different expansion and persistence did not isolate comparative clinical benefit. Neither study ranks all products by signaling-domain name.",
+        "Binding, surface CAR expression, activation, proliferation and completed target-cell killing are distinct readouts. Compare otherwise matched constructs, target-positive and target-negative cells, healthy-tissue targets and unstimulated activity. Hudecek found that particular IgG-derived spacers could support killing in a dish yet impair activity in mouse models through Fc interactions.",
+        "A peptide-HLA target is an exception to blanket HLA-independent descriptions. Rafiq tested a WT1 peptide presented by HLA-A*02:01 in cell and mouse models; this was a proof of concept, not evidence that every intracellular protein or every HLA type is addressable by that construct.",
+        "A 2024 preprint used a pooled signaling-domain library, repeated stimulation and single-cell sequencing to study how domain arrangement affected T-cell states over time. Its membrane-proximal-domain findings are construct-and-assay observations, not a clinical ranking of domains or a validation of pooled-screen hits as treatments.",
+        "FDA initiated boxed-warning changes in 2024 for the risk of T-cell malignancies after the then-approved BCMA- or CD19-directed autologous CAR T-cell products. Its communication calls for lifelong monitoring for secondary malignancies. This is a scoped regulatory warning, not a claim that every type of engineered immune cell has the same risk.",
+        "In June 2025, FDA eliminated REMS requirements for the named autologous CAR T-cell products in its notice. Product warnings and safety monitoring continued. The manufacturer postmarketing observational studies with 15-year follow-up described in that notice are different from the lifelong patient-monitoring statement in the earlier safety communication.",
+        "A receptor-bearing cell, its genetic instructions and its receptor protein are different objects. For a protein-coding instruction, DNA is transcribed into RNA, and a ribosome translates usable messenger RNA into protein. Delivered messenger RNA starts at the translation step. Folding and transport to the membrane still have to occur before a surface receptor can bind its target. In this schematic sequence, simplified shapes and an arrow from recognition toward a response do not show that every cell expressed the receptor or completed killing.",
+        "Kymriah’s product description illustrates why borrowed parts do not identify the whole product. Its CD19-binding region is a murine-derived single-chain antibody fragment, followed by a CD8-derived hinge and transmembrane region and the internal 4-1BB/CD137 and CD3-zeta signalling domains. CD8 here names the origin of structural segments, not a claim that the infused preparation contains only CD8 T cells. The label describes enrichment for T cells and permits other cell populations. Autologous source, domain names and architecture do not transfer Kymriah’s clinical results to another construct.",
+        "Suppose two fictional CARs differ only in their hinge: both bind purified antigen, but only one kills antigen-bearing cells. Compare surface expression and the geometry of cell contact before concluding that affinity is the problem. Likewise, DNA-positive cells without killing leave RNA production, receptor folding and trafficking, actual binding and signalling as separate possible failure points. Hudecek’s R11 ROR1 experiments illustrate a product-specific constraint: a long spacer enabled recognition of its membrane-proximal epitope, while changes that reduced Fc-receptor binding improved activity in the tested mice. Longer is not a universal design rule. Treat the transmembrane segment as part of the finished construct: assess assembly, surface expression and interactions rather than presume it is a neutral anchor. Unstimulated signalling and responses to repeated target encounters also need separate assessment.",
+        "In a fictional population of 100 cancer cells, 80 display target X and 20 do not. Killing the X-positive 80 leaves 20 survivors; ten times as many effector cells does not create X on them. For two targets, suppose 20 cells carry both X and Y, 60 carry X only, ten Y only and ten neither. An idealised either-target rule covers 90 cells, whereas a both-target rule covers 20. These are recognition-coverage calculations, not measured killing or healthy-tissue selectivity. Expression thresholds, tissue access and cell function still matter.",
+        "TNBC describes a breast-cancer subtype, not one universal receptor target. A research programme, a positive stain or a named cell platform does not establish a treatment indication or rank safe recognition strategies. The cited TROP2 work supplies preclinical observations, and the ROR1 phase-I report supplies limited activity and infiltration observations in its actual mixed population. These studies do not supply a comparative clinical-benefit estimate for every antigen-directed product in TNBC. Individual labels and clinical studies define their own disease, regimen and eligibility scope.",
+        "Kawalekar’s defined human-CAR experiments linked 4-1BB signalling to outgrowth of CD8 central-memory cells with greater respiratory capacity, fatty-acid oxidation and mitochondrial biogenesis. CD28-containing CARs produced effector-memory cells with a gene-expression pattern consistent with greater glycolysis. These are construct-and-system observations, not a ranking of clinical speed, persistence or safety by domain name. Other receptor parts, preparation, starting-cell state, target and disease setting remain relevant. Ramos simultaneously infused separately tracked second- and third-generation products. Their different expansion and persistence did not let a shared tumour response isolate either product’s clinical contribution.",
+        "Relapse mechanisms need separate investigation. Sotillo found CD19 sequence and splicing changes affecting recognition in B-ALL relapse material and experiments. Deng found infusion-product transcriptional features associated with outcomes in a selected cohort of 24 large B-cell lymphoma infusion products; those associations did not prove that one engineered modification would correct every failure."
+      ],
+      "principle": "A common CAR presents a binder outside the cell and signaling domains inside it, connected through a spacer and transmembrane region. Conventional surface-antigen recognition can bypass peptide-HLA presentation; specialized peptide-HLA-targeting CARs retain the relevant HLA and antigen-processing requirements.",
+      "strengths": [
+        "Antigen-directed recognition in engineered T cells",
+        "Established uses for specific products in selected blood cancers"
+      ],
+      "limitations": [
+        "Shared healthy-tissue targets and inflammatory, neurologic or blood-count harms",
+        "Manufacturing, access and cost depend on the product and setting",
+        "Antigen heterogeneity, cell state, tissue access and local inhibition"
+      ],
+      "since": 2017
+    }
+  ]
+}

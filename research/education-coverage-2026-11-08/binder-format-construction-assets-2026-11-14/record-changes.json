@@ -1,0 +1,43 @@
+{
+  "baseCommit": "294e73053a7b140d7f5542f6b2d0fb17bfac5681",
+  "canonicalOwnersChanged": 0,
+  "newRecords": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "actualContributorOwner": "binder-format-constraints",
+  "proposals": [
+    {
+      "id": "SB20-P01",
+      "recordId": "binder-format-constraints",
+      "version": "draft-373",
+      "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "field": "notes",
+      "before": [
+        "There is no transferable best affinity. A measured affinity describes an interaction in a specified model, while behaviour also depends on target density, geometry, exposure and unwanted recognition. Bluemel et al. (2010) found BiTE constructs with similar affinity but very different lysis. Kinna et al. (2026) chose ten VHH and scFv pairs with comparable domain targeting and KD of 10^-9 to 10^-11 molar and still found differences in stability, in vitro cytokine release and survival in an acute myeloid leukaemia xenograft; the tumour was the human AML-derived MOLM-14 cell line in NSG mice, with generally five mice per group. The authors identify use of a single donor from the preceding in-vitro experiments as a limitation. This does not establish general superiority of either format or compare clinical products in patients.",
+        "Format changes what is tested. A soluble molecule must stay intact and usable through manufacture, storage and exposure, and adding binding units or a chemical cargo can change its behaviour (Junutula et al., 2008, anti-MUC16 conjugate in mice, rats and monkeys). A CAR fixes the binder to a membrane and links contact to signalling, so spacer reach, target position, expression and clustering matter (Hudecek et al., 2015; Long et al., 2015). The same recognition sequence therefore does not guarantee the same performance.",
+        "Healthy-cell inference. A target found on cancer cells may also occur at lower amounts on healthy cells, so a change that improves recognition of target-low cancer cells can also improve recognition of healthy cells that carry some target. Format testing has to ask about both. FDA's January 2024 CAR T guidance calls for in vitro and in vivo assessment of antigen-dependent and antigen-independent activity in the complete product.",
+        "Assay card for format work. Input is the actual assembled molecule or receptor-bearing cells (aliquots are consumed). Conditions to state are target density, exposure time, cell state and relevant negative and healthy-cell controls. Outputs are kept separate: binding constants under their model, receptor-positive cell fractions, cytokine concentration and timed target-cell survival. Thresholds are prespecified and product-specific, with no transferable affinity or activation cutoff. Limits include aggregation, poor expression, geometry and background signalling, and a dish omits whole-body exposure and tissue context. The validation tier is product-specific laboratory characterisation, earlier evidence than clinical safety or benefit."
+      ],
+      "beforeSha256": "1d03f711bfed3e45547811e1c9cd89a028d41eda864a83283dcce1483603bfeb",
+      "after": [
+        "There is no transferable best affinity. A measured affinity describes an interaction in a specified model, while behaviour also depends on target density, geometry, exposure and unwanted recognition. Bluemel et al. (2010) found BiTE constructs with similar affinity but very different lysis. Kinna et al. (2026) chose ten VHH and scFv pairs with comparable domain targeting and KD of 10^-9 to 10^-11 molar and still found differences in stability, in vitro cytokine release and survival in an acute myeloid leukaemia xenograft; the tumour was the human AML-derived MOLM-14 cell line in NSG mice, with generally five mice per group. The authors identify use of a single donor from the preceding in-vitro experiments as a limitation. This does not establish general superiority of either format or compare clinical products in patients.",
+        "Format changes what is tested. A soluble molecule must stay intact and usable through manufacture, storage and exposure, and adding binding units or a chemical cargo can change its behaviour (Junutula et al., 2008, anti-MUC16 conjugate in mice, rats and monkeys). A CAR fixes the binder to a membrane and links contact to signalling, so spacer reach, target position, expression and clustering matter (Hudecek et al., 2015; Long et al., 2015). The same recognition sequence therefore does not guarantee the same performance. In the schematic soluble format, folding, stability, distribution and the intended action are separate questions about the assembled molecule. An isolated binding result does not by itself establish those properties of the finished product.",
+        "Healthy-cell inference. A target found on cancer cells may also occur at lower amounts on healthy cells, so a change that improves recognition of target-low cancer cells can also improve recognition of healthy cells that carry some target. Format testing has to ask about both. FDA's January 2024 CAR T guidance calls for in vitro and in vivo assessment of antigen-dependent and antigen-independent activity in the complete product.",
+        "Assay card for format work. Input is the actual assembled molecule or receptor-bearing cells (aliquots are consumed). Conditions to state are target density, exposure time, cell state and relevant negative and healthy-cell controls. Outputs are kept separate: binding constants under their model, receptor-positive cell fractions, cytokine concentration and timed target-cell survival. Thresholds are prespecified and product-specific, with no transferable affinity or activation cutoff. Limits include aggregation, poor expression, geometry and background signalling, and a dish omits whole-body exposure and tissue context. The validation tier is product-specific laboratory characterisation, earlier evidence than clinical safety or benefit."
+      ],
+      "afterSha256": "44823a6ead070c058418e5fef1e67724df0678a7472f6a42d8ce4b8f78df729c",
+      "scope": "Exact proposed append within the existing second note, preserving every previous note and field. The added sentences are explicitly a schematic reading rule. They are unapplied and earn no current-field credit.",
+      "sourceIds": [
+        "junutula",
+        "fda-car-2024"
+      ],
+      "requirements": [
+        "SB20-005"
+      ],
+      "applied": false
+    }
+  ],
+  "currentFieldsAndPriorNotesUnchanged": true
+}

@@ -288,7 +288,7 @@ export const tldr_de: Record<string, string> = {
   "gardasil-9": "Ein Impfstoff gegen neun HPV-Typen, der etwa 90 % der Gebärmutterhalskrebsfälle verhindert und inzwischen mit einer einzigen Dosis wirkt.",
   gd2: "GD2 ist ein Zucker-Fett-Molekül auf der Oberfläche von Neuroblastomzellen (und einigen anderen Tumoren bei Kindern und Erwachsenen), das auf normalem Gewebe mit Ausnahme der Nerven fast nicht vorkommt, weshalb Anti-GD2-Medikamente Schmerzen verursachen.",
   "gemcitabine-cisplatin": "Gemcitabine plus cisplatin ist seit 2010 das Rückgrat der Chemotherapie bei Gallengangskrebs und wird heute zusammen mit einer Immuntherapie gegeben.",
-  "gene-fusion": "Eine Genfusion entsteht, wenn zwei Gene brechen und miteinander verschmelzen, wodurch ein Hybridprotein entsteht, das Krebs antreiben kann. Fusionsgetriebene Krebsarten sind oft außerordentlich empfindlich gegenüber Medikamenten.",
+  "gene-fusion": "Eine Genfusion verbindet Sequenzen verschiedener Gene. Das RNA-Produkt, die Folgen für das Protein und die Bedeutung für eine Behandlung brauchen jeweils eigene Belege.",
   "geriatric-assessment": "Das geriatrische Assessment ist eine strukturierte Prüfung der Fitness, des Gedächtnisses und der Unterstützung eines älteren Patienten, die die Verträglichkeit einer Behandlung besser vorhersagt als das Alter.",
 
   "germline-vs-somatic": "Keimbahnmutationen sind vererbt und in jeder Zelle vorhanden; somatische Mutationen entstehen nur im Tumor.",

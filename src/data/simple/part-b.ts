@@ -50,7 +50,7 @@ export const simpleB: Record<string, string> = {
   vaf: "The share of DNA reads carrying a mutation, which shows how much of the sample is cancer.",
   vus: "A genetic change that has been found but nobody yet knows whether it matters.",
 
-  "gene-fusion": "Two genes broken and joined together, making a hybrid protein that can drive cancer and is often very drug-sensitive.",
+  "gene-fusion": "A gene fusion joins parts of different genes. Finding it does not by itself show what protein is made, how it works or whether a treatment will help.",
 
   pam50: "A 50-gene test that sorts breast cancers into four biological groups.",
   neoantigen: "A changed tumour sequence can make a new protein piece. Immune cells may recognise it, but tests still need to check display, recognition and harm to healthy cells.",

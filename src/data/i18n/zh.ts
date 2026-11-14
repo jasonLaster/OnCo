@@ -408,7 +408,7 @@ export const tldr_zh: Record<string, string> = {
   vaf: "携带突变的DNA读数比例。告知样本中突变占比及克隆性。",
   vus: "已发现但尚不知是否重要的基因改变。",
 
-  "gene-fusion": "两个基因断裂并拼接，产生可驱动癌症的杂合蛋白。往往对药物极度敏感。",
+  "gene-fusion": "基因融合把不同基因的序列连接起来。它的 RNA 产物、对蛋白质的影响和治疗意义，都需要各自的证据支持。",
 
   pam50: "一项50基因检测，将乳腺癌分为luminal A、luminal B、HER2富集型和基底样型。",
   "abscopal-effect": "照射一个肿瘤使别处未治疗的肿瘤通过免疫系统缩小。",

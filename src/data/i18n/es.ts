@@ -408,7 +408,7 @@ export const tldr_es: Record<string, string> = {
   vaf: "La fracción de lecturas de ADN que llevan una mutación. Indica cuánto de la muestra es mutante y cuán clonal es.",
   vus: "Un cambio genético que se ha encontrado pero del que nadie sabe aún si importa.",
 
-  "gene-fusion": "Dos genes rotos y unidos, que crean una proteína híbrida capaz de impulsar el cáncer. A menudo exquisitamente sensible a fármacos.",
+  "gene-fusion": "Una fusión génica une secuencias de genes distintos. Su producto de ARN, sus efectos sobre la proteína y su relevancia para el tratamiento requieren evidencia específica para cada uno.",
 
   pam50: "Una prueba de 50 genes que clasifica los cánceres de mama en luminal A, luminal B, HER2-enriquecido y basal.",
   "abscopal-effect": "Cuando irradiar un tumor hace que otros tumores no tratados se reduzcan, a través del sistema inmunitario.",

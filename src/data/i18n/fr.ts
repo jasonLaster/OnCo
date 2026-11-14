@@ -288,7 +288,7 @@ export const tldr_fr: Record<string, string> = {
   "gardasil-9": "Un vaccin contre neuf types de HPV qui prévient environ 90 % des cancers du col de l'utérus, et qui fonctionne désormais avec une seule dose.",
   gd2: "GD2 est une molécule de sucre et de graisse présente à la surface des cellules de neuroblastome (et de certaines autres tumeurs de l'enfant et de l'adulte), quasiment absente des tissus normaux à l'exception des nerfs, ce qui explique pourquoi les médicaments anti-GD2 provoquent des douleurs.",
   "gemcitabine-cisplatin": "Gemcitabine plus cisplatin est le socle de la chimiothérapie du cancer des voies biliaires depuis 2010 et s'administre désormais avec une immunothérapie.",
-  "gene-fusion": "Une fusion de gènes, c'est deux gènes cassés puis soudés ensemble, créant une protéine hybride capable de provoquer un cancer. Les cancers dus à une fusion sont souvent extrêmement sensibles aux médicaments.",
+  "gene-fusion": "Une fusion de gènes relie des séquences de gènes différents. Le produit en ARN, les effets sur la protéine et l’intérêt pour le traitement doivent être évalués séparément, à partir de preuves adaptées.",
   "geriatric-assessment": "L'évaluation gériatrique est un bilan structuré de la forme physique, de la mémoire et du soutien dont dispose un patient âgé, qui prédit la tolérance au traitement mieux que l'âge.",
 
   "germline-vs-somatic": "Les mutations germinales sont héritées et présentes dans toutes les cellules ; les mutations somatiques apparaissent uniquement dans la tumeur.",

@@ -659,6 +659,7 @@ const pathways: PathwayInput[] = [
   "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
       "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
       "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors.",
+      "Hellström and colleagues perturbed Dll4/Notch1 signalling in mouse retinal vessels. Inhibiting the route increased tip-cell formation; the authors interpreted signalling between endothelial neighbours as restricting tip-cell numbers relative to stalk cells. Tip and stalk describe roles in a growing vessel, rather than cancer cells assigned a simple growth-on or growth-off state. These experiments do not establish the state of a human tumour from a pathway label.",
 ],
     links: [
   {
@@ -687,10 +688,11 @@ const pathways: PathwayInput[] = [
   },
 
   {"label":"Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)","url":"https://pubmed.ncbi.nlm.nih.gov/25104330/"},{"label":"van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)","url":"https://pubmed.ncbi.nlm.nih.gov/15959515/"},{"label":"Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)","url":"https://pubmed.ncbi.nlm.nih.gov/11432830/"},{"label":"Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)","url":"https://pubmed.ncbi.nlm.nih.gov/25231399/"},
+      {"label":"Hellström et al.: Dll4/Notch1 and tip-cell formation in mouse retinal vessels (2007)","url":"https://doi.org/10.1038/nature05571"},
 ],
     tags: ["mechanism"],
 
-"asOf": "2026-11-13"
+"asOf": "2026-11-14"
 }),
   p({
     id: "jak-stat", keyPapers: ["paper-darnell-jak-stat-science-1994"], name: "JAK-STAT signalling", wikipedia: W("JAK-STAT_signaling_pathway"),

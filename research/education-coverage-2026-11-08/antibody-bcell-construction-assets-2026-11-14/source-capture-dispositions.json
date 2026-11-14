@@ -1,0 +1,32 @@
+{
+  "genuineTitleConfirmedChallenges": [
+    "janeway-structure-html",
+    "janeway-binding-html",
+    "janeway-clearance-html",
+    "janeway-switching-html"
+  ],
+  "initialJCIExtractionGuardCorrection": {
+    "correction": "The initial presence-of-reCAPTCHA-token guard falsely classified two legitimate JCI article responses as challenge pages. Both carry their intended titles and full article text. The corrected extractor checks challenge titles, and the four Janeway responses remain title-confirmed challenge pages. No JCI article reading was credited before correction.",
+    "affectedSources": [
+      "gul-jci-html",
+      "gu-trantien-jci-html"
+    ],
+    "sourceBytesChanged": false
+  },
+  "cabritaCorrection": {
+    "originalSourceId": "cabrita",
+    "correctionSourceId": "cabrita-correction",
+    "pmid": "32238929",
+    "doi": "10.1038/s41586-020-2155-6",
+    "metadataResolvedInEuropePMCAndCrossref": true,
+    "completeCorrectionParagraphRead": true,
+    "correctionParagraph": 10,
+    "correctionParagraphSHA256": "56780c8b18179fd0d920e9dc7c305efd7c2af78a24372abd943e82f7153b8138",
+    "scope": "This notice changes the funding acknowledgement and grant-agreement wording. It does not announce a change to the biological or clinical results used by the scoped TLS teaching.",
+    "researchAbstractsRead": 12,
+    "additionalNoticeAbstract": "Boilerplate amendment pointer, read in full; not a substantive research abstract",
+    "canonicalFieldChangeRequired": false,
+    "newFullPaperReadClaimed": false
+  },
+  "allOtherCapturesRetainOnlyDeclaredReadingDepth": true
+}

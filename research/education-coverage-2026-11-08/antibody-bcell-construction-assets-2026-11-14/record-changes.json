@@ -1,0 +1,408 @@
+{
+  "committedData": {
+    "head": "4efb70d4fcae57b68129b4af77e8002a54090d90",
+    "base": "94ca7a85487b1d3d42018cf11be06c9bb9c90e0d",
+    "committedFiles": [
+      "src/data/education-parallel-antigen-antibodies-2026-11.ts",
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-j.ts",
+      "src/data/terms-cansim-oncology.ts",
+      "src/data/tests.ts"
+    ],
+    "allCommittedDataBytesMatchFullGateInputs": true,
+    "canonicalOwnersChanged": 4,
+    "canonicalFieldsChanged": 7,
+    "translatedLeadsWithdrawn": 8,
+    "EnglishSimpleEntriesCorrected": 1,
+    "newRecords": 0,
+    "datesNamesAliasesRelationsAndRegistrationsChanged": false,
+    "priorNotesAndLinksPreserved": true,
+    "postGateDataEdits": false,
+    "pushed": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "rootOwnerEdits": 4,
+  "canonicalFields": [
+    {
+      "recordId": "adcc-adcp-cdc",
+      "kind": "term",
+      "file": "src/data/education-parallel-antigen-antibodies-2026-11.ts",
+      "field": "notes",
+      "before": [
+        "Evidence tiers: Clynes 2000 and Gül 2014 are mouse studies; Diebolder 2014 is a cell and biochemical study. Read from the Europe PMC abstracts on 9 November 2026; the textbook chapter the teaching source cites (Janeway, Immunobiology) refused scripted access and was not opened.",
+        "Teaching source: the Oncoguide concept page on antibody-guided effector mechanisms, read at pinned commits 7510db6 and c968964 (teaching text unchanged between them)."
+      ],
+      "after": [
+        "Evidence tiers: Clynes 2000 and Gül 2014 are mouse studies; Diebolder 2014 is a cell and biochemical study. Read from the Europe PMC abstracts on 9 November 2026; the textbook chapter the teaching source cites (Janeway, Immunobiology) refused scripted access and was not opened.",
+        "Teaching source: the Oncoguide concept page on antibody-guided effector mechanisms, read at pinned commits 7510db6 and c968964 (teaching text unchanged between them).",
+        "In the NK-cell route, the Fc receptor sits on the NK-cell membrane and meets Fc exposed on the antibody-coated target. Fab tips recognise the target antigen. Granules are released into the space between the cells while the NK cell remains outside; this is different from engulfment. The NK-cell example does not make ADCC an exclusive name for one cell type.",
+        "For whole-cell ADCP, distinguish the phagocyte's boundary and nucleus from the target. A completed whole-target uptake schematic places the coated target, including its nucleus, inside a separate closed phagosome; the phagocyte's own nucleus stays outside that compartment. Contact or a fluorescent fragment does not demonstrate whole-cell internalisation. Gül and colleagues' mouse live-cell imaging separated fragment sampling, whole-cell phagocytosis and later degradation; these are different observations.",
+        "A completed membrane-attack pore crosses the two leaflets of one lipid bilayer, connecting the outside of a target cell with its interior. It is different from complement deposited on the surface. Serna and colleagues assembled purified human complement proteins on liposomes and studied functional pores by cryo-electron microscopy and dye release; they distinguished complete pores from assembly precursors that can insert without spanning the bilayer. A single sketched IgG or a drawn pore-subunit count is not an activation requirement or a measured molecular stoichiometry.",
+        "Killing and engulfment experiments commit sampled cell aliquots to the experiment, so budget them separately from fixed sections and untouched material. If complement recruitment increases but measured target viability is unchanged at the stated time, those observations do not demonstrate increased killing. This is a reading rule for the stated observations, not a treatment-effect estimate."
+      ],
+      "beforeSHA256": "38906fcf32f529c6af6b38a7de79f6b8eef925860bb4ab66c288892027bc865c",
+      "afterSHA256": "24e00c1e20fe12c87bc4c114f370551fa8d1513eb49e9c338fef561776ec8664",
+      "operation": "append-literal-array",
+      "addedValues": [
+        "In the NK-cell route, the Fc receptor sits on the NK-cell membrane and meets Fc exposed on the antibody-coated target. Fab tips recognise the target antigen. Granules are released into the space between the cells while the NK cell remains outside; this is different from engulfment. The NK-cell example does not make ADCC an exclusive name for one cell type.",
+        "For whole-cell ADCP, distinguish the phagocyte's boundary and nucleus from the target. A completed whole-target uptake schematic places the coated target, including its nucleus, inside a separate closed phagosome; the phagocyte's own nucleus stays outside that compartment. Contact or a fluorescent fragment does not demonstrate whole-cell internalisation. Gül and colleagues' mouse live-cell imaging separated fragment sampling, whole-cell phagocytosis and later degradation; these are different observations.",
+        "A completed membrane-attack pore crosses the two leaflets of one lipid bilayer, connecting the outside of a target cell with its interior. It is different from complement deposited on the surface. Serna and colleagues assembled purified human complement proteins on liposomes and studied functional pores by cryo-electron microscopy and dye release; they distinguished complete pores from assembly precursors that can insert without spanning the bilayer. A single sketched IgG or a drawn pore-subunit count is not an activation requirement or a measured molecular stoichiometry.",
+        "Killing and engulfment experiments commit sampled cell aliquots to the experiment, so budget them separately from fixed sections and untouched material. If complement recruitment increases but measured target viability is unchanged at the stated time, those observations do not demonstrate increased killing. This is a reading rule for the stated observations, not a treatment-effect estimate."
+      ],
+      "sourceIds": [
+        "fcgr3a-uniprot",
+        "vidarsson",
+        "gul",
+        "mac-structure"
+      ],
+      "evidenceScope": "Curated function/topology, review anatomy, targeted mouse microscopy and purified-protein liposome experiment; schematic and assay-budget statements are identified as interpretation rules."
+    },
+    {
+      "recordId": "adcc-adcp-cdc",
+      "kind": "term",
+      "file": "src/data/education-parallel-antigen-antibodies-2026-11.ts",
+      "field": "links",
+      "before": [
+        {
+          "label": "Clynes et al., 2000, Nature Medicine (PMID 10742152)",
+          "url": "https://doi.org/10.1038/74704"
+        },
+        {
+          "label": "Gül et al., 2014, Journal of Clinical Investigation (PMID 24430180)",
+          "url": "https://doi.org/10.1172/JCI66776"
+        },
+        {
+          "label": "Diebolder et al., 2014, Science (PMID 24626930)",
+          "url": "https://doi.org/10.1126/science.1248943"
+        }
+      ],
+      "after": [
+        {
+          "label": "Clynes et al., 2000, Nature Medicine (PMID 10742152)",
+          "url": "https://doi.org/10.1038/74704"
+        },
+        {
+          "label": "Gül et al., 2014, Journal of Clinical Investigation (PMID 24430180)",
+          "url": "https://doi.org/10.1172/JCI66776"
+        },
+        {
+          "label": "Diebolder et al., 2014, Science (PMID 24626930)",
+          "url": "https://doi.org/10.1126/science.1248943"
+        },
+        {
+          "label": "Serna et al., 2016: Structural basis of complement membrane attack complex formation",
+          "url": "https://doi.org/10.1038/ncomms10587"
+        },
+        {
+          "label": "UniProt FCGR3A (CD16A): function and membrane topology",
+          "url": "https://www.uniprot.org/uniprotkb/P08637/entry"
+        }
+      ],
+      "beforeSHA256": "bbc3bbfbdcc2a34b7c02fb26d06d8a00631471e7a9e76fa894703deea51f9136",
+      "afterSHA256": "ff8944e1adb35efeae4c440974d672f01b2ac1ec97c5754f94f32d663afb089f",
+      "operation": "append-literal-array",
+      "addedValues": [
+        {
+          "label": "Serna et al., 2016: Structural basis of complement membrane attack complex formation",
+          "url": "https://doi.org/10.1038/ncomms10587"
+        },
+        {
+          "label": "UniProt FCGR3A (CD16A): function and membrane topology",
+          "url": "https://www.uniprot.org/uniprotkb/P08637/entry"
+        }
+      ]
+    },
+    {
+      "recordId": "tertiary-lymphoid-structures",
+      "kind": "term",
+      "file": "src/data/terms-cansim-oncology.ts",
+      "field": "notes",
+      "before": [
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/tertiary-lymphoid-structures."
+      ],
+      "after": [
+        "Architecture labels describe observations rather than a compulsory sequence: a loose aggregate, separated T- and B-cell regions, a B-cell follicle and a demonstrated germinal centre are different findings. Germinal centres support proliferation and selection among B-cell variants. Follicular dendritic cells retain immune complexes for B cells and support follicular organisation; they are stromal cells, distinct from conventional dendritic cells that process antigens for T cells. Krautler and colleagues traced follicular dendritic cells to perivascular precursors and demonstrated immune-complex trapping and B-cell recruitment in mouse models. That lineage experiment does not itself validate a human tumour maturity test.",
+        "For a tissue-based result, retain the sampled site, assessed tumour or invasive-margin region, stains, counted area and study criteria. Sectioning and staining use finite fixed material. Vanhersecke's methods used serial sections and excluded pre-existing lymphoid follicles when assessing involved lymphoid organs, so an ordinary lymph-node follicle must not be counted as an ectopic tumour TLS. Small or disrupted samples can miss relevant architecture. RNA alone cannot display the physical T/B arrangement, and architecture alone identifies neither the antigens recognised nor effective tumour killing or individual treatment benefit.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/tertiary-lymphoid-structures."
+      ],
+      "beforeSHA256": "f6c6134a5834fdad373ea307c9a81ea1bf19755b870f1eacc7efe2a5f868e0a5",
+      "afterSHA256": "470cee32da395a42db83a6a1adc1ac348926eb78db3e43863d89e0a9cbef0a96",
+      "operation": "insert-literal-array-before-inherited-attribution",
+      "addedValues": [
+        "Architecture labels describe observations rather than a compulsory sequence: a loose aggregate, separated T- and B-cell regions, a B-cell follicle and a demonstrated germinal centre are different findings. Germinal centres support proliferation and selection among B-cell variants. Follicular dendritic cells retain immune complexes for B cells and support follicular organisation; they are stromal cells, distinct from conventional dendritic cells that process antigens for T cells. Krautler and colleagues traced follicular dendritic cells to perivascular precursors and demonstrated immune-complex trapping and B-cell recruitment in mouse models. That lineage experiment does not itself validate a human tumour maturity test.",
+        "For a tissue-based result, retain the sampled site, assessed tumour or invasive-margin region, stains, counted area and study criteria. Sectioning and staining use finite fixed material. Vanhersecke's methods used serial sections and excluded pre-existing lymphoid follicles when assessing involved lymphoid organs, so an ordinary lymph-node follicle must not be counted as an ectopic tumour TLS. Small or disrupted samples can miss relevant architecture. RNA alone cannot display the physical T/B arrangement, and architecture alone identifies neither the antigens recognised nor effective tumour killing or individual treatment benefit."
+      ],
+      "inheritedNoteHandling": "The factory appends the existing CanSim attribution after literal notes. Its exact text and the relative order of all prior notes are preserved.",
+      "sourceIds": [
+        "fdc-precursors",
+        "gu-trantien",
+        "vanhersecke"
+      ],
+      "evidenceScope": "Targeted mouse lineage, human breast-tissue architecture and retrospective tissue methods; sampling and interpretation limits are stated without a clinical-benefit claim."
+    },
+    {
+      "recordId": "tertiary-lymphoid-structures",
+      "kind": "term",
+      "file": "src/data/terms-cansim-oncology.ts",
+      "field": "links",
+      "before": [
+        {
+          "label": "Sautès-Fridman et al., Tertiary lymphoid structures in the era of cancer immunotherapy (Nature Reviews Cancer 2019)",
+          "url": "https://doi.org/10.1038/s41568-019-0144-6"
+        },
+        {
+          "label": "Mature tertiary lymphoid structures predict immune checkpoint inhibitor efficacy in solid tumors independently of PD-L1 expression.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35118423/"
+        },
+        {
+          "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+        },
+        {
+          "label": "CD4⁺ follicular helper T cell infiltration predicts breast cancer survival.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23778140/"
+        },
+        {
+          "label": "Sautes-Fridman et al. 2019 review: Tertiary lymphoid structures in the era of cancer immunotherapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31092904/"
+        }
+      ],
+      "after": [
+        {
+          "label": "Sautès-Fridman et al., Tertiary lymphoid structures in the era of cancer immunotherapy (Nature Reviews Cancer 2019)",
+          "url": "https://doi.org/10.1038/s41568-019-0144-6"
+        },
+        {
+          "label": "Mature tertiary lymphoid structures predict immune checkpoint inhibitor efficacy in solid tumors independently of PD-L1 expression.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35118423/"
+        },
+        {
+          "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+        },
+        {
+          "label": "CD4⁺ follicular helper T cell infiltration predicts breast cancer survival.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23778140/"
+        },
+        {
+          "label": "Sautes-Fridman et al. 2019 review: Tertiary lymphoid structures in the era of cancer immunotherapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31092904/"
+        },
+        {
+          "label": "Krautler et al., 2012: Follicular dendritic cells emerge from ubiquitous perivascular precursors",
+          "url": "https://doi.org/10.1016/j.cell.2012.05.032"
+        }
+      ],
+      "beforeSHA256": "e238dca4c6bed9c3b71970f82c5013dc6c3f2bfa845bb23c85c61876065eeed6",
+      "afterSHA256": "fd48565a4c366d1db3b032f8d1b64904504a1ae42512b41e016c4ed300086eb8",
+      "operation": "append-literal-array",
+      "addedValues": [
+        {
+          "label": "Krautler et al., 2012: Follicular dendritic cells emerge from ubiquitous perivascular precursors",
+          "url": "https://doi.org/10.1016/j.cell.2012.05.032"
+        }
+      ]
+    },
+    {
+      "recordId": "isotypes-and-fc-silencing",
+      "kind": "term",
+      "file": "src/data/education-parallel-antigen-antibodies-2026-11.ts",
+      "field": "summary",
+      "before": "An isotype is a heavy-chain class: IgM, IgD, IgG, IgA or IgE, and human IgG also has the subclasses IgG1, IgG2, IgG3 and IgG4. The classes differ in architecture, distribution and potential effector interactions. Vidarsson et al. (2014) review how the four IgG subclasses differ in their hinges and upper CH2 domains, which bind Fc gamma receptors and C1q, giving different effector functions, while the Fc also carries a binding site for the neonatal Fc receptor (FcRn) that extends half-life. A B-cell lineage can undergo class switching, changing the constant region while keeping the rearranged variable-region sequence; this differs from the mutations that change affinity during a response, and neither the class nor a switch says what antigen an antibody recognises. Subclass, Fc sugars, target geometry and the available cells all affect interactions, so IgG1 and IgG4 are not interchangeable but neither name fully predicts behaviour. As a real example, pembrolizumab is a humanised IgG4 kappa antibody (FDA label, section 11); its intended job is to block the PD-1 receptor, not to recruit killer cells to the T cells it binds.\n\nFc silencing uses design changes to reduce selected receptor or complement interactions. Lo et al. (2017) found that the commonly used N297G and D265A/N297G variants, effective at attenuating effector function in primates, retained potent complement activation in mice and created safety liabilities in murine studies, whereas an L234A, L235A, P329G (LALA-PG) variant eliminated complement binding and attenuated effector activity in that setting. That supports engineering a particular interaction in a particular species; it does not prove universal human safety or silence in every assay. IgG4 is not a synonym for a fully silent Fc.\n\nFcRn has a separate role in IgG transport and recycling, so reduced Fc gamma receptor recruitment does not by itself establish reduced FcRn binding or a shorter half-life. Compare matched molecules with the same binding regions and measure target binding, Fc gamma receptor and C1q binding, and killing, engulfment or complement damage separately, stating species, receptor variants, concentrations and effector cells; FcRn binding and exposure are further questions. An antibody meant to remove a target-bearing cell may benefit from effector recruitment, whereas one meant to block an immune receptor may need to avoid removing useful receptor-bearing cells, and a silenced Fc does not prevent target binding, payload toxicity or every source of inflammation.",
+      "after": "An isotype is a heavy-chain class: IgM, IgD, IgG, IgA or IgE, and human IgG also has the subclasses IgG1, IgG2, IgG3 and IgG4. The classes differ in architecture, distribution and potential effector interactions. Vidarsson et al. (2014) review how the four IgG subclasses differ in their hinges and upper CH2 domains, which bind Fc gamma receptors and C1q, giving different effector functions, while the Fc also carries a binding site for the neonatal Fc receptor (FcRn) that extends half-life. A B-cell lineage can undergo class switching, changing the constant region while keeping the rearranged variable-region sequence; this differs from the mutations that change affinity during a response, and neither the class nor a switch says what antigen an antibody recognises. Subclass, Fc sugars, target geometry and the available cells all affect interactions, so IgG1 and IgG4 are not interchangeable but neither name fully predicts behaviour. As a real example, pembrolizumab is a humanised IgG4 kappa antibody (FDA label, section 11); its intended job is to block the PD-1 receptor, not to recruit killer cells to the T cells it binds.\n\nFc silencing uses design changes to reduce selected receptor or complement interactions. Lo et al. (2017) found that the commonly used N297G and D265A/N297G variants, effective at attenuating effector function in primates, retained potent complement activation in mice and created safety liabilities in murine studies, whereas an L234A, L235A, P329G (LALA-PG) variant eliminated complement binding and attenuated effector activity in that setting. That supports engineering a particular interaction in a particular species; it does not prove universal human safety or silence in every assay. IgG4 is not a synonym for a fully silent Fc.\n\nFcRn has a separate role in IgG transport and recycling, so reduced Fc gamma receptor recruitment does not by itself establish reduced FcRn binding or a shorter half-life. Compare matched molecules with the same binding regions and measure target binding, Fc gamma receptor and C1q binding, and killing, engulfment or complement damage separately, stating species, receptor variants, concentrations and effector cells; FcRn binding and exposure are further questions. An antibody meant to remove a target-bearing cell may benefit from effector recruitment, whereas one meant to block an immune receptor may need to avoid removing useful receptor-bearing cells, but Fc attenuation alone does not establish loss of target binding or absence of payload toxicity or inflammation.",
+      "beforeSHA256": "e457999dbc6bc3d3121713b7a01ad5ca409754dcb8c9504cb3afafdb2b888235",
+      "afterSHA256": "20ff9835b1c994dd0a87ced06b62ff5d85598befafe5f5f706ad03d1d8b559fd",
+      "operation": "replace-exact-clause",
+      "beforeClause": "and a silenced Fc does not prevent target binding, payload toxicity or every source of inflammation.",
+      "afterClause": "but Fc attenuation alone does not establish loss of target binding or absence of payload toxicity or inflammation.",
+      "sourceIds": [
+        "lo",
+        "vidarsson"
+      ],
+      "correction": "Replace a categorical statement with the inference supported by testing selected interactions; matched recognition regions still require a target-binding measurement."
+    },
+    {
+      "recordId": "sensitivity-specificity",
+      "kind": "term",
+      "file": "src/data/tests.ts",
+      "field": "tldr",
+      "before": "Sensitivity is the share of people with the disease a test catches; specificity is the share of healthy people it correctly clears. No test scores 100% on both, and for screening the trade-off decides how many false alarms you get.",
+      "after": "At a stated threshold, sensitivity is the fraction of reference-condition cases called positive, and specificity is the fraction of reference non-cases called negative. Study estimates carry uncertainty and can change across populations.",
+      "beforeSHA256": "384d2ac1e6b7d66abceea6c1065645e68bc812e59187975fab54a79d47cfffc4",
+      "afterSHA256": "faf4072ddd2f611e47b23f715a553a22e0d9b8e2638b48a17de3a125f873e41c",
+      "operation": "replace-literal-scalar",
+      "sourceIds": [
+        "fda-diagnostic-pdf"
+      ],
+      "sourcePages": [
+        7,
+        8
+      ],
+      "correction": "Apply the preserved P33-RC01 correction. A study estimate can be 100%; remove the unsupported universal prohibition and retain reference-standard and uncertainty scope. The older summary and date are not recertified."
+    },
+    {
+      "recordId": "sensitivity-specificity",
+      "kind": "term",
+      "file": "src/data/tests.ts",
+      "field": "links",
+      "before": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sensitivity_and_specificity"
+        }
+      ],
+      "after": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sensitivity_and_specificity"
+        },
+        {
+          "label": "FDA, 2007: Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests",
+          "url": "https://www.fda.gov/media/71147/download"
+        }
+      ],
+      "beforeSHA256": "08fdc042aeafa2596719fcbd9c73a0a0763f784906c37d0f95fbf4a6a88253a8",
+      "afterSHA256": "e1466b58d1ec964ac6f447ae8fa0d246580dacb519ef9fc3fc77058032079f01",
+      "operation": "append-literal-array",
+      "addedValues": [
+        {
+          "label": "FDA, 2007: Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests",
+          "url": "https://www.fda.gov/media/71147/download"
+        }
+      ]
+    }
+  ],
+  "consumerChanges": [
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "es",
+      "file": "src/data/i18n/es.ts",
+      "before": "La sensibilidad es la proporción de personas con la enfermedad que una prueba detecta; la especificidad es la proporción de personas sanas que descarta correctamente. Ninguna prueba alcanza el 100% en ambas, y en el cribado ese equilibrio decide cuántas falsas alarmas se producen.",
+      "after": null,
+      "beforeSHA256": "b0ffe5c7e8107b92e0f7f008d42dc2ceedb64184633c98e2ba594d44e6c7beca",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "zh",
+      "file": "src/data/i18n/zh.ts",
+      "before": "敏感性是检测能发现的患者比例;特异性是检测能正确排除的健康人比例。没有任何检测能在两者上都达到100%,而在筛查中,两者之间的权衡决定了会出现多少误报。",
+      "after": null,
+      "beforeSHA256": "bd0323de137754da66bb63bfb84be247d39fa21a6146c2d802e35a461aaf16d9",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "pt",
+      "file": "src/data/i18n/pt.ts",
+      "before": "A sensibilidade é a proporção de pessoas com a doença que um teste deteta; a especificidade é a proporção de pessoas saudáveis que ele exclui corretamente. Nenhum teste atinge 100% em ambas, e no rastreio esse equilíbrio decide quantos falsos alarmes se obtêm.",
+      "after": null,
+      "beforeSHA256": "b7e50d19048e699bf864346aa6bfabddaaf2ba90d194d7075ebed2bdfc88adc4",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "hi",
+      "file": "src/data/i18n/hi.ts",
+      "before": "संवेदनशीलता उन रोगग्रस्त लोगों का अनुपात है जिन्हें कोई परीक्षण पकड़ लेता है; विशिष्टता उन स्वस्थ लोगों का अनुपात है जिन्हें वह सही ढंग से स्वस्थ बताता है। कोई परीक्षण दोनों में 100% नहीं पाता, और स्क्रीनिंग में यही संतुलन तय करता है कि कितने झूठे अलार्म मिलेंगे।",
+      "after": null,
+      "beforeSHA256": "d3a583697144b1ad774b290a54678f095183692939c10484f17cd38dba21dbfb",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "fr",
+      "file": "src/data/i18n/fr.ts",
+      "before": "La sensibilité est la part des personnes malades qu'un test détecte ; la spécificité est la part des personnes en bonne santé qu'il écarte correctement. Aucun test n'atteint 100 % sur les deux, et pour le dépistage, ce compromis détermine le nombre de fausses alertes.",
+      "after": null,
+      "beforeSHA256": "3e6a0e4a399549d5836e7b7b26c55a4cc7a51d26679694f87ddfa43d3cb4b446",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "de",
+      "file": "src/data/i18n/de.ts",
+      "before": "Die Sensitivität ist der Anteil der Erkrankten, die ein Test erkennt; die Spezifität ist der Anteil der Gesunden, die er korrekt als gesund einstuft. Kein Test erreicht bei beiden 100 %, und beim Screening entscheidet dieser Kompromiss darüber, wie viele Fehlalarme es gibt.",
+      "after": null,
+      "beforeSHA256": "96610484ceac9bce01df9150cdc787642fa29d697849d7ba0d563ab62b647b17",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "ja",
+      "file": "src/data/i18n/ja.ts",
+      "before": "感度は、病気のある人のうち検査が見つけられる割合。特異度は、健康な人のうち検査が正しく陰性と判定する割合。両方で100%を達成する検査はなく、検診ではこの兼ね合いが誤警報の数を左右する。",
+      "after": null,
+      "beforeSHA256": "2ccc90ab4ee36544cae63cd85c1939ad3b0d9154cb9826a3b9ffbcc0bdedab88",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "ar",
+      "file": "src/data/i18n/ar.ts",
+      "before": "الحساسية هي نسبة المصابين بالمرض الذين يكشفهم الاختبار؛ والنوعية هي نسبة الأصحاء الذين يستبعدهم بشكل صحيح. لا يحقق أي اختبار 100% في كلتيهما، وفي الفحص المبكر تحدد هذه الموازنة عدد الإنذارات الكاذبة.",
+      "after": null,
+      "beforeSHA256": "0c6ddda81588b58addde7a074a93f7dd077fcac2d858e7660a978d00e70e46b9",
+      "afterSHA256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "operation": "remove-stale-translation-use-current-English-fallback",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    },
+    {
+      "canonicalRecordId": "sensitivity-specificity",
+      "language": "simple",
+      "file": "src/data/simple/part-j.ts",
+      "before": "Sensitivity is the share of people with the disease a test catches, and specificity is the share of healthy people it correctly clears, a trade-off in screening.",
+      "after": "At a stated cut-off, sensitivity is the share of reference cases called positive; specificity is the share of reference non-cases called negative. Both are uncertain study estimates.",
+      "beforeSHA256": "bd9329a1d8ee10dd86e3b109ed2da3ddb11e948321b688928e1299580507bb1e",
+      "afterSHA256": "d5a261a6fb291151e06867afa15beec0e853e6e8b8abcd985711b3ba833c353f",
+      "operation": "replace-literal-value",
+      "reason": "The eight translations repeat the withdrawn universal no-test-can-score-100-percent claim. The simple definition is revised to reference-case and estimate scope.",
+      "newTranslationAcceptance": false
+    }
+  ],
+  "priorProposalDispositions": [
+    {
+      "id": "P33-RC01",
+      "status": "implemented-in-local-registered-data",
+      "dataHead": "4efb70d4fcae57b68129b4af77e8002a54090d90",
+      "earlierPacketUnchanged": true
+    }
+  ],
+  "newCanonicalIds": 0,
+  "newAliases": 0,
+  "newRelations": 0,
+  "newRegistrations": 0,
+  "asOfChanges": 0,
+  "actualPeerFieldsChanged": false,
+  "wholeLegacySummariesRecertified": false
+}

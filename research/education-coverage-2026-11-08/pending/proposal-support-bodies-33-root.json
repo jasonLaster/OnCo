@@ -1,0 +1,636 @@
+{
+  "version": "proposal-support-bodies-33-root",
+  "draft": 375,
+  "committedDataHead": "4efb70d4fcae57b68129b4af77e8002a54090d90",
+  "auditBaseCommit": "94ca7a85487b1d3d42018cf11be06c9bb9c90e0d",
+  "state": "Eight current registered root records; four scoped owner updates. The diagnostic lead is separately corrected and retained legacy assertions are not blanket-recertified.",
+  "records": [
+    {
+      "id": "adcc-adcp-cdc",
+      "kind": "term",
+      "name": "Antibody-guided effector mechanisms (ADCC, ADCP, CDC)",
+      "aka": [
+        "ADCP",
+        "CDC",
+        "antibody-dependent cellular phagocytosis",
+        "antibody-dependent cell-mediated cytotoxicity",
+        "complement-dependent cytotoxicity",
+        "opsonisation"
+      ],
+      "tldr": "An antibody that coats a cell can lead to its removal in three different ways: immune cells that kill it, cells that swallow it, or blood proteins that damage its membrane. Seeing the coat does not show which of these happened.",
+      "summary": "Opsonisation means coating a target with molecules that help immune clearance. The antibody's Fc region can then connect that coat to effector cells or to complement, and three mechanisms name different downstream jobs. In antibody-dependent cellular cytotoxicity (ADCC) an effector cell, with the natural killer cell as the familiar example, triggers damage or death in a coated target, typically through an Fc gamma receptor such as CD16 engaging target-bound IgG. In antibody-dependent cellular phagocytosis (ADCP) a phagocyte such as a macrophage engulfs the coated target. In complement-dependent cytotoxicity (CDC) the complement protein C1q recognises a suitable arrangement of Fc regions and the cascade can end in membrane attack complexes. ADCC is not an exclusive cell-identity label: other immune populations can contribute antibody-dependent cytotoxicity.\n\nThe three routes can overlap and no universal ranking exists. Isotype and Fc design, target density, inhibitory signals and the availability of effectors or complement shape the result. Evidence differs in kind. Clynes et al. (2000) used mouse tumour models, including xenografts treated with the humanised antibodies trastuzumab and rituximab, and found that engagement of Fc gamma receptors on effector cells was a dominant component of in vivo antibody activity, with the inhibitory receptor FcgammaRIIB regulating it. Gül et al. (2014) imaged mice directly: liver macrophages (Kupffer cells) sampled circulating tumour cells without eliminating them, whereas antitumour antibody treatment produced rapid phagocytosis that depended on the Fc receptors FcgammaRI and FcgammaRIV. Diebolder et al. (2014) showed in cell and biochemical systems that ordered IgG hexamers assembled on the target surface recruit and activate C1, and that this could be manipulated to block or enhance complement killing across all four human IgG subclasses. None of these is a human treatment-benefit result.\n\nWhat each step shows is separate. Fc-receptor binding is not completed ADCC or ADCP. A phagocyte touching a target, or sampling a fragment, is not internalisation of a whole viable cell. Complement deposition (coating) is an earlier step than a membrane pore, and a pore is a different observation from measured lysis. Assays therefore name their output: target death for ADCC, the fraction of phagocytes with verified internalised targets for ADCP, membrane damage with active complement for CDC (heat-inactivated or depleted complement tests complement dependence). They use viable targets, defined antibody concentrations, no-antibody and target-negative controls, and report exposure time and effector-to-target ratio. Binding or reporter activation alone is an earlier readout, and stronger activity in a dish does not establish clinical benefit or healthy-tissue safety.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Clynes et al., 2000, Nature Medicine (PMID 10742152)",
+          "url": "https://doi.org/10.1038/74704"
+        },
+        {
+          "label": "Gül et al., 2014, Journal of Clinical Investigation (PMID 24430180)",
+          "url": "https://doi.org/10.1172/JCI66776"
+        },
+        {
+          "label": "Diebolder et al., 2014, Science (PMID 24626930)",
+          "url": "https://doi.org/10.1126/science.1248943"
+        },
+        {
+          "label": "Serna et al., 2016: Structural basis of complement membrane attack complex formation",
+          "url": "https://doi.org/10.1038/ncomms10587"
+        },
+        {
+          "label": "UniProt FCGR3A (CD16A): function and membrane topology",
+          "url": "https://www.uniprot.org/uniprotkb/P08637/entry"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "adcc",
+        "fc-effector",
+        "complement-in-cancer",
+        "antibody",
+        "macrophage",
+        "nk-cell",
+        "fcgr3a",
+        "fcgr2b"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "fcgr3a",
+        "fcgr2a",
+        "fcgr2b"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "complement-in-cancer"
+      ],
+      "terms": [
+        "adcc",
+        "fc-effector",
+        "antibody",
+        "nk-cell",
+        "macrophage"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Evidence tiers: Clynes 2000 and Gül 2014 are mouse studies; Diebolder 2014 is a cell and biochemical study. Read from the Europe PMC abstracts on 9 November 2026; the textbook chapter the teaching source cites (Janeway, Immunobiology) refused scripted access and was not opened.",
+        "Teaching source: the Oncoguide concept page on antibody-guided effector mechanisms, read at pinned commits 7510db6 and c968964 (teaching text unchanged between them).",
+        "In the NK-cell route, the Fc receptor sits on the NK-cell membrane and meets Fc exposed on the antibody-coated target. Fab tips recognise the target antigen. Granules are released into the space between the cells while the NK cell remains outside; this is different from engulfment. The NK-cell example does not make ADCC an exclusive name for one cell type.",
+        "For whole-cell ADCP, distinguish the phagocyte's boundary and nucleus from the target. A completed whole-target uptake schematic places the coated target, including its nucleus, inside a separate closed phagosome; the phagocyte's own nucleus stays outside that compartment. Contact or a fluorescent fragment does not demonstrate whole-cell internalisation. Gül and colleagues' mouse live-cell imaging separated fragment sampling, whole-cell phagocytosis and later degradation; these are different observations.",
+        "A completed membrane-attack pore crosses the two leaflets of one lipid bilayer, connecting the outside of a target cell with its interior. It is different from complement deposited on the surface. Serna and colleagues assembled purified human complement proteins on liposomes and studied functional pores by cryo-electron microscopy and dye release; they distinguished complete pores from assembly precursors that can insert without spanning the bilayer. A single sketched IgG or a drawn pore-subunit count is not an activation requirement or a measured molecular stoichiometry.",
+        "Killing and engulfment experiments commit sampled cell aliquots to the experiment, so budget them separately from fixed sections and untouched material. If complement recruitment increases but measured target viability is unchanged at the stated time, those observations do not demonstrate increased killing. This is a reading rule for the stated observations, not a treatment-effect estimate."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "antibody-structure",
+      "kind": "term",
+      "name": "Antibody structure (Fab, Fc and hinge)",
+      "aka": [
+        "Fab",
+        "Fc",
+        "fragment antigen-binding",
+        "fragment crystallizable",
+        "hinge region",
+        "immunoglobulin structure"
+      ],
+      "tldr": "An antibody has tips that find a target and a stem that can connect to other parts of the immune system. Two antibodies can reach the same target and do different jobs.",
+      "summary": "A typical immunoglobulin G (IgG) antibody has two heavy and two light chains held together by molecular interactions and disulfide bonds. At each arm tip, variable regions from a heavy and a light chain together form a binding site; its sequence and three-dimensional shape influence what it recognises. Fab (fragment antigen-binding) names an arm containing the binding site and its associated constant domains, so it is not simply another word for the variable region. Fc (fragment crystallizable, a name that comes from an experimental property) names the remaining stem, built from CH2 and CH3 domains of both heavy chains in the familiar IgG description. Hinge flexibility changes how the arms are arranged. A drawn Y is a simplification: some natural and engineered formats omit familiar parts.\n\nFc can interact with immune-cell receptors and with complement, but compatible effectors, target arrangement and other conditions decide whether killing, engulfment or complement damage follows, so Fc is not an automatic kill command. Binding and effector contributions are separate and the finished molecule needs testing. Nimmerjahn and Ravetch (2005) showed in mouse experiments that IgG subclasses differ in the ratio of their binding to activating and inhibitory Fc receptors, which predicted in vivo activity; that is not a universal ranking of human antibody performance. An isotype is a heavy-chain class (see the isotypes and Fc silencing record). Structure alone does not identify the producing cell or establish what the antibody recognises.\n\nThe epitope is the molecular feature recognised and can be a folded protein surface or another accessible feature, not necessarily a short fragment displayed by HLA. Binding is measured against a defined antigen preparation and antibody concentration, sometimes in nanomoles per litre, and it matters whether the test used purified protein or intact cells, because folding, accessibility and multiple binding sites change the result. A concentration or fluorescence signal alone is not an affinity. Fc-receptor and complement interactions are tested separately from target binding, and neither binding nor a laboratory effector result establishes clinical benefit or safety. A blocking antibody, an antibody-drug conjugate and a bispecific format can share a target and still act differently.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Nimmerjahn and Ravetch, 2005, Science (PMID 16322460)",
+          "url": "https://doi.org/10.1126/science.1118948"
+        },
+        {
+          "label": "Vidarsson et al., 2014, Frontiers in Immunology (PMID 25368619)",
+          "url": "https://doi.org/10.3389/fimmu.2014.00520"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "antibody",
+        "epitope",
+        "fc-effector",
+        "adcc-adcp-cdc",
+        "b-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "antibody",
+        "epitope",
+        "fc-effector",
+        "adcc-adcp-cdc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Textbook-level structure (chains, Fab, Fc, hinge) is taught in the Oncoguide page from Janeway's Immunobiology and an NCI page; the Bookshelf chapters refused scripted access on 9 November 2026 and were not opened, so only the Nimmerjahn abstract is checked here.",
+        "The pembrolizumab example appears in the isotypes record.",
+        "Additional source check: the Structure and Fc-interaction sections of the accessible Vidarsson 2014 review were read directly. They describe two heavy and two light chains, variable and constant domains, Fab/Fc and hinge anatomy, subclass differences and FcRn interactions. This is review evidence, separate from the mouse and biochemical primary experiments."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "isotypes-and-fc-silencing",
+      "kind": "term",
+      "name": "Antibody isotypes and Fc silencing",
+      "aka": [
+        "antibody isotype",
+        "isotype",
+        "IgG subclass",
+        "Fc silencing",
+        "class switching"
+      ],
+      "tldr": "An antibody's class and the design of its stem change how it connects to immune cells and complement. Switching off one connection does not switch off all of them, and does not make the finished drug harmless.",
+      "summary": "An isotype is a heavy-chain class: IgM, IgD, IgG, IgA or IgE, and human IgG also has the subclasses IgG1, IgG2, IgG3 and IgG4. The classes differ in architecture, distribution and potential effector interactions. Vidarsson et al. (2014) review how the four IgG subclasses differ in their hinges and upper CH2 domains, which bind Fc gamma receptors and C1q, giving different effector functions, while the Fc also carries a binding site for the neonatal Fc receptor (FcRn) that extends half-life. A B-cell lineage can undergo class switching, changing the constant region while keeping the rearranged variable-region sequence; this differs from the mutations that change affinity during a response, and neither the class nor a switch says what antigen an antibody recognises. Subclass, Fc sugars, target geometry and the available cells all affect interactions, so IgG1 and IgG4 are not interchangeable but neither name fully predicts behaviour. As a real example, pembrolizumab is a humanised IgG4 kappa antibody (FDA label, section 11); its intended job is to block the PD-1 receptor, not to recruit killer cells to the T cells it binds.\n\nFc silencing uses design changes to reduce selected receptor or complement interactions. Lo et al. (2017) found that the commonly used N297G and D265A/N297G variants, effective at attenuating effector function in primates, retained potent complement activation in mice and created safety liabilities in murine studies, whereas an L234A, L235A, P329G (LALA-PG) variant eliminated complement binding and attenuated effector activity in that setting. That supports engineering a particular interaction in a particular species; it does not prove universal human safety or silence in every assay. IgG4 is not a synonym for a fully silent Fc.\n\nFcRn has a separate role in IgG transport and recycling, so reduced Fc gamma receptor recruitment does not by itself establish reduced FcRn binding or a shorter half-life. Compare matched molecules with the same binding regions and measure target binding, Fc gamma receptor and C1q binding, and killing, engulfment or complement damage separately, stating species, receptor variants, concentrations and effector cells; FcRn binding and exposure are further questions. An antibody meant to remove a target-bearing cell may benefit from effector recruitment, whereas one meant to block an immune receptor may need to avoid removing useful receptor-bearing cells, but Fc attenuation alone does not establish loss of target binding or absence of payload toxicity or inflammation.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Vidarsson et al., 2014, Frontiers in Immunology (PMID 25368619)",
+          "url": "https://doi.org/10.3389/fimmu.2014.00520"
+        },
+        {
+          "label": "Lo et al., 2017, Journal of Biological Chemistry (PMID 28077575)",
+          "url": "https://doi.org/10.1074/jbc.M116.767749"
+        },
+        {
+          "label": "FDA label for pembrolizumab, section 11 (IgG4 kappa)",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+        },
+        {
+          "label": "Nimmerjahn and Ravetch, 2005, Science (PMID 16322460)",
+          "url": "https://doi.org/10.1126/science.1118948"
+        },
+        {
+          "label": "OpenStax Microbiology 18.4: B-cell recognition and class switching (educational source)",
+          "url": "https://openstax.org/books/microbiology/pages/18-4-b-lymphocytes-and-humoral-immunity"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "fc-effector",
+        "antibody",
+        "adcc-adcp-cdc",
+        "half-life",
+        "pembrolizumab",
+        "antibody-structure"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "fcgr3a",
+        "fcgr2a",
+        "fcgr2b"
+      ],
+      "drugs": [
+        "pembrolizumab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "fc-effector",
+        "antibody",
+        "half-life",
+        "antibody-structure",
+        "adcc-adcp-cdc"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Label read from the FDA PDF on 9 November 2026 (humanized monoclonal IgG4 kappa antibody, about 149 kDa). Lo 2017 and Vidarsson 2014 read at abstract depth.",
+        "The class switching versus affinity maturation distinction is taught from Janeway's Immunobiology (not opened here: scripted access refused).",
+        "Additional source check: the Structure and Fc-interaction sections of the accessible Vidarsson 2014 review were read directly. They describe two heavy and two light chains, variable and constant domains, Fab/Fc and hinge anatomy, subclass differences and FcRn interactions. This is review evidence, separate from the mouse and biochemical primary experiments.",
+        "Additional educational source: the B-cell receptor and class-switching passages of OpenStax Microbiology 18.4 were read in raw page text. Class switching changes the constant-region class while retaining the rearranged variable-region sequence; it differs from affinity-changing mutation. This is textbook evidence, separate from the cited primary experiments."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "tertiary-lymphoid-structures",
+      "kind": "term",
+      "name": "Tertiary lymphoid structures (TLS)",
+      "aka": [
+        "tertiary lymphoid structures",
+        "tertiary lymphoid structure",
+        "TLS"
+      ],
+      "tldr": "Organised immune-cell clusters can form within or beside tumours. Their architecture and association with treatment outcomes depend on the study and assay.",
+      "summary": "Sautès-Fridman and colleagues review tertiary lymphoid structures as organised aggregates of B cells, T cells and dendritic cells that develop in chronically inflamed tissues including tumours, where they are generally associated with longer survival and response to checkpoint inhibitors. Because they are visible on H&E and spatial assays, they are a known-biology probe: a slide or spatial model that recovers TLS is learning something real. No medicine in OnCo is designed to build them. Two linked trials use them directly: a phase 3 trial in triple-negative breast cancer enrols only patients whose residual tumour contains them, and a pancreatic cancer vaccine trial counts how many patients form them as a primary outcome. In the retrospective immune checkpoint cohorts of Vanhersecke et al. (Nature Cancer 2021, PMID 35118423) a structure was called mature when at least one CD23-positive cell with dendritic morphology was found within it, and mature structures were associated with better response rate, progression-free survival and overall survival independently of PD-L1 status and CD8 density; a CD23-positive cell elsewhere in tissue does not establish that architecture. Any TLS were seen in 105 of 328 discovery-cohort cases (32 per cent), 84 of them mature. That is an association in treated cohorts, so it does not by itself show extra benefit from the treatment, and no universal abundance or maturity rule selects a therapy. Aggregate, B-cell follicle and germinal centre are different architectural levels, and an RNA signature alone cannot show a germinal centre. Report density with its area and the criteria used (structures per mm2; two organised structures in 4 mm2 is 0.5 per mm2), because thresholds are method- and study-specific, and small sections or disrupted architecture limit the reading.\n\nTertiary names where these structures form: ectopic lymphoid organisation in non-lymphoid tissue, including inflamed tissues and tumours. It does not name a cancer stage or establish a particular maturation level.\n\nIn untreated invasive breast-tumour specimens, Gu-Trantien and colleagues linked CXCL13-producing follicular helper T cells in TLS germinal centres and an eight-gene signature to group outcomes, including survival or preoperative chemotherapy response. In metastatic melanoma samples, Cabrita and colleagues associated co-occurring CD8-positive T cells and CD20-positive B cells with survival, and a derived TLS signature predicted outcomes in checkpoint-blockade cohorts. Each result retains its specimens, methods and setting; these associations do not establish that inducing a TLS will benefit a particular patient.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Sautès-Fridman et al., Tertiary lymphoid structures in the era of cancer immunotherapy (Nature Reviews Cancer 2019)",
+          "url": "https://doi.org/10.1038/s41568-019-0144-6"
+        },
+        {
+          "label": "Mature tertiary lymphoid structures predict immune checkpoint inhibitor efficacy in solid tumors independently of PD-L1 expression.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35118423/"
+        },
+        {
+          "label": "Tertiary lymphoid structures improve immunotherapy and survival in melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31942071/"
+        },
+        {
+          "label": "CD4⁺ follicular helper T cell infiltration predicts breast cancer survival.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23778140/"
+        },
+        {
+          "label": "Sautes-Fridman et al. 2019 review: Tertiary lymphoid structures in the era of cancer immunotherapy.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31092904/"
+        },
+        {
+          "label": "Krautler et al., 2012: Follicular dendritic cells emerge from ubiquitous perivascular precursors",
+          "url": "https://doi.org/10.1016/j.cell.2012.05.032"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "cancer-ai-vocabulary",
+        "b-cells-and-plasma-cells",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "spatial-transcriptomics"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "immunotherapy-response",
+        "microenvironment-inflammation-theory"
+      ],
+      "trials": [
+        "nct06313463",
+        "nct06782932"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Architecture labels describe observations rather than a compulsory sequence: a loose aggregate, separated T- and B-cell regions, a B-cell follicle and a demonstrated germinal centre are different findings. Germinal centres support proliferation and selection among B-cell variants. Follicular dendritic cells retain immune complexes for B cells and support follicular organisation; they are stromal cells, distinct from conventional dendritic cells that process antigens for T cells. Krautler and colleagues traced follicular dendritic cells to perivascular precursors and demonstrated immune-complex trapping and B-cell recruitment in mouse models. That lineage experiment does not itself validate a human tumour maturity test.",
+        "For a tissue-based result, retain the sampled site, assessed tumour or invasive-margin region, stains, counted area and study criteria. Sectioning and staining use finite fixed material. Vanhersecke's methods used serial sections and excluded pre-existing lymphoid follicles when assessing involved lymphoid organs, so an ordinary lymph-node follicle must not be counted as an ectopic tumour TLS. Small or disrupted samples can miss relevant architecture. RNA alone cannot display the physical T/B arrangement, and architecture alone identifies neither the antigens recognised nor effective tumour killing or individual treatment benefit.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/tertiary-lymphoid-structures."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Immunology"
+    },
+    {
+      "id": "epitope",
+      "kind": "term",
+      "name": "Epitope",
+      "aka": [
+        "epitopes",
+        "binding site",
+        "binding sites",
+        "binding domain",
+        "binding domains"
+      ],
+      "tldr": "An epitope is the molecular feature an immune receptor recognises. Antibodies and T-cell receptors can recognise different surfaces from the same source protein.",
+      "summary": "An epitope is a molecular feature recognised by an immune receptor; its definition depends on the receptor and the tested molecular preparation. Trastuzumab and pertuzumab both bind HER2 but at different epitopes, which is why they can be given together, and zanidatamab is a single antibody built to grab both spots at once. For T cells, the epitope is a short peptide fragment held in an HLA molecule on the cell surface; an alteration that changes recognition can permit escape, but its effects on processing, display and other cell functions need their own evidence. The epitope an antibody recognises can be a continuous stretch of sequence or a surface formed by folding, so distant parts of the chain can meet; accessibility matters, and binding to an isolated protein does not show the same site is reachable on an intact cell. For a conventional T-cell receptor the target is the peptide together with the restricting HLA molecule, and the same peptide on another HLA molecule is a different recognition surface.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Epitope",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Epitope"
+        },
+        {
+          "label": "Structure of the complex between human T-cell receptor, viral peptide and HLA-A2.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8906788/"
+        },
+        {
+          "label": "Structure of a covalently stabilized complex of a human alphabeta T-cell receptor, influenza HA peptide and MHC class II molecule, HLA-DR1.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11060013/"
+        },
+        {
+          "label": "IgG subclasses and allotypes: from structure to effector functions.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25368619/"
+        },
+        {
+          "label": "Review: Fundamentals and Methods for T- and B-Cell Epitope Prediction.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29445754/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "antigen",
+        "antibody",
+        "neoantigen",
+        "t-cell",
+        "antibody-structure",
+        "hla"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "her2"
+      ],
+      "drugs": [
+        "trastuzumab",
+        "zanidatamab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The accessible epitope-prediction review distinguishes sequential residues from discontinuous exposed patches. This supplies review support for linear versus conformational epitopes, not a universal prediction-accuracy claim."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "b-cells-and-plasma-cells",
+      "kind": "term",
+      "name": "B cells, plasmablasts and plasma cells",
+      "aka": [
+        "plasma cell",
+        "plasma cells",
+        "plasmablast",
+        "memory B cell",
+        "memory B cells"
+      ],
+      "tldr": "B cells recognise a target and can develop into cells that make large amounts of antibody. A cell's presence tells you little about what its antibody recognises or whether it helps against a cancer.",
+      "summary": "A developing B cell assembles an antigen-receptor sequence by V(D)J recombination. Its B-cell receptor contains membrane-bound immunoglobulin and recognises an accessible molecular feature, unlike a conventional T-cell receptor, which recognises peptide held by HLA. Recognition and activation are separate steps. For many protein antigens B cells receive help from suitable CD4 T cells and can internalise recognised material and present fragments to those helpers, while other antigen contexts support responses with less direct T-cell help.\n\nAn activated response can leave memory B cells and antibody-secreting cells. A plasmablast is an early antibody-secreting stage that can still divide; plasma cells are further specialised for secretion, some short-lived and some persisting in supportive tissue niches. Memory B cells are not simply plasma cells waiting to secrete. Shapiro-Shelef et al. (2003) deleted the gene for Blimp-1 (prdm1) in mouse B cells: B-cell development and the number of antigen-responding B cells looked normal, yet serum immunoglobulin, short-lived plasma cells, post-germinal-centre plasma cells and memory-response plasma cells were virtually absent, so responding to antigen was not enough for normal secretion. This is a mechanistic mouse experiment, not a human tumour biomarker rule. Some responses pass through germinal centres, where B-cell variants undergo selection; class switching changes antibody class and sequence changes with selection can alter binding quality, which are different processes.\n\nIn tumour samples, B cells can present material, supply signals and make antibody, and plasma cells can contribute a large share of immunoglobulin RNA, so a high immunoglobulin signal does not show that cancer cells made it. Neither more B cells nor more antibody is a universal benefit rule; B cells may sit in tertiary lymphoid structures. Flow cytometry and spatial staining distinguish populations by marker combinations that change with differentiation, so a panel for ordinary B cells can miss plasma cells; keep the phenotype definition and the denominator. RNA can show an antibody-production programme or receptor sequence and serum assays measure concentration and class, but what an antibody recognises needs antigen-specific binding and functional tests. Plasma cells are cells, not blood plasma, which is the fluid part of blood.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Shapiro-Shelef et al., 2003, Immunity (PMID 14563324)",
+          "url": "https://doi.org/10.1016/s1074-7613(03)00267-x"
+        },
+        {
+          "label": "Cabrita et al., 2020, Nature (PMID 31942071)",
+          "url": "https://doi.org/10.1038/s41586-019-1914-8"
+        },
+        {
+          "label": "OpenStax Microbiology 18.4: B-cell recognition and class switching (educational source)",
+          "url": "https://openstax.org/books/microbiology/pages/18-4-b-lymphocytes-and-humoral-immunity"
+        },
+        {
+          "label": "Review: The Maintenance of Memory Plasma Cells.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31024553/"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "b-cell",
+        "antibody",
+        "tertiary-lymphoid-structures",
+        "germinal-centre-reaction",
+        "bcma-expression"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "germinal-centre-reaction"
+      ],
+      "terms": [
+        "b-cell",
+        "antibody",
+        "tertiary-lymphoid-structures"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Mouse evidence for the Blimp-1 point (Shapiro-Shelef 2003, abstract read 9 November 2026). The textbook chapters cited by the teaching source were not opened (scripted access refused).",
+        "B-cell lymphomas and myeloma are covered by the B cell, BCMA and lymphoma records, not here.",
+        "Additional educational source: the B-cell receptor and class-switching passages of OpenStax Microbiology 18.4 were read in raw page text. Class switching changes the constant-region class while retaining the rearranged variable-region sequence; it differs from affinity-changing mutation. This is textbook evidence, separate from the cited primary experiments.",
+        "Accessible plasma-cell review: the selected lifespan and niche passages distinguish proliferating plasmablasts from longer-lived plasma-cell populations; this is review context, with unresolved lineage questions retained."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "fcgr3a",
+      "kind": "target",
+      "name": "FCGR3A",
+      "aka": [
+        "Fc gamma receptor IIIa",
+        "Low affinity immunoglobulin gamma Fc region receptor III-A",
+        "CD16",
+        "CD16a",
+        "FcgammaRIIIa",
+        "FcGRIIIA",
+        "FCGR3",
+        "FCG3"
+      ],
+      "tldr": "FCGR3A encodes CD16A, an IgG Fc receptor involved in NK-cell responses to antibody-coated targets. Binding alone does not establish completed killing.",
+      "summary": "Receptor for the invariable Fc fragment of immunoglobulin gamma (IgG). Optimally activated upon binding of clustered antigen-IgG complexes displayed on cell surfaces, triggers lysis of antibody-coated cells, a process known as antibody-dependent cellular cytotoxicity (ADCC). Does not bind free monomeric IgG, thus avoiding inappropriate effector cell activation in the absence of antigenic trigger.\n\nCIViC holds 2 clinical evidence items and 0 assertions across 1 variant, naming Trastuzumab.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "HGNC HGNC:3619",
+          "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3619"
+        },
+        {
+          "label": "UniProt P08637",
+          "url": "https://www.uniprot.org/uniprotkb/P08637/entry"
+        },
+        {
+          "label": "NCBI Gene 2214",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/2214"
+        },
+        {
+          "label": "Ensembl ENSG00000203747",
+          "url": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000203747"
+        }
+      ],
+      "tags": [
+        "cancer-genes-wave"
+      ],
+      "related": [
+        "civic",
+        "adcc-adcp-cdc",
+        "isotypes-and-fc-silencing"
+      ],
+      "cancers": [
+        "breast-cancer",
+        "breast-her2-positive"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "complement-in-cancer",
+        "nk-cell-recognition"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Written by scripts/fetch-cancer-genes.ts from CIViC, Open Targets, IntOGen, HGNC and UniProt; the function text is UniProt's, condensed and in UK spelling. Roles: CIViC lists 1 therapies; CIViC holds 2 clinical evidence items on its variants. Evidence tier \"clinical-evidence\" is the strongest of those signals.",
+        "Prevalence not recorded: none of the sources gives a positivity rate.",
+        "The short definition describes the protein function checked in the reviewed human UniProt function paragraph. Earlier cancer-catalogue role labels and evidence tiers retain their stated source scope and do not define every normal molecular function."
+      ],
+      "provenance": {
+        "editedBy": "Systematic education audit",
+        "editedOn": "2026-11-09",
+        "note": "Antigen/Fc teaching context and related links added. Earlier catalogue fields, roles and evidence retain their original 2026-09-23 source scope; this is not a re-verification of every catalogue claim."
+      },
+      "symbol": "FCGR3A",
+      "role": [
+        "drug-target",
+        "biomarker"
+      ],
+      "evidenceTier": "clinical-evidence",
+      "sources": [
+        {
+          "label": "HGNC HGNC:3619",
+          "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:3619",
+          "note": "approved symbol, name, aliases, locus and cross-references (hgnc_complete_set.txt)"
+        },
+        {
+          "label": "UniProt P08637",
+          "url": "https://www.uniprot.org/uniprotkb/P08637/entry",
+          "note": "protein name, function text, keywords and locations (REST API)"
+        },
+        {
+          "label": "CIViC gene FCGR3A",
+          "url": "https://civicdb.org/features/1844",
+          "note": "2 evidence items, 0 assertions, 1 variants; diseases: Breast Cancer, HER2 Positive Breast Cancer (GraphQL API, CC0)"
+        }
+      ],
+      "distribution": "one-type",
+      "specificityNote": "Specificity not established: no corpus medicine is aimed at it and the catalogues give it only the roles drug-target, biomarker; HPA finds the RNA tissue enhanced, which says where the protein sits but not whether the tumour differs from normal tissue. HPA FCGR3A: RNA tissue enhanced (lung 196 nTPM, lymphoid tissue 285 nTPM); blood lineage lineage enriched (monocytes 4,107 nTPM); high antibody staining in 4 normal tissues; highest cancer staining ovarian cancer (1 of 10 high). Distribution: 1 cancer family in the corpus carries a prevalence row, label threshold or catalogue link for it (Breast cancer (all types)); Open Targets associates it with 0 specific cancer types at or above 0.5. (No rule of scripts/fetch-target-specificity.ts fired.)",
+      "specificitySources": [
+        {
+          "label": "Human Protein Atlas FCGR3A tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000203747-FCGR3A/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "Open Targets ENSG00000203747 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000203747/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:3619",
+      "ensembl": "ENSG00000203747",
+      "uniprot": "P08637",
+      "entrez": "2214",
+      "firstDescribed": 1989,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Ravetch J.V. et al, J. Exp. Med, 1989, \"Alternative membrane forms of Fc gamma RIII(CD16) on human natural killer cells and neutrophils. Cell type-specific expression of two genes that differ in single nucleotide substitutions\".",
+      "firstDescribedSource": "https://pubmed.ncbi.nlm.nih.gov/2526846/",
+      "biology": "Receptor for the invariable Fc fragment of immunoglobulin gamma (IgG). Optimally activated upon binding of clustered antigen-IgG complexes displayed on cell surfaces, triggers lysis of antibody-coated cells, a process known as antibody-dependent cellular cytotoxicity (ADCC). Does not bind free monomeric IgG, thus avoiding inappropriate effector cell activation in the absence of antigenic trigger. Mediates IgG effector functions on natural killer (NK) cells. Binds antigen-IgG complexes generated upon infection and triggers NK cell-dependent cytokine production and degranulation to limit viral load and propagation. Involved in the generation of memory-like adaptive NK cells capable to produce high amounts of IFNG and to efficiently eliminate virus-infected cells via ADCC. Location: Cell membrane; Secreted (UniProt). Locus 1q23.3 (HGNC).",
+      "whereFound": [
+        "Breast cancer: CIViC evidence names this disease",
+        "HER2-positive breast cancer: CIViC evidence names this disease"
+      ],
+      "targetClass": "other",
+      "prevalence": []
+    },
+    {
+      "id": "sensitivity-specificity",
+      "kind": "term",
+      "name": "Sensitivity and specificity",
+      "aka": [],
+      "tldr": "At a stated threshold, sensitivity is the fraction of reference-condition cases called positive, and specificity is the fraction of reference non-cases called negative. Study estimates carry uncertainty and can change across populations.",
+      "summary": "Sensitivity (true-positive rate) and specificity (true-negative rate) are properties of the test at a chosen cut-off and are usually estimated against a reference standard such as colonoscopy or biopsy in a study like ECLIPSE or BLUE-C. What a person experiences, the chance that a positive result is real, is the positive predictive value, which depends on how common the disease is: at a 1% cancer prevalence, a test with 99% specificity still generates about as many false positives as true positives. Screening tests trade sensitivity against specificity by moving the cut-off; a multi-cancer blood test set to high specificity (99.5% for Galleri) accepts low sensitivity for early-stage cancer. Sensitivity for precancerous lesions, not cancer, is what distinguishes tests that prevent colorectal cancer from tests that detect it.",
+      "asOf": "2026-09-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sensitivity_and_specificity",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sensitivity_and_specificity"
+        },
+        {
+          "label": "FDA, 2007: Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests",
+          "url": "https://www.fda.gov/media/71147/download"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "ppv",
+        "screening",
+        "overdiagnosis"
+      ],
+      "trials": [
+        "blue-c",
+        "eclipse-shield"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Diagnostics & imaging"
+    }
+  ]
+}

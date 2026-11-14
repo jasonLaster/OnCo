@@ -146,7 +146,7 @@ export const rnaDeliveryTerms: TermInput[] = [
     "kind": "term",
     "name": "Lipid nanoparticles for RNA delivery",
     "category": "Treatment jargon",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-14",
     "aka": [
       "LNP",
       "LNPs",
@@ -190,6 +190,9 @@ export const rnaDeliveryTerms: TermInput[] = [
     "related": [
       "rna-lipoplex",
       "targeted-lnps"
+    ],
+    "notes": [
+      "In an invented comparison using 100 identified live cells per formulation at the same measurement time, A shows uptake in 70 cells and encoded protein in 10; B shows uptake in 40 and protein in 25. Uptake is therefore 70 versus 40 per cent, while protein expression is 10 versus 25 per cent on the same live-cell denominator. These separate counts do not show which cells had both signals, the fraction of intact RNA that escaped, the amount of protein per cell or a biological effect. Name the cargo, cell population, assay, timing and controls before comparing formulations; a brighter carrier signal alone does not establish usable RNA delivery."
     ]
   },
   {

@@ -1,0 +1,409 @@
+{
+  "rootOwners": [
+    {
+      "id": "gene-fusion",
+      "file": "src/data/terms.ts",
+      "additionalSourceFile": "src/data/spikes/lung-molecular.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A gene fusion is two genes broken and joined together, creating a hybrid protein that can drive cancer. Fusion-driven cancers are often exquisitely drug-sensitive.",
+          "after": "A gene fusion joins sequences from different genes. Its RNA product, protein consequence and treatment relevance each need evidence.",
+          "beforeSha256": "dd512a3d07243b195d700d38f2b88f8e75c97c88b252e331198be30d6612413c",
+          "afterSha256": "2eda8c3322a4decf0cdcc124403286ba1d9fad0ce44989f282f88f1d55ddd32c"
+        },
+        {
+          "field": "summary",
+          "before": "A gene fusion joins two broken genes into one, producing a hybrid protein that can drive cancer, and fusion-driven cancers are often exquisitely drug-sensitive. Well-known examples include EML4-ALK, ROS1, RET, NTRK, FGFR2, NRG1 and BCR-ABL, and the ALK, RET, NTRK and FGFR2 targets are linked here. Fusions are best detected by RNA sequencing & expression profiling, define tumour-agnostic indications for NTRK and RET, and are the archetype of oncogene addiction. The term is cited by the Biliary tract cancer and Ewing sarcoma entries, by FGFR2 fusions and rearrangements, by Janet Rowley, Arul M. Chinnaiyan and Olivier Delattre, and by ideas on degraders for the fusion proteins that drive childhood sarcomas and a standard for tumour-agnostic approvals.",
+          "after": "A gene fusion joins sequences from different genes. Reports may describe an underlying DNA rearrangement, an expressed RNA junction or a predicted fusion protein. These are different observations: an expressed junction does not by itself establish the complete DNA structure, protein function or growth dependence. Some kinase fusions drive cancers; a candidate call can also be nonfunctional or an analytical artefact.\n\nRNA sequencing can identify expressed fusion junctions, so whole-genome sequencing is not the only fusion-capable method. Stransky and colleagues analysed RNA sequencing from nearly 7,000 TCGA tumour samples and filtered and reviewed candidate kinase fusions. Their study-specific criteria included a predicted in-frame coding sequence and a retained kinase domain; those criteria are not a universal clinical calling rule.\n\nInterpret the exact assay's covered regions, preparation, detection limits and supporting evidence. A negative result is limited by that workflow. A fusion involving a drug-associated gene does not automatically establish an active protein, sensitivity to that drug or patient benefit.",
+          "beforeSha256": "93dd8d22f2168695bffa8f08714a849023708b2e0ddae02ad351c0e9561637e7",
+          "afterSha256": "8a27cc19be8107dafc7c91b92fff6238b4977cc4369d7ae496833d5bfe8a237c"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fusion_gene"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Fusion_gene"
+            },
+            {
+              "label": "Stransky et al.: RNA-sequencing analysis of kinase fusions (2014)",
+              "url": "https://doi.org/10.1038/ncomms5846"
+            }
+          ],
+          "beforeSha256": "8848347edd857fe2d436893b8790b628e61e66e7664575a32559b8e139d4d7b1",
+          "afterSha256": "68dac1bacdfd942b07d1ffbcd1da298f5ac043892dcd1041a7fc522264471d0a"
+        },
+        {
+          "field": "notes",
+          "before": [
+            "Lung cancer carries five licensed fusion targets (ALK 3 to 6%, ROS1 1 to 3%, RET 1 to 2%, NTRK about 0.2%, NRG1 about 0.3%) and they share a testing problem: a DNA panel finds a rearrangement only where it baits the intron the break falls in, so panel rates run below fluorescence in situ hybridisation rates and RNA-based rates, and partners are heterogeneous enough in NRG1 that named-fusion assays miss most of them (Kris 2014, Jonna 2019). Point mutations in the same genes read 2 to 8% on exome panels and are passengers. The practical rule is that a driver-negative adenocarcinoma, especially in a never smoker, has not been fully tested until a fusion-capable assay has been run (Lindeman 2018)."
+          ],
+          "after": [
+            "Lung cancer carries five licensed fusion targets (ALK 3 to 6%, ROS1 1 to 3%, RET 1 to 2%, NTRK about 0.2%, NRG1 about 0.3%) and they share a testing problem: a DNA panel finds a rearrangement only where it baits the intron the break falls in, so panel rates run below fluorescence in situ hybridisation rates and RNA-based rates, and partners are heterogeneous enough in NRG1 that named-fusion assays miss most of them (Kris 2014, Jonna 2019). Point mutations in these genes are a different alteration class. Their functional and clinical effects need their own evidence; being different from a fusion does not make them passengers. The practical rule is that a driver-negative adenocarcinoma, especially in a never smoker, has not been fully tested until a fusion-capable assay has been run (Lindeman 2018)."
+          ],
+          "beforeSha256": "ad7246af076f0a9ab0ba502011298ceeb2e323ead8fe34ae4f0a89cf50c65dba",
+          "afterSha256": "2eab94fa19ca8c593e672be02d62f9a0775cb8586d256fc2eeeedc95fbd11290"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-04",
+          "after": "2026-11-14",
+          "beforeSha256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "reason": "Remove universal hybrid-protein, best-method and drug-sensitivity framing; distinguish DNA, RNA and functional evidence; withdraw the unsupported 2-to-8-percent passenger sentence while retaining the rest of the earlier lung supplement at its existing source scope.",
+      "sourceIds": [
+        "med-stransky",
+        "full-stransky-p1",
+        "full-stransky-p2",
+        "full-stransky-p29",
+        "full-stransky-p38"
+      ],
+      "newRecord": false,
+      "priorLinksPreservedInOrder": true,
+      "allPriorNotesPreservedExceptExplicitPassengerSentence": true,
+      "untouchedAssertionsNewlyCertified": false
+    },
+    {
+      "id": "notch",
+      "file": "src/data/mechanisms.ts",
+      "additionalSourceFile": null,
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
+            "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+            "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
+            "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors."
+          ],
+          "after": [
+            "Leading programmes: Aster (Brigham/Harvard) on Notch in leukaemia; Pear (Penn); Radtke (EPFL).",
+            "Stoeck 2014 identified NOTCH1 or NOTCH2 rearrangements in six of 66 triple-negative breast cancers. The studied NOTCH1 rearrangements retained gamma-secretase-dependent release of the active intracellular domain, and high-active-NOTCH1 models responded to inhibition in culture and xenografts, including tested paclitaxel combinations. A NOTCH2 fusion encoded an active intracellular product that bypassed the cleavage step and its model resisted that inhibitor. Position alone was not sufficient: a NOTCH1-rearranged line with low active-NOTCH1 signal also resisted. Both the actual active product and model conditions matter. The experiment does not make all activated Notch equivalent, validate a universal staining cutoff or establish a clinical selection rule.",
+            "Notch is also used by normal tissues. Van Es and colleagues found that removing the shared Notch transcriptional effector or blocking gamma-secretase converted proliferating intestinal crypt cells into differentiated goblet cells; the study also tested adenomas in Apc-mutant mice. Rangarajan and colleagues found that keratinocyte-specific Notch1 deletion produced epidermal hyperplasia and altered differentiation markers, while their primary-keratinocyte experiments separated growth arrest from differentiation responses. These defined intestinal and skin experiments do not make Notch a tumour-only switch or assign every receptor, tissue and inhibitor the same effect.",
+            "Clinical safety can constrain a pathway intervention even when its output is inhibited. In Messersmith and colleagues' 2015 phase I study of PF-03084014 in advanced solid tumours, the recommended phase II dose was lower than the estimated maximum tolerated dose because it had a better safety profile with comparable NOTCH-related target inhibition. Treatment-related events included diarrhoea and rash. The trial does not prove that each event was caused by the normal intestinal or skin mechanism, nor provide a universal safe dose for Notch inhibitors.",
+            "Hellström and colleagues perturbed Dll4/Notch1 signalling in mouse retinal vessels. Inhibiting the route increased tip-cell formation; the authors interpreted signalling between endothelial neighbours as restricting tip-cell numbers relative to stalk cells. Tip and stalk describe roles in a growing vessel, rather than cancer cells assigned a simple growth-on or growth-off state. These experiments do not establish the state of a human tumour from a pathway label."
+          ],
+          "beforeSha256": "7156e62cd9a32d0a4722c4f426bc4750f0c0e304cc8c9b70011f07ff86395574",
+          "afterSha256": "2b9ba1737a1153cfd0041a2a49010c4ad3b1b76c540fdd661d28d48c638f4701"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
+              "url": "https://doi.org/10.1146/annurev-pathol-052016-100127"
+            },
+            {
+              "label": "Notch-1 signalling requires ligand-induced proteolytic release of intracellular domain. (primary abstract; 1998)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9620803/"
+            },
+            {
+              "label": "Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. (primary abstract; 2004)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15472075/"
+            },
+            {
+              "label": "Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. (primary abstract; 2011)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21798897/"
+            },
+            {
+              "label": "A ligand-induced extracellular cleavage regulates gamma-secretase-like proteolytic activation of Notch1. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10882062/"
+            },
+            {
+              "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
+            },
+            {
+              "label": "Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25104330/"
+            },
+            {
+              "label": "van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15959515/"
+            },
+            {
+              "label": "Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11432830/"
+            },
+            {
+              "label": "Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25231399/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Aster, Pear & Blacklow, The varied roles of Notch in cancer (Annual Review of Pathology 2017)",
+              "url": "https://doi.org/10.1146/annurev-pathol-052016-100127"
+            },
+            {
+              "label": "Notch-1 signalling requires ligand-induced proteolytic release of intracellular domain. (primary abstract; 1998)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9620803/"
+            },
+            {
+              "label": "Activating mutations of NOTCH1 in human T cell acute lymphoblastic leukemia. (primary abstract; 2004)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15472075/"
+            },
+            {
+              "label": "Exome sequencing of head and neck squamous cell carcinoma reveals inactivating mutations in NOTCH1. (primary abstract; 2011)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/21798897/"
+            },
+            {
+              "label": "A ligand-induced extracellular cleavage regulates gamma-secretase-like proteolytic activation of Notch1. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10882062/"
+            },
+            {
+              "label": "A presenilin-1-dependent gamma-secretase-like protease mediates release of Notch intracellular domain. (1999; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10206645/"
+            },
+            {
+              "label": "Discovery of biomarkers predictive of GSI response in triple-negative breast cancer and adenoid cystic carcinoma (2014)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25104330/"
+            },
+            {
+              "label": "van Es et al., Notch/gamma-secretase inhibition turns proliferative cells in intestinal crypts and adenomas into goblet cells (Nature 2005)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15959515/"
+            },
+            {
+              "label": "Rangarajan et al., Notch signaling is a direct determinant of keratinocyte growth arrest and entry into differentiation (EMBO Journal 2001)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11432830/"
+            },
+            {
+              "label": "Messersmith et al., phase I dose-finding study of PF-03084014 in advanced solid malignancies (Clinical Cancer Research 2015)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/25231399/"
+            },
+            {
+              "label": "Hellström et al.: Dll4/Notch1 and tip-cell formation in mouse retinal vessels (2007)",
+              "url": "https://doi.org/10.1038/nature05571"
+            }
+          ],
+          "beforeSha256": "359214d696491dcc41148bd763ab28df7c46b676776f48fae1b01441195766f6",
+          "afterSha256": "f456c3105560217a0a0ccc041c5c4751a60e1da3c51b1d3150f992a4de7edfc9"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "reason": "Carry the primary mouse endothelial context missing from the GO/STOP vessel analogy without changing the existing mechanism diagram or clinical claims.",
+      "sourceIds": [
+        "med-hellstrom"
+      ],
+      "newRecord": false,
+      "priorLinksPreservedInOrder": true,
+      "allPriorNotesPreservedExceptExplicitPassengerSentence": false,
+      "untouchedAssertionsNewlyCertified": false
+    },
+    {
+      "id": "wnt",
+      "file": "src/data/pathways.ts",
+      "additionalSourceFile": null,
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Jiang 2013 screened 39 pancreatic cancer lines: the lines sensitive to the tested PORCN inhibitor carried inactivating RNF43 changes. This does not mean every RNF43 variant predicts sensitivity. The reported RNF43-loss models depended on secreted Wnt, whereas a downstream escape from beta-catenin destruction can maintain output despite blocking ligand preparation upstream. Morin's colorectal work linked stabilising beta-catenin changes to this distinction. In a fictional nuclear-beta-catenin culture with such a bypass stipulated, an upstream PORCN block is not expected to remove that particular output. Actual engagement, output and growth still need testing; pathway position is a mechanistic hypothesis, not proof that a drug has no effect through any route.",
+            "Rodon's phase 1 WNT974 study treated 94 people with advanced solid tumours. AXIN2 RNA decreased in 94 per cent of 52 paired skin-biopsy comparisons and 74 per cent of 35 paired tumour-biopsy comparisons; no RECIST responses were observed. These denominators are paired-sample groups, not response fractions out of all 94 participants. A downstream output change supports a pharmacodynamic effect without directly measuring receptor occupancy, selective growth dependence or tumour shrinkage. Dysgeusia occurred in 50 per cent, illustrating that normal-tissue effects also matter. This trial does not justify transferring a target-output change to benefit or a treatment recommendation.",
+            "Normal bone also uses Wnt-related signalling. Gong and colleagues linked LRP5 mutations to osteoporosis-pseudoglioma syndrome, found reduced bone mass in carriers, detected LRP5 in osteoblasts and demonstrated canonical Wnt signalling through it in culture. A mutant secreted LRP5 construct reduced bone thickness in mouse calvarial explants. These genetic and experimental findings concern bone accrual; they do not estimate the fracture risk of every Wnt inhibitor. In the WNT974 trial, the authors considered dysgeusia likely to result from on-target Wnt inhibition, but a maximum tolerated dose was not established. Safety findings, pathway-output changes and antitumour benefit remain distinct."
+          ],
+          "after": [
+            "Jiang 2013 screened 39 pancreatic cancer lines: the lines sensitive to the tested PORCN inhibitor carried inactivating RNF43 changes. This does not mean every RNF43 variant predicts sensitivity. The reported RNF43-loss models depended on secreted Wnt, whereas a downstream escape from beta-catenin destruction can maintain output despite blocking ligand preparation upstream. Morin's colorectal work linked stabilising beta-catenin changes to this distinction. In a fictional nuclear-beta-catenin culture with such a bypass stipulated, an upstream PORCN block is not expected to remove that particular output. Actual engagement, output and growth still need testing; pathway position is a mechanistic hypothesis, not proof that a drug has no effect through any route.",
+            "Rodon's phase 1 WNT974 study treated 94 people with advanced solid tumours. AXIN2 RNA decreased in 94 per cent of 52 paired skin-biopsy comparisons and 74 per cent of 35 paired tumour-biopsy comparisons; no RECIST responses were observed. These denominators are paired-sample groups, not response fractions out of all 94 participants. A downstream output change supports a pharmacodynamic effect without directly measuring receptor occupancy, selective growth dependence or tumour shrinkage. Dysgeusia occurred in 50 per cent, illustrating that normal-tissue effects also matter. This trial does not justify transferring a target-output change to benefit or a treatment recommendation.",
+            "Normal bone also uses Wnt-related signalling. Gong and colleagues linked LRP5 mutations to osteoporosis-pseudoglioma syndrome, found reduced bone mass in carriers, detected LRP5 in osteoblasts and demonstrated canonical Wnt signalling through it in culture. A mutant secreted LRP5 construct reduced bone thickness in mouse calvarial explants. These genetic and experimental findings concern bone accrual; they do not estimate the fracture risk of every Wnt inhibitor. In the WNT974 trial, the authors considered dysgeusia likely to result from on-target Wnt inhibition, but a maximum tolerated dose was not established. Safety findings, pathway-output changes and antitumour benefit remain distinct.",
+            "LIN28A is an RNA-binding regulator of microRNA processing and translation, as described in its reviewed human UniProt entry. It is not a Wnt ligand or Frizzled receptor. A list containing these different gene products does not establish coordinated activity or their presence in one genetic clone. Assign an intercellular signal to its sender and receiver; shared malignant ancestry is a separate claim."
+          ],
+          "beforeSha256": "2836935e0179f47a5c994d9191e759dfbe5e0c1f4034c479f1c79f0b2c9a5132",
+          "afterSha256": "6398335a426a40231e016e878fbaa526bfee48c0b2c822e81ca6b300be9ed4a6"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wnt_signaling_pathway"
+            },
+            {
+              "label": "Phase 1 study of single-agent WNT974, a first-in-class Porcupine inhibitor, in patients with advanced solid tumours. (primary abstract; 2021)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33941878/"
+            },
+            {
+              "label": "LDL-receptor-related proteins in Wnt signal transduction. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11029007/"
+            },
+            {
+              "label": "Control of beta-catenin phosphorylation/degradation by a dual-kinase mechanism. (2002; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11955436/"
+            },
+            {
+              "label": "Wnt signaling controls the phosphorylation status of beta-catenin. (2002; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11834740/"
+            },
+            {
+              "label": "Monounsaturated fatty acid modification of Wnt protein: its role in Wnt secretion. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17141155/"
+            },
+            {
+              "label": "Inactivating mutations of RNF43 confer Wnt dependency in pancreatic ductal adenocarcinoma (2013)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23847203/"
+            },
+            {
+              "label": "Activation of beta-catenin-Tcf signaling in colon cancer by mutations in beta-catenin or APC (1997)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9065402/"
+            },
+            {
+              "label": "Gong et al., LDL receptor-related protein 5 affects bone accrual and eye development (Cell 2001)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11719191/"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wnt_signaling_pathway"
+            },
+            {
+              "label": "Phase 1 study of single-agent WNT974, a first-in-class Porcupine inhibitor, in patients with advanced solid tumours. (primary abstract; 2021)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/33941878/"
+            },
+            {
+              "label": "LDL-receptor-related proteins in Wnt signal transduction. (2000; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11029007/"
+            },
+            {
+              "label": "Control of beta-catenin phosphorylation/degradation by a dual-kinase mechanism. (2002; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11955436/"
+            },
+            {
+              "label": "Wnt signaling controls the phosphorylation status of beta-catenin. (2002; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11834740/"
+            },
+            {
+              "label": "Monounsaturated fatty acid modification of Wnt protein: its role in Wnt secretion. (2006; primary evidence)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/17141155/"
+            },
+            {
+              "label": "Inactivating mutations of RNF43 confer Wnt dependency in pancreatic ductal adenocarcinoma (2013)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/23847203/"
+            },
+            {
+              "label": "Activation of beta-catenin-Tcf signaling in colon cancer by mutations in beta-catenin or APC (1997)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/9065402/"
+            },
+            {
+              "label": "Gong et al., LDL receptor-related protein 5 affects bone accrual and eye development (Cell 2001)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11719191/"
+            },
+            {
+              "label": "UniProt Q9H9Z2: reviewed human LIN28A RNA-binding function",
+              "url": "https://www.uniprot.org/uniprotkb/Q9H9Z2/entry"
+            }
+          ],
+          "beforeSha256": "05e947e1c38d00451178f516e912c9838a91e6a1295b04c66ee84ea3708b4d5e",
+          "afterSha256": "9b185b1d254e229f9dc071b826238357ef6a4887caf25ebbdfb173b3f7d8658e"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "reason": "Separate an RNA regulator from the canonical ligand/receptor branch and keep sender/receiver identity separate from clonal ancestry.",
+      "sourceIds": [
+        "uniprot-lin28a-function",
+        "explicit-gene-list-and-cell-identity-inference"
+      ],
+      "newRecord": false,
+      "priorLinksPreservedInOrder": true,
+      "allPriorNotesPreservedExceptExplicitPassengerSentence": false,
+      "untouchedAssertionsNewlyCertified": false
+    },
+    {
+      "id": "spatial-transcriptomics",
+      "file": "src/data/technologies.ts",
+      "additionalSourceFile": null,
+      "fields": [
+        {
+          "field": "notes",
+          "before": [
+            "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+            "Figure reading (fictional geometry, no platform scale): a capture spot is one barcode that can pool several cells. Imaging decodes six RNA coordinates, three for gene G and three for gene H (3 + 3 = 6), and these are coordinates, not cell labels. Moving the estimated cell masks changes which cell a coordinate is assigned to while the RNA stays fixed. Gene R is absent from the G and H panel, so a model-inferred R value is not an observed molecule, and RNA position is not protein or function.",
+            "In a fictional map, each of two regions contains twelve illustrative immune cells, but one places them within malignant nests and the other outside. Equal cell symbols do not guarantee equal bulk RNA: similar RNA is a separately stipulated condition of the example. The map supplies neither a stromal-area TIL score nor evidence of recognition or treatment benefit. A capture spot can pool several cells, and changing an estimated cell boundary can change molecule assignment while the observed RNA coordinates stay fixed."
+          ],
+          "after": [
+            "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+            "Figure reading (fictional geometry, no platform scale): a capture spot is one barcode that can pool several cells. Imaging decodes six RNA coordinates, three for gene G and three for gene H (3 + 3 = 6), and these are coordinates, not cell labels. Moving the estimated cell masks changes which cell a coordinate is assigned to while the RNA stays fixed. Gene R is absent from the G and H panel, so a model-inferred R value is not an observed molecule, and RNA position is not protein or function.",
+            "In a fictional map, each of two regions contains twelve illustrative immune cells, but one places them within malignant nests and the other outside. Equal cell symbols do not guarantee equal bulk RNA: similar RNA is a separately stipulated condition of the example. The map supplies neither a stromal-area TIL score nor evidence of recognition or treatment benefit. A capture spot can pool several cells, and changing an estimated cell boundary can change molecule assignment while the observed RNA coordinates stay fixed. Each region also has six malignant symbols; eight immune-cell centres fall inside the first nest contour and none inside the second. The contour is a regional boundary, not a cell membrane or a measured transport barrier."
+          ],
+          "beforeSha256": "77e5413f18ec3580bf9b912c16d02bf0acb0cbfc7764591a330ba9e2e70e0869",
+          "afterSha256": "163235513ee0d33a1985e63ebb7d8903a9394d05e4c4be90b5308b81a7363ed3"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-13",
+          "after": "2026-11-14",
+          "beforeSha256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+          "afterSha256": "0d6e26ddd58d94bc10d172fdd51f25341599247029f8d9966f83cf2910ac2831"
+        }
+      ],
+      "reason": "Preserve the previous entire paragraph while adding the checked fictional geometric counts and the regional-boundary convention.",
+      "sourceIds": [
+        "literal-fictional-fixture-and-renderer-reproduction",
+        "native-complete-source-views"
+      ],
+      "newRecord": false,
+      "priorLinksPreservedInOrder": true,
+      "allPriorNotesPreservedExceptExplicitPassengerSentence": false,
+      "untouchedAssertionsNewlyCertified": false
+    }
+  ],
+  "authoredOwnerCount": 4,
+  "newSourceLinks": 3,
+  "dateChanges": 4,
+  "changedIds": [
+    "spatial-transcriptomics",
+    "wnt",
+    "gene-fusion",
+    "notch"
+  ],
+  "newIds": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelationships": 0,
+  "sourceArtworkEdits": 0,
+  "actualContributorDependencies": {
+    "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+    "ids": [
+      "finite-tissue-budget",
+      "tissue-preparation-assay-fit",
+      "cell-segmentation",
+      "proteomics",
+      "rppa"
+    ],
+    "fieldsEdited": false,
+    "existingRootIdsWithContributorReplacements": [
+      "proteomics",
+      "rppa"
+    ],
+    "scope": "Actual contributor fields confer no root integration credit. Matching later proposals remain byte-preserved."
+  },
+  "specificWithdrawal": {
+    "recordId": "gene-fusion",
+    "field": "notes",
+    "claim": "Point mutations in the same genes read 2 to 8% on exome panels and are passengers.",
+    "reason": "Unsupported blanket passenger classification and frequency were withdrawn. Other legacy lung prevalence/testing assertions are preserved at their existing source scope, not newly certified."
+  },
+  "scope": "Four canonical owners across five data files. Exact scalar correction, two appended connected notes, one appended geometric qualification and three source links. No diagram structure, contributor field, product code or language-table change.",
+  "dataCommit": "69470ea94ac05725f688dba666b053f2f93b5ec1"
+}

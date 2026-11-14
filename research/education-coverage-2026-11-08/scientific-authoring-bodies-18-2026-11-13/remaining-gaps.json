@@ -1,0 +1,97 @@
+{
+  "partialCanonicalRequirements": [
+    {
+      "requirementId": "SB18-009",
+      "requirement": "No survival change may reflect incomplete perturbation, timing or compensation, rather than prove that the pathway has no role.",
+      "remaining": [
+        "Current fields require adequate perturbation and timing but do not explicitly carry the null-survival-effect compensation alternative. No full canonical closure is credited for that clause."
+      ],
+      "canonicalLane": "registered-root"
+    },
+    {
+      "requirementId": "SB18-062",
+      "requirement": "The protein-only drug statement is too broad: different therapeutic mechanisms interact with different molecular classes; a protein measurement alone does not name the relevant target mechanism.",
+      "remaining": [
+        "The target definition allows biological molecules/structures and actual contributor text removes the all-drugs protein-only wording. A directly cited nonprotein-target counterexample has not been carried in the selected fields; this narrower canonical clause remains partial."
+      ],
+      "canonicalLane": "actual-unmerged-contributor-dependent"
+    }
+  ],
+  "actualUnmergedContributorDependencies": [
+    {
+      "requirementId": "SB18-057",
+      "ids": [
+        "proteomics"
+      ],
+      "rootIntegrationCredit": 0
+    },
+    {
+      "requirementId": "SB18-058",
+      "ids": [
+        "rppa"
+      ],
+      "rootIntegrationCredit": 0
+    },
+    {
+      "requirementId": "SB18-062",
+      "ids": [
+        "proteomics"
+      ],
+      "rootIntegrationCredit": 0
+    },
+    {
+      "requirementId": "SB18-079",
+      "ids": [
+        "cell-segmentation"
+      ],
+      "rootIntegrationCredit": 0
+    },
+    {
+      "requirementId": "SB18-095",
+      "ids": [
+        "finite-tissue-budget",
+        "tissue-preparation-assay-fit"
+      ],
+      "rootIntegrationCredit": 0
+    }
+  ],
+  "retainedMechanismLimits": [
+    "PARP1 nuclear transit, cargo packaging and macroautophagy versus microautophagy are unresolved in the read Hoslett passages.",
+    "Mammalian amino-acid export does not establish export of every product across every autolysosome.",
+    "Uncharacterised case-specific alterations carry no inferred function or patient treatment implication."
+  ],
+  "sourceAccessFailures": [
+    {
+      "sourceId": "full-wu",
+      "http": "500",
+      "bytes": 150,
+      "sha256": "d64843e54491f4dffd06e41aa2299093ce21ba0ae73fb1c0411f0372a40cab38"
+    },
+    {
+      "sourceId": "full-yang",
+      "http": "500",
+      "bytes": 150,
+      "sha256": "3bdbbbce6a2460fd85676e98fe0a210fa9e528f19f738351dce292d8e227e83f"
+    }
+  ],
+  "crossrefRateLimitedSources": [
+    "med-schwanhaeusser",
+    "med-hellstrom",
+    "med-yang-gpx4",
+    "med-slyper",
+    "med-squair"
+  ],
+  "priorOrdinaryScienceResidualsUnchanged": true,
+  "wholePaperReadsClaimed": 0,
+  "unreadOldClinicalAndGeneratedAssertionsNewlyCertified": false,
+  "hostedBrowserAccessibilityOrNativeLanguageReview": false,
+  "independentExpertOwnerLearnerMainLiveCredit": 0,
+  "knownShortSummaryConsumerGap": {
+    "recordId": "gene-fusion",
+    "selectedLegacyEntries": 9,
+    "verifiedEnglishSimpleDefect": "The selected simplified-English entry retains the old universal hybrid-protein and often very drug-sensitive wording.",
+    "exactProposedEnglishCorrection": "summary-consumer-proposals.json",
+    "translatedEntriesAssessedForSelectionNotNativeSemanticAcceptance": true,
+    "separateFromThe112SourceRequirements": true
+  }
+}

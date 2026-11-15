@@ -57,11 +57,26 @@ export const targetsImmuneMarkers: TargetInput[] = [
 
   m({ id: "cd163", name: "CD163", symbol: "CD163",
     wikipedia: W("CD163"), terms: ["tumor-associated-macrophages", "tumor-microenvironment"], related: ["cd14", "csf1r"],
-    biology: "Scavenger receptor for haemoglobin-haptoglobin complexes, restricted to the monocyte and macrophage line.",
-    whereFound: ["Macrophages, particularly the alternatively activated kind", "Monocytes at lower level"],
-    tldr: "CD163 marks the macrophages that help a tumour rather than attack it. It is the usual way of counting those cells in a tumour sample, which is why it appears whenever tumour-associated macrophages are discussed.",
-    summary: "CD163 is a scavenger receptor for haemoglobin-haptoglobin complexes and is confined to monocytes and macrophages. It is the marker most often used to identify alternatively activated macrophages, the phenotype associated with tissue repair and immune suppression rather than with killing, and so it is the standard stain for counting tumour-associated macrophages in a tissue section. A soluble form shed into blood is measured in inflammatory disease. CD163 is the practical link between the macrophage record on this site and the agents aimed at that compartment, such as the CSF1R antibodies.",
-    links: [{ label: "HGNC:1631", url: "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1631" }] }),
+    biology: "Receptor involved in clearance and endocytosis of haemoglobin-haptoglobin complexes by macrophages.",
+    whereFound: [
+  "Monocytes and mature macrophages"
+],
+    tldr: "CD163 is a receptor found on monocytes and macrophages. Detecting it alone does not establish a tumour-supporting function or benefit from a particular drug.",
+    summary: "CD163 is a receptor expressed by monocytes and mature macrophages. It helps clear haemoglobin-haptoglobin complexes. UniProt also describes a soluble form shed from the cell surface that may be used to monitor macrophage activation in inflammatory conditions. In a tumour sample, CD163 staining identifies cells expressing the receptor. The macrophage-activation consensus recommends describing the cells, their activating conditions and a collection of markers, rather than reducing activation to two fixed M1 and M2 types. The reading rule is to interpret CD163 with the other markers, tissue location and assay conditions; one marker alone does not establish tumour-supporting function or predict benefit from a drug aimed at the macrophage compartment.",
+    links: [
+  {
+    "label": "HGNC:1631",
+    "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1631"
+  },
+  {
+    "label": "UniProt Q86VB7: CD163 function and expression",
+    "url": "https://www.uniprot.org/uniprotkb/Q86VB7/entry"
+  },
+  {
+    "label": "Murray et al., Immunity 2014: macrophage-activation nomenclature",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25035950/"
+  }
+] }),
 
   m({ id: "cd56", name: "CD56", aka: ["NCAM1", "neural cell adhesion molecule 1"], symbol: "NCAM1",
     wikipedia: W("Neural_cell_adhesion_molecule"), terms: ["nk-cell"], related: ["fcgr3a"],

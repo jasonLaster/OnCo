@@ -235,7 +235,7 @@ export const simpleJ: Record<string, string> = {
   "nk-cell": "NK cells are fast-acting immune cells that destroy abnormal cells without training on a specific target, specialising in cells that have hidden from T cells.",
   "macrophage": "Macrophages are large immune cells that eat debris and microbes, but tumours retrain them so in many cancers they end up helping the tumour.",
   "cytokine": "Cytokines are small proteins immune cells use to talk to each other, some used as drugs and some dangerous when immunotherapy releases a flood of them.",
-  "inflammation": "Inflammation is the body's response to injury or infection, healing in short bursts but promoting cancer when it smoulders for years.",
+  "inflammation": "Inflammation brings signals, cells and fluid to tissue after infection, injury or stress. It may help repair damage or add to harm, depending on the situation.",
   "immune-checkpoint": "An immune checkpoint is a brake that stops T cells attacking healthy tissue, which tumours exploit and which checkpoint inhibitor drugs release.",
   "immunotherapy-term": "Immunotherapy is any treatment that gets the patient's own immune system to attack the cancer, sometimes giving responses that last years but only in some patients.",
   "chemotherapy-term": "Chemotherapy medicines affect different cell processes. They can kill cancer cells or slow their growth, and healthy cells can be affected too.",

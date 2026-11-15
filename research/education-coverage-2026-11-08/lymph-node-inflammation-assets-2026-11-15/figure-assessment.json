@@ -1,0 +1,56 @@
+{
+  "freshWholeNativeThemeViews": 4,
+  "otherPinVariantReuses": 4,
+  "sourceImagesEdited": false,
+  "cssVariableSubstitution": false,
+  "rawPNGDimensions": [
+    1024,
+    1536
+  ],
+  "SVGNativeDimensions": [
+    480,
+    850
+  ],
+  "findings": [
+    {
+      "id": "P48-V01",
+      "severity": "moderate",
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "finding": "The outcome fork has no arrowhead toward Contain/repair; only the other subpath receives the terminal marker.",
+      "freshWholeViewConfirmsEarlierObservation": true,
+      "ownerArtworkActionPending": true
+    }
+  ],
+  "compoundPathReceipts": [
+    {
+      "theme": "light",
+      "compoundMarkerEndPaths": [
+        {
+          "d": "M240 679L111 719M240 679L356 719",
+          "markerEnd": "url(#arrow)"
+        }
+      ],
+      "wholeDOMParsed": true
+    },
+    {
+      "theme": "dark",
+      "compoundMarkerEndPaths": [
+        {
+          "d": "M240 679L111 719M240 679L356 719",
+          "markerEnd": "url(#arrow)"
+        }
+      ],
+      "wholeDOMParsed": true
+    }
+  ],
+  "lymphNodeInterpretation": "Separate lymph and blood lumens, afferent-to-sinus entry, arterial/capillary/HEV/venous route, blood-to-tissue cell crossing and separate downstream lymph egress are visible. Qualitative whole-view agreement is not an every-pixel/object identity or complete vascular atlas certification.",
+  "inflammationInterpretation": "Local tissue signals, leukocyte crossing and fluid/protein entry are distinct from angiogenesis and from outcome. Schematic arrows have no measured kinetics or guaranteed benefit.",
+  "mermaidReadAsSourceOnly": 2,
+  "mermaidVersionInstances": 4,
+  "mermaidRendered": false,
+  "historicalFontAndContrastMetricsNotFreshlyReproduced": true,
+  "hostedBrowserPhysicalMobileQuantitativeContrastAccessibilityExpertOrOwnerApproval": false
+}

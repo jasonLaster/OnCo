@@ -1,0 +1,552 @@
+{
+  "dataCommit": "f54659bd41feb79ecf36a539a10bb425e471b583",
+  "plan": {
+    "auditBaseCommit": "f1d8d875fa399a1b224780100dc2eeab56916603",
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 12,
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "changes": [
+      {
+        "recordId": "lymph-node",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "summary",
+        "before": "Lymph drains fluid from tissues back to the blood, passing through nodes where T and B cells inspect it for infection; cancer cells that enter lymph vessels lodge in the nearest nodes first, so node involvement (the N in TNM) is a central marker of a cancer's tendency to spread and raises the stage. Sentinel-node biopsy identifies and removes only the first node or two that drain a tumour, sparing patients the arm swelling (lymphoedema) that removing all nodes causes. Lymph nodes are also where immune responses against a tumour are launched, and where immunotherapy needs functioning T cells to be primed. Afferent vessels bring lymph into a node and efferent vessels carry it out, and a draining node names a route and not a finding of cancer. Immune material and cells reach a node by different routes: soluble antigen can reach resident dendritic cells through conduits in the node before migrating dendritic cells arrive (Sixt et al., 2005, mouse), while lymphocytes are recruited from the blood through high endothelial venules (Brulois et al., 2020, mouse). Lymph is interstitial fluid collected by lymph capillaries and returned to the venous blood (National Cancer Institute SEER training), so lymph and blood are different fluids and a sample of one does not stand in for the other. A tertiary lymphoid structure is an ectopic lymphoid aggregate that forms in tissue such as a tumour, and it is not a lymph node (Schumacher and Thommen, 2022). Size on imaging is a measurement in millimetres and not a finding of cancer or priming, and a report should say which node was measured, by what method and when (OnCo reporting advice). A node has a cortex, a paracortex and a medulla, and B cells and T cells home to separate areas within them (Willard-Mack, 2006); in the mouse, a venous population in the medulla was predicted to recruit myeloid cells rather than lymphocytes, which videomicroscopy confirmed (Brulois et al., 2020). In gene-targeted mice, loss of the chemokine receptor CCR7 altered the organisation of lymphoid organs and stopped skin dendritic cells reaching draining nodes (Förster et al., 1999). Arrival of material in a node does not show that priming succeeded. Pathological involvement means cancer was identified in examined tissue, which differs from a drainage route, enlargement or an imaging observation, and a negative sampled node does not certify the unsampled nodes (the National Cancer Institute notes that a false-negative biopsy gives a false sense of security about the extent of cancer).",
+        "after": "A lymph node is organised immune tissue along lymphatic routes. Nearby nodes can be among the earliest sites of spread for many cancers, but drainage does not establish cancer involvement. Nodal findings can inform staging according to the cancer-specific rules. Sentinel-node biopsy identifies and examines the first draining node or nodes. Removing fewer nodes is generally associated with fewer side effects, but sentinel-node biopsy can also cause lymphoedema. Nodes can support antitumour T-cell priming; antigen arrival alone does not establish that this occurred. Afferent vessels bring lymph into a node and efferent vessels carry it out, and a draining node names a route and not a finding of cancer. Immune material and cells reach a node by different routes: soluble antigen can reach resident dendritic cells through conduits in the node before migrating dendritic cells arrive (Sixt et al., 2005, mouse), while lymphocytes are recruited from the blood through high endothelial venules (Brulois et al., 2020, mouse). Lymph is interstitial fluid collected by lymph capillaries and returned to the venous blood (National Cancer Institute SEER training), so lymph and blood are different fluids and a sample of one does not stand in for the other. A tertiary lymphoid structure is an ectopic lymphoid aggregate that forms in tissue such as a tumour, and it is not a lymph node (Schumacher and Thommen, 2022). Size on imaging is a measurement in millimetres and not a finding of cancer or priming, and a report should say which node was measured, by what method and when (OnCo reporting advice). A node has a cortex, a paracortex and a medulla, and B cells and T cells home to separate areas within them (Willard-Mack, 2006); in the mouse, a venous population in the medulla was predicted to recruit myeloid cells rather than lymphocytes, which videomicroscopy confirmed (Brulois et al., 2020). In gene-targeted mice, loss of the chemokine receptor CCR7 altered the organisation of lymphoid organs and stopped skin dendritic cells reaching draining nodes (Förster et al., 1999). Arrival of material in a node does not show that priming succeeded. Pathological involvement means cancer was identified in examined tissue, which differs from a drainage route, enlargement or an imaging observation, and a negative sampled node does not certify the unsampled nodes (the National Cancer Institute notes that a false-negative biopsy gives a false sense of security about the extent of cancer).",
+        "beforeSHA256": "8478f7f11ba18c5414fdd971f5d1f62be396c428e83961f920cd06206c6ca95e",
+        "afterSHA256": "c61acfefa661bd69bb859ef0ce7b284b9be893bf7e30bec43fc85b13b9556304",
+        "reason": "Replace unconditional nearest-first, stage-raising, biopsy risk-free and immunotherapy-priming wording. NCI sentinel-biopsy complete paragraphs 6, 8, 10, 18, 20, 26 and the source-first route/priming boundary support the qualified replacement. All later contributor text remains exact.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "lymph-node",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "notes",
+        "before": [],
+        "after": [
+          "A node's capsule surrounds adjoining cortical, paracortical and medullary regions, with B-cell follicles and T-cell regions. These are adjoining tissue regions rather than sealed rooms. Afferent lymph enters the subcapsular sinus near the outer surface and passes toward medullary sinuses and an efferent vessel at the hilum. Efferent lymph can carry cells as well as fluid onward through lymphatics. Its eventual return to venous blood is downstream, rather than a direct junction to the vein shown beside a node in a simplified drawing.",
+          "One simplified route for blood is artery, capillary network, high endothelial venule (HEV), then venous outlet; Brulois and colleagues traced these connections in mouse peripheral nodes. Naive lymphocytes can cross from HEV blood into node tissue. In a diagram, keep that cell movement distinct from blood flow and lymph flow; red cells stay in the blood compartment. Label and enlargement leaders do not show transport or specify a unique crossing mechanism or timing. Nor does one illustrated route map every vessel, dictate every cell's path or demonstrate priming.",
+          "Imaging, drainage mapping, sampled-tissue pathology and controlled immune-response experiments answer different questions. Record the node, tissue region, collection method and time. In a fictional earlier-antigen example, arrival before migrating dendritic cells is possible, but uptake, presentation and antigen-dependent activation still need their own measurements. Neither arrival nor node size diagnoses cancer involvement or useful priming."
+        ],
+        "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterSHA256": "aecc492667c60d35046f760a6da809a654723c5bfd58ddcf87b20f5d1f437516",
+        "reason": "Add connected anatomy and schematic-route teaching. OpenStax selected paragraphs, NCI SEER anatomy, Louie/Liao targeted review and Brulois selected background/results/captions; no whole-paper or source-figure-pixel review.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "lymph-node",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Lymph_node"
+          },
+          {
+            "label": "The conduit system transports soluble antigens from the afferent lymph to resident dendritic cells in the T cell area of the lymph node.",
+            "url": "https://doi.org/10.1016/j.immuni.2004.11.013"
+          },
+          {
+            "label": "CCR7 coordinates the primary immune response by establishing functional microenvironments in secondary lymphoid organs.",
+            "url": "https://doi.org/10.1016/s0092-8674(00)80059-8"
+          },
+          {
+            "label": "A molecular map of murine lymph node blood vascular endothelium at single cell resolution.",
+            "url": "https://doi.org/10.1038/s41467-020-17291-5"
+          },
+          {
+            "label": "National Cancer Institute: Sentinel Lymph Node Biopsy",
+            "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet"
+          },
+          {
+            "label": "Normal structure, function, and histology of lymph nodes.",
+            "url": "https://doi.org/10.1080/01926230600867727"
+          },
+          {
+            "label": "National Cancer Institute SEER Training: Introduction to the Lymphatic System",
+            "url": "https://training.seer.cancer.gov/anatomy/lymphatic/"
+          },
+          {
+            "label": "Tertiary lymphoid structures in cancer.",
+            "url": "https://doi.org/10.1126/science.abf9419"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Lymph_node"
+          },
+          {
+            "label": "The conduit system transports soluble antigens from the afferent lymph to resident dendritic cells in the T cell area of the lymph node.",
+            "url": "https://doi.org/10.1016/j.immuni.2004.11.013"
+          },
+          {
+            "label": "CCR7 coordinates the primary immune response by establishing functional microenvironments in secondary lymphoid organs.",
+            "url": "https://doi.org/10.1016/s0092-8674(00)80059-8"
+          },
+          {
+            "label": "A molecular map of murine lymph node blood vascular endothelium at single cell resolution.",
+            "url": "https://doi.org/10.1038/s41467-020-17291-5"
+          },
+          {
+            "label": "National Cancer Institute: Sentinel Lymph Node Biopsy",
+            "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet"
+          },
+          {
+            "label": "Normal structure, function, and histology of lymph nodes.",
+            "url": "https://doi.org/10.1080/01926230600867727"
+          },
+          {
+            "label": "National Cancer Institute SEER Training: Introduction to the Lymphatic System",
+            "url": "https://training.seer.cancer.gov/anatomy/lymphatic/"
+          },
+          {
+            "label": "Tertiary lymphoid structures in cancer.",
+            "url": "https://doi.org/10.1126/science.abf9419"
+          },
+          {
+            "label": "OpenStax Anatomy and Physiology 2e: 21.1 Anatomy of the Lymphatic and Immune Systems",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+          },
+          {
+            "label": "National Cancer Institute SEER Training: Lymph Nodes",
+            "url": "https://training.seer.cancer.gov/anatomy/lymphatic/components/nodes.html"
+          },
+          {
+            "label": "Lymph Node Subcapsular Sinus Macrophages as the Frontline of Lymphatic Immune Defense.",
+            "url": "https://doi.org/10.3389/fimmu.2019.00347"
+          }
+        ],
+        "beforeSHA256": "ee1b47e7404132c9c9e8990cc6eaf3f61354bfa86c740e33738cf6ced3a218d1",
+        "afterSHA256": "d5075bb9047afa49b5e299a6e34f5c5257a61ddf20a6d7d0f09b81b6e4107b93",
+        "reason": "Direct sources for node capsule/sinus/egress anatomy and context; identifiers resolved and abstracts read before use.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "inflammation",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "tldr",
+        "before": "The body's response to injury or infection: immune cells and fluid rush in, causing redness, heat and swelling. Short bursts heal; long-term smouldering inflammation promotes cancer.",
+        "after": "Inflammation is a tissue response to infection, injury or tissue stress. It can support repair or contribute to harm; the cause, location and duration matter.",
+        "beforeSHA256": "1feef91a55cb401cbb9ed29fb582d24dcd301ebb927b6a5f5746d19723dcca2a",
+        "afterSHA256": "47766f4ba5935be63edd5ced4ebf8823dbe04580df9219060822701727c27d28",
+        "reason": "Remove deterministic short-response/healing and chronic-response/cancer framing. Medzhitov and Ortega-Gomez complete review abstracts plus contextual primary mechanisms support a conditional definition.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "inflammation",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "summary",
+        "before": "Chronic inflammation from infection (hepatitis B and C, H. pylori, HPV), irritation (tobacco, asbestos, acid reflux) or disease (ulcerative colitis) supplies growth factors, free radicals that mutate DNA, and blood-vessel growth, and it is estimated to underlie around a fifth of cancers; 'tumour-promoting inflammation' is a recognised enabling characteristic in the hallmarks of cancer. Yet inflammation is also how the immune system attacks tumours, and an 'inflamed' or 'hot' tumour is one full of T cells that responds well to checkpoint inhibitors. Aspirin and other anti-inflammatory drugs reduce colorectal cancer risk, and the inflammatory markers CRP and IL-6 track cachexia and prognosis. Inflammation is not the same as infection: infection and injury are classic triggers, and tissue stress or malfunction can induce a graded response, called para-inflammation, that relies mainly on tissue-resident macrophages (Medzhitov, 2008). Recruited cells can support containment and repair, or persist and add to injury, and increased vessel permeability is not the growth of new vessels. Resolution is a coordinated and active process that restores tissue integrity and function, and is not simply everything switching off (Ortega-Gómez et al., 2013). In experimental cancer systems one DNA-sensing pathway has had opposite roles: host STING-dependent sensing was needed for spontaneous CD8 T-cell priming against mouse tumours (Woo et al., 2014), while a tumour-cell response to cytosolic DNA in chromosomally unstable tumours promoted metastasis (Bakhoum et al., 2018). These are contextual mechanisms and not a head-to-head clinical comparison. Inflammation after an intervention does not show tumour-specific immune learning: a local reaction, immunogenic cell death, recognition of untreated cancer cells and clinical benefit each need their own evidence, and one raised blood marker does not identify the source of inflammation. Acute against chronic and local against systemic are separate axes, and they need not share a trigger or a consequence.",
+        "after": "Chronic inflammation from infection (hepatitis B and C, H. pylori, HPV), irritation (tobacco, asbestos, acid reflux) or disease (ulcerative colitis) supplies growth factors, free radicals that mutate DNA, and blood-vessel growth, and it is estimated to underlie around a fifth of cancers; 'tumour-promoting inflammation' is a recognised enabling characteristic in the hallmarks of cancer. Inflammation can also contribute to immune responses against tumours, but an 'inflamed' or 'hot' pattern alone does not establish benefit from a checkpoint inhibitor (Chen and Mellman, 2017). Aspirin and other anti-inflammatory drugs reduce colorectal cancer risk, and the inflammatory markers CRP and IL-6 track cachexia and prognosis. Inflammation is not the same as infection: infection and injury are classic triggers, and tissue stress or malfunction can induce a graded response, called para-inflammation, that relies mainly on tissue-resident macrophages (Medzhitov, 2008). Recruited cells can support containment and repair, or persist and add to injury, and increased vessel permeability is not the growth of new vessels. Resolution is a coordinated and active process that restores tissue integrity and function, and is not simply everything switching off (Ortega-Gómez et al., 2013). In experimental cancer systems one DNA-sensing pathway has had opposite roles: host STING-dependent sensing was needed for spontaneous CD8 T-cell priming against mouse tumours (Woo et al., 2014), while a tumour-cell response to cytosolic DNA in chromosomally unstable tumours promoted metastasis (Bakhoum et al., 2018). These are contextual mechanisms and not a head-to-head clinical comparison. Inflammation after an intervention does not show tumour-specific immune learning: a local reaction, immunogenic cell death, recognition of untreated cancer cells and clinical benefit each need their own evidence, and one raised blood marker does not identify the source of inflammation. Acute against chronic and local against systemic are separate axes, and they need not share a trigger or a consequence.",
+        "beforeSHA256": "8182fa822272deed70e2734fa084ed5bae2bfa9cb18ba0c24266475f41109aa1",
+        "afterSHA256": "438fed750d1063a8b31999ec1cae660630d2ee394f10c2bab5e55e09674bf0a1",
+        "reason": "Replace a universal response implication with an explicitly conditional reading rule. Chen/Mellman complete review abstract and the existing cold-vs-hot owner distinguish a pattern from established drug benefit. Unselected older claims remain at their prior scope.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "inflammation",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "notes",
+        "before": [],
+        "after": [
+          "Sterile inflammation means an inflammatory response without an initiating infection; tissue injury can provide such a context. A short response is not guaranteed to heal, and persistent signalling does not establish one inevitable outcome. Acute versus chronic describes time, while local versus systemic describes distribution.",
+          "Locate tissue signals, the blood-vessel lumen and recruited cells separately. A cell crossing the vessel wall and fluid or proteins entering tissue are different movements, neither a new vessel growing. Swelling, a cytokine concentration, a fraction of marker-positive cells and a mixed-tissue RNA programme also have different units and denominators. State the specimen, time and quantity; a bulk programme does not identify every producing cell. In the fictional swelling-plus-RNA example, no antigen-specific response or target-cell killing was tested. That observation alone identifies neither the cause nor useful tumour immunity."
+        ],
+        "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "afterSHA256": "fdb295e1adf750fd2af2ef5fe5bf384695c2a5839351a96464286825a83134fb",
+        "reason": "Add connected physiology and measurement-reading paragraphs. Sterile injury and varied outcomes have review scope; compartment/denominator and fictional-case limits are premise-backed reading rules, not new clinical tests.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "inflammation",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Inflammation"
+          },
+          {
+            "label": "Origin and physiological roles of inflammation.",
+            "url": "https://doi.org/10.1038/nature07201"
+          },
+          {
+            "label": "STING-dependent cytosolic DNA sensing mediates innate immune recognition of immunogenic tumors.",
+            "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+          },
+          {
+            "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+            "url": "https://doi.org/10.1038/nature25432"
+          },
+          {
+            "label": "Resolution of inflammation: an integrated view.",
+            "url": "https://doi.org/10.1002/emmm.201202382"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Inflammation"
+          },
+          {
+            "label": "Origin and physiological roles of inflammation.",
+            "url": "https://doi.org/10.1038/nature07201"
+          },
+          {
+            "label": "STING-dependent cytosolic DNA sensing mediates innate immune recognition of immunogenic tumors.",
+            "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+          },
+          {
+            "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+            "url": "https://doi.org/10.1038/nature25432"
+          },
+          {
+            "label": "Resolution of inflammation: an integrated view.",
+            "url": "https://doi.org/10.1002/emmm.201202382"
+          },
+          {
+            "label": "Elements of cancer immunity and the cancer-immune set point.",
+            "url": "https://doi.org/10.1038/nature21349"
+          }
+        ],
+        "beforeSHA256": "0ef4e0780e99583a1f46dc53ebb20f7fe525d3ab932d07c0b5544c99397c0702",
+        "afterSHA256": "04cfcb6b2c3a704b9a0deb05815536b181ea382365ff003615e9957ab811e7e5",
+        "reason": "Add the resolved review supporting contextual immunotherapy-response wording; abstract-only depth retained.",
+        "reviewDateUnchanged": true
+      },
+      {
+        "recordId": "cd163",
+        "kind": "target",
+        "file": "src/data/targets-immune-markers.ts",
+        "field": "biology",
+        "before": "Scavenger receptor for haemoglobin-haptoglobin complexes, restricted to the monocyte and macrophage line.",
+        "after": "Receptor involved in clearance and endocytosis of haemoglobin-haptoglobin complexes by macrophages.",
+        "beforeSHA256": "ed8c12d528c1c1a8c97632eda1fb366026767fbcfb6f2f635c8572f4a24d1094",
+        "afterSHA256": "76ad598034b230518f4c75024154b81e0809b4fdf82956938f46bc2f36521b04",
+        "reason": "Correct the universal tumour-supporting marker claim exposed in the actual macrophage reader; distinguish curated receptor function from a premise-backed marker interpretation rule."
+      },
+      {
+        "recordId": "cd163",
+        "kind": "target",
+        "file": "src/data/targets-immune-markers.ts",
+        "field": "whereFound",
+        "before": [
+          "Macrophages, particularly the alternatively activated kind",
+          "Monocytes at lower level"
+        ],
+        "after": [
+          "Monocytes and mature macrophages"
+        ],
+        "beforeSHA256": "e8ebd58ff9b6828d9934a088db3b6d88d02503217bc723d69bba48344d476bb7",
+        "afterSHA256": "61e829d5fdfe09bcab5db47544e40e1a42be13bdc874c8196572bd767c83fa93",
+        "reason": "Correct the universal tumour-supporting marker claim exposed in the actual macrophage reader; distinguish curated receptor function from a premise-backed marker interpretation rule."
+      },
+      {
+        "recordId": "cd163",
+        "kind": "target",
+        "file": "src/data/targets-immune-markers.ts",
+        "field": "tldr",
+        "before": "CD163 marks the macrophages that help a tumour rather than attack it. It is the usual way of counting those cells in a tumour sample, which is why it appears whenever tumour-associated macrophages are discussed.",
+        "after": "CD163 is a receptor found on monocytes and macrophages. Detecting it alone does not establish a tumour-supporting function or benefit from a particular drug.",
+        "beforeSHA256": "d062170f11a1187f774878c576c777e5573c14567858b1a01bae48b2782a7343",
+        "afterSHA256": "ea38139d4ee55409459d7386c7bc0d6d580435acce36fcd9a4078f764866c6ff",
+        "reason": "Correct the universal tumour-supporting marker claim exposed in the actual macrophage reader; distinguish curated receptor function from a premise-backed marker interpretation rule."
+      },
+      {
+        "recordId": "cd163",
+        "kind": "target",
+        "file": "src/data/targets-immune-markers.ts",
+        "field": "summary",
+        "before": "CD163 is a scavenger receptor for haemoglobin-haptoglobin complexes and is confined to monocytes and macrophages. It is the marker most often used to identify alternatively activated macrophages, the phenotype associated with tissue repair and immune suppression rather than with killing, and so it is the standard stain for counting tumour-associated macrophages in a tissue section. A soluble form shed into blood is measured in inflammatory disease. CD163 is the practical link between the macrophage record on this site and the agents aimed at that compartment, such as the CSF1R antibodies.",
+        "after": "CD163 is a receptor expressed by monocytes and mature macrophages. It helps clear haemoglobin-haptoglobin complexes. UniProt also describes a soluble form shed from the cell surface that may be used to monitor macrophage activation in inflammatory conditions. In a tumour sample, CD163 staining identifies cells expressing the receptor. The macrophage-activation consensus recommends describing the cells, their activating conditions and a collection of markers, rather than reducing activation to two fixed M1 and M2 types. The reading rule is to interpret CD163 with the other markers, tissue location and assay conditions; one marker alone does not establish tumour-supporting function or predict benefit from a drug aimed at the macrophage compartment.",
+        "beforeSHA256": "868f70c6b048f743b610dcf1d70af10a35a6906972a85bd7a1910a57c5562930",
+        "afterSHA256": "a521daa698d672cccfbd775d29d6f8daa32c3ffc89c0c9060529c58b181df549",
+        "reason": "Correct the universal tumour-supporting marker claim exposed in the actual macrophage reader; distinguish curated receptor function from a premise-backed marker interpretation rule."
+      },
+      {
+        "recordId": "cd163",
+        "kind": "target",
+        "file": "src/data/targets-immune-markers.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "HGNC:1631",
+            "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1631"
+          }
+        ],
+        "after": [
+          {
+            "label": "HGNC:1631",
+            "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:1631"
+          },
+          {
+            "label": "UniProt Q86VB7: CD163 function and expression",
+            "url": "https://www.uniprot.org/uniprotkb/Q86VB7/entry"
+          },
+          {
+            "label": "Murray et al., Immunity 2014: macrophage-activation nomenclature",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25035950/"
+          }
+        ],
+        "beforeSHA256": "cc27e993cc54b3b8ac12c2737176802e3832ead78006c5a246b5109e72164b4f",
+        "afterSHA256": "65c155bc10961971219380d54543aef1e17d14f8aeec5e3a40afdf9c950437dd",
+        "reason": "Correct the universal tumour-supporting marker claim exposed in the actual macrophage reader; distinguish curated receptor function from a premise-backed marker interpretation rule."
+      }
+    ],
+    "consumerChanges": [
+      {
+        "recordId": "inflammation",
+        "language": "es",
+        "file": "src/data/i18n/es.ts",
+        "before": "La respuesta del cuerpo a una lesión o infección: las células inmunitarias y el líquido acuden en masa, causando enrojecimiento, calor e hinchazón. Los episodios breves curan; la inflamación crónica latente favorece el cáncer.",
+        "after": "La inflamación es una respuesta de los tejidos a una infección, una lesión o al estrés del tejido. Puede favorecer la reparación o contribuir al daño; importan la causa, el lugar y la duración.",
+        "beforeSHA256": "f36ad2cade8c4b42c035a9ef7011674dc82daf7e2a0a5b12d7a4c3afd249c794",
+        "afterSHA256": "32c9e601f0b617ca5c5cfda9aefe477496b6ed7576231c68bd6a028cbabf370c",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "before": "机体对损伤或感染的反应：免疫细胞和液体大量涌入，引起发红、发热和肿胀。短暂的炎症促进愈合；长期持续的慢性炎症则促进癌症。",
+        "after": "炎症是组织对感染、损伤或组织应激的反应。它可能促进修复，也可能加重损伤；原因、部位和持续时间都很重要。",
+        "beforeSHA256": "930e472f6d9098e3a6a736934124ed84a8b7c8a1ff831aa55daafe672a1f3877",
+        "afterSHA256": "be79be7925e3ffb4ea023034dd0a3379d924892594fb94ff837fc69e5ebdb7bb",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "pt",
+        "file": "src/data/i18n/pt.ts",
+        "before": "A resposta do corpo a uma lesão ou infeção: células imunitárias e líquido acorrem ao local, causando vermelhidão, calor e inchaço. Episódios curtos curam; a inflamação crónica latente favorece o cancro.",
+        "after": "A inflamação é uma resposta dos tecidos à infeção, à lesão ou ao stress tecidular. Pode favorecer a reparação ou contribuir para danos; a causa, o local e a duração importam.",
+        "beforeSHA256": "8318039d07a56150ee9ea48f925909ef2179b879981bafaf345947a27a7abcde",
+        "afterSHA256": "fc5de5b3e1bf39670312857d77abcc9413400f0c46bd056ef9c4cb5676f12e59",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "hi",
+        "file": "src/data/i18n/hi.ts",
+        "before": "चोट या संक्रमण पर शरीर की प्रतिक्रिया: प्रतिरक्षा कोशिकाएं और तरल तेज़ी से पहुंचते हैं, जिससे लालिमा, गर्मी और सूजन होती है। थोड़े समय की सूजन उपचार करती है; लंबे समय तक सुलगती रहने वाली सूजन कैंसर को बढ़ावा देती है।",
+        "after": "प्रदाह संक्रमण, चोट या ऊतकों पर तनाव के प्रति शरीर के ऊतकों की प्रतिक्रिया है। यह मरम्मत में मदद कर सकता है या नुकसान में योगदान दे सकता है; कारण, स्थान और अवधि मायने रखते हैं।",
+        "beforeSHA256": "b4faddde60a3f105981d7467cc84e66e925f7c6ca88f0758051f5cf6a92a6ce1",
+        "afterSHA256": "7472ac28da676eea9b09681cdebbb794b4d6745e83a38e523ddbf7c1006f1d4a",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "fr",
+        "file": "src/data/i18n/fr.ts",
+        "before": "La réaction de l'organisme à une blessure ou à une infection : les cellules immunitaires et le liquide affluent, provoquant rougeur, chaleur et gonflement. Les poussées brèves guérissent ; l'inflammation chronique qui couve favorise le cancer.",
+        "after": "L’inflammation est une réponse des tissus à une infection, une lésion ou un stress tissulaire. Elle peut favoriser la réparation ou contribuer aux dommages ; la cause, le lieu et la durée comptent.",
+        "beforeSHA256": "d2739923435baa4e9d671d0ae81d4a7ad38febcc571ec592625bfb1668948781",
+        "afterSHA256": "ce0d74a37424cb7ab24d344243313ad158ed9441e2af62248916624f2c9dc1ed",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "de",
+        "file": "src/data/i18n/de.ts",
+        "before": "Die Reaktion des Körpers auf Verletzung oder Infektion: Immunzellen und Flüssigkeit strömen ein und verursachen Rötung, Wärme und Schwellung. Kurze Schübe heilen; eine lang anhaltende, schwelende Entzündung fördert Krebs.",
+        "after": "Eine Entzündung ist eine Gewebereaktion auf Infektionen, Verletzungen oder Gewebestress. Sie kann die Heilung unterstützen oder zu Schäden beitragen; Ursache, Ort und Dauer sind wichtig.",
+        "beforeSHA256": "dd6939ea0dee0b07232a1eba62f5861e779896e72b267d069d4e508c21987b51",
+        "afterSHA256": "3ed18c495048b35a4d3ddd8262704f8c8fd56a09525f17190199c6654f6ee6c3",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "ja",
+        "file": "src/data/i18n/ja.ts",
+        "before": "けがや感染に対する体の反応。免疫細胞と体液が急速に集まり、赤み、熱感、腫れを引き起こす。短期間の炎症は治癒をもたらすが、長期にくすぶり続ける炎症はがんを促進する。",
+        "after": "炎症は、感染、損傷、組織のストレスに対する組織の反応です。修復を助けることも、害につながることもあり、原因、場所、持続時間が重要です。",
+        "beforeSHA256": "1a2968e8085059b990712c683469dffae829e5f56c206f045e61d42d2f897b58",
+        "afterSHA256": "5c223613b20a756d2ee7f4c6fe7f9afb315da516d20f92f464c65b780bac04ad",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "ar",
+        "file": "src/data/i18n/ar.ts",
+        "before": "استجابة الجسم للإصابة أو العدوى: تتدفق الخلايا المناعية والسوائل إلى الموضع، مسببةً الاحمرار والحرارة والتورم. النوبات القصيرة تشفي؛ أما الالتهاب المزمن المتقد ببطء فيعزز السرطان.",
+        "after": "الالتهاب استجابة الأنسجة للعدوى أو الإصابة أو إجهاد الأنسجة. قد يساعد على الإصلاح أو يسهم في الضرر؛ فالسبب والمكان والمدة عوامل مهمة.",
+        "beforeSHA256": "29cb26fc8c8cf2dc030cb2cc0b1254fb7c90a3820a8b068e1e9b0a86a836e6a7",
+        "afterSHA256": "7c38e2eac37297f833dc74618edcda6dda86847699a208c28652c3f2ad20fdc9",
+        "kind": "machine-assisted-unreviewed",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      },
+      {
+        "recordId": "inflammation",
+        "language": "simple",
+        "file": "src/data/simple/part-j.ts",
+        "before": "Inflammation is the body's response to injury or infection, healing in short bursts but promoting cancer when it smoulders for years.",
+        "after": "Inflammation brings signals, cells and fluid to tissue after infection, injury or stress. It may help repair damage or add to harm, depending on the situation.",
+        "beforeSHA256": "1b75c0707429b481102919d21844e4f16d8914f2fbebf655f5c2756649245180",
+        "afterSHA256": "7f9953aaad93c3bc0af6b368b9d23999c2b751058ea73eb4568a33a71ee36049",
+        "kind": "simplified-English",
+        "namedSpeakerAcceptance": false,
+        "reason": "Same conditional repair/harm framing as the corrected English source; replaces the stale deterministic healing/cancer sentence. No new numerical or treatment claim."
+      }
+    ],
+    "shortConsumerValuesChanged": 9,
+    "expectedFiles": [
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-j.ts",
+      "src/data/targets-immune-markers.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "oldNoteAndLinkPrefixesPreserved": true,
+    "unchangedLaterLymphNodeSummarySuffixSHA256": "6dd9da0628ead08adeba2de5612b13c9095996527792005033a3bd5464261def",
+    "unchangedInflammationSummaryOutsideExplicitClause": true,
+    "datesNamesAliasesRelationsAndRegistrationsUnchanged": true,
+    "independentLanguageAcceptance": false,
+    "fullValidationStillRequired": true,
+    "renderedReaderFinding": "CD163 caption conflicted with the macrophage-state record; literal data correction, no renderer change.",
+    "curatedSourcesAdded": 2
+  },
+  "application": {
+    "appliedAtUTC": "2026-11-15T10:11:35.858Z",
+    "auditBaseCommit": "f1d8d875fa399a1b224780100dc2eeab56916603",
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 12,
+    "consumerValuesChanged": 9,
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "oldNoteAndLinkPrefixesPreserved": true,
+    "datesNamesAliasesRelationsAndRegistrationsUnchanged": true,
+    "namedLanguageAcceptance": false,
+    "files": [
+      {
+        "file": "src/data/i18n/ar.ts",
+        "beforeSHA256": "8c05bd731341e01f6dcdcb63906f5b63431fd0c4c7ff00f905019fc471c1326f",
+        "afterSHA256": "be1dbb8407a63a7e16583fc7e822e1cb05d1b0f66262aca533560127015af52e"
+      },
+      {
+        "file": "src/data/i18n/de.ts",
+        "beforeSHA256": "b4f85f8516613acb81542cef7909ea394e723f8c709b5cdfc2ab044fc214d3bb",
+        "afterSHA256": "6c1fc3850e9c407355bcd415537faa7d34ec2aaff8149243c20912c76986b75c"
+      },
+      {
+        "file": "src/data/i18n/es.ts",
+        "beforeSHA256": "af668e5e3dc38cb1ff0abaa037b008ef306faafc7f7095e66cb12e3285f3cec5",
+        "afterSHA256": "e97af91f4935aa6c79a04be8d545ba0b7fc6a5ed12e1c7f2016c8e90c6e0783f"
+      },
+      {
+        "file": "src/data/i18n/fr.ts",
+        "beforeSHA256": "280bb6fbe2f0627e598817ca8ca8a5725e2e7ee7263329d412dc93f1304e7cb2",
+        "afterSHA256": "103e03f033872279800f234acd5a3872f006d8323e96012cda2c2f7f842da731"
+      },
+      {
+        "file": "src/data/i18n/hi.ts",
+        "beforeSHA256": "b4cf5064378ec637f725753448cc145b4de9e075eea1395e4100a8baadc5f713",
+        "afterSHA256": "173220b7ecbd51f4528e9df146fab98b7f814d7c49d08be5b3d5b05eb511a453"
+      },
+      {
+        "file": "src/data/i18n/ja.ts",
+        "beforeSHA256": "89319415198e4260ff0085a53cde3847f52d5e3d4f44490ae4cb715be6555598",
+        "afterSHA256": "ad6843045abeb8e83b7da55c1e129f367688f801b4eddd8f517ea7e19e3e07f0"
+      },
+      {
+        "file": "src/data/i18n/pt.ts",
+        "beforeSHA256": "42e890de8b568fa2e7f0e4f0df58c14f22a5a6c1200ccb0f9a9188d351f9efa6",
+        "afterSHA256": "e0d1da0975451e98b1018946894dd9f365299bd49dbedf47a08d0f3c20c7ac85"
+      },
+      {
+        "file": "src/data/i18n/zh.ts",
+        "beforeSHA256": "fd0ef9eb3e858f027b7ed2c9b3b095609c38c880f50b3542003b422b08165e4e",
+        "afterSHA256": "19bc923fa6ba75793d5e0efbd0b8c8236fd72d27915cac15b081f4ad53dbc14f"
+      },
+      {
+        "file": "src/data/simple/part-j.ts",
+        "beforeSHA256": "8ba4504794429f6094d8d425110928c0feab62852c0c13cf815d1f30095c447e",
+        "afterSHA256": "9731d260caa930467db35103d135d7b69ca5510e87fff4bbae650216de7e843a"
+      },
+      {
+        "file": "src/data/targets-immune-markers.ts",
+        "beforeSHA256": "206e5e52fc313344b8ab45378cdead31b7ea74eed57217235f7c961dd3269a9b",
+        "afterSHA256": "193e559571657cf482e8bbfd1dc6b9ef8db45c86818c99e01dc7a15f35a4b89d"
+      },
+      {
+        "file": "src/data/terms-basics.ts",
+        "beforeSHA256": "3f4d6c87ab49ca8a654d35b126749b7dd9f971abddf1365f61411c8e6050e583",
+        "afterSHA256": "2f0ef64da9c58d50ae7e8cf7a00927cd72d88c16ba43c9ebcb1905b68ff61d6f"
+      }
+    ],
+    "fullValidationStillRequired": true,
+    "CD163ExtensionAppliedAtUTC": "2026-11-15T10:45:13.638Z"
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cd163",
+      "inflammation",
+      "lymph-node"
+    ],
+    "changedOwnerCount": 3,
+    "changedCanonicalFields": 12,
+    "changedConsumerValues": 9,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 5,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceAndRegistrationsUnchanged": true,
+    "changedEnglishLeads": 2,
+    "changedEnglishSummaries": 3,
+    "changedFiles": [
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-j.ts",
+      "src/data/targets-immune-markers.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "unappliedProposals": [],
+  "newCanonicalIds": 0,
+  "newRegistrations": 0,
+  "oldNoteAndLinkOrderPreserved": true,
+  "explicitScalarCorrections": [
+    "Lymph-node spread/staging, sentinel-procedure risk and priming qualifications",
+    "Inflammation conditional lead and hot-pattern versus treatment-benefit qualification",
+    "CD163 marker/function/drug-benefit wording, receptor function and expression"
+  ],
+  "unchangedOlderClaimsNotRecertified": "Unselected inflammation cancer-risk/aspirin/CRP/IL6 claims, macrophage Xue/Lavin numbers, other tolerance mechanisms and pre-existing connected-card assertions retain their recorded source depths. No blanket whole-record or clinical certification."
+}

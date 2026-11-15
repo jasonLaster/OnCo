@@ -1,0 +1,1455 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "f54659bd41feb79ecf36a539a10bb425e471b583",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 12.09
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 31.73
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.09
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 324.98
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "files": 293,
+    "passed": 3101,
+    "skipped": 2
+  },
+  "canonical": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cd163",
+      "inflammation",
+      "lymph-node"
+    ],
+    "changedOwnerCount": 3,
+    "changedCanonicalFields": 12,
+    "changedConsumerValues": 9,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 5,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceAndRegistrationsUnchanged": true,
+    "changedEnglishLeads": 2,
+    "changedEnglishSummaries": 3,
+    "changedFiles": [
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-j.ts",
+      "src/data/targets-immune-markers.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "exactReaderAnchors": {
+    "checks": [
+      {
+        "unit": "P48-L01",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "f70cbe9de9da8af2e6da3f210032981b4c308298e3ea82285ea9d6920670b3af",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L01",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "16074e2d2f88f511a0095eee5e97a24dfb7be582e1524f78fd2849dcc7362685",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L02",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b781a88581070c0662a25b633f8d79c7c2c232238fdfd44ff7bc98e813fe9edd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L03",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b781a88581070c0662a25b633f8d79c7c2c232238fdfd44ff7bc98e813fe9edd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L03",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "0d85ef690bd189233bdc3ef4dd9b875c59fb713a9b07c8b4c2dead3e0ca8c776",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L04",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "9c1973e27f88c9285d2a6d60ab6de7159ea8a1be437f240ef0bde76ac8459667",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L05",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L06",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L06",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "0d85ef690bd189233bdc3ef4dd9b875c59fb713a9b07c8b4c2dead3e0ca8c776",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L07",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L08",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b781a88581070c0662a25b633f8d79c7c2c232238fdfd44ff7bc98e813fe9edd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L08",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L09",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "7a6a2a539fe5e8609b798f52d83c107fc81a6fc82d77e20e63a3e5151f65cc1f",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L09",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "ce9b5d25d4781794e34bcb34a8928ad3116d9f6194597c6d2a9d034574bfcdca",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L10",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "808f29e5f23655410d5b12016b9347d66d5b25a40534b026c26a3b713a66322e",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L10",
+        "recordId": "peripheral-tolerance",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "33fdc84883fcb894ec86e61346aa5020cec56388d2022217f15b671dfb0a8554",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L10",
+        "recordId": "peripheral-tolerance",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "0a19cbe6befabad6fd1a94d9eb8f046922f6080aa8a2215e1c26ceb57fc9b56f",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L11",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "f279c186e166ee321482fac82aa3a8c3a102507f87a8041c8257b583c05edf8d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L12",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "706cc6279d99905372228d8c9444eacbcbb980258eaa34ce41b0a55874acfad1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L13",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "2c97b2f499eacf540c043e2a7983cd7c6c9f7034c01dc0d45e4eadd7f297c353",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L14",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "706cc6279d99905372228d8c9444eacbcbb980258eaa34ce41b0a55874acfad1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L14",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "9c1973e27f88c9285d2a6d60ab6de7159ea8a1be437f240ef0bde76ac8459667",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L15",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "16074e2d2f88f511a0095eee5e97a24dfb7be582e1524f78fd2849dcc7362685",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-L15",
+        "recordId": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F01",
+        "recordId": "inflammation",
+        "field": "tldr",
+        "index": null,
+        "passageSHA256": "ab7b53988f2821a64dea41d0be5117a5eb8000790f9c596e89d38de248fefcf1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F01",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "5268a90a90fdb5eb7cb9e34c439344a9fcb3d56bbaaa1735ed89d59ac00f62b0",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F02",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "111caef85fd2c56af6e9767d87f4aaa1bbce16726d5b99a7e03577cdf0b6fead",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F03",
+        "recordId": "inflammation",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "ecb7aca12da78ddbc14b36c18a0e53951eca8f788f87cf56c39af9f435303304",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F03",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "5268a90a90fdb5eb7cb9e34c439344a9fcb3d56bbaaa1735ed89d59ac00f62b0",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F04",
+        "recordId": "inflammation",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "38b6db1adfb0490083cc32233468417b0f0518bac794a38a2707e61578b2b060",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F05",
+        "recordId": "macrophage-states",
+        "field": "tldr",
+        "index": null,
+        "passageSHA256": "445661ad7aad0f0114d894fe2dfa42c9dea901616a4801f32774d3c0de3d54cd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F05",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "304eedefd5f90be3901a450d4334df5378a1d4f59704346e506bca5786ad3ca4",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F05",
+        "recordId": "cd163",
+        "field": "tldr",
+        "index": null,
+        "passageSHA256": "64066344754666d99ab0741919e2a23259f6d6d9b0586741ccbc92fbbb177d13",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F06",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "5268a90a90fdb5eb7cb9e34c439344a9fcb3d56bbaaa1735ed89d59ac00f62b0",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F07",
+        "recordId": "inflammation",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "aaa31c1fcad001084b246b2de2bb1ebe7eb8211bef9e12742026f38942a86d64",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F08",
+        "recordId": "inflammation",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "eb48c7b540ed12b757c9c01cb46b84e0fd2386d0cd360ece22af7818967db938",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F08",
+        "recordId": "inflammation",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "7c77360275974b3a6738daa2327d7d562438c817cdbcee5ddf453902c49e1960",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F09",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "111caef85fd2c56af6e9767d87f4aaa1bbce16726d5b99a7e03577cdf0b6fead",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P48-F10",
+        "recordId": "inflammation",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "111caef85fd2c56af6e9767d87f4aaa1bbce16726d5b99a7e03577cdf0b6fead",
+        "presentInActualStaticReader": true
+      }
+    ],
+    "allPass": true,
+    "registeredRootFieldReferences": 39,
+    "actualFrozenPeerFieldReferences": 0,
+    "peerReadersRendered": 0,
+    "scientificUnits": 25,
+    "scope": "All current field and excerpt hashes verify and all anchors occur in five fresh actual root static readers. Semantic assessments are coordinator judgments, not independent, expert, hosted-browser, pixel, mobile or language acceptance."
+  },
+  "changedReaderPassages": {
+    "checks": [
+      {
+        "recordId": "lymph-node",
+        "field": "summary",
+        "passageSHA256": "40dccf51bdcde92a830bed75150c5d34d218e591bac6322990302aaa3933d232",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "lymph-node",
+        "field": "notes",
+        "passageSHA256": "b781a88581070c0662a25b633f8d79c7c2c232238fdfd44ff7bc98e813fe9edd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "lymph-node",
+        "field": "notes",
+        "passageSHA256": "10ea3162b8afc0128f462159a52cc2b283eca049887ded3eb8161dfdb96b8e9b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "lymph-node",
+        "field": "notes",
+        "passageSHA256": "706cc6279d99905372228d8c9444eacbcbb980258eaa34ce41b0a55874acfad1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "inflammation",
+        "field": "tldr",
+        "passageSHA256": "ab7b53988f2821a64dea41d0be5117a5eb8000790f9c596e89d38de248fefcf1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "inflammation",
+        "field": "summary",
+        "passageSHA256": "e031a3b49aad148ae136d871bd8d019ee6dd091d812ba951755b99d9b85e973a",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "inflammation",
+        "field": "notes",
+        "passageSHA256": "5268a90a90fdb5eb7cb9e34c439344a9fcb3d56bbaaa1735ed89d59ac00f62b0",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "inflammation",
+        "field": "notes",
+        "passageSHA256": "111caef85fd2c56af6e9767d87f4aaa1bbce16726d5b99a7e03577cdf0b6fead",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "cd163",
+        "field": "tldr",
+        "passageSHA256": "64066344754666d99ab0741919e2a23259f6d6d9b0586741ccbc92fbbb177d13",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "cd163",
+        "field": "summary",
+        "passageSHA256": "b3477058b80a6e3b3466818cf7a4132418cfaeb2ef4db2c150677770554c0b99",
+        "presentInActualStaticReader": true
+      }
+    ],
+    "allPass": true,
+    "scope": "Exact changed passages in decoded actual static readers; no hosted browser, hydration, pixel, expert or language acceptance."
+  },
+  "wholeReaderReadback": {
+    "allFiveDecodedReadersReadInFull": true,
+    "CD163QualifiedCaptionAppearsInActualMacrophageReader": true,
+    "oldUniversalTumourSupportingCaptionAbsent": true,
+    "changedDataFieldsNotRendererCode": true,
+    "untouchedContextLimits": [
+      "Other inflammation baseline risk/aspirin/CRP and IL6 claims retain earlier scope",
+      "Peripheral-tolerance CTLA4 Nobel/cure caption is inherited and not newly source-certified",
+      "Generic target mechanism template and provenance identity-line dates are inherited product behavior, not verified current scientific evidence"
+    ],
+    "hostedBrowserHydrationPixelOrIndependentAcceptance": false
+  },
+  "exports": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 30.8
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.8
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.59
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.41
+    }
+  ],
+  "exportReadback": {
+    "records": 5,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "lymph-node",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "inflammation",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "inflammation",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "inflammation",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "inflammation",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peripheral-tolerance",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peripheral-tolerance",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peripheral-tolerance",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "peripheral-tolerance",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cd163",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cd163",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "lymph-node.json",
+        "bytes": 7984,
+        "sha256": "225e49e696a1c0359a42b98f525aecd90df527b22a9ad0290bf9bc3b513be1f6"
+      },
+      {
+        "file": "lymph-node.md",
+        "bytes": 7156,
+        "sha256": "cf2a33824a42155680b2d4e5ed5b15c660a4160b6c5b1c9e639e0dc7df5e90f1"
+      },
+      {
+        "file": "inflammation.json",
+        "bytes": 8324,
+        "sha256": "10e2e8015f9070247d427d8aa63c10e0bd0bf3b1aa71069d7e8824ec74876f9e"
+      },
+      {
+        "file": "inflammation.md",
+        "bytes": 6667,
+        "sha256": "dd970a8f720055b073003c48a644ad0d1958744d3c6286421fe3222c4c0e36d1"
+      },
+      {
+        "file": "macrophage-states.json",
+        "bytes": 5233,
+        "sha256": "db1697537cdc3bf8a9fbbd1de30d104bf8383bdafb8044636998e69534db42d3"
+      },
+      {
+        "file": "macrophage-states.md",
+        "bytes": 4692,
+        "sha256": "6c87ffcc06d3e65fb2c3f86888cb3eaa16b5d3512c1e0ccae830cce51bc96567"
+      },
+      {
+        "file": "peripheral-tolerance.json",
+        "bytes": 6633,
+        "sha256": "ea9d770861cc09f1a52a60c4ec74d4f41f7017bb7ab052a1b1ecc7ecb5121596"
+      },
+      {
+        "file": "peripheral-tolerance.md",
+        "bytes": 6014,
+        "sha256": "cd440bbeafe54e1eb82463412ba75ff138afcf876e31ec0646afb720acbd174c"
+      },
+      {
+        "file": "cd163.json",
+        "bytes": 2638,
+        "sha256": "3968c4f7aa176ac61d95568d045ccfdd12670196eb12c4b19f29eb0db1782878"
+      },
+      {
+        "file": "cd163.md",
+        "bytes": 2177,
+        "sha256": "908088afad9d476b3d437cf07a1429c8fb2538e9cc3b89a2e657d73b5752b671"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "8cbf6b04025d7aeb9c8d34d432895f0b8497b0151f6d1188ffdd486f52c2d956",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 11
+  },
+  "summaryConsumers": {
+    "slots": 45,
+    "available": 18,
+    "EnglishFallbacks": 27,
+    "changedShortConsumerStates": 9,
+    "changedEffectiveTexts": 18,
+    "changedConsumerRecordIds": [
+      "inflammation-es",
+      "inflammation-zh",
+      "inflammation-pt",
+      "inflammation-hi",
+      "inflammation-fr",
+      "inflammation-de",
+      "inflammation-ja",
+      "inflammation-ar",
+      "inflammation-simple"
+    ],
+    "beforeCapturedBeforeDataEdits": true,
+    "EnglishLeadChangedIds": [
+      "inflammation",
+      "cd163"
+    ],
+    "EnglishSummaryChangedIds": [
+      "inflammation",
+      "lymph-node",
+      "cd163"
+    ],
+    "allOtherTableEntriesUnchanged": [
+      {
+        "language": "es",
+        "otherEntriesSHA256": "680f3a10caaaeba35cfe38b9180f0f4dca706fbee4eafa0c6700502f527644ec",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "zh",
+        "otherEntriesSHA256": "1b6f68e9f41cef75b867c30f88465c0b32a6fbb5f6146967d12d5bc0a4ad11ba",
+        "otherEntryCount": 11613,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "pt",
+        "otherEntriesSHA256": "62790bd2ee31bb109daa2d60235143c7dca17d5e5d0d1fd7e9b4f43a0dd39bc3",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "hi",
+        "otherEntriesSHA256": "8324c8c364c92773e3eb70c34140511be29e1a71ec05d3d7abe9c3770ee0c26c",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "fr",
+        "otherEntriesSHA256": "a48c354a4a9efe048502e3fa92fc1bdfd85e226b9d4d4e64520c1fd31e873d67",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "de",
+        "otherEntriesSHA256": "78a0f9b42446208b0263afea91141a729c73d5b270e999218998ae3b9a3da89e",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "ja",
+        "otherEntriesSHA256": "be2d1ce2d4aef7bbc293e585b7d32a16510c1ef34da29b5d4e5df7b356dd881c",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "ar",
+        "otherEntriesSHA256": "9f5b7a9e646bb62c130f23ae2065f61c1cd3b2e445c16b6caf57222b8681cd88",
+        "otherEntryCount": 7080,
+        "allOtherEntriesUnchanged": true
+      },
+      {
+        "language": "simple",
+        "otherEntriesSHA256": "c51febc3b08aed603fed8dcb027297be55c824887689dc2419fa453981871901",
+        "otherEntryCount": 11451,
+        "allOtherEntriesUnchanged": true
+      }
+    ],
+    "consumerImplementationAndReviewStampsUnchanged": true,
+    "longSummaryCaches": [
+      {
+        "id": "lymph-node",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "lymph-node",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "inflammation",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "peripheral-tolerance",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cd163",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      }
+    ],
+    "storedLongCaches": 0,
+    "acceptedLongCaches": 0,
+    "reviews": [
+      {
+        "id": "lymph-node",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "inflammation",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "macrophage-states",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "peripheral-tolerance",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cd163",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      }
+    ],
+    "namedReviewStampsChanged": 0,
+    "independentLanguageAcceptance": false
+  },
+  "initialVariantRepeatedBecauseNewReaderContradiction": true,
+  "newNextBuildBrowserMobileAccessibilityExpertOrLanguageAcceptance": false
+}

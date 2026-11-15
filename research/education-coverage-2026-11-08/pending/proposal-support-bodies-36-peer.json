@@ -1,0 +1,140 @@
+{
+  "version": "proposal-support-bodies-36-peer",
+  "fromPR": 373,
+  "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "state": "Two exact actual frozen unmerged contributor records. Proposed after-fields are not selected and earn no completion credit.",
+  "peerFieldsModified": false,
+  "records": [
+    {
+      "id": "immunopeptidome",
+      "kind": "term",
+      "name": "Immunopeptidome",
+      "aka": [
+        "HLA ligandome",
+        "HLA peptidome"
+      ],
+      "tldr": "The immunopeptidome is the collection of peptides associated with immune display molecules in a particular biological setting. A measurement recovers a view of that collection through a defined assay.",
+      "summary": "An immunopeptidome concerns displayed peptide ligands, rather than every protein or RNA message in a sample. Direct analysis of native melanoma tissue identified HLA-associated peptides, including some containing tumor mutations. What is recovered depends on the tissue and analytical workflow. The observed collection should retain its sample and method, and identifying a displayed peptide remains distinct from showing an immune response to it.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Primary evidence for the antigen-presentation teaching distinctions",
+          "url": "https://doi.org/10.1074/mcp.tir117.000383"
+        },
+        {
+          "label": "Primary evidence for the antigen-presentation teaching distinctions",
+          "url": "https://doi.org/10.3389/fimmu.2019.00141"
+        },
+        {
+          "label": "Primary evidence for the antigen-presentation teaching distinctions",
+          "url": "https://doi.org/10.1038/s41467-021-23713-9"
+        },
+        {
+          "label": "Primary evidence for the antigen-presentation teaching distinctions",
+          "url": "https://doi.org/10.1038/s41587-019-0322-9"
+        },
+        {
+          "label": "Primary evidence for the antigen-presentation teaching distinctions",
+          "url": "https://doi.org/10.1038/s41596-019-0133-y"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunopeptidomics",
+        "binding-presentation-recognition",
+        "proteomics"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The immunopeptidome is a biological repertoire in a defined cell population and context; an immunopeptidomics list is a method-dependent subset recovered and identified from a sample. Class I and class II repertoires are separate, and a protein can be abundant while a derived peptide is poorly generated, loaded or retained. Inflammatory signals changed peptide patterns in cancer cell lines (Chong et al., 2018, ovarian cancer cells and interferon gamma, PMID 29242379; Javitt et al., 2019, lung cancer cells and TNF-alpha and interferon gamma acting through HLA-B, PMID 30833945), which shows context-dependent remodelling and not that inflammation adds useful targets. Whole-lysate capture can recover intracellular as well as surface complexes, mixed tissue adds cancer, immune and stromal sources, relative instrument intensity is not surface copies per cell, and a reported sequence can be misassigned (Wilhelm et al., 2021, PMID 34099720). Method B identifying 1,200 peptides against method A's 800 (fictional) shows no biological difference. Sarkizova et al. (2020) gives allele-dependent repertoires from mono-allelic lines."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "immunopeptidomics",
+      "kind": "term",
+      "name": "Immunopeptidomics",
+      "aka": [],
+      "tldr": "This laboratory approach identifies peptides recovered with immune display molecules. It supplies evidence about peptide presentation in the material that was analyzed.",
+      "summary": "A primary melanoma study used mass spectrometry to identify HLA-associated peptides from native tumor tissue and then evaluated selected mutated peptides with immune assays. This is stronger evidence of natural presentation in the sampled material than a binding prediction alone. The analytical observation still has a defined specimen and workflow. It does not automatically establish the abundance of a ligand on every cancer cell, receptor recognition or a treatment effect. A published protocol isolates MHC-peptide complexes by immunoaffinity capture, dissociates the peptides by acid denaturation, fractionates them by HPLC and identifies them by nano-UPLC tandem mass spectrometry, from cell lines and tissues (Purcell and colleagues, 2019). Capture starts from mild-detergent solubilised lysates (Chong and colleagues, 2018; Sarkizova and colleagues, 2020 immunoprecipitated HLA from soluble lysates), so a lysate is not a surface-only survey, and in multi-allele samples a peptide was assigned to the best-scoring allele or alleles by computation (Sarkizova and colleagues, 2020). Identification depends on the analysis: a deep-learning model trained on more than 300,000 synthetic peptides improved HLA peptide identification up to 7-fold and indicated that 87 per cent of the proposed proteasomally spliced HLA peptides may be incorrect (Wilhelm and colleagues, 2021). A quantitative tissue study isolated peptide-HLA complexes from snap-frozen tissue and used formalin-fixed paraffin-embedded blocks only for histology (Science Translational Medicine, 2022).",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Direct identification of clinically relevant neoepitopes presented on native human melanoma tissue by mass spectrometry.",
+          "url": "https://doi.org/10.1038/ncomms13404"
+        },
+        {
+          "label": "Key Parameters of Tumor Epitope Immunogenicity Revealed Through a Consortium Approach Improve Neoantigen Prediction.",
+          "url": "https://doi.org/10.1016/j.cell.2020.09.015"
+        },
+        {
+          "label": "Purcell et al., Mass spectrometry-based identification of MHC-bound peptides for immunopeptidomics (Nature Protocols 2019)",
+          "url": "https://doi.org/10.1038/s41596-019-0133-y"
+        },
+        {
+          "label": "Chong et al., High-throughput and Sensitive Immunopeptidomics Platform Reveals Profound Interferon-gamma-Mediated Remodeling of the Human Leukocyte Antigen Self-Peptidome (Molecular and Cellular Proteomics 2018)",
+          "url": "https://doi.org/10.1074/mcp.TIR117.000383"
+        },
+        {
+          "label": "Wilhelm et al., Deep learning boosts sensitivity of mass spectrometry-based immunopeptidomics (Nature Communications 2021)",
+          "url": "https://doi.org/10.1038/s41467-021-23713-9"
+        },
+        {
+          "label": "Quantitative immunopeptidomics reveals a tumor stroma-specific target for T cell therapy (Science Translational Medicine 2022)",
+          "url": "https://doi.org/10.1126/scitranslmed.abo6135"
+        },
+        {
+          "label": "A large peptidome dataset improves HLA class I epitope prediction across most of the human population (Nature Biotechnology 2020)",
+          "url": "https://doi.org/10.1038/s41587-019-0322-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immunopeptidome",
+        "peptide-hla-binding-prediction",
+        "binding-presentation-recognition",
+        "finite-tissue-budget"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference). In a mixed specimen a recovered HLA-associated peptide does not reveal its cell of origin or its abundance on living cell surfaces. Non-detection does not show biological absence: it also reflects capture, allele coverage, the searchable sequence set and instrument and software sensitivity, and detection does not show safe tumour recognition. No source read here establishes that formalin-fixed tissue is usable for an assay validated on cells or frozen tissue; the lesson's statement that one protocol proposed an adaptation could not be checked (publisher page unavailable), so that claim is withheld and compatibility must be shown for the named method.",
+        "Fictional worked example. A specimen yields peptide A but not peptide B. A has measured support in that preparation. For B, ask whether its allele was recovered, whether the altered sequence was searchable and whether sensitivity was adequate; 'A detected, B absent everywhere' is stronger than the experiment supports. If B is simply missing from the search database it could not have been identified as configured, so its absence is not a clean biological negative, and correcting the database does not by itself guarantee recovery or prove natural display.",
+        "Reading guide: binding prediction estimates a model output, whereas immunopeptidomics identifies recovered peptides, and total-protein measurements are a different question from HLA-associated fragments (a protein can be abundant without any of its peptides being displayed, an inference); presentation, immune response and efficacy are three separate claims.",
+        "Measurement card in words (a reading guide). Input: which tissue preparation and preservation are compatible, and how much material is consumed. Output and units: peptide identities and unique-sequence counts; instrument intensities are method-dependent and not copies per cell. Identification threshold: the sequence database, the false-discovery rule (spectrum or peptide level) and the supporting spectra. Coverage: which HLA classes and alleles were captured and which allele assignments were measured or inferred. Material and cost: protocol-specific input, preservation, consumption, turnaround and analysis cost, requested before a scarce specimen is used. Validation: recovery, reproducibility and reference-peptide checks for the method. Failure modes: low input, poor recovery, mixed cell populations, database gaps and wrong sequence assignments. Limits: non-detection does not prove absence and detection does not prove safe recognition; there is no universal tissue requirement or detection threshold."
+      ],
+      "category": "Methods and models"
+    }
+  ]
+}

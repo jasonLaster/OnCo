@@ -1,0 +1,75 @@
+{
+  "canonicalEdits": [],
+  "newCanonicalIds": [],
+  "registrations": [],
+  "proposals": [
+    {
+      "id": "P37-P01",
+      "owner": "immunopeptidome",
+      "ownerKind": "term",
+      "field": "notes",
+      "pr": 373,
+      "anchorHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotPath": "research/education-coverage-2026-11-08/pending/pr-373.json",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "before": [
+        "The immunopeptidome is a biological repertoire in a defined cell population and context; an immunopeptidomics list is a method-dependent subset recovered and identified from a sample. Class I and class II repertoires are separate, and a protein can be abundant while a derived peptide is poorly generated, loaded or retained. Inflammatory signals changed peptide patterns in cancer cell lines (Chong et al., 2018, ovarian cancer cells and interferon gamma, PMID 29242379; Javitt et al., 2019, lung cancer cells and TNF-alpha and interferon gamma acting through HLA-B, PMID 30833945), which shows context-dependent remodelling and not that inflammation adds useful targets. Whole-lysate capture can recover intracellular as well as surface complexes, mixed tissue adds cancer, immune and stromal sources, relative instrument intensity is not surface copies per cell, and a reported sequence can be misassigned (Wilhelm et al., 2021, PMID 34099720). Method B identifying 1,200 peptides against method A's 800 (fictional) shows no biological difference. Sarkizova et al. (2020) gives allele-dependent repertoires from mono-allelic lines."
+      ],
+      "after": [
+        "The immunopeptidome is a biological repertoire in a defined cell population and context; an immunopeptidomics list is a method-dependent subset recovered and identified from a sample. Class I and class II repertoires are separate, and a protein can be abundant while a derived peptide is poorly generated, loaded or retained. Inflammatory signals changed peptide patterns in cancer cell lines (Chong et al., 2018, ovarian cancer cells and interferon gamma, PMID 29242379; Javitt et al., 2019, lung cancer cells and TNF-alpha and interferon gamma acting through HLA-B, PMID 30833945), which shows context-dependent remodelling and not that inflammation adds useful targets. Whole-lysate capture can recover intracellular as well as surface complexes, mixed tissue adds cancer, immune and stromal sources, relative instrument intensity is not surface copies per cell, and a reported sequence can be misassigned (Wilhelm et al., 2021, PMID 34099720). In a fictional comparison, method B identifies 1,200 peptides against method A's 800: 400 more, or 50% more identified peptides. That count difference does not establish 50% more biological display, any recovery fraction or a clinical threshold. Sarkizova et al. (2020) gives allele-dependent repertoires from mono-allelic lines.",
+        "Source-protein supply, processing, loading and turnover can change the repertoire. Keep the biological claim attached to the cell population, specimen site and time, cell state, HLA class and alleles. A recovered list from one preparation does not describe every site, time or cell in a tumour. State the capture reagent, recovery, searchable sequences and identification threshold alongside the list, and request the method's material consumption and analysis cost before using a scarce specimen."
+      ],
+      "beforeSHA256": "91da2d80d6c232c5757528a377f227e7c09f3dc94e62530d284619cb86c2e307",
+      "afterSHA256": "d8e0d976874ab845f2c8c858192cd478b734cbd251fffd0ebdbc741bd1b310b6",
+      "beforeRecordSHA256": "1cfc786bc1cc7c31c611b1b76e30eedcd616c6ec59ef4f523110d9756fa9f9d3",
+      "reason": "Correct the fictional count comparison without asserting biological equality; retain every other existing note sentence and add the missing specimen-context reading rule.",
+      "unitIds": [
+        "P37-I15",
+        "P37-I20",
+        "P37-I02"
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "allOtherFieldsPreserved": true
+    },
+    {
+      "id": "P37-P02",
+      "owner": "immunopeptidomics",
+      "ownerKind": "term",
+      "field": "notes",
+      "pr": 373,
+      "anchorHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "snapshotPath": "research/education-coverage-2026-11-08/pending/pr-373.json",
+      "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+      "before": [
+        "Reading guide (OnCo inference). In a mixed specimen a recovered HLA-associated peptide does not reveal its cell of origin or its abundance on living cell surfaces. Non-detection does not show biological absence: it also reflects capture, allele coverage, the searchable sequence set and instrument and software sensitivity, and detection does not show safe tumour recognition. No source read here establishes that formalin-fixed tissue is usable for an assay validated on cells or frozen tissue; the lesson's statement that one protocol proposed an adaptation could not be checked (publisher page unavailable), so that claim is withheld and compatibility must be shown for the named method.",
+        "Fictional worked example. A specimen yields peptide A but not peptide B. A has measured support in that preparation. For B, ask whether its allele was recovered, whether the altered sequence was searchable and whether sensitivity was adequate; 'A detected, B absent everywhere' is stronger than the experiment supports. If B is simply missing from the search database it could not have been identified as configured, so its absence is not a clean biological negative, and correcting the database does not by itself guarantee recovery or prove natural display.",
+        "Reading guide: binding prediction estimates a model output, whereas immunopeptidomics identifies recovered peptides, and total-protein measurements are a different question from HLA-associated fragments (a protein can be abundant without any of its peptides being displayed, an inference); presentation, immune response and efficacy are three separate claims.",
+        "Measurement card in words (a reading guide). Input: which tissue preparation and preservation are compatible, and how much material is consumed. Output and units: peptide identities and unique-sequence counts; instrument intensities are method-dependent and not copies per cell. Identification threshold: the sequence database, the false-discovery rule (spectrum or peptide level) and the supporting spectra. Coverage: which HLA classes and alleles were captured and which allele assignments were measured or inferred. Material and cost: protocol-specific input, preservation, consumption, turnaround and analysis cost, requested before a scarce specimen is used. Validation: recovery, reproducibility and reference-peptide checks for the method. Failure modes: low input, poor recovery, mixed cell populations, database gaps and wrong sequence assignments. Limits: non-detection does not prove absence and detection does not prove safe recognition; there is no universal tissue requirement or detection threshold."
+      ],
+      "after": [
+        "Reading guide (OnCo inference). In a mixed specimen a recovered HLA-associated peptide does not reveal its cell of origin or its abundance on living cell surfaces. Non-detection does not show biological absence: it also reflects capture, allele coverage, the searchable sequence set and instrument and software sensitivity, and detection does not show safe tumour recognition. No source read here establishes that formalin-fixed tissue is usable for an assay validated on cells or frozen tissue; the lesson's statement that one protocol proposed an adaptation could not be checked (publisher page unavailable), so that claim is withheld and compatibility must be shown for the named method.",
+        "Fictional worked example. A specimen yields peptide A but not peptide B. A has measured support in that preparation. For B, ask whether its allele was recovered, whether the altered sequence was searchable and whether sensitivity was adequate; 'A detected, B absent everywhere' is stronger than the experiment supports. If B is simply missing from the search database it could not have been identified as configured, so its absence is not a clean biological negative, and correcting the database does not by itself guarantee recovery or prove natural display.",
+        "Reading guide: binding prediction estimates a model output, whereas immunopeptidomics identifies recovered peptides, and total-protein measurements are a different question from HLA-associated fragments (a protein can be abundant without any of its peptides being displayed, an inference); presentation, immune response and efficacy are three separate claims.",
+        "Measurement card in words (a reading guide). Input: which tissue preparation and preservation are compatible, and how much material is consumed. Output and units: peptide identities and unique-sequence counts; instrument intensities are method-dependent and not copies per cell. Identification threshold: the sequence database, the false-discovery rule (spectrum or peptide level) and the supporting spectra. Coverage: which HLA classes and alleles were captured and which allele assignments were measured or inferred. Material and cost: protocol-specific input, preservation, consumption, turnaround and analysis cost, requested before a scarce specimen is used. Validation: recovery, reproducibility and reference-peptide checks for the method. Failure modes: low input, poor recovery, mixed cell populations, database gaps and wrong sequence assignments. Limits: non-detection does not prove absence and detection does not prove safe recognition; there is no universal tissue requirement or detection threshold.",
+        "In the illustrated immunoaffinity workflow, antibodies on beads capture peptide-bearing HLA complexes from prepared lysate. This is laboratory recovery after sample preparation, rather than antibody attack on living cells. Release and separation are different steps: acid dissociates the complex, and subsequent purification separates the peptides from other material before chromatography and mass spectrometry. Acid release alone does not establish a peptide-only input. The peptides remain connected amino-acid chains; this workflow identifies the recovered fragments rather than digesting them into free amino acids. Chong and colleagues' methods describe lysate capture, acid elution, solid-phase purification and peptide LC-MS analysis. Purcell and colleagues' protocol abstract describes immunoaffinity capture, acid denaturation, peptide extraction and HPLC separation before identification. These named workflows do not define a universal protocol or a complete surface census."
+      ],
+      "beforeSHA256": "a8d4160737e8a7423f5e0540db45733bd6a56439f120ebc506122643fb2bfbad",
+      "afterSHA256": "0f4e219ac59237c2447f615afa241987dfb416cce0bae633190f1d7202fa3cf0",
+      "beforeRecordSHA256": "e5ebd7cbb2645c5bfda9a9c03616566cdec98beabfdc7325a5af191f6a3a4251",
+      "reason": "Append the physical preparation/capture/release/separation distinction to the existing method owner, preserving every prior note, link and scalar.",
+      "unitIds": [
+        "P37-I06",
+        "P37-I08",
+        "P37-I09"
+      ],
+      "applied": false,
+      "coverageCredit": 0,
+      "allOtherFieldsPreserved": true
+    }
+  ],
+  "proposalsApplied": false,
+  "proposalCoverageCredit": 0,
+  "allEarlierCanonicalFieldsUnchanged": true,
+  "actualPeerBeforeFieldsSelectedUnchanged": true
+}

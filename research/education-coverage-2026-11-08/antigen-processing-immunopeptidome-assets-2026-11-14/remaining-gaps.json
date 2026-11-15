@@ -1,0 +1,117 @@
+{
+  "requirementGaps": [
+    {
+      "id": "P37-I02",
+      "remaining": [
+        "Allele and loading dependence are present; source supply and turnover are not explicit together in the current selected field."
+      ],
+      "proposalId": "P37-P01",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    },
+    {
+      "id": "P37-I06",
+      "remaining": [
+        "Current capture text does not explicitly teach the antibody-coated bead or distinguish recovery after lysis from antibody action on living cells."
+      ],
+      "proposalId": "P37-P02",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    },
+    {
+      "id": "P37-I08",
+      "remaining": [
+        "Separation is present, but the warning that acid alone does not establish a peptide-only input is not explicit."
+      ],
+      "proposalId": "P37-P02",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    },
+    {
+      "id": "P37-I09",
+      "remaining": [
+        "No current selected field explicitly preserves connected peptide chains and excludes free-amino-acid digestion."
+      ],
+      "proposalId": "P37-P02",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    },
+    {
+      "id": "P37-I15",
+      "remaining": [
+        "The generic context wording does not enumerate specimen site, time, state and HLA class/alleles together."
+      ],
+      "proposalId": "P37-P01",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    },
+    {
+      "id": "P37-I20",
+      "remaining": [
+        "The fictional numbers exist, but shows no biological difference overstates the inference; the 50-percent measured-count increase is not carried with the correct uncertainty."
+      ],
+      "proposalId": "P37-P01",
+      "sourceDepth": "Complete current owner field read. Fresh sources are five complete abstracts and seventeen targeted complete article paragraphs; reused sources keep their recorded earlier depth. No whole-paper or original-paper-figure reading.",
+      "proposalApplied": false
+    }
+  ],
+  "artworkFindings": [
+    {
+      "id": "P37-V01",
+      "severity": "scientific-ambiguity",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/immunopeptidome-repertoire-and-recovery-dark.png",
+        "wiki/education/concepts/immunology/antigen-presentation/images/immunopeptidome-repertoire-and-recovery-light.png"
+      ],
+      "finding": "The old Recovered material panel places intact peptide-HLA icons beside the instrument without showing peptide release and separation. This can imply intact-complex instrument input. The v2 figures explicitly separate peptides before analysis.",
+      "freshWholeView": true
+    },
+    {
+      "id": "P37-V02",
+      "severity": "minor-readability",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-dark.png"
+      ],
+      "finding": "The old dark processing figure repeats step numbers in badges and headings. The light counterpart does not. Exact dark/light geometry preservation is not established.",
+      "freshWholeView": true
+    },
+    {
+      "id": "P37-V03",
+      "severity": "minor-layout",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-v2-dark.png",
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-v2-light.png"
+      ],
+      "finding": "The second line of Possible recognition touches or crosses the lower header boundary. B2M remains above the membrane in the repaired recognition panel; the heavy chain alone crosses it.",
+      "freshWholeView": true
+    }
+  ],
+  "sourceAccess": [
+    {
+      "sourceId": "blum-xml",
+      "status": 500,
+      "error": "HTTP Error 500: ",
+      "bodyIsChallenge": false
+    },
+    {
+      "sourceId": "janeway-nbk27137",
+      "status": 200,
+      "error": null,
+      "bodyIsChallenge": true
+    },
+    {
+      "sourceId": "wilhelm-xml",
+      "status": null,
+      "error": "The read operation timed out",
+      "bodyIsChallenge": false
+    }
+  ],
+  "additionalSourceLimits": [
+    "Purcell full protocol is subscription-only; complete abstract is read.",
+    "Blum is a review, with seven complete targeted paragraphs read; underlying cited experiments are not newly read.",
+    "Sarkizova and structural/curated topology evidence reuse earlier exact source identities and stated depth.",
+    "No original-paper figure, full-paper, browser, mobile, quantitative-contrast, accessibility, independent, expert or learner acceptance."
+  ],
+  "coordinatorProposalsApplied": false,
+  "ordinaryGradesChanged": 0
+}

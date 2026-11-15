@@ -1,0 +1,154 @@
+{
+  "publications": [
+    {
+      "sourceId": "tcr-i",
+      "priorPacket": "hla-epitope-construction-assets-2026-11-14",
+      "completeAbstractHashReverified": true,
+      "rawReceiptsReverified": 2,
+      "freshReadingClaimed": false
+    },
+    {
+      "sourceId": "cd8-i",
+      "priorPacket": "hla-epitope-construction-assets-2026-11-14",
+      "completeAbstractHashReverified": true,
+      "rawReceiptsReverified": 2,
+      "freshReadingClaimed": false
+    },
+    {
+      "sourceId": "cd4-complex",
+      "priorPacket": "hla-epitope-construction-assets-2026-11-14",
+      "completeAbstractHashReverified": true,
+      "rawReceiptsReverified": 5,
+      "freshReadingClaimed": false
+    },
+    {
+      "sourceId": "sarkizova",
+      "priorPacket": "neoantigen-evidence-assets-2026-11-14",
+      "completeAbstractHashReverified": true,
+      "rawReceiptsReverified": 3,
+      "freshReadingClaimed": false,
+      "targetedParagraphsReused": [
+        {
+          "sourceId": "sarkizova-ncbi-xml",
+          "paragraph": 1,
+          "tag": "p",
+          "paragraphSHA256": "f88b8bf1e1fb769f4da0bfb6b90c60a424842880cd7393b6b0d9d1b860a11706",
+          "captureSHA256": "96b27064f16a70ebc4a3c0c747261521c7cc9efa044731831832700cbb6aaf82",
+          "readInFullAfterIntactOutput": true,
+          "wholeDocumentRead": false,
+          "acknowledgedAtUTC": "2026-11-15T01:14:23.647856+00:00"
+        },
+        {
+          "sourceId": "sarkizova-ncbi-xml",
+          "paragraph": 3,
+          "tag": "p",
+          "paragraphSHA256": "54837841639dcfeeb94e22394b5c291ae6fcd39b34c1c89560871d9c9a0a01e2",
+          "captureSHA256": "96b27064f16a70ebc4a3c0c747261521c7cc9efa044731831832700cbb6aaf82",
+          "readInFullAfterIntactOutput": true,
+          "wholeDocumentRead": false,
+          "acknowledgedAtUTC": "2026-11-15T01:14:23.648125+00:00"
+        },
+        {
+          "sourceId": "sarkizova-ncbi-xml",
+          "paragraph": 25,
+          "tag": "p",
+          "paragraphSHA256": "87b981edc02a84cd8c7daa78ae2c1d4d6880f31cfef98553e65482fc2bf07653",
+          "captureSHA256": "96b27064f16a70ebc4a3c0c747261521c7cc9efa044731831832700cbb6aaf82",
+          "readInFullAfterIntactOutput": true,
+          "wholeDocumentRead": false,
+          "acknowledgedAtUTC": "2026-11-15T01:14:23.648129+00:00"
+        },
+        {
+          "sourceId": "sarkizova-ncbi-xml",
+          "paragraph": 26,
+          "tag": "p",
+          "paragraphSHA256": "530501bcf428e4c30affd070eb8bdc982d9f2bb4fb3700cd8c3f8de860eaad3c",
+          "captureSHA256": "96b27064f16a70ebc4a3c0c747261521c7cc9efa044731831832700cbb6aaf82",
+          "readInFullAfterIntactOutput": true,
+          "wholeDocumentRead": false,
+          "acknowledgedAtUTC": "2026-11-15T01:14:23.648131+00:00"
+        }
+      ]
+    }
+  ],
+  "curatedEntries": [
+    {
+      "sourceId": "b2m-uniprot",
+      "accession": "P61769",
+      "url": "https://www.uniprot.org/uniprotkb/P61769/entry",
+      "entryType": "UniProtKB reviewed (Swiss-Prot)",
+      "genes": [
+        "B2M"
+      ],
+      "annotationDate": "2026-11-04",
+      "entryVersion": 222,
+      "rawCaptureSHA256": "858a6d0e7de2ee4737a1b85134d3151f05c7f7a63ac16b84ffd97601e5ee5e9b",
+      "selectedFields": [
+        {
+          "pointer": "/comments/1/texts/0/value",
+          "valueSHA256": "f4838c8d68a63c9910c62e00a4bb13d9fcbfb8a0c72b481d59243a673bd6cdde"
+        },
+        {
+          "pointer": "/comments/3/subcellularLocations",
+          "valueSHA256": "0aec3b6051f9129ac5ad5123c315fdbeed9a241275b294193148da7a98ed0ef5"
+        },
+        {
+          "pointer": "/features/0",
+          "valueSHA256": "0a0f6003a5c454c99043f89f5653ea9b55c6ff4161e2d94eb90c115b7ddeaf57"
+        }
+      ],
+      "allSelectedFieldsRead": true,
+      "wholeEntryRead": false,
+      "underlyingPapersRead": false,
+      "qualification": "Curated annotation support for the specified subunit/location/topology values. It is not new experimental validation, an account of every isoform, or a reading of each cited paper.",
+      "readingReusedByExactIdentity": true,
+      "freshEntryRead": false,
+      "reusedFrom": "hla-epitope-construction-assets-2026-11-14",
+      "selectedFieldHashRecipe": "Compact UTF-8 JSON. Feature pointers include only type, location and description, matching the earlier read card; bibliographic evidence fields were not read or included."
+    },
+    {
+      "sourceId": "uniprot-search-hla-a",
+      "accession": "P04439",
+      "url": "https://www.uniprot.org/uniprotkb/P04439/entry",
+      "entryType": "UniProtKB reviewed (Swiss-Prot)",
+      "genes": [
+        "HLA-A"
+      ],
+      "annotationDate": "2026-11-04",
+      "entryVersion": 227,
+      "rawCaptureSHA256": "30a1f25a56e47dccc22b8f723a8eefc0adddf8a90c6d0adb4143ae410f35f1cc",
+      "selectedFields": [
+        {
+          "pointer": "/comments/15/subcellularLocations",
+          "valueSHA256": "f8c37d15f12898a46122d95f198266c5beab33496886fb5c0b5b89a392f3eace"
+        },
+        {
+          "pointer": "/features/0",
+          "valueSHA256": "50bb76600db887b76fe8d8b7adf18d362117252743148ea652a45ba3cb6a5541"
+        },
+        {
+          "pointer": "/features/2",
+          "valueSHA256": "84294fc64111a5d23a7ffc8ab16f0e4dede2004d7fd8a1390f04158e11a9397e"
+        },
+        {
+          "pointer": "/features/3",
+          "valueSHA256": "8d1036e42eb03cfe4c6aabfb16fb2720466110511bb90af9fd44c9b455c534c7"
+        },
+        {
+          "pointer": "/features/4",
+          "valueSHA256": "4489356a31a6de0ab1159c92f8ebb104bf6ac3314ed2d800a40aae04f1859fc1"
+        }
+      ],
+      "allSelectedFieldsRead": true,
+      "wholeEntryRead": false,
+      "underlyingPapersRead": false,
+      "qualification": "Curated annotation support for the specified subunit/location/topology values. It is not new experimental validation, an account of every isoform, or a reading of each cited paper.",
+      "readingReusedByExactIdentity": true,
+      "freshEntryRead": false,
+      "reusedFrom": "hla-epitope-construction-assets-2026-11-14",
+      "selectedFieldHashRecipe": "Compact UTF-8 JSON. Feature pointers include only type, location and description, matching the earlier read card; bibliographic evidence fields were not read or included."
+    }
+  ],
+  "earlierReadingDepthNotPromoted": true,
+  "priorWholePaperReadsNotCreated": true
+}

@@ -1,0 +1,40 @@
+{
+  "reviewedAtUTC": "2026-11-15T02:27:08.108254+00:00",
+  "personallyViewedWhole": 8,
+  "originalPNGsUnedited": true,
+  "newBrowserReview": false,
+  "newMobileReview": false,
+  "newQuantitativeContrastReview": false,
+  "newAccessibilityAcceptance": false,
+  "findings": [
+    {
+      "id": "P37-V01",
+      "severity": "scientific-ambiguity",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/immunopeptidome-repertoire-and-recovery-dark.png",
+        "wiki/education/concepts/immunology/antigen-presentation/images/immunopeptidome-repertoire-and-recovery-light.png"
+      ],
+      "finding": "The old Recovered material panel places intact peptide-HLA icons beside the instrument without showing peptide release and separation. This can imply intact-complex instrument input. The v2 figures explicitly separate peptides before analysis.",
+      "freshWholeView": true
+    },
+    {
+      "id": "P37-V02",
+      "severity": "minor-readability",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-dark.png"
+      ],
+      "finding": "The old dark processing figure repeats step numbers in badges and headings. The light counterpart does not. Exact dark/light geometry preservation is not established.",
+      "freshWholeView": true
+    },
+    {
+      "id": "P37-V03",
+      "severity": "minor-layout",
+      "paths": [
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-v2-dark.png",
+        "wiki/education/concepts/immunology/antigen-presentation/images/processing-display-recognition-v2-light.png"
+      ],
+      "finding": "The second line of Possible recognition touches or crosses the lower header boundary. B2M remains above the membrane in the repaired recognition panel; the heavy chain alone crosses it.",
+      "freshWholeView": true
+    }
+  ]
+}

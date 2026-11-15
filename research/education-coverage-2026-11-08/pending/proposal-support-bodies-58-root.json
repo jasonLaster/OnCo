@@ -1,0 +1,464 @@
+{
+  "version": "proposal-support-bodies-58-root",
+  "draft": 375,
+  "committedDataHead": "52e65e0dadcf72fdb814fb43bd70d8b2010e6cc4",
+  "auditBaseCommit": "107624bfc23676f78b6d2c43655a7e624bba9e9c",
+  "state": "Six selected registered-root records. One mIF owner has a verified chemistry correction and appended sampling note; all other selected root fields retain their earlier verification scope.",
+  "records": [
+    {
+      "id": "multiplex-immunofluorescence",
+      "kind": "technology",
+      "name": "Multiplex immunofluorescence",
+      "aka": [],
+      "tldr": "This approach measures several protein markers in a tissue section, in one or more imaging cycles. Image analysis then estimates cells, counts and distances under defined rules.",
+      "summary": "Multiplex immunofluorescence measures selected protein-marker signals in a tissue section, using one or several imaging cycles. Cyclic methods build a high-plex image of one section by repeating staining, imaging and signal removal and then registering the cycles: t-CyCIF produced up to 60-plex images of formalin-fixed specimens and showed that antigenicity changes with cycle number (Lin and colleagues, 2018), and IBEX imaged more than 65 parameters in one section by iterative staining and chemical bleaching (Radtke and colleagues, 2020). A six-institution study of a six-plex PD-1 and PD-L1 panel, imaged with a locked-down image analysis algorithm, reported average intersite concordance of cell densities of R squared 0.75 in breast carcinoma and 0.72 in non-small cell lung cancer tissue microarrays (Taube and colleagues, 2021); that is reproducibility for one specified panel and workflow, not for multiplex immunofluorescence in general. A cell phenotype is a rule-based call from the measured panel, a density needs a stated denominator, and a distance needs a stated definition (cell centre or cell boundary).",
+      "status": "established",
+      "asOf": "2026-11-15",
+      "wikipedia": "https://en.wikipedia.org/wiki/Immunofluorescence",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Immunofluorescence"
+        },
+        {
+          "label": "Lin et al., Highly multiplexed immunofluorescence imaging of human tissues and tumors using t-CyCIF and conventional optical microscopes (eLife 2018)",
+          "url": "https://doi.org/10.7554/eLife.31657"
+        },
+        {
+          "label": "Radtke et al., IBEX: A versatile multiplex optical imaging approach for deep phenotyping and spatial analysis of cells in complex tissues (PNAS 2020)",
+          "url": "https://doi.org/10.1073/pnas.2018488117"
+        },
+        {
+          "label": "Taube et al., Multi-institutional TSA-amplified Multiplexed Immunofluorescence Reproducibility Evaluation (MITRE) Study (Journal for ImmunoTherapy of Cancer 2021)",
+          "url": "https://doi.org/10.1136/jitc-2020-002197"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "digital-pathology-ai"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "navignostics",
+        "vicinity-bio",
+        "strand-ai"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Assay card for multiplex immunofluorescence (a reading guide, not a score). Input and tissue cost: a compatible fixed or frozen section; staining uses material and may involve repeated processing, and the section does not preserve viable cells for a killing assay. Output and units: marker images, fluorescence intensity in assay-dependent units, cell counts, cells per square millimetre, cell fractions and defined distances in micrometres. Controls: marker-positive and marker-negative material, comparison with validated single-marker staining, channel or spectral controls, background assessment, cycle alignment and boundary overlays. Thresholds: panel-specific marker and phenotype rules locked before the intended comparison and tested for reproducibility. Failure modes: autofluorescence, overlapping signals, nonspecific antibodies, staining-order effects, tissue loss, alignment errors and incorrect cell boundaries. Cannot establish: all proteins, live-cell behaviour, antigen specificity, actual killing or universal treatment eligibility. Validation: specific to the panel, staining, imaging, analysis and intended use.",
+        "Figure reading (fictional, no cutoff): channels A and B are measured, registered marker images; the overlay adds estimated cell masks. Centre-to-centre distance includes the cell interiors, while boundary-to-boundary distance spans only the gap, so the two rulers give different numbers for the same pair. Proximity under either rule is not contact, recognition or killing.",
+        "Each cell fraction needs its parent population and sampled anatomical region. A tissue section or selected field samples part of a heterogeneous tumour, so its counts are not a whole-tumour census. Calling coexpression assigns marker signals to one estimated cell; being in the same section or nearby does not establish that assignment. Any prediction of treatment benefit needs validation for the particular panel, analysis and population."
+      ],
+      "provenance": {
+        "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts and selected full texts read",
+        "editedOn": "2026-11-09",
+        "note": "Added from Lin 2018 (PMID 29993362, full text PMC6075866 read for the cycle-number and staining-order experiment), Radtke 2020 (PMID 33376221) and Taube 2021 (PMID 34266881, results read in the abstract and full text PMC8286792): DOI and PMID resolved and matched on title, authors and year. The existing meta-analysis sentence on checkpoint-inhibitor prediction was not re-verified in this batch and is unchanged."
+      },
+      "principle": "Fluorescent antibody detection maps selected targets in a tissue section. Cyclic methods repeat staining and imaging, remove or inactivate prior signals, and register images across rounds. The staining and detection chemistry depends on the method.",
+      "strengths": [
+        "Uses standard pathology sections",
+        "Captures cell-to-cell proximity",
+        "Better predictor of immunotherapy response than single-marker IHC in pooled studies"
+      ],
+      "limitations": [
+        "Panel design and validation are laborious",
+        "Inter-laboratory standardisation incomplete",
+        "Cell calls depend on estimated cell boundaries, and repeated cycles can change signal or tissue retention",
+        "Closeness of an immune cell to a cancer cell does not show recognition or killing",
+        "A virtual or computationally predicted marker map is a prediction, not performed staining",
+        "Clinical use needs evidence for the specific panel, analysis and intended decision"
+      ]
+    },
+    {
+      "id": "imaging-mass-cytometry",
+      "kind": "technology",
+      "name": "Imaging mass cytometry",
+      "aka": [],
+      "tldr": "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
+      "summary": "Imaging mass cytometry (Standard BioTools Hyperion) and multiplexed ion beam imaging (MIBI) label antibodies with rare-earth metal isotopes instead of fluorophores, then ablate the tissue pixel by pixel and read the metals by mass spectrometry. Forty or more markers can be measured on one section without spectral overlap, letting researchers phenotype immune and tumour cells in place and quantify their spatial relationships.",
+      "status": "emerging",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mass_cytometry",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mass_cytometry"
+        },
+        {
+          "label": "Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24584193/"
+        },
+        {
+          "label": "A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer Revealed by Multiplexed Ion Beam Imaging.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30193111/"
+        },
+        {
+          "label": "Highly multiplexed immunofluorescence imaging of human tissues and tumors using t-CyCIF and conventional optical microscopes.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29993362/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "spatial-proximity-metrics"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "single-cell-spatial"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "navignostics",
+        "ionpath"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Historical method examples establish what was measured in those experiments. Giesen and colleagues reported simultaneous imaging of 32 proteins and protein modifications at subcellular resolution in human breast-cancer samples in 2014, using metal-tagged antibodies and high-resolution laser ablation coupled to mass cytometry. Ablation consumes the sampled area. The 32-marker example is not a present instrument ceiling, and Lin and colleagues' 2018 t-CyCIF study used conventional optical microscopes for up to 60-plex images of formalin-fixed, paraffin-embedded specimens. Each example retains its method, molecular layer and preparation.",
+        "Keren and colleagues used multiplexed ion-beam imaging to measure 36 proteins in 41 triple-negative breast-cancer patients in 2018. Their image processing included cell segmentation, and spatial analysis distinguished immune-mixed from compartmentalised tumours. Organised border structures and compartmentalisation were linked to survival in this cohort. These observations neither establish that adjacent cells are functionally interacting nor constitute a trial selecting treatment by the pattern."
+      ],
+      "principle": "Metal-isotope-tagged antibodies bind the section; a laser or ion beam vaporises each pixel and time-of-flight mass spectrometry counts the isotopes, building one image per marker.",
+      "strengths": [
+        "Forty-plus markers on one section",
+        "No autofluorescence or spectral overlap",
+        "Quantitative per-cell protein levels"
+      ],
+      "limitations": [
+        "Slow acquisition and small fields of view",
+        "Expensive instruments",
+        "Research use only"
+      ]
+    },
+    {
+      "id": "proteomics",
+      "kind": "technology",
+      "name": "Proteomics & phosphoproteomics",
+      "aka": [],
+      "tldr": "Measuring the proteins in a tumour, which is what drugs actually hit, rather than the genes that encode them.",
+      "summary": "Proteomics measures the proteins and phosphorylation sites in a tumour directly, using liquid chromatography tandem mass spectrometry with isobaric labelling to quantify thousands of proteins and phosphosites at once. Mass-spectrometry proteomics (CPTAC) reveals pathway activity and ADC target abundance that transcript levels do not predict, since RNA and protein levels often disagree. Quantitative IHC and mass-spec assays of HER2 and TROP2 aim to improve ADC patient selection by measuring the actual antigen the drug binds rather than a proxy. Throughput and standardisation remain the barriers to routine clinical use, and it is still open whether protein-level selection will outperform established IHC scoring in trials. For a newcomer, proteomics measures what drugs actually hit, the proteins, rather than the genes that encode them.",
+      "status": "emerging",
+      "asOf": "2026-09-04",
+      "wikipedia": "https://en.wikipedia.org/wiki/Proteomics",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Proteomics"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [
+        "diagnostics",
+        "drug-discovery"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "elucidate-bio",
+        "acrivon-therapeutics",
+        "biodesix",
+        "helio-genomics",
+        "nonagen-bioscience",
+        "omanta",
+        "oncohost"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Liquid chromatography tandem mass spectrometry with isobaric labelling quantifies proteins and phosphosites.",
+      "strengths": [
+        "Direct measurement of drug targets and signalling"
+      ],
+      "limitations": [
+        "Throughput and standardisation"
+      ]
+    },
+    {
+      "id": "rppa",
+      "kind": "term",
+      "name": "Reverse-phase protein array (RPPA)",
+      "aka": [
+        "RPPA",
+        "reverse-phase protein array",
+        "reverse phase protein array",
+        "protein array data",
+        "RPPA data"
+      ],
+      "tldr": "RPPA spots tiny amounts of protein extract from many tumours onto a slide and probes them with antibodies, measuring a few hundred proteins and phosphoproteins in each sample at once.",
+      "summary": "A reverse phase protein lysate microarray is a dot-blot platform that measures protein expression in many samples simultaneously and quantitatively where high-quality antibodies exist (Wikipedia). TCGA ran RPPA on most tumours for roughly 150 to 200 proteins and phosphoproteins chosen for signalling pathways, which makes it the only pan-cancer protein data at scale, though a targeted rather than genome-wide view. Deep mass spectrometry from CPTAC covers thousands of proteins on fewer tumours.",
+      "asOf": "2026-09-24",
+      "wikipedia": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Reverse_phase_protein_lysate_microarray"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "tcga-gdc",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "proteomics"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "pathway-activation-state",
+        "mass-spec-proteome"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/rppa."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    },
+    {
+      "id": "spatial-transcriptomics",
+      "kind": "technology",
+      "name": "Spatial transcriptomics",
+      "aka": [],
+      "tldr": "These methods measure RNA signals while keeping information about position in a tissue section. A measured spot, an estimated cell boundary and an imputed value are different kinds of evidence.",
+      "summary": "Spatial transcriptomics measures RNA signals while retaining information about where they came from in a tissue section. Sequencing capture and imaging-based detection use different measurement units. A third approach, region-of-interest profiling such as digital spatial profiling, releases oligonucleotide tags only from regions an operator chooses; the method paper describes regions covering 1 to about 5,000 cells and panels of up to 44 proteins, or 1,412 genes with sequencing readout, on formalin-fixed tissue (Merritt and colleagues, 2020), so the result depends on how the regions were selected. The original sequencing-based method placed sections on arrays of positionally barcoded primers and kept two-dimensional position (Ståhl and colleagues, 2016); a capture spot is a positional barcode and can span several cells. MERFISH imaged 100 to 1,000 RNA species chosen by probe design (Chen and colleagues, 2015), a targeted gene set and not every transcript. Assigning molecules to cells depends on estimated cell boundaries: many methods approximate cell positions from nuclear stains, and distinguishing the boundaries of individual cells is challenging and can hamper downstream analysis; Baysor was developed to optimise boundaries from transcript composition and cell morphology (Petukhov and colleagues, 2022). Gene values imputed by aligning single-cell data to a spatial map, as Tangram does (shown in mouse brain; Biancalani and colleagues, 2021), are model outputs and not extra RNA molecules detected by the spatial assay.",
+      "status": "emerging",
+      "asOf": "2026-11-14",
+      "wikipedia": "https://en.wikipedia.org/wiki/Spatial_transcriptomics",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Spatial_transcriptomics"
+        },
+        {
+          "label": "Stahl et al., Visualization and analysis of gene expression in tissue sections by spatial transcriptomics (Science 2016)",
+          "url": "https://doi.org/10.1126/science.aaf2403"
+        },
+        {
+          "label": "Merritt et al., Multiplex digital spatial profiling of proteins and RNA in fixed tissue (Nature Biotechnology 2020)",
+          "url": "https://doi.org/10.1038/s41587-020-0472-9"
+        },
+        {
+          "label": "Chen et al., Spatially resolved, highly multiplexed RNA profiling in single cells (Science 2015)",
+          "url": "https://doi.org/10.1126/science.aaa6090"
+        },
+        {
+          "label": "Petukhov et al., Cell segmentation in imaging-based spatial transcriptomics (Nature Biotechnology 2022)",
+          "url": "https://doi.org/10.1038/s41587-021-01044-w"
+        },
+        {
+          "label": "Biancalani et al., Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram (Nature Methods 2021)",
+          "url": "https://doi.org/10.1038/s41592-021-01264-7"
+        },
+        {
+          "label": "A spatially resolved single-cell genomic atlas of the adult human breast (Nature 2023)",
+          "url": "https://doi.org/10.1038/s41586-023-06252-9"
+        },
+        {
+          "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014 (Annals of oncology : official journal of the European Society for Medical Oncology 2015)",
+          "url": "https://doi.org/10.1093/annonc/mdu450"
+        },
+        {
+          "label": "FDA: companion diagnostics and specified intended use",
+          "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/companion-diagnostics"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "htan"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics",
+        "drug-discovery"
+      ],
+      "technologies": [
+        "single-cell-spatial",
+        "digital-pathology-ai"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "navignostics",
+        "vicinity-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "spatial-biology-instruments",
+        "rna-seq"
+      ],
+      "notes": [
+        "Assay card for spatial transcriptomics (a reading guide, not a score). Measures and how: RNA with coordinates, by preparing a section, capturing or probing RNA, sequencing or imaging, decoding, registering positions and reporting the assignment rules. Input and tissue cost: protocol-compatible frozen or fixed sections; sectioning and molecular preparation consume allocated material, some workflows alter or destroy the assayed section, and re-scoring existing data consumes no new tissue. Output and units: gene counts per spot, bin or assigned cell, and decoded molecule coordinates, often in micrometres, with physical dimensions, normalisation and observed-versus-imputed labels kept. Thresholds: assay-specific gene or probe coverage, capture and decoding quality, background and segmentation criteria; no universal high-expression or neighbourhood cutoff. Failure modes: poor RNA, incomplete probe coverage, low capture, image-registration errors, inaccurate segmentation, spillover and unsuitable reference models. Limits: no automatic single-cell identity, complete transcriptome, whole-tumour representation, proven interaction or clinical selection rule. Validation tier: many workflows are research methods, so check analytical and intended-use validation for the exact assay and model; resolution claims and regulatory status are separate questions.",
+        "Figure reading (fictional geometry, no platform scale): a capture spot is one barcode that can pool several cells. Imaging decodes six RNA coordinates, three for gene G and three for gene H (3 + 3 = 6), and these are coordinates, not cell labels. Moving the estimated cell masks changes which cell a coordinate is assigned to while the RNA stays fixed. Gene R is absent from the G and H panel, so a model-inferred R value is not an observed molecule, and RNA position is not protein or function.",
+        "In a fictional map, each of two regions contains twelve illustrative immune cells, but one places them within malignant nests and the other outside. Equal cell symbols do not guarantee equal bulk RNA: similar RNA is a separately stipulated condition of the example. The map supplies neither a stromal-area TIL score nor evidence of recognition or treatment benefit. A capture spot can pool several cells, and changing an estimated cell boundary can change molecule assignment while the observed RNA coordinates stay fixed. Each region also has six malignant symbols; eight immune-cell centres fall inside the first nest contour and none inside the second. The contour is a regional boundary, not a cell membrane or a measured transport barrier."
+      ],
+      "provenance": {
+        "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts and selected full texts read",
+        "editedOn": "2026-11-09",
+        "note": "Added from Stahl 2016 (PMID 27365449), Merritt 2020 (PMID 32393914), Chen 2015 (PMID 25858977), Petukhov 2022 (PMID 34650268) and Biancalani 2021 (PMID 34711971): DOI and PMID resolved and matched on title, authors and year; numbers read in the abstracts. The Xenium segmentation documentation cited by the lesson could not be fetched (HTTP 429) and is not used."
+      },
+      "principle": "Tissue sections are either overlaid on barcoded capture arrays whose oligonucleotides record position before sequencing, or hybridised with fluorescent probes read out over many imaging rounds with combinatorial barcodes.",
+      "strengths": [
+        "Keeps position, which single-cell sequencing discards",
+        "Reveals immune exclusion, niches and cell neighbourhoods",
+        "Works on archived formalin-fixed tissue on newer platforms"
+      ],
+      "limitations": [
+        "Costly and data-heavy, mostly research use",
+        "A capture unit may contain contributions from more than one cell",
+        "Assigning molecules to cells relies on estimated cell boundaries",
+        "A section samples part of a tumour, and adjacent sections do not contain identical cells",
+        "Genes imputed from a single-cell reference are model estimates, not measurements",
+        "Region-of-interest profiling depends on which regions are chosen",
+        "Validation must match the exact assay, analysis and intended clinical question"
+      ]
+    },
+    {
+      "id": "mass-spec-proteome",
+      "kind": "term",
+      "name": "Deep mass-spectrometry proteome (CPTAC)",
+      "aka": [
+        "mass-spectrometry proteome",
+        "mass spectrometry proteomics",
+        "deep proteome",
+        "global proteome",
+        "MS proteomics",
+        "TMT proteomics",
+        "phospho-proteomics data"
+      ],
+      "tldr": "Mass-spectrometry proteomics identifies protein-derived peptides and can quantify signals under a defined workflow. It does not measure every protein or directly establish a cell's activity.",
+      "summary": "Bottom-up mass-spectrometry proteomics identifies protein-derived peptides and can quantify selected signals under a defined workflow. Mass spectrometry-based proteomics can identify and increasingly quantify thousands of proteins in complex samples (Aebersold and Mann, 2003). Protein inference, working out which proteins are present from the identified peptides, is difficult because many peptide sequences occur in several proteins (Lukasse and America, 2014). The target-decoy strategy uses hits to a decoy database to distinguish correct from incorrect peptide identifications (Elias and Gygi, 2007), and a dataset-level false-positive rate is a property of the accepted set, not a guarantee for each identification (Beausoleil and colleagues, 2006 reported a peptide false-positive rate of 1.3 per cent for their dataset). In 105 genomically annotated breast cancers, 77 of which gave high-quality data, pathway analysis of the phosphoproteome identified a G-protein-coupled receptor cluster that was not readily identified at the mRNA level (Mertins and colleagues, 2016).",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mass_spectrometry",
+      "links": [
+        {
+          "label": "CPTAC (NCI Office of Cancer Clinical Proteomics Research)",
+          "url": "https://proteomics.cancer.gov"
+        },
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mass_spectrometry"
+        },
+        {
+          "label": "Aebersold and Mann, Mass spectrometry-based proteomics (Nature 2003)",
+          "url": "https://doi.org/10.1038/nature01511"
+        },
+        {
+          "label": "Lukasse and America, Protein inference using peptide quantification patterns (Journal of Proteome Research 2014)",
+          "url": "https://doi.org/10.1021/pr401072g"
+        },
+        {
+          "label": "Elias and Gygi, Target-decoy search strategy for increased confidence in large-scale protein identifications by mass spectrometry (Nature Methods 2007)",
+          "url": "https://doi.org/10.1038/nmeth1019"
+        },
+        {
+          "label": "Mertins et al., Proteogenomics connects somatic mutations to signalling in breast cancer (Nature 2016)",
+          "url": "https://doi.org/10.1038/nature18003"
+        },
+        {
+          "label": "Carr et al., Targeted peptide measurements in biology and medicine (Molecular and Cellular Proteomics 2014)",
+          "url": "https://doi.org/10.1074/mcp.M113.036095"
+        }
+      ],
+      "tags": [
+        "cansim-terms"
+      ],
+      "related": [
+        "cptac",
+        "cancer-ai-vocabulary"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "proteomics",
+        "proteomics-platforms"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "rppa",
+        "mrna-protein-concordance",
+        "pathway-activation-state",
+        "multi-omic-integration"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference built on the sources). Bottom-up proteomics digests proteins to peptides, separates them by liquid chromatography, measures ions and fragments by tandem mass spectrometry, and identifies peptides by software, so evidence for an intact, functional protein is indirect. A shared peptide cannot choose between candidate proteins; inference uses the other peptides recovered and reports ambiguity. A ratio needs its denominator, an absolute amount needs calibration with standards in a matched matrix (Carr and colleagues, 2014), and a peptide standard does not by itself show recovery of the original protein. A bulk extract mixes cells and loses their positions, so a peptide signal per mass of extract is not receptors per cancer cell.",
+        "Fictional worked example. A bulk assay reports twice as much receptor-derived peptide per microgram of extract. Twice as much signal per unit of extract mass (2 x) does not mean twice as many accessible receptors on each cancer cell, because cell mixture, location and the relation of the quantified peptide to receptor forms are unresolved; a cell-specific surface measurement answers a different question.",
+        "Figure reading (fictional schematic, light and dark renders agree): proteins from a defined mixed sample are extracted and digested into a peptide mixture; peptide signals come from a separation and measurement step; one shared peptide fits both candidate protein A and candidate protein B, so it cannot say which was present; intact form, source cells and surface access remain separate questions that need other evidence.",
+        "Assay card in words (a reading guide). Measures and method: protein-derived peptide identity and abundance after extraction, digestion, separation and ion measurement. Input and tissue cost: a defined tissue or cell extract; fresh-frozen and formalin-fixed workflows exist with method-specific input needs; extraction consumes material and destroys spatial arrangement. Output and units: peptide and protein identifiers, normalised intensity or ratios; calibrated assays may report amounts such as femtomoles per microgram of input protein. Thresholds: identification false-discovery rate, analyte-specific detection and quantification limits, missing-value rules and calibrated range, with no universal abundance cutoff for treatment. Failure modes: incomplete extraction or digestion, shared peptides, interference, missing low-abundance analytes and inconsistent preparation. Limits: no automatic intact-form, location, accessibility, cell-of-origin or dependency conclusion. Validation context: broad discovery and targeted clinical measurement have different requirements.",
+        "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/deep-ms-proteome."
+      ],
+      "provenance": {
+        "editedBy": "OnCo CanSim terms wave (Wikipedia summaries, standards and project pages, GDC and FDA pages, Europe PMC)",
+        "editedOn": "2026-09-24",
+        "note": "CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme"
+      },
+      "category": "Biomarkers"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "version": "proposal-proteins-spatial-asset-peer-fields-2026-11-15",
+  "draft": 373,
+  "currentPeerHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "state": "Two unapplied complete-field proposals with exact current before hashes. No peer branch edit, registration or integration credit.",
+  "preconditions": [
+    {
+      "sourceId": "P59-PC1",
+      "recordId": "imaging-mass-cytometry",
+      "pr": 373,
+      "currentPeerHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "field": "notes",
+      "before": [
+        "Reading guide (OnCo inference). The antibody panel selects what can be measured, so imaging mass cytometry is not untargeted proteomics. Laser ablation removes the sampled material, so the scanned region is consumed. Spatial proximity between marker-defined cells is a measured arrangement, not functional interaction, killing or patient benefit. Suspension mass cytometry shares the detection principle but loses the original arrangement.",
+        "Fictional worked example. A panel reports a rare double-positive cell population while one marker is extremely bright in a neighbouring mass channel. Before calling a new cell state, inspect channel interference and staining controls and overlay the cell boundaries, because spillover or a merged boundary can create apparent coexpression; even a corrected pattern still needs biological interpretation.",
+        "Figure reading (toy grid, light and dark renders agree): a stained section is sampled address by address, the address x2,y1 is recorded and material is removed; the channels for marker A (blue) and marker B (rose) are rebuilt on one grid, with the outlined tile at the same x2,y1 address in both; estimated cell borders need checking; and suspension cells lose this arrangement. Only selected markers are shown and nothing guarantees segmentation.",
+        "Assay card in words (a reading guide). Input and tissue cost: a compatible tissue section and a validated panel; ablation consumes the scanned region, and field choice and section area limit sampling. Output and units: metal-signal images, per-pixel or per-cell channel values, cell counts, densities per square millimetre and distances in micrometres; signals are not automatically absolute molecule counts. Controls: antibody validation and titration, positive and negative material, interference controls, instrument checks and boundary overlays. Thresholds: explicit marker, phenotype and spatial rules, with no universal immune-response cutoff. Failure modes: channel interference, weak staining, acquisition artefacts, unrepresentative fields, wrong boundaries and inconsistent analysis batches. Cannot tell you: unmeasured proteins, living-cell dynamics, antigen specificity, killing or benefit. Validation context: the panel and pipeline need technical validation."
+      ],
+      "after": [
+        "Reading guide (OnCo inference). The antibody panel selects what can be measured, so imaging mass cytometry is not untargeted proteomics. Laser ablation removes the sampled material, so the scanned region is consumed. Spatial proximity between marker-defined cells is a measured arrangement, not functional interaction, killing or patient benefit. Suspension mass cytometry shares the detection principle but loses the original arrangement.",
+        "Fictional worked example. A panel reports a rare double-positive cell population while one marker is extremely bright in a neighbouring mass channel. Before calling a new cell state, inspect channel interference and staining controls and overlay the cell boundaries, because spillover or a merged boundary can create apparent coexpression; even a corrected pattern still needs biological interpretation.",
+        "Figure reading (toy grid, light and dark renders agree): a stained section is sampled address by address, the address x2,y1 is recorded and material is removed; the channels for marker A (blue) and marker B (rose) are rebuilt on one grid, with the outlined tile at the same x2,y1 address in both; estimated cell borders need checking; and suspension cells lose this arrangement. Only selected markers are shown and nothing guarantees segmentation.",
+        "Assay card in words (a reading guide). Input and tissue cost: a compatible tissue section and a validated panel; ablation consumes the scanned region, and field choice and section area limit sampling. Output and units: metal-signal images, per-pixel or per-cell channel values, cell counts, densities per square millimetre and distances in micrometres; signals are not automatically absolute molecule counts. Controls: antibody validation and titration, positive and negative material, interference controls, instrument checks and boundary overlays. Thresholds: explicit marker, phenotype and spatial rules, with no universal immune-response cutoff. Failure modes: channel interference, weak staining, acquisition artefacts, unrepresentative fields, wrong boundaries and inconsistent analysis batches. Cannot tell you: unmeasured proteins, living-cell dynamics, antigen specificity, killing or benefit. Validation context: the panel and pipeline need technical validation.",
+        "Reduced channel crosstalk does not eliminate signal contributions from isotope impurities, oxidation or instrument properties. Chevrier and colleagues characterised these sources and tested correction in suspension and imaging mass cytometry in 2018. Their imaging experiments used metal spots and a breast-cancer section. Correction relied on the measured spillover relationship within its supported response range; detector saturation could distort that relationship. These method-specific checks do not turn corrected coexpression into evidence of a functional interaction."
+      ],
+      "beforeSHA256": "b1bdf1e5286d981176dd2b166b3e13a180d40c2bd3e536c6763a352a11be5d63",
+      "afterSHA256": "924f88d2bae7acc5f0900e309826194f5f18471103c30e9c48ec19fd930d3e22",
+      "beforeRecordSHA256": "4791d9f9c1d119ee71933436ea3b4312199a326166e3f8315df82f21f7604ca3",
+      "afterRecordSHA256": "f3ee68086a3d6479eeca21f3d84a98d0d844a84f84b838bed379c00476569ced",
+      "applied": false,
+      "integrationCredit": 0,
+      "reason": "Add source-verified mechanisms and correction-range precision without duplicating or overwriting existing peer teaching."
+    },
+    {
+      "sourceId": "P59-PC2",
+      "recordId": "targeted-proteomics-quantification",
+      "pr": 373,
+      "currentPeerHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+      "field": "notes",
+      "before": [
+        "Reading guide (OnCo inference built on the ICH definitions). A signal detected below the quantification limit is meaningful as detection, but it does not support a reliable amount, and neither it nor non-detection means biological zero. An upper limit also bounds the range, and a saturated response cannot separate larger inputs. Keep the denominator with every amount (for example femtomoles per microgram of total extracted protein or a concentration per volume), because it describes the mixture and not receptors per malignant cell; a selected peptide is a proxy for its source protein and cannot count intact receptors or surface copies. Tight repeats show precision, which can coexist with systematic bias. A standard added after digestion can control later measurement but cannot correct material already lost.",
+        "Fictional worked example. A summary says 'receptor peptide R is absent' for an assay that detected R below its quantification limit. The result should read 'detected below the validated quantification limit', with the limit and units: it supports detection under that assay's rules but neither a dependable amount nor biological absence.",
+        "Figure reading (fictional calibration, light and dark renders agree, no cutoff): a calibration plot has four regions in order of rising input, blank or background (no detection claim), detected below the lower limit of quantification (no reliable amount), validated range (report amount and units) and upper saturation (the response flattens), with replicate points scattered on the curve; a second panel says peptide amount is not surface location, and tight repeats alone do not rule out bias. Limits belong to the analyte and matrix.",
+        "Assay card in words (a reading guide). Measures and how: selected peptide amounts, by extracting, digesting, measuring specified ions and fragments with controls, calibrating and assessing analyte performance. Input and tissue cost: a validated tissue, cell or fluid matrix; extraction and digestion consume material, and required mass or volume and fixation compatibility are assay-specific. Output and units: peptide identity, amount or ratio, with the denominator and the peptide-to-protein inference kept. Thresholds: analyte-specific limit of detection, quantification limit, upper limit, bias and precision acceptance and reportable range, with no universal limit or treatment threshold. Failure modes: incomplete recovery or digestion, shared peptides, interference, unstable standards, matrix effects and signal outside the validated range. Limits: no automatic intact-form, location, cell-of-origin, accessibility, occupancy or drug-dependence conclusion. Validation tier: fit-for-purpose research tiers describe analytical characterisation and do not themselves confer clinical approval."
+      ],
+      "after": [
+        "Reading guide (OnCo inference built on the ICH definitions). A signal detected below the quantification limit is meaningful as detection, but it does not support a reliable amount, and neither it nor non-detection means biological zero. An upper limit also bounds the range, and a saturated response cannot separate larger inputs. Keep the denominator with every amount (for example femtomoles per microgram of total extracted protein or a concentration per volume), because it describes the mixture and not receptors per malignant cell; a selected peptide is a proxy for its source protein and cannot count intact receptors or surface copies. Tight repeats show precision, which can coexist with systematic bias. A standard added after digestion can control later measurement but cannot correct material already lost.",
+        "Fictional worked example. A summary says 'receptor peptide R is absent' for an assay that detected R below its quantification limit. The result should read 'detected below the validated quantification limit', with the limit and units: it supports detection under that assay's rules but neither a dependable amount nor biological absence.",
+        "Figure reading (fictional calibration, light and dark renders agree, no cutoff): a calibration plot has four regions in order of rising input, blank or background (no detection claim), detected below the lower limit of quantification (no reliable amount), validated range (report amount and units) and upper saturation (the response flattens), with replicate points scattered on the curve; a third panel says peptide amount is not surface location, and tight repeats alone do not rule out bias. Limits belong to the analyte and matrix.",
+        "Assay card in words (a reading guide). Measures and how: selected peptide amounts, by extracting, digesting, measuring specified ions and fragments with controls, calibrating and assessing analyte performance. Input and tissue cost: a validated tissue, cell or fluid matrix; extraction and digestion consume material, and required mass or volume and fixation compatibility are assay-specific. Output and units: peptide identity, amount or ratio, with the denominator and the peptide-to-protein inference kept. Thresholds: analyte-specific limit of detection, quantification limit, upper limit, bias and precision acceptance and reportable range, with no universal limit or treatment threshold. Failure modes: incomplete recovery or digestion, shared peptides, interference, unstable standards, matrix effects and signal outside the validated range. Limits: no automatic intact-form, location, cell-of-origin, accessibility, occupancy or drug-dependence conclusion. Validation tier: fit-for-purpose research tiers describe analytical characterisation and do not themselves confer clinical approval."
+      ],
+      "beforeSHA256": "d8118289252116d34aac1e3444a617c7248a0dbf31ce0bcf251b3a0a81b52343",
+      "afterSHA256": "3bad4c232693c7fb818df4e81de3acb5daaac660af101fffb3e3ce68fe763a8b",
+      "beforeRecordSHA256": "f59487d4c67e411a315ac6070e4301ce890cda3082432356f0353a61277e3ed1",
+      "afterRecordSHA256": "f3ab1037d17f84ffaced4f9b6904e6b9903cc968e29eae8c5275cd4204266965",
+      "applied": false,
+      "integrationCredit": 0,
+      "reason": "Correct the location scene from second to third panel; all other wording preserved."
+    }
+  ],
+  "records": [
+    {
+      "id": "imaging-mass-cytometry",
+      "kind": "technology",
+      "name": "Imaging mass cytometry",
+      "aka": [],
+      "tldr": "A way to stain a tumour slice for dozens of proteins at once using metal-tagged antibodies read by a mass spectrometer, giving a detailed map of which cells are where.",
+      "summary": "The original imaging mass cytometry method combined metal-tagged antibodies with laser ablation and mass cytometry to map marker signals in tumor sections. Multiplexed ion beam imaging is a related approach that uses secondary ion mass spectrometry; the acquisition methods are distinct. Assigning tissue signals to individual cells also requires image analysis. Marker selection, antibody performance and segmentation affect what a reported cell profile means; a spatial association does not by itself establish a cellular mechanism or treatment response. The original imaging mass cytometry paper coupled immunohistochemical and immunocytochemical staining with high-resolution laser ablation to CyTOF mass cytometry, imaging 32 proteins and modifications at subcellular resolution in human breast cancer samples, with more than 100 markers possible given further isotopes; mass cytometry had previously been applied only to cell suspensions (Giesen and colleagues, 2014). Spillover between channels is reduced compared with dye-based flow cytometry but still exists, and a bead-based compensation workflow was developed to estimate and correct it in suspension and imaging mass cytometry, reducing the risk of reporting cell phenotype artefacts (Chevrier and colleagues, 2018).",
+      "status": "emerging",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mass_cytometry",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mass_cytometry"
+        },
+        {
+          "label": "Highly multiplexed imaging of tumor tissues with subcellular resolution by mass cytometry.",
+          "url": "https://doi.org/10.1038/nmeth.2869"
+        },
+        {
+          "label": "Multiplexed ion beam imaging of human breast tumors.",
+          "url": "https://doi.org/10.1038/nm.3488"
+        },
+        {
+          "label": "Whole-cell segmentation of tissue images with human-level performance using large-scale data annotation and deep learning.",
+          "url": "https://doi.org/10.1038/s41587-021-01094-0"
+        },
+        {
+          "label": "Chevrier et al., Compensation of Signal Spillover in Suspension and Imaging Mass Cytometry (Cell Systems 2018)",
+          "url": "https://doi.org/10.1016/j.cels.2018.02.010"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "cell-segmentation",
+        "proteomics",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "single-cell-spatial"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "navignostics",
+        "ionpath"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference). The antibody panel selects what can be measured, so imaging mass cytometry is not untargeted proteomics. Laser ablation removes the sampled material, so the scanned region is consumed. Spatial proximity between marker-defined cells is a measured arrangement, not functional interaction, killing or patient benefit. Suspension mass cytometry shares the detection principle but loses the original arrangement.",
+        "Fictional worked example. A panel reports a rare double-positive cell population while one marker is extremely bright in a neighbouring mass channel. Before calling a new cell state, inspect channel interference and staining controls and overlay the cell boundaries, because spillover or a merged boundary can create apparent coexpression; even a corrected pattern still needs biological interpretation.",
+        "Figure reading (toy grid, light and dark renders agree): a stained section is sampled address by address, the address x2,y1 is recorded and material is removed; the channels for marker A (blue) and marker B (rose) are rebuilt on one grid, with the outlined tile at the same x2,y1 address in both; estimated cell borders need checking; and suspension cells lose this arrangement. Only selected markers are shown and nothing guarantees segmentation.",
+        "Assay card in words (a reading guide). Input and tissue cost: a compatible tissue section and a validated panel; ablation consumes the scanned region, and field choice and section area limit sampling. Output and units: metal-signal images, per-pixel or per-cell channel values, cell counts, densities per square millimetre and distances in micrometres; signals are not automatically absolute molecule counts. Controls: antibody validation and titration, positive and negative material, interference controls, instrument checks and boundary overlays. Thresholds: explicit marker, phenotype and spatial rules, with no universal immune-response cutoff. Failure modes: channel interference, weak staining, acquisition artefacts, unrepresentative fields, wrong boundaries and inconsistent analysis batches. Cannot tell you: unmeasured proteins, living-cell dynamics, antigen specificity, killing or benefit. Validation context: the panel and pipeline need technical validation.",
+        "Reduced channel crosstalk does not eliminate signal contributions from isotope impurities, oxidation or instrument properties. Chevrier and colleagues characterised these sources and tested correction in suspension and imaging mass cytometry in 2018. Their imaging experiments used metal spots and a breast-cancer section. Correction relied on the measured spillover relationship within its supported response range; detector saturation could distort that relationship. These method-specific checks do not turn corrected coexpression into evidence of a functional interaction."
+      ],
+      "principle": "Imaging mass cytometry reads laser-ablated metal-tagged antibody signals from tissue; related ion-beam methods use a distinct acquisition approach.",
+      "strengths": [
+        "Multiple markers localized on one tissue section",
+        "Preserves spatial marker information",
+        "Supports cell profiling when staining and segmentation are validated"
+      ],
+      "limitations": [
+        "Slow acquisition and small fields of view",
+        "Expensive instruments",
+        "Research use only"
+      ]
+    },
+    {
+      "id": "targeted-proteomics-quantification",
+      "kind": "term",
+      "name": "Targeted proteomics and quantification limits",
+      "aka": [
+        "targeted protein quantification",
+        "multiple-reaction-monitoring protein assays"
+      ],
+      "tldr": "A targeted protein assay measures selected peptide signals through a defined workflow. Reliable amounts require evidence about the quantitative range and precision of the assay.",
+      "summary": "A primary multilaboratory study evaluated isotope-dilution multiple-reaction-monitoring assays for selected plasma proteins, examining recovery, reproducibility, linear range, detection and quantification limits. The performance belonged to the tested materials, analytes and protocols. It was not a universal certificate for all proteins or specimens. A reported protein amount should retain its measured peptide, calibration approach, sample preparation and supported range. An NIH workshop report on targeted mass spectrometry found no consensus on the criteria for a successful peptide assay and set out three tiers of assay performance, with response and calibration curves generated for each analyte in the relevant matrix to establish limits of detection and quantification; quantification rests on precursor-product ion pairs, called transitions, shown to be free of interference, and a surrogate protein standard must be shown to behave like the native analyte in tests of recovery after adding a known amount (Carr and colleagues, 2014). Stable-isotope-labelled internal standard peptides with the sequence of the analyte are spiked into the digest, and extended peptides or recombinant proteins can compensate for variability in digestion (Hoofnagle and colleagues, 2016). A multilaboratory plasma study reported reproducibility, recovery, linear range and limits of detection and quantification at microgram-per-millilitre protein concentrations (Addona and colleagues, 2009).",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma.",
+          "url": "https://doi.org/10.1038/nbt.1546"
+        },
+        {
+          "label": "Carr et al., Targeted peptide measurements in biology and medicine (Molecular and Cellular Proteomics 2014)",
+          "url": "https://doi.org/10.1074/mcp.M113.036095"
+        },
+        {
+          "label": "Hoofnagle et al., Recommendations for the Generation, Quantification, Storage, and Handling of Peptides Used for Mass Spectrometry-Based Assays (Clinical Chemistry 2016)",
+          "url": "https://doi.org/10.1373/clinchem.2015.250563"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "proteomics",
+        "rppa",
+        "analytical-vs-clinical-validation",
+        "tissue-preparation-assay-fit"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Reading guide (OnCo inference built on the ICH definitions). A signal detected below the quantification limit is meaningful as detection, but it does not support a reliable amount, and neither it nor non-detection means biological zero. An upper limit also bounds the range, and a saturated response cannot separate larger inputs. Keep the denominator with every amount (for example femtomoles per microgram of total extracted protein or a concentration per volume), because it describes the mixture and not receptors per malignant cell; a selected peptide is a proxy for its source protein and cannot count intact receptors or surface copies. Tight repeats show precision, which can coexist with systematic bias. A standard added after digestion can control later measurement but cannot correct material already lost.",
+        "Fictional worked example. A summary says 'receptor peptide R is absent' for an assay that detected R below its quantification limit. The result should read 'detected below the validated quantification limit', with the limit and units: it supports detection under that assay's rules but neither a dependable amount nor biological absence.",
+        "Figure reading (fictional calibration, light and dark renders agree, no cutoff): a calibration plot has four regions in order of rising input, blank or background (no detection claim), detected below the lower limit of quantification (no reliable amount), validated range (report amount and units) and upper saturation (the response flattens), with replicate points scattered on the curve; a third panel says peptide amount is not surface location, and tight repeats alone do not rule out bias. Limits belong to the analyte and matrix.",
+        "Assay card in words (a reading guide). Measures and how: selected peptide amounts, by extracting, digesting, measuring specified ions and fragments with controls, calibrating and assessing analyte performance. Input and tissue cost: a validated tissue, cell or fluid matrix; extraction and digestion consume material, and required mass or volume and fixation compatibility are assay-specific. Output and units: peptide identity, amount or ratio, with the denominator and the peptide-to-protein inference kept. Thresholds: analyte-specific limit of detection, quantification limit, upper limit, bias and precision acceptance and reportable range, with no universal limit or treatment threshold. Failure modes: incomplete recovery or digestion, shared peptides, interference, unstable standards, matrix effects and signal outside the validated range. Limits: no automatic intact-form, location, cell-of-origin, accessibility, occupancy or drug-dependence conclusion. Validation tier: fit-for-purpose research tiers describe analytical characterisation and do not themselves confer clinical approval."
+      ],
+      "category": "Methods and models"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "exactDuplicateChecks": [
+    {
+      "bodyIndex": 6,
+      "field": "reuseRequirement.existingEmbeds",
+      "textSHA256": "204ed6e51b1358e1522c41d0741bf992f4677e19c1d55fea6b2e3faa787acd4d",
+      "comparisons": [
+        {
+          "path": "wiki/education/concepts/immunology/antigen-presentation/b2m.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "exactExistingEmbed": true
+        },
+        {
+          "path": "wiki/education/concepts/immunology/antigen-presentation/b2m.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "exactExistingEmbed": true
+        },
+        {
+          "path": "wiki/education/concepts/immunology/antigen-presentation/antigen-processing-machinery.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "exactExistingEmbed": true
+        },
+        {
+          "path": "wiki/education/concepts/immunology/antigen-presentation/antigen-processing-machinery.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "exactExistingEmbed": true
+        }
+      ],
+      "newScientificCopy": false
+    },
+    {
+      "bodyIndex": 7,
+      "field": "Alt",
+      "textSHA256": "1577f374ee5294ca7bd780147672998d53891c60d029a371532e8f2657be5c3f",
+      "comparisons": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "exactOwnerText": true
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "exactOwnerText": true
+        }
+      ],
+      "newScientificCopy": false
+    },
+    {
+      "bodyIndex": 7,
+      "field": "Caption",
+      "textSHA256": "e8d5628425bf4dc232588190d17ac34e61b9a4d3c1167a98046fd89a3200cfb3",
+      "comparisons": [
+        {
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "exactOwnerText": true
+        },
+        {
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "exactOwnerText": true
+        }
+      ],
+      "newScientificCopy": false
+    }
+  ],
+  "epitopeBriefCaption": {
+    "bodyIndex": 10,
+    "captionSHA256": "e4eddc58205c7672c3cd4720c902cc99d6533f89c4ef599764b85bd6e8b18375",
+    "comparisons": [
+      {
+        "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+        "exactCaption": false
+      },
+      {
+        "guideRef": "c96896452386202405c435aa161bc5047919337a",
+        "exactCaption": false
+      }
+    ],
+    "qualification": "The parent expands HLA and omits the brief's dated search-access sentence. These are not byte-identical captions; their recognition-surface teaching is assessed in E01/E04 and the source-access limit remains explicit."
+  },
+  "supportingRecordQuotedAPMEmbedAddsNoUniqueTeaching": true,
+  "scope": "Only specified reader-copy fields and quoted embeds, not an assertion that every prose string in a receipt is a duplicate."
+}

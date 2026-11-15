@@ -188,18 +188,18 @@ export const educationMeasurementTerms: TermInput[] = [
     "kind": "term",
     "name": "Immune deconvolution",
     "category": "Genomics & genetics",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-15",
     "tldr": "Deconvolution estimates which cell populations contributed to a mixed molecular measurement.",
     "summary": "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
     "notes": [
-      "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
-      "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
-      "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
-      "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
-      "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
-      "Fictional teaching exercise: Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
-      "Existing mixture data and reference profiles support computation without further tissue; comparator assays may consume material. Record fit algorithm, reference, denominator, omitted populations and output as relative fraction, whole-sample estimate, abundance score or inferred expression. Runtime and fit filters vary; known mixtures, held-out data and matched measurements test assumptions. Similar signatures, RNA content, state and platform shifts prevent a global fit from certifying every population or clinical use."
-    ],
+  "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+  "A fitted share of RNA is a different quantity from a share of cells. If all contributing cells supplied the same amount of RNA and recovery were comparable, those fractions could have the same numerical value. EPIC uses estimates of RNA content by cell type to convert its fitted RNA fractions into cell fractions and allows an uncharacterised component; that component can also include non-malignant cells missing from the reference.",
+  "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+  "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location. A larger immune RNA signal does not by itself show contact with cancer cells, antigen recognition, killing, target engagement or treatment benefit.",
+  "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+  "Fictional teaching exercise: Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample. These cell counts are supplied assumptions, rather than results recovered from an RNA mixture.",
+  "Existing mixture data and reference profiles support computation without further tissue; comparator assays may consume material. Record fit algorithm, reference, denominator, omitted populations and output as relative fraction, whole-sample estimate, abundance score or inferred expression. Runtime and fit filters vary; known mixtures, held-out data and matched measurements test assumptions. Similar signatures, RNA content, state and platform shifts prevent a global fit from certifying every population or clinical use."
+],
     "related": [
       "bulk-rna-seq"
     ],

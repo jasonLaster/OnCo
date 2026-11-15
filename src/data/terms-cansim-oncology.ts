@@ -359,26 +359,89 @@ export const cansimOncologyTerms: TermInput[] = [
 ]
 }),
   t({ id: "tpm-fpkm-counts", name: "TPM, FPKM and raw counts (expression units)", category: GEN, aka: ["TPM", "transcripts per million", "FPKM", "RPKM", "log2 TPM", "log2(TPM+1)", "raw counts", "read counts", "expression units"],
-    wikipedia: W("RNA-Seq"), links: [{ label: "Salmon: fast and bias-aware quantification of transcript expression (Nature Methods 2017)", url: DOI("10.1038/nmeth.4197") }], cansim: "/terms/tpm-fpkm-counts",
+    wikipedia: W("RNA-Seq"), links: [
+  {
+    "label": "Salmon: fast and bias-aware quantification of transcript expression (Nature Methods 2017)",
+    "url": "https://doi.org/10.1038/nmeth.4197"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/RNA-Seq"
+  },
+  {
+    "label": "Wagner, Kin and Lynch: RNA abundance units and TPM (2012)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22872506/"
+  },
+  {
+    "label": "Robinson and Oshlack: TMM composition scaling (2010)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20196867/"
+  },
+  {
+    "label": "Love, Huber and Anders: DESeq2 count modelling (2014)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25516281/"
+  },
+  {
+    "label": "Smith, Heger and Sudbery: UMI errors and counting limits (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28100584/"
+  },
+  {
+    "label": "Salmon 1.12 documentation: quantification-file fields",
+    "url": "https://salmon.readthedocs.io/en/latest/file_formats.html"
+  },
+  {
+    "label": "edgeR user guide, revised 25 April 2026: effective library sizes",
+    "url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf"
+  }
+], cansim: "/terms/tpm-fpkm-counts",
     tldr: "RNA count units depend on what was counted, the normalisation denominator and any transcript-length adjustment.",
     summary: "Raw RNA tables can contain assigned reads, fragments or model-estimated counts. Counts per million divide by a named library denominator. Transcripts per million first adjust for transcript length and scale the adjusted values to a total of one million; effective length depends on the quantifier. FPKM uses a different denominator and does not in general sum to a fixed total. UMI molecule counting and three-prime tag workflows need their own rules. Composition scaling, batch handling and statistical comparison remain separate questions; no single transformed unit is the universal model input.",
     terms: ["bulk-rna-seq", "batch-effects", "quantile-normalisation"] ,
-"asOf": "2026-11-10",
+"asOf": "2026-11-15",
 "notes": [
   "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
-  "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+  "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator. In an adjusted-library analysis, the denominator can instead be an effective library size. For example, edgeR's guide defines that size as the library total multiplied by its normalisation factor; it differs from the simple unadjusted total in the worked example.",
   "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
   "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
   "Fictional teaching exercise: Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
-  "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+  "Normalisation alone does not guarantee removal of batch effects, restore missing molecules, identify cell origin or establish protein activity or treatment benefit. A normalised difference still needs a suitable design and statistical model.",
   "Rescaling an existing feature table needs its counting unit, annotation, library metadata, denominator and any length rule; adding molecular tags requires library preparation. Report CPM, TPM or the chosen model input explicitly. Runtime, controls, replicates and composition checks vary. Wrong units, tag errors, broad shifts and incompatible annotations undermine filters/comparisons; normalisation alone does not validate a clinical test."
 ]
 }),
   t({ id: "star-salmon", wikipediaChecked: "2026-09-25", name: "STAR and Salmon (RNA-seq alignment and quantification)", category: GEN, aka: ["STAR aligner", "STAR RNA-seq aligner", "Salmon quantification", "Salmon quantifier", "pseudoalignment"],
-    links: [{ label: "STAR on GitHub (alexdobin/STAR)", url: "https://github.com/alexdobin/STAR" }, { label: "Dobin et al., STAR: ultrafast universal RNA-seq aligner (Bioinformatics 2013)", url: DOI("10.1093/bioinformatics/bts635") }, { label: "Salmon documentation", url: "https://salmon.readthedocs.io/en/latest/" }, { label: "Patro et al., Salmon (Nature Methods 2017)", url: DOI("10.1038/nmeth.4197") }], cansim: "/terms/star-salmon",
-    tldr: "STAR lines sequencing reads up against the genome and Salmon estimates how much of each transcript is present; they are the two most common first steps of an RNA-seq pipeline.",
-    summary: "STAR (Spliced Transcripts Alignment to a Reference) is the ultrafast universal RNA-seq aligner described by Dobin and colleagues and used by the GDC pipeline; Salmon, from Patro and colleagues, quantifies transcript expression quickly and with correction for sequence and GC bias, using a lightweight mapping rather than full alignment. Which tool, genome build and annotation were used are provenance fields a model's training data should record, because they change the numbers.",
-    terms: ["bulk-rna-seq", "tpm-fpkm-counts", "genome-builds"], related: ["ngs-bioinformatics-software"] }),
+    links: [
+  {
+    "label": "STAR on GitHub (alexdobin/STAR)",
+    "url": "https://github.com/alexdobin/STAR"
+  },
+  {
+    "label": "Dobin et al., STAR: ultrafast universal RNA-seq aligner (Bioinformatics 2013)",
+    "url": "https://doi.org/10.1093/bioinformatics/bts635"
+  },
+  {
+    "label": "Salmon documentation",
+    "url": "https://salmon.readthedocs.io/en/latest/"
+  },
+  {
+    "label": "Patro et al., Salmon (Nature Methods 2017)",
+    "url": "https://doi.org/10.1038/nmeth.4197"
+  },
+  {
+    "label": "Salmon 1.12 documentation: mapping and alignment modes",
+    "url": "https://salmon.readthedocs.io/en/latest/salmon.html"
+  },
+  {
+    "label": "Salmon 1.12 documentation: quantification-file fields",
+    "url": "https://salmon.readthedocs.io/en/latest/file_formats.html"
+  }
+], cansim: "/terms/star-salmon",
+    tldr: "STAR aligns RNA-sequencing reads to a reference, while Salmon estimates transcript abundance using reads or supplied transcript alignments.",
+    summary: "STAR, described by Dobin and colleagues, aligns RNA-sequencing reads across spliced transcript regions. Salmon, described by Patro and colleagues, estimates transcript abundance. Its 1.12 documentation describes selective alignment in mapping-based mode and also accepts precomputed alignments to transcripts. Sequence and fragment GC bias models are options whose settings should be recorded. Reference sequences, annotation, library type, software version and analysis settings shape the resulting assignments and estimates.",
+    terms: ["bulk-rna-seq", "tpm-fpkm-counts", "genome-builds"], related: ["ngs-bioinformatics-software"] ,
+"notes": [
+  "Salmon's NumReads column contains estimated assignments, including uncertainty from reads compatible with several transcripts. EffectiveLength reflects the fragment-length distribution and any modelled sequence or GC biases; TPM is a relative abundance estimate. Keep those counting and length rules when comparing values rather than treating the table as a direct count of all RNA molecules originally present."
+],
+"asOf": "2026-11-15"
+}),
   t({ id: "variant-calling", name: "Variant calling", category: GEN, aka: ["variant calling", "somatic variant calling", "variant caller", "variant callers", "SNV calling", "mutation calling"],
     wikipedia: W("SNV_calling_from_NGS_data"), links: [
   {
@@ -461,6 +524,10 @@ export const cansimOncologyTerms: TermInput[] = [
   {
     "label": "Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/24037425/"
+  },
+  {
+    "label": "Bioconductor RNAseq123: nested factors and design-matrix rank",
+    "url": "https://www.bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html"
   }
 ], cansim: "/terms/batch-effects",
     tldr: "A batch effect is a systematic measurement difference associated with how samples were prepared, processed or analysed.",
@@ -475,10 +542,10 @@ export const cansimOncologyTerms: TermInput[] = [
   "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
   "Reprocessing one extract is a technical, not a biological, replicate.",
   "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
-  "Assess technical variation using preparation metadata, appropriate controls, diagnostic plots and a defined design/model. Reanalysis uses no new tissue; new preparations use extract and resequencing can use an existing library. Acceptance criteria depend on the comparison. Missing metadata, complete confounding and removal of genuine biology can invalidate correction; check assumptions and reproducibility rather than a universal batch-size cutoff.",
-  "Fictional design exercise: six baseline specimens in lab A and six follow-up specimens in lab B leave two group-laboratory cells unobserved. Allocating three to each of the four cells retains six per time point while adding the crossed contrasts. The design supports a stated model, with other biases and assumptions still requiring checks."
+  "Assess technical variation using preparation metadata, appropriate controls, diagnostic plots and a defined design/model. Reanalysis uses no new tissue; new preparations use extract and resequencing can use an existing library. Acceptance criteria depend on the comparison. Missing metadata, complete confounding and removal of genuine biology can invalidate correction; check assumptions and reproducibility rather than a universal batch-size cutoff. Control genes assumed unchanged, a shared reference or a sample prepared in more than one batch test different parts of the comparison. Such bridge material and controls depend on their suitability and the model; they do not guarantee correction for every gene or patient sample.",
+  "Fictional design exercise: six baseline specimens in lab A and six follow-up specimens in lab B leave two group-laboratory cells unobserved. Allocating three to each of the four cells retains six per time point while adding the crossed contrasts. The design supports a stated model, with other biases and assumptions still requiring checks. In an additive model with an intercept, group and laboratory terms, the first arrangement has rank two and the crossed arrangement rank three. Rank counts independently estimable model terms here; the crossed design still does not establish random assignment or remove every other bias."
 ],
-"asOf": "2026-11-10"
+"asOf": "2026-11-15"
 }),
   t({ id: "gsea", name: "Gene set enrichment analysis (GSEA and ssGSEA)", category: GEN, aka: ["gene set enrichment analysis", "gene set enrichment", "GSEA", "ssGSEA", "single-sample GSEA", "pathway enrichment", "enrichment analysis", "enrichment score"],
     wikipedia: W("Gene_set_enrichment_analysis"), links: [{ label: "Subramanian et al., Gene set enrichment analysis (PNAS 2005)", url: DOI("10.1073/pnas.0506580102") }, { label: "Barbie et al., ssGSEA introduced in Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1 (Nature 2009)", url: DOI("10.1038/nature08460") }, { label: "MSigDB", url: "https://www.gsea-msigdb.org/gsea/msigdb/" }], cansim: "/terms/gsea-ssgsea",

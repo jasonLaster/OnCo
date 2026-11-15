@@ -1,0 +1,2089 @@
+{
+  "candidateReferences": 89,
+  "preservingRootRebinds": 85,
+  "explicitTextCorrections": 4,
+  "actualUnmergedPeerReferencesPreserved": 0,
+  "ordinaryGradesChanged": 0,
+  "sourceDepthChanged": 0,
+  "historicalWholeFieldDifferences": [],
+  "references": [
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.definition",
+        "requirement": "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.normalisation-vs-correction",
+        "requirement": "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.biology-not-batch",
+        "requirement": "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.replicates",
+        "requirement": "Reprocessing one extract is a technical, not a biological, replicate.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.multi-lab-reproducibility",
+        "requirement": "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/334/review/points/7/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.counting-unit-umi",
+        "requirement": "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.composition",
+        "requirement": "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.not-batch-or-absolute",
+        "requirement": "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/337/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.definition",
+        "requirement": "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.state-reconstruction",
+        "requirement": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.validation-comparators",
+        "requirement": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/340/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/4/evidence/6",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "passageSha256": "422ec395b0ed3f91a4c2e88b0a66f79236c72b5dc33c52281e45ce2d61064b92",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": false,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-5e15ff294b9866",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": true,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/4/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "passageSha256": "aa796b9d70468425f1a87b0a49c569516e1f6d7f602f2e56036435c86df345b3",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-5e15ff294b9866",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/5/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "passageSha256": "ab4516bfd161ada49fb02da610a301c753abff00cd52dc5e6f04db8c6cd417f5",
+        "explanation": "Named signatures, classifiers and inferred mixtures have different scales and validation; no direct pathway flux, lineage trace, malignant dependence or universal drug-response claim follows. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-e286ceb9d7cea7",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/11/evidence/6",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "passageSha256": "422ec395b0ed3f91a4c2e88b0a66f79236c72b5dc33c52281e45ce2d61064b92",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": false,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-9dd8483e74e8f8",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": true,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/11/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "passageSha256": "aa796b9d70468425f1a87b0a49c569516e1f6d7f602f2e56036435c86df345b3",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-9dd8483e74e8f8",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/12/evidence/6",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "passageSha256": "422ec395b0ed3f91a4c2e88b0a66f79236c72b5dc33c52281e45ce2d61064b92",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": false,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-db14a4084e7bf7",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": true,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/12/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "passageSha256": "aa796b9d70468425f1a87b0a49c569516e1f6d7f602f2e56036435c86df345b3",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-db14a4084e7bf7",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "ledger.json",
+      "pointer": "/items/494/review/points/14/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "passageSha256": "ab4516bfd161ada49fb02da610a301c753abff00cd52dc5e6f04db8c6cd417f5",
+        "explanation": "Named signatures, classifiers and inferred mixtures have different scales and validation; no direct pathway flux, lineage trace, malignant dependence or universal drug-response claim follows. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-0554690f02873e",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.definition",
+        "requirement": "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.normalisation-vs-correction",
+        "requirement": "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.biology-not-batch",
+        "requirement": "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.replicates",
+        "requirement": "Reprocessing one extract is a technical, not a biological, replicate.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.multi-lab-reproducibility",
+        "requirement": "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/346/review/points/7/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.counting-unit-umi",
+        "requirement": "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.composition",
+        "requirement": "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.not-batch-or-absolute",
+        "requirement": "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/349/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.definition",
+        "requirement": "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/3/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.state-reconstruction",
+        "requirement": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/4/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.validation-comparators",
+        "requirement": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/5/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/352/review/points/6/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, correction and actual reader/export check in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.assay-contract",
+        "requirement": "Retain measurement inputs, consumption, procedure, units, quality rules, failure modes and intended-use limitations from the assay table.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/537/review/points/5/evidence/6",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "passageSha256": "422ec395b0ed3f91a4c2e88b0a66f79236c72b5dc33c52281e45ce2d61064b92",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": false,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-94980babfa5d06",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": true,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/537/review/points/5/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+        "passageSha256": "aa796b9d70468425f1a87b0a49c569516e1f6d7f602f2e56036435c86df345b3",
+        "explanation": "Bulk abundance can be correct with mistaken cell attribution; resolved profiles and modelled contributions need preparation, reference and identity checks. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-94980babfa5d06",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/537/review/points/6/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "passageSha256": "ab4516bfd161ada49fb02da610a301c753abff00cd52dc5e6f04db8c6cd417f5",
+        "explanation": "Named signatures, classifiers and inferred mixtures have different scales and validation; no direct pathway flux, lineage trace, malignant dependence or universal drug-response claim follows. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-b1e54c4561a49d",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/537/review/points/25/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "passageSha256": "ab4516bfd161ada49fb02da610a301c753abff00cd52dc5e6f04db8c6cd417f5",
+        "explanation": "Named signatures, classifiers and inferred mixtures have different scales and validation; no direct pathway flux, lineage trace, malignant dependence or universal drug-response claim follows. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-868fe78c53d2d1",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-phases/c9689645/ledger.json",
+      "pointer": "/items/537/review/points/30/evidence/7",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-multiomics-course-root",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "supportingExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+        "passageSha256": "ab4516bfd161ada49fb02da610a301c753abff00cd52dc5e6f04db8c6cd417f5",
+        "explanation": "Named signatures, classifiers and inferred mixtures have different scales and validation; no direct pathway flux, lineage trace, malignant dependence or universal drug-response claim follows. prior:immune-deconvolution: inherited evidence depth; no fresh whole-owner certification"
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "multiomics-course-MOM-ebe82ad4c7cfef",
+        "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1409/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1409/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1409/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1410/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1410/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1410/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1411/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1411/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1412/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1412/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1413/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1413/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1413/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1414/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1414/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/0/items/1414/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1409/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1409/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1409/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1410/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.cpm",
+        "requirement": "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1410/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.tpm",
+        "requirement": "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1410/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.counts-normalization.worked-cpm-tpm",
+        "requirement": "Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1411/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1411/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1412/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.confounding",
+        "requirement": "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1412/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "batch-effects",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.batch-effects.crossed-design-exercise",
+        "requirement": "Distinguish six baseline samples only in lab A and six follow-up only in B from a crossed allocation of three samples per group-laboratory cell; neither allocation by itself proves treatment causality.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1413/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1413/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1413/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1414/review/points/0/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.rna-share-vs-cell-share",
+        "requirement": "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1414/review/points/1/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.relative-vs-absolute",
+        "requirement": "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    },
+    {
+      "artifact": "source-assets.json",
+      "pointer": "/phases/1/items/1414/review/points/2/evidence/0",
+      "beforeReference": {
+        "recordId": "immune-deconvolution",
+        "version": "proposal-measurement-sequencing",
+        "field": "notes",
+        "fieldSha256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "explanation": "Exact current passage, source correction if applicable, and actual reader/export evidence in measurement-sequencing-2026-11-10."
+      },
+      "currentRootBeforeFieldMatch": true,
+      "exactExcerptPreserved": true,
+      "kindOfChange": "canonical",
+      "point": {
+        "id": "measurement-r1.immune-deconvolution.worked-50-vs-10-30",
+        "requirement": "Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+        "status": "covered-draft"
+      },
+      "needsExplicitTextCorrection": false,
+      "proposedAfterExcerpt": null,
+      "gradeChanged": false,
+      "sourceDepthChanged": false
+    }
+  ],
+  "byArtifact": {
+    "ledger.json": 30,
+    "source-phases/c9689645/ledger.json": 27,
+    "source-assets.json": 32
+  }
+}

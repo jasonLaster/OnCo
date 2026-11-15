@@ -1,0 +1,436 @@
+{
+  "state": "Committed current-root field changes; no peer edits or publication approval.",
+  "dataCommit": "73bcc16f3ba90eba12ca03614daa21acd9234e31",
+  "canonicalChanges": {
+    "baseCommit": "7848967d855d109a338b8185548a1261ed546a5e",
+    "inventorySHA256": "703c34acf56b4e18c93bbd5a926d719589f55a783964d311ad2dcaf595e6c272",
+    "beforeConsumersAndReadersCaptured": true,
+    "expectedFiles": [
+      "src/data/terms-cansim-oncology.ts",
+      "src/data/terms-education-measurement.ts"
+    ],
+    "expectedOwnerIds": [
+      "batch-effects",
+      "immune-deconvolution",
+      "star-salmon",
+      "tpm-fpkm-counts"
+    ],
+    "changes": [
+      {
+        "recordId": "batch-effects",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Record preparation, laboratory, protocol and analysis conditions before comparing RNA profiles. The GEUVADIS study examined lymphoblastoid cell lines across laboratories; its reproducibility findings apply to that design and do not validate every tumour preparation. Source: https://doi.org/10.1038/nbt.2702.",
+          "Fictional design exercise: if all baseline specimens use laboratory A and all follow-up specimens use laboratory B, the observed difference cannot separate laboratory from time. Correction cannot supply the missing crossed comparison. A changed tissue mixture can be real biology; a tidy corrected plot alone does not establish a treatment effect.",
+          "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+          "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+          "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+          "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+          "Reprocessing one extract is a technical, not a biological, replicate.",
+          "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+          "Assess technical variation using preparation metadata, appropriate controls, diagnostic plots and a defined design/model. Reanalysis uses no new tissue; new preparations use extract and resequencing can use an existing library. Acceptance criteria depend on the comparison. Missing metadata, complete confounding and removal of genuine biology can invalidate correction; check assumptions and reproducibility rather than a universal batch-size cutoff.",
+          "Fictional design exercise: six baseline specimens in lab A and six follow-up specimens in lab B leave two group-laboratory cells unobserved. Allocating three to each of the four cells retains six per time point while adding the crossed contrasts. The design supports a stated model, with other biases and assumptions still requiring checks.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/batch-effects."
+        ],
+        "after": [
+          "Record preparation, laboratory, protocol and analysis conditions before comparing RNA profiles. The GEUVADIS study examined lymphoblastoid cell lines across laboratories; its reproducibility findings apply to that design and do not validate every tumour preparation. Source: https://doi.org/10.1038/nbt.2702.",
+          "Fictional design exercise: if all baseline specimens use laboratory A and all follow-up specimens use laboratory B, the observed difference cannot separate laboratory from time. Correction cannot supply the missing crossed comparison. A changed tissue mixture can be real biology; a tidy corrected plot alone does not establish a treatment effect.",
+          "A batch effect is a systematic measurement difference tied to preparation, processing or analysis conditions that can be mistaken for biology; a batch is a group sharing a technical condition.",
+          "Normalisation adjusts defined aspects such as library size or composition and does not automatically remove gene-specific technical differences; models can include recorded batch variables; controls and repeat preparations help under assumptions.",
+          "When every sample of one group is processed one way and every sample of another group another way the effects cannot be separately identified; an algorithm cannot supply the missing experiment.",
+          "Cell mixture and treatment response can be real biology; erasing them as batch removes signal; a tidy corrected plot is not proof.",
+          "Reprocessing one extract is a technical, not a biological, replicate.",
+          "Multi-laboratory RNA-seq work shows why preparation conditions should be recorded.",
+          "Assess technical variation using preparation metadata, appropriate controls, diagnostic plots and a defined design/model. Reanalysis uses no new tissue; new preparations use extract and resequencing can use an existing library. Acceptance criteria depend on the comparison. Missing metadata, complete confounding and removal of genuine biology can invalidate correction; check assumptions and reproducibility rather than a universal batch-size cutoff. Control genes assumed unchanged, a shared reference or a sample prepared in more than one batch test different parts of the comparison. Such bridge material and controls depend on their suitability and the model; they do not guarantee correction for every gene or patient sample.",
+          "Fictional design exercise: six baseline specimens in lab A and six follow-up specimens in lab B leave two group-laboratory cells unobserved. Allocating three to each of the four cells retains six per time point while adding the crossed contrasts. The design supports a stated model, with other biases and assumptions still requiring checks. In an additive model with an intercept, group and laboratory terms, the first arrangement has rank two and the crossed arrangement rank three. Rank counts independently estimable model terms here; the crossed design still does not establish random assignment or remove every other bias.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/batch-effects."
+        ],
+        "beforeSHA256": "02fab3e939aa9a65c1efdcd2698a2c70382cba0221ca11bb18020d3ea21c0168",
+        "afterSHA256": "71431b974c491aa9106cf904b2c884d518a5acf7d6ef4207db09fb2105edae82",
+        "reason": "Make control assumptions and the rank of the stipulated crossed design explicit, preserving every earlier note.",
+        "sourceIds": [
+          "risso",
+          "bioconductor-designmatrices",
+          "fictional-design-arithmetic"
+        ]
+      },
+      {
+        "recordId": "batch-effects",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Johnson, Li and Rabinovic, Adjusting batch effects in microarray expression data using empirical Bayes methods (ComBat, Biostatistics 2007)",
+            "url": "https://doi.org/10.1093/biostatistics/kxj037"
+          },
+          {
+            "label": "sva Bioconductor package (ComBat)",
+            "url": "https://bioconductor.org/packages/release/bioc/html/sva.html"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Batch_effect"
+          },
+          {
+            "label": "Normalization of RNA-seq data using factor analysis of control genes or samples.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25150836/"
+          },
+          {
+            "label": "Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24037425/"
+          }
+        ],
+        "after": [
+          {
+            "label": "Johnson, Li and Rabinovic, Adjusting batch effects in microarray expression data using empirical Bayes methods (ComBat, Biostatistics 2007)",
+            "url": "https://doi.org/10.1093/biostatistics/kxj037"
+          },
+          {
+            "label": "sva Bioconductor package (ComBat)",
+            "url": "https://bioconductor.org/packages/release/bioc/html/sva.html"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Batch_effect"
+          },
+          {
+            "label": "Normalization of RNA-seq data using factor analysis of control genes or samples.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25150836/"
+          },
+          {
+            "label": "Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/24037425/"
+          },
+          {
+            "label": "Bioconductor RNAseq123: nested factors and design-matrix rank",
+            "url": "https://www.bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/designmatrices.html"
+          }
+        ],
+        "beforeSHA256": "94d7389c07495c7ff1c316ca768c04e8f126f06a2435fee9a1ce175cc1cc67ff",
+        "afterSHA256": "422f08a28f684f1e27972a6aec39fe51e2a485784bec7d0ecd581bfd4117be29",
+        "reason": "Attach the official design-matrix source for the added explanation.",
+        "sourceIds": [
+          "bioconductor-designmatrices"
+        ]
+      },
+      {
+        "recordId": "immune-deconvolution",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+          "The first quantity can be a share of RNA, not cells; EPIC uses RNA-content assumptions and an uncharacterised component.",
+          "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+          "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location.",
+          "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+          "Fictional teaching exercise: Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample.",
+          "Existing mixture data and reference profiles support computation without further tissue; comparator assays may consume material. Record fit algorithm, reference, denominator, omitted populations and output as relative fraction, whole-sample estimate, abundance score or inferred expression. Runtime and fit filters vary; known mixtures, held-out data and matched measurements test assumptions. Similar signatures, RNA content, state and platform shifts prevent a global fit from certifying every population or clinical use."
+        ],
+        "after": [
+          "Deconvolution fits reference cell-type profiles to a mixed profile under a model; similar types, missing populations and state change allow several fits.",
+          "A fitted share of RNA is a different quantity from a share of cells. If all contributing cells supplied the same amount of RNA and recovery were comparable, those fractions could have the same numerical value. EPIC uses estimates of RNA content by cell type to convert its fitted RNA fractions into cell fractions and allows an uncharacterised component; that component can also include non-malignant cells missing from the reference.",
+          "Relative estimates may sum to one across represented immune populations leaving total immune content unknown; CIBERSORT absolute mode is an expression-based score, not cells per area; other methods report whole-sample fractions.",
+          "CIBERSORTx infers cell-type expression and states; these are computational reconstructions, not single-cell measurements, and do not prove suppressive function, clone or location. A larger immune RNA signal does not by itself show contact with cancer cells, antigen recognition, killing, target engagement or treatment benefit.",
+          "Compare with flow, pathology or spatial data, each with its own bias; validate for tissue, preparation, populations and units.",
+          "Fictional teaching exercise: Sample A has 10 T cells among 20 immune cells and sample B 30 among 60 (100 cells each): both 50% of immune cells, but 10% and 30% of the whole sample. These cell counts are supplied assumptions, rather than results recovered from an RNA mixture.",
+          "Existing mixture data and reference profiles support computation without further tissue; comparator assays may consume material. Record fit algorithm, reference, denominator, omitted populations and output as relative fraction, whole-sample estimate, abundance score or inferred expression. Runtime and fit filters vary; known mixtures, held-out data and matched measurements test assumptions. Similar signatures, RNA content, state and platform shifts prevent a global fit from certifying every population or clinical use."
+        ],
+        "beforeSHA256": "081fff82e6bb236b58e0733334f7a685dd99015ee00c81d5ed9da2358854ce4c",
+        "afterSHA256": "3a66021ebd551315d21b62082d2e4bc231b43f2669f200fb1992b7cd9bd98a78",
+        "reason": "Clarify distinct quantities without asserting numerical inequality in all cases; retain method scope and distinguish inferred RNA contributions from measured killing or supplied teaching counts.",
+        "sourceIds": [
+          "epic",
+          "cibersort-protocol",
+          "cibersortx",
+          "measurement-scope-inference"
+        ]
+      },
+      {
+        "recordId": "star-salmon",
+        "kind": "term",
+        "field": "tldr",
+        "before": "STAR lines sequencing reads up against the genome and Salmon estimates how much of each transcript is present; they are the two most common first steps of an RNA-seq pipeline.",
+        "after": "STAR aligns RNA-sequencing reads to a reference, while Salmon estimates transcript abundance using reads or supplied transcript alignments.",
+        "beforeSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "afterSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Remove an unsupported usage ranking and state the two tasks directly.",
+        "sourceIds": [
+          "star-paper",
+          "salmon-paper",
+          "salmon-modes"
+        ]
+      },
+      {
+        "recordId": "star-salmon",
+        "kind": "term",
+        "field": "summary",
+        "before": "STAR (Spliced Transcripts Alignment to a Reference) is the ultrafast universal RNA-seq aligner described by Dobin and colleagues and used by the GDC pipeline; Salmon, from Patro and colleagues, quantifies transcript expression quickly and with correction for sequence and GC bias, using a lightweight mapping rather than full alignment. Which tool, genome build and annotation were used are provenance fields a model's training data should record, because they change the numbers.",
+        "after": "STAR, described by Dobin and colleagues, aligns RNA-sequencing reads across spliced transcript regions. Salmon, described by Patro and colleagues, estimates transcript abundance. Its 1.12 documentation describes selective alignment in mapping-based mode and also accepts precomputed alignments to transcripts. Sequence and fragment GC bias models are options whose settings should be recorded. Reference sequences, annotation, library type, software version and analysis settings shape the resulting assignments and estimates.",
+        "beforeSHA256": "e58d5fd5c9c673d18cebbceea97c78ff0fa2cc12cfab20b06a0bf7695ff7fd72",
+        "afterSHA256": "0aa805ae86c6f8a4e64e6b063903a74815f7e0a22c5fd2852ccf2cee48b5c5cf",
+        "reason": "Replace the restriction to lightweight mapping and automatic bias correction with documented modes and options. The old unverified GDC-use aside and speed rhetoric are intentionally omitted from this method definition, not certified false.",
+        "sourceIds": [
+          "star-paper",
+          "salmon-paper",
+          "salmon-modes"
+        ]
+      },
+      {
+        "recordId": "star-salmon",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/star-salmon."
+        ],
+        "after": [
+          "Salmon's NumReads column contains estimated assignments, including uncertainty from reads compatible with several transcripts. EffectiveLength reflects the fragment-length distribution and any modelled sequence or GC biases; TPM is a relative abundance estimate. Keep those counting and length rules when comparing values rather than treating the table as a direct count of all RNA molecules originally present.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/star-salmon."
+        ],
+        "beforeSHA256": "b69b564b94cb4a61917f3360c529276cc483c30103c10dbba1da7f1827eebaa8",
+        "afterSHA256": "85da5f0223b7b4421442c1ebaf88b8f1594e909ca2a8310fe60a5dde8ad61231",
+        "reason": "Explain the observed table fields while preserving the CanSim attribution note.",
+        "sourceIds": [
+          "salmon-formats"
+        ]
+      },
+      {
+        "recordId": "star-salmon",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "STAR on GitHub (alexdobin/STAR)",
+            "url": "https://github.com/alexdobin/STAR"
+          },
+          {
+            "label": "Dobin et al., STAR: ultrafast universal RNA-seq aligner (Bioinformatics 2013)",
+            "url": "https://doi.org/10.1093/bioinformatics/bts635"
+          },
+          {
+            "label": "Salmon documentation",
+            "url": "https://salmon.readthedocs.io/en/latest/"
+          },
+          {
+            "label": "Patro et al., Salmon (Nature Methods 2017)",
+            "url": "https://doi.org/10.1038/nmeth.4197"
+          }
+        ],
+        "after": [
+          {
+            "label": "STAR on GitHub (alexdobin/STAR)",
+            "url": "https://github.com/alexdobin/STAR"
+          },
+          {
+            "label": "Dobin et al., STAR: ultrafast universal RNA-seq aligner (Bioinformatics 2013)",
+            "url": "https://doi.org/10.1093/bioinformatics/bts635"
+          },
+          {
+            "label": "Salmon documentation",
+            "url": "https://salmon.readthedocs.io/en/latest/"
+          },
+          {
+            "label": "Patro et al., Salmon (Nature Methods 2017)",
+            "url": "https://doi.org/10.1038/nmeth.4197"
+          },
+          {
+            "label": "Salmon 1.12 documentation: mapping and alignment modes",
+            "url": "https://salmon.readthedocs.io/en/latest/salmon.html"
+          },
+          {
+            "label": "Salmon 1.12 documentation: quantification-file fields",
+            "url": "https://salmon.readthedocs.io/en/latest/file_formats.html"
+          }
+        ],
+        "beforeSHA256": "ab4b0661b2dc65ede9c608f6dab20c0baa13166b4fa1091c34718bed3e7e5f0c",
+        "afterSHA256": "724bdfb1180690d0500b5247f69ad0d6d8c0b3fdb23641d2dc5356078ba38f21",
+        "reason": "Attach the checked official documentation without replacing inherited links.",
+        "sourceIds": [
+          "salmon-modes",
+          "salmon-formats"
+        ]
+      },
+      {
+        "recordId": "tpm-fpkm-counts",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+          "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator.",
+          "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+          "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+          "Fictional teaching exercise: Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+          "Normalisation does not repair batch effects or recover absolute molecules, cell origin, protein activity or benefit; a normalised difference still needs design and a model.",
+          "Rescaling an existing feature table needs its counting unit, annotation, library metadata, denominator and any length rule; adding molecular tags requires library preparation. Report CPM, TPM or the chosen model input explicitly. Runtime, controls, replicates and composition checks vary. Wrong units, tag errors, broad shifts and incompatible annotations undermine filters/comparisons; normalisation alone does not validate a clinical test.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/tpm-fpkm-counts."
+        ],
+        "after": [
+          "Start from the counting unit (reads, fragments, estimated counts); a UMI is a tag added before amplification that reduces duplicate counting; it is a counting aid, not normalisation, and uncaptured molecules remain unobserved.",
+          "CPM divides a feature count by a stated library denominator and multiplies by one million; always state which denominator. In an adjusted-library analysis, the denominator can instead be an effective library size. For example, edgeR's guide defines that size as the library total multiplied by its normalisation factor; it differs from the simple unadjusted total in the worked example.",
+          "TPM first adjusts for transcript length then scales to one million across included transcripts; effective length suits some models and is not a drop-in rule for 3-prime tag or UMI workflows.",
+          "Between-sample methods address composition: abundant messages take library share; TMM and DESeq2 size factors estimate scaling under assumptions and do more than divide by totals; broad shifts challenge them.",
+          "Fictional teaching exercise: Two transcripts with 100 fragments each and lengths 1 and 2 kb: CPM 500,000 each; rates 100 and 50 sum 150; TPM about 666,667 and 333,333.",
+          "Normalisation alone does not guarantee removal of batch effects, restore missing molecules, identify cell origin or establish protein activity or treatment benefit. A normalised difference still needs a suitable design and statistical model.",
+          "Rescaling an existing feature table needs its counting unit, annotation, library metadata, denominator and any length rule; adding molecular tags requires library preparation. Report CPM, TPM or the chosen model input explicitly. Runtime, controls, replicates and composition checks vary. Wrong units, tag errors, broad shifts and incompatible annotations undermine filters/comparisons; normalisation alone does not validate a clinical test.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/tpm-fpkm-counts."
+        ],
+        "beforeSHA256": "a0c171b327cb5d69c088e0b3b1569a2c2a9924586c8497df2bffaf30105e252d",
+        "afterSHA256": "788e04e337f130acd7af292aabd9f22e62ecf9efb2bf3c1b47727f84bbf03dcf",
+        "reason": "Name adjusted denominators and qualify the old absolute statement about batch effects; RUV is itself a normalization method addressing technical variation.",
+        "sourceIds": [
+          "edger-guide",
+          "risso",
+          "conesa"
+        ]
+      },
+      {
+        "recordId": "tpm-fpkm-counts",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Salmon: fast and bias-aware quantification of transcript expression (Nature Methods 2017)",
+            "url": "https://doi.org/10.1038/nmeth.4197"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/RNA-Seq"
+          }
+        ],
+        "after": [
+          {
+            "label": "Salmon: fast and bias-aware quantification of transcript expression (Nature Methods 2017)",
+            "url": "https://doi.org/10.1038/nmeth.4197"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/RNA-Seq"
+          },
+          {
+            "label": "Wagner, Kin and Lynch: RNA abundance units and TPM (2012)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22872506/"
+          },
+          {
+            "label": "Robinson and Oshlack: TMM composition scaling (2010)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20196867/"
+          },
+          {
+            "label": "Love, Huber and Anders: DESeq2 count modelling (2014)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25516281/"
+          },
+          {
+            "label": "Smith, Heger and Sudbery: UMI errors and counting limits (2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28100584/"
+          },
+          {
+            "label": "Salmon 1.12 documentation: quantification-file fields",
+            "url": "https://salmon.readthedocs.io/en/latest/file_formats.html"
+          },
+          {
+            "label": "edgeR user guide, revised 25 April 2026: effective library sizes",
+            "url": "https://bioconductor.org/packages/release/bioc/vignettes/edgeR/inst/doc/edgeRUsersGuide.pdf"
+          }
+        ],
+        "beforeSHA256": "3737f6683adaf46e4d36635b39cb54ea2a033f17c5e41e2fea2ad5a9470686d3",
+        "afterSHA256": "1148773cb8bdb57f34f86ad8391b2be10858af8e0c701cb52dbcc6e25d885343",
+        "reason": "Link the resolved and read methods supporting the retained counting and normalization notes.",
+        "sourceIds": [
+          "wagner",
+          "robinson",
+          "love",
+          "smith",
+          "salmon-formats",
+          "edger-guide"
+        ]
+      },
+      {
+        "recordId": "batch-effects",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly scoped method and source check; no clinical-record blanket certification.",
+        "sourceIds": [
+          "current-method-check"
+        ]
+      },
+      {
+        "recordId": "immune-deconvolution",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly scoped method and source check; no clinical-record blanket certification.",
+        "sourceIds": [
+          "current-method-check"
+        ]
+      },
+      {
+        "recordId": "star-salmon",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-09-24",
+        "after": "2026-11-15",
+        "beforeSHA256": "6c26f434a89139387427fa6eea4d321fa7eaf0929936ef3b9100933bfefb2246",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly scoped method and source check; no clinical-record blanket certification.",
+        "sourceIds": [
+          "current-method-check"
+        ]
+      },
+      {
+        "recordId": "tpm-fpkm-counts",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly scoped method and source check; no clinical-record blanket certification.",
+        "sourceIds": [
+          "current-method-check"
+        ]
+      }
+    ],
+    "canonicalFields": 13,
+    "newRecords": 0,
+    "peerEdits": 0,
+    "registrationEdits": 0,
+    "aliasesMoved": 0,
+    "ordinaryLessonGradesReplaced": 0
+  },
+  "beforeAfterRuntimeVerification": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "immune-deconvolution",
+      "tpm-fpkm-counts",
+      "star-salmon",
+      "batch-effects"
+    ],
+    "changedOwnerCount": 4,
+    "changedCanonicalFields": 13,
+    "selectedSchemasParse": 9,
+    "allUnchangedOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "unrelatedGraphRecordsPreserved": 23087,
+    "peerFieldsEdited": 0,
+    "newRecords": 0
+  },
+  "existingSnapshotRebinds": {
+    "references": 89,
+    "preservedExcerpts": 85,
+    "expandedCorrectedExcerpts": 4,
+    "gradesAndSourceDepthUnchanged": true
+  },
+  "unappliedGuideCaptionProposal": {
+    "id": "P52-CAPTION-01",
+    "parent": "immune-deconvolution",
+    "suggestedMeaning": "RNA share and cell share are different quantities; conversion needs assumptions, and numerical equality is possible under equal contributions.",
+    "status": "Caption-owner wording proposal only, not an artwork or curriculum edit."
+  },
+  "newRecordsOrRegistrations": 0
+}

@@ -1,0 +1,2684 @@
+{
+  "sourceFirstInventorySHA256": "703c34acf56b4e18c93bbd5a926d719589f55a783964d311ad2dcaf595e6c272",
+  "requirements": [
+    {
+      "id": "P52-B01",
+      "family": "bulk-rna-seq",
+      "requirement": "Bulk RNA profiles combine captured material and do not directly assign each message to a cell of origin; the choir analogy is limited to this mixture problem.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa",
+        "epic"
+      ],
+      "semanticAssessment": "The combined captured profile and inability to directly assign cell origin are explicit; the choir is only an analogy for mixture.",
+      "sourceScope": "The combined captured profile and inability to directly assign cell origin are explicit; the choir is only an analogy for mixture.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B02",
+      "family": "bulk-rna-seq",
+      "requirement": "Extraction consumes finite sampled material; library preparation may use cDNA, mRNA selection, rRNA depletion or targeted capture, with unequal and incomplete recovery.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa",
+        "nacu"
+      ],
+      "semanticAssessment": "Selected library-preparation review and Nacu methods support capture and cDNA steps. Finite aliquot accounting is an assay-design reading rule, not a universal extraction yield.",
+      "sourceScope": "Selected library-preparation review and Nacu methods support capture and cDNA steps. Finite aliquot accounting is an assay-design reading rule, not a universal extraction yield.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B03",
+      "family": "bulk-rna-seq",
+      "requirement": "Assigned reads, fragments and estimated counts depend on mapping, ambiguous shared sequences, annotation and the analysis pipeline.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa",
+        "salmon-formats"
+      ],
+      "semanticAssessment": "Conesa describes shared reads and assignments; the checked Salmon output specification defines estimated assignments. No integer table is certified as an original-molecule census.",
+      "sourceScope": "Conesa describes shared reads and assignments; the checked Salmon output specification defines estimated assignments. No integer table is certified as an original-molecule census.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B04",
+      "family": "bulk-rna-seq",
+      "requirement": "Counting units, normalization denominators and the intended comparison must be named; a count table is already shaped by preparation and analysis.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "salmon-formats",
+        "edger-guide"
+      ],
+      "semanticAssessment": "Counting units, denominators and method-specific length rules are named in current fields.",
+      "sourceScope": "Counting units, denominators and method-specific length rules are named in current fields.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B05",
+      "family": "bulk-rna-seq",
+      "requirement": "Both cell composition and expression within contributing cells can change a bulk signal; different cell types need not contribute equal amounts of RNA.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic"
+      ],
+      "semanticAssessment": "EPIC explicitly models RNA mixtures and adjusts for cell-type RNA content. Composition and within-type expression are distinct terms in that model.",
+      "sourceScope": "EPIC explicitly models RNA mixtures and adjusts for cell-type RNA content. Composition and within-type expression are distinct terms in that model.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B06",
+      "family": "bulk-rna-seq",
+      "requirement": "Transcript identity, alternative splicing, mutations and local joins need relevant sequence evidence beyond a gene-level count.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "nhgri-rna",
+        "vaquero"
+      ],
+      "semanticAssessment": "The gene-total limitation and local-versus-complete transcript distinction are explicit. NHGRI and targeted local-splicing passages support the structure scope.",
+      "sourceScope": "The gene-total limitation and local-versus-complete transcript distinction are explicit. NHGRI and targeted local-splicing passages support the structure scope.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B07",
+      "family": "bulk-rna-seq",
+      "requirement": "High RNA or a program score does not directly measure surface protein, localization, pathway flux, drug dependence or clinical benefit.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa"
+      ],
+      "semanticAssessment": "This is a measurement-scope inference: captured RNA does not directly measure protein localization, pathway flux, dependence or benefit. No clinical prediction is claimed.",
+      "sourceScope": "This is a measurement-scope inference: captured RNA does not directly measure protein localization, pathway flux, dependence or benefit. No clinical prediction is claimed.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B08",
+      "family": "bulk-rna-seq",
+      "requirement": "Zero observations do not establish biological absence because capture, sequencing depth and mapping can miss a message.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "conesa"
+      ],
+      "semanticAssessment": "Finite capture and assignment leave non-detection compatible with missed material; this is not a universal numerical dropout rate.",
+      "sourceScope": "Finite capture and assignment leave non-detection compatible with missed material; this is not a universal numerical dropout rate.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B09",
+      "family": "bulk-rna-seq",
+      "requirement": "Thousands of genes or cells from one biopsy are not thousands of independent biological samples; technical repeats do not create independent patients.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "squair"
+      ],
+      "semanticAssessment": "The primary replicate analysis supports accounting for biological specimens. Counting genes, cells or technical libraries does not create independent patients.",
+      "sourceScope": "The primary replicate analysis supports accounting for biological specimens. Counting genes, cells or technical libraries does not create independent patients.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B10",
+      "family": "bulk-rna-seq",
+      "requirement": "The assay card retains sampled region, preservation, quality, counting units, controls, replicates, method-specific thresholds and failure modes; research profiling is separate from a validated clinical intended use.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa",
+        "seqc"
+      ],
+      "semanticAssessment": "The current assay card carries sampling, input, preparation, quality, units, controls and intended-use limitations. SEQC reference-RNA results do not validate every clinical assay.",
+      "sourceScope": "The current assay card carries sampling, input, preparation, quality, units, controls and intended-use limitations. SEQC reference-RNA results do not validate every clinical assay.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B11",
+      "family": "bulk-rna-seq",
+      "requirement": "The fictional 100-cell pieces have 20/40 lymphocytes and 80/60 cancer cells, one X RNA per lymphocyte, none in cancer cells, equal total RNA per cell and matched preparation. The assumed X pool doubles without cancer-cell activation; these are stipulated molecules, not observed reads or inferred cell counts.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [],
+      "semanticAssessment": "Independent rational arithmetic and native glyph counts verify the stipulated 20/40 marker pools and 100-cell mixtures. Cancer counts are the remaining 80/60; none are measured sequencing counts.",
+      "sourceScope": "Independent rational arithmetic and native glyph counts verify the stipulated 20/40 marker pools and 100-cell mixtures. Cancer counts are the remaining 80/60; none are measured sequencing counts.",
+      "evidenceType": "premise-backed-fictional-or-mathematical",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-B12",
+      "family": "bulk-rna-seq",
+      "requirement": "Deconvolution is a model-based interpretation of a measured mixture, not physical separation or direct cell-specific RNA measurement.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "3124cbda7c4bf53a1d17b2a2cbc4cc535da3ae1dcf4d151bcf35bd1597172a6a",
+          "gitBlob": "c1c69f89a94c313f63f76d0fbe8c68aba43c7606",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "e90f28cb348e70f081c0e8320dc0146e48f7a9e04a65ecec68e62b95a56ca46e",
+          "gitBlob": "c83b8fa27da7dba6a69e5469c559eaf27fec8d5d",
+          "eligibleContextSHA256": "f92526af5c2caf730f09e053abe1d1e5b88cbe214b9de6613e614e441810f80f",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic"
+      ],
+      "semanticAssessment": "The fitted decomposition is explicitly a model-based interpretation rather than physical separation.",
+      "sourceScope": "The fitted decomposition is explicitly a model-based interpretation rather than physical separation.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T01",
+      "family": "batch-effects",
+      "requirement": "A batch is a shared technical condition, not automatically a meaningful effect; preparation, extraction, run and pipeline variables can produce systematic, gene-specific differences.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso",
+        "geuvadis"
+      ],
+      "semanticAssessment": "Risso supports preparation and gene-specific unwanted variation. The generic technical-condition definition does not equate every batch label with a measured effect.",
+      "sourceScope": "Risso supports preparation and gene-specific unwanted variation. The generic technical-condition definition does not equate every batch label with a measured effect.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T02",
+      "family": "batch-effects",
+      "requirement": "Technical variation and biological differences can coexist, including different tissue regions, cell mixtures and treatment context; the issue extends beyond RNA.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso"
+      ],
+      "semanticAssessment": "Technical and biological contributions may coexist. The molecular-measurement definition is general; the cited performance examples remain RNA-specific.",
+      "sourceScope": "Technical and biological contributions may coexist. The molecular-measurement definition is general; the cited performance examples remain RNA-specific.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T03",
+      "family": "batch-effects",
+      "requirement": "Library-size or composition normalization does not automatically remove gene-specific batch effects or make a corrected comparison biologically valid.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso",
+        "conesa"
+      ],
+      "semanticAssessment": "RUV itself is a normalization method, so the retained absolute no-repair wording was qualified. Neither scaling nor a corrected plot guarantees a valid biological comparison.",
+      "sourceScope": "RUV itself is a normalization method, so the retained absolute no-repair wording was qualified. Neither scaling nor a corrected plot guarantees a valid biological comparison.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T04",
+      "family": "batch-effects",
+      "requirement": "Complete group-batch overlap prevents separate identification from that comparison alone; an algorithm cannot create the missing experiment or contrasts.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bioconductor-designmatrices"
+      ],
+      "semanticAssessment": "The complete-overlap design is unidentifiable for separate group and laboratory terms from that comparison alone. External information is not ruled out.",
+      "sourceScope": "The complete-overlap design is unidentifiable for separate group and laboratory terms from that comparison alone. External information is not ruled out.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T05",
+      "family": "batch-effects",
+      "requirement": "Crossed or balanced allocations can provide separation under a stated model but do not prove randomization, eliminate every bias or establish causality.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bioconductor-designmatrices"
+      ],
+      "semanticAssessment": "The crossed allocation gains an independently estimable term under the named additive model; neither randomization nor causal validity follows.",
+      "sourceScope": "The crossed allocation gains an independently estimable term under the named additive model; neither randomization nor causal validity follows.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T06",
+      "family": "batch-effects",
+      "requirement": "Control genes, shared references, bridge samples and repeated preparations test different assumptions and do not provide an unconditional correction guarantee.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso"
+      ],
+      "semanticAssessment": "RUV control genes require stability assumptions. Shared references and bridge preparations test defined contrasts for their material, without guaranteeing every sample or gene.",
+      "sourceScope": "RUV control genes require stability assumptions. Shared references and bridge preparations test defined contrasts for their material, without guaranteeing every sample or gene.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T07",
+      "family": "batch-effects",
+      "requirement": "Cell mixture or treatment changes can be genuine biology; automatically erasing them as technical batch can remove the signal of interest.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso"
+      ],
+      "semanticAssessment": "Treating genuine mixture or response variation as technical can remove the signal of interest. This is an interpretation rule about model assumptions.",
+      "sourceScope": "Treating genuine mixture or response variation as technical can remove the signal of interest. This is an interpretation rule about model assumptions.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T08",
+      "family": "batch-effects",
+      "requirement": "A technical preparation of one extract is not another biological tumor or patient; the depicted baseline/follow-up allocations do not assert paired patients.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "squair"
+      ],
+      "semanticAssessment": "Technical repeat and biological specimen are explicitly distinguished. The allocations do not claim paired patients.",
+      "sourceScope": "Technical repeat and biological specimen are explicitly distinguished. The allocations do not claim paired patients.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T09",
+      "family": "batch-effects",
+      "requirement": "The assay card retains technical metadata, model/units, inputs and controls. Computation uses existing data, while new preparations can consume material; there is no universal acceptable-batch threshold.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso",
+        "conesa"
+      ],
+      "semanticAssessment": "The assay card distinguishes reanalysis from new preparations and states metadata, controls, failure modes and purpose-specific acceptance.",
+      "sourceScope": "The assay card distinguishes reanalysis from new preparations and states metadata, controls, failure modes and purpose-specific acceptance.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T10",
+      "family": "batch-effects",
+      "requirement": "In the fictional baseline-in-lab-A/follow-up-in-lab-B stress-score exercise, a tidy corrected plot does not identify a treatment effect.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [],
+      "semanticAssessment": "The generalized fictional baseline/laboratory example preserves the stress-score exercise inference: a tidy corrected plot cannot establish a treatment effect.",
+      "sourceScope": "The generalized fictional baseline/laboratory example preserves the stress-score exercise inference: a tidy corrected plot cannot establish a treatment effect.",
+      "evidenceType": "premise-backed-fictional-or-mathematical",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-T11",
+      "family": "batch-effects",
+      "requirement": "The stipulated matrices [[6,0],[0,6]] and [[3,3],[3,3]] each contain twelve specimens. Under an intercept-plus-group-plus-laboratory additive model their ranks are two and three; this is design information, not proof that other confounding vanished.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "a808d9ec84d0623ba449b66ea7c7bfc51943f6d77c9a27a0215e60ae148674b9",
+          "gitBlob": "89fd5ea3a5c5d4b6b5c419477847d8380dad69a0",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/batch-effects.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "685c08ddcb4e4184fe795924b5c89ae0e4735261733edd4fd04698d7f5e843bd",
+          "gitBlob": "5c3db3c0e713ffdd23ba7de3c9b2c9bd80c11118",
+          "eligibleContextSHA256": "2dd1cdd23fce803042df082557fbdc0860138f26dba6c38c5f11ac4c3117d762",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [],
+      "semanticAssessment": "Independent exact-rational elimination gives ranks two and three for two twelve-specimen allocations. Native text and geometry match across both themes.",
+      "sourceScope": "Independent exact-rational elimination gives ranks two and three for two twelve-specimen allocations. Native text and geometry match across both themes.",
+      "evidenceType": "premise-backed-fictional-or-mathematical",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S01",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Whole-cell and nuclear preparations sample different compartments; nuclear material can include unfinished intronic transcripts. The matched mouse-cortex comparison is not a universal tumor-method ranking.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bakken"
+      ],
+      "semanticAssessment": "Fresh targeted mouse-cortex text supports compartment and intronic distinctions. It supplies no universal cancer-method ranking.",
+      "sourceScope": "Fresh targeted mouse-cortex text supports compartment and intronic distinctions. It supplies no universal cancer-method ranking.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S02",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "In the stipulated droplet workflow, a compartment barcode does not certify one pure intact cell. A cell, nucleus or two-cell doublet can contribute material.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "bakken"
+      ],
+      "semanticAssessment": "The original droplet study supports partition barcodes and multiple-cell contributions. The nucleus compartment is a labelled toy extension, not a tested GemCode performance claim.",
+      "sourceScope": "The original droplet study supports partition barcodes and multiple-cell contributions. The nucleus compartment is a labelled toy extension, not a tested GemCode performance claim.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S03",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "A UMI helps distinguish captured molecules from amplified copies; it is different from the compartment barcode and does not count uncaptured original molecules.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "smith"
+      ],
+      "semanticAssessment": "Original barcode/UMI/gene grouping and tag-error limits are read in primary methods/discussion. Uncaptured RNA remains outside that count.",
+      "sourceScope": "Original barcode/UMI/gene grouping and tag-error limits are read in primary methods/discussion. Uncaptured RNA remains outside that count.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S04",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "The output is genes by barcode with chemistry-specific UMI, read or probe counting units, not a universal original-molecule count per cell.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "partial",
+      "sourceIds": [
+        "zheng2017",
+        "cellranger72-frp"
+      ],
+      "semanticAssessment": "Gene-by-barcode and UMI units are verified from Zheng methods; the fixed-probe chemistry alternative remains limited by the raw vendor-page access failure.",
+      "sourceScope": "Gene-by-barcode and UMI units are verified from Zheng methods; the fixed-probe chemistry alternative remains limited by the raw vendor-page access failure.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 0,
+      "remaining": [
+        "UMI/gene-by-barcode output is verified, but the fixed-probe alternative remains unverified against a newly retrieved raw 10x page."
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S05",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Dissociation, fragility and selective recovery can alter the observed population; an unrecovered cell or state is not proof of absence from the starting tissue.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bakken",
+        "slyper"
+      ],
+      "semanticAssessment": "Slyper directly reports different recovered proportions in matched protocols. Fragility and loss remain workflow cautions, without a population-specific recovery rate or method ranking.",
+      "sourceScope": "Slyper directly reports different recovered proportions in matched protocols. Fragility and loss remain workflow cautions, without a population-specific recovery rate or method ranking.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S06",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Suitable frozen material may support nuclei recovery; some fixed-material workflows count ligated probes rather than original transcript sequence and cannot reveal every variant or splice product.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "partial",
+      "sourceIds": [
+        "bakken",
+        "cellranger72-frp"
+      ],
+      "semanticAssessment": "Frozen nuclei preparation is verified in Bakken methods. The existing probe-ligation statement is present, but direct raw 10x retrieval is rate-limited and is not newly certified.",
+      "sourceScope": "Frozen nuclei preparation is verified in Bakken methods. The existing probe-ligation statement is present, but direct raw 10x retrieval is rate-limited and is not newly certified.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 0,
+      "remaining": [
+        "Frozen nuclei preparation is verified; direct raw 10x fixed-probe chemistry retrieval returned HTTP 429 twice. Existing text is retained without new chemistry certification."
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S07",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Sparse capture can produce zero observations without biological absence; not every zero is a dropout.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "soupx"
+      ],
+      "semanticAssessment": "A zero can reflect missed capture, while the conditional wording avoids calling every zero dropout.",
+      "sourceScope": "A zero can reflect missed capture, while the conditional wording avoids calling every zero dropout.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S08",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Ambient RNA and multiple-cell or nucleus contributions can distort identity; filtering and correction do not certify every barcode.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "soupx"
+      ],
+      "semanticAssessment": "Primary droplet and SoupX text supports multiplets, ambient contamination and correction limits; no corrected barcode is certified pure.",
+      "sourceScope": "Primary droplet and SoupX text supports multiplets, ambient contamination and correction limits; no corrected barcode is certified pure.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S09",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "An analysis cluster does not by itself establish malignancy, lineage, a genetic clone or biological function; cell identity requires supporting evidence.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "squair"
+      ],
+      "semanticAssessment": "Clustering and assignment are analysis outputs. Identity and function require coherent supporting evidence rather than a label alone.",
+      "sourceScope": "Clustering and assignment are analysis outputs. Identity and function require coherent supporting evidence rather than a label alone.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S10",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Cells are nested within biological specimens. In the fictional 6,000-nucleus/two-technical-library example there is one biological sample; replicate-level aggregation is one possible comparison strategy, not a new patient count.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "squair"
+      ],
+      "semanticAssessment": "The technical-library and biological-specimen distinction preserves the 6000-profile exercise inference; aggregation remains a possible analysis strategy, not extra patients.",
+      "sourceScope": "The technical-library and biological-specimen distinction preserves the 6000-profile exercise inference; aggregation remains a possible analysis strategy, not extra patients.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S11",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "The assay card retains specimen, compartment, preparation, allocation cost, software/version and chemistry-specific calling/QC rules, including ambient RNA, doublets and quality failures; there is no universal gene-count cutoff.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "soupx",
+        "squair"
+      ],
+      "semanticAssessment": "The current assay card preserves chemistry/version, preparation, recovery and quality rules without a universal gene-count cutoff.",
+      "sourceScope": "The current assay card preserves chemistry/version, preparation, recovery and quality rules without a universal gene-count cutoff.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-S12",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Captured profiles do not supply a complete census, full transcript structure or direct protein function; platform naming does not establish clinical validity for an intended use.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "17e8ac1adcaf01389f045f5396cc65b9bcf2fd722a5b98d65ebd9e1c219aab38",
+          "gitBlob": "81a0db1fad37aa584788deaffb1f1f819873fe6d",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/single-cell-and-single-nucleus-rna-seq.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "142dcce9a67ebf97382d0b4c427e9249fad9ebc0172303366d530952ff031b31",
+          "gitBlob": "a4499cc985f53111b021fc904f574576fe7e53df",
+          "eligibleContextSHA256": "efa73ebb44514693d42e41707a0472aeb474f7d3fd04756e8357356ac8904e12",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bakken",
+        "zheng2017",
+        "vaquero"
+      ],
+      "semanticAssessment": "Sparse and selected profiles are not a full census or full transcript/protein measurement. Platform naming is distinct from clinical intended-use validation.",
+      "sourceScope": "Sparse and selected profiles are not a full census or full transcript/protein measurement. Platform naming is distinct from clinical intended-use validation.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N01",
+      "family": "counts-normalization",
+      "requirement": "Start with the actual counting unit: reads, fragments, estimated assignments or compatible UMI-grouped observations are not automatically original molecule counts.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "salmon-formats",
+        "zheng2017"
+      ],
+      "semanticAssessment": "Raw assignment estimates and compatible tagged groups have different meanings; neither automatically enumerates all original RNA.",
+      "sourceScope": "Raw assignment estimates and compatible tagged groups have different meanings; neither automatically enumerates all original RNA.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N02",
+      "family": "counts-normalization",
+      "requirement": "UMIs are introduced before amplification; compatible mapping/tag grouping can reduce duplicates, with errors and collisions requiring handling. UMI counting is not normalization and does not recover uncaptured molecules.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "smith"
+      ],
+      "semanticAssessment": "Tags are incorporated before amplification in the read original workflow; grouping, sequencing errors and finite tag space constrain counting.",
+      "sourceScope": "Tags are incorporated before amplification in the read original workflow; grouping, sequencing errors and finite tag space constrain counting.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N03",
+      "family": "counts-normalization",
+      "requirement": "Simple CPM uses feature count divided by the stated total times one million; adjusted-library workflows can use another denominator, which must be reported.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "edger-guide"
+      ],
+      "semanticAssessment": "The simple CPM denominator is distinguished from edgeR effective library size as defined on the read guide pages.",
+      "sourceScope": "The simple CPM denominator is distinguished from edgeR effective library size as defined on the read guide pages.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N04",
+      "family": "counts-normalization",
+      "requirement": "TPM length-adjusts assigned observations and rescales rates over the included transcripts. Effective-length and bias models are method-specific; the result is a relative scale.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "wagner",
+        "salmon-formats"
+      ],
+      "semanticAssessment": "TPM is a length-adjusted relative scale; checked Salmon effective length includes modelled fragment/bias terms. This is not a universal expression model.",
+      "sourceScope": "TPM is a length-adjusted relative scale; checked Salmon effective length includes modelled fragment/bias terms. This is not a universal expression model.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N05",
+      "family": "counts-normalization",
+      "requirement": "Full-length length adjustment is not a universal drop-in rule for three-prime tag or UMI workflows.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "smith"
+      ],
+      "semanticAssessment": "The original three-prime tagged counting workflow supplies a different sampling/counting mechanism. Applying full-length adjustment without checking that mechanism is an unsupported substitution.",
+      "sourceScope": "The original three-prime tagged counting workflow supplies a different sampling/counting mechanism. Applying full-length adjustment without checking that mechanism is an unsupported substitution.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N06",
+      "family": "counts-normalization",
+      "requirement": "A few abundant transcripts can change library composition and make other relative counts fall; a fixed scaled total does not establish stable biology.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "robinson",
+        "edger-guide"
+      ],
+      "semanticAssessment": "Primary TMM and the read guide explain competition for library share. Fixed normalized totals alone do not establish unchanged absolute biology.",
+      "sourceScope": "Primary TMM and the read guide explain competition for library share. Fixed normalized totals alone do not establish unchanged absolute biology.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N07",
+      "family": "counts-normalization",
+      "requirement": "TMM and DESeq2 size factors use selected ratios and assumptions beyond a simple library-total division. Broad shifts can challenge their assumptions.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "robinson",
+        "love",
+        "edger-guide"
+      ],
+      "semanticAssessment": "TMM and DESeq2 use stated scaling assumptions beyond total division. The TMM majority-stable assumption is read directly; no universal guarantee is added.",
+      "sourceScope": "TMM and DESeq2 use stated scaling assumptions beyond total division. The TMM majority-stable assumption is read directly; no universal guarantee is added.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N08",
+      "family": "counts-normalization",
+      "requirement": "Normalization does not automatically repair batch effects, generate missing observations, validate a statistical difference or establish a causal comparison.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "risso",
+        "bioconductor-designmatrices"
+      ],
+      "semanticAssessment": "The qualified field avoids saying all normalization fails to address batch; a design, model and missing-contrast checks are still necessary.",
+      "sourceScope": "The qualified field avoids saying all normalization fails to address batch; a design, model and missing-contrast checks are still necessary.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N09",
+      "family": "counts-normalization",
+      "requirement": "Normalized RNA can reflect expression, composition and cell mixtures; CPM/TPM do not directly measure proteins, all original RNA per cell or clinical benefit.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "conesa"
+      ],
+      "semanticAssessment": "These are scope limits of relative RNA measurements, not a claim that RNA has no biological association with proteins or outcomes.",
+      "sourceScope": "These are scope limits of relative RNA measurements, not a claim that RNA has no biological association with proteins or outcomes.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N10",
+      "family": "counts-normalization",
+      "requirement": "Computational normalization of an existing table uses no new tissue, but tags required for UMI counting must have been introduced during library preparation. Features, annotation and preparation history remain relevant.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "zheng2017",
+        "conesa"
+      ],
+      "semanticAssessment": "Reusing a table requires no new tissue, while molecular tags must be introduced during preparation. Metadata and annotation remain necessary.",
+      "sourceScope": "Reusing a table requires no new tissue, while molecular tags must be introduced during preparation. Metadata and annotation remain necessary.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N11",
+      "family": "counts-normalization",
+      "requirement": "The assay card retains units, denominator, length rule, controls, biological replication, filters and comparison purpose; method-specific routine analysis alone is not clinical validation.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "edger-guide",
+        "conesa"
+      ],
+      "semanticAssessment": "The field retains the assay/comparison card and explicitly separates routine computation from clinical validation.",
+      "sourceScope": "The field retains the assay/comparison card and explicitly separates routine computation from clinical validation.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-N12",
+      "family": "counts-normalization",
+      "requirement": "For the invented full-length two-transcript library, counts 100/100 and lengths 1/2 kb yield rates 100/50, total count 200 and rate total 150. Simple CPM is 500,000 each; TPM is exactly 2,000,000/3 and 1,000,000/3, displayed approximately 666,667/333,333. Uniform sampling, no other biases and only two included transcripts are stipulated.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "29d9f8322669c9090dcc90377b1db066cf46362598031c74d12f7ed55ea12633",
+          "gitBlob": "8be066814486790e26d57e4c2a069f5902d1e876",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/counts-normalization.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a8586c02d877a009c11dfb6387662d51c89a23806c8fca92de7cbd0624cf2994",
+          "gitBlob": "d4dfca8becd803dab112302d55a8da6625fbf086",
+          "eligibleContextSHA256": "4bbd61ddd0dd2417458430f5b6e1a7dfd9c3503ed788605644c667ffa8aac56b",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [],
+      "semanticAssessment": "Independent exact fractions verify 200/150 denominators, CPM 500000 each and TPM 2000000/3 and 1000000/3. Both native themes use exact corresponding bar widths, with rounded labels.",
+      "sourceScope": "Independent exact fractions verify 200/150 denominators, CPM 500000 each and TPM 2000000/3 and 1000000/3. Both native themes use exact corresponding bar widths, with rounded labels.",
+      "evidenceType": "premise-backed-fictional-or-mathematical",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D01",
+      "family": "immune-deconvolution",
+      "requirement": "A model fits cell-type reference profiles to mixed RNA; the inferred contribution is not a physical separation, direct cell census or universally identifiable composition.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "cibersort"
+      ],
+      "semanticAssessment": "The model fit and its reference/identifiability limitations are explicit; no physical separation is performed.",
+      "sourceScope": "The model fit and its reference/identifiability limitations are explicit; no physical separation is performed.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D02",
+      "family": "immune-deconvolution",
+      "requirement": "RNA contribution and cell fraction are distinct quantities whose numerical values may coincide under special assumptions. Unequal RNA per cell requires conversion assumptions; EPIC RNA-content adjustment and an uncharacterized component remain method-scoped.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic"
+      ],
+      "semanticAssessment": "Read EPIC equations distinguish RNA contribution from cell fractions and use RNA-content renormalization. Equal-contribution numerical equality is a stated algebraic condition, not an empirical tissue assumption.",
+      "sourceScope": "Read EPIC equations distinguish RNA contribution from cell fractions and use RNA-content renormalization. Equal-contribution numerical equality is a stated algebraic condition, not an empirical tissue assumption.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D03",
+      "family": "immune-deconvolution",
+      "requirement": "Missing populations, correlated signatures and altered cell states can make several mixtures fit. A good fit does not prove the reference palette is complete or every cell-type estimate is valid.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "cibersort"
+      ],
+      "semanticAssessment": "Missing references, similar signatures and state changes limit identifiability. A global fit does not certify every population or a complete reference palette.",
+      "sourceScope": "Missing references, similar signatures and state changes limit identifiability. A global fit does not certify every population or a complete reference palette.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D04",
+      "family": "immune-deconvolution",
+      "requirement": "Relative immune fractions use the represented immune populations as their denominator and can leave total immune content unknown.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "cibersort-protocol"
+      ],
+      "semanticAssessment": "Read protocol sections 3.2.4 and 5.2 define default relative fractions over represented populations, leaving total immune content outside that denominator.",
+      "sourceScope": "Read protocol sections 3.2.4 and 5.2 define default relative fractions over represented populations, leaving total immune content outside that denominator.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D05",
+      "family": "immune-deconvolution",
+      "requirement": "Absolute modes have method-specific definitions: the described CIBERSORT expression abundance score is not a direct number of cells per square millimeter, while other methods estimate whole-sample fractions.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "cibersort-protocol",
+        "epic"
+      ],
+      "semanticAssessment": "The CIBERSORT absolute expression score is distinguished from EPIC cell-fraction estimation and from cells per area.",
+      "sourceScope": "The CIBERSORT absolute expression score is distinguished from EPIC cell-fraction estimation and from cells per area.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D06",
+      "family": "immune-deconvolution",
+      "requirement": "CIBERSORTx cell-type-specific expression and state estimates are computational reconstructions, not individual-cell measurements, a genetic clone, location or observed suppressive function.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "cibersortx"
+      ],
+      "semanticAssessment": "The complete 2019 abstract supports inferred cell-type expression without isolation; the function/clone/location limits are measurement-scope inferences, not evaluated clinical endpoints.",
+      "sourceScope": "The complete 2019 abstract supports inferred cell-type expression without isolation; the function/clone/location limits are measurement-scope inferences, not evaluated clinical endpoints.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D07",
+      "family": "immune-deconvolution",
+      "requirement": "More immune RNA does not directly show access to cancer cells, recognition, killing, target engagement or treatment benefit.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "cibersortx"
+      ],
+      "semanticAssessment": "The fitted quantity does not directly observe cancer-cell contact, recognition, killing, engagement or benefit. This is an explicit scope inference.",
+      "sourceScope": "The fitted quantity does not directly observe cancer-cell contact, recognition, killing, engagement or benefit. This is an explicit scope inference.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D08",
+      "family": "immune-deconvolution",
+      "requirement": "Orthogonal flow, pathology or spatial comparisons have their own sampling and recovery biases; validation should match tissue, preparation, populations and reporting units and remains distinct from clinical intended-use validation.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "slyper"
+      ],
+      "semanticAssessment": "EPIC supplies selected flow/IHC comparison evidence and Slyper illustrates protocol-dependent proportions; comparator biases and intended-use validation remain distinct.",
+      "sourceScope": "EPIC supplies selected flow/IHC comparison evidence and Slyper illustrates protocol-dependent proportions; comparator biases and intended-use validation remain distinct.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D09",
+      "family": "immune-deconvolution",
+      "requirement": "The assay card retains profiles, references, model, units, denominator, quality/fit filters and failure modes. Computation uses no new tissue but new comparator assays may consume material; there is no universal clinical cutoff.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic",
+        "cibersort-protocol"
+      ],
+      "semanticAssessment": "The current assay card names reference, model, denominator, output and failure modes; no universal clinical cutoff or runtime is invented.",
+      "sourceScope": "The current assay card names reference, model, denominator, output and failure modes; no universal clinical cutoff or runtime is invented.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D10",
+      "family": "immune-deconvolution",
+      "requirement": "The stipulated 100-cell samples have T/immune counts 10/20 and 30/60, both 50 percent within immune cells, but whole-sample T fractions 10 and 30 percent. These supplied teaching counts are not recovered by deconvolution.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [],
+      "semanticAssessment": "Independent native glyph and rational checks verify supplied T/immune and all-cell denominators. The counts are explicitly assumptions, not deconvolution output.",
+      "sourceScope": "Independent native glyph and rational checks verify supplied T/immune and all-cell denominators. The counts are explicitly assumptions, not deconvolution output.",
+      "evidenceType": "premise-backed-fictional-or-mathematical",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-D11",
+      "family": "immune-deconvolution",
+      "requirement": "The measured RNA profile, model-based reconstruction and supplied cell-count example occupy separate evidence lanes; the paint-mixture analogy does not turn reference/model inference into observed cellular truth.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "72ab5b71154898d87a765e224a664e53d9d1b014e6e82a5b1f0aad3df0287e54",
+          "gitBlob": "59b2c36d72293032c87eb44032ae6d536b1da5b8",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/immune-deconvolution.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "8fe6d5931ed0a5ce0b0704d528538038111c736e6606aa149793481f200fb839",
+          "gitBlob": "59f5da4a3fee21e2ab387ee26ed3261830aa0829",
+          "eligibleContextSHA256": "a13c5f5166b2ef5b2cf81e63b2dd3444f3ec3a57add6491882fc7dc4a3d2b654",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "epic"
+      ],
+      "semanticAssessment": "Measured mixture, fitted model and supplied-count example are labelled different evidence types; the paint analogy is not observed cellular truth.",
+      "sourceScope": "Measured mixture, fitted model and supplied-count example are labelled different evidence types; the paint analogy is not observed cellular truth.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F01",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Normal alternative splice joins and RNA fusions answer RNA-structure questions. RNA assigned to different genes does not by itself prove a DNA rearrangement; readthrough observations remain scoped to the cited tissues.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "nacu",
+        "nhgri-rna"
+      ],
+      "semanticAssessment": "Primary readthrough discussion and official RNA processing text support normal joins and possible RNA mechanisms, without assigning every fusion a DNA origin.",
+      "sourceScope": "Primary readthrough discussion and official RNA processing text support normal joins and possible RNA mechanisms, without assigning every fusion a DNA origin.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F02",
+      "family": "fusion-and-splice-detection",
+      "requirement": "One split read spans a join, whereas a spanning pair observes separate ends around an unsequenced intervening region. Those two ends do not read the insert between them.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "haas"
+      ],
+      "semanticAssessment": "Haas distinguishes junction-crossing reads from discordant ends that do not read the intervening insert. The native geometry matches this local observation.",
+      "sourceScope": "Haas distinguishes junction-crossing reads from discordant ends that do not read the intervening insert. The native geometry matches this local observation.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F03",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Assess independent molecular support and artifacts: repeated PCR copies or rerunning software do not add independent molecules. The fictional three identical amplified reads do not establish a confirmed DNA change or effective target.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "haas",
+        "zheng2017"
+      ],
+      "semanticAssessment": "Read duplicate filtering and UMI grouping support independent-molecule checks. The three-copy example is fictional and supplies no DNA or treatment confirmation.",
+      "sourceScope": "Read duplicate filtering and UMI grouping support independent-molecule checks. The three-copy example is fictional and supplies no DNA or treatment confirmation.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F04",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Alignment quality, similar sequences, annotation/reference version, read length, expression and filters influence fusion calling; benchmark-optimal thresholds are not universal clinical cutoffs.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "haas"
+      ],
+      "semanticAssessment": "The benchmark and specific STAR-Fusion filters are method-scoped. No benchmark threshold becomes a universal clinical criterion.",
+      "sourceScope": "The benchmark and specific STAR-Fusion filters are method-scoped. No benchmark threshold becomes a universal clinical criterion.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F05",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Local splice-junction support and PSI depend on a defined event and eligible denominator; a local exon 2-3 join does not reconstruct the complete transcript or resolve outer exons.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "vaquero"
+      ],
+      "semanticAssessment": "Read local-splicing passages define local inclusion estimates. Event and denominator must be specified; a local join leaves outer exons unresolved.",
+      "sourceScope": "Read local-splicing passages define local inclusion estimates. Event and denominator must be specified; a local join leaves outer exons unresolved.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F06",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Unfinished intronic nuclear RNA is not automatically pathological intron retention.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "bakken"
+      ],
+      "semanticAssessment": "Read nuclear/intronic comparisons do not establish pathological intron retention from intronic observations alone.",
+      "sourceScope": "Read nuclear/intronic comparisons do not establish pathological intron retention from intronic observations alone.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F07",
+      "family": "fusion-and-splice-detection",
+      "requirement": "The assay must cover the candidate join: whole-transcriptome, short-end and targeted approaches have different reach and cannot answer every event question.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "conesa",
+        "anchored-zheng"
+      ],
+      "semanticAssessment": "The library and target design limit recoverable joins; sequencing approach names do not imply coverage of every event.",
+      "sourceScope": "The library and target design limit recoverable joins; sequencing approach names do not imply coverage of every event.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F08",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Anchored multiplex PCR searches from a targeted end toward a potentially unknown partner, but target selection and validated input limit it. Original FFPE testing does not validate every later panel or event.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "anchored-zheng"
+      ],
+      "semanticAssessment": "The resolved complete original abstract supports low-input FFPE validation and unknown partners within the selected targeted method. It does not validate later panels.",
+      "sourceScope": "The resolved complete original abstract supports low-input FFPE validation and unknown partners within the selected targeted method. It does not validate later panels.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F09",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Fixed-RNA ligated-probe counts are not unrestricted original-transcript sequence evidence for arbitrary fusion or splice calls.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "partial",
+      "sourceIds": [
+        "cellranger72-frp"
+      ],
+      "semanticAssessment": "The existing documented-probe limitation is field-present; repeated direct raw vendor retrieval is rate-limited, so the detailed chemistry is not newly credited.",
+      "sourceScope": "The existing documented-probe limitation is field-present; repeated direct raw vendor retrieval is rate-limited, so the detailed chemistry is not newly credited.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 0,
+      "remaining": [
+        "The current fixed-probe limitation is present, but direct raw official 10x chemistry retrieval remains HTTP 429; no new source-completion credit."
+      ],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F10",
+      "family": "fusion-and-splice-detection",
+      "requirement": "RNA evidence can support expression of a candidate DNA change but mixed samples still need cell attribution; intact protein, function, dependence and clinical benefit need their own evidence.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "nacu",
+        "conesa"
+      ],
+      "semanticAssessment": "Current fields separate RNA support, cell/allele attribution, protein consequence and benefit. Retained named clinical cohort claims in these records are outside this phase.",
+      "sourceScope": "Current fields separate RNA support, cell/allele attribution, protein consequence and benefit. Retained named clinical cohort claims in these records are outside this phase.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F11",
+      "family": "fusion-and-splice-detection",
+      "requirement": "A negative join result is informative only within the covered event class, sensitivity and quality context, not as a universal proof of biological absence.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "haas",
+        "anchored-zheng"
+      ],
+      "semanticAssessment": "Negative evidence is limited by exact event coverage, sensitivity and quality; no universal absence follows.",
+      "sourceScope": "Negative evidence is limited by exact event coverage, sensitivity and quality; no universal absence follows.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-F12",
+      "family": "fusion-and-splice-detection",
+      "requirement": "The assay card retains specimen and finite input, gene partners, reference/transcript version, coordinates, counts or deduplicated molecules, splice denominator, thresholds, artifacts and exact validation/confirmation policy. Caller naming is not clinical validation.",
+      "applicability": "both-pins",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f5bfbbd98e3cbc64a515239c2715aca1886c87e82d218fc301c9f58bdb0e68c4",
+          "gitBlob": "080d382e832e4ce9e3c18be92ef6fb23bca3c270",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        },
+        {
+          "path": "wiki/education/concepts/measurement/transcriptomics/fusion-and-splice-detection.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "6b7a12270141e289faff7052013388ff58bda9dc754a2cfcaaff3d63199ca3e0",
+          "gitBlob": "c5b35a23e8112f335a1bce2d2601fdeda2c55f8c",
+          "eligibleContextSHA256": "af48f7334bfe4a19ab20be02d37987266fa22e8f605018c16c9f116a62fcfd99",
+          "eligibleContextFullyRead": true
+        }
+      ],
+      "status": "covered-draft",
+      "sourceIds": [
+        "haas",
+        "anchored-zheng"
+      ],
+      "semanticAssessment": "The assay card retains finite input, partners, references, coordinates, independent support, event denominator, artifacts and exact validation/confirmation policy.",
+      "sourceScope": "The assay card retains finite input, partners, references, coordinates, independent support, event denominator, artifacts and exact validation/confirmation policy.",
+      "evidenceType": "stated-primary-depth-with-measurement-scope-inferences",
+      "artifactConstructionBoundary": "Native colors, layouts, selected samples and stipulated numbers remain authored teaching conventions, not patient measurements or validated clinical rules.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "remaining": [],
+      "independentAcceptance": false
+    }
+  ],
+  "constructionAndAdministrativeBoundaries": [
+    {
+      "id": "P52-A01",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "The exact 100-cell grids, pooling arrows, 20/40 RNA glyph placement and one-RNA lymphocyte symbols are authored construction. They illustrate B11 rather than add empirical measurements.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-A02",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "Tube locations, hatching and matrix positions are authored geometry for the supplied T11 allocations; no unobserved cells, paired patients or actual samples are created.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-A03",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "Cell/nucleus silhouettes, barcode letters A/B/C, doublet and selective-loss glyphs are invented conventions rather than a measured recovery distribution or universal chemistry.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-A04",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "Both panels use linear 0-to-1,000,000 axes over the same 408-unit span. Exact widths 204/204 versus 272/136 and endpoints 348/348 versus 416/280 illustrate N12 without rounding data geometry. The public literal reproduction code is an inspected artifact, not an instruction to execute it.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-A05",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "The two supplied cell grids, equal subset bars, 10/30-percent whole-sample bars and dashed measurement-to-model arrow are authored geometry; the model does not produce those known counts.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-A06",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "requirement": "Hypothetical gene/exon blocks, red join leaders, continuous split-read segments, dashed unsequenced insert and unknown outer exons preserve the evidence distinction without biological length or coordinate claims.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z01",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "All nineteen assigned bodies were read from beginning to end in forty-four acknowledged spans, 135,270 unique bytes, with both thirty-eight version entries retained and exact later-body identity reuse.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z02",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "All six eligible later public parents and complete original-to-later comparisons were read after frontmatter, generated navigation and personal-case gates. Both inventories remain separate; the eligible bodies are byte-identical.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z03",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Twelve whole native Sharp/vips variants, twelve selected complete image-index rows and 130 actual production section signatures establish bounded context/identity, not scientific or clinical acceptance.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z04",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Historic PASS/REVISE, prospective/adopted states and metadata-only or focused-successor reviews retain their original scope. Actor, original creator, integrator and reviewer roles are not interchangeable.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z05",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Private paths, source bodies, generators, capture promises and historical source commits quoted in the bodies are not followed. The embedded public renderer was read but not executed or treated as authority.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z06",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Alt/caption/handling duplicates do not earn duplicate science credit. Historical owner preimages, current pin hashes, same-size different-hash bodies and in-set custody references require explicit stage comparisons.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z07",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Inherited source-depth claims and download receipts do not establish new primary reading; identifiers must be resolved before use. No fresh primary source lookup or current canonical capture occurred before this seal.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z08",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Toy values, model-rank arithmetic and graphic geometry are separate from empirical performance. The RNA-share inequality symbol needs the distinct-quantity interpretation, not an unconditional claim that numerical fractions never coincide.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z09",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Native views do not certify browser, mobile, hydration, measured contrast, keyboard focus, expert or accessibility acceptance. Historical BODY-focus/opener-return failures remain open and unretired.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    },
+    {
+      "id": "P52-Z10",
+      "unitKind": "boundary-no-scientific-coverage",
+      "requirement": "Existing artwork and ordinary grades, older packets and main/live boundaries remain protected. No independent, expert, owner, learner, language, main or live credit is implied.",
+      "scientificCredit": 0,
+      "independentAcceptance": false
+    }
+  ],
+  "allSeventyFieldRepresented": true,
+  "sourceSupportedOrPremiseBacked": 67,
+  "partialSourceRows": 3,
+  "noNewOrdinaryLessonGrade": true
+}

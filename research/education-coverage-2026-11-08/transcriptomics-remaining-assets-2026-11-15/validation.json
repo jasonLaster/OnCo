@@ -1,0 +1,1186 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "73bcc16f3ba90eba12ca03614daa21acd9234e31",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.33
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.08
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.02
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 314.69
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "filesPassed": 293,
+    "testsPassed": 3101,
+    "testsSkipped": 2
+  },
+  "exactReaderAnchors": {
+    "allPass": true,
+    "registeredRootFieldReferences": 130,
+    "peerReferences": 0
+  },
+  "readerConsumerVerification": {
+    "actualRegisteredRootReadersRendered": 9,
+    "actualUnmergedPeerReadersRendered": 0,
+    "currentFieldAnchorsChecked": 130,
+    "allCurrentFieldAnchorsPresent": true,
+    "checks": [
+      {
+        "requirementId": "P52-B01",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "91106e2670aae500317f22cc1fca04e9931ec81b408b2cabfd5db762179847b6",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B01",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "07538c040e2726ac3de7b9dd800c366d1c60c71fda82ebd38be8a844dd782ecb",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B02",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "e5c40e65fc978674533966d481fb5771b836352ecce85950196caecc6513384a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B02",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "b64e5264822cd9e8606854eec4e7cde952d72159fe73cc5ca7f9a62585ce3856",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B02",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "principle",
+        "passageSHA256": "b07e4a93c0060155c0fba5e105bead8d274a932b6d4e49499fb37e54f28a541b",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B03",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "1aed5b6a566adc929b81d3daecd3fe7e44c843d0a22704ed0846cd1975d51e00",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B03",
+        "recordId": "star-salmon",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "e362273fdd7c9cd0320de0d7a70a33c504beb3c620c6d7168d73647672a18a8b",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B04",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "59a609643981013a82ed2fdbb790227b2a9271bcf60033f12d534da56f8b7ee7",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B04",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "ee8d48696660e5135efb54c0d15ff302a93257646141a37b24d1ed2447e507f4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B05",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "07538c040e2726ac3de7b9dd800c366d1c60c71fda82ebd38be8a844dd782ecb",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B05",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fafc652b733e7449f4bc993682ad6812c5e2c023518e62d63e69e5e89df1275c",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B06",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c3d580883c06565d9860f18bcced824815773a2a16103e8b2f42d68962842b34",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B06",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B06",
+        "recordId": "rna-splicing",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "25883d9590e1bd23db0fba88891e62d4b3a87561cbab5ecf258fbd123b565a17",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B07",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "12b3a9e3955338273c21d5f6c3c5a64f94e043135482c47dadc87769af6d5955",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B07",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "edd227e4da4e6fa4fe66f1ee46e0923b984d36aac5055d700fdad04a00123054",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B08",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "07538c040e2726ac3de7b9dd800c366d1c60c71fda82ebd38be8a844dd782ecb",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B08",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "cd6ed98e79b3640fcdaba2e91796e3f5ab61ae082782aed86a682418062bb395",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B09",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "12b3a9e3955338273c21d5f6c3c5a64f94e043135482c47dadc87769af6d5955",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B09",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "7f56f2bb981c1c8c294d38ae876f1780b29a3394cbf3155a436eda50e3d9294a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B10",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "a5269047f12ce19b95d29de5c7e0bed68117c4db263a07c6daaa188c3aefa798",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B10",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "b64e5264822cd9e8606854eec4e7cde952d72159fe73cc5ca7f9a62585ce3856",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B11",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "7580b99ba9941698fc3da54ebae283a5ab80f4cef2f4c19783d68a6d4cbb3a17",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B11",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "1e7e9116d44ca9b373aaca15e3fbdbfc3c60150b033df5c2487a8eb445b88729",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B12",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c00fd6d75459ace1aeb67a0b9c6eedd36c8608b3bffa5ef353af982934f8affb",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-B12",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "2351702d85bf5a6a2cd5cb0f3525871ff55ef298658fbff2b4e4cafb33f515f8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T01",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "d44d289a86629e25572f1d6d7d56e0f1468355ec6eeb268b2e5a159766ec8ca0",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T01",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "b882ade8aee92c4db68b22141809ace8fba61806047e0de3f2c7211ab7758f20",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T01",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "11c5b0626c679ee601e61f59054b0edc38a7ca80f7e60b55da6d7858664d95e8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T02",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "d44d289a86629e25572f1d6d7d56e0f1468355ec6eeb268b2e5a159766ec8ca0",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T02",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "ff8fb8678d9aa9dc91c5825d43df4b970591458a221506e856918959d22fafa3",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T03",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "11c5b0626c679ee601e61f59054b0edc38a7ca80f7e60b55da6d7858664d95e8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T03",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "491ee64bafa43f27298c962576772e6ab238052de9e63f77d066f13f54368136",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T04",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c7a59064167edc45b92b63c3c2408748b1edcebb8390d3c629f5f9d9fb4102c4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T04",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "90eaddbeb80f4ffdb4db67757ad3056143f04383f809a39a8e413279d49ba014",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T05",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "35bebf2867d26d53a9cacebf164d0c00eede6689a22f622fb3c3452e82544ce4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T06",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "4e867b6d1d3f99415805ec089c54b081b58396d6fbd819ea1f89a793a3d3b4f1",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T07",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "ff8fb8678d9aa9dc91c5825d43df4b970591458a221506e856918959d22fafa3",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T08",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c87147ef1ced220fa1fa29484335c47e7396cc79fcdd2d857c20ef13d6de43bd",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T08",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "7f56f2bb981c1c8c294d38ae876f1780b29a3394cbf3155a436eda50e3d9294a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T09",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "4e867b6d1d3f99415805ec089c54b081b58396d6fbd819ea1f89a793a3d3b4f1",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T10",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c7a59064167edc45b92b63c3c2408748b1edcebb8390d3c629f5f9d9fb4102c4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-T11",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "35bebf2867d26d53a9cacebf164d0c00eede6689a22f622fb3c3452e82544ce4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S01",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "380ae5393927384110b369869c872507dce28acb0fff5ab7505100ff3b7342a1",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S01",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S02",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "d808d930bb73c5ac4e3921b285ac20ec07aefcf1909770093025cf9d37c51074",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S02",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "cd6ed98e79b3640fcdaba2e91796e3f5ab61ae082782aed86a682418062bb395",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S03",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S03",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "5fbdbab865bc84cd48036f7fe1e629e7dc006be7c95e8cadaa1db55c4cb727c6",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S04",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "9c77cbcc301bbb9de8f4bfb080c26179cc88ca53dafd32c4841d76ef82f9f61e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S04",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S05",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fbf612711adb4eaf2628bf4bd502ecbe9ae0882fb184f9d1b26d13a0af8dda2c",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S05",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "9c77cbcc301bbb9de8f4bfb080c26179cc88ca53dafd32c4841d76ef82f9f61e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S06",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "6bdb6122874879fb835ca8d010eef11f36928c63ee538e10e74da37f815d435e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S06",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fbf612711adb4eaf2628bf4bd502ecbe9ae0882fb184f9d1b26d13a0af8dda2c",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S07",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "cd6ed98e79b3640fcdaba2e91796e3f5ab61ae082782aed86a682418062bb395",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S07",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "6c352f46748f653a30ac80e8fc7714aed8c76520e7e168d55bca2e5c1b1c0c3a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S08",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "d808d930bb73c5ac4e3921b285ac20ec07aefcf1909770093025cf9d37c51074",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S08",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "cd6ed98e79b3640fcdaba2e91796e3f5ab61ae082782aed86a682418062bb395",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S08",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "1fc895dbc568f69821c0c3fd05c0014ea57349c6a67cdeb5db6d5c7f684fdcdc",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S09",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "2e912246913c4699fb982de37554350a92f5fae603ab612452ee8655bfe9e0b1",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S09",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "6c352f46748f653a30ac80e8fc7714aed8c76520e7e168d55bca2e5c1b1c0c3a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S10",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "7f56f2bb981c1c8c294d38ae876f1780b29a3394cbf3155a436eda50e3d9294a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S10",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "545c194c457a20f268d34751b3e21768562cd55ed494f79d16dd3733fb9c4985",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S10",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S11",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "9c77cbcc301bbb9de8f4bfb080c26179cc88ca53dafd32c4841d76ef82f9f61e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S12",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "ea5f797bbe2fcadb3a31deac50c7b7fca8be90384f0e9cb6f44796cb48cee0fd",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S12",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "9c77cbcc301bbb9de8f4bfb080c26179cc88ca53dafd32c4841d76ef82f9f61e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-S12",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N01",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "5fbdbab865bc84cd48036f7fe1e629e7dc006be7c95e8cadaa1db55c4cb727c6",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N01",
+        "recordId": "star-salmon",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "e362273fdd7c9cd0320de0d7a70a33c504beb3c620c6d7168d73647672a18a8b",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N02",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N02",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "5fbdbab865bc84cd48036f7fe1e629e7dc006be7c95e8cadaa1db55c4cb727c6",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N03",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "26e94792a9f81ffa98b1c38fae171f7f8e3639d758f770dc1743c51ff18d046b",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N04",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "ee8d48696660e5135efb54c0d15ff302a93257646141a37b24d1ed2447e507f4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N04",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "156fb371f278a5151396754e8a650c7f7edaa2309a71070e966d76b65d6646e2",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N04",
+        "recordId": "star-salmon",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "e362273fdd7c9cd0320de0d7a70a33c504beb3c620c6d7168d73647672a18a8b",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N05",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "156fb371f278a5151396754e8a650c7f7edaa2309a71070e966d76b65d6646e2",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N05",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N06",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "99ae4f22e4941d9809daa74c77e3f88d1c95f9e3d67aaf3e566617cee77d381f",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N06",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "b3cdfc06d4f3cb07ce711e418bf30ec2111135199b8e8f2a6d39aaa59a3312b4",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N07",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "99ae4f22e4941d9809daa74c77e3f88d1c95f9e3d67aaf3e566617cee77d381f",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N08",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "491ee64bafa43f27298c962576772e6ab238052de9e63f77d066f13f54368136",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N08",
+        "recordId": "batch-effects",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "90eaddbeb80f4ffdb4db67757ad3056143f04383f809a39a8e413279d49ba014",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N09",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "491ee64bafa43f27298c962576772e6ab238052de9e63f77d066f13f54368136",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N09",
+        "recordId": "bulk-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "12b3a9e3955338273c21d5f6c3c5a64f94e043135482c47dadc87769af6d5955",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N10",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c49c2666c308ddfd06baa75084a6bc557b7f424a3064b84885f6e93fc56bb79e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N10",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "5fbdbab865bc84cd48036f7fe1e629e7dc006be7c95e8cadaa1db55c4cb727c6",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N11",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c49c2666c308ddfd06baa75084a6bc557b7f424a3064b84885f6e93fc56bb79e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-N12",
+        "recordId": "tpm-fpkm-counts",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60b8bcc1e4ef96b13d13ec22ca5a603b0aae28496c6d7c2d38be3ec15ae2603f",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D01",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "2351702d85bf5a6a2cd5cb0f3525871ff55ef298658fbff2b4e4cafb33f515f8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D01",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "8a342d3ae84bfaf4bb745ed99d1b4f4357a98aa313f0b249621171fbc84f165a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D02",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fafc652b733e7449f4bc993682ad6812c5e2c023518e62d63e69e5e89df1275c",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D03",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "2351702d85bf5a6a2cd5cb0f3525871ff55ef298658fbff2b4e4cafb33f515f8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D03",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "8a342d3ae84bfaf4bb745ed99d1b4f4357a98aa313f0b249621171fbc84f165a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D04",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "670d1e39a34c891e52177f19cad635eab58fdb37c910d11b80cf568b72c8b9b9",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D05",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "670d1e39a34c891e52177f19cad635eab58fdb37c910d11b80cf568b72c8b9b9",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D06",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "3a4eff4d65e83f0a8f82a1c23b196a326aa7b0bd3c85e0e42739640bba027872",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D07",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "3a4eff4d65e83f0a8f82a1c23b196a326aa7b0bd3c85e0e42739640bba027872",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D08",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "aa796b9d70468425f1a87b0a49c569516e1f6d7f602f2e56036435c86df345b3",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D08",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "8a342d3ae84bfaf4bb745ed99d1b4f4357a98aa313f0b249621171fbc84f165a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D09",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "8a342d3ae84bfaf4bb745ed99d1b4f4357a98aa313f0b249621171fbc84f165a",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D10",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "0042219c1307e87ad000953ea598d9ba78fda95dc8557a7133d48be7c64997fd",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D11",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "2351702d85bf5a6a2cd5cb0f3525871ff55ef298658fbff2b4e4cafb33f515f8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-D11",
+        "recordId": "immune-deconvolution",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "0042219c1307e87ad000953ea598d9ba78fda95dc8557a7133d48be7c64997fd",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F01",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "15e113a7ab7888b2a78b7719c4ccaf134542e6ee7c5b2dd1f39c4b1ca04c7562",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F01",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "c1a638f73978a432b34b07f7bd255557437257a83eeb5931418ba1f430bb9ddb",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F01",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F02",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "078b5b51ad82769d55004b49eab2559caf14333692be06c50873e8cfa5c86928",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F03",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "078b5b51ad82769d55004b49eab2559caf14333692be06c50873e8cfa5c86928",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F03",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "949e0386b091436be9b2dee2524d7a803ed926da692992161e930128788c8b22",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F03",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "60231d8f3288a150ae32f296587c5465de38a2dda57a44c4043f36c428268527",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F04",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "078b5b51ad82769d55004b49eab2559caf14333692be06c50873e8cfa5c86928",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F04",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "f5375402d852e2b6bbd919821cd7b46f3dd2c31bf6cf0620dd682f5d807920d7",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F05",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F05",
+        "recordId": "rna-splicing",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "25883d9590e1bd23db0fba88891e62d4b3a87561cbab5ecf258fbd123b565a17",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F06",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "817937084f092ff0a884e530da27c453d16d6840b68980146f9d40e5b98e14cf",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F06",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "380ae5393927384110b369869c872507dce28acb0fff5ab7505100ff3b7342a1",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F07",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "86ed7d378d6e904a23c0f2573358ffc4a76e600c21d44a2c338d109d2a778564",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F07",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fa5b76a8e549afbd2f7596f638b18b8a65a7e2d14caa8e4053a04d27580d3848",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F08",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "86ed7d378d6e904a23c0f2573358ffc4a76e600c21d44a2c338d109d2a778564",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F09",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "401a558e4c6b01375a763ba00890675970eb65e383caa51fdf984482b1d01cf9",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F09",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "981fcd799d8b29839300b701669201ba5f8746cbb0360d234d904bb7c4f03eb8",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F09",
+        "recordId": "single-cell-rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "6bdb6122874879fb835ca8d010eef11f36928c63ee538e10e74da37f815d435e",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F10",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "edd227e4da4e6fa4fe66f1ee46e0923b984d36aac5055d700fdad04a00123054",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F10",
+        "recordId": "rna-splicing",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "12866aba70e39cf54000d54f126c2d340f3a3d8f3b7d02323c65cf0d8456106d",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F10",
+        "recordId": "gene-fusion",
+        "version": "proposal-support-bodies-51-root",
+        "field": "summary",
+        "passageSHA256": "fdcb5cc55e8f5a33235b151eb3b405b6875ea3b99942d83654eff8b9bafd30b5",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F11",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "fa5b76a8e549afbd2f7596f638b18b8a65a7e2d14caa8e4053a04d27580d3848",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F11",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "f5375402d852e2b6bbd919821cd7b46f3dd2c31bf6cf0620dd682f5d807920d7",
+        "presentInActualRegisteredRootStaticReader": true
+      },
+      {
+        "requirementId": "P52-F12",
+        "recordId": "rna-seq",
+        "version": "proposal-support-bodies-51-root",
+        "field": "notes",
+        "passageSHA256": "f5375402d852e2b6bbd919821cd7b46f3dd2c31bf6cf0620dd682f5d807920d7",
+        "presentInActualRegisteredRootStaticReader": true
+      }
+    ],
+    "wholeRenderedReadersRead": [
+      "batch-effects",
+      "immune-deconvolution",
+      "star-salmon",
+      "tpm-fpkm-counts"
+    ],
+    "wholeReaderReadSpans": 7,
+    "smallestReader": "immune-deconvolution",
+    "summarySlots": 81,
+    "shortTextEntries": 18,
+    "fallbackSlots": 63,
+    "allShortTextTablesPreserved": true,
+    "allReviewMarksPreserved": true,
+    "storedLongCaches": 0,
+    "acceptedLongCaches": 0,
+    "longCacheStatesPreserved": true,
+    "effectiveFallbackChanges": [
+      {
+        "id": "star-salmon",
+        "language": "es",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "zh",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "pt",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "hi",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "fr",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "de",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "ja",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "ar",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      },
+      {
+        "id": "star-salmon",
+        "language": "simple",
+        "oldEffectiveTextSHA256": "bfea7d98c910c19a7a765aec911a16a498eb6f69a105da553bcfde2eeb0e2827",
+        "newEffectiveTextSHA256": "31d418f6a7b21f51a4ea1f7f14f4176e306e16d19d28f4c3b8050beba1df416b",
+        "reason": "Existing unavailable translation falls back through the actual helper to the corrected canonical lead."
+      }
+    ],
+    "beforeStateReconstructed": false,
+    "staticSSRVerificationOnly": true,
+    "freshBrowserOrHydrationOrAccessibilityOrNativeLanguageAcceptance": false
+  },
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "57047cdaef61f0b82cb45f18c6cacc6bad3fac51b5277c58cf914fb4c74fabae",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 2
+  },
+  "APIContextAndDedupePassed": true,
+  "browserOrMobileVerification": false,
+  "independentExpertOwnerLearnerLanguageMainOrLiveCredit": 0
+}

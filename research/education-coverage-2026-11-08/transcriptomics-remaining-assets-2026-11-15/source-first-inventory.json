@@ -1,0 +1,604 @@
+{
+  "scope": "Nineteen remaining transcriptomics source bodies with six bounded parent lessons and twelve native variants; this does not replace the earlier exhaustive ordinary-lesson audit. Earlier project knowledge is known, so this is source-first within the phase rather than blind independent acceptance.",
+  "scientificOrPremiseUnits": 70,
+  "artifactConventionUnits": 6,
+  "boundaryUnits": 10,
+  "originalApplicableScientificOrPremiseUnits": 70,
+  "laterApplicableScientificOrPremiseUnits": 70,
+  "originalOnly": [],
+  "laterOnly": [],
+  "units": [
+    {
+      "id": "B01",
+      "family": "bulk-rna-seq",
+      "requirement": "Bulk RNA profiles combine captured material and do not directly assign each message to a cell of origin; the choir analogy is limited to this mixture problem.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B02",
+      "family": "bulk-rna-seq",
+      "requirement": "Extraction consumes finite sampled material; library preparation may use cDNA, mRNA selection, rRNA depletion or targeted capture, with unequal and incomplete recovery.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B03",
+      "family": "bulk-rna-seq",
+      "requirement": "Assigned reads, fragments and estimated counts depend on mapping, ambiguous shared sequences, annotation and the analysis pipeline.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B04",
+      "family": "bulk-rna-seq",
+      "requirement": "Counting units, normalization denominators and the intended comparison must be named; a count table is already shaped by preparation and analysis.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B05",
+      "family": "bulk-rna-seq",
+      "requirement": "Both cell composition and expression within contributing cells can change a bulk signal; different cell types need not contribute equal amounts of RNA.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B06",
+      "family": "bulk-rna-seq",
+      "requirement": "Transcript identity, alternative splicing, mutations and local joins need relevant sequence evidence beyond a gene-level count.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B07",
+      "family": "bulk-rna-seq",
+      "requirement": "High RNA or a program score does not directly measure surface protein, localization, pathway flux, drug dependence or clinical benefit.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B08",
+      "family": "bulk-rna-seq",
+      "requirement": "Zero observations do not establish biological absence because capture, sequencing depth and mapping can miss a message.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B09",
+      "family": "bulk-rna-seq",
+      "requirement": "Thousands of genes or cells from one biopsy are not thousands of independent biological samples; technical repeats do not create independent patients.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B10",
+      "family": "bulk-rna-seq",
+      "requirement": "The assay card retains sampled region, preservation, quality, counting units, controls, replicates, method-specific thresholds and failure modes; research profiling is separate from a validated clinical intended use.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B11",
+      "family": "bulk-rna-seq",
+      "requirement": "The fictional 100-cell pieces have 20/40 lymphocytes and 80/60 cancer cells, one X RNA per lymphocyte, none in cancer cells, equal total RNA per cell and matched preparation. The assumed X pool doubles without cancer-cell activation; these are stipulated molecules, not observed reads or inferred cell counts.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "B12",
+      "family": "bulk-rna-seq",
+      "requirement": "Deconvolution is a model-based interpretation of a measured mixture, not physical separation or direct cell-specific RNA measurement.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T01",
+      "family": "batch-effects",
+      "requirement": "A batch is a shared technical condition, not automatically a meaningful effect; preparation, extraction, run and pipeline variables can produce systematic, gene-specific differences.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T02",
+      "family": "batch-effects",
+      "requirement": "Technical variation and biological differences can coexist, including different tissue regions, cell mixtures and treatment context; the issue extends beyond RNA.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T03",
+      "family": "batch-effects",
+      "requirement": "Library-size or composition normalization does not automatically remove gene-specific batch effects or make a corrected comparison biologically valid.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T04",
+      "family": "batch-effects",
+      "requirement": "Complete group-batch overlap prevents separate identification from that comparison alone; an algorithm cannot create the missing experiment or contrasts.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T05",
+      "family": "batch-effects",
+      "requirement": "Crossed or balanced allocations can provide separation under a stated model but do not prove randomization, eliminate every bias or establish causality.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T06",
+      "family": "batch-effects",
+      "requirement": "Control genes, shared references, bridge samples and repeated preparations test different assumptions and do not provide an unconditional correction guarantee.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T07",
+      "family": "batch-effects",
+      "requirement": "Cell mixture or treatment changes can be genuine biology; automatically erasing them as technical batch can remove the signal of interest.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T08",
+      "family": "batch-effects",
+      "requirement": "A technical preparation of one extract is not another biological tumor or patient; the depicted baseline/follow-up allocations do not assert paired patients.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T09",
+      "family": "batch-effects",
+      "requirement": "The assay card retains technical metadata, model/units, inputs and controls. Computation uses existing data, while new preparations can consume material; there is no universal acceptable-batch threshold.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T10",
+      "family": "batch-effects",
+      "requirement": "In the fictional baseline-in-lab-A/follow-up-in-lab-B stress-score exercise, a tidy corrected plot does not identify a treatment effect.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "T11",
+      "family": "batch-effects",
+      "requirement": "The stipulated matrices [[6,0],[0,6]] and [[3,3],[3,3]] each contain twelve specimens. Under an intercept-plus-group-plus-laboratory additive model their ranks are two and three; this is design information, not proof that other confounding vanished.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S01",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Whole-cell and nuclear preparations sample different compartments; nuclear material can include unfinished intronic transcripts. The matched mouse-cortex comparison is not a universal tumor-method ranking.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S02",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "In the stipulated droplet workflow, a compartment barcode does not certify one pure intact cell. A cell, nucleus or two-cell doublet can contribute material.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S03",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "A UMI helps distinguish captured molecules from amplified copies; it is different from the compartment barcode and does not count uncaptured original molecules.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S04",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "The output is genes by barcode with chemistry-specific UMI, read or probe counting units, not a universal original-molecule count per cell.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S05",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Dissociation, fragility and selective recovery can alter the observed population; an unrecovered cell or state is not proof of absence from the starting tissue.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S06",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Suitable frozen material may support nuclei recovery; some fixed-material workflows count ligated probes rather than original transcript sequence and cannot reveal every variant or splice product.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S07",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Sparse capture can produce zero observations without biological absence; not every zero is a dropout.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S08",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Ambient RNA and multiple-cell or nucleus contributions can distort identity; filtering and correction do not certify every barcode.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S09",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "An analysis cluster does not by itself establish malignancy, lineage, a genetic clone or biological function; cell identity requires supporting evidence.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S10",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Cells are nested within biological specimens. In the fictional 6,000-nucleus/two-technical-library example there is one biological sample; replicate-level aggregation is one possible comparison strategy, not a new patient count.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S11",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "The assay card retains specimen, compartment, preparation, allocation cost, software/version and chemistry-specific calling/QC rules, including ambient RNA, doublets and quality failures; there is no universal gene-count cutoff.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "S12",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Captured profiles do not supply a complete census, full transcript structure or direct protein function; platform naming does not establish clinical validity for an intended use.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N01",
+      "family": "counts-normalization",
+      "requirement": "Start with the actual counting unit: reads, fragments, estimated assignments or compatible UMI-grouped observations are not automatically original molecule counts.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N02",
+      "family": "counts-normalization",
+      "requirement": "UMIs are introduced before amplification; compatible mapping/tag grouping can reduce duplicates, with errors and collisions requiring handling. UMI counting is not normalization and does not recover uncaptured molecules.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N03",
+      "family": "counts-normalization",
+      "requirement": "Simple CPM uses feature count divided by the stated total times one million; adjusted-library workflows can use another denominator, which must be reported.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N04",
+      "family": "counts-normalization",
+      "requirement": "TPM length-adjusts assigned observations and rescales rates over the included transcripts. Effective-length and bias models are method-specific; the result is a relative scale.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N05",
+      "family": "counts-normalization",
+      "requirement": "Full-length length adjustment is not a universal drop-in rule for three-prime tag or UMI workflows.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N06",
+      "family": "counts-normalization",
+      "requirement": "A few abundant transcripts can change library composition and make other relative counts fall; a fixed scaled total does not establish stable biology.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N07",
+      "family": "counts-normalization",
+      "requirement": "TMM and DESeq2 size factors use selected ratios and assumptions beyond a simple library-total division. Broad shifts can challenge their assumptions.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N08",
+      "family": "counts-normalization",
+      "requirement": "Normalization does not automatically repair batch effects, generate missing observations, validate a statistical difference or establish a causal comparison.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N09",
+      "family": "counts-normalization",
+      "requirement": "Normalized RNA can reflect expression, composition and cell mixtures; CPM/TPM do not directly measure proteins, all original RNA per cell or clinical benefit.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N10",
+      "family": "counts-normalization",
+      "requirement": "Computational normalization of an existing table uses no new tissue, but tags required for UMI counting must have been introduced during library preparation. Features, annotation and preparation history remain relevant.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N11",
+      "family": "counts-normalization",
+      "requirement": "The assay card retains units, denominator, length rule, controls, biological replication, filters and comparison purpose; method-specific routine analysis alone is not clinical validation.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "N12",
+      "family": "counts-normalization",
+      "requirement": "For the invented full-length two-transcript library, counts 100/100 and lengths 1/2 kb yield rates 100/50, total count 200 and rate total 150. Simple CPM is 500,000 each; TPM is exactly 2,000,000/3 and 1,000,000/3, displayed approximately 666,667/333,333. Uniform sampling, no other biases and only two included transcripts are stipulated.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D01",
+      "family": "immune-deconvolution",
+      "requirement": "A model fits cell-type reference profiles to mixed RNA; the inferred contribution is not a physical separation, direct cell census or universally identifiable composition.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D02",
+      "family": "immune-deconvolution",
+      "requirement": "RNA contribution and cell fraction are distinct quantities whose numerical values may coincide under special assumptions. Unequal RNA per cell requires conversion assumptions; EPIC RNA-content adjustment and an uncharacterized component remain method-scoped.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D03",
+      "family": "immune-deconvolution",
+      "requirement": "Missing populations, correlated signatures and altered cell states can make several mixtures fit. A good fit does not prove the reference palette is complete or every cell-type estimate is valid.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D04",
+      "family": "immune-deconvolution",
+      "requirement": "Relative immune fractions use the represented immune populations as their denominator and can leave total immune content unknown.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D05",
+      "family": "immune-deconvolution",
+      "requirement": "Absolute modes have method-specific definitions: the described CIBERSORT expression abundance score is not a direct number of cells per square millimeter, while other methods estimate whole-sample fractions.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D06",
+      "family": "immune-deconvolution",
+      "requirement": "CIBERSORTx cell-type-specific expression and state estimates are computational reconstructions, not individual-cell measurements, a genetic clone, location or observed suppressive function.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D07",
+      "family": "immune-deconvolution",
+      "requirement": "More immune RNA does not directly show access to cancer cells, recognition, killing, target engagement or treatment benefit.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D08",
+      "family": "immune-deconvolution",
+      "requirement": "Orthogonal flow, pathology or spatial comparisons have their own sampling and recovery biases; validation should match tissue, preparation, populations and reporting units and remains distinct from clinical intended-use validation.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D09",
+      "family": "immune-deconvolution",
+      "requirement": "The assay card retains profiles, references, model, units, denominator, quality/fit filters and failure modes. Computation uses no new tissue but new comparator assays may consume material; there is no universal clinical cutoff.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D10",
+      "family": "immune-deconvolution",
+      "requirement": "The stipulated 100-cell samples have T/immune counts 10/20 and 30/60, both 50 percent within immune cells, but whole-sample T fractions 10 and 30 percent. These supplied teaching counts are not recovered by deconvolution.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "D11",
+      "family": "immune-deconvolution",
+      "requirement": "The measured RNA profile, model-based reconstruction and supplied cell-count example occupy separate evidence lanes; the paint-mixture analogy does not turn reference/model inference into observed cellular truth.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F01",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Normal alternative splice joins and RNA fusions answer RNA-structure questions. RNA assigned to different genes does not by itself prove a DNA rearrangement; readthrough observations remain scoped to the cited tissues.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F02",
+      "family": "fusion-and-splice-detection",
+      "requirement": "One split read spans a join, whereas a spanning pair observes separate ends around an unsequenced intervening region. Those two ends do not read the insert between them.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F03",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Assess independent molecular support and artifacts: repeated PCR copies or rerunning software do not add independent molecules. The fictional three identical amplified reads do not establish a confirmed DNA change or effective target.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F04",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Alignment quality, similar sequences, annotation/reference version, read length, expression and filters influence fusion calling; benchmark-optimal thresholds are not universal clinical cutoffs.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F05",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Local splice-junction support and PSI depend on a defined event and eligible denominator; a local exon 2-3 join does not reconstruct the complete transcript or resolve outer exons.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F06",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Unfinished intronic nuclear RNA is not automatically pathological intron retention.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F07",
+      "family": "fusion-and-splice-detection",
+      "requirement": "The assay must cover the candidate join: whole-transcriptome, short-end and targeted approaches have different reach and cannot answer every event question.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F08",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Anchored multiplex PCR searches from a targeted end toward a potentially unknown partner, but target selection and validated input limit it. Original FFPE testing does not validate every later panel or event.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F09",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Fixed-RNA ligated-probe counts are not unrestricted original-transcript sequence evidence for arbitrary fusion or splice calls.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F10",
+      "family": "fusion-and-splice-detection",
+      "requirement": "RNA evidence can support expression of a candidate DNA change but mixed samples still need cell attribution; intact protein, function, dependence and clinical benefit need their own evidence.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F11",
+      "family": "fusion-and-splice-detection",
+      "requirement": "A negative join result is informative only within the covered event class, sensitivity and quality context, not as a universal proof of biological absence.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "F12",
+      "family": "fusion-and-splice-detection",
+      "requirement": "The assay card retains specimen and finite input, gene partners, reference/transcript version, coordinates, counts or deduplicated molecules, splice denominator, thresholds, artifacts and exact validation/confirmation policy. Caller naming is not clinical validation.",
+      "unitKind": "scientific-or-premise-backed",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A01",
+      "family": "bulk-rna-seq",
+      "requirement": "The exact 100-cell grids, pooling arrows, 20/40 RNA glyph placement and one-RNA lymphocyte symbols are authored construction. They illustrate B11 rather than add empirical measurements.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A02",
+      "family": "batch-effects",
+      "requirement": "Tube locations, hatching and matrix positions are authored geometry for the supplied T11 allocations; no unobserved cells, paired patients or actual samples are created.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A03",
+      "family": "single-cell-and-single-nucleus-rna-seq",
+      "requirement": "Cell/nucleus silhouettes, barcode letters A/B/C, doublet and selective-loss glyphs are invented conventions rather than a measured recovery distribution or universal chemistry.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A04",
+      "family": "counts-normalization",
+      "requirement": "Both panels use linear 0-to-1,000,000 axes over the same 408-unit span. Exact widths 204/204 versus 272/136 and endpoints 348/348 versus 416/280 illustrate N12 without rounding data geometry. The public literal reproduction code is an inspected artifact, not an instruction to execute it.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A05",
+      "family": "immune-deconvolution",
+      "requirement": "The two supplied cell grids, equal subset bars, 10/30-percent whole-sample bars and dashed measurement-to-model arrow are authored geometry; the model does not produce those known counts.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "A06",
+      "family": "fusion-and-splice-detection",
+      "requirement": "Hypothetical gene/exon blocks, red join leaders, continuous split-read segments, dashed unsequenced insert and unknown outer exons preserve the evidence distinction without biological length or coordinate claims.",
+      "unitKind": "artifact-convention-no-extra-scientific-credit",
+      "applicability": "both-pins"
+    },
+    {
+      "id": "Z01",
+      "family": "custody-context-and-construction",
+      "requirement": "All nineteen assigned bodies were read from beginning to end in forty-four acknowledged spans, 135,270 unique bytes, with both thirty-eight version entries retained and exact later-body identity reuse.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z02",
+      "family": "custody-context-and-construction",
+      "requirement": "All six eligible later public parents and complete original-to-later comparisons were read after frontmatter, generated navigation and personal-case gates. Both inventories remain separate; the eligible bodies are byte-identical.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z03",
+      "family": "custody-context-and-construction",
+      "requirement": "Twelve whole native Sharp/vips variants, twelve selected complete image-index rows and 130 actual production section signatures establish bounded context/identity, not scientific or clinical acceptance.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z04",
+      "family": "custody-context-and-construction",
+      "requirement": "Historic PASS/REVISE, prospective/adopted states and metadata-only or focused-successor reviews retain their original scope. Actor, original creator, integrator and reviewer roles are not interchangeable.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z05",
+      "family": "custody-context-and-construction",
+      "requirement": "Private paths, source bodies, generators, capture promises and historical source commits quoted in the bodies are not followed. The embedded public renderer was read but not executed or treated as authority.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z06",
+      "family": "custody-context-and-construction",
+      "requirement": "Alt/caption/handling duplicates do not earn duplicate science credit. Historical owner preimages, current pin hashes, same-size different-hash bodies and in-set custody references require explicit stage comparisons.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z07",
+      "family": "custody-context-and-construction",
+      "requirement": "Inherited source-depth claims and download receipts do not establish new primary reading; identifiers must be resolved before use. No fresh primary source lookup or current canonical capture occurred before this seal.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z08",
+      "family": "custody-context-and-construction",
+      "requirement": "Toy values, model-rank arithmetic and graphic geometry are separate from empirical performance. The RNA-share inequality symbol needs the distinct-quantity interpretation, not an unconditional claim that numerical fractions never coincide.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z09",
+      "family": "custody-context-and-construction",
+      "requirement": "Native views do not certify browser, mobile, hydration, measured contrast, keyboard focus, expert or accessibility acceptance. Historical BODY-focus/opener-return failures remain open and unretired.",
+      "unitKind": "boundary-no-scientific-coverage"
+    },
+    {
+      "id": "Z10",
+      "family": "custody-context-and-construction",
+      "requirement": "Existing artwork and ordinary grades, older packets and main/live boundaries remain protected. No independent, expert, owner, learner, language, main or live credit is implied.",
+      "unitKind": "boundary-no-scientific-coverage"
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "checks": [
+    {
+      "name": "light bulk supplied grid counts",
+      "actual": [
+        [
+          20,
+          80
+        ],
+        [
+          40,
+          60
+        ]
+      ],
+      "expected": [
+        [
+          20,
+          80
+        ],
+        [
+          40,
+          60
+        ]
+      ],
+      "pass": true,
+      "scope": "Count outer cell glyphs, not their nuclei or the two explanatory cell glyphs."
+    },
+    {
+      "name": "light bulk supplied RNA glyphs",
+      "actual": [
+        20,
+        40
+      ],
+      "expected": [
+        20,
+        40
+      ],
+      "pass": true,
+      "scope": "Stipulated marker molecules, not sequencer observations."
+    },
+    {
+      "name": "light CPM/TPM exact native bar widths",
+      "actual": [
+        "204",
+        "204",
+        "272",
+        "136"
+      ],
+      "expected": [
+        "204",
+        "204",
+        "272",
+        "136"
+      ],
+      "pass": true,
+      "scope": "Same 0-to-one-million axis, 408-unit span, independently calculated exact ratios."
+    },
+    {
+      "name": "light CPM/TPM exact endpoints",
+      "actual": [
+        "348",
+        "348",
+        "416",
+        "280"
+      ],
+      "expected": [
+        "348",
+        "348",
+        "416",
+        "280"
+      ],
+      "pass": true,
+      "scope": "Origins and rectangles, not rounded display labels."
+    },
+    {
+      "name": "light immune supplied grid counts",
+      "actual": [
+        [
+          10,
+          10,
+          80
+        ],
+        [
+          30,
+          30,
+          40
+        ]
+      ],
+      "expected": [
+        [
+          10,
+          10,
+          80
+        ],
+        [
+          30,
+          30,
+          40
+        ]
+      ],
+      "pass": true,
+      "scope": "Three legend glyphs excluded; counts stipulated separately from deconvolution."
+    },
+    {
+      "name": "dark bulk supplied grid counts",
+      "actual": [
+        [
+          20,
+          80
+        ],
+        [
+          40,
+          60
+        ]
+      ],
+      "expected": [
+        [
+          20,
+          80
+        ],
+        [
+          40,
+          60
+        ]
+      ],
+      "pass": true,
+      "scope": "Count outer cell glyphs, not their nuclei or the two explanatory cell glyphs."
+    },
+    {
+      "name": "dark bulk supplied RNA glyphs",
+      "actual": [
+        20,
+        40
+      ],
+      "expected": [
+        20,
+        40
+      ],
+      "pass": true,
+      "scope": "Stipulated marker molecules, not sequencer observations."
+    },
+    {
+      "name": "dark CPM/TPM exact native bar widths",
+      "actual": [
+        "204",
+        "204",
+        "272",
+        "136"
+      ],
+      "expected": [
+        "204",
+        "204",
+        "272",
+        "136"
+      ],
+      "pass": true,
+      "scope": "Same 0-to-one-million axis, 408-unit span, independently calculated exact ratios."
+    },
+    {
+      "name": "dark CPM/TPM exact endpoints",
+      "actual": [
+        "348",
+        "348",
+        "416",
+        "280"
+      ],
+      "expected": [
+        "348",
+        "348",
+        "416",
+        "280"
+      ],
+      "pass": true,
+      "scope": "Origins and rectangles, not rounded display labels."
+    },
+    {
+      "name": "dark immune supplied grid counts",
+      "actual": [
+        [
+          10,
+          10,
+          80
+        ],
+        [
+          30,
+          30,
+          40
+        ]
+      ],
+      "expected": [
+        [
+          10,
+          10,
+          80
+        ],
+        [
+          30,
+          30,
+          40
+        ]
+      ],
+      "pass": true,
+      "scope": "Three legend glyphs excluded; counts stipulated separately from deconvolution."
+    },
+    {
+      "name": "two-transcript assigned-count total",
+      "actual": 200,
+      "expected": 200,
+      "pass": true,
+      "scope": "Invented full-length library, uniform sampling and only two included transcripts."
+    },
+    {
+      "name": "two-transcript length-adjusted rate total",
+      "actual": "150",
+      "expected": "150",
+      "pass": true,
+      "scope": "Fragments per kilobase in the stipulated library."
+    },
+    {
+      "name": "two-transcript exact CPM",
+      "actual": [
+        "500000",
+        "500000"
+      ],
+      "expected": [
+        "500000",
+        "500000"
+      ],
+      "pass": true,
+      "scope": "Simple stated count-total denominator."
+    },
+    {
+      "name": "two-transcript exact TPM",
+      "actual": [
+        "2000000/3",
+        "1000000/3"
+      ],
+      "expected": [
+        "2000000/3",
+        "1000000/3"
+      ],
+      "pass": true,
+      "scope": "Specified length-adjusted rate-total denominator."
+    },
+    {
+      "name": "two-transcript rounded TPM",
+      "actual": [
+        666667,
+        333333
+      ],
+      "expected": [
+        666667,
+        333333
+      ],
+      "pass": true,
+      "scope": "Display approximations only; geometry uses exact fractions."
+    },
+    {
+      "name": "design sample totals",
+      "actual": [
+        12,
+        12
+      ],
+      "expected": [
+        12,
+        12
+      ],
+      "pass": true,
+      "scope": "Two stipulated allocations, not paired-patient data."
+    },
+    {
+      "name": "intercept plus group plus laboratory model ranks",
+      "actual": [
+        2,
+        3
+      ],
+      "expected": [
+        2,
+        3
+      ],
+      "pass": true,
+      "scope": "Exact rational elimination under the stated additive model; no causal guarantee."
+    },
+    {
+      "name": "relative immune-cell fractions",
+      "actual": [
+        "1/2",
+        "1/2"
+      ],
+      "expected": [
+        "1/2",
+        "1/2"
+      ],
+      "pass": true,
+      "scope": "Supplied immune-cell denominator."
+    },
+    {
+      "name": "whole-sample T-cell fractions",
+      "actual": [
+        "1/10",
+        "3/10"
+      ],
+      "expected": [
+        "1/10",
+        "3/10"
+      ],
+      "pass": true,
+      "scope": "Supplied all-cell denominator."
+    },
+    {
+      "name": "equal RNA content can give equal fractions",
+      "actual": "1/10",
+      "expected": "1/10",
+      "pass": true,
+      "scope": "Algebraic illustration of the equal-contribution assumption, not a tissue estimate."
+    },
+    {
+      "name": "unequal RNA content can change fractions",
+      "actual": "10/19",
+      "expected": "10/19",
+      "pass": true,
+      "scope": "Separate invented algebra check; no empirical cell-content value is adopted."
+    },
+    {
+      "name": "three identical qualifying UMI groups count once",
+      "actual": 1,
+      "expected": 1,
+      "pass": true,
+      "scope": "Stipulated compatible barcode, UMI and gene group, not a global molecule census."
+    }
+  ],
+  "allPass": true,
+  "embeddedAuthorRendererExecuted": false,
+  "independentRationalArithmetic": true,
+  "sourceBytesEdited": false,
+  "clinicalThresholdsAdopted": false
+}

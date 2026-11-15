@@ -1,0 +1,41 @@
+{
+  "sourceOpenRequirements": [
+    {
+      "id": "P52-S04",
+      "requirement": "The output is genes by barcode with chemistry-specific UMI, read or probe counting units, not a universal original-molecule count per cell.",
+      "remaining": [
+        "UMI/gene-by-barcode output is verified, but the fixed-probe alternative remains unverified against a newly retrieved raw 10x page."
+      ]
+    },
+    {
+      "id": "P52-S06",
+      "requirement": "Suitable frozen material may support nuclei recovery; some fixed-material workflows count ligated probes rather than original transcript sequence and cannot reveal every variant or splice product.",
+      "remaining": [
+        "Frozen nuclei preparation is verified; direct raw 10x fixed-probe chemistry retrieval returned HTTP 429 twice. Existing text is retained without new chemistry certification."
+      ]
+    },
+    {
+      "id": "P52-F09",
+      "requirement": "Fixed-RNA ligated-probe counts are not unrestricted original-transcript sequence evidence for arbitrary fusion or splice calls.",
+      "remaining": [
+        "The current fixed-probe limitation is present, but direct raw official 10x chemistry retrieval remains HTTP 429; no new source-completion credit."
+      ]
+    }
+  ],
+  "captionOwnerProposal": [
+    "P52-F06"
+  ],
+  "historicalCustodyAndProductBoundaries": [
+    "P52-F07",
+    "P52-F10"
+  ],
+  "retainedClinicalAssertionsNotReverified": [
+    "P52-F08"
+  ],
+  "readabilityOnly": [
+    "P52-F09"
+  ],
+  "noMissingCurrentRootTeachingField": true,
+  "newOrdinaryOrNativeLanguageOrMainOrLiveCredit": 0,
+  "broaderAuditUnfinished": true
+}

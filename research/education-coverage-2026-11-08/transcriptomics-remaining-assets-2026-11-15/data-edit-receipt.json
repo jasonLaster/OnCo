@@ -1,0 +1,37 @@
+{
+  "sourceFirstInventorySealedBeforeEdit": true,
+  "sourceInventorySHA256": "703c34acf56b4e18c93bbd5a926d719589f55a783964d311ad2dcaf595e6c272",
+  "expectedOwnerIds": [
+    "batch-effects",
+    "immune-deconvolution",
+    "star-salmon",
+    "tpm-fpkm-counts"
+  ],
+  "changedCanonicalFields": 13,
+  "receipts": [
+    {
+      "file": "src/data/terms-cansim-oncology.ts",
+      "beforeFileSHA256": "bc75f79ea7cb1f658899313ef316a0a107785754fc62c879791002584f8e9ad1",
+      "afterFileSHA256": "0618156751806839a940551b5428ae57b1b2ff1ca9190f961b3b43c44f3159db",
+      "literalValueEdits": 10,
+      "guardedOwnerIds": [
+        "batch-effects",
+        "star-salmon",
+        "tpm-fpkm-counts"
+      ],
+      "staticFactory": "cansimTerm via t"
+    },
+    {
+      "file": "src/data/terms-education-measurement.ts",
+      "beforeFileSHA256": "9f85654181d595dd5958a3ad425313e1a4c137fad14361bab00eb57f7b820141",
+      "afterFileSHA256": "ff7c76bb8cd308811ae7283450d209e606f929c611a1e7ce9ec90ed499ce1866",
+      "literalValueEdits": 2,
+      "guardedOwnerIds": [
+        "immune-deconvolution"
+      ],
+      "staticFactory": "explicit kind in educationMeasurementTerms"
+    }
+  ],
+  "newRecords": 0,
+  "peerEdits": 0
+}

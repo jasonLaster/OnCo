@@ -8,6 +8,21 @@ Data from [OnCo (onco.cc)](https://onco.cc), [CC BY-NC 4.0](https://creativecomm
 
 ## Current checkpoint
 
+The [encoded-antigen and controlled-response asset packet](encoded-antigens-controlled-responses-assets-2026-11-14/README.md) classifies eight complete paths at both pins: sixteen entries, four teaching and four supporting per pin. Both inventories now have 1,024 teaching assets, 353 supporting assets and 511 unclassified assets. Forty remaining assets per pin are in immunology; measurement (237) and therapeutics (234) retain their status.
+
+All eight source bodies were read in full (40,867 distinct bytes), including two dark SVG XML bodies and all four structured review/provenance records. Two complete later embedding parents and every original-to-later difference were freshly read; only navigation changes. The four parent versions reproduce 46 production section signatures. Four complete direct native theme renders, four image-index rows and the fictional 45/11/5 minus five arithmetic were checked. Same-target expansion, additional detected specificity, encoded count and measured response distribution stay distinct. Historical PASS, source, private-package, native/mobile/contrast/keyboard and pending expert/learner claims remain attestations rather than present approvals.
+
+This is a **partial peer-only result**. Eighteen requirements have 23 exact anchors in the actual frozen, committed but unmerged PR-373 records. Neither owner is in the registered graph. The missing A/B-positive-at-both-times matrix premise is the complete unapplied P44-P01 notes proposal and earns no complete coverage. No canonical record or actual peer field changed, and no root/peer reader, entity/context export or new summary-consumer state is claimed.
+
+Seven complete primary abstracts were freshly read, with five complete targeted Hu results/methods paragraphs and two complete figure legends. One Han abstract retains its previous reading depth. Hu's available-sample spreading assays involved three participants, supplied-peptide stimulation and intervening pembrolizumab; the example does not establish vaccine-only causation or clinical benefit. No whole paper, full methods or original study-figure image review is claimed. The initial Crossref 429 and ordinary successful retry remain recorded.
+
+The full 23,091-record graph and every non-audit tracked input still match gated data commit `0344471b7725de71eb9b436290961f85d7a09fb9`. Earlier full gates (293 files, 3,101 passing tests, two skips) are explicitly reused. Two actual peer records and one virtual proposed record parse the schema; that does not prove graph integration. There are 188 selection receipts, 191 pending JSON files, 720 selected canonical ids, 6,107 reader observations and 5,841 canonical/language states (1,746 texts and 4,095 English fallbacks).
+
+Ordinary coverage remains 519 original and 529 later lessons with 11 and 16 open requirements. The 49 adjacent groups, six schema gaps, 917 identity/relevance-screened literature occurrences, six earlier immunopeptidome proposals and this one matrix proposal keep their separate limits. No independent, expert, owner, learner, language, graph, main or live acceptance is granted.
+
+
+### Earlier retained T-cell identity and function checkpoint
+
 The [T-cell identity and function asset packet](t-cell-identity-function-assets-2026-11-14/README.md) classifies six previously unclassified entries from four captured paths at both pins, preserving the two original teaching entries in full. The original inventory gains one teaching asset and one supporting shared receipt; the later gains three teaching assets and the same receipt. Both now have 1,020 teaching assets, 349 supporting assets and 519 unclassified assets, including 48 in immunology. Measurement (237) and therapeutics (234) remain per pin.
 
 The three complete dark SVG XML bodies were freshly read (10,955 bytes); the 10,531-byte shared JSON receipt and complete parent/diff readings are reused only by exact identity. Six complete successful native-size theme views use private CSS-variable-resolved copies, and two exhausted-subset views are reused by exact source/render hashes. The six original new-family Sharp outputs are black by RGB computation, not fresh human views or evidence of a live-page failure. The long controlled-test heading stays an open low-severity layout item. Eight image-index rows were freshly read. The two parent versions reproduce 24 production section signatures.
@@ -897,7 +912,8 @@ npx tsx scripts/education-coverage.ts \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-41-root.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-t-cell-state-comparison-asset-summary-consumers-2026-11-14.json \
   --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-42-root.json \
-  --proposal research/education-coverage-2026-11-08/pending/proposal-t-cell-identity-function-asset-summary-consumers-2026-11-14.json
+  --proposal research/education-coverage-2026-11-08/pending/proposal-t-cell-identity-function-asset-summary-consumers-2026-11-14.json \
+  --proposal research/education-coverage-2026-11-08/pending/proposal-support-bodies-43-peer.json
 ```
 
 Add `--check-closed` to fail while any review, learning requirement, schema gap or literature-screening task remains open. Rerunning preserves manual reviews only for unchanged source hashes; a changed source requires an explicit re-review. Field evidence that changes after review fails closure. Counts are derived from the ledger, never entered as a success target.

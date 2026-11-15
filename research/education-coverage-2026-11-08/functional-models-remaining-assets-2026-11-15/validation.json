@@ -1,0 +1,32 @@
+{
+  "auditBaseCommit": "1cd33e03b992b42c1705939cc797c2390eee56df",
+  "newFullGateRun": false,
+  "reason": "Support classifications and audit snapshots only; all 23091 canonical runtime records and summary consumers are unchanged, so no new full suite or build is warranted.",
+  "lastGatedDataCommit": "f92d678f27e73e6c3679f1cde3648d54bf99d78f",
+  "inheritedPriorGateResult": "P55: 293 test files, 3101 passed, two skipped; not rerun for this metadata-only checkpoint.",
+  "selectedSchemaParses": 17,
+  "actualStaticReaders": 17,
+  "exactReaderFieldAnchors": 84,
+  "selectedSummarySlots": 153,
+  "allGraphAndTableFingerprintsUnchanged": true,
+  "rawEntryReceipts": 156,
+  "productionSectionSignatures": 287,
+  "premiseAndGeometryChecks": 33,
+  "JSONAndLedgerVerification": "Both executable source ledgers regenerate with zero stale/missing proofs, while exit 2 retains unfinished work. Prior 214 pending and 3188 cohort files are byte-preserved. Current public JSON parses and the prospective public-content secret scan has zero findings. The final byte-identical replay and exact staged-diff scan are recorded separately.",
+  "noRulesFloorsBudgetsOrAllowlistEdits": true,
+  "mainCredit": 0,
+  "liveCredit": 0,
+  "sourceLedgersStaleOrMissingProofs": 0,
+  "priorPendingBytesPreserved": 214,
+  "priorCohortBytesPreserved": 3188,
+  "privateOriginalAndPublicProjectionSealHashesVerified": true,
+  "prospectiveStrictScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "scope": "Current tracked diff plus complete new public artifact content before the final validation/replay receipts. The final staged diff is scanned again at commit.",
+    "inputSHA256": "be7b4d9b8e3995508d066a306055109cc1c5360c8188623e9b7031d98ad9d901",
+    "rulesOrAllowlistsChanged": false
+  },
+  "rawReviewMediaAndLongPrimaryQuotesPublished": false,
+  "all84CurrentRootReferencesResolveAgainstPublishedSnapshot": true
+}

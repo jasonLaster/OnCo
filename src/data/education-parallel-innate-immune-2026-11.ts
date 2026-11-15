@@ -148,37 +148,51 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
     "tldr": "Gamma-delta T cells are a family of T cells whose receptor is built from different protein chains than most T cells, and different subsets recognise different signals, often without the usual peptide display. The family name does not say which signal a particular cell, or an engineered product, uses to find a tumour.",
     "summary": "The T-cell receptor of most T cells has alpha and beta chains; gamma-delta T cells have gamma and delta chains and also carry other activating and inhibitory receptors. They remain T cells and are distinct from natural killer cells. A review distinguishes gamma-delta from alpha-beta T cells partly by the antigens their receptors recognise, and notes that NKG2D is expressed by many gamma-delta subsets as well as by natural killer cells and CD8 T cells (Vantourout and Hayday, 2013). Names such as Vδ1 and Vγ9Vδ2 describe receptor variable regions and mark subsets that sit in different places. Healthy human breast tissue harboured a distinct gamma-delta compartment made mainly of Vδ1 cells, whereas Vδ2 cells predominate in blood; the breast Vδ1 cells could be activated innately through the NKG2D receptor, and in paired samples from 11 people with triple-negative breast cancer, progression-free and overall survival correlated with Vδ1 representation but not with total gamma-delta or Vδ2 cells (Wu et al., 2019). That is a small observational association in tissue biology and did not test an infused product.",
     "links": [
-      {
-        "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
-        "url": "https://doi.org/10.1126/science.aay5516"
-      },
-      {
-        "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
-        "url": "https://doi.org/10.1182/bloodadvances.2019032409"
-      },
-      {
-        "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
-        "url": "https://doi.org/10.1126/scitranslmed.aax9364"
-      },
-      {
-        "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
-        "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
-      },
-      {
-        "label": "ClinicalTrials.gov NCT06150885",
-        "url": "https://clinicaltrials.gov/study/NCT06150885"
-      },
-      {
-        "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
-        "url": "https://doi.org/10.1038/nri3384"
-      },
-      {
-        "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
-        "url": "https://doi.org/10.3389/fimmu.2023.1148988"
-      },
-      {"label":"UniProt Q15762: reviewed human CD226/DNAM-1 function","url":"https://www.uniprot.org/uniprotkb/Q15762/entry"},
-      {"label":"UniProt P26718: reviewed human KLRK1/NKG2D function","url":"https://www.uniprot.org/uniprotkb/P26718/entry"}
-    ],
+  {
+    "label": "Butyrophilin 2A1 is essential for phosphoantigen reactivity by γδ T cells.",
+    "url": "https://doi.org/10.1126/science.aay5516"
+  },
+  {
+    "label": "Identification of a tumor-specific allo-HLA-restricted γδTCR.",
+    "url": "https://doi.org/10.1182/bloodadvances.2019032409"
+  },
+  {
+    "label": "An innate-like Vδ1+ γδ T cell compartment in the human breast is associated with remission in triple-negative breast cancer.",
+    "url": "https://doi.org/10.1126/scitranslmed.aax9364"
+  },
+  {
+    "label": "Chimeric Antigen Receptor-Engineered Human Gamma Delta T Cells: Enhanced Cytotoxicity with Retention of Cross Presentation.",
+    "url": "https://doi.org/10.1016/j.ymthe.2017.12.001"
+  },
+  {
+    "label": "ClinicalTrials.gov NCT06150885",
+    "url": "https://clinicaltrials.gov/study/NCT06150885"
+  },
+  {
+    "label": "Six-of-the-best: unique contributions of γδ T cells to immunology.",
+    "url": "https://doi.org/10.1038/nri3384"
+  },
+  {
+    "label": "Sanz et al., 2023: Deep characterization of human gamma-delta T cell subsets",
+    "url": "https://doi.org/10.3389/fimmu.2023.1148988"
+  },
+  {
+    "label": "UniProt Q15762: reviewed human CD226/DNAM-1 function",
+    "url": "https://www.uniprot.org/uniprotkb/Q15762/entry"
+  },
+  {
+    "label": "UniProt P26718: reviewed human KLRK1/NKG2D function",
+    "url": "https://www.uniprot.org/uniprotkb/P26718/entry"
+  },
+  {
+    "label": "The intracellular B30.2 domain of butyrophilin 3A1 binds phosphoantigens to mediate activation of human Vγ9Vδ2 T cells.",
+    "url": "https://doi.org/10.1016/j.immuni.2014.03.003"
+  },
+  {
+    "label": "Phosphoantigens glue butyrophilin 3A1 and 2A1 to activate Vγ9Vδ2 T cells.",
+    "url": "https://doi.org/10.1038/s41586-023-06525-3"
+  }
+],
     "terms": [
       "t-cell",
       "nk-cell"
@@ -190,12 +204,13 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
       "nct06150885"
     ],
     "notes": [
-      "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
-      "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
-      "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
-      "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention.",
-      "The gamma-delta T-cell receptor, NKG2D and DNAM-1 are different receptors. BTN2A1 binds the Vgamma9 receptor chain and works with BTN3A1 in the specified phosphoantigen response; the BTN names do not name the T-cell receptor itself. Reviewed human UniProt entries distinguish NKG2D ligands, including MICA, MICB and ULBP proteins, from the DNAM-1/CD226 ligands CD155/PVR and CD112/NECTIN2. These receptor-ligand associations do not establish that every gamma-delta subset expresses or uses each route. Check the actual cell preparation and keep ligand identity, receptor expression and controlled target-cell killing separate."
-    ]
+  "Recognition differs by subset, and it is not always free of HLA. For the Vγ9Vδ2 subset, which responds to phosphoantigens (small phosphorylated metabolites produced by microbes and overexpressed by some cancers), butyrophilin 2A1 (BTN2A1) binds the Vγ9 chain of the receptor, associates with a second butyrophilin, BTN3A1, and the two act together to start the response; a second ligand, possibly BTN3A1, binds a separate region that includes the Vδ2 chain (Rigau et al., 2020). This is not a peptide sitting in an HLA groove. HLA independence is also not universal: one characterised Vγ5Vδ1 receptor was restricted by HLA-A*24:02 and depended on the CD8-alpha co-receptor, acting on blood-cancer and solid-tumour cells in vitro and in vivo while sparing healthy tissue in those models (Kierkels et al., 2019). That receptor's mechanism is not an eligibility rule for the family.",
+  "An engineered receptor is a separate recognition route. Adding a GD2-directed chimeric antigen receptor to expanded human Vδ1 and Vδ2 cells increased GD2-specific killing of GD2-expressing cancer cell lines, did not impair movement towards tumour cells in vitro, and expanded Vδ2 cells kept the ability to take up tumour antigen and cross-present it to alpha-beta T cells (Capsomidis et al., 2018). That is a preclinical result for that preparation, and it does not show that any gamma-delta product enters tumours, cross-presents usefully or prevents antigen escape in patients. An allogeneic gamma-delta product that the registry names HLA-G-CAR.BiTE allogeneic γδ T cells (NCT06150885, phase 1 and 2) was listed as recruiting when the registry record was read for this entry; the record describes the product and the study design and reports no efficacy. A receptor added to a cell needs its own target on the tumour, HLA-low does not mean target-positive, and avoiding peptide presentation is not the same as avoiding antigen escape. Cells are identified by flow cytometry and receptor sequencing, but a response against one target line does not establish tumour entry, persistence or benefit, and matched cells without the added receptor are needed to separate native from engineered recognition. Two cautions are OnCo's reasoning and not findings of the cited papers: a product made of many receptor clones is not automatically broader or more effective than one defined clone, and the name gamma-delta describes the receptor chains and not the cell source, so whether cells came from the patient or from a donor has to be stated separately.",
+  "Measurement separates identity, repertoire and function. Sanz et al. (2023) used flow cytometry to isolate human gamma-delta subsets and assessed receptor repertoires separately from cytotoxicity. Their Daudi-cell cocultures included target-only and effector-only controls; degranulation, granzyme or perforin measurements and target-cell death were distinct readouts. These are results for defined human subsets and laboratory targets, not a universal assay or a test of tumour entry in patients.",
+  "For interpretation, report the parent population, percentage and any valid absolute count with the specimen and sampling method. Receptor-sequence abundance does not identify the receptor ligand. Rigau et al. (2020) established a defined BTN2A1-dependent recognition mechanism for the Vgamma9Vdelta2 phosphoantigen response; that specificity is an example of why innate-like does not mean nonspecific. To test native versus added-receptor recognition, compare matched cells without the added receptor, target-positive and target-negative cells, and a suitable receptor-blocking or target-perturbation condition. Keep relevant healthy-cell controls, viability and exposure conditions explicit. This is experimental-design reasoning from the separate recognition mechanisms, not a claim that one cited assay validates every product. HLA loss does not establish that the native ligand or the added receptor target is present, and two recognition routes do not prove escape prevention.",
+  "The gamma-delta T-cell receptor, NKG2D and DNAM-1 are different receptors. BTN2A1 binds the Vgamma9 receptor chain and works with BTN3A1 in the specified phosphoantigen response; the BTN names do not name the T-cell receptor itself. Reviewed human UniProt entries distinguish NKG2D ligands, including MICA, MICB and ULBP proteins, from the DNAM-1/CD226 ligands CD155/PVR and CD112/NECTIN2. These receptor-ligand associations do not establish that every gamma-delta subset expresses or uses each route. Check the actual cell preparation and keep ligand identity, receptor expression and controlled target-cell killing separate.",
+  "Phosphoantigen sensing and the T-cell receptor contact occur on different sides of the target-cell membrane. Sandstrom et al. (2014) showed that phosphoantigens bind the intracellular B30.2 domain of BTN3A1. Yuan et al. (2023) reported that phosphoantigens promote association between the intracellular domains of BTN3A1 and BTN2A1; mutations that hindered the association blocked the tested Vgamma9Vdelta2 activation. These are target-cell sensing events, rather than free metabolites occupying a peptide-HLA groove, and they concern a defined phosphoantigen response rather than every gamma-delta subset. Rigau et al. (2020) described an additional receptor interaction with a tentative second ligand. That is the study's historical interpretation; a dashed extra contact in a simplified sketch does not specify a complete atomic structure. An added CAR still needs its own surface target, and neither a native metabolic signal nor loss of classical HLA establishes that target's presence."
+]
   },
   {
     "kind": "term",
@@ -331,51 +346,55 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
     "tldr": "Natural killer T cells are T cells, not a cross between two cell types, and their receptors recognise fat-based molecules shown on a protein called CD1d rather than the protein fragments shown on HLA. Despite the similar name they are a different family from natural killer cells.",
     "summary": "NKT cells carry a rearranged T-cell receptor, and some also carry receptors usually associated with natural killer cells, but an NK-associated surface marker does not define the family. A review describes their semi-invariant alpha-beta T-cell receptors as recognising CD1d-presented glycolipids, including a mammalian glycosphingolipid and microbial glycuronylceramides (Bendelac et al., 2007). CD1d displays lipid and glycolipid antigens, and the crystal structure of human CD1d with the synthetic glycolipid alpha-galactosylceramide showed the lipid tails fitting inside the groove (Koch et al., 2005). In mouse experiments, Valpha14 NKT cells were activated by a defined glycosylceramide in a CD1d-dependent, receptor-mediated way (Kawano et al., 1997). Type I, or invariant, NKT cells use a strongly shared alpha-chain arrangement with variable beta-chain junctions, found in mouse (Valpha14-Jalpha281) and in a homologous human form (Valpha24-JQ) (Lantz and Bendelac, 1994). Type II NKT cells are more diverse: in mice lacking class II presentation, CD4 T cells with a diverse receptor repertoire included a subset that recognised CD1 (Cardell et al., 1995). 'Invariant' does not mean every chain or every function is identical.",
     "links": [
-      {
-        "label": "An invariant T cell receptor alpha chain is used by a unique subset of major histocompatibility complex class I-specific CD4+ and CD4-8- T cells in mice and humans.",
-        "url": "https://doi.org/10.1084/jem.180.3.1097"
-      },
-      {
-        "label": "CD1-restricted CD4+ T cells in major histocompatibility complex class II-deficient mice.",
-        "url": "https://doi.org/10.1084/jem.182.4.993"
-      },
-      {
-        "label": "CD1d-restricted and TCR-mediated activation of valpha14 NKT cells by glycosylceramides.",
-        "url": "https://doi.org/10.1126/science.278.5343.1626"
-      },
-      {
-        "label": "Functionally distinct subsets of CD1d-restricted natural killer T cells revealed by CD1d tetramer staining.",
-        "url": "https://doi.org/10.1084/jem.20011786"
-      },
-      {
-        "label": "Differential antitumor immunity mediated by NKT cell subsets in vivo.",
-        "url": "https://doi.org/10.1084/jem.20050953"
-      },
-      {
-        "label": "The crystal structure of human CD1d with and without alpha-galactosylceramide.",
-        "url": "https://doi.org/10.1038/ni1225"
-      },
-      {
-        "label": "The biology of NKT cells.",
-        "url": "https://doi.org/10.1146/annurev.immunol.25.022106.141711"
-      },
-      {
-        "label": "Anti-GD2 CAR-NKT cells in patients with relapsed or refractory neuroblastoma: an interim analysis.",
-        "url": "https://doi.org/10.1038/s41591-020-1074-2"
-      },
-      {
-        "label": "Use of CAR-Transduced Natural Killer Cells in CD19-Positive Lymphoid Tumors.",
-        "url": "https://doi.org/10.1056/nejmoa1910607"
-      },
-      {
-        "label": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia.",
-        "url": "https://doi.org/10.1056/nejmoa1709866"
-      },
-      {
-        "label": "Benlagha et al., 2000: Identification of glycolipid antigen-specific T cells",
-        "url": "https://doi.org/10.1084/jem.191.11.1895"
-      }
-    ],
+  {
+    "label": "An invariant T cell receptor alpha chain is used by a unique subset of major histocompatibility complex class I-specific CD4+ and CD4-8- T cells in mice and humans.",
+    "url": "https://doi.org/10.1084/jem.180.3.1097"
+  },
+  {
+    "label": "CD1-restricted CD4+ T cells in major histocompatibility complex class II-deficient mice.",
+    "url": "https://doi.org/10.1084/jem.182.4.993"
+  },
+  {
+    "label": "CD1d-restricted and TCR-mediated activation of valpha14 NKT cells by glycosylceramides.",
+    "url": "https://doi.org/10.1126/science.278.5343.1626"
+  },
+  {
+    "label": "Functionally distinct subsets of CD1d-restricted natural killer T cells revealed by CD1d tetramer staining.",
+    "url": "https://doi.org/10.1084/jem.20011786"
+  },
+  {
+    "label": "Differential antitumor immunity mediated by NKT cell subsets in vivo.",
+    "url": "https://doi.org/10.1084/jem.20050953"
+  },
+  {
+    "label": "The crystal structure of human CD1d with and without alpha-galactosylceramide.",
+    "url": "https://doi.org/10.1038/ni1225"
+  },
+  {
+    "label": "The biology of NKT cells.",
+    "url": "https://doi.org/10.1146/annurev.immunol.25.022106.141711"
+  },
+  {
+    "label": "Anti-GD2 CAR-NKT cells in patients with relapsed or refractory neuroblastoma: an interim analysis.",
+    "url": "https://doi.org/10.1038/s41591-020-1074-2"
+  },
+  {
+    "label": "Use of CAR-Transduced Natural Killer Cells in CD19-Positive Lymphoid Tumors.",
+    "url": "https://doi.org/10.1056/nejmoa1910607"
+  },
+  {
+    "label": "Tisagenlecleucel in Children and Young Adults with B-Cell Lymphoblastic Leukemia.",
+    "url": "https://doi.org/10.1056/nejmoa1709866"
+  },
+  {
+    "label": "Benlagha et al., 2000: Identification of glycolipid antigen-specific T cells",
+    "url": "https://doi.org/10.1084/jem.191.11.1895"
+  },
+  {
+    "label": "Atypical natural killer T-cell receptor recognition of CD1d-lipid antigens.",
+    "url": "https://doi.org/10.1038/ncomms10570"
+  }
+],
     "terms": [
       "t-cell",
       "nk-cell"
@@ -384,10 +403,11 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
       "car-nk-macrophage"
     ],
     "notes": [
-      "Function depends on the subset and the stimulus. In fresh human blood, lipid-loaded CD1d tetramers separated two subsets of CD1d-restricted T cells that differed in cytokine production and cytotoxic activation, and antigenic stimulation induced cytokines but not perforin whereas inflammatory factors enhanced perforin (Gumperz et al., 2002). In mouse sarcoma and melanoma-metastasis models, tumour rejection was a specialised function of liver-derived NKT cells and mainly of the CD4-negative fraction, while thymus-derived NKT cells were impaired, in part through interleukin-4 production (Crowe et al., 2005). So 'NKT' alone cannot mean protection against cancer, even within one species. An engineered receptor is a separate recognition route: CAR-NKT, CAR-NK and CAR-T are different cell families, and native and engineered recognition have to be measured separately. A phase 1 trial reported interim results for autologous NKT cells engineered to express a GD2-specific CAR with interleukin-15 in three children with neuroblastoma (NCT03294954): no dose-limiting toxicities were observed and one patient had an objective response (Heczey et al., 2020). Separate trials illustrate the other two families: an anti-CD19 CAR-NK product made from cord blood was given to 11 patients with relapsed or refractory CD19-positive cancers in a phase 1 and 2 trial (Liu et al., 2020), and tisagenlecleucel, an anti-CD19 CAR-T therapy, was given to 75 evaluable children and young adults in a phase 2 study in which the overall remission rate within 3 months was 81 per cent (Maude et al., 2018). Those trials concern other cells, diseases and products and say nothing about NKT cells.",
-      "A tetramer loaded with a defined CD1d antigen identifies the cells that bind that complex, so a negative result does not count cells with other specificities, and a gate of NK-marker-positive T cells (sometimes called NKT-like) needs its operational definition stated. Counting such cells does not establish tumour killing, and a change in classical HLA display does not show that CD1d, its antigen or an effective NKT response is present.",
-      "An NK-associated marker is insufficient to define an NKT cell. Benlagha et al. (2000) identified glycolipid-reactive T cells with CD1d1-alpha-galactosylceramide tetramers, including an NK1.1-negative population in mice, while natural killer cells did not bind those tetramers. This is a studied glycolipid-reactive subset, not a universal detection test for all type II NKT cells. NKT cells can carry NK-associated receptors, but a marker-positive T-cell gate and a defined CD1d-reactive T-cell population are different operational definitions."
-    ]
+  "Function depends on the subset and the stimulus. In fresh human blood, lipid-loaded CD1d tetramers separated two subsets of CD1d-restricted T cells that differed in cytokine production and cytotoxic activation, and antigenic stimulation induced cytokines but not perforin whereas inflammatory factors enhanced perforin (Gumperz et al., 2002). In mouse sarcoma and melanoma-metastasis models, tumour rejection was a specialised function of liver-derived NKT cells and mainly of the CD4-negative fraction, while thymus-derived NKT cells were impaired, in part through interleukin-4 production (Crowe et al., 2005). So 'NKT' alone cannot mean protection against cancer, even within one species. An engineered receptor is a separate recognition route: CAR-NKT, CAR-NK and CAR-T are different cell families, and native and engineered recognition have to be measured separately. A phase 1 trial reported interim results for autologous NKT cells engineered to express a GD2-specific CAR with interleukin-15 in three children with neuroblastoma (NCT03294954): no dose-limiting toxicities were observed and one patient had an objective response (Heczey et al., 2020). Separate trials illustrate the other two families: an anti-CD19 CAR-NK product made from cord blood was given to 11 patients with relapsed or refractory CD19-positive cancers in a phase 1 and 2 trial (Liu et al., 2020), and tisagenlecleucel, an anti-CD19 CAR-T therapy, was given to 75 evaluable children and young adults in a phase 2 study in which the overall remission rate within 3 months was 81 per cent (Maude et al., 2018). Those trials concern other cells, diseases and products and say nothing about NKT cells.",
+  "A tetramer loaded with a defined CD1d antigen identifies the cells that bind that complex, so a negative result does not count cells with other specificities, and a gate of NK-marker-positive T cells (sometimes called NKT-like) needs its operational definition stated. Counting such cells does not establish tumour killing, and a change in classical HLA display does not show that CD1d, its antigen or an effective NKT response is present.",
+  "An NK-associated marker is insufficient to define an NKT cell. Benlagha et al. (2000) identified glycolipid-reactive T cells with CD1d1-alpha-galactosylceramide tetramers, including an NK1.1-negative population in mice, while natural killer cells did not bind those tetramers. This is a studied glycolipid-reactive subset, not a universal detection test for all type II NKT cells. NKT cells can carry NK-associated receptors, but a marker-positive T-cell gate and a defined CD1d-reactive T-cell population are different operational definitions.",
+  "In the alpha-galactosylceramide example, lipid tails sit within CD1d and the sugar head group forms part of the surface that a T-cell receptor can recognize. This is recognition of a displayed CD1d-lipid complex, rather than free lipid. Le Nours et al. (2016) described human atypical NKT receptors that contacted the same CD1d-lipid target in different ways from the more familiar type I receptors. A simple receptor-above-lipid sketch therefore does not specify the docking angle, chain contacts or target range of every NKT subset. Comparing that display with peptide-HLA concerns the target form; it does not make NKT and NK the same family or establish uniform function."
+]
   },
   {
     "kind": "term",

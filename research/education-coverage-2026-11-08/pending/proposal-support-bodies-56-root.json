@@ -1,0 +1,1232 @@
+{
+  "version": "proposal-support-bodies-56-root",
+  "draft": 375,
+  "committedDataHead": "d10ad32dac20bf54433c667c3e316d7437994940",
+  "auditBaseCommit": "11f7e0d2af31e8f2b5657b05cc6986d9a0033453",
+  "state": "Sixteen actual registered-root selections after the MRI outcome-attribution correction. Only MRI notes[1] and asOf differ; all other owner, summary-consumer and peer fields are preserved. Unselected assertions retain prior source scope.",
+  "records": [
+    {
+      "id": "immuno-pet",
+      "kind": "technology",
+      "name": "Immuno-PET",
+      "aka": [],
+      "tldr": "Immuno-PET uses a radiolabelled antibody or an antibody-derived binder to image its distribution. Uptake depends on access, binding and clearance as well as the target; clinical usefulness needs separate evidence.",
+      "summary": "Immuno-PET uses radiolabelled antibodies or antibody-derived binders. Full immunoglobulin G (IgG), antigen-binding fragments (Fab), minibodies and single-domain nanobodies differ in size and pharmacokinetics. The format can affect penetration, clearance, retention and normal-organ background; there is no universal best format. A label makes the binder traceable, not a perfect detector of every target site.\n\nThe radionuclide must suit the product's imaging time course. Dijkers' 89Zr-trastuzumab study examined a full antibody over several days; Keyaerts' 68Ga-HER2 nanobody study imaged at earlier times. These are product-specific examples. Antibody imaging can concern a tumour-associated target or immune cells. CD8 binder imaging belongs here; granzyme-B peptide or peptidomimetic imaging is a different tracer class and has its own record.",
+      "status": "phase-2",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Bensch et al., 89Zr-atezolizumab imaging as a non-invasive approach to assess clinical response to PD-L1 blockade (Nature Medicine 2018)",
+          "url": "https://doi.org/10.1038/s41591-018-0255-8"
+        },
+        {
+          "label": "Dijkers et al., 2010: 89Zr-trastuzumab feasibility in metastatic breast cancer",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20357763/"
+        },
+        {
+          "label": "Keyaerts et al., 2016: phase 1 68Ga-HER2 nanobody study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26449837/"
+        },
+        {
+          "label": "Farwell et al., 2022: CD8 minibody first-in-human study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34413145/"
+        },
+        {
+          "label": "Kist de Ruijter et al., 2022: whole-body CD8 PET",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36471036/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "granzyme-b-pet"
+      ],
+      "cancers": [],
+      "sections": [
+        "imaging",
+        "immunotherapy"
+      ],
+      "technologies": [
+        "pet"
+      ],
+      "targets": [
+        "trop2",
+        "her2",
+        "pd1",
+        "pdl1"
+      ],
+      "drugs": [],
+      "companies": [
+        "var2-pharmaceuticals",
+        "nanolattix"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-bensch-nat-med"
+      ],
+      "journals": [],
+      "dependsOn": [
+        "pet-ct",
+        "monoclonal-antibody"
+      ],
+      "notes": [
+        "Imagine sending a labelled binding tool into the body. Some remains in blood, some reaches accessible sites, and some fails to bind or clears. Delivery, access, target binding, competition, clearance and retention all affect the image. Therapeutic or unlabelled antibody can compete for the same target or alter distribution and background. A smaller signal after same-target treatment is therefore not, by itself, target loss. A conceptual labelled/unlabelled-binder drawing supplies these alternatives, not uptake values.",
+        "Dijkers and colleagues studied 14 people with HER2-positive metastatic breast cancer using 89Zr-trastuzumab, with different antibody masses and scan times. The study addressed feasibility, biodistribution and visualisation, not universal treatment selection. Keyaerts and colleagues studied 20 women with primary or metastatic breast cancer scored HER2 IHC 2+ or 3+ using a 68Ga-HER2 nanobody in a phase 1 safety, distribution and dosimetry study. Tumour targeting and no observed adverse reactions in that small study do not establish general safety, individual benefit or an interchangeable imaging schedule.",
+        "Bensch and colleagues imaged 22 patients across three tumour types with 89Zr-atezolizumab before PD-L1 blockade. Uptake varied within and between patients and included high signal in lymphoid tissues and inflammation. Associations with treatment response were exploratory. Imaging an accessible PD-L1-associated distribution does not isolate malignant cells, convert uptake into an expression percentage or prove that a scan-directed treatment choice improves outcomes.",
+        "CD8 imaging traces a labelled CD8-binding construct, not the total number of tumour-killing cells. Farwell's phase 1 study included 15 patients: tumour uptake appeared in 10, including 7 of 8 receiving immunotherapy. Lymphoid and normal-organ distribution were also part of the observation. The paper appeared online in 2021 and in print in 2022. Kist de Ruijter's 38-person phase 1/2 study found heterogeneous 89Zr-CD8 tracer uptake, associations with tissue CD8 and inflamed versus desert patterns, and an exploratory association between higher baseline uptake and survival. On-treatment lesion-uptake changes did not simply track response. These mixed-cancer studies do not establish antigen recognition, cell killing or a validated stop/switch strategy for breast cancer.",
+        "An interpretable tracer record retains the exact binder and format, isotope, protein mass in micrograms or mg, administered activity in MBq and time after injection. Background in blood and normal organs, lesion size and clearance affect interpretation. One image cannot isolate every delivery, binding and retention contribution, quantify receptor occupancy or supply a therapeutic absorbed dose. Protein mass is not a target-positive cell fraction, and uptake is not an expression percentage.",
+        "In a fictional course, uptake is lower after an antibody against the same target. Before declaring that the target disappeared, compare tracer and therapeutic exposure, labelled and unlabelled mass, image timing, blood background, delivery, access and clearance. Competition is one explanation among several. A controlled binding experiment or suitable sampled tissue would answer a different, more specific question, each with its own limits. The image alone neither assigns all signal to cancer nor chooses a treatment."
+      ],
+      "principle": "A positron-emitting label is incorporated into an antibody-derived tracer with chemistry appropriate to that product; serial distribution depends on the binder, label, administered mass and time.",
+      "strengths": [
+        "Images target and immune infiltrate non-invasively",
+        "Any antibody can be turned into a tracer"
+      ],
+      "limitations": [
+        "Slow kinetics for full antibodies",
+        "Cost of 89Zr"
+      ]
+    },
+    {
+      "id": "mammography",
+      "kind": "technology",
+      "name": "Mammography & tomosynthesis",
+      "aka": [],
+      "tldr": "Mammography uses low-dose X-rays to show breast patterns such as masses and calcifications. Tomosynthesis reconstructs images from several angles; its sections are computed images, not tissue slides.",
+      "summary": "Mammography records how X-rays pass through a positioned, compressed breast. Fat and fibroglandular tissue contribute different image appearances. Compression reduces tissue overlap, thickness and motion. Standard digital mammography produces projection images; digital breast tomosynthesis acquires multiple angles and reconstructs thin sections. These computed sections are different from tissue that has been physically removed, prepared and stained.\n\nScreening asks about cancer in people without symptoms; a diagnostic examination investigates symptoms or an imaging finding and may use additional views. Neither label establishes that cancer is present. Masses and calcium deposits are findings whose pattern and distribution matter. A calcification is not itself proof of malignancy or a measure of viable cancer after treatment. A biopsy adds examination of sampled tissue.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Mammography",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mammography"
+        },
+        {
+          "label": "ACR/RSNA: mammography and tomosynthesis",
+          "url": "https://www.radiologyinfo.org/en/info/mammo"
+        },
+        {
+          "label": "NCI: mammograms",
+          "url": "https://www.cancer.gov/types/breast/screening/mammograms"
+        },
+        {
+          "label": "NCI: dense breasts",
+          "url": "https://www.cancer.gov/types/breast/breast-changes/dense-breasts"
+        },
+        {
+          "label": "ACR/RSNA: breast imaging reports",
+          "url": "https://www.radiologyinfo.org/en/info/article-breast-imaging-report"
+        },
+        {
+          "label": "NCCN Guidelines for Patients: Breast Cancer Screening and Diagnosis",
+          "url": "https://www.nccn.org/patientresources/patient-resources/guidelines-for-patients/guidelines-for-patients-details?patientGuidelineId=66"
+        },
+        {
+          "label": "NCI PDQ for patients: Breast Cancer Screening",
+          "url": "https://www.cancer.gov/types/breast/screening"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "ai-mammography-screening",
+        "x-ray-radiography-fluoroscopy",
+        "breast-cancer-follow-up-after-treatment",
+        "breast-screening-after-chest-radiotherapy-at-a-young-age"
+      ],
+      "cancers": [
+        "tnbc",
+        "breast-hr-positive",
+        "breast-her2-positive"
+      ],
+      "sections": [
+        "imaging",
+        "early-detection"
+      ],
+      "technologies": [
+        "radiology-ai-screening"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "kheiron-medical-technologies",
+        "therapixel",
+        "vara",
+        "volpara-health",
+        "hologic",
+        "ge-healthcare",
+        "siemens-healthineers",
+        "fujifilm"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "mqsa-breast-density-notice",
+        "medicare-ncd-220-4"
+      ],
+      "trials": [
+        "tmist"
+      ],
+      "people": [
+        "kris-hallenga",
+        "betty-ford",
+        "nancy-brinker"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [
+        "journal-of-breast-imaging"
+      ],
+      "dependsOn": [],
+      "notes": [
+        "Imagine viewing a stack of translucent layers: features at different depths can overlap in a projection. Mammography measures X-ray transmission, not reflected sound. Tomosynthesis uses several projections to reconstruct sections and reduce the effect of overlap; it does not stain cells or guarantee that every lesion becomes visible. A schematic with overlapping shapes and separated reconstructed sections illustrates the geometry, without identifying any shape as cancer. A prepared stained tissue section supplies a different, sampled observation.",
+        "Breast density describes the relative fibroglandular appearance and amount compared with fat, not the fraction occupied by cancer. Dense tissue can mask a finding. Overlap, positioning and lesion type also limit detection. Keep the density description, prior examinations, dates and comparable views alongside the finding. BI-RADS organises imaging findings and assessment; it does not replace pathological diagnosis or establish cancer stage. A negative examination does not set a universal threshold below which microscopic or distant disease is absent.",
+        "The imaging examination removes no tissue. Retain the positioned breast and named finding, morphology, distribution, assessment and comparison dates. A measured span in mm or cm is a length, not a three-dimensional volume or number of cells. Matching an image with the sampled pathology helps answer the finding's question but does not remove imaging blind spots or tissue-sampling limits.",
+        "A fictional mammogram reports 24 mm of calcifications and no definite mass. It records a calcification span under that examination, not 24 mm of proven invasive or viable cancer. Calcium pattern, distribution, comparison and assessment remain relevant; absence of a mass does not establish benignity. An exact ultrasound counterpart is not guaranteed. The useful question is what the finding and any sampled tissue establish together, rather than converting the span into a cancer-cell amount."
+      ],
+      "principle": "Low-energy X-rays compress and image the breast; tomosynthesis acquires multiple angles and reconstructs slices.",
+      "strengths": [
+        "Proven mortality benefit",
+        "Cheap and scalable"
+      ],
+      "limitations": [
+        "Reduced sensitivity in dense breasts",
+        "Overdiagnosis of indolent lesions"
+      ],
+      "machineFamily": "imaging"
+    },
+    {
+      "id": "mri",
+      "kind": "technology",
+      "name": "MRI",
+      "aka": [],
+      "tldr": "Magnetic resonance imaging uses a magnetic field and radio waves for tissue images, including selected high-risk breast screening. Enhancement and volume do not directly count living cancer cells.",
+      "summary": "Magnetic resonance imaging (MRI) records tissue-dependent signals using a magnetic field and radiofrequency pulses. In contrast-enhanced breast MRI, intravenous gadolinium changes those signals. Dynamic contrast-enhanced imaging (DCE) acquires images before and at specified times after contrast. Enhancement depends on delivery, vascular and tissue distribution, and acquisition; its shape, distribution and time course help interpretation. Benign tissue can enhance too.\n\nMRI can describe regional extent and changes during treatment. A change in contrast signal does not establish pathological complete response (pCR), which concerns examined tissue. Residual disease can be inconspicuous, while nonmalignant tissue and treatment changes can enhance. Image-derived lengths and volumes need their own acquisition and calculation definitions.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-15",
+      "wikipedia": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+        },
+        {
+          "label": "ACR/RSNA: breast MRI",
+          "url": "https://www.radiologyinfo.org/en/info/breastmr"
+        },
+        {
+          "label": "Ray et al., 2018: background parenchymal enhancement",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29072981/"
+        },
+        {
+          "label": "UCLA: non-mass enhancement",
+          "url": "https://www.uclahealth.org/departments/radiology/education/breast-imaging-teaching-resources/birads/breast-mri-findings-non-mass-enhancement-nme"
+        },
+        {
+          "label": "Li et al., 2016: enhancement thresholds and FTV",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28066808/"
+        },
+        {
+          "label": "Hylton et al., 2016: ACRIN 6657/I-SPY 1 FTV and recurrence-free survival",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26624971/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "mri-field-strengths",
+        "intraoperative-mri-ct",
+        "contrast-reaction-history-and-premedication",
+        "gadolinium-contrast-kidney-impairment",
+        "metastatic-spinal-cord-compression-emergency",
+        "mri-safety-screening-implants",
+        "prostate-biopsy-route-and-antibiotic-prophylaxis",
+        "raised-intracranial-pressure"
+      ],
+      "cancers": [],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "adialante",
+        "monteris-medical",
+        "siemens-healthineers",
+        "ge-healthcare",
+        "philips",
+        "canon-medical",
+        "united-imaging",
+        "fujifilm",
+        "imagion-biosystems"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "takahashi-pci",
+        "nct06262139"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [
+        "cancer-imaging",
+        "radiology-imaging-cancer"
+      ],
+      "dependsOn": [],
+      "notes": [
+        "Think of a contrast marker passing through a landscape. A brighter region records how that examination sees the marker and tissue, not a label attached to every cancer cell. Background parenchymal enhancement (BPE) is enhancement of normal fibroglandular breast tissue, described as minimal, mild, moderate or marked. It is separate from the amount of fibroglandular tissue and from mammographic density. Non-mass enhancement (NME) describes enhancement without a mass or focus, distinguishable from the background; benign, high-risk and malignant processes can overlap in that appearance. Neither a bright area nor an NME label supplies histology.",
+        "Functional tumour volume (FTV) in research is a calculated volume of voxels inside a selected region that meet specified enhancement and processing rules. Changing thresholds, postcontrast time, region, software or registration can change which voxels qualify. Li and colleagues studied enhancement thresholds and prediction of pathological complete response in a particular breast cohort. DCE names an acquisition, BPE describes background, NME describes morphology, and FTV names a calculation. They are not four estimates of one quantity, and the word functional does not turn the calculated volume into an amount of viable tumour.",
+        "A fictional report gives a 60 mm NME span and an FTV of 0.6 mL. Both can be correct: one is a length across an enhancement pattern, the other a three-dimensional selected-voxel volume. A symbolic grid of qualifying and nonqualifying squares supplies no voxel dimensions or complete segmentation with which to recalculate 0.6 mL. Ask for the region, thresholds, acquisition time and software before comparing calculations. Neither number establishes invasive extent, viable-cell number or tissue pCR, and neither needs to be declared wrong because the units differ.",
+        "In ACRIN 6657/I-SPY 1, Hylton and colleagues analysed MRI-derived FTV and recurrence-free survival in 162 women with tumours at least 3 cm receiving neoadjuvant chemotherapy. The reported association concerns that cohort and calculation. It is neither a personal recurrence calculator nor a randomised demonstration that changing treatment in response to FTV improves outcomes.",
+        "The measurement starts with the prescribed body region and imaging protocol, without removing a tissue specimen. Record the breast and finding, morphology and enhancement, dates and comparison scan, and whether a reported number is length in mm or cm or volume in cubic centimetres or mL. Motion or misregistration can alter a calculation. An FTV of zero means no volume met that calculation's qualifying rule; it does not establish zero microscopic disease. A negative regional examination cannot exclude disease throughout the body. Tissue and imaging answer different questions, each within its sampling limits."
+      ],
+      "principle": "Magnetic fields and radiofrequency pulses produce tissue-dependent signals; specified sequences and contrast timing determine the image contrast.",
+      "strengths": [
+        "No ionising X-rays",
+        "Regional soft-tissue morphology and contrast patterns",
+        "Repeated acquisition can describe contrast time courses"
+      ],
+      "limitations": [
+        "Slow and expensive",
+        "Motion artefacts",
+        "Gadolinium concerns in renal impairment"
+      ],
+      "since": 1977,
+      "machineFamily": "imaging"
+    },
+    {
+      "id": "pet",
+      "kind": "technology",
+      "name": "PET (positron emission tomography)",
+      "aka": [
+        "PET scan",
+        "positron emission tomography",
+        "PET scanning",
+        "PET imaging"
+      ],
+      "tldr": "Positron emission tomography shows the distribution of a named radioactive tracer. What the signal means depends on the tracer, normal physiology, disease and examination conditions.",
+      "summary": "Positron emission tomography (PET) detects photons produced when a positron emitted by a tracer annihilates with an electron. Detected photon pairs inform reconstruction of the activity distribution. The tracer molecule and its handling in the body determine the biological question; PET is not a label that marks every cancer cell. Anatomical imaging can help locate and interpret the distribution.\n\nNormal tissues and inflammatory processes can accumulate some tracers, while some malignant lesions produce little detectable signal. The field imaged, background, lesion size, acquisition, reconstruction and tracer biology limit detection. Whole-body terminology does not establish a microscopic disease census. Uptake measurements have a named tracer, time, unit and calculation; they are not percentages of malignant cells.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Positron_emission_tomography",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Positron_emission_tomography"
+        },
+        {
+          "label": "NIBIB: nuclear medicine and PET",
+          "url": "https://www.nibib.nih.gov/science-education/science-topics/nuclear-medicine"
+        },
+        {
+          "label": "Boellaard et al., 2015: EANM FDG PET/CT version 2.0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25452219/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "molecular-imaging-roadmap"
+      ],
+      "cancers": [],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [
+        "fdg-pet",
+        "psma-pet",
+        "fapi-pet",
+        "trop2-pet",
+        "her2-pet",
+        "immuno-pet",
+        "parp-pet"
+      ],
+      "targets": [],
+      "drugs": [
+        "choline-c11"
+      ],
+      "companies": [
+        "alpha-9-oncology",
+        "evergreen-theragnostics",
+        "juniper-biosciences",
+        "curasight",
+        "lumina-pharmaceuticals"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct05381103",
+        "nct06084806",
+        "nct03444844",
+        "nct07615101",
+        "nct06754085",
+        "nct06369831",
+        "nct04724369",
+        "nct07691775",
+        "nct07649122",
+        "nct06474806"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "nuclear-medicine-hardware",
+        "pet-tracer-manufacturing"
+      ],
+      "notes": [],
+      "principle": "Positron emission and electron annihilation produce photon pairs used to reconstruct radiotracer activity; the tracer and examination protocol determine interpretation.",
+      "strengths": [
+        "Whole-body biology in one scan",
+        "Quantitative",
+        "Any target with a ligand can in principle be imaged"
+      ],
+      "limitations": [
+        "Resolution ~4 mm",
+        "Tracer supply and cost",
+        "Inflammation confounds FDG"
+      ],
+      "since": 1975,
+      "machineFamily": "imaging"
+    },
+    {
+      "id": "fdg-pet",
+      "kind": "technology",
+      "name": "FDG PET",
+      "aka": [],
+      "tldr": "FDG PET images the distribution of a radioactive glucose analogue. Normal tissues, inflammation and some cancers can take it up, so a bright area is not a diagnosis of cancer.",
+      "summary": "Fluorine-18 fluorodeoxyglucose (18F-FDG) is a radioactive glucose analogue used in PET. Its distribution reflects tracer delivery and glucose handling under the examination conditions, rather than a direct count of living cancer cells. Normal physiological uptake and inflammation can contribute signal, and some cancer deposits are not conspicuous.\n\nInterpretation keeps the clinical question, lesion size and background, blood glucose, preparation, uptake time, scanner calibration and reconstruction. A non-avid lesion is not negative histology. The method's usefulness and response criteria belong to a specified cancer and setting, rather than a universal availability or all-cancer claim.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Fludeoxyglucose_(18F)",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fludeoxyglucose_(18F)"
+        },
+        {
+          "label": "Boellaard et al., 2015: EANM FDG PET/CT version 2.0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25452219/"
+        },
+        {
+          "label": "ACR/RSNA: PET/CT",
+          "url": "https://www.radiologyinfo.org/en/info/pet"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pet-adapted-her2-deescalation",
+        "idea-metabolic-vulnerability-mapping",
+        "fdg-pet-ct-preparation"
+      ],
+      "cancers": [],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [
+        "pet"
+      ],
+      "targets": [],
+      "drugs": [
+        "fludeoxyglucose-f18"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "suv",
+        "medicare-ncd-220-6-17"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "pet-ct"
+      ],
+      "notes": [],
+      "principle": "FDG is taken up via GLUT transporters and trapped after phosphorylation by hexokinase.",
+      "strengths": [
+        "Universal availability",
+        "Decades of validation"
+      ],
+      "limitations": [
+        "Non-specific: infection and inflammation are also hot",
+        "Brain background",
+        "Poor in indolent tumours"
+      ]
+    },
+    {
+      "id": "recist",
+      "kind": "term",
+      "name": "RECIST",
+      "aka": [
+        "RECIST 1.1",
+        "measurable disease",
+        "new lesion",
+        "new lesions",
+        "sum of longest diameters",
+        "30% decrease",
+        "≥30% decrease",
+        "20% increase",
+        "≥20% increase",
+        "30% reduction"
+      ],
+      "tldr": "RECIST 1.1 uses predefined anatomical measurements and other disease findings to classify response. A target sum is not every cancer site or total tumour volume.",
+      "summary": "RECIST 1.1 selects up to five measurable target lesions, with at most two per organ. Ordinary lesions contribute longest diameters; qualifying lymph nodes contribute short-axis measurements. Other disease is recorded separately, along with new lesions. The target sum is a selected measurement, rather than a complete inventory or volume of cancer.\n\nFor target lesions, partial response requires at least a 30 percent decrease from the baseline sum. Progression requires at least a 20 percent increase from the smallest sum on study, together with at least a five-millimetre absolute increase. Baseline is the progression reference if it remains the smallest sum. Unequivocal non-target progression or an unequivocal new malignant lesion can change the overall category despite shrinking targets.\n\nOverall complete response requires the applicable target, non-target and new-lesion conditions, including short-axis reduction below ten millimetres for pathological nodes. Missing or equivocal findings require the protocol’s handling. Confirmation of response is not mandatory in every design: the guideline requires it for non-randomised trials whose primary endpoint is response.\n\nRecord the framework/version, selected lesions, dates, baseline, nadir, current values, acquisition comparability and findings outside the sum. iRECIST and metabolic PET criteria add different rules; an anatomical response does not establish tissue clearance, cure or a treatment decision.",
+      "asOf": "2026-11-09",
+      "wikipedia": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Response_evaluation_criteria_in_solid_tumors"
+        },
+        {
+          "label": "RECIST 1.1 primary guideline: definitions and confirmation, 2009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+        },
+        {
+          "label": "RECIST 1.1 full guideline: overall categories and duration sections",
+          "url": "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+        },
+        {
+          "label": "FDA 2018: response, duration and clinical endpoint context",
+          "url": "https://www.fda.gov/media/71195/download?attachment="
+        }
+      ],
+      "tags": [],
+      "related": [
+        "orr",
+        "bicr",
+        "pfs",
+        "duration-of-response-term",
+        "surrogate-validation",
+        "irecist",
+        "mrecist",
+        "rano-criteria",
+        "pcwg3",
+        "percist",
+        "choi-criteria",
+        "irrc",
+        "imrecist",
+        "itrecist",
+        "mrecist-mesothelioma",
+        "itmig-mrecist",
+        "gcig-ca125",
+        "inrc-2017",
+        "rano-bm",
+        "recip-1"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "ct",
+        "mri"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-therasse-recist-jnci-2000"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional target-sum sequence of 100, 60 and 73 millimetres, the last value is 27 percent below baseline but 13 millimetres, about 21.7 percent, above nadir. Under the stated assumption of comparable measurements and no outside progression, it meets both target-progression increases. This arithmetic is not a clinical decision rule for an unassessed person."
+      ],
+      "category": "Endpoints"
+    },
+    {
+      "id": "irecist",
+      "kind": "term",
+      "name": "iRECIST (response criteria for immunotherapy trials)",
+      "aka": [
+        "iRECIST",
+        "iUPD",
+        "iCPD",
+        "unconfirmed progressive disease",
+        "confirmed progressive disease"
+      ],
+      "tldr": "iRECIST provides trial-data rules for unconfirmed and confirmed progression during immunotherapy. An iUPD label does not prove pseudoprogression or automatically permit continued treatment.",
+      "summary": "The 2017 consensus adapted RECIST 1.1 for consistent data collection in immunotherapy trials. Progression first receives the iUPD, or immune unconfirmed progressive disease, label. Subsequent findings can confirm iCPD or meet another category under the framework; unchanged findings do not automatically erase iUPD. Target, non-target and new-lesion categories retain their own rules.\n\nFor trials permitting treatment beyond iUPD, the guideline limits continuation to clinically stable participants, with reassessment generally four to eight weeks later. Stability includes performance status, disease-related symptoms and the need for intensified symptom management. The working group also describes protocol and scheduling exceptions; the interval is not an independent instruction for personal care.\n\nThe framework records possible atypical response patterns without assuming that apparent worsening is pseudoprogression. It concerns trial data handling, while continuation or discontinuation decisions remain with the participant and clinical team. The primary guideline and later working-group clarifications do not make the category a universally validated treatment-selection rule.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Seymour et al., iRECIST: guidelines for response criteria for use in trials testing immunotherapeutics (Lancet Oncol 2017)",
+          "url": "https://doi.org/10.1016/S1470-2045(17)30074-8"
+        },
+        {
+          "label": "iRECIST full text (PubMed Central PMC5648544)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5648544/"
+        },
+        {
+          "label": "Independently resolved iRECIST primary guideline, 2017",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28271869/"
+        },
+        {
+          "label": "RECIST Working Group: iRECIST data-handling clarifications",
+          "url": "https://recist.eortc.org/irecist/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "recist",
+        "progressive-disease",
+        "irrc",
+        "imrecist",
+        "itrecist"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "ct",
+        "mri",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Endpoints"
+    },
+    {
+      "id": "percist",
+      "kind": "term",
+      "name": "PERCIST (PET response criteria in solid tumours)",
+      "aka": [
+        "PERCIST",
+        "PERCIST 1.0",
+        "PET Response Criteria in Solid Tumors"
+      ],
+      "tldr": "PERCIST 1.0 is a proposed FDG-PET response framework using lean-body-mass-normalised uptake. Its response rule needs more than a percentage change alone.",
+      "summary": "The 2009 PERCIST 1.0 proposal measures FDG activity using SUL, an uptake value normalised to lean body mass. It uses a small peak-uptake region of about one cubic centimetre, with reference tissue and suitability requirements. Consistent acquisition, calibration, preparation and timing matter; normalisation alone does not make two scans comparable.\n\nIn Table 7, partial metabolic response requires at least a 30 percent reduction in the target SUL peak and an absolute drop of at least 0.8 SUL units, together with the other disease and technical conditions. New lesions or progression elsewhere cannot be ignored. The most active assessed lesion after treatment need not be the same lesion as before. A percentage-only cutoff therefore does not implement the proposal.\n\nMetabolic and anatomical criteria measure different properties. The original proposal defers to RECIST 1.1 when FDG avidity or technical suitability is inadequate, and describes continuing validation needs. A metabolic response does not establish pathological complete response, disappearance of every tumour cell or individual treatment benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Wahl et al., From RECIST to PERCIST: evolving considerations for PET response criteria in solid tumors (J Nucl Med 2009)",
+          "url": "https://doi.org/10.2967/jnumed.108.057307"
+        },
+        {
+          "label": "Independently resolved Wahl primary PERCIST proposal, 2009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19403881/"
+        },
+        {
+          "label": "Primary PERCIST Table 7 and measurement/threshold discussion",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2755245/"
+        },
+        {
+          "label": "Riedl et al. 2017: comparison of PET/CT and contrast CT response in metastatic breast cancer",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28462446/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "recist",
+        "eortc-pet-1999",
+        "deauville-score"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "fdg-pet",
+        "quantitative-imaging-biomarkers"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "This record describes the cited 2009 proposal, not an exhaustive statement about every later PET protocol or disease. Keep the exact framework/version, reference regions, measured lesions, scan conditions and observation time.",
+        "Selected PERCIST 1.0 baseline conditions: measure SUL peak in an approximately one-cubic-centimetre sphere, about 1.2 cm across. The proposed measurable-lesion threshold is at least 1.5 times normal-liver mean SUL plus two standard deviations, using a 3-cm spherical liver reference. An abnormal liver requires the alternative blood-pool reference and its own rules. Table 7 also requires comparable reference uptake, tracer timing, calibration and acquisition; a threshold or lean-mass correction alone is insufficient.",
+        "The 2009 proposal advises waiting at least 10 days after chemotherapy to reduce transient effects on FDG uptake, while recognising that optimal timing is treatment-specific and other disease guidance can use longer intervals. This is a condition of that cited framework, not a personal scan-scheduling instruction or a universal interval after every treatment.",
+        "Table 7 defines complete metabolic response by target uptake below liver mean and indistinguishable from background blood pool, disappearance of other lesions to background, and no new cancer-typical FDG-avid lesions. An anatomical progression finding requires verification. Complete metabolic response does not require a zero uptake value. Stable metabolic disease meets none of the complete, partial or progressive metabolic definitions.",
+        "For the SUL-peak route to progressive metabolic disease, Table 7 specifies a rise greater than 30 percent and greater than 0.8 SUL units from baseline, in a pattern typical of tumour rather than infection or treatment effect. It also describes increased-extent/total-lesion-glycolysis and new cancer-typical-lesion routes. Its confirmation rules and visceral-lesion or clear RECIST-progression exceptions matter. For partial metabolic response, the percentage and absolute decline already stated must also satisfy the original other-lesion, new-lesion and anatomical-verification conditions. Use the complete framework and protocol rather than a percentage-only shortcut.",
+        "A 2017 analysis by Riedl and colleagues included 65 people with metastatic breast cancer receiving first- or second-line systemic therapy in prospective trials. All 22 RECIST responders also responded by PERCIST; 17 of 43 RECIST non-responders responded by PERCIST. The PFS concordance index was 0.70 for PERCIST versus 0.60 for RECIST. Four-year disease-specific survival was 58 percent in PERCIST responders and 18 percent in non-responders. These are cohort-level prognostic associations in response-defined groups. They do not establish benefit from changing treatment according to PERCIST, and are not a TNBC-specific or individual prognosis."
+      ],
+      "category": "Endpoints"
+    },
+    {
+      "id": "theranostics",
+      "kind": "term",
+      "name": "Theranostics",
+      "aka": [
+        "theranostic"
+      ],
+      "tldr": "Theranostics links a diagnostic test to treatment through a shared target and supporting evidence for the particular products and clinical setting.",
+      "summary": "A diagnostic tracer and a therapeutic product may use the same targeting molecule, or different molecules with a supported relationship to a shared target. Changing the carrier, chelator, radionuclide or administered mass can change distribution and retention. Shared targeting is a rationale for a pair, rather than proof that it is validated.\n\nA positive scan is a measurement with a particular tracer and acquisition method. It does not establish complete lesion coverage, absorbed dose, safety or individual benefit. Small lesions, heterogeneous expression and test sensitivity also limit negative-scan interpretation. Keep the exact diagnostic and therapeutic products, selection rule, population and outcomes.\n\nAs a dated example, the July 2026 U.S. FDA notice describes lutetium Lu 177 vipivotide tetraxetan with an androgen receptor pathway inhibitor for adults with PSMA-positive metastatic androgen pathway modulation-naive or -sensitive prostate cancer. It specifies gallium Ga 68 gozetotide or another approved PSMA PET product for selection. That announcement does not establish an indication for another target-positive cancer.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Theranostics",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Theranostics"
+        },
+        {
+          "label": "FDA 2019: nonclinical biodistribution, dosimetry and bridging",
+          "url": "https://www.fda.gov/media/129547/download"
+        },
+        {
+          "label": "Joint EANM/SNMMI guideline, 2023: selection and dosimetry scope",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37246997/"
+        },
+        {
+          "label": "FDA dated PSMA therapy/diagnostic selection notice, July 31, 2026",
+          "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway-inhibitor-therapy"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "radioligand-therapy",
+        "psma-pet",
+        "targeted-alpha-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Uptake, administered activity and absorbed dose are different quantities. In its then-approved prostate-cancer setting, the 2023 joint EANM/SNMMI guideline describes fixed activities and says individual dosimetry is not mandatory for in-label lutetium-177 PSMA-617 use. This is a product- and setting-specific statement, not a rule for every radionuclide or indication; benefit from adapting treatment by dosimetry still needs clinical evidence.",
+        "A target-directed PET product combines a targeting vector with a positron-emitting label and, where its chemistry uses them, a linker or chelator. Vectors include small molecules, peptides and antibodies. The accessible interaction and target location depend on the product; normal and stromal tissues may contribute signal. A labelled-key analogy is useful only if access and nonmalignant locks remain visible: RNA or total protein in one sample does not establish accessible target throughout the body. Observed uptake combines delivery, binding, retention, clearance and background.",
+        "Keep three questions separate: was tracer detected, is target sufficiently available for a specified product, and does the matched treatment have a useful benefit-harm balance? Theranostic imaging connects a diagnostic result to a related treatment strategy through evidence. Radioligand therapy delivers the therapeutic radionuclide's radiation. The 68Ga-PSMA imaging and mainly beta-emitting 177Lu-PSMA therapy example belongs to prostate cancer and named products; it is not a breast-cancer eligibility or access claim. Shared targeting does not make different vectors, molecular masses, radionuclides, retention or emissions interchangeable.",
+        "A fictional small-molecule tracer carrying isotope A lights up target M, and someone proposes an antibody carrying therapeutic isotope B. The scan shows that tracer's distribution at its recorded time. It cannot fill in the antibody's time course. The missing bridge includes therapeutic-product distribution and retention over time, decay and emissions, energy deposition and tissue dose, safety, and outcomes in the intended setting. Two curves with different shapes or durations can have different integrated activity; curve area alone is still not absorbed dose. The drawing has no calibrated numeric axes from which to calculate a dose.",
+        "The measurement ledger names tracer, vector, isotope, administered activity, administered mass, injection and image times, scan coverage and the defined uptake region. A bright focus can include nonmalignant target sites, while low signal can reflect limited access, small size, background, low target or the protocol. Heterogeneity among visible lesions can add information beyond one tissue sample, without describing every unseen lesion. The PSMA imaging and therapy guidelines concern their named products and prostate settings; FDA's August 2019 document concerns nonclinical oncology therapeutic-radiopharmaceutical development. None is a personal clinical protocol for an arbitrary target-positive scan."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "ultrasound",
+      "kind": "technology",
+      "name": "Ultrasound",
+      "aka": [],
+      "tldr": "Diagnostic ultrasound uses returning sound waves to make images of a selected region and can guide a needle. An image or measured diameter does not establish the cell type or exclude all cancer.",
+      "summary": "Diagnostic ultrasound sends high-frequency sound pulses through a transducer and reconstructs images from returning echoes. Gel helps transmit sound between probe and skin. Echo timing and strength, the selected plane and examination settings contribute to the displayed structures; moving the probe changes the view. It uses no ionising X-rays. This diagnostic use is distinct from therapeutic ultrasound.\n\nBreast ultrasound can examine a focal breast or nodal finding, distinguish fluid-containing from solid findings, and guide a needle towards a target. Shape, orientation, margins, internal echoes and posterior behaviour are interpreted together. A simple cyst, a complex finding and a solid finding are not interchangeable diagnoses. Sampling adds tissue evidence; the live image guides the procedure but does not replace examination of the sample.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Medical_ultrasound",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Medical_ultrasound"
+        },
+        {
+          "label": "ACR/RSNA: breast ultrasound",
+          "url": "https://www.radiologyinfo.org/en/info/breastus"
+        },
+        {
+          "label": "NIBIB: diagnostic, Doppler and therapeutic ultrasound",
+          "url": "https://www.nibib.nih.gov/science-education/science-topics/ultrasound"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "ultrasound-elastography-ceus",
+        "image-guided-core-biopsy-preparation-and-aftercare",
+        "prostate-biopsy-route-and-antibiotic-prophylaxis"
+      ],
+      "cancers": [
+        "tnbc",
+        "breast-hr-positive",
+        "thyroid",
+        "pancreatic"
+      ],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "ge-healthcare",
+        "philips",
+        "siemens-healthineers",
+        "canon-medical",
+        "fujifilm",
+        "mindray",
+        "imgt",
+        "nanoecho",
+        "beamworks"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct06693375"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The room-echo analogy explains the observation: a beam travels into tissue and returns from boundaries. Under a common assumed sound speed, a later return is placed deeper than an earlier one. That relationship does not identify cell type. A selected image plane is neither a histological section nor a survey of the whole body. Grayscale images primarily describe echo patterns; Doppler uses frequency changes from movement to describe blood-flow direction or speed. Its displayed colours depend on the mode and settings, rather than staining malignant cells. Flow is not itself proof of malignant activity.",
+        "Not every cancer, calcification or MRI finding has an ultrasound counterpart. DCIS can appear as mammographic calcifications without a visible ultrasound mass. A missing correlate is not proof that the other finding is absent or benign. After treatment, a residual ultrasound finding can include tumour, treatment change or both. Diameter is a dimension of that finding, not a viable-cell count or a test for all-body eradication. Imaging and tissue results should be reconciled with the limits of both observations.",
+        "Keep the examined region, side and location, depth, recorded axes, dimensions in mm or cm, examination date and comparison date. No tissue is removed by the imaging examination itself. Probe angle, compression, settings, boundary choice and imaging plane can affect a measured diameter; using the same machine name does not establish comparable measurements. A small difference between scans can include measurement variation. Neither darkness nor a smaller diameter establishes histology, molecular subtype or a pathological response.",
+        "In a fictional course, the longest reported dimension is 18 mm on one dated examination and 15 mm on another. The printed length difference is 3 mm, or one-sixth of 18 mm. It is not a measured one-sixth reduction in cancer cells: axes, planes, compression, settings and selected boundaries may differ, and a linear dimension is not volume. A smaller finding can be useful information without proving tissue pCR. Keep the actual examination dates and use tissue evidence for the sampled pathological question."
+      ],
+      "principle": "Pulse-echo of high-frequency sound; reflection at tissue interfaces builds the image. Doppler shows blood flow.",
+      "strengths": [
+        "Real-time, portable, no radiation",
+        "Ideal biopsy guidance"
+      ],
+      "limitations": [
+        "Operator dependent",
+        "Cannot see through bone or air"
+      ],
+      "machineFamily": "imaging"
+    },
+    {
+      "id": "suv",
+      "kind": "term",
+      "name": "Standardised uptake value (SUV)",
+      "aka": [],
+      "tldr": "The standardised uptake value (SUV) is a number for how brightly a spot lights up on a PET scan.",
+      "summary": "The standardised uptake value (SUV) is the number radiologists use to say how brightly a spot lights up on a PET scan. It is tissue radioactivity normalised to the injected dose and body weight, and SUVmax is the most widely used version. Values are affected by the scanner, the uptake time and blood glucose, and the PERCIST response criteria use SUL, a lean-body variant, instead. The term belongs to the PET (positron emission tomography) and FDG PET technology entries and to the Fludeoxyglucose F-18 (FDG) drug record, and it is referenced by the Cancer metabolism pathway, the Warburg effect, the Society of Nuclear Medicine and Molecular Imaging, and ideas on de-acidifying tumours so T cells can work and on a phase 0 fund using microdoses and imaging.",
+      "asOf": "2026-09-04",
+      "wikipedia": "https://en.wikipedia.org/wiki/Standardized_uptake_value",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Standardized_uptake_value"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "pet",
+        "fdg-pet"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "category": "Diagnostics & imaging"
+    },
+    {
+      "id": "radioligand-dosimetry",
+      "kind": "technology",
+      "name": "Radioligand dosimetry",
+      "aka": [],
+      "tldr": "Radioligand dosimetry estimates radiation deposited in tumors and normal tissues from where radioactivity goes and how it changes with time.",
+      "summary": "Calibrated activity measurements, often from suitable serial SPECT or PET imaging, inform a time-activity model. Time-integrated decays, emission properties, tissue mass and spatial assumptions then inform absorbed dose. Equal uptake on an early scan can be followed by different retention and different doses. Administered activity is an input, not a substitute for patient- or tissue-level dosimetry. The estimates can support evaluation of dosing strategies, but improved outcomes from a particular adaptation require their own evidence.",
+      "status": "established",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Dosimetry",
+      "links": [
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "EPA: activity, absorbed dose and their units",
+          "url": "https://www.epa.gov/radiation/radiation-terms-and-units"
+        },
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [
+        "radiopharma",
+        "imaging"
+      ],
+      "technologies": [
+        "radioligand-therapy",
+        "lu177-radioligand-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "spect"
+      ],
+      "notes": [
+        "Physical decay, biological clearance and radioactive daughters all affect interpretation. Alpha-emitter dosimetry may need additional microscopic considerations. FDA’s cited document addresses nonclinical development; it is not a universal clinical dosing protocol or evidence of a jurisdiction-wide reimbursement requirement.",
+        "Absorbed dose in gray (Gy) is energy deposited per tissue mass, with 1 Gy equal to 1 joule per kilogram. Administered activity in MBq measures radioactive decays per time, not energy absorbed. A single uptake image or SUV is neither quantity. Dose estimation needs an appropriate time-activity model, emissions and energy-deposition assumptions for the relevant tissue. Equal early uptake can precede different retention. The tested diagnostic tracer cannot supply a different therapeutic product's dose merely because both bind the same target."
+      ],
+      "principle": "Estimate activity through time in specified source regions, then calculate the energy deposited in relevant target regions with explicit assumptions.",
+      "strengths": [
+        "Makes tumor and normal-tissue exposure explicit",
+        "Can evaluate why the same administered activity produces different dose estimates"
+      ],
+      "limitations": [
+        "Calibration, time sampling and segmentation affect estimates",
+        "Organ averages can miss uneven microscopic exposure",
+        "Method-specific dose estimates do not establish a universal clinical threshold"
+      ]
+    },
+    {
+      "id": "dosimetry",
+      "kind": "term",
+      "name": "Dosimetry",
+      "aka": [],
+      "tldr": "Dosimetry estimates the radiation energy deposited per unit mass in a specified tissue or target. The estimate depends on measurements, geometry and a stated model.",
+      "summary": "Absorbed dose is reported in gray, equivalent to joules per kilogram. It differs from radioactive activity in becquerels, which describes decays per second. For a radiopharmaceutical, dose estimation uses the location and time course of radioactivity, the emissions and the target’s mass and geometry. Suitable calibrated serial imaging can inform the estimate; it does not turn one uptake value into a measured tumor dose. External-beam and internal-emitter methods answer related dose questions using different inputs.",
+      "asOf": "2026-11-08",
+      "wikipedia": "https://en.wikipedia.org/wiki/Dosimetry",
+      "links": [
+        {
+          "label": "EPA: activity, absorbed dose and their units",
+          "url": "https://www.epa.gov/radiation/radiation-terms-and-units"
+        },
+        {
+          "label": "MIRD pamphlet 22: alpha-particle radiobiology and dosimetry (2010)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5680544/"
+        },
+        {
+          "label": "FDA: nonclinical development of oncology therapeutic radiopharmaceuticals (2019)",
+          "url": "https://www.fda.gov/media/129547/download"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "spect",
+        "radioligand-therapy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Report the method, time sampling, target volume and uncertainty. An organ-average dose can hide uneven cellular exposure, especially for short-range alpha emissions. Absorbed dose and clinical outcome remain distinct; no single organ threshold or schedule applies to all products."
+      ],
+      "category": "Treatment jargon"
+    },
+    {
+      "id": "quantitative-imaging-biomarkers",
+      "kind": "technology",
+      "name": "Quantitative imaging biomarkers (RECIST, PERCIST, SUV, ADC)",
+      "aka": [
+        "imaging biomarkers",
+        "apparent diffusion coefficient",
+        "QIBA",
+        "quantitative imaging",
+        "quantitative imaging measurements"
+      ],
+      "tldr": "Quantitative imaging extracts measurements such as lesion dimensions or tracer uptake from scans. Their accuracy, interpretation and clinical usefulness require different evidence.",
+      "summary": "Quantitative imaging produces numerical estimates from images or imaging data. Lesion dimensions, FDG uptake and MRI-derived measures describe specified properties, rather than directly counting living or dead cancer cells. Response criteria interpret particular measurements alongside other disease findings; organ-specific risk categories have different purposes. Neither is a universal endpoint for every oncology trial.\n\nThe 2022 FDA technical-performance guidance separates the quantity being estimated from the value an algorithm reports. Systematic error, random variation, patient preparation and physiology, acquisition hardware/protocol, reconstruction, segmentation and software can affect a result. Assess specifications and supporting data for the stated intended use, population and operating range; no single precision claim applies to every measurement.\n\nQIBA documents describe technical performance claims and the conditions or stages attached to profiles. A profile title does not establish that a particular site or tool conforms, and technical performance alone does not validate a treatment-benefit prediction. Clinical interpretation and utility need their own evidence. A response or progression category is not an automatic command to stop or continue treatment, as the iRECIST framework explicitly illustrates.",
+      "status": "established",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "European Journal of Cancer 2009: New response evaluation criteria in solid tumours, revised RECIST guideline (version 1.1)",
+          "url": "https://doi.org/10.1016/j.ejca.2008.10.026"
+        },
+        {
+          "label": "RECIST 1.1 primary guideline: definitions and confirmation, 2009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19097774/"
+        },
+        {
+          "label": "RECIST 1.1 full guideline: overall categories and duration sections",
+          "url": "https://project.eortc.org/recist/wp-content/uploads/sites/4/2015/03/RECISTGuidelines.pdf"
+        },
+        {
+          "label": "FDA 2022: technical performance and uncertainty of quantitative imaging",
+          "url": "https://www.fda.gov/media/123271/download"
+        },
+        {
+          "label": "QIBA profile versions and stages",
+          "url": "https://qibawiki.rsna.org/index.php/Profiles"
+        },
+        {
+          "label": "QIBA technical claims guidance document",
+          "url": "https://qibawiki.rsna.org/images/3/31/QIBAProfileClaimGuidance-2016.02.10.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [
+        "metastatic-cancer",
+        "hodgkin-lymphoma",
+        "non-hodgkin-lymphoma",
+        "prostate",
+        "hcc",
+        "breast-cancer",
+        "nsclc"
+      ],
+      "sections": [
+        "imaging",
+        "diagnostics"
+      ],
+      "technologies": [
+        "radiomics",
+        "radiogenomics",
+        "imaging-core-labs",
+        "pet-adapted-therapy",
+        "fdg-pet",
+        "mp-mri",
+        "mri",
+        "ct",
+        "pet",
+        "radiology-ai-screening",
+        "psma-pet",
+        "fes-pet",
+        "ct-body-composition-sarcopenia"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "recist",
+        "deauville",
+        "sensitivity-specificity",
+        "suv",
+        "irecist",
+        "percist",
+        "deauville-score",
+        "pi-rads"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Estimate a defined imaging quantity under specified acquisition and analysis conditions, characterise measurement error, then evaluate the clinical interpretation and use supported by evidence.",
+      "strengths": [
+        "Provides explicit quantities and units for longitudinal or cross-sectional assessment",
+        "Can support consistent comparisons when acquisition and analysis requirements are met",
+        "Makes bias, variability and technical performance claims assessable"
+      ],
+      "limitations": [
+        "A measured change need not identify its cellular cause or clinical benefit",
+        "Hardware, protocol, physiology and analysis can alter results",
+        "Technical conformance and clinical validation are different evidence questions"
+      ]
+    },
+    {
+      "id": "pet-ct",
+      "kind": "technology",
+      "name": "PET/CT",
+      "aka": [],
+      "tldr": "PET/CT combines a named tracer-distribution image with X-ray anatomy. Uptake, anatomy and the scan conditions are interpreted together; a hot spot does not by itself identify malignant cells.",
+      "summary": "PET/CT combines positron emission tomography with computed tomography. PET reconstructs radiotracer activity; CT adds anatomical information and can support attenuation correction. Registration helps relate the two, without guaranteeing an exact match in moving tissues. A low-dose CT used for localisation and attenuation correction is not automatically a full diagnostic CT with its own acquisition and contrast protocol.\n\nTracer identity remains part of the scan identity. 18F-FDG concerns glucose handling, whereas an antibody or other target-directed tracer asks a different question. Normal physiology, inflammation and malignancy can contribute uptake. Structural and activity findings can also disagree. Interpretation retains anatomy, history, preparation, comparison images and, where indicated, tissue evidence.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/PET-CT",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PET-CT"
+        },
+        {
+          "label": "ACR/RSNA: PET/CT",
+          "url": "https://www.radiologyinfo.org/en/info/pet"
+        },
+        {
+          "label": "Boellaard et al., 2015: EANM FDG PET/CT version 2.0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25452219/"
+        },
+        {
+          "label": "Boellaard et al., 2025: EANM FDG PET/CT version 3.0, identity only",
+          "url": "https://doi.org/10.1016/j.eanmj.2025.100006"
+        },
+        {
+          "label": "NICE NG122: lung cancer, diagnosis and staging",
+          "url": "https://www.nice.org.uk/guidance/ng122/chapter/Diagnosis-and-staging"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "molecular-imaging-roadmap",
+        "spect-ct",
+        "biology-guided-radiotherapy",
+        "fdg-pet-ct-preparation"
+      ],
+      "cancers": [
+        "lung-cancer",
+        "nsclc"
+      ],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [
+        "pet",
+        "ct"
+      ],
+      "targets": [],
+      "drugs": [
+        "fludeoxyglucose-f18"
+      ],
+      "companies": [
+        "siemens-healthineers",
+        "ge-healthcare",
+        "philips",
+        "united-imaging",
+        "canon-medical"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [
+        "nct03444844",
+        "nct07615101",
+        "nct06754085",
+        "nct06369831",
+        "nct07691775",
+        "nct07649122"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [
+        "cancer-imaging",
+        "radiology-imaging-cancer"
+      ],
+      "dependsOn": [
+        "pet",
+        "ct"
+      ],
+      "notes": [
+        "Think of two maps placed together: tracer distribution and X-ray anatomy. In a fictional drawing, a large and a small region start with comparable tracer concentration, but the small region's signal spreads into surrounding reconstructed space. Partial-volume effects can lower its apparent peak. The uncalibrated sketch is not an uptake simulation and cannot recover the original activity, count cells or identify malignancy. A lower-looking peak therefore does not prove less tracer was originally present. Lesion size, surrounding activity and tracer biology matter alongside resolution.",
+        "Check the actual field imaged. EANM's 2015 version 2.0 calls skull-base-to-mid-thigh coverage torso imaging; it is not literally every body part. Even wider coverage cannot detect every microscopic deposit. Keep the administered tracer, imaged region and acquisition time with the report. Administered activity in megabecquerels (MBq) and activity concentration such as kilobecquerels per millilitre (kBq/mL) describe different quantities. Neither is a count of cancer cells.",
+        "A standardised uptake value (SUV) normalises a measured activity concentration using administered activity and a stated body-size measure. SUL uses lean body mass; SUVmax is a voxel maximum, while SUVmean averages a defined region. These values are not percentages of target-positive or malignant cells. PERCIST uses specified SUL-based response measurements; that framework does not make all SUV summaries interchangeable. Keep uptake time, FDG glucose, calibration, reconstruction and region selection. Raw numbers from different tracers or protocols do not supply a controlled biological comparison or a universal malignancy cutoff.",
+        "In a fictional example, a node is avid after inflammation in the region it drains. The report establishes uptake under the named tracer and conditions. Inflammation is an alternative explanation; uptake alone cannot decide between that and malignancy. Anatomy, timing, clinical history, earlier examinations and any appropriate sampled tissue add different evidence. Conversely, a non-avid node is not a negative tissue examination. A fall in SUV is a fall in that uptake measure, not automatically the same proportional reduction in cancer cells.",
+        "The technical definitions here draw on the read passages of EANM's 2015 FDG PET/CT guideline, version 2.0. A 2025 version 3.0 is registered under DOI 10.1016/j.eanmj.2025.100006. Its full text could not be read, so the older definitions are not presented as a complete account of that revision. This source-version distinction also prevents a generic PET/CT description from substituting for a product's current acquisition instructions.",
+        "Lung cancer: NICE NG122 (1.2.4) says to ensure that all people with lung cancer who could potentially have treatment with curative intent are offered PET-CT before treatment, and (1.2.5) that every cancer alliance should have a system of rapid access to PET-CT scanning for people who are eligible. If an operation or radical radiotherapy is being discussed and no PET-CT has been arranged, that is a fair thing to ask about."
+      ],
+      "principle": "Sequential PET and CT acquisition on one gantry; CT provides attenuation correction and anatomic localisation.",
+      "strengths": [
+        "Anatomy plus biology",
+        "Standard for lymphoma, lung, melanoma, head and neck staging"
+      ],
+      "limitations": [
+        "CT radiation added to PET dose"
+      ],
+      "since": 2001,
+      "machineFamily": "imaging"
+    },
+    {
+      "id": "granzyme-b-pet",
+      "kind": "technology",
+      "name": "Granzyme B PET",
+      "aka": [
+        "Granzyme-B PET",
+        "Granzyme B molecular imaging"
+      ],
+      "tldr": "Granzyme B imaging uses a radioactive tracer to study an enzyme released by cytotoxic immune cells. Early studies show feasibility and response associations; they do not validate choosing or stopping treatment from a scan.",
+      "summary": "Granzyme B is an enzyme released by cytotoxic T cells and natural killer cells. Experimental PET tracers use labelled peptides or peptidomimetics to target granzyme-associated activity. This is distinct from CD8 antibody-derived binder imaging and does not by itself establish recognition of a particular tumour antigen, identify which cell released the enzyme or prove a durable response.\n\nLarimer's 2017 proof of concept used mouse models and examined human biopsy specimens; it was not a human PET trial. A 2026 review describes 68Ga and 18F tracer approaches and early human feasibility while noting standardisation and validation needs. In Shen's 2024 phase 1/2 study, 68Ga-grazytracer imaging in 24 patients with mixed solid tumours or lymphomas explored distribution, safety and response associations after immune treatment. It did not randomise a scan-guided treatment strategy.",
+      "status": "emerging",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Larimer et al., 2017: granzyme B PET proof of concept",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28461564/"
+        },
+        {
+          "label": "Shen et al., 2024: phase 1/2 68Ga-grazytracer trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39389969/"
+        },
+        {
+          "label": "Filippi et al., 2026: granzyme B imaging review",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42223848/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immuno-pet",
+        "pet"
+      ],
+      "cancers": [],
+      "sections": [
+        "imaging"
+      ],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In Larimer's mouse experiments, granzyme-associated imaging separated treatment-response groups before tumour-size change. The human component examined tissue from nine biopsies; it did not establish human scan performance. CD8 presence alone does not establish tumour-antigen-specific recognition or killing. Granzyme release is a different observation and also cannot identify the contributing cell population or guarantee lasting benefit.",
+        "Shen's 24-person study combined several cancers and immune-treatment approaches, including checkpoint therapy alone, checkpoint therapy with chemotherapy and CAR-T therapy. No baseline granzyme PET was obtained, so a post-treatment value is not a measured within-person rise from baseline. Some patients with low uptake nevertheless had good outcomes, subgroup numbers were small, and optimal imaging time remained unsettled. Associations, feasible imaging and preliminary safety do not supply a validated treatment-selection threshold or prove that acting on the image helps."
+      ],
+      "principle": "A positron-emitting label on a peptide or peptidomimetic enables imaging of its granzyme-associated distribution; tracer chemistry, timing, access and background affect interpretation.",
+      "strengths": [],
+      "limitations": []
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "d10ad32dac20bf54433c667c3e316d7437994940",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.49
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.32
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.01
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.83
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "filesPassed": 293,
+    "testsPassed": 3101,
+    "testsSkipped": 2
+  },
+  "actualStaticReaders": 16,
+  "exactReaderAnchors": 71,
+  "selectedSchemaParses": 16,
+  "selectedSummarySlots": 144,
+  "storedTextAndEnglishFallbackChanges": 0,
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "cf72103b6d664db05d2fec59a0fd4ae5b09b5017ca2d4d96e5cef0819815826d",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 1
+  },
+  "APIContextAndDedupePassed": true,
+  "exactMarkdownPassages": 74,
+  "newNextProductionBuild": false,
+  "browserOrMobileVerification": false,
+  "testsFloorsBudgetsRulesAndAllowlistsChanged": false,
+  "independentExpertOwnerLearnerLanguageMainOrLiveCredit": 0,
+  "JSONAndLedgerVerification": "Both executable source ledgers regenerate with zero stale/missing proofs, while exit 2 retains unfinished work. Prior 214 pending and 3188 cohort files are byte-preserved. Current public JSON parses and the prospective public-content secret scan has zero findings. The final byte-identical replay and exact staged-diff scan are recorded separately.",
+  "sourceLedgersStaleOrMissingProofs": 0,
+  "priorPendingBytesPreserved": 216,
+  "priorCohortBytesPreserved": 3230,
+  "privateOriginalAndPublicProjectionSealHashesVerified": true,
+  "prospectiveStrictScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "scope": "Current tracked diff plus complete new public artifact content before the final validation/replay receipts. The final staged diff is scanned again at commit.",
+    "inputSHA256": "31e5904e45f3da7ab63baab6d8e076edb117a622298676a5f0e4e9664d81b5eb",
+    "rulesOrAllowlistsChanged": false
+  },
+  "rawReviewMediaAndLongPrimaryQuotesPublished": false
+}

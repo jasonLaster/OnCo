@@ -1,0 +1,40 @@
+{
+  "id": "mri",
+  "kind": "technology",
+  "ownerFile": "src/data/technologies.ts",
+  "sourceId": "Li",
+  "reason": "The 2016 threshold analysis evaluates pCR prediction. Its Introduction cites earlier RFS work, while Hylton is the separate RFS analysis. Correct the attribution without changing the Hylton note.",
+  "fields": [
+    {
+      "field": "notes",
+      "before": [
+        "Think of a contrast marker passing through a landscape. A brighter region records how that examination sees the marker and tissue, not a label attached to every cancer cell. Background parenchymal enhancement (BPE) is enhancement of normal fibroglandular breast tissue, described as minimal, mild, moderate or marked. It is separate from the amount of fibroglandular tissue and from mammographic density. Non-mass enhancement (NME) describes enhancement without a mass or focus, distinguishable from the background; benign, high-risk and malignant processes can overlap in that appearance. Neither a bright area nor an NME label supplies histology.",
+        "Functional tumour volume (FTV) in research is a calculated volume of voxels inside a selected region that meet specified enhancement and processing rules. Changing thresholds, postcontrast time, region, software or registration can change which voxels qualify. Li and colleagues studied enhancement thresholds and recurrence-free survival in a particular breast cohort. DCE names an acquisition, BPE describes background, NME describes morphology, and FTV names a calculation. They are not four estimates of one quantity, and the word functional does not turn the calculated volume into an amount of viable tumour.",
+        "A fictional report gives a 60 mm NME span and an FTV of 0.6 mL. Both can be correct: one is a length across an enhancement pattern, the other a three-dimensional selected-voxel volume. A symbolic grid of qualifying and nonqualifying squares supplies no voxel dimensions or complete segmentation with which to recalculate 0.6 mL. Ask for the region, thresholds, acquisition time and software before comparing calculations. Neither number establishes invasive extent, viable-cell number or tissue pCR, and neither needs to be declared wrong because the units differ.",
+        "In ACRIN 6657/I-SPY 1, Hylton and colleagues analysed MRI-derived FTV and recurrence-free survival in 162 women with tumours at least 3 cm receiving neoadjuvant chemotherapy. The reported association concerns that cohort and calculation. It is neither a personal recurrence calculator nor a randomised demonstration that changing treatment in response to FTV improves outcomes.",
+        "The measurement starts with the prescribed body region and imaging protocol, without removing a tissue specimen. Record the breast and finding, morphology and enhancement, dates and comparison scan, and whether a reported number is length in mm or cm or volume in cubic centimetres or mL. Motion or misregistration can alter a calculation. An FTV of zero means no volume met that calculation's qualifying rule; it does not establish zero microscopic disease. A negative regional examination cannot exclude disease throughout the body. Tissue and imaging answer different questions, each within its sampling limits."
+      ],
+      "after": [
+        "Think of a contrast marker passing through a landscape. A brighter region records how that examination sees the marker and tissue, not a label attached to every cancer cell. Background parenchymal enhancement (BPE) is enhancement of normal fibroglandular breast tissue, described as minimal, mild, moderate or marked. It is separate from the amount of fibroglandular tissue and from mammographic density. Non-mass enhancement (NME) describes enhancement without a mass or focus, distinguishable from the background; benign, high-risk and malignant processes can overlap in that appearance. Neither a bright area nor an NME label supplies histology.",
+        "Functional tumour volume (FTV) in research is a calculated volume of voxels inside a selected region that meet specified enhancement and processing rules. Changing thresholds, postcontrast time, region, software or registration can change which voxels qualify. Li and colleagues studied enhancement thresholds and prediction of pathological complete response in a particular breast cohort. DCE names an acquisition, BPE describes background, NME describes morphology, and FTV names a calculation. They are not four estimates of one quantity, and the word functional does not turn the calculated volume into an amount of viable tumour.",
+        "A fictional report gives a 60 mm NME span and an FTV of 0.6 mL. Both can be correct: one is a length across an enhancement pattern, the other a three-dimensional selected-voxel volume. A symbolic grid of qualifying and nonqualifying squares supplies no voxel dimensions or complete segmentation with which to recalculate 0.6 mL. Ask for the region, thresholds, acquisition time and software before comparing calculations. Neither number establishes invasive extent, viable-cell number or tissue pCR, and neither needs to be declared wrong because the units differ.",
+        "In ACRIN 6657/I-SPY 1, Hylton and colleagues analysed MRI-derived FTV and recurrence-free survival in 162 women with tumours at least 3 cm receiving neoadjuvant chemotherapy. The reported association concerns that cohort and calculation. It is neither a personal recurrence calculator nor a randomised demonstration that changing treatment in response to FTV improves outcomes.",
+        "The measurement starts with the prescribed body region and imaging protocol, without removing a tissue specimen. Record the breast and finding, morphology and enhancement, dates and comparison scan, and whether a reported number is length in mm or cm or volume in cubic centimetres or mL. Motion or misregistration can alter a calculation. An FTV of zero means no volume met that calculation's qualifying rule; it does not establish zero microscopic disease. A negative regional examination cannot exclude disease throughout the body. Tissue and imaging answer different questions, each within its sampling limits."
+      ],
+      "beforeSHA256": "761730b5b715b1fd906a78bfa8838dd8f8c2951930ee1feb952566310e0c5e4b",
+      "afterSHA256": "a36ba2d8998d59b62f1ba0930fd2b9b36daf868d48475c5f7de7440ee2275017"
+    },
+    {
+      "field": "asOf",
+      "before": "2026-11-12",
+      "after": "2026-11-15",
+      "beforeSHA256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+      "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+    }
+  ],
+  "tldrChanged": false,
+  "summaryChanged": false,
+  "aliasesChanged": false,
+  "relationsChanged": false,
+  "linksChanged": false
+}

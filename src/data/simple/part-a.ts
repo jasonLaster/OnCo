@@ -214,7 +214,7 @@ export const simpleA: Record<string, string> = {
   photoimmunotherapy: "An antibody carries a light-sensitive dye to the tumour; shining near-infrared light then bursts the cells.",
   hyperthermia: "Gently heating tumours to make radiation and chemotherapy work better.",
   "programmable-dna-targeting-therapeutics": "An experimental idea: a drug that reads a cell's DNA, recognises a cancer-only sequence, and kills only cells that carry it.",
-  fragmentomics: "Reading the sizes and positions of DNA pieces in blood. Cancer cells die messily and leave a recognisable pattern.",
+  fragmentomics: "Fragmentomics measures DNA fragment lengths, ends and positions so a model can estimate their source, but those patterns do not show that every fragment came from cancer.",
   "adc-payload-neutralizer": "An antibody given alongside an antibody-drug that mops up poison leaking into the blood, so there are fewer side effects.",
 
   // ---- products ----

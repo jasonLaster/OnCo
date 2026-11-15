@@ -211,7 +211,7 @@ export const tldr_pt: Record<string, string> = {
   photoimmunotherapy: "Um anticorpo carrega um corante sensível à luz até o tumor; iluminar com luz infravermelha próxima então estoura as células.",
   hyperthermia: "Aquecer tumores a 40-43 °C para que a radiação e a quimioterapia funcionem melhor.",
   "programmable-dna-targeting-therapeutics": "Uma ideia experimental: uma droga que lê o DNA de uma célula, reconhece uma sequência específica do câncer e mata só as células que a carregam. Mude o guia, e a mesma droga vira uma nova droga.",
-  fragmentomics: "Ler os tamanhos e posições dos fragmentos de DNA no sangue, não as mutações. Células cancerosas morrem de forma desordenada e deixam um padrão reconhecível.",
+  fragmentomics: "A fragmentômica mede o comprimento, as extremidades e as posições genômicas dos fragmentos de DNA em uma amostra. Os padrões podem ajudar um modelo a estimar sua origem; não mostram que cada fragmento veio de um câncer.",
   "adc-payload-neutralizer": "Um anticorpo dado junto com um ADC que recolhe o veneno quando vaza para a corrente sanguínea, para que o ADC atinja o tumor com menos efeitos colaterais.",
 
   // ---- produtos ----

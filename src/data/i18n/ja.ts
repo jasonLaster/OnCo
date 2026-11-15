@@ -1696,7 +1696,7 @@ export const tldr_ja: Record<string, string> = {
   "foresight-diagnostics": "Stanfordから生まれた企業。そのctDNA技術PhasED-SeqはPET/CTよりも高い精度で残存リンパ腫を検出する。2026年にCLARITYを臨床向けに提供開始。",
   "fortifi-hn01": "EGFRを阻害しつつTGF-betaを吸着する二機能性抗体で、HPV陰性の頭頸部腫瘍を免疫療法に反応させることを目指している。",
   "foundationone-cdx": "FDAが承認した組織検査（324遺伝子）と血液検査によるゲノム検査で、数十種類の薬剤のコンパニオン診断として使われている。",
-  fragmentomics: "フラグメントミクスは、血液中のDNA断片の大きさと位置を読み取るもので、変異を読むわけではない。がん細胞は乱雑に死ぬため、見分けやすい断片化パターンを残す。",
+  fragmentomics: "フラグメントミクスは、試料中のDNA断片の長さ、末端、ゲノム上の位置を測定します。そのパターンはモデルによる由来の推定に役立ちますが、各断片ががん由来だと特定するものではありません。",
   "frederick-national-lab": "生物医学研究に特化した米国唯一の国立研究所で、NCIのために運営されている。RAS Initiativeと、NCIの実験的医薬品製造の拠点でもある。",
   fulzerasib: "Fulzerasibは、中国で初めて承認されたKRAS G12C阻害の飲み薬で、既治療の当該変異を持つ肺がんに用いられる。",
   furlong: "furmonertinibがgefitinibと比べて肺がんが進行するまでの期間をほぼ2倍に延ばした直接比較試験で、中国の薬でFLAURAを再現した。",

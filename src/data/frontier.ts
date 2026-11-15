@@ -21,8 +21,8 @@ const frontierBase: EntityInput[] = [
     links: [{ label: "FinalDose (Y Combinator)", url: "https://www.ycombinator.com/companies/finaldose" }],
   },
   {
-    id: "fragmentomics", kind: "technology", name: "cfDNA fragmentomics", sections: ["early-detection", "diagnostics"], status: "established", asOf: "2026-11-10", wikipedia: "https://en.wikipedia.org/wiki/Cell-free_DNA",
-    tldr: "Fragmentomics reads the sizes and positions of DNA fragments in blood, not the mutations. Cancer cells die messily and leave a recognisable fragmentation pattern.",
+    id: "fragmentomics", kind: "technology", name: "cfDNA fragmentomics", sections: ["early-detection", "diagnostics"], status: "established", asOf: "2026-11-15", wikipedia: "https://en.wikipedia.org/wiki/Cell-free_DNA",
+    tldr: "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
     summary: "Fragmentomics analyses genome-wide cell-free DNA fragment length, end motifs, and nucleosome footprints at low sequencing depth, which is cheaper than deep mutation or methylation sequencing. DELFI Diagnostics commercialised FirstLook Lung (2023) as a blood test to increase uptake of low-dose CT screening, and presented the first randomised clinical-utility data (L301 FIRSTLUNG) at ATS 2026. Fragment features are also being layered into multi-cancer detection and MRD assays by Guardant, GRAIL, and academic groups.",
     principle: "Plasma cfDNA is whole-genome sequenced at ~1-2x depth; machine learning on fragment-size distributions across genomic windows distinguishes tumour-derived from haematopoietic DNA.",
     strengths: ["Low cost per sample", "Complements methylation and mutation signals", "Sensitive to chromatin state of the cell of origin"],

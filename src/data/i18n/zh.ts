@@ -211,7 +211,7 @@ export const tldr_zh: Record<string, string> = {
   photoimmunotherapy: "抗体把光敏染料带到肿瘤；照射近红外光后细胞爆裂。",
   hyperthermia: "把肿瘤加热到40-43°C，使放疗和化疗更有效。",
   "programmable-dna-targeting-therapeutics": "一个实验性想法：药物读取细胞DNA，识别癌症特有序列，只杀携带它的细胞。更换引导序列，同一药物就成为新药。",
-  fragmentomics: "读取血液中DNA片段的大小和位置而非突变。癌细胞死得杂乱，留下可识别的碎片模式。",
+  fragmentomics: "片段组学测量样本中DNA片段的长度、末端及基因组位置。模式可帮助模型推断其来源，但不能证明每个片段都来自癌细胞。",
   "adc-payload-neutralizer": "与ADC一同给予的抗体，在毒素漏入血流后将其清除，使ADC以更少副作用打击肿瘤。",
 
   // ---- 产品 ----
@@ -7346,7 +7346,7 @@ export const tldr_zh: Record<string, string> = {
   "cancer-cell-line-encyclopedias": "对基因组、药物敏感性和基因依赖性进行过系统分析的大型公共癌细胞系集合，是现代靶点发现背后的参考数据。",
   "cd40-agonists": "激活树突状细胞和巨噬细胞上CD40的抗体，用于启动针对检查点药物无法触及的肿瘤的免疫反应。",
   "cd47-blockade": "去除癌细胞向巨噬细胞展示的“别吃我”信号的药物，使免疫系统的清道夫细胞能够吞噬它们；领先项目已因安全性问题停止。",
-  "cfdna-methylation-testing": "读取肿瘤脱落DNA片段上化学标记的血液检测；这些标记可区分癌症DNA与正常DNA，并提示癌症所在部位。",
+  "cfdna-methylation-testing": "这类检测测量游离DNA上的化学标记。模型将标记模式与参考样本比较；单个标记或推断出的组织来源本身不能证明癌症。",
   celmods: "lenalidomide的新一代同类药，使细胞的清除机器更彻底地摧毁骨髓瘤蛋白Ikaros和Aiolos，在老药失效后仍然有效。",
   "ctc-capture": "从血样中“钓出”完整癌细胞进行计数或研究；其数量在乳腺癌、前列腺癌和结直肠癌中具有预后意义。",
   "dendritic-cell-vaccines": "用患者自身负载肿瘤蛋白的抗原呈递细胞制成的疫苗；用于前列腺癌的sipuleucel-T是首个获批产品，新版本正在脑癌等癌症中测试。",

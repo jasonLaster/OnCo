@@ -137,7 +137,7 @@ export const simpleO: Record<string, string> = {
   "cd40-agonists": "CD40 agonist antibodies switch on dendritic cells and macrophages to kick-start an immune attack on tumours that checkpoint drugs alone cannot reach.",
   "cd47-blockade": "CD47 blockers remove the 'don't eat me' signal that cancer cells show to macrophages so the immune system's scavenger cells can engulf them, though the lead programme was halted for safety.",
   "cea-surveillance-colorectal": "Carcinoembryonic antigen is measured in the blood every few months for five years after bowel cancer surgery because a rising level often comes before a visible recurrence.",
-  "cfdna-methylation-testing": "Cell-free DNA methylation tests read chemical marks on DNA fragments shed by tumours into the blood, telling cancer DNA from normal DNA and hinting at where the cancer is.",
+  "cfdna-methylation-testing": "These tests measure chemical marks on DNA outside cells. A model compares patterns with reference samples. A mark, or an estimated tissue source, does not by itself prove cancer.",
   "cellsearch-ctc-count": "A test that counts cells captured and identified under set rules in a blood sample. What the count means depends on the cancer, test and clinical question.",
   "ctc-capture": "Circulating tumour cell capture fishes whole cancer cells out of a blood sample to count or study them, and the count predicts outcome in breast, prostate and colorectal cancer.",
   "cobalt-60-teletherapy": "Cobalt-60 machines made curative radiotherapy widely available from the 1950s, and although linacs replaced them in rich countries they still treat many patients elsewhere.",

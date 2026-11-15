@@ -1696,7 +1696,7 @@ export const tldr_de: Record<string, string> = {
   "foresight-diagnostics": "Ausgründung aus Stanford, deren ctDNA-Technologie PhasED-Seq Restlymphome genauer nachweist als PET/CT; klinische Markteinführung von CLARITY 2026.",
   "fortifi-hn01": "Ein bifunktionaler Antikörper, der EGFR blockiert und TGF-beta abfängt, mit dem Ziel, HPV-negative Kopf-Hals-Tumoren für die Immuntherapie empfänglich zu machen.",
   "foundationone-cdx": "Die von der FDA zugelassenen genomischen Tests an Gewebe (324 Gene) und Blut, die als Begleitdiagnostika für Dutzende von Medikamenten dienen.",
-  fragmentomics: "Die Fragmentomik liest die Größe und Position von DNA-Fragmenten im Blut, nicht die Mutationen. Krebszellen sterben unordentlich ab und hinterlassen ein erkennbares Fragmentierungsmuster.",
+  fragmentomics: "Fragmentomik misst Länge, Enden und genomische Positionen von DNA-Fragmenten in einer Probe. Muster können die Herkunftsschätzung eines Modells unterstützen; sie weisen nicht jedes Fragment als Krebs-DNA aus.",
   "frederick-national-lab": "Das einzige nationale Labor der USA, das der biomedizinischen Forschung gewidmet ist und für das NCI betrieben wird; Sitz der RAS Initiative und der Herstellung experimenteller Arzneimittel des NCI.",
   fulzerasib: "Fulzerasib war die erste in China zugelassene Tablette gegen KRAS G12C, für Lungenkrebs mit dieser Mutation nach vorheriger Behandlung.",
   furlong: "Die direkte Vergleichsstudie, in der Furmonertinib die Zeit bis zum Wachstum des Lungenkrebses gegenüber Gefitinib fast verdoppelte und damit FLAURA mit einem chinesischen Medikament nachbildete.",

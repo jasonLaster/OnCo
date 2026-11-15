@@ -2039,8 +2039,8 @@ export const technologies: TechnologyInput[] = [
 ],
   },
   {
-    id: "cfdna-methylation-testing", dependsOn: ["liquid-biopsy", "methylation-profiling"], kind: "technology", name: "Cell-free DNA methylation tests", sections: ["early-detection","diagnostics"], status: "approved", asOf: "2026-11-10", since: 2024, wikipedia: W("Cell-free_fetal_DNA"),
-    tldr: "Blood tests that read chemical marks on fragments of DNA shed by tumours; the marks tell cancer DNA from normal DNA and hint at where the cancer is.",
+    id: "cfdna-methylation-testing", dependsOn: ["liquid-biopsy", "methylation-profiling"], kind: "technology", name: "Cell-free DNA methylation tests", sections: ["early-detection","diagnostics"], status: "approved", asOf: "2026-11-15", since: 2024, wikipedia: W("Cell-free_fetal_DNA"),
+    tldr: "These tests measure chemical marks on cell-free DNA. Models compare patterns with reference samples; a mark or an inferred tissue source alone does not prove cancer.",
     summary: "Cancer cells carry characteristic DNA methylation patterns that survive in the cell-free DNA shed into blood. Methylation-based tests use bisulfite or enzymatic conversion followed by targeted sequencing to detect a cancer signal and predict its tissue of origin; the multi-cancer early detection test Galleri works this way, and Guardant's Shield, the first blood test approved by the FDA for colorectal cancer screening in 2024, combines methylation with other cfDNA signals. Methylation also underpins some minimal residual disease assays.",
     principle: "Extract cfDNA from plasma, convert unmethylated cytosines, sequence targeted regions, and classify methylation patterns against reference tumour and normal profiles.",
     strengths: ["Tissue-agnostic cancer signal","Can point to the tissue of origin","Approved use in colorectal screening"],

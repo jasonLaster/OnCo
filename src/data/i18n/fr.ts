@@ -1696,7 +1696,7 @@ export const tldr_fr: Record<string, string> = {
   "foresight-diagnostics": "Société issue de Stanford dont la technologie ctDNA PhasED-Seq détecte le lymphome résiduel avec plus de précision que la TEP/TDM ; lancement clinique de CLARITY en 2026.",
   "fortifi-hn01": "Un anticorps bifonctionnel qui bloque l'EGFR et capte le TGF-bêta, dans le but de rendre les tumeurs de la tête et du cou HPV-négatives sensibles à l'immunothérapie.",
   "foundationone-cdx": "Les tests génomiques approuvés par la FDA sur tissu (324 gènes) et sur sang qui servent de diagnostics compagnons pour des dizaines de médicaments.",
-  fragmentomics: "La fragmentomique analyse la taille et la position des fragments d'ADN dans le sang, et non les mutations. Les cellules cancéreuses meurent de façon désordonnée et laissent un schéma de fragmentation reconnaissable.",
+  fragmentomics: "La fragmentomique mesure la longueur, les extrémités et les positions génomiques des fragments d'ADN d'un échantillon. Ces motifs peuvent aider un modèle à estimer leur origine ; ils n'identifient pas chaque fragment comme cancéreux.",
   "frederick-national-lab": "Le seul laboratoire national américain consacré à la recherche biomédicale, géré pour le NCI ; il abrite la RAS Initiative et la fabrication de médicaments expérimentaux du NCI.",
   fulzerasib: "Fulzerasib a été le premier comprimé bloquant KRAS G12C approuvé en Chine, pour les cancers du poumon porteurs de cette mutation après un traitement antérieur.",
   furlong: "L'essai comparatif direct dans lequel le furmonertinib a presque doublé le délai avant progression du cancer du poumon par rapport au géfitinib, reproduisant FLAURA avec un médicament chinois.",

@@ -1,0 +1,74 @@
+{
+  "newFullGateRun": false,
+  "lastGatedDataCommit": "d10ad32dac20bf54433c667c3e316d7437994940",
+  "inheritedExactRuntimeGateEvidence": {
+    "file": "research/education-coverage-2026-11-08/imaging-remaining-assets-2026-11-15/validation.json",
+    "sha256": "6a7f8c94163de6e173825c39d0d7827a8e98d24480c092f2ce2ff608ab044c9b",
+    "gates": {
+      "results": [
+        {
+          "name": "typecheck",
+          "exitCode": 0,
+          "seconds": 3.49
+        },
+        {
+          "name": "lint",
+          "exitCode": 0,
+          "seconds": 30.32
+        },
+        {
+          "name": "validate",
+          "exitCode": 0,
+          "seconds": 2.01
+        },
+        {
+          "name": "full-suite",
+          "exitCode": 0,
+          "seconds": 315.83
+        }
+      ],
+      "unchangedDuringGates": true,
+      "workerHeapMiB": 8192,
+      "fullSuiteMaxWorkers": 2,
+      "generatedPublicRestorePending": false,
+      "generatedPublicRestoredExactly": true
+    },
+    "fullSuite": {
+      "filesPassed": 293,
+      "testsPassed": 3101,
+      "testsSkipped": 2
+    }
+  },
+  "reuseReason": "No runtime, corpus, selector, registration or consumer edits; runtime source paths and all 23091 graph fingerprints exactly match the last gated data variant.",
+  "freshSelectedSchemaParses": 9,
+  "freshActualRootSSRReaders": 1,
+  "actualRootReaderCompleteTextReadChars": 9171,
+  "freshPeerFieldHashChecks": 8,
+  "all72ShortSummarySlotsAnd81ContextValuesUnchanged": true,
+  "allNineWholeTablesReviewMarksAndLongCachesUnchanged": true,
+  "sourceIdentityEntriesReverified": 98,
+  "sectionSignaturesVerified": 162,
+  "exactFieldPassages": 38,
+  "strictAuditScan": "Prospective public objects: zero findings under unchanged rules. Final staged diff scan is required before commit.",
+  "sourceLedgers": "Both phases regenerate with zero stale or missing proofs. Closed-check exit 2 retains unfinished work.",
+  "newProductionBuild": false,
+  "newAPIExport": false,
+  "newBrowserOrMobileReview": false,
+  "testsFloorsBudgetsRulesAndAllowlistsChanged": false,
+  "rawReviewMediaOrLongPrimaryQuotesPublished": false,
+  "mainCredit": 0,
+  "liveCredit": 0,
+  "prospectiveStrictScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "publicObjectsScanned": 31,
+    "noRulesOrAllowlistsChanged": true
+  },
+  "sourceLedgersStaleOrMissingProofs": 0,
+  "priorPendingBytesPreserved": 218,
+  "priorCohortBytesPreserved": 3279,
+  "privateOriginalAndPublicProjectionSealHashesVerified": true,
+  "all38ExactFieldPassagesAnd66ReferencesVerified": true,
+  "allOrdinaryItemsGradesAndEvidenceBindingsPreserved": true,
+  "finalByteIdenticalReplay": "The separate zero-change-replay receipt is written only after byte-for-byte equality is checked. This validation capture precedes that replay."
+}

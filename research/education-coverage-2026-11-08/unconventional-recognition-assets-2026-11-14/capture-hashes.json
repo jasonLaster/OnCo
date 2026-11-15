@@ -1,0 +1,539 @@
+{
+  "rawSourceCaptures": [
+    {
+      "sourceId": "atypical-nkt-crossref",
+      "url": "https://api.crossref.org/works/10.1038%2Fncomms10570",
+      "capturedAtUTC": "2026-11-15T04:25:31.737408+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1038%2Fncomms10570",
+      "contentType": "application/json",
+      "bytes": 28242,
+      "sha256": "1847c64770960b5d9da8c0d4dd83c4297ea6329e909d507680cab228fd498a6a"
+    },
+    {
+      "sourceId": "atypical-nkt-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fncomms10570&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:25:31.737145+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fncomms10570&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 12564,
+      "sha256": "090324636283398dff62c4deb62b66b61e0c52f625fbb112065497e46329dca8"
+    },
+    {
+      "sourceId": "atypical-nkt-publisher",
+      "url": "https://www.nature.com/articles/ncomms10570",
+      "capturedAtUTC": "2026-11-15T04:25:32.065071+00:00",
+      "status": 200,
+      "finalURL": "https://www.nature.com/articles/ncomms10570?error=cookies_not_supported&code=a1832bae-a0b8-48ca-8114-b86349963f66",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 505075,
+      "sha256": "2b31eef71722b2d9fb739f17834eed0feb41fdff807b4818bc43c8bae52a71e3"
+    },
+    {
+      "sourceId": "benlagha-crossref",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.191.11.1895",
+      "capturedAtUTC": "2026-11-15T04:22:46.882270+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1084%2Fjem.191.11.1895",
+      "contentType": "application/json",
+      "bytes": 17564,
+      "sha256": "f695a93fd3ccec7d8593f4ba83ac0b705e6972828f35d922407067691b0fbf4c"
+    },
+    {
+      "sourceId": "benlagha-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1084%2Fjem.191.11.1895&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:22:46.821863+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1084%2Fjem.191.11.1895&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 7043,
+      "sha256": "0af948b5c414f660a4b76e5c06973bbd6e0b7ae53bc574ca6925833371f8b5b6"
+    },
+    {
+      "sourceId": "borg-crossref",
+      "url": "https://api.crossref.org/works/10.1038%2Fnature05907",
+      "capturedAtUTC": "2026-11-15T04:19:52.416895+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1038%2Fnature05907",
+      "contentType": "application/json",
+      "bytes": 17308,
+      "sha256": "71d4c7edb03ee6ee05523bd40c51ffffe7a39df6c696d88208cf412145be2557"
+    },
+    {
+      "sourceId": "borg-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fnature05907&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:19:52.417168+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fnature05907&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 8160,
+      "sha256": "8237264a559e541baa1152081b8f615c58b6ff1cb62c5c19e4a3d798c8fe83d3"
+    },
+    {
+      "sourceId": "borg-publisher",
+      "url": "https://www.nature.com/articles/nature05907",
+      "capturedAtUTC": "2026-11-15T04:19:53.633642+00:00",
+      "status": 200,
+      "finalURL": "https://www.nature.com/articles/nature05907?error=cookies_not_supported&code=b63ab0a8-2526-4bf7-bf85-7baa1bf23247",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 331204,
+      "sha256": "632d36b869b39d12b5288098d2dbd3c3c925ee054bb8cfa999c3e455fa849934"
+    },
+    {
+      "sourceId": "btn3a1-uniprot-query",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABTN3A1+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5",
+      "capturedAtUTC": "2026-11-15T04:19:54.871577+00:00",
+      "status": 200,
+      "finalURL": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3ABTN3A1+AND+organism_id%3A9606+AND+reviewed%3Atrue&format=json&size=5",
+      "contentType": "application/json",
+      "bytes": 65158,
+      "sha256": "d19214ef38c503168a38f7c255b3c4ffe0a381b7fa6f928c2647302a43c0c453"
+    },
+    {
+      "sourceId": "capsomidis-crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.ymthe.2017.12.001",
+      "capturedAtUTC": "2026-11-15T04:18:34.737322+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1016%2Fj.ymthe.2017.12.001",
+      "contentType": "application/json",
+      "bytes": 20910,
+      "sha256": "4248cb884a8f8f82bf68a6868e81c2fc6d9f724c17361a5fb32b7b85bfaa19c4"
+    },
+    {
+      "sourceId": "capsomidis-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29310916+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:21.634764+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29310916+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 11207,
+      "sha256": "bff7b0828ab24c687260852e247627df8e2e67681d31650294bf309f7e04827d"
+    },
+    {
+      "sourceId": "cardell-crossref",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.182.4.993",
+      "capturedAtUTC": "2026-11-15T04:18:34.217994+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1084%2Fjem.182.4.993",
+      "contentType": "application/json",
+      "bytes": 4751,
+      "sha256": "f099d7ce29efb1ece78d13f0bf2923c4b4cd2618bf2727dd5cbc5015074493a7"
+    },
+    {
+      "sourceId": "cardell-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7561702+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:19.018308+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7561702+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 6803,
+      "sha256": "a90da0b3e75f00ef47889c078bd9d4f0e077567e46e5d84995c57bb6b1b55c58"
+    },
+    {
+      "sourceId": "cd1d-structure-crossref",
+      "url": "https://api.crossref.org/works/10.1038%2Fni1225",
+      "capturedAtUTC": "2026-11-15T04:18:33.879891+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1038%2Fni1225",
+      "contentType": "application/json",
+      "bytes": 24579,
+      "sha256": "db93f94e3a559839c03e46298c690fac9bf2bf66983bfdbb161e0e9892565a0f"
+    },
+    {
+      "sourceId": "cd1d-structure-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A16007090+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:17.663723+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A16007090+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 7234,
+      "sha256": "8856f5c90b995879771cfdbf8538dc785f09b4eed3bf50b13801c476a4b09208"
+    },
+    {
+      "sourceId": "cd1d-structure-publisher",
+      "url": "https://www.nature.com/articles/ni1225",
+      "capturedAtUTC": "2026-11-15T04:19:52.745120+00:00",
+      "status": 200,
+      "finalURL": "https://www.nature.com/articles/ni1225?error=cookies_not_supported&code=7416e93e-7b15-4f1a-93cd-b47b24e4342c",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 370268,
+      "sha256": "397616c48dac0376ab34cd643287024abde7e40387410b76fc613cdf8ae478b5"
+    },
+    {
+      "sourceId": "cd1d-structure-supplement-1",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fni1225/MediaObjects/41590_2005_BFni1225_MOESM1_ESM.pdf",
+      "capturedAtUTC": "2026-11-15T04:22:47.181544+00:00",
+      "status": 200,
+      "finalURL": "https://static-content.springer.com/esm/art%3A10.1038%2Fni1225/MediaObjects/41590_2005_BFni1225_MOESM1_ESM.pdf",
+      "contentType": "application/pdf",
+      "bytes": 140952,
+      "sha256": "bf370ed29e68fa95f7d73068e4e2108a2fd31da2afaf00cea6aed55f4eb1eaa4"
+    },
+    {
+      "sourceId": "gumperz-crossref-r2",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.20011786",
+      "capturedAtUTC": "2026-11-15T04:22:47.741317+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1084%2Fjem.20011786",
+      "contentType": "application/json",
+      "bytes": 15802,
+      "sha256": "8542fcccec4bc3ca76a397ffa2afad98718332370d1ebf8624e7cf83ec363dcc"
+    },
+    {
+      "sourceId": "gumperz-crossref",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.20011786",
+      "capturedAtUTC": "2026-11-15T04:18:34.434787+00:00",
+      "status": 429,
+      "error": "HTTP Error 429: Too Many Requests",
+      "contentType": null,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceId": "gumperz-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC2193772&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:20.066092+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC2193772&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 7733,
+      "sha256": "a1044532b07cb0a1334977baeb840240e42a9287ff0eb6285173e5f6120442b9"
+    },
+    {
+      "sourceId": "kawano-crossref",
+      "url": "https://api.crossref.org/works/10.1126%2Fscience.278.5343.1626",
+      "capturedAtUTC": "2026-11-15T04:18:33.879636+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1126%2Fscience.278.5343.1626",
+      "contentType": "application/json",
+      "bytes": 26849,
+      "sha256": "50a4f4df4d084ea671fb6e74e15be850713be2688aa676ed2fcd9f6cf5590549"
+    },
+    {
+      "sourceId": "kawano-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9374463+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:17.663995+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9374463+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 6973,
+      "sha256": "2adcb97cea11e37963cd52a43d09a818e8b8a2a436ac77827831021cad676a30"
+    },
+    {
+      "sourceId": "kierkels-crossref",
+      "url": "https://api.crossref.org/works/10.1182%2Fbloodadvances.2019032409",
+      "capturedAtUTC": "2026-11-15T04:18:34.661527+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1182%2Fbloodadvances.2019032409",
+      "contentType": "application/json",
+      "bytes": 28505,
+      "sha256": "6b24d49c88ad93050401702beca9125f9989e150e19a877666eec18d2aeb9bb3"
+    },
+    {
+      "sourceId": "kierkels-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC6784524&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:20.825273+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID%3APMC6784524&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 13558,
+      "sha256": "09b1d657849a33f36d50bec8933c32e7fd1965431583f6636a3304c7207ec2a5"
+    },
+    {
+      "sourceId": "lantz-crossref-r2",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.180.3.1097",
+      "capturedAtUTC": "2026-11-15T04:22:47.510095+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1084%2Fjem.180.3.1097",
+      "contentType": "application/json",
+      "bytes": 4273,
+      "sha256": "500d23321cf494b0393f3fe0667b8ae6d03c5d6e789bc37c654813447cafe766"
+    },
+    {
+      "sourceId": "lantz-crossref",
+      "url": "https://api.crossref.org/works/10.1084%2Fjem.180.3.1097",
+      "capturedAtUTC": "2026-11-15T04:18:34.216194+00:00",
+      "status": 429,
+      "error": "HTTP Error 429: Too Many Requests",
+      "contentType": null,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sourceId": "lantz-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7520467+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:19.017948+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A7520467+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 8246,
+      "sha256": "b5064c0a873ecc7837dcf74a7a9161f374562574c14840fdc45451f6923a2dfb"
+    },
+    {
+      "sourceId": "phosphoantigen-glue-crossref",
+      "url": "https://api.crossref.org/works/10.1038%2Fs41586-023-06525-3",
+      "capturedAtUTC": "2026-11-15T04:22:46.583957+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1038%2Fs41586-023-06525-3",
+      "contentType": "application/json",
+      "bytes": 32572,
+      "sha256": "76685ba5eafa5532980d02d781f92e8751dfbeadbf3e15f0a1d52a603f9f07ea"
+    },
+    {
+      "sourceId": "phosphoantigen-glue-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41586-023-06525-3&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:22:46.141000+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41586-023-06525-3&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 18600,
+      "sha256": "d70da3b78190c5c87ae12c9a8b743459d476141ad632e77b5c5a476324ee7cca"
+    },
+    {
+      "sourceId": "phosphoantigen-glue-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10533412/fullTextXML",
+      "capturedAtUTC": "2026-11-15T04:25:33.140875+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10533412/fullTextXML",
+      "contentType": "application/xml",
+      "bytes": 201170,
+      "sha256": "41850a333eb43a0cc423d37d511430ff603dcf1edba1ff808409b0a339ea1d64"
+    },
+    {
+      "sourceId": "rigau-crossref",
+      "url": "https://api.crossref.org/works/10.1126%2Fscience.aay5516",
+      "capturedAtUTC": "2026-11-15T04:18:34.443470+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1126%2Fscience.aay5516",
+      "contentType": "application/json",
+      "bytes": 20050,
+      "sha256": "5a438468f784736057d2f724404d4503dc34670f0fba0f76bd83f579bdc18f6c"
+    },
+    {
+      "sourceId": "rigau-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31919129+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:17:20.825094+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31919129+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 19297,
+      "sha256": "8a3a04815bee2f4274eaf97445d423c18c88495ee73439f337396695b31be55a"
+    },
+    {
+      "sourceId": "sandstrom-crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.immuni.2014.03.003",
+      "capturedAtUTC": "2026-11-15T04:22:45.765801+00:00",
+      "status": 200,
+      "finalURL": "https://api.crossref.org/works/10.1016%2Fj.immuni.2014.03.003",
+      "contentType": "application/json",
+      "bytes": 18267,
+      "sha256": "0ef7b740b02e1eac6572106b18519022f28dc2619b49fbae36b432f82f9f1209"
+    },
+    {
+      "sourceId": "sandstrom-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24703779+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "capturedAtUTC": "2026-11-15T04:22:45.765503+00:00",
+      "status": 200,
+      "finalURL": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A24703779+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 12070,
+      "sha256": "109560ba2ea535223184f8733ca5ad99d6b85415e4faed475f552d7437fedae0"
+    },
+    {
+      "sourceId": "sandstrom-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4028361/fullTextXML",
+      "capturedAtUTC": "2026-11-15T04:25:32.426633+00:00",
+      "status": 500,
+      "error": "HTTP Error 500: ",
+      "contentType": "application/json",
+      "bytes": 150,
+      "sha256": "94911f9ba4bd5d49ffd3ff2a8d4ba30e25419cf97e046a9da7fa6e6be6f0f57e"
+    }
+  ],
+  "rawBodiesKeptPrivate": true,
+  "assignedContextVersionReceipts": [
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/nkt-cells.md",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 9429,
+      "sha256": "020c8cc634ecf86c66349079508ad7283a88f99fee5acaf7179f5927543a5629",
+      "gitBlob": "f890cdfa76cca3827d54ba3e4208c6512e6f2d22"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/nkt-cells.md",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 9477,
+      "sha256": "16998a11796e172a20ead04cdb8677d9c4b5eb6f45d8f8a3854f66c4f2919bf6",
+      "gitBlob": "066b7b42c756c09ad9a949781883bc4bd96271fa"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/gamma-delta-t-cells.md",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 10868,
+      "sha256": "a1fbb51ff9633f629be899798414d385cc89d69719c2b916e5110c7e6912a0e1",
+      "gitBlob": "26c84e0063446b3bcbb1cdcdc291ca75ad10e654"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/gamma-delta-t-cells.md",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 10608,
+      "sha256": "214f58f0060f427c6ef44a87f1b8a990b7429c63662263cca4079ea5070fddad",
+      "gitBlob": "6823ba860d4793310bca738aea66993577c5745f"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/cd1d-lipid-and-peptide-hla-displays-v1-light.svg",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 5298,
+      "sha256": "1033220cc1efa2cb79ed5b34bfbd14f614ef23e38bae2bd047b002bb5c5bc9c2",
+      "gitBlob": "0c83810abf6c908138629f3e34ba0ff94b783ce8"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/cd1d-lipid-and-peptide-hla-displays-v1-light.svg",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 5298,
+      "sha256": "1033220cc1efa2cb79ed5b34bfbd14f614ef23e38bae2bd047b002bb5c5bc9c2",
+      "gitBlob": "0c83810abf6c908138629f3e34ba0ff94b783ce8"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/cd1d-lipid-and-peptide-hla-displays-v1-dark.svg",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 5298,
+      "sha256": "c8afb378034586a007e19990419cb3618f86a1bbd49390955e4848aab0e4d7f1",
+      "gitBlob": "c4b7462b60a906215ec891db0a2f179720b0c212"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/cd1d-lipid-and-peptide-hla-displays-v1-dark.svg",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 5298,
+      "sha256": "c8afb378034586a007e19990419cb3618f86a1bbd49390955e4848aab0e4d7f1",
+      "gitBlob": "c4b7462b60a906215ec891db0a2f179720b0c212"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/native-gamma-delta-contact-and-added-car-v1-light.svg",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 5040,
+      "sha256": "3b56f62244ee60203a6dbd0d905f5970cf5d0b150f04d84a18fb80002def2093",
+      "gitBlob": "e920097caf62b7cd6f69c0cdeacba192bfc00ac9"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/native-gamma-delta-contact-and-added-car-v1-light.svg",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 5040,
+      "sha256": "3b56f62244ee60203a6dbd0d905f5970cf5d0b150f04d84a18fb80002def2093",
+      "gitBlob": "e920097caf62b7cd6f69c0cdeacba192bfc00ac9"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/native-gamma-delta-contact-and-added-car-v1-dark.svg",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 5040,
+      "sha256": "37263d5c4747c8a762f86d043183c1ff7a06729314b1996f96910273c4406a82",
+      "gitBlob": "f8717a807b0a6261fb252240dfecbc8fcbcc8580"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/native-gamma-delta-contact-and-added-car-v1-dark.svg",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 5040,
+      "sha256": "37263d5c4747c8a762f86d043183c1ff7a06729314b1996f96910273c4406a82",
+      "gitBlob": "f8717a807b0a6261fb252240dfecbc8fcbcc8580"
+    },
+    {
+      "path": "wiki/education/images/index.md",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 172494,
+      "sha256": "4c6f128dc691c6a1f2d9995158cfc97a1aacc37c04d7c30b624b09bac3c3f338",
+      "gitBlob": "592c3e3dc756979e9444ef5e8be7e7659896bd74"
+    },
+    {
+      "path": "wiki/education/images/index.md",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 172322,
+      "sha256": "ab5c575c9192cc2638312e8e557b5b677d351ba642ab79f2ce6493808de8ad47",
+      "gitBlob": "188298957b127b9daf9fc164d673584faa37a485"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/batch08-current-baseline/cd1d-lipid-and-peptide-hla-displays-v1-independent-owner-review.json",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 12259,
+      "sha256": "b58909a8509e79184316e95cc2ac2de42a5e7cc8e31038240bfec8ada6fe1106",
+      "gitBlob": "dbd07bbeaa27e92e533815bdf25479d75dd00bfe"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/batch08-current-baseline/cd1d-lipid-and-peptide-hla-displays-v1-independent-owner-review.json",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 12259,
+      "sha256": "b58909a8509e79184316e95cc2ac2de42a5e7cc8e31038240bfec8ada6fe1106",
+      "gitBlob": "dbd07bbeaa27e92e533815bdf25479d75dd00bfe"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/cd1d-lipid-and-peptide-hla-displays-v1-provenance.json",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 2593,
+      "sha256": "95fe16cc7c57aa73299717015a0e2a8c23bbaf74dbc4bbf244488dc7643dcd2c",
+      "gitBlob": "cd94c75a742ec550ce786b994c799e13894cf93b"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/cd1d-lipid-and-peptide-hla-displays-v1-provenance.json",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 2593,
+      "sha256": "95fe16cc7c57aa73299717015a0e2a8c23bbaf74dbc4bbf244488dc7643dcd2c",
+      "gitBlob": "cd94c75a742ec550ce786b994c799e13894cf93b"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/cd1d-lipid-and-peptide-hla-displays-v1.txt",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 2396,
+      "sha256": "094fcffaea2d327cce900f786f1ce1bfdd8eccf3e5519bd60c1c416c3c7470d3",
+      "gitBlob": "3c742a0351edcf7e95485dd261260389f6e3f55a"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/cd1d-lipid-and-peptide-hla-displays-v1.txt",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 2396,
+      "sha256": "094fcffaea2d327cce900f786f1ce1bfdd8eccf3e5519bd60c1c416c3c7470d3",
+      "gitBlob": "3c742a0351edcf7e95485dd261260389f6e3f55a"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1-independent-owner-review.json",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 6820,
+      "sha256": "8a657944e32445a66a33835999e7b6d2c7772ed7df7f37db7050bd4e3b6b8cf9",
+      "gitBlob": "a2cb1a43848d631d912f72abf7483062e341a399"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1-independent-owner-review.json",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 6820,
+      "sha256": "8a657944e32445a66a33835999e7b6d2c7772ed7df7f37db7050bd4e3b6b8cf9",
+      "gitBlob": "a2cb1a43848d631d912f72abf7483062e341a399"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1-provenance.json",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 5019,
+      "sha256": "39c39c34fa67a8e7d57d6c6eafb6c799dc889c2c22d99148b91f76896947fd55",
+      "gitBlob": "96b1b2ce3895337bc0885e4e9c1c0d952c1057ce"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1-provenance.json",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 5019,
+      "sha256": "39c39c34fa67a8e7d57d6c6eafb6c799dc889c2c22d99148b91f76896947fd55",
+      "gitBlob": "96b1b2ce3895337bc0885e4e9c1c0d952c1057ce"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1.txt",
+      "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+      "bytes": 1879,
+      "sha256": "06d89db3228cc2f0d88adc64a3cf021c662c7586817fe6feb96acbafe8dd94fa",
+      "gitBlob": "b179329e615ceec2c2b5c6c1c54ab847685c5dad"
+    },
+    {
+      "path": "wiki/education/concepts/immunology/innate-and-unconventional-cells/images/prompts/native-gamma-delta-contact-and-added-car-v1.txt",
+      "guideRef": "c96896452386202405c435aa161bc5047919337a",
+      "bytes": 1879,
+      "sha256": "06d89db3228cc2f0d88adc64a3cf021c662c7586817fe6feb96acbafe8dd94fa",
+      "gitBlob": "b179329e615ceec2c2b5c6c1c54ab847685c5dad"
+    }
+  ]
+}

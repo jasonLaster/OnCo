@@ -1,0 +1,101 @@
+{
+  "literalReproduction": {
+    "literalFiles": [
+      {
+        "file": "route-provenance-data.json",
+        "language": "json",
+        "sha256": "8c4fb8c0b57b13e9fd2551e7794810c712c697681aefeb18291465eefcfc9b19",
+        "bytes": 2855,
+        "claimedLiteralHashMatches": true
+      },
+      {
+        "file": "planned-diagram-coordinates.json",
+        "language": "json",
+        "sha256": "17dac13ae798b2e75582515bc48340311f83258cd324f7350f59b58e1527ba43",
+        "bytes": 4832,
+        "claimedLiteralHashMatches": true
+      },
+      {
+        "file": "editable-diagram-composition-draft.txt",
+        "language": "text",
+        "sha256": "bce3c25e33ebfc62c14344af436ccd665051f9be5644f50c7f8e159424228d97",
+        "bytes": 5357,
+        "claimedLiteralHashMatches": true
+      },
+      {
+        "file": "requirements.txt",
+        "language": "text",
+        "sha256": "77c8ed96bdbe57b137165dfe5825eea39f1d9e32750231eb06eb6ad7d90431dd",
+        "bytes": 99,
+        "claimedLiteralHashMatches": true
+      },
+      {
+        "file": "render_diagram.py",
+        "language": "python",
+        "sha256": "f78442882da0435f45df72b36719e3264cc15a11e57265f4519cba1787633b05",
+        "bytes": 10962,
+        "claimedLiteralHashMatches": true
+      }
+    ],
+    "reviewedRendererImports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "html",
+      "pathlib"
+    ],
+    "networkImportsOrDynamicExecutionAllowed": false,
+    "reproducedSVGs": [
+      {
+        "file": "antigen-origin-and-display-routes-v1-light.svg",
+        "bytes": 14206,
+        "sha256": "5fe75052689b996041a3662170bbbf5fd545acafd67c5af72c2b8eafdd11cc1e",
+        "bothPinnedSourceVariantsByteIdentical": true
+      },
+      {
+        "file": "antigen-origin-and-display-routes-v1-dark.svg",
+        "bytes": 14206,
+        "sha256": "5c71e0bdfdc1b2a823b77090f4a95444f49fea29ff82d6cc9a7fb1d13f62f9c8",
+        "bothPinnedSourceVariantsByteIdentical": true
+      }
+    ],
+    "deterministicJSONOutputFiles": [
+      "diagram-coordinate-ledger.json",
+      "diagram-checks.json"
+    ],
+    "executionScope": "Previously fully read supplied renderer; standard-library-only, fixed input/output paths in private cohort directory, no network, no repository writes.",
+    "sourceBytesChanged": false,
+    "modelInvoked": false,
+    "newScientificCredit": false,
+    "newExpertOrOwnerApproval": false
+  },
+  "conditionalFontArithmetic": {
+    "routeFontUnits": 28,
+    "recognitionFontUnits": 34,
+    "assumedEmbedWidth": 312,
+    "nativeWidth": 600,
+    "routeCSSSize": 14.56,
+    "recognitionCSSSize": 17.68,
+    "newRenderedCSSMeasurement": false
+  },
+  "themePairs": [
+    {
+      "darkPath": "wiki/education/concepts/immunology/antigen-presentation/images/antigen-origin-and-display-routes-v1-dark.svg",
+      "lightPath": "wiki/education/concepts/immunology/antigen-presentation/images/antigen-origin-and-display-routes-v1-light.svg",
+      "geometryAndVisibleTextSHA256": "bd41031f8e628fe07046a1132fb892a7467e7702c673131a6def998e566ebf7a",
+      "sameSelectedGeometryAndText": true,
+      "cssColorsExcluded": true,
+      "pixelIdentityClaimed": false
+    },
+    {
+      "darkPath": "wiki/education/concepts/immunology/antigen-presentation/images/intended-x-and-unintended-y-recognition-v1-dark.svg",
+      "lightPath": "wiki/education/concepts/immunology/antigen-presentation/images/intended-x-and-unintended-y-recognition-v1-light.svg",
+      "geometryAndVisibleTextSHA256": "689e5d2cf45f1331acbd6e0c7e9b8d67a1ed8e0c1d9ddb4a77243a8184f3a9f3",
+      "sameSelectedGeometryAndText": true,
+      "cssColorsExcluded": true,
+      "pixelIdentityClaimed": false
+    }
+  ],
+  "notAClinicalRate": true,
+  "noPNGOrBrowserOrMobileAcceptance": true
+}

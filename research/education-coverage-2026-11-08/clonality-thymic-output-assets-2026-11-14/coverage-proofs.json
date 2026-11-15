@@ -1,0 +1,1261 @@
+{
+  "sourceFirstInventorySHA256": "fda045272907e1d3ee45bbe8419ccf0cb7e6eaf474ef87360c20d47a6b620f49",
+  "rootVersion": "proposal-support-bodies-45-root",
+  "peerVersion": "proposal-support-bodies-45-peer",
+  "proofs": [
+    {
+      "id": "P46-R01",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "A repertoire is a sampled distribution of receptor identities and abundances in a named population and time; it is not a complete body-wide map of targets or function.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "The T-cell repertoire is the collection of different T-cell receptors in a population and their abundances at a particular time.",
+      "sourceExcerptSHA256": "515facdb0ce7d23bac94e4901e3976154f4153dc8d9aef156bb129cfbbad1e0f",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "The repertoire is a distribution of receptor identities and abundances in a stated population and time.",
+          "passageSha256": "2f54eb355ade9cf1a20aa8f9ba5bc095bcf9e5b540a715a38447d863e8cd8287",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "A pretreatment blood sample is not a complete stored repertoire.",
+          "passageSha256": "93fbb8d5f92fadcd88e54c206d17f78dc3d1ee8a18f3f789ebeb3346bcab3d0e",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "summary",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "b8454ca0f169357b7bf3eb8c8e85b25c0ca92f397f4e84fb7ef0ba08f18918da",
+          "supportingExcerpt": "It is distinct from proving tumor specificity, a malignant clone or successful tumor killing",
+          "passageSha256": "b174145f21c55f9d77fac13281c64cd9ba58bc77a24568fbf440d3f437c1fbff",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015"
+      ],
+      "semanticAssessment": "A sampled distribution is not an entire body-wide census, antigen map or functional experiment.",
+      "sourceQualification": "A sampled distribution is not an entire body-wide census, antigen map or functional experiment.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R02",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "Clone denotes a cellular lineage, whereas a clonotype is an operational sequence grouping. One-chain and paired-receptor definitions differ in precision and depend on assay rules; shared single-chain identity need not establish one cellular lineage.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "A **clone** is a lineage descended from a T cell. **Clonotype** is an operational sequence label used to group sampled receptors.",
+      "sourceExcerptSHA256": "db1cb05d1c9986e9366c7fc648f8f8f2f38fab9fce9169b5933597d5a14ea4d5",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "A clone is a cellular lineage; a clonotype is an operational sequence grouping.",
+          "passageSha256": "6e151ea36d15806c5c96c382698238c80ca8fa0cdaf3ee6dc182314f8b856745",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "Single-chain labels and paired identities have different resolution.",
+          "passageSha256": "e331cb150e11322eb9522b24d82fefb38122e6da9d190547f6a201bcd0ab228b",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tcr-repertoire-sequencing",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "8bc1ca5d10b413cc4903d01307b36ef234f5110a51c35de25f1e2c84f91ad1e3",
+          "fieldSha256": "20e9bc0bcbed87238517c88a32cba78ce27ace8a157695aefe43fd34660c2481",
+          "supportingExcerpt": "the shared beta B does not make alpha X and alpha Y equal.",
+          "passageSha256": "370fbb044c7d83830731112ac19bec070510b089b09f575d572223405509613b",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tcr-repertoire-sequencing",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "8bc1ca5d10b413cc4903d01307b36ef234f5110a51c35de25f1e2c84f91ad1e3",
+          "fieldSha256": "20e9bc0bcbed87238517c88a32cba78ce27ace8a157695aefe43fd34660c2481",
+          "supportingExcerpt": "amino-acid identity alone is not proof of one cellular lineage.",
+          "passageSha256": "baf70a3c1c5013fd3c25b998494bc4a279bc287fe21cc150ad3c219ee9fa1d54",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 3
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015",
+        "han2014"
+      ],
+      "semanticAssessment": "Fresh paired-receptor abstract and targeted convergent-recombination results. The fictional X/Y chain example and amino-acid-versus-nucleotide grouping are not a newly tested clinical identity assay.",
+      "sourceQualification": "Fresh paired-receptor abstract and targeted convergent-recombination results. The fictional X/Y chain example and amino-acid-versus-nucleotide grouping are not a newly tested clinical identity assay.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R03",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "The fictional sampled clonotype-A numerator remains 10 at baseline and follow-up while the denominator changes from 1,000 to 100. Thus 10/1,000=1% and 10/100=10%: a tenfold fraction increase without a larger sampled count.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "A's measured fraction rose from 1% to 10%, while its sampled count stayed at 10.",
+      "sourceExcerptSHA256": "099dbb327ac6a69dde2e277fd301b2319af75ae8fca8d662bfc02624e3d379c3",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "10 clonotype A cells among 1,000 T cells (1%) and 10 among 100 (10%).",
+          "passageSha256": "171446581466fd0ac40dbcec802e04907bb19dc7bc84d07786e34f4e7a0aa8df",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "The sampled count remains 10; the changed denominator drives the larger fraction.",
+          "passageSha256": "31f25f4ac3cb5ea8819305e8da31da090faf684ed0910f1a930d0a4ddea2a053",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015"
+      ],
+      "semanticAssessment": "The 10/1000 and 10/100 figures are supplied fictional cell-count premises, independently recomputed; no study measured these values.",
+      "sourceQualification": "The 10/1000 and 10/100 figures are supplied fictional cell-count premises, independently recomputed; no study measured these values.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R04",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "Estimating absolute expansion in blood, tissue or the whole body requires comparable sampling and calibrated counts; the two fictional sampled counts alone are not such calibration.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "Estimating absolute expansion in blood or tissue needs comparable sampling and calibrated cell counts; neither fraction identifies A's target.",
+      "sourceExcerptSHA256": "96984d0b9284dacf30ccffd8904ba91ed397233b4a072db42723267b97cb6245",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "Absolute expansion requires comparable sampling and calibrated counts, and neither frequency identifies antigen.",
+          "passageSha256": "82165bd36ed25da37d275a1be62fa796ccfad74726e9b8a9380a07e0951cf994",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "tcr-repertoire-sequencing",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "8bc1ca5d10b413cc4903d01307b36ef234f5110a51c35de25f1e2c84f91ad1e3",
+          "fieldSha256": "20e9bc0bcbed87238517c88a32cba78ce27ace8a157695aefe43fd34660c2481",
+          "supportingExcerpt": "these are sampled receptor units and not a census of cells",
+          "passageSha256": "597f5cdc9ce5948f421725d9e0fdc447e09ab5fca83adc40dbff5c25c5055135",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015"
+      ],
+      "semanticAssessment": "Logical numerator/denominator and sampling-unit limits. A receptor-unit count and a calibrated cell count are kept separate.",
+      "sourceQualification": "Logical numerator/denominator and sampling-unit limits. A receptor-unit count and a calibrated cell count are kept separate.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R05",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "Repertoire comparisons need sample compartment, timing, sampling depth and chain/sequence definition. Failure to detect a receptor in one tube need not mean absence elsewhere.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "Sampling depth and chain definitions must be included when comparing studies.",
+      "sourceExcerptSHA256": "9b7f7a9340bdff72c135e0c9c0bee693d522c37a77ad2835d62f5ca3eb33a306",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "State sampling depth, chain definition, compartment, method and timing.",
+          "passageSha256": "88d767715df908743c6a80f765291984f260d4ff78cebc10f28bd232b530ab45",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "absence from one tube may reflect sampling or detection rather than whole-body absence.",
+          "passageSha256": "40283401456d195f0530957390415a4835c02f21da207a9bdf53aefdb7514b2d",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015",
+        "han2014"
+      ],
+      "semanticAssessment": "Study method/depth and paired-chain scope support the selected reporting rule; unselected assay performance numbers retain earlier scope.",
+      "sourceQualification": "Study method/depth and paired-chain scope support the selected reporting rule; unselected assay performance numbers retain earlier scope.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R06",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "Neither receptor frequency nor a dominant clonotype identifies antigen specificity, tumor recognition, functional killing, vaccine attribution or clinical benefit without separate evidence.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "A receptor’s abundance does not identify its antigen.",
+      "sourceExcerptSHA256": "084a1b3ff0d374d40c624c592de51149af1d9a2b8d94f8fbfd1c8d9dbf01f76f",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "does not establish cancer specificity, vaccine causation or uniformly worse immunity.",
+          "passageSha256": "6dee1c97d97efb19406643944790f1b2a1779a1ea81214fc28125a8c97b63af5",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "whether cells killed tumour, or whether treatment helped",
+          "passageSha256": "eb7845a29612688b3e7ba8b614a39f34a6fa25bad45b4f48fdec1aef3d39953b",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 5
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "neither frequency identifies antigen.",
+          "passageSha256": "d892098afce94b5cc34a26ae2a55a069648cd2dc8e23ebef588b852579516a9e",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015",
+        "han2014"
+      ],
+      "semanticAssessment": "Measured abundance, target recognition, function and patient benefit are distinct questions. No clinical response threshold is newly validated.",
+      "sourceQualification": "Measured abundance, target recognition, function and patient benefit are distinct questions. No clinical response threshold is newly validated.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-R07",
+      "family": "fixed-count-changing-denominator",
+      "requirement": "Diversity, evenness, expansion and total cell count are different summaries. A few expanded clones after a fictional infection can lower measured diversity without establishing a cancer response or making low diversity universally harmful.",
+      "relatedAssignedAssetIndices": [
+        0,
+        4
+      ],
+      "sourceExcerpt": "Lower measured diversity can reflect a vigorous response.",
+      "sourceExcerptSHA256": "ee434dc893543b7095377b724b1146ce7697cfc5e48720f7a48898af7c10e3f7",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "c950f9ba5e3c791bf4243529e6cf2c22cae4ce4f6b944f03f59990f3f280ae0a",
+          "gitBlob": "899ee54c19042de3d9c0ee7b6f9bb8b9df57d6e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/t-cell-repertoire.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "5da5fbca3c7c05d07ab9a4fb8e106498fb9152e5584da499fda02f57c91e9091",
+          "gitBlob": "9f62384d6fa05c32a7faf3f2b95f6b55ebe00098"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "diversity and total T-cell count are different quantities.",
+          "passageSha256": "f4a418aeb9a0c73a0264d10ffc827f9380ab122f264d53a9fd69c27358400eea",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "Lower measured diversity after infection may reflect a vigorous response and does not establish cancer specificity, vaccine causation or uniformly worse immunity.",
+          "passageSha256": "01e52e123a53f8ce6ac24f3e29bad731b972db1ac4265daf206498a4c3d872b9",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015"
+      ],
+      "semanticAssessment": "Fictional infection example and interpretation of different distribution summaries; earlier Shannon/Simpson examples and unrelated methods citations are not newly reverified.",
+      "sourceQualification": "Fictional infection example and interpretation of different distribution summaries; earlier Shannon/Simpson examples and unrelated methods citations are not newly reverified.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T01",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "New thymic arrivals are distinct from survival and division of cells already in the peripheral pool; the observed naive-cell pool also depends on movement and loss.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "new T cells can emerge from the thymus while existing cells survive or divide elsewhere.",
+      "sourceExcerptSHA256": "6f640dde17f408a9d8de56278c9047a9543a5a7ee02531e84929f5754fe1e50d",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Thymic output is release of newly developed T cells",
+          "passageSha256": "47cee5501e7ba69f8f1339a9619f7a2bf5854c5840346a82803083f94f2307ad",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Naive-cell maintenance also reflects survival, peripheral division, movement and loss.",
+          "passageSha256": "fa84bcc56b7c1329d348237dfe23134645fabf1c082b1f0a8e48af4347a9b1b6",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        }
+      ],
+      "sourceIds": [
+        "douek1998",
+        "vrisekoop2008",
+        "denbraber2012"
+      ],
+      "semanticAssessment": "Human and mouse maintenance evidence remains at complete-abstract depth, with the species and tested populations explicit.",
+      "sourceQualification": "Human and mouse maintenance evidence remains at complete-abstract depth, with the species and tested populations explicit.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T02",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "Adult thymic output can persist while generally declining with age. Involution is gradual and variable, not shutdown at a universal adult birthday or one universal output rate.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "That is a gradual and variable change, not an organ closing at age twenty.",
+      "sourceExcerptSHA256": "473fa2f394cb62fd3ab5b6a220771f1e7cd02bf1a496fafa79c2ea4ab25cfe4d",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "involution is a gradual, variable decline in active tissue rather than a fixed adult-age shutdown.",
+          "passageSha256": "5a8fc61fcc64305f9e7c03abd069cf34899194dda24caa67ed96f5424fe223aa",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Human age and HIV-treatment measurements support adult output, but no universal individual output rate.",
+          "passageSha256": "12a044bad6c6f3ceb8b0fb65e081acb5b5c9f74a6c1fe38ad8917bb8508f2433",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        }
+      ],
+      "sourceIds": [
+        "douek1998"
+      ],
+      "semanticAssessment": "Complete human primary abstract supports adult output and age-related decline; it does not give a universal birthday cutoff or individual daily rate.",
+      "sourceQualification": "Complete human primary abstract supports adult output and age-related decline; it does not give a universal birthday cutoff or individual daily rate.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T03",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "A naive phenotype does not date export from the thymus: cells can survive and divide outside it while retaining a broad naive phenotype.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "Its naive phenotype does not prove it left the thymus yesterday.",
+      "sourceExcerptSHA256": "62b682c861b819b110909631d85b1f271af277d91bdf9f0517f8c17f1628fba4",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Naive phenotype is not a recent-emigrant birth certificate.",
+          "passageSha256": "b9a883805eed501c40f523df244fedb8c495c2595bb639f876c0210d315b2c08",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Naive-cell maintenance also reflects survival, peripheral division, movement and loss.",
+          "passageSha256": "fa84bcc56b7c1329d348237dfe23134645fabf1c082b1f0a8e48af4347a9b1b6",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        }
+      ],
+      "sourceIds": [
+        "vrisekoop2008",
+        "denbraber2012"
+      ],
+      "semanticAssessment": "Phenotype, maintenance and time since export are distinct; no single-cell birth-date measurement is inferred.",
+      "sourceQualification": "Phenotype, maintenance and time since export are distinct; no single-cell birth-date measurement is inferred.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T04",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "TRECs are circular DNA by-products of T-cell receptor rearrangement that do not replicate with chromosomes during division; proliferation can dilute measured copies per cell.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "They do not replicate with the chromosome during cell division.",
+      "sourceExcerptSHA256": "3426caf28974aef98d86168d12010bf26815f613a4301c59ac3ac6dcd544f6c7",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "TRECs are circular receptor-rearrangement by-products that do not replicate with chromosomes.",
+          "passageSha256": "2e0ab6ba20ae8793738f98779d6598256b13a2103b379b20884a46e5f41a3964",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Division alone can dilute copies per cell without proving stopped output.",
+          "passageSha256": "51d363d97a7c0da62671d23605b41068806c68be9ad2bc4fd66f5d102459f039",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "hazenberg2000"
+      ],
+      "semanticAssessment": "The complete, visibly checked primary introduction states episomal nonreplication as background citing earlier papers; those underlying references were not individually read.",
+      "sourceQualification": "The complete, visibly checked primary introduction states episomal nonreplication as background citing earlier papers; those underlying references were not individually read.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T05",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "In the invented closed ledger two cells holding four total circles divide into four cells retaining four circles. The average changes from 4/2=2 to 4/4=1 copy per cell. Entry, death and degradation are outside this toy comparison.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "2 cells carrying 4 total T-cell receptor excision circles (TRECs) divide into 4 cells with the same 4 circles: the average falls from 2 to 1 copy per cell.",
+      "sourceExcerptSHA256": "a713c8d94bc90c4c27097856ccda8f4e25c0dad437c418064c86e924bad105c5",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "In a fictional closed ledger, 2 cells with 4 circles become 4 cells with the same 4 circles: average copies per cell decline from 2 to 1.",
+          "passageSha256": "553c21e2d017c95706db9a40c88b587b74ce9ce8f9885d72ace17d286c9ce471",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "hazenberg2000"
+      ],
+      "semanticAssessment": "The closed 4/2 to 4/4 ledger is fictional arithmetic. No entry, death or intracellular degradation is modeled; constant total copies are a premise rather than a claim about all living cells.",
+      "sourceQualification": "The closed 4/2 to 4/4 ledger is fictional arithmetic. No entry, death or intracellular degradation is modeled; constant total copies are a premise rather than a claim about all living cells.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T06",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "The fictional parents each hold two circles. One daughter pair receives 2 and 0 and the other 1 and 1; each lineage retains its two copies. Uneven allocation is one illustration, not a required distribution in every division.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "The left daughter pair carries 2 and 0 circles; the right pair carries 1 and 1.",
+      "sourceExcerptSHA256": "203cee1b2bd9c7b6028c89d025130d9e2aad9371c5bbc81a79f944586a95a8b0",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Daughter pairs can carry 2/0 and 1/1 circles, each retaining the parent's 2.",
+          "passageSha256": "cba9baae687036bd07e6df2842e34c5fff9ed8d370d7e4ad157c55d5f4d12453",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "summary",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "3e4008a5810c143f31a1f83d4d8c87d7beeb1c8ac5f8a061a9291972ee155c51",
+          "supportingExcerpt": "Allocation can be uneven.",
+          "passageSha256": "d7e8eb81324ac430f32fce929176cea2361f6bf9b1865a99d20bc3055d4425e6",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "hazenberg2000"
+      ],
+      "semanticAssessment": "The explicitly fictional lineage allocation conserves two copies in each parent/daughter pair. It is one illustration, not a mandatory distribution in every cell division.",
+      "sourceQualification": "The explicitly fictional lineage allocation conserves two copies in each parent/daughter pair. It is one illustration, not a mandatory distribution in every cell division.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T07",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "A fall in copies per cell need not establish zero thymic output; output, survival, movement, division, denominator and independent measurements require separate assessment.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "Division can dilute that per-cell marker.",
+      "sourceExcerptSHA256": "fa057bffa9f8513325069cb270af6b369fa44f692bf34872b99d13fc51d11bd1",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Division alone can dilute copies per cell without proving stopped output.",
+          "passageSha256": "51d363d97a7c0da62671d23605b41068806c68be9ad2bc4fd66f5d102459f039",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Interpret measurements with exposure, compartment, observation time, division, survival and movement.",
+          "passageSha256": "17b5864d3e86b653cb329a556e6f6f018f4f32383b38d9c26828886be5e64bd1",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "hazenberg2000",
+        "denbraber2012"
+      ],
+      "semanticAssessment": "Primary abstract plus the selected introduction support division/output separation; the interpretation is not an individual production-rate estimate.",
+      "sourceQualification": "Primary abstract plus the selected introduction support division/output separation; the interpretation is not an individual production-rate estimate.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T08",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "TREC copies per a specified number of cells and copies per blood volume use different denominators and answer different questions; concentration is not an unqualified production rate.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "A quantitative DNA assay may report copies per specified number of cells or per blood volume.",
+      "sourceExcerptSHA256": "c1dd8b6c2fb1f044191c6aa57bb23e09742f78191f4158f27df4b63a6d42bbb3",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Copies per cell and per blood volume answer different questions; the ledger does not count new arrivals, immune age or daily export.",
+          "passageSha256": "b80a46592897b1ea6935e3909bcc872012dc0ca8a8a402fd847da8c27df30604",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "hazenberg2000"
+      ],
+      "semanticAssessment": "Different abundance denominators answer different questions. The selected paper does not validate all TREC protocols or a universal rate conversion.",
+      "sourceQualification": "Different abundance denominators answer different questions. The selected paper does not validate all TREC protocols or a universal rate conversion.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T09",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "Cell count, phenotype, imaging and TREC content each have limits. Imaging tissue is not a direct daily export count, and none alone establishes immune age, cancer benefit or a collection recommendation.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "Imaging describes thymic tissue, not a direct daily export count.",
+      "sourceExcerptSHA256": "26affa772456680ce84ac22f22a9c690a5707be08fa3f07625953de9dc2d243a",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "imaging is not a direct daily output count.",
+          "passageSha256": "577b4653d717a02a2793b4cb946afed6aff7a47f532addaf1d96deef01cf5ade",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Neither more diversity, adult output nor age alone promises a new cancer-recognising receptor, vaccine benefit or a collection recommendation.",
+          "passageSha256": "770c1973d0f13e92d7859aa1a194ac7a97df06efcc0b801908dc5cbaf63b7184",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "summary",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "3e4008a5810c143f31a1f83d4d8c87d7beeb1c8ac5f8a061a9291972ee155c51",
+          "supportingExcerpt": "naive phenotype, thymic imaging or TREC content alone cannot provide a complete immune-age or cancer-benefit forecast.",
+          "passageSha256": "5d5cdf12dcd27d28c5f7ad85cd648d902b9c5dd9d918ad09da85a3c10de96f44",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "douek1998",
+        "hazenberg2000",
+        "denbraber2012"
+      ],
+      "semanticAssessment": "Measurement/inference boundaries, not a newly validated immune-age, banking or cancer-benefit predictor.",
+      "sourceQualification": "Measurement/inference boundaries, not a newly validated immune-age, banking or cancer-benefit predictor.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T10",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "Human and mouse maintenance mechanisms differ in the cited kinetic/modeling comparison; the mouse dependence on thymic input is not a direct human cell-banking or treatment rule.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "A mouse's dependence on new thymic arrivals cannot be transferred directly into a human cell-banking rule.",
+      "sourceExcerptSHA256": "ba4dacaf59d12f1e6f72078343198299dd61bbd960f061dcbabca3073ef1b06c",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Human/mouse kinetic comparisons found materially different dependencies; mouse output cannot dictate a human collection or banking rule.",
+          "passageSha256": "370afb3a9ae508a28191713bc4349bf082b933a9829530dfd59d19f2575fe950",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        }
+      ],
+      "sourceIds": [
+        "denbraber2012"
+      ],
+      "semanticAssessment": "Complete primary abstract explicitly constrains mouse-to-human extrapolation. The banking boundary is an inference, not an intervention study.",
+      "sourceQualification": "Complete primary abstract explicitly constrains mouse-to-human extrapolation. The banking boundary is an inference, not an intervention study.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P46-T11",
+      "family": "thymic-arrivals-and-peripheral-maintenance",
+      "requirement": "Peripheral division maintains an existing receptor lineage; new development can add receptor identities. Neither continued output nor division guarantees a tumor-recognizing receptor on demand or rewrites each mature vaccine-responding receptor.",
+      "relatedAssignedAssetIndices": [
+        1,
+        7
+      ],
+      "sourceExcerpt": "Vaccines generally recruit and expand suitable existing mature T cells; they do not rewrite each responding cell's receptor.",
+      "sourceExcerptSHA256": "f28e2ba1b36b5b60ac5f6340122c7560c0217ab52084077e31401ef5747ac80a",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "b5081df019b7a3bf935ba92cdbb1ac6e897336e7b7f24bd74f85307017cb17cd",
+          "gitBlob": "d76588270be34f154acb8173e7ac0934bf9d32bb"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/t-cells/thymic-output-and-aging.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cb1688913967ad752afe297186ec8a09b1bc6f2d2eaa334187aff535999818cf",
+          "gitBlob": "ce56c4c49b2706ed84820d11a814f457927116a9"
+        }
+      ],
+      "status": "partial",
+      "fieldRepresentation": "partial-unapplied-peer-proposal",
+      "evidence": [
+        {
+          "recordId": "tcr-repertoire-clonality",
+          "version": "proposal-support-bodies-45-peer",
+          "field": "notes",
+          "recordSha256": "33e971f424a9df301761b1d141900a0b271868fb383093c93a4d7abfcd9aff56",
+          "fieldSha256": "314f23b316a9bf8d755a875ef37f564ae69682051248cd903ac91031bb09d33e",
+          "supportingExcerpt": "V(D)J assembly and thymic selection contribute diversity, while expansion changes abundance",
+          "passageSha256": "8b6dc48f19552015ccd589f6f341c48495bd4555bb8e37c0d71032e5ded888bb",
+          "representation": "actual-frozen-unmerged-peer",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "thymic-output-and-aging",
+          "version": "proposal-support-bodies-45-root",
+          "field": "notes",
+          "recordSha256": "855a59b21da8385a4d5765b55716485aaac32775a7bebbcd271cea35431d60d0",
+          "fieldSha256": "9075e0ab1c4622a9e47dc4a5450514f82d2729cd36b5640080fa52bbbcfb899b",
+          "supportingExcerpt": "Neither more diversity, adult output nor age alone promises a new cancer-recognising receptor, vaccine benefit or a collection recommendation.",
+          "passageSha256": "770c1973d0f13e92d7859aa1a194ac7a97df06efcc0b801908dc5cbaf63b7184",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "ruggiero2015",
+        "denbraber2012"
+      ],
+      "semanticAssessment": "The current fields carry development/diversity, expansion/abundance and the no-guarantee boundary, but do not explicitly state the conventional-vaccine pre-existing-receptor/no-rewriting clause. P46-P01 is a complete unapplied peer-owner proposal; it earns no credit.",
+      "sourceQualification": "The current fields carry development/diversity, expansion/abundance and the no-guarantee boundary, but do not explicitly state the conventional-vaccine pre-existing-receptor/no-rewriting clause. P46-P01 is a complete unapplied peer-owner proposal; it earns no credit.",
+      "sourceScope": "Six fresh complete primary abstracts, four complete targeted Ruggiero body paragraphs and one complete Hazenberg introduction paragraph; no whole article, full methods, original-study figures or unselected metrics claims newly certified.",
+      "artifactConstructionBoundary": "Fictional sampled counts, cell/circle ledgers and bar geometry; no patient data, individual production rate or clinical-benefit forecast.",
+      "independentAcceptance": false,
+      "remaining": [
+        "P46-P01: explicit conventional-vaccine pre-existing-receptor/no-rewriting clause awaits protected #373 owner integration."
+      ]
+    }
+  ],
+  "constructionBoundaries": [
+    {
+      "id": "P46-B01",
+      "requirement": "All eight assigned bodies are read from beginning to end in eighteen acknowledged spans; four are complete JSON, two are plain-text briefs and two are complete SVG XML. Both pinned inventories remain separate despite identical bodies.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B02",
+      "requirement": "The current-baseline repertoire review explicitly inherits a nested historical whole review and reports zero fresh captures or science/pixel rerun. Its compatibility reviewType and PASS labels do not make it a fresh whole independent review.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B03",
+      "requirement": "Original historical source/native/reader PASS, author seals and pending reviewer/adoption claims remain attestations at their actual recorded depth; no private agent, package or screenshot path is followed or republished as approval.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B04",
+      "requirement": "Named owner/preimage/output/prompt hashes are compared to both pins. Historical hash mismatches and source-commit assertions remain distinct from current byte identity and scientific support.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B05",
+      "requirement": "Four whole 600x960 native SVG views and normalized geometry/text checks do not certify hosted browser behavior, physical mobile paint, quantitative contrast, focus return or accessibility. Prior renderer metrics are not freshly reproduced.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B06",
+      "requirement": "The fixed-count tracks are two 540-unit bars with 5.4 and 54 fills, matching 1% and 10%; physical coordinates and identical cell icons are construction evidence, not a requirement for canonical record layout. TRECs and cell icons are qualitative symbols, not measured biological quantities.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B07",
+      "requirement": "One parent Mermaid diagram is read as source in both version contexts, not freshly rendered. All toy arithmetic and daughter allocation are premise-backed illustration rather than clinical data.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    },
+    {
+      "id": "P46-B08",
+      "requirement": "Both complete original-to-later diffs change only navigation/used_by. Keep earlier ordinary grades, evidence depth, packets, source-art bytes and inventory denominators unchanged.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained construction/custody/task-fit boundary"
+    }
+  ],
+  "fullyFieldRepresentedRequirements": 17,
+  "registeredRootOnlyCompleteRequirements": 10,
+  "actualUnmergedPeerOnlyCompleteRequirements": 7,
+  "partialRequirements": 1,
+  "unrepresentedRequirements": 0,
+  "exactCurrentFieldReferences": 38,
+  "independentAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

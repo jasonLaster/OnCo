@@ -1,0 +1,163 @@
+{
+  "version": "proposal-support-bodies-45-peer",
+  "peerPR": 373,
+  "head": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "snapshotSHA256": "ee4dfe83531937739f0f12df37f6585846125185941ea02a54e3c4b0dc338b61",
+  "state": "Actual unchanged frozen unmerged peer records, not proposal-after fields or registered root records.",
+  "records": [
+    {
+      "id": "tcr-repertoire-clonality",
+      "kind": "term",
+      "name": "T-cell receptor repertoire diversity and clonality",
+      "aka": [
+        "TCR repertoire clonality",
+        "TCR repertoire diversity"
+      ],
+      "tldr": "Repertoire measures describe how many receptor identities are sampled and how unevenly they are represented. A dominant sequence does not tell us what its cells recognize.",
+      "summary": "Repertoire sequencing can describe richness and the distribution of sampled receptor sequences. Those summaries depend on the sampled population and the way receptor identities and counts are defined; the original sequencing study found diversity estimates that differed from earlier methods. A repertoire dominated by a clone is a distributional observation. It is distinct from proving tumor specificity, a malignant clone or successful tumor killing, each of which needs additional evidence.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
+          "url": "https://doi.org/10.1182/blood-2009-04-217604"
+        },
+        {
+          "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+          "url": "https://doi.org/10.1126/science.274.5284.94"
+        },
+        {
+          "label": "PubMed 26324409",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
+        },
+        {
+          "label": "PubMed 24952902",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+        },
+        {
+          "label": "PubMed 31359002",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31359002/"
+        },
+        {
+          "label": "PubMed 22365666",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22365666/"
+        },
+        {
+          "label": "VDJtools: Unifying Post-analysis of T Cell Receptor Repertoires.",
+          "url": "https://doi.org/10.1371/journal.pcbi.1004503"
+        },
+        {
+          "label": "3D: diversity, dynamics, differential testing - a proposed pipeline for analysis of next-generation sequencing T cell repertoire data.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28241742/"
+        },
+        {
+          "label": "VDJtools: diversity-index definitions",
+          "url": "https://vdjtools-doc.readthedocs.io/en/master/diversity.html"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tcr-repertoire-sequencing",
+        "clonality-testing",
+        "immune-cytotoxicity-assays"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The repertoire is a distribution of receptor identities and abundances in a stated population and time. A clone is a cellular lineage; a clonotype is an operational sequence grouping. Single-chain labels and paired identities have different resolution. V(D)J assembly and thymic selection contribute diversity, while expansion changes abundance; diversity and total T-cell count are different quantities.",
+        "Blood, tumour and lymph nodes sample overlapping but different populations. Infection, therapy, age and movement can change a sample; absence from one tube may reflect sampling or detection rather than whole-body absence. A pretreatment blood sample is not a complete stored repertoire. Lower measured diversity after infection may reflect a vigorous response and does not establish cancer specificity, vaccine causation or uniformly worse immunity.",
+        "Fictional matched receptor samples contain 10 clonotype A cells among 1,000 T cells (1%) and 10 among 100 (10%). The sampled count remains 10; the changed denominator drives the larger fraction. Absolute expansion requires comparable sampling and calibrated counts, and neither frequency identifies antigen. State sampling depth, chain definition, compartment, method and timing.",
+        "Metrics and arithmetic, fictional: with natural logarithms Shannon entropy is H = minus the sum of p times ln p, and one normalised clonality convention is 1 minus H / ln K for K observed clonotypes greater than one. Four clonotypes at 25, 25, 25 and 25 of 100 measured molecules give H = ln 4 = 1.386 and clonality 0. The same four at 70, 10, 10 and 10 give H = 0.940, clonality 1 minus 0.940 / 1.386 = 0.32, and an effective number of clonotypes exp(H) = 2.56. Richness is four in both, so many identities can coexist with strong dominance. Software may report Shannon entropy, its exponential or a normalised score, and these are not interchangeable: in the VDJtools documentation the Shannon-Wiener index returns the exponent of the entropy and the normalised index returns the entropy divided by the log of the clonotype count, which is evenness and not 1 minus that ratio, so a clonality built as 1 minus normalised entropy is a different number from either.",
+        "Share against count, fictional: clonotype A is 30 of 100 measured molecules, 30%, and later 30 of 50, 60%. Its measured count did not rise, the total fell, and its relative frequency doubled, so relative enrichment is not absolute expansion and the molecule counts are not blood cell counts. In a published analysis pipeline, clonality was identified as a robust key metric and first choice for measuring TCR repertoire diversity, and in prostate cancer patients given sipuleucel-T the pipeline detected changes in sequence frequency and diversity in blood and prostate tissue (Zhang 2017); that is a methods and example study and sets no response threshold. A diversity-analysis software suite reports repertoire comparison and diversity outputs (Shugay 2015), and formulas, software settings and subsampling depth have to be stated.",
+        "Measurement card: input is a sequencing-derived clonotype table and the calculation consumes no further tissue, though the upstream assay consumes its sample. Output units are a count for richness, dimensionless values for entropy and normalised clonality, and an effective clonotype count for effective diversity. Controls are matched compartments and handling, chain definition, error filtering, abundance units (reads, corrected molecules or cells are not automatically equivalent), depth assessment and replicates or resampling. Subsampling to a comparable depth helps assess sampling effects but cannot recover cells never sampled. A clonality summary does not identify what the receptors recognise, whether cells killed tumour, or whether treatment helped, and there is no universal clonality score that means an immune therapy is working.",
+        "Effective-diversity measures weight a distribution differently. For the inverse-Simpson convention, define D as the sum of squared clonotype fractions and report 1 / D: four equal fractions of 0.25 give 4, whereas 0.70, 0.10, 0.10 and 0.10 give 1 / 0.52, about 1.92. This differs from the Shannon effective diversity of about 2.56 for the same uneven distribution. A fictional sample containing only A and B at 50 molecules each has richness 2 and equal weights; low richness does not imply unequal weights.",
+        "For one observed clonotype, the expression 1 minus H / ln K divides by ln 1, which is zero. Report how the software handles that case rather than silently applying the formula. Low input, unequal depth, amplification bias, sequence errors, changing mixtures and inconsistent clonotype definitions can alter the result. Keep the software version, formula, filtering, input, compartment and abundance units, and inspect the distribution alongside the summary. Analytical reproducibility of a repertoire statistic does not establish a prognostic association or predict treatment benefit."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "tcr-repertoire-sequencing",
+      "kind": "term",
+      "name": "T-cell receptor repertoire sequencing",
+      "aka": [
+        "TCR repertoire sequencing",
+        "TCR sequencing for immune monitoring"
+      ],
+      "tldr": "Receptor sequencing records the immune-receptor sequences sampled from a population of cells. It can track which sequences are present and how their measured abundance changes.",
+      "summary": "An original sequencing study quantified rearranged T-cell receptor beta-chain sequences to examine repertoire diversity. A beta-chain repertoire is a sampled molecular measurement, not a complete map of paired receptors or the antigens they recognize. The specimen, sequencing method and definition of a clonotype belong with the result. Following a sequence over time is distinct from demonstrating its antigen specificity or the function of the cells that carry it.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Comprehensive assessment of T-cell receptor beta-chain diversity in alphabeta T cells.",
+          "url": "https://doi.org/10.1182/blood-2009-04-217604"
+        },
+        {
+          "label": "Phenotypic analysis of antigen-specific T lymphocytes.",
+          "url": "https://doi.org/10.1126/science.274.5284.94"
+        },
+        {
+          "label": "Linking T-cell receptor sequence to functional phenotype at the single-cell level",
+          "url": "https://doi.org/10.1038/nbt.2938"
+        },
+        {
+          "label": "High-resolution analysis of the human T-cell receptor repertoire",
+          "url": "https://doi.org/10.1038/ncomms9081"
+        },
+        {
+          "label": "TIRTL-seq: deep, quantitative and affordable paired TCR repertoire sequencing",
+          "url": "https://doi.org/10.1038/s41592-025-02907-9"
+        },
+        {
+          "label": "NCBI: the standard genetic code",
+          "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?chapter=cgencodes#SG1"
+        },
+        {
+          "label": "Shugay et al.: towards error-free profiling of immune repertoires (MIGEC, 2014)",
+          "url": "https://doi.org/10.1038/nmeth.2960"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tcr-repertoire-clonality",
+        "clonality-testing",
+        "peptide-hla-multimer-staining",
+        "pbmc-specimens"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Beta match, alpha hidden, fictional: three cells carry beta chains B, B and C, so a bulk beta-chain view lists B, B, C and loses the alpha chains. The paired view keeps alpha X with beta B, alpha Y with beta B and alpha Z with beta C, so the shared beta B does not make alpha X and alpha Y equal. Single-cell methods that sequence the alpha and beta genes of individual T cells retain each pair and can be combined with function-related gene expression, and the same TCR sequence can sit in functionally different cells (Han 2014). A bulk method profiles a mixed sample, often one chain, whereas TIRTL-seq generates paired alpha and beta repertoire data at cohort scale and is distinguished from bulk single-chain data and from single-cell throughput limits (Pogorelyy 2026). Paired identity plus an expression program is more context and is still not evidence of the receptor's antigen.",
+        "Frequency arithmetic, fictional: clonotype A is 10 of 10,000 sampled receptor units at baseline (0.1%) and 20 of 1,000 later (2%). The measured relative frequency rose twentyfold, but these are sampled receptor units and not a census of cells, and other populations contracting, different sampling and method effects can change frequency. Read counts are not always cell counts, because preparation, amplification and transcript abundance can change them, and absolute expansion needs compatible cell-number evidence. A sequence overlap between blood and tumour is detected overlap under a clonotype definition and is not a target, and antigen specificity needs a matching controlled recognition experiment.",
+        "Assay card: measures receptor identities, usually by the complementarity-determining region 3 of the variable region, and their measured representation in the sampled population. How: extract nucleic acid, amplify or capture receptor regions, sequence, then group and count under stated rules, which may use nucleotide or amino-acid sequence, gene segments, one chain or paired chains. Input: blood cells or tissue nucleic acid for bulk methods and compatible cell preparations for single-cell methods, and preparation consumes material. A high-resolution human repertoire method reported chain diversity without sequence-associated or quantitative restrictions (Ruggiero 2015). Failure modes: poor material, shallow sampling, amplification bias, chain mismatch, inconsistent definitions and batch effects. It cannot tell every receptor's target, tissue position, killing or benefit, and a research method is not automatically a treatment-selection test.",
+        "Nucleotide and amino-acid clonotypes need not be the same grouping. The standard genetic code assigns several codons to the same amino acid, so different nucleotide sequences can encode the same receptor segment; amino-acid identity alone is not proof of one cellular lineage. MIGEC introduced molecular-identifier groups to correct PCR and sequencing errors in antibody and T-cell receptor repertoire profiling (Shugay 2014). Such error correction does not restore molecules absent from the sample. Report which chain, grouping rule and abundance unit the method actually used.",
+        "A repertoire report can give a clonotype list, relative frequencies, diversity, clonality and overlap, but there is no universal expansion or clonality threshold that proves tumour specificity. A sequence found in dissociated tumour material does not locate its cell inside a cancer-cell nest. Not detected means absent from the assay result under its sampling and calling rules, while an observed overlap or change nominates a receptor for a separate controlled recognition experiment."
+      ],
+      "category": "Immunology"
+    }
+  ]
+}

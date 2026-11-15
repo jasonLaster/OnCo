@@ -397,7 +397,7 @@ export const terms: TermInput[] = [
     "url": "https://tilsinbreastcancer.org/wp-content/uploads/2017/10/Suppl-File-3-Recommendations-for-assessing-tumor-infiltrating-lymphocytes-TILs-in-RD.pdf"
   },
   {
-    "label": "Bystander CD8&lt;sup&gt;+&lt;/sup&gt; T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+    "label": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
   },
   {
@@ -1197,7 +1197,7 @@ export const terms: TermInput[] = [
     "url": "https://pubmed.ncbi.nlm.nih.gov/28102259/"
   },
   {
-    "label": "Bystander CD8&lt;sup&gt;+&lt;/sup&gt; T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+    "label": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
   },
   {

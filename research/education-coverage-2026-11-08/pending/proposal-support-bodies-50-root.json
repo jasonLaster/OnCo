@@ -1,0 +1,430 @@
+{
+  "version": "proposal-support-bodies-50-root",
+  "draft": 375,
+  "committedDataHead": "039c7c036f9040c7e27d9443849afee27d9dec26",
+  "auditBaseCommit": "19eed360b355b32b1158a332cb28f0c81ba4e0aa",
+  "state": "Five selected current registered-root records with one guarded biopsy summary qualification. Earlier notes and unrelated clinical assertions retain prior scope. PR373 owners remain separate and unmerged; missing clauses have unapplied proposals only. No main or independent acceptance.",
+  "records": [
+    {
+      "id": "core-needle-biopsy",
+      "kind": "term",
+      "name": "Core needle biopsy and fine-needle aspiration (FNA)",
+      "aka": [
+        "core biopsy",
+        "core needle biopsy",
+        "fine-needle aspiration",
+        "fine needle aspiration",
+        "FNA",
+        "image-guided biopsy",
+        "CT-guided biopsy",
+        "re-biopsy",
+        "bone marrow biopsy",
+        "bone marrow aspirate",
+        "targeted biopsy"
+      ],
+      "tldr": "Core biopsy collects small cylinders of tissue; fine-needle aspiration collects cells or fluid. Both sample a site, and adequacy depends on the diagnostic question and intended tests.",
+      "summary": "A core needle collects cylinders that preserve local tissue architecture from selected positions. Fine-needle aspiration collects cells, fluid and sometimes clusters or tissue fragments for cytology; a cell block can support additional tests without reconstructing the original full spatial map. Either method can yield diagnostically useful material, but sample adequacy, preservation and represented cells must fit the question. A readable sample may still miss the target, and enough material for diagnosis does not guarantee enough suitable material for every molecular assay.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Needle_aspiration_biopsy",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Needle_aspiration_biopsy"
+        },
+        {
+          "label": "Measurement method and interpretation source",
+          "url": "https://www.radiologyinfo.org/en/info/breastbius"
+        },
+        {
+          "label": "Basik et al., NRG-BR005, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40332918/"
+        },
+        {
+          "label": "Chen et al., institutional breast FNA series, 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35869577/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "histology",
+        "flow-cytometry",
+        "cfdna",
+        "biopsy-after-neoadjuvant-therapy",
+        "surgical-resection-specimen",
+        "antithrombotic-interruption-around-surgery",
+        "image-guided-core-biopsy-preparation-and-aftercare"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "histopathology-ihc",
+        "liquid-biopsy"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A readable core and a representative core are separate requirements. Radiology-pathology concordance asks whether the sampled tissue explains the imaging target. A preserved core of benign fat does not establish that a suspicious target is benign if the target was missed.",
+        "A core preserves local cell relationships within the sampled piece. Aspiration may recover single cells, clusters, fluid and fragments; a cell block can support additional tests but cannot reconstruct their original spatial map. Adequacy for diagnosis does not guarantee adequacy for every ancillary assay.",
+        "For each sample, retain site, collection time, prior treatment, image target, preservation, represented cells, intended assay and remaining material. Core length or count alone does not establish tumour content, whole-lesion representation or surgical margins.",
+        "A hollow cutting needle removes a narrow tissue cylinder from an image-defined target. The preserved arrangement can show an interface where it is actually present, like a plug through cake layers. Tissue is irregular and handling can damage it. A long core of scar or normal tissue does not establish tumour content.",
+        "NRG-BR005 found only half of surgically confirmed residual cancers using its post-neoadjuvant multiple-core procedure in 101 evaluable women. This is a selected breast protocol result, not a universal sensitivity for core biopsy in every organ or setting.",
+        "Core sampling starts by locating a target, collecting cylinders from the documented site, preserving them and examining sections. Diagnosis, represented architecture and any subsequent biomarker results describe those samples; core count is an inventory measure. Sectioning and extraction use finite material, and each additional assay needs a suitable validated input. A missed target, too few relevant cells, damaged cores, necrosis or incompatible preservation may defeat the intended question. Adequacy has no universal core-count threshold, and a core cannot establish whole-lesion composition, complete surgical margins or future treatment benefit.",
+        "Aspiration uses a thin needle to recover cells or fluid, including clusters and small fragments. Cytology examines shapes, nuclei and groupings. Material may be spread on slides or processed into a cell block for sections and ancillary tests when suitable. A cell block does not reconstruct the lesion-wide spatial map.",
+        "An inadequate aspirate and a negative adequate aspirate are different results. Rapid assessment can help collection but does not guarantee all later assays. A sampled node does not map every node. A fictional aspirate containing malignant breast cells supports a malignancy interpretation in context, but does not establish the full boundary or extent of invasion. Less architecture does not erase useful diagnostic information.",
+        "The cited Chen study retrospectively assessed breast aspirations from one academic hospital. Its reported performance and limited cell-block receptor comparisons do not supply universal sensitivity for every organ, team or ancillary assay.",
+        "Fine-needle aspiration collects cells or fluid from a documented site for slides or a cell block and cytologic interpretation. The report gives a diagnostic category, adequacy and any assay-specific measurements. Preparation and ancillary tests consume the finite recovered material. Cellularity and suitability depend on the organ, laboratory and intended test; too few relevant cells, blood dilution, poor preservation or a missed target can limit the result. Clinical cytology and each ancillary assay need appropriate preparation and validation. Neither the aspirate nor a research performance estimate maps unsampled tissue boundaries, the entire lesion or every lymph node."
+      ],
+      "category": "Procedures"
+    },
+    {
+      "id": "biopsy",
+      "kind": "term",
+      "name": "Biopsy",
+      "aka": [
+        "biopsies",
+        "biopsied",
+        "tissue sample",
+        "tissue samples",
+        "core biopsy",
+        "needle biopsy",
+        "core needle biopsy",
+        "tissue biopsy",
+        "rebiopsy",
+        "re-biopsy",
+        "surgical biopsy",
+        "excisional biopsy",
+        "fine needle aspiration",
+        "FNA"
+      ],
+      "tldr": "A biopsy removes cells or tissue for examination. The sampled site, method and collection date set the limits of what its findings can show.",
+      "summary": "Biopsies range from a thin needle collecting cells or fluid, through a core needle removing tissue cylinders, to surgery removing part or all of a lesion. Preparation depends on the intended examination: tissue may be fixed and sectioned, frozen, or handled for another validated assay. Suitable samples may also be tested for protein markers or DNA and RNA changes. Tissue is precious and finite, and a single biopsy samples one spot of a tumour that may vary from place to place and change over time, which is why repeat biopsies at progression and blood-based liquid biopsies have become important. Biopsies carry small risks (bleeding, infection, rarely tumour seeding) and some sites, such as the pancreas or brain, are hard to reach.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Biopsy",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Biopsy"
+        },
+        {
+          "label": "NCI: pathology reports, specimen details and final interpretation",
+          "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+        },
+        {
+          "label": "NCI: what cancer is, altered cells and the tumour microenvironment",
+          "url": "https://www.cancer.gov/about-cancer/understanding/what-is-cancer"
+        },
+        {
+          "label": "NCI: breast stages, clinical and pathological assessment, and grading",
+          "url": "https://www.cancer.gov/types/breast/stages"
+        },
+        {
+          "label": "ACR and RSNA: ultrasound-guided breast biopsy methods",
+          "url": "https://www.radiologyinfo.org/en/info/breastbius"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "histology",
+        "ihc",
+        "genomic-profiling",
+        "ctdna",
+        "lesion",
+        "biomarker",
+        "antithrombotic-interruption-around-surgery",
+        "bone-marrow-aspirate-and-trephine-biopsy",
+        "image-guided-core-biopsy-preparation-and-aftercare",
+        "prostate-biopsy-route-and-antibiotic-prophylaxis"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "histopathology-ihc",
+        "liquid-biopsy",
+        "cgp"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Read a pathology report as an interpretation of a particular specimen. Keep the sampled site, collection date, preparation and method with the finding, and distinguish collection from the date the report became available. An addendum testing old material still describes that old specimen. The final diagnosis integrates the findings; an isolated descriptive word should not replace that interpretation. Pending, qualified or uninterpretable results retain those limits rather than becoming negative findings.",
+        "In a fictional pretreatment breast core, high-grade invasive carcinoma and completed triple-negative receptor tests answer different questions. Neither establishes a particular RNA-expression subtype or distant spread. A suspicious regional node that was not sampled is not a signed positive-node pathology finding. If later surgery finds sparse residual invasive carcinoma after treatment, preserve both the original biopsy and the later specimen, with their separate dates and settings; do not turn the first into a post-treatment measurement.",
+        "A useful report card keeps microscopic appearance and grade, individual receptor tests, anatomical extent and specimen timing in separate fields. Blank boxes in a teaching illustration contain no patient findings and calculate no stage or forecast. Ask which specimen, date, method and question each label belongs to before combining it with another observation. A small region cannot survey every part of a heterogeneous tumour, and cancer cells, immune cells, supporting tissue and treatment-related changes can coexist in the sample.",
+        "A breast report can describe a pretreatment core, a post-treatment needle sample, or tissue removed at surgery. A core collects tissue cylinders, fine-needle aspiration collects cells or fluid, and vacuum-assisted biopsy collects tissue using a vacuum-powered device. Keep the named specimen and each separately submitted part. The gross description records visible features, microscopy records examined sections, and the final diagnosis integrates those findings. A pending test, an unassessable result, a request for more sections and a final negative finding are different states.",
+        "Collection, treatment and reporting have separate clocks. In a fictional example, biopsy A is collected on day 0 and surgery specimen B on day 100. An addendum issued on day 120 tests stored material from A: it remains a result from the pretreatment specimen, with no new sampling on day 120. Treatment was planned on days 10, 30, 50 and 80, but administrations were documented on days 10, 50 and 80; day 30 was held. Four planned events therefore mean three documented administrations and one hold. These invented days supply no clinical schedule, hold explanation or response estimate.",
+        "Before combining reports, record the site and specimen, collection date, treatment actually delivered before collection, method, final interpretation and pending qualifications. The latest issue date is not necessarily the latest sampled biology. A negative result in one sampled region does not cancel a positive finding elsewhere. A suspicious imaged node and a pathologically positive sampled node are different evidence; neither a core nor a negative sampled node examines every node or organ.",
+        "Turn a signed finding into a specific question. A final involved edge raises a local-completion question about the operation, disease at the edge, separately submitted margins and radiation context. Residual invasive disease raises risk and systemic-benefit questions requiring prior treatment, subtype and a matched comparison. For cellularity, name the region and denominator; for differing receptor results, retain both specimens, methods and controls. A treatment interruption needs its cause, severity, recovery and clinical assessment. These questions inform a conversation with the relevant teams rather than forming a mandatory treatment tree.",
+        "For a proposed extra assay, name what each possible result would establish and which decision has evidence behind it. A receptor or immune-marker conclusion retains its scoring rule and validated setting; a number alone is not a treatment recommendation. In a fictional residual-TNBC report after chemotherapy and pembrolizumab, residual disease is prognostic information, not a test choosing the next drug. Local completion, future risk, added systemic benefit and whether treatment can be delivered safely remain connected but separate questions.",
+        "Read a numerical risk estimate with its cohort, treatment era, endpoint, follow-up and uncertainty. An association is not a personal countdown or an estimate of added-treatment benefit. In a fictional subgroup, a hazard ratio of 0.70 with a confidence interval from 0.35 to 1.40 includes 1, the no-difference value, and remains compatible with substantial benefit or harm. An overall trial result or subgroup point estimate alone does not establish precise benefit for every person. RCB class is not a universal personal percentage, and pCR does not promise cure."
+      ],
+      "category": "Clinic basics"
+    },
+    {
+      "id": "surgical-resection-specimen",
+      "kind": "term",
+      "name": "Surgical resection specimen",
+      "aka": [],
+      "tldr": "Removed tissue becomes interpretable through documented orientation and sampling that link microscopic and molecular findings to their locations.",
+      "summary": "A resection specimen is removed tissue submitted for examination. The laboratory documents gross features, marks relevant surfaces and maps selected regions into labelled blocks. Microscopy and additional assays describe the represented material, rather than every cell remaining in the body.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "CAP practical breast grossing guide excerpt",
+          "url": "https://documents-cloud.cap.org/pdf/Grossing_Sample.pdf"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "core-needle-biopsy",
+        "h-and-e-staining",
+        "tumour-purity",
+        "biopsy"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the specimen site, procedure, prior treatment, orientation key, surface inks, cassette map and tested block with the result. Ink colours have a local documented meaning. Gross specimen dimensions are not automatically invasive tumour dimensions. Fragmentation or ink entering cracks can complicate surface interpretation.",
+        "Fictional example: block A is central lesion and block B is a superior surface. A sequencing result from block A cannot be assigned to block B merely because both came from one operation. An additional test needs its own block identity and preservation history.",
+        "Resection supports assessment of represented tumour extent, surfaces, sampled nodes and treatment effect. A large specimen is not automatically examined cell by cell in its entirety. Collection time and preceding treatment define the biological time point, so a post-treatment resection cannot substitute for a pretreatment biopsy.",
+        "Diagnostic orientation and mapped sampling must remain intact when additional material is allocated. A research aliquot needs its site, block, preservation, treatment context and permissions. Slide counts alone do not establish the completeness of representation; a clear examined margin does not settle every clinical question.",
+        "Resection examination follows receipt and orientation, gross description, block mapping, microscopic examination and integration of findings. Record the named specimen and separately submitted parts; sectioning and extraction consume finite material. Depending on the cancer, specimen and treatment setting, outputs include diagnoses, dimensions and distances in millimetres, described margins and sampled-node counts. Lost orientation, fragmentation, ink penetration, incomplete mapping and unsuitable preservation can limit interpretation. Applicable diagnostic protocols and clinical correlation govern the report, while a research aliquot needs its own provenance. No specimen report examines every tissue left in the body or every unsampled node, or supplies an individual recurrence probability."
+      ],
+      "category": "Pathology"
+    },
+    {
+      "id": "vacuum-assisted-breast-biopsy",
+      "kind": "technology",
+      "name": "Vacuum-assisted breast biopsy systems (Mammotome, EnCor, Eviva, Brevera)",
+      "aka": [
+        "Vacuum-assisted biopsy",
+        "VAB",
+        "Vacuum-assisted excision",
+        "Mammotome Revolve",
+        "Mammotome Prima MR",
+        "EnCor Enspire",
+        "EnCor EnCompass",
+        "Eviva",
+        "Brevera"
+      ],
+      "tldr": "A breast biopsy needle that uses suction to pull tissue into its side window and cut it, so several larger samples can be taken through one small cut in the skin, guided by mammogram, ultrasound or MRI.",
+      "summary": "Breast biopsy instruments are FDA product code KNW (21 CFR 876.1075). Vacuum-assisted systems cleared in the database include Devicor's Mammotome Revolve dual vacuum-assisted biopsy system (K202012, 18 August 2020) and Mammotome Prima MR for MRI-guided biopsy (K260365, 4 March 2026), the EnCor Enspire breast biopsy system (Senorx, K233220, 27 October 2023) and EnCor EnCompass biopsy and tissue removal system (Bard Peripheral Vascular, K252681, 12 December 2025), Bard's EleVation driver and probes (K192948, 7 November 2019), Hologic's Eviva stereotactic system (K180233, 10 April 2018) and Hologic's Brevera with CorLumina imaging (K163052, 29 March 2017; updated K262792, 12 August 2026), which images each core as it is taken. The Mammotome Revolve summary states that it provides breast tissue \"for histologic examination with partial or complete removal of the imaged abnormality\" and warns that \"the extent of removal of the palpated or imaged evidence of an abnormality does not predict the extent of removal of a histologic abnormality, e.g., malignancy\".",
+      "status": "standard-of-care",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "FDA product code KNW: biopsy instrument",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?ID=KNW"
+        },
+        {
+          "label": "FDA 510(k) K202012: Mammotome Revolve (18 August 2020)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K202012"
+        },
+        {
+          "label": "FDA 510(k) K260365: Mammotome Prima MR (4 March 2026)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K260365"
+        },
+        {
+          "label": "FDA 510(k) K233220: EnCor Enspire (27 October 2023)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K233220"
+        },
+        {
+          "label": "FDA 510(k) K252681: EnCor EnCompass (12 December 2025)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252681"
+        },
+        {
+          "label": "FDA 510(k) K192948: EleVation breast biopsy driver (7 November 2019)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K192948"
+        },
+        {
+          "label": "FDA 510(k) K180233: Eviva stereotactic guided breast biopsy system (10 April 2018)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K180233"
+        },
+        {
+          "label": "FDA 510(k) K163052: Brevera with CorLumina imaging (29 March 2017)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K163052"
+        },
+        {
+          "label": "FDA 510(k) K262792: Brevera with CorLumina imaging (12 August 2026)",
+          "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K262792"
+        },
+        {
+          "label": "Measurement method and interpretation source",
+          "url": "https://www.radiologyinfo.org/en/info/breastbius"
+        },
+        {
+          "label": "Heil et al., RESPONDER, 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32657944/"
+        },
+        {
+          "label": "Kuerer et al., omission trial, 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36306810/"
+        },
+        {
+          "label": "Kuerer et al., omission follow-up, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152443/"
+        }
+      ],
+      "tags": [
+        "devices-gaps-2026-11"
+      ],
+      "related": [
+        "biopsy-after-neoadjuvant-therapy",
+        "surgical-resection-specimen",
+        "image-guided-core-biopsy-preparation-and-aftercare"
+      ],
+      "cancers": [
+        "breast-cancer"
+      ],
+      "sections": [
+        "diagnostics",
+        "imaging",
+        "devices"
+      ],
+      "technologies": [
+        "stereotactic-breast-biopsy",
+        "breast-lesion-localisation",
+        "mammography",
+        "breast-mri-coils-abbreviated-mri",
+        "automated-breast-ultrasound"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "mammotome",
+        "hologic",
+        "becton-dickinson"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "core-needle-biopsy",
+        "biopsy"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Suction and a cutter collect several tissue pieces through a positioned probe. More pieces can broaden sampling but do not provide the mapped outer boundary of an oriented excision. Little visible abnormality after biopsy does not establish microscopic clearance or negative surgical margins.",
+        "Collection and preservation are separate: vacuum-collected tissue placed in formalin does not become a viable-cell bank. Retain target, sampled locations, concordance, preparation and assay-specific adequacy. No universal number of pieces proves complete representation.",
+        "Vacuum pressure draws tissue into a sampling opening and a cutter collects pieces through the positioned probe. Pathology identifies the cells, while imaging correlation asks whether the target was represented, including relevant calcifications. Sampling method does not establish preservation for living-cell work or every ancillary assay.",
+        "Fictional vacuum samples show a lesion and imaging shows little remaining visible abnormality. That does not establish negative microscopic margins. Several selected pieces do not supply the mapped outer boundary of an oriented excision, and a marker identifies a location rather than certifying that every abnormal cell was removed.",
+        "RESPONDER missed residual cancer in 37 of 208 women with residual disease at surgery. Exploratory combined imaging and biopsy gave a 6.2% false-negative rate; zero false negatives with the largest needle were also exploratory. The 2022 selected omission cohort of 31 women had no ipsilateral breast recurrence at median 26.4 months, updated to 55.4 months in 2025. These are study-specific results, not universal sampling adequacy or clearance rules.",
+        "Vacuum-assisted sampling combines image guidance, probe sampling, tissue preparation and pathology correlation. Document the target, site and collected pieces, then report the diagnosis, sample inventory and any assay-specific results. Collection and subsequent sections use finite material; each ancillary assay has its own input requirements. No universal piece count proves adequacy or complete removal. Missed or incompletely represented targets, bleeding, damaged tissue, necrosis and inadequate analyte can limit the procedure. Results depend on the intended lesion and workflow and cannot alone establish whole-lesion biology, surgical clearance or future treatment response."
+      ],
+      "provenance": {
+        "editedBy": "OnCo device gap fill (openFDA, accessdata.fda.gov, NICE, Europe PMC, maker pages)",
+        "editedOn": "2026-11-04"
+      },
+      "principle": "A hollow probe with a side aperture is placed beside the lesion under imaging; vacuum draws tissue into the aperture, a rotating or oscillating inner cutter severs it, and the core is carried back to a collection chamber without withdrawing the probe.",
+      "strengths": [
+        "Larger and more numerous cores through one skin entry",
+        "Works with stereotactic, tomosynthesis, ultrasound or MRI guidance"
+      ],
+      "limitations": [
+        "Bruising and haematoma",
+        "Removing the imaged lesion does not mean a cancer has been removed with clear margins"
+      ],
+      "since": 2017
+    },
+    {
+      "id": "biopsy-after-neoadjuvant-therapy",
+      "kind": "term",
+      "name": "Tumour-bed biopsy after neoadjuvant therapy",
+      "aka": [],
+      "tldr": "Sampling the former tumour site after treatment can miss scattered residual cancer, so a negative biopsy needs its study population and sampling method.",
+      "summary": "Image-guided biopsy after preoperative systemic treatment tests selected parts of the former breast tumour bed. Diagnostic accuracy studies compare it with subsequent surgery; an omission study instead follows selected people without breast surgery. These designs answer different questions.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Heil et al., RESPONDER, 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32657944/"
+        },
+        {
+          "label": "Kuerer et al., preplanned omission outcomes, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40152443/"
+        },
+        {
+          "label": "Tasoulis et al., pooled diagnostic data, 2020",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33026457/"
+        },
+        {
+          "label": "Basik et al., NRG-BR005, 2025",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40332918/"
+        },
+        {
+          "label": "Kuerer et al., original omission outcomes, 2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36306810/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "core-needle-biopsy",
+        "vacuum-assisted-breast-biopsy",
+        "pcr",
+        "surgical-resection-specimen"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In RESPONDER, 398 women with stage I to III breast cancer of all biological subtypes and an imaging response were analysed. Vacuum-assisted biopsy missed residual cancer in 37 of the 208 women whose surgery found it: a false-negative rate of 17.8% (95% confidence interval 12.8% to 23.7%). Of the 37 misses, 20 had minimal residual tumour smaller than 5 mm. Exploratory analyses reported no false negatives with the largest-volume 7-gauge needle and a 6.2% false-negative rate (95% confidence interval 3.4% to 10.5%) when imaging and biopsy were combined. These refinements do not establish general omission safety.",
+        "The 2025 single-arm omission study enrolled 50 women aged at least 40 with HER2-positive or triple-negative cT1-2N0-1M0 disease and an imaging residual lesion smaller than 2 cm. After at least twelve 9-gauge vacuum cores, 31 had no residual breast cancer on biopsy and received radiotherapy without breast surgery. No ipsilateral breast recurrences occurred at median follow-up 55.4 months. Patients initially node-positive still underwent targeted axillary dissection. This small uncontrolled study calls for confirmation.",
+        "Fictional accuracy exercise: surgery finds residual cancer in 40 of 100 people. Biopsy misses 8 of those 40, while all 60 without residual cancer test negative. False-negative rate is 8/40 = 20%; negative predictive value is 60/68, about 88%. The denominators differ. A breast sample does not establish axillary status or mapped surgical margins. False-negative rate uses all residual cancers as its denominator; negative predictive value uses negative biopsies and varies with prevalence and selection.",
+        "A diagnostic clip and image guidance locate the former breast tumour bed, and cores sample selected positions. Pathology looks for residual invasive and in-situ disease; diagnostic accuracy studies then use surgery as the reference. Scattered residual cells can fall between samples. Imaging response alone does not prove pathological complete response.",
+        "Tasoulis analysed 166 women from three centres using surgery as the reference; 143 underwent vacuum-assisted sampling and 23 core-cut biopsy. In 159 representative biopsies, false-negative rate was 18.7% (95% confidence interval 10.6% to 29.3%). Among 76 with complete or partial clinical response, imaging abnormality no larger than 2 cm and at least six vacuum samples, it was 3.2% (0.1% to 16.7%) and negative predictive value 97.4% (86.5% to 99.9%). The TNBC subgroup had pCR in 39 of 59. These selected estimates do not establish omission safety.",
+        "NRG-BR005 was a prospective nonrandomised phase 2 study of marker-directed stereotactic multiple-core biopsy after chemotherapy. It included clinical complete responders with complete or near-complete trimodality imaging response. Of 101 evaluable patients, surgery found residual invasive or in-situ disease in 36. Sensitivity was 50% (95% confidence interval 32.9% to 67.1%) and negative predictive value 78.3% (67.9% to 86.6%). The authors did not support omitting surgery using these criteria. A retrospective central review found that only 62 of 101 met the imaging eligibility criteria; this exploratory post hoc analysis does not replace the main result.",
+        "For these biopsy studies, breast pCR definitions can require no invasive or in-situ disease, while other breast pCR endpoints allow residual in-situ disease and include nodal status. Name the protocol definition. The 2022 omission report and its 2025 update follow the same selected cohort: no ipsilateral breast recurrences among 31 without breast surgery at median follow-up 26.4 and 55.4 months respectively. They are not independent replications.",
+        "A small single-arm cohort with zero recurrences leaves uncertainty without a randomised comparison. Sampling does not provide the oriented margins or complete residual-burden assessment of resection, and breast biopsy does not assess every axillary node. Missing residual disease can also miss information used for further treatment decisions. These studies support continued investigation rather than a general rule to omit surgery."
+      ],
+      "category": "Procedures"
+    }
+  ]
+}

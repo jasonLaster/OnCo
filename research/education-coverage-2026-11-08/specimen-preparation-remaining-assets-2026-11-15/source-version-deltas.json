@@ -1,0 +1,28 @@
+{
+  "separateInventories": true,
+  "originalApplicableUnits": 57,
+  "laterApplicableUnits": 54,
+  "commonScientificUnits": 53,
+  "originalOnly": [
+    "P51-V08",
+    "P51-V10",
+    "P51-V11",
+    "P51-V12"
+  ],
+  "laterOnly": [
+    "P51-C07"
+  ],
+  "changes": [
+    {
+      "parent": "core-needle-biopsy",
+      "change": "Later adds the NRG-BR005 sensitivity and 101-evaluable cohort context; original source does not carry it."
+    },
+    {
+      "parent": "vacuum-assisted-biopsy",
+      "change": "The original RESPONDER cohort/exploratory result and selected 2022 Kuerer omission cohort are retained as original-only units after the later lesson removes that table."
+    }
+  ],
+  "otherFiveEligibleBodyPairsIdentical": true,
+  "allTwentyOneAssignedBodyPairsByteIdentical": true,
+  "wholeSourceFileIdentitySeparateFromEligibleTeachingBodyIdentity": true
+}

@@ -289,8 +289,14 @@ export const pathways: PathwayInput[] = [
     "label": "Non-cell-autonomous cancer progression from chromosomal instability.",
     "url": "https://doi.org/10.1038/s41586-023-06464-z"
   },
-
-  {"label":"Vanpouille-Box et al.: TREX1, experimental radiation dose and immune sensing (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/28598415/"},
+  {
+    "label": "Vanpouille-Box et al.: TREX1, experimental radiation dose and immune sensing (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28598415/"
+  },
+  {
+    "label": "Cryo-EM structures of STING reveal its mechanism of activation by cyclic GMP-AMP.",
+    "url": "https://doi.org/10.1038/s41586-019-0998-5"
+  }
 ],
 
 "asOf": "2026-11-12",
@@ -298,7 +304,10 @@ export const pathways: PathwayInput[] = [
   "pattern-recognition-damps-and-pamps"
 ],
 
-  "notes": ["Vanpouille-Box's 2017 experiments found that sufficiently high single radiation doses induced the DNA-degrading enzyme TREX1, reducing cytosolic DNA and interferon signalling. The threshold sufficient to clear cytosolic DNA varied from twelve to eighteen gray across the tested mouse and human carcinoma cell lines; a patient-derived lung-cancer xenograft was also examined. The work connected repeated lower-dose irradiation, type I interferon and dendritic-cell-dependent T-cell effects in defined models with checkpoint blockade. It does not supply a universal human dose ceiling, show that more physical injury always gives more useful immunity or select an individual radiation schedule."],
+  "notes": [
+  "Vanpouille-Box's 2017 experiments found that sufficiently high single radiation doses induced the DNA-degrading enzyme TREX1, reducing cytosolic DNA and interferon signalling. The threshold sufficient to clear cytosolic DNA varied from twelve to eighteen gray across the tested mouse and human carcinoma cell lines; a patient-derived lung-cancer xenograft was also examined. The work connected repeated lower-dose irradiation, type I interferon and dendritic-cell-dependent T-cell effects in defined models with checkpoint blockade. It does not supply a universal human dose ceiling, show that more physical injury always gives more useful immunity or select an individual radiation schedule.",
+  "A cell cutaway is a qualitative example, not evidence about a particular patient, immune subtype or molecule count. A cGAMP symbol is not an atomic structure or DNA changing into a messenger. The cytosolic sensing experiments do not establish that all cGAS is confined to that compartment. The ligand-binding face and the trafficking route are separate parts of this mechanism. Shang et al. (2019) describe STING as an endoplasmic-reticulum membrane protein with four membrane-spanning helices and a cytoplasmic ligand-binding domain; their full-length structures include human and chicken STING. cGAMP reaches that cytosolic domain rather than an ER or Golgi lumen. A simplified stem or repeated molecule icon in a diagram does not depict the full structure, count molecules or show secretion. An arrow toward a nuclear gene response represents intervening signals, not physical delivery of STING or cGAMP into the nucleus. Trafficking is also distinct from a measured response: Mukai et al.'s C88/91S mutant still moved from ER to Golgi after DMXAA stimulation but failed to induce the measured downstream genes in their cell model. Thus, localization, ligand sensing and gene output need separate evidence."
+],
 }),
   p({
     id: "er-signaling", name: "Oestrogen receptor signalling", wikipedia: W("Estrogen_receptor"),

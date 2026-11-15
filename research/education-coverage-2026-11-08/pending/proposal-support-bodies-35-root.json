@@ -1,0 +1,399 @@
+{
+  "version": "proposal-support-bodies-35-root",
+  "draft": 375,
+  "committedDataHead": "693c0d5540c3982ab3b959b1eb0edf6814d2af8a",
+  "auditBaseCommit": "e42ade12268124d7b1f1e263939b6757e40797c7",
+  "state": "Four current registered root records; one notes paragraph appended. Legacy fields keep their prior source scope.",
+  "records": [
+    {
+      "id": "tcr-t",
+      "kind": "technology",
+      "name": "TCR-T cell therapy",
+      "aka": [
+        "TCR-T",
+        "TCR T cells",
+        "TCR-engineered T cells",
+        "engineered T-cell receptor therapy"
+      ],
+      "tldr": "TCR-T supplies living T cells carrying a selected receptor that recognizes a specified peptide with its presenting HLA molecule. A source-protein name alone does not establish that target.",
+      "summary": "Conventional alpha-beta TCR-T introduces selected paired receptor-chain instructions into therapeutic T cells. The receptor recognizes a displayed peptide-HLA complex, rather than entering the tumor cell to bind the whole source protein. Natural processing, the required HLA allele, surface display, receptor expression and useful cell function remain different questions. This differs from administering a soluble TCR/CD3 protein that recruits other T cells.\n\nAfamitresgene autoleucel (Tecelra) is an approved TCR-T example. FDA initially approved it in 2024 and converted the specified adult use to traditional approval in June 2026, extending the indication to patients aged 12 and older. Its synovial-sarcoma indication retains prior-chemotherapy, selected HLA and MAGE-A4 testing requirements. The full label also contains exclusions and safety requirements; a broad HLA-A*02 label is not a complete eligibility rule.",
+      "status": "approved",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov NCT03967223: IGNYTE-ESO",
+          "url": "https://clinicaltrials.gov/study/NCT03967223"
+        },
+        {
+          "label": "Morgan et al.: receptor gene transfer in metastatic melanoma (2006)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16946036/"
+        },
+        {
+          "label": "Cameron et al.: Titin cross-reactivity of one MAGE-A3 receptor (2013)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23926201/"
+        },
+        {
+          "label": "Dong et al.: human TCR-CD3 complex assembly (2019 abstract)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
+        },
+        {
+          "label": "WT1/HLA-A*24:02 CAR study in experimental models (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30045840/"
+        },
+        {
+          "label": "Liddy et al.: soluble TCR/CD3 experimental proteins (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22561687/"
+        },
+        {
+          "label": "TECELRA label, revised June 2026: indication, contraindication and receptor design",
+          "url": "https://www.fda.gov/media/180565/download"
+        },
+        {
+          "label": "FDA June 17, 2026 TECELRA conversion/expansion letter",
+          "url": "https://www.fda.gov/media/193220/download"
+        },
+        {
+          "label": "FDA: CAR T-cell product-development guidance, including related engineered lymphocytes (2024)",
+          "url": "https://www.fda.gov/media/156896/download"
+        },
+        {
+          "label": "Bendle et al.: mixed introduced/endogenous TCR chains and autoimmunity in mouse models (2010)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20400962/"
+        },
+        {
+          "label": "UniProt P61769, reviewed human B2M",
+          "url": "https://www.uniprot.org/uniprotkb/P61769/entry"
+        },
+        {
+          "label": "UniProt P01903, reviewed human HLA-DRA",
+          "url": "https://www.uniprot.org/uniprotkb/P01903/entry"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell-engager",
+        "car-t",
+        "cellular-kinetics-and-persistence"
+      ],
+      "cancers": [
+        "sarcoma",
+        "melanoma"
+      ],
+      "sections": [
+        "cell-therapy"
+      ],
+      "technologies": [],
+      "targets": [
+        "mage-a4",
+        "gp100",
+        "kras",
+        "tp53"
+      ],
+      "drugs": [
+        "afamitresgene-autoleucel"
+      ],
+      "companies": [
+        "affini-t-therapeutics",
+        "neogene-therapeutics",
+        "invocata",
+        "alaunos",
+        "medigene",
+        "anocca",
+        "captain-t-cell",
+        "neowise-biotechnology",
+        "zelluna",
+        "outpace-bio"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [
+        "apheresis-starting-material",
+        "viral-vector-manufacturing",
+        "cell-therapy-cold-chain",
+        "cell-therapy-release-testing"
+      ],
+      "notes": [
+        "Morgan transferred receptor genes into autologous lymphocytes in a metastatic-melanoma study. Introducing selected recognition instructions differs from expanding a tumor-derived population with its existing receptors. Viral transduction describes a delivery method, not the definition of every receptor-engineering process.",
+        "The conventional receptor uses paired alpha and beta chains alongside the CD3 complex. Cloning selected receptor coding sequences means copying instructions; one sequenced chain does not establish a complete functional receptor or its specificity. Expression and assembly in the finished cells require evaluation. The Dong structural study distinguishes recognition chains from associated signaling components. Bendle showed in mouse models that introduced and endogenous chains could form self-reactive mixed receptors; vector and cell-population changes reduced that model risk. This does not supply a clinical risk rate for every TCR-T product.",
+        "Protein expression and HLA typing lie upstream of the displayed ligand. Antigen/HLA loss or impaired presentation can remove one recognition route; retaining another allele does not rescue a receptor requiring the lost allele. A different receptor using a retained allele needs its own specificity and functional evidence.",
+        "In research, test paired receptor expression and naturally presenting targets, with relevant antigen/HLA removal and restoration, irrelevant peptides, unmodified effectors and healthy tissue. Multimer or peptide-loaded reagent binding is different from natural processing, target-cell death or patient benefit. This research validation is distinct from the approved product’s clinical testing rule.",
+        "Cameron investigated fatal cardiac toxicity with one affinity-enhanced MAGE-A3 receptor and identified a cross-reactive Titin peptide presented by HLA-A*01 as the most likely cause. Earlier screening had not detected the hazard. This was a different receptor from the MAGE-A4 product Tecelra; stronger binding does not establish improved specificity or safety for either a new construct or an entire family.",
+        "The June 2026 Tecelra label names HLA-A*02:01P, -A*02:02P, -A*02:03P and -A*02:06P and a MAGE-A4 tumor test in its indication, with a separate HLA-A*02:05P contraindication. The approval letter documents the adult conversion and pediatric expansion. These are product-specific regulatory scopes, not a general rule for every TCR-T.",
+        "Conventional surface-antigen CARs and peptide-HLA-directed receptors have different recognition requirements, but peptide-HLA CARs also exist. The WT1/HLA-A*24:02 CAR study is a preclinical counterexample to saying all intracellular source antigens are unreachable by any CAR. A format change does not supply a missing required peptide-HLA complex.",
+        "For a soluble TCR/CD3 protein, the dosed molecule supplies recognition and recruits available T cells. TCR-T instead supplies receptor-bearing living cells. Protein exposure, cell trafficking/persistence and useful target-dependent function need separate measurements; neither format wins by definition.",
+        "In a fictional target cell, HLA allele A is lost while B remains. An A-restricted receptor loses that route; a B-restricted receptor still needs its own peptide to be processed and displayed. B2M is the shared light chain for many class-I complexes, whereas class-II HLA uses different alpha and beta chains. Neither one lost allele nor a change in interferon-induced display establishes complete loss of baseline presentation. Test the required allele, antigen and display conditions with matched viable targets rather than infer recognition from the HLA label. A conventional surface-antigen CAR has another dependency, and reduced class I alone does not guarantee NK-cell killing.",
+        "Selecting and expanding native antigen-reactive cells retains their existing receptors; introducing selected receptor coding sequences is receptor engineering. The two approaches can share discovery assays while differing in manufacturing and product-specific safety and release requirements. A banked research aliquot or a favourable receptor result alone does not establish that a viable, suitable and releasable therapeutic product can later be manufactured."
+      ],
+      "principle": "Selected alpha-beta recognition chains operate with the cell’s CD3 signaling machinery. The intended target is the particular naturally displayed peptide-HLA complex, not genotype, RNA abundance or source protein alone.",
+      "strengths": [
+        "Can investigate targets derived from intracellular proteins through peptide-HLA display",
+        "A selected receptor can confer recognition on engineered cells in defined settings"
+      ],
+      "limitations": [
+        "Allele and antigen-processing/display dependencies can limit recognition",
+        "Cross-reactivity, healthy-tissue recognition and whole-regimen harms require evaluation",
+        "Receptor-positive cells still need appropriate state, tissue access and function"
+      ],
+      "since": 2024
+    },
+    {
+      "id": "neoantigen",
+      "kind": "term",
+      "name": "Neoantigen",
+      "aka": [
+        "neoantigens"
+      ],
+      "tldr": "A peptide arising from altered tumour sequence can be an immune target if it is displayed and recognised. Prediction alone does not show safe tumour killing.",
+      "summary": "A tumour sequence change can produce a new peptide sequence, but the altered sequence, its expression, HLA presentation and T-cell recognition are separate findings. Candidate sources include substitutions, frameshifts, fusions and altered RNA joins; a workflow that assessed one class has not necessarily assessed the others.\n\nComputational ranking can consider binding, expression and clonality. In the TESLA study, Wells and colleagues combined tumour-normal exomes, tumour RNA and HLA typing, then tested selected peptides for HLA binding and recognition by existing patient-matched T cells. The study focused on small somatic variants and class I antigens; it did not validate every fusion or splice source, every new response a vaccine might induce, or clinical benefit from a vaccine. A candidate peptide and a favourable prediction do not establish safe recognition of naturally presenting tumour cells.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Neoantigen",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Neoantigen"
+        },
+        {
+          "label": "Wells et al.: TESLA prediction, binding and pre-existing T-cell assays (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33038342/"
+        },
+        {
+          "label": "Jones et al.: paired tumour-normal sequencing and interpretation (2015)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25877891/"
+        },
+        {
+          "label": "Carter et al.: purity, ploidy and mutation multiplicity (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+        },
+        {
+          "label": "Wong et al.: formalin-related sequence artefacts (2014)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24885028/"
+        },
+        {
+          "label": "NHGRI: DNA sequencing overview",
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Fact-Sheet"
+        },
+        {
+          "label": "Parkhurst et al.: tested neoantigens in gastrointestinal cancers (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31164343/"
+        },
+        {
+          "label": "Schumacher and Schreiber: neoantigens and their immune requirements (2015 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25838375/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "neoantigen-candidate-selection"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "neoantigen-mrna-vaccine",
+        "tcr-t"
+      ],
+      "targets": [],
+      "drugs": [
+        "intismeran-autogene"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Once the recognition mechanism is clear, a candidate source list precedes HLA matching, target selection and product construction. Confirm alteration identity, tumour specificity and biological support first. DNA, RNA and protein answer different questions, and a longer list can add uncertain calls as well as genuine candidates. A DNA alteration can nominate a possible sequence without establishing the processed peptide that a conventional T cell will recognise.",
+        "For tumour DNA, retain local usable coverage, artefacts, tumour fraction and copy number with the call. For matched normal DNA, absence is conditional on suitable sampling, coverage and detection limits. Tumour RNA can support an altered transcript, but comes from a mixture of cells and depends on expression depth and processing. Protein or peptide detection is a further observation with its own method coverage, cell-of-origin question and detection limits; none of these measurements can simply stand in for the others.",
+        "A cancer-cell fraction estimate describes the sampled cancer cells, whereas truncal describes ancestry shared across sampled branches; a subclonal alteration belongs to a subset. One small biopsy need not establish the distribution across every site. Read fraction and ancestry do not show that a peptide is displayed, and an unobserved region or insufficiently sampled alteration remains a gap rather than a demonstrated negative.",
+        "In an invented comparison, candidate A has a supported tumour DNA alteration, no support in adequately assessed normal DNA and observed mutant RNA. It has progressed further as a source candidate, but processing, HLA display and T-cell recognition remain untested. Candidate B has tumour DNA support but inadequate normal coverage, so tumour specificity is still unresolved. These are evidence questions, not a numerical ranking algorithm.",
+        "Two more fictional candidates illustrate bounded negatives. Candidate C has only a weakly supported RNA junction and needs reproducibility and artefact checks. Candidate D has strong DNA support but no RNA detection in a shallow assay, which cannot establish that the transcript is absent. None of A to D has demonstrated HLA presentation or T-cell recognition merely from these starting observations.",
+        "Prepared specimens and analysis can introduce misleading candidates through fixation damage, contamination, misalignment or uncertain junctions. The chosen reference transcript also matters when translating an altered sequence. Preserve specimen identity, coordinates and alleles, transcript/reference, method and software versions, usable coverage, thresholds and manual decisions so the result can be traced to its source. A filter or annotation is not independent proof of function.",
+        "Parkhurst and colleagues found neoantigen-reactive cultured lymphocyte populations in 62 of 75 people with gastrointestinal cancers. About 1.6% of the tested protein-changing mutant gene products were recognised, and 99% of the recognised determinants were unique to one person. This is a selected study and assay result, not the probability that any mutation is processed, displayed or useful in breast cancer. Applying 0.016 to 60 fictional candidate mutations gives 0.96, about one, as an arithmetic illustration only.",
+        "In a fictional comparison, the same expressed mutation produces a nine-amino-acid peptide that is displayed by person A's HLA-A*02:01 and meets a matching receptor. Person B's tested classical class-I variants bind no mutation-spanning peptide adequately; a possible class-II response is a different question. If A's tumour later loses the required HLA allele, the mutation can remain while that recognition route fails. Several candidates sharing that allele do not provide independent protection. Tumour-specific sequence also does not guarantee that its receptor avoids unrelated healthy-tissue targets.",
+        "Compare a fictional normal protein with an altered version that differs at one marked position. A fragment spanning that position is an altered sequence candidate; the mutation label alone does not specify its boundaries or show that it reaches HLA. Several overlapping fragments can contain the change, while none may turn out to be naturally displayed and recognised. Ask separately whether the source is expressed and processed, whether the relevant HLA displays it, and whether a compatible receptor responds. If fictional candidate A has a favourable prediction and B is recognised on naturally presenting tumour cells with suitable controls, B has more direct recognition evidence for those cells and conditions. Neither observation establishes healthy tissue safety or patient benefit."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "neoantigen-candidate-selection",
+      "kind": "term",
+      "name": "Neoantigen candidate selection",
+      "aka": [
+        "neoantigen design board",
+        "neoantigen target selection"
+      ],
+      "tldr": "Choosing vaccine targets means tracking what supports each candidate and which failures they share. More candidates or a better computer score do not by themselves show broader, safer tumour recognition.",
+      "summary": "A neoantigen design board links source alterations, encoded sequence windows, peptide and human leukocyte antigen (HLA) pairs, experimental evidence and unresolved dependencies. It compares a set of candidates for a stated purpose rather than turning one score into proof of a therapeutic target. A source event can generate several peptide windows, so candidate count and independent tumour coverage differ.\n\nThe evidence ladder has separate steps. Tumour-normal sequence comparison can support an alteration, and mutant RNA can support a sampled transcript without proving protein production or processing. A processing or binding prediction is a model result. Recovered HLA-associated peptide supports the sampled preparation without settling cell origin, receptor recognition or safety. A controlled T-cell response supports the tested stimulus; controlled recognition or killing of naturally presenting tumour cells tests a more direct function. Tissue distribution, persistence, safety and clinical benefit still need their own evidence. A suitable clinical comparison estimates benefit for that population, product and setting, without automatic transfer elsewhere.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "Wells et al.: task-specific neoantigen prediction and patient-matched immune assays (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33038342/"
+        },
+        {
+          "label": "Sarkizova et al.: mono-allelic presentation data and allele-specific prediction (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31844290/"
+        },
+        {
+          "label": "NetMHCpan-4.1: output tasks and percentile-rank definitions",
+          "url": "https://services.healthtech.dtu.dk/services/NetMHCpan-4.1/"
+        },
+        {
+          "label": "Ghorani et al.: retrospective differential-agretopicity evidence (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29361136/"
+        },
+        {
+          "label": "Lindeboom et al.: transcript-context rules for nonsense-mediated decay (2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27618451/"
+        },
+        {
+          "label": "Litchfield et al.: frameshift decay escape and bounded immune findings (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32733040/"
+        },
+        {
+          "label": "Cer et al.: assumptions for IC50 and binding-constant conversion (2009)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19395593/"
+        },
+        {
+          "label": "Purcell et al.: HLA-complex capture, peptide release and mass spectrometry (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31092913/"
+        },
+        {
+          "label": "Altman et al.: specified peptide-MHC tetramers identify binding cells (1996)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8810254/"
+        },
+        {
+          "label": "Wykes and Renia: peptide-specific secretion and ELISpot protocol (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34541071/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "neoantigen",
+        "neoantigen-mrna-vaccine",
+        "hla",
+        "hla-typing-and-nomenclature",
+        "hla-loh",
+        "antigen-processing-machinery",
+        "agretopicity",
+        "nonsense-mediated-decay",
+        "vaf",
+        "genetic-code"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Keep the source event, encoded window and processed epitope separate. The conventional T-cell receptor recognises a peptide together with its HLA molecule. One mutation can supply several windows or pairs, and several class-I alleles can share beta-2 microglobulin (B2M) and processing requirements. A fictional row M simply ends an otherwise unchanged protein early, whereas row N shifts the reading frame and creates an altered tail. N supplies a possible altered sequence; M's stop label alone does not. Neither establishes display or recognition. Reconstruct the actual transcript and sequence, and assess transcript-context-dependent decay rather than treating every truncating event alike.",
+        "A fictional board has ten rows, A to J, from nine events. A and B share Event 1 and allele X: A has supported alteration and mutant RNA, while B is another predicted window. C comes from Event 2, also through X, with an HLA-associated peptide identified but cell origin and recognition unresolved. J comes from Event 9 through X and has controlled tumour-cell recognition, leaving healthy-tissue specificity and durability open. These four rows share X despite their different evidence. Extra windows do not independently protect that shared display route.",
+        "The other fictional rows expose different gaps. D comes from Event 3 through allele Y and has a peptide-stimulated response without natural tumour-recognition evidence. E, Event 4 through Y, has a broad estimated cancer-cell fraction but weak RNA support. F, Event 5 through Z, has RNA and display-prediction agreement but may cover a small subclone. G, Event 6, uses class II and has a peptide-responsive helper population; which cells present it and in what context remain questions. H, Event 7 through Y, has a credible tumour-specific sequence but a similar healthy sequence needing specificity tests. I, Event 8 through Z, has a strong rank with limited model support for that allele. No universal clinical A-to-J order follows.",
+        "Re-read that board under two separate fictional reports, assuming X, Y and Z are classical class-I alleles. Loss of X directly challenges A, B, C and J, without establishing failure of Y or Z. A shared B2M-supported class-I display defect instead challenges A to F and H to J. G's class-II route requires separate presenting-cell and helper-response evidence; it is not an established rescue. Each row's original uncertainty remains. Ten windows from one alteration restricted to a lost allele increase the count without restoring that route.",
+        "If only one experiment can run, state which uncertainty it addresses and what either result would mean. Testing D against naturally presenting tumour cells, with appropriate controls, is one defensible choice. A positive connects the response to those tested cells under those conditions. A negative prompts checks of processing, display, cell state and assay adequacy. Neither result estimates patient benefit, and another experiment may be preferable for another stated goal.",
+        "Keep prediction tasks and units visible. Fictional K has a 0.4% eluted-ligand rank and L a predicted competitive-binding half-maximal inhibitory concentration (IC50) of 40 nanomolar (nM). The numerical values cannot rank K against L: one is a reference-relative score and the other an assay-concentration estimate. IC50 is not automatically an equilibrium binding constant. Compare matched outputs for the exact allele and model/version; a percentile is not a probability of benefit. Differential agretopicity compares mutant and normal predictions and inherits their uncertainty, rather than measuring escape from tolerance or natural recognition.",
+        "An estimated cancer-cell fraction is not a photograph of every cell or evidence that a mutation is truncal across all lesions. Purity, local copy number and altered-copy count affect interpretation of the raw variant read fraction. Similarly, a peptide list is a recovered subset with cell, HLA class, time, capture, database and confidence rules attached. Non-detection requires sensitivity context, and artificial peptide loading can bypass a tumour's own processing. State what was actually tested rather than moving a candidate to a later rung by inference.",
+        "A set can double-count correlated windows and correlated model assumptions. Model agreement is not independent validation; a weighted ensemble needs appropriate held-out evaluation for its task, alleles and population. Class-I and class-II choices can support different response components without guaranteeing recognition or overcoming a shared defect. Immunodominance can concentrate a measured response on a few offered targets. Epitope spreading means additional detected recognition beyond the encoded targets; it is not a substitute for a clinical comparison.",
+        "Maintain selection and exclusion reasons, the two sequences in a mutant-normal comparison, exact HLA protein names, specimen and assay context, model versions, manual overrides and the authorised construct version. Record the strongest observed support and the unresolved question beside each candidate. These are evidence-reading and traceability rules, not a validated scoring formula, a compulsory assay sequence or a personal treatment recommendation.",
+        "In a fictional evidence notebook, peptide A is identified in a mixed-tissue HLA preparation, an A-HLA multimer labels blood cells, post-dose cells produce more spots after A stimulation, and a receptor sequence becomes relatively more frequent. Record identification confidence and cell origin for the first result, allele and staining denominator for the second, and background, viability and culture-expansion history for the third. The sequence result neither identifies which cells made the spots nor proves an absolute increase in that receptor-bearing population. Natural recognition of tumour cells has not been tested and remains a visible gap. A controlled positive tumour-cell assay would strengthen that target under the tested conditions while leaving healthy-tissue safety and patient benefit separate.",
+        "Three physical workflows illustrate that separation. Immunopeptidomics can capture HLA-peptide complexes on an antibody-coated support, release connected peptide molecules and identify their sequences by mass spectrometry. A tetramer puts four specified peptide-HLA units on a shared laboratory scaffold to bind sampled T cells; this is not a native four-HLA receptor. In ELISpot, cells incubate over an antibody-coated capture membrane, then cells are removed and the membrane is washed before developed spots are read. Recovered peptides, reagent binding and secretion-associated spots do not by themselves measure tumour killing. Molecular shapes and illustrative spot counts are schematic rather than quantitative biological observations."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "peripheral-tolerance",
+      "kind": "term",
+      "name": "Peripheral tolerance",
+      "aka": [],
+      "tldr": "Peripheral tolerance is the set of controls that restrain mature immune cells after they have developed, which helps stop them reacting against the body's own tissues. Tumours can use the same controls to avoid attack, and a treatment that releases them can also harm healthy organs.",
+      "summary": "Central tolerance acts during lymphocyte development, in T-cell selection in the thymus and B-cell development in bone marrow. Peripheral tolerance acts on mature cells in tissues and lymphoid organs. The two names say when and where restraint operates, not that they are two complete filters that remove every self-reactive receptor. For T cells, tolerance mechanisms that operate in the thymus before the cells mature and circulate are called central tolerance, but not every self-antigen is made in the thymus, so central tolerance alone is insufficient and additional mechanisms restrain mature circulating T cells (Xing and Hogquist, 2012). For B cells, tolerance regulated at the immature B-cell stage in the bone marrow is called central tolerance and works through clonal deletion and receptor editing, while mechanisms that act after B cells leave the bone marrow were described as not fail-safe and mostly reversible (Nemazee, 2017). Several mechanisms contribute: anergy (reduced responsiveness), deletion (removal by cell death), suppression by regulatory T cells, inhibitory pathways and limited supporting signals. Deletion and restraint differ, because a deleted clone is gone and a restrained clone may remain and respond differently under defined conditions. In transgenic mice, cross-presentation of a self-antigen led to deletion of autoreactive CD8 T cells, and adding CD4 helper cells impaired that deletion and caused diabetes in 68 per cent of mice, whereas the CD8 cells alone did not (Kurts et al., 1997). In mice, transferring CD4 cells depleted of CD25-positive cells into athymic recipients caused multiple autoimmune diseases, and giving back CD4-positive CD25-positive cells within a limited period prevented them in a dose-dependent way (Sakaguchi et al., 1995). A separate mechanism acts on ligand supply: CTLA-4 captured CD80 and CD86 from opposing cells by trans-endocytosis, impairing costimulation through CD28 (Qureshi et al., 2011).",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "CD4+ T cell help impairs CD8+ T cell deletion induced by cross-presentation of self-antigens and favors autoimmunity.",
+          "url": "https://doi.org/10.1084/jem.186.12.2057"
+        },
+        {
+          "label": "Immunologic self-tolerance maintained by activated T cells expressing IL-2 receptor alpha-chains (CD25). Breakdown of a single mechanism of self-tolerance causes various autoimmune diseases.",
+          "url": "https://doi.org/10.4049/jimmunol.155.3.1151"
+        },
+        {
+          "label": "Trans-endocytosis of CD80 and CD86: a molecular basis for the cell-extrinsic function of CTLA-4.",
+          "url": "https://doi.org/10.1126/science.1202947"
+        },
+        {
+          "label": "T-cell tolerance: central and peripheral.",
+          "url": "https://doi.org/10.1101/cshperspect.a006957"
+        },
+        {
+          "label": "Mechanisms of central tolerance for B cells.",
+          "url": "https://doi.org/10.1038/nri.2017.19"
+        },
+        {
+          "label": "CD8 T cell ignorance or tolerance to islet antigens depends on antigen dose.",
+          "url": "https://doi.org/10.1073/pnas.96.22.12703"
+        },
+        {
+          "label": "Human Tumor Antigens and Cancer Immunotherapy.",
+          "url": "https://doi.org/10.1155/2015/948501"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "ctla4",
+        "cd28",
+        "cd80",
+        "cd86",
+        "foxp3"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "immune-checkpoint",
+        "t-cell",
+        "irae"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A quiet response has other explanations. Immune ignorance is a setting where the relevant cells have not effectively met the antigen, which is different from tolerance after an encounter, and an antibody concentration alone cannot show that self-reactive B cells were deleted or restrained. In a mouse model with a self antigen in the pancreatic islets, a low antigen concentration left CD8 T cells ignorant of it, while a higher concentration allowed cross-presentation and peripheral deletion (Kurts et al., 1999). Tolerance is inferred from mechanism-specific experiments and not from a blood score: a controlled response to a defined antigen, lineage and count evidence for deletion, and coculture or pathway tests for suppression, with cell type, prior exposure and comparator stated. A non-response can also reflect absent receptors, poor viability or an unsuitable assay.",
+        "For cancer, many tumour-associated targets are also found in healthy tissue, and normal tolerance helps explain why recognition and activation are not interchangeable. Tumours can exploit regulatory pathways, but a treatment that releases a restraint can also harm normal organs. A neoantigen may differ from the normal molecule, yet a sequence difference alone does not show that it is recognised, that useful activation follows or that it is safe; candidate specificity, natural display and cross-reactivity with healthy tissue are separate tests. A self-similarity calculation screens candidates and does not measure central or peripheral tolerance in a person. Reviews of human tumour antigens note that differentiation antigens are expressed by some tumours and the matching healthy tissue, that responses to melanoma differentiation antigens occur in patients and healthy donors (suggesting central tolerance to them is incomplete), and that the autoimmune side effects of checkpoint blockade likely reflect breakage of peripheral tolerance to antigens of normal tissues (Vigneron, 2015)."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Immunology"
+    }
+  ]
+}

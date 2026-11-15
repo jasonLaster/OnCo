@@ -1,0 +1,415 @@
+{
+  "version": "proposal-support-bodies-38-root",
+  "draft": 375,
+  "committedDataHead": "0881eacfd63c10409b835aa5663204fe936c305b",
+  "auditBaseCommit": "91b87ae1b86b0bb6490469c6d48ef223a3585d98",
+  "state": "Four current registered root records; three note arrays and one source-link array changed. Other assertions keep earlier source scope.",
+  "records": [
+    {
+      "id": "ctla4",
+      "kind": "target",
+      "name": "CTLA-4",
+      "aka": [],
+      "tldr": "The first immune brake ever targeted for cancer; releasing it won a Nobel Prize and cures a fraction of melanomas.",
+      "summary": "CTLA-4 is a checkpoint on activated and regulatory T cells that competes with CD28 for B7 ligands during T-cell priming; antibodies against it broaden the T-cell response and, through Fc effector function, deplete regulatory T cells inside tumours. Ipilimumab (2011) was the first checkpoint inhibitor, and the concept later shared a Nobel Prize. Combined with nivolumab it yields 10-year survival near 50 percent in advanced melanoma (CheckMate 067), and the pair is used in RCC, MSI-high colorectal cancer, HCC and mesothelioma. The cost is frequent immune-related toxicity such as colitis and hypophysitis, and because it acts on immune cells there is no tumour biomarker to select patients. Fc-engineered and probody CTLA-4 antibodies aim to reduce toxicity. Releasing this brake was the first proof that the immune system can cure some cancers.",
+      "asOf": "2026-09-04",
+      "wikipedia": "https://en.wikipedia.org/wiki/CTLA-4",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/CTLA-4"
+        }
+      ],
+      "tags": [
+        "checkpoint"
+      ],
+      "related": [],
+      "cancers": [
+        "melanoma",
+        "rcc",
+        "colorectal",
+        "hcc",
+        "mesothelioma"
+      ],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [
+        "gotistobart",
+        "bcd-217",
+        "adg126",
+        "botensilimab",
+        "jk08",
+        "lorigerlimab",
+        "ba3071"
+      ],
+      "companies": [
+        "xilio-therapeutics"
+      ],
+      "institutions": [],
+      "pathways": [
+        "pd1-checkpoint"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "symbol": "CTLA4",
+      "role": [
+        "immune-checkpoint"
+      ],
+      "sources": [],
+      "specificity": "immune-microenvironment",
+      "distribution": "many-types",
+      "specificityNote": "Immune or microenvironment target: the record's class is immune checkpoint. HPA CTLA4: RNA tissue enriched (lymphoid tissue 35 nTPM); blood lineage lineage enriched (T-cells 43 nTPM); no normal tissue stained high. Distribution: 5 cancer families in the corpus carry a prevalence row, label threshold or catalogue link for it (Skin cancer (all types), Renal cell carcinoma, Colorectal cancer, Hepatocellular carcinoma, Mesothelioma); approvals of single-target medicines aimed at it also list Lung cancer (all types), not counted; Open Targets associates it with 6 specific cancer types at or above 0.5 (autoimmune lymphoproliferative syndrome due to CTLA4 haploinsufficiency, non-small cell lung carcinoma, melanoma, hepatocellular carcinoma, renal cell carcinoma, basal cell carcinoma). (Rule 1 of scripts/fetch-target-specificity.ts.)",
+      "specificitySources": [
+        {
+          "label": "Human Protein Atlas CTLA4 tissue",
+          "url": "https://www.proteinatlas.org/ENSG00000163599-CTLA4/tissue",
+          "note": "RNA tissue and blood lineage specificity, normal tissue antibody staining (version 25.1, CC BY-SA 3.0)"
+        },
+        {
+          "label": "UniProt P16410",
+          "url": "https://www.uniprot.org/uniprotkb/P16410/entry",
+          "note": "involvement in disease"
+        },
+        {
+          "label": "Open Targets ENSG00000163599 associations",
+          "url": "https://platform.opentargets.org/target/ENSG00000163599/associations",
+          "note": "cancer associations at or above 0.5 (CC0)"
+        }
+      ],
+      "hgnc": "HGNC:2505",
+      "ensembl": "ENSG00000163599",
+      "uniprot": "P16410",
+      "entrez": "1493",
+      "firstDescribed": 1988,
+      "firstDescribedBasis": "sequence",
+      "firstDescribedNote": "Earliest sequence paper UniProt cites for the protein: Dariavach et al, Eur. J. Immunol, 1988, \"Human Ig superfamily CTLA-4 gene: chromosomal localization and identity of protein sequence between murine and human CTLA-4 cytoplasmic domains\".",
+      "firstDescribedSource": "https://pubmed.ncbi.nlm.nih.gov/3220103/",
+      "biology": "Competes with CD28 for B7 ligands during T-cell priming; also depletes regulatory T cells via Fc effector function.",
+      "whereFound": [
+        "Activated and regulatory T cells"
+      ],
+      "targetClass": "checkpoint",
+      "prevalence": [
+        {
+          "cancerId": "melanoma",
+          "pct": "n/a",
+          "measure": "Immune-cell target; no tumour prevalence",
+          "source": "https://en.wikipedia.org/wiki/CTLA-4"
+        }
+      ]
+    },
+    {
+      "id": "adenosine-and-ido",
+      "kind": "term",
+      "name": "Adenosine and IDO: two separate routes that can restrain immune responses",
+      "aka": [],
+      "tldr": "Adenosine can signal immune cells to reduce activity; the IDO1 enzyme starts a separate route that breaks down tryptophan, an amino acid. Finding their components in a tumour does not prove immune suppression or drug benefit. An IDO1 blocker added to pembrolizumab did not improve melanoma outcomes in a phase 3 trial.",
+      "summary": "The adenosine route works outside cells. CD39 (ENTPD1) and CD73 (NT5E) are enzymes that help generate adenosine from extracellular ATP and ADP, and adenosine then acts on cell-surface receptors, including the A2A receptor on T cells. The enzymes can sit on immune cells, cancer cells or other tissue cells, so the source has to be measured and not assumed. The IDO route works inside a producing cell: IDO1 starts the breakdown of tryptophan along the kynurenine pathway. IDO is not an adenosine receptor and does not degrade ATP, so the two routes should not be merged into one 'suppressive axis'.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
+          "url": "https://doi.org/10.1084/jem.20062512"
+        },
+        {
+          "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
+          "url": "https://doi.org/10.1073/pnas.0605251103"
+        },
+        {
+          "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
+          "url": "https://doi.org/10.1172/jci21583"
+        },
+        {
+          "label": "A new method of sampling blood for measurement of plasma adenosine.",
+          "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
+        },
+        {
+          "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
+          "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
+        },
+        {
+          "label": "UniProt: human IDO1, catalytic activity and function",
+          "url": "https://www.uniprot.org/uniprotkb/P14902/entry"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "ido1",
+        "entpd1",
+        "cd73-adenosine",
+        "adora2a"
+      ],
+      "drugs": [
+        "epacadostat"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "tumor-microenvironment"
+      ],
+      "terms": [
+        "immune-checkpoint",
+        "inflammation"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The mechanism evidence is mostly from mice and cell experiments. CD39 and CD73 distinguished regulatory T cells from other T cells, and regulatory T cells from Cd39-null mice had impaired suppression in vitro and failed to block allograft rejection in vivo (Deaglio et al., 2007). Deleting the A2A receptor in the host led to rejection of established immunogenic tumours in about 60 per cent of A2A-deficient mice, with none rejected in normal mice (Ohta et al., 2006). The same mouse study reported autoimmunity during melanoma rejection in the A2A-deficient mice and proposed that the receptor in T cells also helps prevent autoimmune tissue damage, so a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off. A subset of plasmacytoid dendritic cells in mouse tumour-draining lymph nodes expressed immunosuppressive levels of IDO and suppressed T-cell responses, and anergy was prevented by disrupting the IDO gene or by an IDO inhibitor (Munn et al., 2004). The same paper reported, as a separate observation in the human samples studied, that IDO-expressing cells in tumour-draining lymph nodes correlated with a worse clinical outcome; that is an association, and the authors noted the human cells' relationship to the mouse subset was still to be determined.",
+        "The layers of evidence are different and should be kept apart: a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients. A blood adenosine result is sensitive to handling: adenosine has a half-life of 1 to 2 seconds in human blood at 37 degrees Celsius, and in a sampling experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip but 7 per cent when the mix was added only after the catheter (Shryock et al., 1990), and even a well-handled blood level does not locate the producing cells. No single expression cutoff for CD39, CD73 or IDO1 is validated in the sources cited here to choose an inhibitor, so a report should state the sample site, timing and units and not rely on one threshold. The clinical test of the IDO1 route was negative for that regimen: in ECHO-301/KEYNOTE-252, 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker received pembrolizumab with epacadostat or with placebo, and median progression-free survival was 4.7 against 4.9 months (hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21), with overall survival hazard ratio 1.13 (0.86 to 1.49) (Long et al., 2019). The authors wrote that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain. That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer. By the same logic, a tumour section that stains for both CD73 and IDO1 shows two measured proteins in the sampled cells: it does not show one dominant suppressive mechanism or the best inhibitor, because each route still needs its own activity and functional question.",
+        "Follow each substrate to keep the chemistry separate. In the extracellular route, CD39 converts ATP and ADP to AMP, and CD73 converts AMP to adenosine (Deaglio et al., 2007). Generating this ligand and signalling through a receiving-cell receptor are separate steps. In the intracellular route, IDO1 catalyses tryptophan conversion to N-formylkynurenine, an early reaction in the kynurenine pathway (UniProt, IDO1). Describing the route as tryptophan entering the kynurenine pathway compresses several steps; it does not mean that IDO1 makes every downstream metabolite in one reaction."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Immunology"
+    },
+    {
+      "id": "cytokine",
+      "kind": "term",
+      "name": "Cytokine",
+      "aka": [
+        "cytokines",
+        "interleukin",
+        "interleukins",
+        "IL-2",
+        "IL-6",
+        "chemokine",
+        "chemokines",
+        "pro-inflammatory cytokines",
+        "inflammatory cytokines"
+      ],
+      "tldr": "Small proteins immune cells use to talk to each other: alarms, recruitment calls, growth orders and stand-down signals. Some are cancer drugs, and a flood of them is the danger of certain immunotherapies.",
+      "summary": "Interleukins, interferons, tumour necrosis factor and chemokines each act on cells carrying the matching receptor; IL-2 drives T-cell growth and was one of the first immunotherapies (aldesleukin), interferon-alpha was used in melanoma and leukaemia, and engineered cytokines aim to keep the benefit while losing the toxicity. Tumours secrete cytokines that recruit suppressive cells and drive inflammation, and IL-6 is a major driver of cancer cachexia. When CAR-T cells or T-cell engagers activate en masse they release cytokines in a surge (cytokine release syndrome), treated by blocking IL-6 with tocilizumab. A cytokine name does not specify one outcome: one cytokine can act differently on different receiving cells (pleiotropy), different signals can give overlapping outputs (redundancy), and receptor availability, concentration, exposure time and cell state all shape the response. A review of receptor biology said that all cytokines, to a greater or lesser extent, show pleiotropy (multiple biological actions) and redundancy (shared biological actions), and proposed that redundancy might be explained by related cytokines using a common receptor subunit, while pleiotropy requires that receptors exert different activities on different cells (Nicola, 1994). Different IL-2 and anti-IL-2 antibody complexes selectively expanded CD8 T cells or CD4 regulatory T cells in mice, so the formulation and the receiving cells mattered (Boyman et al., 2006). Chemokines help direct cell movement through gradients: in mouse skin an immobilised CCL21 gradient guided dendritic cells towards lymphatic vessels, and displacing or swamping it abolished directed migration (Weber et al., 2013), but movement also needs a compatible receptor and a traversable route. Measurements answer different questions: a concentration in picograms per millilitre of a named fluid, the percentage of a defined cell gate making a protein after stimulation, and RNA expression are different layers, a blood concentration does not reconstruct a tumour gradient, and two preparations can share an average (0 and 20, or 10 and 10, picograms per millilitre both average 10) while differing in spatial pattern. Intracellular cytokine staining usually involves a stimulation of a few hours (4 to 6 hours was usually sufficient to detect interferon gamma and tumour necrosis factor), a block on secretion with brefeldin A or monensin so that the protein stays inside the cell, and negative and positive controls (Cossarizza et al., 2019). Calibration and a detection limit belong in the same report; that is OnCo's reporting advice and not a finding of the cited guideline. Chemokines are a family of cytokines and not a separate category, a growth-support signal such as IL-2 does not choose the antigen a T cell recognises, and more signal is not automatically more useful or safer immunity. For interferons, timing and the receiving cell mattered in mouse experiments: endogenous type I interferon was needed to prevent the growth of carcinogen-induced and transplanted tumours and acted through host blood-lineage cells (Dunn et al., 2005), whereas prolonged interferon signalling in experimental tumours maintained a resistance programme to checkpoint blockade (Benci et al., 2016). That a signal is tumour-associated does not by itself make it a safe target; this is OnCo's boundary statement and not a cited finding.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cytokine",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cytokine"
+        },
+        {
+          "label": "Interstitial dendritic cell guidance by haptotactic chemokine gradients.",
+          "url": "https://doi.org/10.1126/science.1228456"
+        },
+        {
+          "label": "Selective stimulation of T cell subsets with antibody-cytokine immune complexes.",
+          "url": "https://doi.org/10.1126/science.1122927"
+        },
+        {
+          "label": "Cytokine pleiotropy and redundancy: a view from the receptor.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7696967/"
+        },
+        {
+          "label": "Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition).",
+          "url": "https://doi.org/10.1002/eji.201970107"
+        },
+        {
+          "label": "A critical function for type I interferons in cancer immunoediting.",
+          "url": "https://doi.org/10.1038/ni1213"
+        },
+        {
+          "label": "Tumor Interferon Signaling Regulates a Multigenic Resistance Program to Immune Checkpoint Blockade.",
+          "url": "https://doi.org/10.1016/j.cell.2016.11.022"
+        },
+        {
+          "label": "British Society for Immunology: Cytokines, Introduction",
+          "url": "https://www.immunology.org/sites/default/files/2022-08/cytokines%20-%20introduction.pdf"
+        },
+        {
+          "label": "NLM MeSH: Chemokines",
+          "url": "https://id.nlm.nih.gov/mesh/D018925"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immune-system",
+        "t-cell",
+        "inflammation",
+        "crs",
+        "ligand",
+        "receptor",
+        "cachexia",
+        "interferons"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "cytokine-therapy",
+        "car-t",
+        "t-cell-engager"
+      ],
+      "targets": [],
+      "drugs": [
+        "aldesleukin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+        "A bulk mean needs a sampling model. In a fictional example with two equal-sized compartments, 0 and 20 pg/mL average 10 pg/mL, as do 10 and 10 pg/mL. Only the first pair has a concentration difference. These numbers demonstrate arithmetic; they are not patient measurements, a physiological gradient or an effective dose. Dots used to illustrate the pattern would not count individual molecules. A common average cannot establish equal cell movement. A functional comparison still needs the receiving cells and their receptors, the spatial availability of the signal and a route the cells can traverse."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "immune-checkpoint",
+      "kind": "term",
+      "name": "Immune checkpoint",
+      "aka": [
+        "immune checkpoints",
+        "checkpoint protein",
+        "checkpoint proteins",
+        "checkpoint blockade",
+        "immune checkpoint blockade",
+        "checkpoint inhibition",
+        "checkpoint inhibitor",
+        "checkpoint inhibitors",
+        "immune checkpoint inhibitor",
+        "immune checkpoint inhibitors",
+        "ICI",
+        "ICIs",
+        "PD-1 blockade",
+        "PD-1/PD-L1",
+        "anti-PD-1",
+        "anti-PD-L1",
+        "anti-CTLA-4",
+        "PD-(L)1"
+      ],
+      "tldr": "Brakes on the immune system that stop T cells attacking healthy tissue. Tumours pull these brakes to protect themselves; checkpoint inhibitor drugs release them so T cells can attack the cancer.",
+      "summary": "PD-1 on a T cell, when it meets PD-L1 on another cell, tells the T cell to stand down; CTLA-4 is often emphasised earlier, during priming, and PD-1 during ongoing responses in tissues, but these are overlapping emphases and not separate addresses. Reviews describe CTLA-4 as acting early in lymph nodes and PD-1 later in peripheral tissues, while CTLA-4 is also expressed on activated effector CD8 T cells (Buchbinder and Desai, 2016; Pardoll, 2012), and LAG-3, TIM-3 and TIGIT as co-inhibitory receptors with their own specialised functions (Anderson et al., 2016), so the early or late shorthand for CTLA-4 and PD-1 should not be stretched to them. Tumours coat themselves in PD-L1 and exploit this, and antibodies that block PD-1 (pembrolizumab, nivolumab), PD-L1 (atezolizumab, durvalumab) or CTLA-4 (ipilimumab) restore the attack, producing durable remissions in melanoma, lung, kidney, bladder and many other cancers since 2011. The price is autoimmune side effects when the brakes come off everywhere, and only a minority of patients respond, which drives the search for newer checkpoints (LAG-3, TIGIT) and combinations. The 'checkpoint' in 'cell-cycle checkpoint' is an unrelated concept. The checkpoints work through different contacts and are not interchangeable versions of PD-1. In reconstitution and cell experiments, PD-1 engaged by PD-L1 recruited the phosphatase Shp2, which dephosphorylated the co-receptor CD28 in preference to the T-cell receptor (Hui et al., 2017). PD-1 has two ligands, PD-L1 and PD-L2, and PD-L1 is found on leukocytes and on non-haematopoietic cells in non-lymphoid tissues as well as on cancer cells, and can be induced by interferon gamma (Buchbinder and Desai, 2016). In the current US prescribing information for pembrolizumab, the indication for high-risk early-stage triple-negative breast cancer (chemotherapy before surgery, then pembrolizumab alone afterwards) carries no PD-L1 qualifier, whereas the indications for locally recurrent unresectable or metastatic disease (with chemotherapy) and for unresectable locally advanced or metastatic disease (with sacituzumab govitecan) name a PD-L1 combined positive score of 10 or more as determined by an FDA-authorized test. That describes how the approved uses are worded and is not a trial finding about who benefits. CTLA-4 shares the ligands CD80 and CD86 with CD28 and can capture them from opposing cells by trans-endocytosis, so the neighbouring cell has fewer costimulatory ligands to offer (Qureshi et al., 2011). These descriptions concern the receptors' own contacts and are not a model of what a blocking antibody does or a prediction of clinical benefit. LAG-3 selectively recognised stable complexes of peptide and MHC class II and suppressed T cells responding to them, without recognising every class II complex or blocking CD4 binding (Maruhashi et al., 2018). Bat3 bound to and repressed TIM-3 function and protected helper T cells from galectin-9-mediated death, and in cell-line co-expression experiments galectin-9 abolished Bat3 binding to TIM-3 (Rangachari et al., 2012). TIGIT disrupted dimerisation of the costimulatory receptor CD226 on the same cell, and in mouse tumour and chronic-infection models combined TIGIT and PD-L1 antibody blockade enhanced CD8 T-cell function in a CD226-dependent way (Johnston et al., 2014). Staining for a checkpoint measures a component in sampled cells and not ligand contact or causal inhibition: PD-1-positive cells need not all be exhausted or cancer-reactive, more staining does not prove more inhibition or greater drug benefit, and TIM-3-positive cells do not select TIM-3 over PD-1 blockade. A checkpoint inhibitor interrupts one pathway: it does not teach T cells a new target, build a route into the tumour or repair every dysfunctional cell, and changing normal regulation can also harm healthy organs.",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Immune_checkpoint",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Immune_checkpoint"
+        },
+        {
+          "label": "Trans-endocytosis of CD80 and CD86: a molecular basis for the cell-extrinsic function of CTLA-4.",
+          "url": "https://doi.org/10.1126/science.1202947"
+        },
+        {
+          "label": "T cell costimulatory receptor CD28 is a primary target for PD-1-mediated inhibition.",
+          "url": "https://doi.org/10.1126/science.aaf1292"
+        },
+        {
+          "label": "LAG-3 inhibits the activation of CD4+ T cells that recognize stable pMHCII through its conformation-dependent recognition of pMHCII.",
+          "url": "https://doi.org/10.1038/s41590-018-0217-9"
+        },
+        {
+          "label": "Rangachari et al., 2012, Nature Medicine: Bat3 and TIM-3",
+          "url": "https://doi.org/10.1038/nm.2871"
+        },
+        {
+          "label": "The immunoreceptor TIGIT regulates antitumor and antiviral CD8(+) T cell effector function.",
+          "url": "https://doi.org/10.1016/j.ccell.2014.10.018"
+        },
+        {
+          "label": "CTLA-4 and PD-1 Pathways: Similarities, Differences, and Implications of Their Inhibition.",
+          "url": "https://doi.org/10.1097/coc.0000000000000239"
+        },
+        {
+          "label": "The blockade of immune checkpoints in cancer immunotherapy.",
+          "url": "https://doi.org/10.1038/nrc3239"
+        },
+        {
+          "label": "Lag-3, Tim-3, and TIGIT: Co-inhibitory Receptors with Specialized Functions in Immune Regulation.",
+          "url": "https://doi.org/10.1016/j.immuni.2016.05.001"
+        },
+        {
+          "label": "KEYTRUDA (pembrolizumab) prescribing information, US Food and Drug Administration label via DailyMed",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        },
+        {
+          "label": "Event-free Survival with Pembrolizumab in Early Triple-Negative Breast Cancer.",
+          "url": "https://doi.org/10.1056/nejmoa2112651"
+        },
+        {
+          "label": "Overall Survival with Pembrolizumab in Early-Stage Triple-Negative Breast Cancer.",
+          "url": "https://doi.org/10.1056/nejmoa2409932"
+        },
+        {
+          "label": "Pembrolizumab plus chemotherapy versus placebo plus chemotherapy for previously untreated locally recurrent inoperable or metastatic triple-negative breast cancer (KEYNOTE-355): a randomised, placebo-controlled, double-blind, phase 3 clinical trial.",
+          "url": "https://doi.org/10.1016/s0140-6736(20)32531-9"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "checkpoint",
+        "t-cell",
+        "immune-system",
+        "immunotherapy-term",
+        "irae",
+        "cold-vs-hot",
+        "cps",
+        "avoiding-immune-destruction",
+        "pd-l1-cps",
+        "peripheral-tolerance",
+        "adenosine-and-ido"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "checkpoint-inhibitor"
+      ],
+      "targets": [
+        "pd1",
+        "pdl1",
+        "ctla4",
+        "lag3",
+        "tigit",
+        "pdcd1lg2"
+      ],
+      "drugs": [
+        "pembrolizumab",
+        "nivolumab",
+        "ipilimumab",
+        "atezolizumab",
+        "durvalumab"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "pd1-checkpoint"
+      ],
+      "terms": [],
+      "trials": [
+        "keynote-522",
+        "keynote-355"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In KEYNOTE-522, patients with previously untreated stage II or III triple-negative breast cancer received pembrolizumab or placebo with chemotherapy before surgery, followed by pembrolizumab or placebo after surgery. The pembrolizumab regimen improved event-free survival (Schmid et al., 2022) and overall survival (Schmid et al., 2024). These are results for the tested early-stage regimen, not evidence that a checkpoint marker alone establishes benefit in another setting.",
+        "Follow the cell boundary when comparing these mechanisms. PD-1 on a T cell can meet PD-L1 on a neighbouring cell while a separate CD28 receptor meets CD86; the inhibitory signalling relationship is inside the responding T cell, rather than a physical PD-1/CD28 collision across the gap. CTLA-4-mediated capture moves CD86 from the opposing cell's surface into vesicles inside the CTLA-4-bearing cell. Qureshi and colleagues observed this with engineered cells and activated human CD4 T cells interacting with monocyte-derived dendritic cells, and also tested transfer in mice. The captured ligand was delivered for degradation; their observations did not require CTLA-4 itself to be destroyed. A fictional drawing with two surface CD86 symbols before contact, one remaining on the donor and one inside the receiving cell afterwards would illustrate direction only. It would not measure the fraction captured, time course or complete ligand depletion. This compares selected receptor mechanisms and does not predict the effect of a blocking drug."
+      ],
+      "category": "Biology basics"
+    }
+  ]
+}

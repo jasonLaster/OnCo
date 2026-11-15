@@ -1,0 +1,175 @@
+{
+  "dataCommit": "0881eacfd63c10409b835aa5663204fe936c305b",
+  "plan": {
+    "auditBaseCommit": "91b87ae1b86b0bb6490469c6d48ef223a3585d98",
+    "plannedAtUTC": "2026-11-15T03:50:58.577385+00:00",
+    "canonicalOwnerChanges": 3,
+    "canonicalFieldsChanged": 4,
+    "changes": [
+      {
+        "recordId": "adenosine-and-ido",
+        "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+        "field": "notes",
+        "before": [
+          "The mechanism evidence is mostly from mice and cell experiments. CD39 and CD73 distinguished regulatory T cells from other T cells, and regulatory T cells from Cd39-null mice had impaired suppression in vitro and failed to block allograft rejection in vivo (Deaglio et al., 2007). Deleting the A2A receptor in the host led to rejection of established immunogenic tumours in about 60 per cent of A2A-deficient mice, with none rejected in normal mice (Ohta et al., 2006). The same mouse study reported autoimmunity during melanoma rejection in the A2A-deficient mice and proposed that the receptor in T cells also helps prevent autoimmune tissue damage, so a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off. A subset of plasmacytoid dendritic cells in mouse tumour-draining lymph nodes expressed immunosuppressive levels of IDO and suppressed T-cell responses, and anergy was prevented by disrupting the IDO gene or by an IDO inhibitor (Munn et al., 2004). The same paper reported, as a separate observation in the human samples studied, that IDO-expressing cells in tumour-draining lymph nodes correlated with a worse clinical outcome; that is an association, and the authors noted the human cells' relationship to the mouse subset was still to be determined.",
+          "The layers of evidence are different and should be kept apart: a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients. A blood adenosine result is sensitive to handling: adenosine has a half-life of 1 to 2 seconds in human blood at 37 degrees Celsius, and in a sampling experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip but 7 per cent when the mix was added only after the catheter (Shryock et al., 1990), and even a well-handled blood level does not locate the producing cells. No single expression cutoff for CD39, CD73 or IDO1 is validated in the sources cited here to choose an inhibitor, so a report should state the sample site, timing and units and not rely on one threshold. The clinical test of the IDO1 route was negative for that regimen: in ECHO-301/KEYNOTE-252, 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker received pembrolizumab with epacadostat or with placebo, and median progression-free survival was 4.7 against 4.9 months (hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21), with overall survival hazard ratio 1.13 (0.86 to 1.49) (Long et al., 2019). The authors wrote that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain. That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer. By the same logic, a tumour section that stains for both CD73 and IDO1 shows two measured proteins in the sampled cells: it does not show one dominant suppressive mechanism or the best inhibitor, because each route still needs its own activity and functional question."
+        ],
+        "after": [
+          "The mechanism evidence is mostly from mice and cell experiments. CD39 and CD73 distinguished regulatory T cells from other T cells, and regulatory T cells from Cd39-null mice had impaired suppression in vitro and failed to block allograft rejection in vivo (Deaglio et al., 2007). Deleting the A2A receptor in the host led to rejection of established immunogenic tumours in about 60 per cent of A2A-deficient mice, with none rejected in normal mice (Ohta et al., 2006). The same mouse study reported autoimmunity during melanoma rejection in the A2A-deficient mice and proposed that the receptor in T cells also helps prevent autoimmune tissue damage, so a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off. A subset of plasmacytoid dendritic cells in mouse tumour-draining lymph nodes expressed immunosuppressive levels of IDO and suppressed T-cell responses, and anergy was prevented by disrupting the IDO gene or by an IDO inhibitor (Munn et al., 2004). The same paper reported, as a separate observation in the human samples studied, that IDO-expressing cells in tumour-draining lymph nodes correlated with a worse clinical outcome; that is an association, and the authors noted the human cells' relationship to the mouse subset was still to be determined.",
+          "The layers of evidence are different and should be kept apart: a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients. A blood adenosine result is sensitive to handling: adenosine has a half-life of 1 to 2 seconds in human blood at 37 degrees Celsius, and in a sampling experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip but 7 per cent when the mix was added only after the catheter (Shryock et al., 1990), and even a well-handled blood level does not locate the producing cells. No single expression cutoff for CD39, CD73 or IDO1 is validated in the sources cited here to choose an inhibitor, so a report should state the sample site, timing and units and not rely on one threshold. The clinical test of the IDO1 route was negative for that regimen: in ECHO-301/KEYNOTE-252, 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker received pembrolizumab with epacadostat or with placebo, and median progression-free survival was 4.7 against 4.9 months (hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21), with overall survival hazard ratio 1.13 (0.86 to 1.49) (Long et al., 2019). The authors wrote that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain. That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer. By the same logic, a tumour section that stains for both CD73 and IDO1 shows two measured proteins in the sampled cells: it does not show one dominant suppressive mechanism or the best inhibitor, because each route still needs its own activity and functional question.",
+          "Follow each substrate to keep the chemistry separate. In the extracellular route, CD39 converts ATP and ADP to AMP, and CD73 converts AMP to adenosine (Deaglio et al., 2007). Generating this ligand and signalling through a receiving-cell receptor are separate steps. In the intracellular route, IDO1 catalyses tryptophan conversion to N-formylkynurenine, an early reaction in the kynurenine pathway (UniProt, IDO1). Describing the route as tryptophan entering the kynurenine pathway compresses several steps; it does not mean that IDO1 makes every downstream metabolite in one reaction."
+        ],
+        "beforeSHA256": "99c07add9d45bbbac579d2fe64fd47648d858d0f5e84952692e6a0e35b6f93e4",
+        "afterSHA256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+        "addedExcerpts": [
+          "Follow each substrate to keep the chemistry separate. In the extracellular route, CD39 converts ATP and ADP to AMP, and CD73 converts AMP to adenosine (Deaglio et al., 2007). Generating this ligand and signalling through a receiving-cell receptor are separate steps. In the intracellular route, IDO1 catalyses tryptophan conversion to N-formylkynurenine, an early reaction in the kynurenine pathway (UniProt, IDO1). Describing the route as tryptophan entering the kynurenine pathway compresses several steps; it does not mean that IDO1 makes every downstream metabolite in one reaction."
+        ],
+        "priorPrefixPreserved": true
+      },
+      {
+        "recordId": "cytokine",
+        "file": "src/data/terms-basics.ts",
+        "field": "notes",
+        "before": [
+          "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response."
+        ],
+        "after": [
+          "Cytokines are signalling proteins whose binding to a suitable receptor changes signalling and gene expression in a receiving cell. Autocrine action is on the producing cell, paracrine action is on neighbours, and endocrine action is at a distance, for example after entry into the circulation. Distant action is possible rather than the default for every cytokine (British Society for Immunology, Cytokines: Introduction). Chemokines are a cytokine family involved in cell recruitment and can also affect leukocyte activation (NLM MeSH, Chemokines). The information-versus-fuel distinction is a reading rule: a measured amount of signalling protein does not measure the energy available to the cell, and a message without the relevant receptor and response machinery does not establish a response.",
+          "A bulk mean needs a sampling model. In a fictional example with two equal-sized compartments, 0 and 20 pg/mL average 10 pg/mL, as do 10 and 10 pg/mL. Only the first pair has a concentration difference. These numbers demonstrate arithmetic; they are not patient measurements, a physiological gradient or an effective dose. Dots used to illustrate the pattern would not count individual molecules. A common average cannot establish equal cell movement. A functional comparison still needs the receiving cells and their receptors, the spatial availability of the signal and a route the cells can traverse."
+        ],
+        "beforeSHA256": "c607ec426d43eede1a3495db8c51098cba94d97dbc207c4dffd015aed1ea1ce1",
+        "afterSHA256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+        "addedExcerpts": [
+          "A bulk mean needs a sampling model. In a fictional example with two equal-sized compartments, 0 and 20 pg/mL average 10 pg/mL, as do 10 and 10 pg/mL. Only the first pair has a concentration difference. These numbers demonstrate arithmetic; they are not patient measurements, a physiological gradient or an effective dose. Dots used to illustrate the pattern would not count individual molecules. A common average cannot establish equal cell movement. A functional comparison still needs the receiving cells and their receptors, the spatial availability of the signal and a route the cells can traverse."
+        ],
+        "priorPrefixPreserved": true
+      },
+      {
+        "recordId": "immune-checkpoint",
+        "file": "src/data/terms-basics.ts",
+        "field": "notes",
+        "before": [
+          "In KEYNOTE-522, patients with previously untreated stage II or III triple-negative breast cancer received pembrolizumab or placebo with chemotherapy before surgery, followed by pembrolizumab or placebo after surgery. The pembrolizumab regimen improved event-free survival (Schmid et al., 2022) and overall survival (Schmid et al., 2024). These are results for the tested early-stage regimen, not evidence that a checkpoint marker alone establishes benefit in another setting."
+        ],
+        "after": [
+          "In KEYNOTE-522, patients with previously untreated stage II or III triple-negative breast cancer received pembrolizumab or placebo with chemotherapy before surgery, followed by pembrolizumab or placebo after surgery. The pembrolizumab regimen improved event-free survival (Schmid et al., 2022) and overall survival (Schmid et al., 2024). These are results for the tested early-stage regimen, not evidence that a checkpoint marker alone establishes benefit in another setting.",
+          "Follow the cell boundary when comparing these mechanisms. PD-1 on a T cell can meet PD-L1 on a neighbouring cell while a separate CD28 receptor meets CD86; the inhibitory signalling relationship is inside the responding T cell, rather than a physical PD-1/CD28 collision across the gap. CTLA-4-mediated capture moves CD86 from the opposing cell's surface into vesicles inside the CTLA-4-bearing cell. Qureshi and colleagues observed this with engineered cells and activated human CD4 T cells interacting with monocyte-derived dendritic cells, and also tested transfer in mice. The captured ligand was delivered for degradation; their observations did not require CTLA-4 itself to be destroyed. A fictional drawing with two surface CD86 symbols before contact, one remaining on the donor and one inside the receiving cell afterwards would illustrate direction only. It would not measure the fraction captured, time course or complete ligand depletion. This compares selected receptor mechanisms and does not predict the effect of a blocking drug."
+        ],
+        "beforeSHA256": "58b2d0603b232deb6d567fed30aeb15c66c9cc4703ba204580c4472da57e3574",
+        "afterSHA256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+        "addedExcerpts": [
+          "Follow the cell boundary when comparing these mechanisms. PD-1 on a T cell can meet PD-L1 on a neighbouring cell while a separate CD28 receptor meets CD86; the inhibitory signalling relationship is inside the responding T cell, rather than a physical PD-1/CD28 collision across the gap. CTLA-4-mediated capture moves CD86 from the opposing cell's surface into vesicles inside the CTLA-4-bearing cell. Qureshi and colleagues observed this with engineered cells and activated human CD4 T cells interacting with monocyte-derived dendritic cells, and also tested transfer in mice. The captured ligand was delivered for degradation; their observations did not require CTLA-4 itself to be destroyed. A fictional drawing with two surface CD86 symbols before contact, one remaining on the donor and one inside the receiving cell afterwards would illustrate direction only. It would not measure the fraction captured, time course or complete ligand depletion. This compares selected receptor mechanisms and does not predict the effect of a blocking drug."
+        ],
+        "priorPrefixPreserved": true
+      },
+      {
+        "recordId": "adenosine-and-ido",
+        "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
+            "url": "https://doi.org/10.1084/jem.20062512"
+          },
+          {
+            "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
+            "url": "https://doi.org/10.1073/pnas.0605251103"
+          },
+          {
+            "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
+            "url": "https://doi.org/10.1172/jci21583"
+          },
+          {
+            "label": "A new method of sampling blood for measurement of plasma adenosine.",
+            "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
+          },
+          {
+            "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
+            "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
+          }
+        ],
+        "after": [
+          {
+            "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
+            "url": "https://doi.org/10.1084/jem.20062512"
+          },
+          {
+            "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
+            "url": "https://doi.org/10.1073/pnas.0605251103"
+          },
+          {
+            "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
+            "url": "https://doi.org/10.1172/jci21583"
+          },
+          {
+            "label": "A new method of sampling blood for measurement of plasma adenosine.",
+            "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
+          },
+          {
+            "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
+            "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
+          },
+          {
+            "label": "UniProt: human IDO1, catalytic activity and function",
+            "url": "https://www.uniprot.org/uniprotkb/P14902/entry"
+          }
+        ],
+        "beforeSHA256": "c8066806b24e6035ba521200566a86852d33e1317eead10db16ba6a051b4fe3a",
+        "afterSHA256": "9361500e17619f8ea4fc03a7cf91a2737f580a0c24032b2b5bd540cd0a4dd5d3",
+        "priorPrefixPreserved": true
+      }
+    ],
+    "scientificSourcesResolvedAndAbstractsRead": 6,
+    "targetedCompleteArticleParagraphsRead": 11,
+    "curatedIDO1FunctionReactionLocationFieldsRead": true,
+    "earlierScalarDatesAliasesAndRelationsPreserved": true
+  },
+  "application": {
+    "appliedAtUTC": "2026-11-15T03:50:59.008Z",
+    "auditBaseCommit": "91b87ae1b86b0bb6490469c6d48ef223a3585d98",
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 4,
+    "newCanonicalIds": 0,
+    "oldNotesAndLinksRetainedAsExactPrefixes": true,
+    "codeBehaviorChanged": false,
+    "files": [
+      {
+        "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+        "beforeSHA256": "f5af586e6501efb67a96734e9f4b9cf6e29b26234c053123bc92ceed8cd40507",
+        "afterSHA256": "28b42b428df94b263bcb434d13ba1bc999f728d345847856c541c734e11545b3"
+      },
+      {
+        "file": "src/data/terms-basics.ts",
+        "beforeSHA256": "e72b7bf03c2291caca6931610e4c48e9f24420fab51cf412e3660cf4770ef60f",
+        "afterSHA256": "420c165e96a40ff39f70af48e183638cacf28c43b4fe6612c64e5e7420a1542f"
+      }
+    ],
+    "fullValidationStillRequired": true
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "adenosine-and-ido",
+      "cytokine",
+      "immune-checkpoint"
+    ],
+    "changedOwnerCount": 3,
+    "changedCanonicalFields": 4,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 4,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceSummariesAndLeadsUnchanged": true,
+    "changedFiles": [
+      "src/data/education-parallel-innate-immune-2026-11.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "unappliedProposals": [],
+  "newCanonicalIds": 0,
+  "newRegistrations": 0,
+  "unmodifiedCTLA4SelectedUse": "Existing competition-for-B7 clause only. Older clinical, Fc/biology, prevalence and identity history assertions are not recertified."
+}

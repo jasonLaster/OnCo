@@ -1,0 +1,1569 @@
+{
+  "sourceFirstInventorySHA256": "54a896ed7759b50d3911da1c5ac9175c947b71197528fd9a2a9ebf67b901e74b",
+  "rootVersion": "proposal-support-bodies-38-root",
+  "proofs": [
+    {
+      "id": "P39-A01",
+      "family": "metabolic-routes",
+      "requirement": "Keep a small-molecule adenosine signal, its membrane receptor and the separate enzyme-mediated IDO1 route distinct.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "surface enzymes generate extracellular adenosine for a receptor, while intracellular IDO1 starts tryptophan breakdown.",
+      "sourceExcerptSHA256": "8eac4ab6af52ef95d724f69039a16ea9e564ee2f2d0ef5a4f972522da68076f5",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+          "supportingExcerpt": "The adenosine route works outside cells.",
+          "passageSha256": "9b28391772b984c2842097c66f0f3306fbfb2043532ec96404ddd8e7bfb53aa2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+          "supportingExcerpt": "IDO is not an adenosine receptor and does not degrade ATP",
+          "passageSha256": "6dca7af553fabd46167659ac2eb6d3c7fada212d2587278f03e864a22a4ce375",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "deaglio",
+        "munn",
+        "ido1-uniprot"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. The named ligand, generating enzymes and receiving receptor are separated; no molecular-size threshold is claimed.",
+      "sourceQualification": "The named ligand, generating enzymes and receiving receptor are separated; no molecular-size threshold is claimed.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A02",
+      "family": "metabolic-routes",
+      "requirement": "Locate CD39-mediated extracellular ATP/ADP conversion to AMP separately from the following CD73 step.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "and adenosine diphosphate (ADP) to adenosine monophosphate (AMP), and CD73 converts AMP to adenosine.",
+      "sourceExcerptSHA256": "c630d1190457315ce96eb1afc582ce5aa6c36b8131591fde92d8771dc05a9e0c",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/adenosine-and-ido.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "87f0449f375263e9b14767e91aa4a946e80039adf23b21cdd46514046ae110d9",
+          "gitBlob": "f8469527ea3b02f11738f829c517bbc5f8bcfca2"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/adenosine-and-ido.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a660565b6581eac5b083ee4ec9e0ddac1d5f924c11be2dcbe35932090992e344",
+          "gitBlob": "6c5cf29cc81620cba1c4fb5884188bb3c318a991"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "CD39 converts ATP and ADP to AMP",
+          "passageSha256": "43fa7be3ba527b6c8a94e3174a8215ad45fd3375a768e6b0c9ad23c05e283b0f",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "deaglio"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Extracellular chemistry is read in the Deaglio introduction and tested ADP hydrolysis; no universal rate limit or expression-to-activity inference.",
+      "sourceQualification": "Extracellular chemistry is read in the Deaglio introduction and tested ADP hydrolysis; no universal rate limit or expression-to-activity inference.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A03",
+      "family": "metabolic-routes",
+      "requirement": "Locate CD73-mediated AMP conversion to extracellular adenosine; neither enzyme is the A2A receptor.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "CD73 converts AMP to adenosine.",
+      "sourceExcerptSHA256": "21fc8ff0071facd8a96bc92bae9e1c3441c0ef12929ed8ca03afdd417d27dc80",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/adenosine-and-ido.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "87f0449f375263e9b14767e91aa4a946e80039adf23b21cdd46514046ae110d9",
+          "gitBlob": "f8469527ea3b02f11738f829c517bbc5f8bcfca2"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/adenosine-and-ido.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "a660565b6581eac5b083ee4ec9e0ddac1d5f924c11be2dcbe35932090992e344",
+          "gitBlob": "6c5cf29cc81620cba1c4fb5884188bb3c318a991"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "CD73 converts AMP to adenosine",
+          "passageSha256": "6c2ec7606ce34626d32fd35aafeeddb7c98d5bc11b107a2559a4c3417fa17058",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "deaglio"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. CD73 is the distinct following ectoenzyme step, not the receiving A2A receptor.",
+      "sourceQualification": "CD73 is the distinct following ectoenzyme step, not the receiving A2A receptor.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A04",
+      "family": "metabolic-routes",
+      "requirement": "Place the responding A2A receptor on the receiving-cell surface; distinguish generation from receptor signaling.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "distinct A2A receptor signaling",
+      "sourceExcerptSHA256": "07438e908c17c2d806bf2e31901c2c357eeab6dd03f42b0ddc6c03b844fc1d03",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1-independent-owner-review.json",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0b3ca8f696a98f717ae5121553f7b711c83f0f34f67a5c749d68af881a921fd6",
+          "gitBlob": "7130d66a4f42fea6e61d516b41087f2f2d200559"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1-independent-owner-review.json",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0b3ca8f696a98f717ae5121553f7b711c83f0f34f67a5c749d68af881a921fd6",
+          "gitBlob": "7130d66a4f42fea6e61d516b41087f2f2d200559"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+          "supportingExcerpt": "adenosine then acts on cell-surface receptors, including the A2A receptor on T cells",
+          "passageSha256": "d06b3ab3dd068900699c339ee7503bb4f9c2c3e453fe38c1d5664720f67c87b7",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "deaglio",
+        "ohta"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Deaglio and Ohta concern tested T-cell/mouse systems, without a human inhibitor-benefit inference.",
+      "sourceQualification": "Deaglio and Ohta concern tested T-cell/mouse systems, without a human inhibitor-benefit inference.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A05",
+      "family": "metabolic-routes",
+      "requirement": "Locate IDO1 inside a producing cell and describe it as an early step in tryptophan breakdown toward the kynurenine pathway.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "a separate intracellular IDO1 route starts tryptophan breakdown.",
+      "sourceExcerptSHA256": "02d4c0d5706009aed15c1925a57195e323ec6d64ccb5d4892a23eca492106d4f",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "ba7afcd97e8e54cdb9a524600f6fafaca2fba138891704f1e489fccd12d433f6",
+          "supportingExcerpt": "The IDO route works inside a producing cell: IDO1 starts the breakdown of tryptophan along the kynurenine pathway.",
+          "passageSha256": "a20699132e9de7e1e9801cbcfea6c71bed6b3c17aac1f1e26b6f293088199624",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "munn",
+        "ido1-uniprot"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. IDO1 identity, cytosolic location and catalytic step are curated UniProt fields; Munn mechanisms remain mouse experiments, not all expressing cells.",
+      "sourceQualification": "IDO1 identity, cytosolic location and catalytic step are curated UniProt fields; Munn mechanisms remain mouse experiments, not all expressing cells.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A06",
+      "family": "metabolic-routes",
+      "requirement": "The tryptophan-to-kynurenine-pathway arrow summarizes early and downstream steps, rather than one complete IDO1 reaction.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "The kynurenine-pathway arrow summarizes several downstream steps.",
+      "sourceExcerptSHA256": "3df70df7914aaca8cbdd8379f6ffaa613e651942af1db45fd2a4caa2cd308acb",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "Describing the route as tryptophan entering the kynurenine pathway compresses several steps; it does not mean that IDO1 makes every downstream metabolite in one reaction.",
+          "passageSha256": "d04dc846d27a3e0279bde16b593defd252f63177023a990de59b70d452923070",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [
+        "ido1-uniprot"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. The interpretation uses the curated N-formylkynurenine reaction; underlying UniProt-cited papers were not individually opened.",
+      "sourceQualification": "The interpretation uses the curated N-formylkynurenine reaction; underlying UniProt-cited papers were not individually opened.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A07",
+      "family": "metabolic-routes",
+      "requirement": "Component RNA/protein expression does not measure local enzyme activity, metabolite production or immune suppression.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "Component expression does not establish local activity or inhibitor benefit.",
+      "sourceExcerptSHA256": "d04bd09183d7e39300e692f256e6f7d42d2460149e6467c63e637a7a8105fccb",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients",
+          "passageSha256": "1ed471749f796b88d643ddae6a382157ec3735784e7ae84488ab5d33c064567c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "deaglio",
+        "munn"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. A premise-backed separation of measurement layers, not a newly validated diagnostic rule or cutoff.",
+      "sourceQualification": "A premise-backed separation of measurement layers, not a newly validated diagnostic rule or cutoff.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-A08",
+      "family": "metabolic-routes",
+      "requirement": "Normal restraint and tumor immune effects depend on setting; a mechanism or stained protein does not establish inhibitor benefit.",
+      "relatedAssignedAssetIndices": [
+        2,
+        3,
+        4
+      ],
+      "sourceExcerpt": "Normal tissue restraint and tumor mechanisms are context-dependent. | No inhibitor-benefit inference from either route.",
+      "sourceExcerptSHA256": "e3d19f14536c5c7d5ed3395c5fd1e7fe2c85d30c63195f7a042a7848e25be104",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/nucleotide-adenosine-and-tryptophan-routes-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "d08d063720d088639af2bed3d7b6a195d94d8d214019989c0ff2cf0f42e415d2",
+          "gitBlob": "ceb001a03e810c4467d77da9a72578a03658eb3d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off",
+          "passageSha256": "fd63a4609842d36df90559c4564e389d2692c286abe4459c94f53780cfcf306f",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "adenosine-and-ido",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "ceb09904f268afb33cf92865b6acd8bea9f8eb362935cb01c9a726e5af957816",
+          "fieldSha256": "e9ec4617d7f0e515d5e2bad76882d06a259a052f136193acba4da4550e139069",
+          "supportingExcerpt": "That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer.",
+          "passageSha256": "6e9fe4395fb4745db4554851332f098322df94b9060de690395dc551edb0f45a",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "ohta",
+        "munn"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Ohta abstract supports mouse normal-tissue restraint; no human inhibitor benefit is inferred. Existing ECHO-301 numbers keep their earlier reading depth and are not newly certified.",
+      "sourceQualification": "Ohta abstract supports mouse normal-tissue restraint; no human inhibitor benefit is inferred. Existing ECHO-301 numbers keep their earlier reading depth and are not newly certified.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S01",
+      "family": "signal-patterns",
+      "requirement": "For equal-sized compartments, fictional concentrations 0 and 20 pg/mL and 10 and 10 pg/mL both have mean 10 pg/mL.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Two equal-sized compartment pairs show 0 and 20 versus 10 and 10 pg/mL, both averaging 10",
+      "sourceExcerptSHA256": "66aff152a7af5b96b32982552c156acf56fe21cb8517f3de6faea3cbc72bc435",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "In a fictional example with two equal-sized compartments, 0 and 20 pg/mL average 10 pg/mL, as do 10 and 10 pg/mL.",
+          "passageSha256": "03f131bd915918e243e681d67fb7ad3877e8563fe0507920f57b75b59f081e06",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Fictional equal-volume arithmetic, checked directly; not measured physiology.",
+      "sourceQualification": "Fictional equal-volume arithmetic, checked directly; not measured physiology.",
+      "sourceScope": "Fictional arithmetic, drawing convention or stated-premise inference; not an empirical study finding.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S02",
+      "family": "signal-patterns",
+      "requirement": "Only the first fictional pair has a concentration difference; a common bulk mean does not reconstruct spatial availability.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "only A has a concentration difference.",
+      "sourceExcerptSHA256": "b6e97cff0a24dec7cf6fd580808e948f85aadf7cba1a79f801b17e1cc9566415",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "Only the first pair has a concentration difference.",
+          "passageSha256": "79c51755869de8ba7a15a87cc476a0237c17f0373c4d3a7cab3ed9332c111805",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "A common average cannot establish equal cell movement.",
+          "passageSha256": "015600d71c3254e74daf9297f1037abd9edb124d52905013508716074ebdcf95",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. A mathematical counterexample to inferring spatial information from one average.",
+      "sourceQualification": "A mathematical counterexample to inferring spatial information from one average.",
+      "sourceScope": "Fictional arithmetic, drawing convention or stated-premise inference; not an empirical study finding.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S03",
+      "family": "signal-patterns",
+      "requirement": "The toy concentrations and illustrative dots are not molecule counts, patient data, physiological gradients or a dose.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Dots illustrate the pattern, not individual molecules or a physiological gradient.",
+      "sourceExcerptSHA256": "94b243daabd02878a22883552491ec61951ab42ef606bc93501a8b13492787cd",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "These numbers demonstrate arithmetic; they are not patient measurements, a physiological gradient or an effective dose.",
+          "passageSha256": "255626af90d0bb90e2228eeb50ecd1aea0d2b2a015a4ad91c4fb151a47694134",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "Dots used to illustrate the pattern would not count individual molecules.",
+          "passageSha256": "64b02daadac925eacaba2fb874310d9e1298bda3f9893e29924eb3218491ad81",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Author-defined drawing and fictional-data limits, not an empirical molecular count.",
+      "sourceQualification": "Author-defined drawing and fictional-data limits, not an empirical molecular count.",
+      "sourceScope": "Fictional arithmetic, drawing convention or stated-premise inference; not an empirical study finding.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S04",
+      "family": "signal-patterns",
+      "requirement": "Availability can include immobilized matrix/surface presentation rather than only freely dissolved concentration.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Signal availability can be matrix/surface-associated.",
+      "sourceExcerptSHA256": "7cbb9f9df47288afc1ffade7f6b2ae353237fa8be03db07c50651ac6068a8338",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "in mouse skin an immobilised CCL21 gradient guided dendritic cells towards lymphatic vessels",
+          "passageSha256": "1ed8d7eeefc51fd99b52a5245b8ca971de53bba45453e138ca3190b58af87c6a",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "weber"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Weber abstract: CCL21 immobilized to heparan sulfates in mouse skin; no full text or original-study figure read.",
+      "sourceQualification": "Weber abstract: CCL21 immobilized to heparan sulfates in mouse skin; no full text or original-study figure read.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S05",
+      "family": "signal-patterns",
+      "requirement": "Movement depends on compatible receptors, the receiving cell and a traversable route, rather than a universal chemokine attraction.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Movement needs compatible receptors and traversable routes, not concentration alone.",
+      "sourceExcerptSHA256": "89783c90764faed7970fea48bd33d82582f447ae0f4bc5d96fd13b4410ae43a2",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/same-bulk-average-different-spatial-signals-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "494f6d9da2c9b7a1ade14114bf3ef5286d883f6287ac7b39a4875a111ea9cbdd",
+          "gitBlob": "b6b03650f20e77b52dcc6a7a308b16008aad6f20"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "A functional comparison still needs the receiving cells and their receptors, the spatial availability of the signal and a route the cells can traverse.",
+          "passageSha256": "85cec36a3865d7bf5430513706b619d32bb3e26796ec1021811f7a4aec72db59",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "weber"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. OnCo reporting/inference rule from specified receiver and tissue context, not an empirical universal list of sufficient causes.",
+      "sourceQualification": "OnCo reporting/inference rule from specified receiver and tissue context, not an empirical universal list of sufficient causes.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S06",
+      "family": "signal-patterns",
+      "requirement": "Weber CCL21 guidance evidence is mouse-skin dendritic-cell migration toward lymphatics, not a universal tumor-entry claim.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Mouse-skin dendritic-cell migration toward lymphatic vessels.",
+      "sourceExcerptSHA256": "0ff07a58e8b8742e8d224f930591586fa5fb3be7ac7b27111f07cae485628010",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/batch08-current-baseline/same-bulk-average-different-spatial-signals-v1-independent-owner-review.json",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f4a8a9b40f77d6c84a574cbb3bb55cf9ec7f15eaf3b28c7c562c89397ee69e91",
+          "gitBlob": "95ba200b8927cbdb23e17f817213401e0373e675"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/batch08-current-baseline/same-bulk-average-different-spatial-signals-v1-independent-owner-review.json",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "f4a8a9b40f77d6c84a574cbb3bb55cf9ec7f15eaf3b28c7c562c89397ee69e91",
+          "gitBlob": "95ba200b8927cbdb23e17f817213401e0373e675"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "in mouse skin an immobilised CCL21 gradient guided dendritic cells towards lymphatic vessels, and displacing or swamping it abolished directed migration (Weber et al., 2013)",
+          "passageSha256": "3c87355b2e32d9861f19bad54b32133c33f8f12c062f782de950543afe844c69",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "weber"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Exact species/tissue/cell scope follows the fresh complete abstract; no tumor-entry or clinical-effect extrapolation.",
+      "sourceQualification": "Exact species/tissue/cell scope follows the fresh complete abstract; no tumor-entry or clinical-effect extrapolation.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S07",
+      "family": "signal-patterns",
+      "requirement": "Equal means do not establish equal migration or function; a functional comparison needs a specified receiver and conditions.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Equal averages do not establish equal function.",
+      "sourceExcerptSHA256": "ed3e28a0d2f529ed93610c90cf4338ad62ac9ad64acd803537393c2a4be9b063",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/cytokine-and-chemokine.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "ac237c92dbf373982cae34b8db45e438caaffb6e785b59d3fd67ba26274c2df8",
+          "gitBlob": "9997e8fdce21124f26289d39e1b1b4fdf3e5e166"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/cytokine-and-chemokine.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "f25073a64b2a9c66aefad616c13524a7e60d8baa62d42ffc7c707c0b8378c8c9",
+          "gitBlob": "274393b2d6b44dd65d61c329f2b5dc3ed1c2f2f5"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "A common average cannot establish equal cell movement.",
+          "passageSha256": "015600d71c3254e74daf9297f1037abd9edb124d52905013508716074ebdcf95",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "5a164c8621d06083513724b5f94499f318f4ad4db51cfcdbf49d0b7e112b2429",
+          "supportingExcerpt": "A functional comparison still needs the receiving cells and their receptors, the spatial availability of the signal and a route the cells can traverse.",
+          "passageSha256": "85cec36a3865d7bf5430513706b619d32bb3e26796ec1021811f7a4aec72db59",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Premise-backed comparison rule; the toy example does not predict the direction or amount of actual migration.",
+      "sourceQualification": "Premise-backed comparison rule; the toy example does not predict the direction or amount of actual migration.",
+      "sourceScope": "Fictional arithmetic, drawing convention or stated-premise inference; not an empirical study finding.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-S08",
+      "family": "signal-patterns",
+      "requirement": "Track producing cell, signal presentation/pattern, receiving-cell state and the measured effect separately.",
+      "relatedAssignedAssetIndices": [
+        0,
+        5,
+        6
+      ],
+      "sourceExcerpt": "Amount, location and the receiver are separate parts of the mechanism.",
+      "sourceExcerptSHA256": "30dd759708bbf3ad1d4000f86b511377057e5ec21bee3ad58807416acf974278",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/cytokine-and-chemokine.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "ac237c92dbf373982cae34b8db45e438caaffb6e785b59d3fd67ba26274c2df8",
+          "gitBlob": "9997e8fdce21124f26289d39e1b1b4fdf3e5e166"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/cytokine-and-chemokine.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "f25073a64b2a9c66aefad616c13524a7e60d8baa62d42ffc7c707c0b8378c8c9",
+          "gitBlob": "274393b2d6b44dd65d61c329f2b5dc3ed1c2f2f5"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "receptor availability, concentration, exposure time and cell state all shape the response.",
+          "passageSha256": "9095b843c6875bb8860eca7f64917fe40a832a85d880a2341a0a121b153eea39",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "cytokine",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+          "fieldSha256": "4c7760a9b611db5f858809f8a08faff196690b49643156e4d55b892af7fdd0b1",
+          "supportingExcerpt": "Measurements answer different questions:",
+          "passageSha256": "4824e326a18a85d14530ab58d67a05448e7be6552bb9c8c49021fb4a02798186",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "weber"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. The selected pattern/receiver distinction is supported; unrelated cytokine, interferon and assay assertions retain prior source scope.",
+      "sourceQualification": "The selected pattern/receiver distinction is supported; unrelated cytokine, interferon and assay assertions retain prior source scope.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C01",
+      "family": "checkpoint-contacts",
+      "requirement": "Show PD-1/PD-L1 and CD28/CD86 as two separate across-cell contacts with the T-cell signaling compartment identified.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "Draw two distinct contacts across the gap.",
+      "sourceExcerptSHA256": "9ad57712cfc16d439b1a5cef81e2f3cd88ba90c302e3ea864712b8d1968fdd50",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "PD-1 on a T cell can meet PD-L1 on a neighbouring cell while a separate CD28 receptor meets CD86",
+          "passageSha256": "9dc0719bee361be51e3f18addf7c0b07c3d253901d79fc3d2be08c139b1bf29c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "hui",
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. The molecular contact schematic is read beside the two studied mechanisms, not as a complete synapse or subunit anatomy.",
+      "sourceQualification": "The molecular contact schematic is read beside the two studied mechanisms, not as a complete synapse or subunit anatomy.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C02",
+      "family": "checkpoint-contacts",
+      "requirement": "PD-1 preferentially reduces CD28 signaling in the cited reconstituted/cell systems; the schematic does not make CD28 its only target in all contexts.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "it does not claim CD28 is the only possible target in every context.",
+      "sourceExcerptSHA256": "c83ff481f7e639af77bb343b9c7eb3c9abfdca298e4f8dd820d1db70a479f381",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "In reconstitution and cell experiments, PD-1 engaged by PD-L1 recruited the phosphatase Shp2, which dephosphorylated the co-receptor CD28 in preference to the T-cell receptor (Hui et al., 2017).",
+          "passageSha256": "fa045b86007b89097756ff259fa1d64a8743be127ede951ecc1e338aff1ce9e2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "hui"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Fresh reconstitution and Jurkat/Raji passages retain preference, tested conditions and transient signaling; no universal CD28-only rule.",
+      "sourceQualification": "Fresh reconstitution and Jurkat/Raji passages retain preference, tested conditions and transient signaling; no universal CD28-only rule.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C03",
+      "family": "checkpoint-contacts",
+      "requirement": "The dashed PD-1 relationship represents intracellular signaling, not a direct extracellular PD-1/CD28 collision or CD86 removal.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "This is a symbolic signaling relationship, not a direct molecular collision.",
+      "sourceExcerptSHA256": "7db10e8d14910245fcbb9932874ae073f54b2eba63694c9a5403a15f6dcf0b76",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "the inhibitory signalling relationship is inside the responding T cell, rather than a physical PD-1/CD28 collision across the gap",
+          "passageSha256": "095367bf0a65f572b0936b8335d8b768164d57a62fceee7bc2befd975eaf4027",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "hui"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. A drawing interpretation of intracellular signaling, with the extracellular supporting contact still present in both actual images.",
+      "sourceQualification": "A drawing interpretation of intracellular signaling, with the extracellular supporting contact still present in both actual images.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C04",
+      "family": "checkpoint-contacts",
+      "requirement": "CTLA-4 and CD28 can share CD80/CD86 partners; the picture selects CD86 rather than presenting an exhaustive partner list.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "CD80 is another shared partner and is not denied.",
+      "sourceExcerptSHA256": "f83712cd451d5cd2c8592f27f7966f058ea0d8c6111381d90bc641811b31c3b4",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "CTLA-4 shares the ligands CD80 and CD86 with CD28",
+          "passageSha256": "2b42527de636d84ad4826b23fa57e58374f8c0ac1cf28f3a082efff240a8de6e",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "qureshi",
+        "ctla4-uniprot"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Both partners are supported by Qureshi abstract and the curated CTLA4 function; the image selects CD86.",
+      "sourceQualification": "Both partners are supported by Qureshi abstract and the curated CTLA4 function; the image selects CD86.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C05",
+      "family": "checkpoint-contacts",
+      "requirement": "CTLA-4 can capture a ligand from an opposing cell into the CTLA-4-bearing T cell by trans-endocytosis, reducing available costimulatory ligand.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "CTLA-4 can capture CD86 from a neighboring cell.",
+      "sourceExcerptSHA256": "6dc25dbd37161184c50de84eec7fa27b49e842000c64f00fab47830fa041e919",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "can capture them from opposing cells by trans-endocytosis, so the neighbouring cell has fewer costimulatory ligands to offer",
+          "passageSha256": "9e274c6ec2658064460ac67ae7434d8a157b07c51f6f6df7efaae1d55cc044fe",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Qureshi engineered cells, activated human CD4 cells with monocyte-derived DCs, and a defined mouse transfer system; not every in vivo contact.",
+      "sourceQualification": "Qureshi engineered cells, activated human CD4 cells with monocyte-derived DCs, and a defined mouse transfer system; not every in vivo contact.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C06",
+      "family": "checkpoint-contacts",
+      "requirement": "Keep direction and recipient of CD86 capture explicit; do not reverse the transfer or put the vesicle in the neighbor.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "This vesicle is inside the CTLA-4-bearing T cell, never inside the neighbor and never floating in the intercellular gap.",
+      "sourceExcerptSHA256": "97cb5922516a2fc676a002cf53e3e91f5b42ed9fd95d40e1a5e5497334355f67",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "CTLA-4-mediated capture moves CD86 from the opposing cell's surface into vesicles inside the CTLA-4-bearing cell.",
+          "passageSha256": "983e8157b407798d3d92e43ba121a9e5fcf560aaf3c6f0a571e1524625127eab",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Recipient and direction match fresh complete paragraphs and both whole native images.",
+      "sourceQualification": "Recipient and direction match fresh complete paragraphs and both whole native images.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C07",
+      "family": "checkpoint-contacts",
+      "requirement": "Capture and competition are selected CTLA-4 mechanisms, not an exclusive catalog or the same process as the PD-1 intracellular cartoon.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "one established mechanism alongside competition and other context-dependent regulation.",
+      "sourceExcerptSHA256": "28d2243e3ab1d41cb8189943a09b5d11b472f0a756926ebd636433ac555d5cb8",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "The checkpoints work through different contacts and are not interchangeable versions of PD-1.",
+          "passageSha256": "3da97ae14ea2a0a12ee36a758f8d6ca8c832cac65a28dcd99785a5acc0f4695f",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "can capture them from opposing cells by trans-endocytosis",
+          "passageSha256": "cd4942bd97056ea99a0628e4507275e746c8dc409e996c75243289c88790b8ee",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "ctla4",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "fb023cfa33f6cc37b80247edaec0022089d2e5431b3abf2edfcf1a4bdf52f060",
+          "fieldSha256": "db52fd7936d4fc9a04d8a8a28190b94d2c91c2f1d2fd9b2c37010b1d007cebfb",
+          "supportingExcerpt": "CTLA-4 is a checkpoint on activated and regulatory T cells that competes with CD28 for B7 ligands during T-cell priming",
+          "passageSha256": "2d69741a006b611284153dd5c7e4dbc28fddf5bb8b7c28d6d5ab866fbc27f4fd",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "qureshi",
+        "ctla4-uniprot"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. The separate existing CTLA4 competition clause is also selected; curated shared-ligand affinity supports the competition mechanism, not a clinical effect.",
+      "sourceQualification": "The separate existing CTLA4 competition clause is also selected; curated shared-ligand affinity supports the competition mechanism, not a clinical effect.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C08",
+      "family": "checkpoint-contacts",
+      "requirement": "The two-before/one-after glyph count and time arrow are schematic, not a measured fraction, depletion time or complete removal claim.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "Two surface glyphs becoming one is a teaching illustration, never a measured fraction, timing estimate, or promise of complete ligand depletion.",
+      "sourceExcerptSHA256": "f9dd76dd83a158ef00e999e820ea7497ac4bbe437bf7b43aa170c2e689b91e67",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "A fictional drawing with two surface CD86 symbols before contact, one remaining on the donor and one inside the receiving cell afterwards would illustrate direction only.",
+          "passageSha256": "661520aaddc49a8a825f8e087f75c55cb1fa6ac7aff2998da43114c94e46df48",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "It would not measure the fraction captured, time course or complete ligand depletion.",
+          "passageSha256": "000ed85d8f58070f385f8315e313272d19e6951ad01fcc05c7d609155c1417ea",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Author-defined schematic counts; source-study kinetic and stoichiometric numbers are not adopted.",
+      "sourceQualification": "Author-defined schematic counts; source-study kinetic and stoichiometric numbers are not adopted.",
+      "sourceScope": "Fictional arithmetic, drawing convention or stated-premise inference; not an empirical study finding.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C09",
+      "family": "checkpoint-contacts",
+      "requirement": "Captured ligand can be degraded; the cartoon does not require CTLA-4 receptor destruction or ligand return to the receiving-cell surface.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "Internalized ligand can subsequently be degraded; do not invent a lysosome, show the CTLA-4 receptor destroyed, or show ligand returned to the recipient surface.",
+      "sourceExcerptSHA256": "63f10b6c30f5acccef33e2b303384349f92dd449b849d45e092f44c93eb772e7",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "notes",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "5ad82446f57b4a5907fe015ab4e08a75a42cc73c33735134dd3d56aedbe1e971",
+          "supportingExcerpt": "The captured ligand was delivered for degradation; their observations did not require CTLA-4 itself to be destroyed.",
+          "passageSha256": "ecb26b1b651238d51ca0d0d3982c103091bf772a790b60d7c8fd1f1e9afd6020",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Qureshi paragraph 0 reports ligand degradation, no recipient-surface CD86 and no increase of CTLA4 with bafilomycin; no universal receptor fate.",
+      "sourceQualification": "Qureshi paragraph 0 reports ligand degradation, no recipient-surface CD86 and no increase of CTLA4 with bafilomycin; no universal receptor fate.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C10",
+      "family": "checkpoint-contacts",
+      "requirement": "Changes in regulatory signaling do not supply antigen recognition, restore HLA, guarantee killing, or establish drug benefit.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "Do not imply geographic exclusivity, cancer-only expression, universal cell awakening, HLA restoration, tumor killing, clinical benefit or a treatment recommendation.",
+      "sourceExcerptSHA256": "3f609dba6b5b96c0a645fbe5bbeed5bb004a5eb9dceacaa6c283d855788402a9",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "it does not teach T cells a new target, build a route into the tumour or repair every dysfunctional cell",
+          "passageSha256": "1a63a8c52d54a66ddb8e275a60648297b8b2670b4bfeb29efc048cb6d1425304",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "hui",
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Premise-backed limit on what these selected mechanisms establish; no new drug/eligibility or response claim.",
+      "sourceQualification": "Premise-backed limit on what these selected mechanisms establish; no new drug/eligibility or response claim.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P39-C11",
+      "family": "checkpoint-contacts",
+      "requirement": "No cell-wide shutdown or priming/tissue geographic exclusivity follows from these selected checkpoint mechanisms.",
+      "relatedAssignedAssetIndices": [
+        1
+      ],
+      "sourceExcerpt": "Do not show the cell fully shut off.",
+      "sourceExcerptSHA256": "064b0336feb15b17ca1142b7537b7a7d85458748a658ea76e686a137e9d8dc23",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        },
+        {
+          "path": "wiki/education/concepts/immunology/immune-regulation/images/prompts/checkpoint-contact-capture-v1.txt",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "bdeb4bbee10f58da4a7723c547c563a22b02709d2aa77ca8c927b7ed063dff6f",
+          "gitBlob": "7e460605a4ec01d133ca486d181d69042f5602e8"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "these are overlapping emphases and not separate addresses",
+          "passageSha256": "dd441ef305a2d36fd346afb0ccccd09bef75bc20c0d75fae675387d148610e99",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "immune-checkpoint",
+          "version": "proposal-support-bodies-38-root",
+          "field": "summary",
+          "recordSha256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+          "fieldSha256": "78c1fd1feed8ab5c0085fd643291f5d4ad22ab262ab9fd1526b42060d6d237ae",
+          "supportingExcerpt": "it does not teach T cells a new target, build a route into the tumour or repair every dysfunctional cell",
+          "passageSha256": "1a63a8c52d54a66ddb8e275a60648297b8b2670b4bfeb29efc048cb6d1425304",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "hui",
+        "qureshi"
+      ],
+      "semanticAssessment": "The named current fields carry this selected teaching requirement. Selected assays do not establish cell-wide shutdown or anatomical exclusivity. Existing review-attributed anatomical context keeps its prior depth.",
+      "sourceQualification": "Selected assays do not establish cell-wide shutdown or anatomical exclusivity. Existing review-attributed anatomical context keeps its prior depth.",
+      "sourceScope": "Fresh complete abstracts and targeted article paragraphs or selected UniProt curation as named; no whole-paper or underlying curated-reference claim.",
+      "artifactConstructionBoundary": "Selected qualitative mechanisms and fictional counts; no scientific, expert, owner, learner, language, main or live acceptance.",
+      "independentAcceptance": false,
+      "remaining": []
+    }
+  ],
+  "constructionBoundaries": [
+    {
+      "id": "P39-B01",
+      "requirement": "Historical PASS and independent-new-owner labels are custody assertions; the spatial review expressly inherits science/pixels and performs a navigation-only rebind.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B02",
+      "requirement": "Private review paths, author seals, agent identities and source commits are not followed or upgraded to current approval.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B03",
+      "requirement": "Embedded owner/image/prompt hashes must be checked against both pins; historical preimages remain distinct from pinned owners.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B04",
+      "requirement": "Preserve both pinned entries when whole bytes are identical; no ordinary lesson or earlier artwork grade is re-assigned.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B05",
+      "requirement": "Paired-theme geometry/text claims require explicit comparison; historical mobile/contrast/keyboard numbers are not fresh product testing.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B06",
+      "requirement": "The supplied base/light/correction/dark checkpoint prompts are distinct construction stages; only actual pinned public images establish the reviewed output.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B07",
+      "requirement": "Native whole-image views do not establish mobile layout, quantitative contrast, accessibility, browser interaction or independent/expert/learner acceptance.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    },
+    {
+      "id": "P39-B08",
+      "requirement": "Two extra therapeutic image-index rows document reuse only; their owners are not newly assessed by this checkpoint.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "retained as construction/custody/context boundary"
+    }
+  ],
+  "fullyFieldRepresentedRequirements": 27,
+  "registeredRootRequirements": 27,
+  "actualUnmergedPeerRequirements": 0,
+  "partialRequirements": 0,
+  "unrepresentedRequirements": 0,
+  "exactCurrentFieldReferences": 37,
+  "independentAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

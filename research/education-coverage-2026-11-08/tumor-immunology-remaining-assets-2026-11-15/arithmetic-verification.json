@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "name": "counted CD8 fraction",
+      "expression": "30/100*100",
+      "value": 30.0,
+      "expected": 30
+    },
+    {
+      "name": "separate stromal area",
+      "expression": "0.4/2*100",
+      "value": 20.0,
+      "expected": 20
+    },
+    {
+      "name": "pooled occupied area",
+      "expression": "(0.4+0.6)/(4+1)*100",
+      "value": 20.0,
+      "expected": 20
+    },
+    {
+      "name": "unweighted mean",
+      "expression": "(10+60)/2",
+      "value": 35.0,
+      "expected": 35
+    },
+    {
+      "name": "equal-cell contrasting locations",
+      "expression": "8==8, desert=2",
+      "value": true,
+      "expected": true
+    },
+    {
+      "name": "HLA symbol bookkeeping only",
+      "expression": "baseline 2=2, after 4 versus 2",
+      "value": true,
+      "expected": true
+    }
+  ],
+  "fictionalNotEmpirical": true,
+  "noMeasuredTwofoldBiologicalEffect": true
+}

@@ -1,0 +1,930 @@
+{
+  "version": "proposal-support-bodies-48-root",
+  "draft": 375,
+  "committedDataHead": "f951deb86fe2b3e39d40d6766f0e0ad76a0c4451",
+  "auditBaseCommit": "85ffe45db0195e29faa9f10d75954d56a75cf94f",
+  "state": "Nine selected current registered-root records. Only two citation labels change; all scientific fields and previous verification depths remain.",
+  "records": [
+    {
+      "id": "tils",
+      "kind": "term",
+      "name": "Tumour-infiltrating lymphocytes (TILs)",
+      "aka": [
+        "tumor-infiltrating lymphocytes",
+        "tumour-infiltrating lymphocyte"
+      ],
+      "tldr": "Tumour-infiltrating lymphocytes are lymphocytes found in tumour tissue. Their identity, location, measurement denominator and function answer different questions.",
+      "summary": "Tumour-infiltrating lymphocytes (TILs) are lymphocytes found in sampled tumour tissue, including T- and B-cell populations. The breast stromal TIL method estimates the area occupied by a defined mononuclear inflammatory infiltrate within eligible tumour-associated stroma on H&E sections. Higher pretreatment scores were associated with better outcomes in the cited early triple-negative breast cancer cohorts, but those associations do not guarantee an individual outcome or establish extra benefit from pembrolizumab. Intratumoral location, stromal area, immune-cell counts and cells expanded for TIL therapy are different measurements or uses.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor-infiltrating_lymphocytes",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tumor-infiltrating_lymphocytes"
+        },
+        {
+          "label": "International TILs Working Group breast assessment recommendations",
+          "url": "https://tilsinbreastcancer.org/wp-content/uploads/2017/11/Salgado-et-al.-Annals-of-Oncology-2015.pdf"
+        },
+        {
+          "label": "Loi et al., pooled early TNBC prognostic analysis, 2019",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30650045/"
+        },
+        {
+          "label": "Denkert et al., neoadjuvant TIL response analysis, 2018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29233559/"
+        },
+        {
+          "label": "Working Group residual-disease assessment recommendations",
+          "url": "https://tilsinbreastcancer.org/wp-content/uploads/2017/10/Suppl-File-3-Recommendations-for-assessing-tumor-infiltrating-lymphocytes-TILs-in-RD.pdf"
+        },
+        {
+          "label": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+        },
+        {
+          "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25214542/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "tumor-stroma-ratio",
+        "cold-vs-hot",
+        "cd4-t-cell-subsets"
+      ],
+      "cancers": [
+        "tnbc"
+      ],
+      "sections": [],
+      "technologies": [
+        "til-therapy",
+        "digital-pathology-ai"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The breast stromal TIL method estimates the area occupied by mononuclear inflammatory cells, including lymphocytes and plasma cells, as a percentage of eligible tumour-associated stroma. It is not the percentage of all cells, a CD8-cell count or the fraction of cancer cells being killed.",
+        "Define the eligible region and treatment setting before estimating the percentage. Use the specified exclusions for normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes, and assess the region overall rather than only its hottest spot. A prognostic association does not establish added benefit from a particular treatment.",
+        "In the pooled analysis of 2,148 early-stage TNBC patients given anthracycline-based chemotherapy with or without taxanes, each 10 percentage-point increase in pretreatment stromal TILs corresponded to an adjusted invasive disease-free survival hazard ratio of 0.87 (95% confidence interval 0.83 to 0.91) and overall survival hazard ratio of 0.84 (0.79 to 0.89). These associations do not establish an added pembrolizumab benefit by TIL level.",
+        "Among 906 TNBC patients from six neoadjuvant chemotherapy trials, pathological complete response occurred in 80 of 260 with low TILs (0% to 10%), 117 of 373 with intermediate TILs (11% to 59%) and 136 of 273 with high TILs (at least 60%): about 31%, 31% and 50%. These categories describe that analysis and are not universal treatment cutoffs.",
+        "Fictional area exercise: region A has 4 units of eligible stroma with 0.4 occupied by infiltrate; region B has 1 unit with 0.6 occupied. Pooled occupied area is (0.4 + 0.6)/(4 + 1) = 20%. Averaging the regional percentages without area weighting gives (10% + 60%)/2 = 35%. This arithmetic illustrates the denominator; it does not prescribe a pixel workflow for clinical semiquantitative scoring.",
+        "A fictional sTIL estimate of 30% means that the defined mononuclear infiltrate occupies about 30% of eligible stromal area. It does not mean 30% of all cells are lymphocytes or CD8 cells, or that 30% of cancer cells are being killed. Intratumoral TILs, positive-nucleus fractions, cells per square millimetre and bulk immune RNA measure different things. Additional stains change the measurement rather than silently changing its denominator.",
+        "Residual-disease recommendations assess the residual tumour bed rather than simply reusing untreated invasive borders. Keep specimen type, site, treatment setting and observer calibration. A high score does not prove tumour-specific recognition, entry into every malignant nest or a permanent hot-tumour state.",
+        "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection.",
+        "TIL is a location label, CD8 is a phenotype and antigen specificity is another property. Simoni found bystander CD8 cells recognizing viral rather than cancer epitopes in human lung and colorectal tumours; the study’s CD39 associations are not a universal test of every cell’s target. A functional assay compares defined effectors and targets with recognition and target-survival controls. Neither presence, cytokine release nor one killing assay reproduces every access barrier or establishes clinical benefit.",
+        "The Loi analysis pooled nine studies. In its node-negative subgroup with at least 30% stromal TILs, three-year overall survival was 99% (95% CI 97% to 100%) after the specified adjuvant chemotherapy. Denkert’s pooled neoadjuvant population contained 3,771 patients overall, including the 906 TNBC patients described above. These population and subgroup findings do not make the study categories universal beneficial-TIL thresholds or establish additional pembrolizumab benefit by score.",
+        "In a fictional section, 0.4 square millimetres of mononuclear infiltrate within 2 square millimetres of eligible stroma gives 20% by area. Separately, 30 CD8 cells among 100 counted lymphocytes gives 30% of those counted lymphocytes. Neither is the fraction of all tumour cells, a measure of cancer specificity or evidence of useful killing. One occupied unit among five equal eligible stromal-area units also gives 20%; the drawing illustrates a denominator rather than prescribing pixel counting for semiquantitative breast scoring.",
+        "Fixed sections and morphology or selected stains can measure identity, compartment and abundance; viable-cell assays ask about phenotype and function. Dissociation loses native location, culture can select populations and tests consume finite material. Keep cells per square millimetre, specified cell fractions, stromal-area percentages and assay-specific function distinct. TIL therapy is a manufactured expanded-cell product: a tissue count does not establish product yield, composition, potency or treatment success. Sampling, damage, mixed compartments, unsuitable markers and culture selection are different failure modes, and descriptive pathology, research function and clinical treatment selection require different validation."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "cold-vs-hot",
+      "kind": "term",
+      "name": "Hot vs cold tumours",
+      "aka": [],
+      "tldr": "Hot, excluded and desert describe where specified immune cells were found in sampled tissue. Their location alone does not establish tumour recognition, effective killing or benefit from a particular drug.",
+      "summary": "An inflamed or hot pattern has specified immune cells within sampled tumour regions. In an excluded pattern, cells concentrate in surrounding stroma or at a boundary with less entry into malignant nests. A desert has few relevant cells in the examined regions. Cold is used for desert alone or for both desert and excluded patterns, so state the definition. A macrophage-rich sample is not automatically T-cell inflamed.\n\nThese are observations about identity and location. Some infiltrating T cells recognize viral or other non-cancer antigens; others restrain responses. Region, specimen, disease site and sampling time matter, and treatment can change the pattern. Neither a small biopsy nor a pattern label describes every site in a person or selects an immunotherapy. Exclusion suggests questions about recruitment, vessels, matrix and local cells, rather than proving one causal wall.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tumor_microenvironment",
+      "links": [
+        {
+          "label": "NCI Dictionary of Cancer Terms: hot tumor",
+          "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hot-tumor"
+        },
+        {
+          "label": "Elements of cancer immunity and the cancer-immune set point.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28102259/"
+        },
+        {
+          "label": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29769722/"
+        },
+        {
+          "label": "Tumor-Infiltrating Lymphocytes and Prognosis: A Pooled Individual Patient Analysis of Early-Stage Triple-Negative Breast Cancers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30650045/"
+        },
+        {
+          "label": "Colocalization of inflammatory response with B7-h1 expression in human melanocytic lesions supports an adaptive resistance mechanism of immune escape.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22461641/"
+        },
+        {
+          "label": "The evaluation of tumor-infiltrating lymphocytes (TILs) in breast cancer: recommendations by an International TILs Working Group 2014.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25214542/"
+        },
+        {
+          "label": "Pitfalls in assessing stromal tumor infiltrating lymphocytes (sTILs) in breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32411819/"
+        },
+        {
+          "label": "In situ tumour arrays reveal early environmental control of cancer immunity.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37258670/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "immune-exclusion",
+        "immune-desert-exclusion",
+        "tils",
+        "adaptive-immune-resistance"
+      ],
+      "cancers": [
+        "pancreatic"
+      ],
+      "sections": [],
+      "technologies": [
+        "checkpoint-inhibitor",
+        "sting-agonist",
+        "oncolytic-virus"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-feig-cxcl12-fap-cafs-t-cell-exclusion-pnas-2013",
+        "paper-royal-ipilimumab-pancreatic-j-immunother-2010",
+        "paper-brahmer-anti-pd-l1-phase-1-nejm-2012",
+        "paper-oreilly-durvalumab-tremelimumab-pancreatic-jama-oncol-2019",
+        "paper-bear-pancreatic-immunotherapy-review-cancer-cell-2020"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional comparison, inflamed and excluded fields each contain eight specified T-cell symbols, relocated from mainly within malignant regions to surrounding stroma; a desert field has two. Equal counts can conceal different locations. Region outlines do not prove a physical barrier, these counts do not describe all mononuclear cells used in stromal TIL scoring, and they cannot be converted to an sTIL area percentage. The example depicts neither lymph-node follicles nor tertiary lymphoid organization and supplies no clinical cutoff or response rate.",
+        "Routine pathology can score a defined infiltrate, multiplex imaging adds selected cell identities and coordinates, and mixed-tissue gene expression describes programmes without directly retaining each cell’s location. Report the preparation, section, sampled regions, staining and cell-assignment rules, regional variation, output and denominator. Descriptive labels, cells per area and method-defined stromal scores are different outputs. Sectioning and staining use finite tissue. Damage, staining error, incorrect boundaries and an unrepresentative region can limit the result. A research classifier needs separate validation for a clinical selection use.",
+        "In Loi’s pooled analysis of 2,148 early TNBC patients given anthracycline-based adjuvant chemotherapy with or without taxanes, each 10 percentage-point increase in stromal TILs was associated with iDFS HR 0.87 and OS HR 0.84. This is prognosis in that population, not proof of additional checkpoint-drug benefit by hot/cold category. Taube’s tissue study also supports coexistence of lymphocyte infiltration and induced inhibitory PD-L1; hot does not mean every later immune step succeeds.",
+        "Pancreatic examples have specific settings. Feig’s pancreatic mouse model connected FAP-positive fibroblast CXCL12 with T-cell exclusion; Yamamoto’s work identified autophagy-dependent class-I degradation and tested immune rescue in mice. These are not measurements of every human pancreatic tumour. Royal’s 27-person ipilimumab study reported no RECIST responses but one delayed regression after initial progression. O’Reilly’s 65-person metastatic study reported objective response rates of 3.1% with durvalumab plus tremelimumab and 0% with durvalumab alone, without meeting its expansion threshold. These historical studies do not establish a complete treatment-selection rule or prove that one molecular subgroup is the only possible responder population."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "immune-surveillance-immunoediting",
+      "kind": "term",
+      "name": "Immune surveillance and cancer immunoediting",
+      "aka": [
+        "immunosurveillance",
+        "immune surveillance hypothesis",
+        "cancer immunoediting",
+        "three Es",
+        "elimination equilibrium escape",
+        "Burnet-Thomas hypothesis"
+      ],
+      "tldr": "Immune responses can control cancer and select which populations persist. Immunoediting is a testable framework, not a way to assign a phase or recurrence risk from one scan.",
+      "summary": "The claim. Immune surveillance concerns recognition and control of transformed cells. Immunoediting adds selection of the populations that persist. Elimination, equilibrium and escape are conceptual processes that can coexist or occur independently. Their assignment requires evidence of control, restraint or outgrowth and its mechanism; they are not a compulsory calendar for every clinical cancer. The immune system therefore both protects against cancer and shapes the cancers that emerge.\n\nWho and when. Ehrlich 1909; Burnet 1957 and 1970 and Thomas 1959 stated the surveillance hypothesis. Stutman's 1974 finding that athymic nude mice were no more prone to chemically induced tumours seemed to refute it. Shankaran, Old and Schreiber showed in 2001 that mice lacking lymphocytes or interferon-gamma signalling develop more tumours and that tumours from immunodeficient mice are more immunogenic, which is the signature of editing. Dunn and colleagues named immunoediting in 2002; Schreiber, Old and Smyth reviewed it in 2011. Allison's 1996 CTLA-4 blockade and Honjo's PD-1 discovery gave it its therapy; Chen and Mellman's cancer-immunity cycle (2013) is its clinical map.\n\nEvidence for. Immunodeficient mice develop more spontaneous and induced tumours. Organ transplant recipients on immunosuppression have higher rates of many cancers, not only virus-driven ones. Immune-cell and outcome associations vary across cancers and measurements. Some tumour studies show neoantigen depletion or HLA loss consistent with editing, with other explanations and sampling limits still relevant. Checkpoint inhibitors produce durable remissions in melanoma, lung, kidney, bladder and mismatch repair-deficient cancers, while mutation count, candidate neoantigens or viral origin alone do not establish an individual response.\n\nEvidence against and limits. Nude mice retain immune functions and are not a clean comparison of every immune mechanism; Shankaran also noted that they do not completely lack functional T cells. The episode illustrates the importance of the precise model. Most cancers arise in people with normal immunity, and the immune system also promotes cancer through inflammation. Equilibrium is difficult to observe directly in humans. Immunotherapy fails in most patients with pancreatic, prostate and brain cancers, and the reasons are only partly understood.\n\nPredictions that held or failed. Held: releasing checkpoints unleashes anti-tumour immunity; particular studies find loss of recognised antigens under immune pressure; adoptive transfer of tumour-reactive T cells can cure. Failed: most therapeutic cancer vaccines of the 1990s and 2000s; the expectation that boosting immunity non-specifically (interferon, interleukin-2 in most settings) would be broadly effective.\n\nTherapies that came from it. Checkpoint inhibitors (ipilimumab, nivolumab, pembrolizumab and successors), CAR-T cells, tumour-infiltrating lymphocyte therapy (lifileucel), T-cell engagers, neoantigen mRNA vaccines and the use of mutational burden and mismatch repair deficiency as predictive biomarkers. It applies clonal evolution to the immune system as predator, draws on the microenvironment view for the mechanisms of escape, and entered the hallmarks in 2011.\n\nStatus: model experiments and human observations support immune control and selection. They do not establish a universal sequence of phases, the fraction of all cancers prevented, or a personal recurrence forecast.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Cancer_immunoediting",
+      "links": [
+        {
+          "label": "Burnet, Cancer: a biological approach (BMJ 1957)",
+          "url": "https://doi.org/10.1136/bmj.1.5022.779"
+        },
+        {
+          "label": "Burnet, The concept of immunological surveillance (Progress in Experimental Tumor Research 1970)",
+          "url": "https://doi.org/10.1159/000386035"
+        },
+        {
+          "label": "Stutman, Tumor development after 3-methylcholanthrene in immunologically deficient athymic-nude mice (Science 1974)",
+          "url": "https://doi.org/10.1126/science.183.4124.534"
+        },
+        {
+          "label": "Shankaran et al., IFN-gamma and lymphocytes prevent primary tumour development and shape tumour immunogenicity (Nature 2001)",
+          "url": "https://doi.org/10.1038/35074122"
+        },
+        {
+          "label": "Dunn et al., Cancer immunoediting: from immunosurveillance to tumor escape (Nature Immunology 2002)",
+          "url": "https://doi.org/10.1038/ni1102-991"
+        },
+        {
+          "label": "Schreiber, Old and Smyth, Cancer immunoediting: integrating immunity's roles in cancer suppression and promotion (Science 2011)",
+          "url": "https://doi.org/10.1126/science.1203486"
+        },
+        {
+          "label": "Matsushita et al., Cancer exome analysis reveals a T-cell-dependent mechanism of cancer immunoediting (Nature 2012)",
+          "url": "https://doi.org/10.1038/nature10755"
+        },
+        {
+          "label": "Shankaran et al., immune control and selection in mouse models (2001)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11323675/"
+        },
+        {
+          "label": "Koebel et al., immune equilibrium in mouse models (2007)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18026089/"
+        },
+        {
+          "label": "Matsushita et al., selection of pre-existing antigen-distinct clones (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22318521/"
+        },
+        {
+          "label": "Luksza et al., neoantigen quality and pancreatic cancer evolution (2022)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35589842/"
+        },
+        {
+          "label": "The three Es of cancer immunoediting.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15032581/"
+        },
+        {
+          "label": "Evolution of Neoantigen Landscape during Immune Checkpoint Blockade in Non-Small Cell Lung Cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28031159/"
+        },
+        {
+          "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
+        },
+        {
+          "label": "Somatic HLA Class I Loss Is a Widespread Mechanism of Immune Evasion Which Refines the Use of Tumor Mutational Burden as a Biomarker of Checkpoint Inhibitor Response.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33127846/"
+        },
+        {
+          "label": "Mutations Associated with Acquired Resistance to PD-1 Blockade in Melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27433843/"
+        },
+        {
+          "label": "Overcoming Genetically Based Resistance Mechanisms to PD-1 Blockade.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32467343/"
+        }
+      ],
+      "tags": [
+        "theory"
+      ],
+      "related": [
+        "theories-of-cancer",
+        "cancer-immunity-cycle",
+        "clonal-evolution-theory",
+        "microenvironment-inflammation-theory",
+        "hallmarks-synthesis",
+        "antigen-presentation-immunoediting",
+        "pd1-checkpoint",
+        "t-cell-exhaustion",
+        "immune-desert-exclusion",
+        "avoiding-immune-destruction",
+        "checkpoint-inhibitor",
+        "neoantigen",
+        "tils",
+        "cold-vs-hot",
+        "tmb",
+        "adaptive-immune-resistance",
+        "immune-exclusion"
+      ],
+      "cancers": [
+        "melanoma",
+        "nsclc"
+      ],
+      "sections": [],
+      "technologies": [
+        "checkpoint-inhibitor",
+        "car-t",
+        "til-therapy",
+        "t-cell-engager",
+        "neoantigen-mrna-vaccine"
+      ],
+      "targets": [
+        "pd1",
+        "ctla4"
+      ],
+      "drugs": [
+        "ipilimumab",
+        "nivolumab",
+        "pembrolizumab",
+        "lifileucel"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "cancer-immunity-cycle",
+        "antigen-presentation-immunoediting",
+        "pd1-checkpoint",
+        "t-cell-exhaustion",
+        "immune-desert-exclusion"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [
+        "robert-schreiber",
+        "james-allison",
+        "tasuku-honjo",
+        "drew-pardoll"
+      ],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-schreiber-cancer-immunoediting-science-2011",
+        "paper-chen-mellman-cancer-immunity-cycle-immunity-2013",
+        "paper-leach-allison-ctla4-blockade-science-1996",
+        "paper-pardoll-immune-checkpoint-blockade-nrc-2012",
+        "paper-shankaran-nature",
+        "paper-dunn-nat-immunol",
+        "paper-stutman-science",
+        "paper-burnet-br-med-j",
+        "paper-burnet-prog-exp-tumor-res"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Immune surveillance concerns immune control of transformed cells. Immunoediting adds that immune pressure can alter which cancer populations persist. Elimination, equilibrium and escape describe processes that can coexist or occur independently, not a mandatory three-stage calendar. Shankaran’s genetically defined mouse experiments support lymphocyte and interferon-gamma contributions to control and selection. They do not measure what fraction of all human cancers immunity prevents.",
+        "Koebel used immune perturbation in chemical-carcinogenesis mouse models to demonstrate equilibrium; a quiet scan alone is not such an experiment. Matsushita combined sequencing, antigen recognition and immune comparisons in mouse sarcoma to support selection of pre-existing antigen-distinct clones. This is different from T cells creating every mutation that appears later.",
+        "Luksza followed 70 pancreatic ductal adenocarcinomas from 15 people longitudinally over ten years, comparing primary and recurrent tumours and modelling neoantigen quality and clonal fitness. Long-term survivors had stronger primary T-cell activity and recurrent tumours with fewer high-quality neoantigens under the model. This is human cohort and modelling evidence, not a vaccine experiment or direct observation of every selection event. Treatment and sampling history and model assumptions remain relevant.",
+        "In a fictional immune-pressure comparison, both arms begin with A/B counts of 80/20. Later, the control has 160/40 and the pressure arm 10/40. B is 20% versus 80% of the later populations, although its later count is 40 in both. Recognition and comparable conditions are separate evidence; a larger share does not mean that pressure created more B cells. This example is distinct from 900/100 becoming 90/90, where B’s share rises while its count falls.",
+        "An editing claim combines longitudinal populations or antigens, recognition or functional assays and relevant comparisons. Apparent antigen loss can instead reflect sampling, detection limits, expression change or another treatment. Neither sequencing alone nor a killing experiment reconstructs the whole history. One immune-rich sample, negative blood test or model cannot assign an individual postoperative phase, explain every recurrence or forecast personal risk; different lesions can face different pressures.",
+        "Immune escape can involve loss of a targeted antigen, altered HLA alleles or processing, defective inducible signalling, inhibition after entry or impaired access. Anagnostou found loss of putative neoantigens in checkpoint-resistant lung tumours with accompanying T-cell evidence. McGranahan described allele-specific HLA loss in lung cancer evolution. Montesion’s commercial pan-cancer genomic series contained 83,644 samples with HLA-I loss of heterozygosity in 17%; this assay-defined pan-cancer observation is not a breast-specific prevalence. Allele loss differs from reversible expression change or a B2M defect affecting class-I surface display.",
+        "In Zaretsky’s selected four-person melanoma relapse series, two cases had JAK1 or JAK2 loss-of-function changes with loss of the normal allele and another had a truncating B2M change. The JAK2-deficient relapse cells failed to increase interferon-gamma signalling, PD-L1 and class I while retaining interferon-alfa/beta responsiveness. Engineered JAK1- or JAK2-deficient melanoma cells were still recognized by the tested NY-ESO-1-specific T cells. Baseline display, inducibility, recognition and killing are separate dependencies; neither a JAK variant nor detectable HLA alone answers all of them.",
+        "In a fictional controlled comparison, both cultures have baseline class I; only the control increases its signal and surface display after interferon gamma. The candidate retains an interferon-alfa response, and restoring JAK2 restores the tested gamma response. With matched handling, viability and restoration controls, this supports a model-specific JAK2-dependent inducibility defect. It is not proof of a particular displayed peptide, safe clinical rescue, tumour access or useful killing. JAK1 and JAK2 have different interferon dependencies.",
+        "Treatment can select a pre-existing population and new changes can arise. Earlier specimens, retained alleles, expression, stimulation and controlled functional comparisons help test an escape explanation. Different sites may have different bottlenecks; several mechanisms may coexist. Blood tumour DNA alone does not identify a particular escape route. A proposed HLA-independent recognizer or combination still needs its own target, access, function and safety evidence, and a restored laboratory endpoint does not establish clinical benefit."
+      ],
+      "category": "Cancer biology"
+    },
+    {
+      "id": "abscopal-effect",
+      "kind": "term",
+      "name": "Abscopal effect",
+      "aka": [
+        "abscopal effects"
+      ],
+      "tldr": "An abscopal response is regression outside an irradiated area, studied as a possible systemic effect of local radiation. Observing it does not by itself establish the cause or an added survival benefit.",
+      "summary": "Responses at non-irradiated sites motivate investigation of immune effects of local radiation. Keep the irradiated and unirradiated lesions, other treatments and observation times explicit. A proposed immune mechanism needs more than local injury or circulating markers.\n\nA case or uncontrolled combination cannot isolate the added effect of radiation. Comparative local-treatment studies must retain their populations and endpoints: a response outside the field, progression-free survival, overall survival and symptom relief are different outcomes.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Abscopal_effect",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Abscopal_effect"
+        },
+        {
+          "label": "ICD consensus: adaptive immunity and experimental abscopal models",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "CURB: population-specific randomised progression endpoint",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38104577/"
+        },
+        {
+          "label": "Ionizing radiation inhibition of distant untreated tumors (abscopal effect) is immune mediated.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14967443/"
+        },
+        {
+          "label": "Immunologic correlates of the abscopal effect in a patient with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22397654/"
+        },
+        {
+          "label": "Radiotherapy induces responses of lung cancer to CTLA-4 blockade.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30397353/"
+        },
+        {
+          "label": "Ho et al.: radiation plus pembrolizumab, denominators and single-arm limits (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31747077/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "in-situ-vaccination",
+        "cancer-immunity-cycle"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "sbrt",
+        "checkpoint-inhibitor"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "cgas-sting"
+      ],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "First define the irradiated field and the actual exposure of each lesion. A local response does not demonstrate a distant response. An uninjected-lesion response in an injection study is a different route-defined observation. During concurrent systemic treatment, distant shrinkage does not by itself isolate radiation’s contribution or demonstrate immune causation; local control, distant response, survival, symptoms and harms require separate assessment.",
+        "Demaria’s bilateral 67NR mammary-tumour mouse experiment combined local radiation with Flt3 ligand. The distant tumour grew more slowly under the combination, whereas radiation alone affected the irradiated tumour; antigen-mismatched and T-cell-deficient comparisons supported an immune-dependent component. This is a defined combined animal intervention, not a human response rate. Postow’s ipilimumab-plus-radiation melanoma report was one case with temporal immune correlates, not a study of frequency.",
+        "Formenti enrolled 39 people with chemotherapy-refractory metastatic non-small-cell lung cancer in a single-arm radiation-plus-ipilimumab study. At day 88, 21 had completed treatment and response assessment. Seven responses were 7/39, about 18% of those enrolled, or 7/21, about 33% of those evaluable. Seventeen received fewer than four cycles because they progressed or died before day 88; another completed four cycles without response assessment. These denominators answer different questions and neither estimates radiation-alone activity or an individual breast-cancer response probability.",
+        "To assess a distant effect, retain lesion exposure, serial imaging, prespecified response rules, timing and concurrent therapies. Report lesion changes separately from patient response proportions and their eligible denominators. Imaging is an input; optional tissue and immune tests use finite samples. Exposure misclassification, missing assessments, selected evaluable groups and concurrent-drug attribution can distort interpretation. There is no universal abscopal cutoff or percentage across cancers and regimens; case observations, model mechanisms and comparative clinical outcomes are different evidence tiers.",
+        "In a fictional combination study, an irradiated site is controlled while a lesion outside the field shrinks during systemic therapy. The observation is a distant response under that treatment context. It does not prove that radiation vaccinated the whole body, establish which component caused it or supply a general response frequency. Test exposure, relevant comparisons and the proposed immune mechanism separately.",
+        "Ho's single-arm phase 2 study combined radiation with pembrolizumab in metastatic triple-negative breast cancer. The week-13 unirradiated-lesion endpoint yielded three responses among seventeen enrolled people, 17.6%, with a 95% confidence interval of 4.7% to 44.2%. Eight died from progression before week 13; among the nine assessed then, the same three responses were 33.3%, rounded to one decimal place. These are different denominators for the same numerator, not two treatment effects. Without a randomised systemic-treatment-only group, neither proportion estimates what radiation added or supplies a general abscopal probability."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "in-situ-vaccination",
+      "kind": "technology",
+      "name": "In situ vaccination",
+      "aka": [],
+      "tldr": "In situ vaccination aims to use antigens at a tumour site to stimulate useful immune recognition. Local destruction does not automatically make the tumour a successful vaccine.",
+      "summary": "Local treatment can supply tumour antigens, and an adjuvant or other immune intervention may support their presentation and priming. The proposal needs evidence for each step and for useful immune effects in the relevant host and setting. It does not guarantee recognition of every antigen or every lesion.\n\nInjury, danger signals, immune-cell changes, distant lesion responses and comparative patient outcomes are different observations. The actual local method and accompanying treatments must be named. A response during combined treatment does not isolate which component caused it.",
+      "status": "phase-2",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "ClinicalTrials.gov: in situ vaccination cancer",
+          "url": "https://clinicaltrials.gov/search?term=in%20situ%20vaccination%20cancer"
+        },
+        {
+          "label": "ICD consensus: antigens, host, assay and model requirements",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32209603/"
+        },
+        {
+          "label": "In situ vaccination with a TLR9 agonist induces systemic lymphoma regression: a phase I/II study.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20697067/"
+        },
+        {
+          "label": "Systemic clinical tumor regressions and potentiation of PD1 blockade with in situ vaccination.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30962585/"
+        },
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+        },
+        {
+          "label": "Marabelle et al.: terminology and reporting recommendations (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30295695/"
+        },
+        {
+          "label": "Joffre et al.: cross-presentation by dendritic cells (2012)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22790179/"
+        }
+      ],
+      "tags": [
+        "frontier",
+        "promising"
+      ],
+      "related": [
+        "abscopal-effect",
+        "cancer-immunity-cycle",
+        "intratumoral-immunotherapy",
+        "vaccine-adjuvants",
+        "vaccines-and-oncolytic-viruses"
+      ],
+      "cancers": [
+        "melanoma",
+        "dlbcl"
+      ],
+      "sections": [
+        "immunotherapy"
+      ],
+      "technologies": [
+        "oncolytic-virus",
+        "sting-agonist",
+        "sbrt",
+        "hifu-histotripsy",
+        "cytokine-therapy",
+        "thermal-ablation"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [
+        "trogenix",
+        "aummune",
+        "onchilles-pharma",
+        "syncromune"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "abscopal-effect",
+        "immunogenic-cell-death"
+      ],
+      "trials": [
+        "nct05688280"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The strategy uses relevant tumour antigens in place while supporting presenting cells and immune activation. Antigen availability, uptake and processing, cross-presentation, suitable priming, access to another lesion, recognition of naturally displayed targets and useful function are conditional jobs. Local injury can supply material without establishing all these steps, and danger signals alone do not establish immunogenic cell death. An uninjected lesion can still be exposed to systemic drugs.",
+        "Intratumoral immunotherapy describes a delivery route and treatment purpose; in-situ vaccination describes a proposed learning strategy. Not every injected cytotoxic or immune-directed treatment is a vaccine. Local shrinkage, antigen-reactive blood responses, distant control and longer-term clinical benefit are different outcomes, and a multicomponent result does not isolate each component’s contribution.",
+        "Brody’s early study combined low-dose radiation and an injected CpG TLR9 agonist in 15 people with low-grade B-cell lymphoma. Hammerich combined Flt3 ligand, radiation and the TLR3 agonist poly-ICLC in indolent lymphoma with accompanying models. The latter report’s restored sensitivity to PD-1 blockade was demonstrated in mice; it is not established human combination benefit or evidence for every injection or a breast-cancer regimen.",
+        "Assessment combines local sampling, controlled immune assays and serial treated/uninjected-lesion measurements. Tissue, blood and viable cells are finite inputs. Keep local change, specified reactive-cell counts or functions, and response proportions under their stated rules separate. No universal marker proves successful vaccination. Nonspecific inflammation, added peptide, viability, missed sampling times and concurrent therapy can confound results; a model or assay needs separate clinical validation of the complete intervention.",
+        "Added peptide can bypass natural processing. Appropriate naturally presenting targets and recognition or cytotoxicity controls address a separate bridge, within the model’s limits. In a fictional study, the injected lesion shrinks and blood cells respond to supplied tumour peptides, while another lesion is unchanged. Local activity and assay reactivity were observed; natural recognition, access and useful distant function remain unproven. The unchanged lesion also does not establish absence of every immune-learning event.",
+        "For T-cell-directed therapeutic strategies, compare the antigen source and what can be selected beforehand. An in-situ approach uses tumour material in the body and selects a site and intervention; a supplied design selects planned composition or encoded targets using adequate sample information or material. Defined peptide or encoded targets differ from broader cell preparations. Manufacturing a product does not mean every peptide ultimately displayed is known or controlled. The room-material versus teaching-kit analogy describes these inputs, not assured learning or a winner.",
+        "Priming is initial activation of a naive T cell. Cross-presentation places externally acquired material on class I HLA in a presenting cell; that event is distinct from a cancer cell naturally displaying a recognised target. Both strategies still need evidence of presentation, suitable priming or expansion, tumour access, useful function, outcomes and harms. Dashed links in a comparison diagram mark questions to investigate, not successful completion of each step.",
+        "The required opportunity depends on the method. A lesion-based local approach needs available tumour material at an identified, safely accessible site. A supplied product needs appropriate information or material and a workable manufacturing and delivery plan. If no identifiable lesion is accessible, that removes the stated opportunity for that local method; it does not show that another vaccine is feasible or choose treatment. Match a research question about local material and support to that design, or one about planned antigen selection to a supplied design, then compare complete strategies in suitable studies.",
+        "Injection specifies a route, and using one person's tumour material is not equivalent to manufacturing a selected personalised vaccine. A study can combine local tumour material with a supplied antigen product; report both sources rather than forcing one exclusive category. Personalisation, platform and route are independent descriptors. Local shrinkage, an immune assay and control at another lesion remain different outcomes.",
+        "Consider two fictional cards. A uses accessible tumour material with a local intervention and immune stimulus; B supplies selected encoded targets based on sample information. Neither gives outcome data. A does not specify a fixed presented mixture, and B does not guarantee processing, HLA display or natural tumour recognition. For both, investigate presentation, priming, access and function and then matched clinical outcomes and harms. If A's lesion becomes inaccessible, B is not thereby chosen. If B is added to A, the study now uses both antigen sources.",
+        "The examples answer different questions. Brody used radiation plus injected CpG in low-grade lymphoma. Hammerich used Flt3 ligand, low-dose radiation and poly-ICLC in indolent lymphoma, with accompanying models; the reported new responsiveness to PD-1 blockade was in mice. Ott's melanoma study supplied selected long peptides with poly-ICLC. These are not a head-to-head efficacy ranking, evidence for a breast-cancer regimen or an individual eligibility assessment."
+      ],
+      "principle": "Use a treated lesion as an antigen source while seeking effective presentation and adaptive immune recognition; the hypothesised chain requires experimental and clinical evidence.",
+      "strengths": [
+        "Can investigate tumour-derived antigens without preselecting every sequence",
+        "Allows local delivery approaches to be studied with immune support"
+      ],
+      "limitations": [
+        "Local injury or marker release does not establish protective immunity",
+        "Access and delivery requirements depend on the chosen method",
+        "Whole-regimen benefit, harms and distant effects need their own evidence"
+      ]
+    },
+    {
+      "id": "hla",
+      "kind": "term",
+      "name": "HLA (human leukocyte antigen) and MHC",
+      "aka": [
+        "human leukocyte antigen",
+        "MHC",
+        "major histocompatibility complex",
+        "HLA class I",
+        "HLA class II"
+      ],
+      "tldr": "HLA molecules sit on cells and hold up small pieces of the cell's proteins for T cells to inspect. A T cell reads the fragment together with the particular HLA version holding it.",
+      "summary": "Human leukocyte antigen (HLA) is the human major histocompatibility complex (MHC) system, with two main classes of peptide-display molecule. Classical class I (HLA-A, HLA-B, HLA-C) has a heavy chain, beta-2 microglobulin (B2M) and a bound peptide, is found on most nucleated cells, usually displays peptides from proteins made inside the cell and is read by CD8 T cells. Class II (HLA-DR, HLA-DP, HLA-DQ) has alpha and beta chains with a bound peptide, is mainly on professional antigen-presenting cells (expression can be induced elsewhere), usually displays proteins processed in vesicles, often acquired from outside, and is read by CD4 T cells. These are common routes, not exclusive lists: cross-presentation puts externally acquired antigen on class I without making it class II, and a CD4 response is not proof of matching class I tumour display. CD4 and CD8 are coreceptors and usual recognition partners, not guarantees of cell function. Structural work shows the T-cell receptor lying across the peptide and HLA together (Garboczi et al., 1996), CD8 contacting the class I alpha2 and alpha3 domains and B2M (Gao et al., 1997) and CD4 engaging a separate class II region (Yin et al., 2012); these constructs do not define universal angles or functions.\n\nHLA alleles are shared across people, and a person inherits a combination that is not necessarily unique. Each person inherits two copies each of HLA-A, HLA-B and HLA-C, so a cell can display up to six classical class I variants at once. The IPD-IMGT/HLA statistics page read on 9 November 2026 listed 46,146 HLA alleles, 31,311 class I and 14,835 class II (9,457 HLA-A, 11,328 HLA-B and 9,580 HLA-C alleles). Binding predictors estimate whether a peptide can fit a specified allele's groove, but processing, transport, loading and surface expression decide whether it is displayed. Sarkizova et al. (2020) profiled more than 185,000 peptides eluted from 95 mono-allelic cell lines to learn allele-specific motifs and build prediction models; that is allele-level data, not proof of any cell's display. Kaur et al. (2017) showed that HLA-C surface expression varies across individuals in an allele-specific manner, influenced by the structure of the peptide-binding cleft and peptide diversity; Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. The small HLA-C peptide share observed by Schellens and colleagues in four B lymphoblastoid cell lines was also affected by their assignment method, which gave HLA-A/B precedence; it is not a universal biological fraction.\n\nIn cancer, class I HLA shows peptides to CD8 T cells and is also the main ligand for inhibitory receptors on natural killer cells, so losing it can hide a tumour from T cells while removing a brake on NK cells. HLA-E and HLA-G are nonclassical and vary little between people; HLA-E presents leader peptides from other class I molecules and binds the NK receptor CD94/NKG2A (Braud et al., 1998, with HLA-E tetramers). Tumours can lose a presenting allele (HLA loss of heterozygosity), alter processing or reduce expression, and allele-specific loss differs from complete loss of conventional class I display; targets on retained alleles may remain possible. Tran et al. (2016) documented a colorectal cancer lesion that progressed after T-cell therapy against mutant KRAS G12D, which had lost the chromosome 6 haplotype encoding the restricting HLA-C*08:02; this shows escape in one patient, not a rate. Typing, protein expression, recovered peptide, recognition and killing are different observations, and a conventional surface-target engager avoids peptide-HLA dependence while a peptide-HLA-directed engager keeps it.\n\nB2M is the light chain of classical class I and does not span the membrane; class II contains no B2M, so CD4 T-cell recognition can remain when B2M is lost. B2M also partners other class I-like molecules: UniProt records heterotrimers with HLA-E, HLA-G, HLA-F and MR1 and lists CD1 interactions, and a B2M mutation caused deficiency of the neonatal Fc receptor FcRn in two siblings (Wani et al., 2006), so complete B2M loss can remove more than classical class I. Loss of one HLA allele can leave other presenting alleles usable, whereas loss of functional B2M impairs many class I targets at once, so several peptides on different alleles are not independent protection. A B2M variant, low RNA, absent surface class I and a blood B2M concentration are different observations: one variant does not show complete functional loss, and blood B2M does not count tumour peptide-HLA complexes. Zaretsky et al. (2016) linked a truncating B2M mutation to lost surface class I in one melanoma relapse after PD-1 blockade, which is a mechanism in that setting, not a frequency. Reduced class I display does not guarantee NK-cell killing, because activating signals are still needed.",
+      "asOf": "2026-11-11",
+      "links": [
+        {
+          "label": "IPD-IMGT/HLA statistics page (read 9 November 2026)",
+          "url": "https://www.ebi.ac.uk/ipd/imgt/hla/about/statistics/"
+        },
+        {
+          "label": "Garboczi et al., 1996, Nature (PMID 8906788)",
+          "url": "https://doi.org/10.1038/384134a0"
+        },
+        {
+          "label": "Gao et al., 1997, Nature (PMID 9177355)",
+          "url": "https://doi.org/10.1038/42523"
+        },
+        {
+          "label": "Yin et al., 2012, PNAS (PMID 22431638)",
+          "url": "https://doi.org/10.1073/pnas.1118801109"
+        },
+        {
+          "label": "Sarkizova et al., 2020, Nature Biotechnology (PMID 31844290)",
+          "url": "https://doi.org/10.1038/s41587-019-0322-9"
+        },
+        {
+          "label": "Kaur et al., 2017, Nature Communications (PMID 28649982)",
+          "url": "https://doi.org/10.1038/ncomms15924"
+        },
+        {
+          "label": "Braud et al., 1998, Nature (PMID 9486650)",
+          "url": "https://doi.org/10.1038/35869"
+        },
+        {
+          "label": "Tran et al., 2016, New England Journal of Medicine (PMID 27959684)",
+          "url": "https://doi.org/10.1056/nejmoa1609279"
+        },
+        {
+          "label": "Wani et al., 2006, PNAS (PMID 16549777)",
+          "url": "https://doi.org/10.1073/pnas.0600548103"
+        },
+        {
+          "label": "UniProt P61769 (B2M)",
+          "url": "https://www.uniprot.org/uniprotkb/P61769/entry"
+        },
+        {
+          "label": "Zaretsky et al., 2016, New England Journal of Medicine (PMID 27433843)",
+          "url": "https://doi.org/10.1056/nejmoa1604958"
+        },
+        {
+          "label": "Schellens et al. 2015: naturally processed peptide repertoires in four B lymphoblastoid cell lines",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26375851/"
+        },
+        {
+          "label": "Relative expression levels of the HLA class-I proteins in normal and HIV-infected cells.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25754738/"
+        },
+        {
+          "label": "Wieczorek et al.: MHC groove geometry and peptide-length exceptions (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28367149/"
+        },
+        {
+          "label": "Cachot et al.: direct cytolytic function of tumour-specific human CD4 cells (2021)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33637530/"
+        },
+        {
+          "label": "UniProt HLA-A: reviewed topology (P04439)",
+          "url": "https://www.uniprot.org/uniprotkb/P04439/entry"
+        },
+        {
+          "label": "UniProt HLA-DRA: reviewed topology (P01903)",
+          "url": "https://www.uniprot.org/uniprotkb/P01903/entry"
+        },
+        {
+          "label": "UniProt HLA-DRB1: reviewed topology (P01911)",
+          "url": "https://www.uniprot.org/uniprotkb/P01911/entry"
+        },
+        {
+          "label": "UniProt CD4: reviewed topology (P01730)",
+          "url": "https://www.uniprot.org/uniprotkb/P01730/entry"
+        },
+        {
+          "label": "UniProt CD8A: reviewed topology (P01732)",
+          "url": "https://www.uniprot.org/uniprotkb/P01732/entry"
+        },
+        {
+          "label": "UniProt TRAC: reviewed topology (P01848)",
+          "url": "https://www.uniprot.org/uniprotkb/P01848/entry"
+        }
+      ],
+      "tags": [
+        "education-immunology-2026-11"
+      ],
+      "related": [
+        "hla-a",
+        "hla-b",
+        "hla-c",
+        "hla-e",
+        "hla-dr",
+        "hla-dra",
+        "hla-dqa1",
+        "b2m",
+        "hla-typing-and-nomenclature"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "hla-a",
+        "hla-b",
+        "hla-c",
+        "hla-e",
+        "hla-dr",
+        "hla-dra",
+        "hla-dqa1",
+        "b2m"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hla-typing-and-nomenclature",
+        "antigen-processing-machinery",
+        "dendritic-cell-cross-presentation",
+        "nk-cell"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The original abstracts do not establish a universal HLA-C/A/B expression hierarchy. The checkpoint additionally reads Apps and colleagues' primary abstract for a specific haplotype comparison. Lower locus-level expression is background in Kaur and Schellens; Kaur directly tests allele-specific variation, and Schellens reports a method-dependent recovered peptide share.",
+        "Textbook class I and class II structure (Janeway, NBK26926) was not opened: scripted access refused.",
+        "Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. Kaur and colleagues compared HLA-C*05:01 and HLA-C*07:02 in transfected cells and found differences in expression and recovered peptide breadth. In four B lymphoblastoid cell lines, Schellens and colleagues recovered a small HLA-C-assigned peptide fraction; their assignment procedure gave HLA-A/B precedence because HLA-C prediction was less reliable, and they explicitly expected to underestimate HLA-C. A smaller observed share is therefore not a universal biological fraction or evidence of more permissive binding.",
+        "Groove geometry helps explain common peptide lengths without imposing a hard upper limit. Wieczorek and colleagues' 2017 review describes the class-I groove as closed at both ends, usually holding 8 to 10 residues, and the open class-II groove as usually holding 13 to 25. It also describes longer class-I ligands, including solved HLA-A2 complexes with 15-residue peptides. A reported range around 11 is therefore not a ceiling for every class-I ligand. CD4 help does not demonstrate the same target's class-I display. Some CD4 cells can themselves be cytotoxic: Cachot and colleagues directly tested tumour-specific human CD4 cells against tumour cells in defined assays. That result does not make every CD4 response cytotoxic or establish a treatment benefit.",
+        "In a conventional cell-surface contact, the T-cell receptor and the CD4 or CD8 co-receptor have separate anchors in the T-cell membrane. The class-I heavy chain spans the presenting-cell membrane, while B2M is an associated extracellular partner. Class II instead has alpha and beta chains that each cross that membrane. The T-cell receptor contacts peptide plus HLA, while the co-receptor contacts a separate HLA region. These common structures do not assign a helper or killer role or demonstrate signalling, recognition of a particular tumour or killing. UniProt's curated topology annotations support the membrane locations. Yin and colleagues' structural example used an affinity-enhanced CD4 ectodomain, a human autoimmune T-cell receptor and a myelin peptide bound to HLA-DR4; its docking geometry describes that prepared complex rather than a universal drawing template."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "t-cell-receptor",
+      "kind": "term",
+      "name": "T-cell receptor",
+      "aka": [
+        "TCR",
+        "alpha-beta T-cell receptor"
+      ],
+      "tldr": "A conventional T-cell receptor recognises a peptide together with its HLA display. Recognition alone does not show killing.",
+      "summary": "A conventional alpha-beta T-cell receptor uses paired chains to recognise a peptide-HLA surface. Its recognition chains assemble with CD3 signalling partners, as demonstrated in the human TCR-CD3 structural study. CDR3 is an informative variable region, but neither a beta-chain sequence nor CDR3 alone specifies the complete paired receptor or its function.\n\nParticular receptors can cross-react across peptide and HLA contexts; that does not establish a universal cross-reactivity rate. Paired receptor identity, binding, activation, target-cell death and clinical benefit require different evidence. A response by one reconstructed pair to peptide-loaded cells does not establish that another alpha-chain pairing recognises the same target, or that either kills naturally presenting tumour cells. Use irrelevant-target, HLA and target-only viability controls. Peptide loading can bypass natural processing, and contact diagrams are not healthy-tissue safety tests.",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "Structural basis of assembly of the human T cell receptor-CD3 complex.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
+        },
+        {
+          "label": "Extraordinary cross-reactivity of an autoimmune T-cell receptor recognizing specific peptides both on autologous and on allogeneic HLA class II molecules.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17559580/"
+        },
+        {
+          "label": "Linking T-cell receptor sequence to functional phenotype at the single-cell level.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+        },
+        {
+          "label": "High-resolution analysis of the human T-cell receptor repertoire.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
+        },
+        {
+          "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+        },
+        {
+          "label": "Stone et al.: TCR binding, kinetics, coreceptors and specificity (2009 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19125887/"
+        },
+        {
+          "label": "Schuldt and Binstadt: dual TCR expression (2019 review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30670579/"
+        },
+        {
+          "label": "Structure of the complex between human T-cell receptor, viral peptide and HLA-A2.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8906788/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A conventional alpha-beta TCR uses paired variable and constant domains to contact peptide plus HLA. The peptide sits in the HLA groove, not a separate TCR peptide pocket. CD3 signalling partners are distinct from recognition chains. Contact loops including junction-spanning CDR3 contribute, but other loops, the partner chain and HLA matter; beta-only or CDR3-only sequence is incomplete.",
+        "Cross-reactivity is recognition of multiple targets by a receptor. Defined receptor experiments demonstrated peptide/HLA cross-reactivity, not recognition of every allele by an arbitrary receptor or a universal rate. Greater affinity or a contact drawing does not establish healthy-tissue safety.",
+        "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
+        "Vaccination generally recruits or expands existing mature receptor specificities rather than rewriting each mature receptor. Engineered TCR therapy introduces selected receptor sequences. In either case, tested recognition must still connect to naturally presenting tumour targets, useful function and healthy-tissue safety. If one beta sequence pairs with different alpha chains, a positive reconstruction of one pair does not establish the other pair's function or tumour killing.",
+        "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+        "Many measured conventional receptor-peptide-HLA interactions have micromolar dissociation constants; affinity, multiple contacts, CD4/CD8 coreceptors and the cellular signalling context contribute differently to activity. Stone and colleagues review those distinctions, rather than a universal affinity ranking against every antibody. One receptor type per cell is also a simplification: extra productive alpha chains and dual surface receptors have been documented. A chain sequence alone does not establish which assembled receptor provides the measured specificity.",
+        "The variable domains face the peptide-HLA contact, while the constant domains sit nearer the T-cell membrane and CD3. CDR3 spans gene-segment junctions made during V(D)J recombination, with nucleotide insertion and deletion adding junctional diversity. The schematic locates these parts; it does not reconstruct every subunit or measure affinity, signalling strength or a clinical response."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "lymph-node",
+      "kind": "term",
+      "name": "Lymph node",
+      "aka": [
+        "lymph nodes",
+        "lymph-node",
+        "lymph-nodes",
+        "node-positive",
+        "node-negative",
+        "nodal",
+        "nodal involvement",
+        "nodal disease",
+        "lymphatic",
+        "lymphatics",
+        "lymphatic system",
+        "sentinel lymph node",
+        "sentinel node",
+        "axillary nodes",
+        "regional nodes",
+        "regional lymph nodes"
+      ],
+      "tldr": "Small bean-shaped filters along the lymph vessels where immune cells gather. They are often the first place a cancer spreads, so surgeons check them to see how far the disease has gone.",
+      "summary": "A lymph node is organised immune tissue along lymphatic routes. Nearby nodes can be among the earliest sites of spread for many cancers, but drainage does not establish cancer involvement. Nodal findings can inform staging according to the cancer-specific rules. Sentinel-node biopsy identifies and examines the first draining node or nodes. Removing fewer nodes is generally associated with fewer side effects, but sentinel-node biopsy can also cause lymphoedema. Nodes can support antitumour T-cell priming; antigen arrival alone does not establish that this occurred. Afferent vessels bring lymph into a node and efferent vessels carry it out, and a draining node names a route and not a finding of cancer. Immune material and cells reach a node by different routes: soluble antigen can reach resident dendritic cells through conduits in the node before migrating dendritic cells arrive (Sixt et al., 2005, mouse), while lymphocytes are recruited from the blood through high endothelial venules (Brulois et al., 2020, mouse). Lymph is interstitial fluid collected by lymph capillaries and returned to the venous blood (National Cancer Institute SEER training), so lymph and blood are different fluids and a sample of one does not stand in for the other. A tertiary lymphoid structure is an ectopic lymphoid aggregate that forms in tissue such as a tumour, and it is not a lymph node (Schumacher and Thommen, 2022). Size on imaging is a measurement in millimetres and not a finding of cancer or priming, and a report should say which node was measured, by what method and when (OnCo reporting advice). A node has a cortex, a paracortex and a medulla, and B cells and T cells home to separate areas within them (Willard-Mack, 2006); in the mouse, a venous population in the medulla was predicted to recruit myeloid cells rather than lymphocytes, which videomicroscopy confirmed (Brulois et al., 2020). In gene-targeted mice, loss of the chemokine receptor CCR7 altered the organisation of lymphoid organs and stopped skin dendritic cells reaching draining nodes (Förster et al., 1999). Arrival of material in a node does not show that priming succeeded. Pathological involvement means cancer was identified in examined tissue, which differs from a drainage route, enlargement or an imaging observation, and a negative sampled node does not certify the unsampled nodes (the National Cancer Institute notes that a false-negative biopsy gives a false sense of security about the extent of cancer).",
+      "asOf": "2026-11-10",
+      "wikipedia": "https://en.wikipedia.org/wiki/Lymph_node",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lymph_node"
+        },
+        {
+          "label": "The conduit system transports soluble antigens from the afferent lymph to resident dendritic cells in the T cell area of the lymph node.",
+          "url": "https://doi.org/10.1016/j.immuni.2004.11.013"
+        },
+        {
+          "label": "CCR7 coordinates the primary immune response by establishing functional microenvironments in secondary lymphoid organs.",
+          "url": "https://doi.org/10.1016/s0092-8674(00)80059-8"
+        },
+        {
+          "label": "A molecular map of murine lymph node blood vascular endothelium at single cell resolution.",
+          "url": "https://doi.org/10.1038/s41467-020-17291-5"
+        },
+        {
+          "label": "National Cancer Institute: Sentinel Lymph Node Biopsy",
+          "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/staging/sentinel-node-biopsy-fact-sheet"
+        },
+        {
+          "label": "Normal structure, function, and histology of lymph nodes.",
+          "url": "https://doi.org/10.1080/01926230600867727"
+        },
+        {
+          "label": "National Cancer Institute SEER Training: Introduction to the Lymphatic System",
+          "url": "https://training.seer.cancer.gov/anatomy/lymphatic/"
+        },
+        {
+          "label": "Tertiary lymphoid structures in cancer.",
+          "url": "https://doi.org/10.1126/science.abf9419"
+        },
+        {
+          "label": "OpenStax Anatomy and Physiology 2e: 21.1 Anatomy of the Lymphatic and Immune Systems",
+          "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+        },
+        {
+          "label": "National Cancer Institute SEER Training: Lymph Nodes",
+          "url": "https://training.seer.cancer.gov/anatomy/lymphatic/components/nodes.html"
+        },
+        {
+          "label": "Lymph Node Subcapsular Sinus Macrophages as the Frontline of Lymphatic Immune Defense.",
+          "url": "https://doi.org/10.3389/fimmu.2019.00347"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "metastasis",
+        "cancer-stage",
+        "tnm-staging",
+        "lymphoma-type",
+        "immune-system",
+        "t-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "sentinel-node"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "tertiary-lymphoid-structures"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A node's capsule surrounds adjoining cortical, paracortical and medullary regions, with B-cell follicles and T-cell regions. These are adjoining tissue regions rather than sealed rooms. Afferent lymph enters the subcapsular sinus near the outer surface and passes toward medullary sinuses and an efferent vessel at the hilum. Efferent lymph can carry cells as well as fluid onward through lymphatics. Its eventual return to venous blood is downstream, rather than a direct junction to the vein shown beside a node in a simplified drawing.",
+        "One simplified route for blood is artery, capillary network, high endothelial venule (HEV), then venous outlet; Brulois and colleagues traced these connections in mouse peripheral nodes. Naive lymphocytes can cross from HEV blood into node tissue. In a diagram, keep that cell movement distinct from blood flow and lymph flow; red cells stay in the blood compartment. Label and enlargement leaders do not show transport or specify a unique crossing mechanism or timing. Nor does one illustrated route map every vessel, dictate every cell's path or demonstrate priming.",
+        "Imaging, drainage mapping, sampled-tissue pathology and controlled immune-response experiments answer different questions. Record the node, tissue region, collection method and time. In a fictional earlier-antigen example, arrival before migrating dendritic cells is possible, but uptake, presentation and antigen-dependent activation still need their own measurements. Neither arrival nor node size diagnoses cancer involvement or useful priming."
+      ],
+      "category": "Biology basics"
+    },
+    {
+      "id": "macrophage-states",
+      "kind": "term",
+      "name": "Macrophage states beyond M1 and M2",
+      "aka": [],
+      "tldr": "What a macrophage is doing depends on where it came from, where it sits, and the signals and history it has had, so the two-box labels M1 and M2 describe a laboratory comparison and not every macrophage in a tissue. In a tumour, a macrophage's label does not on its own show what it is doing to the cancer or to T cells.",
+      "summary": "A macrophage's lineage is its developmental origin; its state is a set of activity programmes at one time. A state label describes selected features and is not a complete biography. The M1 and M2 scheme grew from simplified experiments, with interferon gamma and microbial stimulation giving M1-like cells and interleukin-4 giving M2-like cells, and it is ambiguous unless the source, the stimulus and the markers are stated. A consensus framework asks authors to report the source of the macrophages, the activators used and a defined set of markers (Murray et al., 2014). When human macrophages were stimulated with diverse signals, 299 transcriptomes revealed a spectrum of activation states that extends the M1 and M2 model (Xue et al., 2014). In mice, tissue-resident macrophages had distinct enhancer landscapes beyond what developmental origin explained, and the local environment could reshape transplanted precursors and even reprogramme differentiated macrophages moved to a new environment (Lavin et al., 2014). Together these support diversity and plasticity without showing that any macrophage can be converted to any desired state.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Macrophage activation and polarization: nomenclature and experimental guidelines.",
+          "url": "https://doi.org/10.1016/j.immuni.2014.06.008"
+        },
+        {
+          "label": "Transcriptome-based network analysis reveals a spectrum model of human macrophage activation.",
+          "url": "https://doi.org/10.1016/j.immuni.2014.01.006"
+        },
+        {
+          "label": "Tissue-resident macrophage enhancer landscapes are shaped by the local microenvironment.",
+          "url": "https://doi.org/10.1016/j.cell.2014.11.018"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "cd163"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "macrophage",
+        "tumor-associated-macrophages",
+        "inflammation",
+        "myeloid-derived-suppressor-cells"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a tumour, a tumour-associated macrophage is named for its location, and its state and tested functions are separate questions. A tumour can hold several programmes in different neighbourhoods or at different times. An expression cluster can suggest a repair, interferon or lipid-handling programme, which is a hypothesis; it does not establish that the cells suppress T cells, kill cancer cells or would respond to a macrophage-directed drug. One marker such as CD163 does not establish a universal suppressive state, a change in proportions between two biopsies does not show that the same cells changed state, and the plain statement that M1 is good and M2 is bad loses the tissue and experiment that give a response its meaning.",
+        "Macrophages are described with protein panels, flow cytometry and single-cell RNA, and the report needs the identification rules, tissue or culture source, stimulation, collection time and denominator, because a fraction of recovered macrophages is not cells per area of tissue. A function such as engulfment or the effect on stimulated T-cell proliferation needs its own test with viability and comparator controls.",
+        "Consider a fictional culture comparison at 24 hours, scored with one method on a 0 to 1 scale of arbitrary RNA programme units. Profile A has interferon, lipid-handling and antigen-display scores of 0.80, 0.35 and 0.65; profile B has 0.45, 0.85 and 0.55. These six invented values are not measurements from Xue et al., fractions of cells or universal M1/M2 cutoffs. Several selected programmes coexist in each profile. The axes are summaries of expression, not independent switches that can be set or reversed at will. Even an antigen-display RNA score needs a separate functional presentation test. A real comparison also needs the macrophage identification rules, source, exposures, sampling time and scoring method. A change in profile proportions between samples would not establish that the same cells converted from one state to another."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Immunology"
+    }
+  ]
+}

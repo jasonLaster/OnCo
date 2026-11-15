@@ -1,0 +1,67 @@
+{
+  "wholeDecodedReadersRead": [
+    "cold-vs-hot",
+    "t-cell-receptor",
+    "tils"
+  ],
+  "wholeDecodedReaderCount": 3,
+  "smallestSelectedReader": "t-cell-receptor",
+  "intactAcknowledgedSpans": 11,
+  "otherReadersCheckedForSelectedExactFieldsAndSources": true,
+  "exactCurrentFieldReaderAnchors": 64,
+  "correctedSourceLabels": 2,
+  "sourceLabelMarkupDefectResolved": true,
+  "productRoutingFindings": [
+    {
+      "id": "P49-R01-tils",
+      "recordId": "tils",
+      "kind": "product-reader-routing",
+      "severity": "medium",
+      "status": "open-owner-review",
+      "finding": "A generic glossary term is presented as having a dedicated readout page, but the CTA targets a different biomarker subject.",
+      "displayedTarget": "PD-L1 IC score (immune-cell score, SP142)",
+      "actualLinks": [
+        {
+          "href": "/biomarkers/pd-l1-ic-score",
+          "text": "PD-L1 IC score (immune-cell score, SP142)"
+        },
+        {
+          "href": "/biomarkers/pd-l1-ic-score",
+          "text": "PD-L1 IC score (immune-cell score, SP142)"
+        },
+        {
+          "href": "/biomarkers/pd-l1-ic-score",
+          "text": "PD-L1 IC score (immune-cell score, SP142)"
+        }
+      ],
+      "readerHTMLSHA256": "62446368c56465b71fdb611ab911541b47996d7750e208e81850310cf8a7c00b",
+      "canonicalScientificFieldsChangedForThisFinding": false,
+      "productChangeApplied": false
+    },
+    {
+      "id": "P49-R01-cold-vs-hot",
+      "recordId": "cold-vs-hot",
+      "kind": "product-reader-routing",
+      "severity": "medium",
+      "status": "open-owner-review",
+      "finding": "A generic glossary term is presented as having a dedicated readout page, but the CTA targets a different biomarker subject.",
+      "displayedTarget": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma",
+      "actualLinks": [
+        {
+          "href": "/biomarkers/stk11-keap1-loss",
+          "text": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma"
+        },
+        {
+          "href": "/biomarkers/stk11-keap1-loss",
+          "text": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma"
+        }
+      ],
+      "readerHTMLSHA256": "6fa73a6b27a0da67575d5aee329f2b406cd209b947b3c93991d97a21ce748210",
+      "canonicalScientificFieldsChangedForThisFinding": false,
+      "productChangeApplied": false
+    }
+  ],
+  "blanketReaderAcceptance": false,
+  "unselectedLinkedRecordClaimsNewlyVerified": false,
+  "staticSSRNotBrowserHydrationMobileOrAccessibility": true
+}

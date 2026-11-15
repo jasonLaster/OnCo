@@ -1,0 +1,2633 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "f951deb86fe2b3e39d40d6766f0e0ad76a0c4451",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.28
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.31
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.99
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 313.48
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "files": 293,
+    "passed": 3101,
+    "skipped": 2
+  },
+  "canonical": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cold-vs-hot",
+      "tils"
+    ],
+    "changedOwnerCount": 2,
+    "changedCanonicalFields": 2,
+    "changedCitationLabels": 2,
+    "changedConsumerValues": 0,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 9,
+    "allPriorNotesURLsAndLinkOrderPreserved": true,
+    "unselectedLinkLabelsPreserved": true,
+    "datesNamesAliasesRelationsProvenanceSummariesLeadsAndRegistrationsUnchanged": true,
+    "changedFiles": [
+      "src/data/terms.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "exactReaderAnchors": {
+    "checks": [
+      {
+        "unit": "P49-C01",
+        "recordId": "tils",
+        "field": "tldr",
+        "index": null,
+        "passageSHA256": "9794bbe4c76c0b21d4b90d7f9c2b27981501df58f6c1fe790db5e586d3c93eb8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C02",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 10,
+        "passageSHA256": "f866ade46b6d79feaec9c8a4438afb2aa00413b5dd210fa18c1ba257b7a2bc7b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C03",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "276c99649560fb3f8990fadd8fcf461f2d7dfe27578cd0bc156157a70341764b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C03",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "83d3c72f67c60b6ea4878bd9ee70a2a3e43920bca23b01f0c379ef3b784c6a4d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C04",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 10,
+        "passageSHA256": "f866ade46b6d79feaec9c8a4438afb2aa00413b5dd210fa18c1ba257b7a2bc7b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C05",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 4,
+        "passageSHA256": "bdf8071eac4729bc7fcbedd901a6f67b6ff15e55534c601c75ba5607250bf340",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C06",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 8,
+        "passageSHA256": "4878b4a6ccd2a753af2babf1e5e93f4db61a7bf6307b40cceaf4ecd422edfe8f",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C06",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C07",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "df8f56cedd106c9b0c48044d6c4bc54555105046112dbd397ed626f3cf1615be",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-C07",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 11,
+        "passageSHA256": "bebb6e5fb0b65ebe877e81e0e31ec39842bfb1053ec07d5d98459cf98fd3b18d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S01",
+        "recordId": "cold-vs-hot",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cfc9febe0fc9afbd63632ea1140cbf84f1c90f43d64d1cac047e04d22cf35dd6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S02",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "aff8a562c1a8568f3cd78e3c2a809394d236c2b5c2faf6656e1b1782bd8ebada",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S03",
+        "recordId": "cold-vs-hot",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cfc9febe0fc9afbd63632ea1140cbf84f1c90f43d64d1cac047e04d22cf35dd6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S03",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "304eedefd5f90be3901a450d4334df5378a1d4f59704346e506bca5786ad3ca4",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S04",
+        "recordId": "cold-vs-hot",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cfc9febe0fc9afbd63632ea1140cbf84f1c90f43d64d1cac047e04d22cf35dd6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S04",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "aff8a562c1a8568f3cd78e3c2a809394d236c2b5c2faf6656e1b1782bd8ebada",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S05",
+        "recordId": "cold-vs-hot",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cfc9febe0fc9afbd63632ea1140cbf84f1c90f43d64d1cac047e04d22cf35dd6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S05",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "85b1072a74b203b4df256f261f55d47ea88c6df83214db143c5542aa595d74f6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S06",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "aff8a562c1a8568f3cd78e3c2a809394d236c2b5c2faf6656e1b1782bd8ebada",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S06",
+        "recordId": "tils",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "276c99649560fb3f8990fadd8fcf461f2d7dfe27578cd0bc156157a70341764b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S07",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "aff8a562c1a8568f3cd78e3c2a809394d236c2b5c2faf6656e1b1782bd8ebada",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-S07",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "2c97b2f499eacf540c043e2a7983cd7c6c9f7034c01dc0d45e4eadd7f297c353",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E01",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "6e8140113a3fd19e84e0624c7bdc85db570c1d3f9dfa922503d3b4691242beec",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E01",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E02",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E03",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "6e8140113a3fd19e84e0624c7bdc85db570c1d3f9dfa922503d3b4691242beec",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E03",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E03",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 8,
+        "passageSHA256": "756882a2a9014265cbb5d071250737635a1992e80263a7232cce01e2f66d9f48",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E04",
+        "recordId": "hla",
+        "field": "notes",
+        "index": 4,
+        "passageSHA256": "bda58d237f2430a9b1a92472f4000e94f4b3c1876d422349d1b6e622dcdd1b1d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E05",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E06",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "6e8140113a3fd19e84e0624c7bdc85db570c1d3f9dfa922503d3b4691242beec",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E06",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E06",
+        "recordId": "hla",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "4988661e5b647f6ef4a3246f8f2ec6a6b1653f1b0027611f67d9bdf32a8dd606",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E07",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "7102ae46ba5b25ed349f66d555772fd696ae137299a36f378c7f30a563da611b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E07",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E08",
+        "recordId": "cold-vs-hot",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cfc9febe0fc9afbd63632ea1140cbf84f1c90f43d64d1cac047e04d22cf35dd6",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E08",
+        "recordId": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "aff8a562c1a8568f3cd78e3c2a809394d236c2b5c2faf6656e1b1782bd8ebada",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E09",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E09",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "6e8140113a3fd19e84e0624c7bdc85db570c1d3f9dfa922503d3b4691242beec",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E10",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "6e8140113a3fd19e84e0624c7bdc85db570c1d3f9dfa922503d3b4691242beec",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E10",
+        "recordId": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageSHA256": "855a3f3ccff01c199764524391a21c6b641d83a07a51185686e63bbb6e5fe707",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-E10",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A01",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b48b861531186d3333d32a9365779999a4d9f4572219edcc6e201f2658651df8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A02",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 4,
+        "passageSHA256": "cce0410f461b231993f54b3fd017a942f6ce10ee933edbff1dddf0c2cfb6489c",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A03",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b48b861531186d3333d32a9365779999a4d9f4572219edcc6e201f2658651df8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A03",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "f0b8dfbe8817fa11abdb3f169073bef85d6811089212dfb4d838b4c1eb29b998",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A04",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b48b861531186d3333d32a9365779999a4d9f4572219edcc6e201f2658651df8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A04",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 4,
+        "passageSHA256": "cce0410f461b231993f54b3fd017a942f6ce10ee933edbff1dddf0c2cfb6489c",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A05",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "b48b861531186d3333d32a9365779999a4d9f4572219edcc6e201f2658651df8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A05",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "f0b8dfbe8817fa11abdb3f169073bef85d6811089212dfb4d838b4c1eb29b998",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-A06",
+        "recordId": "abscopal-effect",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "f0b8dfbe8817fa11abdb3f169073bef85d6811089212dfb4d838b4c1eb29b998",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I01",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "8843e53b4f31fc0373f2cb4437e1cc77468cbb34c92b8cccab19744d42ac69fd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I02",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "8843e53b4f31fc0373f2cb4437e1cc77468cbb34c92b8cccab19744d42ac69fd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I02",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 6,
+        "passageSHA256": "a006183f873947cb93e3e77d54d90224ba6fdc8dcfce25f2b0254eee778575c4",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I02",
+        "recordId": "lymph-node",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "808f29e5f23655410d5b12016b9347d66d5b25a40534b026c26a3b713a66322e",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I03",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "8843e53b4f31fc0373f2cb4437e1cc77468cbb34c92b8cccab19744d42ac69fd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I03",
+        "recordId": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4ce4c3b43b3520b6051c86125e40005971f9a637cdbf59b6b1afedf3a61d6a83",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I04",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "e1e98b79dbb03c22241377075f180a08b6b96fd1e7a5fcb8434dc9a1f1f57e68",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I04",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "0f7f35263d8e2c52cbac575b90e30ace0f811c5dd8f86eac340f6adcbe5e2dad",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I05",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "8843e53b4f31fc0373f2cb4437e1cc77468cbb34c92b8cccab19744d42ac69fd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I06",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "0f7f35263d8e2c52cbac575b90e30ace0f811c5dd8f86eac340f6adcbe5e2dad",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I06",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 4,
+        "passageSHA256": "b9d3aeb84e05080163e704f1f70dfbe22b33d951c613c0ddfa5597d6f9125cad",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I07",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "5969fc55213f2c10cb1daa7b5136d563a21fa280dd9dcdf549ba549f146fe942",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P49-I07",
+        "recordId": "in-situ-vaccination",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "0f7f35263d8e2c52cbac575b90e30ace0f811c5dd8f86eac340f6adcbe5e2dad",
+        "presentInActualStaticReader": true
+      }
+    ],
+    "allPass": true,
+    "registeredRootFieldReferences": 64,
+    "actualFrozenPeerFieldReferences": 0,
+    "peerReadersRendered": 0,
+    "scientificUnits": 37,
+    "scope": "All current field and excerpt hashes verify and all anchors occur in nine fresh actual root static readers. Semantic assessments are coordinator judgments, not independent, expert, hosted-browser, pixel, mobile or language acceptance."
+  },
+  "changedReaderPassages": {
+    "checks": [
+      {
+        "recordId": "tils",
+        "field": "links",
+        "decodedLabel": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+        "passageSHA256": "dab1e9e1456049fac9cf034817842fe82f857305aaafbdddaa2324be0e79d1b4",
+        "presentInActualStaticReader": true,
+        "encodedHTMLTitleRemoved": true
+      },
+      {
+        "recordId": "cold-vs-hot",
+        "field": "links",
+        "decodedLabel": "Bystander CD8+ T cells are abundant and phenotypically distinct in human tumour infiltrates.",
+        "passageSHA256": "dab1e9e1456049fac9cf034817842fe82f857305aaafbdddaa2324be0e79d1b4",
+        "presentInActualStaticReader": true,
+        "encodedHTMLTitleRemoved": true
+      }
+    ],
+    "allPass": true,
+    "changedSourceLabels": 2,
+    "scientificTextChanged": false
+  },
+  "wholeReaderReadback": {
+    "wholeDecodedReadersRead": [
+      "cold-vs-hot",
+      "t-cell-receptor",
+      "tils"
+    ],
+    "wholeDecodedReaderCount": 3,
+    "smallestSelectedReader": "t-cell-receptor",
+    "intactAcknowledgedSpans": 11,
+    "otherReadersCheckedForSelectedExactFieldsAndSources": true,
+    "exactCurrentFieldReaderAnchors": 64,
+    "correctedSourceLabels": 2,
+    "sourceLabelMarkupDefectResolved": true,
+    "productRoutingFindings": [
+      {
+        "id": "P49-R01-tils",
+        "recordId": "tils",
+        "kind": "product-reader-routing",
+        "severity": "medium",
+        "status": "open-owner-review",
+        "finding": "A generic glossary term is presented as having a dedicated readout page, but the CTA targets a different biomarker subject.",
+        "displayedTarget": "PD-L1 IC score (immune-cell score, SP142)",
+        "actualLinks": [
+          {
+            "href": "/biomarkers/pd-l1-ic-score",
+            "text": "PD-L1 IC score (immune-cell score, SP142)"
+          },
+          {
+            "href": "/biomarkers/pd-l1-ic-score",
+            "text": "PD-L1 IC score (immune-cell score, SP142)"
+          },
+          {
+            "href": "/biomarkers/pd-l1-ic-score",
+            "text": "PD-L1 IC score (immune-cell score, SP142)"
+          }
+        ],
+        "readerHTMLSHA256": "62446368c56465b71fdb611ab911541b47996d7750e208e81850310cf8a7c00b",
+        "canonicalScientificFieldsChangedForThisFinding": false,
+        "productChangeApplied": false
+      },
+      {
+        "id": "P49-R01-cold-vs-hot",
+        "recordId": "cold-vs-hot",
+        "kind": "product-reader-routing",
+        "severity": "medium",
+        "status": "open-owner-review",
+        "finding": "A generic glossary term is presented as having a dedicated readout page, but the CTA targets a different biomarker subject.",
+        "displayedTarget": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma",
+        "actualLinks": [
+          {
+            "href": "/biomarkers/stk11-keap1-loss",
+            "text": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma"
+          },
+          {
+            "href": "/biomarkers/stk11-keap1-loss",
+            "text": "STK11 or KEAP1 loss in KRAS-mutant lung adenocarcinoma"
+          }
+        ],
+        "readerHTMLSHA256": "6fa73a6b27a0da67575d5aee329f2b406cd209b947b3c93991d97a21ce748210",
+        "canonicalScientificFieldsChangedForThisFinding": false,
+        "productChangeApplied": false
+      }
+    ],
+    "blanketReaderAcceptance": false,
+    "unselectedLinkedRecordClaimsNewlyVerified": false,
+    "staticSSRNotBrowserHydrationMobileOrAccessibility": true
+  },
+  "exports": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 29.89
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.78
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.45
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.2
+    }
+  ],
+  "exportReadback": {
+    "records": 9,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "tils",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tils",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "abscopal-effect",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "hla",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "lymph-node",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "tils.json",
+        "bytes": 19460,
+        "sha256": "9af6cada0a801671679a94274a63f3de649bef282d22c98bfe940aa0c28a41a6"
+      },
+      {
+        "file": "tils.md",
+        "bytes": 15721,
+        "sha256": "75ef3a7a055e9b970f4173f79d67c376a0a5cb05c71959a253c2e2c1e5b18f8d"
+      },
+      {
+        "file": "cold-vs-hot.json",
+        "bytes": 22809,
+        "sha256": "e557f5d290b1305d3ae21e812d5e8a3f4d9a9d9b5032edfd403b7c4c184e94f8"
+      },
+      {
+        "file": "cold-vs-hot.md",
+        "bytes": 16857,
+        "sha256": "634746390d53d3b3a8193cee91a96e90eaf4759031831d5ae4bb9eb54397f08a"
+      },
+      {
+        "file": "immune-surveillance-immunoediting.json",
+        "bytes": 18279,
+        "sha256": "2b1fd59429fa73f8024a3def7636ebb37df9b975d28e73fff0dfcc28709800e9"
+      },
+      {
+        "file": "immune-surveillance-immunoediting.md",
+        "bytes": 14974,
+        "sha256": "3a06b272d603811bbecab30d2936f283f3458392d41d353cadcd75faf9093cd7"
+      },
+      {
+        "file": "abscopal-effect.json",
+        "bytes": 8221,
+        "sha256": "c655707a4197570a6c0771bc00672d4adbde0107e4a610f74a0bedad54a76a25"
+      },
+      {
+        "file": "abscopal-effect.md",
+        "bytes": 7059,
+        "sha256": "7aba1ca770b91fddfa8d14da7d2712fa20cbb2c2c3a997b96b27b5112dd9c8b7"
+      },
+      {
+        "file": "in-situ-vaccination.json",
+        "bytes": 11654,
+        "sha256": "b5ca24b01a2c78c03ffed386352850c939ae9ad068e18bd10e43e4c0b872fa64"
+      },
+      {
+        "file": "in-situ-vaccination.md",
+        "bytes": 10120,
+        "sha256": "b746c55c37906a511a41b80c938102cfe691d784738576201a1754b82a6a8337"
+      },
+      {
+        "file": "hla.json",
+        "bytes": 13527,
+        "sha256": "a399c1f0e8e61d742ed6185c4251e3cb9fbe6a526dd4f34ead31b14231f62bab"
+      },
+      {
+        "file": "hla.md",
+        "bytes": 12021,
+        "sha256": "7620b662471ac02602e60b0d1cd249942b66fc5a6dff1c46d9f36ddbbe589bb6"
+      },
+      {
+        "file": "t-cell-receptor.json",
+        "bytes": 5595,
+        "sha256": "b9abc89f7dd31d87a6ada9d4d013ed9c6f929fb24da2e3bf20023b32b4347201"
+      },
+      {
+        "file": "t-cell-receptor.md",
+        "bytes": 5362,
+        "sha256": "7b08d588c0d3c9935181d1513c970bc3b63652a07dbc7200c2bbdc18a7961c4a"
+      },
+      {
+        "file": "lymph-node.json",
+        "bytes": 7984,
+        "sha256": "225e49e696a1c0359a42b98f525aecd90df527b22a9ad0290bf9bc3b513be1f6"
+      },
+      {
+        "file": "lymph-node.md",
+        "bytes": 7156,
+        "sha256": "cf2a33824a42155680b2d4e5ed5b15c660a4160b6c5b1c9e639e0dc7df5e90f1"
+      },
+      {
+        "file": "macrophage-states.json",
+        "bytes": 5233,
+        "sha256": "db1697537cdc3bf8a9fbbd1de30d104bf8383bdafb8044636998e69534db42d3"
+      },
+      {
+        "file": "macrophage-states.md",
+        "bytes": 4692,
+        "sha256": "6c87ffcc06d3e65fb2c3f86888cb3eaa16b5d3512c1e0ccae830cce51bc96567"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "dfc3366ea3c80686452fe6088a16daca13fea033946cba2c6fa89268844bfda7",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 1
+  },
+  "summaryConsumers": {
+    "slots": 81,
+    "available": 30,
+    "EnglishFallbacks": 51,
+    "changedShortConsumerStates": 0,
+    "changedEffectiveTexts": 0,
+    "beforeStateReconstructedExplicitly": true,
+    "beforeCapturedBeforeDataEdits": false,
+    "consumerSourceTablesAndImplementationUnchanged": true,
+    "EnglishLeadsAndSummariesUnchanged": true,
+    "tables": [
+      {
+        "language": "es",
+        "entries": 7081,
+        "wholeTableSHA256": "4d93c093fd0da5e71e325817c0f014059ec0575d27f8c25fe747b7dce45fa90b",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "zh",
+        "entries": 11614,
+        "wholeTableSHA256": "8960327644a5e78443080e77b91e8c55280acc0dfe10bb95e79df3d603617df7",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "pt",
+        "entries": 7081,
+        "wholeTableSHA256": "3fcdcc4cbea1fed5d31435063ee40735657aceefbd52b17d27a93afa5763fe76",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "hi",
+        "entries": 7081,
+        "wholeTableSHA256": "a091d5f21a1e4405ef2cad13ef759bb842acfc9b61cce9f88f2249b2f1411750",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "fr",
+        "entries": 7081,
+        "wholeTableSHA256": "47a1cb27a0c3e8b6d0ace418cd824c63e7177dee9db1a51262361582977a39ee",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "de",
+        "entries": 7081,
+        "wholeTableSHA256": "b4bac3361f0b75f6b7a189a41d744dfd83d19ec9bb703e7d6455a04afdc0374b",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "ja",
+        "entries": 7081,
+        "wholeTableSHA256": "22f0f764925c51ab91e40ede46598474145e191d24740cf7de8055fd83487f0c",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "ar",
+        "entries": 7081,
+        "wholeTableSHA256": "909c1d9aedcce9b85cc2b9bafbb36d8cac565764396a26cf42ade1bbd115322a",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      },
+      {
+        "language": "simple",
+        "entries": 11452,
+        "wholeTableSHA256": "d008656983356006e615464226e1b8f44188c7eeb3aa07abff70e155cb1f1d20",
+        "tableSourceBytesUnchangedFromPhaseBase": true
+      }
+    ],
+    "longSummaryCaches": [
+      {
+        "id": "tils",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "tils",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "cold-vs-hot",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "abscopal-effect",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "hla",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "t-cell-receptor",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "lymph-node",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false,
+        "acceptanceStateUnchanged": true
+      }
+    ],
+    "storedLongCaches": 0,
+    "acceptedLongCaches": 0,
+    "reviews": [
+      {
+        "id": "tils",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cold-vs-hot",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "immune-surveillance-immunoediting",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "abscopal-effect",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "in-situ-vaccination",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "hla",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "t-cell-receptor",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "lymph-node",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "macrophage-states",
+        "reviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      }
+    ],
+    "namedReviewStampsChanged": 0,
+    "independentLanguageAcceptance": false
+  },
+  "newNextBuildBrowserMobileAccessibilityExpertOrLanguageAcceptance": false
+}

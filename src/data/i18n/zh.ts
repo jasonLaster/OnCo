@@ -128,7 +128,7 @@ export const tldr_zh: Record<string, string> = {
   "whole-body-mri": "无辐射的全身MRI，用于寻找骨髓瘤的扩散和筛查高遗传风险者。",
   "radiology-ai-screening": "与放射科医生一同阅片的软件，更早发现癌症并预测谁有风险。",
   "optical-imaging": "在特殊光下发光的染料，让外科医生在手术室看到肿瘤边缘和神经。",
-  "histopathology-ihc": "在显微镜下观察癌细胞并染色特定蛋白。仍是每一个诊断的基础。",
+  "histopathology-ihc": "组织病理学用显微镜检查组织。免疫组织化学用抗体显示特定抗原；两者都需要结合标本背景并正确解读。",
   cgp: "从活检组织一次测序数百个癌基因，找出药物可靶向的突变。",
 
 

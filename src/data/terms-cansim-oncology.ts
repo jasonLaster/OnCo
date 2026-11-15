@@ -537,7 +537,7 @@ export const cansimOncologyTerms: TermInput[] = [
     technologies: ["spatial-transcriptomics", "spatial-biology-instruments", "single-cell-spatial"], related: ["10x-genomics"], terms: ["spatial-autocorrelation", "single-cell-rna-seq"] }),
   t({ id: "h-and-e-staining", name: "H&E staining (haematoxylin and eosin)", category: PATH, aka: ["H&E staining", "H&E stain", "H&E slide", "H&E slides", "haematoxylin and eosin", "hematoxylin and eosin", "H&E section"],
     wikipedia: W("H%26E_stain"), cansim: "/terms/h-and-e-staining",
-    tldr: "H&E is the purple and pink stain on almost every pathology slide: haematoxylin colours cell nuclei blue-purple and eosin colours the cytoplasm and connective tissue pink.",
+    tldr: "H&E staining makes nuclei blue-purple and broadly colours cytoplasm and supporting tissue pink, helping show cells in their tissue setting.",
     summary: "Haematoxylin and eosin (H&E) stain makes cell appearance and tissue organisation visible in a prepared section. Haematoxylin colours nuclei blue-purple, while eosin colours cytoplasm and supporting tissue pink. Pathologists integrate nuclei, cell groups, boundaries and architecture with the specimen context. Image-analysis models can predict features from these appearances, but a molecular prediction is not a direct measurement of the named gene or protein. The section represents one sampled region and depth, rather than the entire tumour or body.",
     terms: ["digital-pathology-wsi", "tile-patch-encoding"], technologies: ["histopathology-ihc", "digital-pathology-ai"] ,
 "notes": [

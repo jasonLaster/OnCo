@@ -127,7 +127,7 @@ export const simpleA: Record<string, string> = {
   "whole-body-mri": "An MRI of the whole body with no radiation, used in myeloma and to screen people with high inherited risk.",
   "radiology-ai-screening": "Software that reads scans alongside doctors, catching cancers earlier and predicting who is at risk.",
   "optical-imaging": "Dyes that glow under special light so surgeons can see the edges of a tumour during an operation.",
-  "histopathology-ihc": "Looking at cancer cells under a microscope and staining them to see which proteins they carry. Still the basis of every diagnosis.",
+  "histopathology-ihc": "A pathologist examines a tissue sample under a microscope. Antibody stains can show selected markers; the sample, controls and context matter.",
   cgp: "Reading hundreds of cancer genes at once from a biopsy to find the changes a drug can target.",
   "wes-wgs": "One test reads mostly the DNA parts that code for proteins. Another reads more of the genome. Both can miss changes, so their tested regions and limits matter.",
 

@@ -258,12 +258,12 @@ export const technologies: TechnologyInput[] = [
   // ======================= DIAGNOSTICS =======================
   {
     id: "histopathology-ihc", kind: "technology", name: "Histopathology & immunohistochemistry", sections: ["diagnostics"], status: "standard-of-care", asOf, wikipedia: W("Immunohistochemistry"),
-    tldr: "Histopathology means looking at cancer cells under a microscope, and immunohistochemistry stains them for specific proteins. Together they are still the foundation of every diagnosis.",
+    tldr: "Histopathology examines tissue under a microscope. Immunohistochemistry uses antibodies to show selected antigens; both need specimen context and appropriate interpretation.",
     summary: "H&E morphology assigns histologic type and grade; IHC panels define lineage and biomarkers (ER, PR, HER2, Ki-67, PD-L1, ALK, MMR proteins). HER2 IHC scoring now matters at the low end (HER2-low, HER2-ultralow) because of T-DXd. Tumour-infiltrating lymphocyte (TIL) scoring on H&E is becoming a stratification tool in TNBC.",
     principle: "Formalin-fixed paraffin-embedded tissue sectioned, stained, and interpreted by a pathologist; antibody-based chromogenic detection of proteins.",
-    strengths: ["Cheap, fast, universal", "Companion diagnostic for most targeted drugs"],
+    strengths: ["Preserves cells in their tissue setting","Supports diagnosis and selected biomarker assessments"],
     limitations: ["Subjective scoring", "Single-site sampling misses heterogeneity"],
-    terms: ["ihc", "her2-low", "tils"], links: [{ label: "Wikipedia", url: W("Immunohistochemistry") }], journals: ["analytical-cellular-pathology", "cancer-cytopathology", "head-and-neck-pathology", "pathology-and-oncology-research"], companies: ["cyted-health", "digistain", "histowiz", "ibex-medical-analytics"],
+    terms: ["ihc", "her2-low", "tils"], links: [{ label: "Wikipedia", url: W("Immunohistochemistry") }, {"label":"NCI: surgical pathology reports, tissue microscopy and specimen context","url":"https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"}, {"label":"NCI Dictionary: immunohistochemistry","url":"https://www.cancer.gov/publications/dictionaries/cancer-terms/def/immunohistochemistry"}], journals: ["analytical-cellular-pathology", "cancer-cytopathology", "head-and-neck-pathology", "pathology-and-oncology-research"], companies: ["cyted-health", "digistain", "histowiz", "ibex-medical-analytics"],
   },
   {
     id: "cgp", tags: ["precision"], keyPapers: ["paper-shiva-off-label-targeted-therapy-lancet-oncol-2015", "paper-marquart-genome-driven-oncology-benefit-jama-oncol-2018"], dependsOn: ["ngs-bioinformatics-software", "variant-knowledgebases"], kind: "technology", name: "Comprehensive genomic profiling", sections: ["diagnostics"], status: "standard-of-care", asOf, wikipedia: W("Cancer_genome_sequencing"),

@@ -128,7 +128,7 @@ export const tldr_pt: Record<string, string> = {
   "whole-body-mri": "Uma ressonância do corpo inteiro sem radiação, usada para encontrar disseminação no mieloma e para rastrear pessoas com alto risco hereditário.",
   "radiology-ai-screening": "Software que lê exames ao lado dos radiologistas, detectando cânceres mais cedo e prevendo quem está em risco.",
   "optical-imaging": "Corantes que brilham sob uma luz especial, para que os cirurgiões vejam as bordas do tumor e os nervos na sala de cirurgia.",
-  "histopathology-ihc": "Observar células cancerosas ao microscópio e corá-las para proteínas específicas. Ainda a base de todo diagnóstico.",
+  "histopathology-ihc": "A histopatologia examina tecidos ao microscópio. A imuno-histoquímica usa anticorpos para mostrar antígenos específicos; ambas exigem o contexto da amostra e uma interpretação adequada.",
   cgp: "Sequenciar centenas de genes do câncer de uma vez a partir de uma biópsia para encontrar as mutações que uma droga pode atingir.",
 
 

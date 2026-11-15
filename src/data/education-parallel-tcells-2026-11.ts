@@ -179,38 +179,47 @@ export const educationParallelTcells: TermInput[] = [
     "tldr": "A conventional T-cell receptor recognises a peptide together with its HLA display. Recognition alone does not show killing.",
     "summary": "A conventional alpha-beta T-cell receptor uses paired chains to recognise a peptide-HLA surface. Its recognition chains assemble with CD3 signalling partners, as demonstrated in the human TCR-CD3 structural study. CDR3 is an informative variable region, but neither a beta-chain sequence nor CDR3 alone specifies the complete paired receptor or its function.\n\nParticular receptors can cross-react across peptide and HLA contexts; that does not establish a universal cross-reactivity rate. Paired receptor identity, binding, activation, target-cell death and clinical benefit require different evidence. A response by one reconstructed pair to peptide-loaded cells does not establish that another alpha-chain pairing recognises the same target, or that either kills naturally presenting tumour cells. Use irrelevant-target, HLA and target-only viability controls. Peptide loading can bypass natural processing, and contact diagrams are not healthy-tissue safety tests.",
     "links": [
-      {
-        "label": "Structural basis of assembly of the human T cell receptor-CD3 complex.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
-      },
-      {
-        "label": "Extraordinary cross-reactivity of an autoimmune T-cell receptor recognizing specific peptides both on autologous and on allogeneic HLA class II molecules.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/17559580/"
-      },
-      {
-        "label": "Linking T-cell receptor sequence to functional phenotype at the single-cell level.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
-      },
-      {
-        "label": "High-resolution analysis of the human T-cell receptor repertoire.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
-      },
-      {
-        "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
-      },
-
-  {"label":"Stone et al.: TCR binding, kinetics, coreceptors and specificity (2009 review)","url":"https://pubmed.ncbi.nlm.nih.gov/19125887/"},
-  {"label":"Schuldt and Binstadt: dual TCR expression (2019 review)","url":"https://pubmed.ncbi.nlm.nih.gov/30670579/"},
+  {
+    "label": "Structural basis of assembly of the human T cell receptor-CD3 complex.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31461748/"
+  },
+  {
+    "label": "Extraordinary cross-reactivity of an autoimmune T-cell receptor recognizing specific peptides both on autologous and on allogeneic HLA class II molecules.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17559580/"
+  },
+  {
+    "label": "Linking T-cell receptor sequence to functional phenotype at the single-cell level.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/24952902/"
+  },
+  {
+    "label": "High-resolution analysis of the human T-cell receptor repertoire.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26324409/"
+  },
+  {
+    "label": "An immunogenic personal neoantigen vaccine for patients with melanoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28678778/"
+  },
+  {
+    "label": "Stone et al.: TCR binding, kinetics, coreceptors and specificity (2009 review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/19125887/"
+  },
+  {
+    "label": "Schuldt and Binstadt: dual TCR expression (2019 review)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30670579/"
+  },
+  {
+    "label": "Structure of the complex between human T-cell receptor, viral peptide and HLA-A2.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/8906788/"
+  }
 ],
     "notes": [
-      "A conventional alpha-beta TCR uses paired variable and constant domains to contact peptide plus HLA. The peptide sits in the HLA groove, not a separate TCR peptide pocket. CD3 signalling partners are distinct from recognition chains. Contact loops including junction-spanning CDR3 contribute, but other loops, the partner chain and HLA matter; beta-only or CDR3-only sequence is incomplete.",
-      "Cross-reactivity is recognition of multiple targets by a receptor. Defined receptor experiments demonstrated peptide/HLA cross-reactivity, not recognition of every allele by an arbitrary receptor or a universal rate. Greater affinity or a contact drawing does not establish healthy-tissue safety.",
-      "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
-      "Vaccination generally recruits or expands existing mature receptor specificities rather than rewriting each mature receptor. Engineered TCR therapy introduces selected receptor sequences. In either case, tested recognition must still connect to naturally presenting tumour targets, useful function and healthy-tissue safety. If one beta sequence pairs with different alpha chains, a positive reconstruction of one pair does not establish the other pair's function or tumour killing.",
-      "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
-
+  "A conventional alpha-beta TCR uses paired variable and constant domains to contact peptide plus HLA. The peptide sits in the HLA groove, not a separate TCR peptide pocket. CD3 signalling partners are distinct from recognition chains. Contact loops including junction-spanning CDR3 contribute, but other loops, the partner chain and HLA matter; beta-only or CDR3-only sequence is incomplete.",
+  "Cross-reactivity is recognition of multiple targets by a receptor. Defined receptor experiments demonstrated peptide/HLA cross-reactivity, not recognition of every allele by an arbitrary receptor or a universal rate. Greater affinity or a contact drawing does not establish healthy-tissue safety.",
+  "Sequencing reports sampled receptor identities and abundances under an operational clonotype definition. Paired alpha-beta identities are more complete than beta alone. Peptide-HLA multimer binding, stimulus-induced cellular response, target-cell death and clinical benefit are different endpoints. Include irrelevant-target, HLA and target-only viability controls; peptide-loaded cells can bypass natural processing.",
+  "Vaccination generally recruits or expands existing mature receptor specificities rather than rewriting each mature receptor. Engineered TCR therapy introduces selected receptor sequences. In either case, tested recognition must still connect to naturally presenting tumour targets, useful function and healthy-tissue safety. If one beta sequence pairs with different alpha chains, a positive reconstruction of one pair does not establish the other pair's function or tumour killing.",
+  "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
   "Many measured conventional receptor-peptide-HLA interactions have micromolar dissociation constants; affinity, multiple contacts, CD4/CD8 coreceptors and the cellular signalling context contribute differently to activity. Stone and colleagues review those distinctions, rather than a universal affinity ranking against every antibody. One receptor type per cell is also a simplification: extra productive alpha chains and dual surface receptors have been documented. A chain sequence alone does not establish which assembled receptor provides the measured specificity.",
+  "The variable domains face the peptide-HLA contact, while the constant domains sit nearer the T-cell membrane and CD3. CDR3 spans gene-segment junctions made during V(D)J recombination, with nucleotide insertion and deletion adding junctional diversity. The schematic locates these parts; it does not reconstruct every subunit or measure affinity, signalling strength or a clinical response."
 ],
     "related": [
       "t-cell"

@@ -208,10 +208,29 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Pharmacogenomics, abbreviated PGx, is the study of the role of the genome in drug response, combining pharmacology and genomics to ask how a patient's genetic makeup affects their reaction to drugs (Wikipedia). In oncology it covers both inherited variants that govern toxicity (DPYD and fluoropyrimidines, TPMT and thiopurines) and the tumour's somatic alterations that predict sensitivity, the basis of cell-line drug-response prediction.",
     technologies: ["oncology-pharmacogenomics"], terms: ["drug-response-sensitivity", "cancer-drivers-vs-actionable"] }),
   t({ id: "drug-response-sensitivity", name: "Drug response and drug sensitivity (IC50, AUC)", category: BM, aka: ["drug sensitivity", "drug response prediction", "cell-line drug sensitivity", "IC50", "half maximal inhibitory concentration", "dose-response AUC", "area under the dose-response curve", "GI50", "AAC"],
-    wikipedia: W("IC50"), links: [{ label: "Yang et al., GDSC: a resource for therapeutic biomarker discovery in cancer cells (Nucleic Acids Research 2013)", url: DOI("10.1093/nar/gks1111") }], cansim: "/terms/drug-response",
-    tldr: "Drug sensitivity is how strongly a tumour or cell line is held back by a compound; it is summarised by the concentration that halves growth (IC50) or by the area under the whole dose-response curve.",
-    summary: "The half maximal inhibitory concentration, IC50, measures the potency of a substance in inhibiting a biological function, the amount needed to inhibit a process by half in vitro (Wikipedia). Cell-line screens such as GDSC and CTRP report IC50, GI50 and the area under (or above) the dose-response curve for hundreds of drugs across hundreds of lines. The readouts are not interchangeable: different viability assays (CellTiter-Glo versus Syto60) and different summary statistics are a known source of disagreement between datasets.",
-    terms: ["pharmacogenomics-term", "cell-lines-as-proxy"], related: ["depmap"] }),
+    wikipedia: W("IC50"), links: [
+  {
+    "label": "Yang et al., GDSC: a resource for therapeutic biomarker discovery in cancer cells (Nucleic Acids Research 2013)",
+    "url": "https://doi.org/10.1093/nar/gks1111"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/IC50"
+  },
+  {
+    "label": "Hafner et al., Growth rate inhibition metrics correct for confounders in measuring sensitivity to cancer drugs (Nature Methods 2016)",
+    "url": "https://doi.org/10.1038/nmeth.3853"
+  },
+  {
+    "label": "Cer et al., IC50-to-Ki: a web-based tool for converting IC50 to Ki values for inhibitors of enzyme activity and ligand binding (Nucleic Acids Research 2009)",
+    "url": "https://doi.org/10.1093/nar/gkp253"
+  }
+], cansim: "/terms/drug-response",
+    tldr: "Drug sensitivity describes response in a specified assay. An IC50 is the concentration producing half-maximal inhibition of its measured endpoint; it does not always mean half the growth.",
+    summary: "Drug-response measurements belong to a specified assay, exposure time, endpoint and analysis. An IC50 is a concentration associated with half-maximal inhibition of the endpoint defined for that assay; an area under a dose-response curve also depends on the concentration range and response scale. GDSC's 2013 resource paper describes fluorescence-based cell-viability measurements after 72 hours, with curves fitted across nine concentrations to derive IC50, slope and area under the curve (Yang and colleagues). That is a viability readout, rather than a direct count of cell divisions. Hafner and colleagues' 2016 study shows that conventional IC50, maximal effect and area-under-curve values can depend on how many divisions occur during an assay, and introduces growth-rate inhibition measures to address that dependence. A predicted assay IC50 is a model output, and is not a measured response, an equilibrium dissociation constant or evidence of treatment benefit in a patient. Cer and colleagues' 2009 IC50-to-Ki tool makes the biochemical distinction explicit: conversion depends on the interaction mechanism, concentrations and other assumptions.",
+    terms: ["pharmacogenomics-term", "cell-lines-as-proxy"], related: ["depmap"] ,
+"asOf": "2026-11-15"
+}),
   t({ id: "cell-lines-as-proxy", name: "Cell lines as a proxy for patients", category: BIO, aka: ["cell lines as a patient proxy", "cancer cell lines", "immortalised cell line", "immortalized cell line", "cell line model"],
     wikipedia: W("Immortalised_cell_line"), links: [{"label":"Barretina et al., The Cancer Cell Line Encyclopedia (Nature 2012)","url":"https://doi.org/10.1038/nature11003"},{"label":"Wikipedia","url":"https://en.wikipedia.org/wiki/Immortalised_cell_line"},{"label":"Functional model interpretation: primary evidence","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC6522222/"},{"label":"Cell-line definition and culture checks","url":"https://onco.cc/terms/cell-line/"}], cansim: "/terms/cell-lines-as-patient-proxy",
     tldr: "Cancer cell lines support controlled laboratory experiments, while prediction for a patient requires separate evidence.",
@@ -288,10 +307,14 @@ export const cansimOncologyTerms: TermInput[] = [
   {
     "label": "Wikipedia",
     "url": "https://en.wikipedia.org/wiki/Variant_calling"
+  },
+  {
+    "label": "Ensembl: calculated variant consequences (June 2026 documentation archive)",
+    "url": "https://jun2026.archive.ensembl.org/info/genome/variation/prediction/predicted_data.html"
   }
 ], cansim: "/terms/variant-effect-prediction",
     tldr: "A variant-effect prediction estimates a defined consequence of a DNA change for a specified transcript or task. It does not by itself establish disease causation or treatment benefit.",
-    summary: "Variant-effect prediction estimates a specified consequence of a sequence change, whereas variant calling identifies changes from sequence data. Ensembl maps each allele of a variant onto every overlapping transcript with a rule-based approach, so the same genomic change can have a different consequence in different transcripts, and its impact categories (high, moderate, low, modifier) are qualitative assumptions about likely effect, not a measured loss of function (Ensembl documentation, release 116). A score from a missense tool does not answer a splice or regulatory question, and a prediction should name the reference genome, the alleles and the transcript (with its version) it was made for. A raw model score is not automatically a probability: a splice score of 0.92 on an unspecified scale does not mean a 92 per cent chance of lost function, because thresholds and evidence strengths belong to a particular tool and task. The absence of a prediction does not make a variant benign, because a tool may not cover that variant type or transcript. RNA junction evidence, functional experiments and clinical studies address different gaps, and none is interchangeable with a sequence score. Two reports of the same prediction from the same software version are two copies of one computed result, not two independent experiments. Where a tool's training data overlap the variants used to evaluate it, its performance can be overestimated, which is why the ClinGen calibration of thirteen missense tools to ACMG/AMP pathogenicity and benignity evidence strengths, estimated from local positive predictive value, used datasets assembled to minimise that circularity (Pejaver and colleagues, 2022). That calibration used ClinVar missense variants classified as pathogenic or benign and rare in gnomAD, within the ACMG/AMP recommendations for variants in genes associated with monogenic disease, and it selected no tool designed for splice variants. Its introduction notes that many methods overlap and so do not offer independent assessment of pathogenicity, which is why agreement between tools that share training data or inputs is not independent confirmation. The AMP, ASCO and CAP guideline for somatic variants notes that early prediction algorithms were developed and validated for germline variants and recommends that their results never be used as the sole evidence for variant classification or clinical decision making (Li and colleagues, 2017).",
+    summary: "Variant-effect prediction estimates a specified consequence of a sequence change, whereas variant calling identifies changes from sequence data. Ensembl maps each allele of a variant onto every overlapping transcript with a rule-based approach, so the same genomic change can have a different consequence in different transcripts, and its impact categories (high, moderate, low, modifier) are qualitative assumptions about likely effect, not a measured loss of function (Ensembl documentation, release 116). A score from a missense tool does not answer a splice or regulatory question, and a prediction should name the reference genome, the alleles and the transcript (with its version) it was made for. A raw model score is not automatically a probability: a splice score of 0.92 on an unspecified scale does not mean a 92 per cent chance of lost function, because thresholds and evidence strengths belong to a particular tool and task. The absence of a prediction does not make a variant benign, because a tool may not cover that variant type or transcript. RNA junction evidence, functional experiments and clinical studies address different gaps, and none is interchangeable with a sequence score. Two reports of the same prediction from the same software version are two copies of one computed result, not two independent experiments. Where a tool's training data overlap the variants used to evaluate it, its performance can be overestimated, which is why the ClinGen calibration of thirteen missense tools to ACMG/AMP pathogenicity and benignity evidence strengths, estimated from local positive predictive value, used datasets assembled to minimise that circularity (Pejaver and colleagues, 2022). That calibration used ClinVar missense variants classified as pathogenic, likely pathogenic, likely benign or benign, with an allele frequency below 0.01 in gnomAD v2.1, within the ACMG/AMP recommendations for variants in genes associated with monogenic disease, and it selected no tool designed for splice variants. Its introduction notes that many methods overlap and so do not offer independent assessment of pathogenicity, which is why agreement between tools that share training data or inputs is not independent confirmation. The AMP, ASCO and CAP guideline for somatic variants notes that early prediction algorithms were developed and validated for germline variants and recommends that their results never be used as the sole evidence for variant classification or clinical decision making (Li and colleagues, 2017).",
     terms: [
   "variant-calling",
   "hgvs",
@@ -302,7 +325,7 @@ export const cansimOncologyTerms: TermInput[] = [
   "nucleotide-transformer",
   "alphamissense"
 ], related: ["clinvar"] ,
-"asOf": "2026-11-10",
+"asOf": "2026-11-15",
 "provenance": {
   "editedBy": "OnCo systematic education audit, round 3 (spatial and computational content): Crossref and Europe PMC identity checks, abstracts, selected full texts and the Ensembl documentation read",
   "editedOn": "2026-11-09",

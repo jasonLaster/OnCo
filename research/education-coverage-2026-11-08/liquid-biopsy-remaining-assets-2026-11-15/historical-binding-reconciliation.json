@@ -1,0 +1,321 @@
+{
+  "historicalWholeFieldDifferences": [],
+  "historicalWholeFieldDeltas": 0,
+  "allCurrentPreEditWholeFieldsMatchReferencedSnapshots": true,
+  "earlierSnapshotsPreservedImmutably": true,
+  "preservingReferences": 296,
+  "explicitCorrections": 30,
+  "correctionGroups": [
+    {
+      "group": 0,
+      "recordId": "ctdna",
+      "field": "notes",
+      "count": 3,
+      "characters": 438,
+      "oldExcerpt": "ctDNA is a subset of cell-free DNA, and not every plasma variant is tumour-derived: in paired plasma and white-blood-cell sequencing, 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis (Razavi 2019). A ctDNA result is also a quantity with a unit (molecules per millilitre, a fraction, or a call), and the same number means different things under each.",
+      "points": [
+        {
+          "id": "cfdna-vs-ctdna:r5",
+          "requirement": "A plasma variant is not automatically tumour-derived: blood-cell clones, matched white-cell sequencing, tumour comparison and origin filters address different ambiguities",
+          "status": "covered-draft"
+        },
+        {
+          "id": "multiomics-course-MOM-7f3c67b245153e",
+          "requirement": "Carry every factual, numeric, causal and interpretive clause, or an explicit supported correction. Exact field containment alone cannot establish semantic acceptance.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:r5",
+          "requirement": "A plasma variant is not automatically tumour-derived: blood-cell clones, matched white-cell sequencing, tumour comparison and origin filters address different ambiguities",
+          "status": "covered-draft"
+        }
+      ],
+      "references": [
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/291/review/points/4/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/498/review/points/13/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/298/review/points/4/evidence/0"
+        }
+      ]
+    },
+    {
+      "group": 1,
+      "recordId": "clonal-haematopoiesis",
+      "field": "notes",
+      "count": 27,
+      "characters": 677,
+      "oldExcerpt": "Source attribution in plasma, interpretation rule: TP53 is a tumour gene and also a therapy-selected blood-cell gene, so a TP53 variant in plasma after chemotherapy can come from either compartment. Matched white-blood-cell DNA and the tumour's variant list, where available, help assess its origin; some variants remain ambiguous. In Razavi's paired sequencing 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 controls without cancer had features of clonal haematopoiesis, and variants that could not be separated from white-blood-cell DNA kept an explicit ambiguous category, so subtracting every blood match is not a complete attribution method.",
+      "points": [
+        {
+          "id": "cfdna-vs-ctdna:r5",
+          "requirement": "A plasma variant is not automatically tumour-derived: blood-cell clones, matched white-cell sequencing, tumour comparison and origin filters address different ambiguities",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:r9",
+          "requirement": "Variant Q in plasma and matched white-blood-cell DNA without tumour comparison is not a tumour marker (Try it)",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:card-5",
+          "requirement": "Account for weak biological signal, scarce molecules, damaged input, background and source errors.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r4",
+          "requirement": "TP53 trap: a gene mutated in tumours and selected in blood cells can come from either compartment",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r5",
+          "requirement": "Scale: 53.2% and 81.6% of plasma mutations had CH features; ambiguous-source category",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r6",
+          "requirement": "Matched white-blood-cell sequencing is the standard comparison with its own coverage and depth limits; subtracting every blood match is not complete",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:card-1",
+          "requirement": "Sequence and interpret blood-cell variants, with plasma/tumour comparison for origin attribution.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:card-6",
+          "requirement": "Check identity, errors, coverage, depth, contamination and unresolved/shared source assignments.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:source-attribution-use",
+          "requirement": "Assess blood-cell contribution before assigning a candidate plasma tracking or resistance variant to a tumour.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "residual-monitoring-B-017",
+          "requirement": "Acquired clonal blood-cell mutations can contribute plasma DNA; check tumour-versus-blood origin with method-specific white-cell sensitivity and coverage, without calling it a perfect certificate.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:r5",
+          "requirement": "A plasma variant is not automatically tumour-derived: blood-cell clones, matched white-cell sequencing, tumour comparison and origin filters address different ambiguities",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:r9",
+          "requirement": "Variant Q in plasma and matched white-blood-cell DNA without tumour comparison is not a tumour marker (Try it)",
+          "status": "covered-draft"
+        },
+        {
+          "id": "cfdna-vs-ctdna:card-5",
+          "requirement": "Account for weak biological signal, scarce molecules, damaged input, background and source errors.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r4",
+          "requirement": "TP53 trap: a gene mutated in tumours and selected in blood cells can come from either compartment",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r5",
+          "requirement": "Scale: 53.2% and 81.6% of plasma mutations had CH features; ambiguous-source category",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r6",
+          "requirement": "Matched white-blood-cell sequencing is the standard comparison with its own coverage and depth limits; subtracting every blood match is not complete",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:card-1",
+          "requirement": "Sequence and interpret blood-cell variants, with plasma/tumour comparison for origin attribution.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:card-6",
+          "requirement": "Check identity, errors, coverage, depth, contamination and unresolved/shared source assignments.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:source-attribution-use",
+          "requirement": "Assess blood-cell contribution before assigning a candidate plasma tracking or resistance variant to a tumour.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "tumor-informed-vs-tumor-naive-mrd-assays:origin-filter-versus-reference",
+          "requirement": "A tumour reference and a blood-cell-origin filter solve related but different attribution/design problems.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "residual-monitoring-B-017",
+          "requirement": "Acquired clonal blood-cell mutations can contribute plasma DNA; check tumour-versus-blood origin with method-specific white-cell sensitivity and coverage, without calling it a perfect certificate.",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        },
+        {
+          "id": "chip:r9",
+          "requirement": "Mermaid: blood-cell clone to plasma variant to source assignment or retained uncertainty",
+          "status": "covered-draft"
+        }
+      ],
+      "references": [
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/291/review/points/4/evidence/1"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/291/review/points/7/evidence/1"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/291/review/points/14/evidence/1"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/3/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/4/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/5/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/7/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/8/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/13/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/292/review/points/16/evidence/0"
+        },
+        {
+          "artifact": "ledger.json",
+          "pointer": "/items/455/review/points/13/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/298/review/points/4/evidence/1"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/298/review/points/7/evidence/1"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/298/review/points/14/evidence/1"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/3/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/4/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/5/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/7/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/8/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/13/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/299/review/points/16/evidence/0"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/307/review/points/15/evidence/1"
+        },
+        {
+          "artifact": "source-phases/c9689645/ledger.json",
+          "pointer": "/items/496/review/points/16/evidence/0"
+        },
+        {
+          "artifact": "source-assets.json",
+          "pointer": "/phases/0/items/1232/review/points/1/evidence/0"
+        },
+        {
+          "artifact": "source-assets.json",
+          "pointer": "/phases/0/items/1233/review/points/1/evidence/0"
+        },
+        {
+          "artifact": "source-assets.json",
+          "pointer": "/phases/1/items/1232/review/points/1/evidence/0"
+        },
+        {
+          "artifact": "source-assets.json",
+          "pointer": "/phases/1/items/1233/review/points/1/evidence/0"
+        }
+      ]
+    }
+  ],
+  "sourcePassages": [
+    {
+      "sourceId": "razavi",
+      "index": 15,
+      "section": "Results > Characterization of the biological sources of cfDNA variants",
+      "textSHA256": "b30c050d58f7a9e250351c0d6301b1fa5dada5b86f76e1c568601a6250225228",
+      "captureSHA256": "feac68548cc2f6f9c42f2fffee30ead6ddbed08b4dc385cf8f5b7d8e99319507"
+    },
+    {
+      "sourceId": "razavi",
+      "index": 40,
+      "section": "Methods > Source of origin of plasma variants",
+      "textSHA256": "50eb52f976b91e9c4defe50386b9ea595e29072d418fbee11cefbbf913c3d9b1",
+      "captureSHA256": "feac68548cc2f6f9c42f2fffee30ead6ddbed08b4dc385cf8f5b7d8e99319507"
+    }
+  ],
+  "allRequirementsGradesAndPriorDepthsPreserved": true
+}

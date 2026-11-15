@@ -1,0 +1,472 @@
+{
+  "checks": [
+    {
+      "check": "embedded-literal-data-hash",
+      "passed": true,
+      "detail": {
+        "expected": "2968c15a8ccf983265798f608942c9609ad29e64662a0e23b1711b998a6aefcd",
+        "actual": "2968c15a8ccf983265798f608942c9609ad29e64662a0e23b1711b998a6aefcd"
+      }
+    },
+    {
+      "check": "poisson-point-count",
+      "passed": true,
+      "detail": 201
+    },
+    {
+      "check": "poisson-exact-lambda-grid",
+      "passed": true,
+      "detail": {
+        "start": 0,
+        "end": 5,
+        "step": 0.025
+      }
+    },
+    {
+      "check": "poisson-all-201-independent-exp-values",
+      "passed": true,
+      "detail": {
+        "formula": "exp(-lambda)",
+        "probabilityUnitless": true,
+        "fictionalModel": true
+      }
+    },
+    {
+      "check": "poisson-monotonic-and-unit-bounds",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "poisson-anchor-0",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 0,
+        "display": "100.0%"
+      }
+    },
+    {
+      "check": "poisson-anchor-0.5",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 0.5,
+        "display": "60.7%"
+      }
+    },
+    {
+      "check": "poisson-anchor-1",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 1,
+        "display": "36.8%"
+      }
+    },
+    {
+      "check": "poisson-anchor-2",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 2,
+        "display": "13.5%"
+      }
+    },
+    {
+      "check": "poisson-anchor-3",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 3,
+        "display": "5.0%"
+      }
+    },
+    {
+      "check": "poisson-anchor-4",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 4,
+        "display": "1.8%"
+      }
+    },
+    {
+      "check": "poisson-anchor-5",
+      "passed": true,
+      "detail": {
+        "lambdaValue": 5,
+        "display": "0.7%"
+      }
+    },
+    {
+      "check": "possible-count-inset",
+      "passed": true,
+      "detail": {
+        "noEqualFrequencyClaim": true
+      }
+    },
+    {
+      "check": "native-201-curve-coordinates-light",
+      "passed": true,
+      "detail": {
+        "width": 576,
+        "height": 1360,
+        "xZero": 96,
+        "xFive": 552,
+        "yZeroProbability": 765,
+        "yOneProbability": 280,
+        "maxCoordinateRounding": 1e-06
+      }
+    },
+    {
+      "check": "toy-amount-total-path-glyphs-light",
+      "passed": true,
+      "detail": {
+        "paths": 360,
+        "pathsPerGlyph": 6,
+        "moleculeGlyphs": 60
+      }
+    },
+    {
+      "check": "toy-amount-glyph-census-light",
+      "passed": true,
+      "detail": {
+        "total": {
+          "A": 20,
+          "B": 40
+        },
+        "tumorAttributed": {
+          "A": 4,
+          "B": 4
+        },
+        "background": {
+          "A": 16,
+          "B": 36
+        }
+      }
+    },
+    {
+      "check": "timeline-scheduled-draws-light",
+      "passed": true,
+      "detail": {
+        "rows": 6,
+        "drawsEach": 7,
+        "lastDrawCoveredByRecurrenceGlyph": true
+      }
+    },
+    {
+      "check": "timeline-observed-gaps-light",
+      "passed": true,
+      "detail": {
+        "gapsMonths": [
+          2.0,
+          4.0,
+          6.0,
+          8.0
+        ],
+        "allEventsMonth": 12,
+        "firstPositiveMonths": [
+          10.0,
+          8.0,
+          6.0,
+          4.0
+        ],
+        "excludedRows": [
+          "E",
+          "F"
+        ]
+      }
+    },
+    {
+      "check": "timeline-selected-median-light",
+      "passed": true,
+      "detail": {
+        "selectedN": 4,
+        "totalN": 6,
+        "medianMonths": 5
+      }
+    },
+    {
+      "check": "native-201-curve-coordinates-dark",
+      "passed": true,
+      "detail": {
+        "width": 576,
+        "height": 1360,
+        "xZero": 96,
+        "xFive": 552,
+        "yZeroProbability": 765,
+        "yOneProbability": 280,
+        "maxCoordinateRounding": 1e-06
+      }
+    },
+    {
+      "check": "toy-amount-total-path-glyphs-dark",
+      "passed": true,
+      "detail": {
+        "paths": 360,
+        "pathsPerGlyph": 6,
+        "moleculeGlyphs": 60
+      }
+    },
+    {
+      "check": "toy-amount-glyph-census-dark",
+      "passed": true,
+      "detail": {
+        "total": {
+          "A": 20,
+          "B": 40
+        },
+        "tumorAttributed": {
+          "A": 4,
+          "B": 4
+        },
+        "background": {
+          "A": 16,
+          "B": 36
+        }
+      }
+    },
+    {
+      "check": "timeline-scheduled-draws-dark",
+      "passed": true,
+      "detail": {
+        "rows": 6,
+        "drawsEach": 7,
+        "lastDrawCoveredByRecurrenceGlyph": true
+      }
+    },
+    {
+      "check": "timeline-observed-gaps-dark",
+      "passed": true,
+      "detail": {
+        "gapsMonths": [
+          2.0,
+          4.0,
+          6.0,
+          8.0
+        ],
+        "allEventsMonth": 12,
+        "firstPositiveMonths": [
+          10.0,
+          8.0,
+          6.0,
+          4.0
+        ],
+        "excludedRows": [
+          "E",
+          "F"
+        ]
+      }
+    },
+    {
+      "check": "timeline-selected-median-dark",
+      "passed": true,
+      "detail": {
+        "selectedN": 4,
+        "totalN": 6,
+        "medianMonths": 5
+      }
+    },
+    {
+      "check": "constant-concentration-and-changing-share",
+      "passed": true,
+      "detail": {
+        "concentrationEach": 4,
+        "volumeEachML": 1,
+        "shareRatio": 0.5,
+        "notClinicalConversion": true
+      }
+    },
+    {
+      "check": "yield-alone-no-origin",
+      "passed": true,
+      "detail": {
+        "totalYieldRatio": 2,
+        "tumorAttributedQuantity": "unmeasured",
+        "tumorFoldChange": "not identifiable"
+      }
+    },
+    {
+      "check": "same-quantity-ppm-rescaling",
+      "passed": true,
+      "detail": {
+        "variantAlleleFractionPercent": 0.01,
+        "variantAllelePPM": 100,
+        "notTumorFractionOrConcentration": true
+      }
+    },
+    {
+      "check": "theme-visible-text-average-one-can-be-zero-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 30
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-average-one-can-be-zero-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-cfdna-vs-ctdna-comparison-pool-and-source-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 22
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-cfdna-vs-ctdna-comparison-pool-and-source-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-ctdna-concentration-and-background-fractions-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 22
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-ctdna-concentration-and-background-fractions-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-marker-recovery-and-free-dna-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 14
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-marker-recovery-and-free-dna-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-measured-features-model-inference-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 12
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-measured-features-model-inference-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-plasma-variant-and-parallel-source-comparisons-b11-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 22
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-plasma-variant-and-parallel-source-comparisons-b11-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-six-person-sampling-timelines-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 23
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-six-person-sampling-timelines-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    },
+    {
+      "check": "theme-visible-text-tumor-informed-mrd-assay-comparison-reference-routes-v1",
+      "passed": true,
+      "detail": {
+        "textElements": 16
+      }
+    },
+    {
+      "check": "theme-selected-coordinate-geometry-tumor-informed-mrd-assay-comparison-reference-routes-v1",
+      "passed": true,
+      "detail": {
+        "paintAndMetadataExcluded": true,
+        "notAContrastAssessment": true
+      }
+    }
+  ],
+  "independentChecks": 44,
+  "fictionalPremiseChecksOnly": true,
+  "sourceAuthorCodeExecuted": false,
+  "embeddedRendererReproduced": false,
+  "empiricalPerformanceAdopted": false,
+  "themeChecks": [
+    {
+      "family": "average-one-can-be-zero-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "cfdna-vs-ctdna-comparison-pool-and-source-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "ctdna-concentration-and-background-fractions-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "marker-recovery-and-free-dna-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "measured-features-model-inference-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "plasma-variant-and-parallel-source-comparisons-b11-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "six-person-sampling-timelines-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "tumor-informed-mrd-assay-comparison-reference-routes-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    }
+  ],
+  "visualNotes": [
+    {
+      "family": "marker-recovery-and-free-dna-v1",
+      "severity": "minor",
+      "finding": "Qualifying-cells text sits close to the lower-left card edge in both native renders; not visibly clipped."
+    },
+    {
+      "family": "tumor-informed-mrd-assay-comparison-reference-routes-v1",
+      "severity": "minor",
+      "finding": "Gray predefined-feature card has weak or invisible decorative horizontal strokes in the dark native render; scientific text remains legible. No measured contrast/browser acceptance."
+    }
+  ]
+}

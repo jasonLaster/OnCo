@@ -1,0 +1,635 @@
+{
+  "dataCommit": {
+    "head": "4e103b1725eb0a889991b9fac003a264a2a77c9d",
+    "base": "9f1b110ea7d4c8e86791c971e167da546e19d244",
+    "branch": "codex/systematic-education-audit",
+    "committedFiles": [
+      "src/data/terms-jargon.ts",
+      "src/data/terms.ts",
+      "src/data/mechanisms.ts",
+      "src/data/frontier.ts",
+      "src/data/technologies.ts",
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-a.ts",
+      "src/data/simple/part-o.ts"
+    ],
+    "allCommittedDataBytesMatchFullGateInputs": true,
+    "canonicalOwnersChanged": 5,
+    "canonicalFieldsChanged": 11,
+    "newRecords": 0,
+    "newRegistrations": 0,
+    "shortConsumerValuesChanged": 11,
+    "actualEffectiveEnglishFallbackChanges": 7,
+    "DOIRegistryEntriesAdded": 0,
+    "peerFieldsEdited": 0,
+    "allUndeclaredOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "declaredDateChanges": 5,
+    "postGateDataEdits": false,
+    "pushed": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "plan": {
+    "baseCommit": "9f1b110ea7d4c8e86791c971e167da546e19d244",
+    "inventorySHA256": "415c5136d450a6037e6a8e22bb0918549d6ece4d8e2a5e199fbbc758f191d887",
+    "expectedFiles": [
+      "src/data/terms-jargon.ts",
+      "src/data/terms.ts",
+      "src/data/mechanisms.ts",
+      "src/data/frontier.ts",
+      "src/data/technologies.ts",
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-a.ts",
+      "src/data/simple/part-o.ts"
+    ],
+    "expectedOwnerIds": [
+      "cfdna",
+      "ctdna",
+      "clonal-haematopoiesis",
+      "fragmentomics",
+      "cfdna-methylation-testing"
+    ],
+    "changes": [
+      {
+        "recordId": "cfdna",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Source classes: cfDNA is DNA outside intact cells in a sample, and ctDNA is the tumour-derived part of that pool, so the two are related materials and not rival tests. In healthy donors a methylation atlas of 25 tissues and cell types attributed plasma cfDNA to white blood cells (55%), erythrocyte progenitors (30%), vascular endothelial cells (10%) and hepatocytes (1%) (Moss 2018). A tumour adds DNA only when it contributes, and the tumour share may be small or absent in the sample drawn even when cancer exists elsewhere.",
+          "Scale: plasma DNA fragments show a pattern reminiscent of nuclease-cleaved nucleosomes with a peak at 166 base pairs (Lo 2010, in maternal plasma), and tumour-derived fragments are enriched at 90 to 150 base pairs (Mouliere 2018). One assay input in a breast-cancer comparison was 4,500 amplifiable copies, about 15 nanograms (Santonja 2023), and at about 3.3 picograms per haploid genome copy 1 nanogram is roughly 300 copies (arithmetic from genome size). In a fictional single-locus model with 4,500 amplifiable opportunities and target-allele probability 1 in 100,000, the expected target count is 0.045. The target-allele probability is not automatically a tumour-DNA fraction: copy number, variant multiplicity and clone representation matter.",
+          "Yield is not origin: in a fictional experiment equal 1 mL plasma aliquots give 2 and 4 nanograms of cfDNA and no tumour-attributed signal is reported. Total DNA doubled, but tumour fraction and any tumour-DNA fold change cannot be calculated because tumour attribution was not measured. A fragment's source needs evidence such as paired white-blood-cell and tumour sequencing (Razavi 2019), and a variant seen in plasma is not automatically tumour-derived.",
+          "Method card: measures selected features of plasma DNA by a stated sequencing or molecular method, from a finite plasma aliquot that testing consumes. Output is detected or not detected, variant fractions, molecule concentrations or model estimates, each with its own unit. It cannot give an all-body cell count, lesion location, viability or treatment benefit, and validity belongs to the exact specimen, assay version and intended use.",
+          "Collection conditions can change the mixture before testing: blood-cell breakdown adds genomic DNA and can dilute a tumour fraction. The NCI biospecimen practices document, revised February 2025, prefers plasma to serum. Its protocol recommends EDTA, accepts acid citrate dextrose, and advises avoiding heparin and citrate; the literature-summary section separately reports results with several anticoagulants when processing was immediate. For EDTA blood the protocol prefers centrifugation within 2 hours and accepts up to 4 hours at room temperature or 24 hours at 4 degrees Celsius; it recommends stabilising tubes for anticipated delays over 2 hours. These are recommendations for that specimen workflow, not a universal acceptance rule for every assay. Extraction and library preparation then retain only some available molecules, so the volume drawn is not the volume evaluated.",
+          "Reading an assay report starts with the specimen and collection date, the plasma volume actually evaluated, DNA quality and recovery, origin checks, and the rule that turns a signal into a call. Low shedding, damaged input or failed quality controls can limit interpretation; a failed assay is a separate result from no qualifying signal. Genotyping, response monitoring and residual-disease detection are different intended uses. In its November 2024 drug-development guidance, FDA asks for validation of the complete workflow, representative clinical samples, the input range and prespecified calling cut-offs; validation of one use does not establish another.",
+          "A useful result ledger keeps six questions together: when the sample was collected and where that date sits relative to treatment or surgery; the assay and version; the specimen, evaluated input and quality qualifications; the reported state, including detected, not detected, indeterminate or failed; the quantity, unit and numerical qualifications; and the applicable detection and quantitation criteria. Keep the report-release date separately. Two reports arriving together may describe different biological moments, and an invalid sample or failed reference build is not a negative plasma result.",
+          "In a fictional comparison, one assay reports not detected and another reports a low detected signal. That alone does not identify an erroneous test. Compare the actual samples and collection dates, targets, input, controls and calling criteria before interpreting the disagreement. A valid negative says that the evaluated sample did not meet that method's qualifying-signal rule. It cannot distinguish every possibility: there may be no residual tumour signal, too few relevant fragments may have reached the aliquot, or the tracked features may not represent the remaining cells. This reading exercise sets no repeat-draw schedule."
+        ],
+        "after": [
+          "Source classes: cfDNA is DNA outside intact cells in a sample, and ctDNA is the tumour-derived part of that pool, so the two are related materials and not rival tests. In healthy donors a methylation atlas of 25 tissues and cell types attributed plasma cfDNA to white blood cells (55%), erythrocyte progenitors (30%), vascular endothelial cells (10%) and hepatocytes (1%) (Moss 2018). A tumour adds DNA only when it contributes, and the tumour share may be small or absent in the sample drawn even when cancer exists elsewhere.",
+          "Scale: plasma DNA fragments show a pattern reminiscent of nuclease-cleaved nucleosomes with a peak at 166 base pairs (Lo 2010, in maternal plasma), and tumour-derived fragments are enriched at 90 to 150 base pairs (Mouliere 2018). One assay input in a breast-cancer comparison was 4,500 amplifiable copies, about 15 nanograms (Santonja 2023), and at about 3.3 picograms per haploid genome copy 1 nanogram is roughly 300 copies (arithmetic from genome size). In a fictional single-locus model with 4,500 amplifiable opportunities and target-allele probability 1 in 100,000, the expected target count is 0.045. The target-allele probability is not automatically a tumour-DNA fraction: copy number, variant multiplicity and clone representation matter.",
+          "Yield is not origin: in a fictional experiment equal 1 mL plasma aliquots give 2 and 4 nanograms of cfDNA and no tumour-attributed signal is reported. Total DNA doubled, but tumour fraction and any tumour-DNA fold change cannot be calculated because tumour attribution was not measured. A fragment's source needs evidence such as paired white-blood-cell and tumour sequencing (Razavi 2019), and a variant seen in plasma is not automatically tumour-derived.",
+          "Method card: measures selected features of plasma DNA by a stated sequencing or molecular method, from a finite plasma aliquot that testing consumes. Output is detected or not detected, variant fractions, molecule concentrations or model estimates, each with its own unit. It cannot give an all-body cell count, lesion location, viability or treatment benefit, and validity belongs to the exact specimen, assay version and intended use.",
+          "Collection conditions can change the mixture before testing: blood-cell breakdown adds genomic DNA and can dilute a tumour fraction. The NCI biospecimen practices document, revised February 2025, prefers plasma to serum. Its protocol recommends EDTA, accepts acid citrate dextrose, and advises avoiding heparin and citrate; the literature-summary section separately reports results with several anticoagulants when processing was immediate. For EDTA blood the protocol prefers centrifugation within 2 hours and accepts up to 4 hours at room temperature or 24 hours at 4 degrees Celsius; it recommends stabilising tubes for anticipated delays over 2 hours. These are recommendations for that specimen workflow, not a universal acceptance rule for every assay. Extraction and library preparation then retain only some available molecules, so the volume drawn is not the volume evaluated.",
+          "Reading an assay report starts with the specimen and collection date, the plasma volume actually evaluated, DNA quality and recovery, origin checks, and the rule that turns a signal into a call. Low shedding, damaged input or failed quality controls can limit interpretation; a failed assay is a separate result from no qualifying signal. Genotyping, response monitoring and residual-disease detection are different intended uses. In its November 2024 drug-development guidance, FDA asks for validation of the complete workflow, representative clinical samples, the input range and prespecified calling cut-offs; validation of one use does not establish another.",
+          "A useful result ledger keeps six questions together: when the sample was collected and where that date sits relative to treatment or surgery; the assay and version; the specimen, evaluated input and quality qualifications; the reported state, including detected, not detected, indeterminate or failed; the quantity, unit and numerical qualifications; and the applicable detection and quantitation criteria. Keep the report-release date separately. Two reports arriving together may describe different biological moments, and an invalid sample or failed reference build is not a negative plasma result.",
+          "In a fictional comparison, one assay reports not detected and another reports a low detected signal. That alone does not identify an erroneous test. Compare the actual samples and collection dates, targets, input, controls and calling criteria before interpreting the disagreement. A valid negative says that the evaluated sample did not meet that method's qualifying-signal rule. It cannot distinguish every possibility: there may be no residual tumour signal, too few relevant fragments may have reached the aliquot, or the tracked features may not represent the remaining cells. This reading exercise sets no repeat-draw schedule.",
+          "In a fictional source-assignment task, one recovered cfDNA fragment has no established origin. Tumour-derived and known non-tumour source classes can be defined without assigning that fragment to either one. Unknown origin must remain unknown, rather than being placed in the non-tumour class by default. A real plasma sequence and a recovered DNA amount do not settle its source. Paired blood-cell and tumour comparisons can supply evidence, but retain each specimen's sampling, timing, coverage and sensitivity limits. A blood-cell match supports a contribution without proving that every possible tumour contribution is absent. These source classes and the chosen symbols in a sketch are not measured proportions or a living-cell census."
+        ],
+        "beforeSHA256": "6d141dfd1f3a15cdede70e47e6f1e73c245b7a4dcc4e40bc8433828ce1b89c4d",
+        "afterSHA256": "386ac7446be6d1dc4c18c884b34535f476efed53fb2b2cf1abf8c43882791290",
+        "reason": "Make the unknown-fragment task self-contained and keep source classes distinct from observed origin, without copying artwork or assigning a tumour percentage.",
+        "sourceIds": [
+          "razavi",
+          "nci-cfdna",
+          "declared-fictional-premises"
+        ]
+      },
+      {
+        "recordId": "cfdna",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cell-free_fetal_DNA"
+          },
+          {
+            "label": "Comprehensive human cell-type methylation atlas reveals origins of circulating cell-free DNA in health and disease",
+            "url": "https://doi.org/10.1038/s41467-018-07466-6"
+          },
+          {
+            "label": "Maternal Plasma DNA Sequencing Reveals the Genome-Wide Genetic and Mutational Profile of the Fetus",
+            "url": "https://doi.org/10.1126/scitranslmed.3001720"
+          },
+          {
+            "label": "Enhanced detection of circulating tumor DNA by fragment size analysis",
+            "url": "https://doi.org/10.1126/scitranslmed.aat4921"
+          },
+          {
+            "label": "Comparison of tumor‐informed and tumor‐naïve sequencing assays for ctDNA detection in breast cancer",
+            "url": "https://doi.org/10.15252/emmm.202216505"
+          },
+          {
+            "label": "NCI: cfDNA biospecimen collection and processing (revision February 2025)",
+            "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/bebp/bebp-cfdna.pdf"
+          },
+          {
+            "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+            "url": "https://www.fda.gov/media/183874/download"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cell-free_fetal_DNA"
+          },
+          {
+            "label": "Comprehensive human cell-type methylation atlas reveals origins of circulating cell-free DNA in health and disease",
+            "url": "https://doi.org/10.1038/s41467-018-07466-6"
+          },
+          {
+            "label": "Maternal Plasma DNA Sequencing Reveals the Genome-Wide Genetic and Mutational Profile of the Fetus",
+            "url": "https://doi.org/10.1126/scitranslmed.3001720"
+          },
+          {
+            "label": "Enhanced detection of circulating tumor DNA by fragment size analysis",
+            "url": "https://doi.org/10.1126/scitranslmed.aat4921"
+          },
+          {
+            "label": "Comparison of tumor‐informed and tumor‐naïve sequencing assays for ctDNA detection in breast cancer",
+            "url": "https://doi.org/10.15252/emmm.202216505"
+          },
+          {
+            "label": "NCI: cfDNA biospecimen collection and processing (revision February 2025)",
+            "url": "https://dctd.cancer.gov/data-tools-biospecimens/biospecimens-biobanks/resources/best-practices/bebp/bebp-cfdna.pdf"
+          },
+          {
+            "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+            "url": "https://www.fda.gov/media/183874/download"
+          },
+          {
+            "label": "Razavi et al.: paired plasma, blood-cell and tumour source comparisons (2019)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31768066/"
+          }
+        ],
+        "beforeSHA256": "5a14d63ff54281393c3d87474e80df6de9ff79312c197471f2b5ea34746b213d",
+        "afterSHA256": "759ff144be1ecc09809c7ea7671d519b3298813fb6f735732a53d2a63b543057",
+        "reason": "Attach the resolved and read primary source for the attribution examples already named by the owner.",
+        "sourceIds": [
+          "razavi"
+        ]
+      },
+      {
+        "recordId": "ctdna",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Detection depends on stage and tumour type: with digital PCR-based methods in 640 patients, ctDNA was found in more than 75% of people with advanced pancreatic, ovarian, colorectal, bladder, gastro-oesophageal, breast, melanoma, hepatocellular and head and neck cancers, and in fewer than 50% of primary brain, renal, prostate or thyroid cancers. In localised disease it was found in 73% of colorectal, 57% of gastro-oesophageal, 48% of pancreatic and 50% of breast adenocarcinomas, and it was often present in people with no detectable circulating tumour cells (Bettegowda 2014). The assay, specimen and population are part of each figure.",
+          "ctDNA is a subset of cell-free DNA, and not every plasma variant is tumour-derived: in paired plasma and white-blood-cell sequencing, 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 people without cancer had features of clonal haematopoiesis (Razavi 2019). A ctDNA result is also a quantity with a unit (molecules per millilitre, a fraction, or a call), and the same number means different things under each.",
+          "Lung cancer: plasma genotyping at diagnosis is non-inferior to tissue for finding a guideline biomarker (27.3% against 21.3% in 282 patients), has 100% positive predictive value for the alterations with approved drugs, returns in 9 days against 15, and raises detection by 48% when added to tissue (Leighl 2019). Clinical sensitivity against tissue is 80%, so a negative plasma result rules nothing out and the guideline permits plasma to rule in only (Lindeman 2018). Serial plasma after starting treatment also separates the patients whose resistant clone was already present, within three weeks (Oxnard 2018)."
+        ],
+        "after": [
+          "Detection depends on stage and tumour type: with digital PCR-based methods in 640 patients, ctDNA was found in more than 75% of people with advanced pancreatic, ovarian, colorectal, bladder, gastro-oesophageal, breast, melanoma, hepatocellular and head and neck cancers, and in fewer than 50% of primary brain, renal, prostate or thyroid cancers. In localised disease it was found in 73% of colorectal, 57% of gastro-oesophageal, 48% of pancreatic and 50% of breast adenocarcinomas, and it was often present in people with no detectable circulating tumour cells (Bettegowda 2014). The assay, specimen and population are part of each figure.",
+          "ctDNA is a subset of cell-free DNA, and not every plasma variant is tumour-derived. Razavi's 2019 study enrolled 124 people with metastatic cancer and 47 controls without cancer. In the Results source analysis, 918 of 1,727 cfDNA mutations (53.2%) in non-hypermutated cancer samples and 297 of 364 (81.6%) in controls were also found in white blood cells and interpreted as likely clonal haematopoiesis. These are mutation-level fractions in those analysis groups, not percentages of all patients or all possible cancer samples. A ctDNA result is also a quantity with a unit, such as molecules per millilitre, a fraction or a call; the same printed number means different things under each.",
+          "Lung cancer: plasma genotyping at diagnosis is non-inferior to tissue for finding a guideline biomarker (27.3% against 21.3% in 282 patients), has 100% positive predictive value for the alterations with approved drugs, returns in 9 days against 15, and raises detection by 48% when added to tissue (Leighl 2019). Clinical sensitivity against tissue is 80%, so a negative plasma result rules nothing out and the guideline permits plasma to rule in only (Lindeman 2018). Serial plasma after starting treatment also separates the patients whose resistant clone was already present, within three weeks (Oxnard 2018)."
+        ],
+        "beforeSHA256": "8334fcd05275961c54ce9e0212ecec0784fcabe51043044e9f2e2c546e9b361c",
+        "afterSHA256": "91d99f44bfe7479125ad9ae679e116c29eccadbdb3fc73215d6c0bc160017816",
+        "reason": "Qualify the 53.2-percent denominator from the primary Results while preserving the cohort sizes, control fraction and quantity distinction; retain the runtime lung supplement exactly.",
+        "sourceIds": [
+          "razavi"
+        ]
+      },
+      {
+        "recordId": "clonal-haematopoiesis",
+        "kind": "pathway",
+        "field": "notes",
+        "before": [
+          "Leading programmes: Ebert (Dana-Farber/Broad) and Jaiswal (Stanford) who defined CHIP; Levine and Bolton (MSK) on therapy-related clonal haematopoiesis.",
+          "Clonal haematopoiesis (CH) is the broader phenomenon of blood-cell clones carrying acquired changes. In the 2022 WHO myeloid classification, CHIP requires a somatic mutation in a myeloid-malignancy-associated gene at a variant allele fraction of at least 2%, or at least 4% for X-linked gene mutations in males, without a diagnosed haematological disorder or unexplained cytopenia (Khoury 2022). Persistent unexplained cytopenia changes the classification question. These are criteria for a named category, not a rule that every smaller blood-cell clone is absent, tumour-derived or a sequencing error.",
+          "Which genes: in blood-cell exomes from 17,182 people most clonal variants fell in DNMT3A, TET2 and ASXL1, were rare before age 40, and were seen in 9.5% of people aged 70 to 79 (Jaiswal 2014). ASXL1 mutations were enriched in current or former smokers, and radiation, platinum and topoisomerase II inhibitors selected for DNA-damage-response genes (TP53, PPM1D, CHEK2), with sequential samples showing those clones outgrowing others after exposure (Bolton 2020). In 8,810 people with non-haematological cancers, PPM1D and TP53 mutations were associated with prior chemotherapy, and clonal haematopoiesis was found in 25% (Coombs 2017).",
+          "Source attribution in plasma, interpretation rule: TP53 is a tumour gene and also a therapy-selected blood-cell gene, so a TP53 variant in plasma after chemotherapy can come from either compartment. Matched white-blood-cell DNA and the tumour's variant list, where available, help assess its origin; some variants remain ambiguous. In Razavi's paired sequencing 53.2% of cfDNA mutations in 124 people with metastatic cancer and 81.6% in 47 controls without cancer had features of clonal haematopoiesis, and variants that could not be separated from white-blood-cell DNA kept an explicit ambiguous category, so subtracting every blood match is not a complete attribution method.",
+          "Fictional example: a plasma assay detects a variant that sensitive matched blood-cell sequencing finds at 0.8% VAF. The blood result supports a blood-cell contribution even below the 2% cut-off, but it does not make the variant CHIP or exclude a tumour contribution, because tumour evidence, shared variants and each method's limits still apply. Matched sequencing has its own gene coverage, depth and detection rules, so a clone below its sensitivity can stay unseen, and a clone finding is not a leukaemia diagnosis or a solid-tumour treatment instruction.",
+          "Reading the figures: a variant allele fraction counts variant alleles among the alleles evaluated and is not automatically the percentage of cells. Acquired (somatic) means not inherited and does not mean malignant. There is no age at which a plasma variant can simply be dismissed. Sequential samples show clones with DNA-damage-response mutations outgrowing others after radiation, platinum or topoisomerase II inhibitor exposure (Bolton 2020), which is selection of clones that can already be present and does not mean every new detection was caused by treatment.",
+          "For an origin comparison, keep plasma, extracted blood-cell DNA and any separately sampled tumour clearly identified, with collection dates relative to treatment. The report needs the variants, coverage, allele fractions, detection limits, identity and contamination checks, and any unresolved source assignment. A clone result alone does not locate a solid-tumour lesion, predict whether that particular clone will progress, or choose a solid-tumour drug. A later blood-cell comparator can help, but it is not a time-matched measurement of the earlier sample. A clone-classification rule or origin filter does not itself establish regulatory approval or clinical validation of the sequencing method.",
+          "A gene name does not settle a plasma variant's source. Shah and colleagues found TP53 to be the most frequently mutated gene in their 2012 primary triple-negative breast-cancer cohort; Bolton's 2020 study found that radiation, platinum and topoisomerase II inhibitor exposure selected blood-cell clones with TP53 and other DNA-damage-response mutations. Those are different populations and compartments. A tumour reference and a matched blood-cell comparison help answer different questions, each within its own coverage and sensitivity. A newly confirmed tumour alteration can also reflect evolution rather than a blood-cell clone or technical noise.",
+          "Prostate cancer: this is where clonal haematopoiesis does concrete harm. In 69 men with advanced prostate cancer, clonal haematopoiesis variants at 2% or more were present in plasma from 13, 19%, and 7, 10%, had one in a gene used to decide PARP inhibitor candidacy, most often ATM, accounting for almost half of all somatic DNA repair variants detected. A paired whole-blood control distinguishes them (Jensen 2021)."
+        ],
+        "after": [
+          "Leading programmes: Ebert (Dana-Farber/Broad) and Jaiswal (Stanford) who defined CHIP; Levine and Bolton (MSK) on therapy-related clonal haematopoiesis.",
+          "Clonal haematopoiesis (CH) is the broader phenomenon of blood-cell clones carrying acquired changes. In the 2022 WHO myeloid classification, CHIP requires a somatic mutation in a myeloid-malignancy-associated gene at a variant allele fraction of at least 2%, or at least 4% for X-linked gene mutations in males, without a diagnosed haematological disorder or unexplained cytopenia (Khoury 2022). Persistent unexplained cytopenia changes the classification question. These are criteria for a named category, not a rule that every smaller blood-cell clone is absent, tumour-derived or a sequencing error.",
+          "Which genes: in blood-cell exomes from 17,182 people most clonal variants fell in DNMT3A, TET2 and ASXL1, were rare before age 40, and were seen in 9.5% of people aged 70 to 79 (Jaiswal 2014). ASXL1 mutations were enriched in current or former smokers, and radiation, platinum and topoisomerase II inhibitors selected for DNA-damage-response genes (TP53, PPM1D, CHEK2), with sequential samples showing those clones outgrowing others after exposure (Bolton 2020). In 8,810 people with non-haematological cancers, PPM1D and TP53 mutations were associated with prior chemotherapy, and clonal haematopoiesis was found in 25% (Coombs 2017).",
+          "A TP53 variant in plasma after chemotherapy can come from a tumour or from a therapy-selected blood-cell clone. Matched white-blood-cell DNA and the tumour's variant list, where available, help assess origin, but some variants remain ambiguous. Razavi's 2019 study enrolled 124 people with metastatic cancer and 47 controls. In its Results source analysis, 918 of 1,727 cfDNA mutations (53.2%) in non-hypermutated cancer samples and 297 of 364 (81.6%) in controls were blood-cell matched and interpreted as likely clonal haematopoiesis. Those are mutation-level fractions in the stated analysis groups. The methods also kept an ambiguous category when sequencing depth could not establish different allele frequencies in plasma and blood cells, even without positive evidence of the variant in blood cells. Subtracting every blood match is not a complete attribution method.",
+          "Fictional example: a plasma assay detects a variant that sensitive matched blood-cell sequencing finds at 0.8% VAF. The blood result supports a blood-cell contribution even below the 2% cut-off, but it does not make the variant CHIP or exclude a tumour contribution, because tumour evidence, shared variants and each method's limits still apply. Matched sequencing has its own gene coverage, depth and detection rules, so a clone below its sensitivity can stay unseen, and a clone finding is not a leukaemia diagnosis or a solid-tumour treatment instruction.",
+          "Reading the figures: a variant allele fraction counts variant alleles among the alleles evaluated and is not automatically the percentage of cells. Acquired (somatic) means not inherited and does not mean malignant. There is no age at which a plasma variant can simply be dismissed. Sequential samples show clones with DNA-damage-response mutations outgrowing others after radiation, platinum or topoisomerase II inhibitor exposure (Bolton 2020), which is selection of clones that can already be present and does not mean every new detection was caused by treatment.",
+          "For an origin comparison, keep plasma, extracted blood-cell DNA and any separately sampled tumour clearly identified, with collection dates relative to treatment. The report needs the variants, coverage, allele fractions, detection limits, identity and contamination checks, and any unresolved source assignment. A clone result alone does not locate a solid-tumour lesion, predict whether that particular clone will progress, or choose a solid-tumour drug. A later blood-cell comparator can help, but it is not a time-matched measurement of the earlier sample. A clone-classification rule or origin filter does not itself establish regulatory approval or clinical validation of the sequencing method.",
+          "A gene name does not settle a plasma variant's source. Shah and colleagues found TP53 to be the most frequently mutated gene in their 2012 primary triple-negative breast-cancer cohort; Bolton's 2020 study found that radiation, platinum and topoisomerase II inhibitor exposure selected blood-cell clones with TP53 and other DNA-damage-response mutations. Those are different populations and compartments. A tumour reference and a matched blood-cell comparison help answer different questions, each within its own coverage and sensitivity. A newly confirmed tumour alteration can also reflect evolution rather than a blood-cell clone or technical noise.",
+          "In a separate fictional comparison, the same generic variant V is detected in plasma and extracted blood-cell DNA but not detected in sampled tumour material. Blood-cell contribution is supported. Tumour non-detection is limited by the sampled region, collection time, coverage and detection sensitivity; shared variants can leave some attribution unresolved. The example supplies neither a clinical cutoff nor a risk forecast, and a source clue alone does not establish a formal CHIP diagnosis.",
+          "Prostate cancer: this is where clonal haematopoiesis does concrete harm. In 69 men with advanced prostate cancer, clonal haematopoiesis variants at 2% or more were present in plasma from 13, 19%, and 7, 10%, had one in a gene used to decide PARP inhibitor candidacy, most often ATM, accounting for almost half of all somatic DNA repair variants detected. A paired whole-blood control distinguishes them (Jensen 2021)."
+        ],
+        "beforeSHA256": "b5e7c203aefda36aaefb8e26ada72fb86d00688f4c6db617a6f6ef8dd00bc45c",
+        "afterSHA256": "a2a1957cf6966cf67f3267627777361e6daa163cf3d247cfe4d8911b5e50f9de",
+        "reason": "Correct the primary source-analysis denominator and add the exact three-compartment V example, preserving all other notes and the runtime prostate supplement.",
+        "sourceIds": [
+          "razavi",
+          "khoury",
+          "declared-fictional-premises"
+        ]
+      },
+      {
+        "recordId": "fragmentomics",
+        "kind": "technology",
+        "field": "tldr",
+        "before": "Fragmentomics reads the sizes and positions of DNA fragments in blood, not the mutations. Cancer cells die messily and leave a recognisable fragmentation pattern.",
+        "after": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "beforeSHA256": "a16e628d74cb9263800ac1cad408f47b7f52a5616f74217233f639515ff8aafd",
+        "afterSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Replace the unsupported unique cancer-death shorthand with measured features and qualified model inference. Other commercial and comparative assertions are retained at their old scope.",
+        "sourceIds": [
+          "snyder",
+          "cristiano",
+          "van-der-pol"
+        ]
+      },
+      {
+        "recordId": "cfdna-methylation-testing",
+        "kind": "technology",
+        "field": "tldr",
+        "before": "Blood tests that read chemical marks on fragments of DNA shed by tumours; the marks tell cancer DNA from normal DNA and hint at where the cancer is.",
+        "after": "These tests measure chemical marks on cell-free DNA. Models compare patterns with reference samples; a mark or an inferred tissue source alone does not prove cancer.",
+        "beforeSHA256": "e8b48532e573f8d05e1273efd1f0fcd827c0750575eb0fd0ebe417be97c3695f",
+        "afterSHA256": "47a9141ed2ccc7213ae19c39b5b49d457ff4f546fcfd420852600e75c9374712",
+        "reason": "Keep normal-source methylation and reference-dependent inference explicit in the short definition, consistent with the existing qualified notes.",
+        "sourceIds": [
+          "moss"
+        ]
+      },
+      {
+        "recordId": "cfdna",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-12",
+        "after": "2026-11-15",
+        "beforeSHA256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date this selected source and premise check; retained clinical/commercial assertions outside the selected clauses are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "ctdna",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date this selected source and premise check; retained clinical/commercial assertions outside the selected clauses are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "clonal-haematopoiesis",
+        "kind": "pathway",
+        "field": "asOf",
+        "before": "2026-11-12",
+        "after": "2026-11-15",
+        "beforeSHA256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date this selected source and premise check; retained clinical/commercial assertions outside the selected clauses are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "fragmentomics",
+        "kind": "technology",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date this selected source and premise check; retained clinical/commercial assertions outside the selected clauses are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "cfdna-methylation-testing",
+        "kind": "technology",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date this selected source and premise check; retained clinical/commercial assertions outside the selected clauses are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      }
+    ],
+    "canonicalFields": 11,
+    "newRecords": 0,
+    "peerEdits": 0,
+    "registrationEdits": 0,
+    "aliasesMoved": 0,
+    "ordinaryLessonGradesReplaced": 0,
+    "expectedCanonicalFiles": [
+      "src/data/terms-jargon.ts",
+      "src/data/terms.ts",
+      "src/data/mechanisms.ts",
+      "src/data/frontier.ts",
+      "src/data/technologies.ts"
+    ],
+    "shortSummaryEntriesChanged": 11,
+    "shortSummaryChangePlan": "short-summary-changes.json",
+    "totalDataValueChanges": 22
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cfdna-methylation-testing",
+      "ctdna",
+      "fragmentomics",
+      "clonal-haematopoiesis",
+      "cfdna"
+    ],
+    "changedOwnerCount": 5,
+    "changedCanonicalFields": 11,
+    "selectedSchemasParse": 11,
+    "allUnchangedOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "unrelatedGraphRecordsPreserved": 23086,
+    "peerFieldsEdited": 0,
+    "newRecords": 0
+  },
+  "storedShortSummaryChanges": {
+    "changes": [
+      {
+        "id": "fragmentomics",
+        "language": "es",
+        "file": "src/data/i18n/es.ts",
+        "table": "tldr_es",
+        "before": "Leer los tamaños y posiciones de los fragmentos de ADN en la sangre, no las mutaciones. Las células cancerosas mueren de forma desordenada y dejan un patrón reconocible.",
+        "after": "La fragmentómica mide las longitudes, los extremos y las posiciones genómicas de los fragmentos de ADN de una muestra. Los patrones pueden orientar un modelo sobre su origen; no identifican cada fragmento como canceroso.",
+        "beforeSHA256": "52c5f9e36bbc728c544128555f2a7c18a245901ed984af754007d28c0d2beed0",
+        "afterSHA256": "ab3d180b0fedb38bd0b90693d049cb99fb9f366e58a9516466e41200bd4d6ac9",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "table": "tldr_zh",
+        "before": "读取血液中DNA片段的大小和位置而非突变。癌细胞死得杂乱，留下可识别的碎片模式。",
+        "after": "片段组学测量样本中DNA片段的长度、末端及基因组位置。模式可帮助模型推断其来源，但不能证明每个片段都来自癌细胞。",
+        "beforeSHA256": "9e05c1b3fb3ed5bc8cb4a7d78456ba83f8ea42e558f17361dbc3cae5d6796817",
+        "afterSHA256": "8ebc90f332ee6d1ca57079362adb0f31cfe9e5a06211ecd8f1df879a1bdd2e49",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "cfdna-methylation-testing",
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "table": "tldr_zh",
+        "before": "读取肿瘤脱落DNA片段上化学标记的血液检测；这些标记可区分癌症DNA与正常DNA，并提示癌症所在部位。",
+        "after": "这类检测测量游离DNA上的化学标记。模型将标记模式与参考样本比较；单个标记或推断出的组织来源本身不能证明癌症。",
+        "beforeSHA256": "7e779771a7c28c41da1de42979ffdab44bcde7a7b29407e43ffc8d44d5d8f8c5",
+        "afterSHA256": "56f2df7c4ae7c0347050e7103950afd4e2724380027a6296d821fb537b5b0200",
+        "canonicalSourceTLDR": "These tests measure chemical marks on cell-free DNA. Models compare patterns with reference samples; a mark or an inferred tissue source alone does not prove cancer.",
+        "canonicalSourceTLDRSHA256": "47a9141ed2ccc7213ae19c39b5b49d457ff4f546fcfd420852600e75c9374712",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "pt",
+        "file": "src/data/i18n/pt.ts",
+        "table": "tldr_pt",
+        "before": "Ler os tamanhos e posições dos fragmentos de DNA no sangue, não as mutações. Células cancerosas morrem de forma desordenada e deixam um padrão reconhecível.",
+        "after": "A fragmentômica mede o comprimento, as extremidades e as posições genômicas dos fragmentos de DNA em uma amostra. Os padrões podem ajudar um modelo a estimar sua origem; não mostram que cada fragmento veio de um câncer.",
+        "beforeSHA256": "7cdbeac7793cd2b9e20fa2fcef3cfae2941b3da818c75d43f6c5544d54bc3a2c",
+        "afterSHA256": "8b805266d94bb5b31f8be52a352f45cccddb0ef2277170fc056d772f89f7418e",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "hi",
+        "file": "src/data/i18n/hi.ts",
+        "table": "tldr_hi",
+        "before": "रक्त में DNA टुकड़ों के आकार और स्थान पढ़ना, म्यूटेशन नहीं। कैंसर कोशिकाएँ अव्यवस्थित रूप से मरती हैं और पहचानने योग्य विखंडन पैटर्न छोड़ती हैं।",
+        "after": "फ्रैगमेंटोमिक्स किसी नमूने में DNA के टुकड़ों की लंबाई, सिरों और जीनोम में उनकी स्थितियों को मापता है। इन पैटर्न से मॉडल उनके स्रोत का अनुमान लगा सकता है; इससे हर टुकड़ा कैंसर से आया साबित नहीं होता।",
+        "beforeSHA256": "fb8267ad530217cdc8c425e537e3b9ad37e9d4af54530327f1de140cce04ff27",
+        "afterSHA256": "8afacc1b1cd59ca207ac3f53dc934d5d83b383a7056d793a0ab5ac7d8d16d048",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "fr",
+        "file": "src/data/i18n/fr.ts",
+        "table": "tldr_fr",
+        "before": "La fragmentomique analyse la taille et la position des fragments d'ADN dans le sang, et non les mutations. Les cellules cancéreuses meurent de façon désordonnée et laissent un schéma de fragmentation reconnaissable.",
+        "after": "La fragmentomique mesure la longueur, les extrémités et les positions génomiques des fragments d'ADN d'un échantillon. Ces motifs peuvent aider un modèle à estimer leur origine ; ils n'identifient pas chaque fragment comme cancéreux.",
+        "beforeSHA256": "0aa9e8401da94c857cc09a268c2358360526ed283423cc2a4461a0e21b7dd363",
+        "afterSHA256": "0fe89ae1985fe34438674d980e038b83e3b52947723b1d8ba32a26aef24fae7f",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "de",
+        "file": "src/data/i18n/de.ts",
+        "table": "tldr_de",
+        "before": "Die Fragmentomik liest die Größe und Position von DNA-Fragmenten im Blut, nicht die Mutationen. Krebszellen sterben unordentlich ab und hinterlassen ein erkennbares Fragmentierungsmuster.",
+        "after": "Fragmentomik misst Länge, Enden und genomische Positionen von DNA-Fragmenten in einer Probe. Muster können die Herkunftsschätzung eines Modells unterstützen; sie weisen nicht jedes Fragment als Krebs-DNA aus.",
+        "beforeSHA256": "e46322b08ff8cf5bc5e77199f31ef12d3102edf7db32e697de35ecd6f45bb395",
+        "afterSHA256": "24dca333565672b1ac2e1b04c25d6c642038b87e7998fa21f672d781587ba41b",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "ja",
+        "file": "src/data/i18n/ja.ts",
+        "table": "tldr_ja",
+        "before": "フラグメントミクスは、血液中のDNA断片の大きさと位置を読み取るもので、変異を読むわけではない。がん細胞は乱雑に死ぬため、見分けやすい断片化パターンを残す。",
+        "after": "フラグメントミクスは、試料中のDNA断片の長さ、末端、ゲノム上の位置を測定します。そのパターンはモデルによる由来の推定に役立ちますが、各断片ががん由来だと特定するものではありません。",
+        "beforeSHA256": "51adc7937fd734157435608720ea97401fceca9a910bca1b677de5b79cef7873",
+        "afterSHA256": "8ac229fcf41f508e5c4bdefe4ceec7b640e85cff8573c956b5004539bdcfca80",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "ar",
+        "file": "src/data/i18n/ar.ts",
+        "table": "tldr_ar",
+        "before": "تقرأ الفراغمنتوميكس أحجام ومواقع شظايا الحمض النووي في الدم، لا الطفرات. تموت الخلايا السرطانية بطريقة غير منظمة وتترك نمط تفتت يمكن التعرف عليه.",
+        "after": "يقيس تحليل شظايا الحمض النووي أطوال الشظايا ونهاياتها ومواضعها في الجينوم داخل عينة. قد تساعد الأنماط نموذجًا على تقدير مصدرها؛ لكنها لا تثبت أن كل شظية مصدرها السرطان.",
+        "beforeSHA256": "4c5f62068de508b43528d14b0c259b026915d0265c43c7080002622f9cce11f8",
+        "afterSHA256": "6ceb296ba9bf8bf3ccf259ed44399dc6dcf47b872cf99b7cd02d59851a81b86d",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "fragmentomics",
+        "language": "simple",
+        "file": "src/data/simple/part-a.ts",
+        "table": "simpleA",
+        "before": "Reading the sizes and positions of DNA pieces in blood. Cancer cells die messily and leave a recognisable pattern.",
+        "after": "Fragmentomics measures DNA fragment lengths, ends and positions so a model can estimate their source, but those patterns do not show that every fragment came from cancer.",
+        "beforeSHA256": "edb49b2350bdddda62bab25cfd4bc881a3090a5b2936e62d9e566fefd458d8c4",
+        "afterSHA256": "4d4e49318dd4252ee987219a3c7604f9403cff55a5414a541067521dc6078f1d",
+        "canonicalSourceTLDR": "Fragmentomics measures the lengths, ends and genomic positions of DNA fragments in a sample. Patterns can inform a model's source estimate; they do not identify every fragment as cancer.",
+        "canonicalSourceTLDRSHA256": "16264216d77ce53e093fd5d661318cb167792d439befe28f5d2663dc6cddebfc",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      },
+      {
+        "id": "cfdna-methylation-testing",
+        "language": "simple",
+        "file": "src/data/simple/part-o.ts",
+        "table": "simpleO",
+        "before": "Cell-free DNA methylation tests read chemical marks on DNA fragments shed by tumours into the blood, telling cancer DNA from normal DNA and hinting at where the cancer is.",
+        "after": "These tests measure chemical marks on DNA outside cells. A model compares patterns with reference samples. A mark, or an estimated tissue source, does not by itself prove cancer.",
+        "beforeSHA256": "bb2ddfc5ee1d6193c69aa6579ff9b760d45d121fb30e6330a1873d443361f046",
+        "afterSHA256": "9e7c0243dcde5b90f23f33236ad7685bab301ded807f68a4f0d33e65bf77107e",
+        "canonicalSourceTLDR": "These tests measure chemical marks on cell-free DNA. Models compare patterns with reference samples; a mark or an inferred tissue source alone does not prove cancer.",
+        "canonicalSourceTLDRSHA256": "47a9141ed2ccc7213ae19c39b5b49d457ff4f546fcfd420852600e75c9374712",
+        "reason": "Align the existing stored short summary with the qualified measured-feature/model definition, removing unsupported cancer-specific wording. Preserve existing machine-assisted or English marks; no named-speaker or expert approval is claimed."
+      }
+    ],
+    "storedShortEntriesChanged": 11,
+    "sourceCanonicalIds": [
+      "fragmentomics",
+      "cfdna-methylation-testing"
+    ],
+    "nativeLanguageExpertAcceptance": false,
+    "namedSpeakerReviewAdded": false,
+    "longSummaryCachesChanged": false,
+    "reviewMarksChanged": false
+  },
+  "shortSummaryLengthCorrection": {
+    "recordId": "fragmentomics",
+    "language": "simple",
+    "file": "src/data/simple/part-a.ts",
+    "before": "Fragmentomics measures the length, ends and DNA positions of fragments in a sample. A model can use the patterns to estimate where the DNA came from. The pattern does not show that every fragment came from cancer.",
+    "after": "Fragmentomics measures DNA fragment lengths, ends and positions so a model can estimate their source, but those patterns do not show that every fragment came from cancer.",
+    "beforeSHA256": "0f05953efae4f90adbfd8be4e8665cccc4e541f25f9df5a7378dcaa793a865b2",
+    "afterSHA256": "4d4e49318dd4252ee987219a3c7604f9403cff55a5414a541067521dc6078f1d",
+    "beforeFileSHA256": "060110f7e082fc71de6f3598b8ac8182c77f3142bc9a7ba6c44c74e9d5c1fad5",
+    "afterFileSHA256": "4e0bbc886f01e61a4071af2b300fd9658c6282f2c9af2fb45dcfe9409270a0e3",
+    "reason": "Fix the existing simplified-summary length ratchet without changing the test or losing the source-estimation qualification.",
+    "characters": 170,
+    "recordedAtUTC": "2026-11-15T18:10:12.053689+00:00"
+  },
+  "unappliedPeerProposals": {
+    "applied": false,
+    "credit": 0,
+    "proposals": [
+      {
+        "id": "P54-P01",
+        "recordId": "finite-molecule-sampling",
+        "kind": "term",
+        "snapshot": "pr-371.json",
+        "head": "777023cf804d6a129cb8ddfac4c6f4aedf85e529",
+        "beforeRecordSHA256": "48f824a9663768c7c9a92502a75ec0c14172af94eb2abdd1419f143b215c8e1c",
+        "reason": "Existing PR371 owner is absent from the current registered root; keep the fixed-volume and count-picture qualifiers with its subject rather than create a rival record.",
+        "sourceIds": [
+          "nist-poisson",
+          "newman",
+          "fda-ctdna-2024",
+          "declared-fictional-premises"
+        ],
+        "fields": [
+          {
+            "field": "notes",
+            "before": [
+              "For independent random target-molecule counts with Poisson mean lambda, the chance of none is exp(-lambda). At lambda = 1 this is 36.8%, so an average of one does not guarantee a molecule. In a fictional model, an evaluated aliquot supplies 4,500 independent amplifiable opportunities at one locus, each with a target-allele probability of 1 in 10,000. The expected target count is 0.45. If target counts follow a Poisson distribution, the chance of no target is exp(-0.45), 63.8%. Twenty independent loci with the same opportunity count and probability give an expected total of 9 and exp(-9), 0.012%, for none. Independence, equal recovery and one retained target being sufficient are assumptions of this model. These are not measured clinical false-negative rates. A tumour-DNA fraction cannot simply replace the target-allele probability without assumptions about copy number, variant multiplicity and which tumour clones carry the variant. More reads cannot recover an original molecule absent from the aliquot.",
+              "A worked example: in a multiplex PCR assay with a theoretical limit of 1 / (4,500 copies x variants), one sample not detected with 4,500 amplifiable copies was detected at 7.9 parts per million when re-assayed with 27,000 copies, and the authors note that detection at the theoretical limit rests on a single mutant molecule and is subject to the stochastic nature of sampling (Santonja 2023). A nominal detection limit from high-input validation material may not apply to a low-input clinical sample, so a laboratory with a 95% detection claim at 30 units of input cannot attach the same claim to a sample with 5 units without supporting data.",
+              "Analytical detection and clinical sensitivity answer different questions. FDA diagnostic-test guidance dated March 2007 defines clinical sensitivity by the proportion testing positive among people who have the specified condition, judged against the reference standard in the intended-use population. In a residual-disease study, disease definition, follow-up, draw schedule, evaluable samples and recurrence sites shape that denominator. An analytical limit measured in prepared material does not supply that clinical proportion, and a negative test does not establish absence of cancer.",
+              "Following a blood test from body to result separates biological availability, inclusion in the evaluated aliquot, recovery through processing, and the final calling rule. Low shedding, handling losses, background or a failed quality criterion can interrupt different steps. Repeated draws observe different times, but tumour biology and handling can make their errors correlated; they are not automatically independent repeats. A failed sample or an unbuildable reference needs its stated failure disposition rather than being silently called negative.",
+              "A validation report needs the evaluated plasma volume, recovered DNA and independent molecular coverage, together with the feature-level and combined calling rules. FDA's November 2024 drug-development guidance asks for representative clinical specimens, relevant input ranges, precision and accuracy, and comparability of any contrived reference samples. Testing one prepared input cannot show that every clinical sample has the same recovery, detection probability or outcome-based sensitivity."
+            ],
+            "after": [
+              "For independent random target-molecule counts with Poisson mean lambda, the chance of none is exp(-lambda). At lambda = 1 this is 36.8%, so an average of one does not guarantee a molecule. In a fictional model, an evaluated aliquot supplies 4,500 independent amplifiable opportunities at one locus, each with a target-allele probability of 1 in 10,000. The expected target count is 0.45. If target counts follow a Poisson distribution, the chance of no target is exp(-0.45), 63.8%. Twenty independent loci with the same opportunity count and probability give an expected total of 9 and exp(-9), 0.012%, for none. Independence, equal recovery and one retained target being sufficient are assumptions of this model. These are not measured clinical false-negative rates. A tumour-DNA fraction cannot simply replace the target-allele probability without assumptions about copy number, variant multiplicity and which tumour clones carry the variant. More reads cannot recover an original molecule absent from the aliquot.",
+              "A worked example: in a multiplex PCR assay with a theoretical limit of 1 / (4,500 copies x variants), one sample not detected with 4,500 amplifiable copies was detected at 7.9 parts per million when re-assayed with 27,000 copies, and the authors note that detection at the theoretical limit rests on a single mutant molecule and is subject to the stochastic nature of sampling (Santonja 2023). A nominal detection limit from high-input validation material may not apply to a low-input clinical sample, so a laboratory with a 95% detection claim at 30 units of input cannot attach the same claim to a sample with 5 units without supporting data.",
+              "Analytical detection and clinical sensitivity answer different questions. FDA diagnostic-test guidance dated March 2007 defines clinical sensitivity by the proportion testing positive among people who have the specified condition, judged against the reference standard in the intended-use population. In a residual-disease study, disease definition, follow-up, draw schedule, evaluable samples and recurrence sites shape that denominator. An analytical limit measured in prepared material does not supply that clinical proportion, and a negative test does not establish absence of cancer.",
+              "Following a blood test from body to result separates biological availability, inclusion in the evaluated aliquot, recovery through processing, and the final calling rule. Low shedding, handling losses, background or a failed quality criterion can interrupt different steps. Repeated draws observe different times, but tumour biology and handling can make their errors correlated; they are not automatically independent repeats. A failed sample or an unbuildable reference needs its stated failure disposition rather than being silently called negative.",
+              "A validation report needs the evaluated plasma volume, recovered DNA and independent molecular coverage, together with the feature-level and combined calling rules. FDA's November 2024 drug-development guidance asks for representative clinical specimens, relevant input ranges, precision and accuracy, and comparability of any contrived reference samples. Testing one prepared input cannot show that every clinical sample has the same recovery, detection probability or outcome-based sensitivity.",
+              "In the fictional Poisson example, lambda is the expected number of original target molecules in one evaluated aliquot of one fixed volume, before recovery and calling. Changing lambda compares hypothetical counts at that fixed volume, not successive patient time points or instructions to change a clinical draw volume. Pictures containing zero, one or two molecules illustrate possible counts, not measured frequencies or equal probabilities. No numerical clinical volume is supplied. The zero-count probability is not a clinical false-negative rate or a probability that cancer is absent, and repeated draws are not assumed independent."
+            ],
+            "beforeSHA256": "fd6ef5505009cc4c385d0f2372aee792f4f334ad708d1f551a144a27bc0bb98d",
+            "afterSHA256": "38aad28fdb5d26a4d8e4095391f92df3586a4dfe986abe5f4d42f3d87cbeef72"
+          },
+          {
+            "field": "links",
+            "before": [
+              {
+                "label": "Molecular recovery and digital error suppression (2016)",
+                "url": "https://doi.org/10.1038/nbt.3520"
+              },
+              {
+                "label": "Matched comparison of tumor-DNA assays (2023)",
+                "url": "https://doi.org/10.15252/emmm.202216505"
+              },
+              {
+                "label": "FDA: statistical guidance for diagnostic-test studies (March 2007)",
+                "url": "https://www.fda.gov/media/71147/download"
+              },
+              {
+                "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+                "url": "https://www.fda.gov/media/183874/download"
+              }
+            ],
+            "after": [
+              {
+                "label": "Molecular recovery and digital error suppression (2016)",
+                "url": "https://doi.org/10.1038/nbt.3520"
+              },
+              {
+                "label": "Matched comparison of tumor-DNA assays (2023)",
+                "url": "https://doi.org/10.15252/emmm.202216505"
+              },
+              {
+                "label": "FDA: statistical guidance for diagnostic-test studies (March 2007)",
+                "url": "https://www.fda.gov/media/71147/download"
+              },
+              {
+                "label": "FDA: ctDNA for curative-intent solid tumour drug development (November 2024)",
+                "url": "https://www.fda.gov/media/183874/download"
+              },
+              {
+                "label": "NIST e-Handbook: Poisson probability mass function and mean",
+                "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366j.htm"
+              }
+            ],
+            "beforeSHA256": "350cd64fa843ec9f64a907643c085261b859437698ca5411c7fffb619e585504",
+            "afterSHA256": "1faa167cba3f7c4ae834b299341904545efdf93f33f9aaad72f6f502ebfac231"
+          },
+          {
+            "field": "asOf",
+            "before": "2026-11-10",
+            "after": "2026-11-15",
+            "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+            "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+          }
+        ]
+      }
+    ]
+  },
+  "newOwners": 0,
+  "peerEdits": 0,
+  "registrations": 0,
+  "aliasesMoved": 0,
+  "allEarlierLinksAndUndeclaredOwnerFieldsPreserved": true,
+  "existingEvidenceRebindPlan": "prior-field-rebases.json",
+  "productProposal": "product-schematic-proposal.json"
+}

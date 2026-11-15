@@ -1,0 +1,48 @@
+{
+  "id": "P54-PRODUCT-01",
+  "status": "concrete-proposal-not-applied; product-owner routing pending",
+  "observedOn": "Actual English EntityDetail static reader for cellsearch-ctc-count",
+  "defect": "The whole-cell enumeration page labels its scene Plasma and ctDNA fragments (~160 bp).",
+  "trace": [
+    "EntityDetail technology reader uses TechSchematic",
+    "TechSchematic calls schematicFor(tech.id, tech.sections)",
+    "diagnosticsSchematicAliases2 maps cellsearch-ctc-count directly to liquid-biopsy",
+    "The liquid-biopsy builder draws DNA fragments and labels plasma"
+  ],
+  "affectedRecordId": "cellsearch-ctc-count",
+  "files": [
+    {
+      "file": "src/data/schematics.ts",
+      "beforeSHA256": "addfc1a0c1361bf68d13a470279f6600b9fc6e079de485a1456d0327653a306d"
+    },
+    {
+      "file": "src/data/schematic-aliases/diagnostics-wave2.ts",
+      "beforeSHA256": "31f209a49c54d850341bec9eafe221fd00628d424d531707c802405f0d644f14"
+    }
+  ],
+  "proposedBehavior": "Give CellSearch its own whole-cell schematic and remove its DNA-fragment alias. Keep selection and qualification distinct; arbitrary cell symbols do not depict a measured count.",
+  "patch": "cellsearch-schematic-proposed.patch",
+  "sources": [
+    {
+      "sourceId": "fda-cellsearch",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/reviews/K031588.pdf",
+      "PDFPagesReadZeroBased": [
+        0,
+        1,
+        2
+      ],
+      "historicalClearanceScope": "Metastatic breast cancer enumeration/prognostic comparison, not all CTC platforms or a complete current labelling review."
+    }
+  ],
+  "approvalRule": "docs/PRODUCT-APPROVAL.md; use scripts/propose-product-change.sh before any product ship. No approval override is set.",
+  "applied": false,
+  "renderedProposedMesh": false,
+  "browserMobileHydrationOrAccessibilityAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0,
+  "furtherAcceptanceNeeded": [
+    "Review label spacing and both themes in the actual reader",
+    "Compare the same page and viewport before/after for the product proposal",
+    "Owner approval before product publication"
+  ]
+}

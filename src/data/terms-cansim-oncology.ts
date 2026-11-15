@@ -489,10 +489,32 @@ export const cansimOncologyTerms: TermInput[] = [
     summary: "Exome sequencing selects and sequences the protein-coding regions of all genes, about one to two percent of the genome (Wikipedia), and whole genome sequencing determines the entire DNA sequence at once. TCGA relied mainly on exomes, so its mutation data (distributed as MAF files) covers coding changes; whole genomes add non-coding and structural variants. Mutation data is sparse (most genes unmutated in most tumours), which is why it adds little to expression in many prediction tasks.",
     technologies: ["wes-wgs"], terms: ["germline-vs-somatic", "variant-calling", "tmb"] }),
   t({ id: "targeted-panel-sequencing", name: "Targeted panel sequencing", category: DX, aka: ["targeted panel sequencing", "targeted-panel sequencing", "gene panel sequencing", "targeted gene panel", "clinical sequencing panel", "hundreds of genes panel"],
-    wikipedia: W("Exome_sequencing"), links: [{ label: "AACR Project GENIE", url: "https://www.aacr.org/professionals/research/aacr-project-genie/" }], cansim: "/terms/targeted-panel-sequencing",
-    tldr: "A targeted panel sequences only a chosen set of a few hundred cancer genes, deeply and cheaply, which is what most hospitals run on tumours today.",
-    summary: "Exome sequencing works by selecting a subset of DNA before sequencing (Wikipedia); a targeted panel narrows the selection further to hundreds of clinically relevant genes, read at high depth from small samples. Panels such as MSK-IMPACT and FoundationOne underlie AACR Project GENIE, the largest clinico-genomic dataset, but panel coverage differs between institutions, so pooling requires restricting to shared genes and treating unsequenced genes as missing rather than wild type.",
-    technologies: ["cgp"], related: ["genie"], terms: ["somatic-mutations-wxs-wgs", "cancer-drivers-vs-actionable"] }),
+    wikipedia: W("Exome_sequencing"), links: [
+  {
+    "label": "AACR Project GENIE",
+    "url": "https://www.aacr.org/professionals/research/aacr-project-genie/"
+  },
+  {
+    "label": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Exome_sequencing"
+  },
+  {
+    "label": "AMP/CAP: oncology-panel design and analytical validation (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+  },
+  {
+    "label": "NCI genetics dictionary: exon",
+    "url": "https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/exon"
+  }
+], cansim: "/terms/targeted-panel-sequencing",
+    tldr: "A targeted sequencing panel examines selected DNA regions. Its exact targets, analysed change types and detection limits depend on the assay.",
+    summary: "A targeted panel sequences a predefined set of genomic regions, ranging from particular hotspots to broader gene sets. Selected introns or other noncoding regions can be included when the intended analysis requires them. The panel name or gene count alone does not establish which variants can be detected or how much usable evidence exists at a position.\n\nWhen combining results from different panels, an unsequenced region supplies no wild-type observation. Compare the actual tested regions, analysed change types and specimen-specific performance before pooling records or interpreting a negative result.",
+    technologies: ["cgp"], related: ["genie"], terms: ["somatic-mutations-wxs-wgs", "cancer-drivers-vs-actionable"] ,
+"notes": [
+  "A panel can target selected non-exon regions as well as coding sequence. Exome designs primarily target exons, which include sequence retained in mature RNA that need not encode protein; genome designs sample coding and noncoding territory more broadly. Each design can leave important positions without usable evidence. Keep intended coordinates, local depth, filters and validated alteration classes together; breadth alone does not rank sensitivity or clinical usefulness."
+],
+"asOf": "2026-11-15"
+}),
   t({ id: "gistic", wikipediaChecked: "2026-09-25", name: "GISTIC (copy number driver detection)", category: GEN, aka: ["GISTIC", "GISTIC2", "GISTIC2.0", "GISTIC peaks", "GISTIC score"],
     links: [{ label: "GISTIC2 documentation (Broad Institute)", url: "https://broadinstitute.github.io/gistic2/" }, { label: "Mermel et al., GISTIC2.0 (Genome Biology 2011)", url: DOI("10.1186/gb-2011-12-4-r41") }], cansim: "/terms/gistic",
     tldr: "GISTIC scans copy number data across many tumours to find the regions that are amplified or deleted far more often than chance, the likely targets of selection.",

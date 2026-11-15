@@ -7,52 +7,61 @@ export const educationMeasurementTerms: TermInput[] = [
     "kind": "term",
     "name": "HLA loss of heterozygosity",
     "category": "Genomics & genetics",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-15",
     "tldr": "Loss of an inherited HLA gene version can change which peptide-presenting molecules a tumour retains.",
     "summary": "Human leukocyte antigen molecules normally present peptides to immune cells. HLA loss of heterozygosity concerns which inherited DNA versions remain in the sampled tumour, separately from their expression or current peptide display.",
     "notes": [
-      "HLA-A, HLA-B and HLA-C are on chromosome 6. HGNC places HLA-A at 6p22.1 and HLA-B and HLA-C at 6p21.33. One inherited version of each locus comes from each parent, giving up to six distinct classical class-I alleles. A segmental loss can affect several linked loci; total copy count alone does not identify which inherited versions remain.",
-      "McGranahan et al. (2017): LOHHLA found HLA LOH in 36 of 90 (40%) TRACERx non-small-cell lung cancers; it used patient-specific HLA sequences with purity and ploidy; not a prevalence for every breast cancer.",
-      "A loss may be present in one tumour population; normal and other tumour cells contribute reads; weak or indeterminate calls are not proof of retention; one region does not map every lesion.",
-      "DNA loss, reduced allele-specific RNA, reduced surface protein and B2M functional loss are separate findings; B2M loss affects many alleles at once.",
-      "A credible loss call asks which proposed targets depend on the lost allele and what supports presentation through retained alleles; it does not show all targets fail.",
-      "Fictional teaching exercise: Loss of a maternal haplotype carrying A*X, B*Y, C*Z challenges peptides predicted for A*X and for B*Y; retention of paternal alleles does not itself prove display.",
-      "Retain tumour/normal material, typing, named HLA alleles, usable reads, inferred allele copies, confidence, caller version and region sampled. DNA extraction uses material; computational reanalysis does not. Incorrect typing, difficult mapping and low tumour content can obscure loss. Coverage and statistical rules require workflow validation; neither a negative call nor retained DNA proves current display.",
-      "The LOHHLA PCR validation selected 82 regions from 27 tumours predicted to have either all three loci affected by LOH or none. This selection does not establish how often a typical tumour region loses all three loci. The 36-of-90 result describes the separate NSCLC cohort analysis."
-    ],
+  "HLA-A, HLA-B and HLA-C are on chromosome 6. HGNC places HLA-A at 6p22.1 and HLA-B and HLA-C at 6p21.33. One inherited version of each locus comes from each parent, giving up to six distinct classical class-I alleles. A segmental loss can affect several linked loci; total copy count alone does not identify which inherited versions remain.",
+  "McGranahan et al. (2017): LOHHLA found HLA LOH in 36 of 90 (40%) TRACERx non-small-cell lung cancers; it used patient-specific HLA sequences with purity and ploidy; not a prevalence for every breast cancer.",
+  "A loss may be present in one tumour population; normal and other tumour cells contribute reads; weak or indeterminate calls are not proof of retention; one region does not map every lesion.",
+  "DNA loss, reduced allele-specific RNA, reduced surface protein and B2M functional loss are separate findings; B2M loss affects many alleles at once. In a fictional comparison, the placeholder HLA-A versions A1 and A2 can have A1 lost, both retained with reduced expression, or both retained with impaired B2M support. A1 and A2 do not name specific clinical alleles. None of those DNA descriptions supplies a surface-molecule count; current display needs separate measurement.",
+  "A credible loss call asks which proposed targets depend on the lost allele and what supports presentation through retained alleles; it does not show all targets fail.",
+  "Fictional teaching exercise: Loss of a maternal haplotype carrying A*X, B*Y, C*Z challenges peptides predicted for A*X and for B*Y; retention of paternal alleles does not itself prove display.",
+  "Retain tumour/normal material, typing, named HLA alleles, usable reads, inferred allele copies, confidence, caller version and region sampled. DNA extraction uses material; computational reanalysis does not. Incorrect typing, difficult mapping and low tumour content can obscure loss. Coverage and statistical rules require workflow validation; neither a negative call nor retained DNA proves current display.",
+  "The LOHHLA PCR validation selected 82 regions from 27 tumours predicted to have either all three loci affected by LOH or none. This selection does not establish how often a typical tumour region loses all three loci. The 36-of-90 result describes the separate NSCLC cohort analysis."
+],
     "related": [
       "ngs",
       "hla"
     ],
     "links": [
-      {
-        "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
-      },
-      {
-        "label": "HGNC: HLA-A, HLA-B and HLA-C gene locations",
-        "url": "https://www.genenames.org/tools/search/#!/?query=HLA-A%20OR%20HLA-B%20OR%20HLA-C"
-      }
-    ]
+  {
+    "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
+  },
+  {
+    "label": "HGNC: HLA-A, HLA-B and HLA-C gene locations",
+    "url": "https://www.genenames.org/tools/search/#!/?query=HLA-A%20OR%20HLA-B%20OR%20HLA-C"
+  },
+  {
+    "label": "Puttick et al.: genetic and non-genetic HLA disruption (2024)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39358601/"
+  },
+  {
+    "label": "Sade-Feldman et al.: B2M and antigen-presentation loss in melanoma (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29070816/"
+  }
+]
   },
   {
     "id": "sequencing-depth-and-coverage",
     "kind": "term",
     "name": "Sequencing depth and coverage",
     "category": "Genomics & genetics",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-15",
     "tldr": "Depth counts sequence observations at a position; breadth describes how much of a target meets a stated depth.",
     "summary": "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
     "notes": [
-      "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
-      "Mean depth averages positions; coverage breadth is the fraction of a named target (denominator: target bases, not reads or cells) meeting a stated minimum depth; neither shows which important positions were missed.",
-      "Fictional report: mean 100x, 900 of 1,000 target bases at or above an illustrative 20x criterion gives 90% breadth, while the position of interest has 4 usable observations; 20x is not a clinical cutoff.",
-      "Read depth differs from molecular depth: overlapping pair ends and amplification copies inflate reads without adding independent fragments; HTSlib defaults are software definitions, not clinical validation criteria.",
-      "More sequencing cannot recover a region absent from the library or create independent molecules from duplicates; library complexity, input, preservation, capture and alignment limit usable evidence.",
-      "A negative report covers tested regions, detectable change classes and validated sensitivity; identical depths can support different detection limits; depth does not establish origin, function or actionability.",
-      "A narrow panel can be deep and a genome broad but thinner per position; territory asks where, depth asks how many.",
-      "Use an existing alignment file to calculate depth without consuming more tissue; recovering a more diverse library may require another aliquot. Retain reference regions, per-position counts, summary depth, breadth criterion and molecule-count rules. Capture bias, duplicate inflation and damaged input require controls and intended-use sensitivity/reproducibility validation; a summary criterion is separate from a detection limit."
-    ],
+  "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
+  "Mean depth averages positions; coverage breadth is the fraction of a named target (denominator: target bases, not reads or cells) meeting a stated minimum depth; neither shows which important positions were missed.",
+  "Fictional report: mean 100x, 900 of 1,000 target bases at or above an illustrative 20x criterion gives 90% breadth, while the position of interest has 4 usable observations; 20x is not a clinical cutoff. The mean is a supplied report value: no full per-base profile is given from which to recompute it. Four read observations also do not prove four independent original molecules.",
+  "Read depth differs from molecular depth: overlapping pair ends and amplification copies inflate reads without adding independent fragments; HTSlib defaults are software definitions, not clinical validation criteria.",
+  "More sequencing cannot recover a region absent from the library or create independent molecules from duplicates; library complexity, input, preservation, capture and alignment limit usable evidence.",
+  "A negative report covers tested regions, detectable change classes and validated sensitivity; identical depths can support different detection limits; depth does not establish origin, function or actionability.",
+  "A narrow panel can be deep and a genome broad but thinner per position; territory asks where, depth asks how many.",
+  "Use an existing alignment file to calculate depth without consuming more tissue; recovering a more diverse library may require another aliquot. Retain reference regions, per-position counts, summary depth, breadth criterion and molecule-count rules. Capture bias, duplicate inflation and damaged input require controls and intended-use sensitivity/reproducibility validation; a summary criterion is separate from a detection limit.",
+  "In a separate fictional target, four usable aligned reads overlap position P, only two overlap Q, and none overlap R even though R was selected. Their local depths are 4x, 2x and 0x. R has no usable observations in this example; a position outside the assay design was not examined. These values establish neither a clinical threshold nor a variant-detection probability."
+],
     "related": [
       "ngs"
     ],
@@ -76,35 +85,40 @@ export const educationMeasurementTerms: TermInput[] = [
     "kind": "term",
     "name": "Sequencing reads",
     "category": "Genomics & genetics",
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-15",
     "tldr": "A sequencing read records base letters from prepared material, with estimates of their quality.",
     "summary": "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
     "notes": [
-      "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
-      "Phred quality: Q20 is an estimated 1% per-base error probability and Q30 0.1%; these are model-based base-call estimates, not the probability that a reported mutation is real; Q30 is a scale value, not a universal pass rule.",
-      "Base quality (a letter) and mapping confidence (a location) are separate; repeats can make placement ambiguous; one read can have more than one proposed alignment record.",
-      "Paired-end reads come from opposite ends of one fragment, so they are complementary placement evidence, not two independent molecules.",
-      "Amplification copies one fragment many times; duplicate recognition or validated molecular tags assess independent support but do not repair errors introduced before tagging; in amplicon assays identical start and end coordinates cannot separate copies from independent molecules.",
-      "Raw versus usable reads: filtering changes the denominator for downstream support; a read does not identify a cell, establish function or alone prove a somatic mutation.",
-      "Record extraction and library preparation, specimen compatibility, read lengths, base qualities, pairs, alignment records and molecule-support rules. Preparation consumes material; reanalysis does not. Contamination, damaged molecules, adapters, amplification and mapping ambiguity affect support. Filter settings and Q30 are not universal clinical acceptance criteria; validate the complete specimen-to-report workflow."
-    ],
+  "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
+  "Phred quality: Q20 is an estimated 1% per-base error probability and Q30 0.1%; these are model-based base-call estimates, not the probability that a reported mutation is real; Q30 is a scale value, not a universal pass rule.",
+  "Base quality (a letter) and mapping confidence (a location) are separate; repeats can make placement ambiguous; one read can have more than one proposed alignment record.",
+  "Paired-end reads come from opposite ends of one fragment, so they are complementary placement evidence, not two independent molecules.",
+  "Amplification copies one fragment many times; duplicate recognition or validated molecular tags assess independent support but do not repair errors introduced before tagging; in amplicon assays identical start and end coordinates cannot separate copies from independent molecules.",
+  "Raw versus usable reads: filtering changes the denominator for downstream support; a read does not identify a cell, establish function or alone prove a somatic mutation.",
+  "Record extraction and library preparation, specimen compatibility, read lengths, base qualities, pairs, alignment records and molecule-support rules. Preparation consumes material; reanalysis does not. Contamination, damaged molecules, adapters, amplification and mapping ambiguity affect support. Filter settings and Q30 are not universal clinical acceptance criteria; validate the complete specimen-to-report workflow.",
+  "In one fictional example, ten paired-end reads form five pairs, representing at most five library fragments; amplification copies can reduce independent source support further. In a separate example, one source fragment has three sequenced copies, each yielding two reads, for six reads from that one ancestor. Do not add the counts from these two examples. Ask how the preparation and analysis established molecular independence."
+],
     "related": [
       "ngs"
     ],
     "links": [
-      {
-        "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
-      },
-      {
-        "label": "Base-calling of automated sequencer traces using phred. II. Error probabilities.",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/9521922/"
-      },
-      {
-        "label": "SAM specification",
-        "url": "https://samtools.github.io/hts-specs/SAMv1.pdf"
-      }
-    ]
+  {
+    "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+  },
+  {
+    "label": "Base-calling of automated sequencer traces using phred. II. Error probabilities.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9521922/"
+  },
+  {
+    "label": "SAM specification",
+    "url": "https://samtools.github.io/hts-specs/SAMv1.pdf"
+  },
+  {
+    "label": "NCBI SRA: FASTQ records and paired-end submission formats",
+    "url": "https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/"
+  }
+]
   },
   {
     "id": "tumor-normal-vs-tumor-only-sequencing",

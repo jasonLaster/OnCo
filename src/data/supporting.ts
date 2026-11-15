@@ -139,6 +139,10 @@ const technologies: TechnologyInput[] = [
   {
     "label": "Genome-wide detection of cytosine methylation by single molecule real-time sequencing.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/33495335/"
+  },
+  {
+    "label": "Jain et al.: ultra-long reads in the GM12878 reference-genome experiment (2018)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29431738/"
   }
 ], name: "Long-read sequencing (PacBio, Oxford Nanopore)", sections: ["diagnostics", "drug-discovery"], status: "established",
     tldr: "Long reads connect extended sequence information; chemical-mark detection requires a separately specified workflow.",
@@ -167,7 +171,7 @@ const technologies: TechnologyInput[] = [
   "Eight of ten usable molecules called methylated at one site is 80% of those molecules; it is not 80% malignant cells or 80% gene silencing; per-molecule confidence differs from a fraction across molecules.",
   "Record the molecule type and integrity, aliquot used, library preparation, sequence and modification callers, and any retained native signals. Report sequence length separately from modification confidence or site fraction. Fragmentation, unsupported models, amplification and conversion failure have different effects. Input requirements, usable-site filters and intended-use validation belong to the exact assay."
 ],
-"asOf": "2026-11-10"
+"asOf": "2026-11-15"
 }),
   t({
     id: "next-gen-short-read-platforms", machineFamily: "laboratory", links: [{ label: "Almogy et al., Cost-efficient whole-genome sequencing using mostly natural sequencing-by-synthesis chemistry (Ultima Genomics, bioRxiv 2022)", url: "https://doi.org/10.1101/2022.05.29.493900" }], name: "New short-read sequencing platforms", sections: ["diagnostics"], status: "emerging",

@@ -1,0 +1,158 @@
+{
+  "dataCommit": "ffd371bd6762ed5f0112106041c261fe969c4cae",
+  "plan": {
+    "auditBaseCommit": "90098604b5ee8d500138a15027095e0fadbb9597",
+    "canonicalOwnersChanged": 2,
+    "canonicalFieldsChanged": 3,
+    "newCanonicalIds": 0,
+    "changes": [
+      {
+        "recordId": "costimulation",
+        "kind": "term",
+        "file": "src/data/education-parallel-tcells-2026-11.ts",
+        "field": "notes",
+        "before": [
+          "Costimulation consists of additional supporting receptor interactions alongside antigen recognition, affecting activation, survival, division or differentiation. CD28 is one example, not the whole category or a universal threshold. The same peptide-HLA stimulus can receive different support without changing antigen specificity. Blocking inhibition and adding support are distinct interventions.",
+          "Compare the same recognition stimulus with and without a specified supporting interaction, using recognition-only, viable-cell and inhibitory-context controls. Measure division, cytokines and killing separately; marker abundance does not establish causal signalling. Engineered intracellular supporting domains change receptor architecture but require product-specific persistence, safety and efficacy tests.",
+          "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules."
+        ],
+        "after": [
+          "Costimulation consists of additional supporting receptor interactions alongside antigen recognition, affecting activation, survival, division or differentiation. CD28 is one example, not the whole category or a universal threshold. The same peptide-HLA stimulus can receive different support without changing antigen specificity. Blocking inhibition and adding support are distinct interventions.",
+          "Compare the same recognition stimulus with and without a specified supporting interaction, using recognition-only, viable-cell and inhibitory-context controls. Measure division, cytokines and killing separately; marker abundance does not establish causal signalling. Engineered intracellular supporting domains change receptor architecture but require product-specific persistence, safety and efficacy tests.",
+          "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+          "A schematic comparison can keep peptide-HLA recognition the same while adding support through CD28 in one condition. Showing no supporting contact in the other condition does not establish that its T cells lack CD28. Signal strength, duration, cell state, location and inhibitory context also shape the response. CTLA-4 can transfer CD80/CD86 from an opposing cell into the cell that carries CTLA-4 by trans-endocytosis, reducing the ligands available for CD28. Measure division, cytokines and killing under matched conditions. Neither this contact comparison nor ligand removal justifies eliminating every inhibitory input or establishes a universal response threshold."
+        ],
+        "beforeSHA256": "c129666286050455deb8d4dc4f2109281df4a73b89bca7de75e753644cfbce9c",
+        "afterSHA256": "4d4f0460d3e8f0fd65bbd32af1941b774998589edaae570d1eea9d86af9c0d90",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true,
+        "sourceScope": "Qureshi complete abstract and targeted results support ligand capture direction. The context axes are retained teaching synthesis; schematic omission and causal limits are explicitly premise-backed reading rules."
+      },
+      {
+        "recordId": "t-cell-priming-three-signals",
+        "kind": "term",
+        "file": "src/data/education-parallel-tcells-2026-11.ts",
+        "field": "notes",
+        "before": [
+          "Priming is a naive cell's initial activation in a supporting context. Signal one is TCR recognition of peptide-HLA, signal two includes CD80/CD86-CD28 costimulation and inhibitory context, and signal three includes differentiation-supporting cytokines. The receptor pre-exists the encounter. These signals interact over time; the model is not a three-button checklist and antigen-experienced or engineered cells can have different requirements.",
+          "IL-12 and type I interferons (alpha/beta) supported naive CD8 survival and cytolytic differentiation in defined experiments. Cytokines are signalling proteins, not nutritional fuel. Type I interferon can connect innate responses to priming, but this does not prescribe a universal cytokine intervention or establish every cGAS-STING step. Dendritic-cell priming support and tumour antigen display answer different questions.",
+          "Division, viable-cell expansion, cytokine production and target-cell death are distinct priming outcomes. In a fictional matched experiment both cultures show three divisions, yet only B kills appropriate targets above target-only background. Measure these outcomes separately with defined starting cells, presenting system, signal perturbation, matched time, peptide loading, HLA, cell ratios and culture conditions. Priming does not establish tumour access, natural display, safe killing or clinical benefit, and stronger stimulation can support unwanted populations.",
+          "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules."
+        ],
+        "after": [
+          "Priming is a naive cell's initial activation in a supporting context. Signal one is TCR recognition of peptide-HLA, signal two includes CD80/CD86-CD28 costimulation and inhibitory context, and signal three includes differentiation-supporting cytokines. The receptor pre-exists the encounter. These signals interact over time; the model is not a three-button checklist and antigen-experienced or engineered cells can have different requirements.",
+          "IL-12 and type I interferons (alpha/beta) supported naive CD8 survival and cytolytic differentiation in defined experiments. Cytokines are signalling proteins, not nutritional fuel. Type I interferon can connect innate responses to priming, but this does not prescribe a universal cytokine intervention or establish every cGAS-STING step. Dendritic-cell priming support and tumour antigen display answer different questions.",
+          "Division, viable-cell expansion, cytokine production and target-cell death are distinct priming outcomes. In a fictional matched experiment both cultures show three divisions, yet only B kills appropriate targets above target-only background. Measure these outcomes separately with defined starting cells, presenting system, signal perturbation, matched time, peptide loading, HLA, cell ratios and culture conditions. Priming does not establish tumour access, natural display, safe killing or clinical benefit, and stronger stimulation can support unwanted populations.",
+          "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+          "In the schematic, peptide-HLA and supporting CD80/CD86 are on the presenter, while the naive T cell has its pre-existing TCR and CD28. In the fictional culture comparison, equal division with different killing shows a functional difference without identifying its cause. Testing a proposed cytokine explanation needs a controlled change in that signal while keeping viable-cell input, target identity and exposure comparable. Positive and negative controls help distinguish biological failure from assay failure. The three-signal categories organise the investigation; a division count alone does not diagnose a missing cytokine."
+        ],
+        "beforeSHA256": "ddeb11f85eb5eb3fbe1fc4355693116b78f58ea1a8d5f4e08a4fccce45e5f3cd",
+        "afterSHA256": "34fde7bbd93f800c2a35e7d3fe7f6d3bd32cc4d91ccfbee800d7dc5d391f4950",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true,
+        "sourceScope": "Curtsinger complete abstracts and targeted 2003 primary methods, results and full figure caption support separating division from cytolytic function. The fictional comparison and controlled-perturbation interpretation are premise-backed inference."
+      },
+      {
+        "recordId": "t-cell-priming-three-signals",
+        "kind": "term",
+        "file": "src/data/education-parallel-tcells-2026-11.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Type I IFNs provide a third signal to CD8 T cells to stimulate clonal expansion and differentiation.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15814665/"
+          },
+          {
+            "label": "Binding of the B cell activation antigen B7 to CD28 costimulates T cell proliferation and interleukin 2 mRNA accumulation.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1847722/"
+          },
+          {
+            "label": "Help for cytotoxic-T-cell responses is mediated by CD40 signalling.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9624004/"
+          }
+        ],
+        "after": [
+          {
+            "label": "Type I IFNs provide a third signal to CD8 T cells to stimulate clonal expansion and differentiation.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15814665/"
+          },
+          {
+            "label": "Binding of the B cell activation antigen B7 to CD28 costimulates T cell proliferation and interleukin 2 mRNA accumulation.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1847722/"
+          },
+          {
+            "label": "Help for cytotoxic-T-cell responses is mediated by CD40 signalling.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9624004/"
+          },
+          {
+            "label": "Signal 3 determines tolerance versus full activation of naive CD8 T cells: dissociating proliferation and development of effector function.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/12732656/"
+          }
+        ],
+        "beforeSHA256": "4bfab5d0c5e8b233949015c3b8eaef40992fd65b2b597062cc62b28412f7434b",
+        "afterSHA256": "866d1feed2411f5c946cbcc9bbea5999687c53407e8de189a9e145c5774ce5a1",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true
+      }
+    ],
+    "datesScalarsLeadsAliasesRelationsAndRegistrationsUnchanged": true,
+    "fullValidationStillRequired": true
+  },
+  "application": {
+    "appliedAtUTC": "2026-11-15T07:18:08.354Z",
+    "auditBaseCommit": "90098604b5ee8d500138a15027095e0fadbb9597",
+    "canonicalOwnersChanged": 2,
+    "canonicalFieldsChanged": 3,
+    "newCanonicalIds": 0,
+    "oldNotesAndLinksRetainedAsExactPrefixes": true,
+    "codeBehaviorChanged": false,
+    "files": [
+      {
+        "file": "src/data/education-parallel-tcells-2026-11.ts",
+        "beforeSHA256": "9777986b6e0b644c741e950c7d5ebe9c99cfe4b7395bf2b956257bf5f09fb850",
+        "afterSHA256": "015b806df8219850cd3536424808ecd7267ce8b06d98661ee3692320967d2251"
+      }
+    ],
+    "fullValidationStillRequired": true,
+    "initialAppliedAtUTC": "2026-11-15T07:18:08.354Z",
+    "refinedAtUTC": "2026-11-15T07:39:14.499Z",
+    "refinement": {
+      "initialSourceSHA256": "908d8da259fac8039dc5ebaf30496457bf8e3582fa6af52f64670fc0f3c3c5f0",
+      "initialFullGatesPassed": true,
+      "reason": "Explicit schematic contact roles and assay-failure control interpretation",
+      "earlierNotesChanged": false,
+      "finalFullGatesRequired": true
+    },
+    "priorRefinement": {
+      "initialSourceSHA256": "3fdf2cbc524ca351511a2b191a39fee87537105529a0e59bb21c594897b26f06",
+      "initialFullGatesPassed": true,
+      "reason": "Explicit five context axes and no general removal-of-inhibition inference",
+      "earlierNotesChanged": false,
+      "finalFullGatesRequired": true
+    }
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "costimulation",
+      "t-cell-priming-three-signals"
+    ],
+    "changedOwnerCount": 2,
+    "changedCanonicalFields": 3,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 2,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceSummariesAndLeadsUnchanged": true,
+    "changedFiles": [
+      "src/data/education-parallel-tcells-2026-11.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "unappliedProposals": [],
+  "newCanonicalIds": 0,
+  "newRegistrations": 0,
+  "unchangedOlderClaimsNotRecertified": "Older assertions and the existing November 9 review dates remain at their prior source scope. This pass adds two scoped paragraphs and one resolved primary citation without advancing a whole-record review stamp. Preliminary data variants and their successful checks are archived privately; final validation is tied only to the final committed bytes."
+}

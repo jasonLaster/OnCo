@@ -1,0 +1,118 @@
+{
+  "version": "proposal-support-bodies-44-root",
+  "draft": 375,
+  "committedDataHead": "ffd371bd6762ed5f0112106041c261fe969c4cae",
+  "auditBaseCommit": "90098604b5ee8d500138a15027095e0fadbb9597",
+  "state": "Two current registered root records; two note arrays and one source-link array changed. Other assertions keep earlier source scope.",
+  "records": [
+    {
+      "id": "costimulation",
+      "kind": "term",
+      "name": "Costimulation",
+      "aka": [
+        "co-stimulation",
+        "T-cell costimulation"
+      ],
+      "tldr": "Additional receptor contacts help shape a T cell's response to a recognised target.",
+      "summary": "Costimulation supplies supporting interactions alongside antigen recognition. CD28 engagement by B7 supported proliferation and interleukin-2 responses in Linsley and colleagues' controlled experiments. CTLA-4 shares CD80/CD86 ligands with CD28 and can remove these ligands from opposing cells by trans-endocytosis, reducing available costimulation. Supporting contacts do not determine a new antigen specificity.\n\nCompare the same recognition stimulus with and without supporting contacts, with viable-cell, stimulus and pathway controls. Measure division, cytokines and killing separately. Identical peptide-HLA displays can have different supporting contexts. CD28 dependence of PD-1 rescue was demonstrated in chronic-infection and tumour-bearing mouse systems; proliferating blood CD8 cells after treatment in lung-cancer patients were predominantly CD28-positive. This does not validate CD28 abundance as a universal treatment-selection test. Engineered supporting domains require product-specific safety and efficacy evidence.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Binding of the B cell activation antigen B7 to CD28 costimulates T cell proliferation and interleukin 2 mRNA accumulation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1847722/"
+        },
+        {
+          "label": "Trans-endocytosis of CD80 and CD86: a molecular basis for the cell-extrinsic function of CTLA-4.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21474713/"
+        },
+        {
+          "label": "Rescue of exhausted CD8 T cells by PD-1-targeted therapies is CD28-dependent.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28280249/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Costimulation consists of additional supporting receptor interactions alongside antigen recognition, affecting activation, survival, division or differentiation. CD28 is one example, not the whole category or a universal threshold. The same peptide-HLA stimulus can receive different support without changing antigen specificity. Blocking inhibition and adding support are distinct interventions.",
+        "Compare the same recognition stimulus with and without a specified supporting interaction, using recognition-only, viable-cell and inhibitory-context controls. Measure division, cytokines and killing separately; marker abundance does not establish causal signalling. Engineered intracellular supporting domains change receptor architecture but require product-specific persistence, safety and efficacy tests.",
+        "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+        "A schematic comparison can keep peptide-HLA recognition the same while adding support through CD28 in one condition. Showing no supporting contact in the other condition does not establish that its T cells lack CD28. Signal strength, duration, cell state, location and inhibitory context also shape the response. CTLA-4 can transfer CD80/CD86 from an opposing cell into the cell that carries CTLA-4 by trans-endocytosis, reducing the ligands available for CD28. Measure division, cytokines and killing under matched conditions. Neither this contact comparison nor ligand removal justifies eliminating every inhibitory input or establishes a universal response threshold."
+      ],
+      "category": "Immunology"
+    },
+    {
+      "id": "t-cell-priming-three-signals",
+      "kind": "term",
+      "name": "T-cell priming and the three-signal model",
+      "aka": [
+        "T-cell priming",
+        "three-signal model"
+      ],
+      "tldr": "A naive T cell's first activation depends on recognition and supporting signals. Division and killing are separate outcomes.",
+      "summary": "The three-signal teaching model groups peptide-HLA recognition by the T-cell receptor as signal one, costimulation as signal two and cytokine context as signal three. The naive cell already has its receptor. The model organises interacting processes; it is not a universal three-step checklist, and experienced or engineered cells can have different requirements.\n\nCurtsinger and colleagues showed that type I interferons or IL-12 could support naive CD8 survival and effector differentiation in defined experiments. Proliferation without a third signal did not establish cytolytic function. Antigen presentation and initial priming are different processes. In a fictional matched comparison, two cultures each divide three times but only one kills appropriate targets above target-only background: equal division does not show equal function. Compare viable-cell input, peptide loading, HLA compatibility, cell ratios, exposure and positive and negative controls. Priming does not itself demonstrate natural tumour display, tumour access, safe killing or patient benefit.",
+      "asOf": "2026-11-09",
+      "links": [
+        {
+          "label": "Type I IFNs provide a third signal to CD8 T cells to stimulate clonal expansion and differentiation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15814665/"
+        },
+        {
+          "label": "Binding of the B cell activation antigen B7 to CD28 costimulates T cell proliferation and interleukin 2 mRNA accumulation.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1847722/"
+        },
+        {
+          "label": "Help for cytotoxic-T-cell responses is mediated by CD40 signalling.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9624004/"
+        },
+        {
+          "label": "Signal 3 determines tolerance versus full activation of naive CD8 T cells: dissociating proliferation and development of effector function.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12732656/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Priming is a naive cell's initial activation in a supporting context. Signal one is TCR recognition of peptide-HLA, signal two includes CD80/CD86-CD28 costimulation and inhibitory context, and signal three includes differentiation-supporting cytokines. The receptor pre-exists the encounter. These signals interact over time; the model is not a three-button checklist and antigen-experienced or engineered cells can have different requirements.",
+        "IL-12 and type I interferons (alpha/beta) supported naive CD8 survival and cytolytic differentiation in defined experiments. Cytokines are signalling proteins, not nutritional fuel. Type I interferon can connect innate responses to priming, but this does not prescribe a universal cytokine intervention or establish every cGAS-STING step. Dendritic-cell priming support and tumour antigen display answer different questions.",
+        "Division, viable-cell expansion, cytokine production and target-cell death are distinct priming outcomes. In a fictional matched experiment both cultures show three divisions, yet only B kills appropriate targets above target-only background. Measure these outcomes separately with defined starting cells, presenting system, signal perturbation, matched time, peptide loading, HLA, cell ratios and culture conditions. Priming does not establish tumour access, natural display, safe killing or clinical benefit, and stronger stimulation can support unwanted populations.",
+        "Source scope: teaching synthesis checked against the cited abstracts and specified accessible primary text on 9 November 2026; fictional examples are not clinical observations or treatment-selection rules.",
+        "In the schematic, peptide-HLA and supporting CD80/CD86 are on the presenter, while the naive T cell has its pre-existing TCR and CD28. In the fictional culture comparison, equal division with different killing shows a functional difference without identifying its cause. Testing a proposed cytokine explanation needs a controlled change in that signal while keeping viable-cell input, target identity and exposure comparable. Positive and negative controls help distinguish biological failure from assay failure. The three-signal categories organise the investigation; a division count alone does not diagnose a missing cytokine."
+      ],
+      "category": "Immunology"
+    }
+  ]
+}

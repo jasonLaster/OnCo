@@ -15,27 +15,31 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
     "tldr": "Adenosine can signal immune cells to reduce activity; the IDO1 enzyme starts a separate route that breaks down tryptophan, an amino acid. Finding their components in a tumour does not prove immune suppression or drug benefit. An IDO1 blocker added to pembrolizumab did not improve melanoma outcomes in a phase 3 trial.",
     "summary": "The adenosine route works outside cells. CD39 (ENTPD1) and CD73 (NT5E) are enzymes that help generate adenosine from extracellular ATP and ADP, and adenosine then acts on cell-surface receptors, including the A2A receptor on T cells. The enzymes can sit on immune cells, cancer cells or other tissue cells, so the source has to be measured and not assumed. The IDO route works inside a producing cell: IDO1 starts the breakdown of tryptophan along the kynurenine pathway. IDO is not an adenosine receptor and does not degrade ATP, so the two routes should not be merged into one 'suppressive axis'.",
     "links": [
-      {
-        "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
-        "url": "https://doi.org/10.1084/jem.20062512"
-      },
-      {
-        "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
-        "url": "https://doi.org/10.1073/pnas.0605251103"
-      },
-      {
-        "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
-        "url": "https://doi.org/10.1172/jci21583"
-      },
-      {
-        "label": "A new method of sampling blood for measurement of plasma adenosine.",
-        "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
-      },
-      {
-        "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
-        "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
-      }
-    ],
+  {
+    "label": "Adenosine generation catalyzed by CD39 and CD73 expressed on regulatory T cells mediates immune suppression.",
+    "url": "https://doi.org/10.1084/jem.20062512"
+  },
+  {
+    "label": "A2A adenosine receptor protects tumors from antitumor T cells.",
+    "url": "https://doi.org/10.1073/pnas.0605251103"
+  },
+  {
+    "label": "Expression of indoleamine 2,3-dioxygenase by plasmacytoid dendritic cells in tumor-draining lymph nodes.",
+    "url": "https://doi.org/10.1172/jci21583"
+  },
+  {
+    "label": "A new method of sampling blood for measurement of plasma adenosine.",
+    "url": "https://doi.org/10.1152/ajpheart.1990.258.4.h1232"
+  },
+  {
+    "label": "Epacadostat plus pembrolizumab versus placebo plus pembrolizumab in patients with unresectable or metastatic melanoma (ECHO-301/KEYNOTE-252): a phase 3, randomised, double-blind study.",
+    "url": "https://doi.org/10.1016/s1470-2045(19)30274-8"
+  },
+  {
+    "label": "UniProt: human IDO1, catalytic activity and function",
+    "url": "https://www.uniprot.org/uniprotkb/P14902/entry"
+  }
+],
     "targets": [
       "ido1",
       "entpd1",
@@ -53,9 +57,10 @@ export const educationParallelInnateImmuneTerms: TermInput[] = [
       "tumor-microenvironment"
     ],
     "notes": [
-      "The mechanism evidence is mostly from mice and cell experiments. CD39 and CD73 distinguished regulatory T cells from other T cells, and regulatory T cells from Cd39-null mice had impaired suppression in vitro and failed to block allograft rejection in vivo (Deaglio et al., 2007). Deleting the A2A receptor in the host led to rejection of established immunogenic tumours in about 60 per cent of A2A-deficient mice, with none rejected in normal mice (Ohta et al., 2006). The same mouse study reported autoimmunity during melanoma rejection in the A2A-deficient mice and proposed that the receptor in T cells also helps prevent autoimmune tissue damage, so a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off. A subset of plasmacytoid dendritic cells in mouse tumour-draining lymph nodes expressed immunosuppressive levels of IDO and suppressed T-cell responses, and anergy was prevented by disrupting the IDO gene or by an IDO inhibitor (Munn et al., 2004). The same paper reported, as a separate observation in the human samples studied, that IDO-expressing cells in tumour-draining lymph nodes correlated with a worse clinical outcome; that is an association, and the authors noted the human cells' relationship to the mouse subset was still to be determined.",
-      "The layers of evidence are different and should be kept apart: a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients. A blood adenosine result is sensitive to handling: adenosine has a half-life of 1 to 2 seconds in human blood at 37 degrees Celsius, and in a sampling experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip but 7 per cent when the mix was added only after the catheter (Shryock et al., 1990), and even a well-handled blood level does not locate the producing cells. No single expression cutoff for CD39, CD73 or IDO1 is validated in the sources cited here to choose an inhibitor, so a report should state the sample site, timing and units and not rely on one threshold. The clinical test of the IDO1 route was negative for that regimen: in ECHO-301/KEYNOTE-252, 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker received pembrolizumab with epacadostat or with placebo, and median progression-free survival was 4.7 against 4.9 months (hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21), with overall survival hazard ratio 1.13 (0.86 to 1.49) (Long et al., 2019). The authors wrote that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain. That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer. By the same logic, a tumour section that stains for both CD73 and IDO1 shows two measured proteins in the sampled cells: it does not show one dominant suppressive mechanism or the best inhibitor, because each route still needs its own activity and functional question."
-    ]
+  "The mechanism evidence is mostly from mice and cell experiments. CD39 and CD73 distinguished regulatory T cells from other T cells, and regulatory T cells from Cd39-null mice had impaired suppression in vitro and failed to block allograft rejection in vivo (Deaglio et al., 2007). Deleting the A2A receptor in the host led to rejection of established immunogenic tumours in about 60 per cent of A2A-deficient mice, with none rejected in normal mice (Ohta et al., 2006). The same mouse study reported autoimmunity during melanoma rejection in the A2A-deficient mice and proposed that the receptor in T cells also helps prevent autoimmune tissue damage, so a pathway that restrains antitumour T cells may also protect normal tissue, and any assessment of an inhibitor has to weigh that trade-off. A subset of plasmacytoid dendritic cells in mouse tumour-draining lymph nodes expressed immunosuppressive levels of IDO and suppressed T-cell responses, and anergy was prevented by disrupting the IDO gene or by an IDO inhibitor (Munn et al., 2004). The same paper reported, as a separate observation in the human samples studied, that IDO-expressing cells in tumour-draining lymph nodes correlated with a worse clinical outcome; that is an association, and the authors noted the human cells' relationship to the mouse subset was still to be determined.",
+  "The layers of evidence are different and should be kept apart: a protein or RNA signal shows a component is present, a biochemical assay shows enzyme activity or metabolite, a functional experiment shows an immune effect, and a trial shows whether blocking it helps patients. A blood adenosine result is sensitive to handling: adenosine has a half-life of 1 to 2 seconds in human blood at 37 degrees Celsius, and in a sampling experiment recovery of labelled adenosine was 89 per cent with an inhibitor mix delivered at the catheter tip but 7 per cent when the mix was added only after the catheter (Shryock et al., 1990), and even a well-handled blood level does not locate the producing cells. No single expression cutoff for CD39, CD73 or IDO1 is validated in the sources cited here to choose an inhibitor, so a report should state the sample site, timing and units and not rely on one threshold. The clinical test of the IDO1 route was negative for that regimen: in ECHO-301/KEYNOTE-252, 706 people with unresectable or metastatic melanoma not previously treated with a PD-1 or PD-L1 blocker received pembrolizumab with epacadostat or with placebo, and median progression-free survival was 4.7 against 4.9 months (hazard ratio 1.00, 95 per cent confidence interval 0.83 to 1.21), with overall survival hazard ratio 1.13 (0.86 to 1.49) (Long et al., 2019). The authors wrote that the usefulness of IDO1 inhibition to enhance anti-PD-1 therapy remains uncertain. That bounds one drug, one dose and one disease; it neither proves all IDO research futile nor validates another inhibitor or cancer. By the same logic, a tumour section that stains for both CD73 and IDO1 shows two measured proteins in the sampled cells: it does not show one dominant suppressive mechanism or the best inhibitor, because each route still needs its own activity and functional question.",
+  "Follow each substrate to keep the chemistry separate. In the extracellular route, CD39 converts ATP and ADP to AMP, and CD73 converts AMP to adenosine (Deaglio et al., 2007). Generating this ligand and signalling through a receiving-cell receptor are separate steps. In the intracellular route, IDO1 catalyses tryptophan conversion to N-formylkynurenine, an early reaction in the kynurenine pathway (UniProt, IDO1). Describing the route as tryptophan entering the kynurenine pathway compresses several steps; it does not mean that IDO1 makes every downstream metabolite in one reaction."
+]
   },
   {
     "kind": "term",

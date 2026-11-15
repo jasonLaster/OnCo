@@ -356,8 +356,99 @@ export const educationAntigenAntibodiesTerms: TermInput[] = [
 ],
     "tldr": "HLA molecules sit on cells and hold up small pieces of the cell's proteins for T cells to inspect. A T cell reads the fragment together with the particular HLA version holding it.",
     "summary": "Human leukocyte antigen (HLA) is the human major histocompatibility complex (MHC) system, with two main classes of peptide-display molecule. Classical class I (HLA-A, HLA-B, HLA-C) has a heavy chain, beta-2 microglobulin (B2M) and a bound peptide, is found on most nucleated cells, usually displays peptides from proteins made inside the cell and is read by CD8 T cells. Class II (HLA-DR, HLA-DP, HLA-DQ) has alpha and beta chains with a bound peptide, is mainly on professional antigen-presenting cells (expression can be induced elsewhere), usually displays proteins processed in vesicles, often acquired from outside, and is read by CD4 T cells. These are common routes, not exclusive lists: cross-presentation puts externally acquired antigen on class I without making it class II, and a CD4 response is not proof of matching class I tumour display. CD4 and CD8 are coreceptors and usual recognition partners, not guarantees of cell function. Structural work shows the T-cell receptor lying across the peptide and HLA together (Garboczi et al., 1996), CD8 contacting the class I alpha2 and alpha3 domains and B2M (Gao et al., 1997) and CD4 engaging a separate class II region (Yin et al., 2012); these constructs do not define universal angles or functions.\n\nHLA alleles are shared across people, and a person inherits a combination that is not necessarily unique. Each person inherits two copies each of HLA-A, HLA-B and HLA-C, so a cell can display up to six classical class I variants at once. The IPD-IMGT/HLA statistics page read on 9 November 2026 listed 46,146 HLA alleles, 31,311 class I and 14,835 class II (9,457 HLA-A, 11,328 HLA-B and 9,580 HLA-C alleles). Binding predictors estimate whether a peptide can fit a specified allele's groove, but processing, transport, loading and surface expression decide whether it is displayed. Sarkizova et al. (2020) profiled more than 185,000 peptides eluted from 95 mono-allelic cell lines to learn allele-specific motifs and build prediction models; that is allele-level data, not proof of any cell's display. Kaur et al. (2017) showed that HLA-C surface expression varies across individuals in an allele-specific manner, influenced by the structure of the peptide-binding cleft and peptide diversity; Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. The small HLA-C peptide share observed by Schellens and colleagues in four B lymphoblastoid cell lines was also affected by their assignment method, which gave HLA-A/B precedence; it is not a universal biological fraction.\n\nIn cancer, class I HLA shows peptides to CD8 T cells and is also the main ligand for inhibitory receptors on natural killer cells, so losing it can hide a tumour from T cells while removing a brake on NK cells. HLA-E and HLA-G are nonclassical and vary little between people; HLA-E presents leader peptides from other class I molecules and binds the NK receptor CD94/NKG2A (Braud et al., 1998, with HLA-E tetramers). Tumours can lose a presenting allele (HLA loss of heterozygosity), alter processing or reduce expression, and allele-specific loss differs from complete loss of conventional class I display; targets on retained alleles may remain possible. Tran et al. (2016) documented a colorectal cancer lesion that progressed after T-cell therapy against mutant KRAS G12D, which had lost the chromosome 6 haplotype encoding the restricting HLA-C*08:02; this shows escape in one patient, not a rate. Typing, protein expression, recovered peptide, recognition and killing are different observations, and a conventional surface-target engager avoids peptide-HLA dependence while a peptide-HLA-directed engager keeps it.\n\nB2M is the light chain of classical class I and does not span the membrane; class II contains no B2M, so CD4 T-cell recognition can remain when B2M is lost. B2M also partners other class I-like molecules: UniProt records heterotrimers with HLA-E, HLA-G, HLA-F and MR1 and lists CD1 interactions, and a B2M mutation caused deficiency of the neonatal Fc receptor FcRn in two siblings (Wani et al., 2006), so complete B2M loss can remove more than classical class I. Loss of one HLA allele can leave other presenting alleles usable, whereas loss of functional B2M impairs many class I targets at once, so several peptides on different alleles are not independent protection. A B2M variant, low RNA, absent surface class I and a blood B2M concentration are different observations: one variant does not show complete functional loss, and blood B2M does not count tumour peptide-HLA complexes. Zaretsky et al. (2016) linked a truncating B2M mutation to lost surface class I in one melanoma relapse after PD-1 blockade, which is a mechanism in that setting, not a frequency. Reduced class I display does not guarantee NK-cell killing, because activating signals are still needed.",
-    "links": [{"label":"IPD-IMGT/HLA statistics page (read 9 November 2026)","url":"https://www.ebi.ac.uk/ipd/imgt/hla/about/statistics/"},{"label":"Garboczi et al., 1996, Nature (PMID 8906788)","url":"https://doi.org/10.1038/384134a0"},{"label":"Gao et al., 1997, Nature (PMID 9177355)","url":"https://doi.org/10.1038/42523"},{"label":"Yin et al., 2012, PNAS (PMID 22431638)","url":"https://doi.org/10.1073/pnas.1118801109"},{"label":"Sarkizova et al., 2020, Nature Biotechnology (PMID 31844290)","url":"https://doi.org/10.1038/s41587-019-0322-9"},{"label":"Kaur et al., 2017, Nature Communications (PMID 28649982)","url":"https://doi.org/10.1038/ncomms15924"},{"label":"Braud et al., 1998, Nature (PMID 9486650)","url":"https://doi.org/10.1038/35869"},{"label":"Tran et al., 2016, New England Journal of Medicine (PMID 27959684)","url":"https://doi.org/10.1056/nejmoa1609279"},{"label":"Wani et al., 2006, PNAS (PMID 16549777)","url":"https://doi.org/10.1073/pnas.0600548103"},{"label":"UniProt P61769 (B2M)","url":"https://www.uniprot.org/uniprotkb/P61769/entry"},{"label":"Zaretsky et al., 2016, New England Journal of Medicine (PMID 27433843)","url":"https://doi.org/10.1056/nejmoa1604958"},{"label":"Schellens et al. 2015: naturally processed peptide repertoires in four B lymphoblastoid cell lines","url":"https://pubmed.ncbi.nlm.nih.gov/26375851/"},{"label":"Relative expression levels of the HLA class-I proteins in normal and HIV-infected cells.","url":"https://pubmed.ncbi.nlm.nih.gov/25754738/"},{"label":"Wieczorek et al.: MHC groove geometry and peptide-length exceptions (2017)","url":"https://pubmed.ncbi.nlm.nih.gov/28367149/"},{"label":"Cachot et al.: direct cytolytic function of tumour-specific human CD4 cells (2021)","url":"https://pubmed.ncbi.nlm.nih.gov/33637530/"}],
-    "notes": ["The original abstracts do not establish a universal HLA-C/A/B expression hierarchy. The checkpoint additionally reads Apps and colleagues' primary abstract for a specific haplotype comparison. Lower locus-level expression is background in Kaur and Schellens; Kaur directly tests allele-specific variation, and Schellens reports a method-dependent recovered peptide share.","Textbook class I and class II structure (Janeway, NBK26926) was not opened: scripted access refused.","Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. Kaur and colleagues compared HLA-C*05:01 and HLA-C*07:02 in transfected cells and found differences in expression and recovered peptide breadth. In four B lymphoblastoid cell lines, Schellens and colleagues recovered a small HLA-C-assigned peptide fraction; their assignment procedure gave HLA-A/B precedence because HLA-C prediction was less reliable, and they explicitly expected to underestimate HLA-C. A smaller observed share is therefore not a universal biological fraction or evidence of more permissive binding.","Groove geometry helps explain common peptide lengths without imposing a hard upper limit. Wieczorek and colleagues' 2017 review describes the class-I groove as closed at both ends, usually holding 8 to 10 residues, and the open class-II groove as usually holding 13 to 25. It also describes longer class-I ligands, including solved HLA-A2 complexes with 15-residue peptides. A reported range around 11 is therefore not a ceiling for every class-I ligand. CD4 help does not demonstrate the same target's class-I display. Some CD4 cells can themselves be cytotoxic: Cachot and colleagues directly tested tumour-specific human CD4 cells against tumour cells in defined assays. That result does not make every CD4 response cytotoxic or establish a treatment benefit."],
+    "links": [
+  {
+    "label": "IPD-IMGT/HLA statistics page (read 9 November 2026)",
+    "url": "https://www.ebi.ac.uk/ipd/imgt/hla/about/statistics/"
+  },
+  {
+    "label": "Garboczi et al., 1996, Nature (PMID 8906788)",
+    "url": "https://doi.org/10.1038/384134a0"
+  },
+  {
+    "label": "Gao et al., 1997, Nature (PMID 9177355)",
+    "url": "https://doi.org/10.1038/42523"
+  },
+  {
+    "label": "Yin et al., 2012, PNAS (PMID 22431638)",
+    "url": "https://doi.org/10.1073/pnas.1118801109"
+  },
+  {
+    "label": "Sarkizova et al., 2020, Nature Biotechnology (PMID 31844290)",
+    "url": "https://doi.org/10.1038/s41587-019-0322-9"
+  },
+  {
+    "label": "Kaur et al., 2017, Nature Communications (PMID 28649982)",
+    "url": "https://doi.org/10.1038/ncomms15924"
+  },
+  {
+    "label": "Braud et al., 1998, Nature (PMID 9486650)",
+    "url": "https://doi.org/10.1038/35869"
+  },
+  {
+    "label": "Tran et al., 2016, New England Journal of Medicine (PMID 27959684)",
+    "url": "https://doi.org/10.1056/nejmoa1609279"
+  },
+  {
+    "label": "Wani et al., 2006, PNAS (PMID 16549777)",
+    "url": "https://doi.org/10.1073/pnas.0600548103"
+  },
+  {
+    "label": "UniProt P61769 (B2M)",
+    "url": "https://www.uniprot.org/uniprotkb/P61769/entry"
+  },
+  {
+    "label": "Zaretsky et al., 2016, New England Journal of Medicine (PMID 27433843)",
+    "url": "https://doi.org/10.1056/nejmoa1604958"
+  },
+  {
+    "label": "Schellens et al. 2015: naturally processed peptide repertoires in four B lymphoblastoid cell lines",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26375851/"
+  },
+  {
+    "label": "Relative expression levels of the HLA class-I proteins in normal and HIV-infected cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25754738/"
+  },
+  {
+    "label": "Wieczorek et al.: MHC groove geometry and peptide-length exceptions (2017)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/28367149/"
+  },
+  {
+    "label": "Cachot et al.: direct cytolytic function of tumour-specific human CD4 cells (2021)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/33637530/"
+  },
+  {
+    "label": "UniProt HLA-A: reviewed topology (P04439)",
+    "url": "https://www.uniprot.org/uniprotkb/P04439/entry"
+  },
+  {
+    "label": "UniProt HLA-DRA: reviewed topology (P01903)",
+    "url": "https://www.uniprot.org/uniprotkb/P01903/entry"
+  },
+  {
+    "label": "UniProt HLA-DRB1: reviewed topology (P01911)",
+    "url": "https://www.uniprot.org/uniprotkb/P01911/entry"
+  },
+  {
+    "label": "UniProt CD4: reviewed topology (P01730)",
+    "url": "https://www.uniprot.org/uniprotkb/P01730/entry"
+  },
+  {
+    "label": "UniProt CD8A: reviewed topology (P01732)",
+    "url": "https://www.uniprot.org/uniprotkb/P01732/entry"
+  },
+  {
+    "label": "UniProt TRAC: reviewed topology (P01848)",
+    "url": "https://www.uniprot.org/uniprotkb/P01848/entry"
+  }
+],
+    "notes": [
+  "The original abstracts do not establish a universal HLA-C/A/B expression hierarchy. The checkpoint additionally reads Apps and colleagues' primary abstract for a specific haplotype comparison. Lower locus-level expression is background in Kaur and Schellens; Kaur directly tests allele-specific variation, and Schellens reports a method-dependent recovered peptide share.",
+  "Textbook class I and class II structure (Janeway, NBK26926) was not opened: scripted access refused.",
+  "Apps and colleagues found lower HLA-C than HLA-A/B in the analysed healthy-donor peripheral blood lymphocytes with the A*02:01/B*44:02/C*05:01 haplotype; the magnitude differed between flow cytometry and mass spectrometry. This is a defined comparison, not a universal hierarchy. Kaur and colleagues compared HLA-C*05:01 and HLA-C*07:02 in transfected cells and found differences in expression and recovered peptide breadth. In four B lymphoblastoid cell lines, Schellens and colleagues recovered a small HLA-C-assigned peptide fraction; their assignment procedure gave HLA-A/B precedence because HLA-C prediction was less reliable, and they explicitly expected to underestimate HLA-C. A smaller observed share is therefore not a universal biological fraction or evidence of more permissive binding.",
+  "Groove geometry helps explain common peptide lengths without imposing a hard upper limit. Wieczorek and colleagues' 2017 review describes the class-I groove as closed at both ends, usually holding 8 to 10 residues, and the open class-II groove as usually holding 13 to 25. It also describes longer class-I ligands, including solved HLA-A2 complexes with 15-residue peptides. A reported range around 11 is therefore not a ceiling for every class-I ligand. CD4 help does not demonstrate the same target's class-I display. Some CD4 cells can themselves be cytotoxic: Cachot and colleagues directly tested tumour-specific human CD4 cells against tumour cells in defined assays. That result does not make every CD4 response cytotoxic or establish a treatment benefit.",
+  "In a conventional cell-surface contact, the T-cell receptor and the CD4 or CD8 co-receptor have separate anchors in the T-cell membrane. The class-I heavy chain spans the presenting-cell membrane, while B2M is an associated extracellular partner. Class II instead has alpha and beta chains that each cross that membrane. The T-cell receptor contacts peptide plus HLA, while the co-receptor contacts a separate HLA region. These common structures do not assign a helper or killer role or demonstrate signalling, recognition of a particular tumour or killing. UniProt's curated topology annotations support the membrane locations. Yin and colleagues' structural example used an affinity-enhanced CD4 ectodomain, a human autoimmune T-cell receptor and a myelin peptide bound to HLA-DR4; its docking geometry describes that prepared complex rather than a universal drawing template."
+],
     "related": [
   "hla-a",
   "hla-b",

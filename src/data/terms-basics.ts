@@ -475,7 +475,8 @@ export const termsBasics: TermInput[] = [
 ]
 ,
 "notes": [
-  "The accessible epitope-prediction review distinguishes sequential residues from discontinuous exposed patches. This supplies review support for linear versus conformational epitopes, not a universal prediction-accuracy claim."
+  "The accessible epitope-prediction review distinguishes sequential residues from discontinuous exposed patches. This supplies review support for linear versus conformational epitopes, not a universal prediction-accuracy claim.",
+  "Consider a fictional protein X with an exposed region recognised by antibody A and a different region supplying a peptide recognised by T-cell receptor B on HLA-A*02:01. Removing the exposed region while retaining the peptide source could alter A's binding without removing B's source; losing HLA-A*02:01 could affect B's display without removing A's surface target. This is a conditional comparison of dependencies, not an observed treatment result. For an epitope-mapping result, record the receptor, target preparation, restricting HLA when relevant and controls. A negative test of an isolated fragment can miss a surface that needs the folded protein. Compare the relevant target forms before attributing a changed signal to loss of the epitope; binding alone still does not establish activation, tumour-cell death or safety."
 ]
 }),
   t({

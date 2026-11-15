@@ -1,0 +1,202 @@
+{
+  "dataCommit": "0344471b7725de71eb9b436290961f85d7a09fb9",
+  "plan": {
+    "auditBaseCommit": "4ef92e0a9c8f99d43bcc6c3e9ec24afbbe865a0b",
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 4,
+    "newCanonicalIds": 0,
+    "changes": [
+      {
+        "recordId": "macrophage-states",
+        "kind": "term",
+        "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+        "field": "notes",
+        "before": [
+          "In a tumour, a tumour-associated macrophage is named for its location, and its state and tested functions are separate questions. A tumour can hold several programmes in different neighbourhoods or at different times. An expression cluster can suggest a repair, interferon or lipid-handling programme, which is a hypothesis; it does not establish that the cells suppress T cells, kill cancer cells or would respond to a macrophage-directed drug. One marker such as CD163 does not establish a universal suppressive state, a change in proportions between two biopsies does not show that the same cells changed state, and the plain statement that M1 is good and M2 is bad loses the tissue and experiment that give a response its meaning.",
+          "Macrophages are described with protein panels, flow cytometry and single-cell RNA, and the report needs the identification rules, tissue or culture source, stimulation, collection time and denominator, because a fraction of recovered macrophages is not cells per area of tissue. A function such as engulfment or the effect on stimulated T-cell proliferation needs its own test with viability and comparator controls."
+        ],
+        "after": [
+          "In a tumour, a tumour-associated macrophage is named for its location, and its state and tested functions are separate questions. A tumour can hold several programmes in different neighbourhoods or at different times. An expression cluster can suggest a repair, interferon or lipid-handling programme, which is a hypothesis; it does not establish that the cells suppress T cells, kill cancer cells or would respond to a macrophage-directed drug. One marker such as CD163 does not establish a universal suppressive state, a change in proportions between two biopsies does not show that the same cells changed state, and the plain statement that M1 is good and M2 is bad loses the tissue and experiment that give a response its meaning.",
+          "Macrophages are described with protein panels, flow cytometry and single-cell RNA, and the report needs the identification rules, tissue or culture source, stimulation, collection time and denominator, because a fraction of recovered macrophages is not cells per area of tissue. A function such as engulfment or the effect on stimulated T-cell proliferation needs its own test with viability and comparator controls.",
+          "Consider a fictional culture comparison at 24 hours, scored with one method on a 0 to 1 scale of arbitrary RNA programme units. Profile A has interferon, lipid-handling and antigen-display scores of 0.80, 0.35 and 0.65; profile B has 0.45, 0.85 and 0.55. These six invented values are not measurements from Xue et al., fractions of cells or universal M1/M2 cutoffs. Several selected programmes coexist in each profile. The axes are summaries of expression, not independent switches that can be set or reversed at will. Even an antigen-display RNA score needs a separate functional presentation test. A real comparison also needs the macrophage identification rules, source, exposures, sampling time and scoring method. A change in profile proportions between samples would not establish that the same cells converted from one state to another."
+        ],
+        "beforeSHA256": "642ae349006637f0aa171db85ec7dc426283eebb7b0f67e6a557d3d30b92e8c7",
+        "afterSHA256": "fdcf2f2ebf25638c917640bd7be876dad6f005256568605d5112cff1b9eefd72",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true,
+        "sourceScope": "Fictional/premise-backed reading examples for macrophage and NK comparisons; verified structural abstract and targeted primary results for STING."
+      },
+      {
+        "recordId": "nk-cell",
+        "kind": "term",
+        "file": "src/data/terms-basics.ts",
+        "field": "notes",
+        "before": [
+          "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
+          "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families.",
+          "The receptor-level map separates inhibitory KIR/HLA and NKG2A/HLA-E interactions from activating stress-ligand and antibody-Fc inputs. Receptor proteins, genotype, ligand expression, degranulation and controlled target killing are different readouts. A loss of inhibitory display without adequate activating input does not guarantee killing, and a perioperative blood NK measurement does not describe every residual-disease site."
+        ],
+        "after": [
+          "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
+          "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families.",
+          "The receptor-level map separates inhibitory KIR/HLA and NKG2A/HLA-E interactions from activating stress-ligand and antibody-Fc inputs. Receptor proteins, genotype, ligand expression, degranulation and controlled target killing are different readouts. A loss of inhibitory display without adequate activating input does not guarantee killing, and a perioperative blood NK measurement does not describe every residual-disease site.",
+          "In a fictional matched-target comparison, one target loses the ligand for a particular inhibitory receptor while another inhibitory contact and an activating ligand remain. The changed restraint is only one part of the tested recognition context. A schematic pair of class I contacts is not a measured HLA profile, a complete receptor map or a set of numerical signal weights. This example illustrates the signal integration discussed by Long et al. (2013), rather than adding a measured killing rate. Test the actual NK preparation and target pair, keeping other ligands, target viability, timing and assay controls comparable. Removing one inhibitory contact does not by itself supply sufficient activation, establish target death or predict a CAR-NK product's tumour access or patient benefit."
+        ],
+        "beforeSHA256": "2c1608d9fd84f90166d4a1f94d365f33b65a7cc61ba8cf70e7bad093e522aced",
+        "afterSHA256": "8be92fc0e3eaa5fed24ad6939916f2e9a73542f15865a7a5244df0ae6012f233",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true,
+        "sourceScope": "Fictional/premise-backed reading examples for macrophage and NK comparisons; verified structural abstract and targeted primary results for STING."
+      },
+      {
+        "recordId": "cgas-sting",
+        "kind": "pathway",
+        "file": "src/data/pathways.ts",
+        "field": "notes",
+        "before": [
+          "Vanpouille-Box's 2017 experiments found that sufficiently high single radiation doses induced the DNA-degrading enzyme TREX1, reducing cytosolic DNA and interferon signalling. The threshold sufficient to clear cytosolic DNA varied from twelve to eighteen gray across the tested mouse and human carcinoma cell lines; a patient-derived lung-cancer xenograft was also examined. The work connected repeated lower-dose irradiation, type I interferon and dendritic-cell-dependent T-cell effects in defined models with checkpoint blockade. It does not supply a universal human dose ceiling, show that more physical injury always gives more useful immunity or select an individual radiation schedule."
+        ],
+        "after": [
+          "Vanpouille-Box's 2017 experiments found that sufficiently high single radiation doses induced the DNA-degrading enzyme TREX1, reducing cytosolic DNA and interferon signalling. The threshold sufficient to clear cytosolic DNA varied from twelve to eighteen gray across the tested mouse and human carcinoma cell lines; a patient-derived lung-cancer xenograft was also examined. The work connected repeated lower-dose irradiation, type I interferon and dendritic-cell-dependent T-cell effects in defined models with checkpoint blockade. It does not supply a universal human dose ceiling, show that more physical injury always gives more useful immunity or select an individual radiation schedule.",
+          "A cell cutaway is a qualitative example, not evidence about a particular patient, immune subtype or molecule count. A cGAMP symbol is not an atomic structure or DNA changing into a messenger. The cytosolic sensing experiments do not establish that all cGAS is confined to that compartment. The ligand-binding face and the trafficking route are separate parts of this mechanism. Shang et al. (2019) describe STING as an endoplasmic-reticulum membrane protein with four membrane-spanning helices and a cytoplasmic ligand-binding domain; their full-length structures include human and chicken STING. cGAMP reaches that cytosolic domain rather than an ER or Golgi lumen. A simplified stem or repeated molecule icon in a diagram does not depict the full structure, count molecules or show secretion. An arrow toward a nuclear gene response represents intervening signals, not physical delivery of STING or cGAMP into the nucleus. Trafficking is also distinct from a measured response: Mukai et al.'s C88/91S mutant still moved from ER to Golgi after DMXAA stimulation but failed to induce the measured downstream genes in their cell model. Thus, localization, ligand sensing and gene output need separate evidence."
+        ],
+        "beforeSHA256": "024820c2681c9f8d122899824ac7a2c63d567ccfa408a50325bb5cae19cc704f",
+        "afterSHA256": "a7af66c2c184836adbfddcb0b20d2ea919c41cd24989f52fb0c70c92681ebdd9",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true,
+        "sourceScope": "Fictional/premise-backed reading examples for macrophage and NK comparisons; verified structural abstract and targeted primary results for STING."
+      },
+      {
+        "recordId": "cgas-sting",
+        "kind": "pathway",
+        "file": "src/data/pathways.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Stimulator_of_interferon_genes"
+          },
+          {
+            "label": "Cyclic GMP-AMP Synthase Is a Cytosolic DNA Sensor That Activates the Type I Interferon Pathway.",
+            "url": "https://doi.org/10.1126/science.1232458"
+          },
+          {
+            "label": "Activation of STING requires palmitoylation at the Golgi.",
+            "url": "https://doi.org/10.1038/ncomms11932"
+          },
+          {
+            "label": "STING-Dependent Cytosolic DNA Sensing Mediates Innate Immune Recognition of Immunogenic Tumors.",
+            "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+          },
+          {
+            "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+            "url": "https://doi.org/10.1038/nature25432"
+          },
+          {
+            "label": "Non-cell-autonomous cancer progression from chromosomal instability.",
+            "url": "https://doi.org/10.1038/s41586-023-06464-z"
+          },
+          {
+            "label": "Vanpouille-Box et al.: TREX1, experimental radiation dose and immune sensing (2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28598415/"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Stimulator_of_interferon_genes"
+          },
+          {
+            "label": "Cyclic GMP-AMP Synthase Is a Cytosolic DNA Sensor That Activates the Type I Interferon Pathway.",
+            "url": "https://doi.org/10.1126/science.1232458"
+          },
+          {
+            "label": "Activation of STING requires palmitoylation at the Golgi.",
+            "url": "https://doi.org/10.1038/ncomms11932"
+          },
+          {
+            "label": "STING-Dependent Cytosolic DNA Sensing Mediates Innate Immune Recognition of Immunogenic Tumors.",
+            "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+          },
+          {
+            "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+            "url": "https://doi.org/10.1038/nature25432"
+          },
+          {
+            "label": "Non-cell-autonomous cancer progression from chromosomal instability.",
+            "url": "https://doi.org/10.1038/s41586-023-06464-z"
+          },
+          {
+            "label": "Vanpouille-Box et al.: TREX1, experimental radiation dose and immune sensing (2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28598415/"
+          },
+          {
+            "label": "Cryo-EM structures of STING reveal its mechanism of activation by cyclic GMP-AMP.",
+            "url": "https://doi.org/10.1038/s41586-019-0998-5"
+          }
+        ],
+        "beforeSHA256": "cf4d6735c4511a0513a51f22b6750921dddf203e7a7938e48521ef37e9b23aa6",
+        "afterSHA256": "07785ab11e994b3538da9a95e63a7b795db7507d7e1f28df62546d30ed941b55",
+        "oldArrayExactPrefixPreserved": true,
+        "reviewDateUnchanged": true
+      }
+    ],
+    "unchangedSelectedOwner": "pattern-recognition-damps-and-pamps",
+    "datesScalarsLeadsAliasesRelationsAndRegistrationsUnchanged": true,
+    "fullValidationStillRequired": true
+  },
+  "application": {
+    "appliedAtUTC": "2026-11-15T05:11:21.066Z",
+    "auditBaseCommit": "4ef92e0a9c8f99d43bcc6c3e9ec24afbbe865a0b",
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 4,
+    "newCanonicalIds": 0,
+    "oldNotesAndLinksRetainedAsExactPrefixes": true,
+    "codeBehaviorChanged": false,
+    "files": [
+      {
+        "file": "src/data/education-parallel-innate-immune-2026-11.ts",
+        "beforeSHA256": "562ccb854c19f26d9aabba46298d4fa81ecfc0f2aaead595f4ed8ff0ce6775db",
+        "afterSHA256": "824eaf2ef13caddde5ae93e1f794e3f3f121cb7141ee418cb022439888bbe843"
+      },
+      {
+        "file": "src/data/terms-basics.ts",
+        "beforeSHA256": "420c165e96a40ff39f70af48e183638cacf28c43b4fe6612c64e5e7420a1542f",
+        "afterSHA256": "3f4d6c87ab49ca8a654d35b126749b7dd9f971abddf1365f61411c8e6050e583"
+      },
+      {
+        "file": "src/data/pathways.ts",
+        "beforeSHA256": "11792790e4106cf514aa89d9abe32be7397b4e5ea675760386c5dc07c00e9fab",
+        "afterSHA256": "e0134e45c35bac8c6e95fd2cd33ca9eb7ad8c714592dbf672809531221454356"
+      }
+    ],
+    "fullValidationStillRequired": true
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cgas-sting",
+      "macrophage-states",
+      "nk-cell"
+    ],
+    "changedOwnerCount": 3,
+    "changedCanonicalFields": 4,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 4,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceSummariesAndLeadsUnchanged": true,
+    "changedFiles": [
+      "src/data/education-parallel-innate-immune-2026-11.ts",
+      "src/data/pathways.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "unappliedProposals": [],
+  "newCanonicalIds": 0,
+  "newRegistrations": 0,
+  "unchangedOlderClaimsNotRecertified": "Unselected NK receptor/assay and CAR clinical claims, macrophage tissue-species details, cGAS radiation/intervention text and pattern-recognition background claims retain earlier scope. The unchanged pattern owner is selected for existing teaching only."
+}

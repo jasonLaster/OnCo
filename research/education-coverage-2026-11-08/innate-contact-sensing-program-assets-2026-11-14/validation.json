@@ -1,0 +1,1303 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "0344471b7725de71eb9b436290961f85d7a09fb9",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.97
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 34.91
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.43
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 416.08
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "files": 293,
+    "passed": 3101,
+    "skipped": 2
+  },
+  "canonical": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "cgas-sting",
+      "macrophage-states",
+      "nk-cell"
+    ],
+    "changedOwnerCount": 3,
+    "changedCanonicalFields": 4,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 4,
+    "oldNotesAndLinksPreservedAsExactPrefixes": true,
+    "datesNamesAliasesRelationsProvenanceSummariesAndLeadsUnchanged": true,
+    "changedFiles": [
+      "src/data/education-parallel-innate-immune-2026-11.ts",
+      "src/data/pathways.ts",
+      "src/data/terms-basics.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "exactReaderAnchors": {
+    "checks": [
+      {
+        "unit": "P41-M01",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "7df4f5a67f5c06c97605a39938bf1769cf1452270ecc12b77e0ad3fea577ddca",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M02",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "304e8dd8eebcf84bc3a83a919ab3238919a54923ebe0d4a090f824b6adf2e41b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M02",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "5047f73bd24305ea8a9260897f0e828b7ba5bc60afa5d9deef06d0c7c527ab16",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M03",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "0787c8fe80263edd380a5b2a2f27e5dfe2b7d31662ca10ee21bec8c9c43f66cd",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M04",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "70122149310b8240c87e7f237025200a74a7ffdcc5c63e4b24d54bac6a2e7cb4",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M05",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "de3288f66c28b5eb5c5ef682ffa44c1290b82dfaba05479c2ae9e871c7ae9fb9",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M06",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "4e67095ac743fdc954c307cde11dd07dbd60d999a39086fbabf623cd8ec22286",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M07",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageSHA256": "7834ca0afd18ad1f5c93bdfbd31c007f2c218db488cfe38f3ddc21f095a8aa55",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M08",
+        "recordId": "macrophage-states",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "736d2f42fe20855dced84b29f105983de7876317cc67571f1b427818c013b75f",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M09",
+        "recordId": "macrophage-states",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "e58597431e402a27b80e0d9bd32f2a6f2789a7f3fc3f7c8c20979090275b58f7",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-M09",
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "863af19336d533363fbc6800161adbd567628e2408aaa92d12ffd3d6070740fa",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N01",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "acb48c8d1d64e56a4558a363de864888a5d2e2799d8741989ace8c2fa6ceb37b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N02",
+        "recordId": "nk-cell",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "c3a46f245a7e5d43c8ba4d8a0e3f97acfcadfd5b50c01bd9b02b5041f7a9e89a",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N03",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "e9c4bb730ce88638416ffadc239421da39bf5c05e9ec95405b90b7ec7736b2d2",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N04",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "babfe599bc65261d36fdfcfbeea3c2217f8d7fe4cf0653915dc215df9c74a563",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N05",
+        "recordId": "nk-cell",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "410e58d84c8678869b81faebdf65ef9a092ef18ab4ae440987ce36733eb55c5a",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N06",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "8a5ac874c5e344286b85d6028452c46fe47383be5ff6c5abbc3dc8ea3d633c22",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N07",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "1f0e7b24317082c2e41471b4cf9c8451e2c07f6663ad20737e550037f16ac3ea",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N08",
+        "recordId": "nk-cell",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "2b0bdbb1d5dba4b18e377c9a5c50a90f3e016a88c9ca0f8bc748bc0aa25c90e1",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N08",
+        "recordId": "nk-cell",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "86944f83fdba012515bc6a741f83e5aef09761d58d1196b37be0311b8800c972",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-N08",
+        "recordId": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageSHA256": "e561ef8023b33e59233a51ad556b1a50ec7d7ee8adebfdf675bee5437cb6a2d3",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S01",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "b6f45ccae47c3c48ed5d799bce7f93a156b0b8b6ed8765c2757bd65224ccbc04",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S02",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "fdbdee0cafa1e7d8c8a4f8029bdd94d8cb911bc545f9b73ef96cb165bed64413",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S02",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "3a8f799c7617577a7f6a06c9361f9724b9dd93a56a94928829089590ec195098",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S03",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "a9bd5c3a56d33e75f0acf66145683cf11e7d5eace8a15ac2e0d9a2011e219db7",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S03",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "ca1b4cf45bfadc482fec0421c9a28fd01379c2604aab9ede9b5bb25a26df8b0e",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S04",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "ba9dc0748e12e60a0cc3daee9da4acfe0e875fb015a12c2299b1a81706c61781",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S05",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "7548d4a7dae361c4de6e09c3e74d01e60d55082de533812b872bd00c199f0032",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S05",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "f67efd1621cdf833f8d58ca6bd4addae82831ac247cb69caba8f9e7586e1e83e",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S06",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "cf1f6bd8d83c6b692970897828bce1e2535e41e1890deca8912039550288932b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S07",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "6b02bf5853063a72685e79b5c9b81534451793c346e8bbfb21cfbf3eb6072e7f",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S07",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "f89012d9878aa0148a20fee3098b3b06dd7bbcd3deb90b9e0261866aee88eadb",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S08",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "a44483b406d79a0a9edf58ad4095bca8bd2a178744b79ece3d706c3c2be3ffd0",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S08",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "f67efd1621cdf833f8d58ca6bd4addae82831ac247cb69caba8f9e7586e1e83e",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S08",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "a17a47c6e0a4914ae68a7beb672bccc9ba04a98020dc0880526d37dd9724b0dc",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S09",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "7f889972f2a43c455b60fd0c2cab36ee6d9c334c676cd4e61e3792dd274648e2",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S10",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "f244eadd21c7bd7fd08dc13e9b8411b6be93390b318da97a6f6e4190d9719f08",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S10",
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "99c54289bdb78bc35f72bd4d6a5c78bc87b20ba61de6f6a6e049046b20d92747",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S11",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "dc8b2b2649eef2a06efaa439c7c0fa5000bcdccf35137da5f22f8d2c22c5431d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S11",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "330dfafc7bbc0dee9f543681b6008190cce2e8d4614c58cd975c7fb912cafc4d",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S12",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "7d9064e6bf53166e46369107f0aac9f31a93b00e679c1d06777c6cf9ba39ad60",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S12",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "bd1cb018942529fb2438dbad87abb29c3fa88edffee5837bd6e5e4a37aa81065",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S13",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "5c93265e719d63b2518220944a06579d9ffe7630bccce86508ba0b6f46bdbf59",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S13",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "4a24fa426a94407a382ebe6054d09d8eb98a11bbd91f0d4ec26712b6eb4c9fb3",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-S13",
+        "recordId": "cgas-sting",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "5b7cf1cedbe5cad52860989bcbcb2acd67ac1ab418af4a7740a91968d9d3c394",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P01",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "6e1f148200232432583d9f41ae5a5a0b71a47071580ed7100eb7c79ac6337a91",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P01",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "83ba25995a5702616973e343aff29f8cea35b9ca284a9a2e65800dd838e57544",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P02",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "ae43e64be050080c8fb70209bc4ac185bdf79bda8c7265a18e68a00590c5d53b",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P02",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "08ac8b47b7a48c38e3bbd3279b55e63b3ec3d1ac3c648f9047d3bb7a8eb65ccc",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P03",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "73128e82d843666a0e243b8a04cb88b2e0c0931e9d46c2a0b2a5634b01fe9f85",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P03",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "46533900e20e279207cc1efc1620bb39da68001c51fc394bf9930f5767975ea4",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P03",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "tldr",
+        "index": null,
+        "passageSHA256": "1ca8652a27f1dc4beda7adeb98c2ed0e48cd3bec706db34f8d5853e0698f6c69",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P04",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 0,
+        "passageSHA256": "04465f07e451c6d47a827769cee8bdf76a81305852dbc8f24060481958cfb256",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P05",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": null,
+        "passageSHA256": "8ebef1095adef95be837b94b06cbfc74f7128ee6ed8ee2ea3dc18f626f4b7d6a",
+        "presentInActualStaticReader": true
+      },
+      {
+        "unit": "P41-P05",
+        "recordId": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 1,
+        "passageSHA256": "a6865ec724f246f64225af1711a637526c539ce2138525aa5041d00e5a514fbe",
+        "presentInActualStaticReader": true
+      }
+    ],
+    "allPass": true,
+    "registeredRootFieldReferences": 55,
+    "actualFrozenPeerFieldReferences": 0,
+    "peerReadersRendered": 0,
+    "scientificUnits": 35,
+    "scope": "All 55 current field and excerpt hashes verify and all 55 anchors occur in four fresh actual root static readers. Semantic assessments are coordinator judgments, not independent, expert, hosted-browser, pixel, mobile or language acceptance."
+  },
+  "changedReaderParagraphs": {
+    "checks": [
+      {
+        "recordId": "macrophage-states",
+        "field": "notes",
+        "passageSHA256": "1afc80b491d4fe649f2e79f0cea2d6814575804ea415a0c0724bc56aaca59231",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "nk-cell",
+        "field": "notes",
+        "passageSHA256": "adce62e2ec898e019d1994d05f0f5451033f00b57181e6372c386563cbaac8d8",
+        "presentInActualStaticReader": true
+      },
+      {
+        "recordId": "cgas-sting",
+        "field": "notes",
+        "passageSHA256": "1e1c2ac6eb6e28356d19852d7a9039420d48e761b605b4ea586c749495abc45e",
+        "presentInActualStaticReader": true
+      }
+    ],
+    "allPass": true,
+    "scope": "Exact changed passages in decoded actual static readers; no hosted browser, hydration, pixel, expert or language acceptance."
+  },
+  "exports": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 50.62
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 2.57
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 7.63
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 6.94
+    }
+  ],
+  "exportReadback": {
+    "records": 4,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "cgas-sting",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cgas-sting",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cgas-sting",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cgas-sting",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "macrophage-states",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "cgas-sting.json",
+        "bytes": 10221,
+        "sha256": "29d4830abf8c1c67fcd3658876e2e1f5ddd5ab5c513767c9a42f82307b6d49b4"
+      },
+      {
+        "file": "cgas-sting.md",
+        "bytes": 7768,
+        "sha256": "5c6dd07ef28fea1e77a67ca6c7a335f09857458a7a0f8df7b43778849093c315"
+      },
+      {
+        "file": "macrophage-states.json",
+        "bytes": 5233,
+        "sha256": "db1697537cdc3bf8a9fbbd1de30d104bf8383bdafb8044636998e69534db42d3"
+      },
+      {
+        "file": "macrophage-states.md",
+        "bytes": 4692,
+        "sha256": "6c87ffcc06d3e65fb2c3f86888cb3eaa16b5d3512c1e0ccae830cce51bc96567"
+      },
+      {
+        "file": "pattern-recognition-damps-and-pamps.json",
+        "bytes": 7798,
+        "sha256": "31bfc3ff394ff7a985149daa851ee7423dc3e2b24f11087fae6d9400da7bb06b"
+      },
+      {
+        "file": "pattern-recognition-damps-and-pamps.md",
+        "bytes": 7146,
+        "sha256": "0f8924a7de35ffaec6da699a67b801180a8907ed63c7a070ff2580e40e59d171"
+      },
+      {
+        "file": "nk-cell.json",
+        "bytes": 10197,
+        "sha256": "5f30c7ad7e578a0a69135fbb7e4f6cf8987ddefad5bd1d98d9e52266ac57bf34"
+      },
+      {
+        "file": "nk-cell.md",
+        "bytes": 8881,
+        "sha256": "31bbcb01f9e3371f84b09951e92dec3373df6f7564c65840daaee81d94c295c0"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "exportRestoration": {
+    "ownAtomicLockReleased": true,
+    "threeTrackedDiscoveryFilesRestored": true,
+    "gatedDataBytesUnchanged": true,
+    "unrelatedTrackedFilesChanged": false
+  },
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "575729a99745ed59dd3d69febad3164d282a4e759846e1e8ee124ea121626e71",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 3
+  },
+  "summaryConsumers": {
+    "slots": 36,
+    "available": 18,
+    "EnglishFallbacks": 18,
+    "changedShortConsumerStates": 0,
+    "beforeInputReconstructionExplicit": true,
+    "EnglishLeadAndSummaryInputsUnchanged": true,
+    "consumerImplementationAndFilesUnchanged": true,
+    "longSummaryCaches": [
+      {
+        "id": "cgas-sting",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "cgas-sting",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "macrophage-states",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "es",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "zh",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "pt",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "hi",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "fr",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "de",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "ja",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      },
+      {
+        "id": "nk-cell",
+        "language": "ar",
+        "stored": false,
+        "storedSHA256": null,
+        "sourceHash": null,
+        "accepted": false
+      }
+    ],
+    "storedLongCaches": 0,
+    "acceptedLongCaches": 0,
+    "reviews": [
+      {
+        "id": "cgas-sting",
+        "namedReviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "macrophage-states",
+        "namedReviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "pattern-recognition-damps-and-pamps",
+        "namedReviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "EN",
+              "title": "No translation yet; showing English. Propose one via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      },
+      {
+        "id": "nk-cell",
+        "namedReviewedLanguages": [],
+        "marks": [
+          {
+            "language": "es",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "zh",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "pt",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "hi",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "fr",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "de",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ja",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          },
+          {
+            "language": "ar",
+            "mark": {
+              "text": "MT",
+              "title": "Machine-assisted translation, not yet reviewed by a named speaker. Report a problem via Suggest an edit.",
+              "tone": "muted"
+            }
+          }
+        ]
+      }
+    ],
+    "namedReviewStampsChanged": 0,
+    "independentLanguageAcceptance": false
+  },
+  "newNextBuildBrowserMobileAccessibilityExpertOrLanguageAcceptance": false
+}

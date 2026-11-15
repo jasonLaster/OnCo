@@ -1,0 +1,454 @@
+{
+  "version": "proposal-support-bodies-40-root",
+  "draft": 375,
+  "committedDataHead": "0344471b7725de71eb9b436290961f85d7a09fb9",
+  "auditBaseCommit": "4ef92e0a9c8f99d43bcc6c3e9ec24afbbe865a0b",
+  "state": "Four current registered root records; three note arrays and one source-link array changed. Other assertions keep earlier source scope.",
+  "records": [
+    {
+      "id": "cgas-sting",
+      "kind": "pathway",
+      "name": "cGAS-STING innate sensing",
+      "aka": [],
+      "tldr": "cGAS is a DNA sensor that can activate signalling through STING. The measured signal and immune outcome depend on the cell and context.",
+      "summary": "Sensor and messenger are separate steps: in cell experiments cGAS bound DNA in the cytoplasm and made the second messenger cGAMP, which binds and activates STING (Sun et al., 2013), and the presence of DNA does not by itself measure cGAS activity.\n\nSTING normally sits in the endoplasmic reticulum; in the cells tested it moved to perinuclear compartments on activation, and palmitoylation at the Golgi was essential for activation (Mukai et al., 2016). That is intracellular trafficking, not release of STING as a circulating messenger.\n\nThe consequence depends on the cell. Host STING was needed for spontaneous CD8 T-cell priming against tumours in mice (Woo et al., 2014). In chromosomally unstable tumour models, ruptured micronuclei spilled DNA into the cytosol and activated cGAS and STING, and continuing chromosome segregation errors promoted invasion and metastasis in a STING-dependent manner (Bakhoum et al., 2018). A later study reported interferon tachyphylaxis and an endoplasmic reticulum stress response downstream of chronic STING activation in such cells, and an association of chromosomal instability and cGAS activation in micronuclei with immune suppression and metastasis in human triple-negative breast cancer (Li et al., 2023). An interferon RNA signal in a tumour sample cannot identify the producing cell or the sensor behind it, and acute and repeated stimulation can differ, which is not a rule that short stimulation helps and long stimulation harms.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Stimulator_of_interferon_genes",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Stimulator_of_interferon_genes"
+        },
+        {
+          "label": "Cyclic GMP-AMP Synthase Is a Cytosolic DNA Sensor That Activates the Type I Interferon Pathway.",
+          "url": "https://doi.org/10.1126/science.1232458"
+        },
+        {
+          "label": "Activation of STING requires palmitoylation at the Golgi.",
+          "url": "https://doi.org/10.1038/ncomms11932"
+        },
+        {
+          "label": "STING-Dependent Cytosolic DNA Sensing Mediates Innate Immune Recognition of Immunogenic Tumors.",
+          "url": "https://doi.org/10.1016/j.immuni.2014.10.017"
+        },
+        {
+          "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+          "url": "https://doi.org/10.1038/nature25432"
+        },
+        {
+          "label": "Non-cell-autonomous cancer progression from chromosomal instability.",
+          "url": "https://doi.org/10.1038/s41586-023-06464-z"
+        },
+        {
+          "label": "Vanpouille-Box et al.: TREX1, experimental radiation dose and immune sensing (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28598415/"
+        },
+        {
+          "label": "Cryo-EM structures of STING reveal its mechanism of activation by cyclic GMP-AMP.",
+          "url": "https://doi.org/10.1038/s41586-019-0998-5"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "pattern-recognition-damps-and-pamps"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "sbrt",
+        "sting-agonist",
+        "immune-stimulating-adc",
+        "parp-inhibitor",
+        "adc"
+      ],
+      "targets": [
+        "parp",
+        "pd1"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "abscopal-effect",
+        "immunogenic-cell-death"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Vanpouille-Box's 2017 experiments found that sufficiently high single radiation doses induced the DNA-degrading enzyme TREX1, reducing cytosolic DNA and interferon signalling. The threshold sufficient to clear cytosolic DNA varied from twelve to eighteen gray across the tested mouse and human carcinoma cell lines; a patient-derived lung-cancer xenograft was also examined. The work connected repeated lower-dose irradiation, type I interferon and dendritic-cell-dependent T-cell effects in defined models with checkpoint blockade. It does not supply a universal human dose ceiling, show that more physical injury always gives more useful immunity or select an individual radiation schedule.",
+        "A cell cutaway is a qualitative example, not evidence about a particular patient, immune subtype or molecule count. A cGAMP symbol is not an atomic structure or DNA changing into a messenger. The cytosolic sensing experiments do not establish that all cGAS is confined to that compartment. The ligand-binding face and the trafficking route are separate parts of this mechanism. Shang et al. (2019) describe STING as an endoplasmic-reticulum membrane protein with four membrane-spanning helices and a cytoplasmic ligand-binding domain; their full-length structures include human and chicken STING. cGAMP reaches that cytosolic domain rather than an ER or Golgi lumen. A simplified stem or repeated molecule icon in a diagram does not depict the full structure, count molecules or show secretion. An arrow toward a nuclear gene response represents intervening signals, not physical delivery of STING or cGAMP into the nucleus. Trafficking is also distinct from a measured response: Mukai et al.'s C88/91S mutant still moved from ER to Golgi after DMXAA stimulation but failed to induce the measured downstream genes in their cell model. Thus, localization, ligand sensing and gene output need separate evidence."
+      ],
+      "analogy": "A smoke detector is a limited analogy: cGAS senses DNA and STING carries a downstream signal. Detecting a signal does not show that useful antitumour immunity followed.",
+      "nodes": [
+        {
+          "id": "dmg",
+          "label": "Radiation, chemo, ADC payload",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "dna",
+          "label": "Cytosolic dsDNA / micronuclei",
+          "x": 50,
+          "y": 22
+        },
+        {
+          "id": "cgas",
+          "label": "cGAS",
+          "x": 50,
+          "y": 38
+        },
+        {
+          "id": "cgamp",
+          "label": "cGAMP",
+          "x": 50,
+          "y": 52
+        },
+        {
+          "id": "enpp1",
+          "label": "ENPP1",
+          "x": 85,
+          "y": 52
+        },
+        {
+          "id": "sting",
+          "label": "STING",
+          "x": 50,
+          "y": 66
+        },
+        {
+          "id": "tbk1",
+          "label": "TBK1 → IRF3 / NF-κB",
+          "x": 50,
+          "y": 80
+        },
+        {
+          "id": "ifn",
+          "label": "Type I IFN, CXCL10 → T-cell recruitment",
+          "x": 50,
+          "y": 95
+        }
+      ],
+      "edges": [
+        {
+          "from": "dmg",
+          "to": "dna",
+          "type": "activates"
+        },
+        {
+          "from": "dna",
+          "to": "cgas",
+          "type": "activates"
+        },
+        {
+          "from": "cgas",
+          "to": "cgamp",
+          "type": "activates"
+        },
+        {
+          "from": "enpp1",
+          "to": "cgamp",
+          "type": "inhibits"
+        },
+        {
+          "from": "cgamp",
+          "to": "sting",
+          "type": "activates"
+        },
+        {
+          "from": "sting",
+          "to": "tbk1",
+          "type": "activates"
+        },
+        {
+          "from": "tbk1",
+          "to": "ifn",
+          "type": "activates"
+        }
+      ],
+      "interventions": [
+        "Radiotherapy (especially hypofractionated) + checkpoint inhibitors",
+        "PARP inhibitor + PD-1 combinations",
+        "STING agonists (intratumoural, systemic, antibody-conjugated)",
+        "ENPP1 inhibitors",
+        "TOP1-payload ADCs + IO (ASCENT-04, EV-302 analogues)"
+      ]
+    },
+    {
+      "id": "macrophage-states",
+      "kind": "term",
+      "name": "Macrophage states beyond M1 and M2",
+      "aka": [],
+      "tldr": "What a macrophage is doing depends on where it came from, where it sits, and the signals and history it has had, so the two-box labels M1 and M2 describe a laboratory comparison and not every macrophage in a tissue. In a tumour, a macrophage's label does not on its own show what it is doing to the cancer or to T cells.",
+      "summary": "A macrophage's lineage is its developmental origin; its state is a set of activity programmes at one time. A state label describes selected features and is not a complete biography. The M1 and M2 scheme grew from simplified experiments, with interferon gamma and microbial stimulation giving M1-like cells and interleukin-4 giving M2-like cells, and it is ambiguous unless the source, the stimulus and the markers are stated. A consensus framework asks authors to report the source of the macrophages, the activators used and a defined set of markers (Murray et al., 2014). When human macrophages were stimulated with diverse signals, 299 transcriptomes revealed a spectrum of activation states that extends the M1 and M2 model (Xue et al., 2014). In mice, tissue-resident macrophages had distinct enhancer landscapes beyond what developmental origin explained, and the local environment could reshape transplanted precursors and even reprogramme differentiated macrophages moved to a new environment (Lavin et al., 2014). Together these support diversity and plasticity without showing that any macrophage can be converted to any desired state.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Macrophage activation and polarization: nomenclature and experimental guidelines.",
+          "url": "https://doi.org/10.1016/j.immuni.2014.06.008"
+        },
+        {
+          "label": "Transcriptome-based network analysis reveals a spectrum model of human macrophage activation.",
+          "url": "https://doi.org/10.1016/j.immuni.2014.01.006"
+        },
+        {
+          "label": "Tissue-resident macrophage enhancer landscapes are shaped by the local microenvironment.",
+          "url": "https://doi.org/10.1016/j.cell.2014.11.018"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [],
+      "targets": [
+        "cd163"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "macrophage",
+        "tumor-associated-macrophages",
+        "inflammation",
+        "myeloid-derived-suppressor-cells"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a tumour, a tumour-associated macrophage is named for its location, and its state and tested functions are separate questions. A tumour can hold several programmes in different neighbourhoods or at different times. An expression cluster can suggest a repair, interferon or lipid-handling programme, which is a hypothesis; it does not establish that the cells suppress T cells, kill cancer cells or would respond to a macrophage-directed drug. One marker such as CD163 does not establish a universal suppressive state, a change in proportions between two biopsies does not show that the same cells changed state, and the plain statement that M1 is good and M2 is bad loses the tissue and experiment that give a response its meaning.",
+        "Macrophages are described with protein panels, flow cytometry and single-cell RNA, and the report needs the identification rules, tissue or culture source, stimulation, collection time and denominator, because a fraction of recovered macrophages is not cells per area of tissue. A function such as engulfment or the effect on stimulated T-cell proliferation needs its own test with viability and comparator controls.",
+        "Consider a fictional culture comparison at 24 hours, scored with one method on a 0 to 1 scale of arbitrary RNA programme units. Profile A has interferon, lipid-handling and antigen-display scores of 0.80, 0.35 and 0.65; profile B has 0.45, 0.85 and 0.55. These six invented values are not measurements from Xue et al., fractions of cells or universal M1/M2 cutoffs. Several selected programmes coexist in each profile. The axes are summaries of expression, not independent switches that can be set or reversed at will. Even an antigen-display RNA score needs a separate functional presentation test. A real comparison also needs the macrophage identification rules, source, exposures, sampling time and scoring method. A change in profile proportions between samples would not establish that the same cells converted from one state to another."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Immunology"
+    },
+    {
+      "id": "pattern-recognition-damps-and-pamps",
+      "kind": "term",
+      "name": "Pattern recognition: DAMPs and PAMPs",
+      "aka": [],
+      "tldr": "Cells have built-in sensors for molecular features that suggest infection or tissue damage, and they can start an immune response without knowing what a particular cancer cell looks like. A sensor firing does not show that there was an infection, or that the immune system has learned to recognise the tumour.",
+      "summary": "Pattern-recognition receptors are sensing proteins encoded in the genome. Unlike a T-cell receptor they do not each assemble a unique recognition sequence during development, and they detect particular molecular features at the cell surface, in internal vesicles or in the cytosol. Pathogen-associated molecular patterns (PAMPs) are microbial features such as lipopolysaccharide or microbial nucleic acid, and a feature need not identify one species. Damage-associated molecular patterns (DAMPs) are host-derived signals whose release, altered form or unusual location can indicate injury or stress; host material outside its usual compartment can matter even when its sequence is unchanged. Mouse genetics showed a specific dependency: mutations in the Tlr4 gene impeded lipopolysaccharide signalling, leaving the mice resistant to endotoxin but highly susceptible to Gram-negative infection (Poltorak et al., 1998). That makes TLR4 a lipopolysaccharide sensor, not a universal detector of microbes or damage. DNA in the cytosol is sensed by cGAS, which makes the messenger cGAMP that activates STING (Sun et al., 2013); the DNA can be microbial or mislocated host DNA, as when ruptured micronuclei spill genomic DNA into the cytosol of chromosomally unstable tumour cells (Bakhoum et al., 2018), so the response alone does not show infection.",
+      "asOf": "2026-11-10",
+      "links": [
+        {
+          "label": "Defective LPS signaling in C3H/HeJ and C57BL/10ScCr mice: mutations in Tlr4 gene.",
+          "url": "https://doi.org/10.1126/science.282.5396.2085"
+        },
+        {
+          "label": "Cyclic GMP-AMP synthase is a cytosolic DNA sensor that activates the type I interferon pathway.",
+          "url": "https://doi.org/10.1126/science.1232458"
+        },
+        {
+          "label": "Chromosomal instability drives metastasis through a cytosolic DNA response.",
+          "url": "https://doi.org/10.1038/nature25432"
+        },
+        {
+          "label": "Toll-like receptor 4-dependent contribution of the immune system to anticancer chemotherapy and radiotherapy.",
+          "url": "https://doi.org/10.1038/nm1622"
+        },
+        {
+          "label": "Pathogen recognition and inflammatory signaling in innate immune defenses.",
+          "url": "https://doi.org/10.1128/cmr.00046-08"
+        },
+        {
+          "label": "Damage-Associated Molecular Patterns in Inflammatory Diseases.",
+          "url": "https://doi.org/10.4110/in.2018.18.e27"
+        },
+        {
+          "label": "Mechanisms of central tolerance for B cells.",
+          "url": "https://doi.org/10.1038/nri.2017.19"
+        },
+        {
+          "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
+          "url": "https://doi.org/10.21769/bioprotoc.4285"
+        },
+        {
+          "label": "Recognition of microorganisms and activation of the immune response.",
+          "url": "https://doi.org/10.1038/nature06246"
+        },
+        {
+          "label": "Hayday and Vantourout, 2020: The Innate Biologies of Adaptive Antigen Receptors",
+          "url": "https://doi.org/10.1146/annurev-immunol-102819-023144"
+        },
+        {
+          "label": "Oettinger et al., 1990: RAG-1 and RAG-2 and V(D)J recombination",
+          "url": "https://doi.org/10.1126/science.2360047"
+        },
+        {
+          "label": "Venereau et al., 2012: Different redox forms of HMGB1",
+          "url": "https://doi.org/10.1084/jem.20120189"
+        }
+      ],
+      "tags": [],
+      "related": [],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "sting-agonist"
+      ],
+      "targets": [],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [
+        "cgas-sting"
+      ],
+      "terms": [
+        "inflammation",
+        "dendritic-cells",
+        "immunogenic-cell-death"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In cancer treatment, injury signals can shape dendritic-cell state, antigen processing and inflammatory signals. In mice and in people, the protein HMGB1 released by dying tumour cells acted on TLR4 on dendritic cells, and during chemotherapy or radiotherapy dendritic cells needed TLR4 and its adaptor MyD88 to process and cross-present antigen from dying tumour cells; patients with breast cancer who carried a TLR4 loss-of-function allele relapsed sooner after radiotherapy and chemotherapy in the cohort studied, which is an association (Apetoh et al., 2007). Immunogenic cell death is a stronger, conditional claim that dying-cell material supports an adaptive response under the tested conditions. Detecting a DAMP, or killing cells, does not show the whole chain, and more innate activation is not automatically safer or more useful. Reviews describe PRRs as detecting evolutionarily conserved structures on pathogens (Mogensen, 2009) and DAMPs as endogenous danger molecules released from damaged or dying cells, such as HMGB1, S100 proteins and heat shock proteins (Roh and Sohn, 2018). B-cell antigen receptor genes are by contrast assembled by V(D)J recombination, a random process that generates diversity (Nemazee, 2017), whereas natural killer cells rely on germline-coded receptors (Liu, 2022), and a review describes pattern-recognition receptors as triggering antimicrobial defences and stimulating the adaptive response (Medzhitov, 2007).",
+        "Measurements of a signal, of sensor engagement and of a downstream response are different, and RNA expression, protein concentration and cytokine output mean different things. An experiment needs matched vehicle, viability and time-point controls and a perturbation of the proposed sensor or pathway. A purified-material study also needs contamination controls, because a trace of microbial material can make a response look attributable to the host molecule under test. A response that falls after one perturbation shows a dependency in that experiment and not every step of tumour recognition or a clinical effect.",
+        "The inherited-versus-assembled distinction concerns receptor generation, not whether a receptor has a specific ligand. Hayday and Vantourout (2020) contrast germline-encoded Toll-like and natural killer receptors with clonotypic T-cell and B-cell antigen receptors generated by somatic recombination, while also describing innate-like responses through antigen receptors. Oettinger et al. (1990) describe V(D)J rearrangement in developing lymphocytes as a source of immunoglobulin and T-cell receptor diversity. A pattern-recognition receptor does not assemble a unique recognition sequence in each developing cell in that way.",
+        "Altered host-molecule form can matter as well as release or location. Venereau et al. (2012) tested different redox forms of HMGB1: the all-thiol form promoted cell recruitment, the disulfide form promoted cytokine release, and terminal oxidation abolished both activities under the tested conditions. These are different activities of a named host protein, not a rule that every chemical alteration or every oxidation is an activating danger signal."
+      ],
+      "provenance": {
+        "editedBy": "OnCo education audit",
+        "editedOn": "2026-11-10"
+      },
+      "category": "Immunology"
+    },
+    {
+      "id": "nk-cell",
+      "kind": "term",
+      "name": "NK cell",
+      "aka": [
+        "NK cells",
+        "natural killer cell",
+        "natural killer cells",
+        "natural killer",
+        "NK-cell",
+        "CAR-NK"
+      ],
+      "tldr": "Natural killer cells integrate activating and inhibitory inputs to respond to abnormal cells. An added CAR supplies another recognition route; missing self is one input rather than a guarantee of killing.",
+      "summary": "Some inhibitory NK receptors recognize self HLA class I, while activating receptors respond to other features. Reduced self display can weaken an inhibitory input, but the NK cell, its prior education, activating signals and target context still determine the response. NK cells can also contribute antibody-dependent killing through Fc receptors. Donor-derived or engineered NK-cell products need their own compatibility, persistence and safety assessment rather than a blanket claim that matching or rejection never matters. The principle comes from mouse experiments: lymphoma cells selected for loss of H-2 were less malignant at low dose and were rejected by a non-adaptive mechanism, which suggested that natural killer cells are effectors in a defence system geared to detect reduced self MHC (Kärre et al., 1986); that does not guarantee the same outcome for any human tumour. MHC class I molecules are ligands for killer-cell immunoglobulin-like receptors (Parham, 2005): two-domain KIR2D receptors bind HLA-C alleles and three-domain KIR3D receptors bind HLA-A and HLA-B alleles, and the KIR family includes activating as well as inhibitory members (Mariuzza et al., 2025). CD94/NKG2A binds HLA-E, and HLA-E surface expression was enough to protect target cells from lysis by CD94/NKG2A-positive NK clones (Braud et al., 1998). NKG2D binds class I-related proteins including MICA, MICB and ULBP1 to 3 (Mariuzza et al., 2025), and engagement of NKG2D activated NK and gamma-delta T-cell cytolysis against epithelial tumour cells expressing MICA (Bauer et al., 1999). No single activating receptor dominates, since NK cells integrate synergistic signals from several (Long et al., 2013), and responsiveness depends on prior education: in human cell experiments, cytokine stimulation let hyporesponsive NK cells acquire KIR and function when the cognate MHC was present (Juelke et al., 2009). Loss of one HLA allele is not loss of all class I. Loss of beta-2 microglobulin removed surface class I in one of four relapsing melanoma patients (Zaretsky et al., 2016), and because HLA-E is assembled with beta-2 microglobulin, the KIR and NKG2A restraints would be expected to lift together; that last step is an inference not tested in the cited abstracts. A flow-based cytotoxicity assay that stains target and effector nuclei separately and distinguishes live from dead nuclei has been validated with NK-92 cells, CAR-T cells and tumour-infiltrating lymphocytes (Rabinovich et al., 2019). Target death is not a count of effector cells that released granule contents: surface CD107a marked NK cells that degranulated after stimulation with MHC-devoid targets and correlated with lysis, and also marked a large subset that did not secrete cytokine, so different readouts count different cells (Alter et al., 2004). CD16 is a low-affinity Fc receptor for IgG that mediates antibody-dependent cellular cytotoxicity by NK cells (Liu, 2022), a route separate from missing-self recognition. Neither assay readout shows tumour entry or clinical benefit.",
+      "asOf": "2026-11-11",
+      "wikipedia": "https://en.wikipedia.org/wiki/Natural_killer_cell",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Natural_killer_cell"
+        },
+        {
+          "label": "Karre et al.: reduced self-MHC and rejection in mouse lymphoma models (1986)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3951539/"
+        },
+        {
+          "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+          "url": "https://doi.org/10.1056/NEJMoa1910607"
+        },
+        {
+          "label": "Recognition of Self and Viral Ligands by NK Cell Receptors.",
+          "url": "https://doi.org/10.1111/imr.13435"
+        },
+        {
+          "label": "MHC class I molecules and KIRs in human history, health and survival.",
+          "url": "https://doi.org/10.1038/nri1570"
+        },
+        {
+          "label": "HLA-E binds to natural killer cell receptors CD94/NKG2A, B and C.",
+          "url": "https://doi.org/10.1038/35869"
+        },
+        {
+          "label": "Activation of NK Cells and T Cells by NKG2D, a Receptor for Stress-Inducible MICA.",
+          "url": "https://doi.org/10.1126/science.285.5428.727"
+        },
+        {
+          "label": "Controlling Natural Killer Cell Responses: Integration of Signals for Activation and Inhibition.",
+          "url": "https://doi.org/10.1146/annurev-immunol-020711-075005"
+        },
+        {
+          "label": "Education of hyporesponsive NK cells by cytokines.",
+          "url": "https://doi.org/10.1002/eji.200939307"
+        },
+        {
+          "label": "Mutations Associated with Acquired Resistance to PD-1 Blockade in Melanoma.",
+          "url": "https://doi.org/10.1056/nejmoa1604958"
+        },
+        {
+          "label": "A versatile flow-based assay for immunocyte-mediated cytotoxicity.",
+          "url": "https://doi.org/10.1016/j.jim.2019.112668"
+        },
+        {
+          "label": "CD107a as a functional marker for the identification of natural killer cell activity.",
+          "url": "https://doi.org/10.1016/j.jim.2004.08.008"
+        },
+        {
+          "label": "Evaluating Human Natural Killer Cells Antibody-dependent Cellular Cytotoxicity (ADCC) Using Plate-bound Anti-CD16 Antibodies.",
+          "url": "https://doi.org/10.21769/bioprotoc.4285"
+        },
+        {
+          "label": "Controlling natural killer cell responses: integration of signals for activation and inhibition.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23516982/"
+        },
+        {
+          "label": "Kinetics and peptide dependency of the binding of the inhibitory NK receptor CD94/NKG2-A and the activating receptor CD94/NKG2-C to HLA-E.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10428963/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "t-cell",
+        "immune-system",
+        "adcc",
+        "antibody",
+        "fc-effector",
+        "nk-cell-recognition",
+        "perioperative-immune-window"
+      ],
+      "cancers": [],
+      "sections": [],
+      "technologies": [
+        "car-nk-macrophage",
+        "allogeneic-cell-therapy",
+        "monoclonal-antibody"
+      ],
+      "targets": [
+        "cd56",
+        "fcgr3a",
+        "cd57"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "The original missing-self experiment compared mouse lymphoma variants with reduced H-2 expression in defined hosts. It supports an immune-recognition principle, not a universal rule that every HLA-low human tumor is killed by every NK product.",
+        "A CAR, native NK receptors and cytokine support provide different inputs. The cord-blood product in Liu combined all of these design layers; a favorable observation for that construct does not isolate the CAR contribution or establish the same behavior for NK-92, donor blood or pluripotent-cell-derived preparations. NK and NKT cells are different cell families.",
+        "The receptor-level map separates inhibitory KIR/HLA and NKG2A/HLA-E interactions from activating stress-ligand and antibody-Fc inputs. Receptor proteins, genotype, ligand expression, degranulation and controlled target killing are different readouts. A loss of inhibitory display without adequate activating input does not guarantee killing, and a perioperative blood NK measurement does not describe every residual-disease site.",
+        "In a fictional matched-target comparison, one target loses the ligand for a particular inhibitory receptor while another inhibitory contact and an activating ligand remain. The changed restraint is only one part of the tested recognition context. A schematic pair of class I contacts is not a measured HLA profile, a complete receptor map or a set of numerical signal weights. This example illustrates the signal integration discussed by Long et al. (2013), rather than adding a measured killing rate. Test the actual NK preparation and target pair, keeping other ligands, target viability, timing and assay controls comparable. Removing one inhibitory contact does not by itself supply sufficient activation, establish target death or predict a CAR-NK product's tumour access or patient benefit."
+      ],
+      "category": "Biology basics"
+    }
+  ]
+}

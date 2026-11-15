@@ -1,0 +1,493 @@
+{
+  "checks": [
+    {
+      "check": "fictional-reference-total",
+      "passed": true,
+      "detail": {
+        "counts": [
+          250,
+          240,
+          200,
+          130,
+          80,
+          50,
+          30,
+          16,
+          4
+        ],
+        "total": 1000,
+        "premiseOnly": true
+      }
+    },
+    {
+      "check": "fictional-rank",
+      "passed": true,
+      "detail": {
+        "strongerScores": 4,
+        "totalScores": 1000,
+        "rankPercent": 0.4,
+        "noCandidateTiesAssumed": true,
+        "noClinicalProbability": true
+      }
+    },
+    {
+      "check": "histogram-bar-light-0",
+      "passed": true,
+      "detail": {
+        "count": 250,
+        "sourceX": 78.0,
+        "sourceHeight": 137.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-1",
+      "passed": true,
+      "detail": {
+        "count": 240,
+        "sourceX": 117.0,
+        "sourceHeight": 132.0,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-2",
+      "passed": true,
+      "detail": {
+        "count": 200,
+        "sourceX": 156.0,
+        "sourceHeight": 110.00000000000001,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-3",
+      "passed": true,
+      "detail": {
+        "count": 130,
+        "sourceX": 195.0,
+        "sourceHeight": 71.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-4",
+      "passed": true,
+      "detail": {
+        "count": 80,
+        "sourceX": 234.0,
+        "sourceHeight": 44.0,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-5",
+      "passed": true,
+      "detail": {
+        "count": 50,
+        "sourceX": 273.0,
+        "sourceHeight": 27.500000000000004,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-6",
+      "passed": true,
+      "detail": {
+        "count": 30,
+        "sourceX": 312.0,
+        "sourceHeight": 16.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-7",
+      "passed": true,
+      "detail": {
+        "count": 16,
+        "sourceX": 351.0,
+        "sourceHeight": 8.8,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-light-8",
+      "passed": true,
+      "detail": {
+        "count": 4,
+        "sourceX": 390.0,
+        "sourceHeight": 2.2,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "candidate-boundary-light",
+      "passed": true,
+      "detail": {
+        "boundaryX": 385,
+        "onlyFourCountBarBeyondBoundary": true
+      }
+    },
+    {
+      "check": "transcript-location-light",
+      "passed": true,
+      "detail": {
+        "arbitraryGenomicX": 362,
+        "T1Exons": [
+          [
+            145.0,
+            247.0
+          ],
+          [
+            307.0,
+            468.0
+          ],
+          [
+            577.0,
+            680.0
+          ]
+        ],
+        "T2Exons": [
+          [
+            145.0,
+            247.0
+          ],
+          [
+            420.0,
+            468.0
+          ],
+          [
+            577.0,
+            680.0
+          ]
+        ],
+        "T2Intron": [
+          247,
+          420
+        ],
+        "notRealAssemblyCoordinate": true
+      }
+    },
+    {
+      "check": "histogram-bar-dark-0",
+      "passed": true,
+      "detail": {
+        "count": 250,
+        "sourceX": 78.0,
+        "sourceHeight": 137.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-1",
+      "passed": true,
+      "detail": {
+        "count": 240,
+        "sourceX": 117.0,
+        "sourceHeight": 132.0,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-2",
+      "passed": true,
+      "detail": {
+        "count": 200,
+        "sourceX": 156.0,
+        "sourceHeight": 110.00000000000001,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-3",
+      "passed": true,
+      "detail": {
+        "count": 130,
+        "sourceX": 195.0,
+        "sourceHeight": 71.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-4",
+      "passed": true,
+      "detail": {
+        "count": 80,
+        "sourceX": 234.0,
+        "sourceHeight": 44.0,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-5",
+      "passed": true,
+      "detail": {
+        "count": 50,
+        "sourceX": 273.0,
+        "sourceHeight": 27.500000000000004,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-6",
+      "passed": true,
+      "detail": {
+        "count": 30,
+        "sourceX": 312.0,
+        "sourceHeight": 16.5,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-7",
+      "passed": true,
+      "detail": {
+        "count": 16,
+        "sourceX": 351.0,
+        "sourceHeight": 8.8,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "histogram-bar-dark-8",
+      "passed": true,
+      "detail": {
+        "count": 4,
+        "sourceX": 390.0,
+        "sourceHeight": 2.2,
+        "commonBaseline": 485,
+        "pixelsPerCount": 0.55
+      }
+    },
+    {
+      "check": "candidate-boundary-dark",
+      "passed": true,
+      "detail": {
+        "boundaryX": 385,
+        "onlyFourCountBarBeyondBoundary": true
+      }
+    },
+    {
+      "check": "transcript-location-dark",
+      "passed": true,
+      "detail": {
+        "arbitraryGenomicX": 362,
+        "T1Exons": [
+          [
+            145.0,
+            247.0
+          ],
+          [
+            307.0,
+            468.0
+          ],
+          [
+            577.0,
+            680.0
+          ]
+        ],
+        "T2Exons": [
+          [
+            145.0,
+            247.0
+          ],
+          [
+            420.0,
+            468.0
+          ],
+          [
+            577.0,
+            680.0
+          ]
+        ],
+        "T2Intron": [
+          247,
+          420
+        ],
+        "notRealAssemblyCoordinate": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-donors-cells-and-held-out-interventions-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-missing-observation-versus-unseen-intervention-b11-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-multiomic-specimen-and-cell-context-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-parallel-measurement-meaning-and-use-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-score-distribution-rank-and-predicted-concentration-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "theme-text-and-geometry-variant-transcript-context-and-evidence-v1",
+      "passed": true,
+      "detail": {
+        "paletteAndMetadataExcluded": true,
+        "visibleTextAndSelectedGeometryMatch": true
+      }
+    },
+    {
+      "check": "pictured-donor-identities-light",
+      "passed": true,
+      "detail": {
+        "spatialPartitions": {
+          "shared-development": [
+            "D1",
+            "D2"
+          ],
+          "shared-test": [
+            "D1",
+            "D2"
+          ],
+          "reserved-development": [
+            "D1",
+            "D2"
+          ],
+          "reserved-test": [
+            "D3",
+            "D4"
+          ]
+        },
+        "firstPanelSharesBothDonors": true,
+        "secondPanelReservesD3AndD4": true,
+        "interventionXAndYRemainSeparate": true
+      }
+    },
+    {
+      "check": "pictured-donor-identities-dark",
+      "passed": true,
+      "detail": {
+        "spatialPartitions": {
+          "shared-development": [
+            "D1",
+            "D2"
+          ],
+          "shared-test": [
+            "D1",
+            "D2"
+          ],
+          "reserved-development": [
+            "D1",
+            "D2"
+          ],
+          "reserved-test": [
+            "D3",
+            "D4"
+          ]
+        },
+        "firstPanelSharesBothDonors": true,
+        "secondPanelReservesD3AndD4": true,
+        "interventionXAndYRemainSeparate": true
+      }
+    },
+    {
+      "check": "twenty-donor-exercise",
+      "passed": true,
+      "detail": {
+        "statedPremise": "Each donor has cells on both sides.",
+        "developmentDonors": 20,
+        "testDonors": 20,
+        "sharedDonors": 20,
+        "reservedTestDonors": 0,
+        "notMeasuredStudyData": true
+      }
+    },
+    {
+      "check": "report-lineage-example",
+      "passed": true,
+      "detail": {
+        "reportCopies": 3,
+        "distinctInheritedDNAObservations": 1,
+        "distinctMeasuredObjectsAfterAddingSeparateRNA": 2,
+        "arrowsAndLabelsPersonallyViewedInBothWholePNGs": true,
+        "noAutomaticDNAConfirmationOrPixelIdenticalRasterClaim": true
+      }
+    }
+  ],
+  "independentChecks": 34,
+  "fictionalPremiseChecksOnly": true,
+  "sourceAuthorCodeExecuted": false,
+  "scientificModelExecuted": false,
+  "empiricalPerformanceAdopted": false,
+  "themeChecks": [
+    {
+      "family": "donors-cells-and-held-out-interventions-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "missing-observation-versus-unseen-intervention-b11-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "multiomic-specimen-and-cell-context-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "parallel-measurement-meaning-and-use-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "score-distribution-rank-and-predicted-concentration-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    },
+    {
+      "family": "variant-transcript-context-and-evidence-v1",
+      "visibleTextIdentical": true,
+      "selectedCoordinateGeometryIdentical": true
+    }
+  ],
+  "visualNotes": [],
+  "allFourteenWholeNativeVariantsViewed": true,
+  "browserMobileMeasuredContrastOrAccessibilityAcceptance": false
+}

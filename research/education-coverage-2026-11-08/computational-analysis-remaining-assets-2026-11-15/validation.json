@@ -1,0 +1,56 @@
+{
+  "newFullGateRun": true,
+  "finalDataVariantExactlyGated": true,
+  "lastGatedDataCommit": "f92d678f27e73e6c3679f1cde3648d54bf99d78f",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.36
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 31.07
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.06
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 322.96
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "filesPassed": 293,
+    "testsPassed": 3101,
+    "testsSkipped": 2
+  },
+  "exactReaderAnchors": {
+    "allPass": true,
+    "registeredRootFieldReferences": 86,
+    "peerOrUnappliedReferences": 14,
+    "actualPeerReaders": 0
+  },
+  "strictDataScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "diffSHA256": "e9dbfc8c5ac384a9f7273bee67dcc89eb91edf98e7b07d69a90f2758ee164dc8",
+    "rulesAndAllowlistsChanged": false,
+    "exactStagedFileCount": 2
+  },
+  "APIContextAndDedupePassed": true,
+  "browserOrMobileVerification": false,
+  "testsFloorsBudgetsRulesAndAllowlistsChanged": false,
+  "independentExpertOwnerLearnerLanguageMainOrLiveCredit": 0
+}

@@ -1,0 +1,288 @@
+{
+  "appliedCanonicalChanges": {
+    "inventorySHA256": "aa4cf783d149d11111d3bb354d0972a392ce888265f9950be1d9122c29cfbe20",
+    "expectedOwnerIds": [
+      "drug-response-splits",
+      "drug-response-sensitivity",
+      "variant-effect-prediction"
+    ],
+    "expectedFiles": [
+      "src/data/terms-cansim-methods.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "changes": [
+      {
+        "recordId": "drug-response-splits",
+        "field": "tldr",
+        "before": "How a drug-response dataset is split decides what a model's accuracy means: hold out cell lines to test personalised prediction, hold out drugs to test drug design, hold out tissues to test repurposing; holding out random pairs only tests imputation.",
+        "after": "A drug-response split tests prediction for withheld cell lines, drugs, tissues or pairs. Accuracy on that task does not by itself show clinical benefit or successful drug development.",
+        "beforeSHA256": "2257b530e349425f3b3cea06819a5a95cb27d03339fcc63763908f779c84b50b",
+        "afterSHA256": "b5655480230182c3ad8f68aaceb41c171742e33cb8fda4d15db1f71865f4b1ba",
+        "reason": "Separate task-specific prediction from its proposed clinical or development application.",
+        "sourceIds": [
+          "dreval"
+        ]
+      },
+      {
+        "recordId": "drug-response-splits",
+        "field": "summary",
+        "before": "Bernett and colleagues' DrEval framework evaluates drug-response prediction models under explicit protocols, holding out cell lines, drugs or tissues so that a model is scored on the generalisation it claims, and finds that many published gains shrink under the harder splits. Training on one screen and testing on another (cross-study validation) is the sternest bar because assays, cell-line panels and summary statistics differ. Random pair splits leak both the cell line and the drug into training and should only support imputation claims.",
+        "after": "A drug-response split defines which information is new when a model is evaluated. DrEval holds out cell lines, drugs, tissues or cell-line and drug pairs, with tuning performed separately inside the development data (Bernett and colleagues, 2026). The authors motivate these tasks by personalised prediction, drug design, repurposing and imputation, respectively. Those are intended applications: predicting a response in a held-out cell line or tissue does not establish benefit for a patient or successful repurposing. A random pair split can test a missing pair while its cell line and drug are represented in development; it does not test transfer to a new cell line or drug. Cross-study evaluation asks another question: whether predictions transfer between screens whose response measurements may differ. In DrEval's selected cross-study comparisons the molecular input profiles were shared, so even that evaluation did not test every change a future dataset might introduce. These splits answer different questions and have no universal order of difficulty.",
+        "beforeSHA256": "c270ff5e2a2b2519192eb9e1ca5574fdb805cc1346a26eddd4a8ae6e0ce77509",
+        "afterSHA256": "0a036511f07aa9b75f62e2b82ba529a4288496d748e1521cf6ac3883084bb089",
+        "reason": "Remove the unsupported universal sternest-bar hierarchy; retain the paper's task-to-application motivation with explicit boundaries.",
+        "sourceIds": [
+          "dreval"
+        ]
+      },
+      {
+        "recordId": "drug-response-splits",
+        "field": "asOf",
+        "before": "2026-09-24",
+        "after": "2026-11-15",
+        "beforeSHA256": "6c26f434a89139387427fa6eea4d321fa7eaf0929936ef3b9100933bfefb2246",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the source-backed definition correction.",
+        "sourceIds": [
+          "dreval"
+        ]
+      },
+      {
+        "recordId": "drug-response-sensitivity",
+        "field": "tldr",
+        "before": "Drug sensitivity is how strongly a tumour or cell line is held back by a compound; it is summarised by the concentration that halves growth (IC50) or by the area under the whole dose-response curve.",
+        "after": "Drug sensitivity describes response in a specified assay. An IC50 is the concentration producing half-maximal inhibition of its measured endpoint; it does not always mean half the growth.",
+        "beforeSHA256": "ca916f9dd709eabf45a8da671e62956952c5c74da35de919d6f84bdcc84ae2d5",
+        "afterSHA256": "4de6a2eaa0d4d105ec512380405bee8dc8a22cce3a979d96026a63d34847317a",
+        "reason": "An assay endpoint is not necessarily growth or a growth-rate-normalised measure.",
+        "sourceIds": [
+          "gdsc",
+          "hafner",
+          "cer-ic50-ki"
+        ]
+      },
+      {
+        "recordId": "drug-response-sensitivity",
+        "field": "summary",
+        "before": "The half maximal inhibitory concentration, IC50, measures the potency of a substance in inhibiting a biological function, the amount needed to inhibit a process by half in vitro (Wikipedia). Cell-line screens such as GDSC and CTRP report IC50, GI50 and the area under (or above) the dose-response curve for hundreds of drugs across hundreds of lines. The readouts are not interchangeable: different viability assays (CellTiter-Glo versus Syto60) and different summary statistics are a known source of disagreement between datasets.",
+        "after": "Drug-response measurements belong to a specified assay, exposure time, endpoint and analysis. An IC50 is a concentration associated with half-maximal inhibition of the endpoint defined for that assay; an area under a dose-response curve also depends on the concentration range and response scale. GDSC's 2013 resource paper describes fluorescence-based cell-viability measurements after 72 hours, with curves fitted across nine concentrations to derive IC50, slope and area under the curve (Yang and colleagues). That is a viability readout, rather than a direct count of cell divisions. Hafner and colleagues' 2016 study shows that conventional IC50, maximal effect and area-under-curve values can depend on how many divisions occur during an assay, and introduces growth-rate inhibition measures to address that dependence. A predicted assay IC50 is a model output, and is not a measured response, an equilibrium dissociation constant or evidence of treatment benefit in a patient. Cer and colleagues' 2009 IC50-to-Ki tool makes the biochemical distinction explicit: conversion depends on the interaction mechanism, concentrations and other assumptions.",
+        "beforeSHA256": "7551713fb6b14e7c2b05f8b4c225f6d8dfa7fb6b33be5f95eb579ff522cf6d3e",
+        "afterSHA256": "050a0190087ffd22e47926d8e4cc0cb9922b472588dd280f783b179df737d031",
+        "reason": "Replace the growth-only shorthand and unverified cross-screen generalisation with the read papers' assay-specific definitions.",
+        "sourceIds": [
+          "gdsc",
+          "hafner",
+          "cer-ic50-ki"
+        ]
+      },
+      {
+        "recordId": "drug-response-sensitivity",
+        "field": "links",
+        "before": [
+          {
+            "label": "Yang et al., GDSC: a resource for therapeutic biomarker discovery in cancer cells (Nucleic Acids Research 2013)",
+            "url": "https://doi.org/10.1093/nar/gks1111"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/IC50"
+          }
+        ],
+        "after": [
+          {
+            "label": "Yang et al., GDSC: a resource for therapeutic biomarker discovery in cancer cells (Nucleic Acids Research 2013)",
+            "url": "https://doi.org/10.1093/nar/gks1111"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/IC50"
+          },
+          {
+            "label": "Hafner et al., Growth rate inhibition metrics correct for confounders in measuring sensitivity to cancer drugs (Nature Methods 2016)",
+            "url": "https://doi.org/10.1038/nmeth.3853"
+          },
+          {
+            "label": "Cer et al., IC50-to-Ki: a web-based tool for converting IC50 to Ki values for inhibitors of enzyme activity and ligand binding (Nucleic Acids Research 2009)",
+            "url": "https://doi.org/10.1093/nar/gkp253"
+          }
+        ],
+        "beforeSHA256": "f959a98df9409b26a05d3df64db590d027db0c4c69599fd906f58d2a871bc446",
+        "afterSHA256": "c8cd85f10125b9475abd2e3fff806de387d1426fb94ab528096971175f8ed592",
+        "reason": "Attach resolved primary sources to the clarified assay definition.",
+        "sourceIds": [
+          "hafner",
+          "cer-ic50-ki"
+        ]
+      },
+      {
+        "recordId": "drug-response-sensitivity",
+        "field": "asOf",
+        "before": "2026-09-24",
+        "after": "2026-11-15",
+        "beforeSHA256": "6c26f434a89139387427fa6eea4d321fa7eaf0929936ef3b9100933bfefb2246",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the source-backed definition correction.",
+        "sourceIds": [
+          "gdsc",
+          "hafner",
+          "cer-ic50-ki"
+        ]
+      },
+      {
+        "recordId": "variant-effect-prediction",
+        "field": "summary",
+        "before": "Variant-effect prediction estimates a specified consequence of a sequence change, whereas variant calling identifies changes from sequence data. Ensembl maps each allele of a variant onto every overlapping transcript with a rule-based approach, so the same genomic change can have a different consequence in different transcripts, and its impact categories (high, moderate, low, modifier) are qualitative assumptions about likely effect, not a measured loss of function (Ensembl documentation, release 116). A score from a missense tool does not answer a splice or regulatory question, and a prediction should name the reference genome, the alleles and the transcript (with its version) it was made for. A raw model score is not automatically a probability: a splice score of 0.92 on an unspecified scale does not mean a 92 per cent chance of lost function, because thresholds and evidence strengths belong to a particular tool and task. The absence of a prediction does not make a variant benign, because a tool may not cover that variant type or transcript. RNA junction evidence, functional experiments and clinical studies address different gaps, and none is interchangeable with a sequence score. Two reports of the same prediction from the same software version are two copies of one computed result, not two independent experiments. Where a tool's training data overlap the variants used to evaluate it, its performance can be overestimated, which is why the ClinGen calibration of thirteen missense tools to ACMG/AMP pathogenicity and benignity evidence strengths, estimated from local positive predictive value, used datasets assembled to minimise that circularity (Pejaver and colleagues, 2022). That calibration used ClinVar missense variants classified as pathogenic or benign and rare in gnomAD, within the ACMG/AMP recommendations for variants in genes associated with monogenic disease, and it selected no tool designed for splice variants. Its introduction notes that many methods overlap and so do not offer independent assessment of pathogenicity, which is why agreement between tools that share training data or inputs is not independent confirmation. The AMP, ASCO and CAP guideline for somatic variants notes that early prediction algorithms were developed and validated for germline variants and recommends that their results never be used as the sole evidence for variant classification or clinical decision making (Li and colleagues, 2017).",
+        "after": "Variant-effect prediction estimates a specified consequence of a sequence change, whereas variant calling identifies changes from sequence data. Ensembl maps each allele of a variant onto every overlapping transcript with a rule-based approach, so the same genomic change can have a different consequence in different transcripts, and its impact categories (high, moderate, low, modifier) are qualitative assumptions about likely effect, not a measured loss of function (Ensembl documentation, release 116). A score from a missense tool does not answer a splice or regulatory question, and a prediction should name the reference genome, the alleles and the transcript (with its version) it was made for. A raw model score is not automatically a probability: a splice score of 0.92 on an unspecified scale does not mean a 92 per cent chance of lost function, because thresholds and evidence strengths belong to a particular tool and task. The absence of a prediction does not make a variant benign, because a tool may not cover that variant type or transcript. RNA junction evidence, functional experiments and clinical studies address different gaps, and none is interchangeable with a sequence score. Two reports of the same prediction from the same software version are two copies of one computed result, not two independent experiments. Where a tool's training data overlap the variants used to evaluate it, its performance can be overestimated, which is why the ClinGen calibration of thirteen missense tools to ACMG/AMP pathogenicity and benignity evidence strengths, estimated from local positive predictive value, used datasets assembled to minimise that circularity (Pejaver and colleagues, 2022). That calibration used ClinVar missense variants classified as pathogenic, likely pathogenic, likely benign or benign, with an allele frequency below 0.01 in gnomAD v2.1, within the ACMG/AMP recommendations for variants in genes associated with monogenic disease, and it selected no tool designed for splice variants. Its introduction notes that many methods overlap and so do not offer independent assessment of pathogenicity, which is why agreement between tools that share training data or inputs is not independent confirmation. The AMP, ASCO and CAP guideline for somatic variants notes that early prediction algorithms were developed and validated for germline variants and recommends that their results never be used as the sole evidence for variant classification or clinical decision making (Li and colleagues, 2017).",
+        "beforeSHA256": "d300b098983614b2d7e14e1d66d91c47dcd180220be7587909bca4a835bed987",
+        "afterSHA256": "000b0456276f2d1bfc40207e498c95d5bfcfa38a07866e6caa792fe04908033c",
+        "reason": "State all four ClinVar categories and the Methods' actual frequency filter; this is missense calibration, with no dedicated splice tool selected.",
+        "sourceIds": [
+          "pejaver"
+        ]
+      },
+      {
+        "recordId": "variant-effect-prediction",
+        "field": "links",
+        "before": [
+          {
+            "label": "HGVS nomenclature",
+            "url": "https://hgvs-nomenclature.org/stable/"
+          },
+          {
+            "label": "Ensembl: calculated variant consequences (release 116 documentation)",
+            "url": "https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html"
+          },
+          {
+            "label": "Li et al., Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer (Journal of Molecular Diagnostics 2017)",
+            "url": "https://doi.org/10.1016/j.jmoldx.2016.10.002"
+          },
+          {
+            "label": "Pejaver et al., Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria (American Journal of Human Genetics 2022)",
+            "url": "https://doi.org/10.1016/j.ajhg.2022.10.013"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Variant_calling"
+          }
+        ],
+        "after": [
+          {
+            "label": "HGVS nomenclature",
+            "url": "https://hgvs-nomenclature.org/stable/"
+          },
+          {
+            "label": "Ensembl: calculated variant consequences (release 116 documentation)",
+            "url": "https://www.ensembl.org/info/genome/variation/prediction/predicted_data.html"
+          },
+          {
+            "label": "Li et al., Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer (Journal of Molecular Diagnostics 2017)",
+            "url": "https://doi.org/10.1016/j.jmoldx.2016.10.002"
+          },
+          {
+            "label": "Pejaver et al., Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria (American Journal of Human Genetics 2022)",
+            "url": "https://doi.org/10.1016/j.ajhg.2022.10.013"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Variant_calling"
+          },
+          {
+            "label": "Ensembl: calculated variant consequences (June 2026 documentation archive)",
+            "url": "https://jun2026.archive.ensembl.org/info/genome/variation/prediction/predicted_data.html"
+          }
+        ],
+        "beforeSHA256": "ff90e3dc90a542de42e1fb523c4dfcfa11fb6d1bcb5cb8056222d412557e2902",
+        "afterSHA256": "08ff3bae654d80cd45858fad7ca167c22aa3fd88e8ed214235f28e85b0533a3d",
+        "reason": "Keep the current documentation link and add the exact raw archived version read.",
+        "sourceIds": [
+          "ensembl-june2026-direct"
+        ]
+      },
+      {
+        "recordId": "variant-effect-prediction",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the source-backed precision correction.",
+        "sourceIds": [
+          "pejaver"
+        ]
+      }
+    ],
+    "storedSummaryChangesRequired": false,
+    "consumerBeforeSlots": 108,
+    "beforeFiles": {
+      "src/data/terms-cansim-methods.ts": "7aa172f9bccd7bafa9764a2ddcbad1a358fa45da14beb819e21781b2e3ff4e49",
+      "src/data/terms-cansim-oncology.ts": "c17ee8121233ce2cbd06deb1aa97f58958e8022c1385b4cd5ade7d337c836656"
+    },
+    "baseCommit": "14142809ea600731b5175e503db75605f466fcd3"
+  },
+  "dataCommit": {
+    "head": "f92d678f27e73e6c3679f1cde3648d54bf99d78f",
+    "base": "14142809ea600731b5175e503db75605f466fcd3",
+    "branch": "codex/systematic-education-audit",
+    "committedFiles": [
+      "src/data/terms-cansim-methods.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "allCommittedDataBytesMatchFullGateInputs": true,
+    "canonicalOwnersChanged": 3,
+    "canonicalFieldsChanged": 10,
+    "newRecords": 0,
+    "newRegistrations": 0,
+    "shortConsumerValuesChanged": 0,
+    "actualEffectiveEnglishFallbackChanges": 18,
+    "DOIRegistryEntriesAdded": 0,
+    "peerFieldsEdited": 0,
+    "allUndeclaredOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "declaredDateChanges": 3,
+    "postGateDataEdits": false,
+    "pushed": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "peerProposal": {
+    "proposalId": "P55-BINDING-01",
+    "ownerId": "peptide-hla-binding-prediction",
+    "ownerKind": "term",
+    "frozenHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+    "peerPR": 373,
+    "recordBeforeSHA256": "d56ff01f384bf67a88941fc8b896cbe534b8db29d9451ba0422d9dd04358535d",
+    "field": "notes",
+    "before": [
+      "Assay distinction. A predicted binding IC50 estimates a competitive-binding assay endpoint. An IC50 depends on the assay conditions and is not automatically an equilibrium dissociation constant. Cer and colleagues' 2009 IC50-to-Ki tool calculates binding or inhibition constants using the interaction mechanism, concentrations and other assumptions; this is a biochemical distinction, not validation of an HLA model or a measure of cancer-cell growth inhibition. Reading guide (OnCo inference): Record the model and version, allele, peptide length, prediction task, units, reference distribution and threshold beside every score, and do not put a rank and an IC50 in one unlabelled column. A threshold is a selection rule for a stated workflow and cannot repair the wrong allele or an unsupported task. Inputs are peptide or source-protein sequences and an exact allele; scoring uses no tumour tissue; held-out validation, allele coverage and the endpoint (binding, recovery or T-cell recognition) decide what a good score means.",
+      "Figure reading (fictional numbers, light and dark renders agree): a 1,000-score reference for HLA-A*02:01 9-mer peptides has bin counts 250, 240, 200, 130, 80, 50, 30, 16 and 4, which sum to 1,000. Four reference scores lie beyond the candidate boundary, so 4 / 1,000 x 100 = 0.4 per cent. A separate binding-affinity output of 40 nM is a predicted IC50. Neither value observes display.",
+      "Fictional worked example. Candidate A has an eluted-ligand rank of 0.4 per cent and candidate B a predicted binding IC50 of 40 nM. The numbers come from different outputs with different units and tasks, so neither ranks the candidates against each other or shows tumour coverage; request matched outputs for the relevant allele and method, and test display and recognition separately.",
+      "Output table in words. Predicted binding IC50 in nanomolar units: lower values mean stronger predicted competitive binding for that output, and it is not a measured concentration, an equilibrium dissociation constant or a functional T-cell response. Percentile rank: a lower rank places the candidate nearer the model's stronger-scoring reference peptides, and it is not a percent chance of tumour killing or the fraction of tumour cells covered."
+    ],
+    "after": [
+      "Assay distinction. A predicted binding IC50 estimates a competitive-binding assay endpoint. An IC50 depends on the assay conditions and is not automatically an equilibrium dissociation constant. Cer and colleagues' 2009 IC50-to-Ki tool calculates binding or inhibition constants using the interaction mechanism, concentrations and other assumptions; this is a biochemical distinction, not validation of an HLA model or a measure of cancer-cell growth inhibition. Reading guide (OnCo inference): Record the model and version, allele, peptide length, prediction task, units, reference distribution and threshold beside every score, and do not put a rank and an IC50 in one unlabelled column. A threshold is a selection rule for a stated workflow and cannot repair the wrong allele or an unsupported task. Inputs are peptide or source-protein sequences and an exact allele; scoring uses no tumour tissue; held-out validation, allele coverage and the endpoint (binding, recovery or T-cell recognition) decide what a good score means.",
+      "In a fictional reference for HLA-A*02:01 9-mer peptides, a higher raw eluted-ligand score means a stronger prediction on that model's unitless scale. The nine bin counts are 250, 240, 200, 130, 80, 50, 30, 16 and 4, totalling 1,000. With no ties at the candidate boundary, four reference scores are stronger: 4 / 1,000 x 100 = 0.4 per cent. This chosen reference demonstrates rank arithmetic; it is not the server's calibration distribution and no model was run. Lower percentile rank means a stronger-scoring tail, rather than a probability of response. A separate fictional binding-affinity output of 40 nM is a predicted competitive-binding IC50. Neither value measures peptide display, cancer-cell growth inhibition or treatment benefit.",
+      "Fictional worked example. Candidate A has an eluted-ligand rank of 0.4 per cent and candidate B a predicted binding IC50 of 40 nM. The numbers come from different outputs with different units and tasks, so neither ranks the candidates against each other or shows tumour coverage; request matched outputs for the relevant allele and method, and test display and recognition separately.",
+      "Output table in words. Predicted binding IC50 in nanomolar units: lower values mean stronger predicted competitive binding for that output, and it is not a measured concentration, an equilibrium dissociation constant or a functional T-cell response. Percentile rank: a lower rank places the candidate nearer the model's stronger-scoring reference peptides, and it is not a percent chance of tumour killing or the fraction of tumour cells covered."
+    ],
+    "beforeSHA256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+    "afterSHA256": "f5fdbf5f9360779760377a013b5548ddf5ac6716bb544437a5dcc2ba2c862996",
+    "sourceIds": [
+      "netmhc-paper",
+      "netmhc-docs",
+      "cer-ic50-ki"
+    ],
+    "applied": false,
+    "credit": 0,
+    "reason": "Enrich the existing fictional figure note with the unitless-score, no-ties and no-calibration-run boundaries; preserve every other note and all other fields."
+  },
+  "storedShortConsumerChanges": 0,
+  "newOwners": 0,
+  "newRegistrations": 0,
+  "peerFieldsWritten": 0,
+  "priorEvidenceRebinds": {
+    "total": 28,
+    "preserved": 24,
+    "explicitScopedCorrections": 4,
+    "gradesAndDepthsUnchanged": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sourceFirstInventorySealedBeforeEdit": true,
+  "sourceInventorySHA256": "aa4cf783d149d11111d3bb354d0972a392ce888265f9950be1d9122c29cfbe20",
+  "expectedOwnerIds": [
+    "drug-response-splits",
+    "drug-response-sensitivity",
+    "variant-effect-prediction"
+  ],
+  "changedCanonicalFields": 10,
+  "receipts": [
+    {
+      "file": "src/data/terms-cansim-methods.ts",
+      "beforeFileSHA256": "7aa172f9bccd7bafa9764a2ddcbad1a358fa45da14beb819e21781b2e3ff4e49",
+      "afterFileSHA256": "4a7a4a23afffa6aca243a6780dc1af664c55fc7cea701d7ef50004bfee3cf72f",
+      "literalValueEdits": 3,
+      "guardedOwnerIds": [
+        "drug-response-splits"
+      ]
+    },
+    {
+      "file": "src/data/terms-cansim-oncology.ts",
+      "beforeFileSHA256": "c17ee8121233ce2cbd06deb1aa97f58958e8022c1385b4cd5ade7d337c836656",
+      "afterFileSHA256": "a80f51cdbe512b4b6d097752f7e1e77e41c3ba718760a592e1a0bd3a81e04dfe",
+      "literalValueEdits": 7,
+      "guardedOwnerIds": [
+        "drug-response-sensitivity",
+        "variant-effect-prediction"
+      ]
+    }
+  ],
+  "newRecords": 0,
+  "peerEdits": 0,
+  "staticFactoryChecked": true
+}

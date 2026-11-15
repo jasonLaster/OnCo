@@ -1,0 +1,31 @@
+{
+  "proposalId": "P55-BINDING-01",
+  "ownerId": "peptide-hla-binding-prediction",
+  "ownerKind": "term",
+  "frozenHead": "433fd33c4a377323ad826950165204ced7ebcddb",
+  "peerPR": 373,
+  "recordBeforeSHA256": "d56ff01f384bf67a88941fc8b896cbe534b8db29d9451ba0422d9dd04358535d",
+  "field": "notes",
+  "before": [
+    "Assay distinction. A predicted binding IC50 estimates a competitive-binding assay endpoint. An IC50 depends on the assay conditions and is not automatically an equilibrium dissociation constant. Cer and colleagues' 2009 IC50-to-Ki tool calculates binding or inhibition constants using the interaction mechanism, concentrations and other assumptions; this is a biochemical distinction, not validation of an HLA model or a measure of cancer-cell growth inhibition. Reading guide (OnCo inference): Record the model and version, allele, peptide length, prediction task, units, reference distribution and threshold beside every score, and do not put a rank and an IC50 in one unlabelled column. A threshold is a selection rule for a stated workflow and cannot repair the wrong allele or an unsupported task. Inputs are peptide or source-protein sequences and an exact allele; scoring uses no tumour tissue; held-out validation, allele coverage and the endpoint (binding, recovery or T-cell recognition) decide what a good score means.",
+    "Figure reading (fictional numbers, light and dark renders agree): a 1,000-score reference for HLA-A*02:01 9-mer peptides has bin counts 250, 240, 200, 130, 80, 50, 30, 16 and 4, which sum to 1,000. Four reference scores lie beyond the candidate boundary, so 4 / 1,000 x 100 = 0.4 per cent. A separate binding-affinity output of 40 nM is a predicted IC50. Neither value observes display.",
+    "Fictional worked example. Candidate A has an eluted-ligand rank of 0.4 per cent and candidate B a predicted binding IC50 of 40 nM. The numbers come from different outputs with different units and tasks, so neither ranks the candidates against each other or shows tumour coverage; request matched outputs for the relevant allele and method, and test display and recognition separately.",
+    "Output table in words. Predicted binding IC50 in nanomolar units: lower values mean stronger predicted competitive binding for that output, and it is not a measured concentration, an equilibrium dissociation constant or a functional T-cell response. Percentile rank: a lower rank places the candidate nearer the model's stronger-scoring reference peptides, and it is not a percent chance of tumour killing or the fraction of tumour cells covered."
+  ],
+  "after": [
+    "Assay distinction. A predicted binding IC50 estimates a competitive-binding assay endpoint. An IC50 depends on the assay conditions and is not automatically an equilibrium dissociation constant. Cer and colleagues' 2009 IC50-to-Ki tool calculates binding or inhibition constants using the interaction mechanism, concentrations and other assumptions; this is a biochemical distinction, not validation of an HLA model or a measure of cancer-cell growth inhibition. Reading guide (OnCo inference): Record the model and version, allele, peptide length, prediction task, units, reference distribution and threshold beside every score, and do not put a rank and an IC50 in one unlabelled column. A threshold is a selection rule for a stated workflow and cannot repair the wrong allele or an unsupported task. Inputs are peptide or source-protein sequences and an exact allele; scoring uses no tumour tissue; held-out validation, allele coverage and the endpoint (binding, recovery or T-cell recognition) decide what a good score means.",
+    "In a fictional reference for HLA-A*02:01 9-mer peptides, a higher raw eluted-ligand score means a stronger prediction on that model's unitless scale. The nine bin counts are 250, 240, 200, 130, 80, 50, 30, 16 and 4, totalling 1,000. With no ties at the candidate boundary, four reference scores are stronger: 4 / 1,000 x 100 = 0.4 per cent. This chosen reference demonstrates rank arithmetic; it is not the server's calibration distribution and no model was run. Lower percentile rank means a stronger-scoring tail, rather than a probability of response. A separate fictional binding-affinity output of 40 nM is a predicted competitive-binding IC50. Neither value measures peptide display, cancer-cell growth inhibition or treatment benefit.",
+    "Fictional worked example. Candidate A has an eluted-ligand rank of 0.4 per cent and candidate B a predicted binding IC50 of 40 nM. The numbers come from different outputs with different units and tasks, so neither ranks the candidates against each other or shows tumour coverage; request matched outputs for the relevant allele and method, and test display and recognition separately.",
+    "Output table in words. Predicted binding IC50 in nanomolar units: lower values mean stronger predicted competitive binding for that output, and it is not a measured concentration, an equilibrium dissociation constant or a functional T-cell response. Percentile rank: a lower rank places the candidate nearer the model's stronger-scoring reference peptides, and it is not a percent chance of tumour killing or the fraction of tumour cells covered."
+  ],
+  "beforeSHA256": "6dccd2c2b547f3ddde2e2d2c2e71e6a4cd496590f2106567e49bb1ac709c7376",
+  "afterSHA256": "f5fdbf5f9360779760377a013b5548ddf5ac6716bb544437a5dcc2ba2c862996",
+  "sourceIds": [
+    "netmhc-paper",
+    "netmhc-docs",
+    "cer-ic50-ki"
+  ],
+  "applied": false,
+  "credit": 0,
+  "reason": "Enrich the existing fictional figure note with the unitless-score, no-ties and no-calibration-run boundaries; preserve every other note and all other fields."
+}

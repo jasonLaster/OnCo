@@ -1,0 +1,2428 @@
+{
+  "sourceFirstInventorySHA256": "a8cdd2a81c91e0642f1d42d701be9b7cfe2ae2d88b2eecd357373c2a41bb352b",
+  "rootVersion": "proposal-support-bodies-49-root",
+  "proofs": [
+    {
+      "id": "P50-H01",
+      "family": "histological-morphology",
+      "requirement": "A thin tissue section represents one depth and finite selected material; nearby depths can have different mixtures, not a full tissue census.",
+      "sourceExcerpt": "A nearby section used for another assay may contain a different mixture because the tissue changes with depth. Spatial correspondence should therefore be checked rather than assumed from a shared block name.",
+      "sourceExcerptSHA256": "aea1de86a8ec5517f69455c54476f60d6d75995465162eac176353349528eff0",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "A nearby section used for another assay may contain a different mixture because the tissue changes with depth. Spatial correspondence should therefore be checked rather than assumed from a shared block name.",
+          "excerptSHA256": "aea1de86a8ec5517f69455c54476f60d6d75995465162eac176353349528eff0"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "A nearby section used for another assay may contain a different mixture because the tissue changes with depth. Spatial correspondence should therefore be checked rather than assumed from a shared block name.",
+          "excerptSHA256": "aea1de86a8ec5517f69455c54476f60d6d75995465162eac176353349528eff0"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "A section represents one depth and region. Record block, section, preservation and artifacts; a nearby section may contain a different cell mixture. Fictional example: pink material around tumour nests does not prove receptor R expression. A specific validated assay would be needed to identify that receptor.",
+          "passageSha256": "f4463697559a379becc81c115f45435469ab56f5d3c45a7d19352cf46bc7b298",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "afb839b520ae07e00725f79fab6431616690f656a0afde62f0dcde8c6541d042",
+          "supportingExcerpt": "The section represents one sampled region and depth, rather than the entire tumour or body.",
+          "passageSha256": "3d52f1135672d159a8c617cf0d36fecdca47f7afdac02d4a2a9655ee2a10ba1c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "nci-pathology-report"
+      ],
+      "semanticAssessment": "Prepared sections sample finite material; the absence of an all-tissue census is a premise-backed sampling inference.",
+      "sourceQualification": "Prepared sections sample finite material; the absence of an all-tissue census is a premise-backed sampling inference.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-H02",
+      "family": "histological-morphology",
+      "requirement": "Hematoxylin broadly highlights nuclei and nucleic-acid-rich structures blue-purple; eosin broadly stains cytoplasm/extracellular components pink-red. These are not sequence or named-protein measurements.",
+      "sourceExcerpt": "A thin tissue section is stained and examined by light microscopy, or scanned for a suitable [[wiki/education/concepts/measurement/pathology-readouts/digital-pathology|digital workflow]]. Hematoxylin highlights nuclei and other structures rich in nucleic acids in blue-purple tones. Eosin colors cytoplasm and many extracellular components in pink-red tones. These are broad chemical stains: blue is not a readout of a particular DNA sequence, and pink is not a measurement of one named protein.",
+      "sourceExcerptSHA256": "749d05767ccf409b27c4fa9761db7aa58cf4722c35388bc0f10cdde329bf4612",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "A thin tissue section is stained and examined by light microscopy, or scanned for a suitable [[wiki/education/concepts/measurement/pathology-readouts/digital-pathology|digital workflow]]. Hematoxylin highlights nuclei and other structures rich in nucleic acids in blue-purple tones. Eosin colors cytoplasm and many extracellular components in pink-red tones. These are broad chemical stains: blue is not a readout of a particular DNA sequence, and pink is not a measurement of one named protein.",
+          "excerptSHA256": "749d05767ccf409b27c4fa9761db7aa58cf4722c35388bc0f10cdde329bf4612"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "A thin tissue section is stained and examined by light microscopy, or scanned for a suitable [[wiki/education/concepts/measurement/pathology-readouts/digital-pathology|digital workflow]]. Hematoxylin highlights nuclei and other structures rich in nucleic acids in blue-purple tones. Eosin colors cytoplasm and many extracellular components in pink-red tones. These are broad chemical stains: blue is not a readout of a particular DNA sequence, and pink is not a measurement of one named protein.",
+          "excerptSHA256": "749d05767ccf409b27c4fa9761db7aa58cf4722c35388bc0f10cdde329bf4612"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "Haematoxylin highlights nuclei and other nucleic-acid-rich structures; eosin broadly stains cytoplasm and extracellular material. These colours show morphology and architecture rather than a named DNA sequence or protein. Molecular predictions from H&E require their own validation.",
+          "passageSha256": "476a1c74a6076a241a113571db0d15931034d8f41226a46f18b132c0fd74e9d5",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "tldr",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "38ac2b0c811b938f5abdc9b93188981c3fa60a91d1c8d738320b097415c5bbec",
+          "supportingExcerpt": "H&E staining makes nuclei blue-purple and broadly colours cytoplasm and supporting tissue pink, helping show cells in their tissue setting.",
+          "passageSha256": "84f2d3412a5f6e6f27c510a30e0e203ffd720baafc6ce51c8f1751c2f26789e7",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "fischer",
+        "nci-pathology-report"
+      ],
+      "semanticAssessment": "Complete Fischer abstract and selected NCI preparation/staining paragraphs. No whole staining-protocol claim.",
+      "sourceQualification": "Complete Fischer abstract and selected NCI preparation/staining paragraphs. No whole staining-protocol claim.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-H03",
+      "family": "histological-morphology",
+      "requirement": "Cell forms and architectural relationships need represented interfaces and expert/contextual interpretation; one pixel, nucleus or generic cluster does not establish diagnosis, invasion or every death mechanism.",
+      "sourceExcerpt": "**Morphology** means form and structure. The reader examines cell shape, nuclei, groupings, spaces, tissue boundaries and features such as [necrosis](/wiki/education/concepts/cancer-biology/cell-death-and-survival/necrosis), where damaged tissue shows cell breakdown. This appearance does not identify every mechanism of cell death. The arrangement matters: similar-looking cells in different relationships to surrounding tissue can have different diagnostic implications.",
+      "sourceExcerptSHA256": "8e053f78a39354a1f39309ff8e8fc383af0a50c53fea2e6520d54120efe32abe",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "**Morphology** means form and structure. The reader examines cell shape, nuclei, groupings, spaces, tissue boundaries and features such as [necrosis](/wiki/education/concepts/cancer-biology/cell-death-and-survival/necrosis), where damaged tissue shows cell breakdown. This appearance does not identify every mechanism of cell death. The arrangement matters: similar-looking cells in different relationships to surrounding tissue can have different diagnostic implications.",
+          "excerptSHA256": "8e053f78a39354a1f39309ff8e8fc383af0a50c53fea2e6520d54120efe32abe"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "**Morphology** means form and structure. The reader examines cell shape, nuclei, groupings, spaces, tissue boundaries and features such as [necrosis](/wiki/education/concepts/cancer-biology/cell-death-and-survival/necrosis), where damaged tissue shows cell breakdown. This appearance does not identify every mechanism of cell death. The arrangement matters: similar-looking cells in different relationships to surrounding tissue can have different diagnostic implications.",
+          "excerptSHA256": "8e053f78a39354a1f39309ff8e8fc383af0a50c53fea2e6520d54120efe32abe"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "Morphology includes nuclei, cell groupings, spaces, tissue boundaries and necrosis. Appearance alone does not identify every cell-death mechanism.",
+          "passageSha256": "ea95fe3e6b793f119859da47e696b81a2bad4a00fc84b1855647ebb199da4c13",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "Like a map of buildings, H&E shows arrangement rather than every activity inside each cell. A large nucleus or a single coloured pixel cannot establish the whole diagnosis. H&E supplies the sample context for molecular testing, including scar, necrosis or an unexpected mixture of cells.",
+          "passageSha256": "66dcb6abdd5f88c03da45fcddc8033e920676152ff19f2a1ba443fd84487e999",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 3
+        },
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "afb839b520ae07e00725f79fab6431616690f656a0afde62f0dcde8c6541d042",
+          "supportingExcerpt": "Pathologists integrate nuclei, cell groups, boundaries and architecture with the specimen context.",
+          "passageSha256": "ed7e605938255df7d6df9657c6b8ad76b5418d217b3d489f7540ecdcc6fb5a40",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "nci-pathology-report"
+      ],
+      "semanticAssessment": "Architecture/context and the limits of a single feature are bounded interpretation rules. Retained duct-anatomy claims outside these excerpts are not newly verified.",
+      "sourceQualification": "Architecture/context and the limits of a single feature are bounded interpretation rules. Retained duct-anatomy claims outside these excerpts are not newly verified.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-H04",
+      "family": "histological-morphology",
+      "requirement": "Simplified stain colours, intensity and generic cell appearance are not receptor abundance, gene activity, cell viability or a molecular inventory; diagram geometry is schematic.",
+      "sourceExcerpt": "*H&E shows represented cell forms and architecture. Blue-purple and pink are broad stain classes, with simplified colors here; the picture does not diagnose the cells, quantify a named molecule or represent all nearby tissue. A different depth can contain a different mixture.*",
+      "sourceExcerptSHA256": "dfbb7a2cb6144621143ed4d7d46579bd222370734d91cb77a70445e0a99e2617",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "*H&E shows represented cell forms and architecture. Blue-purple and pink are broad stain classes, with simplified colors here; the picture does not diagnose the cells, quantify a named molecule or represent all nearby tissue. A different depth can contain a different mixture.*",
+          "excerptSHA256": "dfbb7a2cb6144621143ed4d7d46579bd222370734d91cb77a70445e0a99e2617"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "*H&E shows represented cell forms and architecture. Blue-purple and pink are broad stain classes, with simplified colors here; the picture does not diagnose the cells, quantify a named molecule or represent all nearby tissue. A different depth can contain a different mixture.*",
+          "excerptSHA256": "dfbb7a2cb6144621143ed4d7d46579bd222370734d91cb77a70445e0a99e2617"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "Haematoxylin highlights nuclei and other nucleic-acid-rich structures; eosin broadly stains cytoplasm and extracellular material. These colours show morphology and architecture rather than a named DNA sequence or protein. Molecular predictions from H&E require their own validation.",
+          "passageSha256": "476a1c74a6076a241a113571db0d15931034d8f41226a46f18b132c0fd74e9d5",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "afb839b520ae07e00725f79fab6431616690f656a0afde62f0dcde8c6541d042",
+          "supportingExcerpt": "Image-analysis models can predict features from these appearances, but a molecular prediction is not a direct measurement of the named gene or protein.",
+          "passageSha256": "5fcac1f3172ec343f8d409a472d41e9a467b9d8034cd8cffb74cc9d04233da2a",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "fischer"
+      ],
+      "semanticAssessment": "Broad stain classes versus a named molecular or viability assay are distinguished. Simplified colour/geometry is a documented artifact convention, not measured tissue.",
+      "sourceQualification": "Broad stain classes versus a named molecular or viability assay are distinguished. Simplified colour/geometry is a documented artifact convention, not measured tissue.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-H05",
+      "family": "histological-morphology",
+      "requirement": "Sectioning/staining can have fixation, damage, missing-interface and sampling limits. Direct morphology, a specific molecular assay and a research computational prediction have different validation scopes.",
+      "sourceExcerpt": "| Assay-card field | What to retain |\n|---|---|\n| Measures | Appearance and organization of cells in a represented section |\n| How | Prepare section → stain → inspect slide → integrate relevant information |\n| Input and tissue cost | A tissue section; cutting the section uses finite material |\n| Output and units | Descriptive findings and diagnoses; named counts or distances only under specified methods |\n| Thresholds | Diagnostic criteria and scoring methods depend on the feature and tissue; no universal color cutoff defines cancer |\n| Failure modes | Poor fixation, folds, tears, staining variation or absent relevant interface |\n| Cannot show alone | Exact gene expression, a named protein's abundance or all tissue outside the section |\n| Validation context | Clinical interpretation differs from a research image classifier or unvalidated molecular prediction |",
+      "sourceExcerptSHA256": "abe59d21d60754a4519bab9cbd79e2a949efb6b792429e64cbe66978e1c5c022",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Measures | Appearance and organization of cells in a represented section |\n| How | Prepare section → stain → inspect slide → integrate relevant information |\n| Input and tissue cost | A tissue section; cutting the section uses finite material |\n| Output and units | Descriptive findings and diagnoses; named counts or distances only under specified methods |\n| Thresholds | Diagnostic criteria and scoring methods depend on the feature and tissue; no universal color cutoff defines cancer |\n| Failure modes | Poor fixation, folds, tears, staining variation or absent relevant interface |\n| Cannot show alone | Exact gene expression, a named protein's abundance or all tissue outside the section |\n| Validation context | Clinical interpretation differs from a research image classifier or unvalidated molecular prediction |",
+          "excerptSHA256": "abe59d21d60754a4519bab9cbd79e2a949efb6b792429e64cbe66978e1c5c022"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Measures | Appearance and organization of cells in a represented section |\n| How | Prepare section → stain → inspect slide → integrate relevant information |\n| Input and tissue cost | A tissue section; cutting the section uses finite material |\n| Output and units | Descriptive findings and diagnoses; named counts or distances only under specified methods |\n| Thresholds | Diagnostic criteria and scoring methods depend on the feature and tissue; no universal color cutoff defines cancer |\n| Failure modes | Poor fixation, folds, tears, staining variation or absent relevant interface |\n| Cannot show alone | Exact gene expression, a named protein's abundance or all tissue outside the section |\n| Validation context | Clinical interpretation differs from a research image classifier or unvalidated molecular prediction |",
+          "excerptSHA256": "abe59d21d60754a4519bab9cbd79e2a949efb6b792429e64cbe66978e1c5c022"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "H&E examination starts with a prepared tissue section, staining, inspection and integration with relevant clinical information. Cutting the section uses finite material. The output describes cell appearance and organisation, with counts or distances only when a specified method calls for them. Criteria depend on the feature and tissue; no universal colour cutoff defines cancer. Poor fixation, folds, tears, staining variation or a missing relevant interface can limit interpretation. Clinical morphology, a research image classifier and an unvalidated molecular prediction have different evidence requirements; the slide does not directly quantify a named protein or gene or reveal tissue outside the section.",
+          "passageSha256": "57263dd6b1633f39c1e56f8c391b69f32db2ec69d820fb3a934479979c28dddd",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        }
+      ],
+      "sourceIds": [
+        "nci-pathology-report",
+        "cap-ihc-validation-2024"
+      ],
+      "semanticAssessment": "Prepared-sample limitations and distinct measurement/validation scopes are reporting advice and inference from represented material, not a new diagnostic-performance study.",
+      "sourceQualification": "Prepared-sample limitations and distinct measurement/validation scopes are reporting advice and inference from represented material, not a new diagnostic-performance study.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-H06",
+      "family": "histological-morphology",
+      "requirement": "In the fictional pink-setting/receptor-R exercise, appearance supplies architectural context but does not demonstrate the named receptor or drug benefit.",
+      "sourceExcerpt": "A fictional H&E slide shows tumor nests surrounded by pink material. A learner says, “The pink stain proves that the tumor expresses receptor R.” What test distinction was missed?",
+      "sourceExcerptSHA256": "d70137d7576d777fe45d0633ad613a9b8c52b47de15ddf4863fc6053bf0d202c",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "gitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "gitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "4c16af89c63587bc73d98291518a1ede351859be02c992be54c316d58913ad1b",
+          "GitBlob": "9b5f6eb6151acd777ee8b892df9f3cebbb1247e5",
+          "excerpt": "A fictional H&E slide shows tumor nests surrounded by pink material. A learner says, “The pink stain proves that the tumor expresses receptor R.” What test distinction was missed?",
+          "excerptSHA256": "d70137d7576d777fe45d0633ad613a9b8c52b47de15ddf4863fc6053bf0d202c"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/h-and-e-morphology.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "0da07607f092892565632fb6c57f3ba184c43338725829b6b922e7a125f47abf",
+          "GitBlob": "76d78009000697a0b4ce529ae60957a2d20c7d80",
+          "excerpt": "A fictional H&E slide shows tumor nests surrounded by pink material. A learner says, “The pink stain proves that the tumor expresses receptor R.” What test distinction was missed?",
+          "excerptSHA256": "d70137d7576d777fe45d0633ad613a9b8c52b47de15ddf4863fc6053bf0d202c"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "h-and-e-staining",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "62fa3a9d435064d3fa5b0101eacf2cccc6f9bf22ac84f1ec9453413889f1e2e4",
+          "fieldSha256": "ed8051d5773361c19bd77e8b7e96c8e3bbb3726ed271f808162f916338503652",
+          "supportingExcerpt": "A section represents one depth and region. Record block, section, preservation and artifacts; a nearby section may contain a different cell mixture. Fictional example: pink material around tumour nests does not prove receptor R expression. A specific validated assay would be needed to identify that receptor.",
+          "passageSha256": "f4463697559a379becc81c115f45435469ab56f5d3c45a7d19352cf46bc7b298",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "fischer",
+        "nci-ihc-definition"
+      ],
+      "semanticAssessment": "The receptor-R exercise is fictional; a broad stain is not the named receptor or treatment-benefit measurement.",
+      "sourceQualification": "The receptor-R exercise is fictional; a broad stain is not the named receptor or treatment-benefit measurement.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I01",
+      "family": "immunohistochemistry-scores",
+      "requirement": "IHC uses antibody-based detection of selected proteins with tissue and cell-compartment context; specificity, preparation, background and controls require validation.",
+      "sourceExcerpt": "**Immunohistochemistry (IHC)** combines [antibody binding](/wiki/education/concepts/therapeutics/antibody-based/monoclonal-antibodies) with a visible signal, often a colored product. The laboratory prepares a tissue section, makes the target accessible under a specified protocol, applies antibodies and develops the signal. A pathologist interprets staining alongside cell shape and tissue organization.",
+      "sourceExcerptSHA256": "a6f0f553666595802602516a03697d1f2b3ab529e3fe895fa1ce0286db28f811",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "**Immunohistochemistry (IHC)** combines [antibody binding](/wiki/education/concepts/therapeutics/antibody-based/monoclonal-antibodies) with a visible signal, often a colored product. The laboratory prepares a tissue section, makes the target accessible under a specified protocol, applies antibodies and develops the signal. A pathologist interprets staining alongside cell shape and tissue organization.",
+          "excerptSHA256": "a6f0f553666595802602516a03697d1f2b3ab529e3fe895fa1ce0286db28f811"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "**Immunohistochemistry (IHC)** combines [antibody binding](/wiki/education/concepts/therapeutics/antibody-based/monoclonal-antibodies) with a visible signal, often a colored product. The laboratory prepares a tissue section, makes the target accessible under a specified protocol, applies antibodies and develops the signal. A pathologist interprets staining alongside cell shape and tissue organization.",
+          "excerptSHA256": "a6f0f553666595802602516a03697d1f2b3ab529e3fe895fa1ce0286db28f811"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "c1a319ec9f1168068543e93acc8f1660a657dcf64d36cfe969435c857db0cbef",
+          "supportingExcerpt": "Immunohistochemistry (IHC) uses antibody binding and signal development to show a selected protein in a prepared tissue section. Interpretation retains which cells and compartments stain, the intensity and distribution, and the named marker-specific method. A percentage, intensity category or composite score can describe different aspects of the result. Fixation, retrieval, controls, sampling and observer variation affect interpretation. Automated quantification also needs validation for its marker, specimens and intended use. A research stain or generic score does not replace a validated clinical selection assay.",
+          "passageSha256": "5c12611e238a530decf4f38d67dde73070ced49610d7d416ff49dce6512189bb",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "IHC makes selected proteins visible through antibody binding and signal development in a prepared section. Specificity, retrieval, detection, positive controls, internal controls and background matter. Nuclear and membrane signals answer different questions. Multiplex fluorescence adds markers but still needs validated antibody performance and cell-boundary assignment.",
+          "passageSha256": "0b8fc92584f185823062b7c0ef0907bc73a2211b2e68dee811adff3c3feacf02",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 3
+        }
+      ],
+      "sourceIds": [
+        "nci-ihc-definition",
+        "cap-ihc-validation-2024"
+      ],
+      "semanticAssessment": "Whole raw NCI definition and selected CAP validation paragraphs. Not every underlying antigen/antibody paper was read.",
+      "sourceQualification": "Whole raw NCI definition and selected CAP validation paragraphs. Not every underlying antigen/antibody paper was read.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I02",
+      "family": "immunohistochemistry-scores",
+      "requirement": "The fictional common denominator has 100 eligible cells: 50 unstained, 10 weak, 20 moderate and 20 strong. Positive fraction is 50 percent and weighted H-score is 10+40+60=110.",
+      "sourceExcerpt": "In a fictional 100-cell sample, 50 are unstained, 10 weak, 20 moderate and 20 strong. What are its H-score and positive percentage? Separately, what is the conventional Allred score for 30% positive cells with uniformly moderate staining?",
+      "sourceExcerptSHA256": "e02b59d87f54934a0693a213753f7661f720d1dcf93820c613337c7fc33c3621",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "In a fictional 100-cell sample, 50 are unstained, 10 weak, 20 moderate and 20 strong. What are its H-score and positive percentage? Separately, what is the conventional Allred score for 30% positive cells with uniformly moderate staining?",
+          "excerptSHA256": "e02b59d87f54934a0693a213753f7661f720d1dcf93820c613337c7fc33c3621"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "In a fictional 100-cell sample, 50 are unstained, 10 weak, 20 moderate and 20 strong. What are its H-score and positive percentage? Separately, what is the conventional Allred score for 30% positive cells with uniformly moderate staining?",
+          "excerptSHA256": "e02b59d87f54934a0693a213753f7661f720d1dcf93820c613337c7fc33c3621"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "An H-score under the intensity-weighted convention is weak-cell percentage plus twice moderate-cell percentage plus three times strong-cell percentage, on a 0 to 300 scale. Fictional example: 50 unstained, 10 weak, 20 moderate and 20 strong cells out of 100 give 50% positive and H-score 110. Neither is a molecule count.",
+          "passageSha256": "338e625e9504d22770109d47802b6334d23543ae894ed721e4ca79f03e7b7801",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "rcpath-g148-pdf"
+      ],
+      "semanticAssessment": "Arithmetic from the stated invented population; no empirical positivity distribution is adopted.",
+      "sourceQualification": "Arithmetic from the stated invented population; no empirical positivity distribution is adopted.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I03",
+      "family": "immunohistochemistry-scores",
+      "requirement": "The stated H-score convention weights percentages by 1, 2 and 3, includes unstained cells at weight zero and has scale 0–300; it is an index, not a molecule count or percent scale.",
+      "sourceExcerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+      "sourceExcerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+          "excerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+          "excerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "An H-score under the intensity-weighted convention is weak-cell percentage plus twice moderate-cell percentage plus three times strong-cell percentage, on a 0 to 300 scale. Fictional example: 50 unstained, 10 weak, 20 moderate and 20 strong cells out of 100 give 50% positive and H-score 110. Neither is a molecule count.",
+          "passageSha256": "338e625e9504d22770109d47802b6334d23543ae894ed721e4ca79f03e7b7801",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "rcpath-g148-pdf"
+      ],
+      "semanticAssessment": "RCPath Table 8 page 143 confirms the named convention and 0–300 range. Neither a percentage score nor a molecule count.",
+      "sourceQualification": "RCPath Table 8 page 143 confirms the named convention and 0–300 range. Neither a percentage score nor a molecule count.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I04",
+      "family": "immunohistochemistry-scores",
+      "requirement": "Positive fraction and intensity weighting retain different information; an equal H-score can hide different distributions. All eligible categories remain in the denominator.",
+      "sourceExcerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+      "sourceExcerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+          "excerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "An **H-score** weights each intensity category by its percentage of eligible cells: `1 × weak% + 2 × moderate% + 3 × strong%`. Unstained cells contribute zero. Under this convention the scale is **0–300**, not 0–100%. It is an index, not a protein molecule count.",
+          "excerptSHA256": "44b4cd910eeeb20b1882912864b06a98493692bb16921837585a5d6d28b3d3dd"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "An H-score under the intensity-weighted convention is weak-cell percentage plus twice moderate-cell percentage plus three times strong-cell percentage, on a 0 to 300 scale. Fictional example: 50 unstained, 10 weak, 20 moderate and 20 strong cells out of 100 give 50% positive and H-score 110. Neither is a molecule count.",
+          "passageSha256": "338e625e9504d22770109d47802b6334d23543ae894ed721e4ca79f03e7b7801",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Equal H-scores can conceal different intensity distributions. A negative clinical category does not establish zero protein molecules.",
+          "passageSha256": "0e81a927b8ff304ce36368e2ca1b48216f742eebda8d4d9e9fe46b146ba7f8f2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 5
+        }
+      ],
+      "sourceIds": [
+        "rcpath-g148-pdf"
+      ],
+      "semanticAssessment": "Different category distributions can have the same weighted sum; this is an arithmetic information-loss inference. All stated eligible categories share the denominator.",
+      "sourceQualification": "Different category distributions can have the same weighted sum; this is an arithmetic information-loss inference. All stated eligible categories share the denominator.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I05",
+      "family": "immunohistochemistry-scores",
+      "requirement": "The 100 circles and category rows are invented bookkeeping, not spatial tissue geography or a mandatory imaging/cell-counting workflow.",
+      "sourceExcerpt": "<img src=\"./images/ihc-intensity-distribution-and-positive-fraction-v1-light.svg\" alt=\"One hundred invented eligible cells are represented by 100 circles grouped by staining intensity: 50 unstained, 10 weak, 20 moderate and 20 strong. The same 100-cell denominator gives 50% positive cells, whereas intensity weights one, two and three give H-score 10 plus 40 plus 60 equals 110. Category rows are an explanatory grouping, not tissue geography. Allred is a separate categorical system. Neither quantity is a molecule count, a universal clinical cutoff or an interchangeable assay output.\" width=\"780\" height=\"1450\" data-theme-pair />",
+      "sourceExcerptSHA256": "a9874122c8431b2592c3cdd89bcebc74a768544dc583d0826e8c6a9227d5d456",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "<img src=\"./images/ihc-intensity-distribution-and-positive-fraction-v1-light.svg\" alt=\"One hundred invented eligible cells are represented by 100 circles grouped by staining intensity: 50 unstained, 10 weak, 20 moderate and 20 strong. The same 100-cell denominator gives 50% positive cells, whereas intensity weights one, two and three give H-score 10 plus 40 plus 60 equals 110. Category rows are an explanatory grouping, not tissue geography. Allred is a separate categorical system. Neither quantity is a molecule count, a universal clinical cutoff or an interchangeable assay output.\" width=\"780\" height=\"1450\" data-theme-pair />",
+          "excerptSHA256": "a9874122c8431b2592c3cdd89bcebc74a768544dc583d0826e8c6a9227d5d456"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "<img src=\"./images/ihc-intensity-distribution-and-positive-fraction-v1-light.svg\" alt=\"One hundred invented eligible cells are represented by 100 circles grouped by staining intensity: 50 unstained, 10 weak, 20 moderate and 20 strong. The same 100-cell denominator gives 50% positive cells, whereas intensity weights one, two and three give H-score 10 plus 40 plus 60 equals 110. Category rows are an explanatory grouping, not tissue geography. Allred is a separate categorical system. Neither quantity is a molecule count, a universal clinical cutoff or an interchangeable assay output.\" width=\"780\" height=\"1450\" data-theme-pair />",
+          "excerptSHA256": "a9874122c8431b2592c3cdd89bcebc74a768544dc583d0826e8c6a9227d5d456"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "teaching-invariant-with-explicit-artifact-disposition",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "An H-score under the intensity-weighted convention is weak-cell percentage plus twice moderate-cell percentage plus three times strong-cell percentage, on a 0 to 300 scale. Fictional example: 50 unstained, 10 weak, 20 moderate and 20 strong cells out of 100 give 50% positive and H-score 110. Neither is a molecule count.",
+          "passageSha256": "338e625e9504d22770109d47802b6334d23543ae894ed721e4ca79f03e7b7801",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "A useful IHC result identifies the block, fixation and section, antibody clone, retrieval and detection system, eligible cells and scored compartment. Cutting and staining use finite tissue. Report the percentage, intensity, location and named scoring scale, together with expected-positive tissue, relevant internal controls and background assessment. Poor preservation, nonspecific binding, few eligible cells, heterogeneous staining and observer variation can limit interpretation. Validation must fit the assay and its intended use; a research measurement is not automatically a clinical selection test.",
+          "passageSha256": "e68ee0070781204ff85f2965dc9cbdeee7999ddb37fb6c7c90f52e97c2f72cb9",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 6
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "Artifact-only category-row/100-circle construction disposition. The field carries the fictional population, score and actual-method boundary; exact row geometry is not literal field text or an extra scientific requirement.",
+      "sourceQualification": "Artifact-only category-row/100-circle construction disposition. The field carries the fictional population, score and actual-method boundary; exact row geometry is not literal field text or an extra scientific requirement.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": true,
+      "additionalScientificCoverageCredit": 0,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I06",
+      "family": "immunohistochemistry-scores",
+      "requirement": "Allred is a separate conventional categorical proportion-plus-intensity system with possible totals zero and 2–8. In its separate 30-percent uniformly moderate example, proportion category 3 plus intensity 2 gives 5; this is not the 50-percent H-score sample.",
+      "sourceExcerpt": "Historically used for breast hormone-receptor staining, an **Allred score** adds a proportion category to an intensity score. The conventional proportion bins are 0 for no positive cells, 1 for less than 1%, 2 for 1–10%, 3 for 11–33%, 4 for 34–66% and 5 for at least 67%. Intensity contributes 0 for absent staining, or 1/2/3 for weak/moderate/strong staining. Possible totals are **0 and 2–8**. Name the convention; a composite score does not replace marker-specific interpretation.",
+      "sourceExcerptSHA256": "2b3a5b89a41660cc4e27b1a8c1d1ac390a5fd9a823d4d3b37c0ce5865eb0d157",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "Historically used for breast hormone-receptor staining, an **Allred score** adds a proportion category to an intensity score. The conventional proportion bins are 0 for no positive cells, 1 for less than 1%, 2 for 1–10%, 3 for 11–33%, 4 for 34–66% and 5 for at least 67%. Intensity contributes 0 for absent staining, or 1/2/3 for weak/moderate/strong staining. Possible totals are **0 and 2–8**. Name the convention; a composite score does not replace marker-specific interpretation.",
+          "excerptSHA256": "2b3a5b89a41660cc4e27b1a8c1d1ac390a5fd9a823d4d3b37c0ce5865eb0d157"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "Historically used for breast hormone-receptor staining, an **Allred score** adds a proportion category to an intensity score. The conventional proportion bins are 0 for no positive cells, 1 for less than 1%, 2 for 1–10%, 3 for 11–33%, 4 for 34–66% and 5 for at least 67%. Intensity contributes 0 for absent staining, or 1/2/3 for weak/moderate/strong staining. Possible totals are **0 and 2–8**. Name the convention; a composite score does not replace marker-specific interpretation.",
+          "excerptSHA256": "2b3a5b89a41660cc4e27b1a8c1d1ac390a5fd9a823d4d3b37c0ce5865eb0d157"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "In the conventional Allred scheme, proportion categories are 0 for no positive cells, 1 for less than 1%, 2 for 1% to 10%, 3 for 11% to 33%, 4 for 34% to 66% and 5 for 67% to 100%. Intensity is 0 for absent staining or 1, 2 and 3 for weak, moderate and strong staining. The total is 0 or 2 to 8. In a fictional separate example, 30% positive cells with moderate staining give 3 + 2 = 5. These integer bins are a named convention, not a universal positivity rule.",
+          "passageSha256": "fb137d0cd2c57017915d27bc3509782247cca8195e0a642c651498f08c893921",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        }
+      ],
+      "sourceIds": [
+        "rcpath-g148-pdf"
+      ],
+      "semanticAssessment": "Table 8 complete text/native view supports bins and intensities. Possible 0 or 2–8 and the separate 30-percent moderate 3+2=5 are coherent-category arithmetic inferences.",
+      "sourceQualification": "Table 8 complete text/native view supports bins and intensities. Possible 0 or 2–8 and the separate 30-percent moderate 3+2=5 are coherent-category arithmetic inferences.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I07",
+      "family": "immunohistochemistry-scores",
+      "requirement": "A generic composite, positive stain or negative clinical category does not establish exact molecules, activity, accessibility, dependence, a universal cutoff or individual treatment benefit.",
+      "sourceExcerpt": "- A negative clinical category need not mean literally zero protein molecules.\n- Research staining does not automatically replace a validated treatment-selection assay.\n- Stained protein is not necessarily active, accessible or essential for survival.\n- Equal H-scores can hide different intensity distributions.",
+      "sourceExcerptSHA256": "125ca0974b2f668310753c68461f0d894b1d178bcf421435023817aa929d2962",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "- A negative clinical category need not mean literally zero protein molecules.\n- Research staining does not automatically replace a validated treatment-selection assay.\n- Stained protein is not necessarily active, accessible or essential for survival.\n- Equal H-scores can hide different intensity distributions.",
+          "excerptSHA256": "125ca0974b2f668310753c68461f0d894b1d178bcf421435023817aa929d2962"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "- A negative clinical category need not mean literally zero protein molecules.\n- Research staining does not automatically replace a validated treatment-selection assay.\n- Stained protein is not necessarily active, accessible or essential for survival.\n- Equal H-scores can hide different intensity distributions.",
+          "excerptSHA256": "125ca0974b2f668310753c68461f0d894b1d178bcf421435023817aa929d2962"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "There is no universal IHC scoring scale or positivity threshold. Retain antibody clone, retrieval and detection method, controls, eligible cells, subcellular location, intensity, distribution and intended use. A research stain does not automatically replace a clinical selection assay.",
+          "passageSha256": "a819a6286364fd958041ea0d15b604159cdb4d29bd5fbbbe9709df648b46d17c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Bulk receptor abundance and staining mainly on blood vessels can both be correct: one measures a mixture and the other locates signal. Neither establishes target accessibility or treatment benefit. Staining also does not establish protein activity or cancer-cell dependence on that protein.",
+          "passageSha256": "d44b0ac21860b7e44d1e7f472501b481f81818f455feb61e8552fa447ffd94af",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "Equal H-scores can conceal different intensity distributions. A negative clinical category does not establish zero protein molecules.",
+          "passageSha256": "0e81a927b8ff304ce36368e2ca1b48216f742eebda8d4d9e9fe46b146ba7f8f2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 5
+        }
+      ],
+      "sourceIds": [
+        "nci-ihc-definition",
+        "rcpath-g148-pdf"
+      ],
+      "semanticAssessment": "A stain/composite is not all molecules, activity, accessibility, dependence or clinical benefit. These are explicitly bounded inference rules, not universal clinical thresholds.",
+      "sourceQualification": "A stain/composite is not all molecules, activity, accessibility, dependence or clinical benefit. These are explicitly bounded inference rules, not universal clinical thresholds.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-I08",
+      "family": "immunohistochemistry-scores",
+      "requirement": "Retain scored cells, compartment, clone, retrieval/detection, denominator, scale, controls, specimen and intended use; finite tissue and heterogeneity/variation limit measurement and clinical transfer.",
+      "sourceExcerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input and tissue cost | Tissue/block, fixation and section; staining consumes finite material |\n| Method | Antibody clone, retrieval/detection system, scored cells and compartment |\n| Output and units | Percentage positive, intensity, location and named score with its scale |\n| Controls | Expected-positive tissue, relevant internal controls and background assessment |\n| Limits | Poor preservation, nonspecific binding, few eligible cells, heterogeneity or scoring variation |\n| Intended use | Assay/scoring-system validation; research measurement and clinical selection are separate |",
+      "sourceExcerptSHA256": "4080a79a8438d6024ee1fe3c34a201092ab23d019aae3954f3a30c5afa851579",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "gitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "gitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "f68dfbdf30f370840a752f22f9519935522dcb7910b542675ebf0b88f472d94e",
+          "GitBlob": "940a606300b7a35e2ed8e6c2ff1a8f07aae6738f",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input and tissue cost | Tissue/block, fixation and section; staining consumes finite material |\n| Method | Antibody clone, retrieval/detection system, scored cells and compartment |\n| Output and units | Percentage positive, intensity, location and named score with its scale |\n| Controls | Expected-positive tissue, relevant internal controls and background assessment |\n| Limits | Poor preservation, nonspecific binding, few eligible cells, heterogeneity or scoring variation |\n| Intended use | Assay/scoring-system validation; research measurement and clinical selection are separate |",
+          "excerptSHA256": "4080a79a8438d6024ee1fe3c34a201092ab23d019aae3954f3a30c5afa851579"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/immunohistochemistry.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "cd8111f0b900dd8b51863314cf9e1a912bdaee4608db6b7650f79de1f6949357",
+          "GitBlob": "a51ca8fc32d906c7d81ce2a35639c818fd5e156e",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input and tissue cost | Tissue/block, fixation and section; staining consumes finite material |\n| Method | Antibody clone, retrieval/detection system, scored cells and compartment |\n| Output and units | Percentage positive, intensity, location and named score with its scale |\n| Controls | Expected-positive tissue, relevant internal controls and background assessment |\n| Limits | Poor preservation, nonspecific binding, few eligible cells, heterogeneity or scoring variation |\n| Intended use | Assay/scoring-system validation; research measurement and clinical selection are separate |",
+          "excerptSHA256": "4080a79a8438d6024ee1fe3c34a201092ab23d019aae3954f3a30c5afa851579"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "There is no universal IHC scoring scale or positivity threshold. Retain antibody clone, retrieval and detection method, controls, eligible cells, subcellular location, intensity, distribution and intended use. A research stain does not automatically replace a clinical selection assay.",
+          "passageSha256": "a819a6286364fd958041ea0d15b604159cdb4d29bd5fbbbe9709df648b46d17c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "ihc",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "2b5bb50e3eb4d5a749c1247362d44d6aaa11028aa8a4979e1cb3333d0c0a651b",
+          "fieldSha256": "5e37a38946d5dbdf0f011023046c1cae82aa7ed36cc42f7c8b5a74c62eefead6",
+          "supportingExcerpt": "A useful IHC result identifies the block, fixation and section, antibody clone, retrieval and detection system, eligible cells and scored compartment. Cutting and staining use finite tissue. Report the percentage, intensity, location and named scoring scale, together with expected-positive tissue, relevant internal controls and background assessment. Poor preservation, nonspecific binding, few eligible cells, heterogeneous staining and observer variation can limit interpretation. Validation must fit the assay and its intended use; a research measurement is not automatically a clinical selection test.",
+          "passageSha256": "e68ee0070781204ff85f2965dc9cbdeee7999ddb37fb6c7c90f52e97c2f72cb9",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 6
+        }
+      ],
+      "sourceIds": [
+        "cap-ihc-validation-2024",
+        "nci-pathology-report"
+      ],
+      "semanticAssessment": "Specified metadata, specimen/controls and validation scope are retained. No fresh certification of every marker-specific clinical assay.",
+      "sourceQualification": "Specified metadata, specimen/controls and validation scope are retained. No fresh certification of every marker-specific clinical assay.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P01",
+      "family": "pd-l1-populations",
+      "requirement": "Under the stated breast 22C3 CPS method, eligible stained tumour cells, lymphocytes and macrophages enter the numerator; all viable invasive tumour cells, including unstained ones, are the denominator, with immune cells excluded from it.",
+      "sourceExcerpt": "`100 × (PD-L1-staining tumor cells + PD-L1-staining eligible lymphocytes + PD-L1-staining eligible macrophages) / all viable tumor cells`",
+      "sourceExcerptSHA256": "1b0b27aa75309ca09d6ecdbaa60aeb2e06d5a085522e4f87ff7ddc245f7111d5",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "`100 × (PD-L1-staining tumor cells + PD-L1-staining eligible lymphocytes + PD-L1-staining eligible macrophages) / all viable tumor cells`",
+          "excerptSHA256": "1b0b27aa75309ca09d6ecdbaa60aeb2e06d5a085522e4f87ff7ddc245f7111d5"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "`100 × (PD-L1-staining tumor cells + PD-L1-staining eligible lymphocytes + PD-L1-staining eligible macrophages) / all viable tumor cells`",
+          "excerptSHA256": "1b0b27aa75309ca09d6ecdbaa60aeb2e06d5a085522e4f87ff7ddc245f7111d5"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For the 22C3 TNBC method, count eligible stained viable invasive tumour cells and tumour-associated lymphocytes and macrophages. Divide by all viable invasive tumour cells, including unstained cells, then multiply by 100. Report a whole-number CPS capped at 100, even when raw arithmetic exceeds 100.",
+          "passageSha256": "419a568eec31bbf5db0b6f7e275d0bd058ff563568c5741760efe35c5193cd8f",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+          "passageSha256": "c118d10f7ddc3bfb778dd0b14bdb1d0140422338ba0455e4b2cea6c3ab4fd52c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "FDA pages 14–15 eligibility tables read as complete text and native views; assay and TNBC context remain attached.",
+      "sourceQualification": "FDA pages 14–15 eligibility tables read as complete text and native views; assay and TNBC context remain attached.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P02",
+      "family": "pd-l1-populations",
+      "requirement": "Qualifying tumour staining is convincing partial/complete membrane staining; eligible immune-cell staining can be membrane and/or cytoplasmic under the method.",
+      "sourceExcerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+      "sourceExcerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+          "passageSha256": "c118d10f7ddc3bfb778dd0b14bdb1d0140422338ba0455e4b2cea6c3ab4fd52c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "Tumour membrane versus eligible lymphocyte/macrophage membrane or cytoplasm rules are in the selected TNBC tables.",
+      "sourceQualification": "Tumour membrane versus eligible lymphocyte/macrophage membrane or cytoplasm rules are in the selected TNBC tables.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P03",
+      "family": "pd-l1-populations",
+      "requirement": "Immune-cell eligibility requires the specified invasive-tumour/associated-stromal context and exclusions. Not every stained immune cell qualifies; neutrophils, nonviable cells and benign/in-situ-only populations are excluded under the stated manual.",
+      "sourceExcerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+      "sourceExcerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+          "passageSha256": "c118d10f7ddc3bfb778dd0b14bdb1d0140422338ba0455e4b2cea6c3ab4fd52c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For 22C3 TNBC CPS, exclude nonviable cells, neutrophils, eosinophils, plasma cells, benign epithelial cells and stromal cells. Immune cells associated only with benign structures or in-situ disease do not qualify. A CPS of 100 does not imply that all tumour cells stain.",
+          "passageSha256": "24991abe1ad16e2ebfdac4d743cb41351b3d75f1a3288fd7eb15b090c114a6f4",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "Specific eligibility/exclusions, including plasma cells, are method-dependent. This does not alter the separate sTIL plasma-cell numerator.",
+      "sourceQualification": "Specific eligibility/exclusions, including plasma cells, are method-dependent. This does not alter the separate sTIL plasma-cell numerator.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P04",
+      "family": "pd-l1-populations",
+      "requirement": "The fictional inventory has 200 viable tumour cells including 20 stained and 180 unstained, plus 40 eligible stained lymphocytes and 20 eligible stained macrophages: CPS is 40 and tumour-cell staining fraction is 10 percent.",
+      "sourceExcerpt": "A fictional eligible section contains 200 viable invasive tumor cells. Twenty tumor cells stain; 40 eligible lymphocytes and 20 eligible macrophages also stain. What are CPS and the illustrative tumor-cell percentage?",
+      "sourceExcerptSHA256": "79b1c9406afa507ec3fd6888c17727370fa45979e509397302554598ee528488",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "A fictional eligible section contains 200 viable invasive tumor cells. Twenty tumor cells stain; 40 eligible lymphocytes and 20 eligible macrophages also stain. What are CPS and the illustrative tumor-cell percentage?",
+          "excerptSHA256": "79b1c9406afa507ec3fd6888c17727370fa45979e509397302554598ee528488"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "A fictional eligible section contains 200 viable invasive tumor cells. Twenty tumor cells stain; 40 eligible lymphocytes and 20 eligible macrophages also stain. What are CPS and the illustrative tumor-cell percentage?",
+          "excerptSHA256": "79b1c9406afa507ec3fd6888c17727370fa45979e509397302554598ee528488"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Fictional eligible counts: 200 viable tumour cells, 20 staining tumour cells, 40 staining lymphocytes and 20 staining macrophages give CPS 40. Tumour-cell-only arithmetic gives 10%, under its own assay rules. CPS, TPS and IC use different numerators or denominators and cannot share cutoffs automatically.",
+          "passageSha256": "aeadff34c7a5a117cd0af4d4f8a384cda416723485ad1a6e406a68cd24e83421",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 2
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "200/20/40/20 gives 40 and 10 percent by different formulas. All values are invented; glyph counts agree with the native DOM.",
+      "sourceQualification": "200/20/40/20 gives 40 and 10 percent by different formulas. All values are invented; glyph counts agree with the native DOM.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P05",
+      "family": "pd-l1-populations",
+      "requirement": "Reported CPS is capped at 100 under the specified method. CPS 100 does not require every tumour cell to stain, and CPS is not the positive fraction of all cells.",
+      "sourceExcerpt": "- CPS is not the percentage of all cells that stain and is not the percentage of tumor cells alone.\n- CPS 100 does not imply every tumor cell is positive.\n- The same cutoff cannot be transferred between CPS, TPS and IC scores.\n- **Different assays select different patients.** In 614 IMpassion130 samples, IC ≥1% was positive in 46.4% by SP142, 74.9% by SP263 and 73.1% by 22C3; almost all SP142-positive cases were positive by the others, but not the reverse ([Rugo et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34097070/)). A \"positive\" result needs its antibody named.\n- **Pathologists disagree on IC scores.** When 19 pathologists scored the same TNBC sections, SP142 was read as positive in an average 58% of cases and SP263 in 78%, and all pathologists agreed on only 38% of SP142 cases and 50% of SP263 cases ([Reisenbichler et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32300181/)).\n- A low score is not a complete description of tumor immunity or a universal exclusion from immunotherapy.",
+      "sourceExcerptSHA256": "ad1f4490f66e18e8e4612c34a5292ac779146486a64b34b4b3ec23aec77fd31f",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "- CPS is not the percentage of all cells that stain and is not the percentage of tumor cells alone.\n- CPS 100 does not imply every tumor cell is positive.\n- The same cutoff cannot be transferred between CPS, TPS and IC scores.\n- **Different assays select different patients.** In 614 IMpassion130 samples, IC ≥1% was positive in 46.4% by SP142, 74.9% by SP263 and 73.1% by 22C3; almost all SP142-positive cases were positive by the others, but not the reverse ([Rugo et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34097070/)). A \"positive\" result needs its antibody named.\n- **Pathologists disagree on IC scores.** When 19 pathologists scored the same TNBC sections, SP142 was read as positive in an average 58% of cases and SP263 in 78%, and all pathologists agreed on only 38% of SP142 cases and 50% of SP263 cases ([Reisenbichler et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32300181/)).\n- A low score is not a complete description of tumor immunity or a universal exclusion from immunotherapy.",
+          "excerptSHA256": "ad1f4490f66e18e8e4612c34a5292ac779146486a64b34b4b3ec23aec77fd31f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "- CPS is not the percentage of all cells that stain and is not the percentage of tumor cells alone.\n- CPS 100 does not imply every tumor cell is positive.\n- The same cutoff cannot be transferred between CPS, TPS and IC scores.\n- **Different assays select different patients.** In 614 IMpassion130 samples, IC ≥1% was positive in 46.4% by SP142, 74.9% by SP263 and 73.1% by 22C3; almost all SP142-positive cases were positive by the others, but not the reverse ([Rugo et al., 2021](https://pubmed.ncbi.nlm.nih.gov/34097070/)). A \"positive\" result needs its antibody named.\n- **Pathologists disagree on IC scores.** When 19 pathologists scored the same TNBC sections, SP142 was read as positive in an average 58% of cases and SP263 in 78%, and all pathologists agreed on only 38% of SP142 cases and 50% of SP263 cases ([Reisenbichler et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32300181/)).\n- A low score is not a complete description of tumor immunity or a universal exclusion from immunotherapy.",
+          "excerptSHA256": "ad1f4490f66e18e8e4612c34a5292ac779146486a64b34b4b3ec23aec77fd31f"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For the 22C3 TNBC method, count eligible stained viable invasive tumour cells and tumour-associated lymphocytes and macrophages. Divide by all viable invasive tumour cells, including unstained cells, then multiply by 100. Report a whole-number CPS capped at 100, even when raw arithmetic exceeds 100.",
+          "passageSha256": "419a568eec31bbf5db0b6f7e275d0bd058ff563568c5741760efe35c5193cd8f",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "A CPS of 100 does not imply that all tumour cells stain.",
+          "passageSha256": "9966c4c354e5a3a1fc660089038010a44b387da133e9c3b33bc3f4fb5980e313",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "FDA formula/cap text on page 10 plus the numerator/denominator tables. CPS 100 without every tumour cell staining follows by arithmetic, not a clinical observation.",
+      "sourceQualification": "FDA formula/cap text on page 10 plus the numerator/denominator tables. CPS 100 without every tumour cell staining follows by arithmetic, not a clinical observation.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P06",
+      "family": "pd-l1-populations",
+      "requirement": "The cited TNBC 22C3 method requires at least 100 viable tumour cells and valid controls/adequacy. This technical method is not itself a current jurisdictional treatment authorization.",
+      "sourceExcerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+      "sourceExcerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "For the 22C3 breast assay manual used here, tumor cells qualify with convincing partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane and/or cytoplasmic staining within invasive tumor nests or directly associated supporting stroma. Not every stained immune cell anywhere on the slide belongs in the numerator. Neutrophils, nonviable cells and cells associated only with benign or in-situ tissue are among the exclusions. The denominator contains viable invasive tumor cells, including unstained ones; immune cells are excluded from it. Raw arithmetic can exceed 100, but **reported CPS is capped at 100**.",
+          "excerptSHA256": "0cf860347d0e9a9447b4642d78421b1d81f6a40fb60e4d898b3b36eaff0192fe"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+          "passageSha256": "c118d10f7ddc3bfb778dd0b14bdb1d0140422338ba0455e4b2cea6c3ab4fd52c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For a specified PD-L1 workflow, prepare the tissue section, stain it with acceptable controls, assess adequacy, identify the eligible cells and then apply the scoring algorithm. Further sections consume finite tissue. Record the antibody clone, platform, specimen, scoring method and intended clinical use. The cited TNBC 22C3 guide requires at least 100 viable tumour cells; that requirement belongs to the named assay, rather than to every PD-L1 method.",
+          "passageSha256": "072ea356cb1b6a8cf8e94ee562a63ddeaabe628bc219e9e71f582d5b2a6658f8",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 11
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Current treatment selection also requires the applicable current drug label and assay documentation.",
+          "passageSha256": "044d3e1dd96108b353dae21df37045166883bf85daa70a42d368e170f446c621",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 13
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "At least 100 viable tumour cells and controls are scoped to the cited TNBC method. Historical technical labeling is not a fresh authorization inventory.",
+      "sourceQualification": "At least 100 viable tumour cells and controls are scoped to the cited TNBC method. Historical technical labeling is not a fresh authorization inventory.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P07",
+      "family": "pd-l1-populations",
+      "requirement": "TPS is a qualifying tumour-cell membrane-staining percentage with immune cells excluded from its numerator; applying its arithmetic requires its assay/disease rules and does not make it interchangeable with CPS.",
+      "sourceExcerpt": "**Tumor proportion score (TPS)** is the percentage of viable tumor cells with qualifying partial or complete membrane staining. It excludes immune cells from its numerator. The [FDA assay document](https://www.accessdata.fda.gov/cdrh_docs/pdf15/P150013S016B.pdf) describes this algorithm in a non-small-cell lung cancer context; it does not make TPS a substitute for breast CPS.",
+      "sourceExcerptSHA256": "d39f6360ae1075ac859d3e8c841cd06b6f650853c540b4263ff9f09d39793629",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "**Tumor proportion score (TPS)** is the percentage of viable tumor cells with qualifying partial or complete membrane staining. It excludes immune cells from its numerator. The [FDA assay document](https://www.accessdata.fda.gov/cdrh_docs/pdf15/P150013S016B.pdf) describes this algorithm in a non-small-cell lung cancer context; it does not make TPS a substitute for breast CPS.",
+          "excerptSHA256": "d39f6360ae1075ac859d3e8c841cd06b6f650853c540b4263ff9f09d39793629"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "**Tumor proportion score (TPS)** is the percentage of viable tumor cells with qualifying partial or complete membrane staining. It excludes immune cells from its numerator. The [FDA assay document](https://www.accessdata.fda.gov/cdrh_docs/pdf15/P150013S016B.pdf) describes this algorithm in a non-small-cell lung cancer context; it does not make TPS a substitute for breast CPS.",
+          "excerptSHA256": "d39f6360ae1075ac859d3e8c841cd06b6f650853c540b4263ff9f09d39793629"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-tps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "tldr",
+          "recordSha256": "0b41f277d1185ee567870b5e872fb6dcd8cea8ad64981c20668dfb6f6f8049c6",
+          "fieldSha256": "1421ecd4fd31b9d43d51d334438bd1cfc111eaa12578e426512a080e6faf133b",
+          "supportingExcerpt": "The tumour proportion score is the percentage of eligible viable tumour cells with qualifying PD-L1 membrane staining. Immune cells are excluded; the assay and clinical setting determine its use.",
+          "passageSha256": "c4e5dc40f7ac3db4ee7f054fdfbca195fa8f9892bb655b8216a607c17bbb5795",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "TPS counts viable tumour cells with qualifying partial or complete membrane staining as a percentage of viable tumour cells. Immune cells do not enter its numerator. SP142 IC scoring measures the fraction of tumour area occupied by stained tumour-infiltrating immune cells, excluding tumour-cell staining. CPS, TPS and IC thresholds cannot be transferred between methods.",
+          "passageSha256": "b0dbde9149caf24c902374ca37907308229648ab9ef826a280ecd3f171c8c651",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 3
+        }
+      ],
+      "sourceIds": [
+        "roach",
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "Roach primary method/results and FDA page 9 agree on viable tumour membrane scoring, immune exclusions and assay-specific interpretation. No CPS-to-TPS cutoff transfer.",
+      "sourceQualification": "Roach primary method/results and FDA page 9 agree on viable tumour membrane scoring, immune exclusions and assay-specific interpretation. No CPS-to-TPS cutoff transfer.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P08",
+      "family": "pd-l1-populations",
+      "requirement": "IC scoring is an eligible PD-L1-stained immune-cell area fraction of tumour area under its named assay, not a tumour-cell fraction or CPS numerator over viable tumour cells.",
+      "sourceExcerpt": "**Immune-cell (IC) score** is the percentage of tumor area occupied by PD-L1-staining tumor-infiltrating immune cells. It ignores tumor-cell staining. It was the scoring rule for the VENTANA **SP142** assay used with atezolizumab: in the IMpassion130 trial of advanced TNBC, \"PD-L1-positive\" meant IC ≥1% by SP142 ([Schmid et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30345906/)).",
+      "sourceExcerptSHA256": "69891568e0b9e0aad967082d66daa8d55cbbf3e3d19e424ba3bdaf12c5197cc1",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "**Immune-cell (IC) score** is the percentage of tumor area occupied by PD-L1-staining tumor-infiltrating immune cells. It ignores tumor-cell staining. It was the scoring rule for the VENTANA **SP142** assay used with atezolizumab: in the IMpassion130 trial of advanced TNBC, \"PD-L1-positive\" meant IC ≥1% by SP142 ([Schmid et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30345906/)).",
+          "excerptSHA256": "69891568e0b9e0aad967082d66daa8d55cbbf3e3d19e424ba3bdaf12c5197cc1"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "**Immune-cell (IC) score** is the percentage of tumor area occupied by PD-L1-staining tumor-infiltrating immune cells. It ignores tumor-cell staining. It was the scoring rule for the VENTANA **SP142** assay used with atezolizumab: in the IMpassion130 trial of advanced TNBC, \"PD-L1-positive\" meant IC ≥1% by SP142 ([Schmid et al., 2018](https://pubmed.ncbi.nlm.nih.gov/30345906/)).",
+          "excerptSHA256": "69891568e0b9e0aad967082d66daa8d55cbbf3e3d19e424ba3bdaf12c5197cc1"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-ic-score",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "b6c98cbdc0e26c33a761c80335c6f4483563a9f6f707c07b34684144d0ab5ce0",
+          "fieldSha256": "7d40aff2e8ec33ee6bc30d7857ccc1017d31dfd684abe1d72655d6165268201b",
+          "supportingExcerpt": "The VENTANA SP142 assay scores PD-L1 on tumour-infiltrating immune cells as the proportion of tumour area they occupy",
+          "passageSha256": "aab69d0885955f9b34309deaa68a3589bc7ad1a0c6e36c48e09e266b53875d35",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "TPS counts viable tumour cells with qualifying partial or complete membrane staining as a percentage of viable tumour cells. Immune cells do not enter its numerator. SP142 IC scoring measures the fraction of tumour area occupied by stained tumour-infiltrating immune cells, excluding tumour-cell staining. CPS, TPS and IC thresholds cannot be transferred between methods.",
+          "passageSha256": "b0dbde9149caf24c902374ca37907308229648ab9ef826a280ecd3f171c8c651",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 3
+        }
+      ],
+      "sourceIds": [
+        "tecentriq-spl"
+      ],
+      "semanticAssessment": "The selected raw SPL passage supports the IC tumour-area output. Existing IC bands, withdrawn indications and clinical cohorts are not newly recertified.",
+      "sourceQualification": "The selected raw SPL passage supports the IC tumour-area output. Existing IC bands, withdrawn indications and clinical cohorts are not newly recertified.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P09",
+      "family": "pd-l1-populations",
+      "requirement": "Grouped fictional inventories do not supply microscopic spatial eligibility decisions. Stained populations, control adequacy and cell attribution still require the actual method.",
+      "sourceExcerpt": "<img src=\"./images/pd-l1-eligible-cells-and-tumor-denominator-v1-light.svg\" alt=\"Grouped fictional inventories show 200 viable tumor cells with 20 staining, 40 eligible stained lymphocytes and 20 eligible stained macrophages, yielding CPS 40 and tumor-cell percentage 10%.\" width=\"780\" height=\"1360\" data-theme-pair>",
+      "sourceExcerptSHA256": "5eff6d623e6e73866176960e3d46dcbfa4aa7a0502930803f6f46326bd5ed448",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "<img src=\"./images/pd-l1-eligible-cells-and-tumor-denominator-v1-light.svg\" alt=\"Grouped fictional inventories show 200 viable tumor cells with 20 staining, 40 eligible stained lymphocytes and 20 eligible stained macrophages, yielding CPS 40 and tumor-cell percentage 10%.\" width=\"780\" height=\"1360\" data-theme-pair>",
+          "excerptSHA256": "5eff6d623e6e73866176960e3d46dcbfa4aa7a0502930803f6f46326bd5ed448"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "<img src=\"./images/pd-l1-eligible-cells-and-tumor-denominator-v1-light.svg\" alt=\"Grouped fictional inventories show 200 viable tumor cells with 20 staining, 40 eligible stained lymphocytes and 20 eligible stained macrophages, yielding CPS 40 and tumor-cell percentage 10%.\" width=\"780\" height=\"1360\" data-theme-pair>",
+          "excerptSHA256": "5eff6d623e6e73866176960e3d46dcbfa4aa7a0502930803f6f46326bd5ed448"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "teaching-invariant-with-explicit-artifact-disposition",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Tumour cells require qualifying partial or complete membrane staining. Eligible lymphocytes and macrophages may have membrane or cytoplasmic staining in tumour nests or directly associated stroma. Exclude immune cells from the denominator; do not count every stained cell on the slide. Controls and at least 100 viable tumour cells are required.",
+          "passageSha256": "c118d10f7ddc3bfb778dd0b14bdb1d0140422338ba0455e4b2cea6c3ab4fd52c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For a specified PD-L1 workflow, prepare the tissue section, stain it with acceptable controls, assess adequacy, identify the eligible cells and then apply the scoring algorithm. Further sections consume finite tissue. Record the antibody clone, platform, specimen, scoring method and intended clinical use. The cited TNBC 22C3 guide requires at least 100 viable tumour cells; that requirement belongs to the named assay, rather than to every PD-L1 method.",
+          "passageSha256": "072ea356cb1b6a8cf8e94ee562a63ddeaabe628bc219e9e71f582d5b2a6658f8",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 11
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label"
+      ],
+      "semanticAssessment": "Artifact-grouping disposition: the constructed inventory cannot decide actual microscopic eligibility. Named method, cell attribution and controls are explicit in the fields; exact spatial grouping is not an additional scientific result.",
+      "sourceQualification": "Artifact-grouping disposition: the constructed inventory cannot decide actual microscopic eligibility. Named method, cell attribution and controls are explicit in the fields; exact spatial grouping is not an additional scientific result.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": true,
+      "additionalScientificCoverageCredit": 0,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-P10",
+      "family": "pd-l1-populations",
+      "requirement": "Assay clone, platform, preparation, scoring algorithm, specimen and clinical setting constrain a score. No generic score switch, universal cutoff, personal benefit prediction or recertification of retained clinical trials follows.",
+      "sourceExcerpt": "A clinical cutoff belongs to a defined assay, drug, population and treatment setting. In **[[wiki/education/concepts/breast-cancer/receptors-and-subtypes/tnbc|triple-negative breast cancer (TNBC)]]**:",
+      "sourceExcerptSHA256": "093650a7ce5cc7d94ed6c4514afc0608a0472091cefb4e7f5867a4630fca17a9",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "gitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "gitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "5cdb1789329c5b211e90091e7d858f829db5036734a5c99aae977a6393a52345",
+          "GitBlob": "bc9d3b09409f31a371cc5cdbd7daaaaf5117ae9f",
+          "excerpt": "A clinical cutoff belongs to a defined assay, drug, population and treatment setting. In **[[wiki/education/concepts/breast-cancer/receptors-and-subtypes/tnbc|triple-negative breast cancer (TNBC)]]**:",
+          "excerptSHA256": "093650a7ce5cc7d94ed6c4514afc0608a0472091cefb4e7f5867a4630fca17a9"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/pd-l1-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "804541ec1431ef6e7d30669008b8a2f74eeb123b146dee5e9732b37175cb10aa",
+          "GitBlob": "1475bc232231924daef9b05d887ba57ae06d7a84",
+          "excerpt": "A clinical cutoff belongs to a defined assay, drug, population and treatment setting. In **[[wiki/education/concepts/breast-cancer/receptors-and-subtypes/tnbc|triple-negative breast cancer (TNBC)]]**:",
+          "excerptSHA256": "093650a7ce5cc7d94ed6c4514afc0608a0472091cefb4e7f5867a4630fca17a9"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "For a specified PD-L1 workflow, prepare the tissue section, stain it with acceptable controls, assess adequacy, identify the eligible cells and then apply the scoring algorithm. Further sections consume finite tissue. Record the antibody clone, platform, specimen, scoring method and intended clinical use. The cited TNBC 22C3 guide requires at least 100 viable tumour cells; that requirement belongs to the named assay, rather than to every PD-L1 method.",
+          "passageSha256": "072ea356cb1b6a8cf8e94ee562a63ddeaabe628bc219e9e71f582d5b2a6658f8",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 11
+        },
+        {
+          "recordId": "pd-l1-cps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "676994876abec1a18185edb85152884824b4ad7a7186cff079cf49eb69a01333",
+          "fieldSha256": "9e1341593a0b025677c53ff0c77e8189face28d26b37376e231b907c47b21dfa",
+          "supportingExcerpt": "Report CPS as a capped score, TPS as a tumour-cell percentage, or IC as the percentage of tumour area occupied by stained immune cells. Each algorithm has its own eligibility and threshold rules. Too few eligible cells, failed controls, incorrect cell attribution, necrosis and heterogeneous sampling can invalidate or limit a result. None of these scores alone describes the complete immune state, guarantees individual benefit or establishes eligibility in a different cancer or treatment setting.",
+          "passageSha256": "e0cbaeb263bc478daf459e98c579d03e65544378d398db597e8c090722a0e6c2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 12
+        },
+        {
+          "recordId": "pd-l1-tps",
+          "version": "proposal-support-bodies-49-root",
+          "field": "summary",
+          "recordSha256": "0b41f277d1185ee567870b5e872fb6dcd8cea8ad64981c20668dfb6f6f8049c6",
+          "fieldSha256": "1a86b4a4bf0b8b9cedb0f6cf59dd95270320d6744f006817034c31677328727a",
+          "supportingExcerpt": "These clinical examples concern lung cancer. TPS and CPS use different eligible cell populations and can give different values; a score in another assay or cancer needs its own scoring and clinical context.",
+          "passageSha256": "ae3f90f76a338db98dff53d601fe2c36b6697316b336791b3dcff9a4123626e2",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0
+        }
+      ],
+      "sourceIds": [
+        "fda-22c3-tnbc-label",
+        "roach"
+      ],
+      "semanticAssessment": "Algorithm/specimen/context and clinical-use boundaries are explicit. Earlier trial and current-authorization statements outside selected excerpts retain prior reading depth.",
+      "sourceQualification": "Algorithm/specimen/context and clinical-use boundaries are explicit. Earlier trial and current-authorization statements outside selected excerpts retain prior reading depth.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S01",
+      "family": "stromal-area-scoring",
+      "requirement": "The pretreatment breast stromal TIL method uses eligible tumour-associated stroma within invasive borders and mononuclear infiltrate including lymphocytes/plasma cells; malignant nests and method-defined excluded regions do not enter the eligible denominator.",
+      "sourceExcerpt": "For pretreatment invasive breast tumors, the defined stromal region lies within the invasive-tumor borders. Normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes require the method's exclusions. After preoperative treatment, residual-disease guidance defines the relevant residual tumor bed. A scar with scattered malignant cells presents a different regional question from an untreated mass. Keep the setting and its method explicit.",
+      "sourceExcerptSHA256": "719de4311e7ee6cd7620e94cd4efc018ba09edfecb1d02152f999740ef06207d",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "For pretreatment invasive breast tumors, the defined stromal region lies within the invasive-tumor borders. Normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes require the method's exclusions. After preoperative treatment, residual-disease guidance defines the relevant residual tumor bed. A scar with scattered malignant cells presents a different regional question from an untreated mass. Keep the setting and its method explicit.",
+          "excerptSHA256": "719de4311e7ee6cd7620e94cd4efc018ba09edfecb1d02152f999740ef06207d"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "For pretreatment invasive breast tumors, the defined stromal region lies within the invasive-tumor borders. Normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes require the method's exclusions. After preoperative treatment, residual-disease guidance defines the relevant residual tumor bed. A scar with scattered malignant cells presents a different regional question from an untreated mass. Keep the setting and its method explicit.",
+          "excerptSHA256": "719de4311e7ee6cd7620e94cd4efc018ba09edfecb1d02152f999740ef06207d"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "The breast stromal TIL method estimates the area occupied by mononuclear inflammatory cells, including lymphocytes and plasma cells, as a percentage of eligible tumour-associated stroma. It is not the percentage of all cells, a CD8-cell count or the fraction of cancer cells being killed.",
+          "passageSha256": "276c99649560fb3f8990fadd8fcf461f2d7dfe27578cd0bc156157a70341764b",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 0
+        },
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Define the eligible region and treatment setting before estimating the percentage. Use the specified exclusions for normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes, and assess the region overall rather than only its hottest spot. A prognostic association does not establish added benefit from a particular treatment.",
+          "passageSha256": "83d3c72f67c60b6ea4878bd9ee70a2a3e43920bca23b01f0c379ef3b784c6a4d",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        }
+      ],
+      "sourceIds": [
+        "salgado2015"
+      ],
+      "semanticAssessment": "Inherited complete abstract and Table 2 guidance-page assessment reused by verified capture identity, not a newly read whole paper.",
+      "sourceQualification": "Inherited complete abstract and Table 2 guidance-page assessment reused by verified capture identity, not a newly read whole paper.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S02",
+      "family": "stromal-area-scoring",
+      "requirement": "Post-neoadjuvant residual-bed regional guidance is distinct from pretreatment invasive-tumour stroma; retain treatment setting, specimen and method.",
+      "sourceExcerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+      "sourceExcerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+          "excerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+          "excerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Residual-disease recommendations assess the residual tumour bed rather than simply reusing untreated invasive borders. Keep specimen type, site, treatment setting and observer calibration. A high score does not prove tumour-specific recognition, entry into every malignant nest or a permanent hot-tumour state.",
+          "passageSha256": "b99c874019b2f6cb8db98d0e62eec7c3edf6d7922aa19ef46fd84d6ecf18a45c",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 6
+        }
+      ],
+      "sourceIds": [
+        "dieci2018",
+        "til-residual-guidance"
+      ],
+      "semanticAssessment": "Separate residual-bed context supported by prior Dieci abstract and selected complete residual-guidance text pages 2/10/11.",
+      "sourceQualification": "Separate residual-bed context supported by prior Dieci abstract and selected complete residual-guidance text pages 2/10/11.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S03",
+      "family": "stromal-area-scoring",
+      "requirement": "In the invented common-scale area map, A has four eligible units with 0.4 occupied and B one with 0.6. Pooled fraction is 1/5=20 percent; an unweighted mean of 10 and 60 percent is 35 percent.",
+      "sourceExcerpt": "For a fictional area map, region A contains 4 units of eligible stroma and 0.4 units of infiltrate; region B contains 1 unit and 0.6 units. What is the pooled-area fraction? Is it the simple average of 10% and 60%?",
+      "sourceExcerptSHA256": "a9cabf20fd7e1a3491044f3741841557aa5ec13c637129b939e55a124256b8f2",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "For a fictional area map, region A contains 4 units of eligible stroma and 0.4 units of infiltrate; region B contains 1 unit and 0.6 units. What is the pooled-area fraction? Is it the simple average of 10% and 60%?",
+          "excerptSHA256": "a9cabf20fd7e1a3491044f3741841557aa5ec13c637129b939e55a124256b8f2"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "For a fictional area map, region A contains 4 units of eligible stroma and 0.4 units of infiltrate; region B contains 1 unit and 0.6 units. What is the pooled-area fraction? Is it the simple average of 10% and 60%?",
+          "excerptSHA256": "a9cabf20fd7e1a3491044f3741841557aa5ec13c637129b939e55a124256b8f2"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Fictional area exercise: region A has 4 units of eligible stroma with 0.4 occupied by infiltrate; region B has 1 unit with 0.6 occupied. Pooled occupied area is (0.4 + 0.6)/(4 + 1) = 20%. Averaging the regional percentages without area weighting gives (10% + 60%)/2 = 35%. This arithmetic illustrates the denominator; it does not prescribe a pixel workflow for clinical semiquantitative scoring.",
+          "passageSha256": "bdf8071eac4729bc7fcbedd901a6f67b6ff15e55534c601c75ba5607250bf340",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        }
+      ],
+      "sourceIds": [],
+      "semanticAssessment": "Invented common-scale areas pool to 20 percent; an unweighted average is 35 percent. Five native rectangles verify equal eligible units and the area ratio.",
+      "sourceQualification": "Invented common-scale areas pool to 20 percent; an unweighted average is 35 percent. Five native rectangles verify equal eligible units and the area ratio.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S04",
+      "family": "stromal-area-scoring",
+      "requirement": "The pooled-area toy arithmetic is not a mandatory clinical pixel workflow. Actual scoring is trained, semiquantitative and overall, rather than choosing only hotspots.",
+      "sourceExcerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+      "sourceExcerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+          "excerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "Assessment is trained and semiquantitative. Evaluate the defined region overall rather than choosing only its hottest spot. A core biopsy, surgical specimen and lymph-node sample can supply different tissue contexts. Applying one breast-tumor scoring rule to another context needs justification.",
+          "excerptSHA256": "5e62f3049b2c400ed034deb26ad5736e81b37adcd5de8102ef8536138316a464"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Define the eligible region and treatment setting before estimating the percentage. Use the specified exclusions for normal structures, in-situ disease, necrosis, crush damage and biopsy-site changes, and assess the region overall rather than only its hottest spot. A prognostic association does not establish added benefit from a particular treatment.",
+          "passageSha256": "83d3c72f67c60b6ea4878bd9ee70a2a3e43920bca23b01f0c379ef3b784c6a4d",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 1
+        },
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Fictional area exercise: region A has 4 units of eligible stroma with 0.4 occupied by infiltrate; region B has 1 unit with 0.6 occupied. Pooled occupied area is (0.4 + 0.6)/(4 + 1) = 20%. Averaging the regional percentages without area weighting gives (10% + 60%)/2 = 35%. This arithmetic illustrates the denominator; it does not prescribe a pixel workflow for clinical semiquantitative scoring.",
+          "passageSha256": "bdf8071eac4729bc7fcbedd901a6f67b6ff15e55534c601c75ba5607250bf340",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 4
+        },
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "In a fictional section, 0.4 square millimetres of mononuclear infiltrate within 2 square millimetres of eligible stroma gives 20% by area. Separately, 30 CD8 cells among 100 counted lymphocytes gives 30% of those counted lymphocytes. Neither is the fraction of all tumour cells, a measure of cancer specificity or evidence of useful killing. One occupied unit among five equal eligible stromal-area units also gives 20%; the drawing illustrates a denominator rather than prescribing pixel counting for semiquantitative breast scoring.",
+          "passageSha256": "f866ade46b6d79feaec9c8a4438afb2aa00413b5dd210fa18c1ba257b7a2bc7b",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 10
+        }
+      ],
+      "sourceIds": [
+        "salgado2015",
+        "til-residual-guidance"
+      ],
+      "semanticAssessment": "Semi-quantitative overall guidance, not a mandated pixel method; exact toy arithmetic is an illustrative denominator.",
+      "sourceQualification": "Semi-quantitative overall guidance, not a mandated pixel method; exact toy arithmetic is an illustrative denominator.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S05",
+      "family": "stromal-area-scoring",
+      "requirement": "Stromal-area percent, positive-cell percent, cells per square millimetre, selected-cell count and bulk immune RNA are distinct measurements; none alone proves specificity, killing or universal immunotherapy benefit.",
+      "sourceExcerpt": "- Stromal TILs and lymphocytes inside malignant nests refer to different locations.\n- Percent stromal area, percent positive nuclei and cells per square millimeter are different units.\n- Bulk immune [ribonucleic acid (RNA)](/wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq) abundance is not a microscopy-based sTIL score.\n- A high score is not a permanent “hot tumor” label or a universal immunotherapy rule.\n- Prognostic (tracks outcome) is not predictive (tracks benefit from one treatment over another).",
+      "sourceExcerptSHA256": "4cb61ac6a8b4b34eefdccd6b1871a10f2b0c9b4169a5828543fcc47c79e2d9e1",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "- Stromal TILs and lymphocytes inside malignant nests refer to different locations.\n- Percent stromal area, percent positive nuclei and cells per square millimeter are different units.\n- Bulk immune [ribonucleic acid (RNA)](/wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq) abundance is not a microscopy-based sTIL score.\n- A high score is not a permanent “hot tumor” label or a universal immunotherapy rule.\n- Prognostic (tracks outcome) is not predictive (tracks benefit from one treatment over another).",
+          "excerptSHA256": "4cb61ac6a8b4b34eefdccd6b1871a10f2b0c9b4169a5828543fcc47c79e2d9e1"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "- Stromal TILs and lymphocytes inside malignant nests refer to different locations.\n- Percent stromal area, percent positive nuclei and cells per square millimeter are different units.\n- Bulk immune [ribonucleic acid (RNA)](/wiki/education/concepts/measurement/transcriptomics/bulk-rna-seq) abundance is not a microscopy-based sTIL score.\n- A high score is not a permanent “hot tumor” label or a universal immunotherapy rule.\n- Prognostic (tracks outcome) is not predictive (tracks benefit from one treatment over another).",
+          "excerptSHA256": "4cb61ac6a8b4b34eefdccd6b1871a10f2b0c9b4169a5828543fcc47c79e2d9e1"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "A fictional sTIL estimate of 30% means that the defined mononuclear infiltrate occupies about 30% of eligible stromal area. It does not mean 30% of all cells are lymphocytes or CD8 cells, or that 30% of cancer cells are being killed. Intratumoral TILs, positive-nucleus fractions, cells per square millimetre and bulk immune RNA measure different things. Additional stains change the measurement rather than silently changing its denominator.",
+          "passageSha256": "c65b3e5ffcf97e462a620667f722b6d3f4c19a605697448b688ae93cbacd4685",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 5
+        },
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Fixed sections and morphology or selected stains can measure identity, compartment and abundance; viable-cell assays ask about phenotype and function. Dissociation loses native location, culture can select populations and tests consume finite material. Keep cells per square millimetre, specified cell fractions, stromal-area percentages and assay-specific function distinct. TIL therapy is a manufactured expanded-cell product: a tissue count does not establish product yield, composition, potency or treatment success. Sampling, damage, mixed compartments, unsuitable markers and culture selection are different failure modes, and descriptive pathology, research function and clinical treatment selection require different validation.",
+          "passageSha256": "bebb6e5fb0b65ebe877e81e0e31ec39842bfb1053ec07d5d98459cf98fd3b18d",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 11
+        }
+      ],
+      "sourceIds": [
+        "salgado2015"
+      ],
+      "semanticAssessment": "Different units and function/benefit are not interchangeable. The present assessment does not reopen retained bystander/cohort papers or add efficacy claims.",
+      "sourceQualification": "Different units and function/benefit are not interchangeable. The present assessment does not reopen retained bystander/cohort papers or add efficacy claims.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    },
+    {
+      "id": "P50-S06",
+      "family": "stromal-area-scoring",
+      "requirement": "Retain tissue/block, sampled site, treatment context, eligible regions, exclusions, observer/computational method, units and calibration. Measurement reproducibility, heterogeneity and clinical-use validation are separate.",
+      "sourceExcerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input | Section/block, specimen type, sampled site and treatment context; finite tissue |\n| Region | Eligible stromal area and setting-specific inclusion/exclusion rules |\n| Output and units | Continuous estimated percentage of that area occupied by the defined infiltrate |\n| Method | H&E assessment, observer/calibration and regional sampling; identify computational estimates |\n| Limits | Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample |\n| Validation | Measurement reproducibility and intended clinical use are different questions |",
+      "sourceExcerptSHA256": "b4e1f1f488d5b49db993bcdb124c4dc01526bd848203772df0971a5ac6c15048",
+      "sourceVersions": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sha256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "gitBlob": "f183432abf6bd2d02877c71c897818a848ebed09"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sha256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "gitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5"
+        }
+      ],
+      "sourceExcerptVariants": [
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "7510db6be8053b64708b6c6c037ab1ea564a35ab",
+          "sourceSHA256": "0d9a4cb692a6e2ea7a0acad26cca2b5c0bf5a991525d766b7c5da632b6d1952b",
+          "GitBlob": "f183432abf6bd2d02877c71c897818a848ebed09",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input | Section/block, specimen type, sampled site and treatment context; finite tissue |\n| Region | Eligible stromal area and setting-specific inclusion/exclusion rules |\n| Output and units | Continuous estimated percentage of that area occupied by the defined infiltrate |\n| Method | H&E assessment, observer/calibration and regional sampling; identify computational estimates |\n| Limits | Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample |\n| Validation | Measurement reproducibility and intended clinical use are different questions |",
+          "excerptSHA256": "b4e1f1f488d5b49db993bcdb124c4dc01526bd848203772df0971a5ac6c15048"
+        },
+        {
+          "path": "wiki/education/concepts/measurement/pathology-readouts/stil-scoring.md",
+          "guideRef": "c96896452386202405c435aa161bc5047919337a",
+          "sourceSHA256": "fc9e9fccc79302837f9d67e224fbacd0d8d14d948e34f252136f652291772e59",
+          "GitBlob": "8d68e62541773bc5ad0bfe6864b1e3cb9e037dd5",
+          "excerpt": "| Assay-card field | What to retain |\n|---|---|\n| Input | Section/block, specimen type, sampled site and treatment context; finite tissue |\n| Region | Eligible stromal area and setting-specific inclusion/exclusion rules |\n| Output and units | Continuous estimated percentage of that area occupied by the defined infiltrate |\n| Method | H&E assessment, observer/calibration and regional sampling; identify computational estimates |\n| Limits | Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample |\n| Validation | Measurement reproducibility and intended clinical use are different questions |",
+          "excerptSHA256": "b4e1f1f488d5b49db993bcdb124c4dc01526bd848203772df0971a5ac6c15048"
+        }
+      ],
+      "status": "covered-draft",
+      "fieldRepresentation": "complete-at-stated-scope",
+      "evidence": [
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "To interpret a stromal TIL estimate, retain the block, sampled site, specimen type and treatment setting, then define the eligible stromal region and its exclusions. The output is a continuous estimated percentage of that area occupied by the specified infiltrate. State whether a trained observer or a computational method produced it, with calibration and regional sampling where relevant. Artifacts, sparse stroma, heterogeneity, observer variation and an unrepresentative sample can limit the result. The section uses finite tissue, and measurement reproducibility is a separate question from validation for clinical treatment selection.",
+          "passageSha256": "df8f56cedd106c9b0c48044d6c4bc54555105046112dbd397ed626f3cf1615be",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 7
+        },
+        {
+          "recordId": "tils",
+          "version": "proposal-support-bodies-49-root",
+          "field": "notes",
+          "recordSha256": "0e8194fb999f525ece41bee6033c333a1222b3ef0165c6ca7380f3beeb2d5c4c",
+          "fieldSha256": "3e2ab5388415f9be862816c173caff73a7343ebd7f82fd52a18716a5acf025a0",
+          "supportingExcerpt": "Fixed sections and morphology or selected stains can measure identity, compartment and abundance; viable-cell assays ask about phenotype and function. Dissociation loses native location, culture can select populations and tests consume finite material. Keep cells per square millimetre, specified cell fractions, stromal-area percentages and assay-specific function distinct. TIL therapy is a manufactured expanded-cell product: a tissue count does not establish product yield, composition, potency or treatment success. Sampling, damage, mixed compartments, unsuitable markers and culture selection are different failure modes, and descriptive pathology, research function and clinical treatment selection require different validation.",
+          "passageSha256": "bebb6e5fb0b65ebe877e81e0e31ec39842bfb1053ec07d5d98459cf98fd3b18d",
+          "representation": "registered-local-root",
+          "mainCredit": 0,
+          "liveCredit": 0,
+          "index": 11
+        }
+      ],
+      "sourceIds": [
+        "salgado2015",
+        "dieci2018",
+        "til-residual-guidance"
+      ],
+      "semanticAssessment": "Specimen, site, treatment, eligible regions, methods/units and calibration are reporting boundaries. Reproducibility and clinical validation remain separate.",
+      "sourceQualification": "Specimen, site, treatment, eligible regions, methods/units and calibration are reporting boundaries. Reproducibility and clinical validation remain separate.",
+      "sourceScope": "Three complete publication abstracts; two complete Roach method/results paragraphs; selected NCI/CAP/label paragraphs; four fresh complete PDF page images; targeted FDA formula/cap text and residual-TIL supplement text. Two prior abstract/guidance assessments reused by identity. No whole paper or whole guidance document claim.",
+      "artifactConstructionBoundary": "Fictional data and drawing geometry are not empirical findings, hidden patient data or an automatically valid clinical workflow.",
+      "artifactOnlyDisposition": false,
+      "additionalScientificCoverageCredit": 1,
+      "independentAcceptance": false,
+      "remaining": []
+    }
+  ],
+  "constructionBoundaries": [
+    {
+      "id": "P50-B01",
+      "requirement": "All thirteen assigned bodies were read in full at the original pin; later entries reuse exact whole-byte identity, with both inventories retained.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B02",
+      "requirement": "Historical PASS and independent-review labels are claims at stated scope. Review-pending provenance can predate a later receipt; none is fresh independent, expert, owner, learner or language acceptance.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B03",
+      "requirement": "Original creators, task authors, route-insertion authors, reviewers and integrators retain distinct roles; historical model-call counts and actor strings are not reconstructed as creative proof.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B04",
+      "requirement": "Private capture paths and historical source commits are not followed or fetched. Public/current, candidate, preimage and private hash assertions retain distinct meanings.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B05",
+      "requirement": "Provenance alt/caption strings are compared with pinned owner copy and gain no duplicate scientific credit. Toy values and identities are invented, with no patient case copied.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B06",
+      "requirement": "Eligible parent bodies and complete version diffs are read after frontmatter/generated-navigation/personal-case exclusions. PD-L1 acronym, Mermaid and IC output-row changes remain explicit; ordinary grades are not replaced.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B07",
+      "requirement": "Historical raw-source/whole-paper claims are not inherited as fresh reads. Unselected clinical cohort and authorization assertions retain their old depth.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B08",
+      "requirement": "Eight whole native SVG variants were viewed, with whole DOM checks still to do. Fresh views do not establish browser/hydration/mobile, measured contrast or accessibility acceptance; Mermaid source reading is not a rendered-diagram review.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    },
+    {
+      "id": "P50-B09",
+      "requirement": "Historical focus-return-to-BODY and human-review limits remain open. The stromal rectangle/pink-nest overlap is a possible illustrative ambiguity for the artwork owner, not a revised clinical finding.",
+      "scientificCredit": 0,
+      "independentAcceptance": false,
+      "disposition": "Retained custody/context/construction boundary; whole DOM checks subsequently completed without altering this sealed inventory."
+    }
+  ],
+  "retainedSourceFirstScienceOrPremiseUnits": 30,
+  "fullyFieldRepresentedRequirements": 28,
+  "artifactConventionDispositionsWithRepresentedInvariant": 2,
+  "registeredRootRequirements": 28,
+  "actualUnmergedPeerRequirements": 0,
+  "partialRequirements": 0,
+  "unrepresentedUniqueScientificRequirements": 0,
+  "exactCurrentFieldReferences": 56,
+  "independentAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

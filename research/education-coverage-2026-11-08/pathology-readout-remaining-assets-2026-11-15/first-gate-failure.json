@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "seconds": 11.28
+    },
+    {
+      "name": "lint",
+      "exitCode": 0,
+      "seconds": 29.89
+    },
+    {
+      "name": "validate",
+      "exitCode": 0,
+      "seconds": 2.02
+    },
+    {
+      "name": "full-suite",
+      "exitCode": 1,
+      "seconds": 312.43
+    }
+  ],
+  "failure": "The existing biomarker scoring-source host allowlist rejects accessdata.fda.gov.",
+  "failedTest": "src/lib/biomarkers.test.ts: scoring rules quote a defining source and approval sources stay on the label and regulator allowlist",
+  "fullSuite": {
+    "files": 293,
+    "passedFiles": 292,
+    "failedFiles": 1,
+    "passedTests": 3100,
+    "failedTests": 1,
+    "skippedTests": 2
+  },
+  "rawLogsPreservedPrivately": true,
+  "correctiveAction": "Use exact quotations from resolved original method papers with DOI sources; retain the directly verified FDA technical PDF links. CPS abstract and FDA TNBC method have distinct citation roles.",
+  "testScannerAllowlistFloorsAndBudgetsChanged": false,
+  "finalVariantPasses": true
+}

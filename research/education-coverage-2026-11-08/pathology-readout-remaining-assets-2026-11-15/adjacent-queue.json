@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": "P50-R01",
+      "status": "open-product-owner",
+      "recordId": "h-and-e-staining",
+      "finding": "The actual H&E reader inherits an IHC technology schematic labeled Stained protein (HER2, PD-L1), while the H&E definition says the broad stain is not a named-protein measurement.",
+      "observedExcerpt": "Showing the technology this term belongs to: Histopathology & immunohistochemistry.",
+      "observedExcerptSHA256": "a181be7c9dcffdf7b932bd7a6e388f35840d7f814cd7f07fe0e48265cafb1698",
+      "proposedAction": "Map H&E to a morphology/section schematic with a broad-stain legend, or suppress the antigen-specific inherited drawing for this term. Keep IHC and H&E measurement identity distinct.",
+      "dependency": "Product rendering/mapping requires owner approval under docs/PRODUCT-APPROVAL.md. No approval flag, code edit or deployment is made here.",
+      "scientificCoverageCredit": 0
+    },
+    {
+      "id": "P50-Q02",
+      "owner": "Guide stromal-area artwork",
+      "issue": "Resolve low green-stroma/pink-nest illustrative ambiguity with the artwork owner; retain current source bytes and prior grades."
+    },
+    {
+      "id": "P50-Q03",
+      "owner": "Historical custody and renderer accessibility",
+      "issue": "Retain stage-specific provenance hashes, creator/reviewer/route-author distinctions and focus-return-to-BODY. No historical private path was followed."
+    },
+    {
+      "id": "P50-Q04",
+      "owner": "CPS/TPS clinical and linked-card source review",
+      "issue": "Separately recheck current forPatient/authorization scope, assay comparability/cytology assertions and early-versus-advanced TNBC card phrasing. The method-source pass does not certify those retained claims."
+    }
+  ],
+  "authoritativeAdjacentInputChanged": false,
+  "coverageCredit": 0
+}

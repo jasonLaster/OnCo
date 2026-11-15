@@ -1,0 +1,633 @@
+{
+  "dataCommit": "25af45e379ba1553716daf5385e1124ce2d4eefe",
+  "plan": {
+    "auditBaseCommit": "18070e45bee689154601c2bd6df9d997d0c0e2ef",
+    "canonicalOwnersChanged": 4,
+    "canonicalFieldsChanged": 10,
+    "changes": [
+      {
+        "recordId": "h-and-e-staining",
+        "kind": "term",
+        "file": "src/data/terms-cansim-oncology.ts",
+        "field": "tldr",
+        "before": "H&E is the purple and pink stain on almost every pathology slide: haematoxylin colours cell nuclei blue-purple and eosin colours the cytoplasm and connective tissue pink.",
+        "after": "H&E staining makes nuclei blue-purple and broadly colours cytoplasm and supporting tissue pink, helping show cells in their tissue setting.",
+        "beforeSHA256": "5141d714b42130b9b7c462fb34940de1d96b4bc028d80c1190f9c2dd4eeec473",
+        "afterSHA256": "38ac2b0c811b938f5abdc9b93188981c3fa60a91d1c8d738320b097415c5bbec",
+        "reason": "Replace the unsupported almost-every-slide quantifier with the source-verified staining/morphology definition."
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "kind": "technology",
+        "file": "src/data/technologies.ts",
+        "field": "tldr",
+        "before": "Histopathology means looking at cancer cells under a microscope, and immunohistochemistry stains them for specific proteins. Together they are still the foundation of every diagnosis.",
+        "after": "Histopathology examines tissue under a microscope. Immunohistochemistry uses antibodies to show selected antigens; both need specimen context and appropriate interpretation.",
+        "beforeSHA256": "2dd14a117ca5e2bc581a7e7e8ec1d04794c7127729191e604cbe3881c0c3664d",
+        "afterSHA256": "36c98377ff70886383d73b97f066d81b223eb447f74e67118e46843e09bb4ccd",
+        "reason": "Remove the every-diagnosis universal and distinguish tissue examination from antibody detection."
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "kind": "technology",
+        "file": "src/data/technologies.ts",
+        "field": "strengths",
+        "before": [
+          "Cheap, fast, universal",
+          "Companion diagnostic for most targeted drugs"
+        ],
+        "after": [
+          "Preserves cells in their tissue setting",
+          "Supports diagnosis and selected biomarker assessments"
+        ],
+        "beforeSHA256": "144a0e2f9c1bcf5f4dc246c0e30e3ec8b1d357499a20bf607b2afe96ea24115d",
+        "afterSHA256": "7f8dbcfba844b16fbb222e2a0e79ca25e07c7bb8e9d33772b8d673963af5da6c",
+        "reason": "Replace unsupported universal cost/speed and most-targeted-drug claims with bounded capabilities; this is an explicit correction, not a preserving union."
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "kind": "technology",
+        "file": "src/data/technologies.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Immunohistochemistry"
+          },
+          {
+            "label": "Hans et al., Blood 2004: the CD10, BCL6 and MUM1 immunohistochemistry algorithm on 152 cases",
+            "url": "https://doi.org/10.1182/blood-2003-05-1545"
+          },
+          {
+            "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+            "url": "https://doi.org/10.1038/nrc2542"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Immunohistochemistry"
+          },
+          {
+            "label": "NCI: surgical pathology reports, tissue microscopy and specimen context",
+            "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/diagnosis/pathology-reports-fact-sheet"
+          },
+          {
+            "label": "NCI Dictionary: immunohistochemistry",
+            "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/immunohistochemistry"
+          },
+          {
+            "label": "Hans et al., Blood 2004: the CD10, BCL6 and MUM1 immunohistochemistry algorithm on 152 cases",
+            "url": "https://doi.org/10.1182/blood-2003-05-1545"
+          },
+          {
+            "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+            "url": "https://doi.org/10.1038/nrc2542"
+          }
+        ],
+        "beforeSHA256": "0cb9472acaaa1b08c351719b19a20b53d2960baf3c32b06c96c61587b59f5376",
+        "afterSHA256": "80bb75456155cf15ba5fa18d597b4c98fdebb1c809d064e7babe586626c7de43",
+        "reason": "Add the actual official definitions and specimen-context sources. Existing contributor links retain relative order.",
+        "ownLiteralLinkCount": 1,
+        "priorLinkRelativeOrderPreserved": true
+      },
+      {
+        "recordId": "pd-l1-cps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "scoringRule",
+        "before": {
+          "text": "Count PD-L1-positive tumour cells, lymphocytes and macrophages; divide by the number of viable tumour cells; multiply by 100. A specimen must hold at least 100 viable tumour cells to be scored.",
+          "quote": "PD-L1 protein expression [Combined Positive Score (CPS) ≥ 1]",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools",
+          "sourceLabel": "FDA: List of FDA-Authorized Companion Diagnostic Devices"
+        },
+        "after": {
+          "text": "For the cited 22C3 TNBC method, count eligible PD-L1-stained invasive tumour cells, lymphocytes and macrophages; divide by all viable invasive tumour cells and multiply by 100. Report CPS capped at 100. This method requires at least 100 viable tumour cells and acceptable controls.",
+          "quote": "an immunohistochemical scoring algorithm that includes PD-L1 expression for tumor and immune cells, that is, the combined positive score.",
+          "source": "https://doi.org/10.5858/arpa.2018-0043-oa",
+          "sourceLabel": "Kulangara et al. 2019: CPS definition; TNBC method details in linked FDA labeling"
+        },
+        "beforeSHA256": "b9b7c03300bf59e1c13585481680efeaf09edb31f56dbc7901d938ed34a49514",
+        "afterSHA256": "5627a2a76ccad1bf6ca5526b8ba1480bb2b01314a5bd6e6dc20d09a1a0d6dc6c",
+        "reason": "Qualify the technical rule by assay and indication. Replace an approval-threshold quotation with a different exact method quotation and its actual source; the old quotation is preserved verbatim in this change record. Method citation amended after the existing source-host check rejected the FDA PDF hostname. The paper quote is exact; detailed FDA method rules remain separately linked. No allowlist or test change."
+      },
+      {
+        "recordId": "pd-l1-cps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "KEYTRUDA prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+          },
+          {
+            "label": "OPDIVO prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f570b9c4-6846-4de2-abfa-4d0a4ae4e394"
+          },
+          {
+            "label": "FDA: List of FDA-Authorized Companion Diagnostic Devices",
+            "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+          },
+          {
+            "label": "Measurement method and interpretation source",
+            "url": "https://www.agilent.com/cs/library/flyers/public/29390-d62312-pd-l1-22c3-tnbc-qsg-us.pdf"
+          },
+          {
+            "label": "FDA pembrolizumab label, TNBC sections 1.20 and 14.20",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+          },
+          {
+            "label": "Cortes et al., KEYNOTE-355 overall survival, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35857659/"
+          },
+          {
+            "label": "Rugo et al., PD-L1 assay comparison, 2021",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34097070/"
+          },
+          {
+            "label": "Reisenbichler et al., observer agreement, 2020",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32300181/"
+          },
+          {
+            "label": "Roche US TNBC withdrawal announcement, 2021",
+            "url": "https://www.roche.com/media/releases/med-cor-2021-08-27.html"
+          },
+          {
+            "label": "Taube et al., adaptive resistance in melanocytic lesions, 2012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22461641/"
+          },
+          {
+            "label": "FDA: first-line sacituzumab govitecan alone and with pembrolizumab in advanced TNBC (24 June 2026)",
+            "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"
+          }
+        ],
+        "after": [
+          {
+            "label": "KEYTRUDA prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+          },
+          {
+            "label": "OPDIVO prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f570b9c4-6846-4de2-abfa-4d0a4ae4e394"
+          },
+          {
+            "label": "FDA: List of FDA-Authorized Companion Diagnostic Devices",
+            "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools"
+          },
+          {
+            "label": "Measurement method and interpretation source",
+            "url": "https://www.agilent.com/cs/library/flyers/public/29390-d62312-pd-l1-22c3-tnbc-qsg-us.pdf"
+          },
+          {
+            "label": "FDA pembrolizumab label, TNBC sections 1.20 and 14.20",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/125514s194lbl.pdf"
+          },
+          {
+            "label": "Cortes et al., KEYNOTE-355 overall survival, 2022",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35857659/"
+          },
+          {
+            "label": "Rugo et al., PD-L1 assay comparison, 2021",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34097070/"
+          },
+          {
+            "label": "Reisenbichler et al., observer agreement, 2020",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32300181/"
+          },
+          {
+            "label": "Roche US TNBC withdrawal announcement, 2021",
+            "url": "https://www.roche.com/media/releases/med-cor-2021-08-27.html"
+          },
+          {
+            "label": "Taube et al., adaptive resistance in melanocytic lesions, 2012",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22461641/"
+          },
+          {
+            "label": "FDA: first-line sacituzumab govitecan alone and with pembrolizumab in advanced TNBC (24 June 2026)",
+            "url": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line"
+          },
+          {
+            "label": "FDA-hosted 22C3 labeling: CPS formula and TNBC eligible-cell rules",
+            "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf15/P150013S020C.pdf"
+          },
+          {
+            "label": "Kulangara et al. 2019: development of CPS for tumour and immune-cell staining",
+            "url": "https://doi.org/10.5858/arpa.2018-0043-oa"
+          }
+        ],
+        "beforeSHA256": "d7cdf7774b3e460d88b9fca7ae8daa677a5ce2f4d5ba9021277991c0a9e45142",
+        "afterSHA256": "66226be245aa070b666690a6b716a821c629bf910a37ac7a71692ab5cf03d7f1",
+        "reason": "Provide a directly retrieved primary labeling source for the method and eligibility tables; no current treatment indication is recertified.",
+        "ownLiteralLinkCount": 11,
+        "priorLinkRelativeOrderPreserved": true
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "tldr",
+        "before": "TPS is the share of tumour cells whose membrane stains for PD-L1, ignoring immune cells. In lung cancer it decides whether pembrolizumab or cemiplimab can be given alone: 1 percent opens the door, 50 percent is where single-agent treatment is strongest.",
+        "after": "The tumour proportion score is the percentage of eligible viable tumour cells with qualifying PD-L1 membrane staining. Immune cells are excluded; the assay and clinical setting determine its use.",
+        "beforeSHA256": "bd26cb042b436e817b3b9de768c06bd2b83eda4b9f0564ab1ad8a5104fed8871",
+        "afterSHA256": "1421ecd4fd31b9d43d51d334438bd1cfc111eaa12578e426512a080e6faf133b",
+        "reason": "Define the measurement rather than presenting a short numeric treatment gate or an unverified strongest-treatment ranking. Detailed existing clinical fields remain unchanged."
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "summary",
+        "before": "The tumour proportion score is the percentage of viable tumour cells showing partial or complete membrane staining at any intensity, read on the 22C3 pharmDx (and, for cemiplimab, also the SP263 assay). Pembrolizumab's US label uses TPS >= 1 percent for first-line single-agent treatment of stage III or metastatic NSCLC without EGFR or ALK alterations and for second-line treatment after platinum chemotherapy; cemiplimab's single-agent first-line indication requires TPS >= 50 percent. The KEYNOTE-024 trial that set the 50 percent bar and KEYNOTE-042 that lowered the gate to 1 percent are the sources of the two numbers. TPS is a lung-specific read; the same slide scored as CPS would include immune cells and give a different number.",
+        "after": "The tumour proportion score is the percentage of viable tumour cells showing partial or complete membrane staining at any intensity, read on the 22C3 pharmDx (and, for cemiplimab, also the SP263 assay). Pembrolizumab's US label uses TPS >= 1 percent for first-line single-agent treatment of stage III or metastatic NSCLC without EGFR or ALK alterations and for second-line treatment after platinum chemotherapy; cemiplimab's single-agent first-line indication requires TPS >= 50 percent. The KEYNOTE-024 trial that set the 50 percent bar and KEYNOTE-042 that lowered the gate to 1 percent are the sources of the two numbers. These clinical examples concern lung cancer. TPS and CPS use different eligible cell populations and can give different values; a score in another assay or cancer needs its own scoring and clinical context.",
+        "beforeSHA256": "4f567bb7d82a39356785de4253669ed7c219a3319e95775d3cdf44682730a4de",
+        "afterSHA256": "1a86b4a4bf0b8b9cedb0f6cf59dd95270320d6744f006817034c31677328727a",
+        "reason": "Correct lung-specific exclusivity and the guaranteed numerical-difference claim. The preceding clinical sentences are preserved exactly at their previous source depth."
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "scoringRule",
+        "before": {
+          "text": "Percentage of viable tumour cells with partial or complete membrane staining of any intensity; at least 100 viable tumour cells must be present.",
+          "quote": "PD-L1 protein expression [Tumor Proportion Score (TPS) ≥ 50%]",
+          "source": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools",
+          "sourceLabel": "FDA: List of FDA-Authorized Companion Diagnostic Devices"
+        },
+        "after": {
+          "text": "For the cited 22C3 NSCLC method, TPS is the percentage of viable tumour cells with qualifying partial or complete membrane staining; immune cells are excluded. This method requires at least 100 viable tumour cells. Clinical thresholds depend on the applicable assay and indication.",
+          "quote": "Scoring was recorded as percentage of PD-L1-positive tumor cells over total tumor cells in the denominator (TPS).",
+          "source": "https://doi.org/10.1097/pai.0000000000000408",
+          "sourceLabel": "Roach et al. 2016: 22C3 NSCLC TPS method"
+        },
+        "beforeSHA256": "761be1d026aa23a9f6ab1ce3ae7a14402e53f7fa9200bd63959b73f35de5db84",
+        "afterSHA256": "d31f3fdd0bae665256cd82282129a4fe4bb5c55acff826134e2ae64ee1a1f428",
+        "reason": "Attach the named assay/context to the adequacy rule and cite the actual technical definition. Replace the separate approval-threshold quote with a new exact method quotation, retaining the old quote verbatim in this change record. Method citation amended after the existing source-host check rejected the FDA PDF hostname. The paper quote is exact; detailed FDA method rules remain separately linked. No allowlist or test change."
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "kind": "biomarker",
+        "file": "src/data/biomarker-readouts.ts",
+        "field": "links",
+        "before": [
+          {
+            "label": "KEYTRUDA prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+          },
+          {
+            "label": "LIBTAYO prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4347ae1f-d397-4f18-8b70-03897e1c054a"
+          }
+        ],
+        "after": [
+          {
+            "label": "KEYTRUDA prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+          },
+          {
+            "label": "LIBTAYO prescribing information (DailyMed)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4347ae1f-d397-4f18-8b70-03897e1c054a"
+          },
+          {
+            "label": "FDA-hosted 22C3 labeling: NSCLC TPS method and adequacy",
+            "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf15/P150013S020C.pdf"
+          },
+          {
+            "label": "Roach et al. 2016: development and scoring of the 22C3 NSCLC assay",
+            "url": "https://doi.org/10.1097/pai.0000000000000408"
+          }
+        ],
+        "beforeSHA256": "7923bf4c807d8a8035f04e34ec8d9dc6685c9416175eb0547a5fccf6ac8d5d66",
+        "afterSHA256": "2f872cfef08aa9e6f3efde393d9631d5c7390f2af9a5bba24c5b1f8fc3db117a",
+        "reason": "Add the verified technical source while preserving existing prescribing-information links.",
+        "ownLiteralLinkCount": 2,
+        "priorLinkRelativeOrderPreserved": true
+      }
+    ],
+    "consumerChanges": [
+      {
+        "recordId": "histopathology-ihc",
+        "language": "es",
+        "file": "src/data/i18n/es.ts",
+        "before": "Observar las células cancerosas al microscopio y teñirlas para proteínas concretas. Sigue siendo la base de todo diagnóstico.",
+        "after": "La histopatología examina tejidos al microscopio. La inmunohistoquímica usa anticuerpos para mostrar antígenos concretos; ambas requieren el contexto de la muestra y una interpretación adecuada.",
+        "beforeSHA256": "3ba8ac52bb68e3757c62b022be337ea2449fec4460fbd3570d8c7da2359b9740",
+        "afterSHA256": "071299974e74d32aa9a981f2c81d457200fd03185b1440381b739941edba9ea7",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "zh",
+        "file": "src/data/i18n/zh.ts",
+        "before": "在显微镜下观察癌细胞并染色特定蛋白。仍是每一个诊断的基础。",
+        "after": "组织病理学用显微镜检查组织。免疫组织化学用抗体显示特定抗原；两者都需要结合标本背景并正确解读。",
+        "beforeSHA256": "8f28eec72942e0c7dbf7e7f4ba684e515b643356526b605e03b3dd7802f2f31c",
+        "afterSHA256": "4b16e953657a0ba3a70baa7d6fd910a5b2f56ec73885d9cbb4ab685744031491",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "pt",
+        "file": "src/data/i18n/pt.ts",
+        "before": "Observar células cancerosas ao microscópio e corá-las para proteínas específicas. Ainda a base de todo diagnóstico.",
+        "after": "A histopatologia examina tecidos ao microscópio. A imuno-histoquímica usa anticorpos para mostrar antígenos específicos; ambas exigem o contexto da amostra e uma interpretação adequada.",
+        "beforeSHA256": "8f8cc2b2150a58012a2d7be1b99b1c0b4cb20c9271d1ef3db84b65bf547a7af6",
+        "afterSHA256": "e062fb449d10f3a5e65ba2d41ee998a7a9817d0f82b2c315b06e891f018e7ed4",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "hi",
+        "file": "src/data/i18n/hi.ts",
+        "before": "माइक्रोस्कोप में कैंसर कोशिकाओं को देखना और विशिष्ट प्रोटीनों के लिए रंगना। अब भी हर निदान की नींव।",
+        "after": "हिस्टोपैथोलॉजी में ऊतक को माइक्रोस्कोप से देखा जाता है। इम्यूनोहिस्टोकेमिस्ट्री में खास एंटीजन दिखाने के लिए एंटीबॉडी का उपयोग होता है; दोनों के लिए नमूने का संदर्भ और सही व्याख्या ज़रूरी है।",
+        "beforeSHA256": "aaee815db77de5d20afbabd369791ed075d71f6deb25069baf81b4e601bc6654",
+        "afterSHA256": "a8de3b775530c2a660895996cc9b5564b7d1f9864d50cd96664dd2d9967396cd",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "fr",
+        "file": "src/data/i18n/fr.ts",
+        "before": "L'histopathologie consiste à examiner les cellules cancéreuses au microscope, et l'immunohistochimie les colore pour révéler des protéines spécifiques. Ensemble, elles restent le fondement de tout diagnostic.",
+        "after": "L’histopathologie examine les tissus au microscope. L’immunohistochimie utilise des anticorps pour révéler certains antigènes ; les deux exigent le contexte du prélèvement et une interprétation adaptée.",
+        "beforeSHA256": "6556cd0f405c679b6ba4b82059c8fbb2d51b647e771558b421af315fcb915522",
+        "afterSHA256": "6153b31be9d6b1717d12da381052e46ae77a064cc50c7e3b4e44a5ebe31efee7",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "de",
+        "file": "src/data/i18n/de.ts",
+        "before": "Histopathologie bedeutet, Krebszellen unter dem Mikroskop zu betrachten, und die Immunhistochemie färbt sie auf bestimmte Proteine an. Zusammen bilden sie noch immer die Grundlage jeder Diagnose.",
+        "after": "Die Histopathologie untersucht Gewebe unter dem Mikroskop. Die Immunhistochemie macht bestimmte Antigene mit Antikörpern sichtbar; beide erfordern den Probenkontext und eine passende Auswertung.",
+        "beforeSHA256": "46e2c14066450ca7cf65976a3cc21fae2720a1964611ae9297f69fe5a0820be4",
+        "afterSHA256": "6568aef6fb14bff5aad9431083baa4c047ca158c8057ea3c8af826b8b571bdcd",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "ja",
+        "file": "src/data/i18n/ja.ts",
+        "before": "病理組織学とは、がん細胞を顕微鏡で観察すること。免疫組織化学は、その細胞を特定のタンパク質に対して染色する。この2つは今でも、あらゆる診断の土台となっている。",
+        "after": "組織病理学では顕微鏡で組織を調べます。免疫組織化学では抗体を用いて特定の抗原を可視化します。いずれも検体の背景と適切な解釈が必要です。",
+        "beforeSHA256": "ef97f6f61a236a0b2a74dcd67f342547e480927c77dc4b052dfb382ebc93050f",
+        "afterSHA256": "c3ae7022c7c38e9791a17f4b38c77250e8a895c76f64fc276a43a3821d9b0bef",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "ar",
+        "file": "src/data/i18n/ar.ts",
+        "before": "علم الأمراض النسيجي يعني فحص الخلايا السرطانية تحت المجهر، أما الكيمياء النسيجية المناعية فتصبغ هذه الخلايا لكشف بروتينات محددة. ولا يزال الاثنان معاً أساس كل تشخيص.",
+        "after": "يفحص علم أمراض الأنسجة النسيج بالمجهر. وتستخدم الكيمياء النسيجية المناعية أجسامًا مضادة لإظهار مستضدات محددة؛ ويحتاج كلاهما إلى سياق العينة وتفسير مناسب.",
+        "beforeSHA256": "58709c5d49a3f1e1a3c5a1d90aedd4c7d7d7c03889985afca0f8b85af20007e5",
+        "afterSHA256": "78acde0b87c066dbeb7a2ba5a4af89cea2bd0732d8d5f2f6e9384f9ef04d4b4b",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      },
+      {
+        "recordId": "histopathology-ihc",
+        "language": "simple",
+        "file": "src/data/simple/part-a.ts",
+        "before": "Looking at cancer cells under a microscope and staining them to see which proteins they carry. Still the basis of every diagnosis.",
+        "after": "A pathologist examines a tissue sample under a microscope. Antibody stains can show selected markers; the sample, controls and context matter.",
+        "beforeSHA256": "1e140e28d890336aa650598bddf82999fe546776ea493a60313317420bbbda28",
+        "afterSHA256": "454c3377c9b20859ab8124463c013ef4d8c70ce8c2ddcc8e4de19a699737f806",
+        "machineAssisted": true,
+        "namedLanguageAcceptance": false
+      }
+    ],
+    "shortConsumerValuesChanged": 9,
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "expectedFiles": [
+      "src/data/biomarker-readouts.ts",
+      "src/data/doi-exists.json",
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-a.ts",
+      "src/data/technologies.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "priorNotesPreservedExactly": true,
+    "priorLinkURLsLabelsAndRelativeOrderPreserved": true,
+    "clinicalThresholdsTrialsForPatientAliasesDatesRelationsRegistrationsAndProvenanceUnchanged": true,
+    "explicitExistingScalarAndMethodQuoteCorrections": true,
+    "machineAssistedConsumerCorrectionsWithoutLanguageAcceptance": true,
+    "fullValidationStillRequired": true,
+    "methodCitationReadingDepth": [
+      {
+        "recordId": "pd-l1-cps",
+        "doi": "10.5858/arpa.2018-0043-oa",
+        "depth": "Complete abstract only; gastric-cancer development context, not the TNBC eligibility source"
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "doi": "10.1097/pai.0000000000000408",
+        "depth": "Complete abstract and two complete selected method/results paragraphs; not whole paper"
+      }
+    ],
+    "doiRegistryChange": {
+      "file": "src/data/doi-exists.json",
+      "added": [
+        {
+          "doi": "10.5858/arpa.2018-0043-oa",
+          "status": 1
+        },
+        {
+          "doi": "10.1097/pai.0000000000000408",
+          "status": 1
+        }
+      ],
+      "priorEntriesPreserved": true,
+      "executableResolver": "scripts/doi-exists.ts exists/serialise; selected additions only"
+    }
+  },
+  "application": {
+    "appliedAtUTC": "2026-11-15T12:51:49.888Z",
+    "auditBaseCommit": "18070e45bee689154601c2bd6df9d997d0c0e2ef",
+    "canonicalOwnersChanged": 4,
+    "canonicalFieldsChanged": 10,
+    "shortConsumerValuesChanged": 9,
+    "files": [
+      {
+        "file": "src/data/biomarker-readouts.ts",
+        "beforeSHA256": "b0310c79a55d82492fde53a89faf6eddb26fe85661b54f5f848d424be64d5538",
+        "afterSHA256": "84fbffdbc6ab209b708e885b2581141008978c6680318e47d8a0d3ca39e1d5ac"
+      },
+      {
+        "file": "src/data/doi-exists.json",
+        "beforeSHA256": "264976cd382a861a8312560e2ab085ca3433102382515f4208240eaf68752f1a",
+        "afterSHA256": "740c283dcd01acbf1294ad444de7be26d24e80929fa5b953eee7b378b115e1c6"
+      },
+      {
+        "file": "src/data/i18n/ar.ts",
+        "beforeSHA256": "be1dbb8407a63a7e16583fc7e822e1cb05d1b0f66262aca533560127015af52e",
+        "afterSHA256": "77942b0d469b9e7b1f336ba643b4677070a2c1488a4a8db19415dfee58c4c9f3"
+      },
+      {
+        "file": "src/data/i18n/de.ts",
+        "beforeSHA256": "6c1fc3850e9c407355bcd415537faa7d34ec2aaff8149243c20912c76986b75c",
+        "afterSHA256": "1d9e01a2953577c7ab9bc41d9c1e4c33a3d5bcab7c9cb6210f12a70e5f9c0fc4"
+      },
+      {
+        "file": "src/data/i18n/es.ts",
+        "beforeSHA256": "e97af91f4935aa6c79a04be8d545ba0b7fc6a5ed12e1c7f2016c8e90c6e0783f",
+        "afterSHA256": "e9b4d32daefa46c6bb6b2e2aa2c60914c3785b8a8606f96b2953d6f1529aab1e"
+      },
+      {
+        "file": "src/data/i18n/fr.ts",
+        "beforeSHA256": "103e03f033872279800f234acd5a3872f006d8323e96012cda2c2f7f842da731",
+        "afterSHA256": "03eacceb808c3ccb376948c6d68e884a8520398a97f286af5b8f5fbce9ba4aea"
+      },
+      {
+        "file": "src/data/i18n/hi.ts",
+        "beforeSHA256": "173220b7ecbd51f4528e9df146fab98b7f814d7c49d08be5b3d5b05eb511a453",
+        "afterSHA256": "81e21547d7857dc72ee1b97b7b87da7c47a7c8498ae47f32d78d39cdf3fb7ea8"
+      },
+      {
+        "file": "src/data/i18n/ja.ts",
+        "beforeSHA256": "ad6843045abeb8e83b7da55c1e129f367688f801b4eddd8f517ea7e19e3e07f0",
+        "afterSHA256": "69ac3a71cb94ed12e969ddedb5facc7ff9e052451a89d1c4b13d559b539b2ebf"
+      },
+      {
+        "file": "src/data/i18n/pt.ts",
+        "beforeSHA256": "e0d1da0975451e98b1018946894dd9f365299bd49dbedf47a08d0f3c20c7ac85",
+        "afterSHA256": "73846d8b780215dcb3da6fbad8bf4b4e258714dac370cad6750ad9cf14082dd4"
+      },
+      {
+        "file": "src/data/i18n/zh.ts",
+        "beforeSHA256": "19bc923fa6ba75793d5e0efbd0b8c8236fd72d27915cac15b081f4ad53dbc14f",
+        "afterSHA256": "261738743268799c04ad7eb2789433c36a8eb093f2291d067925f83c726ef4ac"
+      },
+      {
+        "file": "src/data/simple/part-a.ts",
+        "beforeSHA256": "bb89aa68b03a4486f9087fd9ec7ab109609ee6ff17d78e0bdbd2c85b2049fe6b",
+        "afterSHA256": "3ae1b92aace11909095fcdf00eb7fc5aef0a2097c4ef0d4f00405dd2a29fb182"
+      },
+      {
+        "file": "src/data/technologies.ts",
+        "beforeSHA256": "13eaf79614ddfe88b43a3b593ae737d64abf50945bbcae1a049d2249fc3f03e2",
+        "afterSHA256": "0bda09ec33e4a99188799857dc7c77deab8ee2b53e0ebcd28d847b0588a13055"
+      },
+      {
+        "file": "src/data/terms-cansim-oncology.ts",
+        "beforeSHA256": "f8b59e5ca7514882425cd18fe1cbd81faff05d982e90892b9148a1427c80340e",
+        "afterSHA256": "bc75f79ea7cb1f658899313ef316a0a107785754fc62c879791002584f8e9ad1"
+      }
+    ],
+    "oldQuoteTextPreservedVerbatimInBeforeFields": true,
+    "fullValidationStillRequired": true,
+    "methodCitationAmendment": true,
+    "doiRegistrySelectedAdditions": [
+      {
+        "doi": "10.5858/arpa.2018-0043-oa",
+        "status": 1
+      },
+      {
+        "doi": "10.1097/pai.0000000000000408",
+        "status": 1
+      }
+    ]
+  },
+  "methodCitationAmendment": {
+    "amendedAtUTC": "2026-11-15T13:10:40.083Z",
+    "firstFailedGatePreserved": "first-gate-source-host-failure",
+    "canonicalOwnersStillChanged": 4,
+    "canonicalFieldsStillChanged": 10,
+    "existingShortConsumersStillChanged": 9,
+    "files": 13,
+    "methodQuotes": [
+      {
+        "recordId": "pd-l1-cps",
+        "quote": "an immunohistochemical scoring algorithm that includes PD-L1 expression for tumor and immune cells, that is, the combined positive score.",
+        "quoteSHA256": "14982000febb91392e8680fa6d850f15786236f6a282c72319a861fe542be6d3",
+        "source": "https://doi.org/10.5858/arpa.2018-0043-oa",
+        "depth": "Complete abstract only; gastric-cancer development context, not the TNBC eligibility source"
+      },
+      {
+        "recordId": "pd-l1-tps",
+        "quote": "Scoring was recorded as percentage of PD-L1-positive tumor cells over total tumor cells in the denominator (TPS).",
+        "quoteSHA256": "9e5240bada402e5b508028e6f4f3ad985e2c6fceb844c6984793002b772244bc",
+        "source": "https://doi.org/10.1097/pai.0000000000000408",
+        "depth": "Complete abstract and two complete selected method/results paragraphs; not whole paper"
+      }
+    ],
+    "FDAtechnicalLinksPreserved": true,
+    "testAndAllowlistChanges": 0,
+    "selectedDOIRegistryEntriesAdded": [
+      {
+        "doi": "10.5858/arpa.2018-0043-oa",
+        "status": 1
+      },
+      {
+        "doi": "10.1097/pai.0000000000000408",
+        "status": 1
+      }
+    ],
+    "priorCacheEntriesPreserved": 7798
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "h-and-e-staining",
+      "histopathology-ihc",
+      "pd-l1-cps",
+      "pd-l1-tps"
+    ],
+    "changedOwnerCount": 4,
+    "changedCanonicalFields": 10,
+    "changedConsumerValues": 9,
+    "fieldReadbacksMatch": true,
+    "selectedSchemasParse": 9,
+    "allPriorNotesPreservedExactly": true,
+    "allPriorLinkURLsLabelsAndRelativeOrderPreserved": true,
+    "explicitScalarAndScoringQuoteCorrectionsDeclared": true,
+    "datesNamesAliasesRelationsProvenanceClinicalThresholdsTrialsForPatientAndRegistrationsUnchanged": true,
+    "changedFiles": [
+      "src/data/biomarker-readouts.ts",
+      "src/data/doi-exists.json",
+      "src/data/i18n/ar.ts",
+      "src/data/i18n/de.ts",
+      "src/data/i18n/es.ts",
+      "src/data/i18n/fr.ts",
+      "src/data/i18n/hi.ts",
+      "src/data/i18n/ja.ts",
+      "src/data/i18n/pt.ts",
+      "src/data/i18n/zh.ts",
+      "src/data/simple/part-a.ts",
+      "src/data/technologies.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "newCanonicalIds": 0,
+    "newRegistrations": 0,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "unappliedProposals": [],
+  "newCanonicalIds": 0,
+  "newRegistrations": 0,
+  "scientificAndReaderDataQualified": true,
+  "canonicalOwnersChanged": 4,
+  "canonicalFieldsChanged": 10,
+  "existingShortConsumerValuesChanged": 9,
+  "priorNotesAndLinkURLsLabelsRelativeOrderPreserved": true,
+  "explicitScalarAndQuoteCorrectionsDeclared": true,
+  "olderClaimsNotNewlyRecertified": "Existing clinical thresholds, trials, forPatient text, retained assay-comparison/cohort notes and linked-paper/product cards keep prior verification depth. No blanket nine-record recertification."
+}

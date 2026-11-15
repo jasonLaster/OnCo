@@ -1,0 +1,67 @@
+{
+  "findings": [
+    {
+      "id": "P50-R01",
+      "status": "open-product-owner",
+      "recordId": "h-and-e-staining",
+      "finding": "The actual H&E reader inherits an IHC technology schematic labeled Stained protein (HER2, PD-L1), while the H&E definition says the broad stain is not a named-protein measurement.",
+      "observedExcerpt": "Showing the technology this term belongs to: Histopathology & immunohistochemistry.",
+      "observedExcerptSHA256": "a181be7c9dcffdf7b932bd7a6e388f35840d7f814cd7f07fe0e48265cafb1698",
+      "proposedAction": "Map H&E to a morphology/section schematic with a broad-stain legend, or suppress the antigen-specific inherited drawing for this term. Keep IHC and H&E measurement identity distinct.",
+      "dependency": "Product rendering/mapping requires owner approval under docs/PRODUCT-APPROVAL.md. No approval flag, code edit or deployment is made here.",
+      "scientificCoverageCredit": 0
+    },
+    {
+      "id": "P50-R02",
+      "status": "resolved-data",
+      "finding": "Four owners now carry the declared bounded stain/measurement headlines, histopathology capabilities, TPS scope correction and named CPS/TPS adequacy methods. Ten fields changed; prior notes and link order remain intact."
+    },
+    {
+      "id": "P50-R03",
+      "status": "retained-artwork-owner",
+      "finding": "In both stromal-area themes a green region partly occludes/abuts a pink excluded nest. The native whole views support a low illustrative ambiguity; the geometry selector did not independently calculate the overlap. Source bytes and prior grades are untouched."
+    },
+    {
+      "id": "P50-R04",
+      "status": "open-historical-product",
+      "finding": "Historical focus returned to BODY after Escape. This was not re-tested and is not closed by source identity or fresh native views."
+    },
+    {
+      "id": "P50-R05",
+      "status": "retained-source-depth",
+      "finding": "Three full abstracts, two Roach method/results paragraphs and specified official text/pages are read; no whole primary paper or full guidance document was read. The original CPS full text remains unavailable; its abstract supports the general definition, not the TNBC tables."
+    },
+    {
+      "id": "P50-R06",
+      "status": "resolved-validation-with-history",
+      "finding": "The first full suite rejected accessdata.fda.gov as a scoringRule source host. Exact method-paper quotations and resolved DOI sources now support the named quotation; direct FDA technical links remain. Focused and final full tests pass with no test/allowlist changes."
+    },
+    {
+      "id": "P50-R07",
+      "status": "retained-custody",
+      "finding": "Review/PASS labels, stage-specific hashes, actor/model claims, private capture paths and route-successor fit retain historical scope. Alt/caption duplicate strings match both pinned owners. No historical path was followed or source commit fetched."
+    },
+    {
+      "id": "P50-R08",
+      "status": "retained-consumer-boundary",
+      "finding": "Nine existing histopathology short values were corrected by machine assistance. Review marks remain unchanged; no named language acceptance. Eighteen H&E/TPS English fallbacks also change, giving 27 effective output changes."
+    },
+    {
+      "id": "P50-R09",
+      "status": "unselected-clinical-review-pending",
+      "finding": "Existing CPS/TPS forPatient text, assay-comparison/cytology assertions, authorization tables and linked study/product-card claims remain outside this source-method selection. In particular, generic treatment gates and early-versus-advanced TNBC card wording require their own current source review; this packet does not certify them."
+    },
+    {
+      "id": "P50-R10",
+      "status": "artifact-dispositions",
+      "finding": "I05 category-row layout and P09 grouped-inventory geometry remain explicit artifact conventions with represented measurement/eligibility invariants and no extra scientific credit."
+    },
+    {
+      "id": "P50-R11",
+      "status": "not-claimed",
+      "finding": "Eight Mermaid source instances (five unique bodies) were read in context but not rendered. Native Sharp/vips views do not establish hosted browser, mobile, hydration, measured contrast or accessibility acceptance."
+    }
+  ],
+  "independentAcceptance": false,
+  "expertOwnerLearnerLanguageMainOrLiveCredit": 0
+}

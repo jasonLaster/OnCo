@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "name": "IHC H-score",
+      "value": 110,
+      "expected": 110
+    },
+    {
+      "name": "IHC positive fraction",
+      "value": 50.0,
+      "expected": 50
+    },
+    {
+      "name": "Separate Allred example",
+      "value": 5,
+      "expected": 5
+    },
+    {
+      "name": "PD-L1 CPS",
+      "value": 40.0,
+      "expected": 40
+    },
+    {
+      "name": "Tumour-cell fraction",
+      "value": 10.0,
+      "expected": 10
+    },
+    {
+      "name": "Pooled stromal area",
+      "value": 20.0,
+      "expected": 20
+    },
+    {
+      "name": "Unweighted stromal mean",
+      "value": 35.0,
+      "expected": 35
+    },
+    {
+      "name": "CPS and TPS need not differ when eligible stained immune count is zero",
+      "value": true,
+      "expected": true
+    }
+  ],
+  "allPass": true,
+  "fictionalOrPremiseBackedNotEmpirical": true,
+  "actualSourceGeometryCountsVerified": true
+}

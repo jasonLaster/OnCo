@@ -1,0 +1,73 @@
+{
+  "sourceFirstInventorySealedBeforeEdit": true,
+  "sourceInventorySHA256": "bdcfbf7b429239842652e201780d1d2e992286f9bc5f35a8d371b68e74375cd5",
+  "expectedOwnerIds": [
+    "gene-amplification",
+    "hla-loh",
+    "long-read-sequencing",
+    "sequencing-depth-and-coverage",
+    "sequencing-reads",
+    "vaf",
+    "tmb",
+    "targeted-panel-sequencing"
+  ],
+  "changedCanonicalFields": 22,
+  "receipts": [
+    {
+      "file": "src/data/terms-jargon.ts",
+      "beforeFileSHA256": "ffb29f2fdbafec4d6fea537a58b43c70e8de5f0c9a8030a5167f004f29d88bff",
+      "afterFileSHA256": "8a87efc45439a7b99ef52ac84f8813e82c2d55ec97f435e8b754fc3e0bcd54e4",
+      "literalValueEdits": 3,
+      "guardedOwnerIds": [
+        "gene-amplification"
+      ],
+      "staticFactory": "guarded term factory"
+    },
+    {
+      "file": "src/data/terms-education-measurement.ts",
+      "beforeFileSHA256": "ff7c76bb8cd308811ae7283450d209e606f929c611a1e7ce9ec90ed499ce1866",
+      "afterFileSHA256": "fe3aeec62938aaddf440a9ad85a912fc1717add253befa95a09882340f175128",
+      "literalValueEdits": 8,
+      "guardedOwnerIds": [
+        "hla-loh",
+        "sequencing-depth-and-coverage",
+        "sequencing-reads"
+      ],
+      "staticFactory": "explicit kind in educationMeasurementTerms"
+    },
+    {
+      "file": "src/data/supporting.ts",
+      "beforeFileSHA256": "9fe06d325156ab8cd30fd7140d67e3d798eb572fa16035af8a5709d0df1b3d0e",
+      "afterFileSHA256": "aa747163a5594cf2848b31ba4ba262be9d2d9861e944f7a7a412cb256d6ef094",
+      "literalValueEdits": 2,
+      "guardedOwnerIds": [
+        "long-read-sequencing"
+      ],
+      "staticFactory": "guarded technology factory"
+    },
+    {
+      "file": "src/data/terms.ts",
+      "beforeFileSHA256": "ae79cfa5d09936a5dc344c25c936f35e07332c51598abdc1a56a470796a2b2bb",
+      "afterFileSHA256": "8b3cd2ad5578f676e21ced34a4951d02d9365fe7bdc9a8626cf95a0920519462",
+      "literalValueEdits": 4,
+      "guardedOwnerIds": [
+        "tmb",
+        "vaf"
+      ],
+      "staticFactory": "guarded term factory"
+    },
+    {
+      "file": "src/data/terms-cansim-oncology.ts",
+      "beforeFileSHA256": "0618156751806839a940551b5428ae57b1b2ff1ca9190f961b3b43c44f3159db",
+      "afterFileSHA256": "c17ee8121233ce2cbd06deb1aa97f58958e8022c1385b4cd5ade7d337c836656",
+      "literalValueEdits": 4,
+      "guardedOwnerIds": [
+        "targeted-panel-sequencing"
+      ],
+      "staticFactory": "CanSim guarded with attribution"
+    }
+  ],
+  "newRecords": 0,
+  "peerEdits": 0,
+  "runtimeSupplementTailsPreserved": true
+}

@@ -1,0 +1,696 @@
+{
+  "dataCommit": {
+    "head": "b35336e701c4fbc8461873e18b3b8a1a38801fd6",
+    "base": "28df35b2c9494154c48768bd06b3c7174b8b156f",
+    "branch": "codex/systematic-education-audit",
+    "committedFiles": [
+      "src/data/terms-jargon.ts",
+      "src/data/terms-education-measurement.ts",
+      "src/data/supporting.ts",
+      "src/data/terms.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "allCommittedDataBytesMatchFullGateInputs": true,
+    "canonicalOwnersChanged": 8,
+    "canonicalFieldsChanged": 22,
+    "newRecords": 0,
+    "newRegistrations": 0,
+    "shortConsumerValuesChanged": 0,
+    "actualEffectiveEnglishFallbackChanges": 9,
+    "DOIRegistryEntriesAdded": 0,
+    "peerFieldsEdited": 0,
+    "allUndeclaredOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "declaredDateChanges": 8,
+    "postGateDataEdits": false,
+    "pushed": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "plan": {
+    "baseCommit": "28df35b2c9494154c48768bd06b3c7174b8b156f",
+    "inventorySHA256": "bdcfbf7b429239842652e201780d1d2e992286f9bc5f35a8d371b68e74375cd5",
+    "beforeConsumersAndReadersCaptured": true,
+    "expectedFiles": [
+      "src/data/terms-jargon.ts",
+      "src/data/terms-education-measurement.ts",
+      "src/data/supporting.ts",
+      "src/data/terms.ts",
+      "src/data/terms-cansim-oncology.ts"
+    ],
+    "expectedOwnerIds": [
+      "gene-amplification",
+      "hla-loh",
+      "long-read-sequencing",
+      "sequencing-depth-and-coverage",
+      "sequencing-reads",
+      "vaf",
+      "tmb",
+      "targeted-panel-sequencing"
+    ],
+    "changes": [
+      {
+        "recordId": "gene-amplification",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay’s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modelling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumour.",
+          "Total copy number counts copies of a region; allele-specific copy number estimates the contributions of the distinguishable sequence versions A and B.",
+          "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained.",
+          "LOH is not synonymous with deletion: copy-neutral LOH can follow loss plus duplication or recombination; a gain does not necessarily erase either version.",
+          "Major and minor counts are the larger and smaller allelic contributions; minor of zero supports LOH under the model; they do not identify parental origin or assign a mutation to a copy; phasing needs suitable evidence.",
+          "Local copy count differs from ploidy; relative signal can fit different purity and ploidy pairs; fractional counts can reflect mixture or subclonal states.",
+          "Methods combine relative coverage with allele balance at informative heterozygous sites, segment the genome and fit states; a matched normal helps; a total-copy profile alone cannot separate 1+1 from 2+0; homozygous sites are uninformative.",
+          "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+          "Fictional teaching exercise: Two A copies and no B copies under an adequate model is copy-neutral LOH: not deleted and not proven inactive.",
+          "For copy-state analysis, record tumour and suitable normal DNA, extraction consumption, relative depth and informative-site balance, segmentation, total/major/minor copies and purity/ploidy uncertainty. Reanalysis alone needs no tissue. Low purity, uninformative sites and ambiguous fits limit inference; amplification and functional-loss criteria are method-specific.",
+          "In a cancer copy-number report, an amplicon is an amplified DNA segment and can contain several genes. TCGA described multiple HER2-amplicon-associated genes, including GRB7, in its breast-cancer analysis. A regional gain does not identify every included gene as a driver or guarantee the same multiplication of RNA or protein; allele-specific state, expression, location and functional importance remain separate questions."
+        ],
+        "after": [
+          "Total copy count, allele identity, RNA abundance and protein activity are separate measurements. Purity, ploidy and the assay’s definition affect copy calls. Fehrmann and colleagues related copy number to expression after modelling shared transcriptional components in large datasets; that association does not promise a fixed protein increase, target dependence or treatment benefit in a particular tumour.",
+          "Total copy number counts copies of a region; allele-specific copy number estimates the contributions of the distinguishable sequence versions A and B. Here A and B are arbitrary sequence-version labels, not healthy/damaged states or identified maternal/paternal copies.",
+          "1+1 is two copies with both versions; 1+0 is one copy with LOH (deletion); 2+0 is copy-neutral LOH (two copies, one version); 2+1 is three copies with both versions retained. These are fictional, uniform-copy states at one region, not a census recovered directly from a mixed specimen.",
+          "LOH is not synonymous with deletion: copy-neutral LOH can follow loss plus duplication or recombination; a gain does not necessarily erase either version.",
+          "Major and minor counts are the larger and smaller allelic contributions; minor of zero supports LOH under the model; they do not identify parental origin or assign a mutation to a copy; phasing needs suitable evidence.",
+          "Local copy count differs from ploidy; relative signal can fit different purity and ploidy pairs; fractional counts can reflect mixture or subclonal states.",
+          "Methods combine relative coverage with allele balance at informative heterozygous sites, segment the genome and fit states; a matched normal helps; a total-copy profile alone cannot separate 1+1 from 2+0; homozygous sites are uninformative.",
+          "Copy state does not establish phase, gene inactivity, expression, dependency or drug response; bulk fits can hide subpopulations and unsampled lesions.",
+          "Fictional teaching exercise: Two A copies and no B copies under an adequate model is copy-neutral LOH: not deleted and not proven inactive.",
+          "For copy-state analysis, record tumour and suitable normal DNA, extraction consumption, relative depth and informative-site balance, segmentation, total/major/minor copies and purity/ploidy uncertainty. Reanalysis alone needs no tissue. Low purity, uninformative sites and ambiguous fits limit inference; amplification and functional-loss criteria are method-specific.",
+          "In a cancer copy-number report, an amplicon is an amplified DNA segment and can contain several genes. TCGA described multiple HER2-amplicon-associated genes, including GRB7, in its breast-cancer analysis. A regional gain does not identify every included gene as a driver or guarantee the same multiplication of RNA or protein; allele-specific state, expression, location and functional importance remain separate questions."
+        ],
+        "beforeSHA256": "319e7dbb2ad103647405fbfb6036b0cc1eb21a2a3d606db5413775be939a7a5e",
+        "afterSHA256": "c33a0ac26d531b097131982fd5e433a53f90666729a13f45b9a8829c415b56e7",
+        "reason": "Make the stipulated version labels and uniform-copy examples explicit while preserving every earlier note and clinical qualification.",
+        "sourceIds": [
+          "facets",
+          "absolute",
+          "declared-fictional-premises"
+        ]
+      },
+      {
+        "recordId": "gene-amplification",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gene_duplication"
+          },
+          {
+            "label": "Absolute quantification of somatic DNA alterations in human cancer.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+          },
+          {
+            "label": "Gene expression analysis identifies global gene dosage sensitivity in cancer.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25581432/"
+          },
+          {
+            "label": "Comprehensive molecular portraits of human breast tumours (Nature 2012)",
+            "url": "https://doi.org/10.1038/nature11412"
+          },
+          {
+            "label": "Absolute quantification of somatic DNA alterations in human cancer (Nature biotechnology 2012)",
+            "url": "https://doi.org/10.1038/nbt.2203"
+          }
+        ],
+        "after": [
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gene_duplication"
+          },
+          {
+            "label": "Absolute quantification of somatic DNA alterations in human cancer.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22544022/"
+          },
+          {
+            "label": "Gene expression analysis identifies global gene dosage sensitivity in cancer.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25581432/"
+          },
+          {
+            "label": "Comprehensive molecular portraits of human breast tumours (Nature 2012)",
+            "url": "https://doi.org/10.1038/nature11412"
+          },
+          {
+            "label": "Absolute quantification of somatic DNA alterations in human cancer (Nature biotechnology 2012)",
+            "url": "https://doi.org/10.1038/nbt.2203"
+          },
+          {
+            "label": "Shen and Seshan: FACETS allele-specific copy-number analysis (2016)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27270079/"
+          }
+        ],
+        "beforeSHA256": "c536c1a12bc179f56234fd4da8181bd0bcc4ab2d657249b8e0a5084a65790244",
+        "afterSHA256": "b5abbdbe4587f421764e2e8b75a47e9501dce4d4c78c30bd0cce58b0fae84cf5",
+        "reason": "Attach the resolved/read allele-aware method supporting retained copy-neutral distinctions.",
+        "sourceIds": [
+          "facets"
+        ]
+      },
+      {
+        "recordId": "hla-loh",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "HLA-A, HLA-B and HLA-C are on chromosome 6. HGNC places HLA-A at 6p22.1 and HLA-B and HLA-C at 6p21.33. One inherited version of each locus comes from each parent, giving up to six distinct classical class-I alleles. A segmental loss can affect several linked loci; total copy count alone does not identify which inherited versions remain.",
+          "McGranahan et al. (2017): LOHHLA found HLA LOH in 36 of 90 (40%) TRACERx non-small-cell lung cancers; it used patient-specific HLA sequences with purity and ploidy; not a prevalence for every breast cancer.",
+          "A loss may be present in one tumour population; normal and other tumour cells contribute reads; weak or indeterminate calls are not proof of retention; one region does not map every lesion.",
+          "DNA loss, reduced allele-specific RNA, reduced surface protein and B2M functional loss are separate findings; B2M loss affects many alleles at once.",
+          "A credible loss call asks which proposed targets depend on the lost allele and what supports presentation through retained alleles; it does not show all targets fail.",
+          "Fictional teaching exercise: Loss of a maternal haplotype carrying A*X, B*Y, C*Z challenges peptides predicted for A*X and for B*Y; retention of paternal alleles does not itself prove display.",
+          "Retain tumour/normal material, typing, named HLA alleles, usable reads, inferred allele copies, confidence, caller version and region sampled. DNA extraction uses material; computational reanalysis does not. Incorrect typing, difficult mapping and low tumour content can obscure loss. Coverage and statistical rules require workflow validation; neither a negative call nor retained DNA proves current display.",
+          "The LOHHLA PCR validation selected 82 regions from 27 tumours predicted to have either all three loci affected by LOH or none. This selection does not establish how often a typical tumour region loses all three loci. The 36-of-90 result describes the separate NSCLC cohort analysis."
+        ],
+        "after": [
+          "HLA-A, HLA-B and HLA-C are on chromosome 6. HGNC places HLA-A at 6p22.1 and HLA-B and HLA-C at 6p21.33. One inherited version of each locus comes from each parent, giving up to six distinct classical class-I alleles. A segmental loss can affect several linked loci; total copy count alone does not identify which inherited versions remain.",
+          "McGranahan et al. (2017): LOHHLA found HLA LOH in 36 of 90 (40%) TRACERx non-small-cell lung cancers; it used patient-specific HLA sequences with purity and ploidy; not a prevalence for every breast cancer.",
+          "A loss may be present in one tumour population; normal and other tumour cells contribute reads; weak or indeterminate calls are not proof of retention; one region does not map every lesion.",
+          "DNA loss, reduced allele-specific RNA, reduced surface protein and B2M functional loss are separate findings; B2M loss affects many alleles at once. In a fictional comparison, the placeholder HLA-A versions A1 and A2 can have A1 lost, both retained with reduced expression, or both retained with impaired B2M support. A1 and A2 do not name specific clinical alleles. None of those DNA descriptions supplies a surface-molecule count; current display needs separate measurement.",
+          "A credible loss call asks which proposed targets depend on the lost allele and what supports presentation through retained alleles; it does not show all targets fail.",
+          "Fictional teaching exercise: Loss of a maternal haplotype carrying A*X, B*Y, C*Z challenges peptides predicted for A*X and for B*Y; retention of paternal alleles does not itself prove display.",
+          "Retain tumour/normal material, typing, named HLA alleles, usable reads, inferred allele copies, confidence, caller version and region sampled. DNA extraction uses material; computational reanalysis does not. Incorrect typing, difficult mapping and low tumour content can obscure loss. Coverage and statistical rules require workflow validation; neither a negative call nor retained DNA proves current display.",
+          "The LOHHLA PCR validation selected 82 regions from 27 tumours predicted to have either all three loci affected by LOH or none. This selection does not establish how often a typical tumour region loses all three loci. The 36-of-90 result describes the separate NSCLC cohort analysis."
+        ],
+        "beforeSHA256": "9d1b24f99f55f2cffa112f09296eac0ab4ae279981269d65ebad57cd3a8ca751",
+        "afterSHA256": "fd61a0c5f66f307866f5c01a8e505160676b9381f54d825986f4a671a5e40d13",
+        "reason": "Carry the three qualified mechanism alternatives as a self-contained example, without importing a schematic display count or changing linked-haplotype/prevalence wording.",
+        "sourceIds": [
+          "hla-loss",
+          "mhc-hammer",
+          "b2m",
+          "declared-fictional-premises"
+        ]
+      },
+      {
+        "recordId": "hla-loh",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
+          },
+          {
+            "label": "HGNC: HLA-A, HLA-B and HLA-C gene locations",
+            "url": "https://www.genenames.org/tools/search/#!/?query=HLA-A%20OR%20HLA-B%20OR%20HLA-C"
+          }
+        ],
+        "after": [
+          {
+            "label": "Allele-Specific HLA Loss and Immune Escape in Lung Cancer Evolution.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29107330/"
+          },
+          {
+            "label": "HGNC: HLA-A, HLA-B and HLA-C gene locations",
+            "url": "https://www.genenames.org/tools/search/#!/?query=HLA-A%20OR%20HLA-B%20OR%20HLA-C"
+          },
+          {
+            "label": "Puttick et al.: genetic and non-genetic HLA disruption (2024)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39358601/"
+          },
+          {
+            "label": "Sade-Feldman et al.: B2M and antigen-presentation loss in melanoma (2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29070816/"
+          }
+        ],
+        "beforeSHA256": "1f99d3ecf1a7cc3b313c5c780e3fde4400f141e4254e36b63af0bc73cdf346c6",
+        "afterSHA256": "dd79daf68dee1f96cef1e35647ec9c9c44242dbe960e68ff93c60fba53ba0f4d",
+        "reason": "Link the separately checked DNA/expression and B2M mechanisms at their recorded source depth.",
+        "sourceIds": [
+          "mhc-hammer",
+          "b2m"
+        ]
+      },
+      {
+        "recordId": "long-read-sequencing",
+        "kind": "technology",
+        "field": "links",
+        "before": [
+          {
+            "label": "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)",
+            "url": "https://doi.org/10.1038/s41576-020-0236-x"
+          },
+          {
+            "label": "A genomic sequencing protocol that yields a positive display of 5-methylcytosine residues in individual DNA strands.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1542678/"
+          },
+          {
+            "label": "Detecting DNA cytosine methylation using nanopore sequencing.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28218898/"
+          },
+          {
+            "label": "Genome-wide detection of cytosine methylation by single molecule real-time sequencing.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33495335/"
+          }
+        ],
+        "after": [
+          {
+            "label": "Logsdon et al., Long-read human genome sequencing and its applications (Nature Reviews Genetics 2020)",
+            "url": "https://doi.org/10.1038/s41576-020-0236-x"
+          },
+          {
+            "label": "A genomic sequencing protocol that yields a positive display of 5-methylcytosine residues in individual DNA strands.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/1542678/"
+          },
+          {
+            "label": "Detecting DNA cytosine methylation using nanopore sequencing.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28218898/"
+          },
+          {
+            "label": "Genome-wide detection of cytosine methylation by single molecule real-time sequencing.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33495335/"
+          },
+          {
+            "label": "Jain et al.: ultra-long reads in the GM12878 reference-genome experiment (2018)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29431738/"
+          }
+        ],
+        "beforeSHA256": "8b3e2a3b61bbebc3a2b2cf861d5073133fb2d45da94fc20383cc0662c0ed25d5",
+        "afterSHA256": "bd114c17e174822f014b6ca6c7ead77b854fe99d99e84b56a04521b2d25b8037",
+        "reason": "Add the checked primary experiment for the already-qualified phasing/reference-genome statement; no platform or clinical ranking is added.",
+        "sourceIds": [
+          "jain"
+        ]
+      },
+      {
+        "recordId": "sequencing-depth-and-coverage",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
+          "Mean depth averages positions; coverage breadth is the fraction of a named target (denominator: target bases, not reads or cells) meeting a stated minimum depth; neither shows which important positions were missed.",
+          "Fictional report: mean 100x, 900 of 1,000 target bases at or above an illustrative 20x criterion gives 90% breadth, while the position of interest has 4 usable observations; 20x is not a clinical cutoff.",
+          "Read depth differs from molecular depth: overlapping pair ends and amplification copies inflate reads without adding independent fragments; HTSlib defaults are software definitions, not clinical validation criteria.",
+          "More sequencing cannot recover a region absent from the library or create independent molecules from duplicates; library complexity, input, preservation, capture and alignment limit usable evidence.",
+          "A negative report covers tested regions, detectable change classes and validated sensitivity; identical depths can support different detection limits; depth does not establish origin, function or actionability.",
+          "A narrow panel can be deep and a genome broad but thinner per position; territory asks where, depth asks how many.",
+          "Use an existing alignment file to calculate depth without consuming more tissue; recovering a more diverse library may require another aliquot. Retain reference regions, per-position counts, summary depth, breadth criterion and molecule-count rules. Capture bias, duplicate inflation and damaged input require controls and intended-use sensitivity/reproducibility validation; a summary criterion is separate from a detection limit."
+        ],
+        "after": [
+          "Depth is the number of aligned reads covering a base after stated filters; 40x means forty counted observations under those rules; depth without its counting rule is incomplete.",
+          "Mean depth averages positions; coverage breadth is the fraction of a named target (denominator: target bases, not reads or cells) meeting a stated minimum depth; neither shows which important positions were missed.",
+          "Fictional report: mean 100x, 900 of 1,000 target bases at or above an illustrative 20x criterion gives 90% breadth, while the position of interest has 4 usable observations; 20x is not a clinical cutoff. The mean is a supplied report value: no full per-base profile is given from which to recompute it. Four read observations also do not prove four independent original molecules.",
+          "Read depth differs from molecular depth: overlapping pair ends and amplification copies inflate reads without adding independent fragments; HTSlib defaults are software definitions, not clinical validation criteria.",
+          "More sequencing cannot recover a region absent from the library or create independent molecules from duplicates; library complexity, input, preservation, capture and alignment limit usable evidence.",
+          "A negative report covers tested regions, detectable change classes and validated sensitivity; identical depths can support different detection limits; depth does not establish origin, function or actionability.",
+          "A narrow panel can be deep and a genome broad but thinner per position; territory asks where, depth asks how many.",
+          "Use an existing alignment file to calculate depth without consuming more tissue; recovering a more diverse library may require another aliquot. Retain reference regions, per-position counts, summary depth, breadth criterion and molecule-count rules. Capture bias, duplicate inflation and damaged input require controls and intended-use sensitivity/reproducibility validation; a summary criterion is separate from a detection limit.",
+          "In a separate fictional target, four usable aligned reads overlap position P, only two overlap Q, and none overlap R even though R was selected. Their local depths are 4x, 2x and 0x. R has no usable observations in this example; a position outside the assay design was not examined. These values establish neither a clinical threshold nor a variant-detection probability."
+        ],
+        "beforeSHA256": "b1a7279ac139c5b283ceb03d51ac9466677d39f8a7f73874b9def2617dd3ec91",
+        "afterSHA256": "089108f9e1d418944f3b1b03a9a270c20ddf77f6fba0d1a4927ff9c5aadb5f1e",
+        "reason": "Preserve the supplied mean without inventing a per-base vector, and add the countable P/Q/R example distinguishing a targeted gap from outside-design territory.",
+        "sourceIds": [
+          "amp-cap",
+          "samtools-depth",
+          "samtools-coverage",
+          "sanghvi",
+          "independent-arithmetic"
+        ]
+      },
+      {
+        "recordId": "sequencing-reads",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
+          "Phred quality: Q20 is an estimated 1% per-base error probability and Q30 0.1%; these are model-based base-call estimates, not the probability that a reported mutation is real; Q30 is a scale value, not a universal pass rule.",
+          "Base quality (a letter) and mapping confidence (a location) are separate; repeats can make placement ambiguous; one read can have more than one proposed alignment record.",
+          "Paired-end reads come from opposite ends of one fragment, so they are complementary placement evidence, not two independent molecules.",
+          "Amplification copies one fragment many times; duplicate recognition or validated molecular tags assess independent support but do not repair errors introduced before tagging; in amplicon assays identical start and end coordinates cannot separate copies from independent molecules.",
+          "Raw versus usable reads: filtering changes the denominator for downstream support; a read does not identify a cell, establish function or alone prove a somatic mutation.",
+          "Record extraction and library preparation, specimen compatibility, read lengths, base qualities, pairs, alignment records and molecule-support rules. Preparation consumes material; reanalysis does not. Contamination, damaged molecules, adapters, amplification and mapping ambiguity affect support. Filter settings and Q30 are not universal clinical acceptance criteria; validate the complete specimen-to-report workflow."
+        ],
+        "after": [
+          "A read is an instrument-derived base sequence from a prepared library molecule with per-base quality; library preparation can copy, shorten or select molecules before sequencing.",
+          "Phred quality: Q20 is an estimated 1% per-base error probability and Q30 0.1%; these are model-based base-call estimates, not the probability that a reported mutation is real; Q30 is a scale value, not a universal pass rule.",
+          "Base quality (a letter) and mapping confidence (a location) are separate; repeats can make placement ambiguous; one read can have more than one proposed alignment record.",
+          "Paired-end reads come from opposite ends of one fragment, so they are complementary placement evidence, not two independent molecules.",
+          "Amplification copies one fragment many times; duplicate recognition or validated molecular tags assess independent support but do not repair errors introduced before tagging; in amplicon assays identical start and end coordinates cannot separate copies from independent molecules.",
+          "Raw versus usable reads: filtering changes the denominator for downstream support; a read does not identify a cell, establish function or alone prove a somatic mutation.",
+          "Record extraction and library preparation, specimen compatibility, read lengths, base qualities, pairs, alignment records and molecule-support rules. Preparation consumes material; reanalysis does not. Contamination, damaged molecules, adapters, amplification and mapping ambiguity affect support. Filter settings and Q30 are not universal clinical acceptance criteria; validate the complete specimen-to-report workflow.",
+          "In one fictional example, ten paired-end reads form five pairs, representing at most five library fragments; amplification copies can reduce independent source support further. In a separate example, one source fragment has three sequenced copies, each yielding two reads, for six reads from that one ancestor. Do not add the counts from these two examples. Ask how the preparation and analysis established molecular independence."
+        ],
+        "beforeSHA256": "0be335e6a3a95ddb56729275eb154e92ef5f53af52ca3ec27dd8e91dfe4ce6f0",
+        "afterSHA256": "5d8a6789d0de07c640aa8f2dfe1975d48942c1b12bd209aaf927dc681ea2e776",
+        "reason": "Add the two distinct ancestry calculations as connected prose, preserving the preparation-specific duplicate rule and quality definitions.",
+        "sourceIds": [
+          "amp-cap",
+          "sam-specification",
+          "sra-formats",
+          "independent-arithmetic"
+        ]
+      },
+      {
+        "recordId": "sequencing-reads",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+          },
+          {
+            "label": "Base-calling of automated sequencer traces using phred. II. Error probabilities.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9521922/"
+          },
+          {
+            "label": "SAM specification",
+            "url": "https://samtools.github.io/hts-specs/SAMv1.pdf"
+          }
+        ],
+        "after": [
+          {
+            "label": "Guidelines for Validation of Next-Generation Sequencing-Based Oncology Panels: A Joint Consensus Recommendation of the Association for Molecular Pathology and College of American Pathologists.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+          },
+          {
+            "label": "Base-calling of automated sequencer traces using phred. II. Error probabilities.",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9521922/"
+          },
+          {
+            "label": "SAM specification",
+            "url": "https://samtools.github.io/hts-specs/SAMv1.pdf"
+          },
+          {
+            "label": "NCBI SRA: FASTQ records and paired-end submission formats",
+            "url": "https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/"
+          }
+        ],
+        "beforeSHA256": "c261619402f1e9fb94e5b2cb302165c66e443956d8a0a4d699221fe218785999",
+        "afterSHA256": "4d6505ff84ac7a63782f47ad6b4c5355eee68c84800bf5a3378ca8f416fdc276",
+        "reason": "Attach the checked official record/pair-format documentation.",
+        "sourceIds": [
+          "sra-formats"
+        ]
+      },
+      {
+        "recordId": "vaf",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "VAF is the proportion of usable reads or assay-defined molecules supporting the alternate sequence; keep the denominator: 25 of 100 usable observations is 25%.",
+          "CCF is carrier cancer cells over all sampled cancer cells; its inputs have distinct denominators: cell purity p, DNA contribution, pathology cellularity (method-defined, for RCB the tumour-bed area), global ploidy P, local copy number C, mutant multiplicity m.",
+          "With equal recovery per genome copy and diploid normals, tumour DNA contribution is p*P/[p*P+2*(1-p)]; half the cells at ploidy four contribute two thirds of DNA.",
+          "For uniform local copies, expected VAF is p*f*m/[p*C+(1-p)*2]; assumptions: two normal copies, uniform cancer copies, fixed multiplicity, unbiased observations; subclonal copy change needs a richer model.",
+          "Same 50 cancer plus 50 normal cells, every cancer cell carrying one variant copy: expected VAF 50/200=25% with two local cancer copies and 50/150 about 33% with one; CCF stays 100% and purity 50%.",
+          "Purity 0.5, one mutant copy: four local copies with CCF 100% and two local copies with CCF 2/3 both predict VAF 1/6 (about 16.7%); copy evidence separates them; CCF above 100% signals incompatible assumptions.",
+          "High VAF alone cannot establish truncal ancestry or origin or function; a rise after treatment can reflect mixture or copy change as well as carrier expansion; uncertain inputs give alternative CCF fits, not counted cells.",
+          "Retain DNA and copy-state inputs, filtered support denominators, fractions, local copies, multiplicity, purity, model version and alternative fits. New extraction consumes material; reanalysis alone does not. Artifacts, few molecules, recovery bias and uncertain copy/mixture estimates limit conversion. Detection thresholds and model-fit criteria do not establish a universal clonal-target cutoff or treatment benefit.",
+          "Fictional splice-site example: 32 alternate reads among 160 usable reads give VAF 20 per cent. Suppose half the sampled cells are malignant, every cell has two local copies, and each affected cancer cell carries one altered copy, with equal recovery per copy. Then VAF = purity times cancer-cell fraction divided by two; 0.20 = 0.50 times CCF divided by two gives CCF 80 per cent. With pure cancer-cell input, the same 20 per cent fits CCF 40 per cent. These are model calculations, not counted cells. Local copy changes, altered-copy multiplicity, recovery bias or uncertain purity can change the fit. A measured splice junction and functional repair remain separate questions.",
+          "In a fictional TP53 example, 60 cancer cells each carry one variant copy and have lost the other local copy; 40 normal cells each have two unaltered copies. With equal recovery per copy, the expected variant fraction is 60 divided by 140, about 43 percent. Another model, 86 percent cancer-cell purity with two local copies and one variant copy in every cancer cell, gives 86 divided by 200, exactly 43 percent. Both round to 43 percent when reported to a whole percentage point. That reported fraction alone cannot choose the copy model or establish that a missense variant disables the protein. These are conditional calculations, not a measured clone or a functional test.",
+          "Two invented mixtures show why the same fraction can fit different carrier fractions. Each contains 60 cancer and 40 diploid normal cells, with no variant in the normal cells and unbiased recovery. Model A gives every cancer cell two local copies and one variant copy: 60 variant copies among 120 cancer plus 80 normal copies give VAF 30 percent and CCF 100 percent. Model B gives every cancer cell four local copies, with 48 of the 60 cells carrying two variant copies each: 96 among 240 cancer plus 80 normal copies again give VAF 30 percent, but CCF is 80 percent. They match that one fraction; they have not been shown to fit the same complete dataset. Independent copy evidence can distinguish the hypotheses.",
+          "In a separate invented uniform-copy model, 50 cancer and 50 normal cells each carry two local copies; normal cells lack the variant and each carrier cancer cell has one variant copy. Among 200 total copies, an expected VAF of 20 percent requires forty carriers among fifty cancer cells, or CCF 80 percent. An expected VAF of 40 percent would require eighty carriers among fifty, or 160 percent, which is not a possible carrier fraction. Preserve that incompatibility rather than clipping it to 100 percent or guessing which input is wrong. The calculation inverts an expected fraction; noisy observed support and uncertain purity, copy number, multiplicity, origin or recovery require their uncertainty carried through. More reads can improve precision without fixing a wrong model."
+        ],
+        "after": [
+          "VAF is the proportion of usable reads or assay-defined molecules supporting the alternate sequence; keep the denominator: 25 of 100 usable observations is 25%.",
+          "CCF is carrier cancer cells over all sampled cancer cells; its inputs have distinct denominators: cell purity p, DNA contribution, pathology cellularity (method-defined, for RCB the tumour-bed area), global ploidy P, local copy number C, mutant multiplicity m.",
+          "With equal recovery per genome copy and diploid normals, tumour DNA contribution is p*P/[p*P+2*(1-p)]; half the cells at ploidy four contribute two thirds of DNA.",
+          "For uniform local copies, expected VAF is p*f*m/[p*C+(1-p)*2]; assumptions: two normal copies, uniform cancer copies, fixed multiplicity, unbiased observations; subclonal copy change needs a richer model.",
+          "Same 50 cancer plus 50 normal cells, every cancer cell carrying one variant copy: expected VAF 50/200=25% with two local cancer copies and 50/150 about 33% with one; CCF stays 100% and purity 50%. These are invented, uniform-copy alternatives under the stated mixture model, not a time course or a cell count inferred from reads. Local copy counts do not measure gene activity.",
+          "Purity 0.5, one mutant copy: four local copies with CCF 100% and two local copies with CCF 2/3 both predict VAF 1/6 (about 16.7%); copy evidence separates them; CCF above 100% signals incompatible assumptions.",
+          "High VAF alone cannot establish truncal ancestry or origin or function; a rise after treatment can reflect mixture or copy change as well as carrier expansion; uncertain inputs give alternative CCF fits, not counted cells.",
+          "Retain DNA and copy-state inputs, filtered support denominators, fractions, local copies, multiplicity, purity, model version and alternative fits. New extraction consumes material; reanalysis alone does not. Artifacts, few molecules, recovery bias and uncertain copy/mixture estimates limit conversion. Detection thresholds and model-fit criteria do not establish a universal clonal-target cutoff or treatment benefit.",
+          "Fictional splice-site example: 32 alternate reads among 160 usable reads give VAF 20 per cent. Suppose half the sampled cells are malignant, every cell has two local copies, and each affected cancer cell carries one altered copy, with equal recovery per copy. Then VAF = purity times cancer-cell fraction divided by two; 0.20 = 0.50 times CCF divided by two gives CCF 80 per cent. With pure cancer-cell input, the same 20 per cent fits CCF 40 per cent. These are model calculations, not counted cells. Local copy changes, altered-copy multiplicity, recovery bias or uncertain purity can change the fit. A measured splice junction and functional repair remain separate questions.",
+          "In a fictional TP53 example, 60 cancer cells each carry one variant copy and have lost the other local copy; 40 normal cells each have two unaltered copies. With equal recovery per copy, the expected variant fraction is 60 divided by 140, about 43 percent. Another model, 86 percent cancer-cell purity with two local copies and one variant copy in every cancer cell, gives 86 divided by 200, exactly 43 percent. Both round to 43 percent when reported to a whole percentage point. That reported fraction alone cannot choose the copy model or establish that a missense variant disables the protein. These are conditional calculations, not a measured clone or a functional test.",
+          "Two invented mixtures show why the same fraction can fit different carrier fractions. Each contains 60 cancer and 40 diploid normal cells, with no variant in the normal cells and unbiased recovery. Model A gives every cancer cell two local copies and one variant copy: 60 variant copies among 120 cancer plus 80 normal copies give VAF 30 percent and CCF 100 percent. Model B gives every cancer cell four local copies, with 48 of the 60 cells carrying two variant copies each: 96 among 240 cancer plus 80 normal copies again give VAF 30 percent, but CCF is 80 percent. They match that one fraction; they have not been shown to fit the same complete dataset. Independent copy evidence can distinguish the hypotheses.",
+          "In a separate invented uniform-copy model, 50 cancer and 50 normal cells each carry two local copies; normal cells lack the variant and each carrier cancer cell has one variant copy. Among 200 total copies, an expected VAF of 20 percent requires forty carriers among fifty cancer cells, or CCF 80 percent. An expected VAF of 40 percent would require eighty carriers among fifty, or 160 percent, which is not a possible carrier fraction. Preserve that incompatibility rather than clipping it to 100 percent or guessing which input is wrong. The calculation inverts an expected fraction; noisy observed support and uncertain purity, copy number, multiplicity, origin or recovery require their uncertainty carried through. More reads can improve precision without fixing a wrong model."
+        ],
+        "beforeSHA256": "69702dc27b603005bcedcf9c5af9cf4cdc336f8d9d278ff115a1928ab6f16c3d",
+        "afterSHA256": "6ca7b625017839eb01e525236112499bb8b961e26f4e0e3ceca9f8cc4e22f2a6",
+        "reason": "Make the two same-cell mixtures explicit alternatives and distinguish local-copy arithmetic from activity, preserving all other mixture examples.",
+        "sourceIds": [
+          "absolute",
+          "roth",
+          "independent-arithmetic"
+        ]
+      },
+      {
+        "recordId": "tmb",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "TMB is the density of eligible somatic mutations over the assay reporting region, in mut/Mb (Mb = one million bases); the numerator rules, filters and any calibration are method-specific.",
+          "Panel, exome and genome examine different regions; a cancer-gene-enriched region need not behave as a random genomic sample.",
+          "When laboratories analysed the same exome data with their own regions and pipelines panel TMB estimates varied; this was a computational comparison, not proof of interchangeability for treatment selection.",
+          "More mutations offer more candidate neoantigens, but processing, HLA display and immune function still matter; high TMB neither guarantees checkpoint benefit nor establishes benefit in every cancer.",
+          "On 16 October 2026, FDA converted the U.S. tumour-agnostic pembrolizumab indication to traditional approval and changed its TMB-H criterion from 10 to at least 13 mutations per megabase. Section 1.18 covers adults and children with unresectable or metastatic solid tumours, measured by an FDA-authorised test, that have progressed after prior treatment and have no satisfactory alternative treatment options. This criterion does not replace thresholds in other indications or historical studies.",
+          "Fictional teaching exercise: 24 eligible mutations over 2 Mb is 12 mut/Mb and over 1 Mb is 24 mut/Mb; not comparable clinically without counting and calibration rules; a research result does not establish authorised-test eligibility.",
+          "TMB differs from copy-number instability and from MSI, and a TMB category does not settle an individual outcome.",
+          "Retain specimen type, DNA consumption, eligible mutation classes and reporting territory, germline/artefact filtering, calibration, mut/Mb, quality and uncertainty. Blood and tissue estimates need separate validation. Low tumour signal and uneven coverage can bias the count; both analytical performance and clinical applicability must match the assay, cancer and setting.",
+          "The July 2026 pembrolizumab label describes the TMB supporting KEYNOTE-158 analysis as a prospectively planned retrospective analysis of ten nonrandomized cohorts. That design does not establish TMB-based selection for early triple-negative breast cancer; retain the population, endpoint and clinical setting with the evidence.",
+          "Barroso-Sousa and colleagues analysed 3,969 primary or metastatic breast-cancer samples from six public studies using exome or panel sequencing. Median mutation burden differed across their receptor-defined groups, with the triple-negative group above HER2-positive and hormone-receptor-positive/HER2-negative groups. This is a group comparison with mixed specimen and assay contexts. It does not assign an individual's TMB-high category, predict how many HLA-associated peptides an assay will recover, establish presentation, determine treatment eligibility or show benefit. The study's research threshold belongs to its analysis and does not replace a later label or another assay's rule.",
+          "Lung cancer is where tumour mutational burden was discovered as a predictor of checkpoint benefit (Rizvi 2015) and where it failed as a selector. The biology holds: burden tracks outcome within every PD-L1 stratum in 1,552 patients and is independent of PD-L1 (Rizvi 2018, Ricciuti 2022). The measurement does not: three units are in use (per megabase on a panel, per exome on sequencing, a plasma score), the best data-derived threshold was more than 19 per megabase rather than the licensed 10, and the association vanishes entirely once chemotherapy is added to the checkpoint inhibitor (Garassino 2023). It selects for single-agent immunotherapy only (Mok 2023)."
+        ],
+        "after": [
+          "TMB is the density of eligible somatic mutations over the assay reporting region, in mut/Mb (Mb = one million bases); the numerator rules, filters and any calibration are method-specific.",
+          "Panel, exome and genome examine different regions; a cancer-gene-enriched region need not behave as a random genomic sample.",
+          "When laboratories analysed the same exome data with their own regions and pipelines panel TMB estimates varied; this was a computational comparison, not proof of interchangeability for treatment selection.",
+          "More mutations offer more candidate neoantigens, but processing, HLA display and immune function still matter; high TMB neither guarantees checkpoint benefit nor establishes benefit in every cancer.",
+          "On 16 October 2026, FDA converted the U.S. tumour-agnostic pembrolizumab indication to traditional approval and changed its TMB-H criterion from 10 to at least 13 mutations per megabase. Section 1.18 covers adults and children with unresectable or metastatic solid tumours, measured by an FDA-authorised test, that have progressed after prior treatment and have no satisfactory alternative treatment options. This criterion does not replace thresholds in other indications or historical studies.",
+          "Fictional teaching exercise: 24 eligible mutations over 2 Mb is 12 mut/Mb and over 1 Mb is 24 mut/Mb; not comparable clinically without counting and calibration rules; a research result does not establish authorised-test eligibility. Equal count sizes do not establish identical mutations or their genomic locations. The eligible territory is the denominator for each workflow, not a map supplied by the count.",
+          "TMB differs from copy-number instability and from MSI, and a TMB category does not settle an individual outcome.",
+          "Retain specimen type, DNA consumption, eligible mutation classes and reporting territory, germline/artefact filtering, calibration, mut/Mb, quality and uncertainty. Blood and tissue estimates need separate validation. Low tumour signal and uneven coverage can bias the count; both analytical performance and clinical applicability must match the assay, cancer and setting.",
+          "The July 2026 pembrolizumab label describes the TMB supporting KEYNOTE-158 analysis as a prospectively planned retrospective analysis of ten nonrandomized cohorts. That design does not establish TMB-based selection for early triple-negative breast cancer; retain the population, endpoint and clinical setting with the evidence.",
+          "Barroso-Sousa and colleagues analysed 3,969 primary or metastatic breast-cancer samples from six public studies using exome or panel sequencing. Median mutation burden differed across their receptor-defined groups, with the triple-negative group above HER2-positive and hormone-receptor-positive/HER2-negative groups. This is a group comparison with mixed specimen and assay contexts. It does not assign an individual's TMB-high category, predict how many HLA-associated peptides an assay will recover, establish presentation, determine treatment eligibility or show benefit. The study's research threshold belongs to its analysis and does not replace a later label or another assay's rule.",
+          "Lung cancer is where tumour mutational burden was discovered as a predictor of checkpoint benefit (Rizvi 2015) and where it failed as a selector. The biology holds: burden tracks outcome within every PD-L1 stratum in 1,552 patients and is independent of PD-L1 (Rizvi 2018, Ricciuti 2022). The measurement does not: three units are in use (per megabase on a panel, per exome on sequencing, a plasma score), the best data-derived threshold was more than 19 per megabase rather than the licensed 10, and the association vanishes entirely once chemotherapy is added to the checkpoint inhibitor (Garassino 2023). It selects for single-agent immunotherapy only (Mok 2023)."
+        ],
+        "beforeSHA256": "df46bbd16bd2f5be310855dec7c1d6df02aef138b175d6ccad757a26406a81ff",
+        "afterSHA256": "02db2cf17994995eb572d8e26a210c0014e614f283fcee3b555800b4b71422d9",
+        "reason": "Close the inventory-versus-genomic-map ambiguity in the fictional density example. Preserve the current October 2026 indication, historical July label and every other note.",
+        "sourceIds": [
+          "merino",
+          "independent-arithmetic"
+        ]
+      },
+      {
+        "recordId": "targeted-panel-sequencing",
+        "kind": "term",
+        "field": "tldr",
+        "before": "A targeted panel sequences only a chosen set of a few hundred cancer genes, deeply and cheaply, which is what most hospitals run on tumours today.",
+        "after": "A targeted sequencing panel examines selected DNA regions. Its exact targets, analysed change types and detection limits depend on the assay.",
+        "beforeSHA256": "b2e043c83130131aa07c02c9afff32015cd8dc39692c730d60bc41f1d6d52027",
+        "afterSHA256": "184dca6438eb40a09f6609de5dd97b961d3fad401aba0def8e1f1621b5bcc7d2",
+        "reason": "Replace unsupported fixed gene-count, cost and hospital-usage generalizations with the validated subject definition.",
+        "sourceIds": [
+          "amp-cap"
+        ]
+      },
+      {
+        "recordId": "targeted-panel-sequencing",
+        "kind": "term",
+        "field": "summary",
+        "before": "Exome sequencing works by selecting a subset of DNA before sequencing (Wikipedia); a targeted panel narrows the selection further to hundreds of clinically relevant genes, read at high depth from small samples. Panels such as MSK-IMPACT and FoundationOne underlie AACR Project GENIE, the largest clinico-genomic dataset, but panel coverage differs between institutions, so pooling requires restricting to shared genes and treating unsequenced genes as missing rather than wild type.",
+        "after": "A targeted panel sequences a predefined set of genomic regions, ranging from particular hotspots to broader gene sets. Selected introns or other noncoding regions can be included when the intended analysis requires them. The panel name or gene count alone does not establish which variants can be detected or how much usable evidence exists at a position.\n\nWhen combining results from different panels, an unsequenced region supplies no wild-type observation. Compare the actual tested regions, analysed change types and specimen-specific performance before pooling records or interpreting a negative result.",
+        "beforeSHA256": "43d8a61332bfa4d3002116fbaf39cdd3e8ee3f8542bf8455be8d89330ea1c61b",
+        "afterSHA256": "fdba237be2763b677e00992d9b9988de06b854c6ffe372d7cd93834a15e02970",
+        "reason": "Correct the definition and preserve the missing-versus-wild-type reading rule. The named GENIE aside and unsourced largest-dataset ranking are intentionally omitted from this definition, not certified false; the existing link and relationships remain.",
+        "sourceIds": [
+          "amp-cap",
+          "measurement-scope-inference"
+        ]
+      },
+      {
+        "recordId": "targeted-panel-sequencing",
+        "kind": "term",
+        "field": "notes",
+        "before": [
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/targeted-panel-sequencing."
+        ],
+        "after": [
+          "A panel can target selected non-exon regions as well as coding sequence. Exome designs primarily target exons, which include sequence retained in mature RNA that need not encode protein; genome designs sample coding and noncoding territory more broadly. Each design can leave important positions without usable evidence. Keep intended coordinates, local depth, filters and validated alteration classes together; breadth alone does not rank sensitivity or clinical usefulness.",
+          "Listed in the CanSim terms map 1.0.0 (docs/onco/terms.json, generated 2026-09-24), CC BY 4.0, attribution: CanSim project, an open, public-data-first cancer foundation-model programme; CanSim page path /terms/targeted-panel-sequencing."
+        ],
+        "beforeSHA256": "d41e8a95d58731e523c1f67be248575cbbfd12d6a9df7d5bdf7c40f04107b89b",
+        "afterSHA256": "422ec0f5e8d80d343c45b13320a51556ccb741908c731f5cac61547dd7ce803f",
+        "reason": "Add the qualified territory comparison while preserving the CanSim attribution exactly.",
+        "sourceIds": [
+          "amp-cap",
+          "nci-exon-genetics-api",
+          "sanghvi"
+        ]
+      },
+      {
+        "recordId": "targeted-panel-sequencing",
+        "kind": "term",
+        "field": "links",
+        "before": [
+          {
+            "label": "AACR Project GENIE",
+            "url": "https://www.aacr.org/professionals/research/aacr-project-genie/"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Exome_sequencing"
+          }
+        ],
+        "after": [
+          {
+            "label": "AACR Project GENIE",
+            "url": "https://www.aacr.org/professionals/research/aacr-project-genie/"
+          },
+          {
+            "label": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Exome_sequencing"
+          },
+          {
+            "label": "AMP/CAP: oncology-panel design and analytical validation (2017)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28341590/"
+          },
+          {
+            "label": "NCI genetics dictionary: exon",
+            "url": "https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/exon"
+          }
+        ],
+        "beforeSHA256": "9b4fe9d25a8a57a79c4c10f2358a76eee346afe62fac8791bf307498bf3b9617",
+        "afterSHA256": "7b801cc145d516d6cccfc6d7997c5ce39bdafe61b04a085cf9bab6a92452f950",
+        "reason": "Link the verified panel-design and exon definitions without deleting the existing consortium or Wikipedia links.",
+        "sourceIds": [
+          "amp-cap",
+          "nci-exon-genetics-api"
+        ]
+      },
+      {
+        "recordId": "gene-amplification",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-13",
+        "after": "2026-11-15",
+        "beforeSHA256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "hla-loh",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "long-read-sequencing",
+        "kind": "technology",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "sequencing-depth-and-coverage",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "sequencing-reads",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-10",
+        "after": "2026-11-15",
+        "beforeSHA256": "f67c5ec50bf3ce9b5e2e30b3b2ba5789ee3f1491778fd8b3b94147e12dbc2a81",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "vaf",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-13",
+        "after": "2026-11-15",
+        "beforeSHA256": "c632fb16191a345891994e0829686cf2ba7aa7801f849afd27546548acf3347d",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "tmb",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-11-11",
+        "after": "2026-11-15",
+        "beforeSHA256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      },
+      {
+        "recordId": "targeted-panel-sequencing",
+        "kind": "term",
+        "field": "asOf",
+        "before": "2026-09-24",
+        "after": "2026-11-15",
+        "beforeSHA256": "6c26f434a89139387427fa6eea4d321fa7eaf0929936ef3b9100933bfefb2246",
+        "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357",
+        "reason": "Date the explicitly selected source/premise clarification; retained assertions outside this scope are not blanket recertified.",
+        "sourceIds": [
+          "current-scoped-source-check"
+        ]
+      }
+    ],
+    "canonicalFields": 22,
+    "newRecords": 0,
+    "peerEdits": 0,
+    "registrationEdits": 0,
+    "aliasesMoved": 0,
+    "ordinaryLessonGradesReplaced": 0
+  },
+  "readback": {
+    "graphRecords": 23091,
+    "changedOwnerIds": [
+      "tmb",
+      "vaf",
+      "hla-loh",
+      "sequencing-depth-and-coverage",
+      "sequencing-reads",
+      "long-read-sequencing",
+      "gene-amplification",
+      "targeted-panel-sequencing"
+    ],
+    "changedOwnerCount": 8,
+    "changedCanonicalFields": 22,
+    "selectedSchemasParse": 10,
+    "allUnchangedOwnerFieldsPreserved": true,
+    "allInheritedLinksPreservedInRelativeOrder": true,
+    "unrelatedGraphRecordsPreserved": 23083,
+    "peerFieldsEdited": 0,
+    "newRecords": 0
+  },
+  "unchangedSelectedOwners": [
+    "ngs",
+    "wes-wgs"
+  ],
+  "newOwners": 0,
+  "peerEdits": 0,
+  "registrations": 0,
+  "aliasesMoved": 0,
+  "allEarlierLinksAndUndeclaredOwnerFieldsPreserved": true,
+  "existingEvidenceRebindPlan": "prior-field-rebases.json"
+}

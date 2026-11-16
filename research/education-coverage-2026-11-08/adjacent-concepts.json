@@ -1928,19 +1928,53 @@
     ],
     "review": {
       "status": "reviewed",
-      "auditor": "Coordinator intake; no extra coverage credit",
-      "checkedAt": "2026-11-10",
-      "rationale": "Adjacent work is queued so it does not repeatedly interrupt the assigned batch.",
+      "auditor": "Coordinator source-first and targeted-primary assessment;not blind,expert,learner or language acceptance",
+      "checkedAt": "2026-11-16",
+      "rationale": "Three source-first primary identities and an existing trial link were resolved live.Four complete abstracts and50 targeted complete body paragraphs support a narrow correction to the current HRD-testing owner.The three qualified companion owners remain exact.",
       "points": [
         {
           "id": "scope",
           "requirement": "Correct the HRD-testing owner’s conflation of composite GIS with standalone LOH, classification of SBS3 as functional and blanket treatment-sensitivity claims.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "Correct the HRD-testing owner’s conflation of composite GIS with standalone LOH, classification of SBS3 as functional and blanket treatment-sensitivity claims.",
-            "Existing canonical owner: hrd-testing"
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "hrd-testing",
+              "version": "proposal-hrd-assay-definitions-root-2026-11-16",
+              "field": "summary",
+              "fieldSha256": "b1e9ea05c7f394ec9b6a1c4d74d9b3a1dab6941a24a1eebb8288de35b74e9c97",
+              "explanation": "The corrected existing owner distinguishes composite versus component scores,DNA signatures versus functional surrogates,and study-specific response evidence versus a universal treatment guarantee.",
+              "supportingExcerpt": "HRD testing assesses evidence about homologous recombination, a form of DNA repair. BRCA1/2 sequencing looks for genetic changes; genomic scar scores measure patterns in tumour DNA; RAD51 foci assays assess a repair-related protein response under defined conditions. These observations are related but are not interchangeable.\n\nA composite genomic instability score can sum loss of heterozygosity (LOH), telomeric allelic imbalance (TAI) and large-scale transitions (LST). LOH alone is one component, not another name for the sum. Mutational Signature 3 is also measured from DNA; it is not a functional protein assay. A genomic pattern does not directly establish that repair is impaired now or guarantee benefit from a PARP inhibitor or platinum. Interpretation depends on the named test, specimen, validated cutoff, cancer and treatment setting.",
+              "passageSha256": "2566faed03780706fc311176c9333c04641a9b61bbf41933c21ddc067b1ede57"
+            },
+            {
+              "recordId": "hrd-testing",
+              "version": "proposal-hrd-assay-definitions-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "b67d4bab0a320fd2b3fa463fe0a453a108312dcd39f0a17aee8dc58d62383ddd",
+              "explanation": "The corrected existing owner distinguishes composite versus component scores,DNA signatures versus functional surrogates,and study-specific response evidence versus a universal treatment guarantee.",
+              "supportingExcerpt": "Telli and colleagues in 2016 used the unweighted sum of LOH, TAI and LST, with a predefined high-score boundary or a qualifying tumour BRCA1/2 alteration, in three platinum-containing neoadjuvant triple-negative breast cancer trials. The score was associated with pathological response. The studies lacked a nonplatinum comparator, so that association does not establish extra benefit from choosing platinum rather than another treatment, or a universal cutoff for PARP inhibitors.",
+              "passageSha256": "d70216b0861c3cf61aafa4dbc09f4c9adb692aacb08e916047397c75f6a7e30f"
+            },
+            {
+              "recordId": "hrd-testing",
+              "version": "proposal-hrd-assay-definitions-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "b67d4bab0a320fd2b3fa463fe0a453a108312dcd39f0a17aee8dc58d62383ddd",
+              "explanation": "The corrected existing owner distinguishes composite versus component scores,DNA signatures versus functional surrogates,and study-specific response evidence versus a universal treatment guarantee.",
+              "supportingExcerpt": "Davies and colleagues in 2017 developed HRDetect from six weighted genomic features, including base-substitution Signature 3, other mutation patterns and a scar index. It was trained on whole-genome sequencing. Its reported sensitivity concerns classification of BRCA1/2 deficiency, not the chance that a patient will respond to a medicine. Performance differed with the cohort and sequencing strategy; the authors called for clinical trials of its predictive capacity.",
+              "passageSha256": "29fcfc843ab289eb0139eb6b5841680a110b5fc76b61da3edf300617c55cfd36"
+            },
+            {
+              "recordId": "hrd-testing",
+              "version": "proposal-hrd-assay-definitions-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "b67d4bab0a320fd2b3fa463fe0a453a108312dcd39f0a17aee8dc58d62383ddd",
+              "explanation": "The corrected existing owner distinguishes composite versus component scores,DNA signatures versus functional surrogates,and study-specific response evidence versus a universal treatment guarantee.",
+              "supportingExcerpt": "Cruz and colleagues in 2018 assessed RAD51 nuclear foci in geminin-positive cycling cells and checked DNA damage. In selected germline-BRCA patient-derived xenografts and a small retrospective patient-sample analysis, the foci were a functional surrogate associated with PARP inhibitor resistance. They do not directly show every completed repair event or establish a universal clinical cutoff. Some RAD51-positive, PARP-inhibitor-resistant models still responded to cisplatin, so the two drug-response questions remain separate.",
+              "passageSha256": "2034ded3f7eaba00b1ffe1266df7f4a2a8163e821c575027c0681defd1cfd849"
+            }
+          ],
+          "remaining": []
         }
       ]
     }

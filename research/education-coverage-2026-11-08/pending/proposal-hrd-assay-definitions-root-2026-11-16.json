@@ -1,0 +1,413 @@
+{
+  "version": "proposal-hrd-assay-definitions-root-2026-11-16",
+  "draft": 375,
+  "committedDataHead": "6f58523d15b15382b517ab2f788e0bb0dc8be5e7",
+  "lastGatedDataCommit": "6f58523d15b15382b517ab2f788e0bb0dc8be5e7",
+  "state": "Four current registered-root selections.Only hrd-testing has eight source-backed content/date fields corrected;one English simple-summary entry is aligned;all23090 other records and all other edited-owner fields are exact.Selection is not authorship or blanket clinical recertification.",
+  "records": [
+    {
+      "id": "hrd-testing",
+      "kind": "technology",
+      "name": "HRD & BRCA testing",
+      "aka": [],
+      "tldr": "Tests of repair genes, accumulated DNA changes and repair-related protein activity answer different questions. No result by itself guarantees treatment benefit.",
+      "summary": "HRD testing assesses evidence about homologous recombination, a form of DNA repair. BRCA1/2 sequencing looks for genetic changes; genomic scar scores measure patterns in tumour DNA; RAD51 foci assays assess a repair-related protein response under defined conditions. These observations are related but are not interchangeable.\n\nA composite genomic instability score can sum loss of heterozygosity (LOH), telomeric allelic imbalance (TAI) and large-scale transitions (LST). LOH alone is one component, not another name for the sum. Mutational Signature 3 is also measured from DNA; it is not a functional protein assay. A genomic pattern does not directly establish that repair is impaired now or guarantee benefit from a PARP inhibitor or platinum. Interpretation depends on the named test, specimen, validated cutoff, cancer and treatment setting.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-16",
+      "links": [
+        {
+          "label": "PAOLA-1: olaparib plus bevacizumab as first-line maintenance in ovarian cancer (2019)",
+          "url": "https://doi.org/10.1056/NEJMoa1911361"
+        },
+        {
+          "label": "Telli et al.: composite HRD score and neoadjuvant platinum response in triple-negative breast cancer (2016)",
+          "url": "https://doi.org/10.1158/1078-0432.CCR-15-2477"
+        },
+        {
+          "label": "Cruz et al.: RAD51 foci and PARP inhibitor resistance in germline BRCA-mutated breast cancer (2018)",
+          "url": "https://doi.org/10.1093/annonc/mdy099"
+        },
+        {
+          "label": "Davies et al.: HRDetect and genomic signatures of BRCA1/2 deficiency (2017)",
+          "url": "https://doi.org/10.1038/nm.4292"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "hrd-genomic-scar-scores",
+        "rad51-foci-assay",
+        "stride-dna-break-detection"
+      ],
+      "cancers": [],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [],
+      "targets": [
+        "brca",
+        "parp"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hrd"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "Telli and colleagues in 2016 used the unweighted sum of LOH, TAI and LST, with a predefined high-score boundary or a qualifying tumour BRCA1/2 alteration, in three platinum-containing neoadjuvant triple-negative breast cancer trials. The score was associated with pathological response. The studies lacked a nonplatinum comparator, so that association does not establish extra benefit from choosing platinum rather than another treatment, or a universal cutoff for PARP inhibitors.",
+        "Davies and colleagues in 2017 developed HRDetect from six weighted genomic features, including base-substitution Signature 3, other mutation patterns and a scar index. It was trained on whole-genome sequencing. Its reported sensitivity concerns classification of BRCA1/2 deficiency, not the chance that a patient will respond to a medicine. Performance differed with the cohort and sequencing strategy; the authors called for clinical trials of its predictive capacity.",
+        "Cruz and colleagues in 2018 assessed RAD51 nuclear foci in geminin-positive cycling cells and checked DNA damage. In selected germline-BRCA patient-derived xenografts and a small retrospective patient-sample analysis, the foci were a functional surrogate associated with PARP inhibitor resistance. They do not directly show every completed repair event or establish a universal clinical cutoff. Some RAD51-positive, PARP-inhibitor-resistant models still responded to cisplatin, so the two drug-response questions remain separate."
+      ],
+      "principle": "Sequence repair genes, measure selected genomic patterns or score RAD51 protein foci. Interpret each measurement within the named assay and its clinical setting.",
+      "strengths": [
+        "Can bring together genetic, genomic and functional evidence while keeping the measurements distinct."
+      ],
+      "limitations": [
+        "A genomic pattern does not directly establish current repair failure.",
+        "Assay cutoffs and treatment evidence are specific to the test and clinical setting."
+      ]
+    },
+    {
+      "id": "hrd",
+      "kind": "term",
+      "name": "Homologous recombination deficiency (HRD)",
+      "aka": [],
+      "tldr": "Homologous recombination deficiency means that a template-guided DNA repair process is impaired. A gene finding, a genomic scar and current repair function provide different evidence.",
+      "summary": "A repair-gene finding suggests a possible cause, a genomic scar records accumulated consequences, and a functional assay tests present behavior. A variant is not automatically damaging, loss of one copy is not automatically loss of both, and repair can recover while historical scars persist. None of these observations alone is the probability of clinical benefit.\n\nHomologous recombination uses sufficiently matching DNA, often the sister chromatid after copying, to repair certain breaks. BRCA1 helps coordinate repair; BRCA2 helps RAD51 assemble on prepared single-stranded DNA to search and pair with a template. Template availability and cell-cycle state matter. In a fictional model with both functional BRCA2 copies lost, template-guided repair is impaired and alternative joining can leave deletions and rearrangements, but the sequence of a scar does not uniquely identify the cause or every protein that acted.\n\nA low RAD51-focus count is interpretable only with adequate tumor cells, an appropriate cycling population and evidence that the cells experienced damage. Cruz 2018 assessed RAD51 with geminin as an S/G2 marker and gamma-H2AX as a damage marker in patient-derived models and retrospective tumor specimens. Fixed tissue can support this functional-surrogate approach; functional does not always mean live drug culture. An inadequate sample is uninformative, and a research assay needs analytical and clinical validation for its intended use.\n\nTelli tested scar-score associations with response to platinum-containing chemotherapy before surgery in triple-negative breast cancer; that result does not establish a universal PARP-inhibitor cutoff. Farmer demonstrated sensitivity to PARP inhibition in BRCA-deficient cell models, a separate evidence setting. The U.S. olaparib early-breast-cancer label specifies deleterious or suspected deleterious germline BRCA findings, HER2-negative high-risk disease, prior neoadjuvant or adjuvant chemotherapy and companion-diagnostic selection. A tumor-only result or high scar score does not replace those criteria.",
+      "asOf": "2026-11-12",
+      "wikipedia": "https://en.wikipedia.org/wiki/Homologous_recombination",
+      "links": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Homologous_recombination"
+        },
+        {
+          "label": "Sister chromatid gene conversion is a prominent double-strand break repair pathway in mammalian cells. (primary abstract; 2000)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10880452/"
+        },
+        {
+          "label": "Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer. (primary abstract; 2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+        },
+        {
+          "label": "RAD51 foci as a functional biomarker of homologous recombination repair and PARP inhibitor resistance in germline BRCA-mutated breast cancer. (primary abstract; 2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+        },
+        {
+          "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (primary abstract; 2016)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+        },
+        {
+          "label": "NCI: BRCA findings and test interpretation",
+          "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/brca-fact-sheet"
+        },
+        {
+          "label": "Brca1 controls homology-directed DNA repair. (1999; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10549283/"
+        },
+        {
+          "label": "Purified human BRCA2 stimulates RAD51-mediated recombination. (2010; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20729832/"
+        },
+        {
+          "label": "Mechanism of microhomology-mediated end-joining promoted by human DNA polymerase θ. (2015; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25643323/"
+        },
+        {
+          "label": "Targeting the DNA repair defect in BRCA mutant cells as a therapeutic strategy. (2005; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15829967/"
+        },
+        {
+          "label": "DailyMed Lynparza prescribing information: section 1.4",
+          "url": "https://dailymed.awsprod.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=741ff3e3-dc1a-45a6-84e5-2481b27131aa&type=display"
+        },
+        {
+          "label": "Pan-cancer landscape of homologous recombination deficiency (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33149131/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "genome-wide-loss-of-heterozygosity"
+      ],
+      "cancers": [
+        "prostate",
+        "prostate-mcrpc"
+      ],
+      "sections": [],
+      "technologies": [
+        "hrd-testing"
+      ],
+      "targets": [
+        "brca",
+        "parp"
+      ],
+      "drugs": [],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "genome-wide-loss-of-heterozygosity"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-pritchard-inherited-dna-repair-metastatic-prostate-nejm-2016",
+        "paper-robinson-integrative-clinical-genomics-advanced-prostate-cell-2015"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "In a fictional repair-gene sequence, credible DNA evidence, an abnormal RNA junction and reduced staining in malignant cells progressively refine the question without becoming interchangeable measurements. The RNA result concerns captured transcripts. The stain concerns the antibody's detectable signal; determine which protein forms and epitopes the assay recognises before declaring intact functional protein absent. A controlled repair assay adds evidence at another level. Keep five claims separate: a real change, loss of both useful parental contributions, a compatible genomic history, impaired repair now, and benefit from treatment in the intended clinical setting. A coherent collection of markers is not a vote that turns all five claims into one label.",
+        "Two fictional models can share compatible historical scars yet have different current behaviour. Adequate assays in A support impaired repair, target engagement is demonstrated, and survival falls after the tested exposure. B instead shows partial repair restoration and little survival change despite engagement. The first pattern supports a repair-related sensitivity hypothesis in A; the scar overstates B's current vulnerability. Restoring repair in A could test causality. Conversely, few RAD51 foci with almost no cycling cells can be uninformative even when a culture survives a PARP exposure: record the compatible history, inadequate functional result and observed survival separately. None of these model results determines a treatment indication."
+      ],
+      "category": "Biomarkers"
+    },
+    {
+      "id": "hrd-genomic-scar-scores",
+      "kind": "technology",
+      "name": "HRD genomic scar scores (GIS, LOH, HRDetect)",
+      "aka": [
+        "genomic instability score",
+        "GIS",
+        "LOH score",
+        "HRDetect",
+        "genomic scar",
+        "homologous recombination deficiency score"
+      ],
+      "tldr": "These scores measure selected patterns of accumulated chromosome change. The assay and cutoff matter; a high score alone does not establish current repair failure or treatment eligibility.",
+      "summary": "Genomic scars are historical patterns in sampled tumor DNA. They can remain after a surviving population restores homologous repair, so a scar result is not a direct measurement of current function or a guarantee of drug benefit. DNA extraction consumes material; purity, ploidy estimation, segmentation, specimen quality and algorithm version affect the reported result. Counts are not percentages of cells whose repair has failed.\n\nLoss of heterozygosity means losing one parental version, with or without a reduction in total copy number. Abkevich 2012 counted LOH regions longer than 15 megabases but shorter than a whole chromosome in epithelial ovarian cancer analyses. Birkbak counted imbalanced regions reaching a telomere without crossing the centromere. Popova studied transitions between adjacent regions at least 10 megabases long in basal-like breast carcinoma. The original LST method estimated counts separately within each chromosome arm, excluding centromeric breaks, after filtering and smoothing variations smaller than 3 megabases. Segment filters and clinical score cutoffs are different rules.\n\nA composite score can sum different scar features. Telli 2016 used the unweighted sum of LOH, telomeric allelic imbalance and large-scale transitions, with a predefined high-score boundary reported as 42 in the abstract, or a deleterious BRCA1/2 finding, in three platinum-containing neoadjuvant triple-negative breast cancer trials. The training population used to choose a boundary, the treated population used to test response, the assay scale and the intended use are different facts. A number on another assay cannot be read against this threshold without validation; a response association is not an interchangeable treatment-selection rule.\n\nIn a fictional, already filtered within-arm profile, a 12-megabase segment next to an 8-megabase segment fails the requirement that both neighbors be at least 10 megabases. A 12-megabase segment next to a 14-megabase segment meets that size component. This tests counting, not a 10-megabase deletion rule, present repair function or a clinical response cutoff. The original algorithm filters and validation population still apply.",
+      "status": "standard-of-care",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "PRIMA: niraparib maintenance in advanced ovarian cancer, with the largest benefit in HRD-positive tumours (New England Journal of Medicine 2019)",
+          "url": "https://doi.org/10.1056/NEJMoa1910962"
+        },
+        {
+          "label": "Nature Medicine 2017: HRDetect is a predictor of BRCA1 and BRCA2 deficiency based on mutational signatures",
+          "url": "https://doi.org/10.1038/nm.4292"
+        },
+        {
+          "label": "Reversion and non-reversion mechanisms of resistance to PARP inhibitor or platinum chemotherapy in BRCA1/2-mutant metastatic breast cancer. (2020; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+        },
+        {
+          "label": "Patterns of genomic loss of heterozygosity predict homologous recombination repair defects in epithelial ovarian cancer. (2012; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23047548/"
+        },
+        {
+          "label": "Telomeric allelic imbalance indicates defective DNA repair and sensitivity to DNA-damaging agents. (2012; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22576213/"
+        },
+        {
+          "label": "Ploidy and large-scale genomic instability consistently identify basal-like breast carcinomas with BRCA1/2 inactivation. (2012; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22933060/"
+        },
+        {
+          "label": "Homologous Recombination Deficiency (HRD) Score Predicts Response to Platinum-Containing Neoadjuvant Chemotherapy in Patients with Triple-Negative Breast Cancer. (2016; primary evidence)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26957554/"
+        },
+        {
+          "label": "Swisher et al.: ARIEL2 Part 1 and the prespecified genomic-LOH threshold (2017)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27908594/"
+        },
+        {
+          "label": "Loibl et al.: HRD and carboplatin in GeparSixto (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30335131/"
+        },
+        {
+          "label": "Tutt et al.: carboplatin versus docetaxel and biomarkers in TNT (2018)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29713086/"
+        },
+        {
+          "label": "Ray-Coquard et al.: olaparib plus bevacizumab maintenance in PAOLA-1 (2019)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31851799/"
+        },
+        {
+          "label": "Lynparza U.S. prescribing information: July 2025 effective version",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=741ff3e3-dc1a-45a6-84e5-2481b27131aa"
+        },
+        {
+          "label": "Zejula U.S. prescribing information: July 2026 effective version",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b7f675e2-159c-490c-b6f4-3f16d9492b7d"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "stride-dna-break-detection",
+        "dna-damage-response-inhibitors"
+      ],
+      "cancers": [
+        "high-grade-serous-ovarian-cancer",
+        "ovarian",
+        "breast-cancer",
+        "prostate",
+        "pancreatic"
+      ],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "hrd-testing",
+        "rad51-foci-assay",
+        "cgp",
+        "wes-wgs",
+        "companion-diagnostic",
+        "parp-inhibitor"
+      ],
+      "targets": [
+        "brca",
+        "parp"
+      ],
+      "drugs": [
+        "olaparib",
+        "niraparib",
+        "mychoice-cdx",
+        "foundationone-cdx"
+      ],
+      "companies": [
+        "myriad-genetics",
+        "foundation-medicine"
+      ],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hrd"
+      ],
+      "trials": [
+        "paola-1",
+        "prima"
+      ],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-davies-nat-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [
+        "A composite score compresses selected features of a tumour's chromosome history. Like a summary of past events, it leaves details out; like numbers on differently calibrated scales, the same numerical value need not have the same meaning in two laboratories. The composite count is not a percentage of repair-deficient cells. Copy-neutral loss of heterozygosity can replace two parental versions with copies of one version without reducing the total copy number, so loss of heterozygosity is not always loss of a physical chromosome copy.",
+        "Telli 2016 selected the boundary of 42 using an independent training set of 497 breast and 561 ovarian cancers, including 78 breast and 190 ovarian cancers classified as lacking a functional BRCA1 or BRCA2 copy. That classification used a deleterious variant with loss of the other copy, two deleterious changes in one gene, or BRCA1 promoter methylation with loss of the other copy. The boundary was the fifth percentile among these BRCA-deficient cancers, aiming to capture about 95 per cent, rather than an optimised divider of drug responders. Some deficient cancers therefore fall below it. The study's abstract and discussion use at least 42, whereas its Methods prints greater than 42; a result at the boundary needs the actual validated assay rule, not an improvised inequality.",
+        "Telli tested the unweighted LOH plus TAI plus LST score in three platinum-containing neoadjuvant triple-negative breast cancer trials, using a high score or a deleterious or suspected-deleterious tumour BRCA1/2 alteration. A variant of uncertain significance did not count as a mutated BRCA result. The odds ratios for minimal residual disease, residual cancer burden class 0 or I, were 4.96 in PrECOG's platinum, gemcitabine and iniparib cohort and 10.18 in the pooled two cisplatin cohorts. These associations are not three randomised demonstrations of extra platinum benefit. PRIMA later defined HRD positivity by a tumour BRCA mutation or a MyChoice genomic instability score of at least 42. That trial definition and current prescribing conditions are separate facts.",
+        "ARIEL2 Part 1 used a prespecified 14 per cent genomic-LOH cutoff in relapsed, platinum-sensitive high-grade ovarian cancer. Of 206 enrolled patients, 204 received rucaparib and 192 could be classified: 40 BRCA-mutated, 82 BRCA-wild-type/LOH-high and 70 BRCA-wild-type/LOH-low. Twelve BRCA-wild-type tumours lacked enough neoplastic nuclei for the LOH classification. This percentage of genome is a different quantity from the composite sum, and a single-arm rucaparib study cannot by itself separate prognostic association from differential treatment benefit. HRDetect is different again: its weighted sequence-signature logistic model outputs a probability of BRCA-deficient genomic history. Its 2017 sensitivity and AUC describe that classification task, not an individual's chance of benefiting from a medicine.",
+        "In the GeparSixto analysis, HRD was measurable in 193 of 315 triple-negative breast cancers. Pathological complete response rose from 33.9 to 63.5 per cent with added carboplatin in the HR-deficient group and from 20.0 to 29.6 per cent in the other group. The treatment-by-HRD interaction had P = 0.327. This does not establish that the treatment effects differ by HRD status, nor does a non-significant interaction prove they are identical. In TNT, 376 people with advanced triple-negative disease or a germline BRCA-associated breast cancer received carboplatin or docetaxel. Germline-BRCA carriers had response rates of 68 versus 33 per cent, with interaction P = 0.01; a high Myriad HRD score did not select extra carboplatin benefit. Association with response and evidence for choosing between treatments are different questions.",
+        "PAOLA-1 randomised 806 people with advanced ovarian cancer responding to first-line platinum-taxane chemotherapy plus bevacizumab. Both maintenance groups received bevacizumab; the added treatment was olaparib or placebo. The 2019 HRD-positive progression-free-survival hazard ratio was 0.33, with a 95 per cent interval of 0.25 to 0.45. The olaparib label's planned exploratory HRD-negative analysis gives 1.00, with an interval of 0.75 to 1.34. That interval is compatible with a range of effects and does not prove exactly zero benefit. It also cannot be transferred to an unrelated assay, breast cancer, a different drug or olaparib without bevacizumab.",
+        "PRIMA's 2019 analysis randomised 733 people after response to first-line platinum for advanced ovarian cancer. Among 373 with HR-deficient tumours, median progression-free survival was 21.9 versus 10.4 months with niraparib versus placebo, hazard ratio 0.43 with a 95 per cent interval of 0.31 to 0.59. In the overall population it was 13.8 versus 8.2 months, hazard ratio 0.62 with an interval of 0.50 to 0.76. These are historical progression-free-survival results, not an updated overall-survival estimate. The U.S. niraparib label effective July 2026 restricts first-line maintenance to HRD-positive advanced epithelial ovarian, fallopian tube or primary peritoneal cancer in complete or partial response to platinum, selected with an authorised companion test.",
+        "The U.S. olaparib label effective July 2025 permits olaparib plus bevacizumab maintenance for adults with HRD-positive advanced epithelial ovarian, fallopian tube or primary peritoneal cancer in complete or partial response to first-line platinum; the specified HRD definition includes a deleterious or suspected-deleterious BRCA alteration and/or genomic instability, with an approved companion test. Its early-breast indication instead requires a deleterious or suspected-deleterious germline BRCA alteration, HER2-negative high-risk disease and prior neoadjuvant or adjuvant chemotherapy, with the approved test. A tumour-only BRCA finding or an arbitrary high scar number does not substitute for these conditions.",
+        "The specimen and analysis are part of the result. Telli used tumour DNA, a genome-wide SNP panel, allele-imbalance profiles and prespecified counting rules; if the score failed and BRCA testing was negative or failed, HRD status was undetermined. A failed result is not a low score. Reports should identify the assay version, usable tumour content, DNA input/quality, copy-number and allele-balance method, segmentation, and purity/ploidy assumptions. HRDetect was explored in a small biopsy series and one formalin-fixed specimen with substantial sequencing artefact; those demonstrations do not certify every degraded specimen. RAD51 foci ask a different, conditional question about present repair. A BRCA reversion or 53BP1 loss is not itself a measured new scar score or proof of restored function.",
+        "In a fictional report, laboratory X gives a score of 48 and a paper uses laboratory Y's cutoff of 42 in early triple-negative breast cancer. The numerical comparison 48 > 42 does not establish HRD positivity on X's assay: its scale, quality requirements and validated boundary are needed. Even on the correct scale, association with response to one regimen does not establish extra carboplatin benefit over a comparator. GeparSixto's interaction analysis and TNT's high-score result illustrate that distinction; neither permits a blanket claim that a high-score tumour never benefits from carboplatin."
+      ],
+      "principle": "Assay-specific counts or weighted sequence signatures describe selected genomic patterns. Their scales, validated boundaries and clinical uses differ; they do not directly measure present repair or drug sensitivity.",
+      "strengths": [
+        "Can identify genomic patterns beyond a BRCA sequence finding",
+        "Selected ovarian maintenance indications use validated companion tests",
+        "Permits explicit comparison of assay methods and their validation populations"
+      ],
+      "limitations": [
+        "Historical scars can coexist with restored repair",
+        "Assay scales and validated cutoffs differ",
+        "Specimen quality and tumour content can prevent an interpretable result"
+      ],
+      "since": 2019
+    },
+    {
+      "id": "rad51-foci-assay",
+      "kind": "technology",
+      "name": "RAD51 foci assay (functional HRD test)",
+      "aka": [
+        "RAD51 assay",
+        "RAD51 immunofluorescence",
+        "functional homologous recombination test"
+      ],
+      "tldr": "RAD51 foci can inform a research assessment of current DNA repair when enough relevant tumour cells and appropriate damage and cycling controls are present.",
+      "summary": "RAD51 nuclear foci are assemblies of a protein involved in homologous recombination. Their interpretation depends on the sampled tumour cells, cell-cycle state, damage, staining, scoring and controls. A low count without enough informative cycling cells is uninformative rather than proof that repair is absent. The assay is a functional surrogate, not direct observation of every completed repair event.\n\nCruz and colleagues in 2018 assessed RAD51 with geminin as an S/G2 marker and gamma-H2AX as a damage marker in patient-derived breast cancer models and retrospective tumour specimens. Castroviejo-Bermejo and colleagues separately compared RAD51 and genomic HRD scores against olaparib response in breast cancer xenografts, then assessed feasibility in archival breast samples, including PALB2-related cancers. The latter clinical samples established feasibility, rather than a randomised benefit from choosing treatment with the assay.\n\nA scar records accumulated genomic changes; a suitably controlled RAD51 result asks about a present repair-related state. Repair-restoring changes and acquired foci were observed in selected resistant BRCA-mutated breast cancers, but those small cohorts do not establish a universal treatment-switch rule. Use the actual assay version, informative-cell requirements and intended-use validation. A research score cannot replace the biomarker, disease and companion-test conditions of a medicine's label.",
+      "status": "emerging",
+      "asOf": "2026-11-12",
+      "links": [
+        {
+          "label": "EMBO Molecular Medicine 2018: A RAD51 assay feasible in routine tumor samples calls PARP inhibitor response beyond BRCA mutation",
+          "url": "https://doi.org/10.15252/emmm.201809172"
+        },
+        {
+          "label": "RAD51 foci as a functional biomarker of homologous recombination repair and PARP inhibitor resistance in germline BRCA-mutated breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29635390/"
+        },
+        {
+          "label": "Waks et al.: reversion and non-reversion resistance mechanisms (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32245699/"
+        }
+      ],
+      "tags": [],
+      "related": [
+        "companion-diagnostic",
+        "intodna",
+        "b-biomarker-validation"
+      ],
+      "cancers": [
+        "high-grade-serous-ovarian-cancer",
+        "ovarian",
+        "tnbc",
+        "breast-cancer",
+        "prostate"
+      ],
+      "sections": [
+        "diagnostics"
+      ],
+      "technologies": [
+        "hrd-testing",
+        "hrd-genomic-scar-scores",
+        "stride-dna-break-detection",
+        "parp-inhibitor",
+        "histopathology-ihc"
+      ],
+      "targets": [
+        "brca",
+        "parp"
+      ],
+      "drugs": [
+        "olaparib",
+        "niraparib",
+        "rucaparib",
+        "talazoparib",
+        "carboplatin",
+        "cisplatin"
+      ],
+      "companies": [],
+      "institutions": [],
+      "pathways": [],
+      "terms": [
+        "hrd"
+      ],
+      "trials": [],
+      "people": [],
+      "bottlenecks": [],
+      "keyPapers": [
+        "paper-castroviejo-bermejo-embo-mol-med"
+      ],
+      "journals": [],
+      "dependsOn": [],
+      "notes": [],
+      "principle": "Stain and score defined tumour-cell populations for RAD51 assemblies alongside suitable cycling and damage controls. Interpret the assay-specific score as a repair-related surrogate within its validated context.",
+      "strengths": [
+        "Can assess a present repair-related state separately from genomic history",
+        "Specified research methods can use appropriately preserved fixed tumour tissue",
+        "Supports investigation of repair restoration in selected model and retrospective studies"
+      ],
+      "limitations": [
+        "Too few informative cycling or damaged tumour cells can prevent interpretation",
+        "Staining, scoring and thresholds belong to the particular method",
+        "Research response associations do not by themselves establish clinical utility or replace label criteria"
+      ],
+      "since": 2018
+    }
+  ]
+}

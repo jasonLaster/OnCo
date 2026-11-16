@@ -1,0 +1,134 @@
+{
+  "kind": "Exact existing HRD testing owner correction",
+  "baseCommit": "5aa3eade5dac838fcf399f9f185a9c30fadc8cd6",
+  "expectedFiles": [
+    "src/data/simple/part-a.ts",
+    "src/data/technologies.ts"
+  ],
+  "changes": [
+    {
+      "id": "hrd-testing",
+      "file": "src/data/technologies.ts",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "Tests that reveal whether a tumour has a broken DNA repair system, which predicts response to PARP inhibitors and platinum.",
+          "after": "Tests of repair genes, accumulated DNA changes and repair-related protein activity answer different questions. No result by itself guarantees treatment benefit.",
+          "beforeSHA256": "f5093aff42d3b14edc1aacce0887204408cdacee2b1baf90a89984a636ef4d82",
+          "afterSHA256": "b1c8e24bb4f7bfc1c4d7ec86bee881c8bf243780cc2c7ccfc573d3a30f453973"
+        },
+        {
+          "field": "summary",
+          "before": "HRD and BRCA testing identifies tumours whose homologous recombination DNA repair is defective and therefore vulnerable to PARP inhibitors and platinum. It combines germline and somatic BRCA1/2 sequencing with genomic-scar scores such as the myChoice CDx genomic instability score and FoundationOne LOH, which sum loss of heterozygosity, telomeric allelic imbalance and large-scale transitions into one measure. This extends PARP-inhibitor benefit beyond BRCA carriers. The scar, however, is permanent: it persists even after reversion mutations restore repair and resistance emerges, and the thresholds defining HRD-positive are still debated. Functional assays such as RAD51 foci and mutational signature 3 are emerging alternatives that may capture current repair status. These tests reveal whether a tumour's DNA repair is broken, which predicts response to PARP inhibitors and platinum.",
+          "after": "HRD testing assesses evidence about homologous recombination, a form of DNA repair. BRCA1/2 sequencing looks for genetic changes; genomic scar scores measure patterns in tumour DNA; RAD51 foci assays assess a repair-related protein response under defined conditions. These observations are related but are not interchangeable.\n\nA composite genomic instability score can sum loss of heterozygosity (LOH), telomeric allelic imbalance (TAI) and large-scale transitions (LST). LOH alone is one component, not another name for the sum. Mutational Signature 3 is also measured from DNA; it is not a functional protein assay. A genomic pattern does not directly establish that repair is impaired now or guarantee benefit from a PARP inhibitor or platinum. Interpretation depends on the named test, specimen, validated cutoff, cancer and treatment setting.",
+          "beforeSHA256": "1c8c90eca798f0b41f5afceb851046971a82d43863f0115cf79350136eb44295",
+          "afterSHA256": "b1e9ea05c7f394ec9b6a1c4d74d9b3a1dab6941a24a1eebb8288de35b74e9c97"
+        },
+        {
+          "field": "principle",
+          "before": "Loss of heterozygosity, telomeric allelic imbalance, and large-scale transitions summed into a genomic instability score.",
+          "after": "Sequence repair genes, measure selected genomic patterns or score RAD51 protein foci. Interpret each measurement within the named assay and its clinical setting.",
+          "beforeSHA256": "5377cac9b9a35f6e3faec954d372f9b26a67481eb2b189d591c80c22a3860061",
+          "afterSHA256": "2941e766902a898c3cfa5584d183f4e0c85c3a345b6a48e971f0c0819a645c25"
+        },
+        {
+          "field": "strengths",
+          "before": [
+            "Extends PARP-inhibitor benefit beyond BRCA carriers"
+          ],
+          "after": [
+            "Can bring together genetic, genomic and functional evidence while keeping the measurements distinct."
+          ],
+          "beforeSHA256": "abfc10a8e40b1c161f97a7be8ea44e7e6c8402468bad25087197c6c30efa8815",
+          "afterSHA256": "fbe512b2159a6bc2538fc486bb3fa4214d00c1cbbd6cf84e2cccd54560a96447"
+        },
+        {
+          "field": "limitations",
+          "before": [
+            "Scar is permanent even after resistance emerges",
+            "Threshold debates"
+          ],
+          "after": [
+            "A genomic pattern does not directly establish current repair failure.",
+            "Assay cutoffs and treatment evidence are specific to the test and clinical setting."
+          ],
+          "beforeSHA256": "0f910594c9eb95389665e59a189cffb554e8bf8b09e07609494dcf2457f6ccbc",
+          "afterSHA256": "dc8c87d2532fe69334e4509e1cdbef6d9dfabc82690f8784944320fffd761b20"
+        },
+        {
+          "field": "notes",
+          "before": [],
+          "after": [
+            "Telli and colleagues in 2016 used the unweighted sum of LOH, TAI and LST, with a predefined high-score boundary or a qualifying tumour BRCA1/2 alteration, in three platinum-containing neoadjuvant triple-negative breast cancer trials. The score was associated with pathological response. The studies lacked a nonplatinum comparator, so that association does not establish extra benefit from choosing platinum rather than another treatment, or a universal cutoff for PARP inhibitors.",
+            "Davies and colleagues in 2017 developed HRDetect from six weighted genomic features, including base-substitution Signature 3, other mutation patterns and a scar index. It was trained on whole-genome sequencing. Its reported sensitivity concerns classification of BRCA1/2 deficiency, not the chance that a patient will respond to a medicine. Performance differed with the cohort and sequencing strategy; the authors called for clinical trials of its predictive capacity.",
+            "Cruz and colleagues in 2018 assessed RAD51 nuclear foci in geminin-positive cycling cells and checked DNA damage. In selected germline-BRCA patient-derived xenografts and a small retrospective patient-sample analysis, the foci were a functional surrogate associated with PARP inhibitor resistance. They do not directly show every completed repair event or establish a universal clinical cutoff. Some RAD51-positive, PARP-inhibitor-resistant models still responded to cisplatin, so the two drug-response questions remain separate."
+          ],
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "b67d4bab0a320fd2b3fa463fe0a453a108312dcd39f0a17aee8dc58d62383ddd"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "PAOLA-1: olaparib added to bevacizumab maintenance in newly diagnosed ovarian cancer, with benefit confined to HRD-positive tumours (New England Journal of Medicine 2019)",
+              "url": "https://doi.org/10.1056/NEJMoa1911361"
+            }
+          ],
+          "after": [
+            {
+              "label": "PAOLA-1: olaparib plus bevacizumab as first-line maintenance in ovarian cancer (2019)",
+              "url": "https://doi.org/10.1056/NEJMoa1911361"
+            },
+            {
+              "label": "Telli et al.: composite HRD score and neoadjuvant platinum response in triple-negative breast cancer (2016)",
+              "url": "https://doi.org/10.1158/1078-0432.CCR-15-2477"
+            },
+            {
+              "label": "Cruz et al.: RAD51 foci and PARP inhibitor resistance in germline BRCA-mutated breast cancer (2018)",
+              "url": "https://doi.org/10.1093/annonc/mdy099"
+            },
+            {
+              "label": "Davies et al.: HRDetect and genomic signatures of BRCA1/2 deficiency (2017)",
+              "url": "https://doi.org/10.1038/nm.4292"
+            }
+          ],
+          "beforeSHA256": "5a50de877da5cafb122e305ef841deaddfaa1f84dae605cdd45a3683e543a838",
+          "afterSHA256": "ede496d5a3d0f6687275a6e5bebebac04eafbecb22ff2dde77f6147e7fe1d05a"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-04",
+          "after": "2026-11-16",
+          "beforeSHA256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        }
+      ]
+    }
+  ],
+  "newSourceLinks": 3,
+  "sourceLinkURLsRemoved": 0,
+  "oldLinkLabelNeutralised": true,
+  "namesAliasesRelationsAndRegistrationUnchanged": true,
+  "productCodeChanges": 0,
+  "approvalOverride": false,
+  "expectedDirtyFiles": [
+    "src/data/simple/part-a.ts"
+  ],
+  "ownerOnlyDataCommit": "f0da1492d3a310cc4aab9b9fe41ef7bc509b4db7",
+  "consumerChanges": [
+    {
+      "id": "hrd-testing-simple",
+      "canonicalRecordId": "hrd-testing",
+      "language": "simple",
+      "file": "src/data/simple/part-a.ts",
+      "before": "Tests that show whether a tumour has a broken DNA repair system, which predicts whether PARP pills and platinum chemotherapy will work.",
+      "after": "Tests of repair genes, patterns in DNA and repair-related proteins answer different questions. A result on its own does not guarantee that a treatment will help.",
+      "beforeSHA256": "3c60a986b62a7de5216a34bf7707c9074b0a9b19a91e58fad328f63456ad3d57",
+      "afterSHA256": "c1d90bea1e185fa81bb06639945865847d0990d27c76af37bf3f55c691c4a52f",
+      "sourceUnitIds": [
+        "P69-HA-04",
+        "P69-HA-11"
+      ]
+    }
+  ]
+}

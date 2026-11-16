@@ -1,0 +1,44 @@
+{
+  "findings": [
+    {
+      "id": "P69-F01",
+      "status": "corrected-existing-owner",
+      "finding": "The inherited hrd-testing summary conflated standalone LOH with the composite LOH+TAI+LST score. The corrected summary distinguishes them without making a new brand-specific claim."
+    },
+    {
+      "id": "P69-F02",
+      "status": "corrected-existing-owner",
+      "finding": "Signature3 is measured in tumour DNA,not a direct functional protein assay.HRDetect is a genomic classifier;RAD51 is a functional surrogate with specimen and assay conditions."
+    },
+    {
+      "id": "P69-F03",
+      "status": "corrected-existing-owner",
+      "finding": "Blanket treatment-sensitivity and permanent-scar claims were removed from the lead,summary,strengths and limitations.Telli has no nonplatinum comparator;Cruz separates PARP and cisplatin response in selected models."
+    },
+    {
+      "id": "P69-F04",
+      "status": "preserved-source-scope",
+      "finding": "The Telli manuscript uses greater-than42 in some passages and at-least42 in the Discussion.The new overview uses no numeric threshold;the already qualified scar-score owner preserves that discrepancy and is unchanged."
+    },
+    {
+      "id": "P69-F05",
+      "status": "not-upgraded",
+      "finding": "Cruz introduces scar persistence as cited background,not an experiment measuring scar persistence.The new overview avoids an absolute permanent-scar assertion."
+    },
+    {
+      "id": "P69-F06",
+      "status": "legacy-metadata-followup",
+      "recordId": "hrd-testing",
+      "finding": "The inherited standard-of-care technology status groups clinical gene/scar testing with research RAD51 discussion.It is preserved,not recertified as universal approval of every assay;the reader requires assay-specific clinical validation."
+    },
+    {
+      "id": "P69-F07",
+      "status": "simple-summary-corrected-other-scope-retained",
+      "recordId": "hrd-testing",
+      "finding": "The English simple summary repeated a treatment-success promise and was corrected.The eight machine-translation tables and existing linked-card/schematic labels retain their own evidence and language scope;this correction does not confer native-language,product or connected-card acceptance."
+    }
+  ],
+  "scientificExpertAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

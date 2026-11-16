@@ -1,0 +1,62 @@
+{
+  "kind": "Actual existing API and context writer verification",
+  "dataCommit": "6f58523d15b15382b517ab2f788e0bb0dc8be5e7",
+  "checks": [
+    {
+      "id": "hrd-testing",
+      "recordSHA256": "94a103337083cc8036c8ca2407855f3a2a09f6b3ec5adea55b119682c337a868",
+      "actualJSONSHA256": "eb0685e32ef1c52f825367d706220288f10c5dce9953a44fad4238571899c452",
+      "actualMarkdownSHA256": "0e437ef006ddcfedf426bb940953668bebb603415a961d2a5d3a4e0362a12e58",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 12
+    },
+    {
+      "id": "hrd",
+      "recordSHA256": "b442b0d875c385bb58b7866846e34589db015eae3cf71acc92d35ef80f84168b",
+      "actualJSONSHA256": "9c176baa9d0d04f3b138d1cca6089705e37f3cf26e01552e45835defc9300529",
+      "actualMarkdownSHA256": "c239de301e1abab9c464a790704f5a2ab730b159e537f2dce5ba6e85955ce637",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 0
+    },
+    {
+      "id": "hrd-genomic-scar-scores",
+      "recordSHA256": "8645e41650cc10dcb03e9117ce580f1b2fcdbc3c9f9135802f5d8ab0f403bbc4",
+      "actualJSONSHA256": "640d01f8bbb548a633b0f4ee3ca75c59a97fbf307ecaf86ce1c145ea7a3b8ca1",
+      "actualMarkdownSHA256": "c3f13cfc07224bd0e6cace88aa6017e6e27861ec1fb9015cc26e9018490c8ac4",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 0
+    },
+    {
+      "id": "rad51-foci-assay",
+      "recordSHA256": "c863550a84f5621e7bb0d76d2d408bdef231c270e9173490727cc3cc754bc025",
+      "actualJSONSHA256": "01799ce034534104e8fe340b03cd447815825fb5d4f722888a4d51a0ea54ca8e",
+      "actualMarkdownSHA256": "6f1375c947ed05e23867db950d0d0b58b0930768f7339c798da372c9a1da9a42",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 0
+    }
+  ],
+  "actualRegisteredRootExports": 4,
+  "exactRootProofPassagesInMarkdown": 12,
+  "peerOnlyRecordsNotExported": 0,
+  "commands": [
+    {
+      "script": "scripts/build-api.ts",
+      "exitCode": 0,
+      "seconds": 25.58
+    },
+    {
+      "script": "scripts/build-context.ts",
+      "exitCode": 0,
+      "seconds": 4.45
+    }
+  ],
+  "writerSourceEdited": false,
+  "privateChildFilesystemRedirectionOnly": true,
+  "writesToCheckoutPublicPrevented": true,
+  "trackedWorkingTreeUnchanged": true,
+  "hostedAPIOrMainOrLiveAcceptance": false
+}

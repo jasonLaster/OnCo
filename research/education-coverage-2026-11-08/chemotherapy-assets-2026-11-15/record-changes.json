@@ -1,0 +1,38 @@
+{
+  "appliedCanonicalChanges": [],
+  "newRecords": [],
+  "newRegistrations": [],
+  "proposals": [
+    {
+      "id": "P62-R01",
+      "kind": "Product wording proposal",
+      "owner": "chemotherapy-term",
+      "surface": "Actual static EntityDetail molecule explanation",
+      "before": "Showing the molecule this term concerns: Carboplatin.",
+      "proposed": "Example molecule connected to this subject: Carboplatin.",
+      "rationale": "The page covers multiple chemotherapy mechanisms. A connected example molecule must not be presented as the identity of the whole subject.",
+      "readerSHA256": "1d7ba438f35b6efc9fa2e07e1f5b8afc61481947ad0b178ab413c55734acf8b0",
+      "applied": false,
+      "approvalOverridden": false,
+      "browserOrProductionReproductionClaimed": false
+    },
+    {
+      "id": "P62-L01",
+      "kind": "Retained canonical assertion scope",
+      "owners": [
+        "paclitaxel",
+        "doxorubicin",
+        "cyclophosphamide",
+        "tyms",
+        "tubulin"
+      ],
+      "rationale": "The ancillary records were read but not blanket re-verified. The older paclitaxel spindle/freezing and formulation/premedication text needs product-qualified review; doxorubicin includes universal every-cycle language and fixed-limit shorthand; cyclophosphamide has an unqualified acrolein causal statement; target specificity and clinical inventories keep their older source scope.",
+      "applied": false
+    }
+  ],
+  "sourceEvidenceAlreadyExistsInNamedOwners": true,
+  "noFreshDataChangeRequiredForTheseScopedAssetMeanings": true,
+  "rootSnapshot": "proposal-support-bodies-61-root",
+  "summaryConsumerSnapshot": "proposal-chemotherapy-asset-summary-consumers-2026-11-15",
+  "notesLinksAliasesRelationsDatesAndProvenancePreserved": true
+}

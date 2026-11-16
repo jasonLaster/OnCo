@@ -1,0 +1,735 @@
+{
+  "newFullGateRun": true,
+  "lastGatedDataCommit": "52053bfb2a432cc4c81c8ac7574f53478051fa83",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 11.2
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 31.4
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.05
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 316.81
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "files": 293,
+    "passed": 3101,
+    "skipped": 2
+  },
+  "exports": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 30.23
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.78
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.64
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.2
+    }
+  ],
+  "actualExportVerification": {
+    "records": 10,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "adc",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "adc",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "monoclonal-antibody",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "monoclonal-antibody",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "monoclonal-antibody",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "monoclonal-antibody",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "radioligand-therapy",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bystander-effect",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bystander-effect",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bystander-effect",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "bispecific-antibody",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dar",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dar",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dar",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "dar",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-vision-nejm-2021",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-vision-nejm-2021",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "paper-vision-nejm-2021",
+        "field": "whatItMeans",
+        "index": 0,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "adc.json",
+        "bytes": 119253,
+        "sha256": "554145bcb530a9b1b1db7b34f971b453472b77cbeefa1558ad24a40607abb0b7"
+      },
+      {
+        "file": "adc.md",
+        "bytes": 88831,
+        "sha256": "2734bedd074d5138eb5c7f00b91e69fd2e0cfd9bf36de1be85db7cc7dde3cc13"
+      },
+      {
+        "file": "monoclonal-antibody.json",
+        "bytes": 88923,
+        "sha256": "53a0795589096ba55511399029f8287c739b8b8b7cb10c5e060a0dc740262dca"
+      },
+      {
+        "file": "monoclonal-antibody.md",
+        "bytes": 67749,
+        "sha256": "514f404ba1f6583be4308880eea3c10f5038bda685d837d9743aa631215e5f7f"
+      },
+      {
+        "file": "radioligand-therapy.json",
+        "bytes": 31969,
+        "sha256": "cbdff76b477d1b7e5b591dba45bb6eb6b42da61669be3e60ba04e7b8de90d4d0"
+      },
+      {
+        "file": "radioligand-therapy.md",
+        "bytes": 22049,
+        "sha256": "c1c5b00736229cb598d1bd6668efef4425a8414657ff8115039c3f905dc782b9"
+      },
+      {
+        "file": "t-cell-engager.json",
+        "bytes": 46996,
+        "sha256": "959b8c432f2dfa217f532daf710cfa1b6c4a284dc4410c1a9238e23aa80e909c"
+      },
+      {
+        "file": "t-cell-engager.md",
+        "bytes": 35533,
+        "sha256": "84c5504a32eb9783cb67361d348e793b76aff00b57a6386b4ce0a8adf8e210e2"
+      },
+      {
+        "file": "tcr-t.json",
+        "bytes": 19038,
+        "sha256": "dfccb908214abb46016ef4dd594c1092e623e136b81bc26241daec1d4542fea6"
+      },
+      {
+        "file": "tcr-t.md",
+        "bytes": 14783,
+        "sha256": "7ea1a8aa928976c8273ef25a407f8a73c07fb44ef96301ff23ea9fc5f5f5a6fe"
+      },
+      {
+        "file": "bystander-effect.json",
+        "bytes": 4785,
+        "sha256": "2b9331eec1e637d834daceb68ef036b974e3d2144180a6971cab92c967840ea9"
+      },
+      {
+        "file": "bystander-effect.md",
+        "bytes": 3697,
+        "sha256": "318d76fd08ed2e695e4ee310414979318b3c47bc64713031517d2d9bd8c2e454"
+      },
+      {
+        "file": "bispecific-antibody.json",
+        "bytes": 37993,
+        "sha256": "62d8c7c6af19464937413f252355071f45056b590d9f911a0391362f6ed80e58"
+      },
+      {
+        "file": "bispecific-antibody.md",
+        "bytes": 27986,
+        "sha256": "e2d517ffa5e7b6d40d92a60f7c97555dea49374bd274d8f01de43724db4c1d75"
+      },
+      {
+        "file": "dar.json",
+        "bytes": 3861,
+        "sha256": "7b1cbf5e4e66c7e15f1c2dab1e47a21709583770682bea500486b51654933d8f"
+      },
+      {
+        "file": "dar.md",
+        "bytes": 3402,
+        "sha256": "4a6a774f87d1470b2820319a754ee3527fb045dbbb2a4c66ed30c59592f6f08f"
+      },
+      {
+        "file": "alpha-vs-beta.json",
+        "bytes": 5407,
+        "sha256": "51012301452f5cb879bf78554cff00983bd09d2c9f7d609b37a70a098e21ce86"
+      },
+      {
+        "file": "alpha-vs-beta.md",
+        "bytes": 4063,
+        "sha256": "18b510e9588606a329c08c22997c1b0f783e768212ebb42cdd2a670cdbeb4cbb"
+      },
+      {
+        "file": "paper-vision-nejm-2021.json",
+        "bytes": 7107,
+        "sha256": "f5ff28d2f61f6ce749880a825b83fd79f0af617410cf2e40aca089b503167bd4"
+      },
+      {
+        "file": "paper-vision-nejm-2021.md",
+        "bytes": 5470,
+        "sha256": "2b76f9b00c658efaba31a88d197c3843e1567a1f5f8d5cf485f3a8247ff29e02"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "gatedDataReadback": {
+    "rootCount": 23091,
+    "changedIds": [
+      "adc",
+      "alpha-vs-beta",
+      "paper-vision-nejm-2021"
+    ],
+    "changedFields": [
+      {
+        "id": "adc",
+        "field": "asOf"
+      },
+      {
+        "id": "adc",
+        "field": "notes"
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "tldr"
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "summary"
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "asOf"
+      },
+      {
+        "id": "alpha-vs-beta",
+        "field": "links"
+      },
+      {
+        "id": "paper-vision-nejm-2021",
+        "field": "whatItMeans"
+      }
+    ],
+    "allOtherRecordFingerprintsPreserved": true,
+    "allOtherSelectedFieldsPreserved": true,
+    "visionOnlyInterpretationRechecked": true,
+    "schemaParses": 10,
+    "allEightEarlierNotesPreservedInRelativeOrder": true,
+    "priorLinksAliasesRelationsAndProvenancePreserved": true,
+    "alphaPhysicsSummaryAndTldrIntentionallyCorrected": true,
+    "newRecords": 0,
+    "newRegistrations": 0
+  },
+  "schemaParses": 10,
+  "staticSSRReaders": 10,
+  "wholeDecodedReaders": 2,
+  "wholeDecodedReaderCharacters": 11108,
+  "consumerPreservation": {
+    "uniqueSlots": 90,
+    "stored": 90,
+    "EnglishFallbacks": 0,
+    "effectiveEnglishFallbackCorrections": [],
+    "allWholeTableHashesUnchanged": true,
+    "allStoredShortSummaryValuesUnchanged": true,
+    "allReviewMarksUnchanged": true,
+    "allStoredLongCacheBytesUnchanged": true,
+    "longCacheSourceAcceptanceChanges": [],
+    "alphaStoredShortSummariesNeedingSemanticAndLanguageReview": [
+      {
+        "id": "alpha-vs-beta-es",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (es)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "es",
+        "available": true,
+        "text": "Las partículas beta (lutecio-177) recorren milímetros y sirven para enfermedad voluminosa; las alfa (actinio-225) recorren pocas células y matan con mucha más energía."
+      },
+      {
+        "id": "alpha-vs-beta-zh",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (zh)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "zh",
+        "available": true,
+        "text": "β粒子（镥-177）射程数毫米，适合大块病灶；α粒子（锕-225）射程仅几个细胞宽，但能量高得多。"
+      },
+      {
+        "id": "alpha-vs-beta-pt",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (pt)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "pt",
+        "available": true,
+        "text": "Partículas beta (lutécio-177) percorrem milímetros e são boas para doença volumosa; partículas alfa (actínio-225) percorrem a largura de poucas células e matam com muito mais energia."
+      },
+      {
+        "id": "alpha-vs-beta-hi",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (hi)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "hi",
+        "available": true,
+        "text": "बीटा कण (लुटेशियम-177) मिलीमीटर चलते हैं और बड़े रोग के लिए अच्छे हैं; अल्फ़ा कण (एक्टिनियम-225) कुछ कोशिकाओं की चौड़ाई चलते हैं और कहीं ज़्यादा ऊर्जा से मारते हैं।"
+      },
+      {
+        "id": "alpha-vs-beta-fr",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (fr)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "fr",
+        "available": true,
+        "text": "Les particules bêta (lutétium-177) parcourent quelques millimètres et conviennent aux maladies volumineuses ; les particules alpha (actinium-225) parcourent la largeur de quelques cellules et tuent avec une énergie bien plus élevée."
+      },
+      {
+        "id": "alpha-vs-beta-de",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (de)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "de",
+        "available": true,
+        "text": "Betateilchen (Lutetium-177) legen Millimeter zurück und eignen sich für große Tumormassen; Alphateilchen (Actinium-225) legen nur wenige Zellbreiten zurück und töten mit weit höherer Energie."
+      },
+      {
+        "id": "alpha-vs-beta-ja",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (ja)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "ja",
+        "available": true,
+        "text": "ベータ粒子（ルテチウム-177）は数ミリメートル進み、大きな病変に向いている。アルファ粒子（アクチニウム-225）は細胞数個分の幅しか進まないが、はるかに高いエネルギーで殺傷する。"
+      },
+      {
+        "id": "alpha-vs-beta-ar",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (ar)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "ar",
+        "available": true,
+        "text": "تقطع جسيمات بيتا (اللوتيسيوم-177) مسافة ملليمترات وتناسب الأورام الضخمة؛ أما جسيمات ألفا (الأكتينيوم-225) فتقطع عرض بضع خلايا فقط وتقتل بطاقة أعلى بكثير."
+      },
+      {
+        "id": "alpha-vs-beta-simple",
+        "kind": "reader-summary-entry",
+        "name": "Alpha vs beta emitters (simple)",
+        "canonicalRecordId": "alpha-vs-beta",
+        "language": "simple",
+        "available": true,
+        "text": "Beta particles travel millimetres and suit bulky tumours; alpha particles travel a few cells' width and hit far harder."
+      }
+    ],
+    "canonicalShortSummaryCorrectedAtRoot": true,
+    "consumerFilesEdited": 0,
+    "languageAcceptance": false,
+    "beforeObservationReconstructedFromFrozenRecordsWithCurrentHelpers": true,
+    "rootContexts": 10,
+    "effectiveContextObservations": 90
+  },
+  "sourceIdentitiesReverified": 102,
+  "sectionSignatures": 186,
+  "oldQuotedProofsPreserved": 184,
+  "newNextProductionBuild": false,
+  "newAPIExport": true,
+  "newBrowserMobileOrHumanReview": false,
+  "testsFloorsBudgetsRulesOrAllowlistsChanged": false,
+  "rawBodiesMediaOrLongPrimaryQuotesPublished": false,
+  "strictAuditScan": "Prospective public objects: zero findings under unchanged rules. Final staged scan required before commit.",
+  "sourceLedgers": "Both phases regenerate with zero stale or missing proofs; exit 2 retains unfinished work.",
+  "mainCredit": 0,
+  "liveCredit": 0,
+  "prospectiveStrictScan": {
+    "exitCode": 0,
+    "findings": 0,
+    "publicObjectsScanned": 41,
+    "noRulesOrAllowlistsChanged": true
+  },
+  "sourceLedgersStaleOrMissingProofs": 0,
+  "priorPendingBytesPreserved": 223,
+  "priorCohortBytesPreserved": 3366,
+  "privateOriginalAndPublicProjectionSealHashesVerified": true,
+  "all72SourceFirstAndOneSupplementalFieldPassagesVerified": true,
+  "all61UnitReferencesVerified": true,
+  "allOrdinaryItemsGradesAndEvidenceBindingsPreserved": true,
+  "oldQuotedProofsPreservedInCurrentFields": 184,
+  "summaryProjectionMetadataScope": "Twenty-seven latest helper projections omit older render/selected-text hash attributes; historical snapshots preserve them. Text/availability is unchanged, not a new reproduction of historical render metadata.",
+  "finalByteIdenticalReplay": "Pending deterministic replay after this metadata update."
+}

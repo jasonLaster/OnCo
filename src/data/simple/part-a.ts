@@ -137,7 +137,7 @@ export const simpleA: Record<string, string> = {
   mced: "One blood test meant to screen for dozens of cancers at once, including ones with no screening today.",
   "digital-pathology-ai": "Scanning microscope slides and letting software measure things a doctor cannot see, including who will benefit from a treatment.",
   "companion-diagnostic": "The test that decides whether a particular drug is right for you, approved together with the drug.",
-  "hrd-testing": "Tests that show whether a tumour has a broken DNA repair system, which predicts whether PARP pills and platinum chemotherapy will work.",
+  "hrd-testing": "Tests of repair genes, patterns in DNA and repair-related proteins answer different questions. A result on its own does not guarantee that a treatment will help.",
   "germline-testing": "Germline testing looks for DNA changes outside the tumour that may explain inherited risk. The result depends on what the test covers and needs interpretation alongside personal and family history.",
   "functional-drug-testing": "Testing medicines on collected living cells or tissue under laboratory conditions. The result describes that sample and experiment; whether using it improves care needs separate evidence.",
   organoids: "Cultures grown from a patient's tumour to study selected tissue features and drug responses. They do not recreate the whole patient, and their intended use needs its own evidence.",

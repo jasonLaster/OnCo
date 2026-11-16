@@ -1,0 +1,270 @@
+{
+  "dataCommit": {
+    "kind": "Fresh full-gated local data commit",
+    "base": "25698b3a9987309c102fb031ccc8d88928c60178",
+    "head": "b1c4446466441b9617186b5b80244e76c2412840",
+    "branch": "codex/systematic-education-audit",
+    "committedAtUTC": "2026-11-16T06:41:00.124665+00:00",
+    "files": [
+      "src/data/targets.ts"
+    ],
+    "changedOwner": "pdl1",
+    "changedFields": [
+      "tldr",
+      "summary",
+      "asOf",
+      "links"
+    ],
+    "newSourceLinks": 2,
+    "allFourFreshGatesPassed": true,
+    "all23090OtherRecordsExact": true,
+    "stagedSecretScanExitCode": 0,
+    "workingTreeClean": true,
+    "pushedByThisStep": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "applied": [
+    {
+      "kind": "Source-backed PD-L1 identity and setting-specific selection correction",
+      "id": "pdl1",
+      "ownerFile": "src/data/targets.ts",
+      "guard": "Direct targets array object;literal id,name,kind and exact before scalar values;date shorthand resolved against its unchanged global constant.",
+      "beforeRecordSHA256": "750176f7b88493f4602f938565d3476612dd294344b79b5b4e189e13a1aa2fa8",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "PD-L1 is the tumour's side of the PD-1 brake, and also the biomarker that decides who gets immunotherapy.",
+          "after": "PD-L1 can bind PD-1 and limit T-cell responses. It occurs on cancer and non-cancer cells; its use as a treatment-selection biomarker depends on the drug and setting.",
+          "beforeSHA256": "ef03b2c4a96d29b2039da86b9e194797f2332c57a07b34fc0166ad9c0bd5edc0",
+          "afterSHA256": "e132efcfe996e006716c6e29f338d1645f80a15fc88350a309df1fc5b755d1b6"
+        },
+        {
+          "field": "summary",
+          "before": "PD-L1 (CD274) is the tumour-side ligand of the PD-1 brake, expressed on tumour and immune cells and induced by interferon-gamma, so its presence often marks an immune response already under way. Atezolizumab, durvalumab and avelumab block it directly. PD-L1 immunohistochemistry (22C3 CPS, SP142, 28-8) is the companion diagnostic for many indications, including CPS 10 or above for pembrolizumab in triple-negative breast cancer, with prevalence from 25 to 30 percent of NSCLC at TPS 50 percent or more to 80 to 85 percent of head and neck cancers at CPS 1 or more. Differing assays and cut-offs across drugs remain a practical source of confusion. It is now also an ADC and bispecific target (PD-L1×B7-H3 ADC BH4601, PD-L1×VEGF bispecifics). PD-L1 is both the target of immunotherapy and the test that decides who receives it.",
+          "after": "PD-L1 (CD274) is a ligand for PD-1 that can be expressed on cancer and non-cancer cells. Interferon gamma can induce its expression. Atezolizumab, durvalumab and avelumab block it directly. PD-L1 immunohistochemistry (22C3 CPS, SP142, 28-8) is the companion diagnostic for many indications, including CPS 10 or above for the labelled advanced triple-negative breast cancer (TNBC) combinations with pembrolizumab, with prevalence from 25 to 30 percent of NSCLC at TPS 50 percent or more to 80 to 85 percent of head and neck cancers at CPS 1 or more. Differing assays and cut-offs across drugs remain a practical source of confusion. It is now also an ADC and bispecific target (PD-L1×B7-H3 ADC BH4601, PD-L1×VEGF bispecifics). PD-L1 can be a treatment target and a setting-specific biomarker. The U.S. pembrolizumab indication for high-risk early-stage TNBC has no PD-L1 qualifier; its specified advanced TNBC combinations require CPS at least 10 using an FDA-authorised test. Scoring does not determine checkpoint eligibility in every cancer or regimen.",
+          "beforeSHA256": "2699f9d9e599eee90136dd30c4d0ee33002f5bfe9932436aff5057b8c62985e1",
+          "afterSHA256": "6cd7124da8f5706ebd86eb48f18455f5a952398680ad102d4d28921a0304a4a4"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-04",
+          "after": "2026-11-15",
+          "beforeSHA256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+          "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/PD-L1"
+            },
+            {
+              "label": "Kuppers et al., PNAS 1994: micromanipulated Hodgkin and Reed-Sternberg cells carry clonal immunoglobulin rearrangements",
+              "url": "https://doi.org/10.1073/pnas.91.23.10962"
+            },
+            {
+              "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+              "url": "https://doi.org/10.1038/nrc2542"
+            },
+            {
+              "label": "Steidl et al., N Engl J Med 2010: tumour-associated macrophages and survival in classical Hodgkin lymphoma",
+              "url": "https://doi.org/10.1056/NEJMoa0905680"
+            }
+          ],
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/PD-L1"
+            },
+            {
+              "label": "KEYTRUDA U.S. prescribing information: TNBC setting and PD-1 ligands (October 2026)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+            },
+            {
+              "label": "Tecentriq U.S. label: PD-L1 expression and mechanism (13 October 2026 record)",
+              "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TECENTRIQ%22"
+            },
+            {
+              "label": "Kuppers et al., PNAS 1994: micromanipulated Hodgkin and Reed-Sternberg cells carry clonal immunoglobulin rearrangements",
+              "url": "https://doi.org/10.1073/pnas.91.23.10962"
+            },
+            {
+              "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+              "url": "https://doi.org/10.1038/nrc2542"
+            },
+            {
+              "label": "Steidl et al., N Engl J Med 2010: tumour-associated macrophages and survival in classical Hodgkin lymphoma",
+              "url": "https://doi.org/10.1056/NEJMoa0905680"
+            }
+          ],
+          "beforeSHA256": "40929a620ee7769829ef5eb00d5e7cf6868a8a571294c3f5671ee2aaada7108e",
+          "afterSHA256": "7ea4167e2b153048717e59eee63b005da5328d7f334691a9f34b85c5bef39bd6",
+          "change": "Preserved earlier links in order and added two primary label references."
+        }
+      ],
+      "addedSourceLinks": [
+        {
+          "label": "KEYTRUDA U.S. prescribing information: TNBC setting and PD-1 ligands (October 2026)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        },
+        {
+          "label": "Tecentriq U.S. label: PD-L1 expression and mechanism (13 October 2026 record)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TECENTRIQ%22"
+        }
+      ],
+      "sourceReadReferences": [
+        "official-text-blocks.json#33",
+        "official-text-blocks.json#34",
+        "official-text-blocks.json#35",
+        "official-text-blocks.json#38",
+        "official-text-blocks.json#40",
+        "official-extra-text-blocks.json#1",
+        "PMID11224527"
+      ],
+      "rationale": "Replace a universal treatment-selection claim with the product- and setting-specific label boundary,and locate PD-L1 on cancer and non-cancer cells.",
+      "withdrawnLegacyLeadClaims": [
+        "The tumour-side-only shorthand and blanket statement that PD-L1 is the test deciding who receives immunotherapy.",
+        "The unqualified inference that its presence often marks an immune response already under way."
+      ],
+      "preserved": [
+        "All prior notes,aliases,names,identities,relations,registrations and provenance.",
+        "All remaining summary assertions and numerical examples are retained at their prior verification depth;this is not whole-record scientific recertification."
+      ],
+      "sourceLinkOrderQualification": "Earlier links must remain present in their earlier relative order;new literal source links can precede supplements appended at load time.",
+      "newRecords": 0,
+      "rendererChanges": 0,
+      "mainCredit": 0,
+      "liveCredit": 0
+    }
+  ],
+  "currentRootSelections": 21,
+  "frozenPeerSelections": 0,
+  "newOwners": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelationships": 0,
+  "newLiteratureOrTrialRecords": 0,
+  "newSourceLinks": 2,
+  "summaryConsumerValuesChanged": 0,
+  "summaryConsumerAvailabilityChanged": 0,
+  "canonicalEnglishLeadChanged": true,
+  "storedSummaryAlignmentResidual": {
+    "recordId": "pdl1",
+    "canonicalEnglishLeadChanged": true,
+    "nineStoredSlotsPreserved": true,
+    "slots": [
+      {
+        "id": "pdl1",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "El lado tumoral del freno PD-1, y también el biomarcador que decide quién recibe inmunoterapia.",
+        "effectiveTextSHA256": "4f833623a1999050144a8a6e45d41aa65137c73ef77c55bf77fa3b2d03208146",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-1刹车的肿瘤侧，也是决定谁能接受免疫治疗的生物标志物。",
+        "effectiveTextSHA256": "2661448b5f779ee1ab1e7a7c548132523536aed4485f68e7027d9fe9110949b8",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "O lado tumoral do freio PD-1, e também o biomarcador que decide quem recebe imunoterapia.",
+        "effectiveTextSHA256": "519b016e240ec957d7c9b2a512005ab156ca9a5dde6e25b8d6e4f1885d248e7d",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-1 ब्रेक का ट्यूमर वाला पक्ष, और वह बायोमार्कर भी जो तय करता है कि किसे इम्यूनोथेरेपी मिले।",
+        "effectiveTextSHA256": "f86d4ca9085e3bd4c4c53ac1af754d0e958c7fb056499772891640131e1829f7",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 est le versant tumoral du frein PD-1, et aussi le biomarqueur qui décide qui reçoit une immunothérapie.",
+        "effectiveTextSHA256": "e2aaf364ef2d70093d6535c1dad8d82d484558034b3dc9372eb8bf825e29c943",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 ist die Seite des Tumors an der PD-1-Bremse und zugleich der Biomarker, der entscheidet, wer eine Immuntherapie bekommt.",
+        "effectiveTextSHA256": "4bfa0e12d2636f1ce9eaf3c21c8c2377ecf6f773517cff5d08016e938b622fd5",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1はPD-1というブレーキの腫瘍側の部分であり、誰が免疫療法を受けるかを決めるバイオマーカーでもあります。",
+        "effectiveTextSHA256": "6e3da7eb4266f08fccf6644f299e913154329f4ebaaf6e4816217808712262b3",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 هو جانب الورم من مكبح PD-1، وهو أيضاً المؤشر الحيوي الذي يحدد من يتلقى العلاج المناعي.",
+        "effectiveTextSHA256": "1f730ac8b24bf204eeda6d633059c0a425687eb9abf4e5f7a46b33ec019b2b89",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "The cancer's side of the PD-1 brake. It is also the test that decides who gets immune drugs.",
+        "effectiveTextSHA256": "865de8e87b8a37ae8e13f1260454a3b8b0a3b0386ff034845302f47b4f2f2063",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      }
+    ],
+    "effectiveSlotValuesChanged": 0,
+    "availabilityChanged": 0,
+    "alignmentFollowup": "Review all nine stored language/simple short summaries through the existing workflow. Canonical English is separate from these nine slots.",
+    "languageCredit": 0
+  },
+  "priorProofImpact": {
+    "kind": "Prior committed evidence bindings to changed owner",
+    "bindings": [],
+    "total": 0,
+    "changedFields": [
+      "tldr",
+      "summary",
+      "asOf",
+      "links"
+    ],
+    "affectedBindings": [],
+    "scope": "Exact recordId/field evidence objects only;frozen selections are preserved snapshots,not re-written."
+  },
+  "nativeAssetsEdited": 0,
+  "rendererChanges": 0,
+  "historicalSourceBodiesOrPrivateDataCopied": false
+}

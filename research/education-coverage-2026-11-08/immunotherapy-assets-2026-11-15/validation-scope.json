@@ -1,0 +1,629 @@
+{
+  "newDataChanges": 1,
+  "changedRecordIds": [
+    "pdl1"
+  ],
+  "changedFields": [
+    "tldr",
+    "summary",
+    "asOf",
+    "links"
+  ],
+  "newSourceLinks": 2,
+  "lastFullGatedDataCommit": "b1c4446466441b9617186b5b80244e76c2412840",
+  "fullGates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.54
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.4
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.29
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.37
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "passingFiles": 293,
+  "passingTests": 3101,
+  "skippedTests": 2,
+  "newFullGatesRun": true,
+  "wholeGraphPreservation": {
+    "beforeGraphSHA256": "3f34b9792e3ff310eee45efb1fb75799174b62de715f97b2c95eca79940dfad0",
+    "afterGraphSHA256": "7ed13fd1188b814e180eb591e909d1723d5810c2e72f9ba2238a362c7fbdd048",
+    "records": 23091,
+    "changedIds": [
+      "pdl1"
+    ],
+    "changedFields": [
+      "tldr",
+      "summary",
+      "asOf",
+      "links"
+    ],
+    "allOtherRecordsExact": true,
+    "allOtherPdl1FieldsExact": true,
+    "selectedRootSchemasParsed": 21,
+    "peerOnlyRecords": 0,
+    "newIds": 0,
+    "registrationsChanged": 0,
+    "aliasesChanged": 0,
+    "relationshipsChanged": 0,
+    "priorNotesExact": true,
+    "priorLinksPreservedInOrder": true,
+    "sourceFile": "src/data/targets.ts"
+  },
+  "actualAPICheck": {
+    "kind": "Actual existing API and context writer verification",
+    "dataCommit": "b1c4446466441b9617186b5b80244e76c2412840",
+    "checks": [
+      {
+        "id": "checkpoint-inhibitor",
+        "recordSHA256": "01de38c1df046c48897cc06994729ff9685162919e20d16ca8d2dbaec4b6f7a9",
+        "actualJSONSHA256": "5c85d394cc6a6768e055fd9464cde648c126f54855b85a9f7586fca2681828d4",
+        "actualMarkdownSHA256": "5cdfae3afb14db8c08c262aa19b1578e7a2e9800917249c78f3049c73dca815b",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 7
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "recordSHA256": "c603523eda114656b05e6bd3dc6e32691e94edbbd44ff517d302818494ba4bf8",
+        "actualJSONSHA256": "c7230e7aec7efe288bdbbda815e13b8f91daab5c09eed13be11635659c70fcd8",
+        "actualMarkdownSHA256": "070eb4f402eb7f58974db9c5f55f056ec9f3b3b1d5ab8318ffa6d39c9315eb7a",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "shared-antigen-vaccine",
+        "recordSHA256": "d605fbc4600c4781084abff1ac61bdb1776d003a5c1f5af1dce645e15f06412b",
+        "actualJSONSHA256": "cacce23d034c9b0d71c8eb8f472ccfce417202f7b5159879058b5b9131895001",
+        "actualMarkdownSHA256": "7cd6a771e2c7871749ada47ee15a10b985da2fd7901dce9a71f983f5f0a34aad",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 1
+      },
+      {
+        "id": "oncolytic-virus",
+        "recordSHA256": "75cb84aae8a0de53e25c293e6bdc1affbcddc0f8ed5c9542eb30cf4f4908dda1",
+        "actualJSONSHA256": "ed6d91d16971dd90e9f26a9dfbba26d263dde6b93a99a158c1ca731f87ae3f3f",
+        "actualMarkdownSHA256": "29e3558e5adfbd5d711d012083fbaedb65766aa355ba0aa60441db75650bbb40",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 12
+      },
+      {
+        "id": "cytokine-therapy",
+        "recordSHA256": "059b1d07c091506bf7960c3b44eb747359380f653ea710edde42d654afe036cb",
+        "actualJSONSHA256": "37a2ee21267a4675c4b0be8d8ef957acc8a6e2d05a984451b19627e01c210874",
+        "actualMarkdownSHA256": "39fed4679109fae3403e046b7d02a542e584d20e8782624fafd5b4c51bf78275",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 8
+      },
+      {
+        "id": "pd1",
+        "recordSHA256": "f780d2aee25900b3c509129640d66323d775bd135436f513a2cd7f60a575530a",
+        "actualJSONSHA256": "e5173cf00def913a4de627777aabfdd9feea0ad64705212fde13f2861d14153a",
+        "actualMarkdownSHA256": "2664c2929f94ab548ec58df23a5d7885855323b0626422413776f47f307c439a",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "pdl1",
+        "recordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "actualJSONSHA256": "f803ddba05f5488ece54bdd26d5c4a6f4f43f31b702a3c39b02850bc878fdb27",
+        "actualMarkdownSHA256": "3bdd2fb8c85627f683f49537d579370bcf9dfbcf9bbb4f26bacdf04324877385",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 2
+      },
+      {
+        "id": "ctla4",
+        "recordSHA256": "fb023cfa33f6cc37b80247edaec0022089d2e5431b3abf2edfcf1a4bdf52f060",
+        "actualJSONSHA256": "d295dc7e052694308ed53fa3f45f0f63cecbce622b0c1730455e3baeaad428fa",
+        "actualMarkdownSHA256": "a0949d5d0404791be9875628e231b3e69a96210fa50a54709d55a809d4e494fd",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "talimogene-laherparepvec",
+        "recordSHA256": "0780bbbdb52850cefb12da12655612ad851f6cdc1f1e448fc9b07b25c35647f1",
+        "actualJSONSHA256": "a77c811c785f5922e689caff90b58ca7ab846afcf8953866d4e791e1d1db1b2a",
+        "actualMarkdownSHA256": "4f33cbdf593b08796b7bcc92ebf3704d79586532abe13d0c8828f2ee7d0f53d6",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "recordSHA256": "f410e4ed06b24fe28ab58e64c29562a4eebf1405c5f76d8760b63c099471f85d",
+        "actualJSONSHA256": "4e7f55d72470f34bcfa192c039319ed834ae3bb0067e65a21bc27666e5018805",
+        "actualMarkdownSHA256": "5f2ce3a54871de3298307380ec1a82a71abb020f07e56d2ca00962b0342a5707",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 3
+      },
+      {
+        "id": "intratumoral-immunotherapy",
+        "recordSHA256": "3a667047336c049c9b000956a57c17b627089176a3a3c75a2d8091e9713bb030",
+        "actualJSONSHA256": "c21d08c9c46c3115a5a7dc4e2a0d537a4d29cc21c50859c86c8a15364120601f",
+        "actualMarkdownSHA256": "f26ec0a25734238f5e396f3bae7108863bcbe96d0846b7775c6fadc3386231e7",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 8
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "recordSHA256": "ec1efe5eab05831995045948077fa7e51bc0a1b3bc4af42cf676ab8ba5b0a92d",
+        "actualJSONSHA256": "08451a6a9e88e9190ab08036da8cb5936f14c326ce9086ff71dbbebfaaaa82d8",
+        "actualMarkdownSHA256": "e566968fbdd3d1e24941b220ca8378f88300b286c6ce9e153b42eec719c5afbe",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 9
+      },
+      {
+        "id": "in-situ-vaccination",
+        "recordSHA256": "deaed9e9d2dfe3aff7258a7f99e92a164d6c6d2b3ef4e8d291e822a5250fdc0f",
+        "actualJSONSHA256": "b5ca24b01a2c78c03ffed386352850c939ae9ad068e18bd10e43e4c0b872fa64",
+        "actualMarkdownSHA256": "b746c55c37906a511a41b80c938102cfe691d784738576201a1754b82a6a8337",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 8
+      },
+      {
+        "id": "aldesleukin",
+        "recordSHA256": "0abd1ae9495d466a7df40c9ec4783cfe91f7a7a929ec173083eede2bb4a586df",
+        "actualJSONSHA256": "48b3ebf46b88834d7de6770a4baca4b93ddc09564fe29a9cbe9dcc8b4f632733",
+        "actualMarkdownSHA256": "cad00af35aab5d6efc132a486c396da38db7ea98910e4bc5258c6c912618a303",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "cytokine",
+        "recordSHA256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+        "actualJSONSHA256": "18a010dfdc6b102af47128c8396369bd6dff1576a5b1e0eecefb62a5f126c94e",
+        "actualMarkdownSHA256": "218e36075c18c3eb6ba302a5b272031b87ec9463fd9d280f6d57e442a4d9bdca",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 2
+      },
+      {
+        "id": "immune-checkpoint",
+        "recordSHA256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+        "actualJSONSHA256": "0e51c76eec6b64d85f450bae65a6fddcb7d77a06b883ed8201923e1115289a36",
+        "actualMarkdownSHA256": "6c85e0df851deb3caa3f990f2b9b43ae325c2f5861a5672978ce2f45235dccd5",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 1
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "recordSHA256": "89757bdc6c4e4d4061ca7777df0505bb24ee91bb052debf1ae33141dfea7c2e3",
+        "actualJSONSHA256": "bdbd9e285ec333d5be829fa759dfa5939934d638360bd8cf36575e11b094b871",
+        "actualMarkdownSHA256": "3f870077e0f35eea6c005ef98094d7b2707b1c1c877ea10b92b5fdfd58f49ca1",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 9
+      },
+      {
+        "id": "cd28",
+        "recordSHA256": "bcc79eacdea1faceefc7301c31d9139d995bfac03cdc31f6d88fc1362e077a2d",
+        "actualJSONSHA256": "d6b6ed701075bb11abd51d3a90f0aaddbe843f62381502ab86c0a510ab6887a8",
+        "actualMarkdownSHA256": "c4087d35b2f865c1f389d0ca4e97b2586fe5bb4ec3a4a689cdf6bd2232db4f97",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "cd80",
+        "recordSHA256": "b067c31ce8294c2f6a33ba217c1f4f2d856826115b05e84cd03ca1daece62526",
+        "actualJSONSHA256": "0c5b9db514ba67ea30054a47b59527b66d120ce6694dd66eaa018e36e68869ab",
+        "actualMarkdownSHA256": "c1e1180ae9c93b4ee3e9233ceb17aa2fe97e2a043648983410c0b4190f77fd6c",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "pdcd1lg2",
+        "recordSHA256": "7d83ea108331298b8a2552a721d085be1e7d2b4b8c80f8276d161c45e32a5b06",
+        "actualJSONSHA256": "2bb5726efe0bf6576bfb20a728f1b40ae1467a85a21cb55ccf474b28bb92ee75",
+        "actualMarkdownSHA256": "21e590fcdc7931afe28003873b30d203bd3122a7448b1ac571dbe5eeb77bbf2d",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "cd86",
+        "recordSHA256": "19724b13c4cc2378c309e2b8e561ac073511236dcf99525db6c19e6b77a4fb2c",
+        "actualJSONSHA256": "fb7dc1d0e53d5f3829f7330f8fc12afa26979a7d3ee6003221e9fa1bcd3900c1",
+        "actualMarkdownSHA256": "d9702c76bd854a09c4ad651c863b781f2461554ed416e455a251b6a788cdb3ce",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      }
+    ],
+    "actualRegisteredRootExports": 21,
+    "exactRootProofPassagesInMarkdown": 70,
+    "peerOnlyRecordsNotExported": 0,
+    "commands": [
+      {
+        "script": "scripts/build-api.ts",
+        "exitCode": 0,
+        "seconds": 25.29
+      },
+      {
+        "script": "scripts/build-context.ts",
+        "exitCode": 0,
+        "seconds": 4.46
+      }
+    ],
+    "writerSourceEdited": false,
+    "privateChildFilesystemRedirectionOnly": true,
+    "writesToCheckoutPublicPrevented": true,
+    "trackedWorkingTreeUnchanged": true,
+    "hostedAPIOrMainOrLiveAcceptance": false
+  },
+  "staticRootReaders": {
+    "checks": [
+      {
+        "id": "checkpoint-inhibitor",
+        "file": "checkpoint-inhibitor.html",
+        "sha256": "b5b08a3e7171b74b04d7a36c48e90609ac1ff3d3ef05b55d122052ad7219f147",
+        "bytes": 269999,
+        "recordSHA256": "01de38c1df046c48897cc06994729ff9685162919e20d16ca8d2dbaec4b6f7a9",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "neoantigen-mrna-vaccine",
+        "file": "neoantigen-mrna-vaccine.html",
+        "sha256": "53469a042d141b41f8cb984776d120054a0707a0a82e35a4628f93168a77a384",
+        "bytes": 97239,
+        "recordSHA256": "c603523eda114656b05e6bd3dc6e32691e94edbbd44ff517d302818494ba4bf8",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "shared-antigen-vaccine",
+        "file": "shared-antigen-vaccine.html",
+        "sha256": "4d79e286d8403643b3eb288690e7e61203f10ec55fc48c40b4524e8e8fc5c037",
+        "bytes": 66265,
+        "recordSHA256": "d605fbc4600c4781084abff1ac61bdb1776d003a5c1f5af1dce645e15f06412b",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "oncolytic-virus",
+        "file": "oncolytic-virus.html",
+        "sha256": "421e5e64a6e64237cc949c7e00ada7f2daedde23d82172551642e7709fe8be54",
+        "bytes": 96805,
+        "recordSHA256": "75cb84aae8a0de53e25c293e6bdc1affbcddc0f8ed5c9542eb30cf4f4908dda1",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cytokine-therapy",
+        "file": "cytokine-therapy.html",
+        "sha256": "65463a6427ddcf2d355166e17a440e6fbff4320169e9761801942d06543ab487",
+        "bytes": 94880,
+        "recordSHA256": "059b1d07c091506bf7960c3b44eb747359380f653ea710edde42d654afe036cb",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pd1",
+        "file": "pd1.html",
+        "sha256": "30d807bf378c5f16e64e621e0706345fb20b2c8d150d28b69f49bde4957904de",
+        "bytes": 219775,
+        "recordSHA256": "f780d2aee25900b3c509129640d66323d775bd135436f513a2cd7f60a575530a",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pdl1",
+        "file": "pdl1.html",
+        "sha256": "341a6e6470aa789127bc4593a5d9b5ccfc5853b56b5ab7637b92c35df42891db",
+        "bytes": 214946,
+        "recordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "ctla4",
+        "file": "ctla4.html",
+        "sha256": "c5bd74ab0d16586ffd83dc10df2d3ec92f922a267a7a1387a4d37e7a57ab4731",
+        "bytes": 118249,
+        "recordSHA256": "fb023cfa33f6cc37b80247edaec0022089d2e5431b3abf2edfcf1a4bdf52f060",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "talimogene-laherparepvec",
+        "file": "talimogene-laherparepvec.html",
+        "sha256": "db8ad7a59707d269f0692e6ab22aae524fabba98c28e3b6f11f383cc78676b12",
+        "bytes": 74123,
+        "recordSHA256": "0780bbbdb52850cefb12da12655612ad851f6cdc1f1e448fc9b07b25c35647f1",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "t-cell-priming-three-signals",
+        "file": "t-cell-priming-three-signals.html",
+        "sha256": "cfea3ffdecc6326368fca62b597cf2c2aa808100f7853bbf6f2fc060d5d47c0c",
+        "bytes": 22161,
+        "recordSHA256": "f410e4ed06b24fe28ab58e64c29562a4eebf1405c5f76d8760b63c099471f85d",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "intratumoral-immunotherapy",
+        "file": "intratumoral-immunotherapy.html",
+        "sha256": "d456d44400971326f3e8ab2e8ad00cd927a18dc7d03f8dc1b8431fcd5b68949c",
+        "bytes": 40457,
+        "recordSHA256": "3a667047336c049c9b000956a57c17b627089176a3a3c75a2d8091e9713bb030",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "vaccine-adjuvants",
+        "file": "vaccine-adjuvants.html",
+        "sha256": "515b039f81c93058db9798297f8320b90ba31f940e142907ddb28c83da418d14",
+        "bytes": 30636,
+        "recordSHA256": "ec1efe5eab05831995045948077fa7e51bc0a1b3bc4af42cf676ab8ba5b0a92d",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "in-situ-vaccination",
+        "file": "in-situ-vaccination.html",
+        "sha256": "da323b27883f06fff5e7e2be2cc60a5e786c64be3f24ce1c96ee96f978569c0f",
+        "bytes": 49167,
+        "recordSHA256": "deaed9e9d2dfe3aff7258a7f99e92a164d6c6d2b3ef4e8d291e822a5250fdc0f",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "aldesleukin",
+        "file": "aldesleukin.html",
+        "sha256": "16c84518c6ad61c52033251ab3b3f68c74ecd2b3f8d1af7f4cafdbab0a6efa43",
+        "bytes": 68752,
+        "recordSHA256": "0abd1ae9495d466a7df40c9ec4783cfe91f7a7a929ec173083eede2bb4a586df",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cytokine",
+        "file": "cytokine.html",
+        "sha256": "f30505cb669239f902861c2528dabfdc19b9f9e9d97405c5aaea8d63a5fe6fc5",
+        "bytes": 36715,
+        "recordSHA256": "e1b19de9774bba139aa0309b3b9e42f22f9b75da4c8a89d78967c9e72ae70bc9",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "immune-checkpoint",
+        "file": "immune-checkpoint.html",
+        "sha256": "42b100ac2a0fd8b86102eb0ce942fd156984961ffaafb43c253e3776bd671655",
+        "bytes": 64634,
+        "recordSHA256": "f0f4b2c985a68399488aede687f6c007af522fa153657dbafcb471ecfd27ad66",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "vaccines-and-oncolytic-viruses",
+        "file": "vaccines-and-oncolytic-viruses.html",
+        "sha256": "1ac88034a05207f93ff5da7550f8ed225bb041d2f08c09a14f49fbaa1ac21fb0",
+        "bytes": 45672,
+        "recordSHA256": "89757bdc6c4e4d4061ca7777df0505bb24ee91bb052debf1ae33141dfea7c2e3",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cd28",
+        "file": "cd28.html",
+        "sha256": "d14ff5e3888e66e53fcb292bba7603cb7668e806d55ab6c054e614928c5757ab",
+        "bytes": 62316,
+        "recordSHA256": "bcc79eacdea1faceefc7301c31d9139d995bfac03cdc31f6d88fc1362e077a2d",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cd80",
+        "file": "cd80.html",
+        "sha256": "0b29321282b4e7468847e151e42c6b680f5d0c50523fe314f32c191137897824",
+        "bytes": 52691,
+        "recordSHA256": "b067c31ce8294c2f6a33ba217c1f4f2d856826115b05e84cd03ca1daece62526",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pdcd1lg2",
+        "file": "pdcd1lg2.html",
+        "sha256": "797671b73e8a7d2284605016159e79694cde2b5d03b9e023a8b5a46ec6c65d1e",
+        "bytes": 64731,
+        "recordSHA256": "7d83ea108331298b8a2552a721d085be1e7d2b4b8c80f8276d161c45e32a5b06",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cd86",
+        "file": "cd86.html",
+        "sha256": "db4df4121cf8aa43c66d853bc950e0af80eebe1638a918cdbf2b095f5283e042",
+        "bytes": 41307,
+        "recordSHA256": "19724b13c4cc2378c309e2b8e561ac073511236dcf99525db6c19e6b77a4fb2c",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "actualRegisteredRootReaders": 21,
+    "selectedSchemaParses": 21,
+    "peerReadersRendered": 0,
+    "unmergedContributorFieldsSelected": false,
+    "proposedPeerFields": 0,
+    "ordinaryLayerRestored": true,
+    "staticSSRVerificationOnly": true,
+    "hostedBrowserHydrationAccessibilityMobileOrIndependentAcceptance": false
+  },
+  "readerContentChecks": {
+    "actualRootReadersRendered": 21,
+    "rootRecordsSchemaParsed": 21,
+    "peerReadersRendered": 0,
+    "wholeDecodedReaders": [
+      "pdl1",
+      "t-cell-priming-three-signals"
+    ],
+    "wholeDecodedCharacters": 51440,
+    "changedPDL1DefinitionAndAllSummaryParagraphsPresent": true,
+    "smallestReaderInspected": "t-cell-priming-three-signals",
+    "sourceURLsPresentAllRootReaders": true,
+    "other19ReadersReadingDepth": "Static SSR and source-link verification;selected teaching fields read separately,not every whole decoded page.",
+    "retainedCatalogueAndGeneratedRoleAssertionsNotRecertified": true,
+    "browserHydrationMobileAccessibilityOrExpertAcceptance": false
+  },
+  "summaryConsumerResidual": {
+    "recordId": "pdl1",
+    "canonicalEnglishLeadChanged": true,
+    "nineStoredSlotsPreserved": true,
+    "slots": [
+      {
+        "id": "pdl1",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "El lado tumoral del freno PD-1, y también el biomarcador que decide quién recibe inmunoterapia.",
+        "effectiveTextSHA256": "4f833623a1999050144a8a6e45d41aa65137c73ef77c55bf77fa3b2d03208146",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-1刹车的肿瘤侧，也是决定谁能接受免疫治疗的生物标志物。",
+        "effectiveTextSHA256": "2661448b5f779ee1ab1e7a7c548132523536aed4485f68e7027d9fe9110949b8",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "O lado tumoral do freio PD-1, e também o biomarcador que decide quem recebe imunoterapia.",
+        "effectiveTextSHA256": "519b016e240ec957d7c9b2a512005ab156ca9a5dde6e25b8d6e4f1885d248e7d",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-1 ब्रेक का ट्यूमर वाला पक्ष, और वह बायोमार्कर भी जो तय करता है कि किसे इम्यूनोथेरेपी मिले।",
+        "effectiveTextSHA256": "f86d4ca9085e3bd4c4c53ac1af754d0e958c7fb056499772891640131e1829f7",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 est le versant tumoral du frein PD-1, et aussi le biomarqueur qui décide qui reçoit une immunothérapie.",
+        "effectiveTextSHA256": "e2aaf364ef2d70093d6535c1dad8d82d484558034b3dc9372eb8bf825e29c943",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 ist die Seite des Tumors an der PD-1-Bremse und zugleich der Biomarker, der entscheidet, wer eine Immuntherapie bekommt.",
+        "effectiveTextSHA256": "4bfa0e12d2636f1ce9eaf3c21c8c2377ecf6f773517cff5d08016e938b622fd5",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1はPD-1というブレーキの腫瘍側の部分であり、誰が免疫療法を受けるかを決めるバイオマーカーでもあります。",
+        "effectiveTextSHA256": "6e3da7eb4266f08fccf6644f299e913154329f4ebaaf6e4816217808712262b3",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "PD-L1 هو جانب الورم من مكبح PD-1، وهو أيضاً المؤشر الحيوي الذي يحدد من يتلقى العلاج المناعي.",
+        "effectiveTextSHA256": "1f730ac8b24bf204eeda6d633059c0a425687eb9abf4e5f7a46b33ec019b2b89",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "pdl1",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "The cancer's side of the PD-1 brake. It is also the test that decides who gets immune drugs.",
+        "effectiveTextSHA256": "865de8e87b8a37ae8e13f1260454a3b8b0a3b0386ff034845302f47b4f2f2063",
+        "canonicalRecordSHA256": "686cd7398fd40863394202c549cc40d270e3c386a8312b059080d11e33e90085",
+        "peerNotRegisteredAtRoot": false
+      }
+    ],
+    "effectiveSlotValuesChanged": 0,
+    "availabilityChanged": 0,
+    "alignmentFollowup": "Review all nine stored language/simple short summaries through the existing workflow. Canonical English is separate from these nine slots.",
+    "languageCredit": 0
+  },
+  "sourceFirstSealUnchanged": true,
+  "fullNextBuild": false,
+  "browserOrHumanAcceptance": false
+}

@@ -1,0 +1,113 @@
+{
+  "kind": "Source-backed PD-L1 identity and setting-specific selection correction",
+  "id": "pdl1",
+  "ownerFile": "src/data/targets.ts",
+  "guard": "Direct targets array object;literal id,name,kind and exact before scalar values;date shorthand resolved against its unchanged global constant.",
+  "beforeRecordSHA256": "750176f7b88493f4602f938565d3476612dd294344b79b5b4e189e13a1aa2fa8",
+  "fields": [
+    {
+      "field": "tldr",
+      "before": "PD-L1 is the tumour's side of the PD-1 brake, and also the biomarker that decides who gets immunotherapy.",
+      "after": "PD-L1 can bind PD-1 and limit T-cell responses. It occurs on cancer and non-cancer cells; its use as a treatment-selection biomarker depends on the drug and setting.",
+      "beforeSHA256": "ef03b2c4a96d29b2039da86b9e194797f2332c57a07b34fc0166ad9c0bd5edc0",
+      "afterSHA256": "e132efcfe996e006716c6e29f338d1645f80a15fc88350a309df1fc5b755d1b6"
+    },
+    {
+      "field": "summary",
+      "before": "PD-L1 (CD274) is the tumour-side ligand of the PD-1 brake, expressed on tumour and immune cells and induced by interferon-gamma, so its presence often marks an immune response already under way. Atezolizumab, durvalumab and avelumab block it directly. PD-L1 immunohistochemistry (22C3 CPS, SP142, 28-8) is the companion diagnostic for many indications, including CPS 10 or above for pembrolizumab in triple-negative breast cancer, with prevalence from 25 to 30 percent of NSCLC at TPS 50 percent or more to 80 to 85 percent of head and neck cancers at CPS 1 or more. Differing assays and cut-offs across drugs remain a practical source of confusion. It is now also an ADC and bispecific target (PD-L1×B7-H3 ADC BH4601, PD-L1×VEGF bispecifics). PD-L1 is both the target of immunotherapy and the test that decides who receives it.",
+      "after": "PD-L1 (CD274) is a ligand for PD-1 that can be expressed on cancer and non-cancer cells. Interferon gamma can induce its expression. Atezolizumab, durvalumab and avelumab block it directly. PD-L1 immunohistochemistry (22C3 CPS, SP142, 28-8) is the companion diagnostic for many indications, including CPS 10 or above for the labelled advanced triple-negative breast cancer (TNBC) combinations with pembrolizumab, with prevalence from 25 to 30 percent of NSCLC at TPS 50 percent or more to 80 to 85 percent of head and neck cancers at CPS 1 or more. Differing assays and cut-offs across drugs remain a practical source of confusion. It is now also an ADC and bispecific target (PD-L1×B7-H3 ADC BH4601, PD-L1×VEGF bispecifics). PD-L1 can be a treatment target and a setting-specific biomarker. The U.S. pembrolizumab indication for high-risk early-stage TNBC has no PD-L1 qualifier; its specified advanced TNBC combinations require CPS at least 10 using an FDA-authorised test. Scoring does not determine checkpoint eligibility in every cancer or regimen.",
+      "beforeSHA256": "2699f9d9e599eee90136dd30c4d0ee33002f5bfe9932436aff5057b8c62985e1",
+      "afterSHA256": "6cd7124da8f5706ebd86eb48f18455f5a952398680ad102d4d28921a0304a4a4"
+    },
+    {
+      "field": "asOf",
+      "before": "2026-09-04",
+      "after": "2026-11-15",
+      "beforeSHA256": "169670126c693bbe6cf3e565032488d8021f0e87862b4d5147c27e0c87f24992",
+      "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+    },
+    {
+      "field": "links",
+      "before": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PD-L1"
+        },
+        {
+          "label": "Kuppers et al., PNAS 1994: micromanipulated Hodgkin and Reed-Sternberg cells carry clonal immunoglobulin rearrangements",
+          "url": "https://doi.org/10.1073/pnas.91.23.10962"
+        },
+        {
+          "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+          "url": "https://doi.org/10.1038/nrc2542"
+        },
+        {
+          "label": "Steidl et al., N Engl J Med 2010: tumour-associated macrophages and survival in classical Hodgkin lymphoma",
+          "url": "https://doi.org/10.1056/NEJMoa0905680"
+        }
+      ],
+      "after": [
+        {
+          "label": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/PD-L1"
+        },
+        {
+          "label": "KEYTRUDA U.S. prescribing information: TNBC setting and PD-1 ligands (October 2026)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+        },
+        {
+          "label": "Tecentriq U.S. label: PD-L1 expression and mechanism (13 October 2026 record)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TECENTRIQ%22"
+        },
+        {
+          "label": "Kuppers et al., PNAS 1994: micromanipulated Hodgkin and Reed-Sternberg cells carry clonal immunoglobulin rearrangements",
+          "url": "https://doi.org/10.1073/pnas.91.23.10962"
+        },
+        {
+          "label": "Kuppers, Nat Rev Cancer 2009: the biology of Hodgkin's lymphoma",
+          "url": "https://doi.org/10.1038/nrc2542"
+        },
+        {
+          "label": "Steidl et al., N Engl J Med 2010: tumour-associated macrophages and survival in classical Hodgkin lymphoma",
+          "url": "https://doi.org/10.1056/NEJMoa0905680"
+        }
+      ],
+      "beforeSHA256": "40929a620ee7769829ef5eb00d5e7cf6868a8a571294c3f5671ee2aaada7108e",
+      "afterSHA256": "7ea4167e2b153048717e59eee63b005da5328d7f334691a9f34b85c5bef39bd6",
+      "change": "Preserved earlier links in order and added two primary label references."
+    }
+  ],
+  "addedSourceLinks": [
+    {
+      "label": "KEYTRUDA U.S. prescribing information: TNBC setting and PD-1 ligands (October 2026)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9333c79b-d487-4538-a9f0-71b91a02b287"
+    },
+    {
+      "label": "Tecentriq U.S. label: PD-L1 expression and mechanism (13 October 2026 record)",
+      "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TECENTRIQ%22"
+    }
+  ],
+  "sourceReadReferences": [
+    "official-text-blocks.json#33",
+    "official-text-blocks.json#34",
+    "official-text-blocks.json#35",
+    "official-text-blocks.json#38",
+    "official-text-blocks.json#40",
+    "official-extra-text-blocks.json#1",
+    "PMID11224527"
+  ],
+  "rationale": "Replace a universal treatment-selection claim with the product- and setting-specific label boundary,and locate PD-L1 on cancer and non-cancer cells.",
+  "withdrawnLegacyLeadClaims": [
+    "The tumour-side-only shorthand and blanket statement that PD-L1 is the test deciding who receives immunotherapy.",
+    "The unqualified inference that its presence often marks an immune response already under way."
+  ],
+  "preserved": [
+    "All prior notes,aliases,names,identities,relations,registrations and provenance.",
+    "All remaining summary assertions and numerical examples are retained at their prior verification depth;this is not whole-record scientific recertification."
+  ],
+  "sourceLinkOrderQualification": "Earlier links must remain present in their earlier relative order;new literal source links can precede supplements appended at load time.",
+  "newRecords": 0,
+  "rendererChanges": 0,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

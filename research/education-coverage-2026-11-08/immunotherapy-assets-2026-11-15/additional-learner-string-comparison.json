@@ -1,0 +1,181 @@
+{
+  "kind": "After-seal additional exact explicit learner-field comparisons",
+  "sourceBodiesReadBeforeSeal": true,
+  "immutableSealUnchanged": true,
+  "reason": "First deterministic scan covered five Alt/Caption fields;explicit Exercise,Scene,Takeaway caption and retained HTML alt fields are compared separately here.",
+  "fields": [
+    {
+      "assignmentIndex": 5,
+      "key": "reuseRequirement.existingEmbeds/0/alt",
+      "characters": 167,
+      "valueSHA256": "abdb1ef5135799f5d7ff02723e61c7f9d0032d6181d892cbc1214a8e73b94fdd",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "immune-checkpoint",
+            "immune-checkpoint-inhibitor"
+          ],
+          "whitespaceNormalizedParents": [
+            "immune-checkpoint",
+            "immune-checkpoint-inhibitor"
+          ],
+          "exactSelectedIndexMatch": true
+        },
+        "later": {
+          "exactParents": [
+            "immune-checkpoint",
+            "immune-checkpoint-inhibitor"
+          ],
+          "whitespaceNormalizedParents": [
+            "immune-checkpoint",
+            "immune-checkpoint-inhibitor"
+          ],
+          "exactSelectedIndexMatch": true
+        }
+      },
+      "scientificAcceptance": false
+    },
+    {
+      "assignmentIndex": 9,
+      "key": "reuseRequirement.existingEmbeds/0/alt",
+      "characters": 142,
+      "valueSHA256": "ac4ba9d7d5e4c004bf248f403a3da484ba7f37912dd200acd42032a8ad8714d7",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "cytokine-and-chemokine",
+            "cytokine-therapy"
+          ],
+          "whitespaceNormalizedParents": [
+            "cytokine-and-chemokine",
+            "cytokine-therapy"
+          ],
+          "exactSelectedIndexMatch": true
+        },
+        "later": {
+          "exactParents": [
+            "cytokine-and-chemokine",
+            "cytokine-therapy"
+          ],
+          "whitespaceNormalizedParents": [
+            "cytokine-and-chemokine",
+            "cytokine-therapy"
+          ],
+          "exactSelectedIndexMatch": true
+        }
+      },
+      "scientificAcceptance": false
+    },
+    {
+      "assignmentIndex": 6,
+      "key": "Exercise",
+      "characters": 138,
+      "valueSHA256": "91a4c02b7beb5d0941b4633e1588b0853afce723abb7f6ebe8c19bb5ef2914e7",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "immune-checkpoint-inhibitor"
+          ],
+          "whitespaceNormalizedParents": [
+            "immune-checkpoint-inhibitor"
+          ],
+          "exactSelectedIndexMatch": false
+        },
+        "later": {
+          "exactParents": [
+            "immune-checkpoint-inhibitor"
+          ],
+          "whitespaceNormalizedParents": [
+            "immune-checkpoint-inhibitor"
+          ],
+          "exactSelectedIndexMatch": false
+        }
+      },
+      "scientificAcceptance": false
+    },
+    {
+      "assignmentIndex": 10,
+      "key": "Exercise",
+      "characters": 173,
+      "valueSHA256": "67a2f36970b89f6a8ee9119501bd9c0f108b1b449dd5285e194774af90c7d3fe",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "cytokine-therapy"
+          ],
+          "whitespaceNormalizedParents": [
+            "cytokine-therapy"
+          ],
+          "exactSelectedIndexMatch": false
+        },
+        "later": {
+          "exactParents": [
+            "cytokine-therapy"
+          ],
+          "whitespaceNormalizedParents": [
+            "cytokine-therapy"
+          ],
+          "exactSelectedIndexMatch": false
+        }
+      },
+      "scientificAcceptance": false
+    },
+    {
+      "assignmentIndex": 21,
+      "key": "Scene",
+      "characters": 203,
+      "valueSHA256": "4c984a9a0dfbdb53062d9a29b79eef7f2828b05d0b7160fd11f6f3d69959d9bc",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "cancer-vaccines-overview"
+          ],
+          "whitespaceNormalizedParents": [
+            "cancer-vaccines-overview"
+          ],
+          "exactSelectedIndexMatch": true
+        },
+        "later": {
+          "exactParents": [
+            "cancer-vaccines-overview"
+          ],
+          "whitespaceNormalizedParents": [
+            "cancer-vaccines-overview"
+          ],
+          "exactSelectedIndexMatch": true
+        }
+      },
+      "scientificAcceptance": false
+    },
+    {
+      "assignmentIndex": 21,
+      "key": "Takeaway caption",
+      "characters": 267,
+      "valueSHA256": "68e2ee360aa9ae427d0f7afed73161d93044112e2b5e2821b0af8653cce28546",
+      "matches": {
+        "original": {
+          "exactParents": [
+            "cancer-vaccines-overview"
+          ],
+          "whitespaceNormalizedParents": [
+            "cancer-vaccines-overview"
+          ],
+          "exactSelectedIndexMatch": false
+        },
+        "later": {
+          "exactParents": [
+            "cancer-vaccines-overview"
+          ],
+          "whitespaceNormalizedParents": [
+            "cancer-vaccines-overview"
+          ],
+          "exactSelectedIndexMatch": false
+        }
+      },
+      "scientificAcceptance": false
+    }
+  ],
+  "fieldsCompared": 6,
+  "initialFieldsCompared": 5,
+  "wholeIndexRead": false
+}

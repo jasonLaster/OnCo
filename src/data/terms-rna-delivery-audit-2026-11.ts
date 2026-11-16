@@ -200,7 +200,7 @@ export const rnaDeliveryTerms: TermInput[] = [
     "kind": "term",
     "name": "RNA-lipoplex",
     "category": "Treatment jargon",
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-16",
     "aka": [
       "RNA-LPX",
       "RNA lipoplex",
@@ -222,6 +222,9 @@ export const rnaDeliveryTerms: TermInput[] = [
         "label": "Impact of PEGylation and hyaluronan functionalization on lipoplex-mediated mRNA delivery to the canine retina.",
         "url": "https://doi.org/10.1080/10717544.2025.2544688"
       }
+    ,
+      {"label":"Zhang et al.: two-reporter RNA co-encapsulation and single-cell expression (online 2021; issue 2022)","url":"https://doi.org/10.1002/advs.202102072"},
+      {"label":"Chen et al.: microbubble-bound versus co-administered mRNA lipoplexes (2024)","url":"https://doi.org/10.1002/advs.202306139"}
     ],
     "tags": [
       "delivery-vehicle",
@@ -243,6 +246,9 @@ export const rnaDeliveryTerms: TermInput[] = [
     ],
     "notes": [
       "Appelbaum and colleagues measured RNA complexation by gel electrophoresis separately from light-scattering size and zeta potential in stated media and reagent lots. Report the assay and denominator behind any complexed or encapsulated fraction, and assess RNA integrity separately. These product measurements do not establish cytosolic release or expression. In a vaccine, expression in an antigen-presenting cell is also an earlier observation than peptide display, antigen-specific recognition or tumour control."
+    ,
+      "Multiple RNAs raise separate questions: whether RNA products are mixed, whether RNAs share a formulation, whether individual particles carry both, and whether the same cells express both proteins. Zhang and colleagues used Lipofectamine 2000 to compare premixed eGFP and mCherry RNAs with mixtures of single-RNA lipoplexes. In HeLa cells, the mixture could match the population-average ratio while individual cells showed variable uptake and expression; joint formulation improved the single-cell correspondence. Mouse embryonic-stem-cell-derived retinal organoids and zebrafish embryo hindbrain injections showed the same qualitative contrast. Input ratios were RNA mass ratios, and reporter fluorescence was measured separately from labelled-RNA uptake. The reporters differed in detection and/or expression. Average strand loading and assumed even mixing do not establish every particle's cargo, and fluorescence ratios do not by themselves specify absolute protein molar ratios or functional assembly. This study of reporters and a research reagent does not establish that every carrier or therapeutic RNA mixture behaves the same.",
+      "In a different comparison, Chen and colleagues attached DOTAP/DOPE lipoplexes carrying one mCherry reporter to polymer microbubbles or gave the lipoplexes beside the bubbles. They tested 4T1 cells and intravenously treated female BALB/c mice with subcutaneous 4T1 tumours, six per group. With ultrasound, separate administration gave greater reporter-positive tumour area and signal farther from vessels; attachment favoured vascular and perivascular signal and was more ultrasound dependent in the cell-culture comparison. Tissue percentages measured fluorescent image area, not the fraction of all tumour cells, and distances over 50 micrometres were excluded from the vessel analysis. Off-site signal was lower in spleen with attachment, while liver differences were not statistically significant. This compares a physical delivery assembly, not whether two RNAs enter the same cell; reporter expression does not demonstrate cancer control or clinical safety."
     ]
   },
   {

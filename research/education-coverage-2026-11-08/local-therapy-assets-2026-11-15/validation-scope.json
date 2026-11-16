@@ -1,0 +1,674 @@
+{
+  "newDataChanges": 2,
+  "changedRecordIds": [
+    "imrt-term",
+    "gray-unit"
+  ],
+  "changedFieldsPerOwner": [
+    "tldr",
+    "summary",
+    "asOf",
+    "links"
+  ],
+  "lastFullGatedDataCommit": "eb05ac6ec516ff22273ee1ef653e6cd1c6f40cae",
+  "fullGates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.27
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.24
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.02
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 314.64
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "passingFiles": 293,
+  "passingTests": 3101,
+  "skippedTests": 2,
+  "newFullGatesRun": true,
+  "wholeGraphPreservation": {
+    "beforeGraphSHA256": "7ed13fd1188b814e180eb591e909d1723d5810c2e72f9ba2238a362c7fbdd048",
+    "afterGraphSHA256": "c9e3d75ee58abe5e9c10e80d4873b2c0852046a00d3de1cb974846c157698111",
+    "records": 23091,
+    "changedIds": [
+      "imrt-term",
+      "gray-unit"
+    ],
+    "changedFields": [
+      {
+        "id": "imrt-term",
+        "fields": [
+          "tldr",
+          "summary",
+          "asOf",
+          "links"
+        ]
+      },
+      {
+        "id": "gray-unit",
+        "fields": [
+          "tldr",
+          "summary",
+          "asOf",
+          "links"
+        ]
+      }
+    ],
+    "allOther23089RecordsExact": true,
+    "allOtherEditedOwnerFieldsExact": true,
+    "selectedRootSchemasParsed": 17,
+    "peerOnlyRecords": 0,
+    "newIds": 0,
+    "registrationsChanged": 0,
+    "aliasesChanged": 0,
+    "relationshipsChanged": 0,
+    "priorNotesExact": true,
+    "priorLinksPreservedInOrder": true,
+    "sourceFile": "src/data/terms-jargon.ts"
+  },
+  "actualAPICheck": {
+    "kind": "Actual existing API and context writer verification",
+    "dataCommit": "eb05ac6ec516ff22273ee1ef653e6cd1c6f40cae",
+    "checks": [
+      {
+        "id": "breast-conserving-surgery-versus-mastectomy",
+        "recordSHA256": "dd3d2ac0f3cf6591018adac5e106aa81d1ba5e55eb1deaca99f724c3beee260a",
+        "actualJSONSHA256": "f9b716151f28d289ef922651c98a8cde4400e2a5a777e9fdd4fc580d5ef92b91",
+        "actualMarkdownSHA256": "d9f444c3423ab7825ece29409a02125028b701b22df737e313360e7763dad6fa",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 1
+      },
+      {
+        "id": "breast-reconstruction",
+        "recordSHA256": "172200283bbc6dc3ab74f09a331e12f1e0a133d5004383825c07ee543703387e",
+        "actualJSONSHA256": "93ad4f1d9ab22dabf4735914c89b01749283e39299e35edd758c32d4a4016676",
+        "actualMarkdownSHA256": "d8de7221bad22ecea1e690f88ec6e425e260fa36b6321f9a5c4953b46ca9da57",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 3
+      },
+      {
+        "id": "sentinel-node",
+        "recordSHA256": "547cca201930e590f1cefe49c534c5ba38420a4694e35c1c158f26a09c2fe332",
+        "actualJSONSHA256": "561e81e9df9acd4c993e6ccdda849e4df499e2203765ba39e3e53de4947bd414",
+        "actualMarkdownSHA256": "a431e03dc31f9e37689ab6bc8cfb1ae646b2f480480f966413db464037d7bfa3",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "thermal-ablation",
+        "recordSHA256": "c40361fb9dbe5153587428b37d1a4dc79f094ec8e13e83f27c407ad668577ceb",
+        "actualJSONSHA256": "3da39b01cb71dd37656e70c8da1d0ae9465700d0d403647df23ca59bfe0ce7d4",
+        "actualMarkdownSHA256": "d4603c3c54e450ecc8633f1e3bfed433840d24031ea0b713d81f972c8c891541",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 10
+      },
+      {
+        "id": "sbrt",
+        "recordSHA256": "32e5a597db0b95972d77dc9ee956fe02a067e5e9839e39697ef92b9148fc0721",
+        "actualJSONSHA256": "c02b25ba136f48017969a6e0723cf1ebb2b48ab101672086f2e3c4a348e72526",
+        "actualMarkdownSHA256": "31ee39e267703ef687a81b679d99b464a0604e07e8d65e61cdf8102265a30f9c",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 14
+      },
+      {
+        "id": "surgical-resection-specimen",
+        "recordSHA256": "63ca36dbe7458ba35bc4f8d42df691692519871abdedd28436a86a9e5dbbe9ef",
+        "actualJSONSHA256": "775e89acaa83ded23510d3c45f4f986eec7b483e262490a2c43b79029aeac497",
+        "actualMarkdownSHA256": "0eb286663200c95f8f8023f1b76f3938a6b62e13f1b34799771dfa227f5303c6",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 2
+      },
+      {
+        "id": "radiotherapy",
+        "recordSHA256": "4346af735e57d644f0130f3f4721c6332c5f2cf2e0b7adb77f8440e2f22d52c2",
+        "actualJSONSHA256": "8a5b8137fcd78bf36a1ad89ccaebebb2223793c0910362f0bdfb7cb7e45a7ad1",
+        "actualMarkdownSHA256": "62009b0b90b1d3b76741525fcbdd66f1f2c9726a5bb8d784442830522101bd27",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 5
+      },
+      {
+        "id": "mastectomy",
+        "recordSHA256": "442fc5892a6161970fb372c38cf102016762495c4043fcddbf0be50204116ac7",
+        "actualJSONSHA256": "bec961d729ca7389b8c3fe24045ad0465ae96f07ffa360b0117bcfd0d3baa5f0",
+        "actualMarkdownSHA256": "253c79938e2aaa01bc4f6c0ea4d9a9ca3d973410c83f98b4877706227dc26b14",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 4
+      },
+      {
+        "id": "lumpectomy",
+        "recordSHA256": "ef2c71b9c51a345f0a3d4d6909771c9142fc9d93b3867246b8ff3d7bbb027bb4",
+        "actualJSONSHA256": "5c7a189f0b98114288a293835aca8e0beae92df89f1b1f9bc41f26757f9bdf3f",
+        "actualMarkdownSHA256": "8e39558ae92fb9c555506aae5137ff83454be216cf677b53d3b82e6cf29eac06",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 1
+      },
+      {
+        "id": "sentinel-lymph-node-biopsy",
+        "recordSHA256": "b37a6086ce5e6ab068fd11e92da1b375765e7727e614cba5970172237865a31d",
+        "actualJSONSHA256": "dbd88abf20faa2698476e63a00115cac4f3239fc85b65635c08aa7637529ae6c",
+        "actualMarkdownSHA256": "d2239e673ba91cebe2d4ab45acbeded7e48ee9357e29c32dc3f09cefa0d1f4b0",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "radiofrequency-ablation",
+        "recordSHA256": "777c7f00ae81d7f4f6595cf67c0f3c49499a5bbdf40f73da35e52ae2ad1eacd2",
+        "actualJSONSHA256": "79ceccbda0dd8427c8140eccf7f37e3a142250a98af480f5f28ff6bd4adb4fcb",
+        "actualMarkdownSHA256": "45d230ddfa304116ccab0396d3a825d7d99a0e00213a305f216ab28971ac82e7",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 5
+      },
+      {
+        "id": "microwave-ablation",
+        "recordSHA256": "df90ac7478c99b438340b1fc40ea57befa9dc20a0b91fb016dd7eb88f451c1ab",
+        "actualJSONSHA256": "49a14ef4ea19f9520f668bf738f6a66acaed8fd941ce11ab6ff9d14b7ff56d70",
+        "actualMarkdownSHA256": "02859ebe165363ad84217a4ba40bfc40ce484e2b97aa73f3da3cc4215bcdf480",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 2
+      },
+      {
+        "id": "cryoablation",
+        "recordSHA256": "7183ebacabe4c614ce994e427b27c9c599083e1f30aa38a768114659b19dc108",
+        "actualJSONSHA256": "066d330212be5b56572c7874924e2c680bb10ec3174421c47ed08aa68a7ffecb",
+        "actualMarkdownSHA256": "9c568746d787a69c2b8e197a9808f858a7eee6ce78a052b76c6a1aaedfbfe77f",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 7
+      },
+      {
+        "id": "sbrt-term",
+        "recordSHA256": "be389c0e3eb1557c6d8360248cef0a48ed4e5e903e75e602f347c639fad9531a",
+        "actualJSONSHA256": "82fcf5d927ca8ed61a9d04e4daa51517da8188ed0d709a32925be11f7be95a0a",
+        "actualMarkdownSHA256": "2baf0ea09309d096a50f1bb9918337fe488b6e755d19376e89047b33fc2b37d2",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "imrt-term",
+        "recordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "actualJSONSHA256": "2a165a5e76b923c5633ce6c3b42b7b5b3d664fd411c812e365b0aaceeff09cdf",
+        "actualMarkdownSHA256": "9dda01815444ba71a0c32b2997e3de328911143c4cb1e69ac835d040081f0063",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 3
+      },
+      {
+        "id": "hypofractionation",
+        "recordSHA256": "e5439aa50ddfac8424f9e99dd5b558731bd612ff092828328c2839b1480c1669",
+        "actualJSONSHA256": "830bcfd45991d40828a194d6e638b66df519968480668361e78a4418bf2520d4",
+        "actualMarkdownSHA256": "cce0fc23d6687886b198787300c1af705c4fdc0e95807eb5a57f5991648ab0e9",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 11
+      },
+      {
+        "id": "gray-unit",
+        "recordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "actualJSONSHA256": "003a04402878b17b522644e8c688690ff6e26ff1919f350b56c254c08f70e72c",
+        "actualMarkdownSHA256": "48817af1073b6454e1cfa4e39827940e54efc0df9c3561a6476d084b581bfbc1",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 3
+      }
+    ],
+    "actualRegisteredRootExports": 17,
+    "exactRootProofPassagesInMarkdown": 71,
+    "peerOnlyRecordsNotExported": 0,
+    "commands": [
+      {
+        "script": "scripts/build-api.ts",
+        "exitCode": 0,
+        "seconds": 24.98
+      },
+      {
+        "script": "scripts/build-context.ts",
+        "exitCode": 0,
+        "seconds": 4.35
+      }
+    ],
+    "writerSourceEdited": false,
+    "privateChildFilesystemRedirectionOnly": true,
+    "writesToCheckoutPublicPrevented": true,
+    "trackedWorkingTreeUnchanged": true,
+    "hostedAPIOrMainOrLiveAcceptance": false
+  },
+  "staticRootReaders": {
+    "checks": [
+      {
+        "id": "breast-conserving-surgery-versus-mastectomy",
+        "file": "breast-conserving-surgery-versus-mastectomy.html",
+        "sha256": "dc485f1050fe90b1eb88b7a0090eec918d590488e3737fe99e6765648b3768df",
+        "bytes": 46790,
+        "recordSHA256": "dd3d2ac0f3cf6591018adac5e106aa81d1ba5e55eb1deaca99f724c3beee260a",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "breast-reconstruction",
+        "file": "breast-reconstruction.html",
+        "sha256": "8b5907e1898f82fb8885a283de3053c644edc31c428fecaa330e4892f14717d6",
+        "bytes": 41147,
+        "recordSHA256": "172200283bbc6dc3ab74f09a331e12f1e0a133d5004383825c07ee543703387e",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "sentinel-node",
+        "file": "sentinel-node.html",
+        "sha256": "132737a49c87e54b318da5389d1bb02f05c844e1fca31400baa13e2f3a2c8d6f",
+        "bytes": 64152,
+        "recordSHA256": "547cca201930e590f1cefe49c534c5ba38420a4694e35c1c158f26a09c2fe332",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "thermal-ablation",
+        "file": "thermal-ablation.html",
+        "sha256": "0f694c3a5ab0268ba4520600de22e40f52e93fb28775a38819d25232214ce547",
+        "bytes": 53115,
+        "recordSHA256": "c40361fb9dbe5153587428b37d1a4dc79f094ec8e13e83f27c407ad668577ceb",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "sbrt",
+        "file": "sbrt.html",
+        "sha256": "b6c8c9b8af1673d07db01e7f7523320bc9e492770d74bdfebb825edd1fe3d7d9",
+        "bytes": 87133,
+        "recordSHA256": "32e5a597db0b95972d77dc9ee956fe02a067e5e9839e39697ef92b9148fc0721",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "surgical-resection-specimen",
+        "file": "surgical-resection-specimen.html",
+        "sha256": "aab7ec1664ad7e896f3952abf76bed385f0924540aa98c842ba5ef1ddfcec398",
+        "bytes": 22384,
+        "recordSHA256": "63ca36dbe7458ba35bc4f8d42df691692519871abdedd28436a86a9e5dbbe9ef",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "radiotherapy",
+        "file": "radiotherapy.html",
+        "sha256": "54e17a6b5cfc3ffcf5c14b987ccc9bd20d459478816e57d2b9cae26e5161c29f",
+        "bytes": 76921,
+        "recordSHA256": "4346af735e57d644f0130f3f4721c6332c5f2cf2e0b7adb77f8440e2f22d52c2",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "mastectomy",
+        "file": "mastectomy.html",
+        "sha256": "a4743194831d3bb79d215b1123b5cfd50b0101126e66fed5048f47473bc13bbe",
+        "bytes": 46878,
+        "recordSHA256": "442fc5892a6161970fb372c38cf102016762495c4043fcddbf0be50204116ac7",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "lumpectomy",
+        "file": "lumpectomy.html",
+        "sha256": "d9168e3b2ed8c9e9fa3d13d305ca5f430d7b8deaf3edc8ffe6b3e1f535d8fcb1",
+        "bytes": 44135,
+        "recordSHA256": "ef2c71b9c51a345f0a3d4d6909771c9142fc9d93b3867246b8ff3d7bbb027bb4",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "sentinel-lymph-node-biopsy",
+        "file": "sentinel-lymph-node-biopsy.html",
+        "sha256": "82af97acae24dcb28894c3da240e690afbfc0af6837fdd37e7d35e7f1b355c4d",
+        "bytes": 48773,
+        "recordSHA256": "b37a6086ce5e6ab068fd11e92da1b375765e7727e614cba5970172237865a31d",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "radiofrequency-ablation",
+        "file": "radiofrequency-ablation.html",
+        "sha256": "5c29f18711e8b9fb500af04465e3021aa97b1bf88b1a0a4d4c352b60cd19d644",
+        "bytes": 25911,
+        "recordSHA256": "777c7f00ae81d7f4f6595cf67c0f3c49499a5bbdf40f73da35e52ae2ad1eacd2",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "microwave-ablation",
+        "file": "microwave-ablation.html",
+        "sha256": "74626cd313e58352acd63d126b1fa548b17f09283861ba8183a26870d7c8279d",
+        "bytes": 22540,
+        "recordSHA256": "df90ac7478c99b438340b1fc40ea57befa9dc20a0b91fb016dd7eb88f451c1ab",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cryoablation",
+        "file": "cryoablation.html",
+        "sha256": "3f36e5321c090dc94f266b721180777d0bff69ddad316494d50e0f7f865e9bef",
+        "bytes": 25808,
+        "recordSHA256": "7183ebacabe4c614ce994e427b27c9c599083e1f30aa38a768114659b19dc108",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "sbrt-term",
+        "file": "sbrt-term.html",
+        "sha256": "f9b1587f1e74258cea89831d4d2d11b12a14fc4a958c9a7770f280284b30ceee",
+        "bytes": 31646,
+        "recordSHA256": "be389c0e3eb1557c6d8360248cef0a48ed4e5e903e75e602f347c639fad9531a",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "imrt-term",
+        "file": "imrt-term.html",
+        "sha256": "a6f5765ba5183b22839e89682224cd50b104fbd8571c61af5a6a8ad227611a83",
+        "bytes": 27148,
+        "recordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "hypofractionation",
+        "file": "hypofractionation.html",
+        "sha256": "0147dd1b34ba019135b1e37918f7d291e66ff1d7ca3ec74eb251ee6269c26c12",
+        "bytes": 42709,
+        "recordSHA256": "e5439aa50ddfac8424f9e99dd5b558731bd612ff092828328c2839b1480c1669",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "gray-unit",
+        "file": "gray-unit.html",
+        "sha256": "c08068515fdf3fe1409628f029903c1341ed47f23c355e19c1992063ebca44c8",
+        "bytes": 23224,
+        "recordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "actualRegisteredRootReaders": 17,
+    "selectedSchemaParses": 17,
+    "peerReadersRendered": 0,
+    "unmergedContributorFieldsSelected": false,
+    "proposedPeerFields": 0,
+    "ordinaryLayerRestored": true,
+    "staticSSRVerificationOnly": true,
+    "hostedBrowserHydrationAccessibilityMobileOrIndependentAcceptance": false
+  },
+  "readerContentChecks": {
+    "actualRootReadersRendered": 17,
+    "rootRecordsSchemaParsed": 17,
+    "peerReadersRendered": 0,
+    "wholeDecodedReaders": [
+      "gray-unit",
+      "imrt-term"
+    ],
+    "wholeDecodedCharacters": 8801,
+    "smallestReaderInspected": "gray-unit",
+    "bothChangedDefinitionsAndAllSummaryParagraphsPresent": true,
+    "sourceURLsPresentAllRootReaders": true,
+    "other15ReadersReadingDepth": "Static SSR and source-link checks;selected teaching fields read separately,not every full decoded page.",
+    "retainedClinicalAssertionsNotBlanketRecertified": true,
+    "borrowedGrayUnitSchematicResidual": "P65-P01",
+    "browserHydrationMobileAccessibilityOrExpertAcceptance": false
+  },
+  "summaryConsumerResidual": {
+    "recordIds": [
+      "imrt-term",
+      "gray-unit"
+    ],
+    "canonicalEnglishLeadsChanged": true,
+    "eighteenStoredSlotsPreserved": true,
+    "slots": [
+      {
+        "id": "imrt-term",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Haces de radiación conformados y de intensidad variable desde muchos ángulos, de modo que la dosis se ajusta al tumor y evita el tejido sano, comprobados frente a imágenes diarias para que lleguen donde se planificó.",
+        "effectiveTextSHA256": "19e43f445d1dc88236538c176608805ebfea90970c2b316807e790fd9d2fbad5",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "La unidad de dosis de radiación absorbida por el tejido: un gray es un julio por kilogramo. Un tratamiento curativo suele ser de 50-70 Gy en total; un tratamiento único para el dolor óseo es de 8 Gy. Los radiofármacos, en cambio, se prescriben por actividad en becquerelios (GBq).",
+        "effectiveTextSHA256": "07b03a65ae4335580a62ddfea7dd38fd499d83ffe69bd1593289478a813a4348",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "从多个角度发出、形状经过塑形且强度可变的放射线束，使剂量紧贴肿瘤并避开健康组织，并通过每日影像核对以确保按计划落点。",
+        "effectiveTextSHA256": "b9796de9cb4c09c0125c6cd5c01470b854f1a008bd89b86da646a6ddc988c41f",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "组织吸收辐射剂量的单位：1戈瑞等于每千克1焦耳。根治性疗程通常总计50-70 Gy；一次骨痛姑息治疗为8 Gy。放射性药物则按活度以贝克勒尔（GBq）来处方。",
+        "effectiveTextSHA256": "9522cbfd223b391404b77d0f369db57b01e3c22d78864a661d6e31ac61a22375",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Feixes de radiação moldados e com intensidade variada a partir de muitos ângulos, para que a dose se ajuste ao tumor e poupe o tecido saudável, verificados contra imagens diárias para que atinjam o local planejado.",
+        "effectiveTextSHA256": "12678791165488d642273326f40398b0789fed4bc79052156d457d949b63192b",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "A unidade de dose de radiação absorvida pelo tecido: um gray é um joule por quilograma. Um tratamento curativo é tipicamente de 50-70 Gy no total; um tratamento único para dor óssea é de 8 Gy. Os radiofármacos, em vez disso, são prescritos por atividade em becquerels (GBq).",
+        "effectiveTextSHA256": "3ca97932958b4cb2c5cd54f5ee097bf0f4b8ec996a59f262e474f0083ad8d0dc",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "कई कोणों से आकार दी गई और तीव्रता में बदली गई रेडिएशन किरणें, ताकि खुराक ट्यूमर से चिपकी रहे और स्वस्थ ऊतक को छोड़ दे, और रोज़ाना इमेजिंग से जांची जाए कि वह वहीं पड़े जहां योजना थी।",
+        "effectiveTextSHA256": "89bc6d23c1e03b9e97e4728de0833054949e75a2ab16548dac274f4ddde8ff08",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "ऊतक द्वारा अवशोषित विकिरण खुराक की इकाई: एक ग्रे का मतलब है एक जूल प्रति किलोग्राम। उपचारात्मक कोर्स आम तौर पर कुल 50-70 Gy होता है; हड्डी के दर्द का एकल उपचार 8 Gy होता है। रेडियोफार्मास्यूटिकल इसके बजाय बेकरेल (GBq) में सक्रियता के अनुसार निर्धारित किए जाते हैं।",
+        "effectiveTextSHA256": "b14697431b442e37e048bd74ab91588080db530fa312863f2cf6e4a6d0086b4e",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Des faisceaux de rayonnement modelés et d'intensité variable selon de nombreux angles, de sorte que la dose épouse la tumeur et épargne les tissus sains, vérifiés par imagerie quotidienne pour qu'ils atteignent la cible prévue.",
+        "effectiveTextSHA256": "0f7a61f72580039f06897020cf76e72f47f20d7acf0ec8ff1a68326b90c91e2a",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "L'unité de dose de rayonnement absorbée par les tissus : un gray correspond à un joule par kilogramme. Un traitement curatif totalise généralement 50-70 Gy ; une séance unique contre les douleurs osseuses est de 8 Gy. Les radiopharmaceutiques, eux, sont prescrits en activité, en becquerels (GBq).",
+        "effectiveTextSHA256": "3ae62f35f2dfaa9e6cf5bedee2ce02eea07f3934cdaecfdb17559a0e2ac729c3",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Aus vielen Winkeln geformte und in der Intensität variierte Strahlenbündel, sodass die Dosis eng am Tumor anliegt und gesundes Gewebe verschont, kontrolliert anhand täglicher Bildgebung, damit sie dort landet, wo geplant.",
+        "effectiveTextSHA256": "a6d06387938d784e7d226aa5b07829a658d57b9c69c29a9c1c362dbef57ee9fb",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Die Einheit der vom Gewebe aufgenommenen Strahlendosis: Ein Gray entspricht einem Joule pro Kilogramm. Eine kurative Behandlung umfasst typischerweise insgesamt 50-70 Gy; eine einmalige Bestrahlung gegen Knochenschmerzen beträgt 8 Gy. Radiopharmaka werden dagegen nach Aktivität in Becquerel (GBq) verordnet.",
+        "effectiveTextSHA256": "90cd0a6450192a561dcec10ef3d8f38ca8b61f719d0c335204b076ce9da06e7b",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "多くの角度から形状と強度を変えて照射する放射線ビームで、線量が腫瘍に密着し健康な組織を避けるようにし、計画どおりの位置に当たるよう毎日の画像で確認する。",
+        "effectiveTextSHA256": "da702598210fc239c59c445b3b6b87173ae3d295aa6dc09190155ef984cd4e8c",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "組織に吸収された放射線量の単位で、1グレイは1キログラムあたり1ジュールに相当する。根治的な治療は通常合計50-70 Gy、骨の痛みに対する1回照射は8 Gyである。放射性医薬品はこれとは異なり、ベクレル（GBq）単位の放射能で処方される。",
+        "effectiveTextSHA256": "9a57d63297333c66dc724fe7cc86ecb86759880da0ea43dc8fe95fdbf3f33f95",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "حزم إشعاعية مشكّلة ومتفاوتة الشدة من زوايا متعددة، بحيث تلتصق الجرعة بالورم وتتجنب الأنسجة السليمة، وتُراجع مقابل تصوير يومي لضمان وصولها حيث خُطط لها.",
+        "effectiveTextSHA256": "db5c5816c31070d3a05b9812bcaece92ea4a3b24142b8321795804763425fd82",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "وحدة جرعة الإشعاع التي تمتصها الأنسجة: الغراي الواحد يساوي جولا واحدا لكل كيلوغرام. يبلغ العلاج الشافي عادة 50-70 Gy إجمالا؛ والجلسة الواحدة لتسكين ألم العظام 8 Gy. أما المستحضرات الإشعاعية فتُوصف حسب النشاط بالبيكريل (GBq).",
+        "effectiveTextSHA256": "d00c59e9b9ee12f3ec429fba9f7e694eb68b8e30b2908388060e1be922d43677",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "imrt-term",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "Modern external beam radiotherapy shapes and varies beams from many angles so the dose hugs the tumour and misses healthy tissue, checked against daily imaging.",
+        "effectiveTextSHA256": "6817dd5b8fd2d24eb9235c5c796d555879d0bd74964c9c92f376bbd1256b943d",
+        "canonicalRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "gray-unit",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": true,
+        "effectiveText": "The gray is the unit of radiation dose absorbed by tissue, with a curative course typically adding up to 50 to 70 gray over several weeks.",
+        "effectiveTextSHA256": "8fa6d9216abf13e3bf1752538306dd8f00e3ebd00f23f602a06d632aec064c37",
+        "canonicalRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428",
+        "peerNotRegisteredAtRoot": false
+      }
+    ],
+    "effectiveSlotValuesChanged": 0,
+    "availabilityChanged": 0,
+    "wholeHelperTablesUnchanged": 9,
+    "unchangedInheritedLongCache": [
+      {
+        "id": "radiotherapy",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "stored": true,
+        "storedSHA256": "f4a682be15f175fcb98eb5208ce144b82cf6b5aa0e4609aa541075b1ea3b5108",
+        "sourceHash": "d89e494c3210356ee5734aa13bbd8c8b67000310204f2f1368453dbca63e70c4",
+        "accepted": true
+      }
+    ],
+    "alignmentFollowup": "Review eighteen stored language/simple short summaries through the existing workflow. Canonical English and stored long-cache flags are separate;no new language acceptance.",
+    "languageCredit": 0
+  },
+  "sourceFirstSealUnchanged": true,
+  "fullNextBuild": false,
+  "browserOrHumanAcceptance": false
+}

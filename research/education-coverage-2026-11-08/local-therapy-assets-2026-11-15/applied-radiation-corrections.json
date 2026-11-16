@@ -1,0 +1,142 @@
+{
+  "kind": "Scoped radiation unit and normal tissue definition corrections",
+  "changes": [
+    {
+      "id": "imrt-term",
+      "ownerFile": "src/data/terms-jargon.ts",
+      "guard": "Direct exported termsJargon array;literal t({...}) object,id,name and exact scalar/default-date values. No nested id or generic brace matching.",
+      "beforeRecordSHA256": "cfeb081abd5b1b3c05023051fea6d390ed65b9663c89dcae6d7548c6ef4fb9e0",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "Radiation beams shaped and varied in intensity from multiple angles, or while the machine rotates around the patient (VMAT), so the dose hugs the tumour and misses healthy tissue, checked against imaging before each session so it lands where planned. It cut dry mouth in head and neck cancer and rectal toxicity in prostate cancer.",
+          "beforeSHA256": "a2af73b0d48f61bf81401148d9aa60e941d93ed5175ca29ef091f0cc0e58d320",
+          "after": "Modern external beam techniques shape dose and use imaging to check position. They can reduce exposure to nearby healthy tissues, but do not eliminate it.",
+          "afterSHA256": "4dc8b9bf565f5cf6c40c0dab771e59b18a1c32724558d548ea605c75465457a8"
+        },
+        {
+          "field": "summary",
+          "before": "Intensity-modulated radiotherapy (IMRT) sculpts dose with a multileaf collimator; volumetric modulated arc therapy (VMAT) does it while the machine rotates, in minutes; image-guided radiotherapy (IGRT) uses cone-beam CT or surface tracking before each fraction. Together they cut xerostomia in head and neck cancer (PARSPORT), rectal toxicity in prostate cancer and allowed hypofractionation. Planning quality depends on contouring, now aided by AI auto-segmentation. Proton therapy adds a sharper depth stop for selected tumours.",
+          "beforeSHA256": "f55d35945b50d361179a4b3c0542d5b9d3f76ecb8a7f6bd444b23725f553b8b7",
+          "after": "Intensity-modulated radiotherapy (IMRT) sculpts dose with a multileaf collimator; volumetric modulated arc therapy (VMAT) does it while the machine rotates, in minutes; image guided radiotherapy (IGRT) uses repeated imaging to check treatment position and adjust treatment if needed. Shaping and verifying dose can limit normal tissue exposure but do not eliminate it. Together they cut xerostomia in head and neck cancer (PARSPORT), rectal toxicity in prostate cancer and allowed hypofractionation. Planning quality depends on contouring, now aided by AI auto-segmentation. Proton therapy adds a sharper depth stop for selected tumours.",
+          "afterSHA256": "c170dcf5a45210219f916633b08fdfc30cca03159e98a6bbfe219963f08e3690"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeSHA256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-15",
+          "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Radiation_therapy#Intensity-modulated_radiation_therapy_(IMRT)"
+            }
+          ],
+          "beforeSHA256": "15ba264bfa2250aeefa9f338080d403e6f03e8922a5302ea9efe07335e8fa733",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Radiation_therapy#Intensity-modulated_radiation_therapy_(IMRT)"
+            },
+            {
+              "label": "NCI: external beam techniques, image guidance and normal tissue exposure",
+              "url": "https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/external-beam"
+            }
+          ],
+          "afterSHA256": "59eb9b58d54ce3a36acc2f67a93c99122e508a397a2aec8716006cdbae018284"
+        }
+      ],
+      "sourceReadReferences": [
+        "Official18 paragraphs26,39,74",
+        "Official19 paragraphs21,25,27,28,31,32,35"
+      ],
+      "rationale": "Replace the healthy tissue is missed implication and fixed imaging method/frequency shorthand with scoped normal tissue and repeated-imaging descriptions. Other retained clinical/device assertions are not freshly certified.",
+      "preserved": [
+        "all aliases and identities",
+        "all notes",
+        "existing link prefix",
+        "all relationships and registrations",
+        "all other owner fields and provenance"
+      ],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "afterRecordSHA256": "25984da522a16c71deb5aff748b5b4361d07e89ea44847ffde6ae7598f245ad2"
+    },
+    {
+      "id": "gray-unit",
+      "ownerFile": "src/data/terms-jargon.ts",
+      "guard": "Direct exported termsJargon array;literal t({...}) object,id,name and exact scalar/default-date values. No nested id or generic brace matching.",
+      "beforeRecordSHA256": "82482033e7ac16e4c82ef4a3f0fb1e514c370da959e89e5d539dd8c7285266bc",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "The unit of radiation dose absorbed by tissue: one gray is one joule per kilogram. A curative course is typically 50-70 Gy in total; a single bone-pain treatment is 8 Gy. Radiopharmaceuticals are prescribed by activity in becquerels (GBq) instead.",
+          "beforeSHA256": "e11be98f551f5db8f719e1e3f30e78a3b152ee4525d373e650b44704ea756a83",
+          "after": "Gray measures absorbed radiation energy per mass: one joule per kilogram. It is not the percentage of cells killed and does not by itself specify biological effect.",
+          "afterSHA256": "7f95bc712921e06ab2c4a56cefbe4102411c12792f05f4975c6f6e23e9b6cc62"
+        },
+        {
+          "field": "summary",
+          "before": "Because biological effect depends on both total dose and dose per fraction, different schedules are compared with the equivalent dose in 2 Gy fractions (EQD2) or biologically effective dose (BED); cervical brachytherapy aims for ≥85 Gy EQD2, early lung SBRT for BED ≥100 Gy. Dose escalation beyond 60 Gy did not help in stage III lung cancer (RTOG 0617) but did in prostate cancer. For radioligand therapy the administered activity (7.4 GBq of 177Lu-PSMA-617) is fixed, and dosimetry estimates the resulting gray to tumour and kidneys. Whole-body doses above about 4 Gy are lethal without marrow rescue, which is the basis of total body irradiation conditioning.",
+          "beforeSHA256": "6d7982c5f00f1a2eef1ad9724e263226136b27bb50a7f617e346c8a024a2ec8b",
+          "after": "Gray is a unit of absorbed radiation dose: one joule of energy deposited per kilogram of material. It does not state what fraction of cells died. The same absorbed dose can have different biological effects in different tissues or when delivered with different timing and fractionation. Total dose alone does not establish equivalent schedules.\n\nActivity describes nuclear transformations per second and is measured in becquerels. Absorbed dose describes deposited energy per mass and is measured in gray. An administered activity and the absorbed dose in a particular tissue are different quantities.",
+          "afterSHA256": "103b04ed576f2d0ce0eecf7da720c7bf7a9a4215b07a482e0097caa78b45583e"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-09",
+          "beforeSHA256": "deab17f5c24dfc69254d7427a910923048244bb75e30f66a7d2bc6916b4ca270",
+          "after": "2026-11-15",
+          "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gray_(unit)"
+            }
+          ],
+          "beforeSHA256": "901930bfb79f54b14621ba9c785684cf8e6666be49f21af18727cd89f245f299",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Gray_(unit)"
+            },
+            {
+              "label": "IAEA 2005 physics handbook: absorbed dose, activity and fractionation",
+              "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1196_web.pdf"
+            }
+          ],
+          "afterSHA256": "a09b5d99075691bcc4040740b240341857d39613cab55de5018c116ab5ff6d0a"
+        }
+      ],
+      "sourceReadReferences": [
+        "Official16 physical page87 / printed49: absorbed dose",
+        "Official16 physical pages539,540 / printed501,502: dose rate and fractionation",
+        "Official16 physical page592 / printed554: activity and absorbed dose",
+        "Official16 physical pages5,6: publication identity"
+      ],
+      "rationale": "Define the physical unit and distinguish activity and biological response. Withdraw the unsourced generic clinical dose and whole-body lethality digest from this unit definition rather than treating those quantities as universal rules.",
+      "preserved": [
+        "all aliases and identities",
+        "all notes",
+        "existing link prefix",
+        "all relationships and registrations",
+        "all other owner fields and provenance"
+      ],
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "afterRecordSHA256": "2e26714fa985798fe61e27847b63d1ad3f05e1627b13676b4ef27e8d60c07428"
+    }
+  ],
+  "newRecords": 0,
+  "rendererChanges": 0,
+  "newSourceLinks": 2,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

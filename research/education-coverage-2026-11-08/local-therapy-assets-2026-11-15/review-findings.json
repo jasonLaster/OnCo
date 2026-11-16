@@ -1,0 +1,68 @@
+{
+  "findings": [
+    {
+      "id": "P65-D01",
+      "recordId": "imrt-term",
+      "status": "corrected-and-fully-gated",
+      "finding": "The previous lead said shaped dose misses healthy tissue and specified one imaging approach before every fraction.",
+      "resolution": "State reduced rather than eliminated normal exposure and repeated image guidance. Retained VMAT,device,PARSPORT,prostate,AI and proton claims are not freshly recertified.",
+      "dataCommit": "eb05ac6ec516ff22273ee1ef653e6cd1c6f40cae"
+    },
+    {
+      "id": "P65-D02",
+      "recordId": "gray-unit",
+      "status": "corrected-and-fully-gated",
+      "finding": "The absorbed-dose definition carried generic clinical prescriptions,radiopharmaceutical activity and whole-body lethal-dose shorthand.",
+      "resolution": "Define joule/kg;distinguish absorbed energy,biological effect,fractionation and Bq activity. Withdraw unsuitably generic figures rather than declare every older number false. Retain aliases pending separate scope review.",
+      "dataCommit": "eb05ac6ec516ff22273ee1ef653e6cd1c6f40cae"
+    },
+    {
+      "id": "P65-I01",
+      "scope": "Selected global-index row",
+      "status": "index-owner-followup",
+      "finding": "The breast-surgery overview row stops at reconstruction while the complete parent alt continues with its role,numbered descriptions and boundaries.",
+      "resolution": "Preserve the complete parent alt and qualify the shortened index copy;only eight selected complete index rows per pin were read. No whole-index or runtime defect certification."
+    },
+    {
+      "id": "P65-G01",
+      "scope": "Retained shared-parent teaching",
+      "status": "prior-precision-residual-preserved",
+      "finding": "The lumpectomy-versus-mastectomy confusion bullet retains radiation closes most of that gap. Its precise recurrence comparison is outside the new anatomy asset task.",
+      "resolution": "Keep the earlier lesson-source precision finding;new native anatomy inspection does not close or regrade it."
+    },
+    {
+      "id": "P65-C01",
+      "scope": "Historical visual reports",
+      "status": "not-freshly-reproduced",
+      "finding": "Two old reviews report focus returning to BODY and Tab leaving a dialog.",
+      "resolution": "Preserve as a historical product/accessibility report,not a fresh browser observation or human approval."
+    },
+    {
+      "id": "P65-P01",
+      "scope": "Actual current gray-unit static reader",
+      "status": "product-owner-followup",
+      "finding": "The gray-unit reader inherits a PSMA/SSTR-positive-cell schematic from its radioligand technology relation;the caption discloses that borrowing,but it is not a physical-unit illustration.",
+      "resolution": "Preserve data relationships and route this concrete reader through the existing generic-schematic/header product follow-up. No renderer,schematic or approval override was applied."
+    },
+    {
+      "id": "P65-L01",
+      "status": "summary-alignment-review-pending",
+      "recordIds": [
+        "imrt-term",
+        "gray-unit"
+      ],
+      "finding": "All18 language/simple short-summary slots use stored values,so the canonical English corrections do not update effective text.",
+      "resolution": "Preserve every value,availability and review mark and queue alignment through the existing workflow."
+    },
+    {
+      "id": "P65-L02",
+      "status": "inherited-long-cache-not-new-acceptance",
+      "recordId": "radiotherapy",
+      "finding": "One unchanged Chinese long-summary cache has an inherited accepted flag.",
+      "resolution": "Record cache and source hashes;neither new language acceptance nor a changed canonical record is inferred."
+    }
+  ],
+  "expertAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

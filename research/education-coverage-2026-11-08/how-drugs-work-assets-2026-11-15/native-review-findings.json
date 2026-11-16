@@ -1,0 +1,24 @@
+{
+  "kind": "native-artwork-findings",
+  "freshWholeNativeViews": 20,
+  "protectedVariants": 18,
+  "assignedVariants": 2,
+  "priorGradesChanged": false,
+  "sourceEdited": false,
+  "browserOrExpertAcceptance": false,
+  "findings": [
+    {
+      "id": "P63-V01",
+      "severity": "precision",
+      "paths": [
+        "wiki/education/concepts/therapeutics/how-drugs-work/images/target-to-benefit-evidence-dark.png",
+        "wiki/education/concepts/therapeutics/how-drugs-work/images/target-to-benefit-evidence-light.png"
+      ],
+      "observation": "Older unembedded artwork asks whether a drug reaches its target in the engagement panel. Reaching a compartment alone does not establish target interaction. Its effect and clinical bar graphics have no defined measurement scale or named study.",
+      "disposition": "Assess these legacy assets separately and record the limits; no silent acceptance borrowed from the embedded v2 pair.",
+      "artifactApplicableAtBothPins": true,
+      "embeddedInSelectedParentAtEitherPin": false,
+      "newNativeEditProposed": false
+    }
+  ]
+}

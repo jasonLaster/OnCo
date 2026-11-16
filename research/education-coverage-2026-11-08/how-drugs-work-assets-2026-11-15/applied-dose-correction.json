@@ -1,0 +1,50 @@
+{
+  "kind": "Source-backed dose definition and FDA guidance qualification",
+  "id": "dose",
+  "ownerFile": "src/data/terms-basics.ts",
+  "factory": "t",
+  "beforeRecordSHA256": "30b5acb0d6d69c9c84e33a8bc488917c220d16792f00af26a8b3fd6034633121",
+  "fields": [
+    {
+      "field": "tldr",
+      "before": "How much of a drug is given, how often, and for how long. Cancer drugs have long been given at the highest dose a patient can stand, and regulators are now pushing for doses chosen for benefit rather than tolerability.",
+      "after": "Dose is the amount of a medicine. Dosage adds when it is given and for how long; dose intensity describes amount per unit time.",
+      "beforeSHA256": "e1764e97cb50ea25104e7e85815d8e29841c0bfbc483c89bd148bc0e86cd7d48",
+      "afterSHA256": "5beee8472c9310b83d7a6add442367dfa6a4fa3ac6b6cc9fe026ea1114d92256"
+    },
+    {
+      "field": "summary",
+      "before": "Chemotherapy doses are usually scaled to body surface area (mg/m²) or weight (mg/kg) and given in cycles, typically every one to three weeks, to let bone marrow recover; targeted drugs and antibodies are increasingly given at fixed doses. The traditional phase 1 approach escalates until side effects become dose-limiting and sets the maximum tolerated dose as the dose for later trials, a logic that suits chemotherapy but not targeted drugs, which may saturate their target well below the toxic dose; the FDA's Project Optimus now requires sponsors to compare doses. Dose reductions and interruptions for side effects are common in practice and do not necessarily reduce efficacy, as trials with lower-dose arms have shown for several drugs.",
+      "after": "Dose is the amount of a named medicine, in stated units. Dosage adds the interval between administrations and the duration of treatment. Cumulative dose is the total amount given, and dose intensity is that medicine's amount per defined unit of time. These quantities do not directly measure concentration at a target or clinical benefit.\n\nFDA's August 2024 oncology dosage-optimisation guidance recommends using exposure, activity, safety and tolerability to select and compare dosages during clinical development. It describes the historical maximum-tolerated-dose approach, but a higher tolerated dose does not by itself establish a better balance of benefit and harm. These are nonbinding recommendations with stated modality and development limits. The effects of a reduction, delay or interruption depend on the medicine, regimen and reason for the change.",
+      "beforeSHA256": "f5b6b2f1ab0f9e525d4e55611ded4050477078b53cb7a0fb55160444ca93dbb9",
+      "afterSHA256": "45639fe4a3d3b0c28a6bb8b10af59f9ded53908f79f96e8b99aad6485339deeb"
+    },
+    {
+      "field": "asOf",
+      "before": "2026-11-11",
+      "after": "2026-11-15",
+      "beforeSHA256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+      "afterSHA256": "68bbad58a1969b561d452f9d0d1029480bf2a576e56e3caa30766a8e150d1357"
+    }
+  ],
+  "sourceReadReferences": [
+    "official-text-blocks.json#5",
+    "official-text-blocks.json#6",
+    "official-text-blocks.json#7",
+    "official-text-blocks.json#8",
+    "PMID7626852"
+  ],
+  "rationale": "Distinguish administered quantity from dosage and intensity; replace an unqualified requires statement with the dated nonbinding FDA recommendation and preserve its defined scope.",
+  "withdrawnLegacyLeadClaims": [
+    "Universal one-to-three-week chemotherapy-cycle shorthand and a blanket body-size/fixed-dose contrast were removed from this definition lead.",
+    "The unqualified assertion that the historical maximum-tolerated-dose logic suits chemotherapy and not targeted drugs is replaced with the historical FDA account and the need to assess benefit and harm.",
+    "A broad several-drug lower-dose-equivalence claim is replaced with an interpretation tied to the medicine, regimen and reason for modification."
+  ],
+  "preserved": [
+    "All earlier notes, links, aliases, names, categories, relations, registrations and provenance."
+  ],
+  "newRecords": 0,
+  "rendererChanges": 0,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

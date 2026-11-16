@@ -1,0 +1,66 @@
+{
+  "findings": [
+    {
+      "id": "P63-D01",
+      "scope": "Applied registered-root record",
+      "recordId": "dose",
+      "status": "corrected-and-fully-gated",
+      "finding": "The previous lead conflated amount with schedule and asserted that FDA required dose comparisons.",
+      "resolution": "The amount, dosage, cumulative amount and intensity are separated; the August2024 FDA recommendation is dated, nonbinding and scoped. Existing notes, links, aliases, relationships and provenance remain.",
+      "dataCommit": "4d8c1afbbf33af763364d9ba5499b85eca26bb15"
+    },
+    {
+      "id": "P63-V01",
+      "severity": "precision",
+      "paths": [
+        "wiki/education/concepts/therapeutics/how-drugs-work/images/target-to-benefit-evidence-dark.png",
+        "wiki/education/concepts/therapeutics/how-drugs-work/images/target-to-benefit-evidence-light.png"
+      ],
+      "observation": "Older unembedded artwork asks whether a drug reaches its target in the engagement panel. Reaching a compartment alone does not establish target interaction. Its effect and clinical bar graphics have no defined measurement scale or named study.",
+      "disposition": "Assess these legacy assets separately and record the limits; no silent acceptance borrowed from the embedded v2 pair.",
+      "artifactApplicableAtBothPins": true,
+      "embeddedInSelectedParentAtEitherPin": false,
+      "newNativeEditProposed": false
+    },
+    {
+      "id": "P63-S01",
+      "scope": "Source-depth residual",
+      "status": "source-open",
+      "finding": "The2009 DOI metadata resolves, but its alleged Figure3A correction body was not read. The DOI yielded a meta-refresh landing page and its public publisher destination returned403.",
+      "resolution": "No figure-specific correction claim or complete-original-paper reading is credited."
+    },
+    {
+      "id": "P63-P01",
+      "scope": "Unmerged peer dependency",
+      "status": "peer-draft-only",
+      "recordId": "drug-target-engagement",
+      "finding": "Four scoped CETSA units have exact field evidence only in frozen PR371.",
+      "resolution": "Keep their peer status; the root graph does not register that owner, so no root API/reader or integration acceptance is claimed."
+    },
+    {
+      "id": "P63-L01",
+      "scope": "Stored short summaries",
+      "status": "alignment-review-pending",
+      "recordId": "dose",
+      "finding": "Eight language values and the simple-level value retain the older amount/schedule wording.",
+      "resolution": "All nine stored values and availability are preserved; align them through the existing summary/language workflow. No language review is claimed."
+    },
+    {
+      "id": "P63-G01",
+      "scope": "Guide precision",
+      "status": "lesson-owner-followup",
+      "finding": "The later-only combination table uses killing-probability language alongside an explicitly different growth-inhibition toy. Generic model ordering needs its stated bounded assumptions.",
+      "resolution": "The current owner names its72-hour viable-count inhibition endpoint, Chou method scope and different HSA/Bliss/Loewe assumptions. Do not silently transfer a death endpoint to that illustration."
+    },
+    {
+      "id": "P63-L02",
+      "scope": "Ancillary legacy field limits",
+      "status": "not-blanket-reverified",
+      "finding": "Selected records contain older disease-specific clinical, resistance, and known-biology model-validation assertions outside the scoped asset clauses.",
+      "resolution": "Reading the whole fields is not fresh support for every retained assertion. In particular the known-biology recovery record was not repurposed as the pharmacological mechanism owner."
+    }
+  ],
+  "expertAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

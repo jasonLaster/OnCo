@@ -1,0 +1,178 @@
+{
+  "kind": "Applied data edits and exact preservation",
+  "canonicalDataEdits": {
+    "changes": [
+      {
+        "recordId": "armored-car",
+        "field": "links",
+        "before": [
+          {
+            "label": "ClinicalTrials.gov NCT03373097: GD2-CART01 (Bambino Gesù phase 1/2)",
+            "url": "https://clinicaltrials.gov/study/NCT03373097"
+          },
+          {
+            "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+            "url": "https://www.fda.gov/media/156896/download"
+          },
+          {
+            "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+            "url": "https://doi.org/10.1056/NEJMoa1910607"
+          },
+          {
+            "label": "Chmielewski et al.: inducible IL-12 and macrophage recruitment in tumor models (2011)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21742772/"
+          },
+          {
+            "label": "Chmielewski and Abken: TRUCK terminology and NFAT control (2012 review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22274776/"
+          },
+          {
+            "label": "Narayan et al.: TGF-beta-insensitive PSMA CAR T-cell phase 1 study (2022)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35314843/"
+          },
+          {
+            "label": "Zhang et al.: inducible IL-12 TIL study and systemic toxicity (2015)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+          },
+          {
+            "label": "Chen et al.: endogenous-locus control of cytokine payloads in preclinical models (2025)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40604285/"
+          }
+        ],
+        "after": [
+          {
+            "label": "ClinicalTrials.gov NCT03373097: GD2-CART01 (Bambino Gesù phase 1/2)",
+            "url": "https://clinicaltrials.gov/study/NCT03373097"
+          },
+          {
+            "label": "FDA: CAR T-cell product design, testing and clinical pharmacology guidance (2024)",
+            "url": "https://www.fda.gov/media/156896/download"
+          },
+          {
+            "label": "Liu et al.: one cord-blood CAR-NK construct in lymphoid tumors (2020)",
+            "url": "https://doi.org/10.1056/NEJMoa1910607"
+          },
+          {
+            "label": "Chmielewski et al.: inducible IL-12 and macrophage recruitment in tumor models (2011)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21742772/"
+          },
+          {
+            "label": "Chmielewski and Abken: TRUCK terminology and NFAT control (2012 review)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22274776/"
+          },
+          {
+            "label": "Narayan et al.: TGF-beta-insensitive PSMA CAR T-cell phase 1 study (2022)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35314843/"
+          },
+          {
+            "label": "Zhang et al.: inducible IL-12 TIL study and systemic toxicity (2015)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/25695689/"
+          },
+          {
+            "label": "Chen et al.: endogenous-locus control of cytokine payloads in preclinical models (2025)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40604285/"
+          },
+          {
+            "label": "Hurton et al.: membrane-bound IL-15 support in experimental CAR T cells (2016)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27849617/"
+          }
+        ],
+        "beforeSHA256": "28b5d39545affbd568293c241caae9138c37e5c77324e449621a919d15cc5fd4",
+        "afterSHA256": "996477d8328d1b3579b6963e11bd26eee085e8649981b5830bcacde0492d4ad2",
+        "sourceId": "PMID27849617",
+        "rationale": "Adds the directly resolved and whole-abstract-read source for the existing surface-held cytokine-support clause. No prose, date, alias or relation changes.",
+        "id": "armored-car"
+      }
+    ],
+    "asOfUnchanged": true
+  },
+  "schematicDataEdit": {
+    "kind": "Schematic data label correction",
+    "file": "src/data/schematics.ts",
+    "factory": "S[\"car-t\"]",
+    "before": "CAR binds antigen (no MHC needed)",
+    "after": "Conventional CAR: no peptide-HLA needed",
+    "beforeFileSHA256": "addfc1a0c1361bf68d13a470279f6600b9fc6e079de485a1456d0327653a306d",
+    "afterFileSHA256": "5bc8604b2fcf3c63bd9e5dce8e76bb249fd372032fa8b98f7793807a73527628",
+    "classification": "data",
+    "reason": "The default conventional CAR scene must not universalize HLA independence to the separately documented peptide-HLA CAR exceptions.",
+    "sharedFactoryUsers": [
+      "car-t",
+      "glioma-car-t",
+      "armored-car"
+    ],
+    "geometryOrRendererCodeChanged": false,
+    "sourceReferences": [
+      "PMID27924074",
+      "PMID30045840",
+      "FDA-CAR"
+    ],
+    "newBrowserOrProductAcceptance": false
+  },
+  "dataCommit": {
+    "head": "d24d59e303e98ca785424ad8a52c86ac4aa4a973",
+    "base": "44fcc59ba3f60d3a392281e607f4ab73ae9e760d",
+    "branch": "codex/systematic-education-audit",
+    "committedFiles": [
+      "src/data/schematics.ts",
+      "src/data/technologies.ts"
+    ],
+    "allCommittedDataBytesMatchFullGateInputs": true,
+    "canonicalOwnersChanged": 1,
+    "canonicalFieldsChanged": 1,
+    "schematicDataLabelsChanged": 1,
+    "schematicGeometryChanged": false,
+    "newRecords": 0,
+    "newRegistrations": 0,
+    "allPriorProseDatesLinksAliasesRelationsAndTranslationsPreserved": true,
+    "oldEvidenceBindingsPreserved": true,
+    "shortSummaryValuesChanged": 0,
+    "effectiveSummaryOutputsChanged": 0,
+    "postGateDataEdits": false,
+    "pushed": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "changedRootIds": [
+    "armored-car"
+  ],
+  "canonicalOwnersChanged": 1,
+  "canonicalFieldsChanged": 1,
+  "schematicDataLabelsChanged": 1,
+  "selectedExistingRootSnapshotVersion": "proposal-support-bodies-60-root",
+  "selectedConsumerSnapshotVersion": "proposal-cell-therapy-asset-summary-consumers-2026-11-15",
+  "selectedRootIds": [
+    "armored-car",
+    "car-t",
+    "car-nk-macrophage",
+    "nk-cell-therapy",
+    "cellular-kinetics-and-persistence",
+    "logic-gated-therapeutics",
+    "safety-switch-car-t",
+    "t-cell-engager",
+    "tcr-t",
+    "til-therapy"
+  ],
+  "newCanonicalRecords": [],
+  "newRegistrations": [],
+  "rootGraphRecords": 23091,
+  "allEarlierNotesLinksAliasesRelationsProvenanceAndDatesPreserved": true,
+  "ordinaryGradesChanged": 0,
+  "oldEvidenceBindingsChanged": 0,
+  "unappliedGuideFinding": [
+    {
+      "sourceId": "P61-N01",
+      "assignmentIndices": [
+        0,
+        1
+      ],
+      "severity": "minor",
+      "scope": "orientation-label convention",
+      "finding": "Global header says T cell left, target right. The sequential first encounter places the A-bearing target to the left of the first T cell. Shapes/colors and time progression remain intelligible; clarify the header scope rather than infer a scientific route error.",
+      "proposalOnly": true,
+      "sourceFilesEdited": false
+    }
+  ],
+  "mainCredit": 0,
+  "liveCredit": 0
+}

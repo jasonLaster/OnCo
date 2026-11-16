@@ -1,0 +1,23 @@
+{
+  "kind": "Schematic data label correction",
+  "file": "src/data/schematics.ts",
+  "factory": "S[\"car-t\"]",
+  "before": "CAR binds antigen (no MHC needed)",
+  "after": "Conventional CAR: no peptide-HLA needed",
+  "beforeFileSHA256": "addfc1a0c1361bf68d13a470279f6600b9fc6e079de485a1456d0327653a306d",
+  "afterFileSHA256": "5bc8604b2fcf3c63bd9e5dce8e76bb249fd372032fa8b98f7793807a73527628",
+  "classification": "data",
+  "reason": "The default conventional CAR scene must not universalize HLA independence to the separately documented peptide-HLA CAR exceptions.",
+  "sharedFactoryUsers": [
+    "car-t",
+    "glioma-car-t",
+    "armored-car"
+  ],
+  "geometryOrRendererCodeChanged": false,
+  "sourceReferences": [
+    "PMID27924074",
+    "PMID30045840",
+    "FDA-CAR"
+  ],
+  "newBrowserOrProductAcceptance": false
+}

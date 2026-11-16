@@ -1,0 +1,96 @@
+{
+  "dataCommit": "d24d59e303e98ca785424ad8a52c86ac4aa4a973",
+  "rootRecords": 23091,
+  "selectedRecords": 10,
+  "checks": [
+    {
+      "id": "armored-car",
+      "recordSHA256": "de3eefa6956c54067358bc3e6cd56fbb8e8e3c50a264fa18219a18b14c350904",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "car-t",
+      "recordSHA256": "f2e266185e8e10f63d3bef07ed62a1cb83eac4b695f442997754ef95c58a9828",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "car-nk-macrophage",
+      "recordSHA256": "c08f794b74425243d298736167cfdea307f55a13ca112d8d0df7a5688f545a7b",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "nk-cell-therapy",
+      "recordSHA256": "277d59d2aa3f3d16aa3a774901cbdc6f2d5deabfbacc51e3fa2418915a651eb5",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "cellular-kinetics-and-persistence",
+      "recordSHA256": "286277e484793e2ba8e6c7f41279dd359552db2bce6bb4e2ed23be83d1816551",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "logic-gated-therapeutics",
+      "recordSHA256": "35569d927ecd00ddc4cee68f0a8ff1fcce618fec8d101fe203a9f5ef3cb69d51",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "safety-switch-car-t",
+      "recordSHA256": "bf89cc2b7f48c11ac29437e78816d9c3ba2610a0cedac41a6dd29596f0b0ba70",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "t-cell-engager",
+      "recordSHA256": "bf90e74dea2f6aee081121bc649b51fc797d066d511520bb3b82112394025df4",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "tcr-t",
+      "recordSHA256": "5ccc2f8eb193d7e5cdc632c8e0d95c323bca03b66b2b51bb17f5244abd9b913f",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    },
+    {
+      "id": "til-therapy",
+      "recordSHA256": "e3e909075b412c00ea0034636a73362ee5ec0f366ee6d37596f906f11b9a48e5",
+      "schemaParsed": true,
+      "exactSelectedRuntime": true
+    }
+  ],
+  "wholeSummaryTablesUnchanged": 9,
+  "allEarlierRecordFieldsExceptTheAppendedSourceLinkPreserved": true,
+  "schematicDataLabelOnlyChange": {
+    "kind": "Schematic data label correction",
+    "file": "src/data/schematics.ts",
+    "factory": "S[\"car-t\"]",
+    "before": "CAR binds antigen (no MHC needed)",
+    "after": "Conventional CAR: no peptide-HLA needed",
+    "beforeFileSHA256": "addfc1a0c1361bf68d13a470279f6600b9fc6e079de485a1456d0327653a306d",
+    "afterFileSHA256": "5bc8604b2fcf3c63bd9e5dce8e76bb249fd372032fa8b98f7793807a73527628",
+    "classification": "data",
+    "reason": "The default conventional CAR scene must not universalize HLA independence to the separately documented peptide-HLA CAR exceptions.",
+    "sharedFactoryUsers": [
+      "car-t",
+      "glioma-car-t",
+      "armored-car"
+    ],
+    "geometryOrRendererCodeChanged": false,
+    "sourceReferences": [
+      "PMID27924074",
+      "PMID30045840",
+      "FDA-CAR"
+    ],
+    "newBrowserOrProductAcceptance": false
+  },
+  "noPeerOwnerFieldsSelected": true,
+  "ordinaryGradesChanged": 0,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

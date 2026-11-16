@@ -1,0 +1,163 @@
+{
+  "verifiedAtUTC": "2026-11-16T01:38:01.273788+00:00",
+  "checks": [
+    {
+      "sourceId": "P61-A01",
+      "check": "SVG geometry/text same after palette normalization: and-or-not-and-sequential-recognition-patterns-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A02",
+      "check": "SVG geometry/text same after palette normalization: car-membrane-topology-and-domain-strips-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A03",
+      "check": "SVG geometry/text same after palette normalization: car-nk-added-and-retained-inputs-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A04",
+      "check": "SVG geometry/text same after palette normalization: cytokine-support-location-and-receptor-modification-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A05",
+      "check": "SVG geometry/text same after palette normalization: living-cells-blood-tissue-and-count-denominators-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A06",
+      "check": "SVG geometry/text same after palette normalization: lower-signaling-cell-elimination-and-lingering-injury-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A07",
+      "check": "SVG geometry/text same after palette normalization: t-cell-engager-vs-car-t-comparison-product-axis-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A08",
+      "check": "SVG geometry/text same after palette normalization: tcr-t-two-cell-compartments-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A09",
+      "check": "SVG geometry/text same after palette normalization: tcr-t-vs-tcr-engager-comparison-product-cards-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A10",
+      "check": "SVG geometry/text same after palette normalization: til-collection-clone-mixture-and-expansion-v1",
+      "passed": true,
+      "detail": "Source-string geometry/text comparison, not pixel, contrast or molecular validation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A11",
+      "check": "Living count bar light 450",
+      "passed": true,
+      "detail": "Denominator width 250; positive width 50; common scale 2.5 SVG units per cell per microlitre.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A12",
+      "check": "Living count bar light 567",
+      "passed": true,
+      "detail": "Denominator width 500; positive width 50; common scale 2.5 SVG units per cell per microlitre.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A13",
+      "check": "Signal bar ratio light",
+      "passed": true,
+      "detail": "Fictional 1 versus 0.2; viable-cell count is a separate observation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A14",
+      "check": "TIL counted clones light",
+      "passed": true,
+      "detail": "Each lettered cell is one invented T cell; unlettered tumour icons excluded. No duration or prevalence inference.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A15",
+      "check": "Living count bar dark 450",
+      "passed": true,
+      "detail": "Denominator width 250; positive width 50; common scale 2.5 SVG units per cell per microlitre.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A16",
+      "check": "Living count bar dark 567",
+      "passed": true,
+      "detail": "Denominator width 500; positive width 50; common scale 2.5 SVG units per cell per microlitre.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A17",
+      "check": "Signal bar ratio dark",
+      "passed": true,
+      "detail": "Fictional 1 versus 0.2; viable-cell count is a separate observation.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A18",
+      "check": "TIL counted clones dark",
+      "passed": true,
+      "detail": "Each lettered cell is one invented T cell; unlettered tumour icons excluded. No duration or prevalence inference.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A19",
+      "check": "Fictional concentration arithmetic",
+      "passed": true,
+      "detail": "Both concentrations are 20 receptor-positive cells per microlitre, not total-body counts.",
+      "empiricalSourceVerification": false
+    },
+    {
+      "sourceId": "P61-A20",
+      "check": "Fictional viable-cell remaining fraction",
+      "passed": true,
+      "detail": "80 percent viable-cell remainder is not the 20 percent residual signaling readout or iCasp9 clinical data.",
+      "empiricalSourceVerification": false
+    }
+  ],
+  "passed": 20,
+  "wholeNativeViews": 22,
+  "findings": [
+    {
+      "sourceId": "P61-N01",
+      "assignmentIndices": [
+        0,
+        1
+      ],
+      "severity": "minor",
+      "scope": "orientation-label convention",
+      "finding": "Global header says T cell left, target right. The sequential first encounter places the A-bearing target to the left of the first T cell. Shapes/colors and time progression remain intelligible; clarify the header scope rather than infer a scientific route error.",
+      "proposalOnly": true,
+      "sourceFilesEdited": false
+    }
+  ],
+  "sourceBytesEdited": false,
+  "limits": "Internal arithmetic, geometry, string and whole-view consistency only. Fresh primary and canonical assessment has not begun; no expert/browser/clinical acceptance."
+}

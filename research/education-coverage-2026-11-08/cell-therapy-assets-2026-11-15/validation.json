@@ -1,0 +1,836 @@
+{
+  "kind": "Final data and scoped audit verification",
+  "newFullGateRun": true,
+  "lastGatedDataCommit": "d24d59e303e98ca785424ad8a52c86ac4aa4a973",
+  "gates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.05
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.71
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.01
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 315.0
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "fullSuite": {
+    "files": 293,
+    "passed": 3101,
+    "skipped": 2
+  },
+  "exports": [
+    {
+      "name": "build-api",
+      "exitCode": 0,
+      "seconds": 29.17
+    },
+    {
+      "name": "build-openapi",
+      "exitCode": 0,
+      "seconds": 1.72
+    },
+    {
+      "name": "build-context",
+      "exitCode": 0,
+      "seconds": 4.37
+    },
+    {
+      "name": "dedupe",
+      "exitCode": 0,
+      "seconds": 5.05
+    }
+  ],
+  "actualExportVerification": {
+    "records": 10,
+    "exactEntityJSON": true,
+    "checks": [
+      {
+        "id": "armored-car",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "armored-car",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 11,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 12,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-t",
+        "field": "notes",
+        "index": 13,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "car-nk-macrophage",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell-therapy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell-therapy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell-therapy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell-therapy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "nk-cell-therapy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "cellular-kinetics-and-persistence",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "logic-gated-therapeutics",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "safety-switch-car-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "t-cell-engager",
+        "field": "notes",
+        "index": 10,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 8,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "tcr-t",
+        "field": "notes",
+        "index": 9,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "tldr",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "summary",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 0,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 1,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 2,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 3,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 4,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 5,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 6,
+        "passageInActualMarkdown": true
+      },
+      {
+        "id": "til-therapy",
+        "field": "notes",
+        "index": 7,
+        "passageInActualMarkdown": true
+      }
+    ],
+    "files": [
+      {
+        "file": "armored-car.json",
+        "bytes": 9443,
+        "sha256": "bd1c9a3c81f7e838ac7ddded59fb091db1aa8c6f4662e77550a19dae451327f7"
+      },
+      {
+        "file": "armored-car.md",
+        "bytes": 7414,
+        "sha256": "50733e92baef35ce5d4533f4590d9374ffb93e936ea9dc04e02c4250bf0686de"
+      },
+      {
+        "file": "car-t.json",
+        "bytes": 85943,
+        "sha256": "b4c6268ec49866838bb4fb33512eec4c90f3d9cbb971d33d98cb7954a6e75a9f"
+      },
+      {
+        "file": "car-t.md",
+        "bytes": 60779,
+        "sha256": "ca925f7b7b3f332e4b7ab97247e2f0a43e54657f0aa83921542fd3918c76e4c1"
+      },
+      {
+        "file": "car-nk-macrophage.json",
+        "bytes": 11148,
+        "sha256": "db44268ad8466eb3ef2ea7607c11b89b480718cc8f156c44db9ed6e0861fab03"
+      },
+      {
+        "file": "car-nk-macrophage.md",
+        "bytes": 8579,
+        "sha256": "c234c38e58d61723471bc9467a3f232daf7c15d6f76b5e725b506fb59dfb1c1a"
+      },
+      {
+        "file": "nk-cell-therapy.json",
+        "bytes": 5697,
+        "sha256": "4aa62d4338a3cf79246fb3505b20cba1614e3842f739ad5636161d9114a1e11f"
+      },
+      {
+        "file": "nk-cell-therapy.md",
+        "bytes": 4633,
+        "sha256": "9bd25c1baab04742013a05b0c0e2225f6fe44997029595d91d16b957098dd358"
+      },
+      {
+        "file": "cellular-kinetics-and-persistence.json",
+        "bytes": 8526,
+        "sha256": "c62eb6946e3ddca9541085dc6d4df14d80088831e639f44953b860c68dcdb3fa"
+      },
+      {
+        "file": "cellular-kinetics-and-persistence.md",
+        "bytes": 7599,
+        "sha256": "deef7eba9d8f48539d8eca126047f89ac2fa15a107242f5fb75f428453012543"
+      },
+      {
+        "file": "logic-gated-therapeutics.json",
+        "bytes": 6823,
+        "sha256": "1e265794db9dd6947999fb13acf182bdaf8b6be31287b0cdc1ff6cdb517b329f"
+      },
+      {
+        "file": "logic-gated-therapeutics.md",
+        "bytes": 5764,
+        "sha256": "5d893199fd24a4ada33e00e4ef349312064adce6aa9051ee8dd9a7ee2713c09c"
+      },
+      {
+        "file": "safety-switch-car-t.json",
+        "bytes": 8156,
+        "sha256": "af3faf8c73b1c19faeed171a9eae02ff522b10a6139c1bf39859762fec06d88b"
+      },
+      {
+        "file": "safety-switch-car-t.md",
+        "bytes": 7362,
+        "sha256": "7e88b5da9086a571068fefcaa78395fb83ea0a4312fd4ea000087b768e85628f"
+      },
+      {
+        "file": "t-cell-engager.json",
+        "bytes": 46996,
+        "sha256": "959b8c432f2dfa217f532daf710cfa1b6c4a284dc4410c1a9238e23aa80e909c"
+      },
+      {
+        "file": "t-cell-engager.md",
+        "bytes": 35533,
+        "sha256": "84c5504a32eb9783cb67361d348e793b76aff00b57a6386b4ce0a8adf8e210e2"
+      },
+      {
+        "file": "tcr-t.json",
+        "bytes": 19038,
+        "sha256": "dfccb908214abb46016ef4dd594c1092e623e136b81bc26241daec1d4542fea6"
+      },
+      {
+        "file": "tcr-t.md",
+        "bytes": 14783,
+        "sha256": "7ea1a8aa928976c8273ef25a407f8a73c07fb44ef96301ff23ea9fc5f5f5a6fe"
+      },
+      {
+        "file": "til-therapy.json",
+        "bytes": 17826,
+        "sha256": "3968959da7c48c44706772de5da4b4d91a9bab2d589d1cf41b41f6ee305f2434"
+      },
+      {
+        "file": "til-therapy.md",
+        "bytes": 13654,
+        "sha256": "10b8cb639174721b6e6d97ce09b9f13e4ad54dc1b7cb88a2e1f3611258763cd7"
+      }
+    ],
+    "openApiHasPathsAndComponents": true,
+    "newStaticAPIAndContextGeneration": true,
+    "newNextProductionBuild": false,
+    "deployment": false
+  },
+  "gatedDataReadback": {
+    "rootCount": 23091,
+    "selectedRecords": 10,
+    "schemaParses": 10,
+    "changedIds": [
+      "armored-car"
+    ],
+    "changedFields": [
+      {
+        "id": "armored-car",
+        "field": "links"
+      }
+    ],
+    "allOtherRecordFingerprintsPreserved": true,
+    "allOtherSelectedFieldsPreserved": true,
+    "allEarlierLinksPreservedInOrder": true,
+    "allProseDatesAliasesRelationsAndProvenancePreserved": true,
+    "newRecords": 0,
+    "newRegistrations": 0
+  },
+  "schematicDataCorrection": {
+    "kind": "Schematic data label correction",
+    "file": "src/data/schematics.ts",
+    "factory": "S[\"car-t\"]",
+    "before": "CAR binds antigen (no MHC needed)",
+    "after": "Conventional CAR: no peptide-HLA needed",
+    "beforeFileSHA256": "addfc1a0c1361bf68d13a470279f6600b9fc6e079de485a1456d0327653a306d",
+    "afterFileSHA256": "5bc8604b2fcf3c63bd9e5dce8e76bb249fd372032fa8b98f7793807a73527628",
+    "classification": "data",
+    "reason": "The default conventional CAR scene must not universalize HLA independence to the separately documented peptide-HLA CAR exceptions.",
+    "sharedFactoryUsers": [
+      "car-t",
+      "glioma-car-t",
+      "armored-car"
+    ],
+    "geometryOrRendererCodeChanged": false,
+    "sourceReferences": [
+      "PMID27924074",
+      "PMID30045840",
+      "FDA-CAR"
+    ],
+    "newBrowserOrProductAcceptance": false
+  },
+  "schemaParses": 10,
+  "staticSSRReaders": 10,
+  "wholeDecodedReaders": 2,
+  "consumerPreservation": {
+    "uniqueCanonicalIds": 10,
+    "selectedLanguageAndSimpleSlots": 90,
+    "storedShortSummaries": 65,
+    "EnglishFallbacks": 25,
+    "wholeTablesUnchanged": 9,
+    "allSelectedTextsAvailabilityReviewMarksAndLongCachesUnchanged": true,
+    "effectiveTextsUnchanged": true,
+    "consumerFilesEdited": false,
+    "storedLongCaches": 0,
+    "beforeStateReconstructedFromFrozenPreEditRecords": true,
+    "noLanguageAcceptance": true
+  },
+  "sourceIdentitiesReverified": 124,
+  "sectionSignatures": 224,
+  "newNextProductionBuild": false,
+  "newAPIExport": true,
+  "newBrowserMobileOrHumanReview": false,
+  "testsFloorsBudgetsRulesOrAllowlistsChanged": false,
+  "rawBodiesMediaOrLongPrimaryQuotesPublished": false,
+  "strictAuditScan": "Prospective public objects: zero findings under unchanged rules. A zero-finding final staged scan is an enforced commit precondition.",
+  "sourceLedgers": "Both source ledgers regenerated with zero stale or missing proofs; exit 2 retains unfinished work.",
+  "mainCredit": 0,
+  "liveCredit": 0,
+  "literalFieldPassagesVerified": 105,
+  "immutableSealAndPublicProjectionVerified": true,
+  "priorPendingFilesPreserved": 225,
+  "priorCohortFilesPreserved": 3415,
+  "postGateCanonicalEdits": false
+}

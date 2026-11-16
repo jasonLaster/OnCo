@@ -1864,36 +1864,53 @@
       "rna-delivery-completion-review"
     ],
     "review": {
-      "status": "unreviewed",
-      "auditor": "Coordinator intake; not expert sign-off",
-      "checkedAt": "2026-11-10",
-      "rationale": "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets.",
+      "status": "reviewed",
+      "auditor": "Coordinator source-first and targeted-primary assessment;not blind,expert,learner or language acceptance",
+      "checkedAt": "2026-11-16",
+      "rationale": "Two resolved primary studies were read at38 complete targeted body paragraphs and both complete abstracts. The existing registered lipoplex owner now distinguishes joint RNA formulation,particle loading,same-cell expression and the separate microbubble-attachment comparison,with assay/model limits and corrected tissue-area denominators.",
       "points": [
         {
           "id": "scope",
           "requirement": "Distinguish a mixture of RNA products, co-encapsulation, delivery to the same cell and expression stoichiometry.",
-          "status": "gap",
+          "status": "covered-draft",
           "evidence": [
             {
               "recordId": "rna-lipoplex",
-              "version": "proposal-rna-delivery",
-              "field": "summary",
-              "fieldSha256": "7499d8485639b390896d8eabafaf154f1417f32a5344996d94c7cdc5fe33daf6",
-              "explanation": "Existing authored material is partial context only; it does not close the stated adjacent requirement."
+              "version": "proposal-rna-multiple-cargo-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "da7bb1872d47ee1baa32738ad6983f5f283c0f48651b373fc62c4c2ee48ece52",
+              "explanation": "Formulation,per-particle loading,same-cell uptake and expression ratios are distinct. The Zhang reporter,carrier and model context and the mass-versus-fluorescence distinction remain explicit.",
+              "supportingExcerpt": "Multiple RNAs raise separate questions: whether RNA products are mixed, whether RNAs share a formulation, whether individual particles carry both, and whether the same cells express both proteins. Zhang and colleagues used Lipofectamine 2000 to compare premixed eGFP and mCherry RNAs with mixtures of single-RNA lipoplexes. In HeLa cells, the mixture could match the population-average ratio while individual cells showed variable uptake and expression; joint formulation improved the single-cell correspondence. Mouse embryonic-stem-cell-derived retinal organoids and zebrafish embryo hindbrain injections showed the same qualitative contrast. Input ratios were RNA mass ratios, and reporter fluorescence was measured separately from labelled-RNA uptake. The reporters differed in detection and/or expression. Average strand loading and assumed even mixing do not establish every particle's cargo, and fluorescence ratios do not by themselves specify absolute protein molar ratios or functional assembly. This study of reporters and a research reagent does not establish that every carrier or therapeutic RNA mixture behaves the same.",
+              "passageSha256": "7c1bfc245d8ce0b41696ac06c5ce165c49783dbbb214b91c5a242ec608dd6fe1"
             }
           ],
-          "remaining": [
-            "Two primary-paper discoveries are queued; no result or identity is adopted from search snippets."
-          ]
+          "remaining": []
         },
         {
           "id": "rna-multiple-cargo-co-delivery-remaining-screen-20261110",
           "requirement": "Assess the two RNA proposals separately: coformulated versus mixed single-RNA lipoplexes, and microbubble-bound versus separately administered lipoplexes. Verify unique teaching and current rna-lipoplex field hashes; do not merge their model systems or causal questions, or create a standalone sonotransfection subject from one study.",
-          "status": "gap",
-          "evidence": [],
-          "remaining": [
-            "Assess the two RNA proposals separately: coformulated versus mixed single-RNA lipoplexes, and microbubble-bound versus separately administered lipoplexes. Verify unique teaching and current rna-lipoplex field hashes; do not merge their model systems or causal questions, or create a standalone sonotransfection subject from one study."
-          ]
+          "status": "covered-draft",
+          "evidence": [
+            {
+              "recordId": "rna-lipoplex",
+              "version": "proposal-rna-multiple-cargo-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "da7bb1872d47ee1baa32738ad6983f5f283c0f48651b373fc62c4c2ee48ece52",
+              "explanation": "Two-reporter coformulation is separate from mixing single-RNA carriers;no universal therapeutic-carrier conclusion.",
+              "supportingExcerpt": "Multiple RNAs raise separate questions: whether RNA products are mixed, whether RNAs share a formulation, whether individual particles carry both, and whether the same cells express both proteins. Zhang and colleagues used Lipofectamine 2000 to compare premixed eGFP and mCherry RNAs with mixtures of single-RNA lipoplexes. In HeLa cells, the mixture could match the population-average ratio while individual cells showed variable uptake and expression; joint formulation improved the single-cell correspondence. Mouse embryonic-stem-cell-derived retinal organoids and zebrafish embryo hindbrain injections showed the same qualitative contrast. Input ratios were RNA mass ratios, and reporter fluorescence was measured separately from labelled-RNA uptake. The reporters differed in detection and/or expression. Average strand loading and assumed even mixing do not establish every particle's cargo, and fluorescence ratios do not by themselves specify absolute protein molar ratios or functional assembly. This study of reporters and a research reagent does not establish that every carrier or therapeutic RNA mixture behaves the same.",
+              "passageSha256": "7c1bfc245d8ce0b41696ac06c5ce165c49783dbbb214b91c5a242ec608dd6fe1"
+            },
+            {
+              "recordId": "rna-lipoplex",
+              "version": "proposal-rna-multiple-cargo-root-2026-11-16",
+              "field": "notes",
+              "fieldSha256": "da7bb1872d47ee1baa32738ad6983f5f283c0f48651b373fc62c4c2ee48ece52",
+              "explanation": "Microbubble attachment is a different comparison. Reporter-positive image area,vascular association,excluded distances and spleen/liver scope replace the older cell-percentage shorthand. No competing subject is created.",
+              "supportingExcerpt": "In a different comparison, Chen and colleagues attached DOTAP/DOPE lipoplexes carrying one mCherry reporter to polymer microbubbles or gave the lipoplexes beside the bubbles. They tested 4T1 cells and intravenously treated female BALB/c mice with subcutaneous 4T1 tumours, six per group. With ultrasound, separate administration gave greater reporter-positive tumour area and signal farther from vessels; attachment favoured vascular and perivascular signal and was more ultrasound dependent in the cell-culture comparison. Tissue percentages measured fluorescent image area, not the fraction of all tumour cells, and distances over 50 micrometres were excluded from the vessel analysis. Off-site signal was lower in spleen with attachment, while liver differences were not statistically significant. This compares a physical delivery assembly, not whether two RNAs enter the same cell; reporter expression does not demonstrate cancer control or clinical safety.",
+              "passageSha256": "8404a8504aecb2543b3a3c82f50b03bf927559af033e7855d3a6206ee1af89ca"
+            }
+          ],
+          "remaining": []
         }
       ]
     }

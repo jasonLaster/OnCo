@@ -1,0 +1,193 @@
+{
+  "newDataChanges": 1,
+  "changedRecordIds": [
+    "rna-lipoplex"
+  ],
+  "changedFields": [
+    "notes",
+    "links",
+    "asOf"
+  ],
+  "lastFullGatedDataCommit": "c0f4599fba3a029ec1ba6b7be4766c1030432d1f",
+  "fullGates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 3.32
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 29.83
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 1.98
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 312.05
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "passingFiles": 293,
+  "passingTests": 3101,
+  "skippedTests": 2,
+  "wholeGraphPreservation": {
+    "records": 23091,
+    "changedIds": [
+      "rna-lipoplex"
+    ],
+    "beforeGraphSHA256": "0a658afe885633da4126e70aa0f99901c549c16fcd977be784024663aaa19a47",
+    "afterGraphSHA256": "4cdb88cd21d9125613a7178186b6463e5fcbdb6947028020ca35d25889cadc61",
+    "allOther23090RecordsExact": true,
+    "allOtherEditedOwnerFieldsExact": true,
+    "selectedRootSchemasParsed": 3,
+    "peerOnlyRecords": 0,
+    "newIds": 0,
+    "registrationsChanged": 0,
+    "aliasesChanged": 0,
+    "relationshipsChanged": 0,
+    "newSourceLinks": 2,
+    "sourceLinkURLsRemoved": 0,
+    "priorNotesPreservedExactly": true
+  },
+  "actualAPICheck": {
+    "kind": "Actual existing API and context writer verification",
+    "dataCommit": "c0f4599fba3a029ec1ba6b7be4766c1030432d1f",
+    "checks": [
+      {
+        "id": "rna-lipoplex",
+        "recordSHA256": "48988e3afa40964c978a28264a17807b0f7305efd8b560a7d4a8c1065657ab7f",
+        "actualJSONSHA256": "35094991336bb6b36c48ef8546b4b5a55529920a33fa31e11de0cffdaa92eb9f",
+        "actualMarkdownSHA256": "ab41207d53ddf6be0f21502ca9d93d5ce6801f05b942f4ace4a5cafe438c8e1b",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 14
+      },
+      {
+        "id": "lipid-nanoparticle",
+        "recordSHA256": "e11c1cc38f4b3e22dfdfcd2ecf38da18f6dad9f2ee36d158d442ec9b85da1db7",
+        "actualJSONSHA256": "aa80d8e0af70773f4586225cbd7c19ad7374dd2208e3c19d191923a4df5cc52b",
+        "actualMarkdownSHA256": "c2d990c2676ef3e076bbd17c7d0a9179ca0e12413359aa0ea8f15299301fef50",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "targeted-lnps",
+        "recordSHA256": "62ac05cd9fd938d052179e0526b1e61d8fb60ba5dc2467db83a64b99a7f1820d",
+        "actualJSONSHA256": "faa3560c77728a01442d9195d5394e3cf23ba27f118030f2403e550bda08ee8d",
+        "actualMarkdownSHA256": "ef3557189869e5412787f74de8d07f0d9fc2f67543a1809a105ac219dd38b3ce",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      }
+    ],
+    "actualRegisteredRootExports": 3,
+    "exactRootProofPassagesInMarkdown": 14,
+    "peerOnlyRecordsNotExported": 0,
+    "commands": [
+      {
+        "script": "scripts/build-api.ts",
+        "exitCode": 0,
+        "seconds": 25.93
+      },
+      {
+        "script": "scripts/build-context.ts",
+        "exitCode": 0,
+        "seconds": 4.47
+      }
+    ],
+    "writerSourceEdited": false,
+    "privateChildFilesystemRedirectionOnly": true,
+    "writesToCheckoutPublicPrevented": true,
+    "trackedWorkingTreeUnchanged": true,
+    "hostedAPIOrMainOrLiveAcceptance": false
+  },
+  "staticRootReaders": {
+    "checks": [
+      {
+        "id": "rna-lipoplex",
+        "file": "rna-lipoplex.html",
+        "sha256": "3aeef1633e9b0b09d3d068acbf209b38c39191ed2c1da8340e3e0c252ef5fb02",
+        "bytes": 42944,
+        "recordSHA256": "48988e3afa40964c978a28264a17807b0f7305efd8b560a7d4a8c1065657ab7f",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "lipid-nanoparticle",
+        "file": "lipid-nanoparticle.html",
+        "sha256": "571bd3c9670ed1d4736e731a46e1d0ffb7f5a94d58b39f712782ec8d692ce078",
+        "bytes": 29311,
+        "recordSHA256": "e11c1cc38f4b3e22dfdfcd2ecf38da18f6dad9f2ee36d158d442ec9b85da1db7",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "targeted-lnps",
+        "file": "targeted-lnps.html",
+        "sha256": "35134717c8562d40a21be364ed2caac1b3d592585e9a75d32ee08bfdf5b996f2",
+        "bytes": 29562,
+        "recordSHA256": "62ac05cd9fd938d052179e0526b1e61d8fb60ba5dc2467db83a64b99a7f1820d",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "actualRegisteredRootReaders": 3,
+    "selectedSchemaParses": 3,
+    "peerReadersRendered": 0,
+    "unmergedContributorFieldsSelected": false,
+    "proposedPeerFields": 0,
+    "ordinaryLayerRestored": true,
+    "staticSSRVerificationOnly": true,
+    "hostedBrowserHydrationAccessibilityMobileOrIndependentAcceptance": false
+  },
+  "readerContentChecks": {
+    "staticSSRReaders": 3,
+    "exactProofPassagesInStaticReaders": 14,
+    "wholeDecodedReaderCount": 2,
+    "wholeDecodedReaderCharacters": 16695,
+    "acknowledgedWholeReadSpans": 5,
+    "checks": [
+      {
+        "id": "lipid-nanoparticle",
+        "exactProofPassagesInStaticReader": 0,
+        "wholeDecodedTextRead": false
+      },
+      {
+        "id": "rna-lipoplex",
+        "exactProofPassagesInStaticReader": 14,
+        "wholeDecodedTextRead": true
+      },
+      {
+        "id": "targeted-lnps",
+        "exactProofPassagesInStaticReader": 0,
+        "wholeDecodedTextRead": true
+      }
+    ],
+    "browserOrHydrationOrMobileAcceptance": false,
+    "renderedLegacyAssertionsNotBlanketCertified": true,
+    "inheritedRojasKeyPaperSuperlativeNotReverified": true
+  },
+  "shortSummarySlots": 27,
+  "storedSummarySlots": 0,
+  "EnglishFallbackSlots": 27,
+  "shortSummaryEffectiveChanges": 0,
+  "wholeSummaryTablesUnchanged": 9,
+  "acceptedLongCaches": 0,
+  "fullNextBuild": false,
+  "browserOrHumanAcceptance": false
+}

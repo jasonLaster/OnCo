@@ -1,0 +1,53 @@
+{
+  "kind": "Actual existing API and context writer verification",
+  "dataCommit": "c0f4599fba3a029ec1ba6b7be4766c1030432d1f",
+  "checks": [
+    {
+      "id": "rna-lipoplex",
+      "recordSHA256": "48988e3afa40964c978a28264a17807b0f7305efd8b560a7d4a8c1065657ab7f",
+      "actualJSONSHA256": "35094991336bb6b36c48ef8546b4b5a55529920a33fa31e11de0cffdaa92eb9f",
+      "actualMarkdownSHA256": "ab41207d53ddf6be0f21502ca9d93d5ce6801f05b942f4ace4a5cafe438c8e1b",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 14
+    },
+    {
+      "id": "lipid-nanoparticle",
+      "recordSHA256": "e11c1cc38f4b3e22dfdfcd2ecf38da18f6dad9f2ee36d158d442ec9b85da1db7",
+      "actualJSONSHA256": "aa80d8e0af70773f4586225cbd7c19ad7374dd2208e3c19d191923a4df5cc52b",
+      "actualMarkdownSHA256": "c2d990c2676ef3e076bbd17c7d0a9179ca0e12413359aa0ea8f15299301fef50",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 0
+    },
+    {
+      "id": "targeted-lnps",
+      "recordSHA256": "62ac05cd9fd938d052179e0526b1e61d8fb60ba5dc2467db83a64b99a7f1820d",
+      "actualJSONSHA256": "faa3560c77728a01442d9195d5394e3cf23ba27f118030f2403e550bda08ee8d",
+      "actualMarkdownSHA256": "ef3557189869e5412787f74de8d07f0d9fc2f67543a1809a105ac219dd38b3ce",
+      "actualJSONEntityMatchesCurrent": true,
+      "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+      "exactProofPassagesInActualMarkdown": 0
+    }
+  ],
+  "actualRegisteredRootExports": 3,
+  "exactRootProofPassagesInMarkdown": 14,
+  "peerOnlyRecordsNotExported": 0,
+  "commands": [
+    {
+      "script": "scripts/build-api.ts",
+      "exitCode": 0,
+      "seconds": 25.93
+    },
+    {
+      "script": "scripts/build-context.ts",
+      "exitCode": 0,
+      "seconds": 4.47
+    }
+  ],
+  "writerSourceEdited": false,
+  "privateChildFilesystemRedirectionOnly": true,
+  "writesToCheckoutPublicPrevented": true,
+  "trackedWorkingTreeUnchanged": true,
+  "hostedAPIOrMainOrLiveAcceptance": false
+}

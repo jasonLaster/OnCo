@@ -2122,8 +2122,8 @@ export const termsBasics: TermInput[] = [
   t({
     id: "dose", name: "Dose", category: CLINIC,
     aka: ["doses", "dosing", "dosage", "dosed", "dose level", "dose levels", "dose reduction", "dose reductions", "dose-reduced", "dose interruption", "dose modification", "dose modifications", "dose-limiting", "dose-limiting toxicity", "maximum tolerated dose", "MTD", "recommended phase 2 dose", "RP2D", "mg/kg", "mg/m²", "mg/m2", "flat dose", "weight-based", "every 3 weeks", "every three weeks", "Q3W", "Q2W", "cycles", "treatment cycle", "treatment cycles", "dosing schedule", "optimal dose", "dose optimisation", "dose optimization", "flat doses"],
-    tldr: "How much of a drug is given, how often, and for how long. Cancer drugs have long been given at the highest dose a patient can stand, and regulators are now pushing for doses chosen for benefit rather than tolerability.",
-    summary: "Chemotherapy doses are usually scaled to body surface area (mg/m²) or weight (mg/kg) and given in cycles, typically every one to three weeks, to let bone marrow recover; targeted drugs and antibodies are increasingly given at fixed doses. The traditional phase 1 approach escalates until side effects become dose-limiting and sets the maximum tolerated dose as the dose for later trials, a logic that suits chemotherapy but not targeted drugs, which may saturate their target well below the toxic dose; the FDA's Project Optimus now requires sponsors to compare doses. Dose reductions and interruptions for side effects are common in practice and do not necessarily reduce efficacy, as trials with lower-dose arms have shown for several drugs.",
+    tldr: "Dose is the amount of a medicine. Dosage adds when it is given and for how long; dose intensity describes amount per unit time.",
+    summary: "Dose is the amount of a named medicine, in stated units. Dosage adds the interval between administrations and the duration of treatment. Cumulative dose is the total amount given, and dose intensity is that medicine's amount per defined unit of time. These quantities do not directly measure concentration at a target or clinical benefit.\n\nFDA's August 2024 oncology dosage-optimisation guidance recommends using exposure, activity, safety and tolerability to select and compare dosages during clinical development. It describes the historical maximum-tolerated-dose approach, but a higher tolerated dose does not by itself establish a better balance of benefit and harm. These are nonbinding recommendations with stated modality and development limits. The effects of a reduction, delay or interruption depend on the medicine, regimen and reason for the change.",
     wikipedia: W("Dose_(biochemistry)"),
     related: ["toxicity-grade", "half-life", "trial-phases", "side-effect-vs-adverse-event", "bone-marrow"],
 
@@ -2145,7 +2145,7 @@ export const termsBasics: TermInput[] = [
     "url": "https://pubmed.ncbi.nlm.nih.gov/7626852/"
   }
 ],
-"asOf": "2026-11-11"
+"asOf": "2026-11-15"
 }),
   t({
     id: "half-life", name: "Half-life", category: CLINIC,

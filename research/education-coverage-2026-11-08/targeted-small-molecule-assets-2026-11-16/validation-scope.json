@@ -1,0 +1,759 @@
+{
+  "newDataChanges": 1,
+  "changedRecordIds": [
+    "androgen-receptor-positive-tnbc"
+  ],
+  "changedFields": [
+    "tldr",
+    "summary",
+    "asOf",
+    "links"
+  ],
+  "lastFullGatedDataCommit": "21d7a561b6752de084f98fb97ebec51bed59376d",
+  "fullGates": {
+    "results": [
+      {
+        "name": "typecheck",
+        "exitCode": 0,
+        "seconds": 11.24
+      },
+      {
+        "name": "lint",
+        "exitCode": 0,
+        "seconds": 30.23
+      },
+      {
+        "name": "validate",
+        "exitCode": 0,
+        "seconds": 2.02
+      },
+      {
+        "name": "full-suite",
+        "exitCode": 0,
+        "seconds": 312.72
+      }
+    ],
+    "unchangedDuringGates": true,
+    "workerHeapMiB": 8192,
+    "fullSuiteMaxWorkers": 2,
+    "generatedPublicRestorePending": false,
+    "generatedPublicRestoredExactly": true
+  },
+  "passingFiles": 293,
+  "passingTests": 3101,
+  "skippedTests": 2,
+  "wholeGraphPreservation": {
+    "beforeGraphSHA256": "c9e3d75ee58abe5e9c10e80d4873b2c0852046a00d3de1cb974846c157698111",
+    "afterGraphSHA256": "195000571c7ad9ab128418c9ef692b75ed53b86bb18c87d89f76835ef52129b7",
+    "records": 23091,
+    "changedIds": [
+      "androgen-receptor-positive-tnbc"
+    ],
+    "changedFields": [
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "fields": [
+          "tldr",
+          "summary",
+          "asOf",
+          "links"
+        ]
+      }
+    ],
+    "allOther23090RecordsExact": true,
+    "allOtherEditedOwnerFieldsExact": true,
+    "selectedRootSchemasParsed": 22,
+    "peerOnlyRecords": 0,
+    "newIds": 0,
+    "registrationsChanged": 0,
+    "aliasesChanged": 0,
+    "relationshipsChanged": 0,
+    "priorNotesExact": true,
+    "priorLinksPreservedInOrder": true,
+    "sourceFile": "src/data/spikes/tnbc-core.ts"
+  },
+  "actualAPICheck": {
+    "kind": "Actual existing API and context writer verification",
+    "dataCommit": "21d7a561b6752de084f98fb97ebec51bed59376d",
+    "checks": [
+      {
+        "id": "androgen-receptor",
+        "recordSHA256": "6e0ff7766b3343210b117bdbcf4dcb4ebb489f4a84ed4a7c24007216fc31a471",
+        "actualJSONSHA256": "12e3d0d8a1d147a5029302ea2e6c13e6249e37a78b75d5fe99f4a1e75b0325e9",
+        "actualMarkdownSHA256": "bb2d7746929794fc8849699e5dd4989bd97c29ab4d04334c0783e12b12941c24",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 2
+      },
+      {
+        "id": "ar-signaling",
+        "recordSHA256": "8c55d13f718b6be6f6a6ada9065643003da825cb95bfe6bc50b5a35e1748ce9a",
+        "actualJSONSHA256": "cdbe92ce4e4647aded39c7c683506db7678300314e8fc27e27dbb0347e962567",
+        "actualMarkdownSHA256": "f68cd9cce4b90fbd9424bd13840d9d808e960db6bb321501c12055f793ef1c03",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "arpi",
+        "recordSHA256": "cae758fc764e781f9f20b166e19f4a7a68c94dc5917f094d3a0b997b9b394595",
+        "actualJSONSHA256": "330e3d82bce4bf2a074a121286f9815c32a49130e40ebf0ed817d68b27540488",
+        "actualMarkdownSHA256": "0722babf4b68b33fcb1454f2c5ef8ddd996db2cbc783cd7d792c5c377b3c5750",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 4
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "recordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "actualJSONSHA256": "4a0434d5133ed8e97237eea385dfb08b0a250a4035130d2f41de42ff18669a99",
+        "actualMarkdownSHA256": "63f75fae3148d6b0bd29b932028fe114d27aac2e706576c9b77010c58c6c2d48",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 1
+      },
+      {
+        "id": "luminal-androgen-receptor",
+        "recordSHA256": "e8593ef39e8674f184932356c0ed2b37839d8c6a1a6fe47acbcf26e5db228375",
+        "actualJSONSHA256": "080ed520bf820ac5ced0bcf69c0ebfbeb2ade3f6dc22feb85351aa1681c10813",
+        "actualMarkdownSHA256": "22aa4d66155fe6676b8747a1595ac0dfa20eb9561da06f37fb6c7765254c6add",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "cdk-inhibitors",
+        "recordSHA256": "d90ddf83def66170ec9fbda4a0d557cd410351dbac6ab1c3dacfe3bc84b4aba6",
+        "actualJSONSHA256": "43fff6157dfc1f417da80b65228950b95465b71085dad6c115c5ecd114ecd5ce",
+        "actualMarkdownSHA256": "c6401b4e6001782c5ad79bd69fe77596b69f8863d509b5076f75653548397b5b",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 8
+      },
+      {
+        "id": "cdk46-inhibitor",
+        "recordSHA256": "a571eacd09632807d823de38590767394280bcd6a1bf68080a65ff608360cdf0",
+        "actualJSONSHA256": "68043b765707a2244a4f265185a89cc461162b68800d3e2230a499d0cd87f4a1",
+        "actualMarkdownSHA256": "8ee1557edbfa5e0b2b62b32499e46e2120069b9b17273dd8811fbac1814e6bb0",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "cell-cycle",
+        "recordSHA256": "cf60ae8a667a15f651698418db16511f1f1b1dd2279ba85d0a06bf5fb4fca430",
+        "actualJSONSHA256": "c197166f7050e9005404bcd48c25d3ccc77316181f456a6e4edd79d5436b79e2",
+        "actualMarkdownSHA256": "e066661e4ef492b890afa18158e7ae34aa591d80f8ed43b7cf73ab065f4d49a4",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 3
+      },
+      {
+        "id": "cell-cycle-engine-cdks",
+        "recordSHA256": "05d73118ef1dd4b3b484c854da179ce24f9e31a7a64050e9ef2703c66889bd45",
+        "actualJSONSHA256": "45b351e3329d91c7818954f6b87d132c33f57b08892819459734961958699c9f",
+        "actualMarkdownSHA256": "a5d3fed8709df2195a5a2d2e0118356a3d393b15d78e4fcc74effb72b8f7dde6",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "egfr",
+        "recordSHA256": "4279120bb8d3e02f8c937d3ef8182dbe5cbd5d1b4b59b9bdea7cb16a06891980",
+        "actualJSONSHA256": "c5dcd278de92afb4c5c672e28a81a205246c5381dc0a1c028c8ecff6816e7d1c",
+        "actualMarkdownSHA256": "efb8f4602670343df64afa182c41240f153697d292db7e8db5f6ab2e3479f734",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 6
+      },
+      {
+        "id": "rtk-activation",
+        "recordSHA256": "861e4831ab5d70bf71379df0b1784247e6a36ea1a923076def561f4f3928cadc",
+        "actualJSONSHA256": "079ea26c47c8238ecfd976faf480a07afe32023e882ce56d0466c97581f505a5",
+        "actualMarkdownSHA256": "0fbc2be6d24bc6cde77cf9a7544ace4b9cdb31205b3ab5b713404d6d6ad32386",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "parp",
+        "recordSHA256": "4223c00aad70148582a2cc7495932dfece44d68cf954186e584f68ddfe8d04de",
+        "actualJSONSHA256": "54e86d63fa0754143ed07b51442fea79f021b33d4af0ec79e47547a6a3bbaa22",
+        "actualMarkdownSHA256": "59ddc28d58536d5f5fd3c76f9b04232534db152c50d22a6872063b16330881b4",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "parp-inhibitor",
+        "recordSHA256": "3d0b81c9c676f57f25825e548e1a505c1a69d8c11ac0af22c0632c7d21feea3c",
+        "actualJSONSHA256": "c38d63fad8a42a2f1864677d24094a53a3e2ee037cf61420bb54f47b0ff81188",
+        "actualMarkdownSHA256": "1385d1d9ea13553989223ee185e34c54c19b4a69feb812cb3b701babba9fcb1a",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 11
+      },
+      {
+        "id": "ddr",
+        "recordSHA256": "a1ed82e759a4a531b93380a6a227b7761ace61519b03ecb5d7d38300e8f6c594",
+        "actualJSONSHA256": "69881e25a7ce78b70efd64cc0deedb6716f5cd0c4c96ce6efbcaecaa0adcc99c",
+        "actualMarkdownSHA256": "18be0516fb81d81e0299068df235b195d754c64af6469dd7b6771345667e6a91",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "atr",
+        "recordSHA256": "c5fa1a30c54503b5152d4a9c7b43e7b4b91229fc3694aeea42ac7d357cbf23b8",
+        "actualJSONSHA256": "b789072fb62abd823919097a55e34081d6e1197e1e9577858f93dc42cdb04a67",
+        "actualMarkdownSHA256": "d790dbdadc91c01f3cda851e8aadd1fb219239d78eca498076de556073bd1dc6",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "wee1",
+        "recordSHA256": "e3c36973a6bd4806b9453ed98eb2ae196a04f7cce89cb42e60dc30025ae3b5e7",
+        "actualJSONSHA256": "f848fffd71e9ac972f71a6994761a18876c6b36029b2f88be86149879464a011",
+        "actualMarkdownSHA256": "64182d298eba904c084f00cbb12dad12902119f304bf6c9db9e58efba97f35a1",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "polq",
+        "recordSHA256": "f18916d967857e1da32492690d0a391b941a7276bf37e19c1d3e0470b16d6601",
+        "actualJSONSHA256": "c40f2ed9dd2be4eea3bc7c0f70d141db819623941346c9403a698b91faf05c0f",
+        "actualMarkdownSHA256": "1a9e6aee8a6850fc40712706f70ae578e68c2bbb7fa1e1d4050406e18bf729cc",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "recordSHA256": "7ab0d84f9d1400fb1943c557256486adad2a8c3f21a0ed657db1f92f076de37f",
+        "actualJSONSHA256": "1d687df4c20040dda635217bfbf6b2b311884b262452a90448657b92ad1939d9",
+        "actualMarkdownSHA256": "ecb9ba95a5dc5b5dee1be11dbc0a48d10b43d08f928d9bd0e390d2bc95686412",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 6
+      },
+      {
+        "id": "pi3k-akt-mtor-inhibitors",
+        "recordSHA256": "e98f1bea41758d12f479a587cdf92264d1cbc2f16cd8f409836c4823301c0a79",
+        "actualJSONSHA256": "db55735bfce56d70fc6a21084a14e08c5a430a628337f89f6a4170e5d30ea2b7",
+        "actualMarkdownSHA256": "a4a8d4f5b156c03ee3950ae184b4e5018bd1910ce2904e959deeaf170ef5160d",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 5
+      },
+      {
+        "id": "akt",
+        "recordSHA256": "01f3504b36322eb19f0e15c2c838c764d1002b018e79f2a122de80aade9397bf",
+        "actualJSONSHA256": "299b1541036754d3dd8a06c4e62c4e396494b9045730b2f9b824d5da965c8d0c",
+        "actualMarkdownSHA256": "c6cfc6c3ba87576e8cf57c787e3eb5778b641a5e9c175138a60b1d57eb747604",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "pten",
+        "recordSHA256": "ab0f190e2a11d5af8100053852988b58b05ce58f10250b7c6da2291e5136b8b5",
+        "actualJSONSHA256": "9b253f62a3a2b14930ea622f5820f20d4d696c92435e4f1166f44430e0f81361",
+        "actualMarkdownSHA256": "df7d174a25261919d034e206a086940791af39352f072e2ed81667d3b3760e54",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 0
+      },
+      {
+        "id": "dna-damage-response-inhibitors",
+        "recordSHA256": "fbdd66aaa04ce0b7176d4c0352579013baa4d99db6d98b974097afdefc607a75",
+        "actualJSONSHA256": "85d34ae56f13d724037c13c4bf354be317f6d2a14ac169f45c6f83e20640db84",
+        "actualMarkdownSHA256": "71ff588b1caabccf3d848bc85890184deb1dac61a1f2ee47383d7abccbf9332e",
+        "actualJSONEntityMatchesCurrent": true,
+        "tldrAndAllSummaryParagraphsInActualMarkdown": true,
+        "exactProofPassagesInActualMarkdown": 10
+      }
+    ],
+    "actualRegisteredRootExports": 22,
+    "exactRootProofPassagesInMarkdown": 56,
+    "peerOnlyRecordsNotExported": 0,
+    "commands": [
+      {
+        "script": "scripts/build-api.ts",
+        "exitCode": 0,
+        "seconds": 25.84
+      },
+      {
+        "script": "scripts/build-context.ts",
+        "exitCode": 0,
+        "seconds": 4.48
+      }
+    ],
+    "writerSourceEdited": false,
+    "privateChildFilesystemRedirectionOnly": true,
+    "writesToCheckoutPublicPrevented": true,
+    "trackedWorkingTreeUnchanged": true,
+    "hostedAPIOrMainOrLiveAcceptance": false
+  },
+  "staticRootReaders": {
+    "checks": [
+      {
+        "id": "androgen-receptor",
+        "file": "androgen-receptor.html",
+        "sha256": "74e3f01ef48b844b2b8d1d9d025f79cadc9a192b5bf7f7d4ffe050d4c023a7bf",
+        "bytes": 156394,
+        "recordSHA256": "6e0ff7766b3343210b117bdbcf4dcb4ebb489f4a84ed4a7c24007216fc31a471",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "ar-signaling",
+        "file": "ar-signaling.html",
+        "sha256": "378599fc2d6a472968daf6b29503e42ddbfdf1dff8b9b8698e69134df543b757",
+        "bytes": 77934,
+        "recordSHA256": "8c55d13f718b6be6f6a6ada9065643003da825cb95bfe6bc50b5a35e1748ce9a",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "arpi",
+        "file": "arpi.html",
+        "sha256": "7d69c228bda948efc0f21869fa996fb9fd64c01511bd37eb898df8c2c0b3ec18",
+        "bytes": 55158,
+        "recordSHA256": "cae758fc764e781f9f20b166e19f4a7a68c94dc5917f094d3a0b997b9b394595",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "file": "androgen-receptor-positive-tnbc.html",
+        "sha256": "0eaa698a5e7df804e885949954e60e6ea4a8590299274217b8f506b42b805b3c",
+        "bytes": 29988,
+        "recordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "luminal-androgen-receptor",
+        "file": "luminal-androgen-receptor.html",
+        "sha256": "4688b187378ab80907f1a6cca690ce3e26aa77a7863217670a55dca60b9c5883",
+        "bytes": 28995,
+        "recordSHA256": "e8593ef39e8674f184932356c0ed2b37839d8c6a1a6fe47acbcf26e5db228375",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cdk-inhibitors",
+        "file": "cdk-inhibitors.html",
+        "sha256": "eb54f11a1fa60a378bb13ee19d224768a72800a79b9077cce059182ae8f5083b",
+        "bytes": 41386,
+        "recordSHA256": "d90ddf83def66170ec9fbda4a0d557cd410351dbac6ab1c3dacfe3bc84b4aba6",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cdk46-inhibitor",
+        "file": "cdk46-inhibitor.html",
+        "sha256": "fe6a33609536d2f88fbe36cfc0f57e1c48bfe36c263dae2425e740837e5566ca",
+        "bytes": 69291,
+        "recordSHA256": "a571eacd09632807d823de38590767394280bcd6a1bf68080a65ff608360cdf0",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cell-cycle",
+        "file": "cell-cycle.html",
+        "sha256": "fe81dbf8f25d5b0caed5ec5655a7f249508029476664f579c363e6118a5261b1",
+        "bytes": 40074,
+        "recordSHA256": "cf60ae8a667a15f651698418db16511f1f1b1dd2279ba85d0a06bf5fb4fca430",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "cell-cycle-engine-cdks",
+        "file": "cell-cycle-engine-cdks.html",
+        "sha256": "8aff756f1df98b4aa38fb745e3fb09b782c579a97c1d89d07b99ec115cdfaa37",
+        "bytes": 59791,
+        "recordSHA256": "05d73118ef1dd4b3b484c854da179ce24f9e31a7a64050e9ef2703c66889bd45",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "egfr",
+        "file": "egfr.html",
+        "sha256": "b4b0b7bfe46e3dfc83402993dc66f9176637d7a8c6e5c76b819f417f5c0073a3",
+        "bytes": 323309,
+        "recordSHA256": "4279120bb8d3e02f8c937d3ef8182dbe5cbd5d1b4b59b9bdea7cb16a06891980",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "rtk-activation",
+        "file": "rtk-activation.html",
+        "sha256": "29f2cb5dee277893cb78bdeb4c71bf38adfecf87ee00295a6baca17d65e2bd28",
+        "bytes": 115033,
+        "recordSHA256": "861e4831ab5d70bf71379df0b1784247e6a36ea1a923076def561f4f3928cadc",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "parp",
+        "file": "parp.html",
+        "sha256": "31e89d8aad428c197af262840d0c1d82effabaad766e33628576a2206e9b111b",
+        "bytes": 144854,
+        "recordSHA256": "4223c00aad70148582a2cc7495932dfece44d68cf954186e584f68ddfe8d04de",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "parp-inhibitor",
+        "file": "parp-inhibitor.html",
+        "sha256": "55681b360361b51e184bb404f36fb08facb53a7cdc404a0dfc9f2369a18a15af",
+        "bytes": 101599,
+        "recordSHA256": "3d0b81c9c676f57f25825e548e1a505c1a69d8c11ac0af22c0632c7d21feea3c",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "ddr",
+        "file": "ddr.html",
+        "sha256": "7f367de3c35b55d83522224a8532e06433caef7d463307ef01a8e22b2098b2f1",
+        "bytes": 75546,
+        "recordSHA256": "a1ed82e759a4a531b93380a6a227b7761ace61519b03ecb5d7d38300e8f6c594",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "atr",
+        "file": "atr.html",
+        "sha256": "78cd256af9e6d49ce217726a204ec6efce04ac84f564fd3023edcc7945e5a360",
+        "bytes": 61688,
+        "recordSHA256": "c5fa1a30c54503b5152d4a9c7b43e7b4b91229fc3694aeea42ac7d357cbf23b8",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "wee1",
+        "file": "wee1.html",
+        "sha256": "7d32ea123f1d126e8b029345e9fb3918a10903f8b2d8142bbd5163e73db15d33",
+        "bytes": 58695,
+        "recordSHA256": "e3c36973a6bd4806b9453ed98eb2ae196a04f7cce89cb42e60dc30025ae3b5e7",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "polq",
+        "file": "polq.html",
+        "sha256": "fa07bc077f64d5f19b79e1f7fab2ce5d47ce626db2d924a70ba704833c4673f3",
+        "bytes": 60176,
+        "recordSHA256": "f18916d967857e1da32492690d0a391b941a7276bf37e19c1d3e0470b16d6601",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "file": "pi3k-akt-mtor.html",
+        "sha256": "b55b1365b5eae9f6c819e00da5b6df10b0f0db96bdf50ea91e122bdfff42369f",
+        "bytes": 102044,
+        "recordSHA256": "7ab0d84f9d1400fb1943c557256486adad2a8c3f21a0ed657db1f92f076de37f",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pi3k-akt-mtor-inhibitors",
+        "file": "pi3k-akt-mtor-inhibitors.html",
+        "sha256": "674d6285fd632cb0a474d0d3355c471aeeeb894686887c04d8361b8d044029f9",
+        "bytes": 71912,
+        "recordSHA256": "e98f1bea41758d12f479a587cdf92264d1cbc2f16cd8f409836c4823301c0a79",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "akt",
+        "file": "akt.html",
+        "sha256": "75b085957de7ee75b17a8f8cb96f875d08753e142c3d80baeaf37fdc0baee54b",
+        "bytes": 97162,
+        "recordSHA256": "01f3504b36322eb19f0e15c2c838c764d1002b018e79f2a122de80aade9397bf",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "pten",
+        "file": "pten.html",
+        "sha256": "cd3d40260bea589a6ed1e49a22614b88ac8d62101ce3f8cf7f857de837a140d6",
+        "bytes": 88439,
+        "recordSHA256": "ab0f190e2a11d5af8100053852988b58b05ce58f10250b7c6da2291e5136b8b5",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      },
+      {
+        "id": "dna-damage-response-inhibitors",
+        "file": "dna-damage-response-inhibitors.html",
+        "sha256": "70952eb630704a6695c9899ffb755bb22c6aaf10674dfe542b09b073d6b75ab7",
+        "bytes": 44140,
+        "recordSHA256": "fbdd66aaa04ce0b7176d4c0352579013baa4d99db6d98b974097afdefc607a75",
+        "actualRegisteredRootReader": true,
+        "version": "current-registered-root",
+        "allSourceLinksPresent": true
+      }
+    ],
+    "actualRegisteredRootReaders": 22,
+    "selectedSchemaParses": 22,
+    "peerReadersRendered": 0,
+    "unmergedContributorFieldsSelected": false,
+    "proposedPeerFields": 0,
+    "ordinaryLayerRestored": true,
+    "staticSSRVerificationOnly": true,
+    "hostedBrowserHydrationAccessibilityMobileOrIndependentAcceptance": false
+  },
+  "readerContentChecks": {
+    "checks": [
+      {
+        "id": "androgen-receptor",
+        "selectedTeachingParagraphsOrNotesContained": 7,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "ar-signaling",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "arpi",
+        "selectedTeachingParagraphsOrNotesContained": 10,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "luminal-androgen-receptor",
+        "selectedTeachingParagraphsOrNotesContained": 5,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "cdk-inhibitors",
+        "selectedTeachingParagraphsOrNotesContained": 11,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "cdk46-inhibitor",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "cell-cycle",
+        "selectedTeachingParagraphsOrNotesContained": 5,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "cell-cycle-engine-cdks",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "egfr",
+        "selectedTeachingParagraphsOrNotesContained": 13,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "rtk-activation",
+        "selectedTeachingParagraphsOrNotesContained": 8,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "parp",
+        "selectedTeachingParagraphsOrNotesContained": 3,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "parp-inhibitor",
+        "selectedTeachingParagraphsOrNotesContained": 12,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "ddr",
+        "selectedTeachingParagraphsOrNotesContained": 6,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "atr",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "wee1",
+        "selectedTeachingParagraphsOrNotesContained": 2,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "polq",
+        "selectedTeachingParagraphsOrNotesContained": 5,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "pi3k-akt-mtor",
+        "selectedTeachingParagraphsOrNotesContained": 9,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "pi3k-akt-mtor-inhibitors",
+        "selectedTeachingParagraphsOrNotesContained": 9,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "akt",
+        "selectedTeachingParagraphsOrNotesContained": 3,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "pten",
+        "selectedTeachingParagraphsOrNotesContained": 4,
+        "allExactProofExcerptsContained": true
+      },
+      {
+        "id": "dna-damage-response-inhibitors",
+        "selectedTeachingParagraphsOrNotesContained": 10,
+        "allExactProofExcerptsContained": true
+      }
+    ],
+    "registeredRootReaders": 22,
+    "wholeDecodedReaderIds": [
+      "androgen-receptor-positive-tnbc",
+      "luminal-androgen-receptor"
+    ],
+    "wholeDecodedCharacters": 12024,
+    "wholeReadsAcknowledged": 4,
+    "allSelectedSourceLinksPresent": true,
+    "staticSSRNotHostedBrowser": true
+  },
+  "summaryConsumerScope": {
+    "recordId": "androgen-receptor-positive-tnbc",
+    "canonicalEnglishLeadChanged": true,
+    "nineEffectiveEnglishFallbacksChanged": true,
+    "slots": [
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      }
+    ],
+    "storedValuesChanged": 0,
+    "availabilityChanged": 0,
+    "wholeHelperTablesUnchanged": 9,
+    "acceptedLongCaches": 0,
+    "languageAcceptance": 0
+  },
+  "sourceFirstSealUnchanged": true,
+  "fullNextBuild": false,
+  "browserOrHumanAcceptance": false
+}

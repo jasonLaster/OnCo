@@ -1,0 +1,264 @@
+{
+  "dataCommit": {
+    "kind": "Fresh full-gated local data commit",
+    "base": "9fcdbadb6ac77f5d788ac7166c93603a192c4760",
+    "head": "21d7a561b6752de084f98fb97ebec51bed59376d",
+    "branch": "codex/systematic-education-audit",
+    "committedAtUTC": "2026-11-16T08:56:12.989918+00:00",
+    "files": [
+      "src/data/spikes/tnbc-core.ts"
+    ],
+    "changedOwners": [
+      "androgen-receptor-positive-tnbc"
+    ],
+    "changedFieldsPerOwner": [
+      "tldr",
+      "summary",
+      "asOf",
+      "links"
+    ],
+    "newSourceLinks": 1,
+    "allFourFreshGatesPassed": true,
+    "all23090OtherRecordsExact": true,
+    "allOtherEditedOwnerFieldsExact": true,
+    "priorNotesAndLinkPrefixesPreserved": true,
+    "stagedSecretScanExitCode": 0,
+    "workingTreeClean": true,
+    "pushedByThisStep": false,
+    "mainCredit": 0,
+    "liveCredit": 0
+  },
+  "applied": [
+    {
+      "id": "androgen-receptor-positive-tnbc",
+      "ownerFile": "src/data/spikes/tnbc-core.ts",
+      "guard": "Direct tnbcTerms array and tm object with literal id/name/exact prior scalar values and links. No nested-id or generic brace matching.",
+      "beforeRecordSHA256": "5c2a94dbb20ea0f99afae7a4cd013bd7b62127aebd4ecd159ba62d0c88aa4eec",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "Some triple-negative breast cancers carry the androgen receptor, the protein that prostate cancer runs on. About one in eight ER-negative cancers stain positive, and in trials the prostate drugs bicalutamide and enzalutamide held the disease for a minority of patients; neither is approved for breast cancer, so this remains a trial question.",
+          "beforeSHA256": "70176f47ab3dbd19bb25623c5beb2b8118cf841f33c23cf4b43585d3ede3d127",
+          "after": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+          "afterSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362"
+        },
+        {
+          "field": "summary",
+          "before": "Androgen receptor is scored by nuclear immunohistochemistry; the trials used more than 10 percent of nuclei as positive, and the enzalutamide trial also enrolled any staining above 0 percent. Of 424 patients with ER- and PR-negative advanced breast cancer screened centrally, 12 percent were AR-positive by the 10 percent rule; bicalutamide 150 mg daily gave a six-month clinical benefit rate of 19 percent (complete or partial response or stable disease over six months) and median progression-free survival of 12 weeks, with no grade 4 or 5 treatment-related events (Gucalp 2013). Enzalutamide 160 mg daily in 118 patients with locally advanced or metastatic AR-positive triple-negative disease gave a 16-week clinical benefit rate of 25 percent overall and 33 percent in the 78 evaluable patients with 10 percent or more nuclear staining, median progression-free survival of 2.9 and 3.3 months and median overall survival of 12.7 and 17.6 months; fatigue was the only treatment-related grade 3 or higher event above 2 percent (Traina 2018). AR expression defines the luminal androgen receptor subtype of Lehmann and Burstein and the molecular apocrine group, whose cells were uniquely sensitive to bicalutamide in the laboratory (Lehmann 2011); LAR tumours are less proliferative and less chemosensitive (29 percent pathological complete response against 41 percent for basal-like 1, Lehmann 2016). Neither antiandrogen is approved for breast cancer; the luminal androgen receptor subtype page sets out the biology and the trials with PI3K-pathway inhibitors.",
+          "beforeSHA256": "bcca65e1051760b53158b50732e4133b7b858f1c0af2d37c7e910f90398a7058",
+          "after": "Androgen receptor is scored by nuclear immunohistochemistry. Gucalp used more than 10 percent staining as positive; Traina enrolled staining above 0 percent and defined an evaluable group with at least 10 percent staining and a postbaseline assessment. Of 424 patients with ER- and PR-negative advanced breast cancer screened centrally, 12 percent were AR-positive by the 10 percent rule; bicalutamide 150 mg daily gave a six-month clinical benefit rate of 19 percent (complete or partial response or stable disease over six months) and median progression-free survival of 12 weeks, with no grade 4 or 5 treatment-related events (Gucalp 2013). Enzalutamide 160 mg daily in 118 patients with locally advanced or metastatic AR-positive triple-negative disease gave a 16-week clinical benefit rate of 25 percent overall and 33 percent in the 78 evaluable patients with 10 percent or more nuclear staining, median progression-free survival of 2.9 and 3.3 months and median overall survival of 12.7 and 17.6 months; fatigue was the only treatment-related grade 3 or higher event above 2 percent (Traina 2018). AR protein staining and the luminal androgen receptor (LAR) RNA subtype are different measurements. Lehmann's 2011 work identified LAR by gene expression and tested bicalutamide in representative cell-line models. In the 2016 retrospective neoadjuvant datasets, pathological complete response was 29 percent for LAR and 41 percent for basal-like 1; these figures describe those datasets and treatments. TBCRC 032 correlative analyses suggested that AR protein expression alone was insufficient to identify AR-dependent tumors. Neither antiandrogen is approved for breast cancer; the luminal androgen receptor subtype page sets out the biology and the trials with PI3K-pathway inhibitors.",
+          "afterSHA256": "80b8a8f763f1a91ffd36ea1a5bd749f9c275e492740dfd8e28779818bc9d8c79"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-09-24",
+          "beforeSHA256": "6c26f434a89139387427fa6eea4d321fa7eaf0929936ef3b9100933bfefb2246",
+          "after": "2026-11-16",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Gucalp, Clin Cancer Res 2013: phase II bicalutamide in androgen receptor-positive, ER-negative metastatic breast cancer",
+              "url": "https://doi.org/10.1158/1078-0432.ccr-12-3327"
+            },
+            {
+              "label": "Traina, J Clin Oncol 2018: enzalutamide for androgen receptor-expressing triple-negative breast cancer",
+              "url": "https://doi.org/10.1200/jco.2016.71.3495"
+            },
+            {
+              "label": "Lehmann, J Clin Invest 2011: identification of human triple-negative breast cancer subtypes (BL1, BL2, IM, M, MSL, LAR)",
+              "url": "https://doi.org/10.1172/jci45014"
+            },
+            {
+              "label": "Lehmann, PLoS One 2016: refinement of triple-negative breast cancer molecular subtypes to four (TNBCtype-4)",
+              "url": "https://doi.org/10.1371/journal.pone.0157368"
+            }
+          ],
+          "beforeSHA256": "4e1a0f11643338df1070a54cea624a70cb532d0f4c461eaabc2c499032c78db5",
+          "after": [
+            {
+              "label": "Gucalp, Clin Cancer Res 2013: phase II bicalutamide in androgen receptor-positive, ER-negative metastatic breast cancer",
+              "url": "https://doi.org/10.1158/1078-0432.ccr-12-3327"
+            },
+            {
+              "label": "Traina, J Clin Oncol 2018: enzalutamide for androgen receptor-expressing triple-negative breast cancer",
+              "url": "https://doi.org/10.1200/jco.2016.71.3495"
+            },
+            {
+              "label": "Lehmann, J Clin Invest 2011: identification of human triple-negative breast cancer subtypes (BL1, BL2, IM, M, MSL, LAR)",
+              "url": "https://doi.org/10.1172/jci45014"
+            },
+            {
+              "label": "Lehmann, PLoS One 2016: refinement of triple-negative breast cancer molecular subtypes to four (TNBCtype-4)",
+              "url": "https://doi.org/10.1371/journal.pone.0157368"
+            },
+            {
+              "label": "Lehmann, Clin Cancer Res 2020: TBCRC 032 AR expression and dependence correlative analyses",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/31822498/"
+            }
+          ],
+          "afterSHA256": "8cc61ec559a3d73bda68f2845c4ec143d96ad5ecb63971c4ce168840b665ba5b"
+        }
+      ],
+      "sourceReadReferences": [
+        "PMID23965901 complete abstract",
+        "PMID29373071 complete abstract",
+        "PMID21633166 complete abstract",
+        "PMID27310713 complete abstract",
+        "PMID31822498 complete abstract"
+      ],
+      "rationale": "Separate assay-specific nuclear protein staining, RNA classification and receptor dependence. Scope historical screen percentage and pCR data;remove the unverified equivalence with molecular-apocrine/Burstein categories. Keep all historical trial figures and existing links.",
+      "retainedLegacyBoundary": "Other retained clinical/approval statements retain prior source scope;this date records the scoped distinction and threshold check,not blanket reapproval.",
+      "mainCredit": 0,
+      "liveCredit": 0,
+      "afterRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89"
+    }
+  ],
+  "currentRootSelections": 22,
+  "frozenPeerSelections": 0,
+  "newOwners": 0,
+  "newRegistrations": 0,
+  "newAliases": 0,
+  "newRelationships": 0,
+  "newSourceLinks": 1,
+  "summaryConsumerStoredValuesChanged": 0,
+  "summaryConsumerAvailabilityChanged": 0,
+  "effectiveEnglishFallbacksChanged": 9,
+  "canonicalEnglishLeadChanged": true,
+  "summaryConsumerScope": {
+    "recordId": "androgen-receptor-positive-tnbc",
+    "canonicalEnglishLeadChanged": true,
+    "nineEffectiveEnglishFallbacksChanged": true,
+    "slots": [
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "es",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "zh",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "pt",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "hi",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "fr",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "de",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "ja",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "ar",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      },
+      {
+        "id": "androgen-receptor-positive-tnbc",
+        "language": "simple",
+        "surface": "actual-registered-root",
+        "available": false,
+        "effectiveText": "Some triple-negative breast cancers show androgen receptor protein on a specified staining assay. That finding differs from an RNA subtype and does not by itself establish receptor dependence or benefit from an AR drug.",
+        "effectiveTextSHA256": "5f9c698e78295a4fc2af1641e38ddf5ae73967580520c9abbba53aecb0bcb362",
+        "canonicalRecordSHA256": "e1d611a0c70fd996c0e1258403313ceadbd2266e17dc10d620b5855c88c32b89",
+        "peerNotRegisteredAtRoot": false
+      }
+    ],
+    "storedValuesChanged": 0,
+    "availabilityChanged": 0,
+    "wholeHelperTablesUnchanged": 9,
+    "acceptedLongCaches": 0,
+    "languageAcceptance": 0
+  },
+  "priorProofImpact": {
+    "editedOwner": "androgen-receptor-positive-tnbc",
+    "count": 0,
+    "bindings": [],
+    "historicalSnapshotOccurrences": [
+      {
+        "file": "candidates.json",
+        "pointer": "/items/67/candidates/5"
+      },
+      {
+        "file": "candidates.json",
+        "pointer": "/items/473/candidates/5"
+      },
+      {
+        "file": "scientific-authoring-bodies-11-2026-11-13/owner-resolution.json",
+        "pointer": "/census/root/15"
+      },
+      {
+        "file": "source-phases/c9689645/candidates.json",
+        "pointer": "/items/61/candidates/5"
+      },
+      {
+        "file": "source-phases/c9689645/candidates.json",
+        "pointer": "/items/525/candidates/5"
+      }
+    ],
+    "allPriorSnapshotsPreserved": true,
+    "noOldSnapshotSilentlyRewritten": true
+  },
+  "nativeAssetsEdited": 0,
+  "rendererChanges": 0,
+  "historicalSourceBodiesOrPrivateDataCopied": false
+}

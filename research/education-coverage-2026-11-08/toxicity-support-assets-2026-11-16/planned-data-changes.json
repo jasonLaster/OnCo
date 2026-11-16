@@ -1,0 +1,337 @@
+{
+  "changes": [
+    {
+      "id": "lymphodepletion",
+      "ownerFile": "src/data/terms-jargon.ts",
+      "beforeRecordSHA256": "9cbe3092392e19864c66a8fd07317529c8ee74927326c60d0d8f555dc7f1c150",
+      "guard": "Direct top-level owning array element with literal id/name and exact existing scalar values; no generic brace or nested-id patching.",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A short course of chemotherapy (usually fludarabine and cyclophosphamide) given in the days before a CAR-T infusion to clear out the patient's own lymphocytes, making room and growth signals for the engineered cells to expand.",
+          "beforeSHA256": "1868f5e1ba9a7113dd2bef20ab78cd0adc912a9b588eb2eafe9f519f47db709c",
+          "after": "Lymphodepletion reduces existing lymphocytes before some cell therapies. It changes the immune environment; the medicines, timing and need for it depend on the treatment protocol.",
+          "afterSHA256": "b6665476838bd89b5b8a667330a3ac75d3d51d751bf19cb8b8e55943207857c1"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-11",
+          "beforeSHA256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+          "after": "2026-11-16",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+            },
+            {
+              "label": "Gattinoni et al., removal of homeostatic cytokine sinks by lymphodepletion (2005)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16203864/"
+            },
+            {
+              "label": "Rohaan et al., tumour-infiltrating lymphocyte therapy or ipilimumab in advanced melanoma (2022)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36477031/"
+            }
+          ],
+          "beforeSHA256": "3a81e9e426b7d856f0f002d6361a0a6ce5cf6631f7b2ca67133c9d9f8f08becd",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Chimeric_antigen_receptor_T_cell"
+            },
+            {
+              "label": "Gattinoni et al., removal of homeostatic cytokine sinks by lymphodepletion (2005)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16203864/"
+            },
+            {
+              "label": "Rohaan et al., tumour-infiltrating lymphocyte therapy or ipilimumab in advanced melanoma (2022)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36477031/"
+            },
+            {
+              "label": "NCI: T-cell transfer therapy and preparation before cell infusion",
+              "url": "https://www.cancer.gov/about-cancer/treatment/types/immunotherapy/t-cell-transfer-therapy"
+            }
+          ],
+          "afterSHA256": "1eb6d773fe312071dce5d96973ac1ba9292ca22f3f511a3c3d5d4839d9e2d967"
+        }
+      ],
+      "rationale": "Remove the physical-space metaphor and a universal CAR-T preparation schedule from the lead. Gattinoni is a defined mouse adoptive-transfer experiment; the NCI preparation description does not define every clinical protocol.",
+      "sourceReadReferences": [
+        "PMC1397916 body paragraphs 2,5,9,12,16",
+        "Official03 HTML paragraphs 19,20,37,38"
+      ],
+      "retainedLegacyBoundary": "Other retained assertions and fields retain their prior evidence scope;this date records these specified checks only.",
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "neutropenia",
+      "ownerFile": "src/data/terms-jargon.ts",
+      "beforeRecordSHA256": "c7023c685cbb14d4a2bb401ce1aca111ae14543debb11488d60abd9778b8b187",
+      "guard": "Direct top-level owning array element with literal id/name and exact existing scalar values; no generic brace or nested-id patching.",
+      "fields": [
+        {
+          "field": "tldr",
+          "before": "A shortage of neutrophils, the white blood cells that fight bacteria, caused by chemotherapy hitting the bone marrow. It usually bottoms out (the nadir) 7-14 days after each cycle and recovers before the next; while low, infection risk is high.",
+          "beforeSHA256": "22f004a3d79d34dfdb6468a91133bc88b34437a81876325d5e42587d3ec096f8",
+          "after": "Neutropenia means a low concentration of neutrophils, a type of white blood cell that helps fight infection. The count, how long it stays low and the treatment context matter; a low count alone does not establish infection.",
+          "afterSHA256": "b36aab5c6844e5e857658428f3b4e1908cbafe2ada349067975a843d02c02a0d"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-11",
+          "beforeSHA256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+          "after": "2026-11-16",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Neutropenia"
+            },
+            {
+              "label": "Macmillan: sepsis",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/sepsis"
+            },
+            {
+              "label": "NICE CG151: neutropenic sepsis",
+              "url": "https://www.nice.org.uk/guidance/cg151"
+            },
+            {
+              "label": "Breast Cancer Now: sacituzumab govitecan (Trodelvy)",
+              "url": "https://breastcancernow.org/about-breast-cancer/treatment/targeted-therapy/sacituzumab-govitecan-trodelvy"
+            },
+            {
+              "label": "Macmillan: FOLFIRINOX",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/folfirinox"
+            },
+            {
+              "label": "Macmillan: nab-paclitaxel (Abraxane)",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/nab-paclitaxel"
+            },
+            {
+              "label": "Macmillan: FOLFOX",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/folfox"
+            },
+            {
+              "label": "Macmillan: irinotecan",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/irinotecan"
+            },
+            {
+              "label": "Lymphoma Action: neutropenia (low neutrophils)",
+              "url": "https://lymphoma-action.org.uk/information-and-support/side-effects-lymphoma-and-treatment/neutropenia-low-neutrophils"
+            },
+            {
+              "label": "Lymphoma Action: growth factors",
+              "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/growth-factors"
+            }
+          ],
+          "beforeSHA256": "8e35e4d750f273c343380a1233e628ec06e613350ed1b0e513a3d6f9980f56a0",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Neutropenia"
+            },
+            {
+              "label": "Macmillan: sepsis",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/sepsis"
+            },
+            {
+              "label": "NICE CG151: neutropenic sepsis",
+              "url": "https://www.nice.org.uk/guidance/cg151"
+            },
+            {
+              "label": "Breast Cancer Now: sacituzumab govitecan (Trodelvy)",
+              "url": "https://breastcancernow.org/about-breast-cancer/treatment/targeted-therapy/sacituzumab-govitecan-trodelvy"
+            },
+            {
+              "label": "Macmillan: FOLFIRINOX",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/folfirinox"
+            },
+            {
+              "label": "Macmillan: nab-paclitaxel (Abraxane)",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/nab-paclitaxel"
+            },
+            {
+              "label": "Macmillan: FOLFOX",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/folfox"
+            },
+            {
+              "label": "Macmillan: irinotecan",
+              "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/irinotecan"
+            },
+            {
+              "label": "Lymphoma Action: neutropenia (low neutrophils)",
+              "url": "https://lymphoma-action.org.uk/information-and-support/side-effects-lymphoma-and-treatment/neutropenia-low-neutrophils"
+            },
+            {
+              "label": "Lymphoma Action: growth factors",
+              "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/growth-factors"
+            },
+            {
+              "label": "NCI: infection risk and neutropenia during cancer treatment",
+              "url": "https://www.cancer.gov/about-cancer/treatment/side-effects/infection"
+            }
+          ],
+          "afterSHA256": "fea07a12a44374f9082672c45b61308f1961a466be2236a0da68374835b36806"
+        }
+      ],
+      "rationale": "Remove the generic 7-to-14-day nadir and promised recovery from the lead. Preserve the separate count, duration and infection observations already taught by the notes.",
+      "sourceReadReferences": [
+        "Official02 HTML paragraphs 24,25,26",
+        "PMID41740078 abstract"
+      ],
+      "retainedLegacyBoundary": "Other retained assertions and fields retain their prior evidence scope;this date records these specified checks only.",
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "antiemetic-therapy",
+      "ownerFile": "src/data/gap-fill.ts",
+      "beforeRecordSHA256": "6a46b370eeb5f9c693b5785282bf49ca3e75d0480372575cbc41407c49299417",
+      "guard": "Direct top-level owning array element with literal id/name and exact existing scalar values; no generic brace or nested-id patching.",
+      "fields": [
+        {
+          "field": "principle",
+          "before": "Prophylaxis matched to emetogenic risk of the regimen and patient risk factors, blocking serotonin (acute), substance P/NK1 (delayed), and dopamine/multiple receptors (olanzapine), with corticosteroid.",
+          "beforeSHA256": "9d097b29c67100e0393952159afa5f8a964eddcbb5a7dc6622fe551338f947e2",
+          "after": "Prevention is matched to the regimen's emetogenic risk and patient factors. Medicines act on overlapping signalling pathways, including serotonin, substance P and dopamine; acute and delayed describe observation windows rather than exclusive mechanisms.",
+          "afterSHA256": "817996c48b9f92642a2b0c912b029dbc74f888dcd0c8631583b51d5d37c1ab94"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-11",
+          "beforeSHA256": "b3ff15f86190dbe330d60c00616bf86409191308461f59ce0361cf105690d75b",
+          "after": "2026-11-16",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        }
+      ],
+      "rationale": "Remove an exclusive acute-serotonin/delayed-substance-P assignment from the principle. Preserve trial-specific regimens and outcomes in the existing notes.",
+      "sourceReadReferences": [
+        "PMID12736106 abstract",
+        "Official01 HTML paragraphs 35-41,62-66",
+        "PMC5344450 body paragraphs 4,8,10,11,18,19,21,27"
+      ],
+      "retainedLegacyBoundary": "Other retained assertions and fields retain their prior evidence scope;this date records these specified checks only.",
+      "mainCredit": 0,
+      "liveCredit": 0
+    },
+    {
+      "id": "insertional-mutagenesis",
+      "ownerFile": "src/data/education-pharmacology-toxicity-2026-11.ts",
+      "beforeRecordSHA256": "cbb104ad01707b9fcc3ffb8a377134279f76216c322344128afc5d452eb6deab",
+      "guard": "Direct top-level owning array element with literal id/name and exact existing scalar values; no generic brace or nested-id patching.",
+      "fields": [
+        {
+          "field": "summary",
+          "before": "Some gene delivery systems, including the viral vectors used to make engineered T cells and to correct inherited immune disorders in blood stem cells, insert a genetic cassette into the cell's genome. Integration is the event; insertional mutagenesis is a consequential change that the event causes, such as interrupting a gene or altering the activity of a nearby one. Integration alone does not establish a harmful biological consequence. A cell that gains a growth advantage passes the insertion to its descendants and a clone expands, but a growing clone is not a diagnosis of cancer, because a useful therapeutic response can also expand a clone. FDA's long-term follow-up guidance for gene therapy (January 2020) explains why the question is taken seriously: the biological activity of retroviral vectors and transposon elements is imparted by an integration event, such integration is in general not directed to specific sites, and that raises the potential for disruption of critical host genes or activation of proto-oncogenes near the site, and so the risk of malignancy. A nonviral transposon is therefore also an integrating system, and genome editing can produce its own undesirable changes with a risk of malignancy, which is a separate mechanism from vector insertion.\n\nThree primary reports show why the setting matters. After retrovirus-mediated gamma-c gene transfer into autologous CD34-positive bone marrow cells for X-linked severe combined immunodeficiency, 9 of 10 patients were corrected, but almost three years later the two youngest developed uncontrolled clonal proliferation of mature T cells; both clones carried vector integration near the LMO2 proto-oncogene promoter with abnormal LMO2 expression, which the authors attributed most likely to retrovirus enhancer activity (Hacein-Bey-Abina et al., 2003). In a patient with chronic lymphocytic leukaemia given CD19 CAR T cells, 94 per cent of CAR T cells at the peak of response came from one clone in which lentiviral insertion had disrupted TET2, the patient's second TET2 allele carried a hypomorphic mutation, and the clone showed a central memory phenotype alongside complete remission: an expanded clone linked to benefit, not a new cancer (Fraietta et al., 2018). In 724 patients treated with T-cell therapies at one centre, a lethal T-cell lymphoma followed axicabtagene ciloleucel for diffuse large B-cell lymphoma; the tumour, the CAR T cells and the patient's normal blood cells were profiled in depth, both lymphomas were Epstein-Barr virus positive and linked to DNMT3A and TET2 mutant clonal haematopoiesis, and no evidence of oncogenic retroviral integration was found with multiple techniques (Hamilton et al., 2024). The first is a specific stem-cell regimen and the others are single-centre or single-patient observations, so none is an incidence estimate for a vector or product.\n\nWhat regulators ask for follows from this. The August 2026 ABECMA prescribing information carries a boxed warning that T-cell malignancies, including CAR-positive tumours, have occurred after BCMA- and CD19-directed genetically modified autologous T-cell immunotherapies for blood cancers, may present within weeks of infusion and may be fatal, and says to monitor life-long for secondary malignancies. FDA's CAR T-cell development guidance recommends following people for 15 years after treatment with CAR T cells containing an integrated transgene, because integrating vectors may increase the risk of delayed adverse events and non-integrating vectors are thought to carry a low delayed risk. These are class-level product warnings and follow-up expectations; they do not assign one mechanism to every event or give an incidence for other products.\n\nTo attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+          "beforeSHA256": "7059523ccd40eaeb791125f921e12c92010d22368b4a589303c5f6567a26f4bf",
+          "after": "Some gene delivery systems, including the viral vectors used to make engineered T cells and to correct inherited immune disorders in blood stem cells, insert a genetic cassette into the cell's genome. Integration is the event; insertional mutagenesis is a consequential change that the event causes, such as interrupting a gene or altering the activity of a nearby one. Integration alone does not establish a harmful biological consequence. A cell that gains a growth advantage passes the insertion to its descendants and a clone expands, but a growing clone is not a diagnosis of cancer, because a useful therapeutic response can also expand a clone. FDA's long-term follow-up guidance for gene therapy (January 2020) explains why the question is taken seriously: the biological activity of retroviral vectors and transposon elements is imparted by an integration event, such integration is in general not directed to specific sites, and that raises the potential for disruption of critical host genes or activation of proto-oncogenes near the site, and so the risk of malignancy. A nonviral transposon is therefore also an integrating system, and genome editing can produce its own undesirable changes with a risk of malignancy, which is a separate mechanism from vector insertion.\n\nThree primary reports show why the setting matters. After retrovirus-mediated gamma-c gene transfer into autologous CD34-positive bone marrow cells for X-linked severe combined immunodeficiency, 9 of 10 patients were corrected, but almost three years later the two youngest developed uncontrolled clonal proliferation of mature T cells; both clones carried vector integration near the LMO2 proto-oncogene promoter with abnormal LMO2 expression, which the authors attributed most likely to retrovirus enhancer activity (Hacein-Bey-Abina et al., 2003). In a patient with chronic lymphocytic leukaemia given CD19 CAR T cells, 94 per cent of CAR T cells at the peak of response came from one clone in which lentiviral insertion had disrupted TET2, the patient's second TET2 allele carried a hypomorphic mutation, and the clone showed a central memory phenotype alongside complete remission: an expanded clone linked to benefit, not a new cancer (Fraietta et al., 2018). In 724 patients treated with T-cell therapies at one centre, a lethal T-cell lymphoma followed axicabtagene ciloleucel for diffuse large B-cell lymphoma; the tumour, the CAR T cells and the patient's normal blood cells were profiled in depth, both lymphomas were Epstein-Barr virus positive and linked to DNMT3A and TET2 mutant clonal haematopoiesis, and no evidence of oncogenic retroviral integration was found with multiple techniques (Hamilton et al., 2024). The first is a specific stem-cell regimen and the others are single-centre or single-patient observations, so none is an incidence estimate for a vector or product.\n\nWhat regulators ask for follows from this. The ABECMA prescribing information revised in November 2025 carries a boxed warning that T-cell malignancies, including CAR-positive tumours, have occurred after BCMA- and CD19-directed genetically modified autologous T-cell immunotherapies for blood cancers, may present within weeks of infusion and may be fatal, and says to monitor life-long for secondary malignancies. FDA's CAR T-cell development guidance recommends following people for 15 years after treatment with CAR T cells containing an integrated transgene, because integrating vectors may increase the risk of delayed adverse events and non-integrating vectors are thought to carry a low delayed risk. These are class-level product warnings and follow-up expectations; they do not assign one mechanism to every event or give an incidence for other products.\n\nTo attribute a malignancy after engineered-cell therapy, investigators ask whether the therapeutic sequence is present in the malignant cells, where the integrations are, whether they alter relevant genes, whether related clones were detectable earlier, and what prior therapy, underlying disease and pre-existing genetic changes contribute. Integration-site sequencing maps insertion locations, quantitative DNA assays estimate vector copies per cell, and flow cytometry, gene-expression measurement and pathology answer different questions about identity, function and malignancy; the sample is consumed by testing. Average vector copy number cannot show the position or effect of each insertion, a clone's frequency depends on the sampled cells, assay sensitivity and time, and blood may not represent every tissue. This record gives no copy-number or clone-frequency threshold because none of the sources read sets one. Messenger RNA delivery that does not integrate does not use genomic insertion as its route, which does not remove its other risks.",
+          "afterSHA256": "7a2765cd40dbb354292ebdee35171da500786727532bada372bb98bf7c35897a"
+        },
+        {
+          "field": "asOf",
+          "before": "2026-11-12",
+          "beforeSHA256": "eb349f71a7e711e0ce6d06c80026691e8a28047d509b4438a3b8a72f9b6646a0",
+          "after": "2026-11-16",
+          "afterSHA256": "faffe734ef290597a139fa056e87a8ad295127cb0e390e1ea35540b79e420978"
+        },
+        {
+          "field": "links",
+          "before": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Insertional_mutagenesis"
+            },
+            {
+              "label": "Hacein-Bey-Abina et al., LMO2-associated clonal T cell proliferation after gene therapy for SCID-X1 (2003)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/14564000/"
+            },
+            {
+              "label": "Fraietta et al., disruption of TET2 promotes the efficacy of CD19-targeted T cells (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29849141/"
+            },
+            {
+              "label": "Hamilton et al., second tumors and T-cell lymphoma after CAR T-cell therapy (2024)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38865660/"
+            },
+            {
+              "label": "ABECMA prescribing information (FDA)",
+              "url": "https://www.fda.gov/media/147055/download"
+            },
+            {
+              "label": "FDA: long term follow-up after administration of human gene therapy products (guidance, January 2020)",
+              "url": "https://www.fda.gov/media/113768/download"
+            },
+            {
+              "label": "ABECMA prescribing information, August 2026 version (DailyMed)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b90c1fe7-f5cc-464e-958a-af36e9c26d7c"
+            },
+            {
+              "label": "NCI Drug Dictionary: axicabtagene ciloleucel",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/768723"
+            }
+          ],
+          "beforeSHA256": "302695170d8b4650e5dfb6e5647ed21fc08549585f910c01af82f61517fa9afd",
+          "after": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Insertional_mutagenesis"
+            },
+            {
+              "label": "Hacein-Bey-Abina et al., LMO2-associated clonal T cell proliferation after gene therapy for SCID-X1 (2003)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/14564000/"
+            },
+            {
+              "label": "Fraietta et al., disruption of TET2 promotes the efficacy of CD19-targeted T cells (2018)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/29849141/"
+            },
+            {
+              "label": "Hamilton et al., second tumors and T-cell lymphoma after CAR T-cell therapy (2024)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/38865660/"
+            },
+            {
+              "label": "ABECMA prescribing information (FDA)",
+              "url": "https://www.fda.gov/media/147055/download"
+            },
+            {
+              "label": "FDA: long term follow-up after administration of human gene therapy products (guidance, January 2020)",
+              "url": "https://www.fda.gov/media/113768/download"
+            },
+            {
+              "label": "ABECMA prescribing information, November 2025 revision (DailyMed)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b90c1fe7-f5cc-464e-958a-af36e9c26d7c"
+            },
+            {
+              "label": "NCI Drug Dictionary: axicabtagene ciloleucel",
+              "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/768723"
+            }
+          ],
+          "afterSHA256": "55f417814cc9bbc70738a249e2f8f592281b6601e66deef3e7d97f14f421d87d"
+        }
+      ],
+      "rationale": "The freshly retrieved FDA PDF identifies a November 2025 revision and the DailyMed SPL identifies effectiveTime 20251125, version 20. Correct that source-version label without altering the warning or inferring a mechanism for every malignancy.",
+      "sourceReadReferences": [
+        "Official06 physical PDF pages 15,39",
+        "DailyMed-ABECMA-current SPL section 29 and document identity"
+      ],
+      "retainedLegacyBoundary": "Other retained assertions and fields retain their prior evidence scope;this date records these specified checks only.",
+      "mainCredit": 0,
+      "liveCredit": 0
+    }
+  ],
+  "expectedFiles": [
+    "src/data/education-pharmacology-toxicity-2026-11.ts",
+    "src/data/gap-fill.ts",
+    "src/data/terms-jargon.ts"
+  ],
+  "newRecords": 0,
+  "newSourceLinks": 2,
+  "rendererChanges": 0,
+  "registrationsChanged": 0
+}

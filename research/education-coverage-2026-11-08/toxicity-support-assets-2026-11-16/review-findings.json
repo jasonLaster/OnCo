@@ -1,0 +1,83 @@
+{
+  "findings": [
+    {
+      "id": "P67-D01",
+      "recordId": "lymphodepletion",
+      "status": "corrected-and-fully-gated",
+      "finding": "Remove the physical-space metaphor and a universal CAR-T preparation schedule from the lead. Gattinoni is a defined mouse adoptive-transfer experiment; the NCI preparation description does not define every clinical protocol.",
+      "dataCommit": "4592ca681f0b2bbb706cd8db5af3bda6e2a59d77"
+    },
+    {
+      "id": "P67-D02",
+      "recordId": "neutropenia",
+      "status": "corrected-and-fully-gated",
+      "finding": "Remove the generic 7-to-14-day nadir and promised recovery from the lead. Preserve the separate count, duration and infection observations already taught by the notes.",
+      "dataCommit": "4592ca681f0b2bbb706cd8db5af3bda6e2a59d77"
+    },
+    {
+      "id": "P67-D03",
+      "recordId": "antiemetic-therapy",
+      "status": "corrected-and-fully-gated",
+      "finding": "Remove an exclusive acute-serotonin/delayed-substance-P assignment from the principle. Preserve trial-specific regimens and outcomes in the existing notes.",
+      "dataCommit": "4592ca681f0b2bbb706cd8db5af3bda6e2a59d77"
+    },
+    {
+      "id": "P67-D04",
+      "recordId": "insertional-mutagenesis",
+      "status": "corrected-and-fully-gated",
+      "finding": "The freshly retrieved FDA PDF identifies a November 2025 revision and the DailyMed SPL identifies effectiveTime 20251125, version 20. Correct that source-version label without altering the warning or inferring a mechanism for every malignancy.",
+      "dataCommit": "4592ca681f0b2bbb706cd8db5af3bda6e2a59d77"
+    },
+    {
+      "id": "P67-V01",
+      "scope": "On-target/off-tumor pair",
+      "status": "minor-legibility-note",
+      "finding": "The lower Same X labels are close to panel edges but remain visible in the native renders;no collision or clipping observed."
+    },
+    {
+      "id": "P67-C01",
+      "scope": "Historical viewer reports",
+      "status": "not-freshly-reproduced",
+      "finding": "Bodies report BODY focus and Tab leaving the dialog;no fresh hosted-browser or accessibility test was performed."
+    },
+    {
+      "id": "P67-S01",
+      "scope": "Current consensus and retained clinical text",
+      "status": "source-depth-boundary",
+      "finding": "Full context reads and native version labels do not certify detailed2026 consensus tables,individual management or all retained clinical clauses."
+    },
+    {
+      "id": "P67-S02",
+      "status": "fresh-depth-limitation",
+      "finding": "The Gust CSF paragraph permits local cytokine production as an alternative. The retained ICANS explanation is not accepted as proof of an exclusive blood-to-CSF route."
+    },
+    {
+      "id": "P67-S03",
+      "status": "legacy-scope-followup",
+      "finding": "Older lymphodepletion summary claims about duration,substitution and correlations;neutropenia CTCAE/management text;febrile-neutropenia incidence/mortality;filgrastim approval history;cytopenia prevalence and lymphoma-specific statements are not blanket rechecked."
+    },
+    {
+      "id": "P67-P01",
+      "status": "existing-product-followup",
+      "finding": "Static readers retain generic molecule/target selection labels for CINV,lymphodepletion and insertional mutagenesis,the neutropenia Danger line/G-CSF schematic,global drug-status badges and older generated provenance. These do not supply a diagnosis,treatment threshold or a new source-review date."
+    },
+    {
+      "id": "P67-C02",
+      "status": "resolved-extraction-guard",
+      "finding": "A URL extraction character class consumed the leading3 of PMID30592986. The zero-hit spurious query is preserved privately and excluded;all16 actual identifiers were resolved and available abstracts read."
+    },
+    {
+      "id": "P67-C03",
+      "status": "resolved-setup-guard",
+      "finding": "Initial reused setup helpers selected unrelated context and a stale section-count guard. Corrected before context reading or credit;the final scope is8 eligible parents,162 signatures and16 protected native variants."
+    },
+    {
+      "id": "P67-C04",
+      "status": "resolved-private-patcher-guards",
+      "finding": "Literal patch guards first caught absent base links and then a quoted link-label key. Partial owned outputs were compared to exact frozen preimages and deterministic script outputs before completing the four-owner change. Whole-graph and field preservation checks passed;no unrelated field was overwritten."
+    }
+  ],
+  "expertAcceptance": false,
+  "mainCredit": 0,
+  "liveCredit": 0
+}

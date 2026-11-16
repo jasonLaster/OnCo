@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-16T09:45:32.269Z",
+  "explicitElicitCallableTools": [],
+  "descriptionMatches": [
+    {
+      "name": "mcp__t3_code__delegate_task",
+      "description": "Start one child agent with only `task`. No parent history. Separate checkout or PR per child: `isolation:'worktree'`. Keep `taskId` for `task_status` and `task_cancel`.\n\nexec tool "
+    },
+    {
+      "name": "mcp__t3_code__task_status",
+      "description": "Read one delegated task you started. Do not call it on a running task before its completion wakes you. `workState`: working, waiting_for_children, result_available. A finished turn"
+    }
+  ],
+  "ElicitResultsUsed": false,
+  "reportsInvented": false
+}

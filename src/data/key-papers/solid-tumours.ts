@@ -759,7 +759,7 @@ export const papersSolidTumours: PaperInput[] = [
       "Grade 3 or higher adverse events 53% vs 38%, mainly anaemia, thrombocytopenia and fatigue; dry mouth was common but rarely severe.",
       "About 13% of screened patients were excluded by PSMA PET (PSMA-negative lesions), and early dropout in the control arm required protocol changes.",
     ],
-    whatItMeans: "Men with metastatic castration-resistant prostate cancer that has progressed after hormonal therapy and chemotherapy, and whose tumours show PSMA on a PET scan, can now receive lutetium-PSMA, which extends life, controls pain and is usually better tolerated than further chemotherapy. It has established a new treatment class in which a scan decides who gets the matching radioactive drug, and it is now being tested earlier in the disease (PSMAfore, PSMAddition).",
+    whatItMeans: "In VISION, adding lutetium-177-PSMA-617 prolonged overall and imaging-based progression-free survival in the selected, previously treated PSMA-PET-positive population. The comparator was protocol-permitted standard care, which excluded chemotherapy, immunotherapy and radium-223. Grade 3 or higher adverse events occurred more often in the radioligand arm. Comparisons with further chemotherapy need separate evidence.",
     caveats: [
       "Standard care in the control arm excluded chemotherapy, radium-223 and other active drugs, and about 56% of control patients withdrew early, weakening the comparison.",
       "Open-label; the OS benefit is nonetheless robust to sensitivity analyses.",
